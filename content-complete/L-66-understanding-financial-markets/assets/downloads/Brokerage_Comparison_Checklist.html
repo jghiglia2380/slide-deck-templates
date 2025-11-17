@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brokerage Comparison Checklist</title>
+    <!--
+    PURPOSE: Interactive skill builder tool
+    USE: Chapter interactive activity (15-20 minutes)
+    -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .intro-box {
+            background: #e8f4f8;
+            border-left: 4px solid #3498db;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .comparison-grid {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 800px;
+        }
+        thead th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 10px;
+            text-align: left;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        tbody th {
+            background-color: #ecf0f1;
+            font-weight: bold;
+            color: #2c3e50;
+            padding: 12px 10px;
+            text-align: left;
+            border-right: 2px solid #bdc3c7;
+        }
+        td {
+            padding: 12px 10px;
+            border: 1px solid #ddd;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #bdc3c7;
+            border-radius: 4px;
+            font-size: 0.95em;
+        }
+        input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+        .rating-input {
+            width: 60px;
+            text-align: center;
+        }
+        .category-header {
+            background: #3498db !important;
+            color: white !important;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+        }
+        .summary-section {
+            background: #f0f7ff;
+            border: 2px solid #3498db;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        .summary-section h2 {
+            color: #3498db;
+            margin-top: 0;
+        }
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .summary-field {
+            background: white;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            border-radius: 4px;
+        }
+        .summary-label {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #bdc3c7;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+            min-height: 60px;
+        }
+        .help-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .instructions {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #ecf0f1;
+            color: #7f8c8d;
+        }
+        @media print {
+            .instructions, .help-box { page-break-before: avoid; }
+            table { page-break-inside: auto; }
+            tr { page-break-inside: avoid; page-break-after: auto; }
+        }
+        @media (max-width: 768px) {
+            .comparison-grid {
+                font-size: 0.9em;
+            }
+            th, td {
+                padding: 8px 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>🏦 Brokerage Comparison Checklist</h1>
+    <p style="color: #7f8c8d; font-size: 1.1em;">Compare features and costs across multiple brokerages to make an informed decision</p>
+
+    <div class="intro-box">
+        <strong>How to Use This Checklist:</strong>
+        <ol>
+            <li>Research 3-4 brokerages you're considering (popular options: Fidelity, Charles Schwab, Vanguard, TD Ameritrade, E*TRADE, etc.)</li>
+            <li>Visit each brokerage's website and fill in the comparison table below</li>
+            <li>Rate each feature from 1-10 (10 being best)</li>
+            <li>Complete the summary section to identify the best fit for your needs</li>
+        </ol>
+    </div>
+
+    <div class="help-box">
+        <strong>💡 Pro Tip:</strong> Don't choose based on one feature alone. Consider the overall package: costs, usability, research tools, and customer support all matter for long-term satisfaction.
+    </div>
+
+    <div class="comparison-grid">
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 200px;">Feature / Criteria</th>
+                    <th>Brokerage #1<br><input type="text" placeholder="Name" style="margin-top: 5px;"></th>
+                    <th>Brokerage #2<br><input type="text" placeholder="Name" style="margin-top: 5px;"></th>
+                    <th>Brokerage #3<br><input type="text" placeholder="Name" style="margin-top: 5px;"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="4" class="category-header">COSTS & FEES</td>
+                </tr>
+                <tr>
+                    <th>Commission-Free Stocks?</th>
+                    <td><label><input type="checkbox"> Yes</label></td>
+                    <td><label><input type="checkbox"> Yes</label></td>
+                    <td><label><input type="checkbox"> Yes</label></td>
+                </tr>
+                <tr>
+                    <th>Commission-Free ETFs?</th>
+                    <td><label><input type="checkbox"> Yes</label></td>
+                    <td><label><input type="checkbox"> Yes</label></td>
+                    <td><label><input type="checkbox"> Yes</label></td>
+                </tr>
+                <tr>
+                    <th>Minimum Deposit Required</th>
+                    <td>$<input type="number" placeholder="0"></td>
+                    <td>$<input type="number" placeholder="0"></td>
+                    <td>$<input type="number" placeholder="0"></td>
+                </tr>
+                <tr>
+                    <th>Account Maintenance Fees</th>
+                    <td>$<input type="number" placeholder="0"> /month</td>
+                    <td>$<input type="number" placeholder="0"> /month</td>
+                    <td>$<input type="number" placeholder="0"> /month</td>
+                </tr>
+                <tr>
+                    <th>Options Trading Fee</th>
+                    <td>$<input type="number" step="0.01" placeholder="0.00"> /contract</td>
+                    <td>$<input type="number" step="0.01" placeholder="0.00"> /contract</td>
+                    <td>$<input type="number" step="0.01" placeholder="0.00"> /contract</td>
+                </tr>
+
+                <tr>
+                    <td colspan="4" class="category-header">ACCOUNT TYPES</td>
+                </tr>
+                <tr>
+                    <th>Individual Brokerage</th>
+                    <td><label><input type="checkbox"> Available</label></td>
+                    <td><label><input type="checkbox"> Available</label></td>
+                    <td><label><input type="checkbox"> Available</label></td>
+                </tr>
+                <tr>
+                    <th>IRA (Traditional/Roth)</th>
+                    <td><label><input type="checkbox"> Available</label></td>
+                    <td><label><input type="checkbox"> Available</label></td>
+                    <td><label><input type="checkbox"> Available</label></td>
+                </tr>
+                <tr>
+                    <th>529 College Savings</th>
+                    <td><label><input type="checkbox"> Available</label></td>
+                    <td><label><input type="checkbox"> Available</label></td>
+                    <td><label><input type="checkbox"> Available</label></td>
+                </tr>
+                <tr>
+                    <th>Custodial Account</th>
+                    <td><label><input type="checkbox"> Available</label></td>
+                    <td><label><input type="checkbox"> Available</label></td>
+                    <td><label><input type="checkbox"> Available</label></td>
+                </tr>
+
+                <tr>
+                    <td colspan="4" class="category-header">PLATFORM & USABILITY (Rate 1-10)</td>
+                </tr>
+                <tr>
+                    <th>Website Ease of Use</th>
+                    <td><input type="number" class="rating-input" min="1" max="10" placeholder="1-10"></td>
+                    <td><input type="number" class="rating-input" min="1" max="10" placeholder="1-10"></td>
+                    <td><input type="number" class="rating-input" min="1" max="10" placeholder="1-10"></td>
+                </tr>
+                <tr>
+                    <th>Mobile App Quality</th>
+                    <td><input type="number" class="rating-input" min="1" max="10" placeholder="1-10"></td>
+                    <td><input type="number" class="rating-input" min="1" max="10" placeholder="1-10"></td>
+                    <td><input type="number" class="rating-input" min="1" max="10" placeholder="1-10"></td>
+                </tr>
+                <tr>
+                    <th>Speed/Performance</th>
+                    <td><input type="number" class="rating-input" min="1" max="10" placeholder="1-10"></td>
+                    <td><input type="number" class="rating-input" min="1" max="10" placeholder="1-10"></td>
+                    <td><input type="number" class="rating-input" min="1" max="10" placeholder="1-10"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="4" class="category-header">RESEARCH & TOOLS (Rate 1-10)</td>
+                </tr>
+                <tr>
+                    <th>Research Reports Quality</th>
+                    <td><input type="number" class="rating-input" min="1" max="10" placeholder="1-10"></td>
+                    <td><input type="number" class="rating-input" min="1" max="10" placeholder="1-10"></td>
+                    <td><input type="number" class="rating-input" min="1" max="10" placeholder="1-10"></td>
+                </tr>
+                <tr>
+                    <th>Charting/Analysis Tools</th>
+                    <td><input type="number" class="rating-input" min="1" max="10" placeholder="1-10"></td>
+                    <td><input type="number" class="rating-input" min="1" max="10" placeholder="1-10"></td>
+                    <td><input type="number" class="rating-input" min="1" max="10" placeholder="1-10"></td>
+                </tr>
+                <tr>
+                    <th>Screener Tools</th>
+                    <td><input type="number" class="rating-input" min="1" max="10" placeholder="1-10"></td>
+                    <td><input type="number" class="rating-input" min="1" max="10" placeholder="1-10"></td>
+                    <td><input type="number" class="rating-input" min="1" max="10" placeholder="1-10"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="4" class="category-header">EDUCATION & SUPPORT</td>
+                </tr>
+                <tr>
+                    <th>Educational Resources</th>
+                    <td><input type="number" class="rating-input" min="1" max="10" placeholder="1-10"></td>
+                    <td><input type="number" class="rating-input" min="1" max="10" placeholder="1-10"></td>
+                    <td><input type="number" class="rating-input" min="1" max="10" placeholder="1-10"></td>
+                </tr>
+                <tr>
+                    <th>Customer Support Options</th>
+                    <td>
+                        <label><input type="checkbox"> Phone</label><br>
+                        <label><input type="checkbox"> Chat</label><br>
+                        <label><input type="checkbox"> Email</label>
+                    </td>
+                    <td>
+                        <label><input type="checkbox"> Phone</label><br>
+                        <label><input type="checkbox"> Chat</label><br>
+                        <label><input type="checkbox"> Email</label>
+                    </td>
+                    <td>
+                        <label><input type="checkbox"> Phone</label><br>
+                        <label><input type="checkbox"> Chat</label><br>
+                        <label><input type="checkbox"> Email</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Customer Service Rating</th>
+                    <td><input type="number" class="rating-input" min="1" max="10" placeholder="1-10"></td>
+                    <td><input type="number" class="rating-input" min="1" max="10" placeholder="1-10"></td>
+                    <td><input type="number" class="rating-input" min="1" max="10" placeholder="1-10"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="4" class="category-header">SPECIAL FEATURES</td>
+                </tr>
+                <tr>
+                    <th>Fractional Shares Available?</th>
+                    <td><label><input type="checkbox"> Yes</label></td>
+                    <td><label><input type="checkbox"> Yes</label></td>
+                    <td><label><input type="checkbox"> Yes</label></td>
+                </tr>
+                <tr>
+                    <th>Automatic Investment Plans?</th>
+                    <td><label><input type="checkbox"> Yes</label></td>
+                    <td><label><input type="checkbox"> Yes</label></td>
+                    <td><label><input type="checkbox"> Yes</label></td>
+                </tr>
+                <tr>
+                    <th>Robo-Advisor Available?</th>
+                    <td><label><input type="checkbox"> Yes</label></td>
+                    <td><label><input type="checkbox"> Yes</label></td>
+                    <td><label><input type="checkbox"> Yes</label></td>
+                </tr>
+                <tr>
+                    <th>Banking Services?</th>
+                    <td><label><input type="checkbox"> Yes</label></td>
+                    <td><label><input type="checkbox"> Yes</label></td>
+                    <td><label><input type="checkbox"> Yes</label></td>
+                </tr>
+
+                <tr>
+                    <td colspan="4" class="category-header">NOTES & HIDDEN FEES</td>
+                </tr>
+                <tr>
+                    <th>Hidden Fees Identified</th>
+                    <td><textarea placeholder="List any fees you found (wire transfers, paper statements, inactivity, etc.)"></textarea></td>
+                    <td><textarea placeholder="List any fees you found"></textarea></td>
+                    <td><textarea placeholder="List any fees you found"></textarea></td>
+                </tr>
+                <tr>
+                    <th>Pros (What I Like)</th>
+                    <td><textarea placeholder="List advantages"></textarea></td>
+                    <td><textarea placeholder="List advantages"></textarea></td>
+                    <td><textarea placeholder="List advantages"></textarea></td>
+                </tr>
+                <tr>
+                    <th>Cons (What I Don't Like)</th>
+                    <td><textarea placeholder="List disadvantages"></textarea></td>
+                    <td><textarea placeholder="List disadvantages"></textarea></td>
+                    <td><textarea placeholder="List disadvantages"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td colspan="4" class="category-header">OVERALL RATING</td>
+                </tr>
+                <tr>
+                    <th>Overall Rating (1-10)</th>
+                    <td><input type="number" class="rating-input" min="1" max="10" placeholder="1-10" style="font-size: 1.2em; font-weight: bold;"></td>
+                    <td><input type="number" class="rating-input" min="1" max="10" placeholder="1-10" style="font-size: 1.2em; font-weight: bold;"></td>
+                    <td><input type="number" class="rating-input" min="1" max="10" placeholder="1-10" style="font-size: 1.2em; font-weight: bold;"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="summary-section">
+        <h2>📋 Summary & Decision</h2>
+
+        <div class="summary-grid">
+            <div class="summary-field">
+                <div class="summary-label">Best for Beginners:</div>
+                <input type="text" placeholder="Which brokerage is most beginner-friendly?">
+            </div>
+
+            <div class="summary-field">
+                <div class="summary-label">Best for Low Costs:</div>
+                <input type="text" placeholder="Which has the lowest overall costs?">
+            </div>
+
+            <div class="summary-field">
+                <div class="summary-label">Best for Research:</div>
+                <input type="text" placeholder="Which has the best tools and research?">
+            </div>
+
+            <div class="summary-field">
+                <div class="summary-label">Best Customer Support:</div>
+                <input type="text" placeholder="Which has the best service?">
+            </div>
+        </div>
+
+        <div style="margin-top: 25px;">
+            <div class="summary-label">My Choice:</div>
+            <input type="text" placeholder="Which brokerage will you choose?" style="margin: 10px 0;">
+        </div>
+
+        <div style="margin-top: 15px;">
+            <div class="summary-label">Reasoning:</div>
+            <textarea placeholder="Explain why this brokerage is the best fit for you..." style="min-height: 100px;"></textarea>
+        </div>
+    </div>
+
+    <div class="instructions">
+        <h3>Next Steps</h3>
+        <ol>
+            <li><strong>Double-check account minimums</strong> - Make sure you can meet the minimum deposit requirement</li>
+            <li><strong>Read recent reviews</strong> - Check sites like NerdWallet, Investopedia, or Barron's for up-to-date reviews</li>
+            <li><strong>Test the platform</strong> - Many brokerages offer demo accounts; try before you commit</li>
+            <li><strong>Understand the fee structure</strong> - Read the fee schedule carefully to avoid surprises</li>
+            <li><strong>Check SIPC insurance</strong> - Ensure the brokerage is SIPC-insured (protects up to $500K)</li>
+        </ol>
+    </div>
+
+    <footer>
+        <p><strong>PFL Academy</strong> | Brokerage Comparison Checklist</p>
+        <p>For educational purposes only - Not investment advice</p>
+    </footer>
+</body>
+</html>

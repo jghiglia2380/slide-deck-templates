@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Structure Identifier Tool</title>
+    <!--
+    PURPOSE: Interactive skill builder tool
+    USE: Chapter interactive activity (15-20 minutes)
+    -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background-color: white;
+            border-radius: 12px;
+            padding: 0;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+        .progress-bar {
+            background: rgba(255,255,255,0.2);
+            height: 8px;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+        .progress-fill {
+            background: #10b981;
+            height: 100%;
+            width: 33%;
+            transition: width 0.3s;
+        }
+        .content {
+            padding: 40px;
+        }
+        .step {
+            display: none;
+            animation: fadeIn 0.4s ease;
+        }
+        .step.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .step-title {
+            font-size: 1.8rem;
+            color: #6366f1;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .step-description {
+            color: #6b7280;
+            margin-bottom: 30px;
+        }
+        .option-cards {
+            display: grid;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .option-card {
+            background-color: #f9fafb;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .option-card:hover {
+            border-color: #6366f1;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+        }
+        .option-card.selected {
+            border-color: #6366f1;
+            background-color: #eef2ff;
+            border-width: 3px;
+        }
+        .option-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #2c3e50;
+        }
+        .option-description {
+            font-size: 0.95rem;
+            color: #6b7280;
+        }
+        .form-group {
+            margin: 20px 0;
+        }
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        .button-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .btn {
+            padding: 14px 28px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            flex: 1;
+        }
+        .btn-primary {
+            background-color: #6366f1;
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #4f46e5;
+        }
+        .btn-secondary {
+            background-color: #f3f4f6;
+            color: #374151;
+        }
+        .result-box {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+        .result-box h2 {
+            margin-top: 0;
+        }
+        .characteristics {
+            background-color: #f9fafb;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .characteristics h3 {
+            color: #6366f1;
+            margin-top: 0;
+        }
+        .characteristic-item {
+            padding: 10px 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .characteristic-item:last-child {
+            border-bottom: none;
+        }
+        .strategy-box {
+            background-color: #fff7ed;
+            border: 2px solid #fed7aa;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .strategy-box h3 {
+            color: #ea580c;
+            margin-top: 0;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 25px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        .note {
+            background-color: #f8f9fa;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        @media print {
+            body { background: white; }
+            .button-group { display: none; }
+        }
+        @media (max-width: 768px) {
+            .content { padding: 20px; }
+            .header h1 { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏢 Market Structure Identifier Tool</h1>
+            <p>Classify any market and get consumer strategies</p>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressBar"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- Step 1: Product/Market Input -->
+            <div class="step active" id="step1">
+                <h2 class="step-title">Step 1: What Are You Buying?</h2>
+                <p class="step-description">Enter the product or service you're analyzing</p>
+
+                <div class="form-group">
+                    <label for="productInput">Product/Service:</label>
+                    <input type="text" id="productInput" placeholder="e.g., Smartphone, Electricity, Fast food">
+                </div>
+
+                <div class="button-group">
+                    <button class="btn btn-primary" onclick="nextStep()">Next: Seller Count →</button>
+                </div>
+            </div>
+
+            <!-- Step 2: Seller Count -->
+            <div class="step" id="step2">
+                <h2 class="step-title">Step 2: How Many Sellers?</h2>
+                <p class="step-description">How many realistic options do you have?</p>
+
+                <div class="option-cards">
+                    <div class="option-card" onclick="selectOption(this, 'sellers', '1')">
+                        <div class="option-title">Only 1 seller</div>
+                        <div class="option-description">No alternatives available</div>
+                    </div>
+                    <div class="option-card" onclick="selectOption(this, 'sellers', '2-10')">
+                        <div class="option-title">2-10 sellers</div>
+                        <div class="option-description">A few major players</div>
+                    </div>
+                    <div class="option-card" onclick="selectOption(this, 'sellers', '10+')">
+                        <div class="option-title">10+ sellers</div>
+                        <div class="option-description">Many options to choose from</div>
+                    </div>
+                </div>
+
+                <div class="button-group">
+                    <button class="btn btn-secondary" onclick="prevStep()">← Previous</button>
+                    <button class="btn btn-primary" onclick="processSellerCount()">Next →</button>
+                </div>
+            </div>
+
+            <!-- Step 3a: Monopoly Verification -->
+            <div class="step" id="step3a">
+                <h2 class="step-title">Monopoly Verification</h2>
+                <p class="step-description">Let's confirm this is truly a monopoly</p>
+
+                <div class="option-cards">
+                    <div class="option-card" onclick="selectOption(this, 'substitute', 'no')">
+                        <div class="option-title">No substitutes available</div>
+                        <div class="option-description">This is the only option that works</div>
+                    </div>
+                    <div class="option-card" onclick="selectOption(this, 'substitute', 'yes')">
+                        <div class="option-title">Substitutes exist</div>
+                        <div class="option-description">I could use something else</div>
+                    </div>
+                </div>
+
+                <div id="monopolyTypeSection" style="display:none; margin-top:20px;">
+                    <p><strong>Why does this monopoly exist?</strong></p>
+                    <div class="option-cards">
+                        <div class="option-card" onclick="selectOption(this, 'monopolyType', 'natural')">
+                            <div class="option-title">Natural (Infrastructure)</div>
+                            <div class="option-description">Electric, water, gas utilities</div>
+                        </div>
+                        <div class="option-card" onclick="selectOption(this, 'monopolyType', 'legal')">
+                            <div class="option-title">Legal (Patent/License)</div>
+                            <div class="option-description">Protected by government</div>
+                        </div>
+                        <div class="option-card" onclick="selectOption(this, 'monopolyType', 'market')">
+                            <div class="option-title">Market Power (Dominance)</div>
+                            <div class="option-description">Achieved through business practices</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button-group">
+                    <button class="btn btn-secondary" onclick="prevStep()">← Previous</button>
+                    <button class="btn btn-primary" onclick="completeMonopoly()">Complete Analysis →</button>
+                </div>
+            </div>
+
+            <!-- Step 3b: Oligopoly Verification -->
+            <div class="step" id="step3b">
+                <h2 class="step-title">Oligopoly Verification</h2>
+                <p class="step-description">Are there high barriers to entry?</p>
+
+                <div class="option-cards">
+                    <div class="option-card" onclick="selectOption(this, 'barriers', 'yes')">
+                        <div class="option-title">Yes - High Barriers</div>
+                        <div class="option-description">Hard for new companies to enter (capital, regulation, scale)</div>
+                    </div>
+                    <div class="option-card" onclick="selectOption(this, 'barriers', 'no')">
+                        <div class="option-title">No - Low Barriers</div>
+                        <div class="option-description">New companies could enter relatively easily</div>
+                    </div>
+                </div>
+
+                <div class="button-group">
+                    <button class="btn btn-secondary" onclick="prevStep()">← Previous</button>
+                    <button class="btn btn-primary" onclick="completeOligopoly()">Complete Analysis →</button>
+                </div>
+            </div>
+
+            <!-- Step 3c: Competition Verification -->
+            <div class="step" id="step3c">
+                <h2 class="step-title">Competition Type</h2>
+                <p class="step-description">Are products identical or different?</p>
+
+                <div class="option-cards">
+                    <div class="option-card" onclick="selectOption(this, 'products', 'identical')">
+                        <div class="option-title">Identical Products</div>
+                        <div class="option-description">All sellers offer the exact same thing</div>
+                    </div>
+                    <div class="option-card" onclick="selectOption(this, 'products', 'differentiated')">
+                        <div class="option-title">Differentiated Products</div>
+                        <div class="option-description">Each seller offers something slightly different</div>
+                    </div>
+                </div>
+
+                <div class="button-group">
+                    <button class="btn btn-secondary" onclick="prevStep()">← Previous</button>
+                    <button class="btn btn-primary" onclick="completeCompetition()">Complete Analysis →</button>
+                </div>
+            </div>
+
+            <!-- Results -->
+            <div class="step" id="results">
+                <h2 class="step-title">📊 Market Analysis Results</h2>
+
+                <div class="result-box">
+                    <h2 id="structureName">Market Structure</h2>
+                    <p id="structureConfidence"></p>
+                </div>
+
+                <div class="characteristics">
+                    <h3>Market Characteristics</h3>
+                    <div id="characteristicsList"></div>
+                </div>
+
+                <div class="strategy-box">
+                    <h3>🎯 Recommended Consumer Strategy</h3>
+                    <div id="strategyList"></div>
+                </div>
+
+                <div class="note">
+                    <h4>Similar Markets:</h4>
+                    <div id="examplesList"></div>
+                </div>
+
+                <div class="button-group">
+                    <button class="btn btn-secondary" onclick="reset()">Analyze Another Market</button>
+                    <button class="btn btn-primary" onclick="window.print()">Print / Save PDF 🖨️</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentStep = 1;
+        let analysisData = {};
+
+        function updateProgress() {
+            const steps = {1: 33, 2: 66, '3a': 100, '3b': 100, '3c': 100, 'results': 100};
+            const step = currentStep === 3 ? (document.getElementById('step3a').classList.contains('active') ? '3a' :
+                document.getElementById('step3b').classList.contains('active') ? '3b' : '3c') : currentStep;
+            document.getElementById('progressBar').style.width = steps[step] + '%';
+        }
+
+        function selectOption(card, key, value) {
+            card.parentElement.querySelectorAll('.option-card').forEach(c => c.classList.remove('selected'));
+            card.classList.add('selected');
+            analysisData[key] = value;
+
+            if (key === 'substitute' && value === 'no') {
+                document.getElementById('monopolyTypeSection').style.display = 'block';
+            }
+        }
+
+        function nextStep() {
+            if (currentStep === 1 && !document.getElementById('productInput').value) {
+                alert('Please enter a product or service');
+                return;
+            }
+            analysisData.product = document.getElementById('productInput').value;
+
+            document.getElementById('step' + currentStep).classList.remove('active');
+            currentStep++;
+            document.getElementById('step' + currentStep).classList.add('active');
+            updateProgress();
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+
+        function prevStep() {
+            document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
+            currentStep--;
+            document.getElementById('step' + currentStep).classList.add('active');
+            updateProgress();
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+
+        function processSellerCount() {
+            if (!analysisData.sellers) {
+                alert('Please select number of sellers');
+                return;
+            }
+
+            document.getElementById('step2').classList.remove('active');
+
+            if (analysisData.sellers === '1') {
+                document.getElementById('step3a').classList.add('active');
+            } else if (analysisData.sellers === '2-10') {
+                document.getElementById('step3b').classList.add('active');
+            } else {
+                document.getElementById('step3c').classList.add('active');
+            }
+
+            currentStep = 3;
+            updateProgress();
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+
+        function completeMonopoly() {
+            if (!analysisData.substitute) {
+                alert('Please answer the question');
+                return;
+            }
+
+            if (analysisData.substitute === 'yes') {
+                alert('This may not be a monopoly. Consider expanding your market definition to include substitutes.');
+                return;
+            }
+
+            showResults('Monopoly', analysisData.monopolyType || 'Not specified');
+        }
+
+        function completeOligopoly() {
+            if (!analysisData.barriers) {
+                alert('Please answer the question');
+                return;
+            }
+
+            if (analysisData.barriers === 'yes') {
+                showResults('Oligopoly', 'high');
+            } else {
+                showResults('Monopolistic Competition', 'medium');
+            }
+        }
+
+        function completeCompetition() {
+            if (!analysisData.products) {
+                alert('Please answer the question');
+                return;
+            }
+
+            if (analysisData.products === 'identical') {
+                showResults('Perfect Competition', 'high');
+            } else {
+                showResults('Monopolistic Competition', 'high');
+            }
+        }
+
+        function showResults(structure, confidence) {
+            analysisData.structure = structure;
+            analysisData.confidence = confidence;
+
+            document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
+            document.getElementById('results').classList.add('active');
+
+            document.getElementById('structureName').textContent = structure;
+            document.getElementById('structureConfidence').textContent =
+                `Analyzing: ${analysisData.product} | Confidence: ${confidence}`;
+
+            const characteristics = getCharacteristics(structure);
+            const strategies = getStrategies(structure);
+            const examples = getExamples(structure);
+
+            document.getElementById('characteristicsList').innerHTML = characteristics.map(c =>
+                `<div class="characteristic-item"><strong>${c.label}:</strong> ${c.value}</div>`
+            ).join('');
+
+            document.getElementById('strategyList').innerHTML = '<ul>' + strategies.map(s =>
+                `<li>${s}</li>`
+            ).join('') + '</ul>';
+
+            document.getElementById('examplesList').innerHTML = '<p>' + examples.join(', ') + '</p>';
+
+            updateProgress();
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+
+        function getCharacteristics(structure) {
+            const chars = {
+                'Monopoly': [
+                    {label: 'Number of Sellers', value: '1 (single seller)'},
+                    {label: 'Price Control', value: 'Complete - seller sets price'},
+                    {label: 'Consumer Power', value: 'Very low'},
+                    {label: 'Product Differentiation', value: 'N/A - no competition'}
+                ],
+                'Oligopoly': [
+                    {label: 'Number of Sellers', value: 'Few (2-10 major players)'},
+                    {label: 'Price Control', value: 'Significant - prices often similar'},
+                    {label: 'Consumer Power', value: 'Limited'},
+                    {label: 'Barriers to Entry', value: 'High'}
+                ],
+                'Monopolistic Competition': [
+                    {label: 'Number of Sellers', value: 'Many'},
+                    {label: 'Price Control', value: 'Some - through differentiation'},
+                    {label: 'Consumer Power', value: 'Moderate'},
+                    {label: 'Product Differentiation', value: 'Yes - products differ by brand/features'}
+                ],
+                'Perfect Competition': [
+                    {label: 'Number of Sellers', value: 'Very many'},
+                    {label: 'Price Control', value: 'None - market sets price'},
+                    {label: 'Consumer Power', value: 'High'},
+                    {label: 'Product Differentiation', value: 'None - identical products'}
+                ]
+            };
+            return chars[structure] || [];
+        }
+
+        function getStrategies(structure) {
+            const strats = {
+                'Monopoly': [
+                    'Minimize consumption when possible',
+                    'Look for indirect substitutes',
+                    'Take advantage of time-of-use pricing if available',
+                    'Consider regulation advocacy for price controls'
+                ],
+                'Oligopoly': [
+                    'Compare prices across all major players',
+                    'Negotiate - threaten to switch to competitor',
+                    'Look for promotions and special offers',
+                    'Consider timing purchases around sales cycles'
+                ],
+                'Monopolistic Competition': [
+                    'Evaluate if brand differentiation is worth the price premium',
+                    'Shop around - many options available',
+                    'Look for generic or lesser-known brands',
+                    'Negotiate on service or features'
+                ],
+                'Perfect Competition': [
+                    'Buy the cheapest option - products are identical',
+                    'No need to negotiate - prices are market-determined',
+                    'Focus on convenience and service rather than price',
+                    'Easy to switch sellers without consequences'
+                ]
+            };
+            return strats[structure] || [];
+        }
+
+        function getExamples(structure) {
+            const examples = {
+                'Monopoly': ['Local electric utility', 'Water company', 'Patented drugs'],
+                'Oligopoly': ['Airlines', 'Cell phone carriers', 'Automobile manufacturers', 'Streaming services'],
+                'Monopolistic Competition': ['Restaurants', 'Clothing stores', 'Hair salons', 'Coffee shops'],
+                'Perfect Competition': ['Agricultural commodities', 'Stock market', 'Currency exchange']
+            };
+            return examples[structure] || [];
+        }
+
+        function reset() {
+            currentStep = 1;
+            analysisData = {};
+            document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
+            document.getElementById('step1').classList.add('active');
+            document.getElementById('productInput').value = '';
+            document.querySelectorAll('.option-card').forEach(c => c.classList.remove('selected'));
+            updateProgress();
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+
+        updateProgress();
+    </script>
+</body>
+</html>

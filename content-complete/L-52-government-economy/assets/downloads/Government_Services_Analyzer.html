@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Services Cost-Benefit Analyzer | PFL Academy</title>
+    <!--
+    PURPOSE: Evaluate government services and their impact on personal finance
+    USE: Chapter interactive activity (15-20 minutes)
+    -->
+    <style>
+        :root{--primary:#6366f1;--secondary:#8b5cf6;--success:#10b981;--text:#1f2937}*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Helvetica Neue',Arial,sans-serif;font-size:16px;line-height:1.6;color:var(--text);background-color:#f9fafb;padding:20px}.container{max-width:1000px;margin:0 auto;background-color:white;border-radius:12px;box-shadow:0 4px 6px rgba(0,0,0,0.1);overflow:hidden}header{background:linear-gradient(135deg,var(--primary),var(--secondary));color:white;padding:30px;text-align:center}h1{font-size:2rem;font-weight:700;margin-bottom:10px}.subtitle{font-size:1.1rem;opacity:0.95}.content{padding:30px}.section{margin-bottom:30px}h2{font-size:1.5rem;color:var(--primary);margin-bottom:15px}.service-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-bottom:30px}.service-card{background-color:#f9fafb;padding:20px;border-radius:8px;border:2px solid transparent;cursor:pointer;transition:all 0.3s}.service-card:hover{border-color:var(--primary)}.service-card.selected{border-color:var(--primary);background-color:#eef2ff}.service-title{font-size:1.2rem;font-weight:600;margin-bottom:10px;color:var(--text)}.service-cost{font-weight:700;color:var(--primary);margin-bottom:8px}.service-benefit{color:#6b7280;font-size:0.95rem}.analysis-box{background-color:#f0fdf4;border-left:4px solid var(--success);padding:20px;border-radius:8px;margin-top:20px;display:none}.analysis-box.show{display:block}.analysis-title{font-size:1.3rem;font-weight:600;color:var(--success);margin-bottom:15px}.button{background:linear-gradient(135deg,var(--primary),var(--secondary));color:white;padding:12px 30px;border:none;border-radius:6px;font-size:1rem;font-weight:600;cursor:pointer;transition:transform 0.2s;width:100%;margin-top:20px}.button:hover{transform:translateY(-2px)}@media print{body{padding:0;background-color:white}.container{box-shadow:none}.button{display:none}}@media(max-width:768px){.service-grid{grid-template-columns:1fr}h1{font-size:1.5rem}}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Government Services Cost-Benefit Analyzer</h1>
+            <p class="subtitle">Evaluate government services and their impact on your finances</p>
+        </header>
+
+        <div class="content">
+            <div class="section">
+                <h2>Select Services to Analyze</h2>
+                <p style="margin-bottom:20px;color:#6b7280">Click on services you or your family use regularly to see their costs and benefits:</p>
+
+                <div class="service-grid">
+                    <div class="service-card" data-service="education" onclick="toggleService(this)">
+                        <div class="service-title">🎓 Public Education</div>
+                        <div class="service-cost">Annual Cost: ~$14,000/student</div>
+                        <div class="service-benefit">Benefit: Free K-12 education, reduces family costs by thousands annually</div>
+                    </div>
+
+                    <div class="service-card" data-service="roads" onclick="toggleService(this)">
+                        <div class="service-title">🛣️ Roads & Infrastructure</div>
+                        <div class="service-cost">Annual Cost: ~$400/person</div>
+                        <div class="service-benefit">Benefit: Free roads, maintained bridges, traffic signals - enables commerce and commuting</div>
+                    </div>
+
+                    <div class="service-card" data-service="police" onclick="toggleService(this)">
+                        <div class="service-title">👮 Police & Fire Protection</div>
+                        <div class="service-cost">Annual Cost: ~$600/person</div>
+                        <div class="service-benefit">Benefit: 24/7 emergency response, crime prevention, property protection</div>
+                    </div>
+
+                    <div class="service-card" data-service="parks" onclick="toggleService(this)">
+                        <div class="service-title">🌳 Parks & Recreation</div>
+                        <div class="service-cost">Annual Cost: ~$100/person</div>
+                        <div class="service-benefit">Benefit: Free public parks, playgrounds, hiking trails, community centers</div>
+                    </div>
+
+                    <div class="service-card" data-service="library" onclick="toggleService(this)">
+                        <div class="service-title">📚 Public Libraries</div>
+                        <div class="service-cost">Annual Cost: ~$50/person</div>
+                        <div class="service-benefit">Benefit: Free books, internet access, programs - saves hundreds in book costs</div>
+                    </div>
+
+                    <div class="service-card" data-service="water" onclick="toggleService(this)">
+                        <div class="service-title">💧 Water & Sewer</div>
+                        <div class="service-cost">Annual Cost: ~$500/household</div>
+                        <div class="service-benefit">Benefit: Clean drinking water, wastewater treatment, public health protection</div>
+                    </div>
+
+                    <div class="service-card" data-service="social" onclick="toggleService(this)">
+                        <div class="service-title">🏥 Social Security</div>
+                        <div class="service-cost">Annual Cost: 6.2% of income (matched by employer)</div>
+                        <div class="service-benefit">Benefit: Retirement income, disability insurance, survivor benefits</div>
+                    </div>
+
+                    <div class="service-card" data-service="medicare" onclick="toggleService(this)">
+                        <div class="service-title">⚕️ Medicare</div>
+                        <div class="service-cost">Annual Cost: 1.45% of income (matched by employer)</div>
+                        <div class="service-benefit">Benefit: Healthcare coverage after age 65, prevents medical bankruptcy in retirement</div>
+                    </div>
+                </div>
+
+                <button class="button" onclick="analyzeServices()">Analyze Selected Services</button>
+            </div>
+
+            <div class="analysis-box" id="analysisBox">
+                <div class="analysis-title">Your Personal Cost-Benefit Analysis</div>
+                <div id="analysisContent"></div>
+            </div>
+
+            <div class="section" style="margin-top:30px">
+                <h2>Understanding Your Tax Investment</h2>
+                <div style="background-color:#fef3c7;padding:20px;border-radius:8px;border-left:4px solid#f59e0b">
+                    <p style="margin-bottom:15px"><strong>Where Your Tax Dollars Go (Federal Budget):</strong></p>
+                    <ul style="margin-left:20px">
+                        <li>Social Security & Medicare: 38%</li>
+                        <li>Defense: 15%</li>
+                        <li>Safety Net Programs: 9%</li>
+                        <li>Interest on Debt: 8%</li>
+                        <li>Education & Transportation: 7%</li>
+                        <li>Veterans Benefits: 4%</li>
+                        <li>Other: 19%</li>
+                    </ul>
+                </div>
+            </div>
+
+            <button class="button" onclick="window.print()">Print Analysis</button>
+        </div>
+    </div>
+
+    <script>
+        let selectedServices=[];function toggleService(card){card.classList.toggle('selected');const service=card.dataset.service;const index=selectedServices.indexOf(service);if(index>-1){selectedServices.splice(index,1)}else{selectedServices.push(service)}}function analyzeServices(){if(selectedServices.length===0){alert('Please select at least one service to analyze');return}const services={education:{cost:14000,benefit:'Saves ~$12,000/year in private school tuition. Provides foundation for future earnings.'},roads:{cost:400,benefit:'Alternative would be tolls on all roads. Enables job commuting and commerce.'},police:{cost:600,benefit:'Private security would cost $2,000+/year. Protects property and personal safety.'},parks:{cost:100,benefit:'Gym memberships and entertainment would cost $500+/year.'},library:{cost:50,benefit:'Buying books and paying for internet could cost $300+/year.'},water:{cost:500,benefit:'Private well and septic would cost $5,000-10,000 to install plus maintenance.'},social:{cost:'6.2%',benefit:'Provides ~$1,500/month in retirement. Replaces 40% of pre-retirement income.'},medicare:{cost:'1.45%',benefit:'Health insurance at age 65+ would cost $800+/month without Medicare.'}};let totalCost=0;let analysisHTML='<div style="background-color:white;padding:15px;border-radius:6px;margin-bottom:15px">';analysisHTML+='<strong>Services You Selected:</strong><ul style="margin-left:20px;margin-top:10px">';selectedServices.forEach(serviceKey=>{const service=services[serviceKey];const cost=typeof service.cost==='number'?service.cost:0;totalCost+=cost;analysisHTML+=`<li style="margin-bottom:10px"><strong>${serviceKey.charAt(0).toUpperCase()+serviceKey.slice(1)}:</strong><br>Cost: ${typeof service.cost==='number'?'$'+service.cost.toLocaleString():service.cost}<br>Benefit: ${service.benefit}</li>`});analysisHTML+='</ul></div>';analysisHTML+=`<div style="background-color:#e0f2fe;padding:15px;border-radius:6px;margin-bottom:15px"><strong>Total Annual Cost:</strong> $${totalCost.toLocaleString()}<br><strong>Key Insight:</strong> While taxes fund these services, the private-market alternatives would typically cost 2-5x more. These services provide economies of scale and universal access.</div>`;analysisHTML+='<div style="background-color:#fef3c7;padding:15px;border-radius:6px"><strong>💡 Personal Finance Impact:</strong><br>Government services reduce your out-of-pocket costs for essential needs. Understanding what you receive helps you evaluate whether taxes provide good value. Most services would cost significantly more if purchased privately.</div>';document.getElementById('analysisContent').innerHTML=analysisHTML;document.getElementById('analysisBox').classList.add('show');document.getElementById('analysisBox').scrollIntoView({behavior:'smooth',block:'nearest'})}
+    </script>
+</body>
+</html>

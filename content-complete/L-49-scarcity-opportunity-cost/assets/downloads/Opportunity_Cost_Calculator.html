@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opportunity Cost Calculator</title>
+    <!--
+    PURPOSE: Calculate and compare opportunity costs for major financial decisions
+    USE: Chapter interactive activity (15-20 minutes)
+    -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #6366f1;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #6b7280;
+        }
+
+        .formula-box {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            padding: 30px;
+            border-radius: 16px;
+            text-align: center;
+            margin-bottom: 40px;
+            border: 3px solid #3b82f6;
+        }
+
+        .formula {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #1e40af;
+            margin-bottom: 15px;
+        }
+
+        .formula-sub {
+            font-size: 1.1rem;
+            color: #1e3a8a;
+        }
+
+        .scenario-section {
+            background: #f9fafb;
+            padding: 30px;
+            border-radius: 16px;
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: #1f2937;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .option-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            border: 3px solid #e5e7eb;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .option-card:hover {
+            border-color: #6366f1;
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+        }
+
+        .option-card.selected {
+            border-color: #6366f1;
+            background: #f0f9ff;
+        }
+
+        .option-name {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #1f2937;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #374151;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #6366f1;
+        }
+
+        .calc-btn {
+            width: 100%;
+            padding: 15px;
+            background: #6366f1;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .calc-btn:hover {
+            background: #4f46e5;
+        }
+
+        .results {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            margin-top: 30px;
+            display: none;
+        }
+
+        .results.active {
+            display: block;
+        }
+
+        .result-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 12px;
+        }
+
+        .explicit-cost-row {
+            background: #f3e8ff;
+            border-left: 5px solid #9333ea;
+        }
+
+        .opportunity-cost-row {
+            background: #fed7aa;
+            border-left: 5px solid #f97316;
+        }
+
+        .total-cost-row {
+            background: #d1fae5;
+            border: 3px solid #10b981;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .result-label {
+            font-weight: 600;
+            color: #374151;
+        }
+
+        .result-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #1f2937;
+        }
+
+        .insight-box {
+            background: #fef3c7;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 5px solid #f59e0b;
+            margin-top: 20px;
+        }
+
+        .insight-box h3 {
+            color: #92400e;
+            margin-bottom: 10px;
+        }
+
+        .insight-box p {
+            color: #78350f;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #e5e7eb;
+            color: #6b7280;
+        }
+
+        @media (max-width: 768px) {
+            .options-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .result-row {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💰 Opportunity Cost Calculator</h1>
+            <p class="subtitle">Calculate the True Cost of Your Decisions</p>
+        </header>
+
+        <div class="formula-box">
+            <div class="formula">Opportunity Cost = Value of Next Best Alternative</div>
+            <div class="formula-sub">Total Economic Cost = Explicit Costs + Opportunity Costs</div>
+        </div>
+
+        <div class="scenario-section">
+            <div class="section-title">Scenario 1: Friday Night Decision</div>
+
+            <div class="options-grid">
+                <div class="option-card" id="movie-card">
+                    <div class="option-name">🎬 Go to Movie</div>
+                    <div class="input-group">
+                        <label>Movie Cost ($)</label>
+                        <input type="number" id="movieCost" value="15" min="0">
+                    </div>
+                    <div class="input-group">
+                        <label>Snacks/Food ($)</label>
+                        <input type="number" id="movieFood" value="15" min="0">
+                    </div>
+                    <div class="input-group">
+                        <label>Forgone Hourly Wage ($)</label>
+                        <input type="number" id="movieWage" value="15" min="0">
+                    </div>
+                    <div class="input-group">
+                        <label>Hours Not Working</label>
+                        <input type="number" id="movieHours" value="4" min="0">
+                    </div>
+                </div>
+
+                <div class="option-card" id="work-card">
+                    <div class="option-name">💼 Work Part-Time</div>
+                    <div class="input-group">
+                        <label>Hourly Wage ($)</label>
+                        <input type="number" id="workWage" value="15" min="0">
+                    </div>
+                    <div class="input-group">
+                        <label>Hours Working</label>
+                        <input type="number" id="workHours" value="4" min="0">
+                    </div>
+                    <div class="input-group">
+                        <label>Forgone Fun Value ($)</label>
+                        <input type="number" id="workFun" value="30" min="0">
+                    </div>
+                </div>
+
+                <div class="option-card" id="study-card">
+                    <div class="option-name">📚 Study for Exam</div>
+                    <div class="input-group">
+                        <label>Out-of-Pocket Cost ($)</label>
+                        <input type="number" id="studyCost" value="0" min="0">
+                    </div>
+                    <div class="input-group">
+                        <label>Forgone Wage/Hour ($)</label>
+                        <input type="number" id="studyWage" value="15" min="0">
+                    </div>
+                    <div class="input-group">
+                        <label>Hours Studying</label>
+                        <input type="number" id="studyHours" value="4" min="0">
+                    </div>
+                    <div class="input-group">
+                        <label>Grade Improvement Value ($)</label>
+                        <input type="number" id="studyValue" value="100" min="0">
+                        <small style="color: #6b7280;">Future scholarship/opportunity value</small>
+                    </div>
+                </div>
+            </div>
+
+            <button class="calc-btn" onclick="calculate()">Calculate Opportunity Costs</button>
+
+            <div class="results" id="results">
+                <div class="section-title">Cost Breakdown</div>
+
+                <div class="result-row explicit-cost-row">
+                    <div class="result-label">Explicit Costs (Money Spent)</div>
+                    <div class="result-value" id="explicitCost">$0</div>
+                </div>
+
+                <div class="result-row opportunity-cost-row">
+                    <div class="result-label">Opportunity Costs (Alternatives Forgone)</div>
+                    <div class="result-value" id="opportunityCost">$0</div>
+                </div>
+
+                <div class="result-row total-cost-row">
+                    <div class="result-label">Total Economic Cost</div>
+                    <div class="result-value" id="totalCost">$0</div>
+                </div>
+
+                <div class="insight-box" id="insightBox">
+                    <h3>💡 Key Insight</h3>
+                    <p id="insightText">Make your choice and see the analysis here.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="scenario-section">
+            <div class="section-title">Scenario 2: College Decision</div>
+
+            <div class="options-grid">
+                <div class="option-card">
+                    <div class="option-name">🎓 Attend College</div>
+                    <div class="input-group">
+                        <label>Annual Tuition ($)</label>
+                        <input type="number" id="tuition" value="25000" min="0">
+                    </div>
+                    <div class="input-group">
+                        <label>Books & Supplies ($)</label>
+                        <input type="number" id="books" value="1500" min="0">
+                    </div>
+                    <div class="input-group">
+                        <label>Room & Board ($)</label>
+                        <input type="number" id="room" value="12000" min="0">
+                    </div>
+                    <div class="input-group">
+                        <label>Forgone Salary (annual)</label>
+                        <input type="number" id="forgoneSalary" value="35000" min="0">
+                        <small style="color: #6b7280;">What you could earn working instead</small>
+                    </div>
+                    <div class="input-group">
+                        <label>Years in College</label>
+                        <input type="number" id="years" value="4" min="1" max="6">
+                    </div>
+                </div>
+            </div>
+
+            <button class="calc-btn" onclick="calculateCollege()">Calculate True Cost of College</button>
+
+            <div class="results" id="collegeResults">
+                <div class="section-title">4-Year Cost Analysis</div>
+
+                <div class="result-row explicit-cost-row">
+                    <div class="result-label">Explicit Costs (Tuition + Expenses)</div>
+                    <div class="result-value" id="collegeExplicit">$0</div>
+                </div>
+
+                <div class="result-row opportunity-cost-row">
+                    <div class="result-label">Opportunity Cost (Forgone Earnings)</div>
+                    <div class="result-value" id="collegeOpportunity">$0</div>
+                </div>
+
+                <div class="result-row total-cost-row">
+                    <div class="result-label">Total Economic Cost</div>
+                    <div class="result-value" id="collegeTotal">$0</div>
+                </div>
+
+                <div class="insight-box">
+                    <h3>💡 Important Note</h3>
+                    <p>The true cost of college is often DOUBLE what families expect! Most people only consider tuition and forget about forgone earnings. This is why analyzing opportunity costs is crucial for major life decisions.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p><strong>PFL Academy</strong> | Economics Education</p>
+            <p style="font-size: 0.9rem; margin-top: 10px;">Understanding opportunity costs helps you make better decisions by considering what you're giving up, not just what you're spending.</p>
+        </footer>
+    </div>
+
+    <script>
+        function calculate() {
+            // Get selected option (for now, calculate for movie)
+            const movieCost = parseFloat(document.getElementById('movieCost').value);
+            const movieFood = parseFloat(document.getElementById('movieFood').value);
+            const movieWage = parseFloat(document.getElementById('movieWage').value);
+            const movieHours = parseFloat(document.getElementById('movieHours').value);
+
+            const explicit = movieCost + movieFood;
+            const opportunity = movieWage * movieHours;
+            const total = explicit + opportunity;
+
+            document.getElementById('explicitCost').textContent = '$' + explicit.toFixed(2);
+            document.getElementById('opportunityCost').textContent = '$' + opportunity.toFixed(2);
+            document.getElementById('totalCost').textContent = '$' + total.toFixed(2);
+
+            document.getElementById('insightText').textContent =
+                `Going to the movie costs you $${explicit.toFixed(2)} in money spent, PLUS $${opportunity.toFixed(2)} in forgone earnings. The TRUE cost is $${total.toFixed(2)} - ${(opportunity/total*100).toFixed(0)}% of which is the opportunity cost!`;
+
+            document.getElementById('results').classList.add('active');
+        }
+
+        function calculateCollege() {
+            const tuition = parseFloat(document.getElementById('tuition').value);
+            const books = parseFloat(document.getElementById('books').value);
+            const room = parseFloat(document.getElementById('room').value);
+            const forgone = parseFloat(document.getElementById('forgoneSalary').value);
+            const years = parseInt(document.getElementById('years').value);
+
+            const explicit = (tuition + books + room) * years;
+            const opportunity = forgone * years;
+            const total = explicit + opportunity;
+
+            document.getElementById('collegeExplicit').textContent = '$' + explicit.toLocaleString('en-US', {maximumFractionDigits: 0});
+            document.getElementById('collegeOpportunity').textContent = '$' + opportunity.toLocaleString('en-US', {maximumFractionDigits: 0});
+            document.getElementById('collegeTotal').textContent = '$' + total.toLocaleString('en-US', {maximumFractionDigits: 0});
+
+            document.getElementById('collegeResults').classList.add('active');
+        }
+    </script>
+</body>
+</html>

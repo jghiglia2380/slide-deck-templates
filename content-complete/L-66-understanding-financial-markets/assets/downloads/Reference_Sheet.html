@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Markets Quick Reference | PFL Academy</title>
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #8b5cf6;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --background: #ffffff;
+            --surface: #f9fafb;
+            --border: #e5e7eb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 11px;
+            line-height: 1.4;
+            color: var(--text);
+            background-color: var(--surface);
+            padding: 15px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--background);
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 3px;
+        }
+
+        .subtitle {
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 20px;
+            columns: 2;
+            column-gap: 25px;
+        }
+
+        .market-section {
+            break-inside: avoid;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            color: white;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 0.9rem;
+            color: var(--primary);
+            margin: 8px 0 5px;
+            font-weight: 700;
+        }
+
+        .info-row {
+            display: flex;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+        }
+
+        .info-label {
+            font-weight: 700;
+            color: var(--text);
+            min-width: 100px;
+        }
+
+        .info-value {
+            color: var(--text-light);
+        }
+
+        ul {
+            margin: 5px 0 10px 15px;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 3px;
+            font-size: 0.9rem;
+        }
+
+        .key-term {
+            background: var(--surface);
+            border-left: 3px solid var(--primary);
+            padding: 8px;
+            margin: 8px 0;
+            break-inside: avoid;
+        }
+
+        .term-name {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 0.9rem;
+        }
+
+        .term-definition {
+            color: var(--text-light);
+            font-size: 0.85rem;
+            margin-top: 3px;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            font-size: 0.85rem;
+            break-inside: avoid;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            border: 1px solid var(--border);
+            padding: 5px;
+            text-align: left;
+        }
+
+        .comparison-table th {
+            background: var(--primary);
+            color: white;
+            font-weight: 600;
+            font-size: 0.8rem;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
+            border: 2px solid var(--primary);
+            padding: 10px;
+            border-radius: 6px;
+            margin: 10px 0;
+            break-inside: avoid;
+        }
+
+        .highlight-title {
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 5px;
+            font-size: 0.95rem;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                border: 1px solid #000;
+            }
+
+            @page {
+                margin: 0.5in;
+                size: letter;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                columns: 1;
+                padding: 15px;
+            }
+
+            body {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Financial Markets Quick Reference</h1>
+            <div class="subtitle">Essential concepts for understanding how financial markets work</div>
+        </header>
+
+        <div class="content">
+            <!-- Stock Market -->
+            <div class="market-section">
+                <h2>📈 Stock Market (Equity Market)</h2>
+
+                <div class="info-row">
+                    <span class="info-label">What It Is:</span>
+                    <span class="info-value">Market for buying/selling company ownership shares</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Type:</span>
+                    <span class="info-value">Equity (Ownership)</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Major Exchanges:</span>
+                    <span class="info-value">NYSE, NASDAQ</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Trading Hours:</span>
+                    <span class="info-value">9:30 AM - 4:00 PM ET</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Risk Level:</span>
+                    <span class="info-value">Medium to High</span>
+                </div>
+
+                <h3>Key Participants:</h3>
+                <ul>
+                    <li><strong>Individual Investors:</strong> Buy/sell for personal wealth</li>
+                    <li><strong>Institutional Investors:</strong> Mutual funds, pension funds</li>
+                    <li><strong>Market Makers:</strong> Provide liquidity</li>
+                    <li><strong>Broker-Dealers:</strong> Facilitate trades</li>
+                </ul>
+
+                <h3>Key Returns:</h3>
+                <ul>
+                    <li><strong>Capital Gains:</strong> Profit from selling at higher price</li>
+                    <li><strong>Dividends:</strong> Company profit distributions</li>
+                </ul>
+            </div>
+
+            <!-- Bond Market -->
+            <div class="market-section">
+                <h2>📊 Bond Market (Fixed Income)</h2>
+
+                <div class="info-row">
+                    <span class="info-label">What It Is:</span>
+                    <span class="info-value">Market for buying/selling debt securities</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Type:</span>
+                    <span class="info-value">Debt (Fixed Income)</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Trading:</span>
+                    <span class="info-value">Over-the-Counter (OTC)</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Risk Level:</span>
+                    <span class="info-value">Low to Medium</span>
+                </div>
+
+                <h3>Key Participants:</h3>
+                <ul>
+                    <li><strong>Government Issuers:</strong> Treasury, municipalities</li>
+                    <li><strong>Corporate Issuers:</strong> Companies raising capital</li>
+                    <li><strong>Bond Investors:</strong> Seeking stable income</li>
+                    <li><strong>Bond Dealers:</strong> OTC market facilitators</li>
+                </ul>
+
+                <h3>Bond Types:</h3>
+                <ul>
+                    <li><strong>Treasury Bonds:</strong> U.S. government (lowest risk)</li>
+                    <li><strong>Corporate Bonds:</strong> Company debt (higher yield)</li>
+                    <li><strong>Municipal Bonds:</strong> State/local government</li>
+                </ul>
+
+                <h3>Key Terms:</h3>
+                <ul>
+                    <li><strong>Face Value:</strong> Amount repaid at maturity</li>
+                    <li><strong>Coupon Rate:</strong> Interest rate paid</li>
+                    <li><strong>Maturity Date:</strong> When bond comes due</li>
+                </ul>
+            </div>
+
+            <!-- Commodity Market -->
+            <div class="market-section">
+                <h2>🌾 Commodity Market</h2>
+
+                <div class="info-row">
+                    <span class="info-label">What It Is:</span>
+                    <span class="info-value">Market for physical goods & raw materials</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Type:</span>
+                    <span class="info-value">Physical & Derivative</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Major Exchanges:</span>
+                    <span class="info-value">CME, ICE, NYMEX</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Risk Level:</span>
+                    <span class="info-value">High (Volatile)</span>
+                </div>
+
+                <h3>Key Participants:</h3>
+                <ul>
+                    <li><strong>Producers:</strong> Farmers, miners, oil companies</li>
+                    <li><strong>Consumers:</strong> Manufacturers, processors</li>
+                    <li><strong>Speculators:</strong> Profit from price movements</li>
+                    <li><strong>Hedgers:</strong> Lock in prices for risk management</li>
+                </ul>
+
+                <h3>Commodity Categories:</h3>
+                <ul>
+                    <li><strong>Energy:</strong> Crude oil, natural gas, gasoline</li>
+                    <li><strong>Metals:</strong> Gold, silver, copper, platinum</li>
+                    <li><strong>Agriculture:</strong> Wheat, corn, soybeans, coffee</li>
+                    <li><strong>Livestock:</strong> Cattle, hogs, pork bellies</li>
+                </ul>
+            </div>
+
+            <!-- Forex Market -->
+            <div class="market-section">
+                <h2>💱 Forex Market (Foreign Exchange)</h2>
+
+                <div class="info-row">
+                    <span class="info-label">What It Is:</span>
+                    <span class="info-value">Market for trading currencies</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Type:</span>
+                    <span class="info-value">Currency Exchange</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Trading Hours:</span>
+                    <span class="info-value">24 hours, 5 days/week</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Daily Volume:</span>
+                    <span class="info-value">$6.6 trillion (world's largest)</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Risk Level:</span>
+                    <span class="info-value">High (Leverage Available)</span>
+                </div>
+
+                <h3>Key Participants:</h3>
+                <ul>
+                    <li><strong>Central Banks:</strong> Manage currency & monetary policy</li>
+                    <li><strong>Commercial Banks:</strong> International trade facilitation</li>
+                    <li><strong>Corporations:</strong> Currency conversion for operations</li>
+                    <li><strong>Retail Traders:</strong> Speculate on currency movements</li>
+                </ul>
+
+                <h3>Major Currency Pairs:</h3>
+                <ul>
+                    <li><strong>EUR/USD:</strong> Euro to US Dollar</li>
+                    <li><strong>GBP/USD:</strong> British Pound to US Dollar</li>
+                    <li><strong>USD/JPY:</strong> US Dollar to Japanese Yen</li>
+                    <li><strong>USD/CHF:</strong> US Dollar to Swiss Franc</li>
+                </ul>
+            </div>
+
+            <!-- Key Terms -->
+            <div class="market-section">
+                <h2>🔑 Essential Terms</h2>
+
+                <div class="key-term">
+                    <div class="term-name">Market Capitalization</div>
+                    <div class="term-definition">Total value of company's outstanding shares (Stock Market)</div>
+                </div>
+
+                <div class="key-term">
+                    <div class="term-name">Liquidity</div>
+                    <div class="term-definition">How easily an asset can be bought or sold without affecting price</div>
+                </div>
+
+                <div class="key-term">
+                    <div class="term-name">Volatility</div>
+                    <div class="term-definition">Degree of price fluctuation in a market or security</div>
+                </div>
+
+                <div class="key-term">
+                    <div class="term-name">Yield</div>
+                    <div class="term-definition">Income return on investment (dividends, interest)</div>
+                </div>
+
+                <div class="key-term">
+                    <div class="term-name">Bull Market</div>
+                    <div class="term-definition">Period of rising prices and optimism</div>
+                </div>
+
+                <div class="key-term">
+                    <div class="term-name">Bear Market</div>
+                    <div class="term-definition">Period of falling prices and pessimism</div>
+                </div>
+
+                <div class="key-term">
+                    <div class="term-name">Hedging</div>
+                    <div class="term-definition">Strategy to reduce risk exposure through offsetting positions</div>
+                </div>
+
+                <div class="key-term">
+                    <div class="term-name">Futures Contract</div>
+                    <div class="term-definition">Agreement to buy/sell asset at predetermined future date and price</div>
+                </div>
+            </div>
+
+            <!-- Quick Comparison -->
+            <div class="market-section">
+                <h2>⚖️ Quick Comparison</h2>
+
+                <table class="comparison-table">
+                    <tr>
+                        <th>Market</th>
+                        <th>Asset Type</th>
+                        <th>Goal</th>
+                        <th>Risk</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Stock</strong></td>
+                        <td>Equity</td>
+                        <td>Growth</td>
+                        <td>Med-High</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Bond</strong></td>
+                        <td>Debt</td>
+                        <td>Income</td>
+                        <td>Low-Med</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Commodity</strong></td>
+                        <td>Physical</td>
+                        <td>Hedge/Spec</td>
+                        <td>High</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Forex</strong></td>
+                        <td>Currency</td>
+                        <td>Exchange/Spec</td>
+                        <td>High</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Investment Considerations -->
+            <div class="highlight-box">
+                <div class="highlight-title">💡 Key Investment Considerations</div>
+                <ul style="margin: 5px 0 0 15px;">
+                    <li><strong>Diversification:</strong> Spread investments across multiple markets</li>
+                    <li><strong>Time Horizon:</strong> Match investments to your timeline</li>
+                    <li><strong>Risk Tolerance:</strong> Align with your comfort level</li>
+                    <li><strong>Financial Goals:</strong> Growth vs. income vs. preservation</li>
+                    <li><strong>Fees & Costs:</strong> Transaction costs impact returns</li>
+                    <li><strong>Liquidity Needs:</strong> How quickly you may need access to funds</li>
+                </ul>
+            </div>
+
+            <!-- Market Interconnections -->
+            <div class="highlight-box">
+                <div class="highlight-title">🔗 How Markets Are Connected</div>
+                <ul style="margin: 5px 0 0 15px;">
+                    <li>Stock prices affect corporate bond values</li>
+                    <li>Currency changes impact commodity prices</li>
+                    <li>Interest rates influence all markets</li>
+                    <li>Economic indicators drive market sentiment</li>
+                    <li>Global events create ripple effects across markets</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

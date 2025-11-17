@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Quote Display - Interactive Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+        .stock-quote-container {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            padding: 30px;
+            margin: 20px 0;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .stock-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+        .ticker-info h2 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .company-name {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        .price-value {
+            font-size: 3em;
+            font-weight: bold;
+        }
+        .price-change {
+            font-size: 1.2em;
+            color: #2ecc71;
+        }
+        .quote-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .quote-field {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 8px;
+            padding: 15px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+        }
+        .quote-field:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-3px);
+        }
+        .quote-field.bid { border-left: 4px solid #2ecc71; }
+        .quote-field.ask { border-left: 4px solid #e74c3c; }
+        .quote-field.highlighted { border-left: 4px solid #f39c12; }
+        .field-label {
+            font-size: 0.85em;
+            opacity: 0.8;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .field-value {
+            font-size: 1.5em;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+        .tooltip {
+            position: absolute;
+            background: #2c3e50;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            bottom: 110%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 280px;
+            font-size: 0.9em;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+            z-index: 10;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        .tooltip::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 8px solid transparent;
+            border-top-color: #2c3e50;
+        }
+        .quote-field:hover .tooltip {
+            opacity: 1;
+        }
+        .insights {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+        .insights h3 {
+            color: #3498db;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        .insight-item {
+            background: #ecf0f1;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .insight-item strong {
+            color: #2c3e50;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #ecf0f1;
+            color: #7f8c8d;
+        }
+        @media print {
+            body { background: white; padding: 0; }
+            .stock-quote-container { break-inside: avoid; }
+            .tooltip { display: none; }
+        }
+        @media (max-width: 768px) {
+            .stock-header { flex-direction: column; align-items: flex-start; }
+            .quote-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <h1>📊 Stock Quote Display</h1>
+    <p class="subtitle">Interactive Example - Hover over fields to learn more</p>
+
+    <div class="stock-quote-container">
+        <div class="stock-header">
+            <div class="ticker-info">
+                <h2>AAPL</h2>
+                <p class="company-name">Apple Inc.</p>
+            </div>
+            <div>
+                <div class="price-value">$173.50</div>
+                <div class="price-change">▲ +$2.45 (+1.43%)</div>
+            </div>
+        </div>
+
+        <div class="quote-grid">
+            <div class="quote-field bid">
+                <div class="field-label">Bid</div>
+                <div class="field-value">$173.45</div>
+                <div class="tooltip">
+                    <strong>What you'll receive when selling</strong><br>
+                    This is the highest price a buyer is currently willing to pay. If you sell shares, you'll receive this price (or close to it).
+                </div>
+            </div>
+
+            <div class="quote-field ask">
+                <div class="field-label">Ask</div>
+                <div class="field-value">$173.55</div>
+                <div class="tooltip">
+                    <strong>What you'll pay when buying</strong><br>
+                    This is the lowest price a seller is currently willing to accept. If you buy shares, you'll pay this price (or close to it).
+                </div>
+            </div>
+
+            <div class="quote-field highlighted">
+                <div class="field-label">Spread</div>
+                <div class="field-value">$0.10</div>
+                <div class="tooltip">
+                    <strong>The hidden transaction cost</strong><br>
+                    Spread = Ask - Bid ($173.55 - $173.45 = $0.10). This is the cost of trading, even before commissions.
+                </div>
+            </div>
+
+            <div class="quote-field">
+                <div class="field-label">Volume</div>
+                <div class="field-value">52.0M</div>
+                <div class="tooltip">
+                    <strong>Shares traded today</strong><br>
+                    Higher volume typically means better liquidity and tighter spreads. This stock is very actively traded.
+                </div>
+            </div>
+
+            <div class="quote-field">
+                <div class="field-label">Day Range</div>
+                <div class="field-value">$171.20 - $174.15</div>
+                <div class="tooltip">
+                    <strong>Today's price movement</strong><br>
+                    The lowest and highest prices during today's trading session. Shows intraday volatility.
+                </div>
+            </div>
+
+            <div class="quote-field">
+                <div class="field-label">52-Week Range</div>
+                <div class="field-value">$124.17 - $198.23</div>
+                <div class="tooltip">
+                    <strong>Annual price range</strong><br>
+                    The stock's lowest and highest prices over the past year. Helps assess long-term volatility.
+                </div>
+            </div>
+
+            <div class="quote-field">
+                <div class="field-label">Market Cap</div>
+                <div class="field-value">$2.73T</div>
+                <div class="tooltip">
+                    <strong>Company's total value</strong><br>
+                    Market Capitalization = Share Price × Total Shares. Shows the company's size and stability.
+                </div>
+            </div>
+
+            <div class="quote-field">
+                <div class="field-label">P/E Ratio</div>
+                <div class="field-value">28.45</div>
+                <div class="tooltip">
+                    <strong>Price-to-Earnings ratio</strong><br>
+                    How much investors pay for each dollar of earnings. Helps assess if a stock is expensive or cheap.
+                </div>
+            </div>
+
+            <div class="quote-field">
+                <div class="field-label">Avg Volume</div>
+                <div class="field-value">58.2M</div>
+                <div class="tooltip">
+                    <strong>Average daily trading volume</strong><br>
+                    The typical number of shares traded per day. Today's volume is slightly below average.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="insights">
+        <h3>💡 What This Means For You</h3>
+
+        <div class="insight-item">
+            <strong>Bid $173.45:</strong> If you own AAPL and want to sell, you'll receive approximately $173.45 per share. This is what buyers are willing to pay right now.
+        </div>
+
+        <div class="insight-item">
+            <strong>Ask $173.55:</strong> If you want to buy AAPL, you'll pay approximately $173.55 per share. This is what sellers are asking for.
+        </div>
+
+        <div class="insight-item">
+            <strong>Spread $0.10 (0.058%):</strong> This narrow spread indicates high liquidity. AAPL is heavily traded, so buying and selling is efficient with minimal cost. For 100 shares, the spread costs you $10.
+        </div>
+
+        <div class="insight-item">
+            <strong>High Volume = Good Liquidity:</strong> With 52 million shares traded today, you can easily buy or sell AAPL at current prices. Low-volume stocks have wider spreads and higher costs.
+        </div>
+
+        <div class="insight-item">
+            <strong>Understanding the "Price":</strong> When people say "the stock price," they usually mean the <em>last price</em> ($173.50). But when you actually trade, you'll use the <em>bid</em> (selling) or <em>ask</em> (buying) price.
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>PFL Academy</strong> | Understanding Financial Markets</p>
+        <p>For educational purposes only - Not investment advice</p>
+    </footer>
+</body>
+</html>

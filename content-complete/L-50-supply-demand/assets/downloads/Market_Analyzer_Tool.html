@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Analyzer Tool</title>
+    <!--
+    PURPOSE: Analyze supply and demand factors affecting personal financial decisions
+    USE: Chapter interactive activity (15-20 minutes)
+    -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background-color: white;
+            border-radius: 12px;
+            padding: 0;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            opacity: 0.95;
+        }
+        .progress-bar {
+            background: rgba(255,255,255,0.2);
+            height: 8px;
+            border-radius: 4px;
+            margin-top: 20px;
+            overflow: hidden;
+        }
+        .progress-fill {
+            background: #10b981;
+            height: 100%;
+            width: 14%;
+            transition: width 0.3s;
+        }
+        .content {
+            padding: 40px;
+        }
+        .step {
+            display: none;
+            animation: fadeIn 0.4s ease;
+        }
+        .step.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .step-title {
+            font-size: 1.8rem;
+            color: #6366f1;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .step-description {
+            color: #6b7280;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 25px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: #6366f1;
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        }
+        .form-group textarea {
+            min-height: 80px;
+            resize: vertical;
+        }
+        .analysis-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .analysis-table th, .analysis-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .analysis-table th {
+            background-color: #f9fafb;
+            font-weight: 600;
+        }
+        .analysis-table select, .analysis-table input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #e5e7eb;
+            border-radius: 4px;
+        }
+        .button-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .btn {
+            padding: 14px 28px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            flex: 1;
+        }
+        .btn-primary {
+            background-color: #6366f1;
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #4f46e5;
+            transform: translateY(-2px);
+        }
+        .btn-secondary {
+            background-color: #f3f4f6;
+            color: #374151;
+        }
+        .btn-secondary:hover {
+            background-color: #e5e7eb;
+        }
+        .prediction-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+        .prediction-box h3 {
+            margin-top: 0;
+        }
+        .prediction-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .prediction-item {
+            background-color: rgba(255,255,255,0.15);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .prediction-item .label {
+            font-size: 0.85rem;
+            opacity: 0.9;
+            margin-bottom: 8px;
+        }
+        .prediction-item .value {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        .summary-card {
+            background-color: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+        .summary-card h3 {
+            color: #6366f1;
+            margin-top: 0;
+        }
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        .summary-row:last-child {
+            border-bottom: none;
+        }
+        .action-plan {
+            background-color: #f0fdf4;
+            border-left: 4px solid #10b981;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .action-plan h4 {
+            color: #10b981;
+            margin-top: 0;
+        }
+        .note {
+            background-color: #f8f9fa;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .button-group {
+                display: none;
+            }
+        }
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+            }
+            .header h1 {
+                font-size: 1.8rem;
+            }
+            .button-group {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📊 Market Analyzer Tool</h1>
+            <p>Systematic framework for analyzing any market using supply and demand</p>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressBar"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- Step 1: Select Market -->
+            <div class="step active" id="step1">
+                <h2 class="step-title">Step 1: Select Your Market</h2>
+                <p class="step-description">Choose the market you want to analyze</p>
+
+                <div class="form-group">
+                    <label for="marketSelect">Select Market:</label>
+                    <select id="marketSelect">
+                        <option value="">Choose a market...</option>
+                        <option value="housing">{{STATE_NAME}} Housing Market</option>
+                        <option value="labor">{{STATE_NAME}} Labor Market (Specific Career)</option>
+                        <option value="electronics">Consumer Electronics</option>
+                        <option value="used-car">Used Car Market</option>
+                        <option value="rental">{{STATE_NAME}} Rental Market</option>
+                        <option value="custom">Custom (Enter Your Own)</option>
+                    </select>
+                </div>
+
+                <div class="form-group" id="customMarketGroup" style="display:none;">
+                    <label for="customMarket">Enter Custom Market:</label>
+                    <input type="text" id="customMarket" placeholder="e.g., Smartphone Market">
+                </div>
+
+                <div class="note">
+                    <strong>💡 Note:</strong> For {{STATE_NAME}}-specific markets (housing, labor, rental), this tool will consider factors unique to {{STATE_NAME}} such as local economic conditions, population trends, and state policies.
+                </div>
+
+                <div class="button-group">
+                    <button class="btn btn-primary" onclick="nextStep()">Next: Current Equilibrium →</button>
+                </div>
+            </div>
+
+            <!-- Step 2: Current Equilibrium -->
+            <div class="step" id="step2">
+                <h2 class="step-title">Step 2: Current Market Equilibrium</h2>
+                <p class="step-description">Describe the current state of the market</p>
+
+                <div class="form-group">
+                    <label for="currentPrice">Current Price (Average):</label>
+                    <input type="text" id="currentPrice" placeholder="e.g., $350,000 or $25/hour">
+                </div>
+
+                <div class="form-group">
+                    <label for="currentQuantity">Current Quantity (Approximate):</label>
+                    <input type="text" id="currentQuantity" placeholder="e.g., 1,000 homes sold per month">
+                </div>
+
+                <div class="form-group">
+                    <label for="marketDescription">Market Description:</label>
+                    <textarea id="marketDescription" placeholder="Describe the current state of the market in {{STATE_NAME}}..."></textarea>
+                </div>
+
+                <div class="button-group">
+                    <button class="btn btn-secondary" onclick="prevStep()">← Previous</button>
+                    <button class="btn btn-primary" onclick="nextStep()">Next: Demand Analysis →</button>
+                </div>
+            </div>
+
+            <!-- Step 3: Demand Analysis -->
+            <div class="step" id="step3">
+                <h2 class="step-title">Step 3: Demand Analysis</h2>
+                <p class="step-description">Analyze factors affecting demand in this market</p>
+
+                <table class="analysis-table">
+                    <thead>
+                        <tr>
+                            <th>Demand Factor</th>
+                            <th>Effect</th>
+                            <th>Strength</th>
+                            <th>Explanation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Income Levels</strong></td>
+                            <td>
+                                <select class="demand-effect">
+                                    <option value="neutral">Neutral</option>
+                                    <option value="increase">Increase</option>
+                                    <option value="decrease">Decrease</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="demand-strength">
+                                    <option value="low">Low</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="high">High</option>
+                                </select>
+                            </td>
+                            <td><input type="text" placeholder="How are incomes changing in {{STATE_NAME}}?"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Prices of Related Goods</strong></td>
+                            <td>
+                                <select class="demand-effect">
+                                    <option value="neutral">Neutral</option>
+                                    <option value="increase">Increase</option>
+                                    <option value="decrease">Decrease</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="demand-strength">
+                                    <option value="low">Low</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="high">High</option>
+                                </select>
+                            </td>
+                            <td><input type="text" placeholder="Are substitutes/complements changing?"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Consumer Tastes</strong></td>
+                            <td>
+                                <select class="demand-effect">
+                                    <option value="neutral">Neutral</option>
+                                    <option value="increase">Increase</option>
+                                    <option value="decrease">Decrease</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="demand-strength">
+                                    <option value="low">Low</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="high">High</option>
+                                </select>
+                            </td>
+                            <td><input type="text" placeholder="Are preferences changing?"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Future Expectations</strong></td>
+                            <td>
+                                <select class="demand-effect">
+                                    <option value="neutral">Neutral</option>
+                                    <option value="increase">Increase</option>
+                                    <option value="decrease">Decrease</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="demand-strength">
+                                    <option value="low">Low</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="high">High</option>
+                                </select>
+                            </td>
+                            <td><input type="text" placeholder="What do buyers expect for the future?"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Number of Buyers</strong></td>
+                            <td>
+                                <select class="demand-effect">
+                                    <option value="neutral">Neutral</option>
+                                    <option value="increase">Increase</option>
+                                    <option value="decrease">Decrease</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="demand-strength">
+                                    <option value="low">Low</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="high">High</option>
+                                </select>
+                            </td>
+                            <td><input type="text" placeholder="Is {{STATE_NAME}}'s population changing?"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="prediction-box">
+                    <h4>Net Demand Shift:</h4>
+                    <p id="demandShiftResult" style="font-size: 1.3rem; font-weight: bold;">Click Next to calculate...</p>
+                </div>
+
+                <div class="button-group">
+                    <button class="btn btn-secondary" onclick="prevStep()">← Previous</button>
+                    <button class="btn btn-primary" onclick="calculateDemandShift(); nextStep()">Next: Supply Analysis →</button>
+                </div>
+            </div>
+
+            <!-- Step 4: Supply Analysis -->
+            <div class="step" id="step4">
+                <h2 class="step-title">Step 4: Supply Analysis</h2>
+                <p class="step-description">Analyze factors affecting supply in this market</p>
+
+                <table class="analysis-table">
+                    <thead>
+                        <tr>
+                            <th>Supply Factor</th>
+                            <th>Effect</th>
+                            <th>Strength</th>
+                            <th>Explanation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Input Costs</strong></td>
+                            <td>
+                                <select class="supply-effect">
+                                    <option value="neutral">Neutral</option>
+                                    <option value="increase">Increase</option>
+                                    <option value="decrease">Decrease</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="supply-strength">
+                                    <option value="low">Low</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="high">High</option>
+                                </select>
+                            </td>
+                            <td><input type="text" placeholder="Are production costs changing?"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Technology</strong></td>
+                            <td>
+                                <select class="supply-effect">
+                                    <option value="neutral">Neutral</option>
+                                    <option value="improve">Improve</option>
+                                    <option value="worsen">Worsen</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="supply-strength">
+                                    <option value="low">Low</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="high">High</option>
+                                </select>
+                            </td>
+                            <td><input type="text" placeholder="New technology or methods?"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Number of Sellers</strong></td>
+                            <td>
+                                <select class="supply-effect">
+                                    <option value="neutral">Neutral</option>
+                                    <option value="increase">Increase</option>
+                                    <option value="decrease">Decrease</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="supply-strength">
+                                    <option value="low">Low</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="high">High</option>
+                                </select>
+                            </td>
+                            <td><input type="text" placeholder="More or fewer sellers in {{STATE_NAME}}?"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Future Expectations</strong></td>
+                            <td>
+                                <select class="supply-effect">
+                                    <option value="neutral">Neutral</option>
+                                    <option value="increase">Increase</option>
+                                    <option value="decrease">Decrease</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="supply-strength">
+                                    <option value="low">Low</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="high">High</option>
+                                </select>
+                            </td>
+                            <td><input type="text" placeholder="What do sellers expect?"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Government Policy</strong></td>
+                            <td>
+                                <select class="supply-effect">
+                                    <option value="neutral">Neutral</option>
+                                    <option value="favorable">Favorable</option>
+                                    <option value="unfavorable">Unfavorable</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="supply-strength">
+                                    <option value="low">Low</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="high">High</option>
+                                </select>
+                            </td>
+                            <td><input type="text" placeholder="Any {{STATE_NAME}} policies affecting supply?"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Natural Events/Shocks</strong></td>
+                            <td>
+                                <select class="supply-effect">
+                                    <option value="neutral">Neutral</option>
+                                    <option value="positive">Positive</option>
+                                    <option value="negative">Negative</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="supply-strength">
+                                    <option value="low">Low</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="high">High</option>
+                                </select>
+                            </td>
+                            <td><input type="text" placeholder="Any disruptions or favorable events?"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="prediction-box">
+                    <h4>Net Supply Shift:</h4>
+                    <p id="supplyShiftResult" style="font-size: 1.3rem; font-weight: bold;">Click Next to calculate...</p>
+                </div>
+
+                <div class="button-group">
+                    <button class="btn btn-secondary" onclick="prevStep()">← Previous</button>
+                    <button class="btn btn-primary" onclick="calculateSupplyShift(); nextStep()">Next: Predictions →</button>
+                </div>
+            </div>
+
+            <!-- Step 5: Predictions -->
+            <div class="step" id="step5">
+                <h2 class="step-title">Step 5: Market Predictions</h2>
+                <p class="step-description">Based on your analysis, here's what's likely to happen</p>
+
+                <div class="prediction-box">
+                    <h3>Predicted Market Changes</h3>
+                    <div class="prediction-grid">
+                        <div class="prediction-item">
+                            <div class="label">Demand Shift</div>
+                            <div class="value" id="finalDemand">—</div>
+                        </div>
+                        <div class="prediction-item">
+                            <div class="label">Supply Shift</div>
+                            <div class="value" id="finalSupply">—</div>
+                        </div>
+                        <div class="prediction-item">
+                            <div class="label">Price Direction</div>
+                            <div class="value" id="pricePrediction">—</div>
+                        </div>
+                        <div class="prediction-item">
+                            <div class="label">Quantity Direction</div>
+                            <div class="value" id="quantityPrediction">—</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="timeline">Adjustment Timeline:</label>
+                    <select id="timeline">
+                        <option value="days">Days</option>
+                        <option value="weeks">Weeks</option>
+                        <option value="months" selected>Months</option>
+                        <option value="years">Years</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="confidenceLevel">Confidence Level:</label>
+                    <select id="confidenceLevel">
+                        <option value="low">Low - Many uncertainties</option>
+                        <option value="medium" selected>Medium - Some uncertainties</option>
+                        <option value="high">High - Clear trends</option>
+                    </select>
+                </div>
+
+                <div class="button-group">
+                    <button class="btn btn-secondary" onclick="prevStep()">← Previous</button>
+                    <button class="btn btn-primary" onclick="nextStep()">Next: Action Plan →</button>
+                </div>
+            </div>
+
+            <!-- Step 6: Action Plan -->
+            <div class="step" id="step6">
+                <h2 class="step-title">Step 6: Your Personal Action Plan</h2>
+                <p class="step-description">What should you do based on this analysis?</p>
+
+                <div class="action-plan">
+                    <h4>🎯 Recommended Actions</h4>
+                    <div id="recommendedActions">Based on your market analysis...</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="actionPlan">What will you do?</label>
+                    <textarea id="actionPlan" placeholder="Describe your specific action plan..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="actionTiming">When will you act?</label>
+                    <input type="text" id="actionTiming" placeholder="e.g., Within 3 months">
+                </div>
+
+                <div class="form-group">
+                    <label for="backupPlan">Backup Plan (if conditions change):</label>
+                    <textarea id="backupPlan" placeholder="What's your Plan B?"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="potentialGains">Potential Savings/Gains:</label>
+                    <input type="text" id="potentialGains" placeholder="e.g., $5,000">
+                </div>
+
+                <div class="button-group">
+                    <button class="btn btn-secondary" onclick="prevStep()">← Previous</button>
+                    <button class="btn btn-primary" onclick="nextStep()">Next: Monitor & Adjust →</button>
+                </div>
+            </div>
+
+            <!-- Step 7: Monitor -->
+            <div class="step" id="step7">
+                <h2 class="step-title">Step 7: Monitor and Adjust</h2>
+                <p class="step-description">Set up a system to track your market</p>
+
+                <div class="form-group">
+                    <label>Indicators to Track:</label>
+                    <div style="margin-left: 10px;">
+                        <div><input type="checkbox"> Price trends in the market</div>
+                        <div><input type="checkbox"> Inventory/supply levels</div>
+                        <div><input type="checkbox"> Interest rates (if applicable)</div>
+                        <div><input type="checkbox"> {{STATE_NAME}} economic indicators</div>
+                        <div><input type="checkbox"> Industry news and trends</div>
+                        <div><input type="checkbox"> Policy changes in {{STATE_NAME}}</div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="changeDecision">What would change your decision?</label>
+                    <textarea id="changeDecision" placeholder="List conditions that would make you reconsider..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="reviewDate">Review Date:</label>
+                    <input type="date" id="reviewDate">
+                </div>
+
+                <div class="button-group">
+                    <button class="btn btn-secondary" onclick="prevStep()">← Previous</button>
+                    <button class="btn btn-primary" onclick="generateSummary()">Complete Analysis 🎉</button>
+                </div>
+            </div>
+
+            <!-- Summary -->
+            <div class="step" id="summary">
+                <h2 class="step-title">📋 Your Complete Market Analysis</h2>
+                <p class="step-description">Review your comprehensive market analysis</p>
+
+                <div id="summaryContent"></div>
+
+                <div class="button-group">
+                    <button class="btn btn-secondary" onclick="resetAnalysis()">Start New Analysis</button>
+                    <button class="btn btn-primary" onclick="window.print()">Print / Save PDF 🖨️</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentStep = 1;
+        const totalSteps = 7;
+        let analysisData = {};
+
+        document.getElementById('marketSelect').addEventListener('change', function() {
+            document.getElementById('customMarketGroup').style.display =
+                this.value === 'custom' ? 'block' : 'none';
+        });
+
+        function updateProgress() {
+            const progress = (currentStep / totalSteps) * 100;
+            document.getElementById('progressBar').style.width = progress + '%';
+        }
+
+        function nextStep() {
+            document.getElementById('step' + currentStep).classList.remove('active');
+            currentStep++;
+            if (currentStep <= totalSteps) {
+                document.getElementById('step' + currentStep).classList.add('active');
+            }
+            updateProgress();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function prevStep() {
+            document.getElementById('step' + currentStep).classList.remove('active');
+            currentStep--;
+            document.getElementById('step' + currentStep).classList.add('active');
+            updateProgress();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function calculateDemandShift() {
+            const effects = document.querySelectorAll('.demand-effect');
+            let increases = 0, decreases = 0;
+
+            effects.forEach(select => {
+                const value = select.value;
+                const row = select.closest('tr');
+                const strength = row.querySelector('.demand-strength').value;
+                const weight = strength === 'high' ? 3 : strength === 'medium' ? 2 : 1;
+
+                if (value === 'increase') increases += weight;
+                else if (value === 'decrease') decreases += weight;
+            });
+
+            let result = '';
+            if (increases > decreases) result = '📈 RIGHT (Increase)';
+            else if (decreases > increases) result = '📉 LEFT (Decrease)';
+            else result = '➡️ STABLE';
+
+            document.getElementById('demandShiftResult').textContent = result;
+            analysisData.demandShift = result;
+        }
+
+        function calculateSupplyShift() {
+            const effects = document.querySelectorAll('.supply-effect');
+            let increases = 0, decreases = 0;
+
+            effects.forEach(select => {
+                const value = select.value;
+                const row = select.closest('tr');
+                const strength = row.querySelector('.supply-strength').value;
+                const weight = strength === 'high' ? 3 : strength === 'medium' ? 2 : 1;
+
+                if (value === 'increase' || value === 'improve' || value === 'favorable' || value === 'positive') {
+                    increases += weight;
+                } else if (value === 'decrease' || value === 'worsen' || value === 'unfavorable' || value === 'negative') {
+                    decreases += weight;
+                }
+            });
+
+            let result = '';
+            if (increases > decreases) result = '📈 RIGHT (Increase)';
+            else if (decreases > increases) result = '📉 LEFT (Decrease)';
+            else result = '➡️ STABLE';
+
+            document.getElementById('supplyShiftResult').textContent = result;
+            analysisData.supplyShift = result;
+
+            calculatePredictions();
+        }
+
+        function calculatePredictions() {
+            const demandShift = analysisData.demandShift || '';
+            const supplyShift = analysisData.supplyShift || '';
+
+            document.getElementById('finalDemand').textContent = demandShift.split(' ')[1] || '—';
+            document.getElementById('finalSupply').textContent = supplyShift.split(' ')[1] || '—';
+
+            let priceDir = '—', qtyDir = '—';
+
+            if (demandShift.includes('RIGHT') && supplyShift.includes('RIGHT')) {
+                priceDir = '?'; qtyDir = '↑';
+            } else if (demandShift.includes('LEFT') && supplyShift.includes('LEFT')) {
+                priceDir = '?'; qtyDir = '↓';
+            } else if (demandShift.includes('RIGHT') && supplyShift.includes('LEFT')) {
+                priceDir = '↑↑'; qtyDir = '?';
+            } else if (demandShift.includes('LEFT') && supplyShift.includes('RIGHT')) {
+                priceDir = '↓↓'; qtyDir = '?';
+            } else if (demandShift.includes('RIGHT')) {
+                priceDir = '↑'; qtyDir = '↑';
+            } else if (demandShift.includes('LEFT')) {
+                priceDir = '↓'; qtyDir = '↓';
+            } else if (supplyShift.includes('RIGHT')) {
+                priceDir = '↓'; qtyDir = '↑';
+            } else if (supplyShift.includes('LEFT')) {
+                priceDir = '↑'; qtyDir = '↓';
+            }
+
+            document.getElementById('pricePrediction').textContent = priceDir;
+            document.getElementById('quantityPrediction').textContent = qtyDir;
+
+            const market = document.getElementById('marketSelect').value;
+            let actions = '<ul>';
+            if (priceDir.includes('↑')) {
+                if (market === 'housing') {
+                    actions += '<li>Consider buying sooner in {{STATE_NAME}} housing market</li>';
+                    actions += '<li>Get pre-approved for financing</li>';
+                } else {
+                    actions += '<li>Buy now if you need this product/service</li>';
+                    actions += '<li>Consider alternatives</li>';
+                }
+            } else if (priceDir.includes('↓')) {
+                actions += '<li>Wait for better pricing if possible</li>';
+                actions += '<li>Negotiate aggressively</li>';
+            } else {
+                actions += '<li>No urgency - prices expected to remain stable</li>';
+            }
+            actions += '</ul>';
+            document.getElementById('recommendedActions').innerHTML = actions;
+        }
+
+        function generateSummary() {
+            document.getElementById('step7').classList.remove('active');
+
+            const market = document.getElementById('marketSelect').value === 'custom'
+                ? document.getElementById('customMarket').value
+                : document.getElementById('marketSelect').options[document.getElementById('marketSelect').selectedIndex].text;
+
+            let html = '<div class="summary-card">';
+            html += '<h3>Market Overview</h3>';
+            html += '<div class="summary-row"><strong>Market:</strong> <span>' + market + '</span></div>';
+            html += '<div class="summary-row"><strong>Current Price:</strong> <span>' + document.getElementById('currentPrice').value + '</span></div>';
+            html += '<div class="summary-row"><strong>Analysis Date:</strong> <span>' + new Date().toLocaleDateString() + '</span></div>';
+            html += '</div>';
+
+            html += '<div class="summary-card">';
+            html += '<h3>Analysis Results</h3>';
+            html += '<div class="summary-row"><strong>Demand Shift:</strong> <span>' + analysisData.demandShift + '</span></div>';
+            html += '<div class="summary-row"><strong>Supply Shift:</strong> <span>' + analysisData.supplyShift + '</span></div>';
+            html += '<div class="summary-row"><strong>Price Prediction:</strong> <span>' + document.getElementById('pricePrediction').textContent + '</span></div>';
+            html += '<div class="summary-row"><strong>Quantity Prediction:</strong> <span>' + document.getElementById('quantityPrediction').textContent + '</span></div>';
+            html += '</div>';
+
+            html += '<div class="summary-card">';
+            html += '<h3>Action Plan</h3>';
+            html += '<div class="summary-row"><strong>Actions:</strong> <span>' + document.getElementById('actionPlan').value + '</span></div>';
+            html += '<div class="summary-row"><strong>Timing:</strong> <span>' + document.getElementById('actionTiming').value + '</span></div>';
+            html += '</div>';
+
+            document.getElementById('summaryContent').innerHTML = html;
+            document.getElementById('summary').classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function resetAnalysis() {
+            currentStep = 1;
+            document.getElementById('summary').classList.remove('active');
+            document.getElementById('step1').classList.add('active');
+            updateProgress();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        updateProgress();
+    </script>
+</body>
+</html>

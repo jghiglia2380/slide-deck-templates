@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Record-Keeping Worksheet | PFL Academy</title>
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #8b5cf6;
+            --success: #10b981;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --background: #ffffff;
+            --surface: #f9fafb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--surface);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--background);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .main-content {
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .question-block {
+            background-color: var(--surface);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .question {
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--text);
+        }
+
+        .answer-space {
+            width: 100%;
+            min-height: 80px;
+            padding: 12px;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 1rem;
+            resize: vertical;
+        }
+
+        .answer-space:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #d1d5db;
+        }
+
+        th {
+            background-color: var(--primary);
+            color: white;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: var(--surface);
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .checkbox-item input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            margin-right: 10px;
+        }
+
+        .info-box {
+            background-color: #eff6ff;
+            border-left: 4px solid var(--primary);
+            padding: 15px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+            }
+
+            .answer-space {
+                min-height: 100px;
+                border: 1px solid #999;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                padding: 20px;
+            }
+
+            table {
+                font-size: 0.9rem;
+            }
+
+            th, td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📄 Financial Record-Keeping Worksheet</h1>
+            <p>Guided Practice Activity</p>
+        </header>
+
+        <div class="main-content">
+            <div class="section">
+                <h2 class="section-title">Part 1: Document Retention Knowledge</h2>
+
+                <div class="question-block">
+                    <div class="question">1. Why is it important to keep financial records organized?</div>
+                    <textarea class="answer-space" placeholder="Write your answer here..."></textarea>
+                </div>
+
+                <div class="question-block">
+                    <div class="question">2. Match each document with its recommended retention period:</div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Document Type</th>
+                                <th>Retention Period</th>
+                                <th>Your Answer</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tax Returns</td>
+                                <td>A) Permanent<br>B) 7 years<br>C) 3 years<br>D) 1 year</td>
+                                <td><input type="text" style="width: 60px; padding: 5px;" placeholder="Letter"></td>
+                            </tr>
+                            <tr>
+                                <td>Bank Statements</td>
+                                <td>A) Permanent<br>B) 7 years<br>C) 3 years<br>D) 1 year</td>
+                                <td><input type="text" style="width: 60px; padding: 5px;" placeholder="Letter"></td>
+                            </tr>
+                            <tr>
+                                <td>Birth Certificate</td>
+                                <td>A) Permanent<br>B) 7 years<br>C) 3 years<br>D) 1 year</td>
+                                <td><input type="text" style="width: 60px; padding: 5px;" placeholder="Letter"></td>
+                            </tr>
+                            <tr>
+                                <td>Home Improvement Receipts</td>
+                                <td>A) Permanent<br>B) 7 years<br>C) 3 years<br>D) 1 year</td>
+                                <td><input type="text" style="width: 60px; padding: 5px;" placeholder="Letter"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Part 2: Digital Organization Strategy</h2>
+
+                <div class="question-block">
+                    <div class="question">3. Create a folder structure for your digital filing system. List at least 6 main categories:</div>
+                    <textarea class="answer-space" placeholder="Example: 1. Tax Documents&#10;2. Employment Records&#10;3. ..."></textarea>
+                </div>
+
+                <div class="question-block">
+                    <div class="question">4. What are three advantages of digital record-keeping compared to paper filing?</div>
+                    <div style="margin-top: 10px;">
+                        <strong>Advantage 1:</strong>
+                        <textarea class="answer-space" style="min-height: 50px;" placeholder="Your answer..."></textarea>
+                    </div>
+                    <div style="margin-top: 15px;">
+                        <strong>Advantage 2:</strong>
+                        <textarea class="answer-space" style="min-height: 50px;" placeholder="Your answer..."></textarea>
+                    </div>
+                    <div style="margin-top: 15px;">
+                        <strong>Advantage 3:</strong>
+                        <textarea class="answer-space" style="min-height: 50px;" placeholder="Your answer..."></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Part 3: Security & Protection</h2>
+
+                <div class="question-block">
+                    <div class="question">5. What security measures should you implement to protect your digital financial records?</div>
+                    <div class="checkbox-group">
+                        <label class="checkbox-item">
+                            <input type="checkbox">
+                            <span>Use password protection on sensitive files</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox">
+                            <span>Enable two-factor authentication on cloud storage</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox">
+                            <span>Regularly backup files to multiple locations</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox">
+                            <span>Use encryption for highly sensitive documents</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox">
+                            <span>Keep antivirus software updated</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox">
+                            <span>Avoid public Wi-Fi when accessing financial accounts</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question">6. Where should you store physical copies of permanent documents (birth certificate, property deeds, etc.)?</div>
+                    <textarea class="answer-space" placeholder="Describe the best storage location and why..."></textarea>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Part 4: Application & Reflection</h2>
+
+                <div class="question-block">
+                    <div class="question">7. Create a personal action plan for organizing your financial records:</div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Task</th>
+                                <th>Timeline</th>
+                                <th>Resources Needed</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><textarea style="width: 100%; min-height: 50px; border: none; resize: vertical;" placeholder="Task 1..."></textarea></td>
+                                <td><input type="text" style="width: 100%; padding: 8px; border: none;" placeholder="When?"></td>
+                                <td><input type="text" style="width: 100%; padding: 8px; border: none;" placeholder="What do you need?"></td>
+                            </tr>
+                            <tr>
+                                <td><textarea style="width: 100%; min-height: 50px; border: none; resize: vertical;" placeholder="Task 2..."></textarea></td>
+                                <td><input type="text" style="width: 100%; padding: 8px; border: none;" placeholder="When?"></td>
+                                <td><input type="text" style="width: 100%; padding: 8px; border: none;" placeholder="What do you need?"></td>
+                            </tr>
+                            <tr>
+                                <td><textarea style="width: 100%; min-height: 50px; border: none; resize: vertical;" placeholder="Task 3..."></textarea></td>
+                                <td><input type="text" style="width: 100%; padding: 8px; border: none;" placeholder="When?"></td>
+                                <td><input type="text" style="width: 100%; padding: 8px; border: none;" placeholder="What do you need?"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="info-box">
+                    <strong>💡 Reflection:</strong> How will having an organized financial record-keeping system help you achieve your financial goals?
+                </div>
+                <textarea class="answer-space" placeholder="Write your reflection..."></textarea>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

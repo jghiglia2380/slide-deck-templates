@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Cost Calculator - Advanced</title>
+    <!--
+    PURPOSE: Interactive skill builder tool
+    USE: Chapter interactive activity (15-20 minutes)
+    -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .calculator-container {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .input-section {
+            background: #e8f4f8;
+            border: 2px solid #3498db;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+        .input-row {
+            display: grid;
+            grid-template-columns: 250px 150px auto;
+            gap: 15px;
+            margin: 15px 0;
+            align-items: center;
+        }
+        label {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        input[type="number"] {
+            padding: 10px;
+            border: 2px solid #3498db;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+        .unit {
+            color: #7f8c8d;
+        }
+        button {
+            padding: 12px 30px;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 10px 5px;
+            transition: all 0.3s ease;
+        }
+        .btn-calculate {
+            background: #3498db;
+            color: white;
+        }
+        .btn-calculate:hover {
+            background: #2980b9;
+        }
+        .btn-reset {
+            background: #95a5a6;
+            color: white;
+        }
+        .btn-reset:hover {
+            background: #7f8c8d;
+        }
+        .results-section {
+            background: #f0f7ff;
+            border: 2px solid #3498db;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 20px 0;
+            display: none;
+        }
+        .results-section.show {
+            display: block;
+        }
+        .result-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .result-card {
+            background: white;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            border-radius: 4px;
+        }
+        .result-label {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            margin-bottom: 5px;
+        }
+        .result-value {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .comparison-section {
+            margin: 30px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .highlight-row {
+            background-color: #fff3cd !important;
+            font-weight: bold;
+        }
+        .chart-container {
+            background: white;
+            border: 2px solid #ecf0f1;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .bar-chart {
+            display: flex;
+            gap: 20px;
+            align-items: flex-end;
+            height: 200px;
+            padding: 20px 0;
+        }
+        .bar {
+            flex: 1;
+            background: linear-gradient(to top, #e74c3c, #c0392b);
+            border-radius: 4px 4px 0 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            position: relative;
+        }
+        .bar.active {
+            background: linear-gradient(to top, #3498db, #2980b9);
+        }
+        .bar.moderate {
+            background: linear-gradient(to top, #f39c12, #e67e22);
+        }
+        .bar.passive {
+            background: linear-gradient(to top, #2ecc71, #27ae60);
+        }
+        .bar-label {
+            position: absolute;
+            bottom: -30px;
+            text-align: center;
+            color: #2c3e50;
+            font-size: 0.9em;
+        }
+        .info-box {
+            background: #ecf0f1;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .warning-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #ecf0f1;
+            color: #7f8c8d;
+        }
+        @media print {
+            body { background: white; }
+            button { display: none; }
+            .calculator-container { box-shadow: none; }
+        }
+        @media (max-width: 768px) {
+            .input-row {
+                grid-template-columns: 1fr;
+                gap: 5px;
+            }
+            input[type="number"] {
+                width: 100%;
+            }
+            .bar-chart {
+                height: 150px;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>💰 Advanced Trading Cost Calculator</h1>
+    <p style="color: #7f8c8d; font-size: 1.1em;">Analyze long-term impact of trading costs on your investment returns</p>
+
+    <div class="calculator-container">
+        <div class="info-box">
+            <strong>What This Shows:</strong> This calculator demonstrates how trading frequency and spread costs compound over time. Even small costs per trade can significantly reduce your long-term wealth.
+        </div>
+
+        <div class="input-section">
+            <h2>Enter Your Trading Profile</h2>
+
+            <div class="input-row">
+                <label for="trades-year">Trades per Year:</label>
+                <input type="number" id="trades-year" value="12" min="1">
+                <span class="unit">trades</span>
+            </div>
+
+            <div class="input-row">
+                <label for="shares-trade">Average Shares per Trade:</label>
+                <input type="number" id="shares-trade" value="100" min="1">
+                <span class="unit">shares</span>
+            </div>
+
+            <div class="input-row">
+                <label for="stock-price">Average Stock Price:</label>
+                <input type="number" id="stock-price" value="50" step="0.01" min="0">
+                <span class="unit">$</span>
+            </div>
+
+            <div class="input-row">
+                <label for="spread">Average Spread per Share:</label>
+                <input type="number" id="spread" value="0.10" step="0.01" min="0">
+                <span class="unit">$</span>
+            </div>
+
+            <div class="input-row">
+                <label for="commission">Commission per Trade:</label>
+                <input type="number" id="commission" value="0" step="0.01" min="0">
+                <span class="unit">$</span>
+            </div>
+
+            <div class="input-row">
+                <label for="timeline">Investment Timeline:</label>
+                <input type="number" id="timeline" value="30" min="1" max="50">
+                <span class="unit">years</span>
+            </div>
+
+            <div class="input-row">
+                <label for="return-rate">Expected Annual Return:</label>
+                <input type="number" id="return-rate" value="7" step="0.1" min="0" max="20">
+                <span class="unit">%</span>
+            </div>
+
+            <div style="margin-top: 20px;">
+                <button class="btn-calculate" onclick="calculateCosts()">Calculate Long-Term Impact</button>
+                <button class="btn-reset" onclick="resetCalculator()">Reset to Defaults</button>
+            </div>
+        </div>
+
+        <div class="results-section" id="results">
+            <h2>📊 Your Cost Analysis</h2>
+
+            <div class="result-grid">
+                <div class="result-card">
+                    <div class="result-label">Cost per Trade</div>
+                    <div class="result-value" id="cost-per-trade">$0.00</div>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-label">Annual Trading Cost</div>
+                    <div class="result-value" id="annual-cost">$0.00</div>
+                </div>
+
+                <div class="result-card" style="border-left-color: #e74c3c;">
+                    <div class="result-label">Lifetime Opportunity Cost</div>
+                    <div class="result-value" id="lifetime-cost" style="color: #e74c3c;">$0.00</div>
+                </div>
+            </div>
+
+            <div class="warning-box">
+                <strong>💡 Opportunity Cost Explained:</strong> This is how much the money spent on trading costs would have grown if invested instead. At your expected return rate, every dollar spent on trading costs several dollars in future wealth.
+            </div>
+        </div>
+
+        <div class="comparison-section">
+            <h2>Comparison: Different Trading Strategies</h2>
+
+            <table id="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Strategy</th>
+                        <th>Trades/Year</th>
+                        <th>Cost per Trade</th>
+                        <th>Annual Cost</th>
+                        <th>10-Year Impact</th>
+                        <th>30-Year Impact</th>
+                    </tr>
+                </thead>
+                <tbody id="comparison-tbody">
+                    <!-- Populated by JavaScript -->
+                </tbody>
+            </table>
+
+            <div class="chart-container">
+                <h3>30-Year Cost Comparison</h3>
+                <div class="bar-chart">
+                    <div class="bar passive" id="bar-passive" style="height: 30%;">
+                        <span id="bar-passive-value">$0</span>
+                        <div class="bar-label">Buy & Hold<br>(4 trades/year)</div>
+                    </div>
+                    <div class="bar moderate" id="bar-moderate" style="height: 60%;">
+                        <span id="bar-moderate-value">$0</span>
+                        <div class="bar-label">Moderate<br>(12 trades/year)</div>
+                    </div>
+                    <div class="bar active" id="bar-active" style="height: 100%;">
+                        <span id="bar-active-value">$0</span>
+                        <div class="bar-label">Active<br>(100 trades/year)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>Key Insights</h3>
+                <ul>
+                    <li><strong>Trading frequency matters more than you think.</strong> Doubling your trading frequency doubles your costs.</li>
+                    <li><strong>Opportunity cost compounds.</strong> Money spent on trading costs can't grow in your investments.</li>
+                    <li><strong>Buy-and-hold wins.</strong> Minimizing trades maximizes long-term wealth.</li>
+                    <li><strong>Even "free" trades have costs.</strong> The bid-ask spread exists even with zero commissions.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>PFL Academy</strong> | Advanced Trading Cost Calculator</p>
+        <p>For educational purposes only - Not investment advice</p>
+    </footer>
+
+    <script>
+        function calculateCosts() {
+            // Get input values
+            const tradesPerYear = parseFloat(document.getElementById('trades-year').value);
+            const sharesPerTrade = parseFloat(document.getElementById('shares-trade').value);
+            const stockPrice = parseFloat(document.getElementById('stock-price').value);
+            const spread = parseFloat(document.getElementById('spread').value);
+            const commission = parseFloat(document.getElementById('commission').value);
+            const timeline = parseFloat(document.getElementById('timeline').value);
+            const returnRate = parseFloat(document.getElementById('return-rate').value) / 100;
+
+            // Calculate costs
+            const spreadCost = spread * sharesPerTrade;
+            const costPerTrade = spreadCost + commission;
+            const annualCost = costPerTrade * tradesPerYear;
+
+            // Calculate opportunity cost (future value of annual costs)
+            const lifetimeCost = annualCost * (((Math.pow(1 + returnRate, timeline) - 1) / returnRate));
+
+            // Display results
+            document.getElementById('cost-per-trade').textContent = '$' + costPerTrade.toFixed(2);
+            document.getElementById('annual-cost').textContent = '$' + annualCost.toFixed(2);
+            document.getElementById('lifetime-cost').textContent = '$' + lifetimeCost.toLocaleString('en-US', {minimumFractionDigits: 0, maximumFractionDigits: 0});
+
+            // Show results
+            document.getElementById('results').classList.add('show');
+
+            // Generate comparison table
+            generateComparison(sharesPerTrade, stockPrice, spread, commission, returnRate, timeline);
+
+            // Scroll to results
+            document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        function generateComparison(shares, price, spread, commission, returnRate, timeline) {
+            const strategies = [
+                { name: 'Buy & Hold', trades: 4 },
+                { name: 'Moderate Investor', trades: 12 },
+                { name: 'Active Trader', trades: 100 }
+            ];
+
+            const tbody = document.getElementById('comparison-tbody');
+            tbody.innerHTML = '';
+
+            let maxCost30 = 0;
+
+            strategies.forEach(strategy => {
+                const spreadCost = spread * shares;
+                const costPerTrade = spreadCost + commission;
+                const annualCost = costPerTrade * strategy.trades;
+                const cost10Year = annualCost * (((Math.pow(1 + returnRate, 10) - 1) / returnRate));
+                const cost30Year = annualCost * (((Math.pow(1 + returnRate, 30) - 1) / returnRate));
+
+                if (cost30Year > maxCost30) maxCost30 = cost30Year;
+
+                const row = tbody.insertRow();
+                row.innerHTML = `
+                    <td><strong>${strategy.name}</strong></td>
+                    <td>${strategy.trades}</td>
+                    <td>$${costPerTrade.toFixed(2)}</td>
+                    <td>$${annualCost.toFixed(2)}</td>
+                    <td>$${cost10Year.toLocaleString('en-US', {minimumFractionDigits: 0, maximumFractionDigits: 0})}</td>
+                    <td>$${cost30Year.toLocaleString('en-US', {minimumFractionDigits: 0, maximumFractionDigits: 0})}</td>
+                `;
+
+                // Update chart
+                if (strategy.name === 'Buy & Hold') {
+                    updateBar('passive', cost30Year, maxCost30);
+                } else if (strategy.name === 'Moderate Investor') {
+                    updateBar('moderate', cost30Year, maxCost30);
+                } else {
+                    updateBar('active', cost30Year, maxCost30);
+                }
+            });
+        }
+
+        function updateBar(type, value, maxValue) {
+            const bar = document.getElementById(`bar-${type}`);
+            const valueSpan = document.getElementById(`bar-${type}-value`);
+
+            const percentage = (value / maxValue) * 100;
+            bar.style.height = Math.max(percentage, 15) + '%';
+            valueSpan.textContent = '$' + value.toLocaleString('en-US', {minimumFractionDigits: 0, maximumFractionDigits: 0});
+        }
+
+        function resetCalculator() {
+            document.getElementById('trades-year').value = '12';
+            document.getElementById('shares-trade').value = '100';
+            document.getElementById('stock-price').value = '50';
+            document.getElementById('spread').value = '0.10';
+            document.getElementById('commission').value = '0';
+            document.getElementById('timeline').value = '30';
+            document.getElementById('return-rate').value = '7';
+            document.getElementById('results').classList.remove('show');
+        }
+
+        // Auto-calculate on Enter key
+        document.addEventListener('DOMContentLoaded', function() {
+            const inputs = document.querySelectorAll('input[type="number"]');
+            inputs.forEach(input => {
+                input.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') {
+                        calculateCosts();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

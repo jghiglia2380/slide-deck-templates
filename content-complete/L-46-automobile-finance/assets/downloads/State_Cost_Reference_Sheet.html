@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{STATE_NAME}} Auto Purchase Cost Reference | PFL Academy</title>
+    <!--
+    STATE VARIABLES USED IN THIS FILE:
+    - STATE_NAME
+    - STATE_CODE
+    - STATE_SALES_TAX
+    - STATE_REGISTRATION_INITIAL
+    - STATE_REGISTRATION_ANNUAL
+    - STATE_INSURANCE_AVG_TEEN
+    - STATE_GAS_PRICE_CURRENT
+    - STATE_AVG_AUTO_LOAN_RATE_NEW
+    - STATE_AVG_AUTO_LOAN_RATE_USED
+    - STATE_INSPECTION_REQUIRED
+    - STATE_INSPECTION_COST
+    - STATE_DMV_URL
+    - STATE_INSURANCE_COMPARISON_URL
+    - STATE_CONSUMER_PROTECTION_URL
+
+    UPDATE FREQUENCY:
+    - Monthly: STATE_GAS_PRICE_CURRENT
+    - Quarterly: STATE_INSURANCE_AVG_TEEN
+    - Annual: All tax/fee/rate variables
+    -->
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #8b5cf6;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --background: #ffffff;
+            --surface: #f9fafb;
+            --border: #e5e7eb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--surface);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--background);
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .state-code {
+            font-size: 2.5rem;
+            font-weight: 900;
+            opacity: 0.3;
+            letter-spacing: 4px;
+        }
+
+        .subtitle {
+            font-size: 0.95rem;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            page-break-inside: avoid;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .info-item {
+            background-color: var(--surface);
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .info-label {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+        }
+
+        .info-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text);
+        }
+
+        .info-note {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-top: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background-color: var(--surface);
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .highlight-box {
+            background-color: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+
+        .highlight-box strong {
+            color: #f59e0b;
+        }
+
+        .resource-links {
+            background-color: #eff6ff;
+            padding: 20px;
+            border-radius: 6px;
+            margin-top: 20px;
+        }
+
+        .resource-links h3 {
+            color: #3b82f6;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .link-list {
+            list-style: none;
+        }
+
+        .link-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #e0e7ff;
+        }
+
+        .link-list li:last-child {
+            border-bottom: none;
+        }
+
+        .link-list a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .link-list a:hover {
+            text-decoration: underline;
+        }
+
+        .footnote {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid var(--border);
+            font-style: italic;
+        }
+
+        .yes-no {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+
+        .yes {
+            background-color: #dcfce7;
+            color: #166534;
+        }
+
+        .no {
+            background-color: #fee2e2;
+            color: #991b1b;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+
+            .container {
+                border: none;
+                box-shadow: none;
+            }
+
+            .section {
+                page-break-inside: avoid;
+            }
+
+            @page {
+                margin: 0.75in;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            body {
+                padding: 10px;
+            }
+
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="state-code">{{STATE_CODE}}</div>
+            <h1>{{STATE_NAME}} Auto Purchase Cost Reference</h1>
+            <p class="subtitle">State-Specific Fees, Rates & Resources for Vehicle Financing</p>
+        </header>
+
+        <div class="content">
+            <!-- Taxes & Registration Section -->
+            <div class="section">
+                <h2>💰 Taxes & Registration Fees</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">Vehicle Sales Tax</div>
+                        <div class="info-value">{{STATE_SALES_TAX}}%</div>
+                        <div class="info-note">Applied to purchase price</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Initial Registration</div>
+                        <div class="info-value">${{STATE_REGISTRATION_INITIAL}}</div>
+                        <div class="info-note">Title & registration fees</div>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">Annual Renewal</div>
+                        <div class="info-value">${{STATE_REGISTRATION_ANNUAL}}</div>
+                        <div class="info-note">Yearly registration fee</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Inspection Required</div>
+                        <div class="info-value">
+                            <span class="yes-no {{#if STATE_INSPECTION_REQUIRED}}yes{{else}}no{{/if}}">
+                                {{#if STATE_INSPECTION_REQUIRED}}Yes - ${{STATE_INSPECTION_COST}}/year{{else}}No{{/if}}
+                            </span>
+                        </div>
+                        <div class="info-note">Emissions/safety inspection</div>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>Example:</strong> A $25,000 vehicle purchase in {{STATE_NAME}} will cost
+                    <strong>${{CALCULATED_SALES_TAX_25K}}</strong> in sales tax plus
+                    <strong>${{STATE_REGISTRATION_INITIAL}}</strong> for initial registration.
+                </div>
+            </div>
+
+            <!-- Insurance Costs Section -->
+            <div class="section">
+                <h2>🛡️ Insurance Costs (State Averages)</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Age Group</th>
+                            <th>Average Monthly Premium</th>
+                            <th>Annual Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>16-19 years old</td>
+                            <td><strong>${{STATE_INSURANCE_AVG_TEEN}}/month</strong></td>
+                            <td>${{CALCULATED_INSURANCE_TEEN_ANNUAL}}/year</td>
+                        </tr>
+                        <tr>
+                            <td>20-25 years old</td>
+                            <td>${{STATE_INSURANCE_AVG_YOUNG_ADULT}}/month</td>
+                            <td>${{CALCULATED_INSURANCE_YOUNG_ADULT_ANNUAL}}/year</td>
+                        </tr>
+                        <tr>
+                            <td>26-35 years old</td>
+                            <td>${{STATE_INSURANCE_AVG_ADULT}}/month</td>
+                            <td>${{CALCULATED_INSURANCE_ADULT_ANNUAL}}/year</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="info-note">
+                    💡 Rates vary based on driving record, vehicle type, coverage level, and location within {{STATE_NAME}}
+                </div>
+            </div>
+
+            <!-- Financing Rates Section -->
+            <div class="section">
+                <h2>📊 Average Auto Loan Rates in {{STATE_NAME}}</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">New Vehicle Loans</div>
+                        <div class="info-value">{{STATE_AVG_AUTO_LOAN_RATE_NEW}}%</div>
+                        <div class="info-note">APR for new car financing</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Used Vehicle Loans</div>
+                        <div class="info-value">{{STATE_AVG_AUTO_LOAN_RATE_USED}}%</div>
+                        <div class="info-note">APR for used car financing</div>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>Rate Comparison:</strong> A $20,000 loan at {{STATE_AVG_AUTO_LOAN_RATE_NEW}}% vs. {{STATE_AVG_AUTO_LOAN_RATE_USED}}%
+                    over 60 months results in a difference of approximately <strong>${{CALCULATED_INTEREST_DIFFERENCE}}</strong> in total interest paid.
+                </div>
+            </div>
+
+            <!-- Operating Costs Section -->
+            <div class="section">
+                <h2>⛽ Operating Costs</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">Current Gas Price</div>
+                        <div class="info-value">${{STATE_GAS_PRICE_CURRENT}}/gal</div>
+                        <div class="info-note">{{STATE_NAME}} average (updates monthly)</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Annual Fuel Cost</div>
+                        <div class="info-value">${{CALCULATED_ANNUAL_FUEL_12K}}</div>
+                        <div class="info-note">Est. 12,000 mi/year @ 28 MPG</div>
+                    </div>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Expense Type</th>
+                            <th>Estimated Annual Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Routine Maintenance</td>
+                            <td>$800 - $1,200</td>
+                        </tr>
+                        <tr>
+                            <td>Unexpected Repairs</td>
+                            <td>$500 - $1,500</td>
+                        </tr>
+                        <tr>
+                            <td>Registration Renewal</td>
+                            <td><strong>${{STATE_REGISTRATION_ANNUAL}}</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Inspection (if required)</td>
+                            <td>{{#if STATE_INSPECTION_REQUIRED}}<strong>${{STATE_INSPECTION_COST}}</strong>{{else}}N/A{{/if}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- State-Specific Programs Section -->
+            <div class="section">
+                <h2>📋 {{STATE_NAME}} Specific Programs & Considerations</h2>
+                <div class="highlight-box">
+                    <strong>Important State Information:</strong>
+                    <ul style="margin-top: 10px; margin-left: 20px;">
+                        <li>{{STATE_NAME}} DMV processes titles and registrations</li>
+                        <li>{{#if STATE_INSPECTION_REQUIRED}}Emissions/safety inspections required annually{{else}}No state-mandated vehicle inspections{{/if}}</li>
+                        <li>Sales tax is collected at the time of purchase or title transfer</li>
+                        <li>Registration fees may vary by county or vehicle weight</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Resources Section -->
+            <div class="resource-links">
+                <h3>🔗 Official {{STATE_NAME}} Resources</h3>
+                <ul class="link-list">
+                    <li>
+                        <strong>State DMV:</strong>
+                        <a href="{{STATE_DMV_URL}}" target="_blank">{{STATE_DMV_URL}}</a>
+                    </li>
+                    <li>
+                        <strong>Insurance Comparison Tool:</strong>
+                        <a href="{{STATE_INSURANCE_COMPARISON_URL}}" target="_blank">Compare insurance rates in {{STATE_NAME}}</a>
+                    </li>
+                    <li>
+                        <strong>Consumer Protection:</strong>
+                        <a href="{{STATE_CONSUMER_PROTECTION_URL}}" target="_blank">{{STATE_NAME}} Attorney General - Consumer Protection</a>
+                    </li>
+                    <li>
+                        <strong>Federal Resources:</strong>
+                        <a href="https://www.consumerfinance.gov/consumer-tools/auto-loans/" target="_blank">Consumer Financial Protection Bureau - Auto Loans</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Cost Calculation Example -->
+            <div class="section">
+                <h2>💵 Total Cost of Ownership Example (6 Years)</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Expense Category</th>
+                            <th>6-Year Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Vehicle Purchase Price</td>
+                            <td>$25,000</td>
+                        </tr>
+                        <tr>
+                            <td>Sales Tax ({{STATE_SALES_TAX}}%)</td>
+                            <td><strong>${{CALCULATED_SALES_TAX_25K}}</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Initial Registration</td>
+                            <td><strong>${{STATE_REGISTRATION_INITIAL}}</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Registration Renewals (6 years)</td>
+                            <td><strong>${{CALCULATED_REGISTRATION_6YR}}</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Insurance (Teen rate × 72 months)</td>
+                            <td><strong>${{CALCULATED_INSURANCE_TEEN_6YR}}</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Fuel (12K mi/year @ ${{STATE_GAS_PRICE_CURRENT}}/gal)</td>
+                            <td><strong>${{CALCULATED_FUEL_6YR}}</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Maintenance & Repairs (avg)</td>
+                            <td>$6,000</td>
+                        </tr>
+                        <tr>
+                            <td>{{#if STATE_INSPECTION_REQUIRED}}Inspections (6 years){{else}}Inspections{{/if}}</td>
+                            <td>{{#if STATE_INSPECTION_REQUIRED}}<strong>${{CALCULATED_INSPECTION_6YR}}</strong>{{else}}$0{{/if}}</td>
+                        </tr>
+                        <tr style="background-color: var(--surface); font-weight: 700;">
+                            <td><strong>TOTAL 6-YEAR COST</strong></td>
+                            <td><strong>${{CALCULATED_TOTAL_6YR}}</strong></td>
+                        </tr>
+                        <tr style="background-color: #f0fdf4;">
+                            <td>Less: Vehicle Value After 6 Years (est.)</td>
+                            <td>-$8,750</td>
+                        </tr>
+                        <tr style="background-color: #dcfce7; font-weight: 700; font-size: 1.1rem;">
+                            <td><strong>NET COST OF OWNERSHIP</strong></td>
+                            <td><strong>${{CALCULATED_NET_COST_6YR}}</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="footnote">
+                <p><strong>Note:</strong> All data specific to {{STATE_NAME}} as of the current update cycle. Rates and fees are subject to change.
+                Insurance rates are state averages and individual rates may vary significantly. Always verify current fees with the {{STATE_NAME}} DMV
+                and compare multiple insurance quotes before making decisions.</p>
+                <p style="margin-top: 10px;"><strong>Data Sources:</strong> {{STATE_NAME}} DMV, Insurance.com state averages, Bankrate.com, AAA</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Strategy Planner</title>
+    <!--
+    PURPOSE: Interactive skill builder tool
+    USE: Chapter interactive activity (15-20 minutes)
+    -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #6366f1;
+            border-bottom: 3px solid #6366f1;
+            padding-bottom: 10px;
+            font-size: 28px;
+            text-align: center;
+        }
+        h2 {
+            color: #8b5cf6;
+            margin-top: 25px;
+            font-size: 20px;
+            background-color: #e0e7ff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .planner-section {
+            background-color: #f9fafb;
+            border: 1px solid #d1d5db;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .input-row {
+            display: flex;
+            margin: 15px 0;
+            align-items: baseline;
+        }
+        .label {
+            font-weight: bold;
+            min-width: 180px;
+            color: #4b5563;
+        }
+        .fill-in {
+            flex: 1;
+            border-bottom: 2px dotted #6b7280;
+            min-height: 24px;
+            padding: 2px 5px;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #d1d5db;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #d1d5db;
+            border-radius: 4px;
+            font-size: 14px;
+            min-height: 80px;
+            resize: vertical;
+        }
+        .checkbox-list {
+            margin: 10px 0;
+            padding-left: 10px;
+        }
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+        }
+        .checkbox-item input[type="checkbox"] {
+            margin-right: 10px;
+            width: 18px;
+            height: 18px;
+        }
+        .checkbox-item input[type="date"],
+        .checkbox-item input[type="text"] {
+            margin-left: 10px;
+            width: auto;
+            min-width: 150px;
+        }
+        .results-box {
+            background-color: #f0f7ff;
+            border: 2px solid #3b82f6;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .success-box {
+            background-color: #d1fae5;
+            border: 2px solid #10b981;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .info-note {
+            background-color: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 10px 15px;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+        .date-tracker {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin: 10px 0;
+        }
+        button {
+            background-color: #6366f1;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            margin: 10px 5px;
+        }
+        button:hover {
+            background-color: #8b5cf6;
+        }
+        .print-btn {
+            background-color: #10b981;
+        }
+        @media print {
+            body { font-size: 12pt; }
+            button { display: none; }
+            input, textarea { border: 1px solid #999; }
+            .planner-section { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <h1>📋 Market Strategy Planner</h1>
+    <p style="text-align: center; color: #6b7280; margin-bottom: 30px;">
+        Your actionable purchasing plan based on market analysis
+    </p>
+
+    <div class="info-note">
+        <strong>💡 How to Use:</strong> Complete this planner after finishing your market research. This document will guide your purchasing strategy and help you track results.
+    </div>
+
+    <!-- Header Section -->
+    <div class="planner-section" style="background-color: #e0e7ff;">
+        <h2>🎯 Purchase Overview</h2>
+        <div class="input-row">
+            <span class="label">Product:</span>
+            <input type="text" id="product" placeholder="What are you planning to purchase?">
+        </div>
+        <div class="input-row">
+            <span class="label">Target Price:</span>
+            <input type="number" id="targetPrice" placeholder="$" step="0.01">
+        </div>
+        <div class="input-row">
+            <span class="label">Maximum Budget:</span>
+            <input type="number" id="maxBudget" placeholder="$" step="0.01">
+        </div>
+        <div class="input-row">
+            <span class="label">Purchase Deadline:</span>
+            <input type="date" id="deadline">
+        </div>
+    </div>
+
+    <!-- Market Analysis Summary -->
+    <div class="planner-section">
+        <h2>📊 Market Analysis Summary</h2>
+
+        <div class="input-row">
+            <span class="label">Market Structure:</span>
+            <select id="marketStructure" style="flex: 1; padding: 8px; border: 1px solid #d1d5db; border-radius: 4px;">
+                <option value="">-- Select --</option>
+                <option value="perfect">Perfect Competition</option>
+                <option value="oligopoly">Oligopoly</option>
+                <option value="monopoly">Monopoly</option>
+            </select>
+        </div>
+
+        <div style="margin: 15px 0;">
+            <strong class="label">Current Supply Conditions:</strong>
+            <div style="display: flex; gap: 20px; margin-top: 5px;">
+                <label><input type="radio" name="supply" value="constrained"> Constrained (Low inventory)</label>
+                <label><input type="radio" name="supply" value="normal"> Normal (Balanced)</label>
+                <label><input type="radio" name="supply" value="abundant"> Abundant (High inventory)</label>
+            </div>
+        </div>
+
+        <div style="margin: 15px 0;">
+            <strong class="label">Current Demand Conditions:</strong>
+            <div style="display: flex; gap: 20px; margin-top: 5px;">
+                <label><input type="radio" name="demand" value="high"> High (Peak season/trend)</label>
+                <label><input type="radio" name="demand" value="normal"> Normal (Typical demand)</label>
+                <label><input type="radio" name="demand" value="low"> Low (Off-season/declining)</label>
+            </div>
+        </div>
+
+        <div style="margin: 15px 0;">
+            <strong class="label">Price Trend:</strong>
+            <div style="display: flex; gap: 20px; margin-top: 5px;">
+                <label><input type="radio" name="trend" value="rising"> Rising ↗</label>
+                <label><input type="radio" name="trend" value="stable"> Stable →</label>
+                <label><input type="radio" name="trend" value="falling"> Falling ↘</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Strategy -->
+    <div class="planner-section">
+        <h2>🎲 My Purchasing Strategy</h2>
+
+        <div style="margin: 15px 0;">
+            <strong class="label">Optimal Timing to Buy:</strong>
+            <textarea id="timing" placeholder="When is the best time to make this purchase? (e.g., 'End of quarter when dealers have sales goals to meet')"></textarea>
+        </div>
+
+        <div style="margin: 15px 0;">
+            <strong class="label">Specific Tactics:</strong>
+            <textarea id="tactics" placeholder="What specific approaches will you use? (e.g., 'Visit dealerships on the last day of the month, mention competitor pricing, be ready to walk away')"></textarea>
+        </div>
+
+        <div style="margin: 15px 0;">
+            <strong class="label">Sellers to Approach:</strong>
+            <textarea id="sellers" placeholder="List the specific sellers you plan to contact (in order of preference)"></textarea>
+        </div>
+
+        <div style="margin: 15px 0;">
+            <strong class="label">Negotiation Points:</strong>
+            <textarea id="negotiation" placeholder="What leverage do you have? (e.g., 'Competitor offers $50 less', 'Ready to buy today', 'Buying multiple items')"></textarea>
+        </div>
+
+        <div style="margin: 15px 0;">
+            <strong class="label">Walk-Away Alternative:</strong>
+            <textarea id="alternative" placeholder="What will you do if you can't get your target price? (e.g., 'Wait until next month's sale', 'Consider used/refurbished option')"></textarea>
+        </div>
+    </div>
+
+    <!-- Execution Checklist -->
+    <div class="planner-section">
+        <h2>✅ Execution Checklist</h2>
+        <div class="checkbox-list">
+            <div class="checkbox-item">
+                <input type="checkbox" id="check1">
+                <label for="check1">Research completed - I understand this market</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="check2">
+                <label for="check2">Price alerts set (if applicable)</label>
+                <input type="text" placeholder="Where?" style="margin-left: 10px; width: 200px;">
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="check3">
+                <label for="check3">Financing pre-approved (if needed)</label>
+                <input type="text" placeholder="Amount/Rate?" style="margin-left: 10px; width: 200px;">
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="check4">
+                <label for="check4">Alternatives identified (backup options)</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="check5">
+                <label for="check5">Timing confirmed (ready to execute)</label>
+                <input type="date" style="margin-left: 10px;">
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="check6">
+                <label for="check6">Negotiation script prepared</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="check7">
+                <label for="check7">Maximum price determined (won't exceed this)</label>
+                <input type="number" placeholder="$" step="0.01" style="margin-left: 10px; width: 150px;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Tracking -->
+    <div class="planner-section">
+        <h2>📈 Results Tracking</h2>
+        <p style="color: #6b7280; font-size: 14px; margin-bottom: 15px;">
+            <em>Complete this section after your purchase to evaluate strategy effectiveness</em>
+        </p>
+
+        <div class="results-box">
+            <div class="input-row">
+                <span class="label">Final Price Paid:</span>
+                <input type="number" id="finalPrice" placeholder="$" step="0.01">
+            </div>
+
+            <div class="input-row">
+                <span class="label">Target Price Was:</span>
+                <input type="number" id="targetPriceResult" placeholder="$" step="0.01">
+            </div>
+
+            <div class="input-row">
+                <span class="label">Savings Achieved:</span>
+                <div class="fill-in" contenteditable="true">$ _________ or _________ %</div>
+            </div>
+
+            <div class="input-row">
+                <span class="label">Purchase Date:</span>
+                <input type="date" id="purchaseDate">
+            </div>
+        </div>
+
+        <div style="margin: 15px 0;">
+            <strong class="label">Strategy Effectiveness (1-10):</strong>
+            <input type="range" id="effectiveness" min="1" max="10" value="5" oninput="document.getElementById('effValue').textContent = this.value" style="width: 200px; margin: 0 10px;">
+            <span style="background-color: #6366f1; color: white; padding: 5px 10px; border-radius: 4px;" id="effValue">5</span>
+        </div>
+
+        <div style="margin: 15px 0;">
+            <strong class="label">What Worked:</strong>
+            <textarea id="whatWorked" placeholder="What tactics were successful? What helped you get a better deal?"></textarea>
+        </div>
+
+        <div style="margin: 15px 0;">
+            <strong class="label">What I'd Do Differently:</strong>
+            <textarea id="differently" placeholder="What would you change for next time? Lessons learned?"></textarea>
+        </div>
+
+        <div style="margin: 15px 0;">
+            <strong class="label">Recommendation for Others:</strong>
+            <textarea id="recommendation" placeholder="What advice would you give someone buying this same product?"></textarea>
+        </div>
+    </div>
+
+    <!-- Success Criteria -->
+    <div class="success-box">
+        <h2 style="margin-top: 0; background-color: transparent; color: #10b981;">🎯 Success = Meeting Your Goals</h2>
+        <p><strong>Remember:</strong> Success isn't just about getting the lowest price—it's about:</p>
+        <ul>
+            <li>✓ Staying within your budget</li>
+            <li>✓ Getting the features/quality you need</li>
+            <li>✓ Buying at the right time for your situation</li>
+            <li>✓ Feeling confident in your decision</li>
+            <li>✓ Learning for future purchases</li>
+        </ul>
+    </div>
+
+    <div style="text-align: center; margin: 30px 0;">
+        <button onclick="window.print()" class="print-btn">🖨️ Print or Save as PDF</button>
+        <button onclick="saveStrategy()">💾 Save (Local Storage)</button>
+        <button onclick="clearStrategy()">🔄 Clear Form</button>
+    </div>
+
+    <script>
+        function saveStrategy() {
+            const strategy = {
+                product: document.getElementById('product').value,
+                targetPrice: document.getElementById('targetPrice').value,
+                maxBudget: document.getElementById('maxBudget').value,
+                deadline: document.getElementById('deadline').value,
+                marketStructure: document.getElementById('marketStructure').value,
+                timing: document.getElementById('timing').value,
+                tactics: document.getElementById('tactics').value,
+                sellers: document.getElementById('sellers').value,
+                negotiation: document.getElementById('negotiation').value,
+                alternative: document.getElementById('alternative').value,
+                timestamp: new Date().toISOString()
+            };
+
+            localStorage.setItem('marketStrategy', JSON.stringify(strategy));
+            alert('✅ Strategy saved locally in your browser!');
+        }
+
+        function clearStrategy() {
+            if (confirm('Clear all data? This cannot be undone.')) {
+                document.querySelectorAll('input[type="text"], input[type="number"], input[type="date"], textarea, select').forEach(el => {
+                    el.value = '';
+                });
+                document.querySelectorAll('input[type="checkbox"], input[type="radio"]').forEach(el => {
+                    el.checked = false;
+                });
+                document.getElementById('effectiveness').value = 5;
+                document.getElementById('effValue').textContent = '5';
+            }
+        }
+
+        // Load saved strategy on page load
+        window.addEventListener('load', function() {
+            const saved = localStorage.getItem('marketStrategy');
+            if (saved && confirm('Load previously saved strategy?')) {
+                const strategy = JSON.parse(saved);
+                document.getElementById('product').value = strategy.product || '';
+                document.getElementById('targetPrice').value = strategy.targetPrice || '';
+                document.getElementById('maxBudget').value = strategy.maxBudget || '';
+                document.getElementById('deadline').value = strategy.deadline || '';
+                document.getElementById('marketStructure').value = strategy.marketStructure || '';
+                document.getElementById('timing').value = strategy.timing || '';
+                document.getElementById('tactics').value = strategy.tactics || '';
+                document.getElementById('sellers').value = strategy.sellers || '';
+                document.getElementById('negotiation').value = strategy.negotiation || '';
+                document.getElementById('alternative').value = strategy.alternative || '';
+            }
+        });
+
+        // Calculate savings automatically
+        document.getElementById('finalPrice').addEventListener('input', calculateSavings);
+        document.getElementById('targetPriceResult').addEventListener('input', calculateSavings);
+
+        function calculateSavings() {
+            const final = parseFloat(document.getElementById('finalPrice').value) || 0;
+            const target = parseFloat(document.getElementById('targetPriceResult').value) || 0;
+
+            if (final > 0 && target > 0) {
+                const savings = target - final;
+                const percent = (savings / target * 100).toFixed(1);
+                document.querySelector('.results-box .fill-in').textContent =
+                    savings >= 0 ?
+                    `$${savings.toFixed(2)} saved (${percent}% below target) ✓` :
+                    `$${Math.abs(savings).toFixed(2)} over target (${Math.abs(percent)}% above) ⚠️`;
+            }
+        }
+    </script>
+</body>
+</html>

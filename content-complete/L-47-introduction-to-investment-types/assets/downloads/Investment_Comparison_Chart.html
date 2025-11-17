@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Types Comparison Chart</title>
+    <!--
+    PURPOSE: Interactive skill builder tool
+    USE: Chapter interactive activity (15-20 minutes)
+    -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            background: #f3f4f6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 16px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+
+        .controls {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .control-label {
+            font-weight: 600;
+            color: #374151;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: 2px solid #d1d5db;
+            border-radius: 8px;
+            background: white;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn.active {
+            background: #6366f1;
+            color: white;
+            border-color: #6366f1;
+        }
+
+        .comparison-table {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background: #f9fafb;
+        }
+
+        th {
+            padding: 20px;
+            text-align: left;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #1f2937;
+            border-bottom: 2px solid #e5e7eb;
+        }
+
+        th.stocks {
+            color: #2563EB;
+        }
+
+        th.bonds {
+            color: #059669;
+        }
+
+        th.mutual-funds {
+            color: #EA580C;
+        }
+
+        th.etfs {
+            color: #9333EA;
+        }
+
+        td {
+            padding: 20px;
+            border-bottom: 1px solid #e5e7eb;
+            vertical-align: top;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .category-label {
+            font-weight: 600;
+            color: #6b7280;
+            min-width: 180px;
+        }
+
+        .risk-indicator {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .risk-high {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        .risk-medium {
+            background: #fed7aa;
+            color: #92400e;
+        }
+
+        .risk-low {
+            background: #d1fae5;
+            color: #065f46;
+        }
+
+        .highlight {
+            font-weight: 700;
+            color: #1f2937;
+        }
+
+        .tooltip-icon {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            background: #6366f1;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 12px;
+            line-height: 18px;
+            cursor: help;
+            margin-left: 5px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            color: #6b7280;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            .controls {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .comparison-table {
+                overflow-x: auto;
+            }
+
+            table {
+                min-width: 700px;
+            }
+
+            .btn-group {
+                width: 100%;
+            }
+
+            .btn {
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Investment Types Comparison</h1>
+            <p class="subtitle">Compare Stocks, Bonds, Mutual Funds, and ETFs Side-by-Side</p>
+        </header>
+
+        <div class="controls">
+            <span class="control-label">View:</span>
+            <div class="btn-group">
+                <button class="btn active" onclick="setView('all')">All Types</button>
+                <button class="btn" onclick="setView('stocks-bonds')">Stocks vs. Bonds</button>
+                <button class="btn" onclick="setView('funds')">Funds Only</button>
+            </div>
+        </div>
+
+        <div class="comparison-table">
+            <table id="comparisonTable">
+                <thead>
+                    <tr>
+                        <th>Characteristic</th>
+                        <th class="stocks col-stocks">Stocks</th>
+                        <th class="bonds col-bonds">Bonds</th>
+                        <th class="mutual-funds col-funds">Mutual Funds</th>
+                        <th class="etfs col-funds">ETFs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="category-label">Historical Avg. Return</td>
+                        <td class="col-stocks"><span class="highlight">~10%</span> annually (S&P 500)</td>
+                        <td class="col-bonds"><span class="highlight">~5%</span> annually</td>
+                        <td class="col-funds"><span class="highlight">Varies</span> (based on holdings)</td>
+                        <td class="col-funds"><span class="highlight">Varies</span> (based on index)</td>
+                    </tr>
+                    <tr>
+                        <td class="category-label">Risk Level</td>
+                        <td class="col-stocks"><span class="risk-indicator risk-high">⚠️ High</span></td>
+                        <td class="col-bonds"><span class="risk-indicator risk-low">✓ Low</span></td>
+                        <td class="col-funds"><span class="risk-indicator risk-medium">◐ Medium</span></td>
+                        <td class="col-funds"><span class="risk-indicator risk-medium">◐ Medium</span></td>
+                    </tr>
+                    <tr>
+                        <td class="category-label">Volatility</td>
+                        <td class="col-stocks">Can fluctuate 20-30% or more annually</td>
+                        <td class="col-bonds">Relatively stable, 2-5% fluctuation</td>
+                        <td class="col-funds">Depends on holdings (stock/bond mix)</td>
+                        <td class="col-funds">Depends on underlying index</td>
+                    </tr>
+                    <tr>
+                        <td class="category-label">Liquidity</td>
+                        <td class="col-stocks"><span class="highlight">High</span> - Sell during market hours</td>
+                        <td class="col-bonds"><span class="highlight">Medium</span> - May take time to sell</td>
+                        <td class="col-funds"><span class="highlight">Medium</span> - Priced at end of day</td>
+                        <td class="col-funds"><span class="highlight">High</span> - Trade like stocks</td>
+                    </tr>
+                    <tr>
+                        <td class="category-label">Typical Fees</td>
+                        <td class="col-stocks">Brokerage commission (often $0)</td>
+                        <td class="col-bonds">May include commission or markup</td>
+                        <td class="col-funds"><span class="highlight">0.5-1.5%</span> expense ratio</td>
+                        <td class="col-funds"><span class="highlight">0.03-0.50%</span> expense ratio</td>
+                    </tr>
+                    <tr>
+                        <td class="category-label">Minimum Investment</td>
+                        <td class="col-stocks">Price of 1 share (varies: $1-$500+)</td>
+                        <td class="col-bonds">Often $1,000+ per bond</td>
+                        <td class="col-funds"><span class="highlight">$1,000-$3,000</span> typical</td>
+                        <td class="col-funds"><span class="highlight">Price of 1 share</span> ($50-$400)</td>
+                    </tr>
+                    <tr>
+                        <td class="category-label">Income Generation</td>
+                        <td class="col-stocks">Dividends (if company pays them)</td>
+                        <td class="col-bonds"><span class="highlight">Fixed interest</span> payments</td>
+                        <td class="col-funds">Dividends/interest distributed</td>
+                        <td class="col-funds">Dividends/interest distributed</td>
+                    </tr>
+                    <tr>
+                        <td class="category-label">Diversification</td>
+                        <td class="col-stocks">Single company exposure</td>
+                        <td class="col-bonds">Single issuer exposure</td>
+                        <td class="col-funds"><span class="highlight">High</span> - Many holdings</td>
+                        <td class="col-funds"><span class="highlight">High</span> - Tracks index</td>
+                    </tr>
+                    <tr>
+                        <td class="category-label">Trading</td>
+                        <td class="col-stocks">Buy/sell during market hours</td>
+                        <td class="col-bonds">Through broker, some complexity</td>
+                        <td class="col-funds">Priced once daily (end of day)</td>
+                        <td class="col-funds">Real-time during market hours</td>
+                    </tr>
+                    <tr>
+                        <td class="category-label">Best For</td>
+                        <td class="col-stocks">Long-term growth, higher risk tolerance</td>
+                        <td class="col-bonds">Steady income, capital preservation</td>
+                        <td class="col-funds">Diversification with professional management</td>
+                        <td class="col-funds">Low-cost diversification and flexibility</td>
+                    </tr>
+                    <tr>
+                        <td class="category-label">Tax Efficiency</td>
+                        <td class="col-stocks">Capital gains when sold</td>
+                        <td class="col-bonds">Interest taxed as income</td>
+                        <td class="col-funds">Less tax-efficient (distributions)</td>
+                        <td class="col-funds"><span class="highlight">More tax-efficient</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <footer>
+            <p><strong>PFL Academy</strong> | Investment Education</p>
+            <p style="font-size: 0.9rem; margin-top: 10px;">All data represents typical characteristics. Individual investments may vary. Past performance does not guarantee future results.</p>
+        </footer>
+    </div>
+
+    <script>
+        function setView(view) {
+            const buttons = document.querySelectorAll('.btn');
+            const stocksColumns = document.querySelectorAll('.col-stocks');
+            const bondsColumns = document.querySelectorAll('.col-bonds');
+            const fundsColumns = document.querySelectorAll('.col-funds');
+
+            // Update active button
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // Show/hide columns based on view
+            if (view === 'all') {
+                showColumns(stocksColumns, bondsColumns, fundsColumns);
+            } else if (view === 'stocks-bonds') {
+                showColumns(stocksColumns, bondsColumns);
+                hideColumns(fundsColumns);
+            } else if (view === 'funds') {
+                showColumns(fundsColumns);
+                hideColumns(stocksColumns, bondsColumns);
+            }
+        }
+
+        function showColumns(...columnGroups) {
+            columnGroups.forEach(columns => {
+                columns.forEach(col => col.style.display = '');
+            });
+        }
+
+        function hideColumns(...columnGroups) {
+            columnGroups.forEach(columns => {
+                columns.forEach(col => col.style.display = 'none');
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,1213 @@
+{
+  "generated_at": "/Users/justin/Library/Mobile Documents/com~apple~CloudDocs/Documents/pfl-academy/content-complete",
+  "statistics": {
+    "total_variables": 49,
+    "total_assets": 16,
+    "total_chapters": 27
+  },
+  "most_used_variables": {
+    "STATE_NAME": {
+      "chapters": [
+        "L-3-income-and-taxes",
+        "L-46-automobile-finance",
+        "L-50-supply-demand",
+        "L-6-federal-state-taxes",
+        "L-68-tax-efficient-investing-strategies"
+      ],
+      "assets": [
+        "L-3-income-and-taxes/Income_Management_Worksheet",
+        "L-3-income-and-taxes/Paycheck_Analyzer_Calculator",
+        "L-3-income-and-taxes/State_Tax_Reference_Sheet",
+        "L-3-income-and-taxes/W4_Withholding_Simulator",
+        "L-46-automobile-finance/Auto_Finance_Decision_Calculator",
+        "L-46-automobile-finance/State_Cost_Reference_Sheet",
+        "L-46-automobile-finance/Total_Cost_Ownership_Worksheet",
+        "L-46-automobile-finance/Vehicle_Financing_Decision_Matrix",
+        "L-50-supply-demand/Day_2_Learning_Lab_Activity_Packet",
+        "L-50-supply-demand/Market_Analyzer_Tool",
+        "L-50-supply-demand/State_Market_Data_Fact_Sheet",
+        "L-6-federal-state-taxes/Tax_Impact_Calculator",
+        "L-68-tax-efficient-investing-strategies/Reference_Sheet",
+        "L-68-tax-efficient-investing-strategies/Tax_Efficient_Investment_Planner"
+      ],
+      "usage_count": 14
+    },
+    "STATE_INCOME_TAX_RATE": {
+      "chapters": [
+        "L-3-income-and-taxes",
+        "L-6-federal-state-taxes",
+        "L-68-tax-efficient-investing-strategies"
+      ],
+      "assets": [
+        "L-3-income-and-taxes/Income_Management_Worksheet",
+        "L-3-income-and-taxes/Paycheck_Analyzer_Calculator",
+        "L-3-income-and-taxes/State_Tax_Reference_Sheet",
+        "L-3-income-and-taxes/W4_Withholding_Simulator",
+        "L-6-federal-state-taxes/Tax_Impact_Calculator",
+        "L-68-tax-efficient-investing-strategies/Reference_Sheet",
+        "L-68-tax-efficient-investing-strategies/Tax_Efficient_Investment_Planner"
+      ],
+      "usage_count": 7
+    },
+    "STATE_REGISTRATION_INITIAL": {
+      "chapters": [
+        "L-46-automobile-finance"
+      ],
+      "assets": [
+        "L-46-automobile-finance/Auto_Finance_Decision_Calculator",
+        "L-46-automobile-finance/State_Cost_Reference_Sheet",
+        "L-46-automobile-finance/Total_Cost_Ownership_Worksheet",
+        "L-46-automobile-finance/Vehicle_Financing_Decision_Matrix"
+      ],
+      "usage_count": 4
+    },
+    "STATE_REGISTRATION_ANNUAL": {
+      "chapters": [
+        "L-46-automobile-finance"
+      ],
+      "assets": [
+        "L-46-automobile-finance/Auto_Finance_Decision_Calculator",
+        "L-46-automobile-finance/State_Cost_Reference_Sheet",
+        "L-46-automobile-finance/Total_Cost_Ownership_Worksheet",
+        "L-46-automobile-finance/Vehicle_Financing_Decision_Matrix"
+      ],
+      "usage_count": 4
+    },
+    "STATE_SALES_TAX": {
+      "chapters": [
+        "L-46-automobile-finance"
+      ],
+      "assets": [
+        "L-46-automobile-finance/Auto_Finance_Decision_Calculator",
+        "L-46-automobile-finance/State_Cost_Reference_Sheet",
+        "L-46-automobile-finance/Total_Cost_Ownership_Worksheet",
+        "L-46-automobile-finance/Vehicle_Financing_Decision_Matrix"
+      ],
+      "usage_count": 4
+    },
+    "STATE_CODE": {
+      "chapters": [
+        "L-3-income-and-taxes",
+        "L-46-automobile-finance",
+        "L-6-federal-state-taxes"
+      ],
+      "assets": [
+        "L-3-income-and-taxes/State_Tax_Reference_Sheet",
+        "L-46-automobile-finance/State_Cost_Reference_Sheet",
+        "L-6-federal-state-taxes/Tax_Impact_Calculator"
+      ],
+      "usage_count": 3
+    },
+    "STATE_AVG_AUTO_LOAN_RATE_NEW": {
+      "chapters": [
+        "L-46-automobile-finance",
+        "L-57-loan-applications-and-creditworthiness"
+      ],
+      "assets": [
+        "L-46-automobile-finance/Auto_Finance_Decision_Calculator",
+        "L-46-automobile-finance/State_Cost_Reference_Sheet",
+        "L-57-loan-applications-and-creditworthiness/Loan_Application_Readiness_Checker"
+      ],
+      "usage_count": 3
+    },
+    "STATE_AVG_AUTO_LOAN_RATE_USED": {
+      "chapters": [
+        "L-46-automobile-finance",
+        "L-57-loan-applications-and-creditworthiness"
+      ],
+      "assets": [
+        "L-46-automobile-finance/Auto_Finance_Decision_Calculator",
+        "L-46-automobile-finance/State_Cost_Reference_Sheet",
+        "L-57-loan-applications-and-creditworthiness/Loan_Application_Readiness_Checker"
+      ],
+      "usage_count": 3
+    },
+    "STATE_INSURANCE_AVG_TEEN": {
+      "chapters": [
+        "L-46-automobile-finance"
+      ],
+      "assets": [
+        "L-46-automobile-finance/Auto_Finance_Decision_Calculator",
+        "L-46-automobile-finance/State_Cost_Reference_Sheet",
+        "L-46-automobile-finance/Vehicle_Financing_Decision_Matrix"
+      ],
+      "usage_count": 3
+    },
+    "STATE_INSPECTION_COST": {
+      "chapters": [
+        "L-46-automobile-finance"
+      ],
+      "assets": [
+        "L-46-automobile-finance/State_Cost_Reference_Sheet",
+        "L-46-automobile-finance/Total_Cost_Ownership_Worksheet",
+        "L-46-automobile-finance/Vehicle_Financing_Decision_Matrix"
+      ],
+      "usage_count": 3
+    }
+  },
+  "variable_to_assets": {
+    "STATE_SDI_RATE": {
+      "chapters": [
+        "L-3-income-and-taxes"
+      ],
+      "assets": [
+        "L-3-income-and-taxes/Paycheck_Analyzer_Calculator",
+        "L-3-income-and-taxes/State_Tax_Reference_Sheet"
+      ],
+      "usage_count": 2
+    },
+    "STATE_NAME": {
+      "chapters": [
+        "L-3-income-and-taxes",
+        "L-46-automobile-finance",
+        "L-50-supply-demand",
+        "L-6-federal-state-taxes",
+        "L-68-tax-efficient-investing-strategies"
+      ],
+      "assets": [
+        "L-3-income-and-taxes/Income_Management_Worksheet",
+        "L-3-income-and-taxes/Paycheck_Analyzer_Calculator",
+        "L-3-income-and-taxes/State_Tax_Reference_Sheet",
+        "L-3-income-and-taxes/W4_Withholding_Simulator",
+        "L-46-automobile-finance/Auto_Finance_Decision_Calculator",
+        "L-46-automobile-finance/State_Cost_Reference_Sheet",
+        "L-46-automobile-finance/Total_Cost_Ownership_Worksheet",
+        "L-46-automobile-finance/Vehicle_Financing_Decision_Matrix",
+        "L-50-supply-demand/Day_2_Learning_Lab_Activity_Packet",
+        "L-50-supply-demand/Market_Analyzer_Tool",
+        "L-50-supply-demand/State_Market_Data_Fact_Sheet",
+        "L-6-federal-state-taxes/Tax_Impact_Calculator",
+        "L-68-tax-efficient-investing-strategies/Reference_Sheet",
+        "L-68-tax-efficient-investing-strategies/Tax_Efficient_Investment_Planner"
+      ],
+      "usage_count": 14
+    },
+    "STATE_LOCAL_INCOME_TAX": {
+      "chapters": [
+        "L-3-income-and-taxes"
+      ],
+      "assets": [
+        "L-3-income-and-taxes/Paycheck_Analyzer_Calculator",
+        "L-3-income-and-taxes/State_Tax_Reference_Sheet"
+      ],
+      "usage_count": 2
+    },
+    "STATE_INCOME_TAX_RATE": {
+      "chapters": [
+        "L-3-income-and-taxes",
+        "L-6-federal-state-taxes",
+        "L-68-tax-efficient-investing-strategies"
+      ],
+      "assets": [
+        "L-3-income-and-taxes/Income_Management_Worksheet",
+        "L-3-income-and-taxes/Paycheck_Analyzer_Calculator",
+        "L-3-income-and-taxes/State_Tax_Reference_Sheet",
+        "L-3-income-and-taxes/W4_Withholding_Simulator",
+        "L-6-federal-state-taxes/Tax_Impact_Calculator",
+        "L-68-tax-efficient-investing-strategies/Reference_Sheet",
+        "L-68-tax-efficient-investing-strategies/Tax_Efficient_Investment_Planner"
+      ],
+      "usage_count": 7
+    },
+    "STATE_REVENUE_DEPT_URL": {
+      "chapters": [
+        "L-3-income-and-taxes"
+      ],
+      "assets": [
+        "L-3-income-and-taxes/State_Tax_Reference_Sheet"
+      ],
+      "usage_count": 1
+    },
+    "STATE_TAX_FILING_PORTAL_URL": {
+      "chapters": [
+        "L-3-income-and-taxes"
+      ],
+      "assets": [
+        "L-3-income-and-taxes/State_Tax_Reference_Sheet"
+      ],
+      "usage_count": 1
+    },
+    "STATE_CODE": {
+      "chapters": [
+        "L-3-income-and-taxes",
+        "L-46-automobile-finance",
+        "L-6-federal-state-taxes"
+      ],
+      "assets": [
+        "L-3-income-and-taxes/State_Tax_Reference_Sheet",
+        "L-46-automobile-finance/State_Cost_Reference_Sheet",
+        "L-6-federal-state-taxes/Tax_Impact_Calculator"
+      ],
+      "usage_count": 3
+    },
+    "STATE_REGISTRATION_INITIAL": {
+      "chapters": [
+        "L-46-automobile-finance"
+      ],
+      "assets": [
+        "L-46-automobile-finance/Auto_Finance_Decision_Calculator",
+        "L-46-automobile-finance/State_Cost_Reference_Sheet",
+        "L-46-automobile-finance/Total_Cost_Ownership_Worksheet",
+        "L-46-automobile-finance/Vehicle_Financing_Decision_Matrix"
+      ],
+      "usage_count": 4
+    },
+    "STATE_REGISTRATION_ANNUAL": {
+      "chapters": [
+        "L-46-automobile-finance"
+      ],
+      "assets": [
+        "L-46-automobile-finance/Auto_Finance_Decision_Calculator",
+        "L-46-automobile-finance/State_Cost_Reference_Sheet",
+        "L-46-automobile-finance/Total_Cost_Ownership_Worksheet",
+        "L-46-automobile-finance/Vehicle_Financing_Decision_Matrix"
+      ],
+      "usage_count": 4
+    },
+    "STATE_LEASE_ACQUISITION_FEE": {
+      "chapters": [
+        "L-46-automobile-finance"
+      ],
+      "assets": [
+        "L-46-automobile-finance/Auto_Finance_Decision_Calculator"
+      ],
+      "usage_count": 1
+    },
+    "STATE_AVG_AUTO_LOAN_RATE_NEW": {
+      "chapters": [
+        "L-46-automobile-finance",
+        "L-57-loan-applications-and-creditworthiness"
+      ],
+      "assets": [
+        "L-46-automobile-finance/Auto_Finance_Decision_Calculator",
+        "L-46-automobile-finance/State_Cost_Reference_Sheet",
+        "L-57-loan-applications-and-creditworthiness/Loan_Application_Readiness_Checker"
+      ],
+      "usage_count": 3
+    },
+    "STATE_SALES_TAX": {
+      "chapters": [
+        "L-46-automobile-finance"
+      ],
+      "assets": [
+        "L-46-automobile-finance/Auto_Finance_Decision_Calculator",
+        "L-46-automobile-finance/State_Cost_Reference_Sheet",
+        "L-46-automobile-finance/Total_Cost_Ownership_Worksheet",
+        "L-46-automobile-finance/Vehicle_Financing_Decision_Matrix"
+      ],
+      "usage_count": 4
+    },
+    "STATE_AVG_AUTO_LOAN_RATE_USED": {
+      "chapters": [
+        "L-46-automobile-finance",
+        "L-57-loan-applications-and-creditworthiness"
+      ],
+      "assets": [
+        "L-46-automobile-finance/Auto_Finance_Decision_Calculator",
+        "L-46-automobile-finance/State_Cost_Reference_Sheet",
+        "L-57-loan-applications-and-creditworthiness/Loan_Application_Readiness_Checker"
+      ],
+      "usage_count": 3
+    },
+    "STATE_GAS_PRICE_CURRENT": {
+      "chapters": [
+        "L-46-automobile-finance"
+      ],
+      "assets": [
+        "L-46-automobile-finance/Auto_Finance_Decision_Calculator",
+        "L-46-automobile-finance/State_Cost_Reference_Sheet"
+      ],
+      "usage_count": 2
+    },
+    "STATE_INSURANCE_AVG_TEEN": {
+      "chapters": [
+        "L-46-automobile-finance"
+      ],
+      "assets": [
+        "L-46-automobile-finance/Auto_Finance_Decision_Calculator",
+        "L-46-automobile-finance/State_Cost_Reference_Sheet",
+        "L-46-automobile-finance/Vehicle_Financing_Decision_Matrix"
+      ],
+      "usage_count": 3
+    },
+    "STATE_INSURANCE_AVG_YOUNG_ADULT": {
+      "chapters": [
+        "L-46-automobile-finance"
+      ],
+      "assets": [
+        "L-46-automobile-finance/State_Cost_Reference_Sheet"
+      ],
+      "usage_count": 1
+    },
+    "CALCULATED_INSURANCE_TEEN_ANNUAL": {
+      "chapters": [
+        "L-46-automobile-finance"
+      ],
+      "assets": [
+        "L-46-automobile-finance/State_Cost_Reference_Sheet"
+      ],
+      "usage_count": 1
+    },
+    "STATE_DMV_URL": {
+      "chapters": [
+        "L-46-automobile-finance"
+      ],
+      "assets": [
+        "L-46-automobile-finance/State_Cost_Reference_Sheet"
+      ],
+      "usage_count": 1
+    },
+    "CALCULATED_INTEREST_DIFFERENCE": {
+      "chapters": [
+        "L-46-automobile-finance"
+      ],
+      "assets": [
+        "L-46-automobile-finance/State_Cost_Reference_Sheet"
+      ],
+      "usage_count": 1
+    },
+    "CALCULATED_INSURANCE_ADULT_ANNUAL": {
+      "chapters": [
+        "L-46-automobile-finance"
+      ],
+      "assets": [
+        "L-46-automobile-finance/State_Cost_Reference_Sheet"
+      ],
+      "usage_count": 1
+    },
+    "CALCULATED_INSURANCE_YOUNG_ADULT_ANNUAL": {
+      "chapters": [
+        "L-46-automobile-finance"
+      ],
+      "assets": [
+        "L-46-automobile-finance/State_Cost_Reference_Sheet"
+      ],
+      "usage_count": 1
+    },
+    "STATE_INSURANCE_AVG_ADULT": {
+      "chapters": [
+        "L-46-automobile-finance"
+      ],
+      "assets": [
+        "L-46-automobile-finance/State_Cost_Reference_Sheet"
+      ],
+      "usage_count": 1
+    },
+    "STATE_INSURANCE_COMPARISON_URL": {
+      "chapters": [
+        "L-46-automobile-finance"
+      ],
+      "assets": [
+        "L-46-automobile-finance/State_Cost_Reference_Sheet"
+      ],
+      "usage_count": 1
+    },
+    "STATE_CONSUMER_PROTECTION_URL": {
+      "chapters": [
+        "L-46-automobile-finance"
+      ],
+      "assets": [
+        "L-46-automobile-finance/State_Cost_Reference_Sheet"
+      ],
+      "usage_count": 1
+    },
+    "STATE_INSPECTION_COST": {
+      "chapters": [
+        "L-46-automobile-finance"
+      ],
+      "assets": [
+        "L-46-automobile-finance/State_Cost_Reference_Sheet",
+        "L-46-automobile-finance/Total_Cost_Ownership_Worksheet",
+        "L-46-automobile-finance/Vehicle_Financing_Decision_Matrix"
+      ],
+      "usage_count": 3
+    },
+    "STATE_LABOR_WEBSITE": {
+      "chapters": [
+        "L-50-supply-demand"
+      ],
+      "assets": [
+        "L-50-supply-demand/State_Market_Data_Fact_Sheet"
+      ],
+      "usage_count": 1
+    },
+    "STATE_REALTOR_WEBSITE": {
+      "chapters": [
+        "L-50-supply-demand"
+      ],
+      "assets": [
+        "L-50-supply-demand/State_Market_Data_Fact_Sheet"
+      ],
+      "usage_count": 1
+    },
+    "STATE_POPULATION": {
+      "chapters": [
+        "L-50-supply-demand"
+      ],
+      "assets": [
+        "L-50-supply-demand/State_Market_Data_Fact_Sheet"
+      ],
+      "usage_count": 1
+    },
+    "STATE_ECON_DEV_WEBSITE": {
+      "chapters": [
+        "L-50-supply-demand"
+      ],
+      "assets": [
+        "L-50-supply-demand/State_Market_Data_Fact_Sheet"
+      ],
+      "usage_count": 1
+    },
+    "STATE_UNEMPLOYMENT_RATE": {
+      "chapters": [
+        "L-50-supply-demand"
+      ],
+      "assets": [
+        "L-50-supply-demand/State_Market_Data_Fact_Sheet"
+      ],
+      "usage_count": 1
+    },
+    "STATE_JOB_GROWTH": {
+      "chapters": [
+        "L-50-supply-demand"
+      ],
+      "assets": [
+        "L-50-supply-demand/State_Market_Data_Fact_Sheet"
+      ],
+      "usage_count": 1
+    },
+    "STATE_POPULATION_GROWTH": {
+      "chapters": [
+        "L-50-supply-demand"
+      ],
+      "assets": [
+        "L-50-supply-demand/State_Market_Data_Fact_Sheet"
+      ],
+      "usage_count": 1
+    },
+    "STATE_DAYS_ON_MARKET": {
+      "chapters": [
+        "L-50-supply-demand"
+      ],
+      "assets": [
+        "L-50-supply-demand/State_Market_Data_Fact_Sheet"
+      ],
+      "usage_count": 1
+    },
+    "STATE_EMPLOYMENT_RATE": {
+      "chapters": [
+        "L-50-supply-demand"
+      ],
+      "assets": [
+        "L-50-supply-demand/State_Market_Data_Fact_Sheet"
+      ],
+      "usage_count": 1
+    },
+    "STATE_HOUSING_INVENTORY": {
+      "chapters": [
+        "L-50-supply-demand"
+      ],
+      "assets": [
+        "L-50-supply-demand/State_Market_Data_Fact_Sheet"
+      ],
+      "usage_count": 1
+    },
+    "STATE_GDP_GROWTH": {
+      "chapters": [
+        "L-50-supply-demand"
+      ],
+      "assets": [
+        "L-50-supply-demand/State_Market_Data_Fact_Sheet"
+      ],
+      "usage_count": 1
+    },
+    "STATE_LABOR_FORCE_PARTICIPATION": {
+      "chapters": [
+        "L-50-supply-demand"
+      ],
+      "assets": [
+        "L-50-supply-demand/State_Market_Data_Fact_Sheet"
+      ],
+      "usage_count": 1
+    },
+    "STATE_MEDIAN_AGE": {
+      "chapters": [
+        "L-50-supply-demand"
+      ],
+      "assets": [
+        "L-50-supply-demand/State_Market_Data_Fact_Sheet"
+      ],
+      "usage_count": 1
+    },
+    "STATE_MEDIAN_INCOME": {
+      "chapters": [
+        "L-50-supply-demand"
+      ],
+      "assets": [
+        "L-50-supply-demand/State_Market_Data_Fact_Sheet"
+      ],
+      "usage_count": 1
+    },
+    "STATE_LAND_AVAILABILITY": {
+      "chapters": [
+        "L-50-supply-demand"
+      ],
+      "assets": [
+        "L-50-supply-demand/State_Market_Data_Fact_Sheet"
+      ],
+      "usage_count": 1
+    },
+    "US_UNEMPLOYMENT_RATE": {
+      "chapters": [
+        "L-50-supply-demand"
+      ],
+      "assets": [
+        "L-50-supply-demand/State_Market_Data_Fact_Sheet"
+      ],
+      "usage_count": 1
+    },
+    "STATE_BUSINESS_RANK": {
+      "chapters": [
+        "L-50-supply-demand"
+      ],
+      "assets": [
+        "L-50-supply-demand/State_Market_Data_Fact_Sheet"
+      ],
+      "usage_count": 1
+    },
+    "STATE_CONSTRUCTION_TREND": {
+      "chapters": [
+        "L-50-supply-demand"
+      ],
+      "assets": [
+        "L-50-supply-demand/State_Market_Data_Fact_Sheet"
+      ],
+      "usage_count": 1
+    },
+    "STATE_AVERAGE_WAGE": {
+      "chapters": [
+        "L-50-supply-demand"
+      ],
+      "assets": [
+        "L-50-supply-demand/State_Market_Data_Fact_Sheet"
+      ],
+      "usage_count": 1
+    },
+    "STATE_MEDIAN_HOME_PRICE": {
+      "chapters": [
+        "L-50-supply-demand",
+        "L-58-supply-demand-market-structures"
+      ],
+      "assets": [
+        "L-50-supply-demand/State_Market_Data_Fact_Sheet",
+        "L-58-supply-demand-market-structures/Integrated_Market_Analysis_Tool"
+      ],
+      "usage_count": 2
+    },
+    "STATE_MEDIAN_RENT": {
+      "chapters": [
+        "L-50-supply-demand",
+        "L-58-supply-demand-market-structures"
+      ],
+      "assets": [
+        "L-50-supply-demand/State_Market_Data_Fact_Sheet",
+        "L-58-supply-demand-market-structures/Integrated_Market_Analysis_Tool"
+      ],
+      "usage_count": 2
+    },
+    "STATE_CONSTRUCTION_COST_TREND": {
+      "chapters": [
+        "L-50-supply-demand"
+      ],
+      "assets": [
+        "L-50-supply-demand/State_Market_Data_Fact_Sheet"
+      ],
+      "usage_count": 1
+    },
+    "STATE_AVG_MORTGAGE_RATE": {
+      "chapters": [
+        "L-57-loan-applications-and-creditworthiness"
+      ],
+      "assets": [
+        "L-57-loan-applications-and-creditworthiness/Loan_Application_Readiness_Checker"
+      ],
+      "usage_count": 1
+    },
+    "STATE_CAPITAL_GAINS_TAX": {
+      "chapters": [
+        "L-68-tax-efficient-investing-strategies"
+      ],
+      "assets": [
+        "L-68-tax-efficient-investing-strategies/Reference_Sheet",
+        "L-68-tax-efficient-investing-strategies/Tax_Efficient_Investment_Planner"
+      ],
+      "usage_count": 2
+    }
+  },
+  "asset_to_variables": {
+    "L-3-income-and-taxes/Paycheck_Analyzer_Calculator": [
+      "STATE_SDI_RATE",
+      "STATE_NAME",
+      "STATE_LOCAL_INCOME_TAX",
+      "STATE_INCOME_TAX_RATE"
+    ],
+    "L-3-income-and-taxes/W4_Withholding_Simulator": [
+      "STATE_NAME",
+      "STATE_INCOME_TAX_RATE"
+    ],
+    "L-3-income-and-taxes/State_Tax_Reference_Sheet": [
+      "STATE_REVENUE_DEPT_URL",
+      "STATE_SDI_RATE",
+      "STATE_TAX_FILING_PORTAL_URL",
+      "STATE_NAME",
+      "STATE_LOCAL_INCOME_TAX",
+      "STATE_INCOME_TAX_RATE",
+      "STATE_CODE"
+    ],
+    "L-3-income-and-taxes/Income_Management_Worksheet": [
+      "STATE_NAME",
+      "STATE_INCOME_TAX_RATE"
+    ],
+    "L-46-automobile-finance/Auto_Finance_Decision_Calculator": [
+      "STATE_REGISTRATION_INITIAL",
+      "STATE_REGISTRATION_ANNUAL",
+      "STATE_LEASE_ACQUISITION_FEE",
+      "STATE_AVG_AUTO_LOAN_RATE_NEW",
+      "STATE_SALES_TAX",
+      "STATE_NAME",
+      "STATE_AVG_AUTO_LOAN_RATE_USED",
+      "STATE_GAS_PRICE_CURRENT",
+      "STATE_INSURANCE_AVG_TEEN"
+    ],
+    "L-46-automobile-finance/State_Cost_Reference_Sheet": [
+      "STATE_INSURANCE_AVG_YOUNG_ADULT",
+      "CALCULATED_INSURANCE_TEEN_ANNUAL",
+      "STATE_AVG_AUTO_LOAN_RATE_USED",
+      "STATE_INSURANCE_AVG_TEEN",
+      "STATE_DMV_URL",
+      "STATE_CODE",
+      "STATE_REGISTRATION_INITIAL",
+      "STATE_AVG_AUTO_LOAN_RATE_NEW",
+      "CALCULATED_INTEREST_DIFFERENCE",
+      "CALCULATED_INSURANCE_ADULT_ANNUAL",
+      "CALCULATED_INSURANCE_YOUNG_ADULT_ANNUAL",
+      "STATE_INSURANCE_AVG_ADULT",
+      "STATE_INSURANCE_COMPARISON_URL",
+      "STATE_SALES_TAX",
+      "STATE_NAME",
+      "STATE_GAS_PRICE_CURRENT",
+      "STATE_REGISTRATION_ANNUAL",
+      "STATE_CONSUMER_PROTECTION_URL",
+      "STATE_INSPECTION_COST"
+    ],
+    "L-46-automobile-finance/Vehicle_Financing_Decision_Matrix": [
+      "STATE_REGISTRATION_INITIAL",
+      "STATE_REGISTRATION_ANNUAL",
+      "STATE_SALES_TAX",
+      "STATE_NAME",
+      "STATE_INSPECTION_COST",
+      "STATE_INSURANCE_AVG_TEEN"
+    ],
+    "L-46-automobile-finance/Total_Cost_Ownership_Worksheet": [
+      "STATE_REGISTRATION_INITIAL",
+      "STATE_REGISTRATION_ANNUAL",
+      "STATE_SALES_TAX",
+      "STATE_NAME",
+      "STATE_INSPECTION_COST"
+    ],
+    "L-50-supply-demand/State_Market_Data_Fact_Sheet": [
+      "STATE_LABOR_WEBSITE",
+      "STATE_REALTOR_WEBSITE",
+      "STATE_POPULATION",
+      "STATE_ECON_DEV_WEBSITE",
+      "STATE_UNEMPLOYMENT_RATE",
+      "STATE_JOB_GROWTH",
+      "STATE_POPULATION_GROWTH",
+      "STATE_DAYS_ON_MARKET",
+      "STATE_EMPLOYMENT_RATE",
+      "STATE_HOUSING_INVENTORY",
+      "STATE_GDP_GROWTH",
+      "STATE_LABOR_FORCE_PARTICIPATION",
+      "STATE_MEDIAN_AGE",
+      "STATE_MEDIAN_INCOME",
+      "STATE_NAME",
+      "STATE_LAND_AVAILABILITY",
+      "US_UNEMPLOYMENT_RATE",
+      "STATE_BUSINESS_RANK",
+      "STATE_CONSTRUCTION_TREND",
+      "STATE_AVERAGE_WAGE",
+      "STATE_MEDIAN_HOME_PRICE",
+      "STATE_MEDIAN_RENT",
+      "STATE_CONSTRUCTION_COST_TREND"
+    ],
+    "L-50-supply-demand/Day_2_Learning_Lab_Activity_Packet": [
+      "STATE_NAME"
+    ],
+    "L-50-supply-demand/Market_Analyzer_Tool": [
+      "STATE_NAME"
+    ],
+    "L-57-loan-applications-and-creditworthiness/Loan_Application_Readiness_Checker": [
+      "STATE_AVG_MORTGAGE_RATE",
+      "STATE_AVG_AUTO_LOAN_RATE_USED",
+      "STATE_AVG_AUTO_LOAN_RATE_NEW"
+    ],
+    "L-58-supply-demand-market-structures/Integrated_Market_Analysis_Tool": [
+      "STATE_MEDIAN_RENT",
+      "STATE_MEDIAN_HOME_PRICE"
+    ],
+    "L-6-federal-state-taxes/Tax_Impact_Calculator": [
+      "STATE_INCOME_TAX_RATE",
+      "STATE_NAME",
+      "STATE_CODE"
+    ],
+    "L-68-tax-efficient-investing-strategies/Tax_Efficient_Investment_Planner": [
+      "STATE_CAPITAL_GAINS_TAX",
+      "STATE_NAME",
+      "STATE_INCOME_TAX_RATE"
+    ],
+    "L-68-tax-efficient-investing-strategies/Reference_Sheet": [
+      "STATE_CAPITAL_GAINS_TAX",
+      "STATE_NAME",
+      "STATE_INCOME_TAX_RATE"
+    ]
+  },
+  "chapter_summaries": {
+    "L-3-income-and-taxes": {
+      "total_variables": 7,
+      "variables": [
+        "STATE_CODE",
+        "STATE_INCOME_TAX_RATE",
+        "STATE_LOCAL_INCOME_TAX",
+        "STATE_NAME",
+        "STATE_REVENUE_DEPT_URL",
+        "STATE_SDI_RATE",
+        "STATE_TAX_FILING_PORTAL_URL"
+      ],
+      "assets": [
+        {
+          "file": "Paycheck_Analyzer_Calculator",
+          "variables": [
+            "STATE_SDI_RATE",
+            "STATE_NAME",
+            "STATE_LOCAL_INCOME_TAX",
+            "STATE_INCOME_TAX_RATE"
+          ],
+          "count": 4
+        },
+        {
+          "file": "W4_Withholding_Simulator",
+          "variables": [
+            "STATE_NAME",
+            "STATE_INCOME_TAX_RATE"
+          ],
+          "count": 2
+        },
+        {
+          "file": "State_Tax_Reference_Sheet",
+          "variables": [
+            "STATE_REVENUE_DEPT_URL",
+            "STATE_SDI_RATE",
+            "STATE_TAX_FILING_PORTAL_URL",
+            "STATE_NAME",
+            "STATE_LOCAL_INCOME_TAX",
+            "STATE_INCOME_TAX_RATE",
+            "STATE_CODE"
+          ],
+          "count": 7
+        },
+        {
+          "file": "Income_Management_Worksheet",
+          "variables": [
+            "STATE_NAME",
+            "STATE_INCOME_TAX_RATE"
+          ],
+          "count": 2
+        }
+      ],
+      "asset_count": 4
+    },
+    "L-30-renting-vs-owning": {
+      "total_variables": 4,
+      "variables": [
+        "STATE_MEDIAN_HOME_PRICE",
+        "STATE_MEDIAN_RENT",
+        "STATE_NAME",
+        "STATE_PROPERTY_TAX_AVG"
+      ],
+      "assets": [],
+      "asset_count": 0
+    },
+    "L-46-automobile-finance": {
+      "total_variables": 20,
+      "variables": [
+        "CALCULATED_INSURANCE_ADULT_ANNUAL",
+        "CALCULATED_INSURANCE_TEEN_ANNUAL",
+        "CALCULATED_INSURANCE_YOUNG_ADULT_ANNUAL",
+        "CALCULATED_INTEREST_DIFFERENCE",
+        "STATE_AVG_AUTO_LOAN_RATE_NEW",
+        "STATE_AVG_AUTO_LOAN_RATE_USED",
+        "STATE_CODE",
+        "STATE_CONSUMER_PROTECTION_URL",
+        "STATE_DMV_URL",
+        "STATE_GAS_PRICE_CURRENT",
+        "STATE_INSPECTION_COST",
+        "STATE_INSURANCE_AVG_ADULT",
+        "STATE_INSURANCE_AVG_TEEN",
+        "STATE_INSURANCE_AVG_YOUNG_ADULT",
+        "STATE_INSURANCE_COMPARISON_URL",
+        "STATE_LEASE_ACQUISITION_FEE",
+        "STATE_NAME",
+        "STATE_REGISTRATION_ANNUAL",
+        "STATE_REGISTRATION_INITIAL",
+        "STATE_SALES_TAX"
+      ],
+      "assets": [
+        {
+          "file": "Auto_Finance_Decision_Calculator",
+          "variables": [
+            "STATE_REGISTRATION_INITIAL",
+            "STATE_REGISTRATION_ANNUAL",
+            "STATE_LEASE_ACQUISITION_FEE",
+            "STATE_AVG_AUTO_LOAN_RATE_NEW",
+            "STATE_SALES_TAX",
+            "STATE_NAME",
+            "STATE_AVG_AUTO_LOAN_RATE_USED",
+            "STATE_GAS_PRICE_CURRENT",
+            "STATE_INSURANCE_AVG_TEEN"
+          ],
+          "count": 9
+        },
+        {
+          "file": "State_Cost_Reference_Sheet",
+          "variables": [
+            "STATE_INSURANCE_AVG_YOUNG_ADULT",
+            "CALCULATED_INSURANCE_TEEN_ANNUAL",
+            "STATE_AVG_AUTO_LOAN_RATE_USED",
+            "STATE_INSURANCE_AVG_TEEN",
+            "STATE_DMV_URL",
+            "STATE_CODE",
+            "STATE_REGISTRATION_INITIAL",
+            "STATE_AVG_AUTO_LOAN_RATE_NEW",
+            "CALCULATED_INTEREST_DIFFERENCE",
+            "CALCULATED_INSURANCE_ADULT_ANNUAL",
+            "CALCULATED_INSURANCE_YOUNG_ADULT_ANNUAL",
+            "STATE_INSURANCE_AVG_ADULT",
+            "STATE_INSURANCE_COMPARISON_URL",
+            "STATE_SALES_TAX",
+            "STATE_NAME",
+            "STATE_GAS_PRICE_CURRENT",
+            "STATE_REGISTRATION_ANNUAL",
+            "STATE_CONSUMER_PROTECTION_URL",
+            "STATE_INSPECTION_COST"
+          ],
+          "count": 19
+        },
+        {
+          "file": "Vehicle_Financing_Decision_Matrix",
+          "variables": [
+            "STATE_REGISTRATION_INITIAL",
+            "STATE_REGISTRATION_ANNUAL",
+            "STATE_SALES_TAX",
+            "STATE_NAME",
+            "STATE_INSPECTION_COST",
+            "STATE_INSURANCE_AVG_TEEN"
+          ],
+          "count": 6
+        },
+        {
+          "file": "Total_Cost_Ownership_Worksheet",
+          "variables": [
+            "STATE_REGISTRATION_INITIAL",
+            "STATE_REGISTRATION_ANNUAL",
+            "STATE_SALES_TAX",
+            "STATE_NAME",
+            "STATE_INSPECTION_COST"
+          ],
+          "count": 5
+        }
+      ],
+      "asset_count": 4
+    },
+    "L-47-introduction-to-investment-types": {
+      "total_variables": 0,
+      "variables": [],
+      "assets": [],
+      "asset_count": 0
+    },
+    "L-48-economic-systems": {
+      "total_variables": 0,
+      "variables": [],
+      "assets": [],
+      "asset_count": 0
+    },
+    "L-49-scarcity-opportunity-cost": {
+      "total_variables": 0,
+      "variables": [],
+      "assets": [],
+      "asset_count": 0
+    },
+    "L-50-supply-demand": {
+      "total_variables": 23,
+      "variables": [
+        "STATE_AVERAGE_WAGE",
+        "STATE_BUSINESS_RANK",
+        "STATE_CONSTRUCTION_COST_TREND",
+        "STATE_CONSTRUCTION_TREND",
+        "STATE_DAYS_ON_MARKET",
+        "STATE_ECON_DEV_WEBSITE",
+        "STATE_EMPLOYMENT_RATE",
+        "STATE_GDP_GROWTH",
+        "STATE_HOUSING_INVENTORY",
+        "STATE_JOB_GROWTH",
+        "STATE_LABOR_FORCE_PARTICIPATION",
+        "STATE_LABOR_WEBSITE",
+        "STATE_LAND_AVAILABILITY",
+        "STATE_MEDIAN_AGE",
+        "STATE_MEDIAN_HOME_PRICE",
+        "STATE_MEDIAN_INCOME",
+        "STATE_MEDIAN_RENT",
+        "STATE_NAME",
+        "STATE_POPULATION",
+        "STATE_POPULATION_GROWTH",
+        "STATE_REALTOR_WEBSITE",
+        "STATE_UNEMPLOYMENT_RATE",
+        "US_UNEMPLOYMENT_RATE"
+      ],
+      "assets": [
+        {
+          "file": "State_Market_Data_Fact_Sheet",
+          "variables": [
+            "STATE_LABOR_WEBSITE",
+            "STATE_REALTOR_WEBSITE",
+            "STATE_POPULATION",
+            "STATE_ECON_DEV_WEBSITE",
+            "STATE_UNEMPLOYMENT_RATE",
+            "STATE_JOB_GROWTH",
+            "STATE_POPULATION_GROWTH",
+            "STATE_DAYS_ON_MARKET",
+            "STATE_EMPLOYMENT_RATE",
+            "STATE_HOUSING_INVENTORY",
+            "STATE_GDP_GROWTH",
+            "STATE_LABOR_FORCE_PARTICIPATION",
+            "STATE_MEDIAN_AGE",
+            "STATE_MEDIAN_INCOME",
+            "STATE_NAME",
+            "STATE_LAND_AVAILABILITY",
+            "US_UNEMPLOYMENT_RATE",
+            "STATE_BUSINESS_RANK",
+            "STATE_CONSTRUCTION_TREND",
+            "STATE_AVERAGE_WAGE",
+            "STATE_MEDIAN_HOME_PRICE",
+            "STATE_MEDIAN_RENT",
+            "STATE_CONSTRUCTION_COST_TREND"
+          ],
+          "count": 23
+        },
+        {
+          "file": "Day_2_Learning_Lab_Activity_Packet",
+          "variables": [
+            "STATE_NAME"
+          ],
+          "count": 1
+        },
+        {
+          "file": "Market_Analyzer_Tool",
+          "variables": [
+            "STATE_NAME"
+          ],
+          "count": 1
+        }
+      ],
+      "asset_count": 3
+    },
+    "L-51-market-structures": {
+      "total_variables": 0,
+      "variables": [],
+      "assets": [],
+      "asset_count": 0
+    },
+    "L-52-government-economy": {
+      "total_variables": 0,
+      "variables": [],
+      "assets": [],
+      "asset_count": 0
+    },
+    "L-53-fiscal-monetary-policy": {
+      "total_variables": 0,
+      "variables": [],
+      "assets": [],
+      "asset_count": 0
+    },
+    "L-54-inflation-unemployment": {
+      "total_variables": 0,
+      "variables": [],
+      "assets": [],
+      "asset_count": 0
+    },
+    "L-55-international-trade": {
+      "total_variables": 0,
+      "variables": [],
+      "assets": [],
+      "asset_count": 0
+    },
+    "L-56-financial-record-keeping": {
+      "total_variables": 0,
+      "variables": [],
+      "assets": [],
+      "asset_count": 0
+    },
+    "L-57-loan-applications-and-creditworthiness": {
+      "total_variables": 3,
+      "variables": [
+        "STATE_AVG_AUTO_LOAN_RATE_NEW",
+        "STATE_AVG_AUTO_LOAN_RATE_USED",
+        "STATE_AVG_MORTGAGE_RATE"
+      ],
+      "assets": [
+        {
+          "file": "Loan_Application_Readiness_Checker",
+          "variables": [
+            "STATE_AVG_MORTGAGE_RATE",
+            "STATE_AVG_AUTO_LOAN_RATE_USED",
+            "STATE_AVG_AUTO_LOAN_RATE_NEW"
+          ],
+          "count": 3
+        }
+      ],
+      "asset_count": 1
+    },
+    "L-58-supply-demand-market-structures": {
+      "total_variables": 2,
+      "variables": [
+        "STATE_MEDIAN_HOME_PRICE",
+        "STATE_MEDIAN_RENT"
+      ],
+      "assets": [
+        {
+          "file": "Integrated_Market_Analysis_Tool",
+          "variables": [
+            "STATE_MEDIAN_RENT",
+            "STATE_MEDIAN_HOME_PRICE"
+          ],
+          "count": 2
+        }
+      ],
+      "asset_count": 1
+    },
+    "L-59-understanding-local-tax-structures": {
+      "total_variables": 0,
+      "variables": [],
+      "assets": [],
+      "asset_count": 0
+    },
+    "L-6-federal-state-taxes": {
+      "total_variables": 9,
+      "variables": [
+        "STATE_CODE",
+        "STATE_ESTATE_TAX",
+        "STATE_GAS_TAX",
+        "STATE_INCOME_TAX_BRACKETS",
+        "STATE_INCOME_TAX_RATE",
+        "STATE_NAME",
+        "STATE_PROPERTY_TAX_AVG",
+        "STATE_SALES_TAX",
+        "STATE_VEHICLE_TAX"
+      ],
+      "assets": [
+        {
+          "file": "Tax_Impact_Calculator",
+          "variables": [
+            "STATE_INCOME_TAX_RATE",
+            "STATE_NAME",
+            "STATE_CODE"
+          ],
+          "count": 3
+        }
+      ],
+      "asset_count": 1
+    },
+    "L-60-understanding-financial-contracts": {
+      "total_variables": 0,
+      "variables": [],
+      "assets": [],
+      "asset_count": 0
+    },
+    "L-61-contract-evaluation-and-consumer-protection": {
+      "total_variables": 0,
+      "variables": [],
+      "assets": [],
+      "asset_count": 0
+    },
+    "L-62-investment-portfolio-strategies": {
+      "total_variables": 0,
+      "variables": [],
+      "assets": [],
+      "asset_count": 0
+    },
+    "L-63-advanced-investment-concepts": {
+      "total_variables": 0,
+      "variables": [],
+      "assets": [],
+      "asset_count": 0
+    },
+    "L-64-risk-and-return-in-investing": {
+      "total_variables": 0,
+      "variables": [],
+      "assets": [],
+      "asset_count": 0
+    },
+    "L-65-investment-portfolio-diversification": {
+      "total_variables": 0,
+      "variables": [],
+      "assets": [],
+      "asset_count": 0
+    },
+    "L-66-understanding-financial-markets": {
+      "total_variables": 0,
+      "variables": [],
+      "assets": [],
+      "asset_count": 0
+    },
+    "L-67-investment-technology-and-behavioral-investing": {
+      "total_variables": 0,
+      "variables": [],
+      "assets": [],
+      "asset_count": 0
+    },
+    "L-68-tax-efficient-investing-strategies": {
+      "total_variables": 3,
+      "variables": [
+        "STATE_CAPITAL_GAINS_TAX",
+        "STATE_INCOME_TAX_RATE",
+        "STATE_NAME"
+      ],
+      "assets": [
+        {
+          "file": "Tax_Efficient_Investment_Planner",
+          "variables": [
+            "STATE_CAPITAL_GAINS_TAX",
+            "STATE_NAME",
+            "STATE_INCOME_TAX_RATE"
+          ],
+          "count": 3
+        },
+        {
+          "file": "Reference_Sheet",
+          "variables": [
+            "STATE_CAPITAL_GAINS_TAX",
+            "STATE_NAME",
+            "STATE_INCOME_TAX_RATE"
+          ],
+          "count": 3
+        }
+      ],
+      "asset_count": 2
+    },
+    "L-69-alternative-investments-and-wealth-strategies": {
+      "total_variables": 0,
+      "variables": [],
+      "assets": [],
+      "asset_count": 0
+    }
+  }
+}

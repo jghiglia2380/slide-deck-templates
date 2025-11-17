@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policy Impact Simulator | PFL Academy</title>
+    <!--
+    PURPOSE: Understand how fiscal and monetary policy affect personal finances
+    USE: Chapter interactive activity (15-20 minutes)
+    -->
+    <style>
+        :root{--primary:#6366f1;--secondary:#8b5cf6;--success:#10b981;--warning:#f59e0b;--text:#1f2937}*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Helvetica Neue',Arial,sans-serif;font-size:16px;line-height:1.6;color:var(--text);background-color:#f9fafb;padding:20px}.container{max-width:1000px;margin:0 auto;background-color:white;border-radius:12px;box-shadow:0 4px 6px rgba(0,0,0,0.1)}header{background:linear-gradient(135deg,var(--primary),var(--secondary));color:white;padding:30px;text-align:center}h1{font-size:2rem;font-weight:700;margin-bottom:10px}.content{padding:30px}.section{margin-bottom:30px}h2{font-size:1.5rem;color:var(--primary);margin-bottom:15px}.policy-selector{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:30px}.policy-option{background-color:#f9fafb;padding:20px;border-radius:8px;border:2px solid transparent;cursor:pointer;transition:all 0.3s}.policy-option:hover{border-color:var(--primary)}.policy-option.active{border-color:var(--primary);background-color:#eef2ff}.policy-title{font-size:1.2rem;font-weight:600;margin-bottom:10px}.slider-container{background-color:#f9fafb;padding:20px;border-radius:8px;margin-bottom:20px}input[type="range"]{width:100%;height:8px;border-radius:5px;background:#e5e7eb;outline:none;-webkit-appearance:none}input[type="range"]::-webkit-slider-thumb{-webkit-appearance:none;width:24px;height:24px;border-radius:50%;background:var(--primary);cursor:pointer}input[type="range"]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;background:var(--primary);cursor:pointer}.impact-box{background-color:#f0fdf4;border-left:4px solid var(--success);padding:20px;border-radius:8px;margin-top:20px;display:none}.impact-box.show{display:block}.button{background:linear-gradient(135deg,var(--primary),var(--secondary));color:white;padding:12px 30px;border:none;border-radius:6px;font-size:1rem;font-weight:600;cursor:pointer;width:100%;margin-top:20px}.button:hover{transform:translateY(-2px)}@media print{body{padding:0;background:white}.container{box-shadow:none}.button{display:none}}@media(max-width:768px){.policy-selector{grid-template-columns:1fr}h1{font-size:1.5rem}}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Fiscal & Monetary Policy Impact Simulator</h1>
+            <p style="font-size:1.1rem;opacity:0.95">See how government and Federal Reserve policies affect your personal finances</p>
+        </header>
+
+        <div class="content">
+            <div class="section">
+                <h2>Select a Policy Scenario</h2>
+
+                <div class="policy-selector">
+                    <div class="policy-option active" data-type="fiscal" onclick="selectPolicy('fiscal')">
+                        <div class="policy-title">📊 Fiscal Policy</div>
+                        <p style="color:#6b7280;font-size:0.95rem">Government spending and taxation decisions by Congress and the President</p>
+                    </div>
+
+                    <div class="policy-option" data-type="monetary" onclick="selectPolicy('monetary')">
+                        <div class="policy-title">💰 Monetary Policy</div>
+                        <p style="color:#6b7280;font-size:0.95rem">Interest rate and money supply decisions by the Federal Reserve</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="fiscalSection">
+                <h2>Fiscal Policy Adjustment</h2>
+                <div class="slider-container">
+                    <label style="font-weight:600;display:block;margin-bottom:15px">Government Spending:</label>
+                    <input type="range" id="spendingSlider" min="1" max="3" value="2" step="1" oninput="updateFiscal()">
+                    <div style="display:flex;justify-content:space-between;margin-top:10px;font-size:0.9rem;color:#6b7280">
+                        <span>Cut Spending</span>
+                        <span>Maintain</span>
+                        <span>Increase Spending</span>
+                    </div>
+                </div>
+
+                <div class="slider-container">
+                    <label style="font-weight:600;display:block;margin-bottom:15px">Tax Rates:</label>
+                    <input type="range" id="taxSlider" min="1" max="3" value="2" step="1" oninput="updateFiscal()">
+                    <div style="display:flex;justify-content:space-between;margin-top:10px;font-size:0.9rem;color:#6b7280">
+                        <span>Cut Taxes</span>
+                        <span>Maintain</span>
+                        <span>Raise Taxes</span>
+                    </div>
+                </div>
+
+                <button class="button" onclick="analyzeFiscal()">Analyze Fiscal Policy Impact</button>
+
+                <div class="impact-box" id="fiscalImpact">
+                    <div style="font-size:1.3rem;font-weight:600;color:var(--success);margin-bottom:15px">Personal Finance Impact:</div>
+                    <div id="fiscalContent"></div>
+                </div>
+            </div>
+
+            <div class="section" id="monetarySection" style="display:none">
+                <h2>Monetary Policy Adjustment</h2>
+                <div class="slider-container">
+                    <label style="font-weight:600;display:block;margin-bottom:15px">Federal Reserve Interest Rates:</label>
+                    <input type="range" id="rateSlider" min="1" max="3" value="2" step="1" oninput="updateMonetary()">
+                    <div style="display:flex;justify-content:space-between;margin-top:10px;font-size:0.9rem;color:#6b7280">
+                        <span>Lower Rates</span>
+                        <span>Maintain</span>
+                        <span>Raise Rates</span>
+                    </div>
+                    <div id="rateDisplay" style="text-align:center;font-size:1.2rem;font-weight:700;color:var(--primary);margin-top:15px">Current: 5.25%</div>
+                </div>
+
+                <button class="button" onclick="analyzeMonetary()">Analyze Monetary Policy Impact</button>
+
+                <div class="impact-box" id="monetaryImpact">
+                    <div style="font-size:1.3rem;font-weight:600;color:var(--success);margin-bottom:15px">Personal Finance Impact:</div>
+                    <div id="monetaryContent"></div>
+                </div>
+            </div>
+
+            <button class="button" onclick="window.print()">Print Analysis</button>
+        </div>
+    </div>
+
+    <script>
+        let policyType='fiscal';function selectPolicy(type){policyType=type;document.querySelectorAll('.policy-option').forEach(opt=>opt.classList.remove('active'));document.querySelector(`.policy-option[data-type="${type}"]`).classList.add('active');document.getElementById('fiscalSection').style.display=type==='fiscal'?'block':'none';document.getElementById('monetarySection').style.display=type==='monetary'?'block':'none'}function updateFiscal(){}function updateMonetary(){const rate=document.getElementById('rateSlider').value;const rates=['3.00%','5.25%','7.50%'];document.getElementById('rateDisplay').textContent=`Current: ${rates[rate-1]}`}function analyzeFiscal(){const spending=parseInt(document.getElementById('spendingSlider').value);const tax=parseInt(document.getElementById('taxSlider').value);let content='';if(spending===3&&tax===1){content='<strong>Expansionary Policy (Stimulus):</strong><ul style="margin:15px 0 0 20px"><li>Lower taxes = More take-home pay for you</li><li>Increased spending = More job creation</li><li>Risk: Higher future deficits may mean higher future taxes</li><li>Risk: Potential inflation reducing purchasing power</li></ul>'}else if(spending===1&&tax===3){content='<strong>Contractionary Policy (Austerity):</strong><ul style="margin:15px 0 0 20px"><li>Higher taxes = Less take-home pay for you</li><li>Reduced spending = Fewer government jobs and services</li><li>Benefit: Lower deficits may reduce future tax burden</li><li>Benefit: Helps control inflation</li></ul>'}else if(spending===3&&tax===3){content='<strong>Balanced Expansion:</strong><ul style="margin:15px 0 0 20px"><li>Higher taxes offset increased spending</li><li>More services but less disposable income</li><li>Smaller impact on deficit</li></ul>'}else if(spending===1&&tax===1){content='<strong>Balanced Contraction:</strong><ul style="margin:15px 0 0 20px"><li>Lower taxes but fewer services</li><li>More disposable income for private spending</li><li>Smaller government footprint</li></ul>'}else{content='<strong>Neutral/Maintain Policy:</strong><ul style="margin:15px 0 0 20px"><li>Minimal change to your taxes and take-home pay</li><li>Government services remain stable</li><li>Economic conditions stay relatively unchanged</li></ul>'}content+='<div style="margin-top:20px;padding:15px;background-color:white;border-radius:6px"><strong>How This Affects You:</strong><br>Track changes in: your paycheck (tax withholding), government benefits you receive, job opportunities in public sector, and prices of goods/services.</div>';document.getElementById('fiscalContent').innerHTML=content;document.getElementById('fiscalImpact').classList.add('show')}function analyzeMonetary(){const rate=parseInt(document.getElementById('rateSlider').value);const rates=['3.00%','5.25%','7.50%'];const rateText=rates[rate-1];let content='';if(rate===1){content=`<strong>Lowering Interest Rates (Expansionary Policy):</strong><br><div style="margin-top:10px"><strong>Borrowing Costs:</strong> ${rateText} rate<ul style="margin:10px 0 0 20px"><li>Mortgages become cheaper - good time to buy a house</li><li>Auto loans cost less - easier to finance a car</li><li>Credit card rates decrease - carrying balances costs less</li><li>Student loan rates lower (for new loans)</li></ul></div><div style="margin-top:15px"><strong>Savings & Investments:</strong><ul style="margin-left:20px"><li>Savings account interest drops - less reward for saving</li><li>CD rates decrease - bonds pay less</li><li>Stocks may rise - cheap borrowing fuels business growth</li></ul></div>`}else if(rate===3){content=`<strong>Raising Interest Rates (Contractionary Policy):</strong><br><div style="margin-top:10px"><strong>Borrowing Costs:</strong> ${rateText} rate<ul style="margin:10px 0 0 20px"><li>Mortgages become expensive - harder to buy a house</li><li>Auto loans cost more - financing a car is pricier</li><li>Credit card rates increase - carrying balances very costly</li><li>Student loan rates higher (for new loans)</li></ul></div><div style="margin-top:15px"><strong>Savings & Investments:</strong><ul style="margin-left:20px"><li>Savings account interest increases - rewarded for saving</li><li>CD rates rise - bonds pay more</li><li>Stocks may fall - expensive borrowing slows growth</li></ul></div>`}else{content=`<strong>Maintaining Interest Rates (Neutral Policy):</strong><br><div style="margin-top:10px"><strong>Current Rate:</strong> ${rateText}<ul style="margin:10px 0 0 20px"><li>Borrowing costs stable - predictable loan payments</li><li>Savings returns unchanged - consistent returns</li><li>Economic conditions remain steady</li></ul></div>`}content+='<div style="margin-top:20px;padding:15px;background-color:white;border-radius:6px"><strong>Action Steps:</strong><br>';if(rate===1){content+='Lock in fixed-rate mortgages while rates are low. Consider taking on debt for major purchases. Move investments toward stocks.'}else if(rate===3){content+='Pay down variable-rate debt ASAP. Increase savings in high-yield accounts. Lock in high CD rates.'}else{content+='Maintain current strategy. Reassess if rates change significantly.'}content+='</div>';document.getElementById('monetaryContent').innerHTML=content;document.getElementById('monetaryImpact').classList.add('show')}
+    </script>
+</body>
+</html>

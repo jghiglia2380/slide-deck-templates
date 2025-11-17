@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total Cost of Ownership Worksheet | PFL Academy</title>
+    <!--
+    STATE VARIABLES USED IN THIS FILE:
+    - STATE_NAME
+    - STATE_SALES_TAX
+    - STATE_REGISTRATION_INITIAL
+    - STATE_REGISTRATION_ANNUAL
+    - STATE_INSPECTION_REQUIRED
+    - STATE_INSPECTION_COST
+
+    UPDATE FREQUENCY:
+    - Annual: STATE_SALES_TAX, STATE_REGISTRATION_INITIAL, STATE_REGISTRATION_ANNUAL, STATE_INSPECTION_COST
+    -->
+    <style>
+        :root {
+            --primary: #6366f1;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --background: #ffffff;
+            --border: #e5e7eb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            color: var(--text);
+            padding: 20px;
+            background-color: #f9fafb;
+        }
+
+        .worksheet {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: white;
+            border: 2px solid var(--border);
+            padding: 40px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid var(--primary);
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 1.75rem;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: var(--text-light);
+            font-size: 1rem;
+        }
+
+        .state-badge {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            margin-top: 10px;
+        }
+
+        .instructions {
+            background-color: #eff6ff;
+            border-left: 4px solid #3b82f6;
+            padding: 15px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+
+        .instructions p {
+            margin-bottom: 8px;
+        }
+
+        .instructions p:last-child {
+            margin-bottom: 0;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            page-break-inside: avoid;
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+
+        .form-row {
+            display: contents;
+        }
+
+        .form-label {
+            padding: 10px;
+            background-color: #f9fafb;
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+        }
+
+        .form-input {
+            padding: 10px;
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            font-weight: 600;
+        }
+
+        .form-input input {
+            width: 100%;
+            border: none;
+            border-bottom: 2px dotted var(--text-light);
+            padding: 4px;
+            text-align: right;
+            font-size: 1rem;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-input input:focus {
+            outline: none;
+            border-bottom-color: var(--primary);
+        }
+
+        .calculation-row {
+            background-color: #fef3c7;
+            font-weight: 600;
+        }
+
+        .total-row {
+            background-color: #dcfce7;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .subtotal-row {
+            background-color: #f3f4f6;
+            font-weight: 600;
+        }
+
+        .state-info {
+            background-color: #eff6ff;
+            padding: 12px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+
+        .state-info strong {
+            color: #3b82f6;
+        }
+
+        .formula-help {
+            background-color: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 12px;
+            margin: 15px 0;
+            font-size: 0.85rem;
+            font-style: italic;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        th {
+            background-color: var(--primary);
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid var(--border);
+        }
+
+        .year-column {
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .notes-section {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f9fafb;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+        }
+
+        .notes-section h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .notes-area {
+            width: 100%;
+            min-height: 100px;
+            border: 1px solid var(--border);
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            border-radius: 4px;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                background-color: white;
+            }
+
+            .worksheet {
+                border: none;
+                box-shadow: none;
+            }
+
+            @page {
+                margin: 0.5in;
+            }
+
+            .section {
+                page-break-inside: avoid;
+            }
+
+            input, textarea {
+                border-bottom-style: solid !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .worksheet {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="worksheet">
+        <header>
+            <h1>Total Cost of Ownership Worksheet</h1>
+            <p class="subtitle">Calculate the Complete 6-Year Cost of Vehicle Ownership</p>
+            <div class="state-badge">Personalized for {{STATE_NAME}}</div>
+        </header>
+
+        <div class="instructions">
+            <p><strong>Instructions:</strong> Complete each section to calculate the true total cost of owning a vehicle over 6 years.
+            Use this worksheet to compare different vehicle options and financing scenarios.</p>
+            <p><strong>Tip:</strong> Print this worksheet and fill it out by hand, or use it digitally and print your results.</p>
+        </div>
+
+        <!-- PAGE 1: Purchase & Financing Costs -->
+        <div class="section">
+            <h2>Page 1: Purchase & Financing Costs</h2>
+
+            <h3 style="font-size: 1rem; margin: 20px 0 10px; color: var(--text-light);">Vehicle Information</h3>
+            <div class="form-grid">
+                <div class="form-row">
+                    <div class="form-label">Vehicle Make/Model:</div>
+                    <div class="form-input"><input type="text" id="vehicleName" placeholder="e.g., Honda Civic"></div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">Vehicle Price:</div>
+                    <div class="form-input">$<input type="number" id="vehiclePrice" placeholder="25,000"></div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">Down Payment:</div>
+                    <div class="form-input">$<input type="number" id="downPayment" placeholder="3,000"></div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">Loan Amount (Price - Down Payment):</div>
+                    <div class="form-input calculation-row">$<input type="number" id="loanAmount" readonly></div>
+                </div>
+            </div>
+
+            <h3 style="font-size: 1rem; margin: 20px 0 10px; color: var(--text-light);">Loan Terms</h3>
+            <div class="form-grid">
+                <div class="form-row">
+                    <div class="form-label">Interest Rate (%):</div>
+                    <div class="form-input"><input type="number" id="interestRate" placeholder="5.5" step="0.1">%</div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">Loan Term (months):</div>
+                    <div class="form-input"><input type="number" id="loanTerm" placeholder="60"></div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">Monthly Payment:</div>
+                    <div class="form-input calculation-row">$<input type="number" id="monthlyPayment" readonly></div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">Total Paid Over Loan Term:</div>
+                    <div class="form-input calculation-row">$<input type="number" id="totalPaid" readonly></div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">Total Interest Paid:</div>
+                    <div class="form-input calculation-row">$<input type="number" id="totalInterest" readonly></div>
+                </div>
+            </div>
+
+            <div class="formula-help">
+                💡 <strong>Formula Help:</strong> Monthly Payment = Loan Amount × [Interest Rate/12 × (1 + Interest Rate/12)^Months] / [(1 + Interest Rate/12)^Months - 1]
+                <br>Or use an online calculator: <a href="https://www.bankrate.com/calculators/auto/auto-loan-calculator.aspx" target="_blank">Bankrate Auto Loan Calculator</a>
+            </div>
+
+            <h3 style="font-size: 1rem; margin: 20px 0 10px; color: var(--text-light);">{{STATE_NAME}} State Costs</h3>
+
+            <div class="state-info">
+                <strong>{{STATE_NAME}} Sales Tax Rate:</strong> {{STATE_SALES_TAX}}% |
+                <strong>Initial Registration:</strong> ${{STATE_REGISTRATION_INITIAL}} |
+                <strong>Annual Registration:</strong> ${{STATE_REGISTRATION_ANNUAL}}
+                {{#if STATE_INSPECTION_REQUIRED}} | <strong>Annual Inspection:</strong> ${{STATE_INSPECTION_COST}}{{/if}}
+            </div>
+
+            <div class="form-grid">
+                <div class="form-row">
+                    <div class="form-label">Sales Tax ({{STATE_NAME}}: {{STATE_SALES_TAX}}%):</div>
+                    <div class="form-input calculation-row">$<input type="number" id="salesTax" readonly></div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">Initial Registration/Title Fee:</div>
+                    <div class="form-input">$<input type="number" id="regInitial" value="{{STATE_REGISTRATION_INITIAL}}"></div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">Initial Inspection (if applicable):</div>
+                    <div class="form-input">$<input type="number" id="inspectionInitial" value="{{#if STATE_INSPECTION_REQUIRED}}{{STATE_INSPECTION_COST}}{{else}}0{{/if}}"></div>
+                </div>
+            </div>
+
+            <div class="form-grid" style="margin-top: 20px;">
+                <div class="form-row">
+                    <div class="form-label"><strong>TOTAL PURCHASE & FINANCING COSTS:</strong></div>
+                    <div class="form-input total-row">$<input type="number" id="totalPurchase" readonly></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGE 2: Ongoing Costs -->
+        <div class="section" style="page-break-before: always;">
+            <h2>Page 2: Ongoing Costs (Years 1-6)</h2>
+
+            <h3 style="font-size: 1rem; margin: 20px 0 10px; color: var(--text-light);">Annual Recurring Costs</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Expense Category</th>
+                        <th style="width: 120px;">Annual Cost</th>
+                        <th style="width: 120px;">6-Year Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Registration Renewal ({{STATE_NAME}})</td>
+                        <td class="year-column">$<input type="number" id="regAnnual" value="{{STATE_REGISTRATION_ANNUAL}}" style="width: 80px; text-align: center;"></td>
+                        <td class="year-column calculation-row"><span id="regAnnual6yr"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Insurance</td>
+                        <td class="year-column">$<input type="number" id="insurance" placeholder="2,820" style="width: 80px; text-align: center;"></td>
+                        <td class="year-column calculation-row"><span id="insurance6yr"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Fuel / Gas</td>
+                        <td class="year-column">$<input type="number" id="fuel" placeholder="1,500" style="width: 80px; text-align: center;"></td>
+                        <td class="year-column calculation-row"><span id="fuel6yr"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Maintenance (oil, tires, brakes, etc.)</td>
+                        <td class="year-column">$<input type="number" id="maintenance" placeholder="800" style="width: 80px; text-align: center;"></td>
+                        <td class="year-column calculation-row"><span id="maintenance6yr"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Inspection ({{#if STATE_INSPECTION_REQUIRED}}Required in {{STATE_NAME}}{{else}}Not required in {{STATE_NAME}}{{/if}})</td>
+                        <td class="year-column">$<input type="number" id="inspectionAnnual" value="{{#if STATE_INSPECTION_REQUIRED}}{{STATE_INSPECTION_COST}}{{else}}0{{/if}}" style="width: 80px; text-align: center;"></td>
+                        <td class="year-column calculation-row"><span id="inspection6yr"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 style="font-size: 1rem; margin: 20px 0 10px; color: var(--text-light);">One-Time Repair Estimates</h3>
+            <div class="form-grid">
+                <div class="form-row">
+                    <div class="form-label">Estimated Repairs (years 1-6 total):</div>
+                    <div class="form-input">$<input type="number" id="repairs" placeholder="2,000"></div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">Other Costs (parking, tolls, etc.):</div>
+                    <div class="form-input">$<input type="number" id="other" placeholder="500"></div>
+                </div>
+            </div>
+
+            <div class="form-grid" style="margin-top: 20px;">
+                <div class="form-row">
+                    <div class="form-label"><strong>SUBTOTAL - ONGOING COSTS (6 years):</strong></div>
+                    <div class="form-input subtotal-row">$<input type="number" id="totalOngoing" readonly></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Final Calculation -->
+        <div class="section">
+            <h2>Final Cost Calculation</h2>
+
+            <div class="form-grid">
+                <div class="form-row">
+                    <div class="form-label">Total Purchase & Financing Costs:</div>
+                    <div class="form-input">$<input type="number" id="finalPurchase" readonly></div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label">Total Ongoing Costs (6 years):</div>
+                    <div class="form-input">$<input type="number" id="finalOngoing" readonly></div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label"><strong>TOTAL 6-YEAR COST:</strong></div>
+                    <div class="form-input total-row">$<input type="number" id="grandTotal" readonly></div>
+                </div>
+            </div>
+
+            <div style="margin-top: 25px; padding-top: 20px; border-top: 2px solid var(--border);">
+                <h3 style="font-size: 1.1rem; margin-bottom: 15px; color: var(--primary);">Net Cost of Ownership</h3>
+                <div class="form-grid">
+                    <div class="form-row">
+                        <div class="form-label">Estimated Vehicle Value After 6 Years:</div>
+                        <div class="form-input">$<input type="number" id="residualValue" placeholder="8,750"></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-label"><strong>NET COST (Total Cost - Resale Value):</strong></div>
+                        <div class="form-input total-row" style="background-color: #dcfce7; font-size: 1.25rem;">
+                            $<input type="number" id="netCost" readonly>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-label">Cost Per Mile (assuming 12,000 mi/year):</div>
+                        <div class="form-input calculation-row">$<input type="number" id="costPerMile" readonly> /mile</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="notes-section">
+            <h3>Notes & Reflections</h3>
+            <textarea class="notes-area" placeholder="Use this space to note your thoughts, compare scenarios, or plan next steps..."></textarea>
+        </div>
+    </div>
+
+    <script>
+        // Auto-calculate sales tax
+        document.getElementById('vehiclePrice').addEventListener('input', updateCalculations);
+        document.getElementById('downPayment').addEventListener('input', updateCalculations);
+        document.getElementById('interestRate').addEventListener('input', updateCalculations);
+        document.getElementById('loanTerm').addEventListener('input', updateCalculations);
+
+        // Update ongoing costs
+        document.getElementById('regAnnual').addEventListener('input', updateOngoing);
+        document.getElementById('insurance').addEventListener('input', updateOngoing);
+        document.getElementById('fuel').addEventListener('input', updateOngoing);
+        document.getElementById('maintenance').addEventListener('input', updateOngoing);
+        document.getElementById('inspectionAnnual').addEventListener('input', updateOngoing);
+        document.getElementById('repairs').addEventListener('input', updateOngoing);
+        document.getElementById('other').addEventListener('input', updateOngoing);
+        document.getElementById('residualValue').addEventListener('input', updateFinal);
+
+        const stateSalesTax = parseFloat('{{STATE_SALES_TAX}}') || 6.25;
+
+        function updateCalculations() {
+            const price = parseFloat(document.getElementById('vehiclePrice').value) || 0;
+            const downPayment = parseFloat(document.getElementById('downPayment').value) || 0;
+            const rate = parseFloat(document.getElementById('interestRate').value) || 0;
+            const months = parseFloat(document.getElementById('loanTerm').value) || 60;
+
+            // Calculate loan amount
+            const loanAmount = price - downPayment;
+            document.getElementById('loanAmount').value = loanAmount.toFixed(2);
+
+            // Calculate monthly payment
+            if (rate > 0 && months > 0) {
+                const monthlyRate = rate / 100 / 12;
+                const monthlyPayment = loanAmount * (monthlyRate * Math.pow(1 + monthlyRate, months)) / (Math.pow(1 + monthlyRate, months) - 1);
+                document.getElementById('monthlyPayment').value = monthlyPayment.toFixed(2);
+
+                const totalPaid = monthlyPayment * months;
+                document.getElementById('totalPaid').value = totalPaid.toFixed(2);
+                document.getElementById('totalInterest').value = (totalPaid - loanAmount).toFixed(2);
+            }
+
+            // Calculate sales tax
+            const salesTax = price * (stateSalesTax / 100);
+            document.getElementById('salesTax').value = salesTax.toFixed(2);
+
+            // Calculate total purchase cost
+            const totalPurchase = parseFloat(document.getElementById('totalPaid').value || 0) +
+                                 parseFloat(document.getElementById('downPayment').value || 0) +
+                                 salesTax +
+                                 parseFloat(document.getElementById('regInitial').value || 0) +
+                                 parseFloat(document.getElementById('inspectionInitial').value || 0);
+            document.getElementById('totalPurchase').value = totalPurchase.toFixed(2);
+            document.getElementById('finalPurchase').value = totalPurchase.toFixed(2);
+
+            updateFinal();
+        }
+
+        function updateOngoing() {
+            const regAnnual = parseFloat(document.getElementById('regAnnual').value) || 0;
+            const insurance = parseFloat(document.getElementById('insurance').value) || 0;
+            const fuel = parseFloat(document.getElementById('fuel').value) || 0;
+            const maintenance = parseFloat(document.getElementById('maintenance').value) || 0;
+            const inspectionAnnual = parseFloat(document.getElementById('inspectionAnnual').value) || 0;
+            const repairs = parseFloat(document.getElementById('repairs').value) || 0;
+            const other = parseFloat(document.getElementById('other').value) || 0;
+
+            // Calculate 6-year totals
+            document.getElementById('regAnnual6yr').textContent = '$' + (regAnnual * 6).toLocaleString('en-US', {minimumFractionDigits: 2});
+            document.getElementById('insurance6yr').textContent = '$' + (insurance * 6).toLocaleString('en-US', {minimumFractionDigits: 2});
+            document.getElementById('fuel6yr').textContent = '$' + (fuel * 6).toLocaleString('en-US', {minimumFractionDigits: 2});
+            document.getElementById('maintenance6yr').textContent = '$' + (maintenance * 6).toLocaleString('en-US', {minimumFractionDigits: 2});
+            document.getElementById('inspection6yr').textContent = '$' + (inspectionAnnual * 6).toLocaleString('en-US', {minimumFractionDigits: 2});
+
+            const totalOngoing = (regAnnual * 6) + (insurance * 6) + (fuel * 6) + (maintenance * 6) + (inspectionAnnual * 6) + repairs + other;
+            document.getElementById('totalOngoing').value = totalOngoing.toFixed(2);
+            document.getElementById('finalOngoing').value = totalOngoing.toFixed(2);
+
+            updateFinal();
+        }
+
+        function updateFinal() {
+            const totalPurchase = parseFloat(document.getElementById('finalPurchase').value) || 0;
+            const totalOngoing = parseFloat(document.getElementById('finalOngoing').value) || 0;
+            const residualValue = parseFloat(document.getElementById('residualValue').value) || 0;
+
+            const grandTotal = totalPurchase + totalOngoing;
+            document.getElementById('grandTotal').value = grandTotal.toFixed(2);
+
+            const netCost = grandTotal - residualValue;
+            document.getElementById('netCost').value = netCost.toFixed(2);
+
+            const totalMiles = 12000 * 6; // 6 years at 12,000 miles/year
+            const costPerMile = netCost / totalMiles;
+            document.getElementById('costPerMile').value = costPerMile.toFixed(2);
+        }
+
+        // Initialize calculations on load
+        window.addEventListener('load', function() {
+            updateCalculations();
+            updateOngoing();
+        });
+    </script>
+</body>
+</html>

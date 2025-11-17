@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Structure Comparison Matrix</title>
+    <!--
+    PURPOSE: Interactive skill builder tool
+    USE: Chapter interactive activity (15-20 minutes)
+    -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #6366f1;
+            border-bottom: 2px solid #6366f1;
+            padding-bottom: 10px;
+            font-size: 28px;
+        }
+        h2 {
+            color: #8b5cf6;
+            margin-top: 25px;
+            font-size: 22px;
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .comparison-table th {
+            background-color: #6366f1;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: bold;
+        }
+        .comparison-table td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+        }
+        .comparison-table tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+        .comparison-table tr:hover {
+            background-color: #e0e7ff;
+        }
+        .row-header {
+            font-weight: bold;
+            background-color: #f3f4f6 !important;
+        }
+        .high {
+            color: #10b981;
+            font-weight: bold;
+        }
+        .moderate {
+            color: #f59e0b;
+            font-weight: bold;
+        }
+        .low {
+            color: #ef4444;
+            font-weight: bold;
+        }
+        .symbol {
+            font-size: 18px;
+            margin-right: 5px;
+        }
+        .info-box {
+            background-color: #e0e7ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            border-left: 4px solid #6366f1;
+        }
+        .example-box {
+            background-color: #f0f7ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .filter-controls {
+            margin: 20px 0;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        button {
+            background-color: #6366f1;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        button:hover {
+            background-color: #8b5cf6;
+        }
+        button.active {
+            background-color: #10b981;
+        }
+        @media print {
+            body { font-size: 11pt; }
+            button { display: none; }
+            .filter-controls { display: none; }
+            .comparison-table { page-break-inside: avoid; }
+        }
+        @media (max-width: 768px) {
+            .comparison-table {
+                font-size: 14px;
+            }
+            .comparison-table th, .comparison-table td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Market Structure Comparison Matrix</h1>
+    <p>Compare different market structures to understand how competition affects prices and consumer benefits</p>
+
+    <div class="info-box">
+        <strong>Quick Reference Guide:</strong> This matrix helps you identify market types and understand how they affect your purchasing power.
+        <span class="high">Green</span> indicates consumer-friendly characteristics,
+        <span class="moderate">Yellow</span> indicates moderate conditions,
+        <span class="low">Red</span> indicates consumer-unfriendly characteristics.
+    </div>
+
+    <table class="comparison-table">
+        <thead>
+            <tr>
+                <th style="width: 20%;">Characteristic</th>
+                <th style="width: 26%;">Perfect Competition</th>
+                <th style="width: 27%;">Oligopoly</th>
+                <th style="width: 27%;">Monopoly</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="row-header">Number of Firms</td>
+                <td class="high"><span class="symbol">✓✓✓</span>Many firms (hundreds or thousands)</td>
+                <td class="moderate"><span class="symbol">~</span>Few firms (3-10 major players)</td>
+                <td class="low"><span class="symbol">✗</span>Single firm (no competitors)</td>
+            </tr>
+            <tr>
+                <td class="row-header">Product Type</td>
+                <td class="high"><span class="symbol">✓</span>Identical products (standardized)</td>
+                <td class="moderate"><span class="symbol">~</span>Similar but differentiated products</td>
+                <td class="low"><span class="symbol">✗</span>Unique product (no substitutes)</td>
+            </tr>
+            <tr>
+                <td class="row-header">Entry Barriers</td>
+                <td class="high"><span class="symbol">✓</span>Very low - easy to enter market</td>
+                <td class="moderate"><span class="symbol">~</span>Moderate to high barriers</td>
+                <td class="low"><span class="symbol">✗</span>Extremely high or blocked entry</td>
+            </tr>
+            <tr>
+                <td class="row-header">Pricing Power</td>
+                <td class="high"><span class="symbol">✓</span>None - firms are price takers</td>
+                <td class="moderate"><span class="symbol">~</span>Moderate - some pricing control</td>
+                <td class="low"><span class="symbol">✗</span>High - firm sets market price</td>
+            </tr>
+            <tr>
+                <td class="row-header">Consumer Surplus</td>
+                <td class="high"><span class="symbol">✓✓✓</span>Maximum - lowest prices possible</td>
+                <td class="moderate"><span class="symbol">~</span>Reduced - higher than competitive prices</td>
+                <td class="low"><span class="symbol">✗</span>Minimal - highest prices</td>
+            </tr>
+            <tr>
+                <td class="row-header">Innovation</td>
+                <td class="moderate"><span class="symbol">~</span>Limited - focus on efficiency</td>
+                <td class="high"><span class="symbol">✓</span>Moderate to high - competitive pressure</td>
+                <td class="moderate"><span class="symbol">~</span>Variable - depends on competition threat</td>
+            </tr>
+            <tr>
+                <td class="row-header">Real-World Examples</td>
+                <td>
+                    • Agricultural products (wheat, corn)<br>
+                    • Stock market<br>
+                    • Foreign exchange markets<br>
+                    • Local farmers markets
+                </td>
+                <td>
+                    • Airline industry<br>
+                    • Cell phone carriers<br>
+                    • Automobile manufacturers<br>
+                    • Soft drinks (Coke, Pepsi)<br>
+                    • Streaming services
+                </td>
+                <td>
+                    • Local utility companies<br>
+                    • Prescription drugs (patented)<br>
+                    • Professional sports leagues<br>
+                    • Some local cable providers
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Consumer Strategies by Market Structure</h2>
+
+    <table class="comparison-table">
+        <thead>
+            <tr>
+                <th style="width: 20%;">Strategy Type</th>
+                <th style="width: 26%;">Perfect Competition</th>
+                <th style="width: 27%;">Oligopoly</th>
+                <th style="width: 27%;">Monopoly</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="row-header">Best Purchasing Strategy</td>
+                <td>Shop for best location/convenience - prices will be similar everywhere</td>
+                <td>Compare prices between providers, look for promotions and bundles</td>
+                <td>Focus on timing, look for alternatives or substitutes</td>
+            </tr>
+            <tr>
+                <td class="row-header">Negotiation Power</td>
+                <td class="low">Very low - price is set by market</td>
+                <td class="moderate">Moderate - especially for bundles or contracts</td>
+                <td class="low">Low - take it or leave it pricing</td>
+            </tr>
+            <tr>
+                <td class="row-header">When to Buy</td>
+                <td>Anytime - prices stable and competitive</td>
+                <td>During promotional periods, end of quarter/year</td>
+                <td>During rare sales or when alternatives emerge</td>
+            </tr>
+            <tr>
+                <td class="row-header">Long-term Contracts</td>
+                <td>Not applicable - spot market pricing</td>
+                <td>Can be beneficial if price is locked during promotions</td>
+                <td>Read carefully - may lock you into high prices</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Key Insights for Consumers</h2>
+
+    <div class="example-box">
+        <h3>Perfect Competition (Most Consumer-Friendly)</h3>
+        <p><strong>What it means for you:</strong> Prices are driven down to the lowest sustainable level. No single seller can raise prices without losing all customers to competitors.</p>
+        <p><strong>Your advantage:</strong> Maximum value for your money, but limited product differentiation.</p>
+        <p><strong>Example:</strong> Gasoline prices at stations near each other - they must stay competitive or lose all business.</p>
+    </div>
+
+    <div class="example-box">
+        <h3>Oligopoly (Moderately Consumer-Friendly)</h3>
+        <p><strong>What it means for you:</strong> A few major players compete, often through advertising, features, and periodic price competition rather than constant price wars.</p>
+        <p><strong>Your advantage:</strong> Room for negotiation, promotional opportunities, and product variety.</p>
+        <p><strong>Example:</strong> Cell phone carriers - you can often negotiate better deals by mentioning competitor offers or threatening to switch.</p>
+    </div>
+
+    <div class="example-box">
+        <h3>Monopoly (Least Consumer-Friendly)</h3>
+        <p><strong>What it means for you:</strong> Single provider controls the market and can set prices higher than competitive levels.</p>
+        <p><strong>Your advantage:</strong> Very limited. Focus on finding substitutes, reducing usage, or waiting for market changes.</p>
+        <p><strong>Example:</strong> Local electric utility - you typically have no choice, but can reduce consumption during peak pricing periods.</p>
+    </div>
+
+    <div class="info-box">
+        <h3>Practical Application</h3>
+        <p><strong>Before making a purchase:</strong></p>
+        <ol>
+            <li>Identify the market structure for the product you want to buy</li>
+            <li>Understand how many real alternatives you have</li>
+            <li>Adjust your strategy based on your bargaining power</li>
+            <li>In competitive markets, focus on convenience; in oligopolies, focus on comparison shopping; in monopolies, look for substitutes</li>
+        </ol>
+    </div>
+</body>
+</html>

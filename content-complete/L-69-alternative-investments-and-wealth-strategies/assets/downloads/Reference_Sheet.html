@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alternative Investments Quick Reference | PFL Academy</title>
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #8b5cf6;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --background: #ffffff;
+            --surface: #f9fafb;
+            --border: #e5e7eb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 11px;
+            line-height: 1.4;
+            color: var(--text);
+            background-color: var(--surface);
+            padding: 15px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--background);
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 3px;
+        }
+
+        .subtitle {
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 20px;
+            columns: 2;
+            column-gap: 25px;
+        }
+
+        .section {
+            break-inside: avoid;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            color: white;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 0.9rem;
+            color: var(--primary);
+            margin: 8px 0 5px;
+            font-weight: 700;
+        }
+
+        ul {
+            margin: 5px 0 10px 15px;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 3px;
+            font-size: 0.9rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            font-size: 0.85rem;
+            break-inside: avoid;
+        }
+
+        th, td {
+            border: 1px solid var(--border);
+            padding: 5px;
+            text-align: left;
+        }
+
+        th {
+            background: var(--primary);
+            color: white;
+            font-weight: 600;
+            font-size: 0.8rem;
+        }
+
+        .key-term {
+            background: var(--surface);
+            border-left: 3px solid var(--primary);
+            padding: 8px;
+            margin: 8px 0;
+            break-inside: avoid;
+        }
+
+        .term-name {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 0.9rem;
+        }
+
+        .term-definition {
+            color: var(--text-light);
+            font-size: 0.85rem;
+            margin-top: 3px;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
+            border: 2px solid var(--primary);
+            padding: 10px;
+            border-radius: 6px;
+            margin: 10px 0;
+            break-inside: avoid;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                border: 1px solid #000;
+            }
+
+            @page {
+                margin: 0.5in;
+                size: letter;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                columns: 1;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔍 Alternative Investments Quick Reference</h1>
+            <div class="subtitle">Key concepts for alternative investments and wealth strategies</div>
+        </header>
+
+        <div class="content">
+            <!-- Real Estate -->
+            <div class="section">
+                <h2>🏘️ Real Estate</h2>
+
+                <h3>Types</h3>
+                <ul>
+                    <li><strong>Rental Properties:</strong> Direct ownership, generate income</li>
+                    <li><strong>REITs:</strong> Stock-like, high liquidity, lower capital requirement</li>
+                    <li><strong>Crowdfunding:</strong> Online platforms, lower minimums ($500-$5K)</li>
+                    <li><strong>Fix-and-Flip:</strong> Buy, renovate, sell (active investing)</li>
+                </ul>
+
+                <h3>Pros & Cons</h3>
+                <table>
+                    <tr>
+                        <th>Pros</th>
+                        <th>Cons</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            • Tangible asset<br>
+                            • Income generation<br>
+                            • Tax benefits<br>
+                            • Inflation hedge
+                        </td>
+                        <td>
+                            • Illiquid<br>
+                            • High capital needs<br>
+                            • Management intensive<br>
+                            • Market/location risk
+                        </td>
+                    </tr>
+                </table>
+
+                <h3>Key Metrics</h3>
+                <ul>
+                    <li><strong>Cap Rate:</strong> NOI / Property Value</li>
+                    <li><strong>Cash-on-Cash:</strong> Annual Cash Flow / Cash Invested</li>
+                    <li><strong>1% Rule:</strong> Monthly rent ≥ 1% of purchase price</li>
+                </ul>
+            </div>
+
+            <!-- Cryptocurrency -->
+            <div class="section">
+                <h2>₿ Cryptocurrency</h2>
+
+                <h3>Major Types</h3>
+                <ul>
+                    <li><strong>Bitcoin (BTC):</strong> Digital gold, store of value</li>
+                    <li><strong>Ethereum (ETH):</strong> Smart contract platform</li>
+                    <li><strong>Altcoins:</strong> Alternative cryptocurrencies</li>
+                    <li><strong>Stablecoins:</strong> Pegged to USD or other assets</li>
+                </ul>
+
+                <h3>Key Concepts</h3>
+                <ul>
+                    <li><strong>Blockchain:</strong> Distributed ledger technology</li>
+                    <li><strong>Wallet:</strong> Hot (online) vs. Cold (offline storage)</li>
+                    <li><strong>Mining:</strong> Creating new coins via computation</li>
+                    <li><strong>DeFi:</strong> Decentralized finance platforms</li>
+                </ul>
+
+                <h3>Risks</h3>
+                <ul>
+                    <li>Extreme volatility (50%+ swings)</li>
+                    <li>Regulatory uncertainty</li>
+                    <li>Security risks (hacking, lost keys)</li>
+                    <li>No FDIC insurance</li>
+                    <li>Tax complexity (every transaction taxable)</li>
+                </ul>
+
+                <h3>Recommendation</h3>
+                <ul>
+                    <li>Max 1-5% of portfolio</li>
+                    <li>Only invest what you can lose</li>
+                    <li>Use hardware wallet for large amounts</li>
+                    <li>Understand before investing</li>
+                </ul>
+            </div>
+
+            <!-- Commodities -->
+            <div class="section">
+                <h2>🥇 Commodities</h2>
+
+                <h3>Types</h3>
+                <ul>
+                    <li><strong>Precious Metals:</strong> Gold, silver, platinum</li>
+                    <li><strong>Energy:</strong> Oil, natural gas</li>
+                    <li><strong>Agriculture:</strong> Wheat, corn, soybeans</li>
+                    <li><strong>Industrial:</strong> Copper, lumber</li>
+                </ul>
+
+                <h3>Investment Methods</h3>
+                <ul>
+                    <li><strong>ETFs:</strong> Easiest, most liquid</li>
+                    <li><strong>Futures:</strong> Leveraged, complex</li>
+                    <li><strong>Physical:</strong> Storage costs, insurance</li>
+                    <li><strong>Mining Stocks:</strong> Indirect exposure</li>
+                </ul>
+
+                <h3>Purpose in Portfolio</h3>
+                <ul>
+                    <li>Inflation hedge</li>
+                    <li>Diversification (low correlation to stocks)</li>
+                    <li>Crisis insurance (gold)</li>
+                    <li>Typical allocation: 5-10%</li>
+                </ul>
+
+                <h3>Important Note</h3>
+                <ul>
+                    <li>No inherent yield (no dividends/interest)</li>
+                    <li>Returns from price appreciation only</li>
+                    <li>Can be volatile</li>
+                </ul>
+            </div>
+
+            <!-- Private Equity -->
+            <div class="section">
+                <h2>💼 Private Equity</h2>
+
+                <h3>Types</h3>
+                <ul>
+                    <li><strong>Venture Capital:</strong> Early-stage startups</li>
+                    <li><strong>Growth Equity:</strong> Established, growing companies</li>
+                    <li><strong>Buyouts:</strong> Acquiring mature companies</li>
+                    <li><strong>Angel Investing:</strong> Individual startup investing</li>
+                </ul>
+
+                <h3>Accredited Investor Requirements</h3>
+                <ul>
+                    <li>$200K+ annual income (individual)</li>
+                    <li>$300K+ annual income (joint)</li>
+                    <li>$1M+ net worth (excluding primary residence)</li>
+                    <li>OR professional certifications (Series 7, 65, 82)</li>
+                </ul>
+
+                <h3>Characteristics</h3>
+                <ul>
+                    <li><strong>Minimum:</strong> $25K to $1M+</li>
+                    <li><strong>Lock-up:</strong> 7-10 years typical</li>
+                    <li><strong>Fees:</strong> 2% management + 20% performance</li>
+                    <li><strong>Returns:</strong> Target 15-25%+ annually</li>
+                </ul>
+
+                <h3>Risks</h3>
+                <ul>
+                    <li>Extremely illiquid</li>
+                    <li>High fees</li>
+                    <li>Limited transparency</li>
+                    <li>High failure rate (especially VC)</li>
+                </ul>
+            </div>
+
+            <!-- Collectibles -->
+            <div class="section">
+                <h2>🎨 Collectibles</h2>
+
+                <h3>Types</h3>
+                <ul>
+                    <li>Fine art</li>
+                    <li>Rare coins/stamps</li>
+                    <li>Classic cars</li>
+                    <li>Fine wine</li>
+                    <li>Sports memorabilia</li>
+                    <li>Trading cards</li>
+                    <li>Watches</li>
+                </ul>
+
+                <h3>Investment Considerations</h3>
+                <ul>
+                    <li><strong>Passion First:</strong> Buy what you love</li>
+                    <li><strong>Authentication:</strong> Critical for value</li>
+                    <li><strong>Condition:</strong> Dramatically affects price</li>
+                    <li><strong>Storage:</strong> Climate control, insurance</li>
+                    <li><strong>Transaction Costs:</strong> 10-25% (auctions, dealers)</li>
+                </ul>
+
+                <h3>Tax Treatment</h3>
+                <ul>
+                    <li>Maximum 28% capital gains rate</li>
+                    <li>Higher than stocks/bonds (20% max)</li>
+                    <li>No income generation</li>
+                </ul>
+
+                <h3>Liquidity</h3>
+                <ul>
+                    <li>Very illiquid</li>
+                    <li>May take months/years to sell</li>
+                    <li>Market highly dependent on trends</li>
+                </ul>
+            </div>
+
+            <!-- Portfolio Allocation -->
+            <div class="section">
+                <h2>📊 Suggested Allocations</h2>
+
+                <table>
+                    <tr>
+                        <th>Alternative</th>
+                        <th>Conservative</th>
+                        <th>Moderate</th>
+                        <th>Aggressive</th>
+                    </tr>
+                    <tr>
+                        <td>Real Estate</td>
+                        <td>0-5%</td>
+                        <td>5-10%</td>
+                        <td>10-15%</td>
+                    </tr>
+                    <tr>
+                        <td>Commodities</td>
+                        <td>0-5%</td>
+                        <td>5-10%</td>
+                        <td>5-15%</td>
+                    </tr>
+                    <tr>
+                        <td>Crypto</td>
+                        <td>0%</td>
+                        <td>0-3%</td>
+                        <td>1-5%</td>
+                    </tr>
+                    <tr>
+                        <td>Private Equity</td>
+                        <td>0%</td>
+                        <td>0-5%</td>
+                        <td>5-10%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total Alts</strong></td>
+                        <td><strong>0-10%</strong></td>
+                        <td><strong>10-20%</strong></td>
+                        <td><strong>15-30%</strong></td>
+                    </tr>
+                </table>
+
+                <p style="font-size: 0.85rem; margin-top: 8px;"><em>Note: These are general guidelines. Individual circumstances vary.</em></p>
+            </div>
+
+            <!-- Due Diligence Checklist -->
+            <div class="section">
+                <h2>✅ Due Diligence Checklist</h2>
+
+                <h3>Before ANY Alternative Investment</h3>
+                <ul>
+                    <li>Understand the investment thoroughly</li>
+                    <li>Know the risks and potential losses</li>
+                    <li>Verify liquidity constraints</li>
+                    <li>Calculate all fees and costs</li>
+                    <li>Check regulatory status</li>
+                    <li>Research track record/history</li>
+                    <li>Understand tax implications</li>
+                    <li>Determine appropriate allocation</li>
+                    <li>Have emergency fund first</li>
+                    <li>Max traditional retirement accounts first</li>
+                </ul>
+            </div>
+
+            <!-- Wealth-Building Principles -->
+            <div class="section">
+                <h2>💎 Wealth-Building Principles</h2>
+
+                <h3>Foundation First</h3>
+                <ul>
+                    <li><strong>1. Emergency Fund:</strong> 3-6 months expenses</li>
+                    <li><strong>2. Pay Off High-Interest Debt:</strong> >6-7% interest</li>
+                    <li><strong>3. Employer Match:</strong> Max 401(k) match</li>
+                    <li><strong>4. Tax-Advantaged Accounts:</strong> IRA, HSA, 529</li>
+                    <li><strong>5. Core Portfolio:</strong> Stocks, bonds, index funds</li>
+                    <li><strong>6. Alternatives:</strong> Only after foundation solid</li>
+                </ul>
+
+                <h3>Diversification Strategy</h3>
+                <ul>
+                    <li>Don't put all eggs in one basket</li>
+                    <li>Alternatives should complement, not replace, core holdings</li>
+                    <li>Low correlation reduces overall portfolio volatility</li>
+                    <li>Rebalance annually</li>
+                </ul>
+
+                <h3>Time Horizons</h3>
+                <table>
+                    <tr>
+                        <th>Timeline</th>
+                        <th>Strategy</th>
+                    </tr>
+                    <tr>
+                        <td>0-5 years</td>
+                        <td>Focus on liquidity; minimal alternatives</td>
+                    </tr>
+                    <tr>
+                        <td>5-10 years</td>
+                        <td>Moderate alternatives (REITs, gold)</td>
+                    </tr>
+                    <tr>
+                        <td>10+ years</td>
+                        <td>Can include less liquid alternatives</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Red Flags -->
+            <div class="highlight-box">
+                <h3 style="color: var(--primary); margin-bottom: 8px;">🚩 Red Flags - Avoid These</h3>
+                <ul style="margin: 5px 0 0 15px;">
+                    <li>Guaranteed high returns with no risk</li>
+                    <li>Pressure to invest immediately</li>
+                    <li>Unlicensed or unregistered sellers</li>
+                    <li>Vague or secretive investment strategies</li>
+                    <li>Difficulty withdrawing funds</li>
+                    <li>Unverifiable track records</li>
+                    <li>Investments you don't understand</li>
+                    <li>Social media "hot tips"</li>
+                </ul>
+            </div>
+
+            <!-- Key Principles -->
+            <div class="highlight-box">
+                <h3 style="color: var(--primary); margin-bottom: 8px;">💡 Remember</h3>
+                <ul style="margin: 5px 0 0 15px;">
+                    <li>Alternative ≠ Better</li>
+                    <li>Higher risk doesn't guarantee higher returns</li>
+                    <li>Illiquidity is a real cost</li>
+                    <li>Fees compound over time</li>
+                    <li>Don't invest in what you don't understand</li>
+                    <li>Diversification reduces risk</li>
+                    <li>Time in market > timing market</li>
+                    <li>Focus on what you can control (fees, asset allocation, behavior)</li>
+                </ul>
+            </div>
+
+            <!-- Resources -->
+            <div class="section">
+                <h2>📚 Additional Resources</h2>
+
+                <h3>Regulatory & Education</h3>
+                <ul>
+                    <li><strong>SEC.gov:</strong> Investor alerts, education</li>
+                    <li><strong>FINRA.org:</strong> Broker verification</li>
+                    <li><strong>CFTC.gov:</strong> Commodities/futures regulation</li>
+                </ul>
+
+                <h3>Research Platforms</h3>
+                <ul>
+                    <li>Real estate: Zillow, Redfin, BiggerPockets</li>
+                    <li>Crypto: CoinMarketCap, CoinGecko</li>
+                    <li>REITs: Nareit.com</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

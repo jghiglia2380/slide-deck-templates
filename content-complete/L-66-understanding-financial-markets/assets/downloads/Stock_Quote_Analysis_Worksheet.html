@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Quote Analysis Worksheet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .worksheet-section {
+            background: white;
+            border: 2px solid #3498db;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 20px 0;
+            page-break-inside: avoid;
+        }
+        .worksheet-section h2 {
+            color: #3498db;
+            margin-top: 0;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 10px;
+        }
+        .input-field {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #bdc3c7;
+            border-radius: 4px;
+            font-size: 1em;
+            margin: 5px 0;
+        }
+        .field-row {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 15px;
+            margin: 12px 0;
+            align-items: center;
+        }
+        .field-label {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .calculated-field {
+            background-color: #e8f4f8;
+            border-left: 4px solid #3498db;
+            padding: 8px;
+            border-radius: 4px;
+            min-height: 30px;
+        }
+        .info-box {
+            background: #ecf0f1;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .rating-scale {
+            display: flex;
+            gap: 10px;
+            margin: 10px 0;
+        }
+        .rating-option {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+            border: 2px solid #bdc3c7;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .rating-option:hover {
+            background: #e8f4f8;
+            border-color: #3498db;
+        }
+        .rating-option.selected {
+            background: #3498db;
+            color: white;
+            border-color: #3498db;
+        }
+        textarea {
+            width: 100%;
+            min-height: 80px;
+            padding: 10px;
+            border: 1px solid #bdc3c7;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+            font-size: 1em;
+        }
+        .help-text {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        .example-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #ecf0f1;
+            color: #7f8c8d;
+        }
+        @media print {
+            body { font-size: 12pt; }
+            .worksheet-section { page-break-inside: avoid; border: 1px solid #000; }
+            .rating-option { border: 1px solid #000; }
+        }
+    </style>
+</head>
+<body>
+    <h1>📊 Stock Quote Analysis Worksheet</h1>
+    <p style="color: #7f8c8d; font-size: 1.1em;">Analyze real stock quotes and plan your trading strategy</p>
+
+    <div class="info-box">
+        <strong>Instructions:</strong> Look up a real stock quote using a financial website (Yahoo Finance, Google Finance, etc.) and record the data below. Then complete the analysis and trading recommendation sections.
+    </div>
+
+    <div class="example-box">
+        <strong>💡 Tip:</strong> Start with a well-known stock like AAPL, MSFT, or GOOGL to practice. These have tight spreads and good liquidity.
+    </div>
+
+    <!-- Section 1: Quote Data -->
+    <div class="worksheet-section">
+        <h2>Section 1: Quote Data Collection</h2>
+
+        <div class="field-row">
+            <div class="field-label">Ticker Symbol:</div>
+            <input type="text" id="ticker" class="input-field" placeholder="e.g., AAPL">
+        </div>
+
+        <div class="field-row">
+            <div class="field-label">Company Name:</div>
+            <input type="text" id="company" class="input-field" placeholder="e.g., Apple Inc.">
+        </div>
+
+        <div class="field-row">
+            <div class="field-label">Date & Time:</div>
+            <input type="text" id="datetime" class="input-field" placeholder="e.g., 11/15/2025 2:30 PM ET">
+        </div>
+
+        <div class="field-row">
+            <div class="field-label">Last Price:</div>
+            <input type="number" id="last-price" class="input-field" step="0.01" placeholder="0.00">
+        </div>
+
+        <div class="field-row">
+            <div class="field-label">Bid Price:</div>
+            <input type="number" id="bid-price" class="input-field" step="0.01" placeholder="0.00">
+        </div>
+
+        <div class="field-row">
+            <div class="field-label">Ask Price:</div>
+            <input type="number" id="ask-price" class="input-field" step="0.01" placeholder="0.00">
+        </div>
+
+        <div class="field-row">
+            <div class="field-label">Spread (Ask - Bid):</div>
+            <div id="spread-calculated" class="calculated-field">Auto-calculated</div>
+        </div>
+
+        <div class="field-row">
+            <div class="field-label">Spread %:</div>
+            <div id="spread-percent-calculated" class="calculated-field">Auto-calculated</div>
+        </div>
+
+        <div class="field-row">
+            <div class="field-label">Bid Size:</div>
+            <input type="number" id="bid-size" class="input-field" placeholder="0">
+            <span class="help-text">Number of shares available at bid</span>
+        </div>
+
+        <div class="field-row">
+            <div class="field-label">Ask Size:</div>
+            <input type="number" id="ask-size" class="input-field" placeholder="0">
+            <span class="help-text">Number of shares available at ask</span>
+        </div>
+
+        <div class="field-row">
+            <div class="field-label">Volume Today:</div>
+            <input type="number" id="volume-today" class="input-field" placeholder="0">
+            <span class="help-text">Shares traded today</span>
+        </div>
+
+        <div class="field-row">
+            <div class="field-label">Average Volume:</div>
+            <input type="number" id="avg-volume" class="input-field" placeholder="0">
+            <span class="help-text">Typical daily volume</span>
+        </div>
+    </div>
+
+    <!-- Section 2: Liquidity Assessment -->
+    <div class="worksheet-section">
+        <h2>Section 2: Liquidity Assessment</h2>
+
+        <div class="info-box">
+            <strong>Liquidity Indicators:</strong><br>
+            • Tight spread (&lt; 0.1%) = Highly liquid<br>
+            • High volume (&gt; 1M shares/day) = Good liquidity<br>
+            • Large bid/ask sizes = Strong market depth
+        </div>
+
+        <div style="margin: 20px 0;">
+            <div class="field-label">Is the spread &lt; 0.1%?</div>
+            <div class="rating-scale">
+                <div class="rating-option" onclick="selectRating(this, 'spread-rating')">Yes - Highly Liquid</div>
+                <div class="rating-option" onclick="selectRating(this, 'spread-rating')">No - Check Carefully</div>
+            </div>
+        </div>
+
+        <div style="margin: 20px 0;">
+            <div class="field-label">Is the volume &gt; 1M shares?</div>
+            <div class="rating-scale">
+                <div class="rating-option" onclick="selectRating(this, 'volume-rating')">Yes - Good Liquidity</div>
+                <div class="rating-option" onclick="selectRating(this, 'volume-rating')">No - Lower Liquidity</div>
+            </div>
+        </div>
+
+        <div style="margin: 20px 0;">
+            <div class="field-label">Overall Liquidity Rating:</div>
+            <div class="rating-scale">
+                <div class="rating-option" onclick="selectRating(this, 'liquidity-overall')">High</div>
+                <div class="rating-option" onclick="selectRating(this, 'liquidity-overall')">Medium</div>
+                <div class="rating-option" onclick="selectRating(this, 'liquidity-overall')">Low</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 3: Trading Recommendation -->
+    <div class="worksheet-section">
+        <h2>Section 3: Trading Recommendation</h2>
+
+        <div style="margin: 20px 0;">
+            <div class="field-label" style="margin-bottom: 10px;">For a $1,000 purchase, recommended order type:</div>
+            <div class="rating-scale">
+                <div class="rating-option" onclick="selectRating(this, 'order-type')">Market Order</div>
+                <div class="rating-option" onclick="selectRating(this, 'order-type')">Limit Order</div>
+            </div>
+        </div>
+
+        <div class="field-row" style="grid-template-columns: 1fr; gap: 5px;">
+            <div class="field-label">If limit order, suggested limit price ($):</div>
+            <input type="number" id="limit-suggestion" class="input-field" step="0.01" placeholder="0.00">
+        </div>
+
+        <div class="field-row" style="grid-template-columns: 1fr; gap: 5px;">
+            <div class="field-label">Reasoning for recommendation:</div>
+            <textarea id="reasoning" placeholder="Explain why you chose this order type and price (if applicable)..."></textarea>
+        </div>
+    </div>
+
+    <!-- Section 4: Cost Calculation -->
+    <div class="worksheet-section">
+        <h2>Section 4: Cost Calculation (for $1,000 investment)</h2>
+
+        <div class="field-row">
+            <div class="field-label">Shares you could buy:</div>
+            <div id="shares-calculated" class="calculated-field">Auto-calculated</div>
+        </div>
+
+        <div class="field-row">
+            <div class="field-label">Market order total cost:</div>
+            <div id="market-cost-calculated" class="calculated-field">Auto-calculated</div>
+        </div>
+
+        <div class="field-row">
+            <div class="field-label">Limit order potential cost:</div>
+            <div id="limit-cost-calculated" class="calculated-field">Auto-calculated</div>
+        </div>
+
+        <div class="field-row">
+            <div class="field-label">Potential savings:</div>
+            <div id="savings-calculated" class="calculated-field">Auto-calculated</div>
+        </div>
+
+        <div class="info-box">
+            <strong>Note:</strong> Limit order may not execute if price doesn't reach your limit. Balance cost savings against execution risk.
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>PFL Academy</strong> | Stock Quote Analysis Worksheet</p>
+        <p>For educational purposes only - Not investment advice</p>
+    </footer>
+
+    <script>
+        // Auto-calculate spread and related fields
+        function calculateFields() {
+            const bid = parseFloat(document.getElementById('bid-price').value) || 0;
+            const ask = parseFloat(document.getElementById('ask-price').value) || 0;
+            const limitPrice = parseFloat(document.getElementById('limit-suggestion').value) || 0;
+
+            if (bid > 0 && ask > 0) {
+                const spread = ask - bid;
+                const spreadPercent = (spread / ask) * 100;
+
+                document.getElementById('spread-calculated').textContent = '$' + spread.toFixed(2);
+                document.getElementById('spread-percent-calculated').textContent = spreadPercent.toFixed(3) + '%';
+
+                // Calculate shares and costs for $1,000 investment
+                const shares = Math.floor(1000 / ask);
+                const marketCost = shares * ask;
+                const limitCost = limitPrice > 0 ? shares * limitPrice : 0;
+                const savings = limitCost > 0 ? marketCost - limitCost : 0;
+
+                document.getElementById('shares-calculated').textContent = shares + ' shares';
+                document.getElementById('market-cost-calculated').textContent = '$' + marketCost.toFixed(2);
+
+                if (limitCost > 0) {
+                    document.getElementById('limit-cost-calculated').textContent = '$' + limitCost.toFixed(2);
+                    document.getElementById('savings-calculated').textContent = '$' + savings.toFixed(2);
+                } else {
+                    document.getElementById('limit-cost-calculated').textContent = 'Enter limit price above';
+                    document.getElementById('savings-calculated').textContent = '-';
+                }
+            }
+        }
+
+        // Rating selection
+        function selectRating(element, group) {
+            // Deselect all in group
+            const parent = element.parentElement;
+            parent.querySelectorAll('.rating-option').forEach(opt => {
+                opt.classList.remove('selected');
+            });
+
+            // Select clicked option
+            element.classList.add('selected');
+        }
+
+        // Add event listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            ['bid-price', 'ask-price', 'limit-suggestion'].forEach(id => {
+                document.getElementById(id).addEventListener('input', calculateFields);
+            });
+        });
+    </script>
+</body>
+</html>

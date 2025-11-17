@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Impact Calculator | PFL Academy</title>
+    <!--
+    STATE VARIABLES USED IN THIS FILE:
+    - STATE_NAME
+    - STATE_CODE
+    - STATE_INCOME_TAX_RATE or STATE_INCOME_TAX_BRACKETS
+
+    UPDATE FREQUENCY:
+    - Annual: STATE_INCOME_TAX_RATE or STATE_INCOME_TAX_BRACKETS
+    
+
+    PURPOSE: Interactive calculator comparing take-home pay across different states and tax scenarios
+    USE: Chapter interactive activity (15-20 minutes)
+    -->
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #8b5cf6;
+            --success: #10b981;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --background: #ffffff;
+            --surface: #f9fafb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--surface);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: var(--background);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+
+        .state-badge {
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+
+        .main-content {
+            padding: 30px;
+        }
+
+        .input-section {
+            background-color: var(--surface);
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text);
+        }
+
+        .label-description {
+            font-size: 0.875rem;
+            color: var(--text-light);
+            font-weight: 400;
+            margin-top: 4px;
+        }
+
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        input[type="number"]:focus,
+        select:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        }
+
+        .comparison-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .state-card {
+            background-color: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 20px;
+            position: relative;
+        }
+
+        .state-card.selected {
+            border-color: var(--primary);
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+        }
+
+        .state-header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+
+        .state-name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        .state-code {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .tax-breakdown {
+            margin-bottom: 15px;
+        }
+
+        .tax-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #f3f4f6;
+        }
+
+        .tax-label {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .tax-value {
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .total-row {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 2px solid #e5e7eb;
+            font-weight: 700;
+        }
+
+        .net-income {
+            background: linear-gradient(135deg, var(--success), #059669);
+            color: white;
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .net-label {
+            font-size: 0.85rem;
+            opacity: 0.9;
+            margin-bottom: 5px;
+        }
+
+        .net-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .chart-container {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            border: 2px solid #e5e7eb;
+            margin-bottom: 30px;
+        }
+
+        .chart-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .bar-chart {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .chart-row {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .chart-label {
+            flex: 0 0 120px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .chart-bar {
+            flex: 1;
+            height: 30px;
+            background-color: var(--surface);
+            border-radius: 4px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .chart-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 10px;
+            color: white;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: width 0.5s ease;
+        }
+
+        .actions {
+            margin-top: 30px;
+            text-align: center;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        button {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #4f46e5;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: white;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--surface);
+        }
+
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+            .actions {
+                display: none;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .comparison-container {
+                grid-template-columns: 1fr;
+            }
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Tax Impact Calculator</h1>
+            <p class="subtitle">Compare Take-Home Pay Across Different States</p>
+            <div class="state-badge">Your State: {{STATE_NAME}}</div>
+        </header>
+
+        <div class="main-content">
+            <div class="input-section">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>
+                            Annual Salary
+                            <div class="label-description">Your gross annual income</div>
+                        </label>
+                        <input type="number" id="annualSalary" min="0" value="60000" step="1000" oninput="calculateAll()">
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            Filing Status
+                            <div class="label-description">Your tax filing status</div>
+                        </label>
+                        <select id="filingStatus" onchange="calculateAll()">
+                            <option value="single">Single</option>
+                            <option value="married">Married Filing Jointly</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>
+                            State 1 (Your State)
+                            <div class="label-description">{{STATE_NAME}}</div>
+                        </label>
+                        <input type="text" value="{{STATE_NAME}}" disabled style="background-color: #f3f4f6;">
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            State 2 (Comparison)
+                            <div class="label-description">Select a state to compare</div>
+                        </label>
+                        <select id="state2" onchange="calculateAll()">
+                            <option value="FL">Florida (0% income tax)</option>
+                            <option value="TX">Texas (0% income tax)</option>
+                            <option value="CA">California (Progressive 1-13.3%)</option>
+                            <option value="NY">New York (Progressive 4-10.9%)</option>
+                            <option value="IL">Illinois (4.95% flat)</option>
+                            <option value="PA">Pennsylvania (3.07% flat)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        State 3 (Optional Comparison)
+                        <div class="label-description">Select another state to compare</div>
+                    </label>
+                    <select id="state3" onchange="calculateAll()">
+                        <option value="">-- Select State --</option>
+                        <option value="FL">Florida (0% income tax)</option>
+                        <option value="TX">Texas (0% income tax)</option>
+                        <option value="CA">California (Progressive 1-13.3%)</option>
+                        <option value="NY">New York (Progressive 4-10.9%)</option>
+                        <option value="IL">Illinois (4.95% flat)</option>
+                        <option value="PA">Pennsylvania (3.07% flat)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="comparison-container" id="comparisonContainer">
+                <!-- State cards will be populated by JavaScript -->
+            </div>
+
+            <div class="chart-container">
+                <div class="chart-title">Take-Home Pay Comparison</div>
+                <div class="bar-chart" id="barChart">
+                    <!-- Chart bars will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <div class="actions">
+                <button class="btn-primary" onclick="window.print()">🖨️ Print Comparison</button>
+                <button class="btn-secondary" onclick="resetCalculator()">🔄 Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const stateData = {
+            '{{STATE_CODE}}': {
+                name: '{{STATE_NAME}}',
+                incomeTaxRate: {{STATE_INCOME_TAX_RATE}} || 0,
+                type: 'flat'
+            },
+            FL: { name: 'Florida', incomeTaxRate: 0, type: 'none' },
+            TX: { name: 'Texas', incomeTaxRate: 0, type: 'none' },
+            CA: { name: 'California', incomeTaxRate: 0, type: 'progressive' }, // Simplified
+            NY: { name: 'New York', incomeTaxRate: 0, type: 'progressive' },
+            IL: { name: 'Illinois', incomeTaxRate: 4.95, type: 'flat' },
+            PA: { name: 'Pennsylvania', incomeTaxRate: 3.07, type: 'flat' }
+        };
+
+        function calculateFederalTax(income, filingStatus) {
+            const brackets = filingStatus === 'single'
+                ? [
+                    { min: 0, max: 11600, rate: 0.10 },
+                    { min: 11600, max: 47150, rate: 0.12 },
+                    { min: 47150, max: 100525, rate: 0.22 },
+                    { min: 100525, max: 191950, rate: 0.24 },
+                    { min: 191950, max: Infinity, rate: 0.32 }
+                ]
+                : [
+                    { min: 0, max: 23200, rate: 0.10 },
+                    { min: 23200, max: 94300, rate: 0.12 },
+                    { min: 94300, max: 201050, rate: 0.22 },
+                    { min: 201050, max: 383900, rate: 0.24 },
+                    { min: 383900, max: Infinity, rate: 0.32 }
+                ];
+
+            const standardDeduction = filingStatus === 'single' ? 14600 : 29200;
+            const taxableIncome = Math.max(0, income - standardDeduction);
+
+            let tax = 0;
+            for (let bracket of brackets) {
+                if (taxableIncome > bracket.min) {
+                    const taxableInBracket = Math.min(taxableIncome, bracket.max) - bracket.min;
+                    tax += taxableInBracket * bracket.rate;
+                }
+            }
+
+            return tax;
+        }
+
+        function calculateStateTax(income, stateCode) {
+            const state = stateData[stateCode];
+            if (!state || state.incomeTaxRate === 0) return 0;
+
+            if (state.type === 'progressive') {
+                // Simplified progressive calculation
+                if (stateCode === 'CA') {
+                    if (income <= 10412) return income * 0.01;
+                    if (income <= 24684) return 104 + (income - 10412) * 0.02;
+                    if (income <= 38959) return 390 + (income - 24684) * 0.04;
+                    if (income <= 54081) return 961 + (income - 38959) * 0.06;
+                    if (income <= 68350) return 1868 + (income - 54081) * 0.08;
+                    return 2990 + (income - 68350) * 0.093;
+                } else if (stateCode === 'NY') {
+                    if (income <= 8500) return income * 0.04;
+                    if (income <= 11700) return 340 + (income - 8500) * 0.045;
+                    if (income <= 13900) return 484 + (income - 11700) * 0.0525;
+                    if (income <= 80650) return 600 + (income - 13900) * 0.055;
+                    return 4271 + (income - 80650) * 0.06;
+                }
+            }
+
+            return income * (state.incomeTaxRate / 100);
+        }
+
+        function calculateTaxes(income, filingStatus, stateCode) {
+            const federalTax = calculateFederalTax(income, filingStatus);
+            const stateTax = calculateStateTax(income, stateCode);
+            const socialSecurity = Math.min(income, 168600) * 0.062;
+            const medicare = income * 0.0145;
+            const totalTax = federalTax + stateTax + socialSecurity + medicare;
+            const netIncome = income - totalTax;
+
+            return {
+                federal: federalTax,
+                state: stateTax,
+                socialSecurity: socialSecurity,
+                medicare: medicare,
+                totalTax: totalTax,
+                netIncome: netIncome
+            };
+        }
+
+        function formatCurrency(amount) {
+            return new Intl.NumberFormat('en-US', {
+                style: 'currency',
+                currency: 'USD',
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0
+            }).format(amount);
+        }
+
+        function calculateAll() {
+            const salary = parseFloat(document.getElementById('annualSalary').value) || 0;
+            const filingStatus = document.getElementById('filingStatus').value;
+            const state2Code = document.getElementById('state2').value;
+            const state3Code = document.getElementById('state3').value;
+
+            const states = [
+                { code: '{{STATE_CODE}}', ...stateData['{{STATE_CODE}}'] },
+                { code: state2Code, ...stateData[state2Code] }
+            ];
+
+            if (state3Code) {
+                states.push({ code: state3Code, ...stateData[state3Code] });
+            }
+
+            const results = states.map(state => ({
+                ...state,
+                ...calculateTaxes(salary, filingStatus, state.code)
+            }));
+
+            renderComparison(results);
+            renderChart(results);
+        }
+
+        function renderComparison(results) {
+            const container = document.getElementById('comparisonContainer');
+            container.innerHTML = results.map((result, index) => `
+                <div class="state-card ${index === 0 ? 'selected' : ''}">
+                    <div class="state-header">
+                        <div class="state-name">${result.name}</div>
+                        <div class="state-code">${result.code}</div>
+                    </div>
+                    <div class="tax-breakdown">
+                        <div class="tax-item">
+                            <span class="tax-label">Federal Tax:</span>
+                            <span class="tax-value">${formatCurrency(result.federal)}</span>
+                        </div>
+                        <div class="tax-item">
+                            <span class="tax-label">State Tax:</span>
+                            <span class="tax-value">${formatCurrency(result.state)}</span>
+                        </div>
+                        <div class="tax-item">
+                            <span class="tax-label">Social Security:</span>
+                            <span class="tax-value">${formatCurrency(result.socialSecurity)}</span>
+                        </div>
+                        <div class="tax-item">
+                            <span class="tax-label">Medicare:</span>
+                            <span class="tax-value">${formatCurrency(result.medicare)}</span>
+                        </div>
+                        <div class="tax-item total-row">
+                            <span class="tax-label">Total Tax:</span>
+                            <span class="tax-value">${formatCurrency(result.totalTax)}</span>
+                        </div>
+                    </div>
+                    <div class="net-income">
+                        <div class="net-label">Annual Take-Home</div>
+                        <div class="net-value">${formatCurrency(result.netIncome)}</div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderChart(results) {
+            const maxNet = Math.max(...results.map(r => r.netIncome));
+            const container = document.getElementById('barChart');
+
+            container.innerHTML = results.map(result => {
+                const percentage = (result.netIncome / maxNet) * 100;
+                return `
+                    <div class="chart-row">
+                        <div class="chart-label">${result.name}</div>
+                        <div class="chart-bar">
+                            <div class="chart-fill" style="width: ${percentage}%">
+                                ${formatCurrency(result.netIncome)}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function resetCalculator() {
+            document.getElementById('annualSalary').value = 60000;
+            document.getElementById('filingStatus').value = 'single';
+            document.getElementById('state2').value = 'FL';
+            document.getElementById('state3').value = '';
+            calculateAll();
+        }
+
+        window.onload = calculateAll;
+    </script>
+</body>
+</html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Trading Strategy Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #3498db;
+            margin-top: 30px;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 8px;
+        }
+        .template-section {
+            background: white;
+            border: 2px solid #3498db;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 20px 0;
+            page-break-inside: avoid;
+        }
+        .intro-box {
+            background: #e8f4f8;
+            border-left: 4px solid #3498db;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #bdc3c7;
+            border-radius: 4px;
+            font-size: 1em;
+            margin: 8px 0;
+        }
+        .field-group {
+            margin: 20px 0;
+        }
+        .field-label {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            display: block;
+        }
+        textarea {
+            width: 100%;
+            min-height: 100px;
+            padding: 12px;
+            border: 2px solid #bdc3c7;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+            font-size: 1em;
+            resize: vertical;
+        }
+        .checkbox-group {
+            margin: 10px 0;
+        }
+        .checkbox-group label {
+            display: block;
+            padding: 8px 0;
+        }
+        .checkbox-group input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .radio-group {
+            margin: 10px 0;
+        }
+        .radio-group label {
+            display: inline-block;
+            margin-right: 25px;
+            padding: 10px 15px;
+            border: 2px solid #bdc3c7;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .radio-group input[type="radio"] {
+            margin-right: 8px;
+        }
+        .radio-group label:hover {
+            background: #e8f4f8;
+            border-color: #3498db;
+        }
+        .help-text {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            font-style: italic;
+            margin-top: 5px;
+        }
+        .example-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .warning-box {
+            background: #ffebee;
+            border-left: 4px solid #e74c3c;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #ecf0f1;
+            font-weight: bold;
+        }
+        .commitment-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        .signature-line {
+            border-top: 2px solid white;
+            margin: 20px auto;
+            padding-top: 10px;
+            width: 300px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #ecf0f1;
+            color: #7f8c8d;
+        }
+        @media print {
+            .template-section { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <h1>📋 Personal Trading Strategy Template</h1>
+    <p style="color: #7f8c8d; font-size: 1.1em;">Create your personalized trading rules and first trade plan</p>
+
+    <div class="intro-box">
+        <strong>Why You Need a Trading Strategy:</strong>
+        <ul>
+            <li>Removes emotion from trading decisions</li>
+            <li>Helps you avoid costly mistakes</li>
+            <li>Keeps you focused on long-term goals</li>
+            <li>Provides a framework for continuous improvement</li>
+        </ul>
+    </div>
+
+    <!-- Section 1: Investor Profile -->
+    <div class="template-section">
+        <h2>Section 1: My Investor Profile</h2>
+
+        <div class="field-group">
+            <span class="field-label">Risk Tolerance:</span>
+            <div class="radio-group">
+                <label><input type="radio" name="risk"> Conservative</label>
+                <label><input type="radio" name="risk"> Moderate</label>
+                <label><input type="radio" name="risk"> Aggressive</label>
+            </div>
+            <div class="help-text">Conservative = Safety first, lower returns accepted | Moderate = Balanced approach | Aggressive = Higher risk for higher returns</div>
+        </div>
+
+        <div class="field-group">
+            <span class="field-label">Time Horizon:</span>
+            <input type="text" class="input-field" placeholder="e.g., 30 years until retirement">
+            <div class="help-text">How long until you'll need this money?</div>
+        </div>
+
+        <div class="field-group">
+            <span class="field-label">Time Available for Research:</span>
+            <input type="text" class="input-field" placeholder="e.g., 2 hours per week">
+            <div class="help-text">Be realistic - more time allows for active strategies, less time favors passive investing</div>
+        </div>
+
+        <div class="field-group">
+            <span class="field-label">Preferred Investment Style:</span>
+            <div class="radio-group">
+                <label><input type="radio" name="style"> Passive (Buy & Hold)</label>
+                <label><input type="radio" name="style"> Active (Frequent Trading)</label>
+                <label><input type="radio" name="style"> Mix of Both</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 2: Trading Rules -->
+    <div class="template-section">
+        <h2>Section 2: My Trading Rules</h2>
+
+        <div class="example-box">
+            <strong>💡 Example:</strong> "I will use limit orders for any stock with a spread wider than 0.2%, and market orders for highly liquid ETFs."
+        </div>
+
+        <div class="field-group">
+            <span class="field-label">Order Types I'll Use For:</span>
+
+            <table>
+                <tr>
+                    <th style="width: 40%;">Situation</th>
+                    <th>Order Type & Rationale</th>
+                </tr>
+                <tr>
+                    <td>Liquid stocks (tight spreads)</td>
+                    <td><input type="text" class="input-field" placeholder="e.g., Market order - low cost, fast execution"></td>
+                </tr>
+                <tr>
+                    <td>Illiquid stocks (wide spreads)</td>
+                    <td><input type="text" class="input-field" placeholder="e.g., Limit order - avoid overpaying"></td>
+                </tr>
+                <tr>
+                    <td>ETFs and Index Funds</td>
+                    <td><input type="text" class="input-field" placeholder="e.g., Market order during mid-day"></td>
+                </tr>
+                <tr>
+                    <td>Volatile market conditions</td>
+                    <td><input type="text" class="input-field" placeholder="e.g., Limit order to protect against spikes"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="field-group">
+            <span class="field-label">Spread Checking Rule:</span>
+            <div class="radio-group">
+                <label><input type="radio" name="spread-check"> Check spread before every trade</label>
+                <label><input type="radio" name="spread-check"> Only for trades over $1,000</label>
+                <label><input type="radio" name="spread-check"> Only for individual stocks</label>
+            </div>
+        </div>
+
+        <div class="field-group">
+            <span class="field-label">Maximum Acceptable Spread:</span>
+            <input type="text" class="input-field" placeholder="e.g., 0.5% - will not trade if spread is wider">
+        </div>
+
+        <div class="field-group">
+            <span class="field-label">Trading Times I'll Avoid:</span>
+            <div class="checkbox-group">
+                <label><input type="checkbox"> First 30 minutes of market open (9:30-10:00 AM ET)</label>
+                <label><input type="checkbox"> Last 30 minutes before close (3:30-4:00 PM ET)</label>
+                <label><input type="checkbox"> Pre-market hours (before 9:30 AM ET)</label>
+                <label><input type="checkbox"> After-hours trading (after 4:00 PM ET)</label>
+                <label><input type="checkbox"> During major news events</label>
+            </div>
+        </div>
+
+        <div class="field-group">
+            <span class="field-label">Cost Review Frequency:</span>
+            <div class="radio-group">
+                <label><input type="radio" name="review"> Monthly</label>
+                <label><input type="radio" name="review"> Quarterly</label>
+                <label><input type="radio" name="review"> Annually</label>
+            </div>
+            <div class="help-text">How often will you review your trading costs and adjust your strategy?</div>
+        </div>
+    </div>
+
+    <!-- Section 3: Investment Strategy -->
+    <div class="template-section">
+        <h2>Section 3: My Investment Allocation</h2>
+
+        <div class="field-group">
+            <span class="field-label">Core Holdings (80% of portfolio):</span>
+            <textarea placeholder="List your main long-term investments (e.g., S&P 500 index fund, diversified ETFs, blue-chip stocks)"></textarea>
+            <div class="help-text">These are buy-and-hold investments you'll rarely trade</div>
+        </div>
+
+        <div class="field-group">
+            <span class="field-label">Purchase Frequency for Core Holdings:</span>
+            <input type="text" class="input-field" placeholder="e.g., Monthly automatic investment of $500">
+        </div>
+
+        <div class="field-group">
+            <span class="field-label">Experimental/Learning Allocation (20% of portfolio):</span>
+            <textarea placeholder="List where you'll practice and learn (e.g., individual stocks I research, sector ETFs, small position in growth stocks)"></textarea>
+            <div class="help-text">Limit this to 20% to control risk while learning</div>
+        </div>
+
+        <div class="field-group">
+            <span class="field-label">Portfolio Review Frequency:</span>
+            <input type="text" class="input-field" placeholder="e.g., Quarterly - review performance and rebalance if needed">
+        </div>
+
+        <div class="field-group">
+            <span class="field-label">Rebalancing Rules:</span>
+            <textarea placeholder="e.g., If any holding grows beyond 15% of portfolio, sell back to target allocation. Rebalance quarterly or when allocation drifts more than 5%."></textarea>
+        </div>
+    </div>
+
+    <!-- Section 4: First Trade Plan -->
+    <div class="template-section">
+        <h2>Section 4: My First Trade</h2>
+
+        <div class="warning-box">
+            <strong>⚠️ Before Your First Trade:</strong> Make sure you've funded your account, understood all fees, and practiced with the trading platform's demo mode if available.
+        </div>
+
+        <div class="field-group">
+            <span class="field-label">Security to Purchase:</span>
+            <input type="text" class="input-field" placeholder="Ticker symbol and name (e.g., VOO - Vanguard S&P 500 ETF)">
+        </div>
+
+        <div class="field-group">
+            <span class="field-label">Investment Amount:</span>
+            <input type="text" class="input-field" placeholder="e.g., $500">
+        </div>
+
+        <div class="field-group">
+            <span class="field-label">Order Type I'll Use:</span>
+            <div class="radio-group">
+                <label><input type="radio" name="first-order"> Market Order</label>
+                <label><input type="radio" name="first-order"> Limit Order at $<input type="text" style="width: 80px; margin-left: 5px;" placeholder="0.00"></label>
+            </div>
+        </div>
+
+        <div class="field-group">
+            <span class="field-label">Rationale for This Choice:</span>
+            <textarea placeholder="Explain why you chose this security, this amount, and this order type..."></textarea>
+        </div>
+
+        <div class="field-group">
+            <span class="field-label">Expected Spread:</span>
+            <input type="text" class="input-field" placeholder="e.g., $0.02 per share (0.05%)">
+            <div class="help-text">Check the current bid-ask spread before trading</div>
+        </div>
+
+        <div class="field-group">
+            <span class="field-label">Target Purchase Date:</span>
+            <input type="text" class="input-field" placeholder="e.g., Monday, November 20, 2025 at 11:00 AM ET">
+            <div class="help-text">Avoid first/last 30 minutes of trading day</div>
+        </div>
+
+        <div class="field-group">
+            <span class="field-label">Post-Trade Review Plan:</span>
+            <textarea placeholder="How will you evaluate whether this trade was successful? What will you track? (e.g., Actual spread paid, execution price vs. expected, any slippage, how I felt during the trade)"></textarea>
+        </div>
+    </div>
+
+    <!-- Commitment Section -->
+    <div class="commitment-box">
+        <h2 style="color: white; border: none; margin-top: 0;">My Trading Commitment</h2>
+        <p>I commit to following this strategy and avoiding emotional, impulsive trades. I understand that successful investing requires discipline, patience, and continuous learning.</p>
+
+        <p><strong>I will:</strong></p>
+        <ul style="text-align: left; display: inline-block;">
+            <li>Always check the spread before trading</li>
+            <li>Use appropriate order types based on market conditions</li>
+            <li>Track my costs and review them regularly</li>
+            <li>Prioritize long-term wealth building over short-term gains</li>
+            <li>Learn from each trade and adjust my strategy as needed</li>
+        </ul>
+
+        <div class="signature-line">
+            <div style="margin-bottom: 5px;">Signature:</div>
+            <input type="text" style="background: transparent; border: none; border-bottom: 2px solid white; color: white; width: 100%; font-size: 1.1em;">
+        </div>
+
+        <div class="signature-line">
+            <div style="margin-bottom: 5px;">Date:</div>
+            <input type="text" style="background: transparent; border: none; border-bottom: 2px solid white; color: white; width: 100%; font-size: 1.1em;">
+        </div>
+    </div>
+
+    <div class="example-box">
+        <h3>Next Steps</h3>
+        <ol>
+            <li><strong>Open your brokerage account</strong> (if you haven't already)</li>
+            <li><strong>Practice with the platform</strong> - Get comfortable navigating before trading real money</li>
+            <li><strong>Start small</strong> - Your first trade should be a learning experience, not a big investment</li>
+            <li><strong>Track everything</strong> - Keep a trading journal to learn from each trade</li>
+            <li><strong>Review and adjust</strong> - Your strategy should evolve as you learn and your goals change</li>
+        </ol>
+    </div>
+
+    <footer>
+        <p><strong>PFL Academy</strong> | Personal Trading Strategy Template</p>
+        <p>For educational purposes only - Not investment advice</p>
+    </footer>
+</body>
+</html>

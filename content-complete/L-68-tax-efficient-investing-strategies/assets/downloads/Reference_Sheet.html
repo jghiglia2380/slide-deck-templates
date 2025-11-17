@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax-Efficient Investing Quick Reference | PFL Academy</title>
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #8b5cf6;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --background: #ffffff;
+            --surface: #f9fafb;
+            --border: #e5e7eb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 11px;
+            line-height: 1.4;
+            color: var(--text);
+            background-color: var(--surface);
+            padding: 15px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--background);
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 3px;
+        }
+
+        .subtitle {
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 20px;
+            columns: 2;
+            column-gap: 25px;
+        }
+
+        .section {
+            break-inside: avoid;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            color: white;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 0.9rem;
+            color: var(--primary);
+            margin: 8px 0 5px;
+            font-weight: 700;
+        }
+
+        ul {
+            margin: 5px 0 10px 15px;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 3px;
+            font-size: 0.9rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            font-size: 0.85rem;
+            break-inside: avoid;
+        }
+
+        th, td {
+            border: 1px solid var(--border);
+            padding: 5px;
+            text-align: left;
+        }
+
+        th {
+            background: var(--primary);
+            color: white;
+            font-weight: 600;
+            font-size: 0.8rem;
+        }
+
+        .key-term {
+            background: var(--surface);
+            border-left: 3px solid var(--primary);
+            padding: 8px;
+            margin: 8px 0;
+            break-inside: avoid;
+        }
+
+        .term-name {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 0.9rem;
+        }
+
+        .term-definition {
+            color: var(--text-light);
+            font-size: 0.85rem;
+            margin-top: 3px;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
+            border: 2px solid var(--primary);
+            padding: 10px;
+            border-radius: 6px;
+            margin: 10px 0;
+            break-inside: avoid;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                border: 1px solid #000;
+            }
+
+            @page {
+                margin: 0.5in;
+                size: letter;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                columns: 1;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💰 Tax-Efficient Investing Quick Reference</h1>
+            <div class="subtitle">Essential strategies to minimize investment taxes</div>
+        </header>
+
+        <div class="content">
+            <!-- Capital Gains Rates -->
+            <div class="section">
+                <h2>📊 2024 Capital Gains Tax Rates</h2>
+
+                <h3>Long-Term (>1 year)</h3>
+                <table>
+                    <tr>
+                        <th>Filing Status</th>
+                        <th>0%</th>
+                        <th>15%</th>
+                        <th>20%</th>
+                    </tr>
+                    <tr>
+                        <td>Single</td>
+                        <td>≤$44,625</td>
+                        <td>$44,626-$492,300</td>
+                        <td>$492,301+</td>
+                    </tr>
+                    <tr>
+                        <td>Married Joint</td>
+                        <td>≤$89,250</td>
+                        <td>$89,251-$553,850</td>
+                        <td>$553,851+</td>
+                    </tr>
+                </table>
+
+                <h3>Short-Term (≤1 year)</h3>
+                <ul>
+                    <li>Taxed as ordinary income (10%-37%)</li>
+                    <li>Same rates as wages and salary</li>
+                    <li><strong>Key:</strong> Hold >1 year for lower rates</li>
+                </ul>
+            </div>
+
+            <!-- Tax-Advantaged Accounts -->
+            <div class="section">
+                <h2>🏦 Tax-Advantaged Accounts</h2>
+
+                <div class="key-term">
+                    <div class="term-name">Traditional IRA/401(k)</div>
+                    <div class="term-definition">
+                        • Tax-deductible contributions<br>
+                        • Tax-deferred growth<br>
+                        • Taxed as ordinary income at withdrawal<br>
+                        • RMDs start at age 73<br>
+                        • 2024 Limit: $7,000 IRA ($8,000 if 50+), $23,000 401(k) ($30,500 if 50+)
+                    </div>
+                </div>
+
+                <div class="key-term">
+                    <div class="term-name">Roth IRA/401(k)</div>
+                    <div class="term-definition">
+                        • After-tax contributions<br>
+                        • Tax-free growth<br>
+                        • Tax-free qualified withdrawals<br>
+                        • No RMDs (Roth IRA only)<br>
+                        • Same contribution limits
+                    </div>
+                </div>
+
+                <div class="key-term">
+                    <div class="term-name">HSA (Health Savings Account)</div>
+                    <div class="term-definition">
+                        • Triple tax advantage: deductible, tax-free growth, tax-free medical withdrawals<br>
+                        • 2024 Limit: $4,150 individual, $8,300 family (+$1,000 if 55+)
+                    </div>
+                </div>
+            </div>
+
+            <!-- Asset Location -->
+            <div class="section">
+                <h2>🎯 Asset Location Strategy</h2>
+
+                <table>
+                    <tr>
+                        <th>Account Type</th>
+                        <th>Best Investments</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Taxable</strong></td>
+                        <td>
+                            • Municipal bonds<br>
+                            • Tax-efficient index funds<br>
+                            • Long-term stocks<br>
+                            • I Bonds
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tax-Deferred (Traditional)</strong></td>
+                        <td>
+                            • Corporate bonds<br>
+                            • REITs<br>
+                            • High-turnover funds<br>
+                            • Dividend stocks
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tax-Free (Roth)</strong></td>
+                        <td>
+                            • High-growth stocks<br>
+                            • Small-cap funds<br>
+                            • Emerging markets<br>
+                            • Anything with highest growth potential
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Tax-Loss Harvesting -->
+            <div class="section">
+                <h2>📉 Tax-Loss Harvesting</h2>
+
+                <h3>How It Works</h3>
+                <ul>
+                    <li>Sell investments at a loss</li>
+                    <li>Offset capital gains dollar-for-dollar</li>
+                    <li>Offset up to $3,000 ordinary income</li>
+                    <li>Carry forward excess losses</li>
+                </ul>
+
+                <h3>Wash Sale Rule</h3>
+                <ul>
+                    <li>Can't rebuy "substantially identical" security within 30 days (before or after sale)</li>
+                    <li>Applies to you, spouse, and controlled entities</li>
+                    <li>Violation: Loss disallowed, added to basis of new purchase</li>
+                    <li><strong>Workaround:</strong> Buy similar (not identical) investment</li>
+                </ul>
+
+                <h3>Example</h3>
+                <ul>
+                    <li>Sell losing Stock A: -$5,000</li>
+                    <li>Sell winning Stock B: +$8,000</li>
+                    <li>Net gain: $3,000</li>
+                    <li>Tax at 15%: $450 (vs. $1,200 without harvesting)</li>
+                </ul>
+            </div>
+
+            <!-- Qualified Dividends -->
+            <div class="section">
+                <h2>💵 Dividend Tax Treatment</h2>
+
+                <h3>Qualified Dividends</h3>
+                <ul>
+                    <li>Taxed at capital gains rates (0%, 15%, 20%)</li>
+                    <li>Must hold stock >60 days during 121-day period around ex-dividend date</li>
+                    <li>U.S. companies & qualified foreign corporations</li>
+                </ul>
+
+                <h3>Ordinary (Non-Qualified) Dividends</h3>
+                <ul>
+                    <li>Taxed as ordinary income (10%-37%)</li>
+                    <li>REITs, MLPs, money market funds</li>
+                    <li>Short-term holdings</li>
+                </ul>
+            </div>
+
+            <!-- Municipal Bonds -->
+            <div class="section">
+                <h2>🏛️ Municipal Bonds</h2>
+
+                <ul>
+                    <li><strong>Federal Tax Exempt:</strong> Interest not taxed by IRS</li>
+                    <li><strong>State Tax Exempt:</strong> If issued in your state</li>
+                    <li><strong>Tax-Equivalent Yield:</strong> Muni Yield / (1 - Tax Rate)</li>
+                    <li><strong>Example:</strong> 3% muni = 4.17% taxable (28% bracket)</li>
+                    <li><strong>Best For:</strong> High earners in taxable accounts</li>
+                </ul>
+            </div>
+
+            <!-- Tax-Efficient Funds -->
+            <div class="section">
+                <h2>📈 Tax-Efficient Investments</h2>
+
+                <h3>Most Tax-Efficient</h3>
+                <ul>
+                    <li>Index funds (low turnover)</li>
+                    <li>ETFs (in-kind redemptions)</li>
+                    <li>Tax-managed funds</li>
+                    <li>Individual stocks (control timing)</li>
+                    <li>Municipal bonds</li>
+                    <li>I Bonds & Treasury securities</li>
+                </ul>
+
+                <h3>Least Tax-Efficient</h3>
+                <ul>
+                    <li>Actively managed funds (high turnover)</li>
+                    <li>Bond funds in taxable accounts</li>
+                    <li>REITs (ordinary dividend treatment)</li>
+                    <li>Commodities & precious metals</li>
+                </ul>
+            </div>
+
+            <!-- Charitable Giving -->
+            <div class="section">
+                <h2>🎁 Tax-Smart Charitable Giving</h2>
+
+                <h3>Donate Appreciated Securities</h3>
+                <ul>
+                    <li>Avoid capital gains tax</li>
+                    <li>Deduct full fair market value</li>
+                    <li>Must itemize to benefit</li>
+                </ul>
+
+                <h3>Qualified Charitable Distributions (QCDs)</h3>
+                <ul>
+                    <li>Direct IRA donation (age 70½+)</li>
+                    <li>Counts toward RMD</li>
+                    <li>Up to $105,000 per year (2024)</li>
+                    <li>Excludes donation from taxable income</li>
+                </ul>
+
+                <h3>Donor-Advised Funds</h3>
+                <ul>
+                    <li>Immediate tax deduction</li>
+                    <li>Distribute to charities over time</li>
+                    <li>Invest funds for growth</li>
+                </ul>
+            </div>
+
+            <!-- Retirement Account Withdrawals -->
+            <div class="section">
+                <h2>💼 Smart Withdrawal Strategies</h2>
+
+                <h3>Order of Withdrawals</h3>
+                <ul>
+                    <li><strong>1. RMDs first</strong> (avoid 50% penalty)</li>
+                    <li><strong>2. Taxable accounts</strong> (most flexible)</li>
+                    <li><strong>3. Tax-deferred accounts</strong> (control tax bracket)</li>
+                    <li><strong>4. Roth accounts last</strong> (maximize tax-free growth)</li>
+                </ul>
+
+                <h3>Roth Conversions</h3>
+                <ul>
+                    <li>Convert Traditional → Roth in low-income years</li>
+                    <li>Pay taxes now at lower rate</li>
+                    <li>Tax-free growth thereafter</li>
+                    <li>No RMDs on Roth IRAs</li>
+                    <li><strong>Best:</strong> Early retirement, before Social Security</li>
+                </ul>
+            </div>
+
+            <!-- State-Specific -->
+            <div class="section">
+                <h2>🗺️ State Tax Considerations</h2>
+
+                <h3>States with NO Income Tax</h3>
+                <ul style="columns: 2;">
+                    <li>Alaska</li>
+                    <li>Florida</li>
+                    <li>Nevada</li>
+                    <li>South Dakota</li>
+                    <li>Tennessee</li>
+                    <li>Texas</li>
+                    <li>Washington</li>
+                    <li>Wyoming</li>
+                    <li>New Hampshire*</li>
+                </ul>
+                <p style="font-size: 0.8rem; margin-top: 5px;">*Interest & dividends only</p>
+
+                <h3>Your State: {{STATE_NAME}}</h3>
+                <ul>
+                    <li>Income Tax Rate: {{STATE_INCOME_TAX_RATE}}%</li>
+                    <li>Capital Gains Tax: {{STATE_CAPITAL_GAINS_TAX}}%</li>
+                </ul>
+            </div>
+
+            <!-- Action Items -->
+            <div class="highlight-box">
+                <h3 style="color: var(--primary); margin-bottom: 8px;">✅ Tax-Efficiency Action Plan</h3>
+                <ul style="margin: 5px 0 0 15px;">
+                    <li>Max out tax-advantaged accounts first</li>
+                    <li>Hold investments >1 year when possible</li>
+                    <li>Place tax-inefficient assets in tax-advantaged accounts</li>
+                    <li>Harvest losses annually (watch wash sales)</li>
+                    <li>Consider municipal bonds in taxable accounts (if high bracket)</li>
+                    <li>Donate appreciated securities instead of cash</li>
+                    <li>Review portfolio for tax optimization annually</li>
+                </ul>
+            </div>
+
+            <!-- Key Reminders -->
+            <div class="highlight-box">
+                <h3 style="color: var(--primary); margin-bottom: 8px;">⚠️ Important Reminders</h3>
+                <ul style="margin: 5px 0 0 15px;">
+                    <li>Tax tail shouldn't wag investment dog</li>
+                    <li>Investment returns matter more than tax savings</li>
+                    <li>Consult tax professional for complex situations</li>
+                    <li>Tax laws change—stay informed</li>
+                    <li>Document everything for tax time</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

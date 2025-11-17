@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equilibrium Shift Animations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #6366f1;
+            border-bottom: 2px solid #6366f1;
+            padding-bottom: 10px;
+            font-size: 28px;
+        }
+        h2 {
+            color: #8b5cf6;
+            margin-top: 25px;
+            font-size: 22px;
+        }
+        .scenario-selector {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .scenario-button {
+            background-color: #6366f1;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            text-align: left;
+        }
+        .scenario-button:hover {
+            background-color: #8b5cf6;
+        }
+        .scenario-button.active {
+            background-color: #10b981;
+        }
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        button {
+            background-color: #6366f1;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        button:hover {
+            background-color: #8b5cf6;
+        }
+        #canvas {
+            width: 100%;
+            max-width: 800px;
+            height: 500px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 20px auto;
+            display: block;
+            background-color: white;
+        }
+        .info-box {
+            background-color: #e0e7ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            border-left: 4px solid #6366f1;
+        }
+        .stats-panel {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .stat-box {
+            background-color: #f9fafb;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #e5e7eb;
+            text-align: center;
+        }
+        .stat-label {
+            font-size: 12px;
+            color: #6b7280;
+            margin-bottom: 5px;
+        }
+        .stat-value {
+            font-size: 20px;
+            font-weight: bold;
+            color: #6366f1;
+        }
+        .stat-change {
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        .increase { color: #10b981; }
+        .decrease { color: #ef4444; }
+        @media print {
+            body { font-size: 12pt; }
+            button { display: none; }
+            .controls { display: none; }
+            .scenario-selector { display: none; }
+            #canvas { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Equilibrium Shift Animations</h1>
+    <p>See how supply and demand shifts affect market equilibrium in real-time</p>
+
+    <h2>Select a Scenario</h2>
+    <div class="scenario-selector">
+        <button class="scenario-button" data-scenario="demand-increase">
+            <strong>Demand Increases</strong><br>
+            <small>Example: New tech product launch</small>
+        </button>
+        <button class="scenario-button" data-scenario="demand-decrease">
+            <strong>Demand Decreases</strong><br>
+            <small>Example: Economic recession</small>
+        </button>
+        <button class="scenario-button" data-scenario="supply-increase">
+            <strong>Supply Increases</strong><br>
+            <small>Example: New factory opens</small>
+        </button>
+        <button class="scenario-button" data-scenario="supply-decrease">
+            <strong>Supply Decreases</strong><br>
+            <small>Example: Natural disaster</small>
+        </button>
+    </div>
+
+    <div class="controls">
+        <button id="playAnimation">Play Animation</button>
+        <button id="stepForward">Step Forward</button>
+        <button id="resetAnimation">Reset</button>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <div class="stats-panel" id="statsPanel">
+        <div class="stat-box">
+            <div class="stat-label">Original Price</div>
+            <div class="stat-value" id="originalPrice">$50</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-label">New Price</div>
+            <div class="stat-value" id="newPrice">--</div>
+            <div class="stat-change" id="priceChange"></div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-label">Original Quantity</div>
+            <div class="stat-value" id="originalQty">50</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-label">New Quantity</div>
+            <div class="stat-value" id="newQty">--</div>
+            <div class="stat-change" id="qtyChange"></div>
+        </div>
+    </div>
+
+    <div class="info-box" id="infoBox">
+        <strong>Select a scenario above</strong> to see how market forces shift equilibrium. The animation will show the curve shifting and the new equilibrium point being established.
+    </div>
+
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+
+        let currentScenario = null;
+        let animationProgress = 0;
+        let isAnimating = false;
+        let animationFrame = null;
+
+        const scenarios = {
+            'demand-increase': {
+                name: 'Demand Increases',
+                trigger: 'New technology reduces production costs',
+                shift: 'demand',
+                direction: 1,
+                newP: 65,
+                newQ: 65,
+                explanation: 'When demand increases, the demand curve shifts right. Both price and quantity increase as more consumers compete for the product.'
+            },
+            'demand-decrease': {
+                name: 'Demand Decreases',
+                trigger: 'Economic recession reduces consumer spending',
+                shift: 'demand',
+                direction: -1,
+                newP: 35,
+                newQ: 35,
+                explanation: 'When demand decreases, the demand curve shifts left. Both price and quantity decrease as fewer consumers want the product.'
+            },
+            'supply-increase': {
+                name: 'Supply Increases',
+                trigger: 'New factory increases production capacity',
+                shift: 'supply',
+                direction: 1,
+                newP: 35,
+                newQ: 65,
+                explanation: 'When supply increases, the supply curve shifts right. Price decreases while quantity increases as more product becomes available.'
+            },
+            'supply-decrease': {
+                name: 'Supply Decreases',
+                trigger: 'Hurricane disrupts production',
+                shift: 'supply',
+                direction: -1,
+                newP: 65,
+                newQ: 35,
+                explanation: 'When supply decreases, the supply curve shifts left. Price increases while quantity decreases as the product becomes scarcer.'
+            }
+        };
+
+        function resizeCanvas() {
+            const rect = canvas.getBoundingClientRect();
+            canvas.width = rect.width * window.devicePixelRatio;
+            canvas.height = rect.height * window.devicePixelRatio;
+            ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+            drawGraph();
+        }
+
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        function drawGraph() {
+            const width = canvas.width / window.devicePixelRatio;
+            const height = canvas.height / window.devicePixelRatio;
+            ctx.clearRect(0, 0, width, height);
+
+            const margin = 60;
+            const graphWidth = width - 2 * margin;
+            const graphHeight = height - 2 * margin;
+
+            // Draw axes
+            ctx.strokeStyle = '#333';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(margin, margin);
+            ctx.lineTo(margin, height - margin);
+            ctx.lineTo(width - margin, height - margin);
+            ctx.stroke();
+
+            // Axis labels
+            ctx.fillStyle = '#333';
+            ctx.font = '14px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText('Quantity', width / 2, height - 20);
+            ctx.save();
+            ctx.translate(20, height / 2);
+            ctx.rotate(-Math.PI / 2);
+            ctx.fillText('Price ($)', 0, 0);
+            ctx.restore();
+
+            // Tick marks
+            ctx.font = '12px Arial';
+            for (let i = 0; i <= 10; i++) {
+                const x = margin + (graphWidth * i / 10);
+                ctx.fillText(i * 10, x, height - margin + 20);
+                ctx.textAlign = 'right';
+                ctx.fillText('$' + (100 - i * 10), margin - 10, margin + (graphHeight * i / 10) + 5);
+                ctx.textAlign = 'center';
+            }
+
+            // Original curves
+            const shift = currentScenario ? animationProgress * 20 * scenarios[currentScenario].direction : 0;
+
+            // Draw original demand curve (faded if animating)
+            ctx.strokeStyle = currentScenario && animationProgress > 0 ? 'rgba(59, 130, 246, 0.3)' : '#3b82f6';
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            for (let q = 0; q <= 100; q++) {
+                const p = 100 - q;
+                const x = margin + (graphWidth * q / 100);
+                const y = margin + (graphHeight * (100 - p) / 100);
+                if (q === 0) ctx.moveTo(x, y);
+                else ctx.lineTo(x, y);
+            }
+            ctx.stroke();
+
+            // Draw original supply curve (faded if animating)
+            ctx.strokeStyle = currentScenario && animationProgress > 0 ? 'rgba(239, 68, 68, 0.3)' : '#ef4444';
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            for (let q = 0; q <= 100; q++) {
+                const p = q;
+                const x = margin + (graphWidth * q / 100);
+                const y = margin + (graphHeight * (100 - p) / 100);
+                if (q === 0) ctx.moveTo(x, y);
+                else ctx.lineTo(x, y);
+            }
+            ctx.stroke();
+
+            // Draw shifted curves if animating
+            if (currentScenario && animationProgress > 0) {
+                const scenario = scenarios[currentScenario];
+
+                if (scenario.shift === 'demand') {
+                    ctx.strokeStyle = '#3b82f6';
+                    ctx.lineWidth = 3;
+                    ctx.beginPath();
+                    for (let q = 0; q <= 100; q++) {
+                        const p = 100 - q;
+                        const x = margin + (graphWidth * (q + shift) / 100);
+                        const y = margin + (graphHeight * (100 - p) / 100);
+                        if (q === 0) ctx.moveTo(x, y);
+                        else ctx.lineTo(x, y);
+                    }
+                    ctx.stroke();
+                } else {
+                    ctx.strokeStyle = '#ef4444';
+                    ctx.lineWidth = 3;
+                    ctx.beginPath();
+                    for (let q = 0; q <= 100; q++) {
+                        const p = q;
+                        const x = margin + (graphWidth * (q + shift) / 100);
+                        const y = margin + (graphHeight * (100 - p) / 100);
+                        if (q === 0) ctx.moveTo(x, y);
+                        else ctx.lineTo(x, y);
+                    }
+                    ctx.stroke();
+                }
+
+                // Draw new equilibrium point
+                if (animationProgress >= 1) {
+                    const newEqX = margin + (graphWidth * scenario.newQ / 100);
+                    const newEqY = margin + (graphHeight * (100 - scenario.newP) / 100);
+                    ctx.fillStyle = '#10b981';
+                    ctx.beginPath();
+                    ctx.arc(newEqX, newEqY, 8, 0, Math.PI * 2);
+                    ctx.fill();
+
+                    ctx.fillStyle = '#10b981';
+                    ctx.font = 'bold 14px Arial';
+                    ctx.textAlign = 'center';
+                    ctx.fillText('New Equilibrium', newEqX, newEqY - 20);
+                    ctx.font = '12px Arial';
+                    ctx.fillText(`P = $${scenario.newP}`, newEqX, newEqY - 40);
+                    ctx.fillText(`Q = ${scenario.newQ}`, newEqX, newEqY + 30);
+                }
+            }
+
+            // Draw original equilibrium point
+            const origEqX = margin + (graphWidth * 50 / 100);
+            const origEqY = margin + (graphHeight * 50 / 100);
+            ctx.fillStyle = currentScenario && animationProgress > 0 ? 'rgba(16, 185, 129, 0.5)' : '#10b981';
+            ctx.beginPath();
+            ctx.arc(origEqX, origEqY, 6, 0, Math.PI * 2);
+            ctx.fill();
+
+            if (!currentScenario || animationProgress === 0) {
+                ctx.fillStyle = '#10b981';
+                ctx.font = 'bold 14px Arial';
+                ctx.textAlign = 'center';
+                ctx.fillText('Original Equilibrium', origEqX, origEqY - 20);
+            }
+        }
+
+        function animate() {
+            if (!isAnimating) return;
+
+            animationProgress += 0.02;
+            if (animationProgress >= 1) {
+                animationProgress = 1;
+                isAnimating = false;
+                updateStats();
+            }
+
+            drawGraph();
+            if (isAnimating) {
+                animationFrame = requestAnimationFrame(animate);
+            }
+        }
+
+        function updateStats() {
+            if (!currentScenario || animationProgress === 0) {
+                document.getElementById('newPrice').textContent = '--';
+                document.getElementById('newQty').textContent = '--';
+                document.getElementById('priceChange').textContent = '';
+                document.getElementById('qtyChange').textContent = '';
+                return;
+            }
+
+            const scenario = scenarios[currentScenario];
+            const priceDiff = scenario.newP - 50;
+            const qtyDiff = scenario.newQ - 50;
+
+            document.getElementById('newPrice').textContent = '$' + scenario.newP;
+            document.getElementById('newQty').textContent = scenario.newQ;
+
+            document.getElementById('priceChange').innerHTML =
+                priceDiff > 0 ? `<span class="increase">▲ +$${priceDiff} (+${Math.round(priceDiff/50*100)}%)</span>` :
+                                `<span class="decrease">▼ $${priceDiff} (${Math.round(priceDiff/50*100)}%)</span>`;
+
+            document.getElementById('qtyChange').innerHTML =
+                qtyDiff > 0 ? `<span class="increase">▲ +${qtyDiff} (+${Math.round(qtyDiff/50*100)}%)</span>` :
+                              `<span class="decrease">▼ ${qtyDiff} (${Math.round(qtyDiff/50*100)}%)</span>`;
+        }
+
+        // Event listeners
+        document.querySelectorAll('.scenario-button').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.scenario-button').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                currentScenario = this.dataset.scenario;
+                animationProgress = 0;
+                isAnimating = false;
+                drawGraph();
+                updateStats();
+
+                const scenario = scenarios[currentScenario];
+                document.getElementById('infoBox').innerHTML =
+                    `<strong>${scenario.name}:</strong> ${scenario.trigger}<br>` +
+                    `<em>${scenario.explanation}</em>`;
+            });
+        });
+
+        document.getElementById('playAnimation').addEventListener('click', function() {
+            if (!currentScenario) {
+                alert('Please select a scenario first');
+                return;
+            }
+            animationProgress = 0;
+            isAnimating = true;
+            animate();
+        });
+
+        document.getElementById('stepForward').addEventListener('click', function() {
+            if (!currentScenario) {
+                alert('Please select a scenario first');
+                return;
+            }
+            animationProgress = Math.min(1, animationProgress + 0.25);
+            drawGraph();
+            updateStats();
+        });
+
+        document.getElementById('resetAnimation').addEventListener('click', function() {
+            currentScenario = null;
+            animationProgress = 0;
+            isAnimating = false;
+            if (animationFrame) cancelAnimationFrame(animationFrame);
+            document.querySelectorAll('.scenario-button').forEach(b => b.classList.remove('active'));
+            drawGraph();
+            updateStats();
+            document.getElementById('infoBox').innerHTML =
+                '<strong>Select a scenario above</strong> to see how market forces shift equilibrium.';
+        });
+    </script>
+</body>
+</html>

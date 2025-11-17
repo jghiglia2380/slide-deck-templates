@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{STATE_NAME}} Market Data Fact Sheet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #6366f1;
+            padding-bottom: 10px;
+            font-size: 28px;
+            text-align: center;
+        }
+        .subtitle {
+            text-align: center;
+            color: #6b7280;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #2c3e50;
+            background-color: #f3f4f6;
+            padding: 10px 15px;
+            border-left: 4px solid #6366f1;
+            margin-top: 25px;
+            font-size: 20px;
+        }
+        .data-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .data-card {
+            background-color: #f9fafb;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 15px;
+        }
+        .data-label {
+            font-size: 12px;
+            color: #6b7280;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        .data-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #6366f1;
+        }
+        .data-subtext {
+            font-size: 12px;
+            color: #6b7280;
+            margin-top: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f3f4f6;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .highlight-box {
+            background-color: #eef2ff;
+            border: 2px solid #c7d2fe;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .highlight-box h3 {
+            color: #6366f1;
+            margin-top: 0;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 25px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        .comparison-table {
+            margin: 20px 0;
+        }
+        .comparison-table th {
+            background-color: #6366f1;
+            color: white;
+        }
+        .note {
+            background-color: #fffbeb;
+            border-left: 4px solid #fbbf24;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        .print-instructions {
+            background-color: #f0f7ff;
+            border: 1px solid #cce5ff;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        @media print {
+            .print-instructions {
+                display: none;
+            }
+            body {
+                font-size: 11pt;
+            }
+            h1 {
+                font-size: 18pt;
+            }
+            h2 {
+                font-size: 14pt;
+                page-break-after: avoid;
+            }
+            .data-card {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="print-instructions">
+        <strong>Printing Instructions:</strong> Press Ctrl+P (Windows) or Cmd+P (Mac), select "Save as PDF" or your printer, then click "Save" or "Print"
+    </div>
+
+    <h1>{{STATE_NAME}} Market Data Fact Sheet</h1>
+    <p class="subtitle">Quick reference for analyzing {{STATE_NAME}} markets using supply and demand</p>
+
+    <!-- Housing Market Data -->
+    <h2>📊 Housing Market</h2>
+    <div class="data-grid">
+        <div class="data-card">
+            <div class="data-label">Median Home Price</div>
+            <div class="data-value">{{STATE_MEDIAN_HOME_PRICE}}</div>
+            <div class="data-subtext">Updated quarterly</div>
+        </div>
+        <div class="data-card">
+            <div class="data-label">Median Rent</div>
+            <div class="data-value">{{STATE_MEDIAN_RENT}}/month</div>
+            <div class="data-subtext">1-bedroom apartment</div>
+        </div>
+        <div class="data-card">
+            <div class="data-label">Housing Inventory</div>
+            <div class="data-value">{{STATE_HOUSING_INVENTORY}} months</div>
+            <div class="data-subtext">Supply at current sales pace</div>
+        </div>
+        <div class="data-card">
+            <div class="data-label">Days on Market</div>
+            <div class="data-value">{{STATE_DAYS_ON_MARKET}} days</div>
+            <div class="data-subtext">Average time to sell</div>
+        </div>
+    </div>
+
+    <div class="highlight-box">
+        <h3>Key Housing Market Factors for {{STATE_NAME}}</h3>
+        <p><strong>Demand Drivers:</strong></p>
+        <ul>
+            <li>Population growth: {{STATE_POPULATION_GROWTH}}% annually</li>
+            <li>Employment rate: {{STATE_EMPLOYMENT_RATE}}%</li>
+            <li>Median household income: {{STATE_MEDIAN_INCOME}}</li>
+            <li>Mortgage rates: Currently averaging ~7%</li>
+        </ul>
+        <p><strong>Supply Factors:</strong></p>
+        <ul>
+            <li>New construction permits trending {{STATE_CONSTRUCTION_TREND}}</li>
+            <li>Construction costs {{STATE_CONSTRUCTION_COST_TREND}}</li>
+            <li>Land availability: {{STATE_LAND_AVAILABILITY}}</li>
+        </ul>
+    </div>
+
+    <!-- Labor Market Data -->
+    <h2>💼 Labor Market</h2>
+    <div class="data-grid">
+        <div class="data-card">
+            <div class="data-label">Unemployment Rate</div>
+            <div class="data-value">{{STATE_UNEMPLOYMENT_RATE}}%</div>
+            <div class="data-subtext">vs. {{US_UNEMPLOYMENT_RATE}}% national</div>
+        </div>
+        <div class="data-card">
+            <div class="data-label">Labor Force Participation</div>
+            <div class="data-value">{{STATE_LABOR_FORCE_PARTICIPATION}}%</div>
+            <div class="data-subtext">Adults working or seeking work</div>
+        </div>
+        <div class="data-card">
+            <div class="data-label">Average Hourly Wage</div>
+            <div class="data-value">{{STATE_AVERAGE_WAGE}}/hr</div>
+            <div class="data-subtext">All occupations</div>
+        </div>
+        <div class="data-card">
+            <div class="data-label">Job Growth Rate</div>
+            <div class="data-value">{{STATE_JOB_GROWTH}}%</div>
+            <div class="data-subtext">Year-over-year change</div>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Top Growing Industries in {{STATE_NAME}}</th>
+                <th>Job Growth Rate</th>
+                <th>Median Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{STATE_INDUSTRY_1}}</td>
+                <td>{{STATE_INDUSTRY_1_GROWTH}}%</td>
+                <td>{{STATE_INDUSTRY_1_SALARY}}</td>
+            </tr>
+            <tr>
+                <td>{{STATE_INDUSTRY_2}}</td>
+                <td>{{STATE_INDUSTRY_2_GROWTH}}%</td>
+                <td>{{STATE_INDUSTRY_2_SALARY}}</td>
+            </tr>
+            <tr>
+                <td>{{STATE_INDUSTRY_3}}</td>
+                <td>{{STATE_INDUSTRY_3_GROWTH}}%</td>
+                <td>{{STATE_INDUSTRY_3_SALARY}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Economic Indicators -->
+    <h2>📈 Economic Indicators</h2>
+    <div class="data-grid">
+        <div class="data-card">
+            <div class="data-label">State GDP Growth</div>
+            <div class="data-value">{{STATE_GDP_GROWTH}}%</div>
+            <div class="data-subtext">Annual rate</div>
+        </div>
+        <div class="data-card">
+            <div class="data-label">Population</div>
+            <div class="data-value">{{STATE_POPULATION}}</div>
+            <div class="data-subtext">Total residents</div>
+        </div>
+        <div class="data-card">
+            <div class="data-label">Median Age</div>
+            <div class="data-value">{{STATE_MEDIAN_AGE}} years</div>
+            <div class="data-subtext">Demographics</div>
+        </div>
+        <div class="data-card">
+            <div class="data-label">Business Climate Rank</div>
+            <div class="data-value">#{{STATE_BUSINESS_RANK}}</div>
+            <div class="data-subtext">Out of 50 states</div>
+        </div>
+    </div>
+
+    <!-- Supply and Demand Factors Unique to State -->
+    <div class="highlight-box">
+        <h3>Supply & Demand Factors Unique to {{STATE_NAME}}</h3>
+
+        <p><strong>Demand-Side Factors:</strong></p>
+        <ul>
+            <li>{{STATE_DEMAND_FACTOR_1}}</li>
+            <li>{{STATE_DEMAND_FACTOR_2}}</li>
+            <li>{{STATE_DEMAND_FACTOR_3}}</li>
+        </ul>
+
+        <p><strong>Supply-Side Factors:</strong></p>
+        <ul>
+            <li>{{STATE_SUPPLY_FACTOR_1}}</li>
+            <li>{{STATE_SUPPLY_FACTOR_2}}</li>
+            <li>{{STATE_SUPPLY_FACTOR_3}}</li>
+        </ul>
+    </div>
+
+    <!-- Comparison to Neighboring States -->
+    <h2>🗺️ Comparison to Neighboring States</h2>
+    <table class="comparison-table">
+        <thead>
+            <tr>
+                <th>Metric</th>
+                <th>{{STATE_NAME}}</th>
+                <th>{{NEIGHBOR_STATE_1}}</th>
+                <th>{{NEIGHBOR_STATE_2}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Median Home Price</td>
+                <td>{{STATE_MEDIAN_HOME_PRICE}}</td>
+                <td>{{NEIGHBOR_1_HOME_PRICE}}</td>
+                <td>{{NEIGHBOR_2_HOME_PRICE}}</td>
+            </tr>
+            <tr>
+                <td>Unemployment Rate</td>
+                <td>{{STATE_UNEMPLOYMENT_RATE}}%</td>
+                <td>{{NEIGHBOR_1_UNEMPLOYMENT}}%</td>
+                <td>{{NEIGHBOR_2_UNEMPLOYMENT}}%</td>
+            </tr>
+            <tr>
+                <td>Median Income</td>
+                <td>{{STATE_MEDIAN_INCOME}}</td>
+                <td>{{NEIGHBOR_1_INCOME}}</td>
+                <td>{{NEIGHBOR_2_INCOME}}</td>
+            </tr>
+            <tr>
+                <td>Population Growth</td>
+                <td>{{STATE_POPULATION_GROWTH}}%</td>
+                <td>{{NEIGHBOR_1_POP_GROWTH}}%</td>
+                <td>{{NEIGHBOR_2_POP_GROWTH}}%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Resources for Ongoing Research -->
+    <div class="highlight-box">
+        <h3>📚 Resources for Ongoing Market Research</h3>
+        <p><strong>{{STATE_NAME}}-Specific Data:</strong></p>
+        <ul>
+            <li>{{STATE_NAME}} Department of Labor: {{STATE_LABOR_WEBSITE}}</li>
+            <li>{{STATE_NAME}} Realtor Association: {{STATE_REALTOR_WEBSITE}}</li>
+            <li>{{STATE_NAME}} Economic Development: {{STATE_ECON_DEV_WEBSITE}}</li>
+        </ul>
+
+        <p><strong>National Data Sources:</strong></p>
+        <ul>
+            <li>Bureau of Labor Statistics (BLS.gov) - Employment and wage data</li>
+            <li>Federal Reserve Economic Data (FRED.stlouisfed.org) - Economic indicators</li>
+            <li>U.S. Census Bureau (census.gov) - Demographic data</li>
+            <li>Zillow.com - Housing market data</li>
+        </ul>
+    </div>
+
+    <div class="note">
+        <strong>📅 Data Refresh Schedule:</strong> Housing and labor market data in this fact sheet is updated quarterly. For the most current information, visit the official sources listed above. When analyzing markets, always check the data date to ensure you're working with current information.
+    </div>
+
+    <div class="note">
+        <strong>💡 How to Use This Fact Sheet:</strong> Use this data when completing the Market Analyzer Tool or any supply/demand analysis. Compare current trends to historical data to identify whether demand and supply are shifting. Remember that markets are constantly changing—what's true today may change tomorrow!
+    </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Applications Worksheet | PFL Academy</title>
+    <style>
+        :root{--primary:#6366f1;--secondary:#8b5cf6}*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Helvetica Neue',Arial,sans-serif;font-size:16px;line-height:1.6;color:#1f2937;background:#f9fafb;padding:20px}.container{max-width:900px;margin:0 auto;background:#fff;border-radius:12px;box-shadow:0 4px 6px rgba(0,0,0,0.1)}header{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;padding:30px;text-align:center}h1{font-size:1.8rem;margin-bottom:8px}.main-content{padding:30px}.section{margin-bottom:35px}.section-title{font-size:1.3rem;font-weight:600;color:var(--primary);margin-bottom:15px;padding-bottom:8px;border-bottom:2px solid var(--primary)}.question-block{background:#f9fafb;padding:20px;border-radius:8px;margin-bottom:20px}.question{font-weight:600;margin-bottom:12px}.answer-space{width:100%;min-height:80px;padding:12px;border:1px solid #d1d5db;border-radius:6px;font-family:inherit;font-size:1rem;resize:vertical}.answer-space:focus{outline:none;border-color:var(--primary)}table{width:100%;border-collapse:collapse;margin-top:15px}th,td{padding:12px;text-align:left;border:1px solid #d1d5db}th{background:var(--primary);color:#fff;font-weight:600}tr:nth-child(even){background:#f9fafb}@media print{body{background:#fff;padding:0}.container{box-shadow:none}}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📋 Loan Applications & Creditworthiness Worksheet</h1>
+            <p>Guided Practice Activity</p>
+        </header>
+        <div class="main-content">
+            <div class="section">
+                <h2 class="section-title">Part 1: Understanding Creditworthiness</h2>
+                <div class="question-block">
+                    <div class="question">1. What are the "5 Cs of Credit" that lenders evaluate?</div>
+                    <textarea class="answer-space" placeholder="List and briefly explain each..."></textarea>
+                </div>
+                <div class="question-block">
+                    <div class="question">2. Explain how your credit score affects loan approval and interest rates:</div>
+                    <textarea class="answer-space"></textarea>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section-title">Part 2: Required Documentation</h2>
+                <div class="question-block">
+                    <div class="question">3. Create a checklist of documents needed for a loan application:</div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Document Type</th>
+                                <th>Purpose</th>
+                                <th>Do You Have It?</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="text" style="width:100%;border:none;padding:5px" placeholder="Document..."></td>
+                                <td><input type="text" style="width:100%;border:none;padding:5px" placeholder="Why needed..."></td>
+                                <td style="text-align:center"><input type="checkbox"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" style="width:100%;border:none;padding:5px"></td>
+                                <td><input type="text" style="width:100%;border:none;padding:5px"></td>
+                                <td style="text-align:center"><input type="checkbox"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" style="width:100%;border:none;padding:5px"></td>
+                                <td><input type="text" style="width:100%;border:none;padding:5px"></td>
+                                <td style="text-align:center"><input type="checkbox"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" style="width:100%;border:none;padding:5px"></td>
+                                <td><input type="text" style="width:100%;border:none;padding:5px"></td>
+                                <td style="text-align:center"><input type="checkbox"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" style="width:100%;border:none;padding:5px"></td>
+                                <td><input type="text" style="width:100%;border:none;padding:5px"></td>
+                                <td style="text-align:center"><input type="checkbox"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section-title">Part 3: Debt-to-Income Ratio</h2>
+                <div class="question-block">
+                    <div class="question">4. Calculate your debt-to-income ratio:</div>
+                    <p style="margin:10px 0">Monthly gross income: $<input type="number" style="width:150px;padding:8px;border:1px solid #d1d5db;border-radius:4px"></p>
+                    <p style="margin:10px 0">Monthly debt payments: $<input type="number" style="width:150px;padding:8px;border:1px solid #d1d5db;border-radius:4px"></p>
+                    <p style="margin:10px 0">DTI Ratio: <strong><span id="dtiResult">___%</span></strong></p>
+                    <textarea class="answer-space" placeholder="What does this ratio mean for your loan eligibility?"></textarea>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section-title">Part 4: Application Strategy</h2>
+                <div class="question-block">
+                    <div class="question">5. What steps can you take to improve your creditworthiness before applying for a loan?</div>
+                    <textarea class="answer-space" placeholder="List specific actions..."></textarea>
+                </div>
+                <div class="question-block">
+                    <div class="question">6. Why is it important to shop around for loan offers from multiple lenders?</div>
+                    <textarea class="answer-space"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('input[type="number"]').forEach(input=>{input.addEventListener('input',()=>{const income=parseFloat(document.querySelectorAll('input[type="number"]')[0].value)||0;const debt=parseFloat(document.querySelectorAll('input[type="number"]')[1].value)||0;if(income>0){const dti=((debt/income)*100).toFixed(1);document.getElementById('dtiResult').textContent=dti+'%'}})})
+    </script>
+</body>
+</html>

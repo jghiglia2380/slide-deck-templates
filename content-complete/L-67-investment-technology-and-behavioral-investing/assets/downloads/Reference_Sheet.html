@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Technology & Behavioral Investing Quick Reference | PFL Academy</title>
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #8b5cf6;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --background: #ffffff;
+            --surface: #f9fafb;
+            --border: #e5e7eb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 11px;
+            line-height: 1.4;
+            color: var(--text);
+            background-color: var(--surface);
+            padding: 15px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--background);
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 3px;
+        }
+
+        .subtitle {
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 20px;
+            columns: 2;
+            column-gap: 25px;
+        }
+
+        .section {
+            break-inside: avoid;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            color: white;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 0.9rem;
+            color: var(--primary);
+            margin: 8px 0 5px;
+            font-weight: 700;
+        }
+
+        .info-row {
+            display: flex;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+        }
+
+        .info-label {
+            font-weight: 700;
+            color: var(--text);
+            min-width: 100px;
+        }
+
+        .info-value {
+            color: var(--text-light);
+        }
+
+        ul {
+            margin: 5px 0 10px 15px;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 3px;
+            font-size: 0.9rem;
+        }
+
+        .key-term {
+            background: var(--surface);
+            border-left: 3px solid var(--primary);
+            padding: 8px;
+            margin: 8px 0;
+            break-inside: avoid;
+        }
+
+        .term-name {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 0.9rem;
+        }
+
+        .term-definition {
+            color: var(--text-light);
+            font-size: 0.85rem;
+            margin-top: 3px;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            font-size: 0.85rem;
+            break-inside: avoid;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            border: 1px solid var(--border);
+            padding: 5px;
+            text-align: left;
+        }
+
+        .comparison-table th {
+            background: var(--primary);
+            color: white;
+            font-weight: 600;
+            font-size: 0.8rem;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
+            border: 2px solid var(--primary);
+            padding: 10px;
+            border-radius: 6px;
+            margin: 10px 0;
+            break-inside: avoid;
+        }
+
+        .highlight-title {
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 5px;
+            font-size: 0.95rem;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                border: 1px solid #000;
+            }
+
+            @page {
+                margin: 0.5in;
+                size: letter;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                columns: 1;
+                padding: 15px;
+            }
+
+            body {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 Investment Technology & Behavioral Investing</h1>
+            <div class="subtitle">Quick Reference Guide</div>
+        </header>
+
+        <div class="content">
+            <!-- Investment Technology -->
+            <div class="section">
+                <h2>📱 Investment Technology Platforms</h2>
+
+                <h3>Online Brokers</h3>
+                <ul>
+                    <li><strong>What:</strong> Digital platforms for buying/selling securities</li>
+                    <li><strong>Examples:</strong> Fidelity, Charles Schwab, E*TRADE</li>
+                    <li><strong>Fees:</strong> $0 commission for stocks/ETFs (most platforms)</li>
+                    <li><strong>Best For:</strong> Self-directed investors</li>
+                </ul>
+
+                <h3>Robo-Advisors</h3>
+                <ul>
+                    <li><strong>What:</strong> Automated investment management using algorithms</li>
+                    <li><strong>Examples:</strong> Betterment, Wealthfront, Vanguard Digital</li>
+                    <li><strong>Fees:</strong> 0.25% - 0.50% annually</li>
+                    <li><strong>Best For:</strong> Hands-off investors, beginners</li>
+                    <li><strong>Features:</strong> Auto-rebalancing, tax-loss harvesting</li>
+                </ul>
+
+                <h3>Investment Apps</h3>
+                <ul>
+                    <li><strong>What:</strong> Mobile-first investing platforms</li>
+                    <li><strong>Examples:</strong> Robinhood, Acorns, Stash</li>
+                    <li><strong>Minimum:</strong> Often $0 or very low</li>
+                    <li><strong>Features:</strong> Fractional shares, round-ups, easy interface</li>
+                </ul>
+            </div>
+
+            <!-- Behavioral Biases -->
+            <div class="section">
+                <h2>🧠 Common Behavioral Biases</h2>
+
+                <div class="key-term">
+                    <div class="term-name">🔍 Confirmation Bias</div>
+                    <div class="term-definition">Seeking information that confirms existing beliefs while ignoring contradictory evidence</div>
+                </div>
+
+                <div class="key-term">
+                    <div class="term-name">😰 Loss Aversion</div>
+                    <div class="term-definition">Preferring to avoid losses over acquiring equivalent gains (losses hurt ~2x more than gains feel good)</div>
+                </div>
+
+                <div class="key-term">
+                    <div class="term-name">🐑 Herd Mentality</div>
+                    <div class="term-definition">Following crowd behavior, especially during uncertainty (FOMO - Fear Of Missing Out)</div>
+                </div>
+
+                <div class="key-term">
+                    <div class="term-name">💪 Overconfidence Bias</div>
+                    <div class="term-definition">Overestimating knowledge and ability to predict outcomes</div>
+                </div>
+
+                <div class="key-term">
+                    <div class="term-name">⚓ Anchoring Bias</div>
+                    <div class="term-definition">Over-relying on first piece of information (the "anchor") when making decisions</div>
+                </div>
+
+                <div class="key-term">
+                    <div class="term-name">📅 Recency Bias</div>
+                    <div class="term-definition">Overweighting recent events while ignoring historical patterns</div>
+                </div>
+            </div>
+
+            <!-- Strategies to Overcome Biases -->
+            <div class="section">
+                <h2>🛡️ Strategies to Overcome Biases</h2>
+
+                <h3>General Strategies</h3>
+                <ul>
+                    <li><strong>Written Investment Plan:</strong> Document strategy before investing</li>
+                    <li><strong>Diversification:</strong> Spread risk across assets</li>
+                    <li><strong>Long-term Focus:</strong> Avoid reacting to short-term noise</li>
+                    <li><strong>Regular Rebalancing:</strong> Systematic portfolio adjustments</li>
+                    <li><strong>Decision Journal:</strong> Record rationale for all decisions</li>
+                </ul>
+
+                <h3>Bias-Specific Tactics</h3>
+                <ul>
+                    <li><strong>Confirmation:</strong> Seek contradictory information</li>
+                    <li><strong>Loss Aversion:</strong> Use stop-loss orders, focus forward</li>
+                    <li><strong>Herd:</strong> Ask "Would I buy if alone?"</li>
+                    <li><strong>Overconfidence:</strong> Track successes AND failures</li>
+                    <li><strong>Anchoring:</strong> Ignore purchase price, focus on value</li>
+                </ul>
+            </div>
+
+            <!-- Technology Features -->
+            <div class="section">
+                <h2>⚙️ Key Technology Features</h2>
+
+                <h3>Portfolio Management</h3>
+                <ul>
+                    <li><strong>Auto-Rebalancing:</strong> Maintains target allocation</li>
+                    <li><strong>Dollar-Cost Averaging:</strong> Automatic regular investments</li>
+                    <li><strong>Tax-Loss Harvesting:</strong> Sell losers to offset gains</li>
+                    <li><strong>Dividend Reinvestment:</strong> Auto-reinvest dividends</li>
+                </ul>
+
+                <h3>Research & Analysis</h3>
+                <ul>
+                    <li><strong>Real-time Data:</strong> Live quotes and market info</li>
+                    <li><strong>Screening Tools:</strong> Filter stocks by criteria</li>
+                    <li><strong>Charts & Analytics:</strong> Visual analysis tools</li>
+                    <li><strong>News Integration:</strong> Relevant market news</li>
+                </ul>
+
+                <h3>Security Features</h3>
+                <ul>
+                    <li><strong>Two-Factor Auth:</strong> Extra login security</li>
+                    <li><strong>Encryption:</strong> Protected data transmission</li>
+                    <li><strong>SIPC Insurance:</strong> Up to $500k protection</li>
+                    <li><strong>Account Monitoring:</strong> Fraud detection</li>
+                </ul>
+            </div>
+
+            <!-- Platform Comparison -->
+            <div class="section">
+                <h2>⚖️ Platform Comparison</h2>
+
+                <table class="comparison-table">
+                    <tr>
+                        <th>Feature</th>
+                        <th>Online Broker</th>
+                        <th>Robo-Advisor</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Control</strong></td>
+                        <td>Full control</td>
+                        <td>Limited control</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fees</strong></td>
+                        <td>$0 trades</td>
+                        <td>0.25%-0.50%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Minimum</strong></td>
+                        <td>$0-$500</td>
+                        <td>$0-$5,000</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Management</strong></td>
+                        <td>Self-directed</td>
+                        <td>Automated</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Research</strong></td>
+                        <td>Extensive</td>
+                        <td>Limited</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Algorithmic Trading -->
+            <div class="section">
+                <h2>🤖 Algorithmic Trading</h2>
+
+                <h3>What It Is</h3>
+                <ul>
+                    <li>Computer programs execute trades based on predefined rules</li>
+                    <li>Accounts for ~60-75% of U.S. equity trading volume</li>
+                    <li>Executes trades in milliseconds</li>
+                </ul>
+
+                <h3>Types</h3>
+                <ul>
+                    <li><strong>High-Frequency Trading (HFT):</strong> Extremely fast trades</li>
+                    <li><strong>Statistical Arbitrage:</strong> Exploits price differences</li>
+                    <li><strong>Trend Following:</strong> Follows market momentum</li>
+                </ul>
+
+                <h3>Impact on Markets</h3>
+                <ul>
+                    <li><strong>Pros:</strong> Increased liquidity, tighter spreads</li>
+                    <li><strong>Cons:</strong> Flash crashes, reduced transparency</li>
+                </ul>
+            </div>
+
+            <!-- Best Practices -->
+            <div class="section">
+                <h2>✅ Best Practices</h2>
+
+                <h3>Using Technology Wisely</h3>
+                <ul>
+                    <li>Don't let ease of trading lead to overtrading</li>
+                    <li>Be wary of "gamification" features</li>
+                    <li>Verify security features before opening account</li>
+                    <li>Understand all fees and costs</li>
+                    <li>Use limit orders to control execution price</li>
+                </ul>
+
+                <h3>Protecting Yourself</h3>
+                <ul>
+                    <li>Enable two-factor authentication</li>
+                    <li>Use strong, unique passwords</li>
+                    <li>Monitor account activity regularly</li>
+                    <li>Be skeptical of social media investment advice</li>
+                    <li>Never share login credentials</li>
+                </ul>
+            </div>
+
+            <!-- Warning Signs -->
+            <div class="highlight-box">
+                <div class="highlight-title">⚠️ Red Flags - Behavioral Warning Signs</div>
+                <ul style="margin: 5px 0 0 15px;">
+                    <li>Checking portfolio multiple times daily</li>
+                    <li>Making impulsive trades based on news</li>
+                    <li>Following "hot tips" from social media</li>
+                    <li>Refusing to sell losing investments</li>
+                    <li>Concentrating portfolio in trendy sectors</li>
+                    <li>Trading more frequently over time</li>
+                    <li>Feeling euphoria or panic about investments</li>
+                </ul>
+            </div>
+
+            <!-- Key Principles -->
+            <div class="highlight-box">
+                <div class="highlight-title">💡 Core Investment Principles</div>
+                <ul style="margin: 5px 0 0 15px;">
+                    <li><strong>Diversify:</strong> Don't put all eggs in one basket</li>
+                    <li><strong>Think Long-Term:</strong> Time in market > timing market</li>
+                    <li><strong>Control Emotions:</strong> Stick to your plan</li>
+                    <li><strong>Keep Learning:</strong> Financial education is ongoing</li>
+                    <li><strong>Start Early:</strong> Compound interest is powerful</li>
+                    <li><strong>Stay Humble:</strong> Markets are unpredictable</li>
+                </ul>
+            </div>
+
+            <!-- Resources -->
+            <div class="section">
+                <h2>📚 Additional Resources</h2>
+
+                <h3>Investor Protection</h3>
+                <ul>
+                    <li><strong>SEC.gov:</strong> Investor education</li>
+                    <li><strong>FINRA.org:</strong> Broker verification</li>
+                    <li><strong>Investor.gov:</strong> Complaint filing</li>
+                </ul>
+
+                <h3>Research & Education</h3>
+                <ul>
+                    <li>Platform demo accounts (practice trading)</li>
+                    <li>Investment simulators</li>
+                    <li>Educational courses (Khan Academy, Coursera)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

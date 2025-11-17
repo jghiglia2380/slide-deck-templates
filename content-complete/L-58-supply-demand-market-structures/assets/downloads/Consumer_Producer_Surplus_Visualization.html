@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumer and Producer Surplus Visualization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #6366f1;
+            border-bottom: 2px solid #6366f1;
+            padding-bottom: 10px;
+            font-size: 28px;
+        }
+        h2 {
+            color: #8b5cf6;
+            margin-top: 25px;
+            font-size: 22px;
+            border-left: 4px solid #6366f1;
+            padding-left: 10px;
+        }
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        button {
+            background-color: #6366f1;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        button:hover {
+            background-color: #8b5cf6;
+        }
+        button.active {
+            background-color: #10b981;
+        }
+        #canvas {
+            width: 100%;
+            max-width: 800px;
+            height: 500px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 20px auto;
+            display: block;
+            background-color: white;
+        }
+        .info-box {
+            background-color: #e0e7ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            border-left: 4px solid #6366f1;
+        }
+        .example-box {
+            background-color: #f0f7ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            border-left: 4px solid #3b82f6;
+        }
+        .calculation {
+            background-color: #f9fafb;
+            padding: 15px;
+            border: 1px solid #e5e7eb;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        @media print {
+            body { font-size: 12pt; }
+            button { display: none; }
+            .controls { display: none; }
+            #canvas { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Consumer and Producer Surplus Visualization</h1>
+    <p>Understanding economic surplus and how it represents benefits in the market</p>
+
+    <div class="controls">
+        <button id="showConsumer">Show Consumer Surplus</button>
+        <button id="showProducer">Show Producer Surplus</button>
+        <button id="showBoth">Show Both</button>
+        <button id="reset">Reset</button>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <div class="info-box" id="infoBox">
+        <strong>Economic Surplus:</strong> The total benefit that buyers and sellers receive from participating in a market. Click the buttons above to visualize consumer surplus and producer surplus.
+    </div>
+
+    <h2>Understanding Surplus</h2>
+
+    <div class="example-box">
+        <h3>Consumer Surplus Example</h3>
+        <p><strong>Definition:</strong> The difference between what consumers are willing to pay and what they actually pay.</p>
+        <p><strong>Example:</strong> If you're willing to pay $80 for concert tickets but the market price is $50, your consumer surplus is $30. This represents the benefit you receive from the transaction.</p>
+        <p><strong>In the graph:</strong> Consumer surplus is the light blue shaded area above the equilibrium price line and below the demand curve.</p>
+    </div>
+
+    <div class="example-box">
+        <h3>Producer Surplus Example</h3>
+        <p><strong>Definition:</strong> The difference between the market price and the minimum price producers are willing to accept.</p>
+        <p><strong>Example:</strong> If a seller is willing to accept $30 for a product but sells it for $50, their producer surplus is $20. This represents the benefit the seller receives.</p>
+        <p><strong>In the graph:</strong> Producer surplus is the light red/pink shaded area below the equilibrium price line and above the supply curve.</p>
+    </div>
+
+    <div class="calculation">
+        <h3>Calculating Total Surplus</h3>
+        <p><strong>Total Surplus = Consumer Surplus + Producer Surplus</strong></p>
+        <p>At equilibrium (P* = $50, Q* = 50 units in this example):</p>
+        <ul>
+            <li>Consumer Surplus ≈ $1,250 (area of triangle above price line)</li>
+            <li>Producer Surplus ≈ $1,250 (area of triangle below price line)</li>
+            <li>Total Surplus ≈ $2,500</li>
+        </ul>
+        <p><em>Note: At market equilibrium, total surplus is maximized, meaning society gets the most benefit from the market.</em></p>
+    </div>
+
+    <h2>Why Surplus Matters</h2>
+    <div class="info-box">
+        <p><strong>Efficient Markets:</strong> When markets reach equilibrium, they maximize total surplus. This means resources are being allocated efficiently.</p>
+        <p><strong>Market Interventions:</strong> Price ceilings (maximum prices) or price floors (minimum prices) can reduce total surplus by creating deadweight loss.</p>
+        <p><strong>Consumer Perspective:</strong> Understanding surplus helps you recognize when you're getting a good deal - anytime you pay less than you're willing to pay, you gain consumer surplus!</p>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        let showConsumerSurplus = false;
+        let showProducerSurplus = false;
+
+        function resizeCanvas() {
+            const rect = canvas.getBoundingClientRect();
+            canvas.width = rect.width * window.devicePixelRatio;
+            canvas.height = rect.height * window.devicePixelRatio;
+            ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+            drawGraph();
+        }
+
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        function drawGraph() {
+            const width = canvas.width / window.devicePixelRatio;
+            const height = canvas.height / window.devicePixelRatio;
+            ctx.clearRect(0, 0, width, height);
+
+            const margin = 60;
+            const graphWidth = width - 2 * margin;
+            const graphHeight = height - 2 * margin;
+
+            const eqQ = 50, eqP = 50;
+            const eqX = margin + (graphWidth * eqQ / 100);
+            const eqY = margin + (graphHeight * (100 - eqP) / 100);
+
+            // Draw surplus areas first (behind curves)
+            if (showConsumerSurplus) {
+                ctx.fillStyle = 'rgba(59, 130, 246, 0.2)';
+                ctx.beginPath();
+                ctx.moveTo(margin, margin);
+                ctx.lineTo(eqX, eqY);
+                ctx.lineTo(margin, eqY);
+                ctx.closePath();
+                ctx.fill();
+            }
+
+            if (showProducerSurplus) {
+                ctx.fillStyle = 'rgba(239, 68, 68, 0.2)';
+                ctx.beginPath();
+                ctx.moveTo(margin, height - margin);
+                ctx.lineTo(eqX, eqY);
+                ctx.lineTo(margin, eqY);
+                ctx.closePath();
+                ctx.fill();
+            }
+
+            // Draw equilibrium price line
+            if (showConsumerSurplus || showProducerSurplus) {
+                ctx.strokeStyle = '#10b981';
+                ctx.lineWidth = 2;
+                ctx.setLineDash([5, 5]);
+                ctx.beginPath();
+                ctx.moveTo(margin, eqY);
+                ctx.lineTo(width - margin, eqY);
+                ctx.stroke();
+                ctx.setLineDash([]);
+            }
+
+            // Draw axes
+            ctx.strokeStyle = '#333';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(margin, margin);
+            ctx.lineTo(margin, height - margin);
+            ctx.lineTo(width - margin, height - margin);
+            ctx.stroke();
+
+            // Axis labels
+            ctx.fillStyle = '#333';
+            ctx.font = '14px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText('Quantity', width / 2, height - 20);
+
+            ctx.save();
+            ctx.translate(20, height / 2);
+            ctx.rotate(-Math.PI / 2);
+            ctx.fillText('Price ($)', 0, 0);
+            ctx.restore();
+
+            // Tick marks
+            ctx.font = '12px Arial';
+            for (let i = 0; i <= 10; i++) {
+                const x = margin + (graphWidth * i / 10);
+                ctx.fillText(i * 10, x, height - margin + 20);
+                ctx.textAlign = 'right';
+                ctx.fillText('$' + (100 - i * 10), margin - 10, margin + (graphHeight * i / 10) + 5);
+                ctx.textAlign = 'center';
+            }
+
+            // Draw demand curve
+            ctx.strokeStyle = '#3b82f6';
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            for (let q = 0; q <= 100; q++) {
+                const p = 100 - q;
+                const x = margin + (graphWidth * q / 100);
+                const y = margin + (graphHeight * (100 - p) / 100);
+                if (q === 0) ctx.moveTo(x, y);
+                else ctx.lineTo(x, y);
+            }
+            ctx.stroke();
+
+            // Draw supply curve
+            ctx.strokeStyle = '#ef4444';
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            for (let q = 0; q <= 100; q++) {
+                const p = q;
+                const x = margin + (graphWidth * q / 100);
+                const y = margin + (graphHeight * (100 - p) / 100);
+                if (q === 0) ctx.moveTo(x, y);
+                else ctx.lineTo(x, y);
+            }
+            ctx.stroke();
+
+            // Draw equilibrium point
+            ctx.fillStyle = '#10b981';
+            ctx.beginPath();
+            ctx.arc(eqX, eqY, 6, 0, Math.PI * 2);
+            ctx.fill();
+
+            // Labels
+            ctx.fillStyle = '#3b82f6';
+            ctx.font = 'bold 14px Arial';
+            ctx.textAlign = 'left';
+            ctx.fillText('Demand', width - margin - 100, margin + 30);
+
+            ctx.fillStyle = '#ef4444';
+            ctx.fillText('Supply', width - margin - 100, height - margin - 30);
+
+            if (showConsumerSurplus || showProducerSurplus) {
+                ctx.fillStyle = '#10b981';
+                ctx.font = '12px Arial';
+                ctx.textAlign = 'right';
+                ctx.fillText('P* = $50', margin - 10, eqY - 5);
+            }
+
+            if (showConsumerSurplus) {
+                ctx.fillStyle = '#3b82f6';
+                ctx.font = 'bold 14px Arial';
+                ctx.textAlign = 'center';
+                ctx.fillText('Consumer Surplus', eqX - 80, eqY - 80);
+            }
+
+            if (showProducerSurplus) {
+                ctx.fillStyle = '#ef4444';
+                ctx.font = 'bold 14px Arial';
+                ctx.textAlign = 'center';
+                ctx.fillText('Producer Surplus', eqX - 80, eqY + 100);
+            }
+        }
+
+        document.getElementById('showConsumer').addEventListener('click', function() {
+            showConsumerSurplus = true;
+            showProducerSurplus = false;
+            document.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            drawGraph();
+            document.getElementById('infoBox').innerHTML =
+                '<strong>Consumer Surplus Shown:</strong> The light blue area represents the benefit consumers receive. ' +
+                'It\'s the difference between what they\'re willing to pay (shown by the demand curve) and the actual market price of $50.';
+        });
+
+        document.getElementById('showProducer').addEventListener('click', function() {
+            showConsumerSurplus = false;
+            showProducerSurplus = true;
+            document.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            drawGraph();
+            document.getElementById('infoBox').innerHTML =
+                '<strong>Producer Surplus Shown:</strong> The light red area represents the benefit producers receive. ' +
+                'It\'s the difference between the market price of $50 and the minimum price they\'d accept (shown by the supply curve).';
+        });
+
+        document.getElementById('showBoth').addEventListener('click', function() {
+            showConsumerSurplus = true;
+            showProducerSurplus = true;
+            document.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            drawGraph();
+            document.getElementById('infoBox').innerHTML =
+                '<strong>Total Surplus:</strong> Consumer surplus (blue) + Producer surplus (red) = Total economic benefit from this market. ' +
+                'At equilibrium, total surplus is maximized at approximately $2,500.';
+        });
+
+        document.getElementById('reset').addEventListener('click', function() {
+            showConsumerSurplus = false;
+            showProducerSurplus = false;
+            document.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+            drawGraph();
+            document.getElementById('infoBox').innerHTML =
+                '<strong>Economic Surplus:</strong> The total benefit that buyers and sellers receive from participating in a market. ' +
+                'Click the buttons above to visualize consumer surplus and producer surplus.';
+        });
+    </script>
+</body>
+</html>

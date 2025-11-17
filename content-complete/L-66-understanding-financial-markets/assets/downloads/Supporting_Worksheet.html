@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Financial Markets - Worksheet | PFL Academy</title>
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #8b5cf6;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --background: #ffffff;
+            --surface: #f9fafb;
+            --border: #e5e7eb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--surface);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--background);
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            page-break-inside: avoid;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            color: var(--text);
+            margin: 15px 0 10px;
+        }
+
+        .instruction {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
+            border-left: 4px solid var(--primary);
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+
+        .question-block {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .question-number {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            font-weight: 700;
+            margin-right: 10px;
+        }
+
+        .question-text {
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 12px;
+        }
+
+        .answer-space {
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 15px;
+            min-height: 80px;
+            background: white;
+            margin-top: 10px;
+        }
+
+        .answer-space.large {
+            min-height: 120px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        th, td {
+            border: 1px solid var(--border);
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            font-weight: 600;
+        }
+
+        td {
+            background: white;
+        }
+
+        .checkbox-group {
+            margin: 10px 0;
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+            padding: 8px;
+        }
+
+        input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            margin-right: 10px;
+        }
+
+        .scenario-box {
+            background: #fffbeb;
+            border: 2px solid #f59e0b;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .scenario-title {
+            color: #f59e0b;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                border: 1px solid #000;
+            }
+
+            .answer-space {
+                border: 1px solid #000;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.4rem;
+            }
+
+            table {
+                font-size: 0.85rem;
+            }
+
+            th, td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Understanding Financial Markets</h1>
+            <div class="subtitle">Supporting Worksheet - Guided Practice Activity</div>
+        </header>
+
+        <div class="content">
+            <div class="instruction">
+                <strong>Instructions:</strong> Complete each section below to demonstrate your understanding of financial markets. Use examples from class discussions and the Financial Markets Explorer tool.
+            </div>
+
+            <!-- Part 1: Market Identification -->
+            <div class="section">
+                <h2>Part 1: Market Identification</h2>
+
+                <div class="question-block">
+                    <div class="question-text">
+                        <span class="question-number">1</span>
+                        Match each financial instrument to the correct market:
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Financial Instrument</th>
+                            <th>Market Type</th>
+                        </tr>
+                        <tr>
+                            <td>Apple Inc. common stock (AAPL)</td>
+                            <td class="answer-space"></td>
+                        </tr>
+                        <tr>
+                            <td>U.S. Treasury 10-year bond</td>
+                            <td class="answer-space"></td>
+                        </tr>
+                        <tr>
+                            <td>Gold futures contract</td>
+                            <td class="answer-space"></td>
+                        </tr>
+                        <tr>
+                            <td>EUR/USD currency pair</td>
+                            <td class="answer-space"></td>
+                        </tr>
+                        <tr>
+                            <td>Corporate bond from Microsoft</td>
+                            <td class="answer-space"></td>
+                        </tr>
+                        <tr>
+                            <td>Crude oil futures</td>
+                            <td class="answer-space"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">
+                        <span class="question-number">2</span>
+                        For each market below, identify TWO key participants and explain their role:
+                    </div>
+
+                    <h3>Stock Market</h3>
+                    <div class="answer-space large"></div>
+
+                    <h3>Bond Market</h3>
+                    <div class="answer-space large"></div>
+
+                    <h3>Commodity Market</h3>
+                    <div class="answer-space large"></div>
+
+                    <h3>Forex Market</h3>
+                    <div class="answer-space large"></div>
+                </div>
+            </div>
+
+            <!-- Part 2: Market Characteristics -->
+            <div class="section">
+                <h2>Part 2: Market Characteristics</h2>
+
+                <div class="question-block">
+                    <div class="question-text">
+                        <span class="question-number">3</span>
+                        Complete the comparison table:
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Characteristic</th>
+                            <th>Stock Market</th>
+                            <th>Bond Market</th>
+                            <th>Commodity Market</th>
+                            <th>Forex Market</th>
+                        </tr>
+                        <tr>
+                            <td><strong>Trading Hours</strong></td>
+                            <td class="answer-space"></td>
+                            <td class="answer-space"></td>
+                            <td class="answer-space"></td>
+                            <td class="answer-space"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Risk Level</strong></td>
+                            <td class="answer-space"></td>
+                            <td class="answer-space"></td>
+                            <td class="answer-space"></td>
+                            <td class="answer-space"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Typical Goal</strong></td>
+                            <td class="answer-space"></td>
+                            <td class="answer-space"></td>
+                            <td class="answer-space"></td>
+                            <td class="answer-space"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">
+                        <span class="question-number">4</span>
+                        Explain the difference between ownership (equity) markets and debt markets:
+                    </div>
+                    <div class="answer-space large"></div>
+                </div>
+            </div>
+
+            <!-- Part 3: Real-World Applications -->
+            <div class="section">
+                <h2>Part 3: Real-World Applications</h2>
+
+                <div class="scenario-box">
+                    <div class="scenario-title">📋 Scenario A: Investment Decision</div>
+                    <p>Sarah has $5,000 to invest and wants to build a diversified portfolio. She's 18 years old and won't need the money for at least 10 years. She's willing to accept moderate risk.</p>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">
+                        <span class="question-number">5</span>
+                        Which markets should Sarah consider and why? Recommend a percentage allocation across at least two different markets:
+                    </div>
+                    <div class="answer-space large"></div>
+                </div>
+
+                <div class="scenario-box">
+                    <div class="scenario-title">📋 Scenario B: Business Operations</div>
+                    <p>A U.S. technology company needs to pay suppliers in Europe (in Euros) in 3 months but is concerned that the Euro might strengthen against the dollar, making the payment more expensive.</p>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">
+                        <span class="question-number">6</span>
+                        Which financial market could help this company manage their currency risk? Explain how:
+                    </div>
+                    <div class="answer-space large"></div>
+                </div>
+
+                <div class="scenario-box">
+                    <div class="scenario-title">📋 Scenario C: Retirement Planning</div>
+                    <p>Mr. Johnson is 60 years old and plans to retire in 5 years. He wants stable, predictable income with low risk to his principal investment.</p>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">
+                        <span class="question-number">7</span>
+                        Which market would be MOST appropriate for Mr. Johnson and why?
+                    </div>
+                    <div class="answer-space large"></div>
+                </div>
+            </div>
+
+            <!-- Part 4: Critical Thinking -->
+            <div class="section">
+                <h2>Part 4: Critical Thinking</h2>
+
+                <div class="question-block">
+                    <div class="question-text">
+                        <span class="question-number">8</span>
+                        Why do you think the Forex market operates 24 hours a day while the stock market has specific trading hours?
+                    </div>
+                    <div class="answer-space large"></div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">
+                        <span class="question-number">9</span>
+                        How are commodity markets different from other financial markets? Explain what makes them unique:
+                    </div>
+                    <div class="answer-space large"></div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">
+                        <span class="question-number">10</span>
+                        Explain how all four markets (stock, bond, commodity, forex) are interconnected. Give at least one example:
+                    </div>
+                    <div class="answer-space large"></div>
+                </div>
+            </div>
+
+            <!-- Part 5: Personal Application -->
+            <div class="section">
+                <h2>Part 5: Personal Application</h2>
+
+                <div class="question-block">
+                    <div class="question-text">
+                        <span class="question-number">11</span>
+                        Based on what you've learned, which financial market interests you most for your future financial goals? Explain why:
+                    </div>
+                    <div class="answer-space large"></div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">
+                        <span class="question-number">12</span>
+                        What additional information would you need before investing in any of these markets? List at least 3 things:
+                    </div>
+                    <div class="answer-space large"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Analysis Worksheet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #6366f1;
+            border-bottom: 2px solid #6366f1;
+            padding-bottom: 10px;
+            font-size: 28px;
+        }
+        h2 {
+            color: #8b5cf6;
+            margin-top: 25px;
+            font-size: 22px;
+            border-left: 4px solid #6366f1;
+            padding-left: 10px;
+        }
+        .section {
+            background-color: #f9fafb;
+            border: 1px solid #e5e7eb;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .input-group {
+            margin: 15px 0;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #4b5563;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #d1d5db;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        textarea {
+            min-height: 80px;
+            resize: vertical;
+        }
+        .checkbox-group {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .checkbox-item input[type="checkbox"],
+        .checkbox-item input[type="radio"] {
+            width: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        table th,
+        table td {
+            border: 1px solid #d1d5db;
+            padding: 10px;
+            text-align: left;
+        }
+        table th {
+            background-color: #e0e7ff;
+            font-weight: bold;
+        }
+        .calculated {
+            background-color: #f0f7ff;
+            font-weight: bold;
+        }
+        .info-box {
+            background-color: #e0e7ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            border-left: 4px solid #6366f1;
+        }
+        .slider-container {
+            margin: 15px 0;
+        }
+        .slider-value {
+            display: inline-block;
+            background-color: #6366f1;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            margin-left: 10px;
+        }
+        button {
+            background-color: #6366f1;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #8b5cf6;
+        }
+        .print-button {
+            background-color: #10b981;
+        }
+        @media print {
+            body { font-size: 12pt; }
+            button { display: none; }
+            input, select, textarea { border: 1px solid #000; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Price Analysis Worksheet</h1>
+    <p>Use this worksheet to research and analyze real product markets before making a purchase decision</p>
+
+    <div class="info-box">
+        <strong>Instructions:</strong> Complete each section thoroughly. The more research you do, the better purchasing decisions you'll make. This worksheet can be completed digitally or printed for handwritten responses.
+    </div>
+
+    <h2>Section 1: Product Information</h2>
+    <div class="section">
+        <div class="input-group">
+            <label for="productName">Product Name/Description:</label>
+            <input type="text" id="productName" placeholder="E.g., iPhone 15 Pro, Honda Civic, Sony headphones">
+        </div>
+
+        <div class="input-group">
+            <label for="targetBudget">Target Budget:</label>
+            <input type="number" id="targetBudget" placeholder="E.g., 1200" step="0.01">
+        </div>
+
+        <div class="input-group">
+            <label for="purchaseTimeline">Purchase Timeline:</label>
+            <input type="date" id="purchaseTimeline">
+        </div>
+
+        <div class="input-group">
+            <label for="purchaseReason">Reason for Purchase:</label>
+            <textarea id="purchaseReason" placeholder="Why do you need this product? Is it urgent or flexible?"></textarea>
+        </div>
+    </div>
+
+    <h2>Section 2: Market Structure Analysis</h2>
+    <div class="section">
+        <div class="input-group">
+            <label for="numSellers">Number of Sellers (in your market area):</label>
+            <input type="number" id="numSellers" placeholder="E.g., 5">
+        </div>
+
+        <div class="input-group">
+            <label>Market Classification:</label>
+            <div class="checkbox-group">
+                <div class="checkbox-item">
+                    <input type="radio" name="marketType" id="perfectComp" value="perfect">
+                    <label for="perfectComp">Perfect Competition (many sellers)</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="radio" name="marketType" id="oligopoly" value="oligopoly">
+                    <label for="oligopoly">Oligopoly (few sellers)</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="radio" name="marketType" id="monopoly" value="monopoly">
+                    <label for="monopoly">Monopoly (one seller)</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-group slider-container">
+            <label for="productDiff">Product Differentiation Level (1 = Identical, 10 = Highly Unique):</label>
+            <input type="range" id="productDiff" min="1" max="10" value="5" oninput="document.getElementById('diffValue').textContent = this.value">
+            <span class="slider-value" id="diffValue">5</span>
+        </div>
+
+        <div class="input-group">
+            <label for="barriers">Barriers to Entry Assessment:</label>
+            <textarea id="barriers" placeholder="What prevents new competitors from entering this market?"></textarea>
+        </div>
+    </div>
+
+    <h2>Section 3: Supply-Demand Research</h2>
+    <div class="section">
+        <div class="input-group">
+            <label>Current Prices from Different Sellers:</label>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Seller Name</th>
+                        <th>Price</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" id="seller1" placeholder="Seller 1"></td>
+                        <td><input type="number" id="price1" placeholder="0.00" step="0.01" oninput="calculateStats()"></td>
+                        <td><input type="text" id="notes1" placeholder="Features, condition, etc."></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="seller2" placeholder="Seller 2"></td>
+                        <td><input type="number" id="price2" placeholder="0.00" step="0.01" oninput="calculateStats()"></td>
+                        <td><input type="text" id="notes2" placeholder="Features, condition, etc."></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="seller3" placeholder="Seller 3"></td>
+                        <td><input type="number" id="price3" placeholder="0.00" step="0.01" oninput="calculateStats()"></td>
+                        <td><input type="text" id="notes3" placeholder="Features, condition, etc."></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="seller4" placeholder="Seller 4 (optional)"></td>
+                        <td><input type="number" id="price4" placeholder="0.00" step="0.01" oninput="calculateStats()"></td>
+                        <td><input type="text" id="notes4" placeholder="Features, condition, etc."></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr class="calculated">
+                        <td>Price Range:</td>
+                        <td colspan="2" id="priceRange">Enter prices above</td>
+                    </tr>
+                    <tr class="calculated">
+                        <td>Average Price:</td>
+                        <td colspan="2" id="avgPrice">Enter prices above</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <div class="input-group">
+            <label for="seasonalDemand">Seasonal Demand Pattern:</label>
+            <textarea id="seasonalDemand" placeholder="Does demand for this product vary by season or time of year?"></textarea>
+        </div>
+
+        <div class="input-group">
+            <label for="supplyConditions">Current Supply Conditions:</label>
+            <select id="supplyConditions">
+                <option value="">-- Select --</option>
+                <option value="constrained">Constrained (limited inventory, shortages)</option>
+                <option value="normal">Normal (balanced supply and demand)</option>
+                <option value="abundant">Abundant (high inventory, oversupply)</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Recent Price Trends:</label>
+            <div class="checkbox-group">
+                <div class="checkbox-item">
+                    <input type="radio" name="priceTrend" id="rising" value="rising">
+                    <label for="rising">Rising</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="radio" name="priceTrend" id="stable" value="stable">
+                    <label for="stable">Stable</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="radio" name="priceTrend" id="falling" value="falling">
+                    <label for="falling">Falling</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Section 4: Strategic Plan</h2>
+    <div class="section">
+        <div class="input-group">
+            <label for="optimalTiming">Optimal Purchase Timing:</label>
+            <input type="text" id="optimalTiming" placeholder="E.g., End of year, After new model release, Next month">
+        </div>
+
+        <div class="input-group">
+            <label for="justification">Justification for Timing:</label>
+            <textarea id="justification" placeholder="Explain why this is the best time to buy based on your market analysis"></textarea>
+        </div>
+
+        <div class="input-group">
+            <label for="expectedSavings">Expected Savings ($ or %):</label>
+            <input type="text" id="expectedSavings" placeholder="E.g., $200 or 15%">
+        </div>
+
+        <div class="input-group">
+            <label for="alternative">Alternative if Must Buy Immediately:</label>
+            <textarea id="alternative" placeholder="What would you do if you can't wait for optimal timing?"></textarea>
+        </div>
+
+        <div class="input-group">
+            <label for="leverage">Negotiation Leverage Points:</label>
+            <textarea id="leverage" placeholder="• Competitor prices you can mention&#10;• Promotions you're aware of&#10;• Bulk purchasing options&#10;• Payment terms"></textarea>
+        </div>
+    </div>
+
+    <h2>Section 5: Reflection</h2>
+    <div class="section">
+        <div class="input-group slider-container">
+            <label for="confidence">Confidence in Analysis (1 = Low, 10 = High):</label>
+            <input type="range" id="confidence" min="1" max="10" value="5" oninput="document.getElementById('confValue').textContent = this.value">
+            <span class="slider-value" id="confValue">5</span>
+        </div>
+
+        <div class="input-group">
+            <label for="infoGaps">Information Gaps Identified:</label>
+            <textarea id="infoGaps" placeholder="What information do you still need to make a fully informed decision?"></textarea>
+        </div>
+
+        <div class="input-group">
+            <label for="nextSteps">Next Research Steps:</label>
+            <textarea id="nextSteps" placeholder="What will you research or investigate next?"></textarea>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin: 30px 0;">
+        <button onclick="window.print()" class="print-button">Print or Save as PDF</button>
+        <button onclick="saveData()">Save Data (Local)</button>
+        <button onclick="clearForm()">Clear Form</button>
+    </div>
+
+    <script>
+        function calculateStats() {
+            const prices = [
+                parseFloat(document.getElementById('price1').value) || 0,
+                parseFloat(document.getElementById('price2').value) || 0,
+                parseFloat(document.getElementById('price3').value) || 0,
+                parseFloat(document.getElementById('price4').value) || 0
+            ].filter(p => p > 0);
+
+            if (prices.length >= 2) {
+                const min = Math.min(...prices);
+                const max = Math.max(...prices);
+                const avg = prices.reduce((a, b) => a + b, 0) / prices.length;
+
+                document.getElementById('priceRange').textContent = `$${min.toFixed(2)} - $${max.toFixed(2)} (Difference: $${(max - min).toFixed(2)})`;
+                document.getElementById('avgPrice').textContent = `$${avg.toFixed(2)}`;
+            }
+        }
+
+        function saveData() {
+            const data = {
+                productName: document.getElementById('productName').value,
+                targetBudget: document.getElementById('targetBudget').value,
+                purchaseTimeline: document.getElementById('purchaseTimeline').value,
+                // Add all other fields...
+            };
+            localStorage.setItem('priceAnalysis', JSON.stringify(data));
+            alert('Data saved locally in your browser');
+        }
+
+        function clearForm() {
+            if (confirm('Are you sure you want to clear all form data?')) {
+                document.querySelectorAll('input, select, textarea').forEach(el => {
+                    if (el.type === 'checkbox' || el.type === 'radio') {
+                        el.checked = false;
+                    } else if (el.type === 'range') {
+                        el.value = 5;
+                    } else {
+                        el.value = '';
+                    }
+                });
+                document.getElementById('priceRange').textContent = 'Enter prices above';
+                document.getElementById('avgPrice').textContent = 'Enter prices above';
+                document.getElementById('diffValue').textContent = '5';
+                document.getElementById('confValue').textContent = '5';
+            }
+        }
+
+        // Load saved data on page load
+        window.addEventListener('load', function() {
+            const saved = localStorage.getItem('priceAnalysis');
+            if (saved && confirm('Load previously saved data?')) {
+                const data = JSON.parse(saved);
+                document.getElementById('productName').value = data.productName || '';
+                document.getElementById('targetBudget').value = data.targetBudget || '';
+                // Load other fields...
+            }
+        });
+    </script>
+</body>
+</html>

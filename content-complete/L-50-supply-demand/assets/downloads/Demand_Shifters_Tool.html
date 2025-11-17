@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demand Shifters Interactive Tool</title>
+    <!--
+    PURPOSE: Interactive skill builder tool
+    USE: Chapter interactive activity (15-20 minutes)
+    -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #6366f1;
+            padding-bottom: 10px;
+            font-size: 28px;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-top: 25px;
+            font-size: 22px;
+        }
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .factor-selector {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .factor-card {
+            background-color: #f9fafb;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .factor-card:hover {
+            border-color: #6366f1;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(99, 102, 241, 0.2);
+        }
+        .factor-card.active {
+            border-color: #6366f1;
+            background-color: #eef2ff;
+        }
+        .factor-title {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        .direction-selector {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+            justify-content: center;
+        }
+        .direction-btn {
+            padding: 15px 30px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            background-color: white;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        .direction-btn:hover {
+            border-color: #6366f1;
+        }
+        .direction-btn.increase {
+            color: #10b981;
+        }
+        .direction-btn.decrease {
+            color: #ef4444;
+        }
+        .direction-btn.active {
+            border-width: 3px;
+        }
+        .direction-btn.increase.active {
+            background-color: #d1fae5;
+            border-color: #10b981;
+        }
+        .direction-btn.decrease.active {
+            background-color: #fee2e2;
+            border-color: #ef4444;
+        }
+        canvas {
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            background-color: white;
+            display: block;
+            margin: 20px auto;
+        }
+        .equilibrium-info {
+            background-color: #f0f7ff;
+            border: 1px solid #c5dbff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .equilibrium-info h3 {
+            margin-top: 0;
+            color: #6366f1;
+        }
+        .change-summary {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .change-item {
+            background-color: white;
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+        }
+        .change-label {
+            font-size: 12px;
+            color: #666;
+            text-transform: uppercase;
+        }
+        .change-value {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        .examples-section {
+            background-color: #e8f4f8;
+            border: 1px solid #bedaee;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .example-item {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: white;
+            border-radius: 4px;
+        }
+        .quiz-mode {
+            background-color: #fff7ed;
+            border: 2px solid #fed7aa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .quiz-question {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .quiz-options {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .quiz-btn {
+            padding: 10px 20px;
+            border: 2px solid #e5e7eb;
+            border-radius: 6px;
+            background-color: white;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .quiz-btn:hover {
+            border-color: #6366f1;
+        }
+        .quiz-btn.correct {
+            background-color: #d1fae5;
+            border-color: #10b981;
+        }
+        .quiz-btn.incorrect {
+            background-color: #fee2e2;
+            border-color: #ef4444;
+        }
+        .note {
+            background-color: #f8f9fa;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .reset-btn {
+            padding: 10px 20px;
+            background-color: #6366f1;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            margin: 10px auto;
+            display: block;
+        }
+        .reset-btn:hover {
+            background-color: #4f46e5;
+        }
+        @media print {
+            body { background-color: white; }
+            .quiz-mode, button { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Demand Shifters Interactive Tool</h1>
+        <p>Explore how non-price factors shift demand curves left or right. Select a factor, choose its direction of change, and watch how the entire demand curve shifts!</p>
+
+        <h2>Step 1: Select a Demand Factor</h2>
+        <div class="factor-selector" id="factorSelector">
+            <div class="factor-card" data-factor="income">
+                <div class="factor-title">💰 Income Levels</div>
+                <p>Changes in consumer income affect purchasing power</p>
+            </div>
+            <div class="factor-card" data-factor="substitutes">
+                <div class="factor-title">🔄 Price of Substitutes</div>
+                <p>When substitute prices change, demand shifts</p>
+            </div>
+            <div class="factor-card" data-factor="complements">
+                <div class="factor-title">🤝 Price of Complements</div>
+                <p>Products used together affect each other's demand</p>
+            </div>
+            <div class="factor-card" data-factor="tastes">
+                <div class="factor-title">⭐ Consumer Tastes</div>
+                <p>Preferences and trends influence demand</p>
+            </div>
+            <div class="factor-card" data-factor="expectations">
+                <div class="factor-title">🔮 Future Expectations</div>
+                <p>Expectations about future prices or income</p>
+            </div>
+            <div class="factor-card" data-factor="buyers">
+                <div class="factor-title">👥 Number of Buyers</div>
+                <p>More or fewer consumers in the market</p>
+            </div>
+        </div>
+
+        <h2>Step 2: Select Direction of Change</h2>
+        <div class="direction-selector" id="directionSelector" style="display:none;">
+            <button class="direction-btn increase" data-direction="increase">
+                ↑ Increase / Favorable
+            </button>
+            <button class="direction-btn decrease" data-direction="decrease">
+                ↓ Decrease / Unfavorable
+            </button>
+        </div>
+
+        <div id="visualizationArea" style="display:none;">
+            <canvas id="demandCanvas" width="800" height="400"></canvas>
+
+            <div class="equilibrium-info">
+                <h3>Market Impact</h3>
+                <p id="impactDescription"></p>
+                <div class="change-summary">
+                    <div class="change-item">
+                        <div class="change-label">Demand Shift</div>
+                        <div class="change-value" id="demandShift">—</div>
+                    </div>
+                    <div class="change-item">
+                        <div class="change-label">New Equilibrium Price</div>
+                        <div class="change-value" id="newPrice">—</div>
+                    </div>
+                    <div class="change-item">
+                        <div class="change-label">Price Change</div>
+                        <div class="change-value" id="priceChange">—</div>
+                    </div>
+                    <div class="change-item">
+                        <div class="change-label">Quantity Change</div>
+                        <div class="change-value" id="quantityChange">—</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="examples-section" id="examplesSection">
+                <h3>Real-World Examples</h3>
+                <div id="examplesList"></div>
+            </div>
+
+            <button class="reset-btn" onclick="reset()">Reset and Try Another Factor</button>
+        </div>
+
+        <div class="note">
+            <h3>Remember: Movement vs. Shift</h3>
+            <p><strong>Movement along the curve:</strong> Caused by a change in the product's own price</p>
+            <p><strong>Shift of the curve:</strong> Caused by changes in non-price factors (like the ones above)</p>
+            <p>This tool demonstrates <em>shifts</em> of the demand curve—the entire curve moves left or right!</p>
+        </div>
+    </div>
+
+    <script>
+        let selectedFactor = null;
+        let selectedDirection = null;
+
+        const factorExamples = {
+            income: {
+                increase: [
+                    "Wages rise 10% → Demand for restaurant meals shifts right",
+                    "Economic boom increases employment → Demand for new cars shifts right",
+                    "Tax refunds arrive → Demand for electronics shifts right"
+                ],
+                decrease: [
+                    "Recession reduces incomes → Demand for luxury goods shifts left",
+                    "Layoffs occur → Demand for discretionary purchases shifts left"
+                ]
+            },
+            substitutes: {
+                increase: [
+                    "Beef prices spike → Demand for chicken shifts right",
+                    "Movie tickets get expensive → Demand for streaming services shifts right",
+                    "Gas prices rise → Demand for electric vehicles shifts right"
+                ],
+                decrease: [
+                    "Generic brand prices fall → Demand for name brands shifts left"
+                ]
+            },
+            complements: {
+                increase: [
+                    "Printer prices rise → Demand for ink cartridges shifts left",
+                    "Gaming console prices spike → Demand for games shifts left"
+                ],
+                decrease: [
+                    "Smartphone prices drop → Demand for phone cases shifts right",
+                    "Car prices fall → Demand for auto insurance shifts right"
+                ]
+            },
+            tastes: {
+                increase: [
+                    "Health trend emerges → Demand for gym memberships shifts right",
+                    "Environmental awareness grows → Demand for reusable products shifts right",
+                    "Celebrity endorsement → Demand for product shifts right"
+                ],
+                decrease: [
+                    "Product recall → Demand shifts left",
+                    "Negative reviews go viral → Demand shifts left"
+                ]
+            },
+            expectations: {
+                increase: [
+                    "Announcement of future price hike → Current demand shifts right",
+                    "Expected shortage → Demand shifts right (people buy now)",
+                    "Black Friday approaching → Demand for TVs shifts left (wait for sale)"
+                ],
+                decrease: [
+                    "Expected future price decrease → Current demand shifts left"
+                ]
+            },
+            buyers: {
+                increase: [
+                    "Population grows → Demand for housing shifts right",
+                    "Immigration increases → Demand for goods/services shifts right",
+                    "New age group enters market → Demand shifts right"
+                ],
+                decrease: [
+                    "Population decline → Demand for local services shifts left",
+                    "Demographic shift → Demand for certain products shifts left"
+                ]
+            }
+        };
+
+        // Factor card selection
+        document.querySelectorAll('.factor-card').forEach(card => {
+            card.addEventListener('click', function() {
+                document.querySelectorAll('.factor-card').forEach(c => c.classList.remove('active'));
+                this.classList.add('active');
+                selectedFactor = this.dataset.factor;
+                document.getElementById('directionSelector').style.display = 'flex';
+            });
+        });
+
+        // Direction button selection
+        document.querySelectorAll('.direction-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.direction-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                selectedDirection = this.dataset.direction;
+                showVisualization();
+            });
+        });
+
+        function showVisualization() {
+            if (!selectedFactor || !selectedDirection) return;
+
+            document.getElementById('visualizationArea').style.display = 'block';
+            drawChart();
+            updateInfo();
+            showExamples();
+
+            // Scroll to visualization
+            document.getElementById('visualizationArea').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function drawChart() {
+            const canvas = document.getElementById('demandCanvas');
+            const ctx = canvas.getContext('2d');
+            const width = canvas.width;
+            const height = canvas.height;
+            const padding = 60;
+
+            ctx.clearRect(0, 0, width, height);
+
+            // Draw axes
+            ctx.strokeStyle = '#333';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(padding, height - padding);
+            ctx.lineTo(width - padding, height - padding);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(padding, padding);
+            ctx.lineTo(padding, height - padding);
+            ctx.stroke();
+
+            // Labels
+            ctx.fillStyle = '#666';
+            ctx.font = '14px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText('Quantity', width - 80, height - 30);
+            ctx.save();
+            ctx.translate(20, height / 2);
+            ctx.rotate(-Math.PI / 2);
+            ctx.fillText('Price', 0, 0);
+            ctx.restore();
+
+            // Draw supply curve (constant)
+            ctx.strokeStyle = '#ef4444';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(padding, height - padding);
+            ctx.lineTo(width - padding, padding);
+            ctx.stroke();
+
+            // Original demand curve (blue, semi-transparent)
+            ctx.strokeStyle = 'rgba(59, 130, 246, 0.4)';
+            ctx.lineWidth = 2;
+            ctx.setLineDash([5, 5]);
+            ctx.beginPath();
+            ctx.moveTo(padding + 50, padding);
+            ctx.lineTo(width - padding - 50, height - padding);
+            ctx.stroke();
+            ctx.setLineDash([]);
+
+            // New demand curve (blue, solid)
+            const shift = selectedDirection === 'increase' ? 100 : -100;
+            ctx.strokeStyle = '#3b82f6';
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            ctx.moveTo(padding + 50 + shift, padding);
+            ctx.lineTo(width - padding - 50 + shift, height - padding);
+            ctx.stroke();
+
+            // Original equilibrium (gray)
+            ctx.fillStyle = '#9ca3af';
+            ctx.beginPath();
+            ctx.arc(width / 2, height / 2, 6, 0, 2 * Math.PI);
+            ctx.fill();
+
+            // New equilibrium (green)
+            const newEqX = width / 2 + shift / 2;
+            const newEqY = height / 2 - shift / 4;
+            ctx.fillStyle = '#10b981';
+            ctx.beginPath();
+            ctx.arc(newEqX, newEqY, 8, 0, 2 * Math.PI);
+            ctx.fill();
+
+            // Arrow showing shift direction
+            const arrowY = padding + 100;
+            const arrowStartX = padding + 200;
+            const arrowEndX = arrowStartX + (selectedDirection === 'increase' ? 80 : -80);
+
+            ctx.strokeStyle = selectedDirection === 'increase' ? '#10b981' : '#ef4444';
+            ctx.fillStyle = selectedDirection === 'increase' ? '#10b981' : '#ef4444';
+            ctx.lineWidth = 3;
+
+            // Arrow line
+            ctx.beginPath();
+            ctx.moveTo(arrowStartX, arrowY);
+            ctx.lineTo(arrowEndX, arrowY);
+            ctx.stroke();
+
+            // Arrow head
+            const headLen = 15;
+            const angle = selectedDirection === 'increase' ? 0 : Math.PI;
+            ctx.beginPath();
+            ctx.moveTo(arrowEndX, arrowY);
+            ctx.lineTo(arrowEndX - headLen * Math.cos(angle - Math.PI / 6),
+                       arrowY - headLen * Math.sin(angle - Math.PI / 6));
+            ctx.lineTo(arrowEndX - headLen * Math.cos(angle + Math.PI / 6),
+                       arrowY - headLen * Math.sin(angle + Math.PI / 6));
+            ctx.closePath();
+            ctx.fill();
+
+            // Label
+            ctx.font = 'bold 14px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText('Demand Shift', arrowStartX + (arrowEndX - arrowStartX) / 2, arrowY - 15);
+        }
+
+        function updateInfo() {
+            const shiftDirection = selectedDirection === 'increase' ? 'RIGHT' : 'LEFT';
+            const priceEffect = selectedDirection === 'increase' ? '↑' : '↓';
+            const qtyEffect = selectedDirection === 'increase' ? '↑' : '↓';
+
+            document.getElementById('demandShift').textContent = shiftDirection;
+            document.getElementById('newPrice').textContent = priceEffect;
+            document.getElementById('priceChange').textContent = priceEffect;
+            document.getElementById('quantityChange').textContent = qtyEffect;
+
+            const factorNames = {
+                income: 'income',
+                substitutes: 'substitute prices',
+                complements: 'complement prices',
+                tastes: 'consumer preferences',
+                expectations: 'future expectations',
+                buyers: 'number of buyers'
+            };
+
+            const description = selectedDirection === 'increase'
+                ? `When ${factorNames[selectedFactor]} increase, demand shifts RIGHT. This leads to a HIGHER equilibrium price and HIGHER equilibrium quantity.`
+                : `When ${factorNames[selectedFactor]} decrease, demand shifts LEFT. This leads to a LOWER equilibrium price and LOWER equilibrium quantity.`;
+
+            document.getElementById('impactDescription').textContent = description;
+        }
+
+        function showExamples() {
+            const examples = factorExamples[selectedFactor][selectedDirection];
+            const examplesList = document.getElementById('examplesList');
+            examplesList.innerHTML = examples.map(ex =>
+                `<div class="example-item">• ${ex}</div>`
+            ).join('');
+        }
+
+        function reset() {
+            selectedFactor = null;
+            selectedDirection = null;
+            document.querySelectorAll('.factor-card').forEach(c => c.classList.remove('active'));
+            document.querySelectorAll('.direction-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById('directionSelector').style.display = 'none';
+            document.getElementById('visualizationArea').style.display = 'none';
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

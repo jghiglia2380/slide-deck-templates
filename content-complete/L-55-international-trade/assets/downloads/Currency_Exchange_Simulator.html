@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Currency Exchange Simulator | PFL Academy</title>
+    <!--
+    PURPOSE: Understand exchange rates and international trade impacts
+    USE: Chapter interactive activity (15-20 minutes)
+    -->
+<style>:root{--primary:#6366f1;--secondary:#8b5cf6;--success:#10b981;--text:#1f2937}*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Helvetica Neue',Arial,sans-serif;font-size:16px;line-height:1.6;color:var(--text);background-color:#f9fafb;padding:20px}.container{max-width:1000px;margin:0 auto;background-color:white;border-radius:12px;box-shadow:0 4px 6px rgba(0,0,0,0.1)}header{background:linear-gradient(135deg,var(--primary),var(--secondary));color:white;padding:30px;text-align:center}h1{font-size:2rem;font-weight:700;margin-bottom:10px}.content{padding:30px}.section{margin-bottom:30px}h2{font-size:1.5rem;color:var(--primary);margin-bottom:15px}.currency-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-bottom:30px}.currency-card{background-color:#f9fafb;padding:20px;border-radius:8px;border:2px solid transparent;cursor:pointer;transition:all 0.3s;text-align:center}.currency-card:hover{border-color:var(--primary)}.currency-card.selected{border-color:var(--primary);background-color:#eef2ff}.currency-flag{font-size:3rem;margin-bottom:10px}.currency-name{font-size:1.1rem;font-weight:600;margin-bottom:5px}.currency-code{color:#6b7280}.exchange-box{background-color:#f9fafb;padding:25px;border-radius:8px;margin-bottom:20px}.input-group{margin-bottom:20px}label{display:block;font-weight:600;margin-bottom:8px}input,select{width:100%;padding:12px;border:2px solid #e5e7eb;border-radius:6px;font-size:1rem}input:focus,select:focus{outline:none;border-color:var(--primary)}.button{background:linear-gradient(135deg,var(--primary),var(--secondary));color:white;padding:12px 30px;border:none;border-radius:6px;font-size:1rem;font-weight:600;cursor:pointer;width:100%;margin-top:20px}.button:hover{transform:translateY(-2px)}.results{background-color:#f0fdf4;border-left:4px solid var(--success);padding:20px;border-radius:8px;margin-top:20px;display:none}.results.show{display:block}@media print{body{padding:0;background:white}.container{box-shadow:none}.button{display:none}}@media(max-width:768px){.currency-grid{grid-template-columns:1fr 1fr}h1{font-size:1.5rem}}</style>
+</head>
+<body>
+<div class="container">
+<header>
+<h1>Currency Exchange Simulator</h1>
+<p style="font-size:1.1rem;opacity:0.95">Understand exchange rates and their impact on travel, imports, and investments</p>
+</header>
+
+<div class="content">
+<div class="section">
+<h2>Currency Converter</h2>
+<div class="exchange-box">
+<div class="input-group">
+<label for="amount">Amount (USD):</label>
+<input type="number" id="amount" min="0" step="10" value="1000" placeholder="Enter amount">
+</div>
+<div class="input-group">
+<label for="currency">Convert To:</label>
+<select id="currency">
+<option value="eur">Euro (EUR)</option>
+<option value="gbp">British Pound (GBP)</option>
+<option value="jpy">Japanese Yen (JPY)</option>
+<option value="cad">Canadian Dollar (CAD)</option>
+<option value="mxn">Mexican Peso (MXN)</option>
+<option value="cny">Chinese Yuan (CNY)</option>
+</select>
+</div>
+<button class="button" onclick="convert()">Convert Currency</button>
+
+<div class="results" id="results">
+<div style="font-size:1.3rem;font-weight:600;color:var(--success);margin-bottom:15px">Conversion Result:</div>
+<div id="resultContent"></div>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2>Real-World Scenarios</h2>
+<div style="background-color:#fef3c7;padding:20px;border-radius:8px;margin-bottom:15px">
+<h3 style="margin-bottom:10px">Scenario 1: International Travel</h3>
+<p>You're planning a 2-week trip to Europe with a $3,000 budget. The Euro has strengthened against the dollar (exchange rate worsened from 1.00 to 0.85 EUR per USD).</p>
+<p style="margin-top:10px"><strong>Impact:</strong> Your $3,000 now buys only €2,550 instead of €3,000. You effectively lost $529 in purchasing power!</p>
+</div>
+
+<div style="background-color:#e0f2fe;padding:20px;border-radius:8px;margin-bottom:15px">
+<h3 style="margin-bottom:10px">Scenario 2: Buying Imported Goods</h3>
+<p>You want to buy a Japanese car priced at ¥3,000,000. The exchange rate changes from 110 to 130 yen per dollar.</p>
+<p style="margin-top:10px"><strong>Impact:</strong> The car now costs $23,077 instead of $27,273. You save $4,196 due to favorable exchange rates!</p>
+</div>
+
+<div style="background-color:#f0fdf4;padding:20px;border-radius:8px">
+<h3 style="margin-bottom:10px">Scenario 3: International Investments</h3>
+<p>You invested $10,000 in European stocks. The Euro appreciated 10% against the dollar.</p>
+<p style="margin-top:10px"><strong>Impact:</strong> Even if stock prices stayed flat, converting back to USD gives you $11,000 - a 10% gain from currency appreciation!</p>
+</div>
+</div>
+
+<div class="section">
+<h2>Exchange Rate Basics</h2>
+<div style="background-color:#f9fafb;padding:20px;border-radius:8px">
+<p style="margin-bottom:15px"><strong>What affects exchange rates:</strong></p>
+<ul style="margin-left:20px">
+<li>Interest rate differences between countries</li>
+<li>Economic growth and stability</li>
+<li>Political events and policies</li>
+<li>Trade balances (imports vs exports)</li>
+<li>Inflation rates</li>
+</ul>
+
+<p style="margin-top:20px;margin-bottom:10px"><strong>Personal Finance Tips:</strong></p>
+<ul style="margin-left:20px">
+<li>Monitor exchange rates before international travel</li>
+<li>Consider currency-hedged investments for stability</li>
+<li>Time large international purchases when rates are favorable</li>
+<li>Use no-fee credit cards for better exchange rates than currency exchange booths</li>
+<li>Be aware that sending money internationally incurs fees + exchange rate costs</li>
+</ul>
+</div>
+</div>
+
+<button class="button" onclick="window.print()">Print Exchange Rates</button>
+</div>
+</div>
+
+<script>
+const rates={eur:0.92,gbp:0.79,jpy:149.50,cad:1.36,mxn:17.25,cny:7.24};const symbols={eur:'€',gbp:'£',jpy:'¥',cad:'C$',mxn:'MX$',cny:'¥'};const names={eur:'Euro',gbp:'British Pound',jpy:'Japanese Yen',cad:'Canadian Dollar',mxn:'Mexican Peso',cny:'Chinese Yuan'};function convert(){const amount=parseFloat(document.getElementById('amount').value)||1000;const currency=document.getElementById('currency').value;const rate=rates[currency];const converted=amount*rate;const symbol=symbols[currency];const name=names[currency];let html=`<div style="background-color:white;padding:20px;border-radius:6px;margin-bottom:15px;text-align:center"><div style="font-size:2rem;font-weight:700;color:var(--primary);margin-bottom:10px">$${amount.toLocaleString()} USD = ${symbol}${converted.toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2})}</div><div style="color:#6b7280">Exchange Rate: 1 USD = ${rate} ${currency.toUpperCase()}</div></div>`;html+=`<div style="background-color:white;padding:15px;border-radius:6px"><strong>What This Means:</strong><br><br>`;if(currency==='jpy'){html+=`If you're traveling to Japan, your $${amount.toLocaleString()} gives you ${symbol}${Math.round(converted).toLocaleString()} to spend. `}else if(currency==='eur'){html+=`For a European trip, your $${amount.toLocaleString()} converts to ${symbol}${converted.toFixed(2)} euros. `}else if(currency==='mxn'){html+=`In Mexico, your $${amount.toLocaleString()} is worth ${symbol}${converted.toFixed(2)} pesos. `}else{html+=`Your $${amount.toLocaleString()} converts to ${symbol}${converted.toFixed(2)} ${name}. `}html+=`Remember: Exchange rates fluctuate daily. Use credit cards with no foreign transaction fees for the best rates when traveling.</div>`;document.getElementById('resultContent').innerHTML=html;document.getElementById('results').classList.add('show');document.getElementById('results').scrollIntoView({behavior:'smooth',block:'nearest'})}
+</script>
+</body>
+</html>

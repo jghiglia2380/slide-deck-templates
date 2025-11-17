@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Finance Decision Calculator | PFL Academy</title>
+    <!--
+    STATE VARIABLES USED IN THIS FILE:
+    - STATE_NAME
+    - STATE_SALES_TAX
+    - STATE_REGISTRATION_INITIAL
+    - STATE_REGISTRATION_ANNUAL
+    - STATE_AVG_AUTO_LOAN_RATE_NEW
+    - STATE_AVG_AUTO_LOAN_RATE_USED
+    - STATE_LEASE_ACQUISITION_FEE
+    - STATE_INSURANCE_AVG_TEEN
+    - STATE_GAS_PRICE_CURRENT
+    - STATE_INSPECTION_REQUIRED
+    - STATE_INSPECTION_COST
+
+    UPDATE FREQUENCY:
+    - Monthly: STATE_GAS_PRICE_CURRENT
+    - Quarterly: STATE_INSURANCE_AVG_TEEN
+    - Annual: STATE_SALES_TAX, STATE_REGISTRATION_INITIAL, STATE_REGISTRATION_ANNUAL,
+             STATE_AVG_AUTO_LOAN_RATE_NEW, STATE_AVG_AUTO_LOAN_RATE_USED,
+             STATE_LEASE_ACQUISITION_FEE, STATE_INSPECTION_COST
+    
+
+    PURPOSE: Interactive comparison tool for buy vs. lease scenarios
+    USE: Chapter interactive activity (15-20 minutes)
+    -->
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #8b5cf6;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --info: #3b82f6;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --background: #ffffff;
+            --surface: #f9fafb;
+            --buy-color: #3b82f6;
+            --lease-color: #f59e0b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--surface);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: var(--background);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+
+        .state-badge {
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+
+        .wizard-container {
+            padding: 30px;
+        }
+
+        .step-indicator {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .step-indicator::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: #e5e7eb;
+            z-index: 0;
+        }
+
+        .step {
+            flex: 1;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .step-circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #e5e7eb;
+            color: var(--text-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 10px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .step.active .step-circle {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .step.completed .step-circle {
+            background-color: var(--success);
+            color: white;
+        }
+
+        .step-label {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .step.active .step-label {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .step-content {
+            display: none;
+            animation: fadeIn 0.3s;
+        }
+
+        .step-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text);
+        }
+
+        .label-description {
+            font-size: 0.875rem;
+            color: var(--text-light);
+            font-weight: 400;
+            margin-top: 4px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        input:focus,
+        select:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        }
+
+        .input-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .state-info-box {
+            background-color: #eff6ff;
+            border-left: 4px solid var(--info);
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .state-info-box h3 {
+            color: var(--info);
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .state-data {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            font-size: 0.9rem;
+        }
+
+        .state-data-item {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .state-data-label {
+            color: var(--text-light);
+        }
+
+        .state-data-value {
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            gap: 15px;
+        }
+
+        button {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            flex: 1;
+        }
+
+        .btn-primary:hover {
+            background-color: #4f46e5;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+        }
+
+        .btn-secondary {
+            background-color: #e5e7eb;
+            color: var(--text);
+        }
+
+        .btn-secondary:hover {
+            background-color: #d1d5db;
+        }
+
+        .results-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .scenario-card {
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 20px;
+            background-color: white;
+            transition: all 0.3s;
+        }
+
+        .scenario-card.winner {
+            border-color: var(--success);
+            background-color: #f0fdf4;
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+        }
+
+        .scenario-header {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+
+        .scenario-card.buy-new .scenario-header {
+            color: var(--buy-color);
+        }
+
+        .scenario-card.buy-used .scenario-header {
+            color: var(--info);
+        }
+
+        .scenario-card.lease .scenario-header {
+            color: var(--lease-color);
+        }
+
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #f3f4f6;
+        }
+
+        .result-label {
+            color: var(--text-light);
+        }
+
+        .result-value {
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .net-cost {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 2px solid #e5e7eb;
+            text-align: center;
+        }
+
+        .winner-badge {
+            background-color: var(--success);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 15px;
+            font-weight: 600;
+        }
+
+        .chart-container {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: var(--surface);
+            border-radius: 8px;
+        }
+
+        .what-if-controls {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #fef3c7;
+            border-radius: 8px;
+            border-left: 4px solid var(--warning);
+        }
+
+        .what-if-controls h3 {
+            color: var(--warning);
+            margin-bottom: 15px;
+        }
+
+        .slider-group {
+            margin-bottom: 15px;
+        }
+
+        .slider-label {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            height: 6px;
+            border-radius: 3px;
+            background: #d1d5db;
+            outline: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--warning);
+            cursor: pointer;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .btn-success {
+            background-color: var(--success);
+            color: white;
+            flex: 1;
+        }
+
+        .btn-success:hover {
+            background-color: #059669;
+        }
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: help;
+            color: var(--info);
+            margin-left: 5px;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 250px;
+            background-color: var(--text);
+            color: white;
+            text-align: left;
+            border-radius: 6px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -125px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 0.875rem;
+            line-height: 1.4;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+            }
+
+            .wizard-container {
+                padding: 20px;
+            }
+
+            .step-indicator,
+            .button-group,
+            .what-if-controls,
+            .action-buttons,
+            .no-print {
+                display: none !important;
+            }
+
+            .results-container {
+                page-break-inside: avoid;
+            }
+
+            .scenario-card {
+                break-inside: avoid;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .input-group {
+                grid-template-columns: 1fr;
+            }
+
+            .results-container {
+                grid-template-columns: 1fr;
+            }
+
+            .step-label {
+                font-size: 0.75rem;
+            }
+
+            .step-circle {
+                width: 30px;
+                height: 30px;
+                font-size: 0.875rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Auto Finance Decision Calculator</h1>
+            <p class="subtitle">Compare Buy vs. Lease Options with State-Specific Data</p>
+            <div class="state-badge" id="stateBadge">Personalized for {{STATE_NAME}}</div>
+        </header>
+
+        <div class="wizard-container">
+            <!-- Step Indicator -->
+            <div class="step-indicator">
+                <div class="step active" data-step="1">
+                    <div class="step-circle">1</div>
+                    <div class="step-label">Vehicle Selection</div>
+                </div>
+                <div class="step" data-step="2">
+                    <div class="step-circle">2</div>
+                    <div class="step-label">Buy New</div>
+                </div>
+                <div class="step" data-step="3">
+                    <div class="step-circle">3</div>
+                    <div class="step-label">Buy Used</div>
+                </div>
+                <div class="step" data-step="4">
+                    <div class="step-circle">4</div>
+                    <div class="step-label">Lease</div>
+                </div>
+                <div class="step" data-step="5">
+                    <div class="step-circle">5</div>
+                    <div class="step-label">Ownership Costs</div>
+                </div>
+                <div class="step" data-step="6">
+                    <div class="step-circle">6</div>
+                    <div class="step-label">Results</div>
+                </div>
+            </div>
+
+            <!-- Step 1: Vehicle Selection -->
+            <div class="step-content active" data-step="1">
+                <h2>Step 1: Vehicle Selection</h2>
+                <div class="form-group">
+                    <label for="vehicleMake">Vehicle Make/Model</label>
+                    <input type="text" id="vehicleMake" placeholder="e.g., Honda Civic, Toyota Camry">
+                </div>
+                <div class="input-group">
+                    <div class="form-group">
+                        <label for="newPrice">
+                            New Vehicle Price ($)
+                            <span class="tooltip">ℹ️
+                                <span class="tooltiptext">MSRP or negotiated price for a brand new vehicle</span>
+                            </span>
+                        </label>
+                        <input type="number" id="newPrice" value="25000" min="15000" max="100000">
+                    </div>
+                    <div class="form-group">
+                        <label for="usedPrice">
+                            Used Vehicle Price (3 years old) ($)
+                            <span class="tooltip">ℹ️
+                                <span class="tooltiptext">Market price for a similar 3-year-old vehicle</span>
+                            </span>
+                        </label>
+                        <input type="number" id="usedPrice" value="18000" min="10000" max="75000">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="leasePayment">
+                        Monthly Lease Payment Offer ($)
+                        <span class="tooltip">ℹ️
+                            <span class="tooltiptext">Advertised monthly lease payment from dealer</span>
+                        </span>
+                    </label>
+                    <input type="number" id="leasePayment" value="350" min="100" max="2000">
+                </div>
+            </div>
+
+            <!-- Step 2: Buy New Financing -->
+            <div class="step-content" data-step="2">
+                <h2>Step 2: Financing Details - Buy New</h2>
+
+                <div class="state-info-box">
+                    <h3>{{STATE_NAME}} Auto Purchase Information</h3>
+                    <div class="state-data">
+                        <div class="state-data-item">
+                            <span class="state-data-label">Sales Tax:</span>
+                            <span class="state-data-value">{{STATE_SALES_TAX}}%</span>
+                        </div>
+                        <div class="state-data-item">
+                            <span class="state-data-label">Initial Registration:</span>
+                            <span class="state-data-value">${{STATE_REGISTRATION_INITIAL}}</span>
+                        </div>
+                        <div class="state-data-item">
+                            <span class="state-data-label">Annual Registration:</span>
+                            <span class="state-data-value">${{STATE_REGISTRATION_ANNUAL}}</span>
+                        </div>
+                        <div class="state-data-item">
+                            <span class="state-data-label">Avg. New Car Rate:</span>
+                            <span class="state-data-value">{{STATE_AVG_AUTO_LOAN_RATE_NEW}}%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="form-group">
+                        <label for="downPaymentNew">Down Payment ($)</label>
+                        <input type="number" id="downPaymentNew" value="3000" min="0" max="50000">
+                    </div>
+                    <div class="form-group">
+                        <label for="loanTermNew">Loan Term (months)</label>
+                        <select id="loanTermNew">
+                            <option value="36">36 months (3 years)</option>
+                            <option value="48">48 months (4 years)</option>
+                            <option value="60" selected>60 months (5 years)</option>
+                            <option value="72">72 months (6 years)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="interestRateNew">Interest Rate (%) - Editable</label>
+                    <input type="number" id="interestRateNew" value="{{STATE_AVG_AUTO_LOAN_RATE_NEW}}" min="0" max="20" step="0.1">
+                </div>
+            </div>
+
+            <!-- Step 3: Buy Used Financing -->
+            <div class="step-content" data-step="3">
+                <h2>Step 3: Financing Details - Buy Used</h2>
+
+                <div class="state-info-box">
+                    <h3>{{STATE_NAME}} Used Vehicle Information</h3>
+                    <div class="state-data">
+                        <div class="state-data-item">
+                            <span class="state-data-label">Avg. Used Car Rate:</span>
+                            <span class="state-data-value">{{STATE_AVG_AUTO_LOAN_RATE_USED}}%</span>
+                        </div>
+                        <div class="state-data-item">
+                            <span class="state-data-label">Sales Tax:</span>
+                            <span class="state-data-value">{{STATE_SALES_TAX}}%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="form-group">
+                        <label for="downPaymentUsed">Down Payment ($)</label>
+                        <input type="number" id="downPaymentUsed" value="2000" min="0" max="40000">
+                    </div>
+                    <div class="form-group">
+                        <label for="loanTermUsed">Loan Term (months)</label>
+                        <select id="loanTermUsed">
+                            <option value="24">24 months (2 years)</option>
+                            <option value="36">36 months (3 years)</option>
+                            <option value="48" selected>48 months (4 years)</option>
+                            <option value="60">60 months (5 years)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="interestRateUsed">Interest Rate (%) - Typically higher than new</label>
+                    <input type="number" id="interestRateUsed" value="{{STATE_AVG_AUTO_LOAN_RATE_USED}}" min="0" max="25" step="0.1">
+                </div>
+            </div>
+
+            <!-- Step 4: Leasing Details -->
+            <div class="step-content" data-step="4">
+                <h2>Step 4: Leasing Details</h2>
+
+                <div class="state-info-box">
+                    <h3>{{STATE_NAME}} Lease Information</h3>
+                    <div class="state-data">
+                        <div class="state-data-item">
+                            <span class="state-data-label">Acquisition Fee:</span>
+                            <span class="state-data-value">${{STATE_LEASE_ACQUISITION_FEE}}</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="form-group">
+                        <label for="leaseTerm">Lease Term (months)</label>
+                        <select id="leaseTerm">
+                            <option value="24">24 months (2 years)</option>
+                            <option value="36" selected>36 months (3 years)</option>
+                            <option value="39">39 months</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="leaseDownPayment">Cap Cost Reduction / Down Payment ($)</label>
+                        <input type="number" id="leaseDownPayment" value="2000" min="0" max="10000">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="form-group">
+                        <label for="mileageLimit">Annual Mileage Limit</label>
+                        <select id="mileageLimit">
+                            <option value="10000">10,000 miles/year</option>
+                            <option value="12000" selected>12,000 miles/year</option>
+                            <option value="15000">15,000 miles/year</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="dispositionFee">Disposition Fee ($)</label>
+                        <input type="number" id="dispositionFee" value="395" min="0" max="1000">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 5: Ownership Costs -->
+            <div class="step-content" data-step="5">
+                <h2>Step 5: Ownership Costs (Apply to all scenarios)</h2>
+
+                <div class="state-info-box">
+                    <h3>{{STATE_NAME}} Operating Costs</h3>
+                    <div class="state-data">
+                        <div class="state-data-item">
+                            <span class="state-data-label">Avg. Teen Insurance:</span>
+                            <span class="state-data-value">${{STATE_INSURANCE_AVG_TEEN}}/month</span>
+                        </div>
+                        <div class="state-data-item">
+                            <span class="state-data-label">Current Gas Price:</span>
+                            <span class="state-data-value">${{STATE_GAS_PRICE_CURRENT}}/gallon</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="form-group">
+                        <label for="insurance">Monthly Insurance ($) - Editable</label>
+                        <input type="number" id="insurance" value="{{STATE_INSURANCE_AVG_TEEN}}" min="50" max="500">
+                    </div>
+                    <div class="form-group">
+                        <label for="annualMiles">Annual Miles Driven</label>
+                        <input type="number" id="annualMiles" value="12000" min="5000" max="30000">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="form-group">
+                        <label for="fuelEfficiency">Fuel Efficiency (MPG)</label>
+                        <input type="number" id="fuelEfficiency" value="28" min="10" max="60">
+                    </div>
+                    <div class="form-group">
+                        <label for="gasPrice">Gas Price ($/gallon) - Editable</label>
+                        <input type="number" id="gasPrice" value="{{STATE_GAS_PRICE_CURRENT}}" min="2" max="7" step="0.01">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="maintenance">Annual Maintenance Cost ($)</label>
+                    <input type="number" id="maintenance" value="800" min="200" max="3000">
+                </div>
+            </div>
+
+            <!-- Step 6: Results -->
+            <div class="step-content" data-step="6">
+                <h2>Step 6: Comparison Results - 6 Year Analysis</h2>
+
+                <div class="results-container" id="resultsContainer">
+                    <!-- Results will be populated by JavaScript -->
+                </div>
+
+                <div class="what-if-controls no-print">
+                    <h3>🔧 What-If Analysis</h3>
+                    <div class="slider-group">
+                        <div class="slider-label">
+                            <span>Interest Rate Adjustment:</span>
+                            <span id="rateAdjustValue">0%</span>
+                        </div>
+                        <input type="range" id="rateAdjust" min="-2" max="2" step="0.25" value="0">
+                    </div>
+                    <div class="slider-group">
+                        <div class="slider-label">
+                            <span>Annual Mileage Adjustment:</span>
+                            <span id="mileageAdjustValue">0 miles</span>
+                        </div>
+                        <input type="range" id="mileageAdjust" min="-5000" max="5000" step="1000" value="0">
+                    </div>
+                </div>
+
+                <div class="action-buttons no-print">
+                    <button class="btn-success" onclick="window.print()">📄 Print Results</button>
+                    <button class="btn-primary" onclick="saveScenario()">💾 Save Scenario</button>
+                    <button class="btn-secondary" onclick="resetCalculator()">🔄 Start Over</button>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="button-group">
+                <button class="btn-secondary" id="prevBtn" onclick="changeStep(-1)" style="display:none;">← Previous</button>
+                <button class="btn-primary" id="nextBtn" onclick="changeStep(1)">Next →</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentStep = 1;
+        const totalSteps = 6;
+
+        // State data (will be replaced at runtime)
+        const stateData = {
+            salesTax: parseFloat('{{STATE_SALES_TAX}}') || 6.25,
+            registrationInitial: parseFloat('{{STATE_REGISTRATION_INITIAL}}') || 90,
+            registrationAnnual: parseFloat('{{STATE_REGISTRATION_ANNUAL}}') || 50,
+            avgNewRate: parseFloat('{{STATE_AVG_AUTO_LOAN_RATE_NEW}}') || 5.5,
+            avgUsedRate: parseFloat('{{STATE_AVG_AUTO_LOAN_RATE_USED}}') || 7.5,
+            leaseAcquisitionFee: parseFloat('{{STATE_LEASE_ACQUISITION_FEE}}') || 650,
+            insuranceAvgTeen: parseFloat('{{STATE_INSURANCE_AVG_TEEN}}') || 235,
+            gasPrice: parseFloat('{{STATE_GAS_PRICE_CURRENT}}') || 3.50
+        };
+
+        function changeStep(direction) {
+            const steps = document.querySelectorAll('.step-content');
+            const indicators = document.querySelectorAll('.step');
+
+            // Hide current step
+            steps[currentStep - 1].classList.remove('active');
+
+            // Update current step
+            currentStep += direction;
+
+            // Show new step
+            steps[currentStep - 1].classList.add('active');
+
+            // Update step indicators
+            indicators.forEach((indicator, index) => {
+                if (index < currentStep - 1) {
+                    indicator.classList.add('completed');
+                    indicator.classList.remove('active');
+                } else if (index === currentStep - 1) {
+                    indicator.classList.add('active');
+                    indicator.classList.remove('completed');
+                } else {
+                    indicator.classList.remove('active', 'completed');
+                }
+            });
+
+            // Update buttons
+            document.getElementById('prevBtn').style.display = currentStep === 1 ? 'none' : 'block';
+            document.getElementById('nextBtn').textContent = currentStep === totalSteps ? 'Calculate' : 'Next →';
+
+            // Calculate results when reaching final step
+            if (currentStep === totalSteps) {
+                calculateResults();
+            }
+        }
+
+        function calculateMonthlyPayment(principal, annualRate, months) {
+            const monthlyRate = annualRate / 100 / 12;
+            if (monthlyRate === 0) return principal / months;
+            return principal * (monthlyRate * Math.pow(1 + monthlyRate, months)) / (Math.pow(1 + monthlyRate, months) - 1);
+        }
+
+        function calculateResults() {
+            // Get all input values
+            const newPrice = parseFloat(document.getElementById('newPrice').value);
+            const usedPrice = parseFloat(document.getElementById('usedPrice').value);
+            const leasePaymentInput = parseFloat(document.getElementById('leasePayment').value);
+
+            const downPaymentNew = parseFloat(document.getElementById('downPaymentNew').value);
+            const loanTermNew = parseInt(document.getElementById('loanTermNew').value);
+            const interestRateNew = parseFloat(document.getElementById('interestRateNew').value);
+
+            const downPaymentUsed = parseFloat(document.getElementById('downPaymentUsed').value);
+            const loanTermUsed = parseInt(document.getElementById('loanTermUsed').value);
+            const interestRateUsed = parseFloat(document.getElementById('interestRateUsed').value);
+
+            const leaseTerm = parseInt(document.getElementById('leaseTerm').value);
+            const leaseDownPayment = parseFloat(document.getElementById('leaseDownPayment').value);
+            const dispositionFee = parseFloat(document.getElementById('dispositionFee').value);
+
+            const insurance = parseFloat(document.getElementById('insurance').value);
+            const annualMiles = parseFloat(document.getElementById('annualMiles').value);
+            const fuelEfficiency = parseFloat(document.getElementById('fuelEfficiency').value);
+            const gasPrice = parseFloat(document.getElementById('gasPrice').value);
+            const maintenance = parseFloat(document.getElementById('maintenance').value);
+
+            // Calculate for 6 years
+            const years = 6;
+
+            // BUY NEW CALCULATIONS
+            const taxNew = newPrice * (stateData.salesTax / 100);
+            const loanAmountNew = newPrice - downPaymentNew + taxNew + stateData.registrationInitial;
+            const monthlyPaymentNew = calculateMonthlyPayment(loanAmountNew, interestRateNew, loanTermNew);
+            const totalPaidNew = (monthlyPaymentNew * loanTermNew) + downPaymentNew;
+            const valueAtYear6New = newPrice * 0.35; // Typical 65% depreciation over 6 years
+
+            const monthlyFuel = (annualMiles / 12 / fuelEfficiency) * gasPrice;
+            const totalInsuranceNew = insurance * 12 * years;
+            const totalFuelNew = monthlyFuel * 12 * years;
+            const totalMaintenanceNew = maintenance * years;
+            const totalRegistrationNew = stateData.registrationAnnual * years;
+
+            const totalCostNew = totalPaidNew + totalInsuranceNew + totalFuelNew + totalMaintenanceNew + totalRegistrationNew;
+            const netCostNew = totalCostNew - valueAtYear6New;
+
+            // BUY USED CALCULATIONS
+            const taxUsed = usedPrice * (stateData.salesTax / 100);
+            const loanAmountUsed = usedPrice - downPaymentUsed + taxUsed + stateData.registrationInitial;
+            const monthlyPaymentUsed = calculateMonthlyPayment(loanAmountUsed, interestRateUsed, loanTermUsed);
+            const totalPaidUsed = (monthlyPaymentUsed * loanTermUsed) + downPaymentUsed;
+            const valueAtYear6Used = usedPrice * 0.45; // Used cars depreciate slower
+
+            const totalInsuranceUsed = insurance * 12 * years;
+            const totalFuelUsed = monthlyFuel * 12 * years;
+            const totalMaintenanceUsed = maintenance * years * 1.2; // 20% more maintenance for used
+            const totalRegistrationUsed = stateData.registrationAnnual * years;
+
+            const totalCostUsed = totalPaidUsed + totalInsuranceUsed + totalFuelUsed + totalMaintenanceUsed + totalRegistrationUsed;
+            const netCostUsed = totalCostUsed - valueAtYear6Used;
+
+            // LEASE CALCULATIONS
+            const leaseMonths = leaseTerm;
+            const leasesNeeded = Math.ceil((years * 12) / leaseMonths);
+            const totalLeasePayments = leasePaymentInput * leaseMonths * leasesNeeded;
+            const totalLeaseDownPayments = leaseDownPayment * leasesNeeded;
+            const totalDispositionFees = dispositionFee * leasesNeeded;
+            const totalAcquisitionFees = stateData.leaseAcquisitionFee * leasesNeeded;
+
+            const totalInsuranceLease = insurance * 12 * years;
+            const totalFuelLease = monthlyFuel * 12 * years;
+            const totalMaintenanceLease = maintenance * years * 0.5; // Less maintenance with lease
+
+            const totalCostLease = totalLeasePayments + totalLeaseDownPayments + totalDispositionFees +
+                                  totalAcquisitionFees + totalInsuranceLease + totalFuelLease + totalMaintenanceLease;
+            const netCostLease = totalCostLease; // No value retained with lease
+
+            // Determine winner
+            const scenarios = [
+                { name: 'Buy New', netCost: netCostNew },
+                { name: 'Buy Used', netCost: netCostUsed },
+                { name: 'Lease', netCost: netCostLease }
+            ];
+            scenarios.sort((a, b) => a.netCost - b.netCost);
+            const winner = scenarios[0].name;
+
+            // Display results
+            const resultsContainer = document.getElementById('resultsContainer');
+            resultsContainer.innerHTML = `
+                <div class="scenario-card buy-new ${winner === 'Buy New' ? 'winner' : ''}">
+                    <div class="scenario-header">Buy New</div>
+                    <div class="result-item">
+                        <span class="result-label">Monthly Payment:</span>
+                        <span class="result-value">$${monthlyPaymentNew.toFixed(2)}</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Total Paid (6 years):</span>
+                        <span class="result-value">$${totalCostNew.toLocaleString('en-US', {minimumFractionDigits: 2})}</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Vehicle Value at Year 6:</span>
+                        <span class="result-value">$${valueAtYear6New.toLocaleString('en-US', {minimumFractionDigits: 2})}</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Cost per Mile:</span>
+                        <span class="result-value">$${(netCostNew / (annualMiles * years)).toFixed(2)}</span>
+                    </div>
+                    <div class="net-cost">
+                        Net Cost: $${netCostNew.toLocaleString('en-US', {minimumFractionDigits: 2})}
+                    </div>
+                    ${winner === 'Buy New' ? '<div class="winner-badge">🏆 Best Value</div>' : ''}
+                </div>
+
+                <div class="scenario-card buy-used ${winner === 'Buy Used' ? 'winner' : ''}">
+                    <div class="scenario-header">Buy Used (3 years old)</div>
+                    <div class="result-item">
+                        <span class="result-label">Monthly Payment:</span>
+                        <span class="result-value">$${monthlyPaymentUsed.toFixed(2)}</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Total Paid (6 years):</span>
+                        <span class="result-value">$${totalCostUsed.toLocaleString('en-US', {minimumFractionDigits: 2})}</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Vehicle Value at Year 6:</span>
+                        <span class="result-value">$${valueAtYear6Used.toLocaleString('en-US', {minimumFractionDigits: 2})}</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Cost per Mile:</span>
+                        <span class="result-value">$${(netCostUsed / (annualMiles * years)).toFixed(2)}</span>
+                    </div>
+                    <div class="net-cost">
+                        Net Cost: $${netCostUsed.toLocaleString('en-US', {minimumFractionDigits: 2})}
+                    </div>
+                    ${winner === 'Buy Used' ? '<div class="winner-badge">🏆 Best Value</div>' : ''}
+                </div>
+
+                <div class="scenario-card lease ${winner === 'Lease' ? 'winner' : ''}">
+                    <div class="scenario-header">Lease (${leasesNeeded} leases over 6 years)</div>
+                    <div class="result-item">
+                        <span class="result-label">Monthly Payment:</span>
+                        <span class="result-value">$${leasePaymentInput.toFixed(2)}</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Total Paid (6 years):</span>
+                        <span class="result-value">$${totalCostLease.toLocaleString('en-US', {minimumFractionDigits: 2})}</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Vehicle Value at Year 6:</span>
+                        <span class="result-value">$0 (no ownership)</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Cost per Mile:</span>
+                        <span class="result-value">$${(netCostLease / (annualMiles * years)).toFixed(2)}</span>
+                    </div>
+                    <div class="net-cost">
+                        Net Cost: $${netCostLease.toLocaleString('en-US', {minimumFractionDigits: 2})}
+                    </div>
+                    ${winner === 'Lease' ? '<div class="winner-badge">🏆 Best Value</div>' : ''}
+                </div>
+            `;
+        }
+
+        // What-if sliders
+        document.getElementById('rateAdjust').addEventListener('input', function(e) {
+            const value = e.target.value;
+            document.getElementById('rateAdjustValue').textContent = (value > 0 ? '+' : '') + value + '%';
+            // Recalculate with adjusted rate
+            const newRate = parseFloat(document.getElementById('interestRateNew').value);
+            const usedRate = parseFloat(document.getElementById('interestRateUsed').value);
+            document.getElementById('interestRateNew').value = (stateData.avgNewRate + parseFloat(value)).toFixed(2);
+            document.getElementById('interestRateUsed').value = (stateData.avgUsedRate + parseFloat(value)).toFixed(2);
+            calculateResults();
+        });
+
+        document.getElementById('mileageAdjust').addEventListener('input', function(e) {
+            const value = e.target.value;
+            document.getElementById('mileageAdjustValue').textContent = (value > 0 ? '+' : '') + parseInt(value).toLocaleString() + ' miles';
+            const baseAnnualMiles = 12000;
+            document.getElementById('annualMiles').value = baseAnnualMiles + parseInt(value);
+            calculateResults();
+        });
+
+        function saveScenario() {
+            const scenario = {
+                vehicle: document.getElementById('vehicleMake').value,
+                newPrice: document.getElementById('newPrice').value,
+                usedPrice: document.getElementById('usedPrice').value,
+                timestamp: new Date().toISOString()
+            };
+            localStorage.setItem('autoFinanceScenario', JSON.stringify(scenario));
+            alert('✅ Scenario saved successfully! You can retrieve it later.');
+        }
+
+        function resetCalculator() {
+            if (confirm('Are you sure you want to start over? This will clear all your inputs.')) {
+                location.reload();
+            }
+        }
+
+        // Load saved scenario if exists
+        window.addEventListener('load', function() {
+            const saved = localStorage.getItem('autoFinanceScenario');
+            if (saved) {
+                const scenario = JSON.parse(saved);
+                if (confirm('Load previously saved scenario?')) {
+                    document.getElementById('vehicleMake').value = scenario.vehicle || '';
+                    document.getElementById('newPrice').value = scenario.newPrice || '';
+                    document.getElementById('usedPrice').value = scenario.usedPrice || '';
+                }
+            }
+        });
+    </script>
+</body>
+</html>

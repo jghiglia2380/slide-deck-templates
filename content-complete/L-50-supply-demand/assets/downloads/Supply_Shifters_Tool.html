@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supply Shifters Interactive Tool</title>
+    <!--
+    PURPOSE: Interactive skill builder tool
+    USE: Chapter interactive activity (15-20 minutes)
+    -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #ef4444;
+            padding-bottom: 10px;
+            font-size: 28px;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-top: 25px;
+            font-size: 22px;
+        }
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .factor-selector {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .factor-card {
+            background-color: #f9fafb;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .factor-card:hover {
+            border-color: #ef4444;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(239, 68, 68, 0.2);
+        }
+        .factor-card.active {
+            border-color: #ef4444;
+            background-color: #fef2f2;
+        }
+        .factor-title {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        .direction-selector {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+            justify-content: center;
+        }
+        .direction-btn {
+            padding: 15px 30px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            background-color: white;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        .direction-btn:hover {
+            border-color: #ef4444;
+        }
+        .direction-btn.favorable {
+            color: #10b981;
+        }
+        .direction-btn.unfavorable {
+            color: #ef4444;
+        }
+        .direction-btn.active {
+            border-width: 3px;
+        }
+        .direction-btn.favorable.active {
+            background-color: #d1fae5;
+            border-color: #10b981;
+        }
+        .direction-btn.unfavorable.active {
+            background-color: #fee2e2;
+            border-color: #ef4444;
+        }
+        canvas {
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            background-color: white;
+            display: block;
+            margin: 20px auto;
+        }
+        .equilibrium-info {
+            background-color: #fff7ed;
+            border: 1px solid #fed7aa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .equilibrium-info h3 {
+            margin-top: 0;
+            color: #ef4444;
+        }
+        .change-summary {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .change-item {
+            background-color: white;
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+        }
+        .change-label {
+            font-size: 12px;
+            color: #666;
+            text-transform: uppercase;
+        }
+        .change-value {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        .examples-section {
+            background-color: #e8f4f8;
+            border: 1px solid #bedaee;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .example-item {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: white;
+            border-radius: 4px;
+        }
+        .note {
+            background-color: #f8f9fa;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .reset-btn {
+            padding: 10px 20px;
+            background-color: #ef4444;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            margin: 10px auto;
+            display: block;
+        }
+        .reset-btn:hover {
+            background-color: #dc2626;
+        }
+        @media print {
+            body { background-color: white; }
+            button { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Supply Shifters Interactive Tool</h1>
+        <p>Explore how production factors shift supply curves left or right. Select a factor, choose its direction of change, and watch how the entire supply curve shifts!</p>
+
+        <h2>Step 1: Select a Supply Factor</h2>
+        <div class="factor-selector" id="factorSelector">
+            <div class="factor-card" data-factor="costs">
+                <div class="factor-title">💵 Input Costs</div>
+                <p>Raw materials, labor, energy costs</p>
+            </div>
+            <div class="factor-card" data-factor="technology">
+                <div class="factor-title">🔧 Technology</div>
+                <p>Production methods and efficiency</p>
+            </div>
+            <div class="factor-card" data-factor="sellers">
+                <div class="factor-title">🏭 Number of Sellers</div>
+                <p>More or fewer producers in market</p>
+            </div>
+            <div class="factor-card" data-factor="expectations">
+                <div class="factor-title">🔮 Future Expectations</div>
+                <p>Producer expectations about future prices</p>
+            </div>
+            <div class="factor-card" data-factor="policy">
+                <div class="factor-title">⚖️ Government Policy</div>
+                <p>Taxes, subsidies, regulations</p>
+            </div>
+            <div class="factor-card" data-factor="events">
+                <div class="factor-title">🌪️ Natural Events</div>
+                <p>Weather, disasters, external shocks</p>
+            </div>
+        </div>
+
+        <h2>Step 2: Select Direction of Change</h2>
+        <div class="direction-selector" id="directionSelector" style="display:none;">
+            <button class="direction-btn favorable" data-direction="favorable">
+                ↑ Favorable (Increases Supply)
+            </button>
+            <button class="direction-btn unfavorable" data-direction="unfavorable">
+                ↓ Unfavorable (Decreases Supply)
+            </button>
+        </div>
+
+        <div id="visualizationArea" style="display:none;">
+            <canvas id="supplyCanvas" width="800" height="400"></canvas>
+
+            <div class="equilibrium-info">
+                <h3>Market Impact</h3>
+                <p id="impactDescription"></p>
+                <div class="change-summary">
+                    <div class="change-item">
+                        <div class="change-label">Supply Shift</div>
+                        <div class="change-value" id="supplyShift">—</div>
+                    </div>
+                    <div class="change-item">
+                        <div class="change-label">New Equilibrium Price</div>
+                        <div class="change-value" id="newPrice">—</div>
+                    </div>
+                    <div class="change-item">
+                        <div class="change-label">Price Change</div>
+                        <div class="change-value" id="priceChange">—</div>
+                    </div>
+                    <div class="change-item">
+                        <div class="change-label">Quantity Change</div>
+                        <div class="change-value" id="quantityChange">—</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="examples-section" id="examplesSection">
+                <h3>Real-World Examples</h3>
+                <div id="examplesList"></div>
+            </div>
+
+            <button class="reset-btn" onclick="reset()">Reset and Try Another Factor</button>
+        </div>
+
+        <div class="note">
+            <h3>Key Principle: Supply Shifts</h3>
+            <p><strong>Supply increases (shifts right):</strong> Producers can offer more at each price level</p>
+            <p><strong>Supply decreases (shifts left):</strong> Producers can offer less at each price level</p>
+            <p>Remember: These shifts are caused by factors other than the product's own price!</p>
+        </div>
+    </div>
+
+    <script>
+        let selectedFactor = null;
+        let selectedDirection = null;
+
+        const factorExamples = {
+            costs: {
+                favorable: [
+                    "Oil prices drop → Supply of plastic products shifts right",
+                    "Minimum wage repealed → Supply of labor-intensive goods shifts right",
+                    "Cheaper materials discovered → Supply shifts right"
+                ],
+                unfavorable: [
+                    "Lumber prices spike → Supply of new homes shifts left",
+                    "Energy costs rise → Supply of manufactured goods shifts left",
+                    "Labor shortage raises wages → Supply shifts left"
+                ]
+            },
+            technology: {
+                favorable: [
+                    "Automation introduced → Supply of manufactured goods shifts right",
+                    "3D printing advances → Supply of custom products shifts right",
+                    "Better farming techniques → Supply of crops shifts right"
+                ],
+                unfavorable: [
+                    "Equipment breakdown → Supply temporarily shifts left",
+                    "Cyberattack disrupts production → Supply shifts left"
+                ]
+            },
+            sellers: {
+                favorable: [
+                    "New companies enter market → Supply shifts right",
+                    "Import restrictions lifted → Supply shifts right",
+                    "Barriers to entry removed → Supply shifts right"
+                ],
+                unfavorable: [
+                    "Companies exit market → Supply shifts left",
+                    "Trade restrictions imposed → Supply shifts left",
+                    "Business closures → Supply shifts left"
+                ]
+            },
+            expectations: {
+                favorable: [
+                    "Expect lower future prices → Sell more now (supply shifts right today)"
+                ],
+                unfavorable: [
+                    "Expect higher future prices → Hold inventory (supply shifts left today)",
+                    "Expect recession → Reduce production (supply shifts left)"
+                ]
+            },
+            policy: {
+                favorable: [
+                    "Government subsidies for solar panels → Supply shifts right",
+                    "Tax breaks for businesses → Supply shifts right",
+                    "Reduced regulations → Supply shifts right"
+                ],
+                unfavorable: [
+                    "New taxes on producers → Supply shifts left",
+                    "Stricter regulations → Supply shifts left",
+                    "Import tariffs → Supply of imports shifts left"
+                ]
+            },
+            events: {
+                favorable: [
+                    "Perfect weather for crops → Agricultural supply shifts right",
+                    "Discovery of new oil reserves → Oil supply shifts right"
+                ],
+                unfavorable: [
+                    "Hurricane disrupts production → Supply shifts left",
+                    "Drought reduces crop yields → Supply shifts left",
+                    "Pandemic closes factories → Supply shifts left"
+                ]
+            }
+        };
+
+        // Factor card selection
+        document.querySelectorAll('.factor-card').forEach(card => {
+            card.addEventListener('click', function() {
+                document.querySelectorAll('.factor-card').forEach(c => c.classList.remove('active'));
+                this.classList.add('active');
+                selectedFactor = this.dataset.factor;
+                document.getElementById('directionSelector').style.display = 'flex';
+            });
+        });
+
+        // Direction button selection
+        document.querySelectorAll('.direction-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.direction-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                selectedDirection = this.dataset.direction;
+                showVisualization();
+            });
+        });
+
+        function showVisualization() {
+            if (!selectedFactor || !selectedDirection) return;
+
+            document.getElementById('visualizationArea').style.display = 'block';
+            drawChart();
+            updateInfo();
+            showExamples();
+
+            document.getElementById('visualizationArea').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function drawChart() {
+            const canvas = document.getElementById('supplyCanvas');
+            const ctx = canvas.getContext('2d');
+            const width = canvas.width;
+            const height = canvas.height;
+            const padding = 60;
+
+            ctx.clearRect(0, 0, width, height);
+
+            // Draw axes
+            ctx.strokeStyle = '#333';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(padding, height - padding);
+            ctx.lineTo(width - padding, height - padding);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(padding, padding);
+            ctx.lineTo(padding, height - padding);
+            ctx.stroke();
+
+            // Labels
+            ctx.fillStyle = '#666';
+            ctx.font = '14px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText('Quantity', width - 80, height - 30);
+            ctx.save();
+            ctx.translate(20, height / 2);
+            ctx.rotate(-Math.PI / 2);
+            ctx.fillText('Price', 0, 0);
+            ctx.restore();
+
+            // Draw demand curve (constant)
+            ctx.strokeStyle = '#3b82f6';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(padding + 50, padding);
+            ctx.lineTo(width - padding - 50, height - padding);
+            ctx.stroke();
+
+            // Original supply curve (red, semi-transparent)
+            ctx.strokeStyle = 'rgba(239, 68, 68, 0.4)';
+            ctx.lineWidth = 2;
+            ctx.setLineDash([5, 5]);
+            ctx.beginPath();
+            ctx.moveTo(padding, height - padding);
+            ctx.lineTo(width - padding, padding);
+            ctx.stroke();
+            ctx.setLineDash([]);
+
+            // New supply curve (red, solid)
+            const shift = selectedDirection === 'favorable' ? 100 : -100;
+            ctx.strokeStyle = '#ef4444';
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            ctx.moveTo(padding + shift, height - padding);
+            ctx.lineTo(width - padding + shift, padding);
+            ctx.stroke();
+
+            // Original equilibrium (gray)
+            ctx.fillStyle = '#9ca3af';
+            ctx.beginPath();
+            ctx.arc(width / 2, height / 2, 6, 0, 2 * Math.PI);
+            ctx.fill();
+
+            // New equilibrium (green)
+            const newEqX = width / 2 + shift / 2;
+            const newEqY = height / 2 + shift / 4;
+            ctx.fillStyle = '#10b981';
+            ctx.beginPath();
+            ctx.arc(newEqX, newEqY, 8, 0, 2 * Math.PI);
+            ctx.fill();
+
+            // Arrow showing shift direction
+            const arrowY = height - padding - 80;
+            const arrowStartX = width / 2 - 50;
+            const arrowEndX = arrowStartX + (selectedDirection === 'favorable' ? 80 : -80);
+
+            ctx.strokeStyle = selectedDirection === 'favorable' ? '#10b981' : '#ef4444';
+            ctx.fillStyle = selectedDirection === 'favorable' ? '#10b981' : '#ef4444';
+            ctx.lineWidth = 3;
+
+            // Arrow line
+            ctx.beginPath();
+            ctx.moveTo(arrowStartX, arrowY);
+            ctx.lineTo(arrowEndX, arrowY);
+            ctx.stroke();
+
+            // Arrow head
+            const headLen = 15;
+            const angle = selectedDirection === 'favorable' ? 0 : Math.PI;
+            ctx.beginPath();
+            ctx.moveTo(arrowEndX, arrowY);
+            ctx.lineTo(arrowEndX - headLen * Math.cos(angle - Math.PI / 6),
+                       arrowY - headLen * Math.sin(angle - Math.PI / 6));
+            ctx.lineTo(arrowEndX - headLen * Math.cos(angle + Math.PI / 6),
+                       arrowY - headLen * Math.sin(angle + Math.PI / 6));
+            ctx.closePath();
+            ctx.fill();
+
+            // Label
+            ctx.font = 'bold 14px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText('Supply Shift', arrowStartX + (arrowEndX - arrowStartX) / 2, arrowY + 25);
+        }
+
+        function updateInfo() {
+            const shiftDirection = selectedDirection === 'favorable' ? 'RIGHT' : 'LEFT';
+            const priceEffect = selectedDirection === 'favorable' ? '↓' : '↑';
+            const qtyEffect = selectedDirection === 'favorable' ? '↑' : '↓';
+
+            document.getElementById('supplyShift').textContent = shiftDirection;
+            document.getElementById('newPrice').textContent = priceEffect;
+            document.getElementById('priceChange').textContent = priceEffect;
+            document.getElementById('quantityChange').textContent = qtyEffect;
+
+            const factorNames = {
+                costs: 'input costs',
+                technology: 'production technology',
+                sellers: 'the number of sellers',
+                expectations: 'producer expectations',
+                policy: 'government policy',
+                events: 'external events'
+            };
+
+            const description = selectedDirection === 'favorable'
+                ? `When ${factorNames[selectedFactor]} change favorably, supply shifts RIGHT. This leads to a LOWER equilibrium price and HIGHER equilibrium quantity.`
+                : `When ${factorNames[selectedFactor]} change unfavorably, supply shifts LEFT. This leads to a HIGHER equilibrium price and LOWER equilibrium quantity.`;
+
+            document.getElementById('impactDescription').textContent = description;
+        }
+
+        function showExamples() {
+            const examples = factorExamples[selectedFactor][selectedDirection];
+            const examplesList = document.getElementById('examplesList');
+            examplesList.innerHTML = examples.map(ex =>
+                `<div class="example-item">• ${ex}</div>`
+            ).join('');
+        }
+
+        function reset() {
+            selectedFactor = null;
+            selectedDirection = null;
+            document.querySelectorAll('.factor-card').forEach(c => c.classList.remove('active'));
+            document.querySelectorAll('.direction-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById('directionSelector').style.display = 'none';
+            document.getElementById('visualizationArea').style.display = 'none';
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

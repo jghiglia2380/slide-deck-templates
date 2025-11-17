@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Structure Comparison Table</title>
+    <!--
+    PURPOSE: Interactive skill builder tool
+    USE: Chapter interactive activity (15-20 minutes)
+    -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #6366f1;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .comparison-table th {
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .comparison-table td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        .comparison-table tr:hover td {
+            background-color: #f0f7ff;
+        }
+        .row-header {
+            background-color: #f9fafb;
+            font-weight: bold;
+            text-align: left !important;
+            color: #2c3e50;
+        }
+        .consumer-friendly {
+            background-color: #d1fae5 !important;
+        }
+        .neutral {
+            background-color: #fef3c7 !important;
+        }
+        .seller-friendly {
+            background-color: #fee2e2 !important;
+        }
+        .examples {
+            font-size: 0.9rem;
+            color: #6b7280;
+            font-style: italic;
+        }
+        .note {
+            background-color: #f8f9fa;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .legend {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .legend-color {
+            width: 30px;
+            height: 20px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        @media print {
+            body {
+                font-size: 10pt;
+            }
+        }
+        @media (max-width: 768px) {
+            .comparison-table {
+                font-size: 0.85rem;
+            }
+            .comparison-table th,
+            .comparison-table td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Market Structure Comparison Table</h1>
+
+    <p style="text-align:center; color:#6b7280;">Quick reference guide comparing the four market structures</p>
+
+    <div class="legend">
+        <div class="legend-item">
+            <div class="legend-color consumer-friendly"></div>
+            <span>Consumer-Friendly</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color neutral"></div>
+            <span>Neutral</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color seller-friendly"></div>
+            <span>Seller-Friendly</span>
+        </div>
+    </div>
+
+    <table class="comparison-table">
+        <thead>
+            <tr>
+                <th>Characteristic</th>
+                <th>Perfect Competition</th>
+                <th>Monopolistic Competition</th>
+                <th>Oligopoly</th>
+                <th>Monopoly</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="row-header">Number of Sellers</td>
+                <td class="consumer-friendly">Very Many<br><span class="examples">(Hundreds/Thousands)</span></td>
+                <td class="consumer-friendly">Many<br><span class="examples">(Dozens/Hundreds)</span></td>
+                <td class="neutral">Few<br><span class="examples">(2-10 major players)</span></td>
+                <td class="seller-friendly">One<br><span class="examples">(Single seller)</span></td>
+            </tr>
+            <tr>
+                <td class="row-header">Product Type</td>
+                <td class="consumer-friendly">Identical<br><span class="examples">(Standardized)</span></td>
+                <td class="neutral">Differentiated<br><span class="examples">(Slightly different)</span></td>
+                <td class="neutral">Identical or Differentiated<br><span class="examples">(Varies by market)</span></td>
+                <td class="seller-friendly">Unique<br><span class="examples">(No substitutes)</span></td>
+            </tr>
+            <tr>
+                <td class="row-header">Barriers to Entry</td>
+                <td class="consumer-friendly">None<br><span class="examples">(Easy to enter/exit)</span></td>
+                <td class="consumer-friendly">Low<br><span class="examples">(Relatively easy)</span></td>
+                <td class="seller-friendly">High<br><span class="examples">(Difficult to enter)</span></td>
+                <td class="seller-friendly">Extreme<br><span class="examples">(Impossible/illegal)</span></td>
+            </tr>
+            <tr>
+                <td class="row-header">Price Control</td>
+                <td class="consumer-friendly">None<br><span class="examples">(Market determines)</span></td>
+                <td class="neutral">Some<br><span class="examples">(Limited by competition)</span></td>
+                <td class="seller-friendly">Significant<br><span class="examples">(Coordinated pricing)</span></td>
+                <td class="seller-friendly">Complete<br><span class="examples">(Price maker)</span></td>
+            </tr>
+            <tr>
+                <td class="row-header">Economic Profit (Long Run)</td>
+                <td class="consumer-friendly">Zero<br><span class="examples">(Normal profit only)</span></td>
+                <td class="consumer-friendly">Zero<br><span class="examples">(Normal profit only)</span></td>
+                <td class="seller-friendly">Positive<br><span class="examples">(Above-normal)</span></td>
+                <td class="seller-friendly">High Positive<br><span class="examples">(Substantial)</span></td>
+            </tr>
+            <tr>
+                <td class="row-header">Consumer Surplus</td>
+                <td class="consumer-friendly">Maximum<br><span class="examples">(Prices = costs)</span></td>
+                <td class="consumer-friendly">High<br><span class="examples">(Competitive)</span></td>
+                <td class="neutral">Moderate<br><span class="examples">(Some loss)</span></td>
+                <td class="seller-friendly">Minimum<br><span class="examples">(Significant loss)</span></td>
+            </tr>
+            <tr>
+                <td class="row-header">Efficiency</td>
+                <td class="consumer-friendly">Allocatively & Productively Efficient</td>
+                <td class="neutral">Neither (but competitive)</td>
+                <td class="neutral">Neither (due to market power)</td>
+                <td class="seller-friendly">Neither (wasteful)</td>
+            </tr>
+            <tr>
+                <td class="row-header">Advertising</td>
+                <td class="consumer-friendly">None<br><span class="examples">(Products identical)</span></td>
+                <td class="neutral">Significant<br><span class="examples">(Brand differentiation)</span></td>
+                <td class="neutral">Moderate to High<br><span class="examples">(Brand competition)</span></td>
+                <td class="seller-friendly">Minimal<br><span class="examples">(No competition)</span></td>
+            </tr>
+            <tr>
+                <td class="row-header">Consumer Negotiating Power</td>
+                <td class="consumer-friendly">Very High<br><span class="examples">(Easy to switch)</span></td>
+                <td class="consumer-friendly">High<br><span class="examples">(Many options)</span></td>
+                <td class="neutral">Limited<br><span class="examples">(Few alternatives)</span></td>
+                <td class="seller-friendly">None<br><span class="examples">(No alternatives)</span></td>
+            </tr>
+            <tr>
+                <td class="row-header">Real-World Examples</td>
+                <td>
+                    • Agricultural commodities<br>
+                    • Stock market<br>
+                    • Currency exchange<br>
+                    • Online marketplaces
+                </td>
+                <td>
+                    • Restaurants<br>
+                    • Clothing stores<br>
+                    • Hair salons<br>
+                    • Gas stations<br>
+                    • Coffee shops
+                </td>
+                <td>
+                    • Airlines<br>
+                    • Cell carriers<br>
+                    • Auto manufacturers<br>
+                    • Streaming services<br>
+                    • Soft drinks
+                </td>
+                <td>
+                    • Local utilities<br>
+                    • Patented drugs<br>
+                    • Cable/internet (some areas)<br>
+                    • Professional sports leagues
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="note">
+        <h3>📝 Key Takeaways for Consumers:</h3>
+        <ul>
+            <li><strong>Perfect Competition:</strong> Best for consumers - lowest prices, highest quality</li>
+            <li><strong>Monopolistic Competition:</strong> Good for consumers - choice and competition keep prices reasonable</li>
+            <li><strong>Oligopoly:</strong> Mixed - some competition but also coordination that can raise prices</li>
+            <li><strong>Monopoly:</strong> Worst for consumers - highest prices, lowest consumer surplus</li>
+        </ul>
+    </div>
+
+    <div class="note">
+        <h3>💡 Application to Personal Finance:</h3>
+        <p>Understanding market structures helps you:</p>
+        <ul>
+            <li>Identify where you have negotiating power and where you don't</li>
+            <li>Know when to shop around extensively vs. when all sellers are similar</li>
+            <li>Understand why some products are expensive and others cheap</li>
+            <li>Make strategic decisions about when and where to buy</li>
+        </ul>
+    </div>
+</body>
+</html>

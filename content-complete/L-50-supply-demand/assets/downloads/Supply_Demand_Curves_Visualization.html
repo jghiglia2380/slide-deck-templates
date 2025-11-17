@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supply and Demand Curves Interactive Visualization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #6366f1;
+            padding-bottom: 10px;
+            font-size: 28px;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-top: 25px;
+            font-size: 22px;
+            border-left: 4px solid #6366f1;
+            padding-left: 10px;
+        }
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .visualization-panel {
+            background-color: #f9fafb;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .controls {
+            background-color: #e8f4f8;
+            border: 1px solid #bedaee;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .slider-container {
+            margin: 15px 0;
+        }
+        .slider-label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+        input[type="range"] {
+            width: 100%;
+            height: 8px;
+            border-radius: 5px;
+            background: #d3d3d3;
+            outline: none;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #6366f1;
+            cursor: pointer;
+        }
+        input[type="range"]::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #6366f1;
+            cursor: pointer;
+            border: none;
+        }
+        .value-display {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: #6366f1;
+            margin: 10px 0;
+        }
+        canvas {
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            background-color: white;
+            display: block;
+            margin: 0 auto;
+        }
+        .market-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .info-box {
+            background-color: #f0f7ff;
+            border: 1px solid #c5dbff;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .info-box.surplus {
+            background-color: #fff7ed;
+            border-color: #fed7aa;
+        }
+        .info-box.shortage {
+            background-color: #fef2f2;
+            border-color: #fecaca;
+        }
+        .info-box.equilibrium {
+            background-color: #f0fdf4;
+            border-color: #bbf7d0;
+        }
+        .info-label {
+            font-size: 12px;
+            color: #666;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+        .info-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .example-selector {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 15px 0;
+        }
+        .example-btn {
+            padding: 10px 20px;
+            background-color: #6366f1;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+        .example-btn:hover {
+            background-color: #4f46e5;
+        }
+        .example-btn.active {
+            background-color: #8b5cf6;
+        }
+        .legend {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .legend-color {
+            width: 30px;
+            height: 4px;
+            border-radius: 2px;
+        }
+        .note {
+            background-color: #f8f9fa;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        @media print {
+            body {
+                background-color: white;
+            }
+            .controls button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Supply and Demand Curves Interactive Visualization</h1>
+
+        <p>Use this interactive tool to understand how supply and demand curves work and how they interact to create market equilibrium. Adjust the price slider to see how quantity demanded and quantity supplied change.</p>
+
+        <div class="controls">
+            <h2>Market Controls</h2>
+
+            <div class="example-selector">
+                <button class="example-btn active" onclick="loadExample('generic')">Generic Market</button>
+                <button class="example-btn" onclick="loadExample('cars')">Used Cars</button>
+                <button class="example-btn" onclick="loadExample('tickets')">Concert Tickets</button>
+                <button class="example-btn" onclick="loadExample('housing')">Housing</button>
+            </div>
+
+            <div class="slider-container">
+                <label class="slider-label">Price Level: <span id="priceLabel">$50</span></label>
+                <input type="range" id="priceSlider" min="10" max="90" value="50" step="5">
+            </div>
+        </div>
+
+        <div class="market-info">
+            <div class="info-box">
+                <div class="info-label">Quantity Demanded</div>
+                <div class="info-value" id="qtyDemanded">50</div>
+            </div>
+            <div class="info-box">
+                <div class="info-label">Quantity Supplied</div>
+                <div class="info-value" id="qtySupplied">50</div>
+            </div>
+            <div class="info-box" id="marketStatus">
+                <div class="info-label">Market Status</div>
+                <div class="info-value" id="statusValue">Equilibrium</div>
+            </div>
+        </div>
+
+        <div class="visualization-panel">
+            <canvas id="supplyDemandCanvas" width="800" height="500"></canvas>
+        </div>
+
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #3b82f6;"></div>
+                <span>Demand Curve</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #ef4444;"></div>
+                <span>Supply Curve</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #10b981;"></div>
+                <span>Equilibrium Point</span>
+            </div>
+        </div>
+
+        <div class="note">
+            <h3>How to Use This Tool:</h3>
+            <ul>
+                <li><strong>Move the price slider</strong> to set different price levels</li>
+                <li><strong>Watch the quantity demanded and supplied</strong> change as you move along the curves</li>
+                <li><strong>Observe market conditions:</strong>
+                    <ul>
+                        <li>When price is <em>above</em> equilibrium: <strong>Surplus</strong> (quantity supplied > quantity demanded)</li>
+                        <li>When price is <em>below</em> equilibrium: <strong>Shortage</strong> (quantity demanded > quantity supplied)</li>
+                        <li>At equilibrium: <strong>Market clears</strong> (quantity demanded = quantity supplied)</li>
+                    </ul>
+                </li>
+                <li><strong>Try different examples</strong> using the market selector buttons</li>
+            </ul>
+        </div>
+
+        <div class="note">
+            <h3>Key Concepts:</h3>
+            <p><strong>Law of Demand:</strong> As price increases, quantity demanded decreases (downward-sloping curve)</p>
+            <p><strong>Law of Supply:</strong> As price increases, quantity supplied increases (upward-sloping curve)</p>
+            <p><strong>Equilibrium:</strong> The price where quantity demanded equals quantity supplied. At this point, the market "clears" and there is neither a surplus nor a shortage.</p>
+        </div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('supplyDemandCanvas');
+        const ctx = canvas.getContext('2d');
+        const priceSlider = document.getElementById('priceSlider');
+
+        let currentExample = 'generic';
+        const examples = {
+            generic: { name: 'Generic Market', unit: 'units', pricePrefix: '$' },
+            cars: { name: 'Used Cars', unit: 'cars', pricePrefix: '$', priceScale: 100 },
+            tickets: { name: 'Concert Tickets', unit: 'tickets', pricePrefix: '$' },
+            housing: { name: 'Housing Units', unit: 'homes', pricePrefix: '$', priceScale: 1000 }
+        };
+
+        function loadExample(example) {
+            currentExample = example;
+            document.querySelectorAll('.example-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            updateVisualization();
+        }
+
+        function calculateDemand(price) {
+            // Demand curve: Qd = 100 - price (simplified linear)
+            return Math.max(0, 100 - price);
+        }
+
+        function calculateSupply(price) {
+            // Supply curve: Qs = price (simplified linear)
+            return price;
+        }
+
+        function drawChart() {
+            const width = canvas.width;
+            const height = canvas.height;
+            const padding = 60;
+
+            // Clear canvas
+            ctx.clearRect(0, 0, width, height);
+
+            // Draw axes
+            ctx.strokeStyle = '#333';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(padding, height - padding);
+            ctx.lineTo(width - padding, height - padding);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(padding, padding);
+            ctx.lineTo(padding, height - padding);
+            ctx.stroke();
+
+            // Labels
+            ctx.fillStyle = '#666';
+            ctx.font = '14px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText('Quantity', width - 80, height - 30);
+            ctx.save();
+            ctx.translate(20, height / 2);
+            ctx.rotate(-Math.PI / 2);
+            ctx.fillText('Price', 0, 0);
+            ctx.restore();
+
+            // Draw demand curve (blue)
+            ctx.strokeStyle = '#3b82f6';
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            for (let p = 0; p <= 100; p++) {
+                const qd = calculateDemand(p);
+                const x = padding + (qd / 100) * (width - 2 * padding);
+                const y = height - padding - (p / 100) * (height - 2 * padding);
+                if (p === 0) ctx.moveTo(x, y);
+                else ctx.lineTo(x, y);
+            }
+            ctx.stroke();
+
+            // Draw supply curve (red)
+            ctx.strokeStyle = '#ef4444';
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            for (let p = 0; p <= 100; p++) {
+                const qs = calculateSupply(p);
+                const x = padding + (qs / 100) * (width - 2 * padding);
+                const y = height - padding - (p / 100) * (height - 2 * padding);
+                if (p === 0) ctx.moveTo(x, y);
+                else ctx.lineTo(x, y);
+            }
+            ctx.stroke();
+
+            // Draw equilibrium point (where demand = supply, at price = 50)
+            const eqPrice = 50;
+            const eqQty = 50;
+            const eqX = padding + (eqQty / 100) * (width - 2 * padding);
+            const eqY = height - padding - (eqPrice / 100) * (height - 2 * padding);
+
+            ctx.fillStyle = '#10b981';
+            ctx.beginPath();
+            ctx.arc(eqX, eqY, 8, 0, 2 * Math.PI);
+            ctx.fill();
+
+            // Draw current price line and points
+            const currentPrice = parseInt(priceSlider.value);
+            const qd = calculateDemand(currentPrice);
+            const qs = calculateSupply(currentPrice);
+            const priceY = height - padding - (currentPrice / 100) * (height - 2 * padding);
+
+            // Horizontal price line
+            ctx.strokeStyle = '#666';
+            ctx.lineWidth = 1;
+            ctx.setLineDash([5, 5]);
+            ctx.beginPath();
+            ctx.moveTo(padding, priceY);
+            ctx.lineTo(width - padding, priceY);
+            ctx.stroke();
+            ctx.setLineDash([]);
+
+            // Point on demand curve
+            const qdX = padding + (qd / 100) * (width - 2 * padding);
+            ctx.fillStyle = '#3b82f6';
+            ctx.beginPath();
+            ctx.arc(qdX, priceY, 6, 0, 2 * Math.PI);
+            ctx.fill();
+
+            // Point on supply curve
+            const qsX = padding + (qs / 100) * (width - 2 * padding);
+            ctx.fillStyle = '#ef4444';
+            ctx.beginPath();
+            ctx.arc(qsX, priceY, 6, 0, 2 * Math.PI);
+            ctx.fill();
+
+            // Show surplus or shortage area
+            if (currentPrice !== eqPrice) {
+                ctx.fillStyle = currentPrice > eqPrice ? 'rgba(251, 191, 36, 0.2)' : 'rgba(239, 68, 68, 0.2)';
+                ctx.fillRect(Math.min(qdX, qsX), priceY - 2, Math.abs(qsX - qdX), 4);
+            }
+        }
+
+        function updateVisualization() {
+            const currentPrice = parseInt(priceSlider.value);
+            const qd = Math.round(calculateDemand(currentPrice));
+            const qs = Math.round(calculateSupply(currentPrice));
+
+            // Update price display
+            const priceScale = examples[currentExample].priceScale || 1;
+            document.getElementById('priceLabel').textContent =
+                examples[currentExample].pricePrefix + (currentPrice * priceScale);
+
+            // Update quantities
+            document.getElementById('qtyDemanded').textContent = qd;
+            document.getElementById('qtySupplied').textContent = qs;
+
+            // Update market status
+            const statusBox = document.getElementById('marketStatus');
+            const statusValue = document.getElementById('statusValue');
+
+            if (qd === qs) {
+                statusBox.className = 'info-box equilibrium';
+                statusValue.textContent = 'Equilibrium ✓';
+            } else if (qs > qd) {
+                statusBox.className = 'info-box surplus';
+                statusValue.textContent = 'Surplus: ' + (qs - qd);
+            } else {
+                statusBox.className = 'info-box shortage';
+                statusValue.textContent = 'Shortage: ' + (qd - qs);
+            }
+
+            // Redraw chart
+            drawChart();
+        }
+
+        // Event listeners
+        priceSlider.addEventListener('input', updateVisualization);
+
+        // Initial draw
+        updateVisualization();
+    </script>
+</body>
+</html>

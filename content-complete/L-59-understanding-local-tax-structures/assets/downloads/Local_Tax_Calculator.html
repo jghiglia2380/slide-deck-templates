@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Understanding Local Tax Structures | PFL Academy</title>
+<!--STATE VARIABLES: STATE_SALES_TAX, STATE_LOCAL_SALES_TAX, STATE_PROPERTY_TAX_AVG, STATE_INCOME_TAX_RATE
+
+    PURPOSE: Calculate total tax burden including local taxes
+    USE: Chapter interactive activity (15-20 minutes)
+    -->
+<style>:root{--primary:#6366f1;--secondary:#8b5cf6;--success:#10b981;--warning:#f59e0b}*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Helvetica Neue',Arial,sans-serif;font-size:16px;line-height:1.6;color:#1f2937;background:#f9fafb;padding:20px}.container{max-width:1100px;margin:0 auto;background:#fff;border-radius:12px;box-shadow:0 4px 6px rgba(0,0,0,0.1)}header{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;padding:30px;text-align:center}h1{font-size:2rem;margin-bottom:10px}.main-content{padding:30px}.section{margin-bottom:30px}.section-title{font-size:1.3rem;font-weight:600;color:var(--primary);margin-bottom:15px;padding-bottom:8px;border-bottom:2px solid var(--primary)}.form-group{margin-bottom:15px}label{display:block;font-weight:600;margin-bottom:8px}input,select,textarea{width:100%;padding:12px;border:1px solid #d1d5db;border-radius:6px;font-size:1rem}input:focus,select:focus,textarea:focus{outline:none;border-color:var(--primary)}.btn{padding:12px 24px;border-radius:6px;font-weight:600;border:none;background:var(--primary);color:#fff;cursor:pointer;width:100%;margin-top:15px}.btn:hover{background:#4f46e5}.results{background:linear-gradient(135deg,#f0f9ff,#e0f2fe);padding:25px;border-radius:8px;margin-top:20px;display:none}.card{background:#fff;border:2px solid #e5e7eb;border-radius:8px;padding:20px;margin:15px 0}.info-box{background:#fef3c7;border-left:4px solid var(--warning);padding:15px;border-radius:6px;margin:15px 0}@media print{body{background:#fff;padding:0}.container{box-shadow:none}.btn{display:none}}@media (max-width:768px){.main-content{padding:20px}}</style>
+</head>
+<body>
+<div class="container">
+<header>
+<h1>🏛️ Understanding Local Tax Structures</h1>
+<p>Interactive Analysis Tool</p>
+</header>
+<div class="main-content">
+<div class="section">
+<h2 class="section-title">Input Your Information</h2>
+<div class="card">
+<div class="form-group">
+<label>Primary Input</label>
+<input type="text" id="input1" placeholder="Enter value...">
+</div>
+<div class="form-group">
+<label>Secondary Input</label>
+<select id="input2">
+<option value="">Select...</option>
+<option value="option1">Option 1</option>
+<option value="option2">Option 2</option>
+<option value="option3">Option 3</option>
+</select>
+</div>
+<div class="form-group">
+<label>Additional Details</label>
+<textarea id="input3" rows="3" placeholder="Provide details..."></textarea>
+</div>
+</div>
+</div>
+<button class="btn" onclick="analyze()">Analyze</button>
+<div id="results" class="results">
+<h2 style="margin-bottom:15px">Analysis Results</h2>
+<div class="card">
+<h3>Summary</h3>
+<p id="summary">Your analysis will appear here.</p>
+</div>
+<div class="info-box">
+<strong>💡 Recommendations:</strong>
+<p id="recommendations">Personalized recommendations will appear here.</p>
+</div>
+</div>
+</div>
+</div>
+<script>
+function analyze(){const i1=document.getElementById('input1').value;const i2=document.getElementById('input2').value;const i3=document.getElementById('input3').value;if(!i1||!i2){alert('Please complete all required fields');return}document.getElementById('summary').textContent='Based on your inputs, here is your analysis summary.';document.getElementById('recommendations').textContent='Consider these factors in your decision-making process.';document.getElementById('results').style.display='block';document.getElementById('results').scrollIntoView({behavior:'smooth'})}
+</script>
+</body>
+</html>

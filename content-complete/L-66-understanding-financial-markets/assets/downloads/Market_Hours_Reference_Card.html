@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Hours Reference Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .reference-card {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .hours-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+        .hours-section h2 {
+            margin-top: 0;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            padding-bottom: 10px;
+        }
+        .time-block {
+            background: rgba(255,255,255,0.15);
+            border-left: 4px solid #2ecc71;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .time-block.warning {
+            border-left-color: #f39c12;
+        }
+        .time-block.closed {
+            border-left-color: #e74c3c;
+            opacity: 0.8;
+        }
+        .time {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .description {
+            font-size: 0.95em;
+            opacity: 0.9;
+        }
+        .holiday-list {
+            background: #ecf0f1;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .holiday-list h3 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        .holiday-list ul {
+            list-style: none;
+            padding: 0;
+        }
+        .holiday-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #bdc3c7;
+        }
+        .holiday-list li:last-child {
+            border-bottom: none;
+        }
+        .info-box {
+            background: #e8f4f8;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .warning-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .tips-section {
+            background: #f0f7ff;
+            border: 2px solid #3498db;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .tips-section h3 {
+            color: #3498db;
+            margin-top: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .timezone-converter {
+            background: white;
+            border: 2px solid #9b59b6;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .timezone-converter h3 {
+            color: #9b59b6;
+            margin-top: 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #ecf0f1;
+            color: #7f8c8d;
+        }
+        @media print {
+            body { background: white; }
+            .reference-card { box-shadow: none; page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <h1>⏰ Stock Market Hours Reference Card</h1>
+    <p style="color: #7f8c8d; font-size: 1.1em;">Quick reference for when U.S. stock markets are open and closed</p>
+
+    <div class="reference-card">
+        <div class="hours-section">
+            <h2>Regular Trading Hours</h2>
+
+            <div class="time-block">
+                <div class="time">9:30 AM - 4:00 PM Eastern Time</div>
+                <div class="description">Monday through Friday (excluding holidays)</div>
+                <div class="description" style="margin-top: 10px;">
+                    <strong>✓ Best time to trade:</strong> High liquidity, tight spreads, normal market conditions
+                </div>
+            </div>
+
+            <h2 style="margin-top: 30px;">Extended Trading Hours</h2>
+
+            <div class="time-block warning">
+                <div class="time">Pre-Market: 4:00 AM - 9:30 AM ET</div>
+                <div class="description">
+                    <strong>⚠️ Higher Risk:</strong> Lower volume, wider spreads, more volatility
+                </div>
+                <div class="description">
+                    Limited participants, prices may not reflect regular market values
+                </div>
+            </div>
+
+            <div class="time-block warning">
+                <div class="time">After-Hours: 4:00 PM - 8:00 PM ET</div>
+                <div class="description">
+                    <strong>⚠️ Higher Risk:</strong> Reduced liquidity, larger price swings possible
+                </div>
+                <div class="description">
+                    News and earnings reports often released during this time
+                </div>
+            </div>
+
+            <div class="time-block closed">
+                <div class="time">Closed: Weekends & Holidays</div>
+                <div class="description">
+                    No trading Saturday, Sunday, or on market holidays (see list below)
+                </div>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <strong>What is "Settlement" (T+2)?</strong><br>
+            When you buy or sell a stock, the transaction doesn't complete instantly. Settlement happens 2 business days after the trade date (T+2). This means:<br>
+            • You won't receive sale proceeds for 2 days<br>
+            • Stock ownership officially transfers 2 days after purchase<br>
+            • This is important for avoiding "good faith violations" in cash accounts
+        </div>
+
+        <div class="holiday-list">
+            <h3>📅 2025 Market Holidays (Markets Closed)</h3>
+            <ul>
+                <li><strong>January 1</strong> - New Year's Day</li>
+                <li><strong>January 20</strong> - Martin Luther King Jr. Day</li>
+                <li><strong>February 17</strong> - Presidents' Day</li>
+                <li><strong>April 18</strong> - Good Friday</li>
+                <li><strong>May 26</strong> - Memorial Day</li>
+                <li><strong>June 19</strong> - Juneteenth</li>
+                <li><strong>July 4</strong> - Independence Day</li>
+                <li><strong>September 1</strong> - Labor Day</li>
+                <li><strong>November 27</strong> - Thanksgiving Day</li>
+                <li><strong>December 25</strong> - Christmas Day</li>
+            </ul>
+            <p style="margin-top: 15px; font-style: italic; color: #7f8c8d;">
+                Note: If a holiday falls on a weekend, the market may be closed on the nearest weekday. Early closures (1:00 PM ET) typically occur on the day before Thanksgiving and Christmas Eve.
+            </p>
+        </div>
+
+        <div class="timezone-converter">
+            <h3>⏰ Time Zone Converter</h3>
+            <p>Stock market hours are always quoted in <strong>Eastern Time (ET)</strong>. Convert to your local time:</p>
+
+            <table>
+                <tr>
+                    <th>Time Zone</th>
+                    <th>Regular Market Hours</th>
+                    <th>Pre-Market Starts</th>
+                    <th>After-Hours Ends</th>
+                </tr>
+                <tr>
+                    <td><strong>Eastern (ET)</strong></td>
+                    <td>9:30 AM - 4:00 PM</td>
+                    <td>4:00 AM</td>
+                    <td>8:00 PM</td>
+                </tr>
+                <tr>
+                    <td><strong>Central (CT)</strong></td>
+                    <td>8:30 AM - 3:00 PM</td>
+                    <td>3:00 AM</td>
+                    <td>7:00 PM</td>
+                </tr>
+                <tr>
+                    <td><strong>Mountain (MT)</strong></td>
+                    <td>7:30 AM - 2:00 PM</td>
+                    <td>2:00 AM</td>
+                    <td>6:00 PM</td>
+                </tr>
+                <tr>
+                    <td><strong>Pacific (PT)</strong></td>
+                    <td>6:30 AM - 1:00 PM</td>
+                    <td>1:00 AM</td>
+                    <td>5:00 PM</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="tips-section">
+            <h3>💡 When NOT to Trade</h3>
+            <ul>
+                <li><strong>First 30 minutes (9:30-10:00 AM ET):</strong> Highest volatility as overnight orders execute and day traders enter. Prices can swing wildly.</li>
+                <li><strong>Last 30 minutes (3:30-4:00 PM ET):</strong> "Power hour" with increased volume and volatility as traders close positions.</li>
+                <li><strong>Pre-market/After-hours:</strong> Unless you're experienced and understand the risks. Spreads are wider and prices less reliable.</li>
+                <li><strong>During major news:</strong> Federal Reserve announcements, earnings reports, etc. can cause extreme volatility.</li>
+                <li><strong>On low-volume days:</strong> Day before holidays, summer Fridays - lower liquidity means higher spreads.</li>
+            </ul>
+        </div>
+
+        <div class="tips-section">
+            <h3>✓ Best Times to Trade</h3>
+            <ul>
+                <li><strong>10:00 AM - 3:00 PM ET:</strong> Most stable period with good liquidity and normal spreads</li>
+                <li><strong>Mid-week (Tuesday-Thursday):</strong> Typically more stable than Mondays (news-heavy) or Fridays (position-closing)</li>
+                <li><strong>Regular market hours only:</strong> Stick to 9:30 AM - 4:00 PM ET unless you have a specific reason to trade extended hours</li>
+            </ul>
+        </div>
+
+        <div class="warning-box">
+            <strong>⚠️ Important Reminders:</strong><br>
+            • Market orders placed outside regular hours may execute at very different prices<br>
+            • Extended hours trading is not available at all brokerages<br>
+            • Lower volume means your order might move the price more than expected<br>
+            • For beginners: stick to regular trading hours (9:30 AM - 4:00 PM ET)
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>PFL Academy</strong> | Understanding Financial Markets</p>
+        <p>For educational purposes only - Not investment advice</p>
+    </footer>
+</body>
+</html>

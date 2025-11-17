@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fee Impact Calculator</title>
+    <!--
+    PURPOSE: Demonstrate how fees compound to reduce investment returns over time
+    USE: Day 2 activity (10-12 minutes)
+    -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #6366f1;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #6b7280;
+        }
+
+        .calculator-section {
+            background: #f9fafb;
+            padding: 30px;
+            border-radius: 16px;
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            color: #1f2937;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .input-group {
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #374151;
+        }
+
+        input[type="number"],
+        input[type="range"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        input[type="number"]:focus {
+            outline: none;
+            border-color: #6366f1;
+        }
+
+        input[type="range"] {
+            padding: 0;
+            height: 8px;
+            background: #d1d5db;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .range-labels {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
+            font-size: 0.9rem;
+            color: #6b7280;
+        }
+
+        .quick-compare {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .compare-btn {
+            padding: 15px;
+            border: 2px solid #6366f1;
+            background: white;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 600;
+            color: #6366f1;
+            transition: all 0.3s;
+        }
+
+        .compare-btn:hover {
+            background: #6366f1;
+            color: white;
+        }
+
+        .results {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .result-card {
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .low-fee-card {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            border: 2px solid #10b981;
+        }
+
+        .high-fee-card {
+            background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+            border: 2px solid #ef4444;
+        }
+
+        .result-label {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .low-fee-card .result-label {
+            color: #065f46;
+        }
+
+        .high-fee-card .result-label {
+            color: #991b1b;
+        }
+
+        .result-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .low-fee-card .result-value {
+            color: #047857;
+        }
+
+        .high-fee-card .result-value {
+            color: #dc2626;
+        }
+
+        .result-detail {
+            font-size: 0.9rem;
+            color: #374151;
+        }
+
+        .impact-box {
+            background: #fef3c7;
+            padding: 30px;
+            border-radius: 16px;
+            text-align: center;
+            border: 3px solid #f59e0b;
+            margin-top: 30px;
+        }
+
+        .impact-box h3 {
+            color: #92400e;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .impact-amount {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: #78350f;
+            margin-bottom: 15px;
+        }
+
+        .impact-detail {
+            font-size: 1.1rem;
+            color: #92400e;
+        }
+
+        .chart-container {
+            margin: 30px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+        }
+
+        canvas {
+            max-width: 100%;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #e5e7eb;
+            color: #6b7280;
+        }
+
+        @media (max-width: 768px) {
+            .results {
+                grid-template-columns: 1fr;
+            }
+
+            .quick-compare {
+                grid-template-columns: 1fr;
+            }
+
+            .impact-amount {
+                font-size: 2.5rem;
+            }
+
+            .result-value {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Fee Impact Calculator</h1>
+            <p class="subtitle">See How Investment Fees Affect Your Long-Term Wealth</p>
+        </header>
+
+        <div class="calculator-section">
+            <div class="section-title">Your Investment Details</div>
+
+            <div class="input-group">
+                <label for="initialInvestment">Initial Investment Amount</label>
+                <input type="number" id="initialInvestment" value="10000" min="1000" step="1000">
+            </div>
+
+            <div class="input-group">
+                <label for="monthlyContribution">Monthly Contribution</label>
+                <input type="range" id="monthlyContribution" value="200" min="0" max="2000" step="50" oninput="updateSliderValue('monthly', this.value)">
+                <div class="range-labels">
+                    <span>$0</span>
+                    <span id="monthlyValue">$200</span>
+                    <span>$2,000</span>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="years">Investment Time Period (Years)</label>
+                <input type="range" id="years" value="30" min="1" max="50" step="1" oninput="updateSliderValue('years', this.value)">
+                <div class="range-labels">
+                    <span>1 year</span>
+                    <span id="yearsValue">30 years</span>
+                    <span>50 years</span>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="returnRate">Annual Return (Before Fees)</label>
+                <input type="range" id="returnRate" value="8" min="0" max="15" step="0.5" oninput="updateSliderValue('return', this.value)">
+                <div class="range-labels">
+                    <span>0%</span>
+                    <span id="returnValue">8%</span>
+                    <span>15%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="quick-compare">
+            <button class="compare-btn" onclick="setComparison(0.05, 1.0)">Compare: 0.05% vs 1.0%</button>
+            <button class="compare-btn" onclick="setComparison(0.10, 1.5)">Compare: 0.10% vs 1.5%</button>
+        </div>
+
+        <div class="calculator-section">
+            <div class="section-title">Fee Scenarios</div>
+
+            <div class="input-group">
+                <label for="lowFee">Low-Cost Investment (Expense Ratio %)</label>
+                <input type="number" id="lowFee" value="0.05" min="0" max="3" step="0.01">
+            </div>
+
+            <div class="input-group">
+                <label for="highFee">Higher-Cost Investment (Expense Ratio %)</label>
+                <input type="number" id="highFee" value="1.0" min="0" max="3" step="0.01">
+            </div>
+        </div>
+
+        <div class="results">
+            <div class="result-card low-fee-card">
+                <div class="result-label">Low-Cost Investment Final Value</div>
+                <div class="result-value" id="lowFeeValue">$282,947</div>
+                <div class="result-detail">Total Fees Paid: <strong id="lowFeePaid">$5,234</strong></div>
+            </div>
+
+            <div class="result-card high-fee-card">
+                <div class="result-label">High-Cost Investment Final Value</div>
+                <div class="result-value" id="highFeeValue">$236,119</div>
+                <div class="result-detail">Total Fees Paid: <strong id="highFeePaid">$52,062</strong></div>
+            </div>
+        </div>
+
+        <div class="impact-box">
+            <h3>💸 Fee Impact</h3>
+            <div class="impact-amount" id="impactAmount">$46,828</div>
+            <div class="impact-detail" id="impactDetail">Those fees consumed 16% of your potential gains</div>
+            <div class="impact-detail" style="margin-top: 10px;" id="contributionEquiv">Equivalent to 20 years of contributions</div>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="growthChart"></canvas>
+        </div>
+
+        <footer>
+            <p><strong>PFL Academy</strong> | Investment Education</p>
+            <p style="font-size: 0.9rem; margin-top: 10px;">This calculator demonstrates the long-term impact of investment fees. Lower fees mean more money stays invested and compounds for YOU.</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        let chart;
+
+        function updateSliderValue(type, value) {
+            if (type === 'monthly') {
+                document.getElementById('monthlyValue').textContent = '$' + value;
+            } else if (type === 'years') {
+                document.getElementById('yearsValue').textContent = value + ' years';
+            } else if (type === 'return') {
+                document.getElementById('returnValue').textContent = value + '%';
+            }
+            calculate();
+        }
+
+        function setComparison(low, high) {
+            document.getElementById('lowFee').value = low;
+            document.getElementById('highFee').value = high;
+            calculate();
+        }
+
+        function calculate() {
+            const initial = parseFloat(document.getElementById('initialInvestment').value);
+            const monthly = parseFloat(document.getElementById('monthlyContribution').value);
+            const years = parseInt(document.getElementById('years').value);
+            const returnRate = parseFloat(document.getElementById('returnRate').value) / 100;
+            const lowFee = parseFloat(document.getElementById('lowFee').value) / 100;
+            const highFee = parseFloat(document.getElementById('highFee').value) / 100;
+
+            // Calculate future values
+            const lowFeeResult = calculateFV(initial, monthly, years, returnRate - lowFee);
+            const highFeeResult = calculateFV(initial, monthly, years, returnRate - highFee);
+
+            // Calculate total contributions
+            const totalContributions = initial + (monthly * 12 * years);
+
+            // Calculate fees paid
+            const lowFeePaid = calculateFV(initial, monthly, years, returnRate) - lowFeeResult;
+            const highFeePaid = calculateFV(initial, monthly, years, returnRate) - highFeeResult;
+
+            // Update UI
+            document.getElementById('lowFeeValue').textContent = '$' + lowFeeResult.toLocaleString('en-US', {maximumFractionDigits: 0});
+            document.getElementById('highFeeValue').textContent = '$' + highFeeResult.toLocaleString('en-US', {maximumFractionDigits: 0});
+            document.getElementById('lowFeePaid').textContent = '$' + lowFeePaid.toLocaleString('en-US', {maximumFractionDigits: 0});
+            document.getElementById('highFeePaid').textContent = '$' + highFeePaid.toLocaleString('en-US', {maximumFractionDigits: 0});
+
+            const impact = highFeePaid - lowFeePaid;
+            const potentialGains = calculateFV(initial, monthly, years, returnRate) - totalContributions;
+            const percentConsumed = (impact / potentialGains * 100).toFixed(0);
+
+            document.getElementById('impactAmount').textContent = '$' + impact.toLocaleString('en-US', {maximumFractionDigits: 0});
+            document.getElementById('impactDetail').textContent = `Those fees consumed ${percentConsumed}% of your potential gains`;
+
+            const yearsEquiv = (impact / (monthly * 12)).toFixed(1);
+            document.getElementById('contributionEquiv').textContent = `Equivalent to ${yearsEquiv} years of contributions`;
+
+            updateChart(initial, monthly, years, returnRate, lowFee, highFee);
+        }
+
+        function calculateFV(principal, monthlyPayment, years, annualRate) {
+            const monthlyRate = annualRate / 12;
+            const months = years * 12;
+
+            if (monthlyRate === 0) {
+                return principal + (monthlyPayment * months);
+            }
+
+            const principalFV = principal * Math.pow(1 + monthlyRate, months);
+            const paymentsFV = monthlyPayment * (Math.pow(1 + monthlyRate, months) - 1) / monthlyRate;
+
+            return principalFV + paymentsFV;
+        }
+
+        function updateChart(initial, monthly, years, returnRate, lowFee, highFee) {
+            const labels = [];
+            const lowFeeData = [];
+            const highFeeData = [];
+
+            for (let year = 0; year <= years; year++) {
+                labels.push(year);
+                lowFeeData.push(calculateFV(initial, monthly, year, returnRate - lowFee));
+                highFeeData.push(calculateFV(initial, monthly, year, returnRate - highFee));
+            }
+
+            if (chart) {
+                chart.destroy();
+            }
+
+            const ctx = document.getElementById('growthChart').getContext('2d');
+            chart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [
+                        {
+                            label: 'Low-Cost Investment',
+                            data: lowFeeData,
+                            borderColor: '#10b981',
+                            backgroundColor: 'rgba(16, 185, 129, 0.1)',
+                            tension: 0.4,
+                            fill: true,
+                            pointRadius: 0,
+                            borderWidth: 3
+                        },
+                        {
+                            label: 'High-Cost Investment',
+                            data: highFeeData,
+                            borderColor: '#ef4444',
+                            backgroundColor: 'rgba(239, 68, 68, 0.1)',
+                            tension: 0.4,
+                            fill: true,
+                            pointRadius: 0,
+                            borderWidth: 3
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'Portfolio Growth Over Time',
+                            font: {
+                                size: 16,
+                                weight: 'bold'
+                            }
+                        },
+                        legend: {
+                            display: true,
+                            position: 'top'
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return context.dataset.label + ': $' + context.parsed.y.toLocaleString('en-US', {maximumFractionDigits: 0});
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Years'
+                            }
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Portfolio Value ($)'
+                            },
+                            ticks: {
+                                callback: function(value) {
+                                    return '$' + value.toLocaleString('en-US', {maximumFractionDigits: 0});
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Initialize
+        calculate();
+    </script>
+</body>
+</html>

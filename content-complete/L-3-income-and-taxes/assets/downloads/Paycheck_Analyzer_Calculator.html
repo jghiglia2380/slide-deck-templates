@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paycheck Analyzer Calculator | PFL Academy</title>
+    <!--
+    STATE VARIABLES USED IN THIS FILE:
+    - STATE_NAME
+    - STATE_CODE
+    - STATE_INCOME_TAX_RATE
+    - STATE_SDI_RATE (State Disability Insurance, where applicable)
+    - STATE_LOCAL_INCOME_TAX (if applicable)
+
+    UPDATE FREQUENCY:
+    - Annual: STATE_INCOME_TAX_RATE, STATE_SDI_RATE, STATE_LOCAL_INCOME_TAX
+    
+
+    PURPOSE: Interactive tool to understand gross vs. net income with state-specific deductions
+    USE: Chapter interactive activity (15-20 minutes)
+    -->
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #8b5cf6;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --info: #3b82f6;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --background: #ffffff;
+            --surface: #f9fafb;
+            --gross-color: #10b981;
+            --deduction-color: #ef4444;
+            --net-color: #6366f1;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--surface);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: var(--background);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+
+        .state-badge {
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+
+        .main-content {
+            padding: 30px;
+        }
+
+        .scenarios-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .scenario {
+            background-color: var(--surface);
+            border-radius: 8px;
+            padding: 20px;
+            border: 2px solid #e5e7eb;
+        }
+
+        .scenario h2 {
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .scenario-number {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            font-weight: 700;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text);
+        }
+
+        .label-description {
+            font-size: 0.875rem;
+            color: var(--text-light);
+            font-weight: 400;
+            margin-top: 4px;
+        }
+
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        input[type="number"]:focus,
+        select:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        }
+
+        .results-section {
+            margin-top: 30px;
+        }
+
+        .results-section h3 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: var(--text);
+        }
+
+        .breakdown-bars {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .breakdown-bar {
+            background-color: var(--surface);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .breakdown-title {
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--text);
+        }
+
+        .bar-container {
+            background-color: #e5e7eb;
+            border-radius: 8px;
+            overflow: hidden;
+            height: 40px;
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .bar-segment {
+            height: 100%;
+            float: left;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.875rem;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .gross-segment {
+            background-color: var(--gross-color);
+        }
+
+        .federal-segment {
+            background-color: #dc2626;
+        }
+
+        .state-segment {
+            background-color: #ea580c;
+        }
+
+        .fica-segment {
+            background-color: #f59e0b;
+        }
+
+        .net-segment {
+            background-color: var(--net-color);
+        }
+
+        .deductions-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .deduction-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 12px;
+            background-color: white;
+            border-radius: 6px;
+            font-size: 0.9rem;
+        }
+
+        .deduction-label {
+            color: var(--text-light);
+        }
+
+        .deduction-value {
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .summary-box {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .summary-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-bottom: 5px;
+        }
+
+        .summary-value {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .comparison-section {
+            margin-top: 40px;
+            padding: 30px;
+            background-color: var(--surface);
+            border-radius: 8px;
+        }
+
+        .comparison-section h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            text-align: center;
+            color: var(--text);
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .comparison-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border: 2px solid #e5e7eb;
+        }
+
+        .comparison-label {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 10px;
+        }
+
+        .comparison-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .difference {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-top: 5px;
+        }
+
+        .actions {
+            margin-top: 30px;
+            text-align: center;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        button {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #4f46e5;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: white;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--surface);
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+
+            .actions {
+                display: none;
+            }
+
+            .scenarios-container {
+                grid-template-columns: 1fr;
+            }
+
+            .scenario {
+                page-break-inside: avoid;
+            }
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .scenarios-container {
+                grid-template-columns: 1fr;
+            }
+
+            .deductions-list {
+                grid-template-columns: 1fr;
+            }
+
+            .comparison-grid {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .main-content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💰 Paycheck Analyzer Calculator</h1>
+            <p class="subtitle">Understand Your Gross vs. Net Income</p>
+            <div class="state-badge">📍 {{STATE_NAME}}</div>
+        </header>
+
+        <div class="main-content">
+            <div class="scenarios-container">
+                <!-- Scenario 1 -->
+                <div class="scenario">
+                    <h2>
+                        <span class="scenario-number">1</span>
+                        Scenario 1
+                    </h2>
+
+                    <div class="form-group">
+                        <label>
+                            Profession or Custom Salary
+                            <div class="label-description">Select a common job or enter custom amount</div>
+                        </label>
+                        <select id="profession1" onchange="updateScenario(1)">
+                            <option value="30000">Retail Sales Associate (~$30,000/year)</option>
+                            <option value="35000">Food Service Manager (~$35,000/year)</option>
+                            <option value="45000">Administrative Assistant (~$45,000/year)</option>
+                            <option value="50000">Registered Nurse (~$50,000/year)</option>
+                            <option value="60000">Software Developer (~$60,000/year)</option>
+                            <option value="custom">Custom Amount</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" id="customSalary1" style="display: none;">
+                        <label>
+                            Custom Annual Salary
+                            <div class="label-description">Enter your annual gross income</div>
+                        </label>
+                        <input type="number" id="customAmount1" min="0" step="1000" value="40000" onchange="updateScenario(1)">
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            Filing Status
+                            <div class="label-description">Your tax filing status</div>
+                        </label>
+                        <select id="filingStatus1" onchange="updateScenario(1)">
+                            <option value="single">Single</option>
+                            <option value="married">Married Filing Jointly</option>
+                            <option value="head">Head of Household</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            W-4 Allowances
+                            <div class="label-description">Number of allowances claimed (0-3)</div>
+                        </label>
+                        <select id="allowances1" onchange="updateScenario(1)">
+                            <option value="0">0 - Maximum Withholding</option>
+                            <option value="1" selected>1 - Standard</option>
+                            <option value="2">2 - Moderate Withholding</option>
+                            <option value="3">3 - Minimum Withholding</option>
+                        </select>
+                    </div>
+
+                    <div class="results-section">
+                        <h3>Breakdown</h3>
+                        <div class="breakdown-bar">
+                            <div class="breakdown-title">Income & Deductions</div>
+                            <div class="bar-container" id="barContainer1"></div>
+                            <div class="deductions-list" id="deductionsList1"></div>
+                        </div>
+
+                        <div class="summary-box">
+                            <div class="summary-label">Monthly Take-Home Pay</div>
+                            <div class="summary-value" id="netPay1">$0</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scenario 2 -->
+                <div class="scenario">
+                    <h2>
+                        <span class="scenario-number">2</span>
+                        Scenario 2
+                    </h2>
+
+                    <div class="form-group">
+                        <label>
+                            Profession or Custom Salary
+                            <div class="label-description">Select a common job or enter custom amount</div>
+                        </label>
+                        <select id="profession2" onchange="updateScenario(2)">
+                            <option value="30000">Retail Sales Associate (~$30,000/year)</option>
+                            <option value="35000">Food Service Manager (~$35,000/year)</option>
+                            <option value="45000" selected>Administrative Assistant (~$45,000/year)</option>
+                            <option value="50000">Registered Nurse (~$50,000/year)</option>
+                            <option value="60000">Software Developer (~$60,000/year)</option>
+                            <option value="custom">Custom Amount</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" id="customSalary2" style="display: none;">
+                        <label>
+                            Custom Annual Salary
+                            <div class="label-description">Enter your annual gross income</div>
+                        </label>
+                        <input type="number" id="customAmount2" min="0" step="1000" value="40000" onchange="updateScenario(2)">
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            Filing Status
+                            <div class="label-description">Your tax filing status</div>
+                        </label>
+                        <select id="filingStatus2" onchange="updateScenario(2)">
+                            <option value="single">Single</option>
+                            <option value="married">Married Filing Jointly</option>
+                            <option value="head">Head of Household</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            W-4 Allowances
+                            <div class="label-description">Number of allowances claimed (0-3)</div>
+                        </label>
+                        <select id="allowances2" onchange="updateScenario(2)">
+                            <option value="0">0 - Maximum Withholding</option>
+                            <option value="1" selected>1 - Standard</option>
+                            <option value="2">2 - Moderate Withholding</option>
+                            <option value="3">3 - Minimum Withholding</option>
+                        </select>
+                    </div>
+
+                    <div class="results-section">
+                        <h3>Breakdown</h3>
+                        <div class="breakdown-bar">
+                            <div class="breakdown-title">Income & Deductions</div>
+                            <div class="bar-container" id="barContainer2"></div>
+                            <div class="deductions-list" id="deductionsList2"></div>
+                        </div>
+
+                        <div class="summary-box">
+                            <div class="summary-label">Monthly Take-Home Pay</div>
+                            <div class="summary-value" id="netPay2">$0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comparison Section -->
+            <div class="comparison-section">
+                <h3>📊 Side-by-Side Comparison</h3>
+                <div class="comparison-grid">
+                    <div class="comparison-card">
+                        <div class="comparison-label">Gross Income Difference</div>
+                        <div class="comparison-value" id="grossDiff">$0</div>
+                        <div class="difference" id="grossDiffPct">0%</div>
+                    </div>
+                    <div class="comparison-card">
+                        <div class="comparison-label">Total Deductions Difference</div>
+                        <div class="comparison-value" id="deductionsDiff">$0</div>
+                        <div class="difference" id="deductionsDiffPct">0%</div>
+                    </div>
+                    <div class="comparison-card">
+                        <div class="comparison-label">Net Income Difference</div>
+                        <div class="comparison-value" id="netDiff">$0</div>
+                        <div class="difference" id="netDiffPct">0%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button class="btn-primary" onclick="window.print()">🖨️ Print Results</button>
+                <button class="btn-secondary" onclick="resetCalculator()">🔄 Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // State-specific tax rates (will be replaced by actual state variables)
+        const STATE_INCOME_TAX_RATE = {{STATE_INCOME_TAX_RATE}} || 5.0; // Default 5% if not set
+        const STATE_SDI_RATE = {{STATE_SDI_RATE}} || 0.0; // State Disability Insurance
+        const STATE_LOCAL_INCOME_TAX = {{STATE_LOCAL_INCOME_TAX}} || 0.0;
+
+        // Federal tax brackets (2024 - simplified)
+        const federalBrackets = {
+            single: [
+                { min: 0, max: 11600, rate: 0.10 },
+                { min: 11600, max: 47150, rate: 0.12 },
+                { min: 47150, max: 100525, rate: 0.22 },
+                { min: 100525, max: 191950, rate: 0.24 },
+                { min: 191950, max: Infinity, rate: 0.32 }
+            ],
+            married: [
+                { min: 0, max: 23200, rate: 0.10 },
+                { min: 23200, max: 94300, rate: 0.12 },
+                { min: 94300, max: 201050, rate: 0.22 },
+                { min: 201050, max: 383900, rate: 0.24 },
+                { min: 383900, max: Infinity, rate: 0.32 }
+            ],
+            head: [
+                { min: 0, max: 16550, rate: 0.10 },
+                { min: 16550, max: 63100, rate: 0.12 },
+                { min: 63100, max: 100500, rate: 0.22 },
+                { min: 100500, max: 191950, rate: 0.24 },
+                { min: 191950, max: Infinity, rate: 0.32 }
+            ]
+        };
+
+        const standardDeductions = {
+            single: 14600,
+            married: 29200,
+            head: 21900
+        };
+
+        function calculateFederalTax(income, filingStatus, allowances) {
+            const deduction = standardDeductions[filingStatus];
+            const taxableIncome = Math.max(0, income - deduction);
+            const brackets = federalBrackets[filingStatus];
+
+            let tax = 0;
+            for (let bracket of brackets) {
+                if (taxableIncome > bracket.min) {
+                    const taxableInBracket = Math.min(taxableIncome, bracket.max) - bracket.min;
+                    tax += taxableInBracket * bracket.rate;
+                }
+            }
+
+            // Adjust for allowances (simplified)
+            const allowanceAdjustment = allowances * 4300;
+            tax = Math.max(0, tax - (allowanceAdjustment * 0.12));
+
+            return tax;
+        }
+
+        function calculateTaxes(annualSalary, filingStatus, allowances) {
+            // Federal Income Tax
+            const federalTax = calculateFederalTax(annualSalary, filingStatus, allowances);
+
+            // State Income Tax
+            const stateTax = annualSalary * (STATE_INCOME_TAX_RATE / 100);
+
+            // Local Income Tax (if applicable)
+            const localTax = annualSalary * (STATE_LOCAL_INCOME_TAX / 100);
+
+            // FICA: Social Security (6.2% up to wage base) + Medicare (1.45%)
+            const socialSecurity = Math.min(annualSalary, 168600) * 0.062;
+            const medicare = annualSalary * 0.0145;
+
+            // State Disability Insurance (if applicable)
+            const sdi = annualSalary * (STATE_SDI_RATE / 100);
+
+            const totalDeductions = federalTax + stateTax + localTax + socialSecurity + medicare + sdi;
+            const netAnnual = annualSalary - totalDeductions;
+            const netMonthly = netAnnual / 12;
+
+            return {
+                gross: annualSalary,
+                federal: federalTax,
+                state: stateTax,
+                local: localTax,
+                socialSecurity: socialSecurity,
+                medicare: medicare,
+                sdi: sdi,
+                totalDeductions: totalDeductions,
+                netAnnual: netAnnual,
+                netMonthly: netMonthly
+            };
+        }
+
+        function formatCurrency(amount) {
+            return new Intl.NumberFormat('en-US', {
+                style: 'currency',
+                currency: 'USD',
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0
+            }).format(amount);
+        }
+
+        function updateScenario(scenarioNum) {
+            const professionSelect = document.getElementById(`profession${scenarioNum}`);
+            const customSalaryDiv = document.getElementById(`customSalary${scenarioNum}`);
+            const customAmountInput = document.getElementById(`customAmount${scenarioNum}`);
+            const filingStatus = document.getElementById(`filingStatus${scenarioNum}`).value;
+            const allowances = parseInt(document.getElementById(`allowances${scenarioNum}`).value);
+
+            // Show/hide custom salary input
+            if (professionSelect.value === 'custom') {
+                customSalaryDiv.style.display = 'block';
+            } else {
+                customSalaryDiv.style.display = 'none';
+            }
+
+            // Get salary
+            const annualSalary = professionSelect.value === 'custom'
+                ? parseFloat(customAmountInput.value)
+                : parseFloat(professionSelect.value);
+
+            // Calculate taxes
+            const results = calculateTaxes(annualSalary, filingStatus, allowances);
+
+            // Update visual bar
+            updateBar(scenarioNum, results);
+
+            // Update deductions list
+            updateDeductionsList(scenarioNum, results);
+
+            // Update net pay display
+            document.getElementById(`netPay${scenarioNum}`).textContent = formatCurrency(results.netMonthly);
+
+            // Update comparison
+            updateComparison();
+        }
+
+        function updateBar(scenarioNum, results) {
+            const container = document.getElementById(`barContainer${scenarioNum}`);
+            const gross = results.gross;
+
+            const federalPct = (results.federal / gross) * 100;
+            const statePct = (results.state / gross) * 100;
+            const ficaPct = ((results.socialSecurity + results.medicare) / gross) * 100;
+            const netPct = (results.netAnnual / gross) * 100;
+
+            container.innerHTML = `
+                <div class="bar-segment federal-segment" style="width: ${federalPct}%">
+                    ${federalPct > 5 ? 'Federal' : ''}
+                </div>
+                <div class="bar-segment state-segment" style="width: ${statePct}%">
+                    ${statePct > 5 ? 'State' : ''}
+                </div>
+                <div class="bar-segment fica-segment" style="width: ${ficaPct}%">
+                    ${ficaPct > 5 ? 'FICA' : ''}
+                </div>
+                <div class="bar-segment net-segment" style="width: ${netPct}%">
+                    Net ${netPct.toFixed(0)}%
+                </div>
+            `;
+        }
+
+        function updateDeductionsList(scenarioNum, results) {
+            const list = document.getElementById(`deductionsList${scenarioNum}`);
+
+            let html = `
+                <div class="deduction-item">
+                    <span class="deduction-label">Gross Annual:</span>
+                    <span class="deduction-value">${formatCurrency(results.gross)}</span>
+                </div>
+                <div class="deduction-item">
+                    <span class="deduction-label">Federal Tax:</span>
+                    <span class="deduction-value">-${formatCurrency(results.federal)}</span>
+                </div>
+                <div class="deduction-item">
+                    <span class="deduction-label">State Tax:</span>
+                    <span class="deduction-value">-${formatCurrency(results.state)}</span>
+                </div>
+                <div class="deduction-item">
+                    <span class="deduction-label">Social Security:</span>
+                    <span class="deduction-value">-${formatCurrency(results.socialSecurity)}</span>
+                </div>
+                <div class="deduction-item">
+                    <span class="deduction-label">Medicare:</span>
+                    <span class="deduction-value">-${formatCurrency(results.medicare)}</span>
+                </div>
+            `;
+
+            if (results.local > 0) {
+                html += `
+                    <div class="deduction-item">
+                        <span class="deduction-label">Local Tax:</span>
+                        <span class="deduction-value">-${formatCurrency(results.local)}</span>
+                    </div>
+                `;
+            }
+
+            if (results.sdi > 0) {
+                html += `
+                    <div class="deduction-item">
+                        <span class="deduction-label">State Disability:</span>
+                        <span class="deduction-value">-${formatCurrency(results.sdi)}</span>
+                    </div>
+                `;
+            }
+
+            html += `
+                <div class="deduction-item">
+                    <span class="deduction-label"><strong>Net Annual:</strong></span>
+                    <span class="deduction-value"><strong>${formatCurrency(results.netAnnual)}</strong></span>
+                </div>
+            `;
+
+            list.innerHTML = html;
+        }
+
+        function updateComparison() {
+            const profession1 = document.getElementById('profession1').value;
+            const profession2 = document.getElementById('profession2').value;
+
+            const salary1 = profession1 === 'custom'
+                ? parseFloat(document.getElementById('customAmount1').value)
+                : parseFloat(profession1);
+
+            const salary2 = profession2 === 'custom'
+                ? parseFloat(document.getElementById('customAmount2').value)
+                : parseFloat(profession2);
+
+            const filing1 = document.getElementById('filingStatus1').value;
+            const filing2 = document.getElementById('filingStatus2').value;
+
+            const allow1 = parseInt(document.getElementById('allowances1').value);
+            const allow2 = parseInt(document.getElementById('allowances2').value);
+
+            const results1 = calculateTaxes(salary1, filing1, allow1);
+            const results2 = calculateTaxes(salary2, filing2, allow2);
+
+            const grossDiff = Math.abs(results1.gross - results2.gross);
+            const deductionsDiff = Math.abs(results1.totalDeductions - results2.totalDeductions);
+            const netDiff = Math.abs(results1.netAnnual - results2.netAnnual);
+
+            const grossPct = ((grossDiff / Math.max(results1.gross, results2.gross)) * 100).toFixed(1);
+            const deductionsPct = ((deductionsDiff / Math.max(results1.totalDeductions, results2.totalDeductions)) * 100).toFixed(1);
+            const netPct = ((netDiff / Math.max(results1.netAnnual, results2.netAnnual)) * 100).toFixed(1);
+
+            document.getElementById('grossDiff').textContent = formatCurrency(grossDiff);
+            document.getElementById('grossDiffPct').textContent = `${grossPct}% difference`;
+
+            document.getElementById('deductionsDiff').textContent = formatCurrency(deductionsDiff);
+            document.getElementById('deductionsDiffPct').textContent = `${deductionsPct}% difference`;
+
+            document.getElementById('netDiff').textContent = formatCurrency(netDiff);
+            document.getElementById('netDiffPct').textContent = `${netPct}% difference`;
+        }
+
+        function resetCalculator() {
+            document.getElementById('profession1').value = '30000';
+            document.getElementById('profession2').value = '45000';
+            document.getElementById('filingStatus1').value = 'single';
+            document.getElementById('filingStatus2').value = 'single';
+            document.getElementById('allowances1').value = '1';
+            document.getElementById('allowances2').value = '1';
+            document.getElementById('customSalary1').style.display = 'none';
+            document.getElementById('customSalary2').style.display = 'none';
+            updateScenario(1);
+            updateScenario(2);
+        }
+
+        // Initialize on load
+        window.onload = function() {
+            updateScenario(1);
+            updateScenario(2);
+        };
+    </script>
+</body>
+</html>

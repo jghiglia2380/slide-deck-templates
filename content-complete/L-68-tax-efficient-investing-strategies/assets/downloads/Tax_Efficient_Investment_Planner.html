@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax-Efficient Investment Planner | PFL Academy</title>
+    <!--
+    STATE VARIABLES USED IN THIS FILE:
+    - {{STATE_INCOME_TAX_RATE}}
+    - {{STATE_CAPITAL_GAINS_TAX}}
+
+    UPDATE FREQUENCY:
+    - Annual: Tax rates and thresholds
+    
+
+    PURPOSE: Optimize investment strategy for tax efficiency
+    USE: Chapter interactive activity (15-20 minutes)
+    -->
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #8b5cf6;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --background: #ffffff;
+            --surface: #f9fafb;
+            --border: #e5e7eb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 15px;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--surface);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background-color: var(--background);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            opacity: 0.95;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 25px;
+            border-bottom: 2px solid var(--border);
+            flex-wrap: wrap;
+        }
+
+        .tab {
+            padding: 12px 24px;
+            background: var(--surface);
+            border: none;
+            border-bottom: 3px solid transparent;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-light);
+            transition: all 0.3s ease;
+        }
+
+        .tab:hover {
+            color: var(--primary);
+        }
+
+        .tab.active {
+            color: var(--primary);
+            border-bottom-color: var(--primary);
+            background: white;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .input-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        label {
+            font-weight: 600;
+            color: var(--text);
+            font-size: 0.95rem;
+        }
+
+        input[type="number"], select {
+            padding: 12px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        .button {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            border: none;
+            padding: 14px 32px;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+        }
+
+        .results-panel {
+            background: white;
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 25px;
+            display: none;
+        }
+
+        .results-panel.show {
+            display: block;
+        }
+
+        .result-card {
+            background: var(--surface);
+            border-left: 4px solid var(--primary);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+        }
+
+        .result-label {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 5px;
+        }
+
+        .result-value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .comparison-card {
+            background: white;
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .comparison-card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .big-number {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+
+        .savings {
+            color: var(--success);
+        }
+
+        .cost {
+            color: var(--danger);
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
+            border-left: 4px solid var(--primary);
+            padding: 15px;
+            border-radius: 4px;
+            margin: 15px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: var(--surface);
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+            }
+
+            .tabs, .button {
+                display: none;
+            }
+
+            .tab-content, .results-panel {
+                display: block !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .input-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💰 Tax-Efficient Investment Planner</h1>
+            <div class="subtitle">Optimize your investment strategy to minimize taxes</div>
+        </header>
+
+        <div class="content">
+            <div class="tabs">
+                <button class="tab active" onclick="showTab('calculator')">Tax Calculator</button>
+                <button class="tab" onclick="showTab('accounts')">Account Comparison</button>
+                <button class="tab" onclick="showTab('strategies')">Tax Strategies</button>
+            </div>
+
+            <!-- Tax Calculator Tab -->
+            <div class="tab-content active" id="calculator">
+                <h2 style="color: var(--primary); margin-bottom: 20px;">Capital Gains Tax Calculator</h2>
+
+                <div class="input-grid">
+                    <div class="input-group">
+                        <label for="income">Annual Income ($)</label>
+                        <input type="number" id="income" value="60000" min="0" step="1000">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="gain">Capital Gains ($)</label>
+                        <input type="number" id="gain" value="5000" min="0" step="100">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="holding-period">Holding Period</label>
+                        <select id="holding-period">
+                            <option value="short">Short-term (≤1 year)</option>
+                            <option value="long">Long-term (>1 year)</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="filing-status">Filing Status</label>
+                        <select id="filing-status">
+                            <option value="single">Single</option>
+                            <option value="married">Married Filing Jointly</option>
+                            <option value="head">Head of Household</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button class="button" onclick="calculateTax()">Calculate Tax Impact</button>
+
+                <div class="results-panel" id="tax-results">
+                    <h3 style="color: var(--primary); margin-bottom: 20px;">Tax Analysis Results</h3>
+
+                    <div class="comparison-grid">
+                        <div class="comparison-card">
+                            <h3>Short-Term Tax</h3>
+                            <div class="big-number cost" id="short-tax">$0</div>
+                            <div class="result-label">Taxed as ordinary income</div>
+                        </div>
+
+                        <div class="comparison-card">
+                            <h3>Long-Term Tax</h3>
+                            <div class="big-number savings" id="long-tax">$0</div>
+                            <div class="result-label">Preferential capital gains rate</div>
+                        </div>
+
+                        <div class="comparison-card">
+                            <h3>Tax Savings</h3>
+                            <div class="big-number savings" id="tax-savings">$0</div>
+                            <div class="result-label">By holding >1 year</div>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <strong>💡 Tax-Saving Insight:</strong> <span id="insight"></span>
+                    </div>
+
+                    <div class="result-card">
+                        <div class="result-label">Your Effective Tax Rate</div>
+                        <div class="result-value" id="effective-rate">0%</div>
+                    </div>
+
+                    <div class="result-card">
+                        <div class="result-label">After-Tax Proceeds</div>
+                        <div class="result-value" id="after-tax">$0</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Account Comparison Tab -->
+            <div class="tab-content" id="accounts">
+                <h2 style="color: var(--primary); margin-bottom: 20px;">Tax-Advantaged Account Comparison</h2>
+
+                <div class="input-grid">
+                    <div class="input-group">
+                        <label for="contribution">Annual Contribution ($)</label>
+                        <input type="number" id="contribution" value="6000" min="0" step="500">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="years">Investment Period (Years)</label>
+                        <input type="number" id="years" value="30" min="1" max="50">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="return-rate">Expected Annual Return (%)</label>
+                        <input type="number" id="return-rate" value="7" min="0" max="15" step="0.5">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="tax-bracket">Current Tax Bracket (%)</label>
+                        <input type="number" id="tax-bracket" value="22" min="0" max="37" step="1">
+                    </div>
+                </div>
+
+                <button class="button" onclick="compareAccounts()">Compare Accounts</button>
+
+                <div class="results-panel" id="account-results">
+                    <h3 style="color: var(--primary); margin-bottom: 20px;">Account Comparison Results</h3>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Account Type</th>
+                                <th>Tax Treatment</th>
+                                <th>Final Value</th>
+                                <th>Tax Savings</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Taxable Account</strong></td>
+                                <td>Pay taxes annually on gains</td>
+                                <td id="taxable-value">$0</td>
+                                <td>Baseline</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Traditional IRA/401(k)</strong></td>
+                                <td>Tax-deferred growth, taxed at withdrawal</td>
+                                <td id="traditional-value">$0</td>
+                                <td id="traditional-savings" style="color: var(--success);">$0</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Roth IRA/401(k)</strong></td>
+                                <td>Tax-free growth and withdrawals</td>
+                                <td id="roth-value">$0</td>
+                                <td id="roth-savings" style="color: var(--success);">$0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="info-box">
+                        <strong>📊 Analysis:</strong> <span id="account-insight"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tax Strategies Tab -->
+            <div class="tab-content" id="strategies">
+                <h2 style="color: var(--primary); margin-bottom: 20px;">Tax-Efficient Investment Strategies</h2>
+
+                <div class="result-card">
+                    <h3 style="color: var(--primary); margin-bottom: 15px;">🎯 Asset Location Strategy</h3>
+                    <p style="margin-bottom: 10px;">Place investments in the most tax-efficient accounts:</p>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Account Type</th>
+                                <th>Best Assets</th>
+                                <th>Why</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Taxable Accounts</strong></td>
+                                <td>Tax-efficient index funds, municipal bonds, long-term stocks</td>
+                                <td>Qualified dividends & long-term gains taxed at lower rates</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tax-Deferred (Traditional IRA/401k)</strong></td>
+                                <td>Bonds, REITs, actively managed funds</td>
+                                <td>Ordinary income & high turnover shielded from current taxes</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tax-Free (Roth IRA)</strong></td>
+                                <td>High-growth stocks, small-cap funds</td>
+                                <td>Maximum growth potential with zero future taxes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="result-card">
+                    <h3 style="color: var(--primary); margin-bottom: 15px;">📉 Tax-Loss Harvesting</h3>
+                    <p><strong>Strategy:</strong> Sell losing investments to offset capital gains</p>
+                    <ul style="margin: 10px 0 10px 20px;">
+                        <li>Use capital losses to offset capital gains dollar-for-dollar</li>
+                        <li>Excess losses can offset up to $3,000 of ordinary income</li>
+                        <li>Remaining losses carry forward to future years</li>
+                        <li><strong>Watch out:</strong> Wash sale rule (can't rebuy same security within 30 days)</li>
+                    </ul>
+                </div>
+
+                <div class="result-card">
+                    <h3 style="color: var(--primary); margin-bottom: 15px;">⏰ Holding Period Optimization</h3>
+                    <p><strong>Long-Term Capital Gains Rates (2024):</strong></p>
+                    <table style="margin-top: 10px;">
+                        <thead>
+                            <tr>
+                                <th>Filing Status</th>
+                                <th>0% Rate</th>
+                                <th>15% Rate</th>
+                                <th>20% Rate</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Single</td>
+                                <td>$0 - $44,625</td>
+                                <td>$44,626 - $492,300</td>
+                                <td>$492,301+</td>
+                            </tr>
+                            <tr>
+                                <td>Married Joint</td>
+                                <td>$0 - $89,250</td>
+                                <td>$89,251 - $553,850</td>
+                                <td>$553,851+</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p style="margin-top: 10px;"><em>Short-term gains taxed as ordinary income (10%-37%)</em></p>
+                </div>
+
+                <div class="result-card">
+                    <h3 style="color: var(--primary); margin-bottom: 15px;">🏦 State-Specific Considerations</h3>
+                    <div class="info-box">
+                        <p><strong>{{STATE_NAME}} Tax Information:</strong></p>
+                        <ul style="margin: 10px 0 0 20px;">
+                            <li>State Income Tax Rate: {{STATE_INCOME_TAX_RATE}}%</li>
+                            <li>State Capital Gains Tax: {{STATE_CAPITAL_GAINS_TAX}}%</li>
+                            <li><em>Note: Some states tax capital gains as ordinary income, others don't tax them at all</em></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="result-card">
+                    <h3 style="color: var(--primary); margin-bottom: 15px;">🎁 Charitable Giving Strategies</h3>
+                    <ul style="margin: 10px 0 10px 20px;">
+                        <li><strong>Donate appreciated securities:</strong> Avoid capital gains tax + get charitable deduction</li>
+                        <li><strong>Qualified Charitable Distributions (QCDs):</strong> Donate from IRA after age 70½</li>
+                        <li><strong>Donor-Advised Funds:</strong> Immediate tax deduction, distribute over time</li>
+                    </ul>
+                </div>
+
+                <div class="result-card">
+                    <h3 style="color: var(--primary); margin-bottom: 15px;">💡 Additional Tax-Efficient Strategies</h3>
+                    <ul style="margin: 10px 0 10px 20px;">
+                        <li><strong>Index Funds/ETFs:</strong> Low turnover = fewer taxable events</li>
+                        <li><strong>Municipal Bonds:</strong> Interest exempt from federal (and sometimes state) taxes</li>
+                        <li><strong>Qualified Dividends:</strong> Held >60 days, taxed at capital gains rates</li>
+                        <li><strong>529 Plans:</strong> Tax-free growth for education expenses</li>
+                        <li><strong>HSAs:</strong> Triple tax advantage (deductible, tax-free growth, tax-free withdrawals for medical)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showTab(tabName) {
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+
+            event.target.classList.add('active');
+            document.getElementById(tabName).classList.add('active');
+        }
+
+        function calculateTax() {
+            const income = parseFloat(document.getElementById('income').value);
+            const gain = parseFloat(document.getElementById('gain').value);
+            const holdingPeriod = document.getElementById('holding-period').value;
+            const filingStatus = document.getElementById('filing-status').value;
+
+            // Federal tax brackets 2024 (simplified)
+            const brackets = {
+                single: [
+                    {limit: 11000, rate: 0.10},
+                    {limit: 44725, rate: 0.12},
+                    {limit: 95375, rate: 0.22},
+                    {limit: 182100, rate: 0.24},
+                    {limit: 231250, rate: 0.32},
+                    {limit: 578125, rate: 0.35},
+                    {limit: Infinity, rate: 0.37}
+                ],
+                married: [
+                    {limit: 22000, rate: 0.10},
+                    {limit: 89075, rate: 0.12},
+                    {limit: 190750, rate: 0.22},
+                    {limit: 364200, rate: 0.24},
+                    {limit: 462500, rate: 0.32},
+                    {limit: 693750, rate: 0.35},
+                    {limit: Infinity, rate: 0.37}
+                ]
+            };
+
+            const statusKey = filingStatus === 'single' ? 'single' : 'married';
+
+            // Calculate ordinary income tax rate (marginal)
+            let marginalRate = 0;
+            const taxBrackets = brackets[statusKey];
+            for (let bracket of taxBrackets) {
+                if (income <= bracket.limit) {
+                    marginalRate = bracket.rate;
+                    break;
+                }
+            }
+
+            // Short-term capital gains (taxed as ordinary income)
+            const shortTermTax = gain * marginalRate;
+
+            // Long-term capital gains rates
+            let longTermRate = 0;
+            if (filingStatus === 'single') {
+                if (income <= 44625) longTermRate = 0;
+                else if (income <= 492300) longTermRate = 0.15;
+                else longTermRate = 0.20;
+            } else {
+                if (income <= 89250) longTermRate = 0;
+                else if (income <= 553850) longTermRate = 0.15;
+                else longTermRate = 0.20;
+            }
+
+            const longTermTax = gain * longTermRate;
+            const taxSavings = shortTermTax - longTermTax;
+
+            // Display results
+            document.getElementById('short-tax').textContent = '$' + shortTermTax.toLocaleString('en-US', {maximumFractionDigits: 0});
+            document.getElementById('long-tax').textContent = '$' + longTermTax.toLocaleString('en-US', {maximumFractionDigits: 0});
+            document.getElementById('tax-savings').textContent = '$' + taxSavings.toLocaleString('en-US', {maximumFractionDigits: 0});
+
+            const currentTax = holdingPeriod === 'short' ? shortTermTax : longTermTax;
+            const effectiveRate = (currentTax / gain * 100).toFixed(1);
+            const afterTax = gain - currentTax;
+
+            document.getElementById('effective-rate').textContent = effectiveRate + '%';
+            document.getElementById('after-tax').textContent = '$' + afterTax.toLocaleString('en-US', {maximumFractionDigits: 0});
+
+            let insight = '';
+            if (holdingPeriod === 'short') {
+                insight = `By holding your investment for more than one year, you could save $${taxSavings.toLocaleString('en-US', {maximumFractionDigits: 0})} in taxes (${((taxSavings/shortTermTax)*100).toFixed(0)}% reduction).`;
+            } else {
+                insight = `Great job! Your long-term holding period saves you $${taxSavings.toLocaleString('en-US', {maximumFractionDigits: 0})} compared to short-term treatment.`;
+            }
+            document.getElementById('insight').textContent = insight;
+
+            document.getElementById('tax-results').classList.add('show');
+        }
+
+        function compareAccounts() {
+            const contribution = parseFloat(document.getElementById('contribution').value);
+            const years = parseInt(document.getElementById('years').value);
+            const returnRate = parseFloat(document.getElementById('return-rate').value) / 100;
+            const taxRate = parseFloat(document.getElementById('tax-bracket').value) / 100;
+
+            // Taxable account (simplified - assumes annual taxation on gains)
+            const taxDrag = 1 - (taxRate * 0.3); // Simplified: assume 30% of returns are taxable annually
+            const taxableValue = contribution * (Math.pow(1 + (returnRate * taxDrag), years) - 1) / (returnRate * taxDrag);
+
+            // Traditional IRA (tax-deferred, taxed at withdrawal)
+            const traditionalGross = contribution * (Math.pow(1 + returnRate, years) - 1) / returnRate;
+            const traditionalValue = traditionalGross * (1 - taxRate);
+
+            // Roth IRA (tax-free growth)
+            const rothContribution = contribution * (1 - taxRate); // After-tax contribution
+            const rothValue = rothContribution * (Math.pow(1 + returnRate, years) - 1) / returnRate;
+
+            // Display results
+            document.getElementById('taxable-value').textContent = '$' + taxableValue.toLocaleString('en-US', {maximumFractionDigits: 0});
+            document.getElementById('traditional-value').textContent = '$' + traditionalValue.toLocaleString('en-US', {maximumFractionDigits: 0});
+            document.getElementById('roth-value').textContent = '$' + rothValue.toLocaleString('en-US', {maximumFractionDigits: 0});
+
+            const traditionalSavings = traditionalValue - taxableValue;
+            const rothSavings = rothValue - taxableValue;
+
+            document.getElementById('traditional-savings').textContent = '+$' + traditionalSavings.toLocaleString('en-US', {maximumFractionDigits: 0});
+            document.getElementById('roth-savings').textContent = '+$' + rothSavings.toLocaleString('en-US', {maximumFractionDigits: 0});
+
+            let insight = `Over ${years} years, tax-advantaged accounts significantly outperform taxable accounts. `;
+            if (rothValue > traditionalValue) {
+                insight += `Roth accounts provide the highest after-tax value in this scenario, especially beneficial if you expect to be in a similar or higher tax bracket in retirement.`;
+            } else {
+                insight += `Traditional accounts provide strong tax-deferred growth, though remember you'll owe taxes on withdrawals.`;
+            }
+
+            document.getElementById('account-insight').textContent = insight;
+            document.getElementById('account-results').classList.add('show');
+        }
+    </script>
+</body>
+</html>

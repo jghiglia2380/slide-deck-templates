@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Trading Simulator</title>
+    <!--
+    PURPOSE: Interactive skill builder tool
+    USE: Chapter interactive activity (15-20 minutes)
+    -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px 8px 0 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+        .nav-tabs {
+            display: flex;
+            background: #ecf0f1;
+            overflow-x: auto;
+        }
+        .tab-button {
+            flex: 1;
+            min-width: 150px;
+            padding: 15px 20px;
+            border: none;
+            background: #ecf0f1;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+            color: #7f8c8d;
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+        .tab-button:hover {
+            background: #bdc3c7;
+        }
+        .tab-button.active {
+            background: white;
+            color: #3498db;
+            border-bottom-color: #3498db;
+        }
+        .tab-content {
+            display: none;
+            padding: 30px;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .module-intro {
+            background: #e8f4f8;
+            border-left: 4px solid #3498db;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+        .quote-display {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .quote-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .quote-item {
+            background: rgba(255,255,255,0.15);
+            padding: 12px;
+            border-radius: 4px;
+        }
+        .quote-label {
+            font-size: 0.85em;
+            opacity: 0.8;
+        }
+        .quote-value {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        .trade-form {
+            background: #f0f7ff;
+            border: 2px solid #3498db;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+        .form-group {
+            margin: 15px 0;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+        select, input[type="number"] {
+            width: 100%;
+            max-width: 300px;
+            padding: 10px;
+            border: 2px solid #3498db;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+        button {
+            padding: 12px 30px;
+            font-size: 1em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 5px;
+        }
+        .btn-primary {
+            background: #3498db;
+            color: white;
+        }
+        .btn-primary:hover {
+            background: #2980b9;
+        }
+        .btn-secondary {
+            background: #95a5a6;
+            color: white;
+        }
+        .btn-secondary:hover {
+            background: #7f8c8d;
+        }
+        .result-box {
+            background: #e8f5e9;
+            border: 2px solid #2ecc71;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            display: none;
+        }
+        .result-box.show {
+            display: block;
+        }
+        .result-box.warning {
+            background: #fff3cd;
+            border-color: #ffc107;
+        }
+        .result-box.error {
+            background: #ffebee;
+            border-color: #e74c3c;
+        }
+        .result-item {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        .result-item strong {
+            color: #2c3e50;
+        }
+        .scenario-card {
+            background: white;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+            transition: all 0.3s ease;
+        }
+        .scenario-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .scenario-card h3 {
+            color: #3498db;
+            margin-top: 0;
+        }
+        .progress-bar {
+            background: #ecf0f1;
+            height: 30px;
+            border-radius: 15px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+        .progress-fill {
+            background: linear-gradient(90deg, #2ecc71, #27ae60);
+            height: 100%;
+            transition: width 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        .score-display {
+            background: linear-gradient(135deg, #f39c12, #e67e22);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .score-display h3 {
+            margin: 0 0 10px 0;
+        }
+        .score-value {
+            font-size: 3em;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .help-box {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 0 0 8px 8px;
+        }
+        @media print {
+            body { background: white; }
+            .nav-tabs, button, .btn-primary, .btn-secondary { display: none; }
+            .tab-content { display: block !important; }
+        }
+        @media (max-width: 768px) {
+            .nav-tabs { flex-wrap: wrap; }
+            .tab-button { min-width: 120px; font-size: 0.9em; }
+            .quote-grid { grid-template-columns: 1fr 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📈 Market Trading Simulator</h1>
+            <p class="subtitle">Practice trading stocks with different order types - no financial risk!</p>
+        </header>
+
+        <div class="nav-tabs">
+            <button class="tab-button active" onclick="switchTab(0)">Module 1: Quotes</button>
+            <button class="tab-button" onclick="switchTab(1)">Module 2: Market Orders</button>
+            <button class="tab-button" onclick="switchTab(2)">Module 3: Limit Orders</button>
+            <button class="tab-button" onclick="switchTab(3)">Module 4: Scenarios</button>
+            <button class="tab-button" onclick="switchTab(4)">Module 5: Cost Impact</button>
+        </div>
+
+        <!-- Module 1: Understanding Quotes -->
+        <div class="tab-content active">
+            <div class="module-intro">
+                <h2>Module 1: Understanding Stock Quotes</h2>
+                <p>Learn to read and interpret stock quotes correctly. This is the foundation of all trading decisions.</p>
+            </div>
+
+            <div class="quote-display">
+                <h3>AAPL - Apple Inc.</h3>
+                <div class="quote-grid">
+                    <div class="quote-item">
+                        <div class="quote-label">Bid</div>
+                        <div class="quote-value">$173.45</div>
+                    </div>
+                    <div class="quote-item">
+                        <div class="quote-label">Ask</div>
+                        <div class="quote-value">$173.55</div>
+                    </div>
+                    <div class="quote-item">
+                        <div class="quote-label">Last</div>
+                        <div class="quote-value">$173.50</div>
+                    </div>
+                    <div class="quote-item">
+                        <div class="quote-label">Volume</div>
+                        <div class="quote-value">52.0M</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="help-box">
+                <h3>Quiz: Test Your Knowledge</h3>
+                <p><strong>Question 1:</strong> If you want to BUY this stock right now with a market order, what price will you pay?</p>
+                <button onclick="quizAnswer(1, 'bid')" class="btn-secondary">$173.45 (Bid)</button>
+                <button onclick="quizAnswer(1, 'ask')" class="btn-primary">$173.55 (Ask)</button>
+                <button onclick="quizAnswer(1, 'last')" class="btn-secondary">$173.50 (Last)</button>
+                <div id="quiz1-result" class="result-box"></div>
+
+                <p style="margin-top: 20px;"><strong>Question 2:</strong> What is the spread for this stock?</p>
+                <input type="number" id="spread-answer" step="0.01" placeholder="Enter spread in dollars">
+                <button onclick="quizAnswer(2, 'check')" class="btn-primary">Check Answer</button>
+                <div id="quiz2-result" class="result-box"></div>
+            </div>
+        </div>
+
+        <!-- Module 2: Market Order Practice -->
+        <div class="tab-content">
+            <div class="module-intro">
+                <h2>Module 2: Market Order Practice</h2>
+                <p>Execute market orders and see the immediate impact of the bid-ask spread.</p>
+            </div>
+
+            <div class="trade-form">
+                <h3>Place a Market Order</h3>
+
+                <div class="form-group">
+                    <label for="security-select">Select Security:</label>
+                    <select id="security-select" onchange="updateQuote()">
+                        <option value="AAPL">AAPL - Apple Inc.</option>
+                        <option value="MSFT">MSFT - Microsoft Corp.</option>
+                        <option value="SPY">SPY - S&P 500 ETF</option>
+                    </select>
+                </div>
+
+                <div id="current-quote" class="quote-display">
+                    <!-- Populated by JavaScript -->
+                </div>
+
+                <div class="form-group">
+                    <label for="shares">Number of Shares:</label>
+                    <input type="number" id="shares" value="10" min="1">
+                </div>
+
+                <button onclick="executeMarketOrder('buy')" class="btn-primary">Buy (Pay Ask)</button>
+                <button onclick="executeMarketOrder('sell')" class="btn-secondary">Sell (Receive Bid)</button>
+            </div>
+
+            <div id="market-result" class="result-box"></div>
+
+            <div class="help-box">
+                <h3>💡 What You're Learning:</h3>
+                <ul>
+                    <li>Market orders execute immediately at the current bid (sell) or ask (buy) price</li>
+                    <li>You always pay the spread when you trade</li>
+                    <li>The wider the spread, the more costly the trade</li>
+                    <li>High-volume stocks have tighter spreads (lower cost)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Module 3: Limit Order Practice -->
+        <div class="tab-content">
+            <div class="module-intro">
+                <h2>Module 3: Limit Order Practice</h2>
+                <p>Practice using limit orders to control the price you pay or receive.</p>
+            </div>
+
+            <div class="trade-form">
+                <h3>Place a Limit Order</h3>
+
+                <div id="limit-quote" class="quote-display">
+                    <!-- Populated by JavaScript -->
+                </div>
+
+                <div class="form-group">
+                    <label for="limit-shares">Number of Shares:</label>
+                    <input type="number" id="limit-shares" value="10" min="1">
+                </div>
+
+                <div class="form-group">
+                    <label for="limit-price">Limit Price ($):</label>
+                    <input type="number" id="limit-price" step="0.01" value="173.00">
+                </div>
+
+                <button onclick="executeLimitOrder('buy')" class="btn-primary">Buy Limit Order</button>
+                <button onclick="executeLimitOrder('sell')" class="btn-secondary">Sell Limit Order</button>
+            </div>
+
+            <div id="limit-result" class="result-box"></div>
+
+            <div class="help-box">
+                <h3>💡 How Limit Orders Work:</h3>
+                <ul>
+                    <li><strong>Buy Limit:</strong> Only buys if price drops to your limit or below</li>
+                    <li><strong>Sell Limit:</strong> Only sells if price rises to your limit or above</li>
+                    <li><strong>Benefit:</strong> Control your price, potentially save money</li>
+                    <li><strong>Risk:</strong> Order may never execute if price doesn't reach your limit</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Module 4: Scenario Challenges -->
+        <div class="tab-content">
+            <div class="module-intro">
+                <h2>Module 4: Real-World Scenarios</h2>
+                <p>Apply what you've learned to realistic trading situations.</p>
+            </div>
+
+            <div class="score-display" id="score-display">
+                <h3>Your Score</h3>
+                <div class="score-value" id="total-score">0</div>
+                <p>points</p>
+            </div>
+
+            <div class="scenario-card">
+                <h3>Scenario 1: Liquid Stock with Narrow Spread</h3>
+                <p><strong>Situation:</strong> You want to buy a popular tech stock with high volume.</p>
+                <p><strong>Quote:</strong> Bid $150.00 | Ask $150.02 | Spread 0.013%</p>
+                <p><strong>Question:</strong> Which order type should you use?</p>
+                <button onclick="scoreScenario(1, 'market')" class="btn-primary">Market Order</button>
+                <button onclick="scoreScenario(1, 'limit')" class="btn-secondary">Limit Order</button>
+                <div id="scenario1-result" class="result-box"></div>
+            </div>
+
+            <div class="scenario-card">
+                <h3>Scenario 2: Illiquid Stock with Wide Spread</h3>
+                <p><strong>Situation:</strong> A small-cap stock with low trading volume.</p>
+                <p><strong>Quote:</strong> Bid $12.50 | Ask $13.00 | Spread 3.85%</p>
+                <p><strong>Question:</strong> Which order type should you use?</p>
+                <button onclick="scoreScenario(2, 'market')" class="btn-secondary">Market Order</button>
+                <button onclick="scoreScenario(2, 'limit')" class="btn-primary">Limit Order</button>
+                <div id="scenario2-result" class="result-box"></div>
+            </div>
+
+            <div class="scenario-card">
+                <h3>Scenario 3: Volatile Market Day</h3>
+                <p><strong>Situation:</strong> Major news just broke, stock price jumping rapidly between $80-$90.</p>
+                <p><strong>Current Quote:</strong> Bid $84.50 | Ask $85.50</p>
+                <p><strong>Question:</strong> Which order type protects you from overpaying?</p>
+                <button onclick="scoreScenario(3, 'market')" class="btn-secondary">Market Order</button>
+                <button onclick="scoreScenario(3, 'limit')" class="btn-primary">Limit Order</button>
+                <div id="scenario3-result" class="result-box"></div>
+            </div>
+        </div>
+
+        <!-- Module 5: Cost Comparison -->
+        <div class="tab-content">
+            <div class="module-intro">
+                <h2>Module 5: Long-Term Cost Impact</h2>
+                <p>See how trading frequency and spreads impact your wealth over time.</p>
+            </div>
+
+            <div class="trade-form">
+                <h3>Calculate Your Trading Costs</h3>
+
+                <div class="form-group">
+                    <label for="trades-per-year">Trades per Year:</label>
+                    <input type="number" id="trades-per-year" value="12" min="1">
+                </div>
+
+                <div class="form-group">
+                    <label for="avg-spread">Average Spread per Trade ($):</label>
+                    <input type="number" id="avg-spread" value="0.10" step="0.01">
+                </div>
+
+                <div class="form-group">
+                    <label for="shares-per-trade">Average Shares per Trade:</label>
+                    <input type="number" id="shares-per-trade" value="100" min="1">
+                </div>
+
+                <button onclick="calculateLongTermCost()" class="btn-primary">Calculate Impact</button>
+            </div>
+
+            <div id="cost-result" class="result-box"></div>
+
+            <h3>Comparison: Active vs. Passive Trading</h3>
+            <table id="comparison-table">
+                <tr>
+                    <th>Strategy</th>
+                    <th>Trades/Year</th>
+                    <th>Annual Spread Cost</th>
+                    <th>10-Year Impact</th>
+                    <th>30-Year Impact</th>
+                </tr>
+                <tr>
+                    <td>Buy & Hold</td>
+                    <td>4</td>
+                    <td>$40</td>
+                    <td>$600</td>
+                    <td>$2,400</td>
+                </tr>
+                <tr>
+                    <td>Moderate</td>
+                    <td>12</td>
+                    <td>$120</td>
+                    <td>$1,800</td>
+                    <td>$7,200</td>
+                </tr>
+                <tr>
+                    <td>Active</td>
+                    <td>100</td>
+                    <td>$1,000</td>
+                    <td>$15,000</td>
+                    <td>$60,000</td>
+                </tr>
+            </table>
+
+            <div class="help-box">
+                <h3>🎯 Key Takeaway:</h3>
+                <p>Frequent trading has a massive cost due to spreads (and commissions if applicable). Even small spreads add up over time. A buy-and-hold strategy minimizes these costs and lets your investments grow.</p>
+            </div>
+        </div>
+
+        <footer>
+            <p><strong>PFL Academy</strong> | Market Trading Simulator</p>
+            <p>For educational purposes only - Not investment advice</p>
+            <p>Progress is saved in your browser. No personal data is collected.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Securities database
+        const securities = {
+            'AAPL': { name: 'Apple Inc.', bid: 173.45, ask: 173.55, last: 173.50, volume: '52.0M' },
+            'MSFT': { name: 'Microsoft Corp.', bid: 375.20, ask: 375.35, last: 375.28, volume: '23.0M' },
+            'SPY': { name: 'S&P 500 ETF', bid: 450.10, ask: 450.12, last: 450.11, volume: '75.0M' }
+        };
+
+        let currentSecurity = 'AAPL';
+        let totalScore = 0;
+
+        // Tab switching
+        function switchTab(index) {
+            const buttons = document.querySelectorAll('.tab-button');
+            const contents = document.querySelectorAll('.tab-content');
+
+            buttons.forEach((btn, i) => {
+                btn.classList.toggle('active', i === index);
+            });
+
+            contents.forEach((content, i) => {
+                content.classList.toggle('active', i === index);
+            });
+        }
+
+        // Update quote display
+        function updateQuote() {
+            currentSecurity = document.getElementById('security-select').value;
+            const sec = securities[currentSecurity];
+
+            const quoteHTML = `
+                <h3>${currentSecurity} - ${sec.name}</h3>
+                <div class="quote-grid">
+                    <div class="quote-item">
+                        <div class="quote-label">Bid</div>
+                        <div class="quote-value">$${sec.bid}</div>
+                    </div>
+                    <div class="quote-item">
+                        <div class="quote-label">Ask</div>
+                        <div class="quote-value">$${sec.ask}</div>
+                    </div>
+                    <div class="quote-item">
+                        <div class="quote-label">Last</div>
+                        <div class="quote-value">$${sec.last}</div>
+                    </div>
+                    <div class="quote-item">
+                        <div class="quote-label">Volume</div>
+                        <div class="quote-value">${sec.volume}</div>
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('current-quote').innerHTML = quoteHTML;
+            document.getElementById('limit-quote').innerHTML = quoteHTML;
+        }
+
+        // Quiz answers
+        function quizAnswer(question, answer) {
+            const result1 = document.getElementById('quiz1-result');
+            const result2 = document.getElementById('quiz2-result');
+
+            if (question === 1) {
+                if (answer === 'ask') {
+                    result1.className = 'result-box show';
+                    result1.innerHTML = '<strong>✓ Correct!</strong> When buying with a market order, you pay the ask price ($173.55).';
+                } else {
+                    result1.className = 'result-box show error';
+                    result1.innerHTML = '<strong>✗ Incorrect.</strong> When buying, you pay the ASK price, not the bid or last price.';
+                }
+            } else if (question === 2) {
+                const userAnswer = parseFloat(document.getElementById('spread-answer').value);
+                const correctAnswer = 0.10;
+
+                if (Math.abs(userAnswer - correctAnswer) < 0.01) {
+                    result2.className = 'result-box show';
+                    result2.innerHTML = '<strong>✓ Correct!</strong> The spread is $0.10 (Ask $173.55 - Bid $173.45 = $0.10).';
+                } else {
+                    result2.className = 'result-box show warning';
+                    result2.innerHTML = `<strong>Not quite.</strong> The spread is Ask - Bid = $173.55 - $173.45 = $0.10. You entered $${userAnswer.toFixed(2)}.`;
+                }
+            }
+        }
+
+        // Execute market order
+        function executeMarketOrder(action) {
+            const shares = parseInt(document.getElementById('shares').value);
+            const sec = securities[currentSecurity];
+            const result = document.getElementById('market-result');
+
+            if (action === 'buy') {
+                const cost = shares * sec.ask;
+                const immediateValue = shares * sec.bid;
+                const spreadCost = shares * (sec.ask - sec.bid);
+
+                result.className = 'result-box show';
+                result.innerHTML = `
+                    <h3>✓ Market Order Executed</h3>
+                    <div class="result-item"><strong>Executed at:</strong> $${sec.ask} (ask price)</div>
+                    <div class="result-item"><strong>Total cost:</strong> $${cost.toFixed(2)}</div>
+                    <div class="result-item"><strong>Immediate value:</strong> $${immediateValue.toFixed(2)} (at bid)</div>
+                    <div class="result-item" style="color: #e74c3c;"><strong>Spread cost:</strong> $${spreadCost.toFixed(2)}</div>
+                    <p style="margin-top: 15px;">You immediately lost $${spreadCost.toFixed(2)} to the spread, even though the stock price didn't change.</p>
+                `;
+            } else {
+                const revenue = shares * sec.bid;
+
+                result.className = 'result-box show';
+                result.innerHTML = `
+                    <h3>✓ Market Order Executed</h3>
+                    <div class="result-item"><strong>Executed at:</strong> $${sec.bid} (bid price)</div>
+                    <div class="result-item"><strong>Total revenue:</strong> $${revenue.toFixed(2)}</div>
+                    <p style="margin-top: 15px;">If you had bought these shares with a market order and immediately sold them, you would lose the spread on both trades.</p>
+                `;
+            }
+        }
+
+        // Execute limit order
+        function executeLimitOrder(action) {
+            const shares = parseInt(document.getElementById('limit-shares').value);
+            const limitPrice = parseFloat(document.getElementById('limit-price').value);
+            const sec = securities[currentSecurity];
+            const result = document.getElementById('limit-result');
+
+            // Simplified execution logic (70% chance if reasonable)
+            const executed = (action === 'buy' && limitPrice >= sec.ask * 0.99) ||
+                           (action === 'sell' && limitPrice <= sec.bid * 1.01);
+
+            if (executed) {
+                const cost = shares * limitPrice;
+                const marketCost = shares * sec.ask;
+                const savings = marketCost - cost;
+
+                result.className = 'result-box show';
+                result.innerHTML = `
+                    <h3>✓ Limit Order Executed</h3>
+                    <div class="result-item"><strong>Executed at:</strong> $${limitPrice.toFixed(2)}</div>
+                    <div class="result-item"><strong>Total cost:</strong> $${cost.toFixed(2)}</div>
+                    <div class="result-item"><strong>Market order would have cost:</strong> $${marketCost.toFixed(2)}</div>
+                    <div class="result-item" style="color: #2ecc71;"><strong>You saved:</strong> $${savings.toFixed(2)}</div>
+                `;
+            } else {
+                result.className = 'result-box show warning';
+                result.innerHTML = `
+                    <h3>✗ Limit Order Not Executed</h3>
+                    <p>Your limit price of $${limitPrice.toFixed(2)} was never reached. The ${action === 'buy' ? 'ask' : 'bid'} price remained at $${action === 'buy' ? sec.ask : sec.bid}.</p>
+                    <p>This is the trade-off with limit orders: you control the price but risk missing the trade entirely.</p>
+                `;
+            }
+        }
+
+        // Score scenarios
+        function scoreScenario(scenario, answer) {
+            const result = document.getElementById(`scenario${scenario}-result`);
+            let correct = false;
+            let explanation = '';
+
+            if (scenario === 1 && answer === 'market') {
+                correct = true;
+                explanation = '<strong>✓ Correct!</strong> With a narrow spread (0.013%), a market order is efficient. The cost is minimal.';
+            } else if (scenario === 2 && answer === 'limit') {
+                correct = true;
+                explanation = '<strong>✓ Correct!</strong> A 3.85% spread is huge! Use a limit order to avoid overpaying by hundreds of dollars.';
+            } else if (scenario === 3 && answer === 'limit') {
+                correct = true;
+                explanation = '<strong>✓ Correct!</strong> In volatile conditions, limit orders protect you from executing at a price spike.';
+            } else {
+                explanation = '<strong>✗ Try again.</strong> Think about the spread size and market conditions.';
+            }
+
+            result.className = correct ? 'result-box show' : 'result-box show warning';
+            result.innerHTML = explanation;
+
+            if (correct) {
+                totalScore += 100;
+                document.getElementById('total-score').textContent = totalScore;
+            }
+        }
+
+        // Calculate long-term cost
+        function calculateLongTermCost() {
+            const tradesPerYear = parseInt(document.getElementById('trades-per-year').value);
+            const avgSpread = parseFloat(document.getElementById('avg-spread').value);
+            const sharesPerTrade = parseInt(document.getElementById('shares-per-trade').value);
+
+            const costPerTrade = avgSpread * sharesPerTrade;
+            const annualCost = costPerTrade * tradesPerYear;
+            const tenYearCost = annualCost * 10;
+            const thirtyYearCost = annualCost * 30;
+
+            const result = document.getElementById('cost-result');
+            result.className = 'result-box show';
+            result.innerHTML = `
+                <h3>📊 Your Trading Cost Analysis</h3>
+                <div class="result-item"><strong>Cost per trade:</strong> $${costPerTrade.toFixed(2)}</div>
+                <div class="result-item"><strong>Annual spread cost:</strong> $${annualCost.toFixed(2)}</div>
+                <div class="result-item"><strong>10-year impact:</strong> $${tenYearCost.toFixed(2)}</div>
+                <div class="result-item"><strong>30-year impact:</strong> $${thirtyYearCost.toFixed(2)}</div>
+                <p style="margin-top: 15px;">This doesn't include opportunity cost! If you invested this money instead at 7% annual return, it would grow even more.</p>
+            `;
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            updateQuote();
+        });
+    </script>
+</body>
+</html>

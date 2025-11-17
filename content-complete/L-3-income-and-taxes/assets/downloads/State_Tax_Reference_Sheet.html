@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State Tax Reference Sheet | PFL Academy</title>
+    <!--
+    STATE VARIABLES USED IN THIS FILE:
+    - STATE_NAME
+    - STATE_CODE
+    - STATE_INCOME_TAX_RATE or STATE_INCOME_TAX_BRACKETS
+    - STATE_LOCAL_INCOME_TAX (if applicable)
+    - STATE_SDI_RATE (State Disability Insurance, where applicable)
+    - STATE_TAX_FILING_PORTAL_URL
+    - STATE_REVENUE_DEPT_URL
+
+    UPDATE FREQUENCY:
+    - Annual: All tax rates and brackets
+    -->
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #8b5cf6;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --background: #ffffff;
+            --surface: #f9fafb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            color: var(--text);
+            background-color: white;
+            padding: 20px;
+        }
+
+        .page {
+            max-width: 8.5in;
+            margin: 0 auto;
+            background-color: white;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            opacity: 0.95;
+        }
+
+        .content {
+            padding: 25px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+            page-break-inside: avoid;
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 12px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .info-box {
+            background-color: var(--surface);
+            padding: 12px;
+            border-radius: 6px;
+            border-left: 3px solid var(--primary);
+        }
+
+        .info-label {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+
+        .info-value {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+            font-size: 0.9rem;
+        }
+
+        th {
+            background-color: var(--primary);
+            color: white;
+            padding: 10px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 8px 10px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        tr:nth-child(even) {
+            background-color: var(--surface);
+        }
+
+        .highlight-box {
+            background-color: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 12px;
+            margin: 12px 0;
+            border-radius: 4px;
+        }
+
+        .example-calc {
+            background-color: #dbeafe;
+            border-left: 4px solid #3b82f6;
+            padding: 15px;
+            margin: 12px 0;
+            border-radius: 4px;
+        }
+
+        .example-title {
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #1e40af;
+        }
+
+        .calc-line {
+            display: flex;
+            justify-content: space-between;
+            padding: 4px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+
+        .calc-line.total {
+            border-top: 2px solid #1e40af;
+            font-weight: 700;
+            margin-top: 8px;
+            padding-top: 8px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .resource-links {
+            background-color: #f0fdf4;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 15px;
+        }
+
+        .resource-links h4 {
+            color: #059669;
+            margin-bottom: 10px;
+        }
+
+        .resource-links a {
+            color: #0d9488;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .resource-links a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            color: var(--text-light);
+            font-size: 0.8rem;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+
+            .page {
+                max-width: 100%;
+            }
+
+            header {
+                border-radius: 0;
+            }
+
+            .section {
+                page-break-inside: avoid;
+            }
+
+            a {
+                color: var(--text);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <h1>📋 Tax Reference Sheet</h1>
+            <p class="subtitle">{{STATE_NAME}} Income Tax Structure</p>
+        </header>
+
+        <div class="content">
+            <!-- State Tax Structure -->
+            <div class="section">
+                <div class="section-title">{{STATE_NAME}} State Income Tax</div>
+
+                <div class="info-grid">
+                    <div class="info-box">
+                        <div class="info-label">Tax Structure</div>
+                        <div class="info-value">
+                            {{#if STATE_INCOME_TAX_RATE}}
+                                {{STATE_INCOME_TAX_RATE}}% Flat Rate
+                            {{else}}{{#if STATE_INCOME_TAX_BRACKETS}}
+                                Progressive Brackets
+                            {{else}}
+                                No State Income Tax
+                            {{/if}}{{/if}}
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-label">State Code</div>
+                        <div class="info-value">{{STATE_CODE}}</div>
+                    </div>
+                </div>
+
+                {{#if STATE_INCOME_TAX_BRACKETS}}
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Income Range</th>
+                            <th>Tax Rate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Brackets will be populated based on state -->
+                        <tr><td>Example bracket data</td><td>See state-specific information</td></tr>
+                    </tbody>
+                </table>
+                {{/if}}
+
+                {{#if STATE_LOCAL_INCOME_TAX}}
+                <div class="highlight-box">
+                    <strong>⚠️ Local Income Tax:</strong> Some localities in {{STATE_NAME}} charge additional income tax at {{STATE_LOCAL_INCOME_TAX}}%. Check your city or county.
+                </div>
+                {{/if}}
+
+                {{#if STATE_SDI_RATE}}
+                <div class="info-grid">
+                    <div class="info-box">
+                        <div class="info-label">State Disability Insurance (SDI)</div>
+                        <div class="info-value">{{STATE_SDI_RATE}}%</div>
+                    </div>
+                </div>
+                {{/if}}
+            </div>
+
+            <!-- Federal Tax Brackets -->
+            <div class="section">
+                <div class="section-title">2024 Federal Income Tax Brackets</div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Single Filers</th>
+                            <th>Rate</th>
+                            <th>Married Filing Jointly</th>
+                            <th>Rate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>$0 - $11,600</td>
+                            <td>10%</td>
+                            <td>$0 - $23,200</td>
+                            <td>10%</td>
+                        </tr>
+                        <tr>
+                            <td>$11,600 - $47,150</td>
+                            <td>12%</td>
+                            <td>$23,200 - $94,300</td>
+                            <td>12%</td>
+                        </tr>
+                        <tr>
+                            <td>$47,150 - $100,525</td>
+                            <td>22%</td>
+                            <td>$94,300 - $201,050</td>
+                            <td>22%</td>
+                        </tr>
+                        <tr>
+                            <td>$100,525 - $191,950</td>
+                            <td>24%</td>
+                            <td>$201,050 - $383,900</td>
+                            <td>24%</td>
+                        </tr>
+                        <tr>
+                            <td>$191,950+</td>
+                            <td>32%+</td>
+                            <td>$383,900+</td>
+                            <td>32%+</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="highlight-box">
+                    <strong>Standard Deduction (2024):</strong> Single: $14,600 | Married Filing Jointly: $29,200 | Head of Household: $21,900
+                </div>
+            </div>
+
+            <!-- FICA Taxes -->
+            <div class="section">
+                <div class="section-title">FICA Taxes (Federal Insurance Contributions)</div>
+
+                <div class="info-grid">
+                    <div class="info-box">
+                        <div class="info-label">Social Security</div>
+                        <div class="info-value">6.2%</div>
+                        <div style="font-size: 0.8rem; color: var(--text-light); margin-top: 4px;">
+                            On first $168,600 of income
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-label">Medicare</div>
+                        <div class="info-value">1.45%</div>
+                        <div style="font-size: 0.8rem; color: var(--text-light); margin-top: 4px;">
+                            On all income (+ 0.9% over $200k)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pre-Tax Deductions -->
+            <div class="section">
+                <div class="section-title">Common Pre-Tax Deductions</div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Deduction Type</th>
+                            <th>Annual Limit (2024)</th>
+                            <th>Tax Benefit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>401(k) Contributions</td>
+                            <td>$23,000 ($30,500 if 50+)</td>
+                            <td>Reduces taxable income</td>
+                        </tr>
+                        <tr>
+                            <td>Traditional IRA</td>
+                            <td>$7,000 ($8,000 if 50+)</td>
+                            <td>May be tax-deductible</td>
+                        </tr>
+                        <tr>
+                            <td>Health Savings Account (HSA)</td>
+                            <td>$4,150 (individual) / $8,300 (family)</td>
+                            <td>Triple tax advantage</td>
+                        </tr>
+                        <tr>
+                            <td>Flexible Spending Account (FSA)</td>
+                            <td>$3,200</td>
+                            <td>Reduces taxable income</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Example Calculation -->
+            <div class="section">
+                <div class="section-title">Quick Calculation Example</div>
+
+                <div class="example-calc">
+                    <div class="example-title">Single Filer in {{STATE_NAME}} earning $50,000/year</div>
+
+                    <div class="calc-line">
+                        <span>Gross Annual Income:</span>
+                        <span>$50,000</span>
+                    </div>
+
+                    <div class="calc-line">
+                        <span>Federal Income Tax (estimated):</span>
+                        <span>-$4,700</span>
+                    </div>
+
+                    <div class="calc-line">
+                        <span>{{STATE_NAME}} State Tax ({{STATE_INCOME_TAX_RATE}}%):</span>
+                        <span>-${{#if STATE_INCOME_TAX_RATE}}2,500{{else}}0{{/if}}</span>
+                    </div>
+
+                    <div class="calc-line">
+                        <span>Social Security (6.2%):</span>
+                        <span>-$3,100</span>
+                    </div>
+
+                    <div class="calc-line">
+                        <span>Medicare (1.45%):</span>
+                        <span>-$725</span>
+                    </div>
+
+                    {{#if STATE_SDI_RATE}}
+                    <div class="calc-line">
+                        <span>State Disability Insurance:</span>
+                        <span>-${{STATE_SDI_RATE * 500}}</span>
+                    </div>
+                    {{/if}}
+
+                    <div class="calc-line total">
+                        <span>Net Annual Income (Take-Home):</span>
+                        <span>~$38,975</span>
+                    </div>
+
+                    <div class="calc-line">
+                        <span>Monthly Take-Home:</span>
+                        <span>~$3,248</span>
+                    </div>
+                </div>
+
+                <div style="font-size: 0.85rem; color: var(--text-light); margin-top: 10px;">
+                    * This is a simplified example. Actual taxes depend on deductions, credits, and specific circumstances.
+                </div>
+            </div>
+
+            <!-- Resources -->
+            <div class="section">
+                <div class="resource-links">
+                    <h4>🔗 Helpful Resources</h4>
+                    <a href="{{STATE_TAX_FILING_PORTAL_URL}}" target="_blank">{{STATE_NAME}} Tax Filing Portal</a>
+                    <a href="{{STATE_REVENUE_DEPT_URL}}" target="_blank">{{STATE_NAME}} Department of Revenue</a>
+                    <a href="https://www.irs.gov" target="_blank">IRS - Federal Tax Information</a>
+                    <a href="https://www.irs.gov/forms-pubs/about-form-w-4" target="_blank">IRS W-4 Information</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            PFL Academy | {{STATE_NAME}} Tax Reference Sheet | Updated Annually
+        </footer>
+    </div>
+</body>
+</html>

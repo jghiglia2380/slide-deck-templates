@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Types Reference Sheet | PFL Academy</title>
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #8b5cf6;
+            --text: #1f2937;
+            --text-light: #6b7280;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            color: var(--text);
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid var(--primary);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: var(--text-light);
+            font-size: 1rem;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .investment-box {
+            background-color: #f9fafb;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .investment-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .investment-definition {
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .investment-detail {
+            margin-bottom: 6px;
+        }
+
+        .label {
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .value {
+            color: var(--text-light);
+        }
+
+        .when-to-use {
+            background-color: #e0f2fe;
+            padding: 8px;
+            border-radius: 4px;
+            margin-top: 8px;
+            font-size: 0.9rem;
+        }
+
+        .glossary-section {
+            background-color: #fef3c7;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+
+        .glossary-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .glossary-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .glossary-term {
+            font-weight: 600;
+        }
+
+        .decision-tree {
+            background-color: #f0fdf4;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #10b981;
+        }
+
+        .tree-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #10b981;
+            margin-bottom: 10px;
+        }
+
+        .tree-question {
+            font-weight: 600;
+            margin: 10px 0 5px 0;
+        }
+
+        .tree-answer {
+            margin-left: 20px;
+            padding: 5px;
+        }
+
+        @media print {
+            body {
+                padding: 10px;
+                font-size: 11px;
+            }
+
+            .grid-container {
+                gap: 10px;
+            }
+
+            .investment-box {
+                padding: 10px;
+                break-inside: avoid;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+
+            .glossary-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Investment Types Reference Sheet</h1>
+        <p class="subtitle">Quick reference guide for stocks, bonds, mutual funds, and ETFs</p>
+    </header>
+
+    <div class="grid-container">
+        <div class="investment-box">
+            <div class="investment-title">STOCKS</div>
+            <div class="investment-definition">Ownership shares in a company</div>
+
+            <div class="investment-detail">
+                <span class="label">Risk Level:</span>
+                <span class="value">High</span>
+            </div>
+
+            <div class="investment-detail">
+                <span class="label">Historical Return:</span>
+                <span class="value">~10% annually (S&P 500)</span>
+            </div>
+
+            <div class="investment-detail">
+                <span class="label">Income:</span>
+                <span class="value">Some pay dividends</span>
+            </div>
+
+            <div class="investment-detail">
+                <span class="label">Examples:</span>
+                <span class="value">Apple (AAPL), Microsoft (MSFT)</span>
+            </div>
+
+            <div class="when-to-use">
+                <strong>When to Use:</strong> Long-term growth goals (10+ years), comfortable with volatility, seeking maximum returns
+            </div>
+        </div>
+
+        <div class="investment-box">
+            <div class="investment-title">BONDS</div>
+            <div class="investment-definition">Loans to governments or corporations</div>
+
+            <div class="investment-detail">
+                <span class="label">Risk Level:</span>
+                <span class="value">Low to Medium</span>
+            </div>
+
+            <div class="investment-detail">
+                <span class="label">Historical Return:</span>
+                <span class="value">~3-5% annually</span>
+            </div>
+
+            <div class="investment-detail">
+                <span class="label">Income:</span>
+                <span class="value">Regular interest payments</span>
+            </div>
+
+            <div class="investment-detail">
+                <span class="label">Examples:</span>
+                <span class="value">US Treasury, Corporate bonds</span>
+            </div>
+
+            <div class="when-to-use">
+                <strong>When to Use:</strong> Seeking stable income, preserving capital, nearing retirement, balancing portfolio risk
+            </div>
+        </div>
+
+        <div class="investment-box">
+            <div class="investment-title">MUTUAL FUNDS</div>
+            <div class="investment-definition">Professionally managed portfolios of stocks/bonds</div>
+
+            <div class="investment-detail">
+                <span class="label">Risk Level:</span>
+                <span class="value">Varies (Medium average)</span>
+            </div>
+
+            <div class="investment-detail">
+                <span class="label">Historical Return:</span>
+                <span class="value">~6-8% annually (varies by type)</span>
+            </div>
+
+            <div class="investment-detail">
+                <span class="label">Fees:</span>
+                <span class="value">0.5-2% expense ratio</span>
+            </div>
+
+            <div class="investment-detail">
+                <span class="label">Examples:</span>
+                <span class="value">Vanguard 500 (VFIAX)</span>
+            </div>
+
+            <div class="when-to-use">
+                <strong>When to Use:</strong> Want instant diversification, prefer professional management, like simplicity, have $500+ to invest
+            </div>
+        </div>
+
+        <div class="investment-box">
+            <div class="investment-title">ETFs (Exchange-Traded Funds)</div>
+            <div class="investment-definition">Baskets of stocks/bonds traded like stocks</div>
+
+            <div class="investment-detail">
+                <span class="label">Risk Level:</span>
+                <span class="value">Varies (Medium average)</span>
+            </div>
+
+            <div class="investment-detail">
+                <span class="label">Historical Return:</span>
+                <span class="value">~8-10% annually (index ETFs)</span>
+            </div>
+
+            <div class="investment-detail">
+                <span class="label">Fees:</span>
+                <span class="value">0.03-0.5% expense ratio</span>
+            </div>
+
+            <div class="investment-detail">
+                <span class="label">Examples:</span>
+                <span class="value">Vanguard S&P 500 (VOO)</span>
+            </div>
+
+            <div class="when-to-use">
+                <strong>When to Use:</strong> Want low fees, need flexibility, prefer tax efficiency, comfortable trading during market hours
+            </div>
+        </div>
+    </div>
+
+    <div class="glossary-section">
+        <div class="glossary-title">Key Terms Glossary</div>
+        <div class="glossary-grid">
+            <div>
+                <div class="glossary-term">Expense Ratio</div>
+                <div>Annual fee charged by mutual funds/ETFs (e.g., 0.5% = $50 per $10,000 invested)</div>
+            </div>
+            <div>
+                <div class="glossary-term">Dividend</div>
+                <div>Cash payment companies make to shareholders from profits</div>
+            </div>
+            <div>
+                <div class="glossary-term">Diversification</div>
+                <div>Spreading investments across many assets to reduce risk</div>
+            </div>
+            <div>
+                <div class="glossary-term">Liquidity</div>
+                <div>How quickly you can sell an investment and get cash</div>
+            </div>
+            <div>
+                <div class="glossary-term">Index Fund</div>
+                <div>Fund that tracks a market index (like S&P 500)</div>
+            </div>
+            <div>
+                <div class="glossary-term">Active Management</div>
+                <div>Manager picks stocks trying to beat the market (higher fees)</div>
+            </div>
+            <div>
+                <div class="glossary-term">Passive Management</div>
+                <div>Fund tracks an index automatically (lower fees)</div>
+            </div>
+            <div>
+                <div class="glossary-term">Volatility</div>
+                <div>How much an investment's value fluctuates over time</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="decision-tree">
+        <div class="tree-title">Investment Selection Decision Tree</div>
+
+        <div class="tree-question">→ Do you have less than $500 to invest?</div>
+        <div class="tree-answer">
+            <strong>YES:</strong> Consider individual stocks or ETFs (can buy fractional shares)<br>
+            <strong>NO:</strong> Continue below
+        </div>
+
+        <div class="tree-question">→ Is your investment timeline less than 5 years?</div>
+        <div class="tree-answer">
+            <strong>YES:</strong> Focus on bonds or balanced funds for stability<br>
+            <strong>NO:</strong> Continue below
+        </div>
+
+        <div class="tree-question">→ Do you want to actively pick individual companies?</div>
+        <div class="tree-answer">
+            <strong>YES:</strong> Buy individual stocks (higher risk, requires research)<br>
+            <strong>NO:</strong> Continue below
+        </div>
+
+        <div class="tree-question">→ Do you value low fees over everything else?</div>
+        <div class="tree-answer">
+            <strong>YES:</strong> Choose low-cost index ETFs (like VOO, VTI)<br>
+            <strong>NO:</strong> Continue below
+        </div>
+
+        <div class="tree-question">→ Do you prefer automatic investing and simplicity?</div>
+        <div class="tree-answer">
+            <strong>YES:</strong> Choose mutual funds (especially target-date funds)<br>
+            <strong>NO:</strong> Mix of stocks and ETFs based on your preferences
+        </div>
+    </div>
+
+    <div style="margin-top: 20px; padding: 15px; background-color: #f0f9ff; border-radius: 6px; border-left: 4px solid #3b82f6;">
+        <strong>💡 Pro Tip for Beginners:</strong> Start with a low-cost S&P 500 index fund or ETF (like VOO or VFIAX). This gives you instant diversification across 500 large U.S. companies with minimal fees. As you learn more, you can expand into bonds, international stocks, and other investments.
+    </div>
+</body>
+</html>

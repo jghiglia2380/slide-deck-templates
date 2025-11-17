@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Rights Impact Simulator | PFL Academy</title>
+    <!--
+    PURPOSE: Show how property rights affect investment and economic decisions
+    USE: Day 2 activity (10-12 minutes)
+    -->
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #8b5cf6;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --background: #ffffff;
+            --surface: #f9fafb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--surface);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: var(--background);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .scenario-selector {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .scenario-card {
+            background-color: var(--surface);
+            padding: 20px;
+            border-radius: 8px;
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .scenario-card:hover {
+            border-color: var(--primary);
+        }
+
+        .scenario-card.active {
+            border-color: var(--primary);
+            background-color: #eef2ff;
+        }
+
+        .scenario-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text);
+        }
+
+        .scenario-description {
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+
+        .property-rights-slider {
+            background-color: var(--surface);
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .slider-label {
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: var(--text);
+        }
+
+        .slider-container {
+            position: relative;
+            padding: 20px 0;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            height: 8px;
+            border-radius: 5px;
+            background: linear-gradient(to right, #ef4444, #f59e0b, #10b981);
+            outline: none;
+            -webkit-appearance: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: var(--primary);
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        input[type="range"]::-moz-range-thumb {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: var(--primary);
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .slider-labels {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        .current-level {
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-top: 15px;
+        }
+
+        .results-box {
+            background-color: #f0fdf4;
+            border-left: 4px solid var(--success);
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+
+        .results-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--success);
+            margin-bottom: 15px;
+        }
+
+        .outcome-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .outcome-item {
+            background-color: white;
+            padding: 15px;
+            border-radius: 6px;
+        }
+
+        .outcome-label {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 5px;
+        }
+
+        .outcome-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .explanation-text {
+            background-color: white;
+            padding: 15px;
+            border-radius: 6px;
+            line-height: 1.8;
+        }
+
+        .examples-section {
+            background-color: #fef3c7;
+            border-left: 4px solid var(--warning);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .examples-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .example-item {
+            background-color: white;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 12px;
+        }
+
+        .country-name {
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .button {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                background-color: white;
+            }
+
+            .container {
+                box-shadow: none;
+            }
+
+            .button {
+                display: none;
+            }
+
+            input[type="range"] {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .scenario-selector {
+                grid-template-columns: 1fr;
+            }
+
+            .outcome-grid {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Property Rights Impact Simulator</h1>
+            <p class="subtitle">See how property rights affect investment and economic decisions</p>
+        </header>
+
+        <div class="content">
+            <div class="section">
+                <h2>Select a Scenario</h2>
+                <div class="scenario-selector">
+                    <div class="scenario-card active" onclick="selectScenario('business')">
+                        <div class="scenario-title">🏢 Starting a Business</div>
+                        <div class="scenario-description">You want to open a small business in your community</div>
+                    </div>
+                    <div class="scenario-card" onclick="selectScenario('property')">
+                        <div class="scenario-title">🏠 Buying Property</div>
+                        <div class="scenario-description">You're considering buying land or a building</div>
+                    </div>
+                    <div class="scenario-card" onclick="selectScenario('investment')">
+                        <div class="scenario-title">💰 Making an Investment</div>
+                        <div class="scenario-description">You want to invest $10,000 in a new venture</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="property-rights-slider">
+                    <div class="slider-label">Adjust Property Rights Protection Level:</div>
+                    <div class="slider-container">
+                        <input type="range" id="rightsSlider" min="1" max="3" value="3" step="1" oninput="updateSimulation()">
+                        <div class="slider-labels">
+                            <span>Weak Protection</span>
+                            <span>Moderate Protection</span>
+                            <span>Strong Protection</span>
+                        </div>
+                    </div>
+                    <div class="current-level" id="currentLevel">Strong Property Rights Protection</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="results-box">
+                    <div class="results-title">Simulation Results</div>
+
+                    <div class="outcome-grid">
+                        <div class="outcome-item">
+                            <div class="outcome-label">Success Probability</div>
+                            <div class="outcome-value" id="probability">85%</div>
+                        </div>
+                        <div class="outcome-item">
+                            <div class="outcome-label">Expected Value</div>
+                            <div class="outcome-value" id="expectedValue">$17,000</div>
+                        </div>
+                        <div class="outcome-item">
+                            <div class="outcome-label">Risk Level</div>
+                            <div class="outcome-value" id="riskLevel">Low</div>
+                        </div>
+                    </div>
+
+                    <div class="explanation-text" id="explanation"></div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Real-World Examples</h2>
+                <div class="examples-section">
+                    <div class="examples-title">How Property Rights Affect Economic Development:</div>
+
+                    <div class="example-item">
+                        <span class="country-name">Hong Kong & Singapore:</span>
+                        <p>Strong property rights protection has made these countries among the wealthiest in Asia. Entrepreneurs know their businesses and property are secure, encouraging massive investment.</p>
+                    </div>
+
+                    <div class="example-item">
+                        <span class="country-name">United States:</span>
+                        <p>Strong property rights and contract enforcement have been key to economic growth. Investors feel confident that their ownership will be protected by courts.</p>
+                    </div>
+
+                    <div class="example-item">
+                        <span class="country-name">Venezuela:</span>
+                        <p>Weak property rights and government seizures of businesses have led to economic collapse. Foreign investment dried up when companies feared losing their assets.</p>
+                    </div>
+
+                    <div class="example-item">
+                        <span class="country-name">South Korea vs. North Korea:</span>
+                        <p>Same people, same culture, different property rights systems. South Korea (strong rights) has GDP per capita 20x higher than North Korea (weak rights).</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="button" onclick="window.print()">Print Simulation Results</button>
+        </div>
+    </div>
+
+    <script>
+        let currentScenario = 'business';
+
+        function selectScenario(scenario) {
+            currentScenario = scenario;
+            document.querySelectorAll('.scenario-card').forEach(card => {
+                card.classList.remove('active');
+            });
+            event.target.closest('.scenario-card').classList.add('active');
+            updateSimulation();
+        }
+
+        function updateSimulation() {
+            const rightsLevel = parseInt(document.getElementById('rightsSlider').value);
+            const levelTexts = ['Weak Property Rights Protection', 'Moderate Property Rights Protection', 'Strong Property Rights Protection'];
+            document.getElementById('currentLevel').textContent = levelTexts[rightsLevel - 1];
+
+            let probability, expectedValue, riskLevel, explanation;
+
+            const scenarios = {
+                business: {
+                    weak: {
+                        probability: '35%',
+                        expectedValue: '$3,500',
+                        riskLevel: 'Very High',
+                        explanation: 'With weak property rights, there\'s a high risk your business could be taken over, heavily taxed arbitrarily, or face corrupt officials demanding bribes. Most entrepreneurs avoid investing in such environments. Your $10,000 investment has only a 35% chance of success.'
+                    },
+                    moderate: {
+                        probability: '60%',
+                        expectedValue: '$9,000',
+                        riskLevel: 'Moderate',
+                        explanation: 'Moderate property rights provide some protection, but uncertainties remain. Contracts are sometimes enforced, but corruption and arbitrary regulations are still concerns. Your business has a fair chance of success, but you\'ll need to be cautious and may need to pay "unofficial fees."'
+                    },
+                    strong: {
+                        probability: '85%',
+                        expectedValue: '$17,000',
+                        riskLevel: 'Low',
+                        explanation: 'Strong property rights mean your business is protected by law. Courts enforce contracts, property can\'t be arbitrarily seized, and regulations are transparent. You can confidently invest knowing your ownership is secure. Expected value is much higher because you can plan long-term.'
+                    }
+                },
+                property: {
+                    weak: {
+                        probability: '25%',
+                        expectedValue: '$2,500',
+                        riskLevel: 'Extreme',
+                        explanation: 'Buying property is extremely risky when rights are weak. The government could seize your land without fair compensation, title disputes are common, and corruption makes ownership uncertain. Most people avoid property investment entirely in these conditions.'
+                    },
+                    moderate: {
+                        probability: '55%',
+                        expectedValue: '$8,250',
+                        riskLevel: 'High',
+                        explanation: 'Property ownership exists but faces challenges. Title disputes can take years to resolve, zoning laws might change unpredictably, and there\'s some risk of government interference. You might buy property but face significant uncertainty about your rights.'
+                    },
+                    strong: {
+                        probability: '90%',
+                        expectedValue: '$18,000',
+                        riskLevel: 'Very Low',
+                        explanation: 'With strong property rights, your ownership is clearly documented, protected by law, and transferable. You can develop the property, sell it, or use it as collateral for loans. Clear title and legal protection make property investment attractive and valuable.'
+                    }
+                },
+                investment: {
+                    weak: {
+                        probability: '30%',
+                        expectedValue: '$3,000',
+                        riskLevel: 'Very High',
+                        explanation: 'Foreign investors flee countries with weak property rights. Your investment could be nationalized, profits could be blocked from leaving the country, or local partners could steal your share without legal recourse. Capital flight is common in these environments.'
+                    },
+                    moderate: {
+                        probability: '65%',
+                        expectedValue: '$9,750',
+                        riskLevel: 'Moderate',
+                        explanation: 'Investment is possible but requires extra caution. You\'ll need good local partners, insurance, and diversification. Some sectors are riskier than others. Many investors demand higher returns to compensate for the additional risk.'
+                    },
+                    strong: {
+                        probability: '80%',
+                        expectedValue: '$16,000',
+                        riskLevel: 'Low',
+                        explanation: 'Strong property rights attract investment from around the world. Your shares, contracts, and returns are legally protected. Courts resolve disputes fairly, and you can repatriate profits. This security encourages more investment, creating a positive economic cycle.'
+                    }
+                }
+            };
+
+            const levels = ['weak', 'moderate', 'strong'];
+            const data = scenarios[currentScenario][levels[rightsLevel - 1]];
+
+            document.getElementById('probability').textContent = data.probability;
+            document.getElementById('expectedValue').textContent = data.expectedValue;
+            document.getElementById('riskLevel').textContent = data.riskLevel;
+            document.getElementById('explanation').textContent = data.explanation;
+        }
+
+        // Initialize
+        updateSimulation();
+    </script>
+</body>
+</html>

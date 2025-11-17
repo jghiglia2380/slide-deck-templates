@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Integrated Market Analysis Tool | PFL Academy</title>
+<!--STATE VARIABLES: STATE_MEDIAN_RENT, STATE_MEDIAN_HOME_PRICE
+
+    PURPOSE: Apply supply, demand, and market structure concepts together
+    USE: Chapter interactive activity (15-20 minutes)
+    -->
+<style>:root{--primary:#6366f1;--secondary:#8b5cf6;--success:#10b981;--warning:#f59e0b}*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Helvetica Neue',Arial,sans-serif;font-size:16px;line-height:1.6;color:#1f2937;background:#f9fafb;padding:20px}.container{max-width:1100px;margin:0 auto;background:#fff;border-radius:12px;box-shadow:0 4px 6px rgba(0,0,0,0.1)}header{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;padding:30px;text-align:center}h1{font-size:2rem;margin-bottom:10px}.main-content{padding:30px}.section{margin-bottom:30px}.section-title{font-size:1.3rem;font-weight:600;color:var(--primary);margin-bottom:15px;padding-bottom:8px;border-bottom:2px solid var(--primary)}.scenario-card{background:#f9fafb;border:2px solid #e5e7eb;border-radius:8px;padding:20px;margin:15px 0}.form-group{margin-bottom:15px}label{display:block;font-weight:600;margin-bottom:8px}input,select{width:100%;padding:12px;border:1px solid #d1d5db;border-radius:6px;font-size:1rem}.btn{padding:12px 24px;border-radius:6px;font-weight:600;border:none;background:var(--primary);color:#fff;cursor:pointer;width:100%;margin-top:15px}.btn:hover{background:#4f46e5}.results{background:linear-gradient(135deg,#f0f9ff,#e0f2fe);padding:25px;border-radius:8px;margin-top:20px;display:none}.chart-container{background:#fff;padding:15px;border-radius:8px;margin:15px 0}.info-box{background:#fef3c7;border-left:4px solid var(--warning);padding:15px;border-radius:6px;margin:15px 0}@media print{body{background:#fff;padding:0}.container{box-shadow:none}.btn{display:none}}@media (max-width:768px){.main-content{padding:20px}}</style>
+</head>
+<body>
+<div class="container">
+<header>
+<h1>📊 Integrated Market Analysis Tool</h1>
+<p>Apply Supply, Demand & Market Structure Concepts</p>
+</header>
+<div class="main-content">
+<div class="section">
+<h2 class="section-title">Market Scenario Analysis</h2>
+<div class="scenario-card">
+<h3>Scenario: Local Housing Market</h3>
+<p>Analyze the local housing market using supply and demand principles.</p>
+<div class="form-group">
+<label>Current Median Home Price in Your Area</label>
+<input type="number" id="homePrice" placeholder="{{STATE_MEDIAN_HOME_PRICE}}">
+</div>
+<div class="form-group">
+<label>Current Median Monthly Rent</label>
+<input type="number" id="rent" placeholder="{{STATE_MEDIAN_RENT}}">
+</div>
+<div class="form-group">
+<label>Market Condition</label>
+<select id="marketCondition">
+<option value="">Select...</option>
+<option value="shortage">Housing Shortage (High Demand, Low Supply)</option>
+<option value="balanced">Balanced Market</option>
+<option value="surplus">Housing Surplus (Low Demand, High Supply)</option>
+</select>
+</div>
+<div class="form-group">
+<label>Market Structure</label>
+<select id="marketStructure">
+<option value="">Select...</option>
+<option value="competitive">Perfect Competition (Many buyers/sellers)</option>
+<option value="monopolistic">Monopolistic Competition (Some differentiation)</option>
+<option value="oligopoly">Oligopoly (Few large developers)</option>
+<option value="monopoly">Monopoly (Single developer controls area)</option>
+</select>
+</div>
+</div>
+</div>
+<div class="section">
+<h2 class="section-title">Impact Analysis</h2>
+<div class="form-group">
+<label>Predicted Economic Change</label>
+<select id="economicChange">
+<option value="">Select...</option>
+<option value="growth">Strong Economic Growth (More Jobs)</option>
+<option value="stable">Stable Economy</option>
+<option value="decline">Economic Decline (Job Losses)</option>
+</select>
+</div>
+<div class="form-group">
+<label>Interest Rate Trend</label>
+<select id="interestTrend">
+<option value="">Select...</option>
+<option value="decrease">Decreasing (Easier to Borrow)</option>
+<option value="stable">Stable</option>
+<option value="increase">Increasing (Harder to Borrow)</option>
+</select>
+</div>
+</div>
+<button class="btn" onclick="analyze()">Analyze Market Dynamics</button>
+<div id="results" class="results">
+<h2 style="margin-bottom:15px">Analysis Results</h2>
+<div class="chart-container">
+<h3>Supply & Demand Prediction</h3>
+<p id="supplyDemand"></p>
+</div>
+<div class="chart-container">
+<h3>Price Forecast</h3>
+<p id="priceForecast"></p>
+</div>
+<div class="chart-container">
+<h3>Market Structure Impact</h3>
+<p id="structureImpact"></p>
+</div>
+<div class="info-box">
+<strong>💡 Key Insights:</strong>
+<p id="insights"></p>
+</div>
+</div>
+</div>
+</div>
+<script>
+function analyze(){const condition=document.getElementById('marketCondition').value;const structure=document.getElementById('marketStructure').value;const economic=document.getElementById('economicChange').value;const interest=document.getElementById('interestTrend').value;if(!condition||!structure||!economic||!interest){alert('Please complete all fields');return}let supplyDemandText='';let priceText='';let structureText='';let insightsText='';if(condition==='shortage'){supplyDemandText='Current shortage indicates demand exceeds supply. ';if(economic==='growth')supplyDemandText+='Economic growth will likely increase demand further, worsening the shortage.';else if(economic==='decline')supplyDemandText+='Economic decline may reduce demand, potentially balancing the market.';else supplyDemandText+='Stable economy suggests the shortage will persist.'}else if(condition==='balanced'){supplyDemandText='Market is currently balanced. ';if(economic==='growth')supplyDemandText+='Economic growth may shift toward shortage as demand increases.';else if(economic==='decline')supplyDemandText+='Economic decline may create surplus as demand decreases.';else supplyDemandText+='Balance likely to continue with stable economy.'}else{supplyDemandText='Current surplus indicates supply exceeds demand. ';if(economic==='growth')supplyDemandText+='Economic growth should help absorb excess supply.';else if(economic==='decline')supplyDemandText+='Economic decline will worsen the surplus.';else supplyDemandText+='Surplus likely to persist with stable economy.'}if(interest==='decrease'){priceText='Decreasing interest rates make borrowing cheaper, increasing demand and likely raising prices. '}else if(interest==='increase'){priceText='Increasing interest rates make borrowing more expensive, decreasing demand and likely lowering prices. '}else{priceText='Stable interest rates suggest prices will follow supply/demand trends. '}if(condition==='shortage'&&interest==='decrease')priceText+='Expect significant price increases.';else if(condition==='surplus'&&interest==='increase')priceText+='Expect price decreases or stagnation.';else priceText+='Expect moderate price changes.';if(structure==='competitive'){structureText='Perfect competition means prices are determined by market forces. Consumers have many options and sellers must compete on price.'}else if(structure==='monopolistic'){structureText='Monopolistic competition allows some price control through differentiation. Expect varied pricing based on features and location.'}else if(structure==='oligopoly'){structureText='Oligopoly structure means a few large players influence prices. Less competition may result in higher prices and coordinated behavior.'}else{structureText='Monopoly structure gives one developer significant pricing power. Expect higher prices and limited consumer choice.'}insightsText='Based on your analysis, ';if(condition==='shortage'&&economic==='growth'){insightsText+='expect strong price appreciation. Consider buying sooner if planning to purchase. '}else if(condition==='surplus'&&economic==='decline'){insightsText+='expect prices to fall. Buyers may want to wait; sellers should price competitively. '}else{insightsText+='expect gradual price changes. Market timing is less critical. '}if(structure==='monopoly'||structure==='oligopoly'){insightsText+='Limited competition may keep prices higher than in competitive markets.'}document.getElementById('supplyDemand').textContent=supplyDemandText;document.getElementById('priceForecast').textContent=priceText;document.getElementById('structureImpact').textContent=structureText;document.getElementById('insights').textContent=insightsText;document.getElementById('results').style.display='block';document.getElementById('results').scrollIntoView({behavior:'smooth'})}
+</script>
+</body>
+</html>

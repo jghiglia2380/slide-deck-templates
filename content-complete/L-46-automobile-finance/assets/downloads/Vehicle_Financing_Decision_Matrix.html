@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marco de Decisión de Financiamiento de Vehículos</title>
+    <!--
+    STATE VARIABLES USED IN THIS FILE:
+    - STATE_NAME
+    - STATE_SALES_TAX
+    - STATE_REGISTRATION_INITIAL
+    - STATE_REGISTRATION_ANNUAL
+    - STATE_INSURANCE_AVG_TEEN
+    - STATE_INSPECTION_REQUIRED (boolean)
+    - STATE_INSPECTION_COST
+
+    UPDATE FREQUENCY:
+    - Quarterly: STATE_INSURANCE_AVG_TEEN
+    - Annual: STATE_SALES_TAX, STATE_REGISTRATION_INITIAL, STATE_REGISTRATION_ANNUAL, STATE_INSPECTION_COST
+
+    ASSET TYPE: Printable Worksheet
+    PURPOSE: Personal decision-making framework for auto financing
+    PRINT-FRIENDLY: Yes (optimized for 2 pages)
+    -->
+    <style>
+        :root {
+            --pfl-indigo: #6366f1;
+            --pfl-purple: #8b5cf6;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-600: #4b5563;
+            --gray-700: #374151;
+            --gray-900: #111827;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, var(--pfl-indigo) 0%, var(--pfl-purple) 100%);
+            padding: 2rem 1rem;
+            color: var(--gray-900);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--pfl-indigo) 0%, var(--pfl-purple) 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 2rem;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+            page-break-inside: avoid;
+        }
+
+        .section:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--pfl-indigo);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid var(--pfl-indigo);
+        }
+
+        .section-number {
+            display: inline-block;
+            background: var(--pfl-indigo);
+            color: white;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 2rem;
+            margin-right: 0.5rem;
+            font-weight: 700;
+        }
+
+        .priority-grid {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .priority-item {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem;
+            background: var(--gray-100);
+            border-radius: 0.5rem;
+        }
+
+        .checkbox {
+            width: 1.5rem;
+            height: 1.5rem;
+            border: 2px solid var(--gray-600);
+            border-radius: 0.25rem;
+            margin-right: 0.75rem;
+            flex-shrink: 0;
+        }
+
+        .rank-input {
+            width: 3rem;
+            height: 2.5rem;
+            border: 2px solid var(--gray-600);
+            border-radius: 0.5rem;
+            text-align: center;
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .input-group {
+            margin-bottom: 1rem;
+        }
+
+        .input-label {
+            display: block;
+            font-weight: 600;
+            color: var(--gray-700);
+            margin-bottom: 0.5rem;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid var(--gray-200);
+            border-radius: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .input-field:focus {
+            outline: none;
+            border-color: var(--pfl-indigo);
+        }
+
+        .input-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-top: 0.5rem;
+        }
+
+        .radio-option {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .radio-circle {
+            width: 1.25rem;
+            height: 1.25rem;
+            border: 2px solid var(--gray-600);
+            border-radius: 50%;
+        }
+
+        .state-info-box {
+            background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%);
+            border-left: 4px solid var(--pfl-indigo);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .state-info-title {
+            font-weight: 700;
+            font-size: 1.125rem;
+            color: var(--pfl-indigo);
+            margin-bottom: 1rem;
+        }
+
+        .state-data-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+        }
+
+        .state-data-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem;
+            background: white;
+            border-radius: 0.25rem;
+        }
+
+        .state-data-label {
+            font-weight: 600;
+            color: var(--gray-700);
+        }
+
+        .state-data-value {
+            font-weight: 700;
+            color: var(--pfl-indigo);
+        }
+
+        .scenario-comparison {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .scenario-box {
+            padding: 1rem;
+            background: var(--gray-100);
+            border-radius: 0.5rem;
+            text-align: center;
+        }
+
+        .scenario-label {
+            font-weight: 600;
+            color: var(--gray-700);
+            margin-bottom: 0.5rem;
+            font-size: 0.875rem;
+        }
+
+        .scenario-input {
+            width: 100%;
+            padding: 0.5rem;
+            border: 2px solid var(--gray-200);
+            border-radius: 0.25rem;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .decision-box {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            border-left: 4px solid #10b981;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .decision-label {
+            font-weight: 700;
+            font-size: 1.125rem;
+            color: #065f46;
+            margin-bottom: 1rem;
+        }
+
+        .text-area {
+            width: 100%;
+            min-height: 4rem;
+            padding: 0.75rem;
+            border: 2px solid var(--gray-200);
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            font-family: inherit;
+            resize: vertical;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: var(--gray-100);
+            color: var(--gray-600);
+            font-size: 0.875rem;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                border-radius: 0;
+            }
+
+            .section {
+                page-break-inside: avoid;
+            }
+
+            .footer {
+                page-break-before: avoid;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .input-grid,
+            .state-data-grid,
+            .scenario-comparison {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚗 Marco de Decisión de Financiamiento de Vehículos</h1>
+            <p>Planificador Personal para Tomar la Mejor Decisión</p>
+        </div>
+
+        <div class="content">
+            <!-- Section 1: Priorities -->
+            <div class="section">
+                <h2 class="section-title">
+                    <span class="section-number">1</span>
+                    Tus Prioridades
+                </h2>
+                <p style="margin-bottom: 1rem; color: var(--gray-600);">
+                    Clasifica del 1 al 5 (1 = más importante, 5 = menos importante)
+                </p>
+
+                <div class="priority-grid">
+                    <div class="priority-item">
+                        <div class="checkbox"></div>
+                        <span>Pago mensual más bajo posible</span>
+                    </div>
+                    <input type="number" class="rank-input" min="1" max="5" placeholder="1-5">
+
+                    <div class="priority-item">
+                        <div class="checkbox"></div>
+                        <span>Costo total más bajo a largo plazo</span>
+                    </div>
+                    <input type="number" class="rank-input" min="1" max="5" placeholder="1-5">
+
+                    <div class="priority-item">
+                        <div class="checkbox"></div>
+                        <span>Tener siempre un vehículo más nuevo</span>
+                    </div>
+                    <input type="number" class="rank-input" min="1" max="5" placeholder="1-5">
+
+                    <div class="priority-item">
+                        <div class="checkbox"></div>
+                        <span>No tener pagos de auto eventualmente</span>
+                    </div>
+                    <input type="number" class="rank-input" min="1" max="5" placeholder="1-5">
+
+                    <div class="priority-item">
+                        <div class="checkbox"></div>
+                        <span>Flexibilidad para cambiar de vehículo cada 2-3 años</span>
+                    </div>
+                    <input type="number" class="rank-input" min="1" max="5" placeholder="1-5">
+                </div>
+            </div>
+
+            <!-- Section 2: Current Circumstances -->
+            <div class="section">
+                <h2 class="section-title">
+                    <span class="section-number">2</span>
+                    Tus Circunstancias Actuales
+                </h2>
+
+                <div class="input-grid">
+                    <div class="input-group">
+                        <label class="input-label">Ingreso Anual</label>
+                        <input type="text" class="input-field" placeholder="$__________">
+                    </div>
+
+                    <div class="input-group">
+                        <label class="input-label">Ingreso Neto Mensual</label>
+                        <input type="text" class="input-field" placeholder="$__________">
+                    </div>
+
+                    <div class="input-group">
+                        <label class="input-label">Ahorros Actuales</label>
+                        <input type="text" class="input-field" placeholder="$__________">
+                    </div>
+
+                    <div class="input-group">
+                        <label class="input-label">Millaje Anual Esperado</label>
+                        <input type="text" class="input-field" placeholder="__________ millas">
+                    </div>
+                </div>
+
+                <div class="input-group" style="margin-top: 1rem;">
+                    <label class="input-label">Rango de Puntaje Crediticio</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <div class="radio-circle"></div>
+                            <span>Excelente (750+)</span>
+                        </div>
+                        <div class="radio-option">
+                            <div class="radio-circle"></div>
+                            <span>Bueno (700-749)</span>
+                        </div>
+                        <div class="radio-option">
+                            <div class="radio-circle"></div>
+                            <span>Regular (650-699)</span>
+                        </div>
+                        <div class="radio-option">
+                            <div class="radio-circle"></div>
+                            <span>En Construcción (&lt;650)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-group" style="margin-top: 1rem;">
+                    <label class="input-label">Estabilidad Laboral</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <div class="radio-circle"></div>
+                            <span>Muy Estable (3+ años)</span>
+                        </div>
+                        <div class="radio-option">
+                            <div class="radio-circle"></div>
+                            <span>Estable (1-3 años)</span>
+                        </div>
+                        <div class="radio-option">
+                            <div class="radio-circle"></div>
+                            <span>Incierta (&lt;1 año)</span>
+                        </div>
+                        <div class="radio-option">
+                            <div class="radio-circle"></div>
+                            <span>Cambiando Pronto</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3: State-Specific Factors -->
+            <div class="section">
+                <h2 class="section-title">
+                    <span class="section-number">3</span>
+                    Factores Específicos del Estado
+                </h2>
+
+                <div class="state-info-box">
+                    <div class="state-info-title">Costos de Vehículos en {{STATE_NAME}}</div>
+                    <div class="state-data-grid">
+                        <div class="state-data-item">
+                            <span class="state-data-label">Impuesto sobre Ventas:</span>
+                            <span class="state-data-value">{{STATE_SALES_TAX}}%</span>
+                        </div>
+                        <div class="state-data-item">
+                            <span class="state-data-label">Registro Inicial:</span>
+                            <span class="state-data-value">${{STATE_REGISTRATION_INITIAL}}</span>
+                        </div>
+                        <div class="state-data-item">
+                            <span class="state-data-label">Renovación Anual:</span>
+                            <span class="state-data-value">${{STATE_REGISTRATION_ANNUAL}}</span>
+                        </div>
+                        <div class="state-data-item">
+                            <span class="state-data-label">Seguro Promedio:</span>
+                            <span class="state-data-value">${{STATE_INSURANCE_AVG_TEEN}}/mes</span>
+                        </div>
+                        <div class="state-data-item" style="grid-column: 1 / -1;">
+                            <span class="state-data-label">Inspección Requerida:</span>
+                            <span class="state-data-value">
+                                {{#if STATE_INSPECTION_REQUIRED}}
+                                Sí - ${{STATE_INSPECTION_COST}} anualmente
+                                {{else}}
+                                No
+                                {{/if}}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 4: Scenario Analysis Summary -->
+            <div class="section">
+                <h2 class="section-title">
+                    <span class="section-number">4</span>
+                    Resumen de Análisis de Escenarios
+                </h2>
+                <p style="margin-bottom: 1rem; color: var(--gray-600);">
+                    De tus actividades del Día 2, ingresa el costo neto de cada opción:
+                </p>
+
+                <div class="scenario-comparison">
+                    <div class="scenario-box">
+                        <div class="scenario-label">Comprar Nuevo</div>
+                        <input type="text" class="scenario-input" placeholder="$__________">
+                        <div style="font-size: 0.75rem; color: var(--gray-600); margin-top: 0.5rem;">Costo Neto</div>
+                    </div>
+
+                    <div class="scenario-box">
+                        <div class="scenario-label">Comprar Usado</div>
+                        <input type="text" class="scenario-input" placeholder="$__________">
+                        <div style="font-size: 0.75rem; color: var(--gray-600); margin-top: 0.5rem;">Costo Neto</div>
+                    </div>
+
+                    <div class="scenario-box">
+                        <div class="scenario-label">Arrendar</div>
+                        <input type="text" class="scenario-input" placeholder="$__________">
+                        <div style="font-size: 0.75rem; color: var(--gray-600); margin-top: 0.5rem;">Costo Neto</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 5: My Decision Framework -->
+            <div class="section">
+                <h2 class="section-title">
+                    <span class="section-number">5</span>
+                    Mi Marco de Decisión
+                </h2>
+
+                <div class="decision-box">
+                    <div class="decision-label">Mi Enfoque Recomendado</div>
+                    <div class="radio-group" style="margin-bottom: 1.5rem;">
+                        <div class="radio-option">
+                            <div class="radio-circle"></div>
+                            <span style="font-weight: 600;">Comprar Nuevo</span>
+                        </div>
+                        <div class="radio-option">
+                            <div class="radio-circle"></div>
+                            <span style="font-weight: 600;">Comprar Usado</span>
+                        </div>
+                        <div class="radio-option">
+                            <div class="radio-circle"></div>
+                            <span style="font-weight: 600;">Arrendar</span>
+                        </div>
+                    </div>
+
+                    <div class="input-grid" style="margin-top: 1rem;">
+                        <div class="input-group">
+                            <label class="input-label">Pago Mensual Máximo</label>
+                            <input type="text" class="input-field" placeholder="$__________">
+                        </div>
+
+                        <div class="input-group">
+                            <label class="input-label">Plazo Máximo del Préstamo</label>
+                            <input type="text" class="input-field" placeholder="__________ meses">
+                        </div>
+                    </div>
+
+                    <div class="input-group" style="margin-top: 1rem;">
+                        <label class="input-label">Rango de Precio Objetivo</label>
+                        <div style="display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem; align-items: center;">
+                            <input type="text" class="input-field" placeholder="$__________">
+                            <span style="font-weight: 600; color: #065f46;">a</span>
+                            <input type="text" class="input-field" placeholder="$__________">
+                        </div>
+                    </div>
+
+                    <div class="input-group" style="margin-top: 1rem;">
+                        <label class="input-label">Plan Después del Pago del Préstamo</label>
+                        <textarea class="text-area" placeholder="Ejemplo: Conservar el vehículo otros 5 años sin pagos, ahorrar $400/mes para el próximo auto en efectivo..."></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 6: Personal Rules -->
+            <div class="section">
+                <h2 class="section-title">
+                    <span class="section-number">6</span>
+                    Mis Reglas Personales
+                </h2>
+
+                <div class="input-group">
+                    <label class="input-label">No voy a:</label>
+                    <textarea class="text-area" placeholder="Ejemplo: Firmar un préstamo de más de 60 meses, gastar más del 15% de mi ingreso neto en un auto, aceptar un préstamo sin leer todo el contrato..."></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-label">Voy a priorizar:</label>
+                    <textarea class="text-area" placeholder="Ejemplo: Confiabilidad sobre apariencia, pago inicial del 20% para evitar estar bajo el agua, investigación de precios antes de ir al concesionario..."></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-label">Mi cronograma:</label>
+                    <textarea class="text-area" placeholder="Ejemplo: Ahorrar durante 6 meses para el pago inicial, comprar en primavera cuando hay mejores ofertas, tener aprobación previa antes de comprar..."></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><strong>PFL Academy</strong> | Educación de Finanzas Personales</p>
+            <p style="margin-top: 0.5rem;">
+                Este marco de decisión está diseñado para ayudarte a tomar decisiones informadas sobre el financiamiento de vehículos basadas en tus circunstancias y prioridades únicas.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

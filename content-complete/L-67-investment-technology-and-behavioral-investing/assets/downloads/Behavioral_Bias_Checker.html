@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Behavioral Bias Checker | PFL Academy</title>
+    <!--
+    STATE VARIABLES USED IN THIS FILE:
+    - None (Tier 3 universal content)
+
+    UPDATE FREQUENCY:
+    - Not applicable for this interactive tool
+    
+
+    PURPOSE: Identify and overcome common behavioral investing biases
+    USE: Chapter interactive activity (15-20 minutes)
+    -->
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #8b5cf6;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --background: #ffffff;
+            --surface: #f9fafb;
+            --border: #e5e7eb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 15px;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--surface);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: var(--background);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            opacity: 0.95;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .progress-bar {
+            background: var(--surface);
+            border-radius: 10px;
+            height: 20px;
+            margin-bottom: 30px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+
+        .progress-fill {
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            height: 100%;
+            width: 0%;
+            transition: width 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        .bias-section {
+            background: white;
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 25px;
+            display: none;
+        }
+
+        .bias-section.active {
+            display: block;
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .bias-description {
+            color: var(--text-light);
+            margin-bottom: 20px;
+            padding: 15px;
+            background: var(--surface);
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .scenario-box {
+            background: #fffbeb;
+            border: 2px solid var(--warning);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .scenario-title {
+            color: var(--warning);
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .question {
+            font-weight: 600;
+            color: var(--text);
+            margin: 20px 0 15px;
+            font-size: 1.1rem;
+        }
+
+        .choices {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .choice {
+            background: var(--surface);
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            padding: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .choice:hover {
+            border-color: var(--primary);
+            background: white;
+            transform: translateX(4px);
+        }
+
+        .choice input[type="radio"] {
+            margin-top: 4px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .choice-text {
+            flex: 1;
+            font-size: 1rem;
+        }
+
+        .feedback {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            display: none;
+        }
+
+        .feedback.show {
+            display: block;
+        }
+
+        .feedback.correct {
+            background: #d1fae5;
+            border: 2px solid var(--success);
+            color: #065f46;
+        }
+
+        .feedback.biased {
+            background: #fee2e2;
+            border: 2px solid var(--danger);
+            color: #991b1b;
+        }
+
+        .feedback-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+        }
+
+        .button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .button.secondary {
+            background: white;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .results-screen {
+            display: none;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .results-screen.show {
+            display: block;
+        }
+
+        .score-circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 30px;
+            box-shadow: 0 8px 16px rgba(99, 102, 241, 0.3);
+        }
+
+        .score-number {
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .score-label {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .bias-summary {
+            background: var(--surface);
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .bias-item {
+            background: white;
+            border-left: 4px solid var(--primary);
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+
+        .bias-name {
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        .bias-strategy {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        .icon {
+            font-size: 1.2rem;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+            }
+
+            .button-group, .choices {
+                display: none;
+            }
+
+            .feedback, .results-screen {
+                display: block !important;
+                page-break-inside: avoid;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .score-circle {
+                width: 160px;
+                height: 160px;
+            }
+
+            .score-number {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧠 Behavioral Bias Checker</h1>
+            <div class="subtitle">Identify and overcome common investing biases</div>
+        </header>
+
+        <div class="content">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress">0%</div>
+            </div>
+
+            <!-- Bias 1: Confirmation Bias -->
+            <div class="bias-section active" data-bias="1">
+                <h2><span class="icon">🔍</span> Confirmation Bias</h2>
+                <div class="bias-description">
+                    <strong>Definition:</strong> The tendency to search for, interpret, and remember information that confirms your pre-existing beliefs while ignoring contradictory evidence.
+                </div>
+
+                <div class="scenario-box">
+                    <div class="scenario-title">📋 Scenario</div>
+                    <p>You've invested in TechCorp stock because you believe artificial intelligence is the future. The stock has dropped 15% this month. You read several articles:</p>
+                    <ul style="margin-top: 10px; margin-left: 20px;">
+                        <li>Article A: "TechCorp's AI technology faces regulatory challenges"</li>
+                        <li>Article B: "Industry expert predicts AI market will triple in 5 years"</li>
+                        <li>Article C: "TechCorp loses major client to competitor"</li>
+                    </ul>
+                </div>
+
+                <div class="question">Which article are you most likely to focus on?</div>
+                <div class="choices">
+                    <label class="choice">
+                        <input type="radio" name="q1" value="correct">
+                        <span class="choice-text">Read all articles equally and reassess my investment thesis based on complete information</span>
+                    </label>
+                    <label class="choice">
+                        <input type="radio" name="q1" value="biased">
+                        <span class="choice-text">Focus on Article B because it supports my belief in AI's future</span>
+                    </label>
+                    <label class="choice">
+                        <input type="radio" name="q1" value="biased">
+                        <span class="choice-text">Dismiss Articles A and C as short-term noise and hold my position</span>
+                    </label>
+                    <label class="choice">
+                        <input type="radio" name="q1" value="biased">
+                        <span class="choice-text">Look for more articles that support AI growth to reinforce my decision</span>
+                    </label>
+                </div>
+
+                <div class="feedback" id="feedback1">
+                    <div class="feedback-title"></div>
+                    <p></p>
+                </div>
+
+                <div class="button-group">
+                    <button class="button" onclick="checkAnswer(1)">Check Answer</button>
+                    <button class="button secondary" onclick="nextBias(2)" id="next1" disabled>Next Bias →</button>
+                </div>
+            </div>
+
+            <!-- Bias 2: Loss Aversion -->
+            <div class="bias-section" data-bias="2">
+                <h2><span class="icon">😰</span> Loss Aversion</h2>
+                <div class="bias-description">
+                    <strong>Definition:</strong> The tendency to prefer avoiding losses over acquiring equivalent gains. Research shows people feel the pain of losing $100 about twice as intensely as the pleasure of gaining $100.
+                </div>
+
+                <div class="scenario-box">
+                    <div class="scenario-title">📋 Scenario</div>
+                    <p>You bought RetailCo stock at $50 per share. The price has fallen to $35. Your research shows the company's fundamentals have deteriorated significantly, and analysts predict further decline. However, selling now means accepting a $15/share loss.</p>
+                </div>
+
+                <div class="question">What is the most rational decision?</div>
+                <div class="choices">
+                    <label class="choice">
+                        <input type="radio" name="q2" value="correct">
+                        <span class="choice-text">Sell the stock based on current analysis, regardless of purchase price, to prevent larger losses</span>
+                    </label>
+                    <label class="choice">
+                        <input type="radio" name="q2" value="biased">
+                        <span class="choice-text">Hold the stock until it returns to $50 to avoid realizing the loss</span>
+                    </label>
+                    <label class="choice">
+                        <input type="radio" name="q2" value="biased">
+                        <span class="choice-text">Buy more shares to "average down" my cost basis</span>
+                    </label>
+                    <label class="choice">
+                        <input type="radio" name="q2" value="biased">
+                        <span class="choice-text">Wait and hope the situation improves rather than accept the loss</span>
+                    </label>
+                </div>
+
+                <div class="feedback" id="feedback2">
+                    <div class="feedback-title"></div>
+                    <p></p>
+                </div>
+
+                <div class="button-group">
+                    <button class="button" onclick="checkAnswer(2)">Check Answer</button>
+                    <button class="button secondary" onclick="nextBias(3)" id="next2" disabled>Next Bias →</button>
+                </div>
+            </div>
+
+            <!-- Bias 3: Herd Mentality -->
+            <div class="bias-section" data-bias="3">
+                <h2><span class="icon">🐑</span> Herd Mentality</h2>
+                <div class="bias-description">
+                    <strong>Definition:</strong> The tendency to follow and copy what others are doing, especially during times of uncertainty. This often leads to market bubbles and crashes.
+                </div>
+
+                <div class="scenario-box">
+                    <div class="scenario-title">📋 Scenario</div>
+                    <p>Everyone at work is talking about CryptoCoin, which has increased 300% in the past month. Your coworkers are making significant profits, and social media is filled with success stories. You don't fully understand cryptocurrency, but you're feeling left out.</p>
+                </div>
+
+                <div class="question">What approach shows independent thinking?</div>
+                <div class="choices">
+                    <label class="choice">
+                        <input type="radio" name="q3" value="correct">
+                        <span class="choice-text">Research cryptocurrency thoroughly, understand the risks, and only invest if it fits my strategy and risk tolerance</span>
+                    </label>
+                    <label class="choice">
+                        <input type="radio" name="q3" value="biased">
+                        <span class="choice-text">Invest quickly before the price goes even higher—everyone can't be wrong</span>
+                    </label>
+                    <label class="choice">
+                        <input type="radio" name="q3" value="biased">
+                        <span class="choice-text">Put in a small amount now and more later if others keep making money</span>
+                    </label>
+                    <label class="choice">
+                        <input type="radio" name="q3" value="biased">
+                        <span class="choice-text">Follow what the most successful person at work is doing</span>
+                    </label>
+                </div>
+
+                <div class="feedback" id="feedback3">
+                    <div class="feedback-title"></div>
+                    <p></p>
+                </div>
+
+                <div class="button-group">
+                    <button class="button" onclick="checkAnswer(3)">Check Answer</button>
+                    <button class="button secondary" onclick="nextBias(4)" id="next3" disabled>Next Bias →</button>
+                </div>
+            </div>
+
+            <!-- Bias 4: Overconfidence Bias -->
+            <div class="bias-section" data-bias="4">
+                <h2><span class="icon">💪</span> Overconfidence Bias</h2>
+                <div class="bias-description">
+                    <strong>Definition:</strong> The tendency to overestimate your knowledge, abilities, and the precision of your predictions. Studies show 80% of investors believe they are above average.
+                </div>
+
+                <div class="scenario-box">
+                    <div class="scenario-title">📋 Scenario</div>
+                    <p>After successfully picking three winning stocks in a row, you feel confident in your investing abilities. You're considering investing a large portion of your portfolio in a single stock you've researched for a few hours, believing you've found a guaranteed winner.</p>
+                </div>
+
+                <div class="question">What demonstrates appropriate humility?</div>
+                <div class="choices">
+                    <label class="choice">
+                        <input type="radio" name="q4" value="correct">
+                        <span class="choice-text">Maintain diversification, recognize that past success may be partly luck, and continue systematic research</span>
+                    </label>
+                    <label class="choice">
+                        <input type="radio" name="q4" value="biased">
+                        <span class="choice-text">Increase position sizes since my stock-picking ability is proven</span>
+                    </label>
+                    <label class="choice">
+                        <input type="radio" name="q4" value="biased">
+                        <span class="choice-text">Move to more complex investments like options since I've mastered stocks</span>
+                    </label>
+                    <label class="choice">
+                        <input type="radio" name="q4" value="biased">
+                        <span class="choice-text">Invest heavily in this opportunity—I know a winner when I see one</span>
+                    </label>
+                </div>
+
+                <div class="feedback" id="feedback4">
+                    <div class="feedback-title"></div>
+                    <p></p>
+                </div>
+
+                <div class="button-group">
+                    <button class="button" onclick="checkAnswer(4)">Check Answer</button>
+                    <button class="button secondary" onclick="nextBias(5)" id="next4" disabled>Next Bias →</button>
+                </div>
+            </div>
+
+            <!-- Bias 5: Anchoring Bias -->
+            <div class="bias-section" data-bias="5">
+                <h2><span class="icon">⚓</span> Anchoring Bias</h2>
+                <div class="bias-description">
+                    <strong>Definition:</strong> The tendency to rely too heavily on the first piece of information encountered (the "anchor") when making decisions, even if that information is irrelevant.
+                </div>
+
+                <div class="scenario-box">
+                    <div class="scenario-title">📋 Scenario</div>
+                    <p>You're considering buying stock in MediaCo. You see it was trading at $100 per share last year and is now at $60. A friend mentions they think it's "cheap" compared to the $100 high. Current analysis shows the company's business model is deteriorating.</p>
+                </div>
+
+                <div class="question">How should you approach this decision?</div>
+                <div class="choices">
+                    <label class="choice">
+                        <input type="radio" name="q5" value="correct">
+                        <span class="choice-text">Ignore the historical price and evaluate the stock based on current fundamentals and future prospects</span>
+                    </label>
+                    <label class="choice">
+                        <input type="radio" name="q5" value="biased">
+                        <span class="choice-text">It's a bargain at $60 compared to the $100 it used to be worth</span>
+                    </label>
+                    <label class="choice">
+                        <input type="radio" name="q5" value="biased">
+                        <span class="choice-text">Wait for it to drop closer to $50 (half of $100) before buying</span>
+                    </label>
+                    <label class="choice">
+                        <input type="radio" name="q5" value="biased">
+                        <span class="choice-text">Buy now expecting it will return to $100 eventually</span>
+                    </label>
+                </div>
+
+                <div class="feedback" id="feedback5">
+                    <div class="feedback-title"></div>
+                    <p></p>
+                </div>
+
+                <div class="button-group">
+                    <button class="button" onclick="checkAnswer(5)">Check Answer</button>
+                    <button class="button secondary" onclick="showResults()" id="next5" disabled>View Results →</button>
+                </div>
+            </div>
+
+            <!-- Results Screen -->
+            <div class="results-screen" id="results">
+                <h2>Your Behavioral Bias Assessment</h2>
+                <div class="score-circle">
+                    <div class="score-number" id="score">0</div>
+                    <div class="score-label">out of 5</div>
+                </div>
+                <p id="score-message" style="font-size: 1.2rem; color: var(--text-light); margin-bottom: 20px;"></p>
+
+                <div class="bias-summary">
+                    <h3 style="margin-bottom: 20px; color: var(--primary);">Strategies to Overcome These Biases</h3>
+
+                    <div class="bias-item">
+                        <div class="bias-name">🔍 Confirmation Bias</div>
+                        <div class="bias-strategy">Actively seek out information that contradicts your beliefs. Create a "devil's advocate" checklist before making decisions.</div>
+                    </div>
+
+                    <div class="bias-item">
+                        <div class="bias-name">😰 Loss Aversion</div>
+                        <div class="bias-strategy">Use stop-loss orders. Make decisions based on future prospects, not past purchase prices. Remember: sunk costs are irrelevant.</div>
+                    </div>
+
+                    <div class="bias-item">
+                        <div class="bias-name">🐑 Herd Mentality</div>
+                        <div class="bias-strategy">Develop and stick to a written investment plan. Ask "Would I buy this if nobody else was?" before following trends.</div>
+                    </div>
+
+                    <div class="bias-item">
+                        <div class="bias-name">💪 Overconfidence Bias</div>
+                        <div class="bias-strategy">Keep a decision journal to review successes AND failures. Maintain humility and diversification regardless of past performance.</div>
+                    </div>
+
+                    <div class="bias-item">
+                        <div class="bias-name">⚓ Anchoring Bias</div>
+                        <div class="bias-strategy">Focus on intrinsic value, not historical prices. Ask "What is this worth today?" rather than "What was it worth before?"</div>
+                    </div>
+                </div>
+
+                <div class="button-group" style="justify-content: center; margin-top: 30px;">
+                    <button class="button" onclick="restartAssessment()">Restart Assessment</button>
+                    <button class="button secondary" onclick="window.print()">Print Results</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentBias = 1;
+        let correctAnswers = 0;
+        const totalBiases = 5;
+        const answers = {};
+
+        const feedbackData = {
+            1: {
+                correct: {
+                    title: "✅ Excellent! You're avoiding confirmation bias.",
+                    text: "By considering all information equally, you're making objective decisions rather than cherry-picking data that supports your existing beliefs."
+                },
+                biased: {
+                    title: "⚠️ This shows confirmation bias.",
+                    text: "Focusing only on information that supports your existing beliefs prevents you from making objective investment decisions. Always seek contradictory evidence."
+                }
+            },
+            2: {
+                correct: {
+                    title: "✅ Great decision-making!",
+                    text: "You're focusing on future prospects rather than past prices. Sunk costs (your original purchase price) should never drive current decisions."
+                },
+                biased: {
+                    title: "⚠️ This demonstrates loss aversion.",
+                    text: "Holding a declining investment just to avoid realizing a loss often leads to bigger losses. Past purchase price is irrelevant to current decisions."
+                }
+            },
+            3: {
+                correct: {
+                    title: "✅ Strong independent thinking!",
+                    text: "You're making decisions based on your own research and risk tolerance, not crowd behavior. This protects you from bubbles and crashes."
+                },
+                biased: {
+                    title: "⚠️ This shows herd mentality.",
+                    text: "Following the crowd without independent analysis often leads to buying high and selling low. Past performance doesn't guarantee future results."
+                }
+            },
+            4: {
+                correct: {
+                    title: "✅ Excellent humility and discipline!",
+                    text: "Recognizing that success can involve luck and maintaining systematic approaches prevents overconfidence from destroying your portfolio."
+                },
+                biased: {
+                    title: "⚠️ This demonstrates overconfidence.",
+                    text: "Past success doesn't guarantee future results. Overconfidence leads to excessive risk-taking and often results in significant losses."
+                }
+            },
+            5: {
+                correct: {
+                    title: "✅ Perfect! You're avoiding anchoring bias.",
+                    text: "Historical prices are irrelevant to current value. You're correctly focusing on fundamentals and future prospects."
+                },
+                biased: {
+                    title: "⚠️ This shows anchoring bias.",
+                    text: "Using historical prices as a reference point can lead to poor decisions. A stock isn't 'cheap' just because it was higher before—evaluate current value."
+                }
+            }
+        };
+
+        function updateProgress() {
+            const progress = ((currentBias - 1) / totalBiases) * 100;
+            document.getElementById('progress').style.width = progress + '%';
+            document.getElementById('progress').textContent = Math.round(progress) + '%';
+        }
+
+        function checkAnswer(biasNum) {
+            const selected = document.querySelector(`input[name="q${biasNum}"]:checked`);
+            if (!selected) {
+                alert('Please select an answer first.');
+                return;
+            }
+
+            const isCorrect = selected.value === 'correct';
+            answers[biasNum] = isCorrect;
+            if (isCorrect) correctAnswers++;
+
+            const feedback = document.getElementById(`feedback${biasNum}`);
+            const feedbackType = isCorrect ? 'correct' : 'biased';
+            const data = feedbackData[biasNum][feedbackType];
+
+            feedback.className = 'feedback show ' + feedbackType;
+            feedback.querySelector('.feedback-title').textContent = data.title;
+            feedback.querySelector('p').textContent = data.text;
+
+            // Disable all choices
+            document.querySelectorAll(`input[name="q${biasNum}"]`).forEach(input => {
+                input.disabled = true;
+            });
+
+            // Enable next button
+            document.getElementById(`next${biasNum}`).disabled = false;
+
+            // Disable check answer button
+            event.target.disabled = true;
+        }
+
+        function nextBias(nextNum) {
+            document.querySelectorAll('.bias-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.querySelector(`[data-bias="${nextNum}"]`).classList.add('active');
+            currentBias = nextNum;
+            updateProgress();
+            window.scrollTo(0, 0);
+        }
+
+        function showResults() {
+            document.querySelectorAll('.bias-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById('results').classList.add('show');
+            document.getElementById('score').textContent = correctAnswers;
+
+            updateProgress();
+            document.getElementById('progress').style.width = '100%';
+            document.getElementById('progress').textContent = '100%';
+
+            let message = '';
+            if (correctAnswers === 5) {
+                message = '🎉 Outstanding! You demonstrate excellent awareness of behavioral biases.';
+            } else if (correctAnswers >= 3) {
+                message = '👍 Good work! You recognize most biases, but there\'s room for improvement.';
+            } else {
+                message = '📚 Keep learning! Understanding these biases is the first step to overcoming them.';
+            }
+            document.getElementById('score-message').textContent = message;
+
+            window.scrollTo(0, 0);
+        }
+
+        function restartAssessment() {
+            currentBias = 1;
+            correctAnswers = 0;
+            Object.keys(answers).forEach(key => delete answers[key]);
+
+            // Reset all sections
+            document.querySelectorAll('.bias-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.querySelector('[data-bias="1"]').classList.add('active');
+
+            // Reset all inputs
+            document.querySelectorAll('input[type="radio"]').forEach(input => {
+                input.checked = false;
+                input.disabled = false;
+            });
+
+            // Reset all feedback
+            document.querySelectorAll('.feedback').forEach(feedback => {
+                feedback.classList.remove('show', 'correct', 'biased');
+            });
+
+            // Reset all buttons
+            document.querySelectorAll('.button').forEach(button => {
+                if (button.textContent.includes('Next') || button.textContent.includes('View Results')) {
+                    button.disabled = true;
+                } else if (button.textContent.includes('Check Answer')) {
+                    button.disabled = false;
+                }
+            });
+
+            // Hide results
+            document.getElementById('results').classList.remove('show');
+
+            updateProgress();
+            window.scrollTo(0, 0);
+        }
+
+        // Initialize
+        updateProgress();
+    </script>
+</body>
+</html>

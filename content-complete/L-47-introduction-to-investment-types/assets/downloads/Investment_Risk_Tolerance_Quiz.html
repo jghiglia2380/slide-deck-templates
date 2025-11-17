@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Risk Tolerance Quiz | PFL Academy</title>
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #8b5cf6;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --background: #ffffff;
+            --surface: #f9fafb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--surface);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--background);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .quiz-section {
+            margin-bottom: 30px;
+        }
+
+        .question {
+            background-color: var(--surface);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .question-number {
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .question-text {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--text);
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .option {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            background-color: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .option:hover {
+            border-color: var(--primary);
+            background-color: #f0f9ff;
+        }
+
+        .option input[type="radio"] {
+            margin-right: 12px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .option label {
+            cursor: pointer;
+            flex: 1;
+        }
+
+        .button {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 14px 30px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+        }
+
+        .results-section {
+            display: none;
+            margin-top: 30px;
+        }
+
+        .results-section.show {
+            display: block;
+        }
+
+        .risk-profile {
+            background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+            border-left: 4px solid var(--primary);
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+
+        .profile-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .profile-score {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 15px;
+        }
+
+        .profile-description {
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        .recommendation-box {
+            background-color: var(--surface);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .recommendation-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 15px;
+        }
+
+        .allocation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .allocation-item {
+            background-color: white;
+            padding: 15px;
+            border-radius: 6px;
+            border: 2px solid #e5e7eb;
+        }
+
+        .allocation-percentage {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .allocation-label {
+            color: var(--text-light);
+            margin-top: 5px;
+        }
+
+        .meaning-box {
+            background-color: #fef3c7;
+            border-left: 4px solid var(--warning);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                background-color: white;
+            }
+
+            .container {
+                box-shadow: none;
+            }
+
+            .button {
+                display: none;
+            }
+
+            .quiz-section {
+                display: none;
+            }
+
+            .results-section {
+                display: block !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .allocation-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Investment Risk Tolerance Quiz</h1>
+            <p class="subtitle">Discover your personal investment risk profile</p>
+        </header>
+
+        <div class="content">
+            <div class="quiz-section" id="quizSection">
+                <div class="question">
+                    <div class="question-number">Question 1 of 10</div>
+                    <div class="question-text">How would you react if your investment portfolio dropped 20% in value over one month?</div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" id="q1a" name="q1" value="1">
+                            <label for="q1a">I'd sell everything immediately to prevent further losses</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q1b" name="q1" value="2">
+                            <label for="q1b">I'd be very concerned and consider selling some investments</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q1c" name="q1" value="3">
+                            <label for="q1c">I'd wait and see what happens over the next few months</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q1d" name="q1" value="4">
+                            <label for="q1d">I'd view it as a buying opportunity and invest more</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">Question 2 of 10</div>
+                    <div class="question-text">What is your investment timeline?</div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" id="q2a" name="q2" value="1">
+                            <label for="q2a">Less than 3 years</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q2b" name="q2" value="2">
+                            <label for="q2b">3-7 years</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q2c" name="q2" value="3">
+                            <label for="q2c">8-15 years</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q2d" name="q2" value="4">
+                            <label for="q2d">More than 15 years</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">Question 3 of 10</div>
+                    <div class="question-text">How important is it that your investments provide steady income?</div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" id="q3a" name="q3" value="1">
+                            <label for="q3a">Very important - I need regular income now</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q3b" name="q3" value="2">
+                            <label for="q3b">Somewhat important - income would be nice</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q3c" name="q3" value="3">
+                            <label for="q3c">Not very important - focused on long-term growth</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q3d" name="q3" value="4">
+                            <label for="q3d">Not important at all - I want maximum growth</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">Question 4 of 10</div>
+                    <div class="question-text">How much investment experience do you have?</div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" id="q4a" name="q4" value="1">
+                            <label for="q4a">None - this is all new to me</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q4b" name="q4" value="2">
+                            <label for="q4b">Limited - I understand the basics</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q4c" name="q4" value="3">
+                            <label for="q4c">Moderate - I've invested before</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q4d" name="q4" value="4">
+                            <label for="q4d">Extensive - I'm very knowledgeable</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">Question 5 of 10</div>
+                    <div class="question-text">If you could choose between two investments, which would you prefer?</div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" id="q5a" name="q5" value="1">
+                            <label for="q5a">Guaranteed 3% return with no risk of loss</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q5b" name="q5" value="2">
+                            <label for="q5b">Possible 5% return with small chance of losing 5%</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q5c" name="q5" value="3">
+                            <label for="q5c">Possible 8% return with chance of losing 10%</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q5d" name="q5" value="4">
+                            <label for="q5d">Possible 15% return with chance of losing 25%</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">Question 6 of 10</div>
+                    <div class="question-text">How would you describe your current financial situation?</div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" id="q6a" name="q6" value="1">
+                            <label for="q6a">Limited savings, need to be very careful</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q6b" name="q6" value="2">
+                            <label for="q6b">Stable, but can't afford big losses</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q6c" name="q6" value="3">
+                            <label for="q6c">Comfortable, can handle some volatility</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q6d" name="q6" value="4">
+                            <label for="q6d">Very secure, can handle significant volatility</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">Question 7 of 10</div>
+                    <div class="question-text">How do you feel about learning that some investors made 30% last year while you made 10%?</div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" id="q7a" name="q7" value="1">
+                            <label for="q7a">I'm happy with my steady 10% return</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q7b" name="q7" value="2">
+                            <label for="q7b">A bit disappointed but okay with it</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q7c" name="q7" value="3">
+                            <label for="q7c">Frustrated, I should adjust my strategy</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q7d" name="q7" value="4">
+                            <label for="q7d">Very frustrated, I need to take more risks</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">Question 8 of 10</div>
+                    <div class="question-text">When checking your investments, how often would you prefer to monitor them?</div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" id="q8a" name="q8" value="1">
+                            <label for="q8a">Monthly or quarterly - I don't want to see daily changes</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q8b" name="q8" value="2">
+                            <label for="q8b">Weekly - I like to stay informed</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q8c" name="q8" value="3">
+                            <label for="q8c">Daily - I want to know what's happening</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q8d" name="q8" value="4">
+                            <label for="q8d">Multiple times per day - I love tracking the market</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">Question 9 of 10</div>
+                    <div class="question-text">What percentage of your investment would you be willing to risk for higher potential returns?</div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" id="q9a" name="q9" value="1">
+                            <label for="q9a">0% - I don't want to risk any losses</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q9b" name="q9" value="2">
+                            <label for="q9b">Up to 10% - Very limited risk</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q9c" name="q9" value="3">
+                            <label for="q9c">Up to 25% - Moderate risk</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q9d" name="q9" value="4">
+                            <label for="q9d">50% or more - I understand the risks</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">Question 10 of 10</div>
+                    <div class="question-text">What best describes your investment goal?</div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" id="q10a" name="q10" value="1">
+                            <label for="q10a">Preserve my money and avoid losses</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q10b" name="q10" value="2">
+                            <label for="q10b">Grow slowly and steadily over time</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q10c" name="q10" value="3">
+                            <label for="q10c">Achieve moderate growth with some risk</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="q10d" name="q10" value="4">
+                            <label for="q10d">Maximize growth regardless of short-term volatility</label>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="button" onclick="calculateRiskProfile()">See My Risk Profile</button>
+            </div>
+
+            <div class="results-section" id="resultsSection">
+                <div class="risk-profile" id="profileBox">
+                    <div class="profile-title" id="profileTitle"></div>
+                    <div class="profile-score" id="profileScore"></div>
+                    <div class="profile-description" id="profileDescription"></div>
+                </div>
+
+                <div class="recommendation-box">
+                    <div class="recommendation-title">Recommended Asset Allocation</div>
+                    <div class="allocation-grid" id="allocationGrid"></div>
+                </div>
+
+                <div class="recommendation-box">
+                    <div class="recommendation-title">Recommended Investment Types</div>
+                    <div id="investmentTypes"></div>
+                </div>
+
+                <div class="meaning-box">
+                    <div style="font-weight: 600; margin-bottom: 10px;">What This Means For You</div>
+                    <div id="meaningText"></div>
+                </div>
+
+                <button class="button" onclick="window.print()" style="margin-top: 20px;">Print My Results</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function calculateRiskProfile() {
+            let totalScore = 0;
+            let answeredAll = true;
+
+            for (let i = 1; i <= 10; i++) {
+                const answer = document.querySelector(`input[name="q${i}"]:checked`);
+                if (!answer) {
+                    answeredAll = false;
+                    alert(`Please answer question ${i}`);
+                    return;
+                }
+                totalScore += parseInt(answer.value);
+            }
+
+            let profile, description, allocation, investments, meaning;
+
+            if (totalScore <= 15) {
+                profile = "Conservative Investor";
+                description = "You prefer stability and security over high returns. You're uncomfortable with significant market volatility and prioritize preserving your capital over aggressive growth.";
+                allocation = [
+                    { percent: "20%", label: "Stocks/Stock Funds" },
+                    { percent: "60%", label: "Bonds/Bond Funds" },
+                    { percent: "20%", label: "Cash/Stable Value" }
+                ];
+                investments = "<ul style='margin-left: 20px;'><li>Bond mutual funds or ETFs</li><li>Treasury bonds</li><li>High-quality corporate bonds</li><li>Money market funds</li><li>Small allocation to dividend-paying stocks</li></ul>";
+                meaning = "As a conservative investor, focus on low-cost bond funds and stable investments. Consider gradually increasing stock exposure as you become more comfortable with market fluctuations.";
+            } else if (totalScore <= 25) {
+                profile = "Moderate Investor";
+                description = "You seek a balance between growth and stability. You can tolerate some market volatility in exchange for better long-term returns, but you prefer a measured approach.";
+                allocation = [
+                    { percent: "50%", label: "Stocks/Stock Funds" },
+                    { percent: "40%", label: "Bonds/Bond Funds" },
+                    { percent: "10%", label: "Cash/Alternatives" }
+                ];
+                investments = "<ul style='margin-left: 20px;'><li>Balanced mutual funds</li><li>Index funds (S&P 500)</li><li>Bond ETFs for stability</li><li>Some dividend stocks</li><li>Target-date retirement funds</li></ul>";
+                meaning = "A balanced portfolio like 60/40 or 50/50 stocks/bonds is ideal for you. This provides growth potential while limiting downside risk. Rebalance annually to maintain your target allocation.";
+            } else if (totalScore <= 35) {
+                profile = "Moderately Aggressive Investor";
+                description = "You're willing to accept higher volatility for the potential of stronger returns. You have a longer time horizon and can weather market downturns.";
+                allocation = [
+                    { percent: "70%", label: "Stocks/Stock Funds" },
+                    { percent: "25%", label: "Bonds/Bond Funds" },
+                    { percent: "5%", label: "Cash/Alternatives" }
+                ];
+                investments = "<ul style='margin-left: 20px;'><li>Growth stock ETFs</li><li>Small-cap and mid-cap funds</li><li>International stock funds</li><li>Some individual stocks</li><li>Limited bonds for stability</li></ul>";
+                meaning = "You can handle market swings and should focus on growth investments. Maintain some bonds to cushion volatility, but emphasize stocks for long-term wealth building.";
+            } else {
+                profile = "Aggressive Investor";
+                description = "You're focused on maximum growth and comfortable with significant market volatility. You have a long time horizon and the financial ability to withstand potential losses.";
+                allocation = [
+                    { percent: "90%", label: "Stocks/Stock Funds" },
+                    { percent: "10%", label: "Bonds/Other" },
+                    { percent: "0%", label: "Cash" }
+                ];
+                investments = "<ul style='margin-left: 20px;'><li>Growth stock ETFs and index funds</li><li>Individual stocks across sectors</li><li>Small-cap and emerging market funds</li><li>Technology and growth-focused funds</li><li>Minimal bond allocation</li></ul>";
+                meaning = "Your high risk tolerance allows you to pursue maximum growth. Stay the course during market downturns and focus on long-term wealth accumulation. Consider diversifying across different stock categories rather than bonds.";
+            }
+
+            document.getElementById('profileTitle').textContent = profile;
+            document.getElementById('profileScore').textContent = `Your Risk Score: ${totalScore} out of 40`;
+            document.getElementById('profileDescription').textContent = description;
+
+            const allocationGrid = document.getElementById('allocationGrid');
+            allocationGrid.innerHTML = '';
+            allocation.forEach(item => {
+                allocationGrid.innerHTML += `
+                    <div class="allocation-item">
+                        <div class="allocation-percentage">${item.percent}</div>
+                        <div class="allocation-label">${item.label}</div>
+                    </div>
+                `;
+            });
+
+            document.getElementById('investmentTypes').innerHTML = investments;
+            document.getElementById('meaningText').textContent = meaning;
+
+            document.getElementById('quizSection').style.display = 'none';
+            document.getElementById('resultsSection').classList.add('show');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

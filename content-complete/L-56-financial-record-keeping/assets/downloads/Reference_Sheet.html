@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Record-Keeping Reference Sheet | PFL Academy</title>
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #8b5cf6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #1f2937;
+            background: white;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid var(--primary);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            background-color: #f9fafb;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .section ul {
+            list-style-position: inside;
+            margin-left: 10px;
+        }
+
+        .section li {
+            margin-bottom: 6px;
+        }
+
+        .retention-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.85rem;
+        }
+
+        .retention-table th, .retention-table td {
+            padding: 8px;
+            border: 1px solid #d1d5db;
+            text-align: left;
+        }
+
+        .retention-table th {
+            background-color: var(--primary);
+            color: white;
+            font-weight: 600;
+        }
+
+        .retention-table tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+
+        .highlight-box {
+            background-color: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 12px;
+            margin: 15px 0;
+            border-radius: 6px;
+        }
+
+        .key-points {
+            background-color: #eff6ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .key-points h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .key-points ul {
+            list-style-position: inside;
+        }
+
+        .key-points li {
+            margin-bottom: 6px;
+        }
+
+        @media print {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                max-width: 100%;
+            }
+
+            .grid {
+                gap: 10px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📁 Financial Record-Keeping Reference Sheet</h1>
+            <p class="subtitle">Quick Guide to Organizing and Managing Financial Documents</p>
+        </header>
+
+        <div class="key-points">
+            <h3>🎯 Why Keep Financial Records?</h3>
+            <ul>
+                <li><strong>Tax Preparation:</strong> Accurate records simplify tax filing and support deductions</li>
+                <li><strong>Loan Applications:</strong> Lenders require proof of income and financial stability</li>
+                <li><strong>Insurance Claims:</strong> Documentation needed to support claims</li>
+                <li><strong>Dispute Resolution:</strong> Records help resolve billing errors or fraud</li>
+                <li><strong>Financial Planning:</strong> Track progress toward financial goals</li>
+            </ul>
+        </div>
+
+        <h2 style="color: var(--primary); margin: 20px 0 15px 0;">Document Retention Guidelines</h2>
+
+        <table class="retention-table">
+            <thead>
+                <tr>
+                    <th>Document Type</th>
+                    <th>Retention Period</th>
+                    <th>Storage Priority</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Tax Returns & Supporting Documents</strong></td>
+                    <td>7 years</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td><strong>W-2 and 1099 Forms</strong></td>
+                    <td>7 years</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td><strong>Bank Statements</strong></td>
+                    <td>1 year (7 if tax-related)</td>
+                    <td>Medium</td>
+                </tr>
+                <tr>
+                    <td><strong>Credit Card Statements</strong></td>
+                    <td>1 year</td>
+                    <td>Medium</td>
+                </tr>
+                <tr>
+                    <td><strong>Investment Records</strong></td>
+                    <td>Permanent</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td><strong>Retirement Account Statements</strong></td>
+                    <td>Permanent</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td><strong>Property Deeds & Titles</strong></td>
+                    <td>Permanent</td>
+                    <td>Critical</td>
+                </tr>
+                <tr>
+                    <td><strong>Birth/Marriage Certificates</strong></td>
+                    <td>Permanent</td>
+                    <td>Critical</td>
+                </tr>
+                <tr>
+                    <td><strong>Social Security Card</strong></td>
+                    <td>Permanent</td>
+                    <td>Critical</td>
+                </tr>
+                <tr>
+                    <td><strong>Insurance Policies (Active)</strong></td>
+                    <td>While active + 3 years</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td><strong>Loan Documents</strong></td>
+                    <td>Until paid + 3 years</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td><strong>Pay Stubs</strong></td>
+                    <td>1 year</td>
+                    <td>Medium</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="grid">
+            <div class="section">
+                <div class="section-title">🗂️ Digital Filing Best Practices</div>
+                <ul>
+                    <li>Create clear folder structure by year and category</li>
+                    <li>Use consistent naming conventions</li>
+                    <li>Scan paper documents to PDF format</li>
+                    <li>Store in secure cloud service</li>
+                    <li>Enable two-factor authentication</li>
+                    <li>Backup to multiple locations</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <div class="section-title">🔒 Security Measures</div>
+                <ul>
+                    <li>Password-protect sensitive files</li>
+                    <li>Use encryption for critical documents</li>
+                    <li>Shred physical documents before disposal</li>
+                    <li>Monitor accounts for unauthorized access</li>
+                    <li>Update security software regularly</li>
+                    <li>Avoid public Wi-Fi for financial tasks</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <div class="section-title">📋 Essential Document Categories</div>
+                <ul>
+                    <li>Tax Documents</li>
+                    <li>Employment Records</li>
+                    <li>Banking & Financial Statements</li>
+                    <li>Insurance Policies</li>
+                    <li>Property & Asset Records</li>
+                    <li>Personal Identification</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <div class="section-title">✅ Annual Maintenance Tasks</div>
+                <ul>
+                    <li>Review and purge outdated documents</li>
+                    <li>Update beneficiary information</li>
+                    <li>Verify backup systems are working</li>
+                    <li>Check account statements for errors</li>
+                    <li>Update contact information</li>
+                    <li>Review insurance coverage</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="highlight-box">
+            <strong>⚠️ Important:</strong> The IRS can audit tax returns for up to 7 years. Keep all tax-related documents for at least this long. For permanent documents like birth certificates and property deeds, consider keeping both physical and digital copies in separate secure locations.
+        </div>
+
+        <div class="key-points">
+            <h3>💾 Recommended Storage Solutions</h3>
+            <ul>
+                <li><strong>Cloud Storage:</strong> Google Drive, Dropbox, OneDrive, iCloud</li>
+                <li><strong>Physical Storage:</strong> Fireproof safe, safety deposit box for critical documents</li>
+                <li><strong>Backup Devices:</strong> External hard drives, USB drives (encrypted)</li>
+                <li><strong>Password Managers:</strong> LastPass, 1Password, Bitwarden for secure access</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

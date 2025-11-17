@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economic Systems Comparison</title>
+    <!--
+    PURPOSE: Interactive skill builder tool
+    USE: Chapter interactive activity (15-20 minutes)
+    -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            background: #f3f4f6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 16px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+
+        .controls {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .controls-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #1f2937;
+        }
+
+        .factor-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .factor-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            background: #f9fafb;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .factor-checkbox:hover {
+            background: #f3f4f6;
+        }
+
+        .factor-checkbox input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .factor-checkbox label {
+            cursor: pointer;
+            font-weight: 500;
+            color: #374151;
+        }
+
+        .comparison-table-container {
+            background: white;
+            border-radius: 16px;
+            overflow-x: auto;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background: #1f2937;
+            color: white;
+        }
+
+        th {
+            padding: 20px;
+            text-align: left;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        th.capitalism {
+            background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+        }
+
+        th.mixed {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+        }
+
+        th.socialism {
+            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+        }
+
+        td {
+            padding: 20px;
+            border-bottom: 1px solid #e5e7eb;
+            vertical-align: top;
+        }
+
+        td:first-child {
+            font-weight: 600;
+            color: #1f2937;
+            background: #f9fafb;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .examples-section {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .examples-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .country-card {
+            padding: 20px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .country-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .capitalism-card {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            border: 2px solid #22c55e;
+        }
+
+        .mixed-card {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            border: 2px solid #3b82f6;
+        }
+
+        .socialism-card {
+            background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+            border: 2px solid #ef4444;
+        }
+
+        .country-name {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #1f2937;
+        }
+
+        .country-stat {
+            margin: 8px 0;
+            font-size: 0.95rem;
+            color: #374151;
+        }
+
+        .stat-label {
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            color: #6b7280;
+        }
+
+        @media print {
+            .controls {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .factor-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .examples-grid {
+                grid-template-columns: 1fr;
+            }
+
+            table {
+                font-size: 0.9rem;
+            }
+
+            th, td {
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌍 Economic Systems Comparison</h1>
+            <p class="subtitle">Compare Capitalism, Mixed Economies, and Socialism</p>
+        </header>
+
+        <div class="controls">
+            <div class="controls-title">Select Factors to Compare:</div>
+            <div class="factor-grid">
+                <div class="factor-checkbox">
+                    <input type="checkbox" id="ownership" checked onchange="updateTable()">
+                    <label for="ownership">Resource Ownership</label>
+                </div>
+                <div class="factor-checkbox">
+                    <input type="checkbox" id="allocation" checked onchange="updateTable()">
+                    <label for="allocation">Allocation Mechanism</label>
+                </div>
+                <div class="factor-checkbox">
+                    <input type="checkbox" id="property" checked onchange="updateTable()">
+                    <label for="property">Property Rights</label>
+                </div>
+                <div class="factor-checkbox">
+                    <input type="checkbox" id="freedom" checked onchange="updateTable()">
+                    <label for="freedom">Economic Freedom Index</label>
+                </div>
+                <div class="factor-checkbox">
+                    <input type="checkbox" id="gdp" onchange="updateTable()">
+                    <label for="gdp">GDP Per Capita</label>
+                </div>
+                <div class="factor-checkbox">
+                    <input type="checkbox" id="inequality" onchange="updateTable()">
+                    <label for="inequality">Income Inequality</label>
+                </div>
+                <div class="factor-checkbox">
+                    <input type="checkbox" id="innovation" onchange="updateTable()">
+                    <label for="innovation">Innovation Rate</label>
+                </div>
+                <div class="factor-checkbox">
+                    <input type="checkbox" id="entrepreneurship" onchange="updateTable()">
+                    <label for="entrepreneurship">Entrepreneurship Ease</label>
+                </div>
+                <div class="factor-checkbox">
+                    <input type="checkbox" id="mobility" onchange="updateTable()">
+                    <label for="mobility">Career Mobility</label>
+                </div>
+                <div class="factor-checkbox">
+                    <input type="checkbox" id="choice" onchange="updateTable()">
+                    <label for="choice">Consumer Choice</label>
+                </div>
+                <div class="factor-checkbox">
+                    <input type="checkbox" id="taxes" onchange="updateTable()">
+                    <label for="taxes">Tax Burden</label>
+                </div>
+                <div class="factor-checkbox">
+                    <input type="checkbox" id="safety" onchange="updateTable()">
+                    <label for="safety">Social Safety Net</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="comparison-table-container">
+            <table id="comparisonTable">
+                <thead>
+                    <tr>
+                        <th>Factor</th>
+                        <th class="capitalism">Capitalism</th>
+                        <th class="mixed">Mixed Economy</th>
+                        <th class="socialism">Socialism</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Populated by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="examples-section">
+            <h2 style="margin-bottom: 20px;">Real-World Examples</h2>
+            <div class="examples-grid">
+                <div class="country-card capitalism-card">
+                    <div class="country-name">🇸🇬 Singapore</div>
+                    <div class="country-stat"><span class="stat-label">System:</span> Capitalism</div>
+                    <div class="country-stat"><span class="stat-label">Freedom Index:</span> 83.9</div>
+                    <div class="country-stat"><span class="stat-label">GDP Per Capita:</span> $65,000</div>
+                    <div class="country-stat"><span class="stat-label">Tax Burden:</span> 14.2% of GDP</div>
+                </div>
+
+                <div class="country-card capitalism-card">
+                    <div class="country-name">🇨🇭 Switzerland</div>
+                    <div class="country-stat"><span class="stat-label">System:</span> Capitalism</div>
+                    <div class="country-stat"><span class="stat-label">Freedom Index:</span> 81.9</div>
+                    <div class="country-stat"><span class="stat-label">GDP Per Capita:</span> $72,000</div>
+                    <div class="country-stat"><span class="stat-label">Tax Burden:</span> 28.5% of GDP</div>
+                </div>
+
+                <div class="country-card mixed-card">
+                    <div class="country-name">🇺🇸 United States</div>
+                    <div class="country-stat"><span class="stat-label">System:</span> Mixed Economy</div>
+                    <div class="country-stat"><span class="stat-label">Freedom Index:</span> 70.6</div>
+                    <div class="country-stat"><span class="stat-label">GDP Per Capita:</span> $63,000</div>
+                    <div class="country-stat"><span class="stat-label">Tax Burden:</span> 37.2% of GDP</div>
+                </div>
+
+                <div class="country-card mixed-card">
+                    <div class="country-name">🇩🇪 Germany</div>
+                    <div class="country-stat"><span class="stat-label">System:</span> Mixed Economy</div>
+                    <div class="country-stat"><span class="stat-label">Freedom Index:</span> 72.5</div>
+                    <div class="country-stat"><span class="stat-label">GDP Per Capita:</span> $46,000</div>
+                    <div class="country-stat"><span class="stat-label">Tax Burden:</span> 43.9% of GDP</div>
+                </div>
+
+                <div class="country-card mixed-card">
+                    <div class="country-name">🇸🇪 Sweden</div>
+                    <div class="country-stat"><span class="stat-label">System:</span> Mixed Economy</div>
+                    <div class="country-stat"><span class="stat-label">Freedom Index:</span> 74.9</div>
+                    <div class="country-stat"><span class="stat-label">GDP Per Capita:</span> $51,000</div>
+                    <div class="country-stat"><span class="stat-label">Tax Burden:</span> 44.0% of GDP</div>
+                </div>
+
+                <div class="country-card socialism-card">
+                    <div class="country-name">🇨🇺 Cuba</div>
+                    <div class="country-stat"><span class="stat-label">System:</span> Socialism</div>
+                    <div class="country-stat"><span class="stat-label">Freedom Index:</span> 29.4</div>
+                    <div class="country-stat"><span class="stat-label">GDP Per Capita:</span> ~$9,500</div>
+                    <div class="country-stat"><span class="stat-label">Tax Burden:</span> ~57% of GDP</div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p><strong>PFL Academy</strong> | Economics Education</p>
+            <p style="font-size: 0.9rem; margin-top: 10px;">Data represents typical characteristics and real-world examples. Most modern economies fall on a spectrum between pure systems.</p>
+        </footer>
+    </div>
+
+    <script>
+        const comparisonData = {
+            ownership: {
+                label: "Resource Ownership",
+                capitalism: "Private ownership dominates - individuals and corporations own businesses, property, and resources",
+                mixed: "Mix of private and public ownership - key industries like utilities may be public",
+                socialism: "Government ownership dominates - state controls major industries and resources"
+            },
+            allocation: {
+                label: "Allocation Mechanism",
+                capitalism: "Market prices and competition - supply and demand determine what's produced",
+                mixed: "Markets with government intervention - regulations, subsidies, and public services",
+                socialism: "Central planning and quotas - government decides production and distribution"
+            },
+            property: {
+                label: "Property Rights",
+                capitalism: "Strong, legally protected - you keep what you earn and own",
+                mixed: "Protected with some restrictions - zoning laws, regulations, taxes",
+                socialism: "Weak or non-existent for productive assets - limited personal property allowed"
+            },
+            freedom: {
+                label: "Economic Freedom Index (0-100)",
+                capitalism: "80-90 (High freedom)",
+                mixed: "60-75 (Moderate freedom)",
+                socialism: "20-40 (Low freedom)"
+            },
+            gdp: {
+                label: "GDP Per Capita (Typical)",
+                capitalism: "$40,000-$70,000",
+                mixed: "$30,000-$50,000",
+                socialism: "$5,000-$15,000"
+            },
+            inequality: {
+                label: "Income Inequality (Gini Coefficient)",
+                capitalism: "0.35-0.45 (Higher inequality, but higher absolute incomes)",
+                mixed: "0.25-0.35 (Moderate inequality)",
+                socialism: "0.25-0.30 (Lower inequality, but lower overall income)"
+            },
+            innovation: {
+                label: "Innovation Rate (Patents per capita)",
+                capitalism: "High (300+ per million people)",
+                mixed: "Moderate (150-250 per million)",
+                socialism: "Low (<50 per million)"
+            },
+            entrepreneurship: {
+                label: "Entrepreneurship Ease",
+                capitalism: "Easy - days to start a business, low barriers",
+                mixed: "Moderate - weeks to start, some regulations to navigate",
+                socialism: "Very difficult - months/years, extensive government approvals required"
+            },
+            mobility: {
+                label: "Career Mobility",
+                capitalism: "High - merit-based advancement, anyone can succeed",
+                mixed: "Moderate - mix of merit and seniority systems",
+                socialism: "Low - political connections often matter more than skill"
+            },
+            choice: {
+                label: "Consumer Choice",
+                capitalism: "Vast - thousands of product options, competition drives variety",
+                mixed: "Wide - hundreds of options in most categories",
+                socialism: "Limited - few options, shortages common"
+            },
+            taxes: {
+                label: "Typical Tax Burden",
+                capitalism: "20-30% of GDP",
+                mixed: "35-45% of GDP",
+                socialism: "45-60% of GDP"
+            },
+            safety: {
+                label: "Social Safety Net",
+                capitalism: "Minimal - private charity, limited welfare programs",
+                mixed: "Moderate-Strong - unemployment, healthcare, pensions provided",
+                socialism: "Comprehensive - but often lower quality due to resource constraints"
+            }
+        };
+
+        function updateTable() {
+            const tbody = document.getElementById('tableBody');
+            tbody.innerHTML = '';
+
+            Object.keys(comparisonData).forEach(key => {
+                const checkbox = document.getElementById(key);
+                if (checkbox && checkbox.checked) {
+                    const data = comparisonData[key];
+                    const row = tbody.insertRow();
+
+                    row.insertCell().textContent = data.label;
+                    row.insertCell().textContent = data.capitalism;
+                    row.insertCell().textContent = data.mixed;
+                    row.insertCell().textContent = data.socialism;
+                }
+            });
+        }
+
+        // Initialize table
+        updateTable();
+    </script>
+</body>
+</html>

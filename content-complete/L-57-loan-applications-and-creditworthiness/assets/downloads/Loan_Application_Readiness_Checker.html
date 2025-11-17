@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application Readiness Checker | PFL Academy</title>
+    <!--
+    STATE VARIABLES USED:
+    - STATE_AVG_AUTO_LOAN_RATE_NEW
+    - STATE_AVG_AUTO_LOAN_RATE_USED
+    - STATE_AVG_MORTGAGE_RATE
+    
+
+    PURPOSE: Assess loan readiness and understand application process
+    USE: Chapter interactive activity (15-20 minutes)
+    -->
+    <style>
+        :root{--primary:#6366f1;--secondary:#8b5cf6;--success:#10b981;--warning:#f59e0b;--danger:#ef4444;--text:#1f2937;--text-light:#6b7280;--background:#ffffff;--surface:#f9fafb}*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Helvetica Neue',Arial,sans-serif;font-size:16px;line-height:1.6;color:var(--text);background-color:var(--surface);padding:20px}.container{max-width:1100px;margin:0 auto;background-color:var(--background);border-radius:12px;box-shadow:0 4px 6px rgba(0,0,0,0.1);overflow:hidden}header{background:linear-gradient(135deg,var(--primary),var(--secondary));color:white;padding:30px;text-align:center}h1{font-size:2rem;font-weight:700;margin-bottom:10px}.subtitle{font-size:1.1rem;opacity:0.95}.main-content{padding:30px}.section{margin-bottom:30px}.section-title{font-size:1.3rem;font-weight:600;color:var(--primary);margin-bottom:15px;padding-bottom:8px;border-bottom:2px solid var(--primary)}.form-group{margin-bottom:20px}label{display:block;font-weight:600;margin-bottom:8px;color:var(--text)}input[type="text"],input[type="number"],select{width:100%;padding:12px;border:1px solid #d1d5db;border-radius:6px;font-size:1rem}input:focus,select:focus{outline:none;border-color:var(--primary)}.readiness-score{background:linear-gradient(135deg,#f0f9ff,#e0f2fe);padding:25px;border-radius:8px;text-align:center;margin:30px 0}.score-circle{width:150px;height:150px;border-radius:50%;margin:0 auto 15px;display:flex;align-items:center;justify-content:center;font-size:3rem;font-weight:700;border:8px solid}.score-excellent{background-color:#d1fae5;color:#065f46;border-color:#10b981}.score-good{background-color:#dbeafe;color:#1e40af;border-color:#3b82f6}.score-fair{background-color:#fef3c7;color:#92400e;border-color:#f59e0b}.score-poor{background-color:#fee2e2;color:#991b1b;border-color:#ef4444}.checklist-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}.checklist-card{border:2px solid #e5e7eb;border-radius:8px;padding:20px}.checklist-item{display:flex;align-items:center;padding:10px;margin-bottom:8px;background-color:var(--surface);border-radius:6px}.checklist-item input[type="checkbox"]{width:20px;height:20px;margin-right:12px}.btn{padding:12px 24px;border-radius:6px;font-size:1rem;font-weight:600;cursor:pointer;border:none;background-color:var(--primary);color:white;width:100%;margin-top:15px}.btn:hover{background-color:#4f46e5}.recommendations{background-color:#fef3c7;border-left:4px solid var(--warning);padding:20px;border-radius:8px;margin-top:20px}.recommendations h3{margin-bottom:10px;color:var(--text)}.recommendations ul{list-style-position:inside;color:var(--text)}.recommendations li{margin-bottom:8px}@media print{body{background-color:white;padding:0}.container{box-shadow:none}.btn{display:none}}@media (max-width:768px){.checklist-grid{grid-template-columns:1fr}}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏦 Loan Application Readiness Checker</h1>
+            <p class="subtitle">Assess Your Readiness for Loan Applications</p>
+        </header>
+
+        <div class="main-content">
+            <div class="section">
+                <h2 class="section-title">Step 1: Your Financial Profile</h2>
+                <div class="form-group">
+                    <label>Annual Income</label>
+                    <input type="number" id="income" placeholder="$50,000">
+                </div>
+                <div class="form-group">
+                    <label>Monthly Debt Payments (excluding rent)</label>
+                    <input type="number" id="monthlyDebt" placeholder="$500">
+                </div>
+                <div class="form-group">
+                    <label>Credit Score Range</label>
+                    <select id="creditScore">
+                        <option value="">Select...</option>
+                        <option value="800">Excellent (750+)</option>
+                        <option value="700">Good (700-749)</option>
+                        <option value="650">Fair (650-699)</option>
+                        <option value="600">Poor (600-649)</option>
+                        <option value="550">Very Poor (&lt;600)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Employment Status</label>
+                    <select id="employment">
+                        <option value="">Select...</option>
+                        <option value="full">Full-time (2+ years)</option>
+                        <option value="recent">Full-time (&lt;2 years)</option>
+                        <option value="part">Part-time</option>
+                        <option value="self">Self-employed</option>
+                        <option value="none">Unemployed</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Loan Type Considering</label>
+                    <select id="loanType">
+                        <option value="">Select...</option>
+                        <option value="auto-new">Auto Loan (New) - Avg Rate: {{STATE_AVG_AUTO_LOAN_RATE_NEW}}%</option>
+                        <option value="auto-used">Auto Loan (Used) - Avg Rate: {{STATE_AVG_AUTO_LOAN_RATE_USED}}%</option>
+                        <option value="mortgage">Mortgage - Avg Rate: {{STATE_AVG_MORTGAGE_RATE}}%</option>
+                        <option value="personal">Personal Loan</option>
+                        <option value="student">Student Loan</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Step 2: Application Readiness Checklist</h2>
+                <div class="checklist-grid">
+                    <div class="checklist-card">
+                        <h3 style="margin-bottom:15px;color:var(--primary)">📄 Required Documents</h3>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="doc1" class="readiness-check">
+                            <label for="doc1">Government-issued ID</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="doc2" class="readiness-check">
+                            <label for="doc2">Social Security Number</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="doc3" class="readiness-check">
+                            <label for="doc3">Proof of Income (pay stubs)</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="doc4" class="readiness-check">
+                            <label for="doc4">Tax Returns (2 years)</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="doc5" class="readiness-check">
+                            <label for="doc5">Bank Statements (3 months)</label>
+                        </div>
+                    </div>
+
+                    <div class="checklist-card">
+                        <h3 style="margin-bottom:15px;color:var(--primary)">💳 Financial Preparation</h3>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="fin1" class="readiness-check">
+                            <label for="fin1">Reviewed credit report</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="fin2" class="readiness-check">
+                            <label for="fin2">Corrected credit errors</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="fin3" class="readiness-check">
+                            <label for="fin3">Saved for down payment</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="fin4" class="readiness-check">
+                            <label for="fin4">Reduced debt-to-income ratio</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="fin5" class="readiness-check">
+                            <label for="fin5">Established emergency fund</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn" onclick="calculateReadiness()">Calculate My Readiness Score</button>
+
+            <div id="resultsSection" style="display:none;">
+                <div class="readiness-score">
+                    <h2>Your Loan Readiness Score</h2>
+                    <div id="scoreCircle" class="score-circle">--</div>
+                    <p id="scoreMessage" style="font-size:1.1rem;font-weight:600"></p>
+                </div>
+
+                <div class="recommendations" id="recommendations"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function calculateReadiness(){const income=parseFloat(document.getElementById('income').value)||0;const debt=parseFloat(document.getElementById('monthlyDebt').value)||0;const credit=document.getElementById('creditScore').value;const employment=document.getElementById('employment').value;const checkboxes=document.querySelectorAll('.readiness-check:checked');let score=0;if(income>0)score+=15;if(credit){if(credit>=750)score+=25;else if(credit>=700)score+=20;else if(credit>=650)score+=15;else if(credit>=600)score+=10;else score+=5}if(employment==='full')score+=20;else if(employment==='recent')score+=15;else if(employment==='part')score+=10;else if(employment==='self')score+=12;const dti=(debt*12)/income;if(dti<0.28)score+=15;else if(dti<0.36)score+=10;else if(dti<0.43)score+=5;score+=checkboxes.length*2;const circle=document.getElementById('scoreCircle');const msg=document.getElementById('scoreMessage');const recs=document.getElementById('recommendations');circle.textContent=score;if(score>=80){circle.className='score-circle score-excellent';msg.textContent='Excellent - You are well-prepared!';recs.innerHTML='<h3>✅ You\'re Ready!</h3><ul><li>Compare offers from multiple lenders</li><li>Negotiate for better rates</li><li>Review all terms carefully before signing</li></ul>'}else if(score>=60){circle.className='score-circle score-good';msg.textContent='Good - Minor improvements needed';recs.innerHTML='<h3>📈 Recommendations</h3><ul><li>Gather any missing documents</li><li>Review your credit report for errors</li><li>Consider increasing your down payment</li><li>Shop around for competitive rates</li></ul>'}else if(score>=40){circle.className='score-circle score-fair';msg.textContent='Fair - Significant preparation needed';recs.innerHTML='<h3>⚠️ Action Items</h3><ul><li>Work on improving your credit score</li><li>Reduce existing debt obligations</li><li>Build up emergency savings first</li><li>Gather all required documentation</li><li>Consider waiting 6-12 months</li></ul>'}else{circle.className='score-circle score-poor';msg.textContent='Not Ready - Focus on preparation';recs.innerHTML='<h3>🚨 Priority Actions</h3><ul><li>Focus on credit repair first</li><li>Establish stable employment history</li><li>Create a budget and stick to it</li><li>Pay down existing debts</li><li>Build emergency fund before borrowing</li><li>Consider credit counseling</li></ul>'}document.getElementById('resultsSection').style.display='block';document.getElementById('resultsSection').scrollIntoView({behavior:'smooth'})}
+    </script>
+</body>
+</html>

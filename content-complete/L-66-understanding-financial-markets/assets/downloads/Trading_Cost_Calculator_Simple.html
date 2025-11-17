@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Cost Calculator - Simple Version</title>
+    <!--
+    PURPOSE: Interactive skill builder tool
+    USE: Chapter interactive activity (15-20 minutes)
+    -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .container {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .calculator-section {
+            background: #e8f4f8;
+            border: 2px solid #3498db;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+        .input-group {
+            margin: 20px 0;
+        }
+        .input-row {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            flex-wrap: wrap;
+        }
+        label {
+            flex: 1;
+            min-width: 200px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        input[type="number"] {
+            flex: 0 0 150px;
+            padding: 10px;
+            border: 2px solid #3498db;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+        .unit {
+            flex: 0 0 50px;
+            margin-left: 10px;
+            color: #7f8c8d;
+        }
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        button {
+            flex: 1;
+            min-width: 120px;
+            padding: 12px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .btn-calculate {
+            background: #3498db;
+            color: white;
+        }
+        .btn-calculate:hover {
+            background: #2980b9;
+        }
+        .btn-reset {
+            background: #95a5a6;
+            color: white;
+        }
+        .btn-reset:hover {
+            background: #7f8c8d;
+        }
+        .results-section {
+            background: #f0f7ff;
+            border: 2px solid #3498db;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 20px 0;
+            display: none;
+        }
+        .results-section.show {
+            display: block;
+        }
+        .result-item {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .result-label {
+            font-weight: bold;
+            color: #2c3e50;
+            flex: 1;
+            min-width: 200px;
+        }
+        .result-value {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #3498db;
+            flex: 0 0 150px;
+            text-align: right;
+        }
+        .highlight-result {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+        }
+        .highlight-result .result-value {
+            color: #f39c12;
+        }
+        .info-box {
+            background: #ecf0f1;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .warning-box {
+            background: #ffebee;
+            border-left: 4px solid #e74c3c;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #ecf0f1;
+            color: #7f8c8d;
+        }
+        @media print {
+            body { background: white; }
+            .container { box-shadow: none; }
+            button { display: none; }
+        }
+        @media (max-width: 600px) {
+            .input-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            input[type="number"] {
+                margin-top: 5px;
+                width: 100%;
+            }
+            .result-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .result-value {
+                margin-top: 5px;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>💰 Trading Cost Calculator</h1>
+    <p style="color: #7f8c8d; font-size: 1.1em;">Calculate the hidden spread costs for a single trade</p>
+
+    <div class="container">
+        <div class="info-box">
+            <strong>What This Calculator Shows:</strong> When you buy a stock, you pay the "ask" price. If you sold immediately, you'd receive the "bid" price. The difference is the spread cost - money you lose even before any price movement.
+        </div>
+
+        <div class="calculator-section">
+            <h2>Enter Trade Information</h2>
+
+            <div class="input-group">
+                <div class="input-row">
+                    <label for="shares">Number of Shares:</label>
+                    <input type="number" id="shares" value="100" min="1">
+                    <span class="unit">shares</span>
+                </div>
+
+                <div class="input-row">
+                    <label for="bid">Bid Price:</label>
+                    <input type="number" id="bid" value="49.95" step="0.01" min="0">
+                    <span class="unit">$</span>
+                </div>
+
+                <div class="input-row">
+                    <label for="ask">Ask Price:</label>
+                    <input type="number" id="ask" value="50.05" step="0.01" min="0">
+                    <span class="unit">$</span>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button class="btn-calculate" onclick="calculateCosts()">Calculate Spread Cost</button>
+                <button class="btn-reset" onclick="resetCalculator()">Reset</button>
+            </div>
+        </div>
+
+        <div class="results-section" id="results">
+            <h2>📊 Results</h2>
+
+            <div class="result-item">
+                <span class="result-label">Spread (per share):</span>
+                <span class="result-value" id="spreadPerShare">$0.00</span>
+            </div>
+
+            <div class="result-item">
+                <span class="result-label">Spread Percentage:</span>
+                <span class="result-value" id="spreadPercent">0.00%</span>
+            </div>
+
+            <div class="result-item">
+                <span class="result-label">Purchase Cost (at ask):</span>
+                <span class="result-value" id="purchaseCost">$0.00</span>
+            </div>
+
+            <div class="result-item">
+                <span class="result-label">Immediate Market Value (at bid):</span>
+                <span class="result-value" id="marketValue">$0.00</span>
+            </div>
+
+            <div class="result-item highlight-result">
+                <span class="result-label">Hidden Spread Cost:</span>
+                <span class="result-value" id="hiddenCost">$0.00</span>
+            </div>
+
+            <div class="result-item highlight-result">
+                <span class="result-label">Cost as % of Investment:</span>
+                <span class="result-value" id="costPercent">0.00%</span>
+            </div>
+
+            <div id="interpretation" style="margin-top: 20px;"></div>
+        </div>
+
+        <div class="info-box">
+            <h3>Understanding the Results:</h3>
+            <ul>
+                <li><strong>Purchase Cost:</strong> What you pay to buy the shares (shares × ask price)</li>
+                <li><strong>Immediate Market Value:</strong> What you'd receive if you sold immediately (shares × bid price)</li>
+                <li><strong>Hidden Spread Cost:</strong> The difference - this is your immediate loss from the spread</li>
+                <li><strong>Cost as % of Investment:</strong> How much the spread costs relative to your total purchase</li>
+            </ul>
+        </div>
+
+        <div class="info-box">
+            <h3>💡 Key Insights:</h3>
+            <ul>
+                <li><strong>Spreads &lt; 0.1%:</strong> Very efficient, highly liquid stock</li>
+                <li><strong>Spreads 0.1% - 0.5%:</strong> Acceptable for most stocks</li>
+                <li><strong>Spreads &gt; 0.5%:</strong> Warning! High cost, consider using a limit order</li>
+                <li><strong>Spreads &gt; 1%:</strong> Avoid or trade very carefully - extremely illiquid</li>
+            </ul>
+        </div>
+
+        <div class="warning-box">
+            <strong>⚠️ Remember:</strong> This spread cost happens every time you trade. Frequent trading multiplies these costs. For 10 round-trip trades, you'd pay this cost 20 times!
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>PFL Academy</strong> | Understanding Financial Markets</p>
+        <p>For educational purposes only - Not investment advice</p>
+    </footer>
+
+    <script>
+        function calculateCosts() {
+            // Get input values
+            const shares = parseFloat(document.getElementById('shares').value);
+            const bid = parseFloat(document.getElementById('bid').value);
+            const ask = parseFloat(document.getElementById('ask').value);
+
+            // Validate inputs
+            if (isNaN(shares) || isNaN(bid) || isNaN(ask) || shares <= 0 || bid <= 0 || ask <= 0) {
+                alert('Please enter valid positive numbers for all fields.');
+                return;
+            }
+
+            if (ask < bid) {
+                alert('Ask price must be greater than or equal to bid price.');
+                return;
+            }
+
+            // Calculate values
+            const spreadPerShare = ask - bid;
+            const spreadPercent = (spreadPerShare / ask) * 100;
+            const purchaseCost = shares * ask;
+            const marketValue = shares * bid;
+            const hiddenCost = spreadPerShare * shares;
+            const costPercent = (hiddenCost / purchaseCost) * 100;
+
+            // Display results
+            document.getElementById('spreadPerShare').textContent = '$' + spreadPerShare.toFixed(2);
+            document.getElementById('spreadPercent').textContent = spreadPercent.toFixed(3) + '%';
+            document.getElementById('purchaseCost').textContent = '$' + purchaseCost.toFixed(2);
+            document.getElementById('marketValue').textContent = '$' + marketValue.toFixed(2);
+            document.getElementById('hiddenCost').textContent = '$' + hiddenCost.toFixed(2);
+            document.getElementById('costPercent').textContent = costPercent.toFixed(2) + '%';
+
+            // Show results section
+            document.getElementById('results').classList.add('show');
+
+            // Add interpretation
+            let interpretation = '';
+            if (spreadPercent < 0.1) {
+                interpretation = '<div class="info-box"><strong>✓ Excellent:</strong> This is a highly liquid stock with a very tight spread. The cost is minimal.</div>';
+            } else if (spreadPercent < 0.5) {
+                interpretation = '<div class="info-box"><strong>✓ Good:</strong> This spread is acceptable for most trading situations.</div>';
+            } else if (spreadPercent < 1) {
+                interpretation = '<div class="warning-box"><strong>⚠️ Caution:</strong> This spread is relatively wide. Consider using a limit order to reduce costs.</div>';
+            } else {
+                interpretation = '<div class="warning-box"><strong>⚠️ High Cost:</strong> This spread is very wide! This stock is illiquid. Definitely use a limit order and be patient.</div>';
+            }
+
+            document.getElementById('interpretation').innerHTML = interpretation;
+
+            // Scroll to results
+            document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        function resetCalculator() {
+            document.getElementById('shares').value = '100';
+            document.getElementById('bid').value = '49.95';
+            document.getElementById('ask').value = '50.05';
+            document.getElementById('results').classList.remove('show');
+        }
+
+        // Allow Enter key to calculate
+        document.addEventListener('DOMContentLoaded', function() {
+            const inputs = document.querySelectorAll('input[type="number"]');
+            inputs.forEach(input => {
+                input.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') {
+                        calculateCosts();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
