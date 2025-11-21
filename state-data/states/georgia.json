@@ -1,0 +1,146 @@
+{
+  "state_name": "Georgia",
+  "state_code": "GA",
+  "last_updated": "2025-11-21",
+  "data_sources": {
+    "dmv_url": "https://dds.georgia.gov",
+    "tax_authority_url": "https://dor.georgia.gov",
+    "labor_department_url": "https://dol.georgia.gov",
+    "education_department_url": "https://www.usg.edu",
+    "consumer_protection_url": "https://consumer.georgia.gov",
+    "property_tax_assessor_url": "https://dor.georgia.gov/property-tax-returns-and-டிvaluation"
+  },
+  "automotive": {
+    "registration_initial": 20,
+    "registration_annual": 20,
+    "avg_auto_loan_rate_new": 6.78,
+    "avg_auto_loan_rate_used": 7.54,
+    "insurance_avg_teen": 295,
+    "insurance_comparison_url": "https://oci.georgia.gov",
+    "lease_acquisition_fee": 650,
+    "inspection_required": false,
+    "inspection_cost": 0,
+    "gas_price_current": 2.85,
+    "dmv_url": "https://dds.georgia.gov"
+  },
+  "taxes": {
+    "income_tax_rate": 5.49,
+    "sales_tax": 4.0,
+    "local_sales_tax_min": 2.0,
+    "local_sales_tax_max": 5.0,
+    "combined_sales_tax_min": 6.0,
+    "combined_sales_tax_max": 9.0,
+    "local_sales_tax_examples": [
+      {"city": "Atlanta", "local_rate": 4.9, "combined_rate": 8.9},
+      {"city": "Savannah", "local_rate": 3.0, "combined_rate": 7.0},
+      {"city": "Augusta", "local_rate": 4.0, "combined_rate": 8.0},
+      {"city": "Columbus", "local_rate": 4.0, "combined_rate": 8.0}
+    ],
+    "allows_local_income_tax": false,
+    "local_income_tax_range": "N/A",
+    "local_income_tax_rate_low": 0,
+    "local_income_tax_rate_high": 0,
+    "local_income_tax_example": "N/A",
+    "property_tax_county_rate": 0.80,
+    "property_tax_school_rate": 1.00,
+    "property_tax_special_rate": 0.20,
+    "property_tax_city_range": "0.30 - 1.20%",
+    "property_tax_examples": [
+      {"location": "Fulton County (Atlanta)", "millage": 35.2, "description": "Major metro - higher taxes"},
+      {"location": "Cobb County", "millage": 29.8, "description": "Atlanta suburb - moderate"},
+      {"location": "Gwinnett County", "millage": 26.5, "description": "Growing suburb - moderate"},
+      {"location": "Chatham County (Savannah)", "millage": 33.1, "description": "Coastal - moderate taxes"}
+    ],
+    "assessment_percentage": 40,
+    "homestead_exemption": 2000,
+    "property_assessment_frequency": "Annual",
+    "assessment_appeal_process": "File appeal with County Board of Tax Assessors within 45 days of notice. Then to Board of Equalization.",
+    "assessment_appeal_deadline": "45 days after notice",
+    "assessment_appeal_form_url": "https://dor.georgia.gov/property-tax-returns-and-valuation",
+    "has_tax_cap": false,
+    "county_name": "Fulton County",
+    "county_assessor_contact": "Fulton County Tax Assessor - (404) 612-6440",
+    "county_tax_assessor_url": "https://www.fultoncountyga.gov/assessors",
+    "property_tax_lookup_url": "https://dor.georgia.gov/property-tax-returns-and-valuation",
+    "tax_incentives": "Georgia 529 Plan (state tax deduction), HOPE Scholarship, Zell Miller Scholarship",
+    "tax_structure": "Flat 5.49% income tax, 40% property assessment ratio, moderate property taxes. Strong education incentives through lottery-funded scholarships."
+  },
+  "housing": {
+    "median_home_price": 335000,
+    "median_rent": 1495,
+    "housing_market_trends": "Strong growth in Atlanta metro. Affordable compared to other major metros. Significant population influx from other states.",
+    "first_time_homebuyer_program": "Georgia Dream Homeownership Program - Down payment and closing cost assistance",
+    "avg_mortgage_rate_30yr": 7.14
+  },
+  "insurance": {
+    "homeowners_avg_monthly": 185,
+    "data_source": "Georgia Office of Insurance average rates for $335K home coverage"
+  },
+  "employment": {
+    "min_wage": 7.25,
+    "unemployment_rate": 3.4,
+    "major_industries": "Film/Entertainment, Logistics, Technology, Healthcare, Aerospace, Agriculture"
+  },
+  "education": {
+    "tuition_public": 9678
+  },
+  "banking": {
+    "avg_monthly_fee": 11,
+    "avg_overdraft_fee": 33,
+    "credit_union_association_url": "https://www.gcua.org",
+    "minor_banking_rules": "Minors can open joint accounts with parent/guardian."
+  },
+  "consumer_protection": {
+    "consumer_protection_agency": "Georgia Governor's Office of Consumer Protection",
+    "consumer_protection_url": "https://consumer.georgia.gov"
+  },
+  "calculated_values": {
+    "state_tax_on_3500_monthly": 192,
+    "calculated_state_tax_70k": 3843,
+    "total_effective_rate": 19.5,
+    "take_home_pay_70k": 51002,
+    "property_tax_300k": 4224,
+    "state_withholding_48k_monthly": 220
+  },
+  "local_examples": {
+    "major_retailers": "Publix, Kroger, Walmart, Target, Costco",
+    "telecom_providers": "AT&T, Comcast/Xfinity, Google Fiber, T-Mobile, Verizon",
+    "utility_providers": "Georgia Power, Atlanta Gas Light, Cobb EMC",
+    "healthcare_market": "Emory Healthcare, Piedmont Healthcare, WellStar, Grady Health",
+    "local_credit_union_name": "Delta Community Credit Union",
+    "local_nonprofit_name": "Atlanta Community Food Bank",
+    "major_city": "Atlanta",
+    "major_city_1": "Atlanta",
+    "major_city_2": "Savannah",
+    "major_city_3": "Augusta",
+    "major_city_1_millage": 35.2,
+    "major_city_2_millage": 33.1,
+    "major_city_3_millage": 28.5,
+    "suburb_city": "Marietta",
+    "suburb_1": "Marietta",
+    "suburb_2": "Alpharetta",
+    "suburb_1_millage": 29.8,
+    "suburb_2_millage": 27.5,
+    "rural_area": "South Georgia",
+    "rural_area_millage": 18.0,
+    "high_tax_city": "Atlanta",
+    "medium_tax_city": "Savannah",
+    "low_tax_city": "Rural GA",
+    "high_tax_major_city": "Atlanta",
+    "low_tax_medium_city": "Gwinnett County",
+    "high_tax_millage": 35.2,
+    "medium_tax_millage": 33.1,
+    "low_tax_millage": 18.0,
+    "high_combined_sales_tax": 9.0,
+    "low_combined_sales_tax": 6.0,
+    "high_local_sales_tax": 5.0,
+    "low_local_sales_tax": 2.0,
+    "local_sales_tax_1": 4.9,
+    "total_millage_example": 35.2,
+    "high_local_income_tax_rate": 0,
+    "low_local_income_tax_rate": 0,
+    "local_income_tax_rate": 0,
+    "local_income_tax_rate_1": 0
+  },
+  "notes": "Georgia moved to flat 5.49% income tax in 2024 (previously graduated). HOPE and Zell Miller scholarships provide free/reduced tuition at state schools for qualifying students. Atlanta is major business hub - Delta headquarters, film industry ('Hollywood of the South'), growing tech sector. Hartsfield-Jackson is world's busiest airport. State has strong population growth."
+}

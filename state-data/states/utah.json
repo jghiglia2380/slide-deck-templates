@@ -1,0 +1,146 @@
+{
+  "state_name": "Utah",
+  "state_code": "UT",
+  "last_updated": "2025-11-21",
+  "data_sources": {
+    "dmv_url": "https://dmv.utah.gov",
+    "tax_authority_url": "https://tax.utah.gov",
+    "labor_department_url": "https://jobs.utah.gov",
+    "education_department_url": "https://ushe.edu",
+    "consumer_protection_url": "https://dcp.utah.gov",
+    "property_tax_assessor_url": "https://propertytax.utah.gov"
+  },
+  "automotive": {
+    "registration_initial": 44,
+    "registration_annual": 44,
+    "avg_auto_loan_rate_new": 6.58,
+    "avg_auto_loan_rate_used": 7.34,
+    "insurance_avg_teen": 245,
+    "insurance_comparison_url": "https://insurance.utah.gov",
+    "lease_acquisition_fee": 595,
+    "inspection_required": false,
+    "inspection_cost": 0,
+    "gas_price_current": 3.15,
+    "dmv_url": "https://dmv.utah.gov"
+  },
+  "taxes": {
+    "income_tax_rate": 4.65,
+    "sales_tax": 4.85,
+    "local_sales_tax_min": 1.0,
+    "local_sales_tax_max": 4.0,
+    "combined_sales_tax_min": 5.85,
+    "combined_sales_tax_max": 8.85,
+    "local_sales_tax_examples": [
+      {"city": "Salt Lake City", "local_rate": 2.85, "combined_rate": 7.75},
+      {"city": "Provo", "local_rate": 2.15, "combined_rate": 7.0},
+      {"city": "Ogden", "local_rate": 2.6, "combined_rate": 7.45},
+      {"city": "St. George", "local_rate": 2.0, "combined_rate": 6.85}
+    ],
+    "allows_local_income_tax": false,
+    "local_income_tax_range": "N/A",
+    "local_income_tax_rate_low": 0,
+    "local_income_tax_rate_high": 0,
+    "local_income_tax_example": "N/A",
+    "property_tax_county_rate": 0.30,
+    "property_tax_school_rate": 0.40,
+    "property_tax_special_rate": 0.10,
+    "property_tax_city_range": "0.50 - 0.90%",
+    "property_tax_examples": [
+      {"location": "Salt Lake County", "millage": 6.52, "description": "Metro area"},
+      {"location": "Utah County (Provo)", "millage": 5.45, "description": "BYU area"},
+      {"location": "Weber County (Ogden)", "millage": 7.15, "description": "Northern Utah"},
+      {"location": "Washington County (St. George)", "millage": 4.85, "description": "Southern Utah"}
+    ],
+    "assessment_percentage": 100,
+    "homestead_exemption": 45,
+    "property_assessment_frequency": "Annual",
+    "assessment_appeal_process": "File appeal with County Board of Equalization by September 15.",
+    "assessment_appeal_deadline": "September 15 annually",
+    "assessment_appeal_form_url": "https://propertytax.utah.gov",
+    "has_tax_cap": false,
+    "county_name": "Salt Lake County",
+    "county_assessor_contact": "Salt Lake County Assessor - (385) 468-8000",
+    "county_tax_assessor_url": "https://slco.org/assessor/",
+    "property_tax_lookup_url": "https://propertytax.utah.gov",
+    "tax_incentives": "my529 Plan (state tax credit), Primary Residential Exemption (45% reduction), Veteran Exemption",
+    "tax_structure": "Flat 4.65% income tax. Moderate sales tax with local additions. Low property taxes with 45% primary residence exemption. Business-friendly tax climate."
+  },
+  "housing": {
+    "median_home_price": 525000,
+    "median_rent": 1595,
+    "housing_market_trends": "Rapid appreciation in Salt Lake City and Wasatch Front. St. George popular with retirees. Utah County booming. Housing affordability crisis.",
+    "first_time_homebuyer_program": "Utah Housing Corporation - FirstHome Loan with down payment assistance",
+    "avg_mortgage_rate_30yr": 7.08
+  },
+  "insurance": {
+    "homeowners_avg_monthly": 105,
+    "data_source": "Utah Insurance Department average rates for $525K home coverage"
+  },
+  "employment": {
+    "min_wage": 7.25,
+    "unemployment_rate": 2.8,
+    "major_industries": "Technology, Healthcare, Finance, Aerospace, Tourism, Energy"
+  },
+  "education": {
+    "tuition_public": 8408
+  },
+  "banking": {
+    "avg_monthly_fee": 10,
+    "avg_overdraft_fee": 32,
+    "credit_union_association_url": "https://www.ucau.org",
+    "minor_banking_rules": "Minors can open joint accounts with parent/guardian."
+  },
+  "consumer_protection": {
+    "consumer_protection_agency": "Utah Division of Consumer Protection",
+    "consumer_protection_url": "https://dcp.utah.gov"
+  },
+  "calculated_values": {
+    "state_tax_on_3500_monthly": 163,
+    "calculated_state_tax_70k": 3255,
+    "total_effective_rate": 18.5,
+    "take_home_pay_70k": 51630,
+    "property_tax_300k": 1956,
+    "state_withholding_48k_monthly": 186
+  },
+  "local_examples": {
+    "major_retailers": "Smith's, Harmons, WinCo, Costco, Target",
+    "telecom_providers": "Comcast/Xfinity, CenturyLink, Google Fiber (SLC), T-Mobile, Verizon",
+    "utility_providers": "Rocky Mountain Power, Dominion Energy, Questar Gas",
+    "healthcare_market": "Intermountain Healthcare, University of Utah Health, MountainStar",
+    "local_credit_union_name": "Mountain America Credit Union",
+    "local_nonprofit_name": "Utah Food Bank",
+    "major_city": "Salt Lake City",
+    "major_city_1": "Salt Lake City",
+    "major_city_2": "Provo",
+    "major_city_3": "West Valley City",
+    "major_city_1_millage": 6.52,
+    "major_city_2_millage": 5.45,
+    "major_city_3_millage": 6.85,
+    "suburb_city": "Sandy",
+    "suburb_1": "Sandy",
+    "suburb_2": "Draper",
+    "suburb_1_millage": 6.25,
+    "suburb_2_millage": 5.95,
+    "rural_area": "Southern Utah",
+    "rural_area_millage": 4.5,
+    "high_tax_city": "Ogden",
+    "medium_tax_city": "Salt Lake City",
+    "low_tax_city": "St. George",
+    "high_tax_major_city": "Ogden",
+    "low_tax_medium_city": "Provo",
+    "high_tax_millage": 7.15,
+    "medium_tax_millage": 6.52,
+    "low_tax_millage": 4.85,
+    "high_combined_sales_tax": 8.85,
+    "low_combined_sales_tax": 5.85,
+    "high_local_sales_tax": 4.0,
+    "low_local_sales_tax": 1.0,
+    "local_sales_tax_1": 2.85,
+    "total_millage_example": 6.52,
+    "high_local_income_tax_rate": 0,
+    "low_local_income_tax_rate": 0,
+    "local_income_tax_rate": 0,
+    "local_income_tax_rate_1": 0
+  },
+  "notes": "Utah consistently ranked best state for business. 'Silicon Slopes' tech corridor (Adobe, Qualtrics, Pluralsight). Very low unemployment. Youngest median age in US (large families). BYU and University of Utah major institutions. Outdoor recreation tourism major industry (5 national parks). Housing prices have soared."
+}

@@ -1,0 +1,145 @@
+{
+  "state_name": "Pennsylvania",
+  "state_code": "PA",
+  "last_updated": "2025-11-21",
+  "data_sources": {
+    "dmv_url": "https://www.dmv.pa.gov",
+    "tax_authority_url": "https://www.revenue.pa.gov",
+    "labor_department_url": "https://www.dli.pa.gov",
+    "education_department_url": "https://www.passhe.edu",
+    "consumer_protection_url": "https://www.attorneygeneral.gov/protect-yourself/",
+    "property_tax_assessor_url": "https://www.revenue.pa.gov/FormsandPublications/FormsforIndividuals/PIT/Pages/default.aspx"
+  },
+  "automotive": {
+    "registration_initial": 47,
+    "registration_annual": 47,
+    "avg_auto_loan_rate_new": 6.65,
+    "avg_auto_loan_rate_used": 7.41,
+    "insurance_avg_teen": 345,
+    "insurance_comparison_url": "https://www.insurance.pa.gov",
+    "lease_acquisition_fee": 695,
+    "inspection_required": true,
+    "inspection_cost": 37,
+    "gas_price_current": 3.55,
+    "dmv_url": "https://www.dmv.pa.gov"
+  },
+  "taxes": {
+    "income_tax_rate": 3.07,
+    "sales_tax": 6.0,
+    "local_sales_tax_min": 0,
+    "local_sales_tax_max": 2.0,
+    "combined_sales_tax_min": 6.0,
+    "combined_sales_tax_max": 8.0,
+    "local_sales_tax_examples": [
+      {"city": "Philadelphia", "local_rate": 2.0, "combined_rate": 8.0},
+      {"city": "Pittsburgh", "local_rate": 1.0, "combined_rate": 7.0},
+      {"city": "Harrisburg", "local_rate": 0, "combined_rate": 6.0}
+    ],
+    "allows_local_income_tax": true,
+    "local_income_tax_range": "0% - 3.8712%",
+    "local_income_tax_rate_low": 0,
+    "local_income_tax_rate_high": 3.8712,
+    "local_income_tax_example": "Philadelphia 3.8712%",
+    "property_tax_county_rate": 0.50,
+    "property_tax_school_rate": 1.00,
+    "property_tax_special_rate": 0.20,
+    "property_tax_city_range": "1.0 - 3.0%",
+    "property_tax_examples": [
+      {"location": "Philadelphia", "millage": 14.37, "description": "Largest city"},
+      {"location": "Pittsburgh", "millage": 21.09, "description": "West PA - high"},
+      {"location": "Harrisburg", "millage": 25.45, "description": "State capital - high"},
+      {"location": "Chester County", "millage": 11.85, "description": "Philly suburbs"}
+    ],
+    "assessment_percentage": 100,
+    "homestead_exemption": 0,
+    "property_assessment_frequency": "Varies widely by county",
+    "assessment_appeal_process": "File appeal with County Board of Assessment Appeals during appeal period.",
+    "assessment_appeal_deadline": "Varies by county",
+    "assessment_appeal_form_url": "https://www.revenue.pa.gov",
+    "has_tax_cap": false,
+    "county_name": "Philadelphia County",
+    "county_assessor_contact": "Philadelphia Office of Property Assessment - (215) 686-4334",
+    "county_tax_assessor_url": "https://www.phila.gov/opa/",
+    "property_tax_lookup_url": "https://www.revenue.pa.gov",
+    "tax_incentives": "PA 529 College Savings Program (state tax deduction), Property Tax/Rent Rebate for seniors, LERTA tax abatements",
+    "tax_structure": "Flat 3.07% state income tax (one of lowest). Philadelphia has highest local wage tax (3.8712%). High property taxes especially in older cities. Moderate sales tax."
+  },
+  "housing": {
+    "median_home_price": 285000,
+    "median_rent": 1295,
+    "housing_market_trends": "Philadelphia suburbs expensive. Pittsburgh affordable and growing. Rural PA very affordable. State College stable.",
+    "first_time_homebuyer_program": "PHFA - Keystone Home Loan Program with down payment assistance",
+    "avg_mortgage_rate_30yr": 7.10
+  },
+  "insurance": {
+    "homeowners_avg_monthly": 115,
+    "data_source": "Pennsylvania Insurance Department average rates for $285K home coverage"
+  },
+  "employment": {
+    "min_wage": 7.25,
+    "unemployment_rate": 3.9,
+    "major_industries": "Healthcare, Financial Services, Manufacturing, Technology, Higher Education, Energy"
+  },
+  "education": {
+    "tuition_public": 15286
+  },
+  "banking": {
+    "avg_monthly_fee": 12,
+    "avg_overdraft_fee": 34,
+    "credit_union_association_url": "https://www.pacreditunions.com",
+    "minor_banking_rules": "Minors can open joint accounts with parent/guardian."
+  },
+  "consumer_protection": {
+    "consumer_protection_agency": "Pennsylvania Attorney General - Bureau of Consumer Protection",
+    "consumer_protection_url": "https://www.attorneygeneral.gov/protect-yourself/"
+  },
+  "calculated_values": {
+    "state_tax_on_3500_monthly": 107,
+    "calculated_state_tax_70k": 2149,
+    "total_effective_rate": 17.2,
+    "take_home_pay_70k": 52560,
+    "property_tax_300k": 4311,
+    "state_withholding_48k_monthly": 123
+  },
+  "local_examples": {
+    "major_retailers": "Giant, Weis, ShopRite, Wegmans, Target",
+    "telecom_providers": "Verizon, Comcast/Xfinity, T-Mobile",
+    "utility_providers": "PECO, Duquesne Light, PPL, Columbia Gas",
+    "healthcare_market": "Penn Medicine, UPMC, Jefferson Health, Main Line Health",
+    "local_credit_union_name": "PSECU",
+    "local_nonprofit_name": "Philabundance",
+    "major_city": "Philadelphia",
+    "major_city_1": "Philadelphia",
+    "major_city_2": "Pittsburgh",
+    "major_city_3": "Allentown",
+    "major_city_1_millage": 14.37,
+    "major_city_2_millage": 21.09,
+    "major_city_3_millage": 18.45,
+    "suburb_city": "King of Prussia",
+    "suburb_1": "King of Prussia",
+    "suburb_2": "Cranberry Township",
+    "suburb_1_millage": 11.85,
+    "suburb_2_millage": 18.25,
+    "rural_area": "Central PA",
+    "rural_area_millage": 12.0,
+    "high_tax_city": "Harrisburg",
+    "medium_tax_city": "Pittsburgh",
+    "low_tax_city": "Chester County",
+    "high_tax_major_city": "Harrisburg",
+    "low_tax_medium_city": "Chester County",
+    "high_tax_millage": 25.45,
+    "medium_tax_millage": 21.09,
+    "low_tax_millage": 11.85,
+    "high_combined_sales_tax": 8.0,
+    "low_combined_sales_tax": 6.0,
+    "high_local_sales_tax": 2.0,
+    "low_local_sales_tax": 0,
+    "local_sales_tax_1": 2.0,
+    "total_millage_example": 14.37,
+    "high_local_income_tax_rate": 3.8712,
+    "low_local_income_tax_rate": 0,
+    "local_income_tax_rate": 3.8712,
+    "local_income_tax_rate_1": 3.8712
+  },
+  "notes": "Pennsylvania has low flat state income tax (3.07%) but Philadelphia has very high local wage tax (3.8712% for residents). High property taxes especially in older cities. Pittsburgh renaissance driven by healthcare (UPMC) and tech. Penn State and major universities important. No sales tax on groceries/clothes."
+}

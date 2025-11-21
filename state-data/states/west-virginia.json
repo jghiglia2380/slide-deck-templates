@@ -1,0 +1,145 @@
+{
+  "state_name": "West Virginia",
+  "state_code": "WV",
+  "last_updated": "2025-11-21",
+  "data_sources": {
+    "dmv_url": "https://dmv.wv.gov",
+    "tax_authority_url": "https://tax.wv.gov",
+    "labor_department_url": "https://workforcewv.org",
+    "education_department_url": "https://www.wvhepc.edu",
+    "consumer_protection_url": "https://ago.wv.gov/consumerprotection",
+    "property_tax_assessor_url": "https://tax.wv.gov/Business/PropertyTax"
+  },
+  "automotive": {
+    "registration_initial": 51,
+    "registration_annual": 51,
+    "avg_auto_loan_rate_new": 6.75,
+    "avg_auto_loan_rate_used": 7.51,
+    "insurance_avg_teen": 265,
+    "insurance_comparison_url": "https://www.wvinsurance.gov",
+    "lease_acquisition_fee": 550,
+    "inspection_required": true,
+    "inspection_cost": 25,
+    "gas_price_current": 2.95,
+    "dmv_url": "https://dmv.wv.gov"
+  },
+  "taxes": {
+    "income_tax_rate": 5.12,
+    "sales_tax": 6.0,
+    "local_sales_tax_min": 0,
+    "local_sales_tax_max": 1.0,
+    "combined_sales_tax_min": 6.0,
+    "combined_sales_tax_max": 7.0,
+    "local_sales_tax_examples": [
+      {"city": "Charleston", "local_rate": 0, "combined_rate": 6.0},
+      {"city": "Huntington", "local_rate": 0, "combined_rate": 6.0},
+      {"city": "Morgantown", "local_rate": 1.0, "combined_rate": 7.0}
+    ],
+    "allows_local_income_tax": false,
+    "local_income_tax_range": "N/A",
+    "local_income_tax_rate_low": 0,
+    "local_income_tax_rate_high": 0,
+    "local_income_tax_example": "N/A",
+    "property_tax_county_rate": 0.30,
+    "property_tax_school_rate": 0.30,
+    "property_tax_special_rate": 0.10,
+    "property_tax_city_range": "0.50 - 0.90%",
+    "property_tax_examples": [
+      {"location": "Kanawha County (Charleston)", "millage": 6.85, "description": "State capital"},
+      {"location": "Cabell County (Huntington)", "millage": 6.45, "description": "Marshall University"},
+      {"location": "Monongalia County (Morgantown)", "millage": 5.95, "description": "WVU"},
+      {"location": "Berkeley County", "millage": 5.25, "description": "Eastern Panhandle growth"}
+    ],
+    "assessment_percentage": 60,
+    "homestead_exemption": 20000,
+    "property_assessment_frequency": "Annual",
+    "assessment_appeal_process": "File appeal with County Commission by February 20.",
+    "assessment_appeal_deadline": "February 20 annually",
+    "assessment_appeal_form_url": "https://tax.wv.gov/Business/PropertyTax",
+    "has_tax_cap": false,
+    "county_name": "Kanawha County",
+    "county_assessor_contact": "Kanawha County Assessor - (304) 357-0250",
+    "county_tax_assessor_url": "https://www.kanawha.us/assessor/",
+    "property_tax_lookup_url": "https://tax.wv.gov/Business/PropertyTax",
+    "tax_incentives": "SMART529 Plan (state tax deduction), Homestead Exemption for seniors ($20K)",
+    "tax_structure": "Graduated income tax (3-5.12%). Moderate sales tax. Low property taxes with 60% assessment ratio. Income tax being reduced over next several years."
+  },
+  "housing": {
+    "median_home_price": 145000,
+    "median_rent": 895,
+    "housing_market_trends": "Most affordable housing in nation. Charleston stable. Morgantown and Eastern Panhandle growing. Population decline in most areas.",
+    "first_time_homebuyer_program": "WV Housing Development Fund - Homeownership Program",
+    "avg_mortgage_rate_30yr": 7.12
+  },
+  "insurance": {
+    "homeowners_avg_monthly": 115,
+    "data_source": "West Virginia Offices of Insurance Commissioner average rates for $145K home coverage"
+  },
+  "employment": {
+    "min_wage": 8.75,
+    "unemployment_rate": 4.5,
+    "major_industries": "Healthcare, Energy (Coal, Gas), Government, Tourism, Manufacturing, Retail"
+  },
+  "education": {
+    "tuition_public": 9260
+  },
+  "banking": {
+    "avg_monthly_fee": 10,
+    "avg_overdraft_fee": 31,
+    "credit_union_association_url": "https://www.wvcul.org",
+    "minor_banking_rules": "Minors can open joint accounts with parent/guardian."
+  },
+  "consumer_protection": {
+    "consumer_protection_agency": "West Virginia Attorney General - Consumer Protection Division",
+    "consumer_protection_url": "https://ago.wv.gov/consumerprotection"
+  },
+  "calculated_values": {
+    "state_tax_on_3500_monthly": 179,
+    "calculated_state_tax_70k": 3584,
+    "total_effective_rate": 19.2,
+    "take_home_pay_70k": 51240,
+    "property_tax_300k": 1800,
+    "state_withholding_48k_monthly": 205
+  },
+  "local_examples": {
+    "major_retailers": "Kroger, Foodland, Walmart, Target",
+    "telecom_providers": "Frontier, Comcast/Xfinity, Suddenlink, T-Mobile, Verizon",
+    "utility_providers": "Appalachian Power, FirstEnergy, Dominion Energy",
+    "healthcare_market": "WVU Medicine, CAMC Health System, St. Mary's Medical Center",
+    "local_credit_union_name": "WVU Credit Union",
+    "local_nonprofit_name": "Mountaineer Food Bank",
+    "major_city": "Charleston",
+    "major_city_1": "Charleston",
+    "major_city_2": "Huntington",
+    "major_city_3": "Morgantown",
+    "major_city_1_millage": 6.85,
+    "major_city_2_millage": 6.45,
+    "major_city_3_millage": 5.95,
+    "suburb_city": "South Charleston",
+    "suburb_1": "South Charleston",
+    "suburb_2": "Teays Valley",
+    "suburb_1_millage": 6.45,
+    "suburb_2_millage": 5.85,
+    "rural_area": "Southern WV",
+    "rural_area_millage": 5.0,
+    "high_tax_city": "Charleston",
+    "medium_tax_city": "Huntington",
+    "low_tax_city": "Southern WV",
+    "high_tax_major_city": "Charleston",
+    "low_tax_medium_city": "Berkeley County",
+    "high_tax_millage": 6.85,
+    "medium_tax_millage": 6.45,
+    "low_tax_millage": 5.0,
+    "high_combined_sales_tax": 7.0,
+    "low_combined_sales_tax": 6.0,
+    "high_local_sales_tax": 1.0,
+    "low_local_sales_tax": 0,
+    "local_sales_tax_1": 0,
+    "total_millage_example": 6.85,
+    "high_local_income_tax_rate": 0,
+    "low_local_income_tax_rate": 0,
+    "local_income_tax_rate": 0,
+    "local_income_tax_rate_1": 0
+  },
+  "notes": "West Virginia has most affordable housing in nation. Income tax being phased down (currently 5.12%, reducing annually). Coal industry decline offset by natural gas growth. Population decline is major demographic challenge. WVU and Marshall are economic anchors. Eastern Panhandle (Martinsburg) growing due to DC proximity."
+}

@@ -1,0 +1,145 @@
+{
+  "state_name": "Oregon",
+  "state_code": "OR",
+  "last_updated": "2025-11-21",
+  "data_sources": {
+    "dmv_url": "https://www.oregon.gov/odot/dmv",
+    "tax_authority_url": "https://www.oregon.gov/dor",
+    "labor_department_url": "https://www.oregon.gov/employ",
+    "education_department_url": "https://www.oregon.gov/highered",
+    "consumer_protection_url": "https://www.doj.state.or.us/consumer-protection/",
+    "property_tax_assessor_url": "https://www.oregon.gov/dor/programs/property"
+  },
+  "automotive": {
+    "registration_initial": 132,
+    "registration_annual": 132,
+    "avg_auto_loan_rate_new": 6.58,
+    "avg_auto_loan_rate_used": 7.34,
+    "insurance_avg_teen": 285,
+    "insurance_comparison_url": "https://dfr.oregon.gov/insurance",
+    "lease_acquisition_fee": 650,
+    "inspection_required": false,
+    "inspection_cost": 0,
+    "gas_price_current": 3.65,
+    "dmv_url": "https://www.oregon.gov/odot/dmv"
+  },
+  "taxes": {
+    "income_tax_rate": 9.9,
+    "sales_tax": 0,
+    "local_sales_tax_min": 0,
+    "local_sales_tax_max": 0,
+    "combined_sales_tax_min": 0,
+    "combined_sales_tax_max": 0,
+    "local_sales_tax_examples": [
+      {"city": "Portland", "local_rate": 0, "combined_rate": 0},
+      {"city": "Salem", "local_rate": 0, "combined_rate": 0},
+      {"city": "Eugene", "local_rate": 0, "combined_rate": 0}
+    ],
+    "allows_local_income_tax": true,
+    "local_income_tax_range": "0% - 1.5%",
+    "local_income_tax_rate_low": 0,
+    "local_income_tax_rate_high": 1.5,
+    "local_income_tax_example": "Portland Metro Supportive Housing Tax 1%",
+    "property_tax_county_rate": 0.40,
+    "property_tax_school_rate": 0.50,
+    "property_tax_special_rate": 0.10,
+    "property_tax_city_range": "0.80 - 1.50%",
+    "property_tax_examples": [
+      {"location": "Portland (Multnomah)", "millage": 10.85, "description": "Largest city"},
+      {"location": "Salem (Marion)", "millage": 9.45, "description": "State capital"},
+      {"location": "Eugene (Lane)", "millage": 10.25, "description": "University town"},
+      {"location": "Bend", "millage": 8.15, "description": "Central Oregon growth"}
+    ],
+    "assessment_percentage": 100,
+    "homestead_exemption": 0,
+    "property_assessment_frequency": "Annual",
+    "assessment_appeal_process": "File petition with County Board of Property Tax Appeals by December 31.",
+    "assessment_appeal_deadline": "December 31 annually",
+    "assessment_appeal_form_url": "https://www.oregon.gov/dor/programs/property",
+    "has_tax_cap": true,
+    "county_name": "Multnomah County",
+    "county_assessor_contact": "Multnomah County Assessor - (503) 988-3326",
+    "county_tax_assessor_url": "https://multco.us/assessment-taxation",
+    "property_tax_lookup_url": "https://www.oregon.gov/dor/programs/property",
+    "tax_incentives": "Oregon College Savings Plan (state tax credit), Property Tax Deferral for seniors/disabled, Measure 5/50 tax limitations",
+    "tax_structure": "No sales tax. Very high income tax (9.9% top rate, among highest in nation). Moderate property taxes with constitutional limits. Portland has additional local taxes."
+  },
+  "housing": {
+    "median_home_price": 485000,
+    "median_rent": 1595,
+    "housing_market_trends": "Portland expensive but cooled from peak. Bend very expensive. Salem and Eugene moderate. Eastern Oregon affordable.",
+    "first_time_homebuyer_program": "Oregon Housing and Community Services - Oregon Bond Residential Loan",
+    "avg_mortgage_rate_30yr": 7.08
+  },
+  "insurance": {
+    "homeowners_avg_monthly": 115,
+    "data_source": "Oregon DCBS average rates for $485K home coverage"
+  },
+  "employment": {
+    "min_wage": 14.70,
+    "unemployment_rate": 4.2,
+    "major_industries": "Technology, Healthcare, Manufacturing, Agriculture, Forestry, Tourism"
+  },
+  "education": {
+    "tuition_public": 13244
+  },
+  "banking": {
+    "avg_monthly_fee": 11,
+    "avg_overdraft_fee": 33,
+    "credit_union_association_url": "https://oregoncreditunions.org",
+    "minor_banking_rules": "Minors can open joint accounts with parent/guardian."
+  },
+  "consumer_protection": {
+    "consumer_protection_agency": "Oregon Department of Justice - Consumer Protection",
+    "consumer_protection_url": "https://www.doj.state.or.us/consumer-protection/"
+  },
+  "calculated_values": {
+    "state_tax_on_3500_monthly": 347,
+    "calculated_state_tax_70k": 6930,
+    "total_effective_rate": 23.9,
+    "take_home_pay_70k": 47940,
+    "property_tax_300k": 3255,
+    "state_withholding_48k_monthly": 396
+  },
+  "local_examples": {
+    "major_retailers": "Fred Meyer, Safeway, Winco, New Seasons, Costco",
+    "telecom_providers": "Comcast/Xfinity, CenturyLink, T-Mobile, Verizon",
+    "utility_providers": "Portland General Electric, PacifiCorp, NW Natural, Eugene Water & Electric",
+    "healthcare_market": "Providence, OHSU, Kaiser Permanente, Legacy Health",
+    "local_credit_union_name": "OnPoint Community Credit Union",
+    "local_nonprofit_name": "Oregon Food Bank",
+    "major_city": "Portland",
+    "major_city_1": "Portland",
+    "major_city_2": "Salem",
+    "major_city_3": "Eugene",
+    "major_city_1_millage": 10.85,
+    "major_city_2_millage": 9.45,
+    "major_city_3_millage": 10.25,
+    "suburb_city": "Beaverton",
+    "suburb_1": "Beaverton",
+    "suburb_2": "Hillsboro",
+    "suburb_1_millage": 10.15,
+    "suburb_2_millage": 9.85,
+    "rural_area": "Eastern Oregon",
+    "rural_area_millage": 7.0,
+    "high_tax_city": "Portland",
+    "medium_tax_city": "Eugene",
+    "low_tax_city": "Eastern OR",
+    "high_tax_major_city": "Portland",
+    "low_tax_medium_city": "Bend",
+    "high_tax_millage": 10.85,
+    "medium_tax_millage": 10.25,
+    "low_tax_millage": 7.0,
+    "high_combined_sales_tax": 0,
+    "low_combined_sales_tax": 0,
+    "high_local_sales_tax": 0,
+    "low_local_sales_tax": 0,
+    "local_sales_tax_1": 0,
+    "total_millage_example": 10.85,
+    "high_local_income_tax_rate": 1.5,
+    "low_local_income_tax_rate": 0,
+    "local_income_tax_rate": 1.0,
+    "local_income_tax_rate_1": 1.0
+  },
+  "notes": "Oregon has no sales tax but very high income tax (9.9% top rate). Portland metro has additional local income taxes (Arts Tax, Metro taxes). Measure 5/50 limits property tax increases. Intel, Nike, Columbia Sportswear are major employers. Wine industry growing. High environmental standards. Homeless crisis in Portland."
+}

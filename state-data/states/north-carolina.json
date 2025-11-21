@@ -1,0 +1,146 @@
+{
+  "state_name": "North Carolina",
+  "state_code": "NC",
+  "last_updated": "2025-11-21",
+  "data_sources": {
+    "dmv_url": "https://www.ncdot.gov/dmv",
+    "tax_authority_url": "https://www.ncdor.gov",
+    "labor_department_url": "https://www.nc.gov/agencies/commerce",
+    "education_department_url": "https://www.northcarolina.edu",
+    "consumer_protection_url": "https://ncdoj.gov/protecting-consumers/",
+    "property_tax_assessor_url": "https://www.ncdor.gov/taxes-forms/property-tax"
+  },
+  "automotive": {
+    "registration_initial": 40,
+    "registration_annual": 40,
+    "avg_auto_loan_rate_new": 6.65,
+    "avg_auto_loan_rate_used": 7.41,
+    "insurance_avg_teen": 285,
+    "insurance_comparison_url": "https://www.ncdoi.gov",
+    "lease_acquisition_fee": 595,
+    "inspection_required": true,
+    "inspection_cost": 30,
+    "gas_price_current": 3.05,
+    "dmv_url": "https://www.ncdot.gov/dmv"
+  },
+  "taxes": {
+    "income_tax_rate": 4.75,
+    "sales_tax": 4.75,
+    "local_sales_tax_min": 2.0,
+    "local_sales_tax_max": 2.75,
+    "combined_sales_tax_min": 6.75,
+    "combined_sales_tax_max": 7.5,
+    "local_sales_tax_examples": [
+      {"city": "Charlotte", "local_rate": 2.5, "combined_rate": 7.25},
+      {"city": "Raleigh", "local_rate": 2.25, "combined_rate": 7.0},
+      {"city": "Durham", "local_rate": 2.75, "combined_rate": 7.5},
+      {"city": "Asheville", "local_rate": 2.25, "combined_rate": 7.0}
+    ],
+    "allows_local_income_tax": false,
+    "local_income_tax_range": "N/A",
+    "local_income_tax_rate_low": 0,
+    "local_income_tax_rate_high": 0,
+    "local_income_tax_example": "N/A",
+    "property_tax_county_rate": 0.50,
+    "property_tax_school_rate": 0.20,
+    "property_tax_special_rate": 0.10,
+    "property_tax_city_range": "0.60 - 1.20%",
+    "property_tax_examples": [
+      {"location": "Charlotte (Mecklenburg)", "millage": 10.84, "description": "Largest city"},
+      {"location": "Raleigh (Wake)", "millage": 8.45, "description": "State capital"},
+      {"location": "Durham", "millage": 11.25, "description": "Research Triangle"},
+      {"location": "Asheville", "millage": 9.85, "description": "Western NC mountains"}
+    ],
+    "assessment_percentage": 100,
+    "homestead_exemption": 0,
+    "property_assessment_frequency": "Every 4-8 years",
+    "assessment_appeal_process": "File appeal with County Board of Equalization and Review during appeal period.",
+    "assessment_appeal_deadline": "Within appeal window (varies by county)",
+    "assessment_appeal_form_url": "https://www.ncdor.gov/taxes-forms/property-tax",
+    "has_tax_cap": false,
+    "county_name": "Mecklenburg County",
+    "county_assessor_contact": "Mecklenburg County Assessor - (704) 336-2383",
+    "county_tax_assessor_url": "https://www.mecknc.gov/AssessorsOffice",
+    "property_tax_lookup_url": "https://www.ncdor.gov/taxes-forms/property-tax",
+    "tax_incentives": "NC 529 Plan (state tax deduction), Homestead Exemption for elderly/disabled",
+    "tax_structure": "Flat 4.75% income tax (reduced from 5.25%). Moderate sales tax with local additions. Below-average property taxes. Pro-business tax climate with recent reforms."
+  },
+  "housing": {
+    "median_home_price": 335000,
+    "median_rent": 1395,
+    "housing_market_trends": "Strong growth in Charlotte, Raleigh-Durham (Research Triangle). Asheville expensive. Eastern NC more affordable.",
+    "first_time_homebuyer_program": "NC Housing Finance Agency - NC Home Advantage Mortgage",
+    "avg_mortgage_rate_30yr": 7.10
+  },
+  "insurance": {
+    "homeowners_avg_monthly": 185,
+    "data_source": "NC Department of Insurance average rates for $335K home coverage (higher due to hurricane risk)"
+  },
+  "employment": {
+    "min_wage": 7.25,
+    "unemployment_rate": 3.5,
+    "major_industries": "Technology, Banking/Finance, Healthcare, Biotechnology, Manufacturing, Education"
+  },
+  "education": {
+    "tuition_public": 7019
+  },
+  "banking": {
+    "avg_monthly_fee": 11,
+    "avg_overdraft_fee": 33,
+    "credit_union_association_url": "https://www.carolinascreditunions.org",
+    "minor_banking_rules": "Minors can open joint accounts with parent/guardian."
+  },
+  "consumer_protection": {
+    "consumer_protection_agency": "North Carolina Attorney General - Consumer Protection Division",
+    "consumer_protection_url": "https://ncdoj.gov/protecting-consumers/"
+  },
+  "calculated_values": {
+    "state_tax_on_3500_monthly": 166,
+    "calculated_state_tax_70k": 3325,
+    "total_effective_rate": 18.6,
+    "take_home_pay_70k": 51560,
+    "property_tax_300k": 3000,
+    "state_withholding_48k_monthly": 190
+  },
+  "local_examples": {
+    "major_retailers": "Harris Teeter, Food Lion, Publix, Walmart, Target",
+    "telecom_providers": "Spectrum, AT&T, Google Fiber (Charlotte/Triangle), T-Mobile, Verizon",
+    "utility_providers": "Duke Energy, Dominion Energy, Piedmont Natural Gas",
+    "healthcare_market": "Atrium Health, Duke Health, UNC Health, Novant Health",
+    "local_credit_union_name": "State Employees Credit Union (SECU)",
+    "local_nonprofit_name": "Food Bank of Central & Eastern NC",
+    "major_city": "Charlotte",
+    "major_city_1": "Charlotte",
+    "major_city_2": "Raleigh",
+    "major_city_3": "Durham",
+    "major_city_1_millage": 10.84,
+    "major_city_2_millage": 8.45,
+    "major_city_3_millage": 11.25,
+    "suburb_city": "Cary",
+    "suburb_1": "Cary",
+    "suburb_2": "Huntersville",
+    "suburb_1_millage": 8.45,
+    "suburb_2_millage": 10.84,
+    "rural_area": "Eastern NC",
+    "rural_area_millage": 7.0,
+    "high_tax_city": "Durham",
+    "medium_tax_city": "Charlotte",
+    "low_tax_city": "Eastern NC",
+    "high_tax_major_city": "Durham",
+    "low_tax_medium_city": "Raleigh",
+    "high_tax_millage": 11.25,
+    "medium_tax_millage": 10.84,
+    "low_tax_millage": 7.0,
+    "high_combined_sales_tax": 7.5,
+    "low_combined_sales_tax": 6.75,
+    "high_local_sales_tax": 2.75,
+    "low_local_sales_tax": 2.0,
+    "local_sales_tax_1": 2.5,
+    "total_millage_example": 10.84,
+    "high_local_income_tax_rate": 0,
+    "low_local_income_tax_rate": 0,
+    "local_income_tax_rate": 0,
+    "local_income_tax_rate_1": 0
+  },
+  "notes": "North Carolina is one of fastest growing states. Research Triangle (Raleigh-Durham-Chapel Hill) is major tech hub. Charlotte is second largest banking center in US (Bank of America, Wells Fargo). Pro-business tax reforms reduced income tax. Strong university system (UNC, Duke, NC State). Hurricane risk on coast."
+}

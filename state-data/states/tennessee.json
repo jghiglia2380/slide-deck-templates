@@ -1,0 +1,146 @@
+{
+  "state_name": "Tennessee",
+  "state_code": "TN",
+  "last_updated": "2025-11-21",
+  "data_sources": {
+    "dmv_url": "https://www.tn.gov/revenue/vehicle-services",
+    "tax_authority_url": "https://www.tn.gov/revenue",
+    "labor_department_url": "https://www.tn.gov/workforce",
+    "education_department_url": "https://www.tn.gov/thec",
+    "consumer_protection_url": "https://www.tn.gov/attorneygeneral/working-for-tennessee/consumer-protection",
+    "property_tax_assessor_url": "https://www.tn.gov/comptroller/office-functions/pa.html"
+  },
+  "automotive": {
+    "registration_initial": 29,
+    "registration_annual": 29,
+    "avg_auto_loan_rate_new": 6.68,
+    "avg_auto_loan_rate_used": 7.44,
+    "insurance_avg_teen": 275,
+    "insurance_comparison_url": "https://www.tn.gov/commerce/insurance",
+    "lease_acquisition_fee": 595,
+    "inspection_required": false,
+    "inspection_cost": 0,
+    "gas_price_current": 2.75,
+    "dmv_url": "https://www.tn.gov/revenue/vehicle-services"
+  },
+  "taxes": {
+    "income_tax_rate": 0,
+    "sales_tax": 7.0,
+    "local_sales_tax_min": 1.5,
+    "local_sales_tax_max": 2.75,
+    "combined_sales_tax_min": 8.5,
+    "combined_sales_tax_max": 9.75,
+    "local_sales_tax_examples": [
+      {"city": "Nashville", "local_rate": 2.25, "combined_rate": 9.25},
+      {"city": "Memphis", "local_rate": 2.25, "combined_rate": 9.25},
+      {"city": "Knoxville", "local_rate": 2.25, "combined_rate": 9.25},
+      {"city": "Chattanooga", "local_rate": 2.25, "combined_rate": 9.25}
+    ],
+    "allows_local_income_tax": false,
+    "local_income_tax_range": "N/A",
+    "local_income_tax_rate_low": 0,
+    "local_income_tax_rate_high": 0,
+    "local_income_tax_example": "N/A",
+    "property_tax_county_rate": 0.30,
+    "property_tax_school_rate": 0.30,
+    "property_tax_special_rate": 0.10,
+    "property_tax_city_range": "0.50 - 1.00%",
+    "property_tax_examples": [
+      {"location": "Nashville (Davidson)", "millage": 4.22, "description": "State capital - growing"},
+      {"location": "Memphis (Shelby)", "millage": 4.05, "description": "Largest city"},
+      {"location": "Knoxville (Knox)", "millage": 2.12, "description": "East Tennessee"},
+      {"location": "Chattanooga (Hamilton)", "millage": 2.46, "description": "Southeast TN"}
+    ],
+    "assessment_percentage": 25,
+    "homestead_exemption": 0,
+    "property_assessment_frequency": "Quadrennial",
+    "assessment_appeal_process": "File appeal with County Board of Equalization during annual session.",
+    "assessment_appeal_deadline": "During annual session (varies by county)",
+    "assessment_appeal_form_url": "https://www.tn.gov/comptroller/office-functions/pa.html",
+    "has_tax_cap": false,
+    "county_name": "Davidson County",
+    "county_assessor_contact": "Metro Nashville Property Assessor - (615) 862-6080",
+    "county_tax_assessor_url": "https://www.padctn.org",
+    "property_tax_lookup_url": "https://www.tn.gov/comptroller/office-functions/pa.html",
+    "tax_incentives": "TNStars 529 Plan (no state income tax benefit needed), Property Tax Relief for elderly/disabled/veterans",
+    "tax_structure": "No income tax on wages (Hall Tax on interest/dividends fully repealed in 2021). Very high sales tax (one of highest in nation). Low property taxes with 25% residential assessment."
+  },
+  "housing": {
+    "median_home_price": 365000,
+    "median_rent": 1395,
+    "housing_market_trends": "Nashville boom with rapid appreciation. Memphis affordable but slower growth. Knoxville and Chattanooga moderate growth. Strong migration from high-tax states.",
+    "first_time_homebuyer_program": "THDA - Great Choice Home Loan with down payment assistance",
+    "avg_mortgage_rate_30yr": 7.11
+  },
+  "insurance": {
+    "homeowners_avg_monthly": 165,
+    "data_source": "Tennessee Department of Commerce average rates for $365K home coverage"
+  },
+  "employment": {
+    "min_wage": 7.25,
+    "unemployment_rate": 3.4,
+    "major_industries": "Healthcare, Music/Entertainment, Automotive, Logistics, Manufacturing, Tourism"
+  },
+  "education": {
+    "tuition_public": 10626
+  },
+  "banking": {
+    "avg_monthly_fee": 10,
+    "avg_overdraft_fee": 32,
+    "credit_union_association_url": "https://www.tnculinc.org",
+    "minor_banking_rules": "Minors can open joint accounts with parent/guardian."
+  },
+  "consumer_protection": {
+    "consumer_protection_agency": "Tennessee Attorney General - Consumer Protection Division",
+    "consumer_protection_url": "https://www.tn.gov/attorneygeneral/working-for-tennessee/consumer-protection"
+  },
+  "calculated_values": {
+    "state_tax_on_3500_monthly": 0,
+    "calculated_state_tax_70k": 0,
+    "total_effective_rate": 14.1,
+    "take_home_pay_70k": 55090,
+    "property_tax_300k": 1266,
+    "state_withholding_48k_monthly": 0
+  },
+  "local_examples": {
+    "major_retailers": "Kroger, Publix, Food City, Walmart, Target",
+    "telecom_providers": "Comcast/Xfinity, AT&T, Google Fiber (Nashville), T-Mobile, Verizon",
+    "utility_providers": "Nashville Electric Service, Memphis Light Gas & Water, TVA, KUB",
+    "healthcare_market": "HCA Healthcare (HQ), Vanderbilt, St. Thomas, Methodist Le Bonheur",
+    "local_credit_union_name": "Ascend Federal Credit Union",
+    "local_nonprofit_name": "Second Harvest Food Bank of Middle Tennessee",
+    "major_city": "Nashville",
+    "major_city_1": "Nashville",
+    "major_city_2": "Memphis",
+    "major_city_3": "Knoxville",
+    "major_city_1_millage": 4.22,
+    "major_city_2_millage": 4.05,
+    "major_city_3_millage": 2.12,
+    "suburb_city": "Franklin",
+    "suburb_1": "Franklin",
+    "suburb_2": "Murfreesboro",
+    "suburb_1_millage": 3.85,
+    "suburb_2_millage": 3.45,
+    "rural_area": "East Tennessee",
+    "rural_area_millage": 1.8,
+    "high_tax_city": "Nashville",
+    "medium_tax_city": "Memphis",
+    "low_tax_city": "East TN",
+    "high_tax_major_city": "Nashville",
+    "low_tax_medium_city": "Knoxville",
+    "high_tax_millage": 4.22,
+    "medium_tax_millage": 4.05,
+    "low_tax_millage": 1.8,
+    "high_combined_sales_tax": 9.75,
+    "low_combined_sales_tax": 8.5,
+    "high_local_sales_tax": 2.75,
+    "low_local_sales_tax": 1.5,
+    "local_sales_tax_1": 2.25,
+    "total_millage_example": 4.22,
+    "high_local_income_tax_rate": 0,
+    "low_local_income_tax_rate": 0,
+    "local_income_tax_rate": 0,
+    "local_income_tax_rate_1": 0
+  },
+  "notes": "Tennessee has no income tax on wages (Hall Tax on investment income fully repealed in 2021). Very high sales tax (state + local can reach 9.75%). Low property taxes. Nashville is one of fastest growing cities in US - major healthcare and music industry hub. FedEx and AutoZone headquartered in Memphis. Nissan NA in Franklin."
+}

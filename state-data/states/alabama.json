@@ -1,0 +1,178 @@
+{
+  "state_name": "Alabama",
+  "state_code": "AL",
+  "last_updated": "2025-11-21",
+  "data_sources": {
+    "dmv_url": "https://www.alea.gov/motorvehicle",
+    "tax_authority_url": "https://www.revenue.alabama.gov",
+    "labor_department_url": "https://www.labor.alabama.gov",
+    "education_department_url": "https://www.ache.edu",
+    "consumer_protection_url": "https://www.alabamaag.gov/consumer-protection",
+    "property_tax_assessor_url": "https://www.revenue.alabama.gov/property-tax/"
+  },
+  "automotive": {
+    "registration_initial": 23,
+    "registration_annual": 23,
+    "avg_auto_loan_rate_new": 6.84,
+    "avg_auto_loan_rate_used": 7.62,
+    "insurance_avg_teen": 285,
+    "insurance_comparison_url": "https://www.aldoi.gov",
+    "lease_acquisition_fee": 595,
+    "inspection_required": false,
+    "inspection_cost": 0,
+    "gas_price_current": 2.68,
+    "dmv_url": "https://www.alea.gov/motorvehicle"
+  },
+  "taxes": {
+    "income_tax_rate": 5.0,
+    "sales_tax": 4.0,
+    "local_sales_tax_min": 0,
+    "local_sales_tax_max": 7.5,
+    "combined_sales_tax_min": 4.0,
+    "combined_sales_tax_max": 11.5,
+    "local_sales_tax_examples": [
+      {
+        "city": "Birmingham",
+        "local_rate": 6.0,
+        "combined_rate": 10.0
+      },
+      {
+        "city": "Montgomery",
+        "local_rate": 6.0,
+        "combined_rate": 10.0
+      },
+      {
+        "city": "Mobile",
+        "local_rate": 6.5,
+        "combined_rate": 10.5
+      },
+      {
+        "city": "Huntsville",
+        "local_rate": 5.0,
+        "combined_rate": 9.0
+      }
+    ],
+    "allows_local_income_tax": true,
+    "local_income_tax_range": "0% - 2%",
+    "local_income_tax_rate_low": 0,
+    "local_income_tax_rate_high": 2.0,
+    "local_income_tax_example": "Birmingham 1%",
+    "property_tax_county_rate": 0.30,
+    "property_tax_school_rate": 0.15,
+    "property_tax_special_rate": 0.05,
+    "property_tax_city_range": "0.10 - 0.50%",
+    "property_tax_examples": [
+      {
+        "location": "Birmingham (Jefferson County)",
+        "millage": 7.8,
+        "description": "Major city - moderate taxes"
+      },
+      {
+        "location": "Montgomery (Montgomery County)",
+        "millage": 6.5,
+        "description": "State capital - moderate taxes"
+      },
+      {
+        "location": "Huntsville (Madison County)",
+        "millage": 5.8,
+        "description": "Tech hub - lower property taxes"
+      },
+      {
+        "location": "Mobile (Mobile County)",
+        "millage": 7.2,
+        "description": "Port city - moderate taxes"
+      }
+    ],
+    "assessment_percentage": 10,
+    "homestead_exemption": 4000,
+    "property_assessment_frequency": "Annual",
+    "assessment_appeal_process": "File appeal with County Board of Equalization within 30 days of assessment notice.",
+    "assessment_appeal_deadline": "30 days after notice",
+    "assessment_appeal_form_url": "https://www.revenue.alabama.gov/property-tax/",
+    "has_tax_cap": false,
+    "county_name": "Jefferson County",
+    "county_assessor_contact": "Jefferson County Tax Assessor - (205) 325-5505",
+    "county_tax_assessor_url": "https://www.jeffconline.jccal.org",
+    "property_tax_lookup_url": "https://www.revenue.alabama.gov/property-tax/",
+    "tax_incentives": "Alabama 529 Plan, low property taxes due to 10% assessment ratio",
+    "tax_structure": "Graduated income tax (2-5%), low property tax assessment ratio (10% of value), high combined sales taxes in many localities."
+  },
+  "housing": {
+    "median_home_price": 216000,
+    "median_rent": 1050,
+    "housing_market_trends": "Affordable and stable market. Growing tech presence in Huntsville driving demand in northern region.",
+    "first_time_homebuyer_program": "Alabama Housing Finance Authority (AHFA) - Step Up program offers down payment assistance",
+    "avg_mortgage_rate_30yr": 7.15
+  },
+  "insurance": {
+    "homeowners_avg_monthly": 175,
+    "data_source": "Alabama Department of Insurance average rates for $216K home coverage"
+  },
+  "employment": {
+    "min_wage": 7.25,
+    "unemployment_rate": 3.2,
+    "major_industries": "Aerospace, Automotive Manufacturing, Healthcare, Military/Defense, Agriculture"
+  },
+  "education": {
+    "tuition_public": 11620
+  },
+  "banking": {
+    "avg_monthly_fee": 11,
+    "avg_overdraft_fee": 33,
+    "credit_union_association_url": "https://www.lscu.coop",
+    "minor_banking_rules": "Minors can open joint accounts with parent/guardian. Parent must be present for account opening."
+  },
+  "consumer_protection": {
+    "consumer_protection_agency": "Alabama Attorney General - Consumer Protection Division",
+    "consumer_protection_url": "https://www.alabamaag.gov/consumer-protection"
+  },
+  "calculated_values": {
+    "state_tax_on_3500_monthly": 175,
+    "calculated_state_tax_70k": 3500,
+    "total_effective_rate": 19.0,
+    "take_home_pay_70k": 51345,
+    "property_tax_300k": 234,
+    "state_withholding_48k_monthly": 200
+  },
+  "local_examples": {
+    "major_retailers": "Publix, Piggly Wiggly, Walmart, Target, Belk",
+    "telecom_providers": "AT&T, Spectrum, WOW!, T-Mobile, Verizon",
+    "utility_providers": "Alabama Power, Alagasco, Huntsville Utilities",
+    "healthcare_market": "UAB Health System, Huntsville Hospital, major regional providers",
+    "local_credit_union_name": "Alabama Credit Union",
+    "local_nonprofit_name": "Community Food Bank of Central Alabama",
+    "major_city": "Birmingham",
+    "major_city_1": "Birmingham",
+    "major_city_2": "Montgomery",
+    "major_city_3": "Huntsville",
+    "major_city_1_millage": 7.8,
+    "major_city_2_millage": 6.5,
+    "major_city_3_millage": 5.8,
+    "suburb_city": "Hoover",
+    "suburb_1": "Hoover",
+    "suburb_2": "Madison",
+    "suburb_1_millage": 6.2,
+    "suburb_2_millage": 5.5,
+    "rural_area": "Rural Central Alabama",
+    "rural_area_millage": 4.5,
+    "high_tax_city": "Birmingham",
+    "medium_tax_city": "Montgomery",
+    "low_tax_city": "Huntsville",
+    "high_tax_major_city": "Birmingham",
+    "low_tax_medium_city": "Huntsville",
+    "high_tax_millage": 7.8,
+    "medium_tax_millage": 6.5,
+    "low_tax_millage": 5.8,
+    "high_combined_sales_tax": 10.5,
+    "low_combined_sales_tax": 4.0,
+    "high_local_sales_tax": 7.5,
+    "low_local_sales_tax": 0,
+    "local_sales_tax_1": 6.0,
+    "total_millage_example": 7.8,
+    "high_local_income_tax_rate": 2.0,
+    "low_local_income_tax_rate": 0,
+    "local_income_tax_rate": 1.0,
+    "local_income_tax_rate_1": 1.0
+  },
+  "notes": "Alabama has one of the lowest property tax burdens in the nation due to 10% assessment ratio (only 10% of home value is taxed). However, combined sales taxes are among the highest, with some localities reaching 11.5%. The state has graduated income tax from 2-5%. Huntsville is a major aerospace and defense hub with NASA's Marshall Space Flight Center. Automotive manufacturing (Mercedes, Honda, Hyundai) is a growing sector."
+}

@@ -1,0 +1,145 @@
+{
+  "state_name": "Kentucky",
+  "state_code": "KY",
+  "last_updated": "2025-11-21",
+  "data_sources": {
+    "dmv_url": "https://drive.ky.gov",
+    "tax_authority_url": "https://revenue.ky.gov",
+    "labor_department_url": "https://kcc.ky.gov",
+    "education_department_url": "https://cpe.ky.gov",
+    "consumer_protection_url": "https://www.ag.ky.gov/civil/consumerprotection",
+    "property_tax_assessor_url": "https://revenue.ky.gov/Property/Pages/default.aspx"
+  },
+  "automotive": {
+    "registration_initial": 21,
+    "registration_annual": 21,
+    "avg_auto_loan_rate_new": 6.78,
+    "avg_auto_loan_rate_used": 7.54,
+    "insurance_avg_teen": 275,
+    "insurance_comparison_url": "https://insurance.ky.gov",
+    "lease_acquisition_fee": 595,
+    "inspection_required": false,
+    "inspection_cost": 0,
+    "gas_price_current": 2.82,
+    "dmv_url": "https://drive.ky.gov"
+  },
+  "taxes": {
+    "income_tax_rate": 4.0,
+    "sales_tax": 6.0,
+    "local_sales_tax_min": 0,
+    "local_sales_tax_max": 0,
+    "combined_sales_tax_min": 6.0,
+    "combined_sales_tax_max": 6.0,
+    "local_sales_tax_examples": [
+      {"city": "Louisville", "local_rate": 0, "combined_rate": 6.0},
+      {"city": "Lexington", "local_rate": 0, "combined_rate": 6.0},
+      {"city": "Bowling Green", "local_rate": 0, "combined_rate": 6.0}
+    ],
+    "allows_local_income_tax": true,
+    "local_income_tax_range": "0.5% - 2.5%",
+    "local_income_tax_rate_low": 0.5,
+    "local_income_tax_rate_high": 2.5,
+    "local_income_tax_example": "Louisville 2.2%",
+    "property_tax_county_rate": 0.30,
+    "property_tax_school_rate": 0.50,
+    "property_tax_special_rate": 0.10,
+    "property_tax_city_range": "0.20 - 0.80%",
+    "property_tax_examples": [
+      {"location": "Jefferson County (Louisville)", "millage": 9.8, "description": "Largest city"},
+      {"location": "Fayette County (Lexington)", "millage": 8.5, "description": "Second city"},
+      {"location": "Kenton County (Covington)", "millage": 11.2, "description": "Cincinnati suburbs"},
+      {"location": "Warren County (Bowling Green)", "millage": 7.8, "description": "Growing city"}
+    ],
+    "assessment_percentage": 100,
+    "homestead_exemption": 46350,
+    "property_assessment_frequency": "Annual",
+    "assessment_appeal_process": "File appeal with Property Valuation Administrator by May 1 or within 30 days of notice.",
+    "assessment_appeal_deadline": "May 1",
+    "assessment_appeal_form_url": "https://revenue.ky.gov/Property/Pages/default.aspx",
+    "has_tax_cap": false,
+    "county_name": "Jefferson County",
+    "county_assessor_contact": "Jefferson County PVA - (502) 574-6380",
+    "county_tax_assessor_url": "https://jeffersonpva.ky.gov",
+    "property_tax_lookup_url": "https://revenue.ky.gov/Property/Pages/default.aspx",
+    "tax_incentives": "Kentucky Education Savings Plan Trust 529 (state tax deduction), Homestead Exemption",
+    "tax_structure": "Flat 4.0% income tax, cities/counties impose local occupational taxes (0.5-2.5%). Low property taxes. Uniform 6% sales tax."
+  },
+  "housing": {
+    "median_home_price": 205000,
+    "median_rent": 1075,
+    "housing_market_trends": "Very affordable. Louisville and Lexington metros growing. Northern Kentucky benefits from Cincinnati proximity.",
+    "first_time_homebuyer_program": "Kentucky Housing Corporation - Homebuyer programs with down payment assistance",
+    "avg_mortgage_rate_30yr": 7.12
+  },
+  "insurance": {
+    "homeowners_avg_monthly": 145,
+    "data_source": "Kentucky Department of Insurance average rates for $205K home coverage"
+  },
+  "employment": {
+    "min_wage": 7.25,
+    "unemployment_rate": 4.2,
+    "major_industries": "Automotive Manufacturing, Bourbon/Distilling, Healthcare, Logistics, Coal/Energy, Horse Industry"
+  },
+  "education": {
+    "tuition_public": 12528
+  },
+  "banking": {
+    "avg_monthly_fee": 10,
+    "avg_overdraft_fee": 32,
+    "credit_union_association_url": "https://www.kycul.org",
+    "minor_banking_rules": "Minors can open joint accounts with parent/guardian."
+  },
+  "consumer_protection": {
+    "consumer_protection_agency": "Kentucky Attorney General - Consumer Protection Division",
+    "consumer_protection_url": "https://www.ag.ky.gov/civil/consumerprotection"
+  },
+  "calculated_values": {
+    "state_tax_on_3500_monthly": 140,
+    "calculated_state_tax_70k": 2800,
+    "total_effective_rate": 18.0,
+    "take_home_pay_70k": 52045,
+    "property_tax_300k": 2940,
+    "state_withholding_48k_monthly": 160
+  },
+  "local_examples": {
+    "major_retailers": "Kroger, Walmart, Meijer, Target",
+    "telecom_providers": "Spectrum, AT&T, Cincinnati Bell (NKY), T-Mobile, Verizon",
+    "utility_providers": "LG&E, Kentucky Utilities, Duke Energy (NKY)",
+    "healthcare_market": "Norton Healthcare, Baptist Health, UK HealthCare, St. Elizabeth",
+    "local_credit_union_name": "Park Community Credit Union",
+    "local_nonprofit_name": "Dare to Care Food Bank",
+    "major_city": "Louisville",
+    "major_city_1": "Louisville",
+    "major_city_2": "Lexington",
+    "major_city_3": "Bowling Green",
+    "major_city_1_millage": 9.8,
+    "major_city_2_millage": 8.5,
+    "major_city_3_millage": 7.8,
+    "suburb_city": "Georgetown",
+    "suburb_1": "Georgetown",
+    "suburb_2": "Elizabethtown",
+    "suburb_1_millage": 8.2,
+    "suburb_2_millage": 7.5,
+    "rural_area": "Eastern Kentucky",
+    "rural_area_millage": 5.5,
+    "high_tax_city": "Kenton County",
+    "medium_tax_city": "Louisville",
+    "low_tax_city": "Rural KY",
+    "high_tax_major_city": "Kenton County",
+    "low_tax_medium_city": "Rural KY",
+    "high_tax_millage": 11.2,
+    "medium_tax_millage": 9.8,
+    "low_tax_millage": 5.5,
+    "high_combined_sales_tax": 6.0,
+    "low_combined_sales_tax": 6.0,
+    "high_local_sales_tax": 0,
+    "low_local_sales_tax": 0,
+    "local_sales_tax_1": 0,
+    "total_millage_example": 9.8,
+    "high_local_income_tax_rate": 2.5,
+    "low_local_income_tax_rate": 0.5,
+    "local_income_tax_rate": 2.2,
+    "local_income_tax_rate_1": 2.2
+  },
+  "notes": "Kentucky moved to flat 4.0% income tax in 2023 (previously 5%). Local occupational taxes add 0.5-2.5% (Louisville 2.2%, Lexington 2.0%). Low property taxes. Major automotive manufacturing state (Toyota, Ford). Bourbon industry is significant economic driver. UPS Worldport in Louisville is major logistics hub. Kentucky Derby and horse industry important to economy."
+}

@@ -1,0 +1,146 @@
+{
+  "state_name": "South Carolina",
+  "state_code": "SC",
+  "last_updated": "2025-11-21",
+  "data_sources": {
+    "dmv_url": "https://www.scdmvonline.com",
+    "tax_authority_url": "https://dor.sc.gov",
+    "labor_department_url": "https://dew.sc.gov",
+    "education_department_url": "https://www.che.sc.gov",
+    "consumer_protection_url": "https://consumer.sc.gov",
+    "property_tax_assessor_url": "https://dor.sc.gov/tax/property"
+  },
+  "automotive": {
+    "registration_initial": 40,
+    "registration_annual": 40,
+    "avg_auto_loan_rate_new": 6.72,
+    "avg_auto_loan_rate_used": 7.48,
+    "insurance_avg_teen": 295,
+    "insurance_comparison_url": "https://www.doi.sc.gov",
+    "lease_acquisition_fee": 550,
+    "inspection_required": false,
+    "inspection_cost": 0,
+    "gas_price_current": 2.85,
+    "dmv_url": "https://www.scdmvonline.com"
+  },
+  "taxes": {
+    "income_tax_rate": 6.5,
+    "sales_tax": 6.0,
+    "local_sales_tax_min": 0,
+    "local_sales_tax_max": 3.0,
+    "combined_sales_tax_min": 6.0,
+    "combined_sales_tax_max": 9.0,
+    "local_sales_tax_examples": [
+      {"city": "Charleston", "local_rate": 2.5, "combined_rate": 8.5},
+      {"city": "Columbia", "local_rate": 2.0, "combined_rate": 8.0},
+      {"city": "Greenville", "local_rate": 1.0, "combined_rate": 7.0},
+      {"city": "Myrtle Beach", "local_rate": 3.0, "combined_rate": 9.0}
+    ],
+    "allows_local_income_tax": false,
+    "local_income_tax_range": "N/A",
+    "local_income_tax_rate_low": 0,
+    "local_income_tax_rate_high": 0,
+    "local_income_tax_example": "N/A",
+    "property_tax_county_rate": 0.30,
+    "property_tax_school_rate": 0.20,
+    "property_tax_special_rate": 0.10,
+    "property_tax_city_range": "0.40 - 0.80%",
+    "property_tax_examples": [
+      {"location": "Charleston County", "millage": 3.09, "description": "Coastal - 4% assessment"},
+      {"location": "Greenville County", "millage": 2.85, "description": "Upstate hub"},
+      {"location": "Richland County (Columbia)", "millage": 3.45, "description": "State capital"},
+      {"location": "Horry County (Myrtle Beach)", "millage": 2.65, "description": "Grand Strand"}
+    ],
+    "assessment_percentage": 4,
+    "homestead_exemption": 50000,
+    "property_assessment_frequency": "Every 5 years",
+    "assessment_appeal_process": "File appeal with County Assessor within 90 days of assessment notice.",
+    "assessment_appeal_deadline": "90 days after notice",
+    "assessment_appeal_form_url": "https://dor.sc.gov/tax/property",
+    "has_tax_cap": true,
+    "county_name": "Charleston County",
+    "county_assessor_contact": "Charleston County Assessor - (843) 958-4100",
+    "county_tax_assessor_url": "https://www.charlestoncounty.org/departments/assessor/",
+    "property_tax_lookup_url": "https://dor.sc.gov/tax/property",
+    "tax_incentives": "Future Scholar 529 Plan (state tax deduction), Homestead Exemption for seniors ($50K), Property tax capped at 15% increase",
+    "tax_structure": "Graduated income tax (0-6.5%). Very low property taxes due to 4% residential assessment ratio. Moderate sales tax with local options. Property tax cap limits assessment increases."
+  },
+  "housing": {
+    "median_home_price": 305000,
+    "median_rent": 1295,
+    "housing_market_trends": "Strong growth in Charleston and Greenville. Myrtle Beach and coastal areas popular with retirees. Columbia affordable. Rapid population growth driving prices.",
+    "first_time_homebuyer_program": "SC State Housing - Palmetto Heroes and Homebuyer Program",
+    "avg_mortgage_rate_30yr": 7.11
+  },
+  "insurance": {
+    "homeowners_avg_monthly": 195,
+    "data_source": "SC Department of Insurance average rates for $305K home coverage (higher due to hurricane risk)"
+  },
+  "employment": {
+    "min_wage": 7.25,
+    "unemployment_rate": 3.3,
+    "major_industries": "Manufacturing, Tourism, Automotive, Aerospace, Healthcare, Agriculture"
+  },
+  "education": {
+    "tuition_public": 12688
+  },
+  "banking": {
+    "avg_monthly_fee": 10,
+    "avg_overdraft_fee": 32,
+    "credit_union_association_url": "https://www.carolinascreditunions.org",
+    "minor_banking_rules": "Minors can open joint accounts with parent/guardian."
+  },
+  "consumer_protection": {
+    "consumer_protection_agency": "South Carolina Department of Consumer Affairs",
+    "consumer_protection_url": "https://consumer.sc.gov"
+  },
+  "calculated_values": {
+    "state_tax_on_3500_monthly": 228,
+    "calculated_state_tax_70k": 4550,
+    "total_effective_rate": 20.5,
+    "take_home_pay_70k": 50330,
+    "property_tax_300k": 927,
+    "state_withholding_48k_monthly": 260
+  },
+  "local_examples": {
+    "major_retailers": "Publix, Harris Teeter, Bi-Lo, Food Lion, Walmart",
+    "telecom_providers": "Spectrum, AT&T, T-Mobile, Verizon",
+    "utility_providers": "Duke Energy, Dominion Energy, SCE&G, Santee Cooper",
+    "healthcare_market": "Prisma Health, MUSC, Roper St. Francis, McLeod Health",
+    "local_credit_union_name": "South Carolina Federal Credit Union",
+    "local_nonprofit_name": "Harvest Hope Food Bank",
+    "major_city": "Charleston",
+    "major_city_1": "Charleston",
+    "major_city_2": "Columbia",
+    "major_city_3": "Greenville",
+    "major_city_1_millage": 3.09,
+    "major_city_2_millage": 3.45,
+    "major_city_3_millage": 2.85,
+    "suburb_city": "Mount Pleasant",
+    "suburb_1": "Mount Pleasant",
+    "suburb_2": "Summerville",
+    "suburb_1_millage": 3.09,
+    "suburb_2_millage": 2.95,
+    "rural_area": "Pee Dee Region",
+    "rural_area_millage": 2.5,
+    "high_tax_city": "Columbia",
+    "medium_tax_city": "Charleston",
+    "low_tax_city": "Pee Dee",
+    "high_tax_major_city": "Columbia",
+    "low_tax_medium_city": "Greenville",
+    "high_tax_millage": 3.45,
+    "medium_tax_millage": 3.09,
+    "low_tax_millage": 2.5,
+    "high_combined_sales_tax": 9.0,
+    "low_combined_sales_tax": 6.0,
+    "high_local_sales_tax": 3.0,
+    "low_local_sales_tax": 0,
+    "local_sales_tax_1": 2.5,
+    "total_millage_example": 3.09,
+    "high_local_income_tax_rate": 0,
+    "low_local_income_tax_rate": 0,
+    "local_income_tax_rate": 0,
+    "local_income_tax_rate_1": 0
+  },
+  "notes": "South Carolina has very low property taxes (4% residential assessment). One of fastest growing states. BMW, Boeing, Volvo manufacturing plants. Charleston consistently rated top US city. Myrtle Beach is major tourist destination. Military bases (Charleston, Columbia) important employers. Hurricane risk on coast."
+}

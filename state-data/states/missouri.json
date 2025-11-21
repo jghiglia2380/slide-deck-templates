@@ -1,0 +1,146 @@
+{
+  "state_name": "Missouri",
+  "state_code": "MO",
+  "last_updated": "2025-11-21",
+  "data_sources": {
+    "dmv_url": "https://dor.mo.gov/motor-vehicle/",
+    "tax_authority_url": "https://dor.mo.gov",
+    "labor_department_url": "https://labor.mo.gov",
+    "education_department_url": "https://dhe.mo.gov",
+    "consumer_protection_url": "https://ago.mo.gov/civil-division/consumer",
+    "property_tax_assessor_url": "https://dor.mo.gov/taxation/individual/tax-types/property/"
+  },
+  "automotive": {
+    "registration_initial": 51,
+    "registration_annual": 51,
+    "avg_auto_loan_rate_new": 6.68,
+    "avg_auto_loan_rate_used": 7.44,
+    "insurance_avg_teen": 285,
+    "insurance_comparison_url": "https://insurance.mo.gov",
+    "lease_acquisition_fee": 595,
+    "inspection_required": true,
+    "inspection_cost": 12,
+    "gas_price_current": 2.85,
+    "dmv_url": "https://dor.mo.gov/motor-vehicle/"
+  },
+  "taxes": {
+    "income_tax_rate": 4.95,
+    "sales_tax": 4.225,
+    "local_sales_tax_min": 0,
+    "local_sales_tax_max": 5.875,
+    "combined_sales_tax_min": 4.225,
+    "combined_sales_tax_max": 10.1,
+    "local_sales_tax_examples": [
+      {"city": "St. Louis", "local_rate": 4.454, "combined_rate": 8.679},
+      {"city": "Kansas City", "local_rate": 4.225, "combined_rate": 8.45},
+      {"city": "Springfield", "local_rate": 3.6, "combined_rate": 7.825},
+      {"city": "Columbia", "local_rate": 3.875, "combined_rate": 8.1}
+    ],
+    "allows_local_income_tax": true,
+    "local_income_tax_range": "0% - 1%",
+    "local_income_tax_rate_low": 0,
+    "local_income_tax_rate_high": 1.0,
+    "local_income_tax_example": "St. Louis City 1%",
+    "property_tax_county_rate": 0.40,
+    "property_tax_school_rate": 0.50,
+    "property_tax_special_rate": 0.10,
+    "property_tax_city_range": "0.80 - 1.50%",
+    "property_tax_examples": [
+      {"location": "St. Louis City", "millage": 8.43, "description": "Independent city - moderate"},
+      {"location": "St. Louis County", "millage": 5.82, "description": "Suburban St. Louis"},
+      {"location": "Kansas City", "millage": 7.65, "description": "Western Missouri"},
+      {"location": "Columbia", "millage": 5.15, "description": "College town"}
+    ],
+    "assessment_percentage": 19,
+    "homestead_exemption": 0,
+    "property_assessment_frequency": "Biennial",
+    "assessment_appeal_process": "File appeal with local Board of Equalization within 2 weeks of assessment notice.",
+    "assessment_appeal_deadline": "2 weeks after notice",
+    "assessment_appeal_form_url": "https://dor.mo.gov/taxation/individual/tax-types/property/",
+    "has_tax_cap": false,
+    "county_name": "St. Louis County",
+    "county_assessor_contact": "St. Louis County Assessor - (314) 615-5500",
+    "county_tax_assessor_url": "https://revenue.stlouisco.com/IAS/",
+    "property_tax_lookup_url": "https://dor.mo.gov/taxation/individual/tax-types/property/",
+    "tax_incentives": "MOST 529 Plan (state tax deduction), Senior Property Tax Credit, Property Tax Credit (Circuit Breaker)",
+    "tax_structure": "Graduated income tax up to 4.95% (being reduced). Low state sales tax but high local rates. Moderate property taxes with 19% residential assessment ratio."
+  },
+  "housing": {
+    "median_home_price": 235000,
+    "median_rent": 1095,
+    "housing_market_trends": "Affordable markets in both St. Louis and Kansas City metros. Columbia growing due to university. Rural areas very affordable.",
+    "first_time_homebuyer_program": "Missouri Housing Development Commission - First Place Loan",
+    "avg_mortgage_rate_30yr": 7.11
+  },
+  "insurance": {
+    "homeowners_avg_monthly": 155,
+    "data_source": "Missouri Department of Commerce average rates for $235K home coverage"
+  },
+  "employment": {
+    "min_wage": 12.30,
+    "unemployment_rate": 3.2,
+    "major_industries": "Healthcare, Financial Services, Aerospace/Defense, Agriculture, Manufacturing, Transportation/Logistics"
+  },
+  "education": {
+    "tuition_public": 11646
+  },
+  "banking": {
+    "avg_monthly_fee": 11,
+    "avg_overdraft_fee": 33,
+    "credit_union_association_url": "https://www.mcul.coop",
+    "minor_banking_rules": "Minors can open joint accounts with parent/guardian."
+  },
+  "consumer_protection": {
+    "consumer_protection_agency": "Missouri Attorney General - Consumer Protection Division",
+    "consumer_protection_url": "https://ago.mo.gov/civil-division/consumer"
+  },
+  "calculated_values": {
+    "state_tax_on_3500_monthly": 173,
+    "calculated_state_tax_70k": 3465,
+    "total_effective_rate": 18.9,
+    "take_home_pay_70k": 51370,
+    "property_tax_300k": 2790,
+    "state_withholding_48k_monthly": 198
+  },
+  "local_examples": {
+    "major_retailers": "Schnucks, Dierbergs, Hy-Vee, Walmart, Target",
+    "telecom_providers": "Spectrum, AT&T, Google Fiber (KC), T-Mobile, Verizon",
+    "utility_providers": "Ameren, Evergy, Spire, Kansas City Power & Light",
+    "healthcare_market": "BJC Healthcare, SSM Health, Mercy, HCA Midwest",
+    "local_credit_union_name": "First Community Credit Union",
+    "local_nonprofit_name": "St. Louis Area Foodbank",
+    "major_city": "Kansas City",
+    "major_city_1": "Kansas City",
+    "major_city_2": "St. Louis",
+    "major_city_3": "Springfield",
+    "major_city_1_millage": 7.65,
+    "major_city_2_millage": 8.43,
+    "major_city_3_millage": 4.85,
+    "suburb_city": "Chesterfield",
+    "suburb_1": "Chesterfield",
+    "suburb_2": "Lee's Summit",
+    "suburb_1_millage": 5.82,
+    "suburb_2_millage": 6.45,
+    "rural_area": "Ozarks",
+    "rural_area_millage": 3.5,
+    "high_tax_city": "St. Louis City",
+    "medium_tax_city": "Kansas City",
+    "low_tax_city": "Ozarks",
+    "high_tax_major_city": "St. Louis City",
+    "low_tax_medium_city": "Columbia",
+    "high_tax_millage": 8.43,
+    "medium_tax_millage": 7.65,
+    "low_tax_millage": 3.5,
+    "high_combined_sales_tax": 10.1,
+    "low_combined_sales_tax": 4.225,
+    "high_local_sales_tax": 5.875,
+    "low_local_sales_tax": 0,
+    "local_sales_tax_1": 4.454,
+    "total_millage_example": 5.82,
+    "high_local_income_tax_rate": 1.0,
+    "low_local_income_tax_rate": 0,
+    "local_income_tax_rate": 1.0,
+    "local_income_tax_rate_1": 1.0
+  },
+  "notes": "Missouri has two major metro areas (St. Louis and Kansas City) both very affordable. St. Louis City has 1% local income tax. Combined sales tax can be high due to local rates. Pro-business climate with many corporate headquarters (Edward Jones, Cerner, Emerson). Mizzou and Wash U major educational institutions. Strong healthcare and financial services sectors."
+}

@@ -1,0 +1,146 @@
+{
+  "state_name": "Minnesota",
+  "state_code": "MN",
+  "last_updated": "2025-11-21",
+  "data_sources": {
+    "dmv_url": "https://dps.mn.gov/divisions/dvs",
+    "tax_authority_url": "https://www.revenue.state.mn.us",
+    "labor_department_url": "https://www.dli.mn.gov",
+    "education_department_url": "https://www.ohe.state.mn.us",
+    "consumer_protection_url": "https://www.ag.state.mn.us/Consumer/",
+    "property_tax_assessor_url": "https://www.revenue.state.mn.us/property-tax"
+  },
+  "automotive": {
+    "registration_initial": 35,
+    "registration_annual": 35,
+    "avg_auto_loan_rate_new": 6.65,
+    "avg_auto_loan_rate_used": 7.41,
+    "insurance_avg_teen": 265,
+    "insurance_comparison_url": "https://mn.gov/commerce/insurance/",
+    "lease_acquisition_fee": 650,
+    "inspection_required": false,
+    "inspection_cost": 0,
+    "gas_price_current": 3.05,
+    "dmv_url": "https://dps.mn.gov/divisions/dvs"
+  },
+  "taxes": {
+    "income_tax_rate": 9.85,
+    "sales_tax": 6.875,
+    "local_sales_tax_min": 0,
+    "local_sales_tax_max": 2.0,
+    "combined_sales_tax_min": 6.875,
+    "combined_sales_tax_max": 8.875,
+    "local_sales_tax_examples": [
+      {"city": "Minneapolis", "local_rate": 0.5, "combined_rate": 8.025},
+      {"city": "St. Paul", "local_rate": 0.5, "combined_rate": 8.025},
+      {"city": "Duluth", "local_rate": 1.0, "combined_rate": 8.875},
+      {"city": "Rochester", "local_rate": 0.5, "combined_rate": 7.625}
+    ],
+    "allows_local_income_tax": false,
+    "local_income_tax_range": "N/A",
+    "local_income_tax_rate_low": 0,
+    "local_income_tax_rate_high": 0,
+    "local_income_tax_example": "N/A",
+    "property_tax_county_rate": 0.50,
+    "property_tax_school_rate": 0.60,
+    "property_tax_special_rate": 0.10,
+    "property_tax_city_range": "0.80 - 1.50%",
+    "property_tax_examples": [
+      {"location": "Minneapolis", "millage": 13.2, "description": "Largest city"},
+      {"location": "St. Paul", "millage": 14.5, "description": "State capital"},
+      {"location": "Duluth", "millage": 16.8, "description": "Northern Minnesota"},
+      {"location": "Edina", "millage": 10.5, "description": "Affluent suburb"}
+    ],
+    "assessment_percentage": 100,
+    "homestead_exemption": 0,
+    "property_assessment_frequency": "Annual",
+    "assessment_appeal_process": "File with local Board of Appeal and Equalization. Can appeal to Minnesota Tax Court.",
+    "assessment_appeal_deadline": "20 days after Board of Appeal meeting",
+    "assessment_appeal_form_url": "https://www.revenue.state.mn.us/property-tax",
+    "has_tax_cap": false,
+    "county_name": "Hennepin County",
+    "county_assessor_contact": "Hennepin County Assessor - (612) 348-3046",
+    "county_tax_assessor_url": "https://www.hennepin.us/residents/property/property-assessments",
+    "property_tax_lookup_url": "https://www.revenue.state.mn.us/property-tax",
+    "tax_incentives": "Minnesota 529 Plan (state tax deduction), K-12 Education Credit, Property Tax Refund (Circuit Breaker)",
+    "tax_structure": "Very high income tax (graduated up to 9.85% - 4th highest in nation). Moderate property taxes. Higher than average sales tax. Comprehensive tax system funds strong public services."
+  },
+  "housing": {
+    "median_home_price": 335000,
+    "median_rent": 1395,
+    "housing_market_trends": "Strong market in Twin Cities metro. Lake homes expensive. Greater Minnesota more affordable. Strong job market supports demand.",
+    "first_time_homebuyer_program": "Minnesota Housing - Start Up Program with down payment assistance",
+    "avg_mortgage_rate_30yr": 7.10
+  },
+  "insurance": {
+    "homeowners_avg_monthly": 165,
+    "data_source": "Minnesota Commerce Department average rates for $335K home coverage"
+  },
+  "employment": {
+    "min_wage": 10.85,
+    "unemployment_rate": 2.9,
+    "major_industries": "Healthcare, Financial Services, Manufacturing, Technology, Retail, Food Processing"
+  },
+  "education": {
+    "tuition_public": 15248
+  },
+  "banking": {
+    "avg_monthly_fee": 11,
+    "avg_overdraft_fee": 33,
+    "credit_union_association_url": "https://www.mncun.org",
+    "minor_banking_rules": "Minors can open joint accounts with parent/guardian."
+  },
+  "consumer_protection": {
+    "consumer_protection_agency": "Minnesota Attorney General - Consumer Protection Division",
+    "consumer_protection_url": "https://www.ag.state.mn.us/Consumer/"
+  },
+  "calculated_values": {
+    "state_tax_on_3500_monthly": 345,
+    "calculated_state_tax_70k": 6895,
+    "total_effective_rate": 23.8,
+    "take_home_pay_70k": 47950,
+    "property_tax_300k": 3960,
+    "state_withholding_48k_monthly": 394
+  },
+  "local_examples": {
+    "major_retailers": "Target (HQ), Cub Foods, Walmart, Hy-Vee",
+    "telecom_providers": "Comcast/Xfinity, CenturyLink, T-Mobile, Verizon",
+    "utility_providers": "Xcel Energy, CenterPoint Energy, Minnesota Energy Resources",
+    "healthcare_market": "Mayo Clinic, Allina Health, Fairview, HealthPartners",
+    "local_credit_union_name": "Wings Financial Credit Union",
+    "local_nonprofit_name": "Second Harvest Heartland",
+    "major_city": "Minneapolis",
+    "major_city_1": "Minneapolis",
+    "major_city_2": "St. Paul",
+    "major_city_3": "Rochester",
+    "major_city_1_millage": 13.2,
+    "major_city_2_millage": 14.5,
+    "major_city_3_millage": 12.8,
+    "suburb_city": "Bloomington",
+    "suburb_1": "Bloomington",
+    "suburb_2": "Plymouth",
+    "suburb_1_millage": 11.5,
+    "suburb_2_millage": 10.8,
+    "rural_area": "Southwest Minnesota",
+    "rural_area_millage": 8.5,
+    "high_tax_city": "Duluth",
+    "medium_tax_city": "St. Paul",
+    "low_tax_city": "Edina",
+    "high_tax_major_city": "Duluth",
+    "low_tax_medium_city": "Suburbs",
+    "high_tax_millage": 16.8,
+    "medium_tax_millage": 14.5,
+    "low_tax_millage": 10.5,
+    "high_combined_sales_tax": 8.875,
+    "low_combined_sales_tax": 6.875,
+    "high_local_sales_tax": 2.0,
+    "low_local_sales_tax": 0,
+    "local_sales_tax_1": 0.5,
+    "total_millage_example": 13.2,
+    "high_local_income_tax_rate": 0,
+    "low_local_income_tax_rate": 0,
+    "local_income_tax_rate": 0,
+    "local_income_tax_rate_1": 0
+  },
+  "notes": "Minnesota has 4th highest income tax in nation (9.85% top rate). High taxes fund strong public services - excellent schools, infrastructure, healthcare. Many Fortune 500 headquarters (Target, UnitedHealth, 3M, General Mills, Best Buy). Mayo Clinic is world-renowned. Twin Cities consistently ranks high for quality of life. Cold climate impacts cost of living (heating costs)."
+}

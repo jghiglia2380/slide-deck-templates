@@ -1,0 +1,178 @@
+{
+  "state_name": "Colorado",
+  "state_code": "CO",
+  "last_updated": "2025-11-21",
+  "data_sources": {
+    "dmv_url": "https://dmv.colorado.gov",
+    "tax_authority_url": "https://tax.colorado.gov",
+    "labor_department_url": "https://cdle.colorado.gov",
+    "education_department_url": "https://cdhe.colorado.gov",
+    "consumer_protection_url": "https://coag.gov/office-sections/consumer-protection/",
+    "property_tax_assessor_url": "https://www.colorado.gov/pacific/dola/property-taxation"
+  },
+  "automotive": {
+    "registration_initial": 50,
+    "registration_annual": 50,
+    "avg_auto_loan_rate_new": 6.68,
+    "avg_auto_loan_rate_used": 7.44,
+    "insurance_avg_teen": 265,
+    "insurance_comparison_url": "https://doi.colorado.gov",
+    "lease_acquisition_fee": 650,
+    "inspection_required": true,
+    "inspection_cost": 25,
+    "gas_price_current": 3.12,
+    "dmv_url": "https://dmv.colorado.gov"
+  },
+  "taxes": {
+    "income_tax_rate": 4.4,
+    "sales_tax": 2.9,
+    "local_sales_tax_min": 0,
+    "local_sales_tax_max": 8.3,
+    "combined_sales_tax_min": 2.9,
+    "combined_sales_tax_max": 11.2,
+    "local_sales_tax_examples": [
+      {
+        "city": "Denver",
+        "local_rate": 5.81,
+        "combined_rate": 8.81
+      },
+      {
+        "city": "Colorado Springs",
+        "local_rate": 5.13,
+        "combined_rate": 8.25
+      },
+      {
+        "city": "Aurora",
+        "local_rate": 5.75,
+        "combined_rate": 8.75
+      },
+      {
+        "city": "Boulder",
+        "local_rate": 5.86,
+        "combined_rate": 8.85
+      }
+    ],
+    "allows_local_income_tax": true,
+    "local_income_tax_range": "0% - 2%",
+    "local_income_tax_rate_low": 0,
+    "local_income_tax_rate_high": 2.0,
+    "local_income_tax_example": "Denver OPT 0.75%",
+    "property_tax_county_rate": 0.35,
+    "property_tax_school_rate": 0.20,
+    "property_tax_special_rate": 0.05,
+    "property_tax_city_range": "0.10 - 0.40%",
+    "property_tax_examples": [
+      {
+        "location": "Denver County",
+        "millage": 7.96,
+        "description": "Capital city - moderate taxes"
+      },
+      {
+        "location": "El Paso County (Colorado Springs)",
+        "millage": 6.18,
+        "description": "Military town - lower taxes"
+      },
+      {
+        "location": "Boulder County",
+        "millage": 8.45,
+        "description": "Affluent area - higher taxes"
+      },
+      {
+        "location": "Douglas County",
+        "millage": 5.82,
+        "description": "Affluent suburb - excellent schools"
+      }
+    ],
+    "assessment_percentage": 6.765,
+    "homestead_exemption": 0,
+    "property_assessment_frequency": "Biennial",
+    "assessment_appeal_process": "File appeal with County Board of Equalization by June 1. Can appeal to State Board of Assessment Appeals.",
+    "assessment_appeal_deadline": "June 1",
+    "assessment_appeal_form_url": "https://www.colorado.gov/pacific/dola/property-taxation",
+    "has_tax_cap": true,
+    "county_name": "Denver County",
+    "county_assessor_contact": "Denver Assessor's Office - (720) 913-4162",
+    "county_tax_assessor_url": "https://www.denvergov.org/assessor",
+    "property_tax_lookup_url": "https://www.colorado.gov/pacific/dola/property-taxation",
+    "tax_incentives": "CollegeInvest 529 Plan (state tax deduction), Senior Property Tax Exemption, TABOR refunds",
+    "tax_structure": "Flat 4.4% income tax, low state sales tax but high local additions, low property tax assessment ratio (6.765% for residential)."
+  },
+  "housing": {
+    "median_home_price": 545000,
+    "median_rent": 1850,
+    "housing_market_trends": "Expensive market, especially Front Range (Denver, Boulder). Strong demand from tech workers and outdoor enthusiasts. Mountain towns extremely expensive.",
+    "first_time_homebuyer_program": "CHFA (Colorado Housing and Finance Authority) - Down payment assistance and competitive rates",
+    "avg_mortgage_rate_30yr": 7.08
+  },
+  "insurance": {
+    "homeowners_avg_monthly": 225,
+    "data_source": "Colorado Division of Insurance average rates for $545K home coverage"
+  },
+  "employment": {
+    "min_wage": 14.42,
+    "unemployment_rate": 3.5,
+    "major_industries": "Technology, Aerospace, Tourism/Outdoor Recreation, Energy, Healthcare, Cannabis"
+  },
+  "education": {
+    "tuition_public": 12084
+  },
+  "banking": {
+    "avg_monthly_fee": 12,
+    "avg_overdraft_fee": 34,
+    "credit_union_association_url": "https://www.mwcua.com",
+    "minor_banking_rules": "Minors can open joint accounts with parent/guardian. Some banks offer student accounts for 13+."
+  },
+  "consumer_protection": {
+    "consumer_protection_agency": "Colorado Attorney General - Consumer Protection Section",
+    "consumer_protection_url": "https://coag.gov/office-sections/consumer-protection/"
+  },
+  "calculated_values": {
+    "state_tax_on_3500_monthly": 154,
+    "calculated_state_tax_70k": 3080,
+    "total_effective_rate": 18.4,
+    "take_home_pay_70k": 51765,
+    "property_tax_300k": 1623,
+    "state_withholding_48k_monthly": 176
+  },
+  "local_examples": {
+    "major_retailers": "King Soopers, Safeway, Walmart, Target, REI",
+    "telecom_providers": "Comcast/Xfinity, CenturyLink, T-Mobile, Verizon",
+    "utility_providers": "Xcel Energy, Black Hills Energy, Colorado Springs Utilities",
+    "healthcare_market": "UCHealth, SCL Health, Kaiser Permanente, Centura Health",
+    "local_credit_union_name": "Bellco Credit Union",
+    "local_nonprofit_name": "Food Bank of the Rockies",
+    "major_city": "Denver",
+    "major_city_1": "Denver",
+    "major_city_2": "Colorado Springs",
+    "major_city_3": "Aurora",
+    "major_city_1_millage": 7.96,
+    "major_city_2_millage": 6.18,
+    "major_city_3_millage": 7.45,
+    "suburb_city": "Lakewood",
+    "suburb_1": "Lakewood",
+    "suburb_2": "Thornton",
+    "suburb_1_millage": 7.12,
+    "suburb_2_millage": 6.85,
+    "rural_area": "Eastern Plains",
+    "rural_area_millage": 4.5,
+    "high_tax_city": "Boulder",
+    "medium_tax_city": "Denver",
+    "low_tax_city": "Douglas County",
+    "high_tax_major_city": "Boulder",
+    "low_tax_medium_city": "Douglas County",
+    "high_tax_millage": 8.45,
+    "medium_tax_millage": 7.96,
+    "low_tax_millage": 5.82,
+    "high_combined_sales_tax": 11.2,
+    "low_combined_sales_tax": 2.9,
+    "high_local_sales_tax": 8.3,
+    "low_local_sales_tax": 0,
+    "local_sales_tax_1": 5.81,
+    "total_millage_example": 7.96,
+    "high_local_income_tax_rate": 2.0,
+    "low_local_income_tax_rate": 0,
+    "local_income_tax_rate": 0.75,
+    "local_income_tax_rate_1": 0.75
+  },
+  "notes": "Colorado has a flat 4.4% income tax rate. TABOR (Taxpayer Bill of Rights) limits government revenue growth and requires refunds when exceeded. Housing costs are high, especially along the Front Range. Strong job market in tech, aerospace (Lockheed Martin, Ball Corp), and outdoor recreation. Legal cannabis industry generates significant tax revenue. Mountain resort towns have extreme housing costs."
+}

@@ -1,0 +1,146 @@
+{
+  "state_name": "New York",
+  "state_code": "NY",
+  "last_updated": "2025-11-21",
+  "data_sources": {
+    "dmv_url": "https://dmv.ny.gov",
+    "tax_authority_url": "https://www.tax.ny.gov",
+    "labor_department_url": "https://dol.ny.gov",
+    "education_department_url": "https://www.suny.edu",
+    "consumer_protection_url": "https://ag.ny.gov/bureau/consumer-frauds-and-protection-bureau",
+    "property_tax_assessor_url": "https://www.tax.ny.gov/pit/property/"
+  },
+  "automotive": {
+    "registration_initial": 50,
+    "registration_annual": 50,
+    "avg_auto_loan_rate_new": 6.65,
+    "avg_auto_loan_rate_used": 7.41,
+    "insurance_avg_teen": 395,
+    "insurance_comparison_url": "https://www.dfs.ny.gov",
+    "lease_acquisition_fee": 795,
+    "inspection_required": true,
+    "inspection_cost": 37,
+    "gas_price_current": 3.45,
+    "dmv_url": "https://dmv.ny.gov"
+  },
+  "taxes": {
+    "income_tax_rate": 10.9,
+    "sales_tax": 4.0,
+    "local_sales_tax_min": 3.0,
+    "local_sales_tax_max": 4.875,
+    "combined_sales_tax_min": 7.0,
+    "combined_sales_tax_max": 8.875,
+    "local_sales_tax_examples": [
+      {"city": "New York City", "local_rate": 4.5, "combined_rate": 8.875},
+      {"city": "Buffalo", "local_rate": 4.0, "combined_rate": 8.0},
+      {"city": "Albany", "local_rate": 4.0, "combined_rate": 8.0},
+      {"city": "Syracuse", "local_rate": 4.0, "combined_rate": 8.0}
+    ],
+    "allows_local_income_tax": true,
+    "local_income_tax_range": "0% - 3.876%",
+    "local_income_tax_rate_low": 0,
+    "local_income_tax_rate_high": 3.876,
+    "local_income_tax_example": "New York City 3.876%",
+    "property_tax_county_rate": 0.50,
+    "property_tax_school_rate": 1.20,
+    "property_tax_special_rate": 0.30,
+    "property_tax_city_range": "1.50 - 3.00%",
+    "property_tax_examples": [
+      {"location": "New York City", "millage": 10.69, "description": "Complex multi-class system"},
+      {"location": "Buffalo", "millage": 29.54, "description": "Western NY - high"},
+      {"location": "Rochester", "millage": 32.89, "description": "Finger Lakes - high"},
+      {"location": "Westchester County", "millage": 22.45, "description": "NYC suburbs - high"}
+    ],
+    "assessment_percentage": 100,
+    "homestead_exemption": 0,
+    "property_assessment_frequency": "Varies by municipality",
+    "assessment_appeal_process": "File grievance with local Board of Assessment Review by Grievance Day (usually May).",
+    "assessment_appeal_deadline": "Grievance Day (varies by town)",
+    "assessment_appeal_form_url": "https://www.tax.ny.gov/pit/property/",
+    "has_tax_cap": true,
+    "county_name": "New York County (Manhattan)",
+    "county_assessor_contact": "NYC Department of Finance - (212) 639-9675",
+    "county_tax_assessor_url": "https://www.nyc.gov/site/finance/taxes/property.page",
+    "property_tax_lookup_url": "https://www.tax.ny.gov/pit/property/",
+    "tax_incentives": "NY 529 Plan (state tax deduction), STAR Property Tax Exemption, Enhanced STAR for seniors",
+    "tax_structure": "Very high combined tax burden. High income tax (up to 10.9%), NYC adds up to 3.876%. High property taxes upstate. STAR program provides property tax relief. 2% property tax cap for school districts."
+  },
+  "housing": {
+    "median_home_price": 425000,
+    "median_rent": 1650,
+    "housing_market_trends": "NYC extremely expensive. Westchester/Long Island very high. Upstate (Buffalo, Rochester, Syracuse) very affordable. Hudson Valley growing.",
+    "first_time_homebuyer_program": "SONYMA - Low-Interest Rate Program with down payment assistance",
+    "avg_mortgage_rate_30yr": 7.10
+  },
+  "insurance": {
+    "homeowners_avg_monthly": 165,
+    "data_source": "New York DFS average rates for $425K home coverage"
+  },
+  "employment": {
+    "min_wage": 16.00,
+    "unemployment_rate": 4.3,
+    "major_industries": "Finance, Healthcare, Technology, Media, Tourism, Higher Education, Manufacturing"
+  },
+  "education": {
+    "tuition_public": 8020
+  },
+  "banking": {
+    "avg_monthly_fee": 13,
+    "avg_overdraft_fee": 35,
+    "credit_union_association_url": "https://www.nycua.org",
+    "minor_banking_rules": "Minors can open joint accounts with parent/guardian."
+  },
+  "consumer_protection": {
+    "consumer_protection_agency": "New York Attorney General - Consumer Frauds Bureau",
+    "consumer_protection_url": "https://ag.ny.gov/bureau/consumer-frauds-and-protection-bureau"
+  },
+  "calculated_values": {
+    "state_tax_on_3500_monthly": 382,
+    "calculated_state_tax_70k": 7630,
+    "total_effective_rate": 25.0,
+    "take_home_pay_70k": 47180,
+    "property_tax_300k": 6429,
+    "state_withholding_48k_monthly": 436
+  },
+  "local_examples": {
+    "major_retailers": "Wegmans, Price Chopper, Key Food, Tops, Target",
+    "telecom_providers": "Verizon, Spectrum, Optimum, T-Mobile",
+    "utility_providers": "Con Edison (NYC), National Grid, NYSEG, Central Hudson",
+    "healthcare_market": "NYU Langone, Mount Sinai, NewYork-Presbyterian, Northwell Health",
+    "local_credit_union_name": "Bethpage Federal Credit Union",
+    "local_nonprofit_name": "Food Bank for New York City",
+    "major_city": "New York City",
+    "major_city_1": "New York City",
+    "major_city_2": "Buffalo",
+    "major_city_3": "Rochester",
+    "major_city_1_millage": 10.69,
+    "major_city_2_millage": 29.54,
+    "major_city_3_millage": 32.89,
+    "suburb_city": "Yonkers",
+    "suburb_1": "Yonkers",
+    "suburb_2": "White Plains",
+    "suburb_1_millage": 22.45,
+    "suburb_2_millage": 23.85,
+    "rural_area": "Upstate NY",
+    "rural_area_millage": 25.0,
+    "high_tax_city": "Rochester",
+    "medium_tax_city": "Buffalo",
+    "low_tax_city": "NYC",
+    "high_tax_major_city": "Rochester",
+    "low_tax_medium_city": "Long Island",
+    "high_tax_millage": 32.89,
+    "medium_tax_millage": 29.54,
+    "low_tax_millage": 10.69,
+    "high_combined_sales_tax": 8.875,
+    "low_combined_sales_tax": 7.0,
+    "high_local_sales_tax": 4.875,
+    "low_local_sales_tax": 3.0,
+    "local_sales_tax_1": 4.5,
+    "total_millage_example": 22.45,
+    "high_local_income_tax_rate": 3.876,
+    "low_local_income_tax_rate": 0,
+    "local_income_tax_rate": 3.876,
+    "local_income_tax_rate_1": 3.876
+  },
+  "notes": "New York has one of highest overall tax burdens in nation. NYC residents pay state + city income tax (combined up to 14.776%). NYC property taxes lower due to complex assessment system but upstate very high. SUNY system keeps public college tuition affordable. Finance and tech dominate NYC economy. Upstate faces population decline but affordable housing."
+}

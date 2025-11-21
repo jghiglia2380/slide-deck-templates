@@ -1,0 +1,145 @@
+{
+  "state_name": "Delaware",
+  "state_code": "DE",
+  "last_updated": "2025-11-21",
+  "data_sources": {
+    "dmv_url": "https://www.dmv.de.gov",
+    "tax_authority_url": "https://revenue.delaware.gov",
+    "labor_department_url": "https://dol.delaware.gov",
+    "education_department_url": "https://www.doe.k12.de.us",
+    "consumer_protection_url": "https://attorneygeneral.delaware.gov/fraud/",
+    "property_tax_assessor_url": "https://www.delaware.gov/topics/taxes/"
+  },
+  "automotive": {
+    "registration_initial": 40,
+    "registration_annual": 40,
+    "avg_auto_loan_rate_new": 6.58,
+    "avg_auto_loan_rate_used": 7.34,
+    "insurance_avg_teen": 285,
+    "insurance_comparison_url": "https://insurance.delaware.gov",
+    "lease_acquisition_fee": 595,
+    "inspection_required": true,
+    "inspection_cost": 20,
+    "gas_price_current": 3.15,
+    "dmv_url": "https://www.dmv.de.gov"
+  },
+  "taxes": {
+    "income_tax_rate": 6.6,
+    "sales_tax": 0,
+    "local_sales_tax_min": 0,
+    "local_sales_tax_max": 0,
+    "combined_sales_tax_min": 0,
+    "combined_sales_tax_max": 0,
+    "local_sales_tax_examples": [
+      {"city": "Wilmington", "local_rate": 0, "combined_rate": 0},
+      {"city": "Dover", "local_rate": 0, "combined_rate": 0},
+      {"city": "Newark", "local_rate": 0, "combined_rate": 0}
+    ],
+    "allows_local_income_tax": true,
+    "local_income_tax_range": "0% - 1.25%",
+    "local_income_tax_rate_low": 0,
+    "local_income_tax_rate_high": 1.25,
+    "local_income_tax_example": "Wilmington 1.25%",
+    "property_tax_county_rate": 0.50,
+    "property_tax_school_rate": 0.30,
+    "property_tax_special_rate": 0.10,
+    "property_tax_city_range": "0.10 - 0.80%",
+    "property_tax_examples": [
+      {"location": "Wilmington (New Castle County)", "millage": 14.5, "description": "Largest city - moderate taxes"},
+      {"location": "Dover (Kent County)", "millage": 9.8, "description": "State capital - lower taxes"},
+      {"location": "Newark (New Castle County)", "millage": 12.3, "description": "University town"},
+      {"location": "Rehoboth Beach (Sussex County)", "millage": 8.5, "description": "Beach community"}
+    ],
+    "assessment_percentage": 60,
+    "homestead_exemption": 0,
+    "property_assessment_frequency": "Varies by county",
+    "assessment_appeal_process": "File appeal with County Board of Assessment within 30 days of notice.",
+    "assessment_appeal_deadline": "30 days after notice",
+    "assessment_appeal_form_url": "https://www.delaware.gov/topics/taxes/",
+    "has_tax_cap": false,
+    "county_name": "New Castle County",
+    "county_assessor_contact": "New Castle County Assessment - (302) 395-5520",
+    "county_tax_assessor_url": "https://www.newcastlede.gov/assessment",
+    "property_tax_lookup_url": "https://www.delaware.gov/topics/taxes/",
+    "tax_incentives": "Delaware 529 Plan, no sales tax benefit for consumers and businesses",
+    "tax_structure": "No sales tax (major benefit), graduated income tax up to 6.6%, low property taxes. Corporate-friendly laws make it headquarters for many companies."
+  },
+  "housing": {
+    "median_home_price": 355000,
+    "median_rent": 1425,
+    "housing_market_trends": "Strong demand due to no sales tax and proximity to Philadelphia. Beach areas expensive seasonally.",
+    "first_time_homebuyer_program": "Delaware State Housing Authority - Preferred Plus program",
+    "avg_mortgage_rate_30yr": 7.12
+  },
+  "insurance": {
+    "homeowners_avg_monthly": 95,
+    "data_source": "Delaware Department of Insurance average rates for $355K home coverage"
+  },
+  "employment": {
+    "min_wage": 13.25,
+    "unemployment_rate": 4.3,
+    "major_industries": "Financial Services, Corporate Headquarters, Healthcare, Chemical Industry, Agriculture"
+  },
+  "education": {
+    "tuition_public": 14380
+  },
+  "banking": {
+    "avg_monthly_fee": 12,
+    "avg_overdraft_fee": 34,
+    "credit_union_association_url": "https://www.mwcua.com",
+    "minor_banking_rules": "Minors can open joint accounts with parent/guardian."
+  },
+  "consumer_protection": {
+    "consumer_protection_agency": "Delaware Attorney General - Consumer Protection Unit",
+    "consumer_protection_url": "https://attorneygeneral.delaware.gov/fraud/"
+  },
+  "calculated_values": {
+    "state_tax_on_3500_monthly": 231,
+    "calculated_state_tax_70k": 4620,
+    "total_effective_rate": 20.6,
+    "take_home_pay_70k": 50225,
+    "property_tax_300k": 2610,
+    "state_withholding_48k_monthly": 264
+  },
+  "local_examples": {
+    "major_retailers": "Acme, ShopRite, Walmart, Target, Costco",
+    "telecom_providers": "Comcast, Verizon, T-Mobile",
+    "utility_providers": "Delmarva Power, Delaware Electric Cooperative",
+    "healthcare_market": "ChristianaCare, Bayhealth, Nemours Children's Health",
+    "local_credit_union_name": "Delaware State Police FCU",
+    "local_nonprofit_name": "Food Bank of Delaware",
+    "major_city": "Wilmington",
+    "major_city_1": "Wilmington",
+    "major_city_2": "Dover",
+    "major_city_3": "Newark",
+    "major_city_1_millage": 14.5,
+    "major_city_2_millage": 9.8,
+    "major_city_3_millage": 12.3,
+    "suburb_city": "Middletown",
+    "suburb_1": "Middletown",
+    "suburb_2": "Bear",
+    "suburb_1_millage": 10.5,
+    "suburb_2_millage": 11.2,
+    "rural_area": "Sussex County",
+    "rural_area_millage": 7.5,
+    "high_tax_city": "Wilmington",
+    "medium_tax_city": "Newark",
+    "low_tax_city": "Dover",
+    "high_tax_major_city": "Wilmington",
+    "low_tax_medium_city": "Dover",
+    "high_tax_millage": 14.5,
+    "medium_tax_millage": 12.3,
+    "low_tax_millage": 9.8,
+    "high_combined_sales_tax": 0,
+    "low_combined_sales_tax": 0,
+    "high_local_sales_tax": 0,
+    "low_local_sales_tax": 0,
+    "local_sales_tax_1": 0,
+    "total_millage_example": 14.5,
+    "high_local_income_tax_rate": 1.25,
+    "low_local_income_tax_rate": 0,
+    "local_income_tax_rate": 1.25,
+    "local_income_tax_rate_1": 1.25
+  },
+  "notes": "Delaware has no sales tax, making it attractive for shopping and business. Over 60% of Fortune 500 companies are incorporated in Delaware due to favorable corporate laws. Wilmington has a local income tax (wage tax). State is small but diverse - from urban Wilmington to beach communities in Sussex County. Low property taxes compared to neighboring states."
+}

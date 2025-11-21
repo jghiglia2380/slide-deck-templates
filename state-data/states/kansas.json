@@ -1,0 +1,146 @@
+{
+  "state_name": "Kansas",
+  "state_code": "KS",
+  "last_updated": "2025-11-21",
+  "data_sources": {
+    "dmv_url": "https://www.ksrevenue.gov/dovindex.html",
+    "tax_authority_url": "https://www.ksrevenue.gov",
+    "labor_department_url": "https://www.dol.ks.gov",
+    "education_department_url": "https://www.kansasregents.org",
+    "consumer_protection_url": "https://ag.ks.gov/in-your-corner-kansas/consumer-protection",
+    "property_tax_assessor_url": "https://www.ksrevenue.gov/propertytax.html"
+  },
+  "automotive": {
+    "registration_initial": 39,
+    "registration_annual": 39,
+    "avg_auto_loan_rate_new": 6.72,
+    "avg_auto_loan_rate_used": 7.48,
+    "insurance_avg_teen": 255,
+    "insurance_comparison_url": "https://insurance.ks.gov",
+    "lease_acquisition_fee": 595,
+    "inspection_required": false,
+    "inspection_cost": 0,
+    "gas_price_current": 2.78,
+    "dmv_url": "https://www.ksrevenue.gov/dovindex.html"
+  },
+  "taxes": {
+    "income_tax_rate": 5.7,
+    "sales_tax": 6.5,
+    "local_sales_tax_min": 0,
+    "local_sales_tax_max": 4.0,
+    "combined_sales_tax_min": 6.5,
+    "combined_sales_tax_max": 10.5,
+    "local_sales_tax_examples": [
+      {"city": "Wichita", "local_rate": 1.5, "combined_rate": 7.5},
+      {"city": "Overland Park", "local_rate": 2.125, "combined_rate": 9.1},
+      {"city": "Kansas City (KS)", "local_rate": 3.125, "combined_rate": 9.625},
+      {"city": "Topeka", "local_rate": 2.15, "combined_rate": 9.15}
+    ],
+    "allows_local_income_tax": false,
+    "local_income_tax_range": "N/A",
+    "local_income_tax_rate_low": 0,
+    "local_income_tax_rate_high": 0,
+    "local_income_tax_example": "N/A",
+    "property_tax_county_rate": 1.00,
+    "property_tax_school_rate": 1.20,
+    "property_tax_special_rate": 0.20,
+    "property_tax_city_range": "1.0 - 2.0%",
+    "property_tax_examples": [
+      {"location": "Sedgwick County (Wichita)", "millage": 122.5, "description": "Largest city - higher taxes"},
+      {"location": "Johnson County", "millage": 115.8, "description": "KC suburbs - affluent"},
+      {"location": "Shawnee County (Topeka)", "millage": 138.2, "description": "State capital - high taxes"},
+      {"location": "Douglas County (Lawrence)", "millage": 135.6, "description": "University town"}
+    ],
+    "assessment_percentage": 11.5,
+    "homestead_exemption": 20000,
+    "property_assessment_frequency": "Annual",
+    "assessment_appeal_process": "File appeal with County Appraiser within 30 days of valuation notice.",
+    "assessment_appeal_deadline": "30 days after notice",
+    "assessment_appeal_form_url": "https://www.ksrevenue.gov/propertytax.html",
+    "has_tax_cap": false,
+    "county_name": "Johnson County",
+    "county_assessor_contact": "Johnson County Appraiser - (913) 715-9000",
+    "county_tax_assessor_url": "https://www.jocogov.org/dept/appraiser",
+    "property_tax_lookup_url": "https://www.ksrevenue.gov/propertytax.html",
+    "tax_incentives": "Learning Quest 529 (state tax deduction), Food Sales Tax being phased out",
+    "tax_structure": "Graduated income tax (3.1-5.7%), high sales taxes including on groceries (being phased out). Property assessed at 11.5% for residential."
+  },
+  "housing": {
+    "median_home_price": 225000,
+    "median_rent": 1095,
+    "housing_market_trends": "Affordable market. KC metro area (Johnson County) more expensive. Wichita very affordable.",
+    "first_time_homebuyer_program": "Kansas Housing Resources Corporation - First Time Homebuyer Program",
+    "avg_mortgage_rate_30yr": 7.12
+  },
+  "insurance": {
+    "homeowners_avg_monthly": 175,
+    "data_source": "Kansas Insurance Department average rates for $225K home coverage"
+  },
+  "employment": {
+    "min_wage": 7.25,
+    "unemployment_rate": 3.2,
+    "major_industries": "Aviation/Aerospace, Agriculture, Healthcare, Energy, Manufacturing"
+  },
+  "education": {
+    "tuition_public": 10334
+  },
+  "banking": {
+    "avg_monthly_fee": 10,
+    "avg_overdraft_fee": 32,
+    "credit_union_association_url": "https://www.kscul.com",
+    "minor_banking_rules": "Minors can open joint accounts with parent/guardian."
+  },
+  "consumer_protection": {
+    "consumer_protection_agency": "Kansas Attorney General - Consumer Protection Division",
+    "consumer_protection_url": "https://ag.ks.gov/in-your-corner-kansas/consumer-protection"
+  },
+  "calculated_values": {
+    "state_tax_on_3500_monthly": 200,
+    "calculated_state_tax_70k": 3990,
+    "total_effective_rate": 19.7,
+    "take_home_pay_70k": 50855,
+    "property_tax_300k": 3967,
+    "state_withholding_48k_monthly": 228
+  },
+  "local_examples": {
+    "major_retailers": "Dillons (Kroger), Hy-Vee, Walmart, Target",
+    "telecom_providers": "Cox, AT&T, Google Fiber (KC), T-Mobile, Verizon",
+    "utility_providers": "Evergy, Kansas Gas Service, Black Hills Energy",
+    "healthcare_market": "University of Kansas Health System, Ascension Via Christi, Wesley Healthcare",
+    "local_credit_union_name": "Meritrust Credit Union",
+    "local_nonprofit_name": "Kansas Food Bank",
+    "major_city": "Wichita",
+    "major_city_1": "Wichita",
+    "major_city_2": "Overland Park",
+    "major_city_3": "Kansas City (KS)",
+    "major_city_1_millage": 122.5,
+    "major_city_2_millage": 115.8,
+    "major_city_3_millage": 128.5,
+    "suburb_city": "Olathe",
+    "suburb_1": "Olathe",
+    "suburb_2": "Lenexa",
+    "suburb_1_millage": 118.2,
+    "suburb_2_millage": 112.5,
+    "rural_area": "Western Kansas",
+    "rural_area_millage": 85.0,
+    "high_tax_city": "Topeka",
+    "medium_tax_city": "Wichita",
+    "low_tax_city": "Western Kansas",
+    "high_tax_major_city": "Topeka",
+    "low_tax_medium_city": "Johnson County",
+    "high_tax_millage": 138.2,
+    "medium_tax_millage": 122.5,
+    "low_tax_millage": 85.0,
+    "high_combined_sales_tax": 10.5,
+    "low_combined_sales_tax": 6.5,
+    "high_local_sales_tax": 4.0,
+    "low_local_sales_tax": 0,
+    "local_sales_tax_1": 1.5,
+    "total_millage_example": 122.5,
+    "high_local_income_tax_rate": 0,
+    "low_local_income_tax_rate": 0,
+    "local_income_tax_rate": 0,
+    "local_income_tax_rate_1": 0
+  },
+  "notes": "Kansas is phasing out sales tax on groceries by 2025. Wichita is 'Air Capital of the World' - major aviation manufacturing (Textron, Spirit AeroSystems, Bombardier). Johnson County is one of wealthiest counties in US. Property tax millage rates appear high but assessment ratio is only 11.5%. Agricultural economy is significant."
+}

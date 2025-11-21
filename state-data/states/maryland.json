@@ -1,0 +1,145 @@
+{
+  "state_name": "Maryland",
+  "state_code": "MD",
+  "last_updated": "2025-11-21",
+  "data_sources": {
+    "dmv_url": "https://mva.maryland.gov",
+    "tax_authority_url": "https://www.marylandtaxes.gov",
+    "labor_department_url": "https://www.dllr.state.md.us",
+    "education_department_url": "https://www.usmd.edu",
+    "consumer_protection_url": "https://www.marylandattorneygeneral.gov/Pages/CPD/",
+    "property_tax_assessor_url": "https://dat.maryland.gov/realproperty"
+  },
+  "automotive": {
+    "registration_initial": 135,
+    "registration_annual": 135,
+    "avg_auto_loan_rate_new": 6.62,
+    "avg_auto_loan_rate_used": 7.38,
+    "insurance_avg_teen": 295,
+    "insurance_comparison_url": "https://insurance.maryland.gov",
+    "lease_acquisition_fee": 695,
+    "inspection_required": true,
+    "inspection_cost": 90,
+    "gas_price_current": 3.35,
+    "dmv_url": "https://mva.maryland.gov"
+  },
+  "taxes": {
+    "income_tax_rate": 5.75,
+    "sales_tax": 6.0,
+    "local_sales_tax_min": 0,
+    "local_sales_tax_max": 0,
+    "combined_sales_tax_min": 6.0,
+    "combined_sales_tax_max": 6.0,
+    "local_sales_tax_examples": [
+      {"city": "Baltimore", "local_rate": 0, "combined_rate": 6.0},
+      {"city": "Annapolis", "local_rate": 0, "combined_rate": 6.0},
+      {"city": "Bethesda", "local_rate": 0, "combined_rate": 6.0}
+    ],
+    "allows_local_income_tax": true,
+    "local_income_tax_range": "2.25% - 3.2%",
+    "local_income_tax_rate_low": 2.25,
+    "local_income_tax_rate_high": 3.2,
+    "local_income_tax_example": "Montgomery County 3.2%",
+    "property_tax_county_rate": 0.80,
+    "property_tax_school_rate": 0.20,
+    "property_tax_special_rate": 0.10,
+    "property_tax_city_range": "0.80 - 2.50%",
+    "property_tax_examples": [
+      {"location": "Baltimore City", "millage": 22.48, "description": "Highest in state"},
+      {"location": "Montgomery County", "millage": 9.84, "description": "DC suburb - affluent"},
+      {"location": "Howard County", "millage": 10.13, "description": "Affluent - excellent schools"},
+      {"location": "Anne Arundel County", "millage": 9.32, "description": "Annapolis area"}
+    ],
+    "assessment_percentage": 100,
+    "homestead_exemption": 0,
+    "property_assessment_frequency": "Triennial",
+    "assessment_appeal_process": "File appeal with Property Tax Assessment Appeals Board within 45 days of assessment notice.",
+    "assessment_appeal_deadline": "45 days after notice",
+    "assessment_appeal_form_url": "https://dat.maryland.gov/realproperty",
+    "has_tax_cap": true,
+    "county_name": "Montgomery County",
+    "county_assessor_contact": "Montgomery County Finance - (240) 777-8950",
+    "county_tax_assessor_url": "https://www.montgomerycountymd.gov/finance/",
+    "property_tax_lookup_url": "https://dat.maryland.gov/realproperty",
+    "tax_incentives": "Maryland 529 Plan (state tax deduction), Homestead Tax Credit, Property Tax Credit for seniors",
+    "tax_structure": "Graduated income tax (2-5.75%) plus county income taxes (2.25-3.2%) make effective rates high. Baltimore City has very high property taxes. Strong school funding."
+  },
+  "housing": {
+    "median_home_price": 425000,
+    "median_rent": 1725,
+    "housing_market_trends": "Expensive market, especially DC suburbs (Montgomery, Howard counties). Baltimore more affordable but declining population.",
+    "first_time_homebuyer_program": "Maryland Mortgage Program - Down payment assistance and competitive rates",
+    "avg_mortgage_rate_30yr": 7.08
+  },
+  "insurance": {
+    "homeowners_avg_monthly": 145,
+    "data_source": "Maryland Insurance Administration average rates for $425K home coverage"
+  },
+  "employment": {
+    "min_wage": 15.00,
+    "unemployment_rate": 2.8,
+    "major_industries": "Federal Government/Contractors, Healthcare, Biotechnology, Cybersecurity, Higher Education"
+  },
+  "education": {
+    "tuition_public": 11050
+  },
+  "banking": {
+    "avg_monthly_fee": 12,
+    "avg_overdraft_fee": 34,
+    "credit_union_association_url": "https://www.mdcua.org",
+    "minor_banking_rules": "Minors can open joint accounts with parent/guardian."
+  },
+  "consumer_protection": {
+    "consumer_protection_agency": "Maryland Attorney General - Consumer Protection Division",
+    "consumer_protection_url": "https://www.marylandattorneygeneral.gov/Pages/CPD/"
+  },
+  "calculated_values": {
+    "state_tax_on_3500_monthly": 201,
+    "calculated_state_tax_70k": 4025,
+    "total_effective_rate": 19.8,
+    "take_home_pay_70k": 50820,
+    "property_tax_300k": 2952,
+    "state_withholding_48k_monthly": 230
+  },
+  "local_examples": {
+    "major_retailers": "Giant, Safeway, Wegmans, Harris Teeter, Costco",
+    "telecom_providers": "Verizon, Comcast/Xfinity, T-Mobile",
+    "utility_providers": "BGE, Pepco, SMECO, Washington Gas",
+    "healthcare_market": "Johns Hopkins, MedStar, University of Maryland Medical System",
+    "local_credit_union_name": "State Employees Credit Union of Maryland",
+    "local_nonprofit_name": "Maryland Food Bank",
+    "major_city": "Baltimore",
+    "major_city_1": "Baltimore",
+    "major_city_2": "Columbia",
+    "major_city_3": "Germantown",
+    "major_city_1_millage": 22.48,
+    "major_city_2_millage": 10.13,
+    "major_city_3_millage": 9.84,
+    "suburb_city": "Bethesda",
+    "suburb_1": "Bethesda",
+    "suburb_2": "Silver Spring",
+    "suburb_1_millage": 9.84,
+    "suburb_2_millage": 9.84,
+    "rural_area": "Western Maryland",
+    "rural_area_millage": 8.5,
+    "high_tax_city": "Baltimore City",
+    "medium_tax_city": "Howard County",
+    "low_tax_city": "Western MD",
+    "high_tax_major_city": "Baltimore City",
+    "low_tax_medium_city": "Anne Arundel",
+    "high_tax_millage": 22.48,
+    "medium_tax_millage": 10.13,
+    "low_tax_millage": 8.5,
+    "high_combined_sales_tax": 6.0,
+    "low_combined_sales_tax": 6.0,
+    "high_local_sales_tax": 0,
+    "low_local_sales_tax": 0,
+    "local_sales_tax_1": 0,
+    "total_millage_example": 9.84,
+    "high_local_income_tax_rate": 3.2,
+    "low_local_income_tax_rate": 2.25,
+    "local_income_tax_rate": 3.2,
+    "local_income_tax_rate_1": 3.2
+  },
+  "notes": "Maryland has high overall tax burden due to state + county income taxes (combined can reach 8.95%). Baltimore City has extremely high property taxes (2.248%) while suburbs are moderate. Strong job market due to federal government and contractors. Johns Hopkins, NIH, NSA are major employers. One of highest median household incomes in nation."
+}

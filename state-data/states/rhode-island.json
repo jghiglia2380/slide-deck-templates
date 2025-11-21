@@ -1,0 +1,145 @@
+{
+  "state_name": "Rhode Island",
+  "state_code": "RI",
+  "last_updated": "2025-11-21",
+  "data_sources": {
+    "dmv_url": "https://dmv.ri.gov",
+    "tax_authority_url": "https://tax.ri.gov",
+    "labor_department_url": "https://dlt.ri.gov",
+    "education_department_url": "https://www.ri.gov/education",
+    "consumer_protection_url": "https://riag.ri.gov/divisions/civil-division/consumer-protection-unit",
+    "property_tax_assessor_url": "https://municipalfinance.ri.gov"
+  },
+  "automotive": {
+    "registration_initial": 60,
+    "registration_annual": 60,
+    "avg_auto_loan_rate_new": 6.62,
+    "avg_auto_loan_rate_used": 7.38,
+    "insurance_avg_teen": 345,
+    "insurance_comparison_url": "https://dbr.ri.gov/divisions/insurance/",
+    "lease_acquisition_fee": 650,
+    "inspection_required": true,
+    "inspection_cost": 45,
+    "gas_price_current": 3.25,
+    "dmv_url": "https://dmv.ri.gov"
+  },
+  "taxes": {
+    "income_tax_rate": 5.99,
+    "sales_tax": 7.0,
+    "local_sales_tax_min": 0,
+    "local_sales_tax_max": 0,
+    "combined_sales_tax_min": 7.0,
+    "combined_sales_tax_max": 7.0,
+    "local_sales_tax_examples": [
+      {"city": "Providence", "local_rate": 0, "combined_rate": 7.0},
+      {"city": "Warwick", "local_rate": 0, "combined_rate": 7.0},
+      {"city": "Newport", "local_rate": 0, "combined_rate": 7.0}
+    ],
+    "allows_local_income_tax": false,
+    "local_income_tax_range": "N/A",
+    "local_income_tax_rate_low": 0,
+    "local_income_tax_rate_high": 0,
+    "local_income_tax_example": "N/A",
+    "property_tax_county_rate": 0,
+    "property_tax_school_rate": 1.20,
+    "property_tax_special_rate": 0.30,
+    "property_tax_city_range": "1.30 - 2.80%",
+    "property_tax_examples": [
+      {"location": "Providence", "millage": 24.56, "description": "Largest city"},
+      {"location": "Warwick", "millage": 18.92, "description": "Second largest"},
+      {"location": "Newport", "millage": 12.85, "description": "Coastal resort"},
+      {"location": "Cranston", "millage": 21.45, "description": "Providence suburb"}
+    ],
+    "assessment_percentage": 100,
+    "homestead_exemption": 0,
+    "property_assessment_frequency": "Varies by municipality",
+    "assessment_appeal_process": "File appeal with local Board of Assessment Review within 30 days of notice.",
+    "assessment_appeal_deadline": "30 days after notice",
+    "assessment_appeal_form_url": "https://municipalfinance.ri.gov",
+    "has_tax_cap": true,
+    "county_name": "Providence County",
+    "county_assessor_contact": "Providence Tax Assessor - (401) 421-7740",
+    "county_tax_assessor_url": "https://www.providenceri.gov/tax-assessor/",
+    "property_tax_lookup_url": "https://municipalfinance.ri.gov",
+    "tax_incentives": "CollegeBound Saver 529 (state tax deduction), Property Tax Relief for elderly/disabled",
+    "tax_structure": "Graduated income tax (3.75-5.99%). High sales tax (7%). High property taxes especially in Providence. No county government - all local."
+  },
+  "housing": {
+    "median_home_price": 445000,
+    "median_rent": 1595,
+    "housing_market_trends": "Expensive market driven by Boston proximity and limited space. Newport very expensive. Providence more affordable but rising.",
+    "first_time_homebuyer_program": "RIHousing - FirstHomes Program with down payment assistance",
+    "avg_mortgage_rate_30yr": 7.08
+  },
+  "insurance": {
+    "homeowners_avg_monthly": 155,
+    "data_source": "Rhode Island DBR average rates for $445K home coverage"
+  },
+  "employment": {
+    "min_wage": 14.00,
+    "unemployment_rate": 3.5,
+    "major_industries": "Healthcare, Defense/Naval, Tourism, Financial Services, Higher Education, Manufacturing"
+  },
+  "education": {
+    "tuition_public": 14812
+  },
+  "banking": {
+    "avg_monthly_fee": 11,
+    "avg_overdraft_fee": 33,
+    "credit_union_association_url": "https://www.ricul.org",
+    "minor_banking_rules": "Minors can open joint accounts with parent/guardian."
+  },
+  "consumer_protection": {
+    "consumer_protection_agency": "Rhode Island Attorney General - Consumer Protection Unit",
+    "consumer_protection_url": "https://riag.ri.gov/divisions/civil-division/consumer-protection-unit"
+  },
+  "calculated_values": {
+    "state_tax_on_3500_monthly": 210,
+    "calculated_state_tax_70k": 4193,
+    "total_effective_rate": 20.0,
+    "take_home_pay_70k": 50680,
+    "property_tax_300k": 5676,
+    "state_withholding_48k_monthly": 240
+  },
+  "local_examples": {
+    "major_retailers": "Stop & Shop, Shaw's, Dave's Fresh Marketplace, Target",
+    "telecom_providers": "Cox, Verizon, T-Mobile",
+    "utility_providers": "National Grid, Rhode Island Energy",
+    "healthcare_market": "Lifespan (Rhode Island Hospital), Care New England, Brown Medicine",
+    "local_credit_union_name": "Navigant Credit Union",
+    "local_nonprofit_name": "Rhode Island Community Food Bank",
+    "major_city": "Providence",
+    "major_city_1": "Providence",
+    "major_city_2": "Warwick",
+    "major_city_3": "Cranston",
+    "major_city_1_millage": 24.56,
+    "major_city_2_millage": 18.92,
+    "major_city_3_millage": 21.45,
+    "suburb_city": "East Greenwich",
+    "suburb_1": "East Greenwich",
+    "suburb_2": "Barrington",
+    "suburb_1_millage": 15.25,
+    "suburb_2_millage": 16.85,
+    "rural_area": "South County",
+    "rural_area_millage": 14.0,
+    "high_tax_city": "Providence",
+    "medium_tax_city": "Cranston",
+    "low_tax_city": "Newport",
+    "high_tax_major_city": "Providence",
+    "low_tax_medium_city": "Newport",
+    "high_tax_millage": 24.56,
+    "medium_tax_millage": 21.45,
+    "low_tax_millage": 12.85,
+    "high_combined_sales_tax": 7.0,
+    "low_combined_sales_tax": 7.0,
+    "high_local_sales_tax": 0,
+    "low_local_sales_tax": 0,
+    "local_sales_tax_1": 0,
+    "total_millage_example": 18.92,
+    "high_local_income_tax_rate": 0,
+    "low_local_income_tax_rate": 0,
+    "local_income_tax_rate": 0,
+    "local_income_tax_rate_1": 0
+  },
+  "notes": "Rhode Island is smallest state but densely populated. High overall tax burden. No county government - municipalities handle all services. Naval Station Newport is major employer. Brown University and RISD important. Tourism (Newport mansions, beaches) significant. Boston proximity drives housing costs."
+}

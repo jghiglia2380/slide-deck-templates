@@ -1,0 +1,145 @@
+{
+  "state_name": "Iowa",
+  "state_code": "IA",
+  "last_updated": "2025-11-21",
+  "data_sources": {
+    "dmv_url": "https://iowadot.gov/mvd",
+    "tax_authority_url": "https://tax.iowa.gov",
+    "labor_department_url": "https://www.iowaworkforcedevelopment.gov",
+    "education_department_url": "https://www.iowaregents.edu",
+    "consumer_protection_url": "https://www.iowaattorneygeneral.gov/for-consumers",
+    "property_tax_assessor_url": "https://tax.iowa.gov/property-tax"
+  },
+  "automotive": {
+    "registration_initial": 65,
+    "registration_annual": 65,
+    "avg_auto_loan_rate_new": 6.68,
+    "avg_auto_loan_rate_used": 7.44,
+    "insurance_avg_teen": 245,
+    "insurance_comparison_url": "https://iid.iowa.gov",
+    "lease_acquisition_fee": 595,
+    "inspection_required": false,
+    "inspection_cost": 0,
+    "gas_price_current": 2.85,
+    "dmv_url": "https://iowadot.gov/mvd"
+  },
+  "taxes": {
+    "income_tax_rate": 5.7,
+    "sales_tax": 6.0,
+    "local_sales_tax_min": 0,
+    "local_sales_tax_max": 1.0,
+    "combined_sales_tax_min": 6.0,
+    "combined_sales_tax_max": 7.0,
+    "local_sales_tax_examples": [
+      {"city": "Des Moines", "local_rate": 1.0, "combined_rate": 7.0},
+      {"city": "Cedar Rapids", "local_rate": 1.0, "combined_rate": 7.0},
+      {"city": "Davenport", "local_rate": 1.0, "combined_rate": 7.0}
+    ],
+    "allows_local_income_tax": false,
+    "local_income_tax_range": "N/A",
+    "local_income_tax_rate_low": 0,
+    "local_income_tax_rate_high": 0,
+    "local_income_tax_example": "N/A",
+    "property_tax_county_rate": 0.80,
+    "property_tax_school_rate": 1.20,
+    "property_tax_special_rate": 0.20,
+    "property_tax_city_range": "0.80 - 1.80%",
+    "property_tax_examples": [
+      {"location": "Polk County (Des Moines)", "millage": 36.5, "description": "Capital city - higher taxes"},
+      {"location": "Linn County (Cedar Rapids)", "millage": 33.2, "description": "Major city"},
+      {"location": "Johnson County (Iowa City)", "millage": 35.8, "description": "University town"},
+      {"location": "Story County (Ames)", "millage": 32.1, "description": "University town"}
+    ],
+    "assessment_percentage": 46.71,
+    "homestead_exemption": 4850,
+    "property_assessment_frequency": "Biennial",
+    "assessment_appeal_process": "File protest with local Board of Review by April 30 (or May 5 in reassessment years).",
+    "assessment_appeal_deadline": "April 30",
+    "assessment_appeal_form_url": "https://tax.iowa.gov/property-tax",
+    "has_tax_cap": false,
+    "county_name": "Polk County",
+    "county_assessor_contact": "Polk County Assessor - (515) 286-3014",
+    "county_tax_assessor_url": "https://www.polkcountyiowa.gov/assessor",
+    "property_tax_lookup_url": "https://tax.iowa.gov/property-tax",
+    "tax_incentives": "College Savings Iowa 529 (state tax deduction), Military Exemption, Family Farm Credit",
+    "tax_structure": "Moving to flat 3.9% income tax by 2026. Currently graduated. High property taxes fund local schools. Moderate sales tax."
+  },
+  "housing": {
+    "median_home_price": 215000,
+    "median_rent": 1025,
+    "housing_market_trends": "Very affordable. Stable market with steady growth in Des Moines metro. Strong agricultural economy supports rural areas.",
+    "first_time_homebuyer_program": "Iowa Finance Authority - FirstHome program with down payment assistance",
+    "avg_mortgage_rate_30yr": 7.10
+  },
+  "insurance": {
+    "homeowners_avg_monthly": 125,
+    "data_source": "Iowa Insurance Division average rates for $215K home coverage"
+  },
+  "employment": {
+    "min_wage": 7.25,
+    "unemployment_rate": 2.8,
+    "major_industries": "Agriculture, Insurance/Financial Services, Manufacturing, Healthcare, Renewable Energy"
+  },
+  "education": {
+    "tuition_public": 9584
+  },
+  "banking": {
+    "avg_monthly_fee": 10,
+    "avg_overdraft_fee": 32,
+    "credit_union_association_url": "https://iowacreditunions.com",
+    "minor_banking_rules": "Minors can open joint accounts with parent/guardian."
+  },
+  "consumer_protection": {
+    "consumer_protection_agency": "Iowa Attorney General - Consumer Protection Division",
+    "consumer_protection_url": "https://www.iowaattorneygeneral.gov/for-consumers"
+  },
+  "calculated_values": {
+    "state_tax_on_3500_monthly": 200,
+    "calculated_state_tax_70k": 3990,
+    "total_effective_rate": 19.7,
+    "take_home_pay_70k": 50855,
+    "property_tax_300k": 4665,
+    "state_withholding_48k_monthly": 228
+  },
+  "local_examples": {
+    "major_retailers": "Hy-Vee, Fareway, Walmart, Target",
+    "telecom_providers": "Mediacom, CenturyLink, ImOn, T-Mobile, Verizon",
+    "utility_providers": "MidAmerican Energy, Alliant Energy, Black Hills Energy",
+    "healthcare_market": "UnityPoint Health, MercyOne, University of Iowa Hospitals",
+    "local_credit_union_name": "Veridian Credit Union",
+    "local_nonprofit_name": "Food Bank of Iowa",
+    "major_city": "Des Moines",
+    "major_city_1": "Des Moines",
+    "major_city_2": "Cedar Rapids",
+    "major_city_3": "Davenport",
+    "major_city_1_millage": 36.5,
+    "major_city_2_millage": 33.2,
+    "major_city_3_millage": 31.5,
+    "suburb_city": "West Des Moines",
+    "suburb_1": "West Des Moines",
+    "suburb_2": "Ankeny",
+    "suburb_1_millage": 34.2,
+    "suburb_2_millage": 30.8,
+    "rural_area": "Northwest Iowa",
+    "rural_area_millage": 22.0,
+    "high_tax_city": "Des Moines",
+    "medium_tax_city": "Cedar Rapids",
+    "low_tax_city": "Rural Iowa",
+    "high_tax_major_city": "Des Moines",
+    "low_tax_medium_city": "Rural Iowa",
+    "high_tax_millage": 36.5,
+    "medium_tax_millage": 33.2,
+    "low_tax_millage": 22.0,
+    "high_combined_sales_tax": 7.0,
+    "low_combined_sales_tax": 6.0,
+    "high_local_sales_tax": 1.0,
+    "low_local_sales_tax": 0,
+    "local_sales_tax_1": 1.0,
+    "total_millage_example": 36.5,
+    "high_local_income_tax_rate": 0,
+    "low_local_income_tax_rate": 0,
+    "local_income_tax_rate": 0,
+    "local_income_tax_rate_1": 0
+  },
+  "notes": "Iowa is transitioning to a flat 3.9% income tax by 2026 (currently graduated with max ~5.7%). Des Moines is a major insurance and financial services hub (Principal, Wellmark). Very low unemployment. Strong agricultural economy - corn, soybeans, pork. Affordable cost of living with good quality of life. Wind energy is growing sector."
+}

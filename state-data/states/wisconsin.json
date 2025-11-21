@@ -1,0 +1,146 @@
+{
+  "state_name": "Wisconsin",
+  "state_code": "WI",
+  "last_updated": "2025-11-21",
+  "data_sources": {
+    "dmv_url": "https://wisconsindot.gov/dmv",
+    "tax_authority_url": "https://www.revenue.wi.gov",
+    "labor_department_url": "https://dwd.wisconsin.gov",
+    "education_department_url": "https://www.wisconsin.edu",
+    "consumer_protection_url": "https://datcp.wi.gov/Pages/Programs_Services/ConsumerProtection.aspx",
+    "property_tax_assessor_url": "https://www.revenue.wi.gov/pages/faqs/slf-property.aspx"
+  },
+  "automotive": {
+    "registration_initial": 85,
+    "registration_annual": 85,
+    "avg_auto_loan_rate_new": 6.62,
+    "avg_auto_loan_rate_used": 7.38,
+    "insurance_avg_teen": 275,
+    "insurance_comparison_url": "https://oci.wi.gov",
+    "lease_acquisition_fee": 595,
+    "inspection_required": false,
+    "inspection_cost": 0,
+    "gas_price_current": 2.95,
+    "dmv_url": "https://wisconsindot.gov/dmv"
+  },
+  "taxes": {
+    "income_tax_rate": 7.65,
+    "sales_tax": 5.0,
+    "local_sales_tax_min": 0,
+    "local_sales_tax_max": 1.75,
+    "combined_sales_tax_min": 5.0,
+    "combined_sales_tax_max": 6.75,
+    "local_sales_tax_examples": [
+      {"city": "Milwaukee", "local_rate": 0.9, "combined_rate": 5.9},
+      {"city": "Madison", "local_rate": 0.5, "combined_rate": 5.5},
+      {"city": "Green Bay", "local_rate": 0.5, "combined_rate": 5.5},
+      {"city": "Milwaukee County", "local_rate": 1.75, "combined_rate": 6.75}
+    ],
+    "allows_local_income_tax": false,
+    "local_income_tax_range": "N/A",
+    "local_income_tax_rate_low": 0,
+    "local_income_tax_rate_high": 0,
+    "local_income_tax_example": "N/A",
+    "property_tax_county_rate": 0.40,
+    "property_tax_school_rate": 0.80,
+    "property_tax_special_rate": 0.20,
+    "property_tax_city_range": "1.50 - 2.50%",
+    "property_tax_examples": [
+      {"location": "Milwaukee", "millage": 25.12, "description": "Largest city - high"},
+      {"location": "Madison", "millage": 21.85, "description": "State capital"},
+      {"location": "Green Bay", "millage": 22.45, "description": "Northeast Wisconsin"},
+      {"location": "Waukesha County", "millage": 18.95, "description": "Milwaukee suburbs"}
+    ],
+    "assessment_percentage": 100,
+    "homestead_exemption": 0,
+    "property_assessment_frequency": "Annual",
+    "assessment_appeal_process": "File objection with local Board of Review during open book/board of review period.",
+    "assessment_appeal_deadline": "Within board of review period (varies by municipality)",
+    "assessment_appeal_form_url": "https://www.revenue.wi.gov/pages/faqs/slf-property.aspx",
+    "has_tax_cap": true,
+    "county_name": "Milwaukee County",
+    "county_assessor_contact": "Milwaukee City Assessor - (414) 286-3651",
+    "county_tax_assessor_url": "https://city.milwaukee.gov/assessor",
+    "property_tax_lookup_url": "https://www.revenue.wi.gov/pages/faqs/slf-property.aspx",
+    "tax_incentives": "Edvest 529 Plan (state tax deduction), Homestead Credit, School Property Tax Credit",
+    "tax_structure": "Graduated income tax (3.54-7.65%). Moderate sales tax. High property taxes (among highest in nation). Strong public school funding through property taxes."
+  },
+  "housing": {
+    "median_home_price": 285000,
+    "median_rent": 1195,
+    "housing_market_trends": "Madison expensive and growing. Milwaukee affordable. Fox Valley stable. Northern Wisconsin very affordable but limited jobs.",
+    "first_time_homebuyer_program": "WHEDA - First-Time Homebuyer Advantage with down payment assistance",
+    "avg_mortgage_rate_30yr": 7.09
+  },
+  "insurance": {
+    "homeowners_avg_monthly": 115,
+    "data_source": "Wisconsin OCI average rates for $285K home coverage"
+  },
+  "employment": {
+    "min_wage": 7.25,
+    "unemployment_rate": 2.9,
+    "major_industries": "Manufacturing, Healthcare, Agriculture, Insurance, Technology, Tourism"
+  },
+  "education": {
+    "tuition_public": 10725
+  },
+  "banking": {
+    "avg_monthly_fee": 10,
+    "avg_overdraft_fee": 32,
+    "credit_union_association_url": "https://www.cuna.org/wi",
+    "minor_banking_rules": "Minors can open joint accounts with parent/guardian."
+  },
+  "consumer_protection": {
+    "consumer_protection_agency": "Wisconsin Department of Agriculture - Consumer Protection",
+    "consumer_protection_url": "https://datcp.wi.gov/Pages/Programs_Services/ConsumerProtection.aspx"
+  },
+  "calculated_values": {
+    "state_tax_on_3500_monthly": 268,
+    "calculated_state_tax_70k": 5355,
+    "total_effective_rate": 21.6,
+    "take_home_pay_70k": 49560,
+    "property_tax_300k": 5685,
+    "state_withholding_48k_monthly": 306
+  },
+  "local_examples": {
+    "major_retailers": "Woodman's, Festival Foods, Pick 'n Save, Walmart, Target",
+    "telecom_providers": "Spectrum, AT&T, TDS Telecom, T-Mobile, Verizon",
+    "utility_providers": "We Energies, Wisconsin Public Service, Alliant Energy, Madison Gas & Electric",
+    "healthcare_market": "Froedtert, Advocate Aurora, UW Health, Ascension",
+    "local_credit_union_name": "Landmark Credit Union",
+    "local_nonprofit_name": "Feeding Wisconsin",
+    "major_city": "Milwaukee",
+    "major_city_1": "Milwaukee",
+    "major_city_2": "Madison",
+    "major_city_3": "Green Bay",
+    "major_city_1_millage": 25.12,
+    "major_city_2_millage": 21.85,
+    "major_city_3_millage": 22.45,
+    "suburb_city": "Brookfield",
+    "suburb_1": "Brookfield",
+    "suburb_2": "Waukesha",
+    "suburb_1_millage": 18.95,
+    "suburb_2_millage": 20.15,
+    "rural_area": "Northern Wisconsin",
+    "rural_area_millage": 15.0,
+    "high_tax_city": "Milwaukee",
+    "medium_tax_city": "Green Bay",
+    "low_tax_city": "Northern WI",
+    "high_tax_major_city": "Milwaukee",
+    "low_tax_medium_city": "Waukesha County",
+    "high_tax_millage": 25.12,
+    "medium_tax_millage": 22.45,
+    "low_tax_millage": 15.0,
+    "high_combined_sales_tax": 6.75,
+    "low_combined_sales_tax": 5.0,
+    "high_local_sales_tax": 1.75,
+    "low_local_sales_tax": 0,
+    "local_sales_tax_1": 0.9,
+    "total_millage_example": 21.85,
+    "high_local_income_tax_rate": 0,
+    "low_local_income_tax_rate": 0,
+    "local_income_tax_rate": 0,
+    "local_income_tax_rate_1": 0
+  },
+  "notes": "Wisconsin has high income tax and very high property taxes. Madison consistently ranked top city for quality of life. Strong manufacturing base (Harley-Davidson, Kohler, Johnson Controls). Insurance industry centered in Madison. Dairy industry important (cheese production). University of Wisconsin highly ranked. Packers are community-owned NFL team."
+}

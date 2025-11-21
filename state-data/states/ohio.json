@@ -1,0 +1,146 @@
+{
+  "state_name": "Ohio",
+  "state_code": "OH",
+  "last_updated": "2025-11-21",
+  "data_sources": {
+    "dmv_url": "https://bmv.ohio.gov",
+    "tax_authority_url": "https://tax.ohio.gov",
+    "labor_department_url": "https://jfs.ohio.gov",
+    "education_department_url": "https://www.ohiohighered.org",
+    "consumer_protection_url": "https://www.ohioattorneygeneral.gov/Individuals-and-Families/Consumers",
+    "property_tax_assessor_url": "https://tax.ohio.gov/individual/real-property-taxes"
+  },
+  "automotive": {
+    "registration_initial": 35,
+    "registration_annual": 35,
+    "avg_auto_loan_rate_new": 6.68,
+    "avg_auto_loan_rate_used": 7.44,
+    "insurance_avg_teen": 265,
+    "insurance_comparison_url": "https://insurance.ohio.gov",
+    "lease_acquisition_fee": 595,
+    "inspection_required": false,
+    "inspection_cost": 0,
+    "gas_price_current": 2.95,
+    "dmv_url": "https://bmv.ohio.gov"
+  },
+  "taxes": {
+    "income_tax_rate": 3.99,
+    "sales_tax": 5.75,
+    "local_sales_tax_min": 0.75,
+    "local_sales_tax_max": 2.25,
+    "combined_sales_tax_min": 6.5,
+    "combined_sales_tax_max": 8.0,
+    "local_sales_tax_examples": [
+      {"city": "Cleveland", "local_rate": 2.25, "combined_rate": 8.0},
+      {"city": "Columbus", "local_rate": 1.75, "combined_rate": 7.5},
+      {"city": "Cincinnati", "local_rate": 1.0, "combined_rate": 6.75},
+      {"city": "Toledo", "local_rate": 1.5, "combined_rate": 7.25}
+    ],
+    "allows_local_income_tax": true,
+    "local_income_tax_range": "0% - 3%",
+    "local_income_tax_rate_low": 0,
+    "local_income_tax_rate_high": 3.0,
+    "local_income_tax_example": "Cleveland 2.5%",
+    "property_tax_county_rate": 0.50,
+    "property_tax_school_rate": 0.80,
+    "property_tax_special_rate": 0.20,
+    "property_tax_city_range": "1.0 - 2.5%",
+    "property_tax_examples": [
+      {"location": "Cleveland (Cuyahoga)", "millage": 22.85, "description": "Northeast Ohio"},
+      {"location": "Columbus (Franklin)", "millage": 18.42, "description": "State capital"},
+      {"location": "Cincinnati (Hamilton)", "millage": 20.15, "description": "Southwest Ohio"},
+      {"location": "Akron (Summit)", "millage": 21.32, "description": "Northeast Ohio"}
+    ],
+    "assessment_percentage": 35,
+    "homestead_exemption": 25000,
+    "property_assessment_frequency": "Triennial",
+    "assessment_appeal_process": "File complaint with County Board of Revision by March 31.",
+    "assessment_appeal_deadline": "March 31 annually",
+    "assessment_appeal_form_url": "https://tax.ohio.gov/individual/real-property-taxes",
+    "has_tax_cap": false,
+    "county_name": "Franklin County",
+    "county_assessor_contact": "Franklin County Auditor - (614) 525-3240",
+    "county_tax_assessor_url": "https://www.franklincountyauditor.com",
+    "property_tax_lookup_url": "https://tax.ohio.gov/individual/real-property-taxes",
+    "tax_incentives": "Ohio 529 CollegeAdvantage (state tax deduction), Homestead Exemption for seniors/disabled",
+    "tax_structure": "Graduated income tax (recently reduced to 3.99% top rate). Most cities have local income taxes (many around 2-2.5%). Moderate property taxes with 35% assessment ratio."
+  },
+  "housing": {
+    "median_home_price": 225000,
+    "median_rent": 1095,
+    "housing_market_trends": "Very affordable markets. Columbus growing rapidly. Cleveland and Cincinnati stable. Small towns very affordable.",
+    "first_time_homebuyer_program": "Ohio Housing Finance Agency - First-Time Homebuyer Program",
+    "avg_mortgage_rate_30yr": 7.11
+  },
+  "insurance": {
+    "homeowners_avg_monthly": 125,
+    "data_source": "Ohio Department of Insurance average rates for $225K home coverage"
+  },
+  "employment": {
+    "min_wage": 10.45,
+    "unemployment_rate": 3.8,
+    "major_industries": "Healthcare, Manufacturing, Financial Services, Technology, Logistics, Agriculture"
+  },
+  "education": {
+    "tuition_public": 11877
+  },
+  "banking": {
+    "avg_monthly_fee": 11,
+    "avg_overdraft_fee": 33,
+    "credit_union_association_url": "https://www.ohiocul.org",
+    "minor_banking_rules": "Minors can open joint accounts with parent/guardian."
+  },
+  "consumer_protection": {
+    "consumer_protection_agency": "Ohio Attorney General - Consumer Protection Section",
+    "consumer_protection_url": "https://www.ohioattorneygeneral.gov/Individuals-and-Families/Consumers"
+  },
+  "calculated_values": {
+    "state_tax_on_3500_monthly": 140,
+    "calculated_state_tax_70k": 2793,
+    "total_effective_rate": 18.0,
+    "take_home_pay_70k": 52000,
+    "property_tax_300k": 3675,
+    "state_withholding_48k_monthly": 160
+  },
+  "local_examples": {
+    "major_retailers": "Kroger, Giant Eagle, Meijer, Walmart, Target",
+    "telecom_providers": "Spectrum, AT&T, WOW!, T-Mobile, Verizon",
+    "utility_providers": "AEP Ohio, Duke Energy, Columbia Gas, FirstEnergy",
+    "healthcare_market": "Cleveland Clinic, Ohio State Wexner, University Hospitals, UC Health",
+    "local_credit_union_name": "Wright-Patt Credit Union",
+    "local_nonprofit_name": "Mid-Ohio Food Collective",
+    "major_city": "Columbus",
+    "major_city_1": "Columbus",
+    "major_city_2": "Cleveland",
+    "major_city_3": "Cincinnati",
+    "major_city_1_millage": 18.42,
+    "major_city_2_millage": 22.85,
+    "major_city_3_millage": 20.15,
+    "suburb_city": "Dublin",
+    "suburb_1": "Dublin",
+    "suburb_2": "Mason",
+    "suburb_1_millage": 16.25,
+    "suburb_2_millage": 17.85,
+    "rural_area": "Southeast Ohio",
+    "rural_area_millage": 12.0,
+    "high_tax_city": "Cleveland",
+    "medium_tax_city": "Cincinnati",
+    "low_tax_city": "Rural Ohio",
+    "high_tax_major_city": "Cleveland",
+    "low_tax_medium_city": "Dublin",
+    "high_tax_millage": 22.85,
+    "medium_tax_millage": 20.15,
+    "low_tax_millage": 12.0,
+    "high_combined_sales_tax": 8.0,
+    "low_combined_sales_tax": 6.5,
+    "high_local_sales_tax": 2.25,
+    "low_local_sales_tax": 0.75,
+    "local_sales_tax_1": 1.75,
+    "total_millage_example": 18.42,
+    "high_local_income_tax_rate": 3.0,
+    "low_local_income_tax_rate": 0,
+    "local_income_tax_rate": 2.5,
+    "local_income_tax_rate_1": 2.5
+  },
+  "notes": "Ohio has local income taxes in most cities (Cleveland 2.5%, Columbus 2.5%, Cincinnati 1.8%). State income tax reduced significantly in recent years. Columbus is fastest growing major city in Midwest. Cleveland Clinic and Ohio State are major employers. Affordable housing market. Strong manufacturing base."
+}

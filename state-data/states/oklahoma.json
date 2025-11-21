@@ -1,0 +1,146 @@
+{
+  "state_name": "Oklahoma",
+  "state_code": "OK",
+  "last_updated": "2025-11-21",
+  "data_sources": {
+    "dmv_url": "https://oklahoma.gov/service-oklahoma",
+    "tax_authority_url": "https://oklahoma.gov/tax",
+    "labor_department_url": "https://oklahoma.gov/oesc",
+    "education_department_url": "https://www.okhighered.org",
+    "consumer_protection_url": "https://www.oag.ok.gov/consumer-protection",
+    "property_tax_assessor_url": "https://oklahoma.gov/tax/ad-valorem"
+  },
+  "automotive": {
+    "registration_initial": 96,
+    "registration_annual": 96,
+    "avg_auto_loan_rate_new": 6.72,
+    "avg_auto_loan_rate_used": 7.48,
+    "insurance_avg_teen": 295,
+    "insurance_comparison_url": "https://www.oid.ok.gov",
+    "lease_acquisition_fee": 550,
+    "inspection_required": false,
+    "inspection_cost": 0,
+    "gas_price_current": 2.75,
+    "dmv_url": "https://oklahoma.gov/service-oklahoma"
+  },
+  "taxes": {
+    "income_tax_rate": 4.75,
+    "sales_tax": 4.5,
+    "local_sales_tax_min": 0,
+    "local_sales_tax_max": 7.0,
+    "combined_sales_tax_min": 4.5,
+    "combined_sales_tax_max": 11.5,
+    "local_sales_tax_examples": [
+      {"city": "Oklahoma City", "local_rate": 4.125, "combined_rate": 8.625},
+      {"city": "Tulsa", "local_rate": 4.517, "combined_rate": 9.017},
+      {"city": "Norman", "local_rate": 4.375, "combined_rate": 8.875},
+      {"city": "Lawton", "local_rate": 3.75, "combined_rate": 8.25}
+    ],
+    "allows_local_income_tax": false,
+    "local_income_tax_range": "N/A",
+    "local_income_tax_rate_low": 0,
+    "local_income_tax_rate_high": 0,
+    "local_income_tax_example": "N/A",
+    "property_tax_county_rate": 0.30,
+    "property_tax_school_rate": 0.50,
+    "property_tax_special_rate": 0.10,
+    "property_tax_city_range": "0.80 - 1.20%",
+    "property_tax_examples": [
+      {"location": "Oklahoma City", "millage": 10.85, "description": "State capital"},
+      {"location": "Tulsa", "millage": 11.25, "description": "Second largest city"},
+      {"location": "Norman", "millage": 10.45, "description": "University town"},
+      {"location": "Edmond", "millage": 9.85, "description": "OKC suburb"}
+    ],
+    "assessment_percentage": 11,
+    "homestead_exemption": 1000,
+    "property_assessment_frequency": "Annual",
+    "assessment_appeal_process": "File protest with County Assessor during protest period (varies by county).",
+    "assessment_appeal_deadline": "Varies by county",
+    "assessment_appeal_form_url": "https://oklahoma.gov/tax/ad-valorem",
+    "has_tax_cap": true,
+    "county_name": "Oklahoma County",
+    "county_assessor_contact": "Oklahoma County Assessor - (405) 713-1200",
+    "county_tax_assessor_url": "https://assessor.oklahomacounty.org",
+    "property_tax_lookup_url": "https://oklahoma.gov/tax/ad-valorem",
+    "tax_incentives": "Oklahoma 529 College Savings Plan (state tax deduction), Homestead Exemption, Senior Freeze",
+    "tax_structure": "Flat 4.75% income tax, very high combined sales taxes (among highest in nation due to local additions), very low property taxes (11% assessment ratio)."
+  },
+  "housing": {
+    "median_home_price": 195000,
+    "median_rent": 1045,
+    "housing_market_trends": "Very affordable market. OKC and Tulsa growing. Norman stable with university. Rural areas extremely affordable.",
+    "first_time_homebuyer_program": "OHFA - Homebuyer Down Payment Assistance Program",
+    "avg_mortgage_rate_30yr": 7.12
+  },
+  "insurance": {
+    "homeowners_avg_monthly": 225,
+    "data_source": "Oklahoma Insurance Department average rates for $195K home coverage (high due to tornado/hail risk)"
+  },
+  "employment": {
+    "min_wage": 7.25,
+    "unemployment_rate": 3.4,
+    "major_industries": "Energy (Oil & Gas), Aerospace, Agriculture, Healthcare, Manufacturing, Technology"
+  },
+  "education": {
+    "tuition_public": 9230
+  },
+  "banking": {
+    "avg_monthly_fee": 10,
+    "avg_overdraft_fee": 32,
+    "credit_union_association_url": "https://www.cuna.org/ok",
+    "minor_banking_rules": "Minors can open joint accounts with parent/guardian."
+  },
+  "consumer_protection": {
+    "consumer_protection_agency": "Oklahoma Attorney General - Consumer Protection Unit",
+    "consumer_protection_url": "https://www.oag.ok.gov/consumer-protection"
+  },
+  "calculated_values": {
+    "state_tax_on_3500_monthly": 166,
+    "calculated_state_tax_70k": 3325,
+    "total_effective_rate": 18.6,
+    "take_home_pay_70k": 51560,
+    "property_tax_300k": 363,
+    "state_withholding_48k_monthly": 190
+  },
+  "local_examples": {
+    "major_retailers": "Crest, Walmart, Target, Sprouts, Costco",
+    "telecom_providers": "Cox, AT&T, T-Mobile, Verizon",
+    "utility_providers": "OG&E, PSO (AEP), Oklahoma Natural Gas",
+    "healthcare_market": "SSM Health St. Anthony, INTEGRIS, Mercy, OU Health",
+    "local_credit_union_name": "Tinker Federal Credit Union",
+    "local_nonprofit_name": "Regional Food Bank of Oklahoma",
+    "major_city": "Oklahoma City",
+    "major_city_1": "Oklahoma City",
+    "major_city_2": "Tulsa",
+    "major_city_3": "Norman",
+    "major_city_1_millage": 10.85,
+    "major_city_2_millage": 11.25,
+    "major_city_3_millage": 10.45,
+    "suburb_city": "Edmond",
+    "suburb_1": "Edmond",
+    "suburb_2": "Broken Arrow",
+    "suburb_1_millage": 9.85,
+    "suburb_2_millage": 10.15,
+    "rural_area": "Western Oklahoma",
+    "rural_area_millage": 8.0,
+    "high_tax_city": "Tulsa",
+    "medium_tax_city": "Oklahoma City",
+    "low_tax_city": "Western OK",
+    "high_tax_major_city": "Tulsa",
+    "low_tax_medium_city": "Edmond",
+    "high_tax_millage": 11.25,
+    "medium_tax_millage": 10.85,
+    "low_tax_millage": 8.0,
+    "high_combined_sales_tax": 11.5,
+    "low_combined_sales_tax": 4.5,
+    "high_local_sales_tax": 7.0,
+    "low_local_sales_tax": 0,
+    "local_sales_tax_1": 4.125,
+    "total_millage_example": 10.85,
+    "high_local_income_tax_rate": 0,
+    "low_local_income_tax_rate": 0,
+    "local_income_tax_rate": 0,
+    "local_income_tax_rate_1": 0
+  },
+  "notes": "Oklahoma has very low property taxes (11% assessment ratio) but some of highest combined sales taxes in nation due to local additions. Energy industry (oil and gas) is major economic driver. Very affordable cost of living. Tornado risk increases homeowners insurance. OU and OSU are major institutions. Growing tech sector in OKC and Tulsa."
+}

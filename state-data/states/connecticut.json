@@ -1,0 +1,178 @@
+{
+  "state_name": "Connecticut",
+  "state_code": "CT",
+  "last_updated": "2025-11-21",
+  "data_sources": {
+    "dmv_url": "https://portal.ct.gov/dmv",
+    "tax_authority_url": "https://portal.ct.gov/drs",
+    "labor_department_url": "https://www.ctdol.state.ct.us",
+    "education_department_url": "https://www.ctohe.org",
+    "consumer_protection_url": "https://portal.ct.gov/dcp",
+    "property_tax_assessor_url": "https://portal.ct.gov/OPM/IGPP/Property-Tax-Assessment"
+  },
+  "automotive": {
+    "registration_initial": 120,
+    "registration_annual": 120,
+    "avg_auto_loan_rate_new": 6.62,
+    "avg_auto_loan_rate_used": 7.38,
+    "insurance_avg_teen": 320,
+    "insurance_comparison_url": "https://portal.ct.gov/cid",
+    "lease_acquisition_fee": 695,
+    "inspection_required": true,
+    "inspection_cost": 20,
+    "gas_price_current": 3.45,
+    "dmv_url": "https://portal.ct.gov/dmv"
+  },
+  "taxes": {
+    "income_tax_rate": 6.99,
+    "sales_tax": 6.35,
+    "local_sales_tax_min": 0,
+    "local_sales_tax_max": 0,
+    "combined_sales_tax_min": 6.35,
+    "combined_sales_tax_max": 6.35,
+    "local_sales_tax_examples": [
+      {
+        "city": "Hartford",
+        "local_rate": 0,
+        "combined_rate": 6.35
+      },
+      {
+        "city": "New Haven",
+        "local_rate": 0,
+        "combined_rate": 6.35
+      },
+      {
+        "city": "Stamford",
+        "local_rate": 0,
+        "combined_rate": 6.35
+      },
+      {
+        "city": "Bridgeport",
+        "local_rate": 0,
+        "combined_rate": 6.35
+      }
+    ],
+    "allows_local_income_tax": false,
+    "local_income_tax_range": "N/A",
+    "local_income_tax_rate_low": 0,
+    "local_income_tax_rate_high": 0,
+    "local_income_tax_example": "N/A",
+    "property_tax_county_rate": 0,
+    "property_tax_school_rate": 15.0,
+    "property_tax_special_rate": 5.0,
+    "property_tax_city_range": "15.0 - 45.0 mills",
+    "property_tax_examples": [
+      {
+        "location": "Hartford",
+        "millage": 74.29,
+        "description": "Capital city - very high taxes"
+      },
+      {
+        "location": "New Haven",
+        "millage": 43.88,
+        "description": "Yale University town - high taxes"
+      },
+      {
+        "location": "Stamford",
+        "millage": 25.68,
+        "description": "NYC suburb - moderate for CT"
+      },
+      {
+        "location": "Greenwich",
+        "millage": 11.59,
+        "description": "Affluent town - low mill rate"
+      }
+    ],
+    "assessment_percentage": 70,
+    "homestead_exemption": 0,
+    "property_assessment_frequency": "5 years",
+    "assessment_appeal_process": "File appeal with Board of Assessment Appeals by February 20. Can appeal to Superior Court if denied.",
+    "assessment_appeal_deadline": "February 20",
+    "assessment_appeal_form_url": "https://portal.ct.gov/OPM/IGPP/Property-Tax-Assessment",
+    "has_tax_cap": false,
+    "county_name": "Hartford County",
+    "county_assessor_contact": "Hartford Assessor's Office - (860) 757-9630",
+    "county_tax_assessor_url": "https://www.hartfordct.gov/assessor",
+    "property_tax_lookup_url": "https://portal.ct.gov/OPM/IGPP/Property-Tax-Assessment",
+    "tax_incentives": "CHET 529 Plan (state tax deduction), Property Tax Credit for seniors/disabled",
+    "tax_structure": "High graduated income tax (3-6.99%), uniform state sales tax, very high property taxes (among highest in nation). No county government - municipalities collect all property taxes."
+  },
+  "housing": {
+    "median_home_price": 385000,
+    "median_rent": 1650,
+    "housing_market_trends": "Recovering market after years of decline. Fairfield County (NYC suburbs) very expensive. Hartford area more affordable but high property taxes.",
+    "first_time_homebuyer_program": "CHFA (Connecticut Housing Finance Authority) - Down payment assistance programs",
+    "avg_mortgage_rate_30yr": 7.10
+  },
+  "insurance": {
+    "homeowners_avg_monthly": 165,
+    "data_source": "Connecticut Insurance Department average rates for $385K home coverage"
+  },
+  "employment": {
+    "min_wage": 15.69,
+    "unemployment_rate": 4.1,
+    "major_industries": "Financial Services, Insurance, Healthcare, Defense/Aerospace, Pharmaceuticals"
+  },
+  "education": {
+    "tuition_public": 16314
+  },
+  "banking": {
+    "avg_monthly_fee": 13,
+    "avg_overdraft_fee": 35,
+    "credit_union_association_url": "https://www.ccul.org",
+    "minor_banking_rules": "Minors can open joint accounts with parent/guardian. Custodial accounts (UTMA) available."
+  },
+  "consumer_protection": {
+    "consumer_protection_agency": "Connecticut Department of Consumer Protection",
+    "consumer_protection_url": "https://portal.ct.gov/dcp"
+  },
+  "calculated_values": {
+    "state_tax_on_3500_monthly": 245,
+    "calculated_state_tax_70k": 4893,
+    "total_effective_rate": 21.0,
+    "take_home_pay_70k": 49952,
+    "property_tax_300k": 6390,
+    "state_withholding_48k_monthly": 280
+  },
+  "local_examples": {
+    "major_retailers": "Stop & Shop, ShopRite, Stew Leonard's, Walmart, Target",
+    "telecom_providers": "Frontier, Optimum/Altice, Comcast, T-Mobile, Verizon",
+    "utility_providers": "Eversource, United Illuminating, Connecticut Natural Gas",
+    "healthcare_market": "Yale New Haven Health, Hartford HealthCare, Trinity Health",
+    "local_credit_union_name": "Nutmeg State Financial Credit Union",
+    "local_nonprofit_name": "Connecticut Food Bank",
+    "major_city": "Hartford",
+    "major_city_1": "Hartford",
+    "major_city_2": "New Haven",
+    "major_city_3": "Stamford",
+    "major_city_1_millage": 74.29,
+    "major_city_2_millage": 43.88,
+    "major_city_3_millage": 25.68,
+    "suburb_city": "West Hartford",
+    "suburb_1": "West Hartford",
+    "suburb_2": "Glastonbury",
+    "suburb_1_millage": 41.52,
+    "suburb_2_millage": 35.68,
+    "rural_area": "Litchfield Hills",
+    "rural_area_millage": 22.5,
+    "high_tax_city": "Hartford",
+    "medium_tax_city": "New Haven",
+    "low_tax_city": "Greenwich",
+    "high_tax_major_city": "Hartford",
+    "low_tax_medium_city": "Greenwich",
+    "high_tax_millage": 74.29,
+    "medium_tax_millage": 43.88,
+    "low_tax_millage": 11.59,
+    "high_combined_sales_tax": 6.35,
+    "low_combined_sales_tax": 6.35,
+    "high_local_sales_tax": 0,
+    "low_local_sales_tax": 0,
+    "local_sales_tax_1": 0,
+    "total_millage_example": 74.29,
+    "high_local_income_tax_rate": 0,
+    "low_local_income_tax_rate": 0,
+    "local_income_tax_rate": 0,
+    "local_income_tax_rate_1": 0
+  },
+  "notes": "Connecticut has among the highest property taxes in the nation, especially in cities. No county government - all services provided by municipalities. State has high income taxes with graduated rates up to 6.99%. Hartford is the insurance capital of America. Fairfield County is essentially a NYC suburb with extreme housing costs. State has lost population due to high cost of living."
+}

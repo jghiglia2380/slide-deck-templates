@@ -1,0 +1,145 @@
+{
+  "state_name": "Maine",
+  "state_code": "ME",
+  "last_updated": "2025-11-21",
+  "data_sources": {
+    "dmv_url": "https://www.maine.gov/sos/bmv",
+    "tax_authority_url": "https://www.maine.gov/revenue",
+    "labor_department_url": "https://www.maine.gov/labor",
+    "education_department_url": "https://www.maine.edu",
+    "consumer_protection_url": "https://www.maine.gov/ag/consumer/index.shtml",
+    "property_tax_assessor_url": "https://www.maine.gov/revenue/taxes/property-tax"
+  },
+  "automotive": {
+    "registration_initial": 35,
+    "registration_annual": 35,
+    "avg_auto_loan_rate_new": 6.65,
+    "avg_auto_loan_rate_used": 7.41,
+    "insurance_avg_teen": 265,
+    "insurance_comparison_url": "https://www.maine.gov/pfr/insurance",
+    "lease_acquisition_fee": 595,
+    "inspection_required": true,
+    "inspection_cost": 12.50,
+    "gas_price_current": 3.25,
+    "dmv_url": "https://www.maine.gov/sos/bmv"
+  },
+  "taxes": {
+    "income_tax_rate": 7.15,
+    "sales_tax": 5.5,
+    "local_sales_tax_min": 0,
+    "local_sales_tax_max": 0,
+    "combined_sales_tax_min": 5.5,
+    "combined_sales_tax_max": 5.5,
+    "local_sales_tax_examples": [
+      {"city": "Portland", "local_rate": 0, "combined_rate": 5.5},
+      {"city": "Lewiston", "local_rate": 0, "combined_rate": 5.5},
+      {"city": "Bangor", "local_rate": 0, "combined_rate": 5.5}
+    ],
+    "allows_local_income_tax": false,
+    "local_income_tax_range": "N/A",
+    "local_income_tax_rate_low": 0,
+    "local_income_tax_rate_high": 0,
+    "local_income_tax_example": "N/A",
+    "property_tax_county_rate": 0.20,
+    "property_tax_school_rate": 0.80,
+    "property_tax_special_rate": 0.10,
+    "property_tax_city_range": "1.0 - 2.5%",
+    "property_tax_examples": [
+      {"location": "Portland", "millage": 22.83, "description": "Largest city - higher taxes"},
+      {"location": "Lewiston", "millage": 31.32, "description": "Second city - high taxes"},
+      {"location": "Bangor", "millage": 25.45, "description": "Northern Maine"},
+      {"location": "Scarborough", "millage": 18.25, "description": "Portland suburb"}
+    ],
+    "assessment_percentage": 100,
+    "homestead_exemption": 25000,
+    "property_assessment_frequency": "Varies by municipality",
+    "assessment_appeal_process": "File abatement application with municipal assessor within 185 days of tax commitment.",
+    "assessment_appeal_deadline": "185 days after tax commitment",
+    "assessment_appeal_form_url": "https://www.maine.gov/revenue/taxes/property-tax",
+    "has_tax_cap": false,
+    "county_name": "Cumberland County",
+    "county_assessor_contact": "Portland Assessor's Office - (207) 874-8486",
+    "county_tax_assessor_url": "https://www.portlandmaine.gov/210/Assessor",
+    "property_tax_lookup_url": "https://www.maine.gov/revenue/taxes/property-tax",
+    "tax_incentives": "NextGen 529 (state tax deduction), Homestead Exemption, Property Tax Fairness Credit",
+    "tax_structure": "Graduated income tax up to 7.15% (one of highest in nation), moderate sales tax, high property taxes especially for coastal areas."
+  },
+  "housing": {
+    "median_home_price": 365000,
+    "median_rent": 1425,
+    "housing_market_trends": "Strong demand in southern Maine and coastal areas from remote workers. Portland expensive. Northern Maine more affordable.",
+    "first_time_homebuyer_program": "MaineHousing - First Home Loan Program with down payment assistance",
+    "avg_mortgage_rate_30yr": 7.10
+  },
+  "insurance": {
+    "homeowners_avg_monthly": 115,
+    "data_source": "Maine Bureau of Insurance average rates for $365K home coverage"
+  },
+  "employment": {
+    "min_wage": 14.15,
+    "unemployment_rate": 3.0,
+    "major_industries": "Healthcare, Tourism, Fishing/Seafood, Forest Products, Biotechnology, Defense"
+  },
+  "education": {
+    "tuition_public": 12340
+  },
+  "banking": {
+    "avg_monthly_fee": 11,
+    "avg_overdraft_fee": 33,
+    "credit_union_association_url": "https://www.mainecul.org",
+    "minor_banking_rules": "Minors can open joint accounts with parent/guardian."
+  },
+  "consumer_protection": {
+    "consumer_protection_agency": "Maine Attorney General - Consumer Protection Division",
+    "consumer_protection_url": "https://www.maine.gov/ag/consumer/index.shtml"
+  },
+  "calculated_values": {
+    "state_tax_on_3500_monthly": 250,
+    "calculated_state_tax_70k": 5005,
+    "total_effective_rate": 21.2,
+    "take_home_pay_70k": 49840,
+    "property_tax_300k": 5148,
+    "state_withholding_48k_monthly": 286
+  },
+  "local_examples": {
+    "major_retailers": "Hannaford, Shaw's, Walmart, Target",
+    "telecom_providers": "Spectrum, Consolidated Communications, T-Mobile, Verizon",
+    "utility_providers": "Central Maine Power, Versant Power, Emera Maine",
+    "healthcare_market": "Maine Medical Center, Northern Light Health, MaineGeneral",
+    "local_credit_union_name": "Town & Country Federal Credit Union",
+    "local_nonprofit_name": "Good Shepherd Food Bank",
+    "major_city": "Portland",
+    "major_city_1": "Portland",
+    "major_city_2": "Lewiston",
+    "major_city_3": "Bangor",
+    "major_city_1_millage": 22.83,
+    "major_city_2_millage": 31.32,
+    "major_city_3_millage": 25.45,
+    "suburb_city": "South Portland",
+    "suburb_1": "South Portland",
+    "suburb_2": "Scarborough",
+    "suburb_1_millage": 20.12,
+    "suburb_2_millage": 18.25,
+    "rural_area": "Aroostook County",
+    "rural_area_millage": 15.0,
+    "high_tax_city": "Lewiston",
+    "medium_tax_city": "Portland",
+    "low_tax_city": "Rural Maine",
+    "high_tax_major_city": "Lewiston",
+    "low_tax_medium_city": "Scarborough",
+    "high_tax_millage": 31.32,
+    "medium_tax_millage": 22.83,
+    "low_tax_millage": 15.0,
+    "high_combined_sales_tax": 5.5,
+    "low_combined_sales_tax": 5.5,
+    "high_local_sales_tax": 0,
+    "low_local_sales_tax": 0,
+    "local_sales_tax_1": 0,
+    "total_millage_example": 22.83,
+    "high_local_income_tax_rate": 0,
+    "low_local_income_tax_rate": 0,
+    "local_income_tax_rate": 0,
+    "local_income_tax_rate_1": 0
+  },
+  "notes": "Maine has one of the highest income tax rates in the nation (7.15% top bracket). Property taxes also high, especially in coastal tourist areas. Moderate sales tax. Remote work boom has driven housing costs up in southern Maine and coastal areas. Tourism and lobster industry are major economic drivers. Aging population is demographic challenge."
+}
