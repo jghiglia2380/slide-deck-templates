@@ -1,0 +1,441 @@
+{
+  "metadata": {
+    "lChapter": "L-XX",
+    "title": "Choosing the Right Source of Credit",
+    "subtitle": "Comparing Credit Options for Informed Borrowing Decisions in {{STATE_NAME}}",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Choosing the Right Source of Credit",
+        "titleSize": "large",
+        "subtitle": "Comparing Credit Options for Informed Borrowing Decisions in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": ""
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": []
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Key Terms (continued)",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Understanding Credit Sources",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Where Can You Borrow?",
+            "paragraphs": [
+              "Credit is available from many different sources, each with their own advantages, interest rates, and qualification requirements. in {{STATE_NAME}}"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "rose"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Traditional vs. Alternative Lenders",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          },
+          "rightColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Banks vs. Credit Unions",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Choosing Between Institutions",
+            "paragraphs": [
+              "Both offer similar products, but their structure and priorities differ significantly: in {{STATE_NAME}}"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Factors for Comparison",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "What to Evaluate When Choosing Credit",
+          "paragraphs": [
+            "Always compare multiple lenders using these critical factors before borrowing: in {{STATE_NAME}}",
+            "The true annual cost including interest and fees - the most important comparison factor in {{STATE_NAME}}",
+            "Length of repayment period affects monthly payment and total interest paid in {{STATE_NAME}}",
+            "Application, origination, late payment, and prepayment penalty fees in {{STATE_NAME}}",
+            "Minimum credit score and income documentation needed in {{STATE_NAME}}",
+            "Whether the loan requires security like a home or vehicle in {{STATE_NAME}}",
+            "Options for payment timing, amounts, and hardship programs in {{STATE_NAME}}"
+          ],
+          "bulletPoints": []
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Credit Source Comparison",
+        "layout": "generic",
+        "layoutData": {
+          "paragraphs": [],
+          "lists": []
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Why Your Credit Source Matters",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The High Cost of Wrong Choices",
+            "paragraphs": [
+              "Choosing the wrong credit source can cost you thousands and trap you in debt cycles: in {{STATE_NAME}}"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "rose"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Credit in the Modern Economy",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "How Technology is Changing Borrowing",
+          "paragraphs": [
+            "The credit landscape has evolved significantly with new options and considerations: in {{STATE_NAME}}",
+            "Online-only lenders use AI for faster approvals and may offer competitive rates in {{STATE_NAME}}",
+            "Platforms like LendingClub connect borrowers directly with individual investors in {{STATE_NAME}}",
+            "Short-term installment plans at checkout - often 0% if paid on time in {{STATE_NAME}}",
+            "New tools help build credit history through rent, utilities, and subscriptions in {{STATE_NAME}}"
+          ],
+          "bulletPoints": []
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Scenario: Emergency Car Repair",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "",
+            "name": "",
+            "paragraphs": []
+          },
+          "outcomes": [
+            {
+              "type": "neutral",
+              "label": "",
+              "value": "",
+              "detail": ""
+            },
+            {
+              "type": "neutral",
+              "label": "",
+              "value": "",
+              "detail": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Scenario: Used Car Purchase",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "",
+            "name": "",
+            "paragraphs": []
+          },
+          "outcomes": [
+            {
+              "type": "neutral",
+              "label": "",
+              "value": "",
+              "detail": ""
+            },
+            {
+              "type": "neutral",
+              "label": "",
+              "value": "",
+              "detail": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": ""
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": ""
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What does APR include that a simple interest rate might not, and why is this important for comparing credit options? in {{STATE_NAME}}"
+            },
+            {
+              "number": 2,
+              "question": "Why might a credit union offer better rates than a commercial bank for the same type of loan? in {{STATE_NAME}}"
+            },
+            {
+              "number": 3,
+              "question": "If a payday loan charges $15 per $100 borrowed for two weeks, what is the approximate APR equivalent? in {{STATE_NAME}}"
+            },
+            {
+              "number": 4,
+              "question": "Besides interest rate, what other factors should you consider when choosing between credit sources? in {{STATE_NAME}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "",
+              "description": "Compare APR: Always look at the Annual Percentage Rate to understand the true cost of borrowing, including all fees in {{STATE_NAME}}"
+            },
+            {
+              "number": 2,
+              "title": "",
+              "description": "Shop Around: Get quotes from at least three different lenders before committing to any credit product in {{STATE_NAME}}"
+            },
+            {
+              "number": 3,
+              "title": "",
+              "description": "Avoid Predatory Lenders: Payday loans and title loans should only be a last resort due to extremely high costs in {{STATE_NAME}}"
+            },
+            {
+              "number": 4,
+              "title": "",
+              "description": "Calculate Total Cost: Look beyond monthly payments to understand the total amount you'll repay over the loan term in {{STATE_NAME}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Skill Builder: Comparing Credit Sources",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📋",
+            "title": "",
+            "description": ""
+          },
+          "steps": [
+            "Review the chart of different credit sources and their characteristics in {{STATE_NAME}}",
+            "Analyze each borrowing scenario for amount needed and credit situation in {{STATE_NAME}}",
+            "Match each scenario to the most appropriate credit source in {{STATE_NAME}}",
+            "Calculate the total cost for at least one scenario option in {{STATE_NAME}}",
+            "Reflect on why payday lenders persist despite high costs in {{STATE_NAME}}"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Literacy for Life in {{STATE_NAME}}",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+      }
+    }
+  ]
+}

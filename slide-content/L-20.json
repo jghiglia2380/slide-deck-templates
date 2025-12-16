@@ -1,0 +1,551 @@
+{
+  "metadata": {
+    "lChapter": "L-20",
+    "title": "Longevity & Retirement",
+    "subtitle": "Planning for a Longer Financial Future in {{STATE_NAME}}",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Longevity & Retirement",
+        "titleSize": "large",
+        "subtitle": "Planning for a Longer Financial Future in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question in {{STATE_NAME}}",
+        "question": "How do you plan financially for a retirement that could last <em>20, 30, or even 40 years</em>? in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Understand",
+              "description": "Recognize the importance of planning for retirement early, and how starting young provides enormous advantages through compounding."
+            },
+            {
+              "number": 2,
+              "verb": "Identify",
+              "description": "Explain key factors in retirement planning: life expectancy, time horizon, inflation, and income needs during retirement years."
+            },
+            {
+              "number": 3,
+              "verb": "Explore",
+              "description": "Analyze strategies to address potential retirement income shortfalls and manage longevity risk effectively."
+            },
+            {
+              "number": 4,
+              "verb": "Apply",
+              "description": "Understand how compounding works and develop personal strategies for building retirement savings over time."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Life Expectancy in {{STATE_NAME}}",
+              "definition": "How long individuals are expected to live, based on statistical averages, family history, and health factors.",
+              "example": "A 65-year-old today can expect to live into their mid-80s on average, with many living to 90+"
+            },
+            {
+              "term": "Longevity Risk in {{STATE_NAME}}",
+              "definition": "The risk that individuals will live longer than expected and run out of money during retirement.",
+              "example": "Plan for savings to last 25-30+ years while protecting against outliving your money"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Time Horizon in {{STATE_NAME}}",
+              "definition": "The number of years until retirement savings are needed; longer horizons allow for more aggressive investing.",
+              "example": "A 22-year-old has a 43-year time horizon until age 65 - plenty of time to grow wealth"
+            },
+            {
+              "term": "Retirement Income Shortfall in {{STATE_NAME}}",
+              "definition": "When retirement savings are insufficient to maintain desired lifestyle; the gap between what you have and what you need.",
+              "example": "Start early, save consistently, invest wisely, and adjust plans as circumstances change"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "The Impact of Living Longer",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Retirement Is Getting Longer",
+            "paragraphs": [
+              "Life expectancy has increased dramatically over the past century. Today, a <strong>65-year-old can expect to live into their mid-80s</strong>, with many living well into their 90s or beyond.",
+              "This extended lifespan means retirement savings may need to last <strong>20, 30, or even 40 years</strong>—far longer than previous generations planned for."
+            ],
+            "highlightBox": {
+              "icon": "\ud83d",
+              "text": "\udca1 The traditional 10-15 year retirement has evolved into potentially 20-30+ years, requiring substantially more savings."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "85+ in {{STATE_NAME}}",
+                "label": "Average Life Expectancy at 65 in {{STATE_NAME}}",
+                "color": "teal"
+              },
+              {
+                "value": "30 yrs in {{STATE_NAME}}",
+                "label": "Potential Retirement Length in {{STATE_NAME}}",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Implications of Longer Life:",
+              "color": "blue",
+              "items": [
+                "More years to fund with savings",
+                "Higher lifetime healthcare costs",
+                "More time for inflation to erode purchasing power",
+                "Social Security may not fully support you"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "The Power of Starting Early",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "",
+            "title": "⏰ Jordan Waits",
+            "items": [
+              "Starts at age 31",
+              "Invests $2,000/year for 35 years",
+              "Total invested: $70,000",
+              "Value at 65: ~$283,000",
+              "More money invested",
+              "Less time for compounding"
+            ]
+          },
+          "rightColumn": {
+            "icon": "\ud83d",
+            "title": "\ude80 Morgan Starts Early",
+            "items": [
+              "Starts at age 22",
+              "Invests $2,000/year for 9 years only",
+              "Total invested: $18,000",
+              "Value at 65: ~$243,000",
+              "Less money invested",
+              "Maximum time for compounding"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Time Is Your Greatest Asset",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Compounding: The Snowball Effect",
+            "paragraphs": [
+              "Compounding occurs when your investment returns <strong>generate their own returns</strong>, creating exponential growth over time.",
+              "Morgan invested only $18,000 but ended up with nearly as much as Jordan who invested $70,000. Why? Because Morgan's money had <strong>more time to compound</strong>."
+            ],
+            "highlightBox": {
+              "icon": "\ud83c",
+              "text": "\udfaf Starting 9 years earlier with less money nearly matched investing 4x more but starting later. Time beats money!"
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$18K in {{STATE_NAME}}",
+                "label": "Morgan Invested in {{STATE_NAME}}",
+                "color": "green"
+              },
+              {
+                "value": "$70K in {{STATE_NAME}}",
+                "label": "Jordan Invested in {{STATE_NAME}}",
+                "color": "rose"
+              }
+            ],
+            "infoCard": {
+              "title": "Compounding Magic at 7% Return:",
+              "color": "green",
+              "items": [
+                "Year 10: Money nearly doubles",
+                "Year 20: Money quadruples",
+                "Year 30: Money grows 8x",
+                "Year 40: Money grows 15x+"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Inflation: The Silent Retirement Threat",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Your Money Loses Value Over Time",
+          "paragraphs": [
+            "Inflation represents one of the most significant challenges to retirement planning. Even modest inflation rates can <strong>substantially reduce purchasing power</strong> over an extended retirement period."
+          ],
+          "bulletPoints": [
+            "<strong>At 3% inflation:</strong> $100 today = $55 purchasing power in 20 years",
+            "<strong>In 20 years:</strong> What costs $100 today will cost about $181",
+            "<strong>In 30 years:</strong> What costs $100 today will cost about $243",
+            "<strong>Rule of 72:</strong> Prices double approximately every 24 years at 3% inflation"
+          ],
+          "keyPoint": {
+            "text": "💰 A 25-year retirement means you'll need nearly twice as much income at age 90 as at age 65 just to maintain the same lifestyle!"
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Addressing Retirement Income Shortfalls",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Managing Longevity Risk",
+            "paragraphs": [
+              "One of the greatest risks in retirement is <strong>outliving your savings</strong>. Several strategies can help address potential income shortfalls:"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "+2 yrs in {{STATE_NAME}}",
+                "label": "Delayed Retirement Benefits in {{STATE_NAME}}",
+                "color": "teal"
+              },
+              {
+                "value": "15%+ in {{STATE_NAME}}",
+                "label": "Target Savings Rate in {{STATE_NAME}}",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Benefits of Delaying Retirement:",
+              "color": "amber",
+              "items": [
+                "More years to save and invest",
+                "Fewer years to fund in retirement",
+                "Higher Social Security benefits",
+                "Extended employer health coverage"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Why This Matters Now",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "The Decisions You Make Today Shape Your Tomorrow",
+          "paragraphs": [
+            "Understanding longevity and retirement planning while you're young gives you <strong>the greatest advantage possible</strong>: time. The earlier you start, the easier it is to build wealth."
+          ],
+          "bulletPoints": [
+            "<strong>40+ years of compounding:</strong> Starting at 22 vs 32 can double your retirement savings",
+            "<strong>Habit formation:</strong> Establishing saving habits early makes them automatic",
+            "<strong>Flexibility:</strong> More time allows you to recover from market downturns",
+            "<strong>Lower required savings:</strong> Starting early means smaller monthly contributions",
+            "<strong>Employer match:</strong> Never pass up free money from 401(k) matching",
+            "<strong>Tax advantages:</strong> Roth IRAs provide tax-free growth over decades"
+          ]
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Factors Affecting Life Expectancy",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Planning for YOUR Longevity",
+            "paragraphs": [
+              "Life expectancy varies based on numerous factors. Understanding these can help you make <strong>more accurate projections</strong> for your retirement planning.",
+              "Consider your personal circumstances across these dimensions when developing your retirement strategy."
+            ],
+            "highlightBox": {
+              "icon": "\ud83c",
+              "text": "\udfe5 These factors affect both how long you'll live AND your healthcare costs in retirement—plan accordingly."
+            }
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "Health & Lifestyle:",
+              "color": "blue",
+              "items": [
+                "Diet and nutrition habits",
+                "Exercise and physical activity",
+                "Smoking/alcohol consumption",
+                "Stress management"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👵 in {{STATE_NAME}}",
+            "name": "Keisha's Grandmother: Financial Security at 90 in {{STATE_NAME}}",
+            "paragraphs": [
+              "Keisha's grandmother lived to be <strong>90 years old</strong>—significantly longer than the average life expectancy for her generation. Through careful planning and smart investments, she maintained financial security until the end.",
+              "Her winning strategy:"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "Started Early in {{STATE_NAME}}",
+              "value": "Age 30 in {{STATE_NAME}}",
+              "detail": "Unusual for her generation in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "Stayed Consistent in {{STATE_NAME}}",
+              "value": "60 Years in {{STATE_NAME}}",
+              "detail": "Never stopped investing in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "Result in {{STATE_NAME}}",
+              "value": "Secure in {{STATE_NAME}}",
+              "detail": "Financial security to age 90 in {{STATE_NAME}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👨‍💼 in {{STATE_NAME}}",
+            "name": "Micah's Long-Term Planning at Age 25 in {{STATE_NAME}}",
+            "paragraphs": [
+              "Micah, at age 25, has already begun planning for retirement, recognizing that his generation may <span class=\"highlight-text\">live even longer than previous ones</span>. He anticipates retiring at 65 and potentially living until 90—meaning retirement could last <strong>25 years or more</strong>.",
+              "His comprehensive strategy:"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "Time Horizon in {{STATE_NAME}}",
+              "value": "40 Years in {{STATE_NAME}}",
+              "detail": "Maximum compounding time in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "Expected Retirement in {{STATE_NAME}}",
+              "value": "25+ Years in {{STATE_NAME}}",
+              "detail": "Planning for longevity in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "Approach in {{STATE_NAME}}",
+              "value": "Flexible in {{STATE_NAME}}",
+              "detail": "Plan will evolve with life in {{STATE_NAME}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion in {{STATE_NAME}}",
+        "question": "What specific strategies did Keisha's grandmother and Micah use that you could apply to your own retirement planning?<br><br>How does starting in your 20s vs. your 40s change your options? in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection in {{STATE_NAME}}",
+        "question": "Why is it important to start thinking about retirement planning even in high school?<br><br>How might your career choices and lifestyle habits today affect your financial security 50 years from now? in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What is longevity risk, and why is it increasingly important for retirement planning?"
+            },
+            {
+              "number": 2,
+              "question": "Why did Morgan end up with almost as much money as Jordan despite investing only $18,000 vs. $70,000?"
+            },
+            {
+              "number": 3,
+              "question": "How does inflation affect the purchasing power of retirement savings over a 30-year retirement?"
+            },
+            {
+              "number": 4,
+              "question": "Name three strategies for addressing potential retirement income shortfalls."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Retirement Is Longer",
+              "description": "Today's retirees may need savings to last 20-30+ years—far longer than previous generations planned for"
+            },
+            {
+              "number": 2,
+              "title": "Time Beats Money",
+              "description": "Starting early with small amounts outperforms starting later with larger amounts—compounding is powerful"
+            },
+            {
+              "number": 3,
+              "title": "Inflation Is Silent",
+              "description": "At 3% inflation, purchasing power is cut in half over 24 years—plan for rising costs throughout retirement"
+            },
+            {
+              "number": 4,
+              "title": "Multiple Strategies Exist",
+              "description": "Delay retirement, increase savings, adjust lifestyle, and invest strategically to manage longevity risk"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Student Activity",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "\ud83d",
+            "title": "\udcca Life Expectancy & Retirement Analysis",
+            "description": "Analyze life expectancy data across different countries and factors, then consider how this analysis applies to your own retirement planning. Reflect on how <strong>healthcare spending, lifestyle choices, and environmental factors</strong> might influence both your longevity and retirement needs."
+          },
+          "steps": [
+            "Review the life expectancy data chart",
+            "Identify patterns between factors and longevity",
+            "Apply insights to your personal situation",
+            "Write reflection on how you'd adjust planning",
+            "Discuss how lifestyle choices impact retirement"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time in {{STATE_NAME}}",
+        "website": "www.pflacademy.co in {{STATE_NAME}}",
+        "copyright": "© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+      }
+    }
+  ]
+}

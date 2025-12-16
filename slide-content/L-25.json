@@ -1,0 +1,416 @@
+{
+  "metadata": {
+    "lChapter": "L-25",
+    "title": "UnderstandingStudent Loans",
+    "subtitle": "Financing Your Future Wisely",
+    "totalSlides": 20,
+    "hasStateVariables": false,
+    "stateVariablesUsed": []
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "UnderstandingStudent Loans",
+        "titleSize": "large",
+        "subtitle": "Financing Your Future Wisely"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": ""
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Understand",
+              "description": "The key differences between federal and private student loans and their respective benefits"
+            },
+            {
+              "number": 2,
+              "verb": "Analyze",
+              "description": "The long-term financial implications of different student loan decisions"
+            },
+            {
+              "number": 3,
+              "verb": "Learn",
+              "description": "Strategies for managing student loan debt responsibly before and after graduation"
+            },
+            {
+              "number": 4,
+              "verb": "Explore",
+              "description": "Real-world examples and case studies of student loan management approaches"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Federal Student Loans",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The Smart First Choice",
+            "paragraphs": [
+              "Federal loans offer significant advantages for most borrowers:"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Federal vs. Private Loans",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          },
+          "rightColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Understanding Interest Rates",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The True Cost of Borrowing",
+            "paragraphs": [
+              "Interest is what makes a $30,000 loan cost far more over time:",
+              "Subsidized: Government pays interest while in school<br>Unsubsidized: Interest accrues from day one",
+              "Fixed: Rate stays the same forever<br>Variable: Rate can increase over time"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "rose"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Federal Loan Repayment Options",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Flexibility When You Need It",
+          "paragraphs": [
+            "Federal loans offer multiple repayment paths designed to fit your financial situation after graduation.",
+            "Fixed payments over 10 years. Highest monthly payment but lowest total cost.",
+            "Payments based on income (5-20%). Remaining balance forgiven after 20-25 years.",
+            "Payments start low and increase every 2 years. Good if you expect salary growth.",
+            "Lower monthly payments over 25 years. Higher total interest paid."
+          ],
+          "bulletPoints": []
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Smart Borrowing Strategies",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Borrow Less, Stress Less",
+            "paragraphs": [],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Why Student Loan Knowledge Matters",
+        "layout": "generic",
+        "layoutData": {
+          "paragraphs": [
+            "Loan decisions made at 18 can affect your finances for 20+ years after graduation",
+            "Lower debt gives you freedom to pursue careers you love, not just high-paying jobs",
+            "Student debt can delay buying a home, starting a family, or saving for retirement",
+            "Manageable debt levels contribute to better financial wellness and less anxiety"
+          ],
+          "lists": []
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "The Student Loan Landscape Today",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "A National Challenge",
+            "paragraphs": [
+              "Student loan debt is now the second-largest category of consumer debt in America, trailing only mortgages."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Case Study: Alex's Smart Strategy",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "",
+            "name": "",
+            "paragraphs": []
+          },
+          "outcomes": []
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Case Study: Jordan's Mixed Approach",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "",
+            "name": "",
+            "paragraphs": []
+          },
+          "outcomes": []
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": ""
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": ""
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": []
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": []
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Skill Builder: College Budget Planning",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📋",
+            "title": "",
+            "description": ""
+          },
+          "steps": []
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Smart borrowing today means financial freedom tomorrow",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

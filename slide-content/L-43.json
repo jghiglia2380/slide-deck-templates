@@ -1,0 +1,481 @@
+{
+  "metadata": {
+    "lChapter": "L-43",
+    "title": "Job ApplicationProcess",
+    "subtitle": "From Finding Opportunities to Landing Interviews in {{STATE_NAME}}",
+    "totalSlides": 18,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Job ApplicationProcess",
+        "titleSize": "large",
+        "subtitle": "From Finding Opportunities to Landing Interviews in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question in {{STATE_NAME}}",
+        "question": "If <em>70-80% of jobs</em> are never publicly advertised,<br>how can you access the <em>hidden job market</em><br>and stand out in a competitive application process? in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Discover",
+              "description": "Identify effective strategies for finding job opportunities across different industries and channels."
+            },
+            {
+              "number": 2,
+              "verb": "Interpret",
+              "description": "Learn how to read and decode job descriptions to understand true requirements and expectations."
+            },
+            {
+              "number": 3,
+              "verb": "Customize",
+              "description": "Develop techniques for tailoring application materials for specific positions and companies."
+            },
+            {
+              "number": 4,
+              "verb": "Navigate",
+              "description": "Learn best practices for online applications and Applicant Tracking Systems (ATS)."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Applicant Tracking System (ATS) in {{STATE_NAME}}",
+              "definition": "Software used by employers to collect, sort, scan, and filter job applications based on keywords and qualifications.",
+              "example": "Up to 75% of resumes are filtered out by ATS before a human ever sees them"
+            },
+            {
+              "term": "Keywords in {{STATE_NAME}}",
+              "definition": "Specific terms in job descriptions that highlight required skills, qualifications, and experience that ATS scans for.",
+              "example": "\"Project management,\" \"JavaScript,\" \"Customer service,\" \"Leadership,\" \"Budget analysis\""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Cover Letter in {{STATE_NAME}}",
+              "definition": "A document submitted alongside a resume that introduces the applicant and highlights relevant qualifications.",
+              "example": "Explains WHY you want this job and HOW your experience makes you the ideal candidate"
+            },
+            {
+              "term": "Networking in {{STATE_NAME}}",
+              "definition": "Building professional relationships to exchange information, advice, support, and job referrals.",
+              "example": "~70% of people land jobs through networking connections rather than applications alone"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "The Job Application Process",
+        "layout": "generic",
+        "layoutData": {
+          "paragraphs": [
+            "Identify opportunities through multiple channels",
+            "Analyze requirements and company culture",
+            "Tailor resume and cover letter",
+            "Apply through appropriate channels",
+            "Send professional thank-you and inquiry",
+            "Prepare and present yourself",
+            "Evaluate offers and negotiate"
+          ],
+          "lists": []
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Strategic Job Search Methods",
+        "layout": "generic",
+        "layoutData": {
+          "paragraphs": [],
+          "lists": [
+            [
+              "<strong>General:</strong> Indeed, LinkedIn, Monster, ZipRecruiter",
+              "<strong>Industry-Specific:</strong> Dice (tech), Health eCareers",
+              "<strong>Company Career Pages:</strong> Direct applications",
+              "Set up job alerts with keywords"
+            ],
+            [
+              "Professional associations",
+              "Alumni networks",
+              "Informational interviews",
+              "Job fairs and career events",
+              "LinkedIn connections"
+            ],
+            [
+              "Recruitment agencies",
+              "Internships/volunteering",
+              "Social media following",
+              "Cold outreach to companies",
+              "Professional forums/blogs"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "The Hidden Job Market",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Why Networking Matters Most",
+            "paragraphs": [
+              "Approximately <strong>70-80% of jobs are never publicly advertised</strong>. These positions are filled through:",
+              "• Internal promotions and referrals",
+              "• Professional network connections",
+              "• Direct outreach from candidates",
+              "• Recruiter relationships"
+            ],
+            "highlightBox": {
+              "icon": "\ud83d",
+              "text": "\udca1 Networking isn't just helpful—it's essential for accessing the majority of opportunities!"
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "70-80% in {{STATE_NAME}}",
+                "label": "Jobs never publicly posted in {{STATE_NAME}}",
+                "color": "rose"
+              },
+              {
+                "value": "70% in {{STATE_NAME}}",
+                "label": "Jobs landed through networking in {{STATE_NAME}}",
+                "color": "green"
+              },
+              {
+                "value": "40% in {{STATE_NAME}}",
+                "label": "Higher chance with referral in {{STATE_NAME}}",
+                "color": "purple"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Decoding Job Descriptions",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Key Components to Analyze",
+          "paragraphs": [],
+          "bulletPoints": [
+            "<strong>Job Title</strong> – Official name of the position",
+            "<strong>Company Overview</strong> – Brief description of organization",
+            "<strong>Job Summary</strong> – Overview of the role's purpose",
+            "<strong>Responsibilities</strong> – Day-to-day tasks and expectations",
+            "<strong>Required Qualifications</strong> – Must-have education, experience, skills",
+            "<strong>Preferred Qualifications</strong> – Nice-to-have but not mandatory",
+            "<strong>Compensation &amp; Benefits</strong> – Salary range (not always included)",
+            "<strong>Application Instructions</strong> – How to apply and what to submit"
+          ],
+          "keyPoint": {
+            "text": "📌 Rule of Thumb: Apply if you meet ~70-80% of the requirements, especially the essential ones. Don't self-select out!"
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Customizing Your Application",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Resume Customization",
+            "paragraphs": [
+              "<strong>1. Prioritize Experience:</strong> Rearrange sections to highlight most relevant experience first",
+              "<strong>2. Integrate Keywords:</strong> Incorporate exact terms from the job description",
+              "<strong>3. Align Achievements:</strong> Emphasize accomplishments that demonstrate required skills",
+              "<strong>4. Tailor Summary:</strong> Customize your professional summary for each position"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Navigating Applicant Tracking Systems",
+        "layout": "generic",
+        "layoutData": {
+          "paragraphs": [],
+          "lists": [
+            [
+              "Simple, clean layouts",
+              "Standard section headings",
+              "Common fonts (Arial, Calibri)",
+              "Avoid tables and text boxes"
+            ],
+            [
+              "Include exact keywords from job description",
+              "Use both spelled-out and acronyms",
+              "Place keywords in context",
+              "Don't stuff or overuse terms"
+            ],
+            [
+              "Use .docx or .pdf (check instructions)",
+              "Professional file name",
+              "\"JohnSmith_Resume.pdf\"",
+              "Avoid special characters"
+            ],
+            [
+              "Complete ALL required fields",
+              "Answer all questions",
+              "Submit all documents",
+              "Double-check before submitting"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Professional Follow-Up",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Why Follow Up?",
+            "paragraphs": [
+              "Professional follow-up demonstrates your continued interest and proactive attitude.",
+              "<strong>Timing:</strong> Wait 1-2 weeks after the application deadline",
+              "<strong>Method:</strong> Email is typically most appropriate",
+              "<strong>Tone:</strong> Polite, brief, and professional",
+              "<strong>Content:</strong> Reference specific position, express interest, offer additional info"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "💻 in {{STATE_NAME}}",
+            "name": "Alex: Strategic Job Search Approach in {{STATE_NAME}}",
+            "paragraphs": [
+              "Alex, a recent computer science graduate, wanted a junior software developer position. Instead of randomly applying, he implemented a <span class=\"highlight-text\">strategic approach</span>:",
+              "<strong>Research:</strong> Identified companies known for mentoring junior developers.",
+              "<strong>Multi-Channel Search:</strong> Created alerts on 3 job boards, followed 15 target companies on LinkedIn, joined 2 local tech meetups.",
+              "<strong>Customization:</strong> For TechStart Inc., analyzed the job description, tailored resume to highlight relevant projects, and connected with an employee at a meetup."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "Strategy Used in {{STATE_NAME}}",
+              "value": "Multi-Channel in {{STATE_NAME}}",
+              "detail": "Job boards + networking + direct in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "Applicants in {{STATE_NAME}}",
+              "value": "200+ in {{STATE_NAME}}",
+              "detail": "For the same position in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "Result in {{STATE_NAME}}",
+              "value": "Job Offer! in {{STATE_NAME}}",
+              "detail": "Within 2 weeks in {{STATE_NAME}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "📊 in {{STATE_NAME}}",
+            "name": "Maya: ATS Optimization Success in {{STATE_NAME}}",
+            "paragraphs": [
+              "Maya was applying for a digital marketing coordinator position with a major retail company. Knowing they used an ATS, she employed these strategies:",
+              "<strong>Formatting:</strong> Used clean template without graphics, standard sections, named file \"Maya_Johnson_Marketing_Coordinator_Resume.docx\"",
+              "<strong>Keywords:</strong> Incorporated exact terms: <span class=\"highlight-text\">\"social media management,\" \"campaign analytics,\" \"content creation,\" \"SEO\"</span>",
+              "<strong>Quantified Results:</strong> \"Increased Instagram engagement by 32%\", \"Managed $5,000 monthly ad budget with 45% CTR increase\""
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "ATS Strategy in {{STATE_NAME}}",
+              "value": "Keywords + Clean Format in {{STATE_NAME}}",
+              "detail": "Passed initial screening in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "Follow-Up in {{STATE_NAME}}",
+              "value": "Week 2 in {{STATE_NAME}}",
+              "detail": "Professional email sent in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "Outcome in {{STATE_NAME}}",
+              "value": "Interview Secured in {{STATE_NAME}}",
+              "detail": "Manager praised her approach in {{STATE_NAME}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion in {{STATE_NAME}}",
+        "question": "What specific obstacles might YOU face in the job application process?<br><br>How could you proactively address challenges like experience gaps, competitive industries, or limited networking connections? in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 16,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Multi-Channel Search",
+              "description": "Use job boards, networking, company sites, and recruiters—most jobs are never posted publicly"
+            },
+            {
+              "number": 2,
+              "title": "Decode & Customize",
+              "description": "Analyze job descriptions for keywords and tailor every application to the specific position"
+            },
+            {
+              "number": 3,
+              "title": "Optimize for ATS",
+              "description": "Use standard formatting, include keywords, and follow all application instructions carefully"
+            },
+            {
+              "number": 4,
+              "title": "Follow Up Professionally",
+              "description": "A polite follow-up shows continued interest and helps you stand out from other applicants"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Student Activity",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "\ud83d",
+            "title": "\udccb Application Simulator",
+            "description": "Use the Application Simulator skill builder to practice navigating a realistic online application interface. Experience how an ATS processes applications and receive feedback on your effectiveness in tailoring materials and using keywords."
+          },
+          "steps": [
+            "Select a sample job description to analyze",
+            "Identify required vs. preferred qualifications",
+            "Highlight keywords that appear multiple times",
+            "Complete the simulated application with tailored materials",
+            "Review feedback and refine your approach"
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time in {{STATE_NAME}}",
+        "website": "www.pflacademy.co in {{STATE_NAME}}",
+        "copyright": "© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+      }
+    }
+  ]
+}

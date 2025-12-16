@@ -1,0 +1,522 @@
+{
+  "metadata": {
+    "lChapter": "L-67",
+    "title": "Investment Technology &Behavioral Investing",
+    "subtitle": "Choosing the Right Platform and Mastering Your Psychology",
+    "totalSlides": 20,
+    "hasStateVariables": false,
+    "stateVariablesUsed": []
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Investment Technology &Behavioral Investing",
+        "titleSize": "large",
+        "subtitle": "Choosing the Right Platform and Mastering Your Psychology"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": "You have $5,000 to invest. The market drops <em>15%</em> in two weeks.<br>Your portfolio is now worth <em>$4,250</em>.<br>What do you do?"
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Evaluate",
+              "description": "Compare investment platforms: robo-advisors, online brokerages, and investment apps for different needs."
+            },
+            {
+              "number": 2,
+              "verb": "Analyze",
+              "description": "Identify how behavioral biases affect investment decisions and your personal susceptibility."
+            },
+            {
+              "number": 3,
+              "verb": "Compare",
+              "description": "Weigh costs, benefits, and appropriate use cases for robo-advisors vs. DIY investing."
+            },
+            {
+              "number": 4,
+              "verb": "Apply",
+              "description": "Create rules-based systems that counter emotional decision-making during market volatility."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms: Technology",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Robo-Advisor",
+              "definition": "Automated service using algorithms to build and manage your portfolio based on goals and risk tolerance.",
+              "example": "Betterment, Wealthfront, Vanguard Digital Advisor. Fee: 0.25%-0.50%/year."
+            },
+            {
+              "term": "Online Brokerage",
+              "definition": "Platform where YOU buy and sell investments yourself with full control over decisions.",
+              "example": "Fidelity, Charles Schwab, E*TRADE. $0 commissions for stocks/ETFs."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms: Behavioral Biases",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Loss Aversion",
+              "definition": "Losses feel about 2x more painful than equivalent gains feel good.",
+              "example": "You hold losers too long hoping to recover, sell winners too quickly to lock in gains."
+            },
+            {
+              "term": "Recency Bias",
+              "definition": "Overweighting recent events and assuming current trends will continue forever.",
+              "example": "Buy high after markets rise, panic sell low after declines. Classic wealth destroyer!"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Three Types of Investment Platforms",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          },
+          "rightColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Platform Costs: What You Actually Pay",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "$10,000 Invested for 30 Years @ 7%",
+            "paragraphs": [
+              "<strong>Robo-Advisor (0.40% total fees):</strong><br> Ending Value: ~$70,000<br> Fees Paid: ~$14,000 over 30 years",
+              "<strong>DIY Index Funds (0.08% fees):</strong><br> Ending Value: ~$74,000<br> Fees Paid: ~$3,000 over 30 years",
+              "<strong>Difference: $4,000</strong> over 30 years. Is automation + behavioral protection worth it? That's personal."
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "⚠️ \"Free\" apps with $3/month subscriptions on $500 = 7.2% annual fee! Watch for hidden costs."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "0.25%",
+                "label": "Typical Robo-Advisor Fee",
+                "color": "teal"
+              },
+              {
+                "value": "0.03%",
+                "label": "Lowest Index Fund Fees",
+                "color": "purple"
+              },
+              {
+                "value": "7.2%",
+                "label": "$3/mo on $500 (App Trap!)",
+                "color": "rose"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "The Four Wealth-Destroying Biases",
+        "layout": "generic",
+        "layoutData": {
+          "paragraphs": [
+            "Losing $100 hurts 2x as much as gaining $100 feels good. You hold losers hoping they recover, sell winners too fast.",
+            "Assuming recent trends continue forever. Market up 5 years? \"It'll never fall!\" Market crashed? \"It'll never recover!\"",
+            "Seeking only information that confirms your beliefs. Love a stock? You only read positive news, ignore warnings.",
+            "Following the crowd. \"Everyone's buying crypto!\" \"Everyone's selling!\" FOMO and fear drive terrible decisions."
+          ],
+          "lists": []
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Why Behavioral Biases Cost You Real Money",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The Investor Behavior Gap",
+            "paragraphs": [
+              "Research consistently shows investors underperform the investments they own:",
+              "<strong>S&amp;P 500 Returns:</strong> 10.7% annually (1992-2021)",
+              "<strong>Average Equity Investor:</strong> 7.1% annually",
+              "<strong>Gap: 3.6 percentage points</strong> lost to behavioral mistakes.",
+              "This gap comes almost entirely from buying high (after markets rise) and selling low (after markets fall)—exactly what biases cause."
+            ],
+            "highlightBox": {
+              "icon": "\ud83d",
+              "text": "\udca1 Understanding YOUR biases can recover those lost percentage points. Psychology matters more than platform choice!"
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "10.7%",
+                "label": "Market Returns (S&P 500)",
+                "color": "green"
+              },
+              {
+                "value": "7.1%",
+                "label": "Avg Investor Returns",
+                "color": "rose"
+              }
+            ],
+            "infoCard": {
+              "title": "On $500/mo for 30 years:",
+              "color": "amber",
+              "items": [
+                "At 10.7%: $1,180,000",
+                "At 7.1%: $640,000",
+                "Lost to biases: $540,000"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Build Systems to Counter Your Biases",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Rules-Based Investing Beats Emotional Investing",
+          "paragraphs": [
+            "Create rules BEFORE volatility hits. When emotions run high, you follow the rules—not your gut."
+          ],
+          "bulletPoints": [
+            "<strong>Rule 1:</strong> \"I will invest $X every month regardless of market conditions\"",
+            "<strong>Rule 2:</strong> \"I will not check my portfolio more than once per quarter\"",
+            "<strong>Rule 3:</strong> \"I will not sell during crashes unless my goals fundamentally change\"",
+            "<strong>Rule 4:</strong> \"I will rebalance once per year, not in response to market moves\"",
+            "<strong>Rule 5:</strong> \"Before buying any stock, I must write down 3 reasons I might be wrong\"",
+            "<strong>Rule 6:</strong> \"I will automate as much as possible to remove emotion from the process\""
+          ],
+          "keyPoint": {
+            "text": "🎯 The right platform can ENFORCE good behavior—automatic investing, rebalancing, and barriers to panic selling."
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👩‍💼",
+            "name": "Keisha: Robo-Advisor Success",
+            "paragraphs": [
+              "At 24, Keisha started her first job with $5,000 saved and $200/month to invest. She was <span class=\"highlight-text\">overwhelmed by options</span> and honest with herself—she'd likely chase performance on Robinhood.",
+              "She chose <strong>Betterment</strong>. Set up automatic $200 monthly deposits. The platform built a 90/10 stock/bond portfolio and handled rebalancing automatically.",
+              "During the 2022 drop, friends panic-sold. Keisha's automation kept her investing. <span class=\"highlight-text\">Behavioral protection worth more than the 0.25% fee.</span>"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "After 5 Years",
+              "value": "$20,500",
+              "detail": "From $17K contributed"
+            },
+            {
+              "type": "after",
+              "label": "Total Fees Paid",
+              "value": "~$200",
+              "detail": "0.25% annually"
+            },
+            {
+              "type": "after",
+              "label": "Key Win",
+              "value": "Stayed In",
+              "detail": "Through 2022 crash"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "⚠️",
+            "name": "Marcus: Pandemic Panic Survived",
+            "paragraphs": [
+              "Marcus, 28, had $18,000 invested when COVID-19 hit in March 2020. Markets crashed <span class=\"highlight-text\">34% in 23 days</span>. His portfolio fell to $11,880.",
+              "Every bias screamed SELL: <strong>Loss aversion</strong> (pain was acute), <strong>Recency bias</strong> (felt like decline would continue), <strong>Herd mentality</strong> (friends were selling).",
+              "But Marcus remembered his rule: \"Never sell based on short-term movements.\" He <span class=\"highlight-text\">kept investing $300/month</span> through the crash, buying at 30% discounts. By August: $24,000. Friends who sold? Locked in losses."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "March 2020 Low",
+              "value": "$11,880",
+              "detail": "Down 34%"
+            },
+            {
+              "type": "after",
+              "label": "August 2020",
+              "value": "$24,000",
+              "detail": "New high!"
+            },
+            {
+              "type": "after",
+              "label": "Gain from Low",
+              "value": "+100%",
+              "detail": "By staying invested"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "🔍",
+            "name": "Jasmine: Confirmation Bias Trap",
+            "paragraphs": [
+              "Jasmine, 26, loved sustainable energy and invested $3,000 in a solar company at $45/share. She followed solar news obsessively, joined Reddit communities, and <span class=\"highlight-text\">only read positive articles</span>.",
+              "Warning signs she missed: declining margins, lost contracts, competitor advances. Stock fell to $38—she saw it as a \"buying opportunity.\"",
+              "A friend asked: \"What would make you sell?\" Jasmine couldn't answer. She forced herself to read critical analyses, discovered real problems, sold half at $38. The stock eventually fell to <span class=\"highlight-text\">$25</span>. Her diversification into a clean energy ETF saved her."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "If Held All",
+              "value": "$1,200",
+              "detail": "Loss at $25/share"
+            },
+            {
+              "type": "after",
+              "label": "Actual Loss",
+              "value": "$350",
+              "detail": "Sold half at $38"
+            },
+            {
+              "type": "after",
+              "label": "Key Lesson",
+              "value": "Ask Why",
+              "detail": "\"What proves me wrong?\""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": "Which behavioral bias are YOU most susceptible to?<br><br>When markets drop 20%, would you be more likely to<br>panic sell, hold steady, or buy more?"
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Platform Choice",
+        "question": "Based on your personality and investing interest level,<br>which platform type seems right for you?<br><br>Robo-advisor (hands-off) | Brokerage (DIY) | App (starter)?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What's the main trade-off between robo-advisors and DIY brokerage investing?"
+            },
+            {
+              "number": 2,
+              "question": "Which bias causes investors to buy high and sell low? Why does this happen?"
+            },
+            {
+              "number": 3,
+              "question": "Why might a 0.25% robo-advisor fee be worth it even though DIY is cheaper?"
+            },
+            {
+              "number": 4,
+              "question": "What rule could you establish NOW to prevent emotional decisions during market crashes?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Match Platform to Personality",
+              "description": "Robo-advisors for hands-off, brokerages for DIY enthusiasts, apps for beginners—no single best choice."
+            },
+            {
+              "number": 2,
+              "title": "Everyone Has Biases",
+              "description": "Loss aversion, recency, confirmation, herd mentality affect even experts. Intelligence doesn't protect you."
+            },
+            {
+              "number": 3,
+              "title": "Psychology > Platform Choice",
+              "description": "The 3.6% behavior gap costs more than any platform fee. Mastering your biases is the biggest win."
+            },
+            {
+              "number": 4,
+              "title": "Build Rules-Based Systems",
+              "description": "Create investing rules BEFORE volatility hits. Automate to remove emotion. Follow rules, not feelings."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Student Activity",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "\ud83d",
+            "title": "\udcca Investment Platform Evaluator",
+            "description": "Compare investment platforms for different investor profiles. See how costs, features, and suitability change based on account size, experience level, and investing interest. Discover patterns: When do robo-advisor fees become worthwhile? How do subscription apps hurt small accounts?"
+          },
+          "steps": [
+            "Select an investor profile (age, amount, experience)",
+            "Compare platform costs over 10 and 30 years",
+            "Evaluate features: automation, research tools, etc.",
+            "Choose best platform and explain your reasoning",
+            "Repeat for 3 different investor profiles"
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Coming Tomorrow: Learning Lab",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Day 2: Hands-On Platform & Psychology Lab",
+          "paragraphs": [
+            "Tomorrow is 90% hands-on. You'll discover YOUR investing psychology and platform preferences through:"
+          ],
+          "bulletPoints": [
+            "<strong>Deep Platform Comparison:</strong> Real-time data, current fees, actual feature comparison",
+            "<strong>Behavioral Bias Self-Assessment:</strong> Discover YOUR biggest psychological risks",
+            "<strong>Investment Decision Simulator:</strong> Experience how biases affect choices in real-time",
+            "<strong>Personal Rules Builder:</strong> Create YOUR system to counter emotions during volatility",
+            "<strong>40-Year Fee Calculator:</strong> See exactly how costs compound—numbers that will shock you",
+            "<strong>Portfolio Simulation:</strong> Test strategies through simulated market cycles"
+          ],
+          "keyPoint": {
+            "text": "💡 Come ready to work. This is about figuring out YOUR investment psychology and YOUR platform preferences."
+          }
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

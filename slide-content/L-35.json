@@ -1,0 +1,490 @@
+{
+  "metadata": {
+    "lChapter": "L-XX",
+    "title": "Managing Insurance Costs",
+    "subtitle": "Balancing premiums, deductibles, and out-of-pocket expenses in {{STATE_NAME}}",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Managing Insurance Costs",
+        "titleSize": "large",
+        "subtitle": "Balancing premiums, deductibles, and out-of-pocket expenses in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": ""
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Understand Components",
+              "description": "Master insurance policy components: premiums, deductibles, co-payments, and co-insurance"
+            },
+            {
+              "number": 2,
+              "verb": "Recognize Impact",
+              "description": "Understand how different insurance terms affect out-of-pocket costs and financial stability"
+            },
+            {
+              "number": 3,
+              "verb": "Learn Strategies",
+              "description": "Discover strategies for selecting policies that balance premium costs with coverage needs"
+            },
+            {
+              "number": 4,
+              "verb": "Analyze Scenarios",
+              "description": "Apply these concepts to real-world scenarios and make informed decisions"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            },
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            },
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Insurance Cost Components",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The Balance of Costs",
+            "paragraphs": [
+              "Insurance costs involve a balance between predictable expenses (premiums) and potential out-of-pocket costs when you use your insurance.",
+              "<strong>Premium Factors:</strong>"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "The Premium vs. Out-of-Pocket Trade-off",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          },
+          "rightColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "How Insurance Costs Work Together",
+        "layout": "generic",
+        "layoutData": {
+          "paragraphs": [
+            "Regular monthly payment keeps your coverage active—you pay this whether you use insurance or not",
+            "When you receive care, you pay the full cost until you've paid your annual deductible amount",
+            "After meeting your deductible, you pay your percentage (e.g., 20%) of additional costs",
+            "You keep paying your percentage until you reach your annual out-of-pocket maximum",
+            "Once you hit your out-of-pocket max, insurance covers 100% of covered services for the rest of the year"
+          ],
+          "lists": []
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Strategies for Managing Insurance Costs",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Five Key Strategies",
+          "paragraphs": [
+            "Match your deductible to your emergency savings and risk tolerance. Higher deductible = lower premiums.",
+            "HSAs offer triple tax advantages: tax-deductible contributions, tax-free growth, and tax-free withdrawals for medical expenses.",
+            "Using in-network providers can significantly reduce costs—out-of-network often means higher deductibles and co-insurance.",
+            "Get quotes from multiple insurers. Compare all cost components, not just premiums. Bundle policies for discounts."
+          ],
+          "bulletPoints": []
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Discounts and Health Savings Accounts",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          },
+          "rightColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Why Managing Insurance Costs Matters",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The Lowest Premium Isn't Always Best",
+            "paragraphs": [
+              "Making informed insurance decisions requires understanding the full picture—not just the monthly cost.",
+              "<strong>Consider:</strong>"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Maximizing Preventive Care Benefits",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Free Preventive Services",
+            "paragraphs": [
+              "Most health insurance plans cover preventive services at 100%—no cost to you, even before meeting your deductible.",
+              "<strong>Covered Preventive Services:</strong>"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example: Sophia's Health Plan Decision",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "",
+            "name": "",
+            "paragraphs": []
+          },
+          "outcomes": [
+            {
+              "type": "neutral",
+              "label": "",
+              "value": "",
+              "detail": ""
+            },
+            {
+              "type": "neutral",
+              "label": "",
+              "value": "",
+              "detail": ""
+            },
+            {
+              "type": "neutral",
+              "label": "",
+              "value": "",
+              "detail": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example: Carlos's Auto Insurance",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "",
+            "name": "",
+            "paragraphs": []
+          },
+          "outcomes": [
+            {
+              "type": "neutral",
+              "label": "",
+              "value": "",
+              "detail": ""
+            },
+            {
+              "type": "neutral",
+              "label": "",
+              "value": "",
+              "detail": ""
+            },
+            {
+              "type": "neutral",
+              "label": "",
+              "value": "",
+              "detail": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion in {{STATE_NAME}}",
+        "question": ""
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Personal Reflection in {{STATE_NAME}}",
+        "question": ""
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What's the difference between a co-pay and co-insurance? When does each apply?"
+            },
+            {
+              "number": 2,
+              "question": "If you have a $500 deductible and 20% co-insurance, how much would you pay for an $8,000 medical bill (assume no out-of-pocket max)?"
+            },
+            {
+              "number": 3,
+              "question": "What are the three tax advantages of a Health Savings Account (HSA)?"
+            },
+            {
+              "number": 4,
+              "question": "Why might the plan with the lowest premium NOT be the cheapest option overall?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "The Premium Trade-off",
+              "description": "Higher premiums = lower out-of-pocket costs. Lower premiums = higher out-of-pocket costs. Balance based on your situation."
+            },
+            {
+              "number": 2,
+              "title": "Know All Components",
+              "description": "Premiums, deductibles, co-pays, co-insurance, and out-of-pocket maximums all affect your total costs."
+            },
+            {
+              "number": 3,
+              "title": "Strategic Choices Save Money",
+              "description": "Use HSAs, stay in-network, shop around, bundle policies, and take advantage of all available discounts."
+            },
+            {
+              "number": 4,
+              "title": "Match to Your Needs",
+              "description": "The \"best\" plan depends on your health, finances, risk tolerance, and anticipated usage. There's no one-size-fits-all answer."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Skill Builder: Calculate Your Out-of-Pocket Costs",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📋",
+            "title": "",
+            "description": ""
+          },
+          "steps": []
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Make informed choices that balance protection with affordability in {{STATE_NAME}}",
+        "website": "www.pflacademy.co in {{STATE_NAME}}",
+        "copyright": "© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+      }
+    }
+  ]
+}

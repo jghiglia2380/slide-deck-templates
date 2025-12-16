@@ -1,0 +1,334 @@
+{
+  "metadata": {
+    "lChapter": "L-40",
+    "title": "Checking OutCharitable Groups",
+    "subtitle": "Evaluating Nonprofits to Maximize Your Impact in {{STATE_NAME}}",
+    "totalSlides": 14,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Checking OutCharitable Groups",
+        "titleSize": "large",
+        "subtitle": "Evaluating Nonprofits to Maximize Your Impact in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question in {{STATE_NAME}}",
+        "question": "How can you ensure your charitable donations<br>have the <em>greatest positive impact</em> and don't end up<br>supporting <em>ineffective or fraudulent</em> organizations? in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Understand",
+              "description": "Recognize the importance of researching charitable organizations before donating money, time, or resources."
+            },
+            {
+              "number": 2,
+              "verb": "Evaluate",
+              "description": "Assess the transparency and financial health of nonprofit organizations using available tools and resources."
+            },
+            {
+              "number": 3,
+              "verb": "Apply",
+              "description": "Use the PACED decision-making model to compare and select charitable organizations to support."
+            },
+            {
+              "number": 4,
+              "verb": "Identify",
+              "description": "Recognize red flags and warning signs of ineffective or potentially fraudulent charitable organizations."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Why Research Charities?",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Not All Charities Are Equal",
+            "paragraphs": [
+              "Charitable giving is powerful, but not all organizations use donations with the same <strong>efficiency or effectiveness</strong>.",
+              "Some may allocate large portions of funds to <strong>administrative costs</strong> rather than direct programs.",
+              "Others might not be <strong>legitimate at all</strong>—charity scams cost Americans hundreds of millions of dollars each year."
+            ],
+            "highlightBox": {
+              "icon": "\ud83d",
+              "text": "\udca1 By developing research skills, you become a more informed and impactful donor."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "1.5M+ in {{STATE_NAME}}",
+                "label": "Registered US Nonprofits in {{STATE_NAME}}",
+                "color": "teal"
+              },
+              {
+                "value": "$200M+ in {{STATE_NAME}}",
+                "label": "Annual Charity Fraud Losses in {{STATE_NAME}}",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "What Transparency Reveals:",
+              "color": "green",
+              "items": [
+                "How donations are actually used",
+                "Program outcomes and impact",
+                "Administrative/fundraising costs",
+                "Executive compensation"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Charity Evaluation Tools",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Independent Resources for Research",
+          "paragraphs": [
+            "Several organizations provide free tools to help you research and compare charitable groups:"
+          ],
+          "bulletPoints": [
+            "<strong>🌟 Charity Navigator:</strong> Star ratings, financial health metrics, 9,000+ charities evaluated",
+            "<strong>📋 GuideStar:</strong> Access to Form 990 tax returns, transparency ratings, 1.8M+ organizations",
+            "<strong>✓ BBB Wise Giving Alliance:</strong> Evaluates against 20 accountability standards",
+            "<strong>📊 CharityWatch:</strong> Grades on financial efficiency, highlights concerns like excessive reserves"
+          ],
+          "keyPoint": {
+            "text": "💡 Use multiple sources—each tool evaluates charities using different criteria, giving you a more complete picture."
+          }
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Evaluating Financial Health",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Key Metrics to Review",
+            "paragraphs": [
+              "<strong>Program Expense Ratio:</strong> What % of funds goes directly to programs vs. overhead? (70%+ is generally good)",
+              "<strong>Fundraising Efficiency:</strong> How much does it cost to raise $1? (Under $0.25 is efficient)",
+              "<strong>Working Capital:</strong> Does the organization have enough resources to sustain operations?",
+              "<strong>Executive Compensation:</strong> Are leadership salaries reasonable for the organization's size?"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "The PACED Decision-Making Model",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "A Structured Approach for Comparing Charities",
+          "paragraphs": [],
+          "bulletPoints": [],
+          "keyPoint": {
+            "text": "💡 Your criteria might include: program effectiveness, financial health, local vs. global impact, transparency, alignment with values."
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Red Flags and Warning Signs",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "",
+            "paragraphs": [],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "#1 in {{STATE_NAME}}",
+                "label": "Scam Tactic: Pressure for Immediate Donations in {{STATE_NAME}}",
+                "color": "teal"
+              }
+            ],
+            "infoCard": {
+              "title": "✓ Legitimate Charities Will:",
+              "color": "blue",
+              "items": [
+                "Give you time to research",
+                "Provide detailed program info",
+                "Share financial statements",
+                "Have verifiable tax-exempt status"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Maria's PACED Analysis",
+            "paragraphs": [
+              "Maria has $500 to donate for environmental conservation. She researched two organizations using evaluation tools:",
+              "<strong>EcoAction:</strong> 82% to programs, local focus, 15 years operating, strong financial health, limited outcome data",
+              "<strong>Green Planet Alliance:</strong> 75% to programs, global policy focus, 8 years, detailed impact reports, rapid growth",
+              "Using PACED, Maria decided EcoAction better aligned with her values—she prefers supporting local efforts with lower overhead."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "John Identifies a Scam",
+            "paragraphs": [
+              "John received a call from \"Children's Cancer Relief Fund\" pressuring him for an immediate credit card donation with a \"matching gift deadline.\"",
+              "<strong>Instead of donating immediately, John:</strong>"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion in {{STATE_NAME}}",
+        "question": "Imagine you received a $1,000 inheritance that must be donated to charity.<br><br>What specific criteria would you use to evaluate organizations?<br>How would you balance admin costs vs. program effectiveness vs. alignment with your values? in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Research Before Giving",
+              "description": "Not all charities are equally effective—researching ensures your donations have real impact"
+            },
+            {
+              "number": 2,
+              "title": "Use Evaluation Tools",
+              "description": "Charity Navigator, GuideStar, and BBB Wise Giving provide free research resources"
+            },
+            {
+              "number": 3,
+              "title": "Watch for Red Flags",
+              "description": "Pressure tactics, lack of transparency, and vague missions are warning signs"
+            },
+            {
+              "number": 4,
+              "title": "Apply PACED Model",
+              "description": "Use a structured decision process to compare organizations against YOUR criteria"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Student Activity",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "\ud83d",
+            "title": "\udd0d Charity Research Activity",
+            "description": "Practice researching a real charitable organization to ensure your future donations have maximum positive impact. Choose a charity you're familiar with or interested in supporting, then use evaluation tools to gather information."
+          },
+          "steps": [
+            "Choose an organization to research",
+            "Look up their Charity Navigator rating",
+            "Find their Form 990 on GuideStar",
+            "Calculate program expense ratio",
+            "Decide: Would you support this charity?"
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time in {{STATE_NAME}}",
+        "website": "www.pflacademy.co in {{STATE_NAME}}",
+        "copyright": "© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+      }
+    }
+  ]
+}

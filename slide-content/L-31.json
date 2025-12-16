@@ -1,0 +1,558 @@
+{
+  "metadata": {
+    "lChapter": "L-31",
+    "title": "Rental Costs & Responsibilities",
+    "subtitle": "Understanding What Renting Really Costs in {{STATE_NAME}}",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME",
+      "MEDIAN_RENT",
+      "STATE_MEDIAN_RENT"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Rental Costs & Responsibilities",
+        "titleSize": "large",
+        "subtitle": "Understanding What Renting Really Costs in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question in {{STATE_NAME}}",
+        "question": "How much does it <em>really cost</em> to rent your first apartment—<br>and what should you know <em>before signing a lease</em>? in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Identify",
+              "description": "Explain the key components of a lease agreement and what to look for before signing a legally binding rental contract."
+            },
+            {
+              "number": 2,
+              "verb": "Calculate",
+              "description": "Determine the true costs of renting, including rent, security deposits, utilities, fees, and hidden expenses beyond monthly rent."
+            },
+            {
+              "number": 3,
+              "verb": "Evaluate",
+              "description": "Assess the advantages and disadvantages of renting compared to other housing options based on personal circumstances."
+            },
+            {
+              "number": 4,
+              "verb": "Understand",
+              "description": "Recognize your rights and responsibilities as a tenant, including what landlords can and cannot legally do."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Lease in {{STATE_NAME}}",
+              "definition": "A legally binding contract between a landlord and tenant outlining rental terms, typically for 6-12 months.",
+              "example": "Rent amount, due dates, late fees, security deposit terms, policies, move-out notice requirements"
+            },
+            {
+              "term": "Security Deposit in {{STATE_NAME}}",
+              "definition": "Money paid upfront to cover potential damages beyond normal wear and tear—typically refundable.",
+              "example": "Usually 1-2 months' rent; returned within 14-30 days after move-out (varies by state)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Renter's Insurance in {{STATE_NAME}}",
+              "definition": "Insurance policy that protects a tenant's personal belongings and provides liability coverage.",
+              "example": "Landlord insurance only covers the building—YOUR stuff isn't protected without renter's insurance"
+            },
+            {
+              "term": "Utilities in {{STATE_NAME}}",
+              "definition": "Services like electricity, water, gas, internet, and trash that may or may not be included in rent.",
+              "example": "Electric $50-$150, Gas $30-$150, Internet $40-$100, Water $20-$60"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Understanding Your Lease",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "7 Key Components of Every Lease Agreement",
+          "paragraphs": [
+            "A lease is a legally binding contract. <strong>Read every word before signing</strong>—you're agreeing to follow these terms for the entire lease duration."
+          ],
+          "bulletPoints": [
+            "<strong>Names &amp; Addresses:</strong> All tenants listed, property address, landlord contact info",
+            "<strong>Rent Details:</strong> Amount, due date, payment methods, late fees, grace periods",
+            "<strong>Security Deposit:</strong> Amount, refund conditions, timeline, deduction policies",
+            "<strong>Lease Duration:</strong> Start/end dates, renewal options, early termination fees",
+            "<strong>Policies &amp; Rules:</strong> Pets, guests, noise, smoking, alterations allowed",
+            "<strong>Utilities:</strong> What's included vs. tenant responsibility",
+            "<strong>Entry Rights:</strong> When landlord can enter (usually 24-48 hour notice required)"
+          ]
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Lease Red Flags to Watch For",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Warning Signs in Lease Agreements",
+            "paragraphs": [
+              "Not all leases are created equal. Some contain clauses that could cost you money or limit your rights. Be cautious if you see:",
+              "<strong>Vague language</strong> about when or how security deposits will be returned.",
+              "<strong>Unclear maintenance responsibilities</strong> that could leave you paying for repairs.",
+              "<strong>Excessive fees</strong> for basic services or common situations."
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "⚠️ Never sign a lease that requires you to waive legal rights or contains clauses that violate tenant protection laws."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "2-3 mo in {{STATE_NAME}}",
+                "label": "Typical Early Termination Fee in {{STATE_NAME}}",
+                "color": "rose"
+              },
+              {
+                "value": "5-10% in {{STATE_NAME}}",
+                "label": "Common Late Fee Percentage in {{STATE_NAME}}",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Before You Sign:",
+              "color": "amber",
+              "items": [
+                "Read the ENTIRE lease carefully",
+                "Ask about unclear clauses",
+                "Document existing damage",
+                "Get all promises in writing"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "The True Costs: Upfront Expenses",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "What You'll Pay Before Move-In",
+            "paragraphs": [
+              "Moving into a rental requires significant upfront investment—often <strong>3-4 months of rent</strong> before you ever unpack a box.",
+              "<strong>Typical upfront costs include:</strong>"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "${{STATE_MEDIAN_RENT}} × 3+ in {{STATE_NAME}}",
+                "label": "Typical Move-In Costs in {{STATE_NAME}}",
+                "color": "teal"
+              },
+              {
+                "value": "3-4x in {{STATE_NAME}}",
+                "label": "Months' Rent Upfront in {{STATE_NAME}}",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Don't Forget:",
+              "color": "blue",
+              "items": [
+                "Moving truck/movers: $200-$1,000+",
+                "Utility activation fees: $50-$200",
+                "New essentials: varies widely",
+                "Address change costs"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "The True Costs: Monthly Expenses",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Beyond Just the Rent Payment",
+          "paragraphs": [
+            "Your monthly rent is just the <strong>base cost</strong>. Your true monthly housing expense includes many additional items that can add $200-$500+ to your budget."
+          ],
+          "bulletPoints": [
+            "<strong>Electricity:</strong> $50-$150/month (varies by size, climate, usage)",
+            "<strong>Gas/Heating:</strong> $30-$150/month (can spike in winter)",
+            "<strong>Water/Sewer:</strong> $20-$60/month (often included in rent)",
+            "<strong>Internet:</strong> $40-$100/month (essential for most people)",
+            "<strong>Renter's Insurance:</strong> $15-$30/month (protects your stuff)",
+            "<strong>Parking:</strong> $0-$300/month (city apartments can be expensive)"
+          ],
+          "keyPoint": {
+            "text": "💡 Always ask \"What's included in rent?\" and budget 25-35% extra for utilities and fees."
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Hidden & Unexpected Costs",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Costs That Surprise New Renters",
+            "paragraphs": [
+              "Even careful budgeters can be caught off guard by fees and costs that aren't obvious upfront.",
+              "<strong>Late payment fees</strong> are typically 5-10% of your rent—a $1,200 rent could mean a $60-$120 late fee.",
+              "<strong>Annual rent increases</strong> of 3-5% are standard. A $1,200 apartment could be $1,260 next year.",
+              "<strong>Early termination fees</strong> if you need to break your lease are often 2-3 months' rent."
+            ],
+            "highlightBox": {
+              "icon": "\ud83d",
+              "text": "\udd0d Ask about ALL fees before signing. Get a complete list in writing."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "3-5% in {{STATE_NAME}}",
+                "label": "Annual Rent Increase in {{STATE_NAME}}",
+                "color": "rose"
+              },
+              {
+                "value": "$50+ in {{STATE_NAME}}",
+                "label": "Typical Admin Fees in {{STATE_NAME}}",
+                "color": "teal"
+              }
+            ],
+            "infoCard": {
+              "title": "Other Potential Fees:",
+              "color": "amber",
+              "items": [
+                "Trash/recycling fees",
+                "Amenity fees (gym, pool)",
+                "Package locker fees",
+                "Key replacement fees"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Renting: Pros & Cons",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "✓",
+            "title": "✓ Advantages",
+            "items": [
+              "Flexibility to relocate easily",
+              "Predictable monthly costs",
+              "Landlord handles major repairs",
+              "No property taxes or HOA fees",
+              "Access to amenities (pool, gym)",
+              "Lower initial investment"
+            ]
+          },
+          "rightColumn": {
+            "icon": "",
+            "title": "✗ Disadvantages",
+            "items": [
+              "No equity building",
+              "Limited control over space",
+              "Potential rent increases yearly",
+              "Less privacy (landlord access)",
+              "Pet restrictions common",
+              "Risk of non-renewal"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Know Your Tenant Rights",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Your Legal Protections as a Renter",
+            "paragraphs": [
+              "As a tenant, you have legal rights that protect you from unfair treatment. These vary by state but generally include:",
+              "<strong>Right to Habitable Housing:</strong> Your rental must be safe, clean, and in good repair with working utilities.",
+              "<strong>Right to Privacy:</strong> Landlords must give proper notice (usually 24-48 hours) before entering, except in emergencies.",
+              "<strong>Right to Security Deposit Protection:</strong> Laws regulate how deposits are held and returned."
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "⚖️ If your landlord violates your rights, document everything and know how to file complaints with local housing authorities."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "24-48hr in {{STATE_NAME}}",
+                "label": "Typical Entry Notice Required in {{STATE_NAME}}",
+                "color": "green"
+              },
+              {
+                "value": "14-30 in {{STATE_NAME}}",
+                "label": "Days to Return Deposit in {{STATE_NAME}}",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Additional Rights:",
+              "color": "green",
+              "items": [
+                "Protection from discrimination",
+                "Right to necessary repairs",
+                "Due process for evictions",
+                "Fair housing protections"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👩‍💼 in {{STATE_NAME}}",
+            "name": "Emma's First Apartment in {{STATE_NAME}}",
+            "paragraphs": [
+              "Emma recently graduated from college and moved to a new city for her first job. She found a one-bedroom apartment for <span class=\"highlight-text\">$1,200/month</span> in a convenient location near work.",
+              "<strong>Before signing, Emma calculated:</strong>"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Total Upfront Cost in {{STATE_NAME}}",
+              "value": "$4,300 in {{STATE_NAME}}",
+              "detail": "Needed before move-in in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "Monthly Expenses in {{STATE_NAME}}",
+              "value": "$1,405 in {{STATE_NAME}}",
+              "detail": "Rent + utilities + insurance in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "Income Needed in {{STATE_NAME}}",
+              "value": "$56K+ in {{STATE_NAME}}",
+              "detail": "To keep housing under 30% in {{STATE_NAME}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Your Responsibilities as a Tenant",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Being a Good Tenant = Protecting Yourself",
+          "paragraphs": [
+            "Fulfilling your responsibilities as a tenant protects your deposit, your rental history, and your ability to rent in the future. Landlords share references."
+          ],
+          "bulletPoints": [
+            "<strong>Pay Rent on Time:</strong> Late payments = fees + negative rental history",
+            "<strong>Maintain the Property:</strong> Keep it clean, don't cause damage beyond normal wear",
+            "<strong>Report Problems Promptly:</strong> Small issues become big (expensive) problems",
+            "<strong>Follow Lease Terms:</strong> Pets, guests, noise—violations can lead to eviction",
+            "<strong>Provide Proper Notice:</strong> Usually 30-60 days before moving out",
+            "<strong>Allow Reasonable Access:</strong> Let landlord in for repairs/inspections with notice"
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion in {{STATE_NAME}}",
+        "question": "Looking at Emma's situation, what monthly income would she need to comfortably afford her apartment?<br><br>What expenses might she have overlooked in her budget? in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection in {{STATE_NAME}}",
+        "question": "What would be most important to you in a first apartment—location, price, size, amenities, or something else?<br><br>How would you prioritize these factors? in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "Name three things you should verify before signing a lease agreement."
+            },
+            {
+              "number": 2,
+              "question": "Why is renter's insurance important, and what does it typically cover that the landlord's insurance doesn't?"
+            },
+            {
+              "number": 3,
+              "question": "Calculate the approximate upfront cost to move into a $1,500/month apartment requiring first/last month's rent plus security deposit."
+            },
+            {
+              "number": 4,
+              "question": "What are two tenant rights and two tenant responsibilities you should know?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Read Your Lease Carefully",
+              "description": "Every clause matters—understand fees, policies, and termination terms before signing"
+            },
+            {
+              "number": 2,
+              "title": "Budget for True Costs",
+              "description": "Rent is just the beginning—utilities, insurance, and fees add 25-35% to monthly costs"
+            },
+            {
+              "number": 3,
+              "title": "Plan for Upfront Costs",
+              "description": "Expect to pay 3-4 months of rent before moving in (deposits, fees, first/last)"
+            },
+            {
+              "number": 4,
+              "title": "Know Your Rights",
+              "description": "Tenants have legal protections—learn local laws and document any issues"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Student Activity",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "\ud83d",
+            "title": "\udccb Rental Property Comparison",
+            "description": "In this activity, you'll research real rental listings and compare them using a structured checklist based on your personal priorities. This helps you practice the research and comparison skills you'll need when looking for your first apartment."
+          },
+          "steps": [
+            "List your top 5 rental priorities",
+            "Research 2-3 rental properties online",
+            "Complete the comparison table for each",
+            "Calculate total monthly costs",
+            "Determine which best fits your priorities"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time in {{STATE_NAME}}",
+        "website": "www.pflacademy.co in {{STATE_NAME}}",
+        "copyright": "© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+      }
+    }
+  ]
+}

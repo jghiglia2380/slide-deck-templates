@@ -1,0 +1,504 @@
+{
+  "metadata": {
+    "lChapter": "L-XX",
+    "title": "Insurance as a Risk Management Tool",
+    "subtitle": "Understanding how insurance protects against financial loss",
+    "totalSlides": 20,
+    "hasStateVariables": false,
+    "stateVariablesUsed": []
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Insurance as a Risk Management Tool",
+        "titleSize": "large",
+        "subtitle": "Understanding how insurance protects against financial loss"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": ""
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Understand Concepts",
+              "description": "Master key insurance terms including premiums, deductibles, coverage limits, and exclusions"
+            },
+            {
+              "number": 2,
+              "verb": "Identify Types",
+              "description": "Recognize different types of insurance and their specific purposes"
+            },
+            {
+              "number": 3,
+              "verb": "Recognize Strategy",
+              "description": "Understand how insurance fits into an overall risk management approach"
+            },
+            {
+              "number": 4,
+              "verb": "Apply Knowledge",
+              "description": "Make informed decisions about future insurance needs based on circumstances"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            },
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            },
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "How Insurance Works",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Risk Transfer Through Pooling",
+            "paragraphs": [
+              "Insurance is a risk transfer mechanism where you pay a small, predictable amount (premium) to protect against a larger, unpredictable loss.",
+              "<strong>The Insurance Process:</strong>"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "The Premium-Deductible Relationship",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          },
+          "rightColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Types of Insurance",
+        "layout": "generic",
+        "layoutData": {
+          "paragraphs": [
+            "Covers medical expenses and healthcare costs",
+            "Protects against vehicle-related losses",
+            "Protects dwelling and possessions",
+            "Financial support for beneficiaries",
+            "Income replacement if unable to work",
+            "Protection against legal responsibility"
+          ],
+          "lists": [
+            [
+              "Doctor visits &amp; hospital stays",
+              "Prescriptions &amp; preventive care",
+              "Co-pays and co-insurance"
+            ],
+            [
+              "Liability (required by law)",
+              "Collision coverage",
+              "Comprehensive coverage"
+            ],
+            [
+              "Property damage coverage",
+              "Personal belongings",
+              "Liability protection"
+            ],
+            [
+              "Term life (set period)",
+              "Whole life (lifetime)",
+              "Universal life (flexible)"
+            ],
+            [
+              "Short-term (up to 6 months)",
+              "Long-term (extended)",
+              "Elimination period"
+            ],
+            [
+              "Personal liability",
+              "Professional liability",
+              "Umbrella policies"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Health Insurance: The Essentials",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Protecting Your Health & Finances",
+            "paragraphs": [
+              "Health insurance is critical for reducing the financial burden of healthcare. Key features to understand:"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Life Insurance: Protecting Your Family",
+        "layout": "generic",
+        "layoutData": {
+          "paragraphs": [
+            "Coverage for a specific period (10, 20, 30 years)",
+            "Lifetime coverage with cash value",
+            "Flexible premiums and death benefits"
+          ],
+          "lists": [
+            [
+              "Lowest cost option",
+              "Pure death benefit protection",
+              "No cash value component",
+              "Ideal for temporary needs",
+              "Good for young families"
+            ],
+            [
+              "Coverage never expires",
+              "Builds cash value over time",
+              "Higher premiums than term",
+              "Can borrow against policy",
+              "Premiums stay level"
+            ],
+            [
+              "Adjustable coverage amounts",
+              "Flexible premium payments",
+              "Cash value component",
+              "More complex than term",
+              "Interest rate sensitive"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Why Insurance Matters",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Insurance Is Most Appropriate For:",
+          "paragraphs": [
+            "Catastrophic events that would be financially devastating—the exact risks insurance is designed to cover",
+            "Auto liability insurance is required in most states; lenders require homeowners insurance",
+            "Protecting assets that would be difficult or impossible to replace—home, health, income",
+            "The psychological benefit of knowing you're protected from financial catastrophe"
+          ],
+          "bulletPoints": []
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Evaluating Your Insurance Needs",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          },
+          "rightColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example: Sarah's Surgery",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "",
+            "name": "",
+            "paragraphs": []
+          },
+          "outcomes": [
+            {
+              "type": "neutral",
+              "label": "",
+              "value": "",
+              "detail": ""
+            },
+            {
+              "type": "neutral",
+              "label": "",
+              "value": "",
+              "detail": ""
+            },
+            {
+              "type": "neutral",
+              "label": "",
+              "value": "",
+              "detail": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Examples: Auto & Life Insurance",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          },
+          "rightColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          }
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": ""
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": ""
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "Explain the relationship between deductibles and premiums. Why might someone choose a higher deductible?"
+            },
+            {
+              "number": 2,
+              "question": "What's the difference between term life and whole life insurance? When might each be appropriate?"
+            },
+            {
+              "number": 3,
+              "question": "If you have health insurance with 80/20 co-insurance and a $1,000 deductible, how much would you pay for a $6,000 medical bill?"
+            },
+            {
+              "number": 4,
+              "question": "Why is insurance considered a \"risk transfer\" strategy? What risks are being transferred, and to whom?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Risk Transfer Mechanism",
+              "description": "Insurance transfers financial risk from you to the insurance company in exchange for predictable premium payments."
+            },
+            {
+              "number": 2,
+              "title": "Know Your Terms",
+              "description": "Understanding premiums, deductibles, coverage limits, and exclusions helps you make informed insurance decisions."
+            },
+            {
+              "number": 3,
+              "title": "Match Coverage to Needs",
+              "description": "Different types of insurance protect against different risks. Evaluate your personal circumstances to determine appropriate coverage."
+            },
+            {
+              "number": 4,
+              "title": "Insurance Needs Change",
+              "description": "As you progress through life stages, your insurance needs will evolve. Regularly review and adjust your coverage."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Skill Builder: Identifying Insurance Types",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📋",
+            "title": "",
+            "description": ""
+          },
+          "steps": []
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Protect your financial future with informed insurance decisions",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

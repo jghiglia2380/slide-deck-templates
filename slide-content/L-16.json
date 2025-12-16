@@ -1,0 +1,566 @@
+{
+  "metadata": {
+    "lChapter": "L-16",
+    "title": "Evaluating Saving &Investment Strategies",
+    "subtitle": "Making Informed Financial Decisions for Your Goals in {{STATE_NAME}}",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Evaluating Saving &Investment Strategies",
+        "titleSize": "large",
+        "subtitle": "Making Informed Financial Decisions for Your Goals in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question in {{STATE_NAME}}",
+        "question": "How do I evaluate different <em>saving and investment strategies</em><br>to meet my <em>financial goals</em>? in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Compare",
+              "description": "Analyze the risks and returns of various saving and investment options to understand trade-offs in financial decision-making."
+            },
+            {
+              "number": 2,
+              "verb": "Evaluate",
+              "description": "Determine which financial strategies align with different time horizons and personal financial goals."
+            },
+            {
+              "number": 3,
+              "verb": "Apply",
+              "description": "Use decision-making criteria to select appropriate saving and investment vehicles for specific situations."
+            },
+            {
+              "number": 4,
+              "verb": "Understand",
+              "description": "Recognize how personal risk tolerance influences investment choices and long-term financial outcomes."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Certificate of Deposit (CD) in {{STATE_NAME}}",
+              "definition": "A savings product with a fixed interest rate and maturity date; funds are locked in for a specific period.",
+              "example": "A 12-month CD paying 4% APY—withdraw early and you pay a penalty"
+            },
+            {
+              "term": "Risk Tolerance in {{STATE_NAME}}",
+              "definition": "The degree of variability in investment returns that an individual is willing to accept based on their goals and situation.",
+              "example": "A young investor may accept more volatility; someone near retirement prefers stability"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Liquidity in {{STATE_NAME}}",
+              "definition": "How quickly and easily an asset can be converted to cash without losing significant value.",
+              "example": "A savings account is highly liquid; real estate is not (takes time to sell)"
+            },
+            {
+              "term": "Diversification in {{STATE_NAME}}",
+              "definition": "Spreading investments across different asset types to reduce overall risk—\"don't put all your eggs in one basket.\"",
+              "example": "Owning stocks, bonds, AND real estate instead of only one company's stock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Saving vs. Investing",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Two Different Approaches",
+            "paragraphs": [
+              "<strong>Saving</strong> focuses on security and accessibility for short-term needs—preserving what you have.",
+              "<strong>Investing</strong> aims for growth over longer periods but involves accepting more risk for potentially higher returns.",
+              "Understanding the relationship between <strong>risk and return</strong> is essential for making informed financial choices."
+            ],
+            "highlightBox": {
+              "icon": "\ud83d",
+              "text": "\udca1 The key question: How soon do you need the money, and how much volatility can you handle?"
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "1-3 yrs in {{STATE_NAME}}",
+                "label": "Saving Time Horizon in {{STATE_NAME}}",
+                "color": "teal"
+              },
+              {
+                "value": "4+ yrs in {{STATE_NAME}}",
+                "label": "Investing Time Horizon in {{STATE_NAME}}",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Key Differences:",
+              "color": "blue",
+              "items": [
+                "Saving = Low risk, high liquidity",
+                "Investing = Higher risk, growth potential",
+                "Match strategy to your timeline"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Saving vs. Investing: A Comparison",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "\ud83c",
+            "title": "\udfe6 Saving",
+            "items": [
+              "Low risk to principal",
+              "Easy access to funds (high liquidity)",
+              "Lower returns (0.01% - 5%)",
+              "Best for short-term goals",
+              "FDIC insured (up to $250K)",
+              "Predictable, stable value"
+            ]
+          },
+          "rightColumn": {
+            "icon": "\ud83d",
+            "title": "\udcc8 Investing",
+            "items": [
+              "Higher risk (value can fluctuate)",
+              "Less accessible (lower liquidity)",
+              "Potential for higher returns (7%+)",
+              "Best for long-term goals",
+              "Not insured against losses",
+              "Opportunity for wealth building"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Common Saving Options",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Low-Risk Options for Short-Term Goals",
+            "paragraphs": [
+              "<strong>Savings Accounts:</strong> FDIC insured, earn 0.01%-5% interest, highly liquid. Perfect for emergency funds.",
+              "<strong>Certificates of Deposit (CDs):</strong> Fixed rate for specific period, higher rates than savings, early withdrawal penalties.",
+              "<strong>Money Market Funds:</strong> Slightly higher returns, invest in short-term debt, very low risk but not FDIC insured."
+            ],
+            "highlightBox": {
+              "icon": "\ud83d",
+              "text": "\udd12 FDIC insurance protects up to $250,000 per depositor, per bank—your money is safe!"
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$250K in {{STATE_NAME}}",
+                "label": "FDIC Insurance Limit in {{STATE_NAME}}",
+                "color": "green"
+              },
+              {
+                "value": "4-5% in {{STATE_NAME}}",
+                "label": "High-Yield Savings APY in {{STATE_NAME}}",
+                "color": "teal"
+              }
+            ],
+            "infoCard": {
+              "title": "Best For:",
+              "color": "green",
+              "items": [
+                "Emergency funds (3-6 months)",
+                "Short-term goals (1-3 years)",
+                "Money you can't afford to lose"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Common Investment Options",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Growing Wealth Over Time",
+          "paragraphs": [
+            "Investments offer higher potential returns but come with varying levels of risk. Understanding each option helps you make informed decisions."
+          ],
+          "bulletPoints": [
+            "<strong>Corporate Bonds:</strong> Loans to companies paying fixed interest; moderate risk depending on company stability",
+            "<strong>Mutual Funds:</strong> Pooled investments managed by professionals; diversification reduces risk",
+            "<strong>Index Funds:</strong> Track market indexes like S&amp;P 500; low fees, broad diversification",
+            "<strong>Individual Stocks:</strong> Ownership in companies; highest risk but highest potential returns",
+            "<strong>Real Estate:</strong> Property investments; can provide income and appreciation over time",
+            "<strong>ETFs:</strong> Trade like stocks but offer diversification; flexible and tax-efficient"
+          ]
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "The Risk-Return Relationship",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Higher Returns = Higher Risk",
+            "paragraphs": [
+              "This is one of the most fundamental principles in finance: <strong>as potential return increases, so does risk</strong>.",
+              "There's no such thing as a \"guaranteed\" high-return investment. Anyone promising high returns with no risk is likely offering a scam.",
+              "Your job is to find the right <strong>balance</strong> between risk and return based on your goals, timeline, and comfort level."
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "⚖️ The risk-return tradeoff: More risk = potential for more reward, but also potential for more loss."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "~5% in {{STATE_NAME}}",
+                "label": "Low Risk Returns (CDs) in {{STATE_NAME}}",
+                "color": "green"
+              },
+              {
+                "value": "~7% in {{STATE_NAME}}",
+                "label": "Moderate Risk (Bonds) in {{STATE_NAME}}",
+                "color": "teal"
+              },
+              {
+                "value": "~10% in {{STATE_NAME}}",
+                "label": "Higher Risk (Stocks) in {{STATE_NAME}}",
+                "color": "purple"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Why Time Horizon Matters",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Match Your Strategy to Your Timeline",
+          "paragraphs": [
+            "Your <strong>time horizon</strong>—how long until you need the money—is crucial for choosing the right strategy. Longer timelines allow you to take more risk because you have time to recover from market downturns."
+          ],
+          "bulletPoints": [
+            "<strong>Short-term (1-3 years):</strong> Savings accounts, CDs, money markets—prioritize safety and liquidity",
+            "<strong>Medium-term (3-7 years):</strong> Balanced mix of bonds and conservative funds—some growth with protection",
+            "<strong>Long-term (7+ years):</strong> Stock-heavy portfolio—maximize growth potential, ride out volatility",
+            "<strong>Very long-term (20+ years):</strong> Aggressive growth investments—compound returns over decades"
+          ],
+          "keyPoint": {
+            "text": "🕐 Time is your greatest asset as a young investor. Starting early gives you decades for compound growth to work its magic!"
+          }
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Investing in Today's Economy",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "More Options Than Ever",
+            "paragraphs": [
+              "Today's investors have access to tools that weren't available to previous generations. <strong>Technology has democratized investing.</strong>",
+              "You can start investing with as little as $1 using apps like Acorns, Robinhood, or Fidelity. Many platforms offer fractional shares and zero-commission trading.",
+              "However, more options also means more opportunities to make mistakes. <strong>Education and research are more important than ever.</strong>"
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "⚠️ Beware of \"get rich quick\" schemes and meme stocks. Build wealth slowly through diversified, long-term investing."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$1 in {{STATE_NAME}}",
+                "label": "Minimum to Start Investing in {{STATE_NAME}}",
+                "color": "purple"
+              },
+              {
+                "value": "$0 in {{STATE_NAME}}",
+                "label": "Commission at Many Brokers in {{STATE_NAME}}",
+                "color": "teal"
+              }
+            ],
+            "infoCard": {
+              "title": "Modern Investment Tools:",
+              "color": "green",
+              "items": [
+                "Robo-advisors for automated investing",
+                "Fractional shares for any budget",
+                "Target-date funds for simplicity",
+                "Mobile apps for easy access"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "🚗 in {{STATE_NAME}}",
+            "name": "Liam's Short-Term Car Savings Goal in {{STATE_NAME}}",
+            "paragraphs": [
+              "Liam wants to buy a car in <strong>18 months</strong>. He has $5,000 saved but needs $8,000 total for the car he wants.",
+              "He chooses a <span class=\"highlight-text\">1-year CD with a 4% interest rate</span>. While this won't get him to his full goal alone, it provides security and some growth while he continues to save additional money each month.",
+              "<strong>Why a CD makes sense:</strong> Liam needs the money soon (short timeline), so he can't risk losing value in the stock market. A CD offers better returns than a regular savings account while keeping his money safe."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Starting Point in {{STATE_NAME}}",
+              "value": "$5,000 in {{STATE_NAME}}",
+              "detail": "Current savings in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "After 1 Year CD in {{STATE_NAME}}",
+              "value": "$5,200 in {{STATE_NAME}}",
+              "detail": "+$200 from 4% interest in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "Key Strategy in {{STATE_NAME}}",
+              "value": "Safe + Growth in {{STATE_NAME}}",
+              "detail": "Plus monthly contributions in {{STATE_NAME}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👩‍🎓 in {{STATE_NAME}}",
+            "name": "Julia's Long-Term Retirement Strategy in {{STATE_NAME}}",
+            "paragraphs": [
+              "Julia is <strong>17 years old</strong> and wants to start saving for retirement. She invests $1,000 in a mutual fund that historically returns 7% annually.",
+              "If she adds just <span class=\"highlight-text\">$50 monthly for the next 40 years</span>, she could have over $140,000 by retirement—even though she only contributed about $25,000 of her own money!",
+              "<strong>Why stocks make sense:</strong> Julia has 40+ years until retirement. Short-term volatility doesn't matter—she has time to ride out market dips and benefit from compound growth."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Her Contributions in {{STATE_NAME}}",
+              "value": "$25,000 in {{STATE_NAME}}",
+              "detail": "$1K + $50/mo for 40 years in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "Growth from Investing in {{STATE_NAME}}",
+              "value": "$115,000+ in {{STATE_NAME}}",
+              "detail": "Compound interest magic! in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "Total at Retirement in {{STATE_NAME}}",
+              "value": "$140,000+ in {{STATE_NAME}}",
+              "detail": "5.6x her contributions! in {{STATE_NAME}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion in {{STATE_NAME}}",
+        "question": "Why did Liam choose a CD while Julia chose a mutual fund?<br><br>How did their different time horizons affect their strategy choices? in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection in {{STATE_NAME}}",
+        "question": "What is one short-term financial goal and one long-term goal you have?<br><br>Which saving or investment strategy would work best for each? in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What is the fundamental relationship between risk and return in investing?"
+            },
+            {
+              "number": 2,
+              "question": "Why would a savings account be better than stocks for an emergency fund?"
+            },
+            {
+              "number": 3,
+              "question": "How does your time horizon affect which investment strategy you should choose?"
+            },
+            {
+              "number": 4,
+              "question": "What is diversification, and why is it important for reducing investment risk?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Risk and Return Are Linked",
+              "description": "Higher potential returns always come with higher risk—there are no shortcuts to guaranteed wealth"
+            },
+            {
+              "number": 2,
+              "title": "Time Horizon Guides Strategy",
+              "description": "Short-term goals need safe, liquid savings; long-term goals can handle more investment risk"
+            },
+            {
+              "number": 3,
+              "title": "Diversification Reduces Risk",
+              "description": "Spreading investments across different types of assets protects you from any single loss"
+            },
+            {
+              "number": 4,
+              "title": "Start Early, Benefit More",
+              "description": "Compound growth rewards those who start investing young—time is your greatest advantage"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Student Activity",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "\ud83d",
+            "title": "\udcca Understanding Risk and Return",
+            "description": "Complete the worksheet to evaluate different investment options based on their risk levels, potential returns, and suitability for various financial goals. You'll analyze savings accounts, CDs, bonds, mutual funds, and stocks to determine when each option is most appropriate."
+          },
+          "steps": [
+            "Rate each investment option on risk level (1-5)",
+            "Estimate potential returns for each option",
+            "Match options to appropriate time horizons",
+            "Apply strategies to sample financial goals",
+            "Reflect on your personal risk tolerance"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time in {{STATE_NAME}}",
+        "website": "www.pflacademy.co in {{STATE_NAME}}",
+        "copyright": "© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+      }
+    }
+  ]
+}

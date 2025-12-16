@@ -1,0 +1,587 @@
+{
+  "metadata": {
+    "lChapter": "L-59",
+    "title": "Understanding LocalTax Structures",
+    "subtitle": "Property Taxes, Local Sales Taxes, and Your Community",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME",
+      "SALES_TAX",
+      "ASSESSMENT_PERCENTAGE",
+      "HOMESTEAD_EXEMPTION",
+      "STATE_ASSESSMENT_PERCENTAGE",
+      "STATE_HOMESTEAD_EXEMPTION",
+      "STATE_TOTAL_MILLAGE_EXAMPLE",
+      "STATE_HIGH_TAX_CITY",
+      "STATE_HIGH_TAX_MILLAGE",
+      "STATE_MEDIUM_TAX_CITY",
+      "STATE_MEDIUM_TAX_MILLAGE",
+      "STATE_LOW_TAX_CITY",
+      "STATE_LOW_TAX_MILLAGE",
+      "STATE_HIGH_COMBINED_SALES_TAX",
+      "STATE_LOW_COMBINED_SALES_TAX"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Understanding LocalTax Structures",
+        "titleSize": "large",
+        "subtitle": "Property Taxes, Local Sales Taxes, and Your Community"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": "Two identical apartments. Same rent. One costs you<br><em>$1,200 more per year</em> to live in.<br><br>How is this possible?"
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Analyze",
+              "description": "Understand different types of local taxes and how they fund schools, police, roads, and community services."
+            },
+            {
+              "number": 2,
+              "verb": "Calculate",
+              "description": "Compute property tax obligations using assessed values, millage rates, and exemptions."
+            },
+            {
+              "number": 3,
+              "verb": "Evaluate",
+              "description": "Assess how local tax structures vary across jurisdictions and impact your total cost of living."
+            },
+            {
+              "number": 4,
+              "verb": "Compare",
+              "description": "Compare tax rates and services across locations to make informed residency and housing decisions."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Property Tax",
+              "definition": "A tax levied on real estate by local governments, typically based on the assessed value of the property.",
+              "example": "A home assessed at $200,000 with a 3% tax rate pays $6,000 in annual property taxes."
+            },
+            {
+              "term": "Assessed Value",
+              "definition": "The dollar value assigned to a property by a government assessor for calculating property taxes (often less than market value).",
+              "example": "In {{STATE_NAME}}, a $300,000 home is assessed at {{STATE_ASSESSMENT_PERCENTAGE}}% of market value."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Millage Rate",
+              "definition": "The amount of tax per $1,000 of assessed property value. One mill = $1 per $1,000 of value.",
+              "example": "25 mills = $25 per $1,000 = 2.5% tax rate. On a $200,000 assessed value = $5,000 tax."
+            },
+            {
+              "term": "Homestead Exemption",
+              "definition": "A reduction in the assessed value of a primary residence, reducing the tax burden on homeowners.",
+              "example": "In {{STATE_NAME}}, a ${{STATE_HOMESTEAD_EXEMPTION}} exemption reduces your assessed value for tax purposes."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "What Local Taxes Fund",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Your Tax Dollars at Work",
+            "paragraphs": [
+              "Unlike federal taxes, <strong>local taxes stay in your community</strong> and fund the services that directly impact your daily life.",
+              "Property taxes are the #1 source of local government revenue, funding essential services you use every day."
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "Higher taxes often = better schools, safer neighborhoods, well-maintained roads. The question is: are you getting good value?"
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "50-60%",
+                "label": "Property Taxes Fund Schools",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Local Taxes Pay For:",
+              "color": "blue",
+              "items": [
+                "Public schools and education",
+                "Police and fire departments",
+                "Road maintenance",
+                "Parks, libraries, recreation",
+                "Local government operations"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "High-Tax vs. Low-Tax Communities",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "",
+            "title": "Low Tax Areas",
+            "items": [
+              "Lower property taxes",
+              "Basic services only",
+              "Fewer parks and libraries",
+              "Less school funding",
+              "Longer emergency response times",
+              "More affordable housing"
+            ]
+          },
+          "rightColumn": {
+            "icon": "",
+            "title": "High Tax Areas",
+            "items": [
+              "Higher property taxes",
+              "Extensive services",
+              "Well-funded amenities",
+              "Better-rated schools",
+              "Quick emergency response",
+              "Higher property values"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "How Property Tax Is Calculated",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The Property Tax Formula",
+            "paragraphs": [
+              "<strong>Step 1:</strong> Determine market value of property",
+              "<strong>Step 2:</strong> Apply assessment ratio (varies by state)",
+              "<strong>Step 3:</strong> Subtract any exemptions (homestead, etc.)",
+              "<strong>Step 4:</strong> Multiply by millage rate"
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "Formula: (Assessed Value - Exemptions) × Millage Rate ÷ 1,000 = Annual Tax"
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$250K",
+                "label": "Home Market Value",
+                "color": "teal"
+              },
+              {
+                "value": "{{STATE_ASSESSMENT_PERCENTAGE}}%",
+                "label": "Assessment Ratio in {{STATE_NAME}}",
+                "color": "purple"
+              },
+              {
+                "value": "{{STATE_TOTAL_MILLAGE_EXAMPLE}}",
+                "label": "Example Millage Rate (mills)",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Types of Local Taxes",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Beyond Property Taxes",
+          "paragraphs": [
+            "Local governments may use multiple types of taxes. Your total local tax burden depends on where you live and how you spend."
+          ],
+          "bulletPoints": [
+            "<strong>Property Tax:</strong> Primary local revenue source, based on real estate value",
+            "<strong>Local Sales Tax:</strong> Added on top of state sales tax (ranges 0-4%+)",
+            "<strong>Local Income Tax:</strong> Some cities tax resident income (up to 2-3%)",
+            "<strong>Special Assessments:</strong> Charges for local improvements (sidewalks, sewers)",
+            "<strong>Utility Taxes:</strong> Taxes on water, electric, gas services",
+            "<strong>Vehicle Registration:</strong> Local fees added to state registration"
+          ],
+          "keyPoint": {
+            "text": "The same home in different jurisdictions can cost thousands more annually in local taxes—always calculate the TOTAL burden."
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Local Taxes and Housing Costs",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Property Tax Adds to Monthly Payment",
+            "paragraphs": [
+              "When you buy a home, your mortgage payment isn't the whole story. Property taxes are typically escrowed—added to your monthly payment.",
+              "A $1,500 mortgage can become $1,900+ when property taxes (and insurance) are included."
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "Even renters pay—landlords factor property taxes into rent prices. High-tax areas = higher rents, all else being equal."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$300-$800",
+                "label": "Monthly Property Tax Range",
+                "color": "rose"
+              },
+              {
+                "value": "30%",
+                "label": "Added to Housing Costs",
+                "color": "teal"
+              }
+            ],
+            "infoCard": {
+              "title": "Before You Buy, Calculate:",
+              "color": "green",
+              "items": [
+                "Mortgage principal + interest",
+                "Property taxes (monthly escrow)",
+                "Homeowners insurance",
+                "HOA fees (if applicable)"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Why Local Taxes Matter for Your Future",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Three Big Decisions Affected by Local Taxes",
+          "paragraphs": [
+            "Understanding local tax structures is essential for making smart financial decisions throughout your life:"
+          ],
+          "bulletPoints": [
+            "<strong>Where to Rent:</strong> Factor in local sales taxes and services—not just rent",
+            "<strong>Job Offer Comparisons:</strong> A higher salary in a high-tax city might leave you with LESS money",
+            "<strong>Home Purchases:</strong> Property taxes add hundreds to monthly costs—you may afford less house than you think",
+            "<strong>Voting Decisions:</strong> School levies and bond issues directly affect your tax bill",
+            "<strong>Retirement Planning:</strong> Some retirees relocate specifically for lower property taxes",
+            "<strong>Business Location:</strong> Entrepreneurs consider local taxes when choosing where to operate"
+          ],
+          "keyPoint": {
+            "text": "The key is doing the math BEFORE you make the decision—not discovering high taxes after you've committed."
+          }
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Tax Rates Vary Dramatically",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Even Neighboring Cities Differ",
+            "paragraphs": [
+              "Tax rates vary dramatically between jurisdictions—even within {{STATE_NAME}}. A home that seems affordable based on price alone can become financially stressful once property taxes are factored in.",
+              "<strong>Same $280,000 home in {{STATE_NAME}}:</strong>",
+              "• {{STATE_HIGH_TAX_CITY}}: {{STATE_HIGH_TAX_MILLAGE}} mills",
+              "• {{STATE_MEDIUM_TAX_CITY}}: {{STATE_MEDIUM_TAX_MILLAGE}} mills",
+              "• {{STATE_LOW_TAX_CITY}}: {{STATE_LOW_TAX_MILLAGE}} mills"
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "The difference between highest and lowest millage rates can mean thousands of dollars per year!"
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "3x",
+                "label": "Tax Rate Variation Possible",
+                "color": "rose"
+              },
+              {
+                "value": "$4,900",
+                "label": "Potential Annual Savings",
+                "color": "green"
+              }
+            ],
+            "infoCard": {
+              "title": "Research Before Moving:",
+              "color": "blue",
+              "items": [
+                "Look up actual millage rates",
+                "Check school district ratings",
+                "Compare service levels",
+                "Calculate total tax burden"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "🏢",
+            "name": "Mia Compares Two Apartments",
+            "paragraphs": [
+              "Mia, 19, is choosing her first apartment in {{STATE_NAME}}. She earns $38,000 and spends about <span class=\"highlight-text\">$1,000/month on taxable purchases</span>.",
+              "<strong>Apartment A ({{STATE_HIGH_TAX_CITY}}):</strong> $850/month rent, {{STATE_HIGH_COMBINED_SALES_TAX}}% combined sales tax",
+              "<strong>Apartment B ({{STATE_LOW_TAX_CITY}}):</strong> $900/month rent, {{STATE_LOW_COMBINED_SALES_TAX}}% combined sales tax",
+              "The sales tax difference on $1,000/month affects her true cost of living."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "{{STATE_HIGH_TAX_CITY}} Cost",
+              "value": "$850 + tax",
+              "detail": "{{STATE_HIGH_COMBINED_SALES_TAX}}% sales tax"
+            },
+            {
+              "type": "after",
+              "label": "{{STATE_LOW_TAX_CITY}} Cost",
+              "value": "$900 + tax",
+              "detail": "{{STATE_LOW_COMBINED_SALES_TAX}}% sales tax"
+            },
+            {
+              "type": "after",
+              "label": "Key Insight",
+              "value": "Calculate!",
+              "detail": "Sales tax affects true cost"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "🏠",
+            "name": "The Rodriguez Family Home Purchase",
+            "paragraphs": [
+              "Carlos and Maria are teachers earning $85,000 combined in {{STATE_NAME}}. They're choosing between two homes:",
+              "<strong>Home A ({{STATE_HIGH_TAX_CITY}}):</strong> $280,000 • {{STATE_HIGH_TAX_MILLAGE}} mills • School rating: 9/10",
+              "<strong>Home B ({{STATE_LOW_TAX_CITY}}):</strong> $265,000 • {{STATE_LOW_TAX_MILLAGE}} mills • School rating: 7/10",
+              "Home B saves $15,000 on price + <span class=\"highlight-text\">lower annual taxes</span>. Over 30 years, property tax savings add up significantly!",
+              "But as teachers who value education, they chose Home A—the excellent schools are worth it to them."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "{{STATE_HIGH_TAX_CITY}}",
+              "value": "{{STATE_HIGH_TAX_MILLAGE}} mills",
+              "detail": "Higher property tax"
+            },
+            {
+              "type": "after",
+              "label": "{{STATE_LOW_TAX_CITY}}",
+              "value": "{{STATE_LOW_TAX_MILLAGE}} mills",
+              "detail": "Lower property tax"
+            },
+            {
+              "type": "after",
+              "label": "Their Choice",
+              "value": "Home A",
+              "detail": "Excellent schools are priority"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": "Why would someone knowingly choose to live in a high-tax area?<br><br>What services or amenities might be worth paying extra for?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "What local services matter most to you right now?<br><br>How might your priorities change when you have children?<br>When you retire?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "If a property is assessed at $200,000 and the millage rate is 25 mills, what is the annual property tax?"
+            },
+            {
+              "number": 2,
+              "question": "Why do renters indirectly pay property taxes, even though they don't own property?"
+            },
+            {
+              "number": 3,
+              "question": "Name two services that are typically funded by local property taxes in your community."
+            },
+            {
+              "number": 4,
+              "question": "How does a homestead exemption reduce your property tax burden?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Local Taxes Fund Your Community",
+              "description": "Property taxes pay for schools, police, fire, roads, parks—services you use daily"
+            },
+            {
+              "number": 2,
+              "title": "Property Tax = Assessed Value × Millage",
+              "description": "One mill = $1 per $1,000 of value. Always calculate before buying or renting."
+            },
+            {
+              "number": 3,
+              "title": "Tax Rates Vary Dramatically",
+              "description": "Even neighboring cities can have vastly different rates—research before you move"
+            },
+            {
+              "number": 4,
+              "title": "Higher Taxes ≠ Always Bad",
+              "description": "Evaluate what you're getting for your tax dollars—quality services may be worth it"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Student Activity",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "\ud83d",
+            "title": "\udcca Local Tax Impact Calculator",
+            "description": "Use the Local Tax Impact Calculator to compare the total local tax burden across different jurisdictions in your state. You'll input property values, spending habits, and income to see how location choice affects your finances."
+          },
+          "steps": [
+            "Select 3 different jurisdictions to compare",
+            "Enter property value to calculate property tax",
+            "Add annual spending to see sales tax impact",
+            "Compare total annual tax burdens",
+            "Identify one surprising finding"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

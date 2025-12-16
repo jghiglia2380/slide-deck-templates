@@ -1,0 +1,578 @@
+{
+  "metadata": {
+    "lChapter": "L-02",
+    "title": "Paying for Post-Secondary Education",
+    "subtitle": "Financing Your Educational Investment",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME",
+      "STATE_GRANT_PROGRAM",
+      "STATE_TUITION_PUBLIC",
+      "STATE_TUITION_COMMUNITY"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Paying for Post-Secondary Education",
+        "titleSize": "large",
+        "subtitle": "Financing Your Educational Investment"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": "How can you finance your education <em>strategically</em><br>to maximize opportunity while <em>minimizing debt</em>?"
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Differentiate",
+              "description": "Compare various post-secondary financing options including scholarships, grants, federal loans, private loans, and work-study programs."
+            },
+            {
+              "number": 2,
+              "verb": "Explain",
+              "description": "Describe the purpose and process of completing the FAFSA (Free Application for Federal Student Aid) and why early submission matters."
+            },
+            {
+              "number": 3,
+              "verb": "Compare",
+              "description": "Analyze federal vs. private student loan options, including terms, interest rates, repayment plans, and forgiveness programs."
+            },
+            {
+              "number": 4,
+              "verb": "Create",
+              "description": "Develop a balanced financial plan that prioritizes non-debt financing options and aligns with long-term financial goals."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Scholarship",
+              "definition": "Merit-based financial awards that do not need to be repaid, typically based on academic, athletic, artistic, or leadership achievements.",
+              "example": "Academic merit awards, athletic scholarships, community leadership awards, essay contest prizes"
+            },
+            {
+              "term": "Grant",
+              "definition": "Need-based financial aid that does not require repayment, typically awarded based on the student's or family's financial situation.",
+              "example": "Federal Pell Grants, {{STATE_GRANT_PROGRAM}}, FSEOG, institutional need-based grants"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "FAFSA",
+              "definition": "Free Application for Federal Student Aid—the form that determines eligibility for federal grants, loans, and work-study programs.",
+              "example": "Opens October 1st each year • Used by colleges and states to award their own aid • Required annually"
+            },
+            {
+              "term": "Work-Study",
+              "definition": "Part-time employment provided by educational institutions that allows students to earn money for educational expenses.",
+              "example": "On-campus convenience, flexible hours around classes, potential career-related experience, limited impact on aid"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "The Student Loan Reality",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Why Strategic Planning Matters",
+            "paragraphs": [
+              "Post-secondary education is a <strong>significant investment</strong> that can open doors to enhanced career opportunities and higher earning potential.",
+              "However, without a clear plan, students can end up with overwhelming debt that limits future financial choices for decades.",
+              "The decisions you make <strong>now</strong> about financing will have long-term implications for your financial well-being."
+            ],
+            "highlightBox": {
+              "icon": "\ud83d",
+              "text": "\udca1 Education is an investment—but smart investors minimize unnecessary costs while maximizing returns."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$1.75T",
+                "label": "Total U.S. Student Loan Debt",
+                "color": "rose"
+              },
+              {
+                "value": "43M+",
+                "label": "Americans with Student Debt",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Debt Can Delay:",
+              "color": "blue",
+              "items": [
+                "Buying a home",
+                "Starting a family",
+                "Saving for retirement",
+                "Career flexibility"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Scholarships & Grants vs. Loans",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "\ud83c",
+            "title": "\udf81 Free Money",
+            "items": [
+              "No repayment required",
+              "Reduces total education cost",
+              "No interest accumulation",
+              "Enhances your resume",
+              "Can be combined and stacked",
+              "Requires effort to find and apply"
+            ]
+          },
+          "rightColumn": {
+            "icon": "\ud83d",
+            "title": "\udcb3 Borrowed Money",
+            "items": [
+              "Must be repaid with interest",
+              "Increases total education cost",
+              "Interest starts accruing immediately or upon graduation",
+              "Creates long-term financial obligation",
+              "Affects debt-to-income ratio",
+              "Easier to access (which can be risky)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "The Funding Priority Order",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Strategic Funding Approach",
+            "paragraphs": [
+              "The most effective approach to financing education involves a <strong>combination of funding sources</strong> in strategic priority order.",
+              "Always exhaust \"free money\" options before considering loans. When loans are necessary, federal options typically offer better terms than private loans."
+            ],
+            "highlightBox": {
+              "icon": "\ud83c",
+              "text": "\udfaf Rule of thumb: Every dollar in scholarships is a dollar you don't have to borrow—or repay with interest!"
+            }
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": null,
+            "priorityList": [
+              {
+                "rank": 1,
+                "rankClass": "first",
+                "title": "Scholarships & Grants",
+                "description": "Free money—maximize first"
+              },
+              {
+                "rank": 2,
+                "rankClass": "second",
+                "title": "Work-Study / Part-Time Work",
+                "description": "Earn while you learn"
+              },
+              {
+                "rank": 3,
+                "rankClass": "third",
+                "title": "Federal Student Loans",
+                "description": "Better terms, more protections"
+              },
+              {
+                "rank": 4,
+                "rankClass": "fourth",
+                "title": "Private Loans",
+                "description": "Last resort only"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Federal vs. Private Loans",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Understanding Your Loan Options",
+          "paragraphs": [
+            "If borrowing is necessary, <strong>federal loans should always be your first choice</strong>. They offer significant advantages over private loans."
+          ],
+          "bulletPoints": [
+            "<strong>Federal Subsidized:</strong> Government pays interest while you're in school (need-based)",
+            "<strong>Federal Unsubsidized:</strong> Available to all students; interest accrues immediately",
+            "<strong>Income-Driven Repayment:</strong> Federal loans offer flexible plans based on your income",
+            "<strong>Loan Forgiveness:</strong> Public Service Loan Forgiveness after 120 qualifying payments",
+            "<strong>Private Loans:</strong> Higher rates, less flexibility, often require cosigner",
+            "<strong>Credit Checks:</strong> Federal loans don't require credit history; private loans do"
+          ]
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "FAFSA: Your Gateway to Aid",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Why FAFSA Is Essential",
+            "paragraphs": [
+              "The Free Application for Federal Student Aid (FAFSA) is the <strong>primary gateway</strong> to nearly all federal financial aid.",
+              "Completing the FAFSA determines eligibility for federal grants, loans, and work-study. Many states and colleges also use it to award their own aid.",
+              "Even if you think your family makes \"too much,\" <strong>always complete the FAFSA</strong>—you may qualify for aid you didn't expect."
+            ],
+            "highlightBox": {
+              "icon": "\ud83d",
+              "text": "\udcc5 Opens October 1st each year. Submit early—some aid is first-come, first-served!"
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "Oct 1",
+                "label": "FAFSA Opens Each Year",
+                "color": "teal"
+              },
+              {
+                "value": "$7,395",
+                "label": "Max Pell Grant (2024-25)",
+                "color": "green"
+              }
+            ],
+            "infoCard": {
+              "title": "FAFSA Unlocks:",
+              "color": "green",
+              "items": [
+                "Federal Pell Grants",
+                "Federal student loans",
+                "Work-study programs",
+                "{{STATE_NAME}} aid ({{STATE_GRANT_PROGRAM}})"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Why This Matters for Your Future",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Education Financing = Life Choices",
+          "paragraphs": [
+            "The financing decisions you make for education have <strong>far-reaching implications</strong> for your financial future. Understanding your options allows you to balance educational quality with financial reality."
+          ],
+          "bulletPoints": [
+            "<strong>Starting Salaries:</strong> College graduates earn ~$1M more over their lifetime on average",
+            "<strong>Monthly Payments:</strong> Average student loan payment is $200-$400/month for 10-25 years",
+            "<strong>Career Flexibility:</strong> High debt may force you to take jobs for salary, not passion",
+            "<strong>Strategic Choices:</strong> Community college → transfer can save $(({{STATE_TUITION_PUBLIC}} - {{STATE_TUITION_COMMUNITY}}) * 2)+ with same degree in {{STATE_NAME}}",
+            "<strong>Loan Forgiveness:</strong> Public service careers may qualify for forgiveness programs",
+            "<strong>Compound Effect:</strong> Money not spent on loans can be invested for your future"
+          ]
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Scholarship Landscape Today",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Scholarships Aren't Just for \"Perfect\" Students",
+            "paragraphs": [
+              "One of the biggest misconceptions is that scholarships are only for students with perfect grades or exceptional athletic ability.",
+              "In reality, scholarships exist for <strong>nearly every interest, background, and talent</strong>—from community service to unusual hobbies to specific career paths.",
+              "The key is <strong>starting early and applying strategically</strong>. Treat scholarship applications like a part-time job."
+            ],
+            "highlightBox": {
+              "icon": "\ud83d",
+              "text": "\udcb0 5 hours/week on applications × $22,000 in awards = an excellent hourly rate!"
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$46B+",
+                "label": "Scholarship Money Available",
+                "color": "purple"
+              },
+              {
+                "value": "1.7M",
+                "label": "Private Scholarships Exist",
+                "color": "teal"
+              }
+            ],
+            "infoCard": {
+              "title": "Scholarships Exist For:",
+              "color": "blue",
+              "items": [
+                "Academic achievement",
+                "Community involvement",
+                "Specific majors/careers",
+                "Cultural backgrounds"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "🎓",
+            "name": "Jordan's Scholarship-Focused Approach",
+            "paragraphs": [
+              "Jordan, a high school senior with strong academics and leadership experience, created a systematic approach starting junior year. Jordan researched <span class=\"highlight-text\">50 potential scholarships</span> and dedicated 5 hours weekly to applications.",
+              "By graduation, Jordan had secured:"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "Total Free Money",
+              "value": "$25,500",
+              "detail": "Scholarships + Grants"
+            },
+            {
+              "type": "after",
+              "label": "First Year Coverage",
+              "value": "~85%",
+              "detail": "Minimal loan needed"
+            },
+            {
+              "type": "after",
+              "label": "Effective Hourly Rate",
+              "value": "$98/hr",
+              "detail": "For application time invested"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "📚",
+            "name": "Casey's Balanced Funding Strategy",
+            "paragraphs": [
+              "Casey came from a middle-income family that couldn't save much for college. Instead of taking on maximum loans, Casey created a <span class=\"highlight-text\">strategic multi-year plan</span> for nursing school:",
+              "<strong>Year 1:</strong> Community college while living at home—Pell Grant ($2,500), merit scholarship ($1,500), part-time pharmacy job ($8,000). <em>Zero loans, money saved.</em>",
+              "<strong>Years 2-4:</strong> Transferred to university nursing program with transfer scholarship ($3,000), nursing scholarship ($2,000), hospital work-study, and limited federal loans ($5,500/year)."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "National Avg. Debt",
+              "value": "$37,000",
+              "detail": "Typical nursing graduate"
+            },
+            {
+              "type": "after",
+              "label": "Casey's Total Debt",
+              "value": "$16,500",
+              "detail": "55% below average"
+            },
+            {
+              "type": "after",
+              "label": "Bonus",
+              "value": "Job Offer",
+              "detail": "Hospital offers loan assistance"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": "What strategies did Jordan and Casey use to minimize their education debt?<br><br>Which approaches might work best for your personal situation and goals?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "What steps can you take NOW—even before senior year—to maximize scholarships and minimize the amount you'll need to borrow for education?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What is the difference between a scholarship and a grant? Which should you apply for first?"
+            },
+            {
+              "number": 2,
+              "question": "Why should federal student loans generally be considered before private loans?"
+            },
+            {
+              "number": 3,
+              "question": "What is the FAFSA and why is it important to complete it early, even if you think you won't qualify?"
+            },
+            {
+              "number": 4,
+              "question": "How can strategic educational choices (like community college first) reduce overall education costs?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Free Money First",
+              "description": "Always maximize scholarships and grants before considering any loans—every dollar matters"
+            },
+            {
+              "number": 2,
+              "title": "FAFSA Is Essential",
+              "description": "Complete the FAFSA early every year—it's your gateway to federal and often state/school aid"
+            },
+            {
+              "number": 3,
+              "title": "Federal Over Private",
+              "description": "When loans are needed, federal loans offer better terms, more protections, and forgiveness options"
+            },
+            {
+              "number": 4,
+              "title": "Strategic Choices Pay Off",
+              "description": "Community college, work-study, and targeted scholarships can dramatically reduce total costs"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Student Activity",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "\ud83d",
+            "title": "\udccb Mock FAFSA Worksheet Exercise",
+            "description": "In this activity, you'll practice completing a FAFSA worksheet using a sample student scenario. This hands-on experience will prepare you for the real application process. You'll use the <strong>Alex Johnson scenario</strong>—not your personal information—to understand what information is needed and how financial need is determined."
+          },
+          "steps": [
+            "Review the Alex Johnson scenario information",
+            "Complete the FAFSA worksheet sections",
+            "Identify which sections affect grant vs. loan eligibility",
+            "Calculate the Expected Family Contribution (EFC)",
+            "Discuss how changes would affect aid determination"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

@@ -1,0 +1,578 @@
+{
+  "metadata": {
+    "lChapter": "L-01",
+    "title": "Jobs vs. Careers",
+    "subtitle": "Understanding the Path to Financial Success",
+    "totalSlides": 20,
+    "hasStateVariables": false,
+    "stateVariablesUsed": []
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Jobs vs. Careers",
+        "titleSize": "large",
+        "subtitle": "Understanding the Path to Financial Success"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": "What's the difference between <em>earning a paycheck</em><br>and <em>building a financial future</em>?"
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Differentiate",
+              "description": "Distinguish between a job and a career based on growth potential, advancement opportunities, and long-term financial outcomes."
+            },
+            {
+              "number": 2,
+              "verb": "Identify",
+              "description": "Recognize how career paths affect long-term earning potential, benefits packages, and overall financial stability throughout your life."
+            },
+            {
+              "number": 3,
+              "verb": "Evaluate",
+              "description": "Assess your personal interests, skills, and values in relation to potential career paths that align with your financial goals."
+            },
+            {
+              "number": 4,
+              "verb": "Develop",
+              "description": "Create preliminary career path strategies that build career capital and support your vision for financial independence."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Job",
+              "definition": "A position of employment that provides immediate income but may have limited growth potential; typically viewed as a means to an end.",
+              "example": "Retail cashier, food service worker, seasonal positions, entry-level work without advancement path"
+            },
+            {
+              "term": "Career",
+              "definition": "A sequence of related jobs in a particular field that provides growth, advancement, and increasing compensation over time.",
+              "example": "Nursing, software development, accounting, teaching, skilled trades with advancement"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Career Path",
+              "definition": "A strategic progression of jobs, education, and skill acquisition that leads toward specific professional and financial goals.",
+              "example": "Medical Assistant → LPN → RN → Nurse Practitioner (each step increases salary + responsibility)"
+            },
+            {
+              "term": "Career Capital",
+              "definition": "The accumulated skills, experiences, knowledge, certifications, and professional connections that increase your value in the workplace.",
+              "example": "Technical skills, soft skills, certifications, degrees, professional network, reputation"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "The Fundamental Difference",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "More Than Just Semantics",
+            "paragraphs": [
+              "The distinction between jobs and careers has <strong>significant financial implications</strong> that affect your entire life.",
+              "A <strong>job</strong> primarily functions as a way to earn money for immediate needs—rent, food, transportation.",
+              "A <strong>career</strong> represents connected positions that build upon each other, offering advancement and higher compensation over time."
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "Your career will likely be your primary income source for 40+ years. The path you choose matters enormously."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "40+",
+                "label": "Years of Working Life",
+                "color": "teal"
+              },
+              {
+                "value": "$1M+",
+                "label": "Lifetime Earnings Difference",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Key Questions to Ask Yourself:",
+              "color": "amber",
+              "items": [
+                "Where does this position lead?",
+                "What skills will I gain here?",
+                "Is there room to grow and advance?",
+                "What's the long-term earning potential?"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Jobs vs. Careers: A Comparison",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "📋",
+            "title": "Jobs",
+            "items": [
+              "Less specialized education needed",
+              "May be temporary or short-term",
+              "Limited advancement opportunities",
+              "Provides immediate income",
+              "Fewer benefits (no 401k, limited PTO)",
+              "Skills may not transfer easily"
+            ]
+          },
+          "rightColumn": {
+            "icon": "🚀",
+            "title": "Careers",
+            "items": [
+              "Requires education or training investment",
+              "Long-term professional trajectory",
+              "Clear advancement pathways",
+              "Increasing compensation over time",
+              "Comprehensive benefits package",
+              "Builds transferable career capital"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Financial Implications",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Why Career Planning Matters Financially",
+            "paragraphs": [
+              "According to Bureau of Labor Statistics data, workers with career-focused education and training earn <strong>substantially more</strong> over their lifetimes.",
+              "Beyond salary, careers typically provide comprehensive benefits that significantly impact financial security:"
+            ],
+            "customContent": {
+              "type": "benefit-badges",
+              "items": [
+                {
+                  "badge": "401(k)",
+                  "description": "Retirement plans with employer matching"
+                },
+                {
+                  "badge": "Health",
+                  "description": "Medical, dental, and vision insurance"
+                },
+                {
+                  "badge": "PTO",
+                  "description": "Paid vacation, sick leave, and holidays"
+                }
+              ]
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "2-3x",
+                "label": "Higher Lifetime Earnings",
+                "color": "teal"
+              },
+              {
+                "value": "$12K+",
+                "label": "Average Annual Benefits Value",
+                "color": "green"
+              }
+            ],
+            "infoCard": {
+              "title": "Benefits = Real Money:",
+              "color": "amber",
+              "items": [
+                "6% 401k match = $3,600/year",
+                "Health insurance = $7,000+/year",
+                "Paid time off = $2,000+/year",
+                "Total hidden value = $12,000+/year"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Building Career Capital",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "What Is Career Capital?",
+          "paragraphs": [
+            "Career capital is your professional wealth—the skills, experiences, connections, and reputation you accumulate throughout your working life. <strong>It's an investment that compounds over time.</strong>"
+          ],
+          "bulletPoints": [
+            "<strong>Technical Skills:</strong> Programming, accounting, medical procedures, design software",
+            "<strong>Soft Skills:</strong> Communication, leadership, problem-solving, teamwork",
+            "<strong>Certifications:</strong> Industry credentials that validate expertise (CPA, PMP, AWS)",
+            "<strong>Professional Network:</strong> Relationships that open doors to opportunities",
+            "<strong>Experience:</strong> Proven track record of delivering results",
+            "<strong>Reputation:</strong> What people say about you when you're not in the room"
+          ]
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "The Value of Career Capital",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Career Capital = Financial Options",
+            "paragraphs": [
+              "Unlike a job, which may provide limited transferable skills, careers allow you to build specialized expertise that can be leveraged for advancement.",
+              "Career capital provides <strong>negotiating power</strong>: better salaries, flexible arrangements, interesting projects, and the ability to weather economic downturns."
+            ],
+            "highlightBox": {
+              "icon": "💰",
+              "text": "<strong>The more career capital you accumulate, the more options you'll have and the higher earning potential you can command.</strong>"
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "87%",
+                "label": "Jobs Filled via Networking",
+                "color": "teal"
+              },
+              {
+                "value": "+20%",
+                "label": "Salary Boost from Certifications",
+                "color": "rose"
+              }
+            ],
+            "infoCard": {
+              "title": "Capital Compounds Like Interest:",
+              "color": "blue",
+              "items": [
+                "Year 1: Learning the fundamentals",
+                "Year 3: Building specialized expertise",
+                "Year 5: Recognized skill mastery",
+                "Year 10: Senior-level market value"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Why This Matters for Your Future",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Career Choices = Life Choices",
+          "paragraphs": [
+            "Your career path will likely be your <strong>primary income source</strong> throughout your life. The career choices you make determine far more than just your paycheck:"
+          ],
+          "bulletPoints": [
+            "<strong>Annual Salary:</strong> How much you earn each year directly impacts every financial decision",
+            "<strong>Emergency Fund:</strong> Higher income = faster ability to build 3-6 month safety net",
+            "<strong>Retirement Investing:</strong> Starting early with good income accelerates compound growth",
+            "<strong>Creditworthiness:</strong> Stable career income helps qualify for mortgages and loans",
+            "<strong>Major Milestones:</strong> Homeownership, starting a family, education for kids",
+            "<strong>Work-Life Balance:</strong> Career positions often offer more flexibility than jobs"
+          ]
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Careers in Today's Economy",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The Evolving Career Landscape",
+            "paragraphs": [
+              "In today's dynamic economy, even traditional career paths are evolving. <strong>Many workers now experience multiple careers throughout their lifetime.</strong>",
+              "This makes strategic planning and adaptability even more important skills for financial success.",
+              "The good news? Each career change can build on previous experience, expanding your career capital portfolio."
+            ],
+            "highlightBox": {
+              "icon": "🔄",
+              "text": "The average person changes careers (not just jobs) 3-7 times during their working life."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "3-7",
+                "label": "Career Changes per Person",
+                "color": "purple"
+              },
+              {
+                "value": "12",
+                "label": "Average Jobs in a Lifetime",
+                "color": "teal"
+              }
+            ],
+            "infoCard": {
+              "title": "Key Skills for Career Success:",
+              "color": "green",
+              "items": [
+                "Navigate transitions strategically",
+                "Know when to invest in education",
+                "Leverage transferable skills",
+                "Build adaptable career capital"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👩‍⚕️",
+            "name": "Maya's Journey: Fast Food → Healthcare Career",
+            "paragraphs": [
+              "Maya worked at a fast-food restaurant during high school, making <strong>minimum wage</strong> with irregular hours. While the job provided spending money, it offered no benefits, limited skill development, and no path to advancement.",
+              "After graduation, Maya enrolled in a community college nursing program. Although she earned less during her education, <span class=\"highlight-text\">within five years she had become a registered nurse</span> earning more than three times her previous hourly wage, with excellent benefits and clear opportunities for advancement."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Before (Fast Food Job)",
+              "value": "$7.25/hr",
+              "detail": "No benefits • Irregular hours"
+            },
+            {
+              "type": "after",
+              "label": "After (RN Career)",
+              "value": "$35+/hr",
+              "detail": "Full benefits • Career growth"
+            },
+            {
+              "type": "neutral",
+              "label": "5-Year Investment",
+              "value": "383% ROI",
+              "detail": "Education paid off quickly"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👨‍💻",
+            "name": "Carlos's Strategic Tech Career Path",
+            "paragraphs": [
+              "Carlos started at an entry-level tech position after completing a coding bootcamp. Instead of viewing it as \"just a job,\" he approached it as the <span class=\"highlight-text\">first step in a strategic career path</span>.",
+              "His career-building strategy included volunteering for challenging projects to build skills, seeking mentorship from senior developers, investing personal time learning new programming languages, and building his professional network strategically."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Year 1 (Entry Level)",
+              "value": "$55K",
+              "detail": "Junior developer role"
+            },
+            {
+              "type": "neutral",
+              "label": "Year 3 (New Company)",
+              "value": "$85K",
+              "detail": "+55% salary increase"
+            },
+            {
+              "type": "after",
+              "label": "Year 5 (Senior Role)",
+              "value": "$120K+",
+              "detail": "+ flexible work + equity"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": "What specific decisions did Maya and Carlos make that transformed their work from \"just a job\" into a career?<br><br>How did these choices impact their financial futures?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "What careers might align with your interests, skills, and values while also providing the financial future you envision?<br><br>What steps could you take now to start building career capital?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What is the main difference between a job and a career? Give one example of each."
+            },
+            {
+              "number": 2,
+              "question": "Name three types of career capital you could start building right now, even as a student."
+            },
+            {
+              "number": 3,
+              "question": "Why do careers typically offer better financial outcomes than a series of unrelated jobs?"
+            },
+            {
+              "number": 4,
+              "question": "How do benefits (like 401k matching and health insurance) add to the financial value of a career?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Jobs vs. Careers",
+              "description": "Jobs provide immediate income; careers offer growth, advancement, and significantly higher lifetime earnings"
+            },
+            {
+              "number": 2,
+              "title": "Career Capital Compounds",
+              "description": "Skills, experience, and network are valuable assets that grow over time—start building now"
+            },
+            {
+              "number": 3,
+              "title": "Benefits Matter",
+              "description": "Career positions typically include benefits worth $10,000+ annually beyond your base salary"
+            },
+            {
+              "number": 4,
+              "title": "Start Early",
+              "description": "The decisions you make now about education and work establish your financial foundation for decades"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Student Activity",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📋",
+            "title": "Complete the Student Activity Packet",
+            "description": "In the activity packet, you'll create a preliminary <strong>Career Path Plan</strong> that maps potential routes from where you are now to your long-term professional goals. This is your opportunity to apply today's concepts to your own life and begin thinking strategically about your financial future."
+          },
+          "steps": [
+            "Research 2-3 career fields that interest you",
+            "Map education requirements and salary ranges",
+            "Create short, mid, and long-term goals",
+            "Identify career capital you can build now",
+            "Calculate potential financial outcomes"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

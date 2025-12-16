@@ -1,0 +1,465 @@
+{
+  "metadata": {
+    "lChapter": "L-41",
+    "title": "Career Explorationand Goal Setting",
+    "subtitle": "Building Your Path to Professional Success in {{STATE_NAME}}",
+    "totalSlides": 18,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Career Explorationand Goal Setting",
+        "titleSize": "large",
+        "subtitle": "Building Your Path to Professional Success in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question in {{STATE_NAME}}",
+        "question": "What's the difference between working a <em>job</em> and building a <em>career</em>?<br><br>How can you take control of your <em>professional future</em>? in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Distinguish",
+              "description": "Understand the fundamental difference between a job and a career, and why it matters for your future."
+            },
+            {
+              "number": 2,
+              "verb": "Self-Assess",
+              "description": "Identify your personal interests, skills, and values for informed career exploration."
+            },
+            {
+              "number": 3,
+              "verb": "Research",
+              "description": "Use career exploration resources like O*NET, BLS, and informational interviews effectively."
+            },
+            {
+              "number": 4,
+              "verb": "Plan",
+              "description": "Develop SMART career goals and create a comprehensive career development plan."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Career in {{STATE_NAME}}",
+              "definition": "A long-term professional journey encompassing multiple jobs, involving growth, development, and advancement over time.",
+              "example": "Starting as a staff accountant, then senior accountant, manager, and eventually CFO over 20 years"
+            },
+            {
+              "term": "Job in {{STATE_NAME}}",
+              "definition": "A specific position or role with defined responsibilities, typically performed in exchange for payment.",
+              "example": "Working as a cashier at a retail store or an administrative assistant at a company"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Self-Assessment in {{STATE_NAME}}",
+              "definition": "The process of evaluating your own interests, skills, values, and personality traits to guide career decisions.",
+              "example": "Taking personality tests, listing skills, reflecting on what motivates you"
+            },
+            {
+              "term": "SMART Goals in {{STATE_NAME}}",
+              "definition": "Specific, Measurable, Achievable, Relevant, and Time-bound objectives for effective planning.",
+              "example": "\"Complete my CPA certification exam within 18 months of graduation\""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Jobs vs. Careers",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "\ud83d",
+            "title": "\udcbc Job",
+            "items": [
+              "Specific position or role",
+              "Focused on immediate income",
+              "May be temporary or short-term",
+              "Defined by tasks and duties",
+              "May not align with long-term goals"
+            ]
+          },
+          "rightColumn": {
+            "icon": "\ud83d",
+            "title": "\ude80 Career",
+            "items": [
+              "Long-term professional journey",
+              "Encompasses multiple positions",
+              "Involves progression and advancement",
+              "Aligned with interests and goals",
+              "Requires ongoing development"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Self-Assessment: Know Yourself First",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Three Key Areas to Explore",
+            "paragraphs": [
+              "<strong>1. Interests:</strong> What subjects do you enjoy? What activities make time fly? What problems do you like solving?",
+              "<strong>2. Skills:</strong> What are you naturally good at? What have you learned through education or experience?",
+              "<strong>3. Values:</strong> What matters most to you in work? What kind of environment do you thrive in?"
+            ],
+            "highlightBox": {
+              "icon": "\ud83d",
+              "text": "\udca1 Self-awareness is the foundation of smart career planning. Know yourself before exploring careers."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "2X in {{STATE_NAME}}",
+                "label": "More satisfied in careers aligned with interests in {{STATE_NAME}}",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Questions to Ask Yourself:",
+              "color": "green",
+              "items": [
+                "What do I lose track of time doing?",
+                "What topics do I enjoy learning about?",
+                "What would I do even without pay?",
+                "What kind of impact do I want to make?"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Two Types of Skills",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "\ud83d",
+            "title": "\udd27 Hard Skills",
+            "items": [
+              "Technical, teachable abilities",
+              "Specific to certain jobs",
+              "Computer programming",
+              "Data analysis",
+              "Foreign language proficiency",
+              "Accounting or budgeting"
+            ]
+          },
+          "rightColumn": {
+            "icon": "",
+            "title": "🤝 Soft Skills",
+            "items": [
+              "Personal attributes and interpersonal",
+              "Transferable across all jobs",
+              "Communication",
+              "Leadership",
+              "Problem-solving",
+              "Teamwork and adaptability"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Career Exploration Resources",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Online Research Tools",
+            "paragraphs": [
+              "<strong>O*NET OnLine</strong> (onetonline.org): Comprehensive database with skills, education, salary, and outlook for hundreds of occupations.",
+              "<strong>Bureau of Labor Statistics</strong>: Occupational Outlook Handbook with detailed career information and employment projections.",
+              "<strong>CareerOneStop</strong>: Career assessments, training opportunities, and job search resources."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "SMART Career Goals",
+        "layout": "generic",
+        "layoutData": {
+          "paragraphs": [
+            "What exactly do you want to accomplish? Who is involved? Why is this important?",
+            "How will you track progress? What metrics will show you've achieved it?",
+            "Is this realistic given your resources, time, and current situation?",
+            "Does this align with your broader career aspirations and personal values?",
+            "What is your target date for completion? When will you reach milestones?"
+          ],
+          "lists": []
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "SMART Goal in Action",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "❌ Vague Goal",
+            "paragraphs": [
+              "\"I want to work in healthcare.\"",
+              "This goal lacks specificity, measurability, and a timeline. It doesn't provide direction for action."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Career Development Plan Components",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Building Your Roadmap to Success",
+          "paragraphs": [],
+          "bulletPoints": [
+            "<strong>Career Objective</strong><br>Your ultimate career direction and aspiration",
+            "<strong>Education &amp; Training</strong><br>Degrees, certifications, and courses needed",
+            "<strong>Experience Building</strong><br>Internships, jobs, and volunteer work",
+            "<strong>Skill Development</strong><br>Technical and soft skills to acquire",
+            "<strong>Networking</strong><br>Professional organizations and mentors",
+            "<strong>Timeline &amp; Milestones</strong><br>Short, mid, and long-term goals"
+          ],
+          "keyPoint": {
+            "text": "📋 A career development plan is your personalized roadmap—it turns dreams into actionable steps."
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👩‍⚕️ in {{STATE_NAME}}",
+            "name": "Sarah: From Job to Career in {{STATE_NAME}}",
+            "paragraphs": [
+              "Sarah started as a <span class=\"highlight-text\">receptionist at a medical clinic</span> right after high school—viewing it as just a job to pay bills.",
+              "After observing nurses and medical assistants, she became interested in <span class=\"highlight-text\">healthcare as a career</span>. She created a development plan with short, mid, and long-term goals.",
+              "Her transformation: complete nursing prerequisites, earn RN license, then specialize in pediatric oncology and eventually become a <strong>pediatric nurse practitioner</strong>."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "Short-Term (1-2 yrs) in {{STATE_NAME}}",
+              "value": "Prerequisites + Savings in {{STATE_NAME}}",
+              "detail": "Gain patient experience in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "Mid-Term (3-5 yrs) in {{STATE_NAME}}",
+              "value": "RN Degree + License in {{STATE_NAME}}",
+              "detail": "Pediatric nursing position in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "Long-Term (5+ yrs) in {{STATE_NAME}}",
+              "value": "Nurse Practitioner in {{STATE_NAME}}",
+              "detail": "Children's hospital in {{STATE_NAME}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "💻 in {{STATE_NAME}}",
+            "name": "Miguel: Career Exploration Process in {{STATE_NAME}}",
+            "paragraphs": [
+              "Miguel, a high school junior interested in technology, wasn't sure which specific career to pursue.",
+              "<strong>Self-assessment:</strong> Identified strengths in problem-solving, communication, and creativity; interests in coding, design, and helping others use technology.",
+              "<strong>Research:</strong> Used the Occupational Outlook Handbook to compare Software Developer, UX/UI Designer, IT Support Specialist, and Computer Science Teacher.",
+              "<strong>Informational Interviews:</strong> Conversations revealed that <span class=\"highlight-text\">UX/UI design</span> best combined his technical and creative interests."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "SMART Goals Set in {{STATE_NAME}}",
+              "value": "UX Course in 6 months in {{STATE_NAME}}",
+              "detail": "Portfolio with 3 projects by year end in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "Career Path Found in {{STATE_NAME}}",
+              "value": "UX/UI Designer in {{STATE_NAME}}",
+              "detail": "Combines tech + creativity in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "Next Step in {{STATE_NAME}}",
+              "value": "Summer Internship in {{STATE_NAME}}",
+              "detail": "Design-focused programs in {{STATE_NAME}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion in {{STATE_NAME}}",
+        "question": "Why is it important to have both short-term and long-term goals in your career development plan?<br><br>How can short-term goals help you stay motivated toward long-term aspirations? in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 16,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Jobs ≠ Careers",
+              "description": "Jobs provide immediate income; careers offer long-term growth aligned with your goals and values"
+            },
+            {
+              "number": 2,
+              "title": "Know Yourself First",
+              "description": "Self-assessment of interests, skills, and values is the foundation of smart career planning"
+            },
+            {
+              "number": 3,
+              "title": "Research Thoroughly",
+              "description": "Use O*NET, BLS, informational interviews, and job shadowing to explore careers"
+            },
+            {
+              "number": 4,
+              "title": "Plan with SMART Goals",
+              "description": "Create Specific, Measurable, Achievable, Relevant, Time-bound goals with clear milestones"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Student Activity",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📋",
+            "title": "🧭 Career Path Planner",
+            "description": "Use the Career Path Planner skill builder to create your own comprehensive career development plan. This interactive tool will guide you through self-assessment, career research, and goal-setting to build a personalized roadmap for your professional future."
+          },
+          "steps": [
+            "Complete self-assessment: interests, skills, values",
+            "Research 2-3 careers that align with your profile",
+            "Write one SMART goal for short-term (1-2 yrs)",
+            "Write one SMART goal for long-term (5+ yrs)",
+            "Identify education and skills needed for your path"
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time in {{STATE_NAME}}",
+        "website": "www.pflacademy.co in {{STATE_NAME}}",
+        "copyright": "© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+      }
+    }
+  ]
+}

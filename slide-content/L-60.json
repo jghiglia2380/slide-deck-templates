@@ -1,0 +1,551 @@
+{
+  "metadata": {
+    "lChapter": "L-60",
+    "title": "UnderstandingFinancial Contracts",
+    "subtitle": "Read Before You Sign—Your Money Depends On It",
+    "totalSlides": 20,
+    "hasStateVariables": false,
+    "stateVariablesUsed": []
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "UnderstandingFinancial Contracts",
+        "titleSize": "large",
+        "subtitle": "Read Before You Sign—Your Money Depends On It"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": "Only <em>7% of people</em> read terms and conditions<br>before clicking \"I agree.\"<br><br>What could you be agreeing to without knowing?"
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Identify",
+              "description": "Recognize the five essential elements that make a contract legally binding: offer, acceptance, consideration, capacity, legality."
+            },
+            {
+              "number": 2,
+              "verb": "Interpret",
+              "description": "Understand common legal terminology and contract clauses in financial agreements."
+            },
+            {
+              "number": 3,
+              "verb": "Analyze",
+              "description": "Evaluate contract terms to understand your rights, obligations, and potential financial risks."
+            },
+            {
+              "number": 4,
+              "verb": "Apply",
+              "description": "Use contract literacy skills to protect your personal interests in financial transactions."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Contract",
+              "definition": "A legally enforceable agreement between two or more parties that creates mutual obligations.",
+              "example": "Apartment lease, phone plan, car loan, employment agreement, gym membership."
+            },
+            {
+              "term": "Consideration",
+              "definition": "Something of value exchanged between parties—each must give something for the contract to be valid.",
+              "example": "You pay rent; landlord provides housing. No consideration = gift, not contract."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Fine Print",
+              "definition": "Contract clauses, often in small text or buried in lengthy documents, containing important limitations, fees, or penalties.",
+              "example": "\"Early termination fee: $500\" or \"Automatic renewal unless canceled 60 days prior.\""
+            },
+            {
+              "term": "Breach",
+              "definition": "Failure to fulfill the obligations outlined in a contract without a legal excuse.",
+              "example": "May result in penalties, fees, legal action, damage to credit, or repossession."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "5 Elements of a Valid Contract",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "All Five Must Be Present",
+            "paragraphs": [
+              "<strong>1. Offer:</strong> A clear proposal to do or provide something specific.",
+              "<strong>2. Acceptance:</strong> Unconditional agreement to the offer's terms.",
+              "<strong>3. Consideration:</strong> Each party exchanges something of value.",
+              "<strong>4. Capacity:</strong> Parties must be legal age, mentally competent, not under duress.",
+              "<strong>5. Legality:</strong> The contract's purpose must be legal."
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "Missing any element = contract may be invalid or voidable."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "18",
+                "label": "Legal Age in Most States",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Quick Test:",
+              "color": "blue",
+              "items": [
+                "\"I'll give you my phone for free\" = No consideration (gift)",
+                "16-year-old signs lease = No capacity (voidable)",
+                "\"Pay me to commit fraud\" = Illegal (void)"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Types of Financial Contracts",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Contracts You'll Encounter Throughout Life",
+          "paragraphs": [
+            "Each type has unique terms and implications you need to understand before signing:"
+          ],
+          "bulletPoints": [
+            "<strong>Lease Agreements:</strong> Rent, deposits, maintenance, termination penalties",
+            "<strong>Loan Agreements:</strong> Principal, interest, payment schedule, default terms",
+            "<strong>Service Contracts:</strong> Phone plans, internet, gym—watch for auto-renewal!",
+            "<strong>Employment Contracts:</strong> Salary, benefits, non-compete clauses, termination",
+            "<strong>Purchase Agreements:</strong> Cars, real estate—high stakes, read carefully",
+            "<strong>Credit Agreements:</strong> Cards, lines of credit—know the APR and fees"
+          ],
+          "keyPoint": {
+            "text": "The more money involved, the more carefully you should read. Major contracts deserve hours of review, not minutes."
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "How to Read Contract Language",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Essential Reading Strategies",
+            "paragraphs": [
+              "<strong>1. Read the ENTIRE contract</strong>—never sign without complete review.",
+              "<strong>2. Identify ALL financial obligations:</strong> payments, fees, penalties.",
+              "<strong>3. Locate termination terms:</strong> How do you exit? At what cost?",
+              "<strong>4. Watch for automatic renewal:</strong> Does it continue unless you cancel?",
+              "<strong>5. Find arbitration clauses:</strong> Do you give up the right to sue?"
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "If you don't understand a term, research it or ask. Never assume it doesn't matter."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "93%",
+                "label": "Don't Read Before Signing",
+                "color": "rose"
+              }
+            ],
+            "infoCard": {
+              "title": "Red Flag Phrases:",
+              "color": "amber",
+              "items": [
+                "\"Company may modify terms at any time\"",
+                "\"You waive the right to sue\"",
+                "\"Early termination fee: [large $]\"",
+                "\"Not responsible for any damages\""
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Why Fine Print Matters",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Important Terms Are Often Buried",
+          "paragraphs": [
+            "Companies deliberately put unfavorable terms in small text or lengthy documents. The most important clauses are often the hardest to find:"
+          ],
+          "bulletPoints": [
+            "<strong>Arbitration Clauses:</strong> You can't sue in court or join class actions",
+            "<strong>Liability Limitations:</strong> The company isn't responsible for problems",
+            "<strong>Modification Clauses:</strong> They can change terms with minimal notice",
+            "<strong>Automatic Renewal:</strong> Continues charging unless you proactively cancel",
+            "<strong>Default Provisions:</strong> What happens if you miss a payment",
+            "<strong>Indemnification:</strong> You may be responsible for their legal costs"
+          ],
+          "keyPoint": {
+            "text": "\"I didn't read it\" is NOT a legal defense. Your signature = you agreed. Courts enforce contracts as written."
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "The Cost of Contract Illiteracy",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Real Money at Stake",
+            "paragraphs": [
+              "Signing contracts without reading can cost thousands of dollars and limit your future flexibility.",
+              "Non-compete clauses can prevent you from taking better jobs for months or years.",
+              "Perpetual payment cycles prevent wealth building—subscription services, gym memberships, and loans you can't afford."
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "Contract literacy is empowerment. Understanding contracts lets you negotiate better terms and make informed decisions."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$2K-$4K",
+                "label": "Average Lease Termination Fee",
+                "color": "rose"
+              },
+              {
+                "value": "$350+",
+                "label": "Phone Plan Cancellation",
+                "color": "teal"
+              },
+              {
+                "value": "300%+",
+                "label": "Payday Loan Effective APR",
+                "color": "purple"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Why Contract Literacy Matters",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Protecting Your Financial Future",
+          "paragraphs": [
+            "Understanding contracts isn't about avoiding all agreements—it's about knowing what you're agreeing to:"
+          ],
+          "bulletPoints": [
+            "<strong>Avoid Unexpected Costs:</strong> Know all fees, penalties, and conditions upfront",
+            "<strong>Maintain Flexibility:</strong> Understand how and when you can exit if needed",
+            "<strong>Negotiate Better Terms:</strong> Many contract terms ARE negotiable if you ask",
+            "<strong>Prevent Legal Problems:</strong> Know your obligations before you commit",
+            "<strong>Build Wealth:</strong> Avoid traps that keep you paying perpetually",
+            "<strong>Protect Career Options:</strong> Understand non-compete and exclusivity clauses"
+          ],
+          "keyPoint": {
+            "text": "Taking 30 minutes to read a contract can save you thousands of dollars and years of frustration."
+          }
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Contracts CAN Be Negotiated",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Don't Assume Terms Are Fixed",
+            "paragraphs": [
+              "Many people believe contracts are take-it-or-leave-it. In reality, especially for employment, leases, and services, <strong>negotiation is often possible.</strong>",
+              "The worst they can say is \"no.\" Many businesses will modify terms to secure good customers or employees.",
+              "<strong>Approach professionally:</strong> Ask questions, express concerns, propose alternatives, get changes in writing."
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "Employers often respect candidates who carefully review contracts—it shows attention to detail and professionalism."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "YES",
+                "label": "You CAN Ask for Changes",
+                "color": "green"
+              }
+            ],
+            "infoCard": {
+              "title": "Often Negotiable:",
+              "color": "green",
+              "items": [
+                "Non-compete scope and duration",
+                "Early termination fees",
+                "Probationary periods",
+                "Start dates and benefits timing",
+                "Lease terms and move-in costs"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "🏢",
+            "name": "Aaliyah's Apartment Lease Trap",
+            "paragraphs": [
+              "Aaliyah signed a 12-month lease without carefully reading the 15-page agreement. Three months later, she got a great job offer in another city.",
+              "When she tried to break her lease, she discovered: <span class=\"highlight-text\">60 days' notice required, subletting prohibited without a $500 fee, early termination = 2 months' rent + forfeited deposit.</span>",
+              "Total cost to leave: <span class=\"highlight-text\">$3,800</span> that she never anticipated."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "What She Missed",
+              "value": "60-Day Notice",
+              "detail": "Required for early termination"
+            },
+            {
+              "type": "before",
+              "label": "Penalty",
+              "value": "$2,850",
+              "detail": "2 months rent + fees"
+            },
+            {
+              "type": "before",
+              "label": "Lost Deposit",
+              "value": "$950",
+              "detail": "Forfeited on early break"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "💼",
+            "name": "Sofia's Informed Contract Negotiation",
+            "paragraphs": [
+              "Sofia received a job offer at $52,000. Instead of signing immediately, she <span class=\"highlight-text\">read all five pages carefully</span> and researched unfamiliar terms.",
+              "She found a non-compete clause: couldn't work for competitors within 50 miles for 2 years. She also noticed a 90-day probationary period with no health benefits.",
+              "Sofia <span class=\"highlight-text\">negotiated professionally</span>: reduced non-compete to 1 year/25 miles, got benefits at 60 days. The employer agreed and appreciated her thoroughness!"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "Non-Compete",
+              "value": "Reduced",
+              "detail": "1 year / 25 miles (vs. 2yr/50mi)"
+            },
+            {
+              "type": "after",
+              "label": "Benefits",
+              "value": "60 Days",
+              "detail": "vs. 90-day wait"
+            },
+            {
+              "type": "after",
+              "label": "Result",
+              "value": "Protected",
+              "detail": "Career flexibility preserved"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": "What contracts have you already signed—or will you sign soon?<br><br>What terms might you have accepted without fully understanding?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "What three questions should you ALWAYS ask yourself<br>before signing any financial contract?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What are the five essential elements required for a contract to be legally valid?"
+            },
+            {
+              "number": 2,
+              "question": "Why is \"I didn't read it\" not a legal defense when you've signed a contract?"
+            },
+            {
+              "number": 3,
+              "question": "What is an arbitration clause, and how does it affect your rights?"
+            },
+            {
+              "number": 4,
+              "question": "What's the first thing you should look for when reviewing any contract?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Five Elements Required",
+              "description": "Offer, acceptance, consideration, capacity, and legality make contracts valid"
+            },
+            {
+              "number": 2,
+              "title": "Read Before Signing",
+              "description": "Your signature binds you—\"I didn't read it\" provides no legal protection"
+            },
+            {
+              "number": 3,
+              "title": "Fine Print Contains Key Terms",
+              "description": "Fees, penalties, and rights you're waiving are often buried deliberately"
+            },
+            {
+              "number": 4,
+              "title": "Negotiation Is Often Possible",
+              "description": "Ask professionally—many terms can be modified if you request it"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Student Activity",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "\ud83d",
+            "title": "\udccb Contract Analysis Tool",
+            "description": "Practice identifying essential contract elements, key terms, and red flags in four real-world financial contracts. You'll analyze an apartment lease, phone contract, gym membership, and personal loan agreement."
+          },
+          "steps": [
+            "Identify the 5 essential contract elements",
+            "Locate all fees, payments, and penalties",
+            "Spot red flag clauses (auto-renewal, arbitration)",
+            "Calculate total cost over the contract term",
+            "Identify termination terms and costs"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

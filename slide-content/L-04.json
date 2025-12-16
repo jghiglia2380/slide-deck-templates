@@ -1,0 +1,468 @@
+{
+  "metadata": {
+    "lChapter": "L-XX",
+    "title": "Financial Goal Setting",
+    "subtitle": "Transforming financial wishes into actionable, achievable plans in {{STATE_NAME}} using the SMART framework",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Financial Goal Setting",
+        "titleSize": "large",
+        "subtitle": "Transforming financial wishes into actionable, achievable plans in {{STATE_NAME}} using the SMART framework"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": ""
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Apply",
+              "description": "Apply the SMART criteria to transform vague financial aspirations into effective, actionable goals"
+            },
+            {
+              "number": 2,
+              "verb": "Differentiate",
+              "description": "Differentiate between short-term and long-term financial goals and their distinct strategies"
+            },
+            {
+              "number": 3,
+              "verb": "Identify",
+              "description": "Identify methods for prioritizing multiple financial goals based on urgency, importance, and feasibility"
+            },
+            {
+              "number": 4,
+              "verb": "Evaluate",
+              "description": "Evaluate the impact of financial goal setting on overall life planning and financial well-being"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            },
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            },
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Why Financial Goals Matter",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Goals as Your Financial Roadmap",
+            "paragraphs": [
+              "Without clear goals, it's easy to spend impulsively and never afford what truly matters to you."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Short-Term vs. Long-Term Goals",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          },
+          "rightColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "The SMART Framework",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Transform vague aspirations into clear, actionable plans",
+          "paragraphs": [
+            "Define exactly what you want to accomplish",
+            "Include concrete amounts to track progress",
+            "Set realistic goals for your situation",
+            "Align with your values and priorities",
+            "Set a specific deadline for completion"
+          ],
+          "bulletPoints": []
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "SMART Goal in Action",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Transforming a Vague Goal",
+            "paragraphs": [
+              "\"I want to save money for a laptop.\"",
+              "\"I will save $800 for a new laptop by saving $100 per month for 8 months, tracking my progress in a savings app.\""
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "Why It Works:",
+              "color": "amber",
+              "items": []
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Prioritizing Your Goals",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "When You Have Multiple Goals",
+            "paragraphs": [
+              "Prioritization helps you allocate limited resources effectively without abandoning any goal entirely.",
+              "Which goals have time-sensitive deadlines?",
+              "Which will have the biggest life impact?",
+              "Which can you realistically achieve now?"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Why It Matters",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Impact on Your Financial Life",
+            "paragraphs": [
+              "Financial goal setting has far-reaching implications for your overall well-being and future success."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Modern Goal Setting",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Today's Tools for Success",
+            "paragraphs": [
+              "Technology makes tracking and achieving financial goals easier than ever before."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "",
+            "name": "",
+            "paragraphs": []
+          },
+          "outcomes": []
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "",
+            "name": "",
+            "paragraphs": []
+          },
+          "outcomes": []
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": ""
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": ""
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What are the five components of a SMART goal, and why is each one important?"
+            },
+            {
+              "number": 2,
+              "question": "How do short-term goals differ from long-term goals in terms of strategy and timeline?"
+            },
+            {
+              "number": 3,
+              "question": "What factors should you consider when prioritizing multiple financial goals?"
+            },
+            {
+              "number": 4,
+              "question": "Transform this vague goal into a SMART goal: \"I want to save money for a trip.\""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "",
+              "description": "The SMART framework transforms vague wishes into specific, measurable, achievable, relevant, and time-bound plans"
+            },
+            {
+              "number": 2,
+              "title": "",
+              "description": "Balance short-term goals (quick wins, motivation) with long-term goals (major life milestones)"
+            },
+            {
+              "number": 3,
+              "title": "",
+              "description": "Prioritize goals based on urgency, importance, feasibility, and sequence—but don't abandon any goal entirely"
+            },
+            {
+              "number": 4,
+              "title": "",
+              "description": "Effective goal setting builds confidence, self-discipline, and positive financial habits for life"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Skill Builder: SMART Goals Worksheet",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📋",
+            "title": "",
+            "description": ""
+          },
+          "steps": []
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Set Goals. Take Action. Build Your Future.",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

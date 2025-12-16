@@ -1,0 +1,513 @@
+{
+  "metadata": {
+    "lChapter": "L-XX",
+    "title": "Understanding and Managing Risk",
+    "subtitle": "Identifying, assessing, and controlling threats to minimize negative outcomes in {{STATE_NAME}}",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Understanding and Managing Risk",
+        "titleSize": "large",
+        "subtitle": "Identifying, assessing, and controlling threats to minimize negative outcomes in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": ""
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Define Risk",
+              "description": "Identify risk and its presence in everyday life and financial decisions"
+            },
+            {
+              "number": 2,
+              "verb": "Categorize Risks",
+              "description": "Distinguish between personal, property, liability, and financial risks"
+            },
+            {
+              "number": 3,
+              "verb": "Compare Strategies",
+              "description": "Evaluate the four main risk management strategies: avoidance, reduction, acceptance, transfer"
+            },
+            {
+              "number": 4,
+              "verb": "Assess Tolerance",
+              "description": "Evaluate your own risk tolerance and how it affects decision-making"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            },
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            },
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Types of Risk",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Risk Is Everywhere",
+            "paragraphs": [
+              "Risk is the uncertainty about outcomes that could lead to loss or gain. It exists in nearly every aspect of our lives:"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Personal & Property Risk",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          },
+          "rightColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Liability & Financial Risk",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          },
+          "rightColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Four Risk Management Strategies",
+        "layout": "generic",
+        "layoutData": {
+          "paragraphs": [
+            "Eliminate risk entirely by avoiding the activity",
+            "Take steps to minimize likelihood or impact",
+            "Acknowledge risk and prepare to handle losses",
+            "Shift responsibility to another party"
+          ],
+          "lists": [
+            [
+              "Not driving in ice storms",
+              "Avoiding risky investments",
+              "Not lending unaffordable money"
+            ],
+            [
+              "Wearing a helmet",
+              "Installing smoke detectors",
+              "Diversifying investments"
+            ],
+            [
+              "Skipping extended warranties",
+              "Self-insuring minor items",
+              "Accepting market fluctuations"
+            ],
+            [
+              "Buying health insurance",
+              "Getting auto insurance",
+              "Having life insurance"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Choosing the Right Strategy",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "When to Use Each Strategy",
+          "paragraphs": [
+            "Best when potential loss is severe, benefits don't outweigh risks, or no effective mitigation exists. Limitation: may miss opportunities.",
+            "Best when risk can't be avoided but can be managed, and benefits outweigh the reduced risk. Limitation: doesn't eliminate risk completely.",
+            "Best when potential loss is small, or cost of avoiding exceeds potential loss. Limitation: requires reserves to cover losses.",
+            "Best for significant but unlikely losses when premium costs are reasonable. Limitation: ongoing premium costs and claim complexities."
+          ],
+          "bulletPoints": []
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Why It Matters",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Understanding Risk Empowers You",
+            "paragraphs": [
+              "Understanding risk doesn't mean avoiding it—that would be impossible and would limit your opportunities.",
+              "Effective risk management helps you:"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "How Insurance Works",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Insurance Is the Most Common Risk Transfer",
+            "paragraphs": [
+              "Insurance works by pooling risk across many individuals. Everyone pays a premium to protect against losses that will only affect a few."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example: Riley's Auto Insurance",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "",
+            "name": "",
+            "paragraphs": []
+          },
+          "outcomes": [
+            {
+              "type": "neutral",
+              "label": "",
+              "value": "",
+              "detail": ""
+            },
+            {
+              "type": "neutral",
+              "label": "",
+              "value": "",
+              "detail": ""
+            },
+            {
+              "type": "neutral",
+              "label": "",
+              "value": "",
+              "detail": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example: Marcus's Basketball Decision",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "",
+            "name": "",
+            "paragraphs": []
+          },
+          "outcomes": [
+            {
+              "type": "neutral",
+              "label": "",
+              "value": "",
+              "detail": ""
+            },
+            {
+              "type": "neutral",
+              "label": "",
+              "value": "",
+              "detail": ""
+            },
+            {
+              "type": "neutral",
+              "label": "",
+              "value": "",
+              "detail": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion in {{STATE_NAME}}",
+        "question": ""
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Personal Reflection in {{STATE_NAME}}",
+        "question": ""
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What are the four main categories of risk, and can you give an example of each?"
+            },
+            {
+              "number": 2,
+              "question": "When is risk avoidance the best strategy, and what is its main limitation?"
+            },
+            {
+              "number": 3,
+              "question": "Explain the relationship between insurance premiums and deductibles. Why might someone choose a higher deductible?"
+            },
+            {
+              "number": 4,
+              "question": "How does risk tolerance influence which risk management strategies you might choose?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Risk Is Neutral",
+              "description": "Risk represents uncertainty—it can lead to loss or gain. It's a natural part of life that accompanies opportunity."
+            },
+            {
+              "number": 2,
+              "title": "Four Risk Categories",
+              "description": "Personal, property, liability, and financial risks each require different consideration and management approaches."
+            },
+            {
+              "number": 3,
+              "title": "Strategic Management",
+              "description": "The four strategies—avoidance, reduction, acceptance, and transfer—each fit different situations based on risk type and impact."
+            },
+            {
+              "number": 4,
+              "title": "Know Your Tolerance",
+              "description": "Understanding your personal risk tolerance helps you make decisions that align with your comfort level and circumstances."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Skill Builder: Risk Scenario Analysis",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📋",
+            "title": "",
+            "description": ""
+          },
+          "steps": []
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Make informed decisions to protect your financial future in {{STATE_NAME}}",
+        "website": "www.pflacademy.co in {{STATE_NAME}}",
+        "copyright": "© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+      }
+    }
+  ]
+}

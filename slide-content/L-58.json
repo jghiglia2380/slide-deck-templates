@@ -1,0 +1,563 @@
+{
+  "metadata": {
+    "lChapter": "L-58",
+    "title": "Supply, Demand &Market Structures",
+    "subtitle": "Understanding the Forces That Shape Prices and Consumer Choices",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME",
+      "MEDIAN_HOME_PRICE",
+      "MEDIAN_RENT",
+      "UNEMPLOYMENT_RATE",
+      "STATE_MEDIAN_HOME_PRICE",
+      "STATE_MEDIAN_RENT",
+      "STATE_UNEMPLOYMENT_RATE",
+      "STATE_MEDIAN_INCOME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Supply, Demand &Market Structures",
+        "titleSize": "large",
+        "subtitle": "Understanding the Forces That Shape Prices and Consumer Choices"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": "Why does a cup of coffee cost $3 at one shop<br>but $6 at another—and how can understanding<br><em>market forces</em> save you <em>thousands</em> of dollars?"
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Analyze",
+              "description": "Understand how supply and demand interact to determine equilibrium prices and quantities in real markets."
+            },
+            {
+              "number": 2,
+              "verb": "Evaluate",
+              "description": "Assess how different market structures affect consumer choices, pricing power, and competition levels."
+            },
+            {
+              "number": 3,
+              "verb": "Calculate",
+              "description": "Measure consumer and producer surplus in various market scenarios to identify financial opportunities."
+            },
+            {
+              "number": 4,
+              "verb": "Apply",
+              "description": "Use supply and demand principles to time purchases, negotiate prices, and make informed financial decisions."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Demand",
+              "definition": "The quantity of a good or service that consumers are willing and able to purchase at various price points.",
+              "example": "When gas prices rise, people drive less—quantity demanded decreases (Law of Demand)"
+            },
+            {
+              "term": "Supply",
+              "definition": "The quantity of a good or service that producers are willing and able to offer for sale at various prices.",
+              "example": "When home prices rise, builders construct more houses—quantity supplied increases"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Equilibrium Price",
+              "definition": "The price at which quantity demanded equals quantity supplied, resulting in a stable market.",
+              "example": "If homes are priced too high, they sit unsold; too low, bidding wars erupt—equilibrium balances both"
+            },
+            {
+              "term": "Consumer Surplus",
+              "definition": "The difference between what consumers are willing to pay and what they actually pay.",
+              "example": "You'd pay $500 for a phone but find it on sale for $350—your consumer surplus is $150"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Supply & Demand in {{STATE_NAME}}'s Housing Market",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "How Housing Prices Are Determined",
+            "paragraphs": [
+              "In <span class=\"highlight-text\">{{STATE_NAME}}</span>, housing prices reflect the balance between supply (homes available) and demand (buyers looking).",
+              "When more people want to live in an area than homes available, <strong>prices rise</strong>. When homes sit unsold, <strong>prices fall</strong>.",
+              "Factors affecting {{STATE_NAME}}'s housing demand include job growth, population changes, and median income levels."
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "Understanding these forces helps you time home purchases and rental negotiations for maximum savings."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "${{STATE_MEDIAN_HOME_PRICE}}",
+                "label": "{{STATE_NAME}} Median Home Price",
+                "color": "teal"
+              },
+              {
+                "value": "${{STATE_MEDIAN_RENT}}/mo",
+                "label": "{{STATE_NAME}} Median Rent",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Key Demand Factors:",
+              "color": "amber",
+              "items": [
+                "Population growth trends",
+                "Job market strength",
+                "Interest rate changes",
+                "Seasonal buying patterns"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Supply & Demand in {{STATE_NAME}}'s Labor Market",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Wages Are Set by Market Forces",
+            "paragraphs": [
+              "Just like products, <strong>labor has supply and demand</strong>. The supply of workers (people seeking jobs) and demand for workers (employer hiring) determines wages.",
+              "In <span class=\"highlight-text\">{{STATE_NAME}}</span>, industries with worker shortages pay higher wages, while fields with many applicants may offer lower starting pay.",
+              "Your earning potential is directly tied to understanding which skills are in high demand and short supply."
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "Careers in high-demand, low-supply fields command premium wages—research before choosing your path!"
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "{{STATE_UNEMPLOYMENT_RATE}}%",
+                "label": "{{STATE_NAME}} Unemployment Rate",
+                "color": "green"
+              },
+              {
+                "value": "${{STATE_MEDIAN_INCOME}}",
+                "label": "{{STATE_NAME}} Median Household Income",
+                "color": "teal"
+              }
+            ],
+            "infoCard": {
+              "title": "High-Demand Industries:",
+              "color": "blue",
+              "items": [
+                "Healthcare & nursing",
+                "Technology & software",
+                "Skilled trades (HVAC, electrical)",
+                "Data analysis & AI"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Market Equilibrium: Finding Balance",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "How Markets Self-Correct",
+          "paragraphs": [
+            "When markets are out of equilibrium, <strong>powerful forces push them back toward balance</strong>. This self-correcting mechanism explains many price changes you observe."
+          ],
+          "bulletPoints": [
+            "<strong>Price Too High:</strong> Surplus forms → Sellers reduce prices → Equilibrium restored",
+            "<strong>Price Too Low:</strong> Shortage forms → Buyers bid up prices → Equilibrium restored",
+            "<strong>After Hurricane:</strong> Gas shortage → Prices spike → Consumers reduce use → Balance returns",
+            "<strong>Seasonal Patterns:</strong> Winter demand for homes drops → Better negotiating power for buyers"
+          ],
+          "keyPoint": {
+            "text": "Understanding these patterns helps you predict whether price changes are temporary spikes or permanent shifts."
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Market Structures: Competition Levels",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "",
+            "title": "Monopoly",
+            "items": [
+              "Single seller controls market",
+              "No close substitutes available",
+              "Higher prices, lower output",
+              "Less consumer choice",
+              "Example: Local cable company"
+            ]
+          },
+          "rightColumn": {
+            "icon": "",
+            "title": "Perfect Competition",
+            "items": [
+              "Many buyers and sellers",
+              "Identical products available",
+              "Prices driven to minimum",
+              "Maximum consumer surplus",
+              "Example: Agricultural markets"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Oligopoly: The In-Between",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Few Firms, Strategic Behavior",
+            "paragraphs": [
+              "An <strong>oligopoly</strong> features a few large firms dominating the market. Each firm's decisions significantly affect competitors.",
+              "Common examples: Airlines, cell phone carriers, automobile manufacturers, and soft drink companies.",
+              "These firms often engage in <strong>price leadership</strong>—when one raises prices, others follow. They compete on features and branding rather than price wars."
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "Ever notice how wireless carriers often have suspiciously similar pricing? That's oligopolistic behavior!"
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "4",
+                "label": "Major Airlines Control 80% Market",
+                "color": "purple"
+              },
+              {
+                "value": "3",
+                "label": "Wireless Carriers Dominate",
+                "color": "rose"
+              }
+            ],
+            "infoCard": {
+              "title": "Consumer Strategies:",
+              "color": "green",
+              "items": [
+                "Negotiate on features, not just price",
+                "Look for promotional timing",
+                "Consider substitute products",
+                "Switch costs may be a barrier"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Why Understanding Markets Matters",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Turn Market Knowledge Into Savings",
+          "paragraphs": [
+            "Understanding supply and demand directly impacts your financial wellbeing. Here's how market knowledge saves you money:"
+          ],
+          "bulletPoints": [
+            "<strong>Time Major Purchases:</strong> Buy TVs after Super Bowl, winter clothes in March, homes in winter",
+            "<strong>Assess Fair Prices:</strong> In competitive markets, shop around; in monopolies, negotiate terms",
+            "<strong>Predict Price Changes:</strong> Gasoline demand is inelastic—small supply disruptions = big price spikes",
+            "<strong>Find Deals:</strong> Restaurants have elastic demand—they offer promotions during slow periods",
+            "<strong>Plan Your Budget:</strong> Know when prices will likely rise or fall based on seasonal patterns",
+            "<strong>Be an Informed Citizen:</strong> Evaluate policy proposals based on economic reasoning"
+          ]
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example: Smart Car Buying",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "🚗",
+            "name": "Marcus Navigates the Used Car Market",
+            "paragraphs": [
+              "Marcus needed a reliable used car with a budget of $12,000. He researched the market and observed that <span class=\"highlight-text\">sedan demand had decreased</span> as consumers shifted to SUVs, while sedan supply remained high.",
+              "He targeted a Toyota Camry, monitored prices for three weeks, and noticed dealerships had higher inventory near <strong>month-end</strong>. Marcus visited on the last day of the month and negotiated $11,900—<span class=\"highlight-text\">$1,600 below market average</span>."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Market Average",
+              "value": "$13,500",
+              "detail": "Typical dealer price"
+            },
+            {
+              "type": "after",
+              "label": "Marcus Paid",
+              "value": "$11,900",
+              "detail": "End-of-month leverage"
+            },
+            {
+              "type": "after",
+              "label": "Total Savings",
+              "value": "12%",
+              "detail": "$1,600 for emergency fund"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example: Timing Rental Markets",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "🏠",
+            "name": "Alicia Times Her Apartment Search in {{STATE_NAME}}",
+            "paragraphs": [
+              "Alicia planned to move to a city in <span class=\"highlight-text\">{{STATE_NAME}}</span> for a job starting in August. She discovered the city had a large university, creating <strong>highly seasonal demand patterns</strong>.",
+              "Student demand peaked in August for fall semester, driving rents 15-20% above winter rates. Instead of competing with thousands of students, Alicia negotiated a September start date and searched in late September—finding rent <span class=\"highlight-text\">$200/month lower</span>."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "August Rent",
+              "value": "${{STATE_MEDIAN_RENT}}",
+              "detail": "Peak student demand"
+            },
+            {
+              "type": "after",
+              "label": "September Rent",
+              "value": "-$200/mo",
+              "detail": "Post-peak timing"
+            },
+            {
+              "type": "after",
+              "label": "Annual Savings",
+              "value": "$2,400",
+              "detail": "Supply & demand strategy"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Think-Pair-Share",
+        "question": "Consider the {{STATE_NAME}} housing market with a median home price of ${{STATE_MEDIAN_HOME_PRICE}}.<br><br>What factors could shift demand or supply to significantly change this price? When would be the best time to buy or rent?"
+      }
+    },
+    {
+      "number": 15,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Practical Strategies for {{STATE_NAME}} Consumers",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Apply Market Knowledge Daily",
+            "paragraphs": [
+              "In <span class=\"highlight-text\">{{STATE_NAME}}</span>, with a median income of <strong>${{STATE_MEDIAN_INCOME}}</strong>, understanding market forces is essential for stretching your dollars.",
+              "Recognizing which markets are competitive vs. monopolistic tells you where aggressive shopping pays off and where negotiation tactics work better."
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "With a {{STATE_UNEMPLOYMENT_RATE}}% unemployment rate, understanding labor market supply/demand helps you negotiate better starting salaries!"
+            }
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "Competitive Markets (Shop Around):",
+              "color": "amber",
+              "items": [
+                "Grocery stores & retail",
+                "Auto insurance",
+                "Banks & credit cards",
+                "Online retail"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "Think about three recent purchases you made.<br><br>Were those markets competitive, oligopolistic, or monopolistic?<br>How might you have used supply-demand knowledge to get a better deal?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Common Mistakes to Avoid",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "Buying at peak demand: Making major purchases when everyone else is buying (holidays, back-to-school, August apartment hunting)."
+            },
+            {
+              "number": 2,
+              "question": "Ignoring market structure: Wasting time comparison shopping in monopoly markets instead of negotiating terms."
+            },
+            {
+              "number": 3,
+              "question": "Confusing temporary vs. permanent: Panic buying during temporary price spikes (gas after hurricanes) instead of waiting for equilibrium."
+            },
+            {
+              "number": 4,
+              "question": "Not recognizing substitutes: Missing alternatives to monopoly products (streaming vs. cable, 5G vs. cable internet)."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Supply & Demand Set Prices",
+              "description": "Understanding these forces helps you predict price movements and time major purchases strategically"
+            },
+            {
+              "number": 2,
+              "title": "Market Structure Matters",
+              "description": "Competitive markets reward shopping around; monopolies require negotiation strategies"
+            },
+            {
+              "number": 3,
+              "title": "Consumer Surplus Is Your Goal",
+              "description": "Maximize the gap between what you'd pay and what you actually pay through strategic timing"
+            },
+            {
+              "number": 4,
+              "title": "Apply to {{STATE_NAME}} Markets",
+              "description": "Use local market data (home prices, rents, wages) to make informed financial decisions"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Skill Builder Activity",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📋",
+            "title": "Market Dynamics Simulator",
+            "description": "Use the interactive simulator to explore how supply and demand changes affect prices and how different market structures impact consumer outcomes. Apply what you've learned about <span class=\"highlight-text\">{{STATE_NAME}}</span>'s housing market (median price: ${{STATE_MEDIAN_HOME_PRICE}}) and labor market (unemployment: {{STATE_UNEMPLOYMENT_RATE}}%)."
+          },
+          "steps": [
+            "Manipulate supply/demand curves to see equilibrium changes",
+            "Observe consumer/producer surplus in each scenario",
+            "Compare outcomes across market structures",
+            "Apply to a major purchase you're planning",
+            "Develop your personal purchasing strategy"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

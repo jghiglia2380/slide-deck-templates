@@ -1,0 +1,208 @@
+{
+  "metadata": {
+    "lChapter": "L-57",
+    "title": "Loan Applications & Creditworthiness",
+    "subtitle": "Master the loan application process and understand how lenders evaluate your creditworthiness",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Loan Applications & Creditworthiness",
+        "titleSize": "large",
+        "subtitle": "Master the loan application process and understand how lenders evaluate your creditworthiness"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": "What if the difference between a <em>5% interest rate</em> and an <em>8% rate</em> on a loan cost you <em>$2,000 extra</em>?"
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "generic",
+        "layoutData": {}
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms to Know",
+        "layout": "generic",
+        "layoutData": {}
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "More Key Terms",
+        "layout": "generic",
+        "layoutData": {}
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "The Five C's of Credit",
+        "layout": "generic",
+        "layoutData": {}
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Current Loan Rates in {{STATE_NAME}}",
+        "layout": "generic",
+        "layoutData": {}
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "How Interest Rates Affect Your Payments",
+        "layout": "generic",
+        "layoutData": {}
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Documentation You'll Need",
+        "layout": "generic",
+        "layoutData": {}
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Loan Types & Approval Timelines",
+        "layout": "generic",
+        "layoutData": {}
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Real-World Application",
+        "layout": "generic",
+        "layoutData": {}
+      }
+    },
+    {
+      "number": 12,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": ""
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "",
+        "layout": "generic",
+        "layoutData": {}
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Strategies to Strengthen Your Application",
+        "layout": "generic",
+        "layoutData": {}
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": ""
+      }
+    },
+    {
+      "number": 16,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Common Mistakes to Avoid",
+        "layout": "generic",
+        "layoutData": {}
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "generic",
+        "layoutData": {}
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "generic",
+        "layoutData": {}
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "",
+        "layout": "generic",
+        "layoutData": {}
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "\"Building financial futures, one lesson at a time\"",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

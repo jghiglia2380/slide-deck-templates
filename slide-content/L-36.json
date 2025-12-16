@@ -1,0 +1,451 @@
+{
+  "metadata": {
+    "lChapter": "L-XX",
+    "title": "Understanding the Risks of Gambling",
+    "subtitle": "The mathematics behind probability, house edge, and expected value in {{STATE_NAME}}",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Understanding the Risks of Gambling",
+        "titleSize": "large",
+        "subtitle": "The mathematics behind probability, house edge, and expected value in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": ""
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Calculate Probability",
+              "description": "Understand and calculate probability in various gambling scenarios"
+            },
+            {
+              "number": 2,
+              "verb": "Distinguish Events",
+              "description": "Differentiate between independent and dependent events in gambling activities"
+            },
+            {
+              "number": 3,
+              "verb": "Explain House Edge",
+              "description": "Understand how house edge ensures profits for gambling organizers"
+            },
+            {
+              "number": 4,
+              "verb": "Recognize Fallacies",
+              "description": "Identify the gambler's fallacy and other common misconceptions"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            },
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            },
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Understanding Probability",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The Probability Formula",
+            "paragraphs": [
+              "<strong>Probability = Favorable Outcomes ÷ Total Possible Outcomes</strong>",
+              "<strong>Example Calculations:</strong>"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Independent vs. Dependent Events",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          },
+          "rightColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "The House Edge",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Why The House Always Wins",
+            "paragraphs": [
+              "The house edge is the mathematical advantage that ensures gambling operators make a profit over time, regardless of short-term outcomes.",
+              "The house edge represents the percentage of each bet the house expects to keep on average. Different games have different advantages:"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Expected Value: The Math of Gambling",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "What You Can Expect to Win or Lose",
+          "paragraphs": [
+            "<strong>EV = (Probability of Winning × Amount Won) - (Probability of Losing × Amount Lost)</strong>",
+            "Win probability: 18/38 (47.4%)<br> EV = (0.474 × $10) - (0.526 × $10) = -$0.52<br> <strong>Lose ~52 cents per $10 bet on average</strong>",
+            "Win probability: ~1 in 300,000,000<br> EV ≈ ($0.30) - ($2) = -$1.70<br> <strong>Lose ~$1.70 per ticket on average</strong>",
+            "A negative expected value means players lose money over time. The more you play, the more you lose."
+          ],
+          "bulletPoints": []
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Common Gambling Fallacies",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Mistaken Beliefs About Gambling",
+          "paragraphs": [
+            "The mistaken belief that if an event happens frequently, it will happen less frequently in the future. Reality: Each independent event has the same probability.",
+            "Believing that a person who has experienced success will continue to succeed. Reality: Past wins don't affect future outcomes in games of chance.",
+            "In 1913, gamblers lost millions betting against black when it came up 26 times in a row—thinking red was \"due.\" Reality: Each spin was still 50/50.",
+            "In truly independent events, each outcome is unaffected by previous results. The roulette wheel has no memory, the dice don't know what they rolled before."
+          ],
+          "bulletPoints": []
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Financial Risks of Gambling",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          },
+          "rightColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          }
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Responsible Gambling Practices",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          },
+          "rightColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example: Emma's Casino Night",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "",
+            "name": "",
+            "paragraphs": []
+          },
+          "outcomes": [
+            {
+              "type": "neutral",
+              "label": "",
+              "value": "",
+              "detail": ""
+            },
+            {
+              "type": "neutral",
+              "label": "",
+              "value": "",
+              "detail": ""
+            },
+            {
+              "type": "neutral",
+              "label": "",
+              "value": "",
+              "detail": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example: The Lottery Pool",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "",
+            "name": "",
+            "paragraphs": []
+          },
+          "outcomes": [
+            {
+              "type": "neutral",
+              "label": "",
+              "value": "",
+              "detail": ""
+            },
+            {
+              "type": "neutral",
+              "label": "",
+              "value": "",
+              "detail": ""
+            },
+            {
+              "type": "neutral",
+              "label": "",
+              "value": "",
+              "detail": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion in {{STATE_NAME}}",
+        "question": ""
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Personal Reflection in {{STATE_NAME}}",
+        "question": ""
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "If a coin comes up heads 10 times in a row, what is the probability of heads on the next flip? Why?"
+            },
+            {
+              "number": 2,
+              "question": "Why does the house always win in the long run, even when individual players sometimes win big?"
+            },
+            {
+              "number": 3,
+              "question": "Calculate the probability of drawing two hearts from a deck without replacement. How does this differ from with replacement?"
+            },
+            {
+              "number": 4,
+              "question": "Explain why a negative expected value means you should view gambling as entertainment, not a money-making activity."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Probability Is Mathematical",
+              "description": "Gambling outcomes follow mathematical rules. Understanding probability helps you evaluate true chances of winning."
+            },
+            {
+              "number": 2,
+              "title": "The House Always Wins",
+              "description": "The house edge ensures gambling operators profit over time. Expected value for players is almost always negative."
+            },
+            {
+              "number": 3,
+              "title": "Beware of Fallacies",
+              "description": "The gambler's fallacy and hot hand fallacy lead to poor decisions. Independent events don't influence each other."
+            },
+            {
+              "number": 4,
+              "title": "Entertainment, Not Income",
+              "description": "View gambling as an entertainment expense with a fixed cost, not as a way to make money. Set limits and stick to them."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Skill Builder: Gambling as Entertainment Analysis",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📋",
+            "title": "",
+            "description": ""
+          },
+          "steps": []
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Make informed decisions based on mathematical realities in {{STATE_NAME}}",
+        "website": "www.pflacademy.co in {{STATE_NAME}}",
+        "copyright": "© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+      }
+    }
+  ]
+}

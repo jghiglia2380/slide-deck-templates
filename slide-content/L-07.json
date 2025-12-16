@@ -1,0 +1,503 @@
+{
+  "metadata": {
+    "lChapter": "L-XX",
+    "title": "Understanding Tax Brackets and Tax Rates",
+    "subtitle": "Master marginal vs. effective rates, bust common myths, and make informed financial decisions in {{STATE_NAME}}",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Understanding Tax Brackets and Tax Rates",
+        "titleSize": "large",
+        "subtitle": "Master marginal vs. effective rates, bust common myths, and make informed financial decisions in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": ""
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Differentiate",
+              "description": "Differentiate between marginal and effective tax rates and understand what each means for your finances"
+            },
+            {
+              "number": 2,
+              "verb": "Calculate",
+              "description": "Calculate taxes owed using progressive tax brackets for different income levels"
+            },
+            {
+              "number": 3,
+              "verb": "Analyze",
+              "description": "Analyze how filing status and tax decisions impact your actual take-home pay"
+            },
+            {
+              "number": 4,
+              "verb": "Distinguish",
+              "description": "Distinguish between legal tax avoidance strategies and illegal tax evasion"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            },
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            },
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "The Tax Bracket Myth",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "What Many People Believe (Wrong!)",
+            "paragraphs": [
+              "\"If I earn more and move into a higher tax bracket, all my income will be taxed at the higher rate, so I might take home LESS money.\"",
+              "Only the income ABOVE each bracket threshold is taxed at that bracket's rate. Your previous income stays at lower rates.",
+              "Earning more ALWAYS means keeping more!"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "rose"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "How Tax Brackets Work",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Income \"Fills Up\" Each Bracket",
+            "paragraphs": [
+              "Think of it like water filling containers:",
+              "Fills the lowest bracket first",
+              "$11,601 - $47,150 fills the second bracket",
+              "$47,151 - $100,525 fills the third bracket",
+              "Each bracket has its own rate"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Tax Calculation: $50,000 Income",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "",
+            "paragraphs": [],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Filing Status Matters",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "5 Filing Statuses",
+            "paragraphs": [
+              "Each status has different bracket thresholds—\"Married Filing Jointly\" typically has the most favorable brackets."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Marginal vs. Effective: Why It Matters",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Two Rates, Two Purposes",
+            "paragraphs": [
+              "Evaluating overtime, bonuses, side income—new dollars taxed at this rate",
+              "Budgeting, overall tax burden, comparing to others",
+              "$1,000 deduction saves $220 (22% bracket) or $370 (37% bracket)"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Smart Tax Planning",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Legal Ways to Reduce Taxes",
+            "paragraphs": [],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Avoidance vs. Evasion",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          },
+          "rightColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "",
+            "name": "",
+            "paragraphs": []
+          },
+          "outcomes": []
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "",
+            "name": "",
+            "paragraphs": []
+          },
+          "outcomes": []
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": ""
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": ""
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "If someone earns $55,000, what is their marginal tax rate? What is their effective tax rate? How are they different?"
+            },
+            {
+              "number": 2,
+              "question": "Why is it a myth that earning more money could result in taking home less?"
+            },
+            {
+              "number": 3,
+              "question": "Give two examples of legal tax avoidance and two examples of illegal tax evasion."
+            },
+            {
+              "number": 4,
+              "question": "How might contributing $10,000 to a 401(k) affect someone in the 22% tax bracket?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "",
+              "description": "Marginal rate = tax on your last dollar; Effective rate = your average rate. They're always different!"
+            },
+            {
+              "number": 2,
+              "title": "",
+              "description": "Earning more ALWAYS means keeping more. Only the income in each bracket is taxed at that rate."
+            },
+            {
+              "number": 3,
+              "title": "",
+              "description": "Filing status significantly affects your brackets. Married filing jointly has the widest thresholds."
+            },
+            {
+              "number": 4,
+              "title": "",
+              "description": "Tax avoidance is legal and smart. Tax evasion is criminal. Know the difference!"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Skill Builder: Avoidance vs. Evasion",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📋",
+            "title": "",
+            "description": ""
+          },
+          "steps": []
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Know Your Rates. Plan Smart. Earn More.",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

@@ -1,0 +1,570 @@
+{
+  "metadata": {
+    "lChapter": "L-65",
+    "title": "Investment PortfolioDiversification",
+    "subtitle": "Don't Put All Your Eggs in One Basket",
+    "totalSlides": 20,
+    "hasStateVariables": false,
+    "stateVariablesUsed": []
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Investment PortfolioDiversification",
+        "titleSize": "large",
+        "subtitle": "Don't Put All Your Eggs in One Basket"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": "How can combining investments that behave <em>differently</em><br>reduce your risk without sacrificing <em>returns</em>?"
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Analyze",
+              "description": "Understand how diversification reduces portfolio risk through correlation principles between different assets."
+            },
+            {
+              "number": 2,
+              "verb": "Construct",
+              "description": "Build balanced investment portfolios using appropriate asset allocation strategies based on age and goals."
+            },
+            {
+              "number": 3,
+              "verb": "Evaluate",
+              "description": "Assess the relationship between portfolio diversification and expected returns vs. potential losses."
+            },
+            {
+              "number": 4,
+              "verb": "Apply",
+              "description": "Use rebalancing strategies to maintain target asset allocation over time and stay disciplined."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Diversification",
+              "definition": "Spreading investments across different assets, sectors, and geographies to reduce risk by avoiding overexposure.",
+              "example": "Owning stocks, bonds, real estate, and international funds instead of just one company's stock."
+            },
+            {
+              "term": "Correlation",
+              "definition": "The degree to which two investments move together. +1.0 = lockstep, -1.0 = opposite directions, 0 = independent.",
+              "example": "Low correlation between assets means when one drops, the other may rise—reducing overall volatility."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Asset Allocation",
+              "definition": "The percentage breakdown of your portfolio across major asset classes (stocks, bonds, real estate, cash).",
+              "example": "Asset allocation determines ~90% of portfolio behavior—more important than individual stock picks!"
+            },
+            {
+              "term": "Rebalancing",
+              "definition": "Periodically adjusting your portfolio back to target allocations by selling overweight assets and buying underweight ones.",
+              "example": "Forces you to \"buy low, sell high\" automatically—selling winners at peaks, buying losers at lows."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "The Mathematics of Diversification",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "How Combining Assets Reduces Risk",
+            "paragraphs": [
+              "When you own two investments that don't move in perfect lockstep, you create a stabilizing effect.",
+              "<strong>Example:</strong> You have $10,000. Tech Stock X drops 40%, but Healthcare Stock Y rises 10%. If split equally:",
+              "• $5,000 × -40% = -$2,000<br>• $5,000 × +10% = +$500<br>• <strong>Net loss: Only 15%</strong> instead of 40%!"
+            ],
+            "highlightBox": {
+              "icon": "\ud83d",
+              "text": "\udca1 By combining uncorrelated assets, you keep most upside potential while dramatically cutting downside risk."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "30-50%",
+                "label": "Risk Reduction Possible",
+                "color": "teal"
+              },
+              {
+                "value": "15-20",
+                "label": "Stocks to Eliminate Most Company Risk",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Correlation Ranges:",
+              "color": "blue",
+              "items": [
+                "+1.0: Move identically (no benefit)",
+                "0: Independent movement (good)",
+                "-1.0: Move opposite (best hedge)"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Concentrated vs. Diversified Portfolios",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "",
+            "title": "⚠️ Concentrated",
+            "items": [
+              "All eggs in one basket",
+              "Massive gains OR massive losses",
+              "40-70% crashes possible",
+              "Emotional panic selling likely",
+              "One bad event destroys wealth",
+              "Hope-based investing"
+            ]
+          },
+          "rightColumn": {
+            "icon": "\ud83d",
+            "title": "\udee1️ Diversified",
+            "items": [
+              "Eggs across many baskets",
+              "Steady growth, manageable dips",
+              "15-25% max typical drawdown",
+              "Confidence to stay invested",
+              "Portfolio survives any single failure",
+              "Strategy-based investing"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Asset Classes & Correlation",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "How Different Assets Behave",
+            "paragraphs": [
+              "<strong>Stocks:</strong> 10% avg returns, 30-40% swings. Growth engine with volatility.",
+              "<strong>Bonds:</strong> 3-6% returns, low volatility. Often rise when stocks fall (negative correlation).",
+              "<strong>Real Estate (REITs):</strong> Moderate correlation with stocks (~0.5), income + inflation hedge.",
+              "<strong>Gold/Commodities:</strong> Very low correlation with stocks. Crisis hedge."
+            ],
+            "highlightBox": {
+              "icon": "\ud83c",
+              "text": "\udfaf Combining assets with LOW correlation to each other = maximum diversification benefit."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "-0.2",
+                "label": "Stocks-Bonds Correlation",
+                "color": "teal"
+              },
+              {
+                "value": "+0.5",
+                "label": "Stocks-REITs Correlation",
+                "color": "green"
+              }
+            ],
+            "infoCard": {
+              "title": "Best Diversification Pairs:",
+              "color": "green",
+              "items": [
+                "US Stocks + Bonds",
+                "Stocks + Gold",
+                "US Stocks + International"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Age-Based Asset Allocation",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "The \"120 Minus Your Age\" Rule",
+          "paragraphs": [
+            "Your age determines how much volatility you can afford. Young investors have decades to recover from crashes; retirees don't. A common guideline: <strong>120 minus your age = stock percentage</strong>."
+          ],
+          "bulletPoints": [
+            "<strong>Age 25 (95% stocks):</strong> Maximum growth focus. 40-year recovery time. Accept 35-40% crash risk.",
+            "<strong>Age 45 (75% stocks):</strong> Balanced approach. Building wealth while adding stability.",
+            "<strong>Age 60 (60% stocks):</strong> Preservation priority. Can't afford massive losses before retirement.",
+            "<strong>Age 70 (50% stocks):</strong> Income focus. Steady withdrawals need steady portfolio."
+          ],
+          "keyPoint": {
+            "text": "📈 Being too conservative when young costs more than being too aggressive—you miss decades of compound growth!"
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "The Power of Rebalancing",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Automatic \"Buy Low, Sell High\"",
+            "paragraphs": [
+              "<strong>Without rebalancing:</strong> After stocks surge, you're taking more risk than planned. After crashes, less.",
+              "<strong>Example:</strong>",
+              "• Start: $70K stocks / $30K bonds (70/30)<br> • After stock rise: $84K stocks / $31K bonds (73/27)<br> • Rebalance: Sell $3.5K stocks, buy bonds<br> • Result: Back to 70/30, profits locked in!"
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "⚡ Rebalancing forces discipline: sell winners at highs, buy losers at lows—emotionlessly!"
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "Annual",
+                "label": "Optimal Rebalancing Frequency",
+                "color": "purple"
+              },
+              {
+                "value": "5%",
+                "label": "Common Drift Threshold",
+                "color": "green"
+              }
+            ],
+            "infoCard": {
+              "title": "Rebalancing Methods:",
+              "color": "amber",
+              "items": [
+                "Calendar: Once per year",
+                "Threshold: When 5%+ drift",
+                "New money: Direct to underweight"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Why Diversification Matters",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "The Real Power: Staying Invested",
+          "paragraphs": [
+            "Diversification's true value isn't just reducing volatility—it's <strong>enabling you to stay invested</strong> through crashes instead of panic-selling and locking in losses."
+          ],
+          "bulletPoints": [
+            "<strong>Diversified investors:</strong> See 20-25% drops, feel uncomfortable but manageable. Stay invested. Capture recovery.",
+            "<strong>Concentrated investors:</strong> See 50-70% drops, feel terror. Panic sell at bottom. Miss recovery entirely.",
+            "<strong>Real-world data:</strong> Average investor earns 3-5% vs. market's 10% due to emotional buying/selling.",
+            "<strong>The math:</strong> $500/month at 8% for 30 years = $680K. At 3% (panic selling) = $290K. Diversification = $390K saved!"
+          ],
+          "keyPoint": {
+            "text": "💰 Diversification makes crashes survivable, which is how you actually achieve long-term market returns."
+          }
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Target-Date Funds: Autopilot Investing",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "One Fund, Complete Diversification",
+            "paragraphs": [
+              "Target-date funds (e.g., \"Target 2060 Fund\") automatically handle everything:",
+              "• <strong>Diversification:</strong> Holds US stocks, international stocks, bonds, sometimes REITs",
+              "• <strong>Age-based allocation:</strong> Starts aggressive (90% stocks), gradually shifts conservative",
+              "• <strong>Automatic rebalancing:</strong> No manual work required",
+              "• <strong>One decision:</strong> Pick the year closest to your retirement"
+            ],
+            "highlightBox": {
+              "icon": "\ud83c",
+              "text": "\udfaf Perfect for investors who want professional-level diversification without managing it themselves."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "2060",
+                "label": "Example Fund for Age ~22",
+                "color": "teal"
+              },
+              {
+                "value": "90→30%",
+                "label": "Stock Glide Path Over Time",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Available In:",
+              "color": "blue",
+              "items": [
+                "Most 401(k) plans",
+                "IRAs at major brokerages",
+                "Expense ratios: 0.10-0.75%"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👩‍💼",
+            "name": "Aaliyah's Target-Date Success",
+            "paragraphs": [
+              "At 24, Aaliyah started her first job and chose a Target 2060 Fund for her 401(k), contributing $400/month. She never changed her allocation—the fund handled everything automatically.",
+              "When the market crashed 35% at age 32, she <span class=\"highlight-text\">kept contributing monthly</span>, automatically buying stocks at depressed prices. The fund rebalanced, selling some bonds to buy more stocks on sale.",
+              "By age 39, her $95,000 in contributions had grown to <span class=\"highlight-text\">$142,000</span>—on track for $2.1 million by retirement."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "Contributed",
+              "value": "$95K",
+              "detail": "Over 15 years"
+            },
+            {
+              "type": "after",
+              "label": "Portfolio Value",
+              "value": "$142K",
+              "detail": "49% growth on contributions"
+            },
+            {
+              "type": "after",
+              "label": "Projected at 67",
+              "value": "$2.1M",
+              "detail": "With continued investing"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "⚠️",
+            "name": "Destiny's Costly Concentration",
+            "paragraphs": [
+              "At 28, Destiny invested her $25,000 savings entirely in tech stocks and Bitcoin, convinced diversification was \"outdated advice.\" For three years, she seemed brilliant—her portfolio surged to <span class=\"highlight-text\">$95,000</span>.",
+              "Then tech crashed 60%. Her portfolio plummeted to $38,000. <strong>Psychologically devastated</strong>, she panic-sold at the bottom, locking in losses.",
+              "Her diversified friend Jordan had only grown to $42K, then dropped to $35K—but <span class=\"highlight-text\">stayed invested</span> and recovered. By age 35: Jordan had $74K, Destiny had $40K in cash."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "Peak Value",
+              "value": "$95K",
+              "detail": "280% gain seemed brilliant"
+            },
+            {
+              "type": "before",
+              "label": "After Crash",
+              "value": "$38K",
+              "detail": "60% loss from peak"
+            },
+            {
+              "type": "before",
+              "label": "Final (Age 35)",
+              "value": "$40K",
+              "detail": "Panic sold, missed recovery"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": "Why did Aaliyah's \"boring\" target-date fund strategy<br>outperform Destiny's \"exciting\" concentrated approach?<br><br>What role did psychology play in the outcomes?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "If you saw your portfolio drop 40%, would you be able to stay invested?<br><br>What allocation would make crashes manageable enough<br>that you wouldn't panic sell?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "Why does combining stocks and bonds reduce portfolio volatility? What role does correlation play?"
+            },
+            {
+              "number": 2,
+              "question": "Using the \"120 minus age\" rule, what stock allocation would a 30-year-old and a 55-year-old have?"
+            },
+            {
+              "number": 3,
+              "question": "What is rebalancing and how does it automatically create a \"buy low, sell high\" discipline?"
+            },
+            {
+              "number": 4,
+              "question": "Why is diversification's biggest benefit psychological rather than just mathematical?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Correlation Is Key",
+              "description": "Combine assets that move differently—stocks + bonds, US + international—to reduce risk without sacrificing returns"
+            },
+            {
+              "number": 2,
+              "title": "Age Drives Allocation",
+              "description": "Young investors should be aggressive (90% stocks); shift conservative as retirement nears to protect accumulated wealth"
+            },
+            {
+              "number": 3,
+              "title": "Rebalance Annually",
+              "description": "Restore target allocations once per year to maintain risk level and force disciplined \"buy low, sell high\" behavior"
+            },
+            {
+              "number": 4,
+              "title": "Survive to Thrive",
+              "description": "Diversification's true power is enabling you to stay invested through crashes instead of panic-selling at the worst time"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Student Activity",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "\ud83d",
+            "title": "\udcca Portfolio Diversification Builder",
+            "description": "Using the interactive tool, you'll construct portfolios for investors at different life stages and see how diversification affects risk and returns through simulated market cycles. Compare a diversified approach vs. a concentrated approach and observe the difference in maximum losses and final wealth."
+          },
+          "steps": [
+            "Select an investor profile (age 25, 45, or 60)",
+            "Build an age-appropriate diversified allocation",
+            "Build a concentrated allocation for comparison",
+            "Run simulation through market cycles",
+            "Compare max drawdown and final values"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

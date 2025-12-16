@@ -1,0 +1,545 @@
+{
+  "metadata": {
+    "lChapter": "L-32",
+    "title": "Understanding Homeownership",
+    "subtitle": "Navigating the Path to Buying a Home",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME",
+      "MEDIAN_HOME_PRICE",
+      "STATE_MEDIAN_HOME_PRICE"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Understanding Homeownership",
+        "titleSize": "large",
+        "subtitle": "Navigating the Path to Buying a Home"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": "What does it <em>really take</em> to buy a home—<br>and is it the right financial move <em>for you</em>?"
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Identify",
+              "description": "Recognize key terms and concepts related to home buying, mortgages, and the homeownership process from start to finish."
+            },
+            {
+              "number": 2,
+              "verb": "Compare",
+              "description": "Analyze different types of mortgages and their requirements, advantages, and ideal buyer profiles to make informed decisions."
+            },
+            {
+              "number": 3,
+              "verb": "Calculate",
+              "description": "Determine the true costs of homeownership—upfront, ongoing, and hidden expenses—beyond just the purchase price."
+            },
+            {
+              "number": 4,
+              "verb": "Evaluate",
+              "description": "Assess whether homeownership aligns with your financial goals, lifestyle, and timeline for readiness."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Mortgage",
+              "definition": "A loan specifically for purchasing real estate, where the property itself serves as collateral for the lender.",
+              "example": "15-year or 30-year repayment periods; fixed or adjustable interest rates"
+            },
+            {
+              "term": "Down Payment",
+              "definition": "Initial upfront payment toward the purchase price, typically 3-20% of the home's value.",
+              "example": "A $300K home with 10% down = $30,000 down payment, $270K mortgage"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "PMI",
+              "definition": "Private Mortgage Insurance—required when down payment is less than 20%, protecting the lender if you default.",
+              "example": "Adds 0.5-1% of loan annually; can be removed once you reach 20% equity"
+            },
+            {
+              "term": "Home Equity",
+              "definition": "The difference between your home's market value and what you still owe—your ownership stake.",
+              "example": "Home worth $350K, mortgage balance $250K = $100K equity (your wealth)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "The Home Buying Process",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "6 Steps from Preparation to Keys in Hand",
+          "paragraphs": [
+            "Purchasing a home typically takes <strong>2-3 months</strong> from offer to closing—but <strong>preparation starts 6-12 months earlier</strong>."
+          ],
+          "bulletPoints": [
+            "<strong>1. Financial Prep (6-12 mo):</strong> Improve credit, save for down payment, reduce debt",
+            "<strong>2. Get Pre-Approved:</strong> Submit documents to lenders, know your budget",
+            "<strong>3. House Hunting:</strong> Work with agent, tour homes, research neighborhoods",
+            "<strong>4. Make an Offer:</strong> Submit offer with contingencies, negotiate terms",
+            "<strong>5. Inspection &amp; Appraisal:</strong> Verify condition and value, negotiate repairs",
+            "<strong>6. Closing:</strong> Sign documents, pay closing costs, get keys!"
+          ]
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Types of Mortgages",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Finding the Right Loan for You",
+            "paragraphs": [
+              "Different mortgage programs exist to accommodate various financial situations. Your options depend on credit score, down payment savings, and eligibility.",
+              "<strong>Conventional Loans:</strong> Most common, 3-20% down, 620+ credit score, PMI if under 20% down.",
+              "<strong>FHA Loans:</strong> Government-backed, as low as 3.5% down, 580+ credit, ideal for first-time buyers."
+            ],
+            "highlightBox": {
+              "icon": "\ud83c",
+              "text": "\udfe0 Special programs exist for veterans (VA loans) and rural buyers (USDA loans)—both offer 0% down options."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "3.5%",
+                "label": "Minimum FHA Down Payment",
+                "color": "teal"
+              },
+              {
+                "value": "0%",
+                "label": "VA/USDA Down Payment",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Credit Score Requirements:",
+              "color": "green",
+              "items": [
+                "Conventional: 620+ (720+ for best rates)",
+                "FHA: 580+ (500+ with 10% down)",
+                "VA: No minimum, but 620+ typical",
+                "Jumbo: 700+ usually required"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Fixed-Rate vs. Adjustable-Rate",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Understanding PITI Payments",
+            "paragraphs": [
+              "Your total monthly mortgage payment includes four components—<strong>PITI</strong>:"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "30 yr",
+                "label": "Most Common Loan Term",
+                "color": "teal"
+              }
+            ],
+            "infoCard": {
+              "title": "Fixed vs. Adjustable:",
+              "color": "blue",
+              "items": [
+                "Fixed: Same rate forever, predictable payments",
+                "ARM: Lower initial rate, then adjusts",
+                "5/1 ARM = fixed for 5 years, then adjusts annually",
+                "ARMs carry risk if rates rise significantly"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "True Costs: Upfront Expenses",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "What You'll Pay Before Moving In",
+            "paragraphs": [
+              "The purchase price is just the beginning. <strong>Upfront costs total 5-25%</strong> of the home price depending on your down payment."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$50K+",
+                "label": "Typical Upfront for $250K Home",
+                "color": "rose"
+              },
+              {
+                "value": "2-5%",
+                "label": "Closing Costs Range",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Closing Costs Include:",
+              "color": "amber",
+              "items": [
+                "Loan origination fees",
+                "Appraisal & inspection",
+                "Title insurance",
+                "Prepaid taxes & insurance"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "True Costs: Ongoing Expenses",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Monthly and Annual Costs Beyond the Mortgage",
+          "paragraphs": [
+            "Your mortgage payment is just one piece. Budget for <strong>all these ongoing expenses</strong> to understand your true housing cost."
+          ],
+          "bulletPoints": [
+            "<strong>Property Taxes:</strong> 0.5-2.5% of home value annually (varies by location)",
+            "<strong>Homeowner's Insurance:</strong> $800-$1,500+ annually for average homes",
+            "<strong>PMI (if applicable):</strong> 0.5-1% of loan amount annually",
+            "<strong>HOA Fees:</strong> $100-$700+ monthly in applicable communities",
+            "<strong>Maintenance:</strong> Budget ~1% of home value annually ($2,500 for $250K home)",
+            "<strong>Utilities:</strong> All utilities now your responsibility—budget $200-$400+/month"
+          ],
+          "keyPoint": {
+            "text": "💡 A common mistake: only budgeting for the mortgage. Total housing costs are typically 30-50% higher."
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Benefits & Challenges",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "✓",
+            "title": "✓ Benefits",
+            "items": [
+              "Building equity with each payment",
+              "Potential home appreciation",
+              "Tax deductions available",
+              "Stability—no landlord surprises",
+              "Freedom to customize",
+              "Legacy asset for family"
+            ]
+          },
+          "rightColumn": {
+            "icon": "",
+            "title": "✗ Challenges",
+            "items": [
+              "Large down payment required",
+              "Market risk—values can drop",
+              "All maintenance is your problem",
+              "Less flexibility to relocate",
+              "Money tied up (illiquid)",
+              "Unexpected repair costs"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Are You Ready to Buy?",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Financial & Lifestyle Readiness",
+            "paragraphs": [
+              "Homeownership isn't right for everyone at every stage of life. Honestly assess your readiness across multiple dimensions:",
+              "<strong>Financial:</strong> Stable income, adequate savings, low debt, good credit score (620+ conventional, 580+ FHA).",
+              "<strong>Lifestyle:</strong> Plan to stay 3-5+ years, willing to handle maintenance, time for property upkeep.",
+              "<strong>Market:</strong> Interest rates, local housing prices, rent-vs-buy math in your area."
+            ],
+            "highlightBox": {
+              "icon": "\ud83d",
+              "text": "\udcca Use the 28/36 rule: Housing costs under 28% of income, total debt under 36%."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "3-5 yr",
+                "label": "Minimum Stay to Break Even",
+                "color": "teal"
+              },
+              {
+                "value": "620+",
+                "label": "Credit Score Target",
+                "color": "green"
+              }
+            ],
+            "infoCard": {
+              "title": "Before You Buy, Have:",
+              "color": "blue",
+              "items": [
+                "Down payment + closing costs saved",
+                "Separate 3-6 month emergency fund",
+                "Stable employment history (2+ years)",
+                "Debt-to-income ratio under 43%"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👨‍👩‍👧",
+            "name": "The Garcias' First Home Purchase",
+            "paragraphs": [
+              "David and Sofia Garcia, ages 32 and 30, saved for 4 years while renting. They purchased a <span class=\"highlight-text\">${{STATE_MEDIAN_HOME_PRICE}} home in {{STATE_NAME}}</span> using an FHA loan with 3.5% down payment.",
+              "<strong>Their preparation:</strong> Improved credit scores from 620 to 710, paid off car loans, built emergency fund separate from down payment savings.",
+              "<strong>Monthly costs:</strong> $1,800 mortgage + $250 taxes + $125 insurance + $150 PMI + $200 maintenance = <span class=\"highlight-text\">$2,525/month</span>"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Down Payment + Closing",
+              "value": "$22,500",
+              "detail": "3.5% down + closing costs"
+            },
+            {
+              "type": "after",
+              "label": "Monthly Total",
+              "value": "$2,525",
+              "detail": "PITI + PMI + maintenance"
+            },
+            {
+              "type": "after",
+              "label": "Equity After 5 Years",
+              "value": "$50K+",
+              "detail": "Principal + appreciation"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Common Misconceptions",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Myths About Buying a Home",
+          "paragraphs": [
+            "Don't let common misconceptions drive your housing decisions. <strong>Get the facts before committing</strong> to one of life's biggest financial moves."
+          ],
+          "bulletPoints": [
+            "<strong>\"You need 20% down\":</strong> Many programs allow 3-3.5% down (though you'll pay PMI)",
+            "<strong>\"Buying is always better than renting\":</strong> Depends on how long you stay, market conditions, opportunity cost",
+            "<strong>\"Real estate always goes up\":</strong> Values can and do decline—see 2008",
+            "<strong>\"Mortgage payment = housing cost\":</strong> True cost includes taxes, insurance, maintenance, repairs",
+            "<strong>\"Buy the most expensive home you qualify for\":</strong> Being house-poor leaves no room for other goals",
+            "<strong>\"Renting is throwing money away\":</strong> Renting provides flexibility and frees capital for other investments"
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": "What factors would make you ready to buy a home?<br><br>What might make renting a smarter choice at certain points in your life?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "How might your housing needs change over the next 10 years?<br><br>How would a home purchase fit with your other financial goals?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What does PITI stand for, and why is it important to understand when budgeting for a home?"
+            },
+            {
+              "number": 2,
+              "question": "What is PMI, when is it required, and how can you eventually eliminate it?"
+            },
+            {
+              "number": 3,
+              "question": "Compare an FHA loan to a conventional loan. Who might benefit from each?"
+            },
+            {
+              "number": 4,
+              "question": "List three ongoing costs of homeownership beyond the mortgage payment."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Preparation Is Key",
+              "description": "Start preparing 6-12 months before buying—credit, savings, and debt all matter"
+            },
+            {
+              "number": 2,
+              "title": "Know Your True Costs",
+              "description": "Budget for PITI plus maintenance, repairs, and utilities—not just the mortgage"
+            },
+            {
+              "number": 3,
+              "title": "Choose the Right Loan",
+              "description": "Different mortgage types suit different situations—FHA, VA, conventional each have pros/cons"
+            },
+            {
+              "number": 4,
+              "title": "It's Personal",
+              "description": "Homeownership isn't for everyone at every stage—align with your goals and timeline"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Student Activity",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "\ud83d",
+            "title": "\udccb Homeownership Readiness Evaluation",
+            "description": "In this activity, you'll assess your potential readiness for homeownership across different time frames: now, in 5 years, and in 10 years. Rate yourself on key factors like savings, credit, income stability, and lifestyle readiness to identify areas for growth."
+          },
+          "steps": [
+            "Rate each criteria (1-5) for now, 5 years, 10 years",
+            "Calculate total scores for each time period",
+            "Identify areas needing the most improvement",
+            "Create action steps to improve readiness",
+            "Reflect on realistic homeownership timeline"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

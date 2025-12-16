@@ -1,0 +1,530 @@
+{
+  "metadata": {
+    "lChapter": "L-68",
+    "title": "Tax-Efficient InvestingStrategies",
+    "subtitle": "Maximize After-Tax Returns and Build Long-Term Wealth",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME",
+      "INCOME_TAX_RATE",
+      "STATE_INCOME_TAX_RATE",
+      "STATE_CAPITAL_GAINS_TAX",
+      "STATE_CODE",
+      "CALCULATED_TAX_SAVINGS"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Tax-Efficient InvestingStrategies",
+        "titleSize": "large",
+        "subtitle": "Maximize After-Tax Returns and Build Long-Term Wealth"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": "What if you could add <em>$200,000+</em> to your lifetime wealth<br>without picking better stocks—just by being <em>smarter about taxes</em>?<br><br>In {{STATE_NAME}}, your state tax rate of <em>{{STATE_INCOME_TAX_RATE}}%</em> impacts every investment decision."
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Compare",
+              "description": "Analyze differences between tax-deferred, tax-free, and taxable investment accounts and determine optimal usage."
+            },
+            {
+              "number": 2,
+              "verb": "Calculate",
+              "description": "Determine the tax implications of capital gains, dividends, and interest income at both federal and {{STATE_NAME}} state levels."
+            },
+            {
+              "number": 3,
+              "verb": "Evaluate",
+              "description": "Assess strategies including tax-loss harvesting, asset location, and holding period optimization."
+            },
+            {
+              "number": 4,
+              "verb": "Apply",
+              "description": "Create a personalized tax-efficient investing plan considering {{STATE_NAME}}'s {{STATE_INCOME_TAX_RATE}}% state income tax rate."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Tax-Deferred Account",
+              "definition": "A retirement account (401(k), traditional IRA) where contributions are tax-deductible and growth is tax-free until withdrawal.",
+              "example": "Contributing $6,000 to a traditional IRA in the 22% bracket saves $1,320 in taxes immediately"
+            },
+            {
+              "term": "Roth Account",
+              "definition": "A retirement account (Roth 401(k), Roth IRA) funded with after-tax dollars where all growth and qualified withdrawals are tax-free forever.",
+              "example": "$6,000/year in Roth grows to $1.2M by age 65—all tax-free withdrawals in retirement"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Capital Gains Tax",
+              "definition": "Tax on profit from selling investments. Short-term (<1 year) taxed as ordinary income; long-term (≥1 year) receives preferential lower rates.",
+              "example": "In {{STATE_NAME}}, capital gains are taxed at {{STATE_CAPITAL_GAINS_TAX}}% state rate plus 0-20% federal"
+            },
+            {
+              "term": "Tax-Loss Harvesting",
+              "definition": "Selling investments at a loss to offset capital gains and reduce taxable income, then reinvesting in similar assets.",
+              "example": "Realizing a $3,000 loss can offset $3,000 in gains, saving $450+ in taxes at 15% rate"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "The Three Pillars of Tax-Efficient Investing",
+        "layout": "generic",
+        "layoutData": {
+          "paragraphs": [],
+          "lists": [
+            [
+              "Tax deduction NOW",
+              "Growth is tax-free until withdrawal",
+              "Pay taxes at retirement rate",
+              "Required minimum distributions at 73",
+              "2024 limit: $23,000 (401k) / $7,000 (IRA)"
+            ],
+            [
+              "NO tax deduction now",
+              "Growth is 100% tax-free forever",
+              "Qualified withdrawals tax-free",
+              "No required minimum distributions",
+              "2024 limit: $23,000 (401k) / $7,000 (IRA)"
+            ],
+            [
+              "No contribution limits",
+              "Access anytime, no penalties",
+              "Preferential long-term rates",
+              "Tax-loss harvesting available",
+              "Step-up in basis at death"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "{{STATE_NAME}}'s Tax Impact on Your Investments",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "State Taxes Matter for Investors",
+            "paragraphs": [
+              "As a <span class=\"highlight-text\">{{STATE_NAME}} ({{STATE_CODE}})</span> resident, your investment income faces both federal AND state taxes. This significantly impacts your after-tax returns.",
+              "Unlike states with 0% income tax (Florida, Texas, Nevada, etc.), {{STATE_NAME}} investors must consider the <strong>{{STATE_INCOME_TAX_RATE}}%</strong> state tax on investment income.",
+              "This makes tax-advantaged accounts even MORE valuable for {{STATE_NAME}} residents compared to residents of zero-tax states."
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "Strategic account selection can save {{STATE_NAME}} investors {{CALCULATED_TAX_SAVINGS}} or more over a lifetime!"
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "{{STATE_INCOME_TAX_RATE}}%",
+                "label": "{{STATE_NAME}} State Income Tax Rate",
+                "color": "teal"
+              },
+              {
+                "value": "{{STATE_CAPITAL_GAINS_TAX}}%",
+                "label": "{{STATE_NAME}} Capital Gains Tax",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Zero State Tax Comparison:",
+              "color": "green",
+              "items": [
+                "Florida, Texas, Nevada: 0%",
+                "{{STATE_NAME}}: {{STATE_INCOME_TAX_RATE}}%",
+                "California: 13.3% (highest)",
+                "Tax-advantaged accounts bypass state taxes!"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Short-Term vs. Long-Term Capital Gains",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "",
+            "title": "Short-Term (Under 1 Year)",
+            "items": [
+              "Taxed as ordinary income",
+              "Federal: 10-37% depending on bracket",
+              "Plus {{STATE_NAME}} state: {{STATE_INCOME_TAX_RATE}}%",
+              "$10,000 gain = up to $4,700+ in taxes",
+              "Encourages day trading (bad for taxes)"
+            ]
+          },
+          "rightColumn": {
+            "icon": "",
+            "title": "Long-Term (1+ Year)",
+            "items": [
+              "Preferential tax rates",
+              "Federal: 0%, 15%, or 20%",
+              "Plus {{STATE_NAME}} state: {{STATE_CAPITAL_GAINS_TAX}}%",
+              "$10,000 gain = $1,500-2,500 in taxes",
+              "Rewards patient, long-term investing"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Asset Location: Where to Hold What",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Tax-Inefficient Assets (Hold in Tax-Advantaged)",
+            "paragraphs": [
+              "<strong>Put these in Traditional 401(k)/IRA or Roth:</strong>"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Roth vs. Traditional: The Strategic Decision",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "",
+            "title": "Choose Traditional When:",
+            "items": [
+              "Currently in high tax bracket (24%+)",
+              "Expect lower income in retirement",
+              "Need immediate tax deduction",
+              "Close to retirement (less compounding time)",
+              "Plan significant retirement deductions"
+            ]
+          },
+          "rightColumn": {
+            "icon": "",
+            "title": "Choose Roth When:",
+            "items": [
+              "Young and early in career (10-12% bracket)",
+              "Expect higher income later",
+              "Believe tax rates will increase",
+              "Want flexibility (no RMDs)",
+              "Planning for tax-free legacy"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "The Compound Impact of Tax Efficiency",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Tax Drag Destroys Wealth Over Time",
+          "paragraphs": [
+            "A 1-2% annual tax drag might seem small, but it compounds dramatically over decades. For {{STATE_NAME}} investors, proper tax strategy is essential."
+          ],
+          "bulletPoints": [
+            "<strong>7% return vs 5% after-tax:</strong> $10,000 becomes $76,000 vs $43,000 over 30 years",
+            "<strong>That 2% difference:</strong> $33,000 lost to taxes on a single $10,000 investment",
+            "<strong>For {{STATE_NAME}}:</strong> At {{STATE_INCOME_TAX_RATE}}% state tax, tax-advantaged accounts are even more valuable",
+            "<strong>Lifetime impact:</strong> Tax efficiency can add $200,000-$500,000 to your wealth"
+          ],
+          "keyPoint": {
+            "text": "Tax efficiency is the only \"free money\" in investing—it costs nothing to implement but can dramatically increase your wealth."
+          }
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example: Jamal's Tax-Efficient Strategy",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "💰",
+            "name": "Jamal: Young Professional, Age 23",
+            "paragraphs": [
+              "Jamal started his first job earning $48,000, placing him in the <span class=\"highlight-text\">12% federal bracket</span>. He researched tax-efficient strategies and made smart choices:",
+              "<strong>Strategy:</strong> $3,000/year to <span class=\"highlight-text\">Roth 401(k)</span> (paying just 12% now) + $3,000/year to <span class=\"highlight-text\">taxable account</span> with index funds (tax-efficient). Bonds and REITs went into his Roth.",
+              "<strong>Result by age 65:</strong> $1.2M in Roth (100% tax-free) + $1.2M in taxable with $750K unrealized gains (taxed only when sold at preferential rates)."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Tax-Inefficient Approach",
+              "value": "$1.8M",
+              "detail": "After-tax wealth at 65"
+            },
+            {
+              "type": "after",
+              "label": "Tax-Efficient Approach",
+              "value": "$2.2M",
+              "detail": "After-tax wealth at 65"
+            },
+            {
+              "type": "after",
+              "label": "Extra Wealth",
+              "value": "+$400K",
+              "detail": "From tax strategy alone"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example: Maya's Tax-Loss Harvesting",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "📊",
+            "name": "Maya: Mid-Career Professional in {{STATE_NAME}}",
+            "paragraphs": [
+              "Maya, 34, earning $90,000 in <span class=\"highlight-text\">{{STATE_NAME}}</span>, reviewed her taxable account in December. She had a <span class=\"highlight-text\">$6,000 capital gain</span> from selling stocks and noticed two positions with losses:",
+              "<strong>Action:</strong> She sold a tech stock ($2,000 loss) and an international fund ($1,500 loss) to realize <span class=\"highlight-text\">$3,500 in losses</span>. Immediately purchased similar (not identical) funds to maintain allocation.",
+              "<strong>Tax Savings:</strong> $3,500 offset reduced her taxable gains to $2,500. At 15% federal + {{STATE_CAPITAL_GAINS_TAX}}% state, she saved <span class=\"highlight-text\">$525+ in taxes</span>."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Without Harvesting",
+              "value": "$6,000",
+              "detail": "Taxable gains"
+            },
+            {
+              "type": "after",
+              "label": "With Harvesting",
+              "value": "$2,500",
+              "detail": "Reduced taxable gains"
+            },
+            {
+              "type": "after",
+              "label": "Annual Savings",
+              "value": "$525+",
+              "detail": "Reinvested for compound growth"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Think-Pair-Share",
+        "question": "Given {{STATE_NAME}}'s {{STATE_INCOME_TAX_RATE}}% state income tax rate,<br>which account type—Roth, Traditional, or Taxable—<br>would benefit you MOST at your current life stage?<br><br>How would your answer change if you lived in Texas (0% state tax)?"
+      }
+    },
+    {
+      "number": 15,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Zero-Tax States vs. {{STATE_NAME}}: Investment Impact",
+        "layout": "generic",
+        "layoutData": {
+          "paragraphs": [
+            "<strong>Investment implications:</strong>",
+            "<strong>Investment implications:</strong>"
+          ],
+          "lists": [
+            [
+              "All investment income taxed at state level",
+              "Tax-advantaged accounts MORE valuable",
+              "Municipal bonds may offer extra benefit",
+              "Roth accounts shield from state taxes forever"
+            ],
+            [
+              "No state tax on any investment income",
+              "Taxable accounts relatively more attractive",
+              "Traditional IRA deduction only saves federal",
+              "Roth still valuable for federal tax-free growth"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "If you hold a stock for 11 months with a $5,000 gain<br>and need the money soon, should you wait one more month<br>to get long-term capital gains treatment?<br><br>What factors would influence your decision?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Tax Mistakes That Destroy Wealth",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "Wrong account for wrong asset: Holding bonds in taxable accounts (paying {{STATE_INCOME_TAX_RATE}}% state + federal on interest) instead of tax-advantaged accounts."
+            },
+            {
+              "number": 2,
+              "question": "Selling too early: Realizing gains at 11 months (short-term) instead of waiting for long-term rates—can cost 20%+ extra in taxes."
+            },
+            {
+              "number": 3,
+              "question": "Ignoring tax-loss harvesting: Letting losses \"sit\" instead of harvesting to offset gains. Leaving money on the table every year."
+            },
+            {
+              "number": 4,
+              "question": "All traditional, no Roth: Missing tax diversification. Having some Roth gives flexibility to manage taxes in retirement."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Account Type Matters",
+              "description": "Traditional, Roth, and taxable accounts have different tax treatments—use all three strategically based on your situation"
+            },
+            {
+              "number": 2,
+              "title": "Asset Location Saves Money",
+              "description": "Put tax-inefficient assets (bonds, REITs) in tax-advantaged accounts; tax-efficient assets (index funds) in taxable"
+            },
+            {
+              "number": 3,
+              "title": "Hold for Long-Term Rates",
+              "description": "Waiting 1+ year drops capital gains taxes from ordinary rates (up to 37%) to preferential rates (0-20%)"
+            },
+            {
+              "number": 4,
+              "title": "{{STATE_NAME}} Taxes Add Up",
+              "description": "With {{STATE_INCOME_TAX_RATE}}% state tax, tax-advantaged accounts save both federal AND state taxes—maximize them!"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Skill Builder Activity",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📋",
+            "title": "Tax Efficiency Optimizer",
+            "description": "Use the interactive tool to compare after-tax outcomes of different investment strategies for {{STATE_NAME}} residents. Consider how {{STATE_NAME}}'s <span class=\"highlight-text\">{{STATE_INCOME_TAX_RATE}}%</span> state income tax and <span class=\"highlight-text\">{{STATE_CAPITAL_GAINS_TAX}}%</span> capital gains rate affects your optimal strategy."
+          },
+          "steps": [
+            "Compare Roth vs. Traditional at different income levels",
+            "Optimize asset location across account types",
+            "Simulate tax-loss harvesting scenarios",
+            "Calculate short-term vs long-term gain impact",
+            "Create your personal tax-efficient plan"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

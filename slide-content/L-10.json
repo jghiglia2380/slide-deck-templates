@@ -1,0 +1,561 @@
+{
+  "metadata": {
+    "lChapter": "L-10",
+    "title": "Tax Planning & Compliance",
+    "subtitle": "Strategic Approaches to Legal Tax Management in {{STATE_NAME}}",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Tax Planning & Compliance",
+        "titleSize": "large",
+        "subtitle": "Strategic Approaches to Legal Tax Management in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question in {{STATE_NAME}}",
+        "question": "What's the difference between <em>legal tax planning</em><br>and <em>illegal tax evasion</em>—and why does it<br>matter for your financial future? in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Differentiate",
+              "description": "Distinguish between legal tax planning strategies and illegal tax evasion, understanding the critical legal and ethical boundaries."
+            },
+            {
+              "number": 2,
+              "verb": "Identify",
+              "description": "Recognize core tax planning strategies for different life stages and how they evolve as your financial situation changes."
+            },
+            {
+              "number": 3,
+              "verb": "Recognize",
+              "description": "Identify common tax mistakes that lead to penalties, interest charges, and potential legal consequences."
+            },
+            {
+              "number": 4,
+              "verb": "Apply",
+              "description": "Apply basic tax planning principles to personal financial decisions and create a compliance checklist for your situation."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Tax Planning in {{STATE_NAME}}",
+              "definition": "Legal strategies to reduce tax liability through deductions, credits, and strategic timing of income and expenses.",
+              "example": "Contributing to a 401(k), timing charitable donations, using tax-advantaged accounts"
+            },
+            {
+              "term": "Tax Evasion in {{STATE_NAME}}",
+              "definition": "Illegal non-payment or underpayment of taxes through deception, fraud, or intentional concealment of income.",
+              "example": "Hiding cash income, claiming fake dependents, falsifying business deductions"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Tax-AdvantagedAccounts in {{STATE_NAME}}",
+              "definition": "Special accounts that provide tax benefits, either reducing current taxes or allowing tax-free growth and withdrawals.",
+              "example": "Traditional IRA, Roth IRA, 401(k), HSA, 529 Education Savings Plans"
+            },
+            {
+              "term": "TaxCompliance in {{STATE_NAME}}",
+              "definition": "Following tax laws and regulations correctly and timely, including proper reporting of all income and accurate deductions.",
+              "example": "Filing on time, reporting all income, maintaining records, paying owed taxes"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "The Critical Distinction",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Legal vs. Illegal Tax Reduction",
+            "paragraphs": [
+              "The line between <strong>tax planning</strong> and <strong>tax evasion</strong> isn't just semantic—it separates smart financial management from criminal behavior.",
+              "<strong>Tax planning</strong> is transparent, follows both the letter and spirit of the law, and uses legitimate strategies available to all taxpayers.",
+              "<strong>Tax evasion</strong> involves deliberate deception, hiding income, or claiming false deductions—with serious legal consequences."
+            ],
+            "highlightBox": {
+              "icon": "\ud83d",
+              "text": "\udca1 Everyone has the right to legally minimize their taxes. The key is using legitimate strategies, not deception."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "75% in {{STATE_NAME}}",
+                "label": "Maximum Fraud Penalty in {{STATE_NAME}}",
+                "color": "rose"
+              },
+              {
+                "value": "5 yrs in {{STATE_NAME}}",
+                "label": "Potential Prison Time in {{STATE_NAME}}",
+                "color": "teal"
+              }
+            ],
+            "infoCard": {
+              "title": "IRS Detection Methods:",
+              "color": "blue",
+              "items": [
+                "Computer algorithms flag suspicious returns",
+                "Income matching with third-party reports",
+                "Whistleblower programs",
+                "Lifestyle audits for income verification"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Tax Planning vs. Tax Evasion",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "",
+            "title": "⚠️ Tax Evasion (ILLEGAL)",
+            "items": [
+              "Not reporting cash income",
+              "Claiming fictitious dependents",
+              "Personal expenses as business deductions",
+              "Hiding assets offshore illegally",
+              "Deliberately falsifying records",
+              "Intentional underreporting of income"
+            ]
+          },
+          "rightColumn": {
+            "icon": "✓",
+            "title": "✓ Tax Planning (LEGAL)",
+            "items": [
+              "Contributing to retirement accounts",
+              "Timing charitable donations strategically",
+              "Claiming eligible deductions and credits",
+              "Using tax-advantaged accounts (HSA, 529)",
+              "Choosing optimal filing status",
+              "Strategic timing of income and expenses"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Tax-Advantaged Accounts",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Powerful Tools for Tax Reduction",
+            "paragraphs": [
+              "Tax-advantaged accounts are among the most powerful legal tax planning tools available. They provide immediate or future tax benefits.",
+              "<strong>Traditional IRA/401(k):</strong> Contributions reduce current taxable income; pay taxes when withdrawing in retirement.",
+              "<strong>Roth IRA/401(k):</strong> Pay taxes now; withdrawals in retirement are completely tax-free.",
+              "<strong>HSA:</strong> Triple tax advantage—deductible contributions, tax-free growth, tax-free withdrawals for medical expenses."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$23K in {{STATE_NAME}}",
+                "label": "2024 401(k) Contribution Limit in {{STATE_NAME}}",
+                "color": "purple"
+              },
+              {
+                "value": "$7K in {{STATE_NAME}}",
+                "label": "2024 IRA Contribution Limit in {{STATE_NAME}}",
+                "color": "green"
+              }
+            ],
+            "infoCard": {
+              "title": "HSA Triple Tax Advantage:",
+              "color": "green",
+              "items": [
+                "Tax-deductible contributions",
+                "Tax-free investment growth",
+                "Tax-free medical withdrawals",
+                "Funds roll over year to year"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Strategic Timing of Income & Expenses",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "When You Receive or Pay Matters",
+          "paragraphs": [
+            "Strategically timing when you receive income or pay deductible expenses is a powerful and completely legal tax planning technique that can significantly reduce your tax burden."
+          ],
+          "bulletPoints": [
+            "<strong>Deferring Income:</strong> Postpone bonuses to next year if you expect a lower tax bracket",
+            "<strong>Accelerating Income:</strong> Take income sooner if tax rates will increase",
+            "<strong>Bunching Deductions:</strong> Concentrate charitable donations to exceed standard deduction",
+            "<strong>Prepaying Expenses:</strong> Pay January mortgage in December for current-year deduction",
+            "<strong>Education Timing:</strong> Time tuition payments to maximize education credits",
+            "<strong>Medical Expenses:</strong> Schedule procedures strategically to exceed the 7.5% AGI threshold"
+          ]
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Common Tax Mistakes & Penalties",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Avoid These Costly Errors",
+            "paragraphs": [
+              "Understanding common mistakes helps you avoid penalties and maintain good standing with the IRS.",
+              "<strong>Missing Deadlines:</strong> Filing late results in penalties even if you can't pay what you owe. Always file on time!",
+              "<strong>Underreporting Income:</strong> All income must be reported—wages, freelance work, cash tips, investment gains.",
+              "<strong>Poor Documentation:</strong> The burden of proof is on you during an audit. Keep organized records."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "5% in {{STATE_NAME}}",
+                "label": "Failure-to-File Penalty/Month in {{STATE_NAME}}",
+                "color": "rose"
+              },
+              {
+                "value": "0.5% in {{STATE_NAME}}",
+                "label": "Failure-to-Pay Penalty/Month in {{STATE_NAME}}",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Record Retention Guidelines:",
+              "color": "amber",
+              "items": [
+                "Tax returns: Keep for 3+ years",
+                "Property records: Keep 3 years after sale",
+                "Employment taxes: Keep 4 years",
+                "Worthless securities: Keep 7 years"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Why Tax Planning Matters",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Beyond Just Saving Money",
+          "paragraphs": [
+            "Effective tax planning isn't just about reducing your annual tax bill—it transforms taxes from a dreaded obligation into a strategic component of your overall financial success."
+          ],
+          "bulletPoints": [
+            "<strong>Financial Efficiency:</strong> Keep more of your hard-earned money for your financial goals",
+            "<strong>Reduced Stress:</strong> Proactive planning eliminates last-minute filing panic",
+            "<strong>Better Decisions:</strong> Understanding tax implications improves all financial choices",
+            "<strong>Long-Term Growth:</strong> Tax savings compound over time into significant wealth",
+            "<strong>Legal Protection:</strong> Proper compliance reduces audit risk and provides documentation",
+            "<strong>Life Stage Optimization:</strong> Strategies evolve with your changing circumstances"
+          ]
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Tax Planning Through Life Stages",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Your Strategy Should Evolve",
+            "paragraphs": [
+              "Tax planning needs change as you move through different life stages. What's optimal at 22 won't be optimal at 45.",
+              "<strong>Students (18-24):</strong> Education credits, student loan interest deduction, starting retirement contributions early.",
+              "<strong>Early Career (25-35):</strong> Maximize 401(k) contributions, homebuyer considerations, family planning credits.",
+              "<strong>Mid-Career (36-50):</strong> Advanced strategies, education funding for kids, charitable giving optimization."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$2,500 in {{STATE_NAME}}",
+                "label": "American Opportunity Credit in {{STATE_NAME}}",
+                "color": "teal"
+              },
+              {
+                "value": "$2,000 in {{STATE_NAME}}",
+                "label": "Child Tax Credit in {{STATE_NAME}}",
+                "color": "green"
+              }
+            ],
+            "infoCard": {
+              "title": "Life Stage Key Focus:",
+              "color": "blue",
+              "items": [
+                "Young: Education credits + start saving",
+                "Early Career: Retirement + home buying",
+                "Mid-Career: Max contributions + kids' education",
+                "Pre-Retirement: Catch-up contributions"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👩‍💼 in {{STATE_NAME}}",
+            "name": "Kate's Proactive Tax Planning Approach in {{STATE_NAME}}",
+            "paragraphs": [
+              "Kate, 28, earns $65,000 in marketing. She takes a <span class=\"highlight-text\">proactive approach to tax planning</span>:"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "Tax Reduction in {{STATE_NAME}}",
+              "value": "$3,400+ in {{STATE_NAME}}",
+              "detail": "Annual savings through planning in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "Stress Level in {{STATE_NAME}}",
+              "value": "Minimal in {{STATE_NAME}}",
+              "detail": "Organized & prepared year-round in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "Future Impact in {{STATE_NAME}}",
+              "value": "$500K+ in {{STATE_NAME}}",
+              "detail": "Projected retirement benefit in {{STATE_NAME}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👨 in {{STATE_NAME}}",
+            "name": "Dave's Reactive Tax Behavior in {{STATE_NAME}}",
+            "paragraphs": [
+              "Dave, also 28 and earning a similar salary, takes a <span class=\"highlight-text\">reactive approach to taxes</span>:"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Missed Savings in {{STATE_NAME}}",
+              "value": "$5,200+ in {{STATE_NAME}}",
+              "detail": "401(k) match + tax benefits lost in {{STATE_NAME}}"
+            },
+            {
+              "type": "before",
+              "label": "Stress Level in {{STATE_NAME}}",
+              "value": "High in {{STATE_NAME}}",
+              "detail": "Annual tax season panic in {{STATE_NAME}}"
+            },
+            {
+              "type": "before",
+              "label": "Occasional Penalties in {{STATE_NAME}}",
+              "value": "$200+ in {{STATE_NAME}}",
+              "detail": "Late filing/payment fees in {{STATE_NAME}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion in {{STATE_NAME}}",
+        "question": "What specific differences between Kate's proactive approach and Dave's reactive behavior will compound over 20+ years?<br><br>Which of Kate's strategies could you start implementing this year? in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection in {{STATE_NAME}}",
+        "question": "Are you currently more like Kate or Dave in your approach to taxes and financial planning?<br><br>What's one proactive tax planning habit you could develop starting now? in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What is the key difference between tax planning and tax evasion? Why is this distinction so important?"
+            },
+            {
+              "number": 2,
+              "question": "Name two tax-advantaged accounts and explain how they provide tax benefits."
+            },
+            {
+              "number": 3,
+              "question": "What are the penalties for filing your taxes late versus paying late? Why should you always file on time?"
+            },
+            {
+              "number": 4,
+              "question": "A college student can claim either the American Opportunity Credit ($2,000) or Student Loan Interest Deduction ($500). Which is better and why?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Legal vs. Illegal",
+              "description": "Tax planning is legal and smart; tax evasion is criminal. Know the difference and stay on the right side."
+            },
+            {
+              "number": 2,
+              "title": "Year-Round Activity",
+              "description": "Effective tax planning is ongoing, not just an April task. Proactive planning yields significant savings."
+            },
+            {
+              "number": 3,
+              "title": "Use Tax-Advantaged Accounts",
+              "description": "401(k), IRA, HSA, and 529 plans are powerful legal tools to reduce lifetime tax burden."
+            },
+            {
+              "number": 4,
+              "title": "Evolve Your Strategy",
+              "description": "Tax planning needs change through life stages—student, early career, mid-career, pre-retirement."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Student Activity",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "\ud83d",
+            "title": "\udccb Tax Planning & Compliance Checklist",
+            "description": "Create a personalized tax planning and compliance checklist based on your current life stage that will help you optimize your tax situation while ensuring full compliance. This activity will prepare you for the Tax Strategy Simulation in tomorrow's Learning Lab."
+          },
+          "steps": [
+            "Identify your current life stage and tax situation",
+            "Check off relevant income sources and deductions",
+            "Create a tax timeline for the year",
+            "Complete the Quick Decision Tax Scenario",
+            "List 3 tax planning actions for the next month"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time in {{STATE_NAME}}",
+        "website": "www.pflacademy.co in {{STATE_NAME}}",
+        "copyright": "© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+      }
+    }
+  ]
+}

@@ -1,0 +1,565 @@
+{
+  "metadata": {
+    "lChapter": "L-12",
+    "title": "Choosing Financial Providers",
+    "subtitle": "Evaluating Costs, Benefits, and Services in {{STATE_NAME}}",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Choosing Financial Providers",
+        "titleSize": "large",
+        "subtitle": "Evaluating Costs, Benefits, and Services in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question in {{STATE_NAME}}",
+        "question": "How do you <em>compare and choose</em> between<br>the many financial institutions available—<br>and what factors matter most for <em>your situation</em>? in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Understand",
+              "description": "Recognize the key factors that distinguish different financial service providers and what makes each unique."
+            },
+            {
+              "number": 2,
+              "verb": "Evaluate",
+              "description": "Compare the costs and benefits of different providers, including fees, interest rates, and services offered."
+            },
+            {
+              "number": 3,
+              "verb": "Analyze",
+              "description": "Apply evaluation criteria to real-world scenarios to determine which provider best fits specific needs."
+            },
+            {
+              "number": 4,
+              "verb": "Decide",
+              "description": "Make informed decisions about financial service providers that align with your current and future financial goals."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "APY in {{STATE_NAME}}",
+              "definition": "Annual Percentage Yield—the effective annual rate of return on savings accounts, including compound interest.",
+              "example": "A 4.5% APY means $1,000 grows to $1,045 after one year"
+            },
+            {
+              "term": "AccountFees in {{STATE_NAME}}",
+              "definition": "Regular charges for maintaining an account, including monthly fees, overdraft fees, ATM fees, and minimum balance fees.",
+              "example": "Monthly maintenance ($5-15), overdraft ($35), out-of-network ATM ($3)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Online Bank in {{STATE_NAME}}",
+              "definition": "A digital-only bank with no physical branches, relying on technology for all transactions and support.",
+              "example": "Higher interest rates, lower fees, 24/7 access, convenient mobile apps"
+            },
+            {
+              "term": "Robo-Advisor in {{STATE_NAME}}",
+              "definition": "A digital platform that provides automated, algorithm-driven investment management services with minimal human intervention.",
+              "example": "Low fees (0.25-0.5%) vs. traditional advisors (1%+)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Types of Financial Service Providers",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Four Main Categories",
+            "paragraphs": [
+              "<strong>Traditional Banks:</strong> For-profit institutions with physical branches, extensive ATM networks, and wide service offerings.",
+              "<strong>Credit Unions:</strong> Member-owned cooperatives offering lower fees and better rates, with membership requirements.",
+              "<strong>Online Banks:</strong> Digital-only with no branches, typically offering highest APYs and lowest fees.",
+              "<strong>Investment Platforms:</strong> Brokerage firms and robo-advisors specializing in growing wealth through investments."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "4.5% in {{STATE_NAME}}",
+                "label": "Top Online Bank APY in {{STATE_NAME}}",
+                "color": "teal"
+              },
+              {
+                "value": "0.01% in {{STATE_NAME}}",
+                "label": "Typical Traditional Bank APY in {{STATE_NAME}}",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "The APY Difference Matters:",
+              "color": "blue",
+              "items": [
+                "$10,000 at 0.01% = $1 interest/year",
+                "$10,000 at 4.5% = $450 interest/year",
+                "That's a $449 difference annually!",
+                "Shop around for best rates"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Consideration: Fees & Costs",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Fees Can Add Up Quickly",
+            "paragraphs": [
+              "Hidden fees are one of the biggest ways financial institutions make money from customers. Know what you're paying for.",
+              "<strong>Monthly Maintenance:</strong> $5-15/month unless you meet minimum requirements.",
+              "<strong>Overdraft Fees:</strong> $25-35 per transaction when you spend more than your balance.",
+              "<strong>ATM Fees:</strong> $2-5 per transaction at out-of-network ATMs."
+            ],
+            "highlightBox": {
+              "icon": "\ud83d",
+              "text": "\udca1 These fees can total $200+ per year. Many online banks and credit unions offer fee-free accounts."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$35 in {{STATE_NAME}}",
+                "label": "Average Overdraft Fee in {{STATE_NAME}}",
+                "color": "rose"
+              },
+              {
+                "value": "$180+ in {{STATE_NAME}}",
+                "label": "Annual Bank Fees (avg) in {{STATE_NAME}}",
+                "color": "teal"
+              }
+            ],
+            "infoCard": {
+              "title": "Questions to Ask:",
+              "color": "green",
+              "items": [
+                "Are there monthly fees?",
+                "Can I waive fees with direct deposit?",
+                "What's the overdraft policy?",
+                "Which ATMs are free to use?"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Consideration: Interest Rates",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "\ud83d",
+            "title": "\udcb0 Savings Interest (Want HIGH)",
+            "items": [
+              "Online banks: 4.0-5.0% APY",
+              "Credit unions: 0.5-2.0% APY",
+              "Traditional banks: 0.01-0.5% APY",
+              "Higher APY = more interest earned",
+              "Compound interest grows your money"
+            ]
+          },
+          "rightColumn": {
+            "icon": "\ud83d",
+            "title": "\udcc9 Loan Interest (Want LOW)",
+            "items": [
+              "Credit unions: Often lowest rates",
+              "Traditional banks: Competitive rates",
+              "Online lenders: Varies widely",
+              "Lower rate = pay less over time",
+              "Compare APR, not just rate"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Key Consideration: Access & Services",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "What Access Do You Need?",
+          "paragraphs": [
+            "Your lifestyle and banking habits should influence which provider you choose. Consider how you'll access your money and what services matter to you."
+          ],
+          "bulletPoints": [
+            "<strong>Branch Locations:</strong> Important if you prefer in-person service or deposit cash frequently",
+            "<strong>ATM Network:</strong> Larger networks mean fewer fees; some banks reimburse ATM fees",
+            "<strong>Mobile Banking:</strong> Quality apps with mobile deposit, transfers, bill pay, budgeting tools",
+            "<strong>Customer Service:</strong> 24/7 phone support, chat, response times for issues",
+            "<strong>Loans &amp; Credit:</strong> Auto loans, mortgages, credit cards, personal loans",
+            "<strong>Investment Options:</strong> Some banks offer brokerage services; others don't"
+          ]
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Consideration: Security",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Protecting Your Money",
+            "paragraphs": [
+              "Security should be a top priority when choosing any financial provider. Look for both insurance protection and digital security measures.",
+              "<strong>FDIC Insurance:</strong> Protects bank deposits up to $250,000 per depositor.",
+              "<strong>NCUA Insurance:</strong> Same protection for credit union deposits.",
+              "<strong>SIPC Protection:</strong> Protects brokerage accounts up to $500,000.",
+              "Also look for: Two-factor authentication, fraud monitoring, and zero-liability protection."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$250K in {{STATE_NAME}}",
+                "label": "FDIC/NCUA Insurance Limit in {{STATE_NAME}}",
+                "color": "green"
+              },
+              {
+                "value": "$500K in {{STATE_NAME}}",
+                "label": "SIPC Protection Limit in {{STATE_NAME}}",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Security Features to Look For:",
+              "color": "amber",
+              "items": [
+                "Two-factor authentication",
+                "Fraud alerts & monitoring",
+                "Zero-liability for fraud",
+                "Secure mobile app features"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Why Your Choice Matters",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Long-Term Financial Impact",
+          "paragraphs": [
+            "The financial service provider you choose affects your money every single day. Over years, these differences compound into significant amounts."
+          ],
+          "bulletPoints": [
+            "<strong>Fee Savings:</strong> $200/year in avoided fees = $10,000 over 50 years (invested)",
+            "<strong>Interest Earned:</strong> Higher APY on savings accelerates emergency fund and goals",
+            "<strong>Loan Costs:</strong> 1% lower rate on car loan = $700+ saved over 5 years",
+            "<strong>Investment Fees:</strong> 0.5% less in fees = tens of thousands more at retirement",
+            "<strong>Convenience:</strong> Easy access reduces financial friction and stress",
+            "<strong>Relationships:</strong> Good provider relationships help when you need loans or assistance"
+          ]
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Matching Provider to Your Needs",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Different Situations, Different Needs",
+            "paragraphs": [
+              "<strong>College Student:</strong> Online bank with no fees, high APY savings, good mobile app.",
+              "<strong>Someone Saving for a Purchase:</strong> Highest APY savings account, possibly a CD for fixed goals.",
+              "<strong>Young Professional Investing:</strong> Robo-advisor or low-cost brokerage with retirement accounts.",
+              "<strong>Small Business Owner:</strong> Bank with business services, merchant processing, business loans."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "0.25% in {{STATE_NAME}}",
+                "label": "Robo-Advisor Fee in {{STATE_NAME}}",
+                "color": "teal"
+              },
+              {
+                "value": "1.2% in {{STATE_NAME}}",
+                "label": "Traditional Advisor Fee in {{STATE_NAME}}",
+                "color": "rose"
+              }
+            ],
+            "infoCard": {
+              "title": "The Fee Difference Over Time:",
+              "color": "blue",
+              "items": [
+                "$10,000 invested for 30 years at 7%",
+                "At 0.25% fee: ~$70,000",
+                "At 1.2% fee: ~$52,000",
+                "That's $18,000 to fees!"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👩‍🎓 in {{STATE_NAME}}",
+            "name": "Sophia: First Bank Account Decision in {{STATE_NAME}}",
+            "paragraphs": [
+              "Sophia is starting college and needs her first bank account. She's comparing two options:",
+              "<span class=\"highlight-text\">Option A (Online Bank):</span> No monthly fees, no minimum balance, 1.5% APY on savings, excellent mobile app.",
+              "<span class=\"highlight-text\">Option B (Local Credit Union):</span> Personalized service, local branches, 0.8% APY on savings, $5 monthly fee waived with $300 minimum.",
+              "Which should she choose? It depends on her priorities—higher interest and no fees vs. in-person service."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "Online Bank APY in {{STATE_NAME}}",
+              "value": "1.5% in {{STATE_NAME}}",
+              "detail": "$150/year on $10K savings in {{STATE_NAME}}"
+            },
+            {
+              "type": "before",
+              "label": "Credit Union APY in {{STATE_NAME}}",
+              "value": "0.8% in {{STATE_NAME}}",
+              "detail": "$80/year on $10K savings in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "Annual Difference in {{STATE_NAME}}",
+              "value": "$70 in {{STATE_NAME}}",
+              "detail": "Online bank wins on rates in {{STATE_NAME}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "🚗 in {{STATE_NAME}}",
+            "name": "Ethan: Comparing Auto Loan Rates in {{STATE_NAME}}",
+            "paragraphs": [
+              "Ethan needs a <span class=\"highlight-text\">$15,000 auto loan for 5 years</span> and is comparing rates from three lenders:",
+              "The credit union offers the best rate. How much would Ethan save by choosing the credit union over his current bank?"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Bank (4.5% APR) in {{STATE_NAME}}",
+              "value": "$1,786 in {{STATE_NAME}}",
+              "detail": "Total interest paid in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "Credit Union (3.2%) in {{STATE_NAME}}",
+              "value": "$1,256 in {{STATE_NAME}}",
+              "detail": "Total interest paid in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "Savings in {{STATE_NAME}}",
+              "value": "$530 in {{STATE_NAME}}",
+              "detail": "By shopping around! in {{STATE_NAME}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion in {{STATE_NAME}}",
+        "question": "Based on the examples of Sophia and Ethan, what factors do you think are most important when choosing a financial provider?<br><br>How might your priorities differ from theirs? in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection in {{STATE_NAME}}",
+        "question": "What financial goals do you have that might influence your choice of financial service provider?<br><br>Which features—fees, rates, convenience, or services—matter most to you right now? in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What is APY, and why does a higher APY benefit your savings?"
+            },
+            {
+              "number": 2,
+              "question": "Name two advantages and two disadvantages of online-only banks."
+            },
+            {
+              "number": 3,
+              "question": "Why might someone choose a credit union over a traditional bank for a car loan?"
+            },
+            {
+              "number": 4,
+              "question": "What's the difference between a robo-advisor and a traditional financial advisor? Which might be better for a young investor with $1,000?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Compare Before Choosing",
+              "description": "Fees, interest rates, accessibility, and services vary widely. Shopping around can save you thousands."
+            },
+            {
+              "number": 2,
+              "title": "Fees Add Up",
+              "description": "Monthly fees, overdraft charges, and ATM fees can cost $200+ annually. Many institutions offer fee-free options."
+            },
+            {
+              "number": 3,
+              "title": "Match Provider to Needs",
+              "description": "College students, savers, investors, and business owners have different needs—choose accordingly."
+            },
+            {
+              "number": 4,
+              "title": "Security Matters",
+              "description": "FDIC/NCUA insurance protects deposits up to $250,000. Also look for digital security features."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Student Activity",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "\ud83d",
+            "title": "\udccb Financial Provider Comparison",
+            "description": "Create a comparison chart for three different financial service providers: a local bank, a credit union, and an online bank. Research their fees, interest rates, services, and accessibility to determine which is best for different scenarios."
+          },
+          "steps": [
+            "Identify 3 institutions to compare",
+            "Research fees: monthly, overdraft, ATM",
+            "Compare interest rates: savings APY, loan rates",
+            "Evaluate accessibility: branches, ATMs, mobile app",
+            "Recommend best provider for 3 scenarios"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time in {{STATE_NAME}}",
+        "website": "www.pflacademy.co in {{STATE_NAME}}",
+        "copyright": "© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+      }
+    }
+  ]
+}

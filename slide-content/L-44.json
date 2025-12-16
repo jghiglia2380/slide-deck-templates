@@ -1,0 +1,545 @@
+{
+  "metadata": {
+    "lChapter": "L-44",
+    "title": "Interview Skills &Workplace Readiness",
+    "subtitle": "Mastering the Art of Landing Your Dream Position in {{STATE_NAME}}",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Interview Skills &Workplace Readiness",
+        "titleSize": "large",
+        "subtitle": "Mastering the Art of Landing Your Dream Position in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question in {{STATE_NAME}}",
+        "question": "What separates candidates who <em>get the job offer</em><br>from those who don't—and how can<br><em>preparation</em> make all the difference? in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Develop",
+              "description": "Create effective strategies for preparing for job interviews, including research, practice, and logistics planning."
+            },
+            {
+              "number": 2,
+              "verb": "Apply",
+              "description": "Practice responding to common interview questions using the proven STAR method framework."
+            },
+            {
+              "number": 3,
+              "verb": "Understand",
+              "description": "Comprehend professional workplace expectations, etiquette, and communication skills that employers value."
+            },
+            {
+              "number": 4,
+              "verb": "Demonstrate",
+              "description": "Learn techniques for managing interview anxiety and master post-interview follow-up strategies."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Behavioral Interview in {{STATE_NAME}}",
+              "definition": "An interview approach focused on how candidates handled specific situations in the past to predict future performance.",
+              "example": "\"Tell me about a time when you had to resolve a conflict with a coworker.\""
+            },
+            {
+              "term": "STAR Method in {{STATE_NAME}}",
+              "definition": "A structured technique for answering behavioral questions: Situation, Task, Action, and Result.",
+              "example": "Provides clear, organized responses with concrete evidence of your capabilities."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Panel Interview in {{STATE_NAME}}",
+              "definition": "An interview conducted by multiple interviewers at once, often including team members, managers, and HR.",
+              "example": "Make eye contact with the person asking each question but include others in your responses."
+            },
+            {
+              "term": "Professional Etiquette in {{STATE_NAME}}",
+              "definition": "Expected behaviors in workplace settings that demonstrate respect, courtesy, and professionalism.",
+              "example": "Punctuality, appropriate attire, active listening, respectful communication, thank-you notes."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Interview Preparation Fundamentals",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Preparation Is Your Competitive Edge",
+            "paragraphs": [
+              "Effective interview preparation involves <strong>researching the company</strong>, understanding the position, practicing responses, and planning logistics.",
+              "Well-prepared candidates demonstrate initiative and genuine interest—two qualities employers highly value."
+            ],
+            "highlightBox": {
+              "icon": "\ud83d",
+              "text": "\udca1 Research shows that prepared candidates are 2-3x more likely to receive job offers than unprepared ones."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "47% in {{STATE_NAME}}",
+                "label": "Fail for Lack of Knowledge About Company in {{STATE_NAME}}",
+                "color": "teal"
+              },
+              {
+                "value": "33% in {{STATE_NAME}}",
+                "label": "Rejected in First 90 Seconds in {{STATE_NAME}}",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Must-Research Items:",
+              "color": "blue",
+              "items": [
+                "Company mission and values",
+                "Recent news and achievements",
+                "Role requirements and expectations",
+                "Company culture and work environment"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "The STAR Method Framework",
+        "layout": "generic",
+        "layoutData": {
+          "paragraphs": [
+            "Describe the context or background of the specific event or situation you're discussing",
+            "Explain your responsibility or role in that situation—what were you expected to do?",
+            "Detail the specific actions YOU took to address the task—focus on your contributions",
+            "Share the outcomes of your actions—use specific metrics and numbers when possible"
+          ],
+          "lists": []
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Common Interview Formats",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Know What to Expect",
+            "paragraphs": [
+              "Different interview formats require different preparation strategies. Understanding the format helps you prepare appropriately.",
+              "<strong>One-on-One:</strong> Focus on building rapport with a single interviewer. Most common format.",
+              "<strong>Panel:</strong> Multiple interviewers—note names and roles for follow-up.",
+              "<strong>Virtual:</strong> Test technology, ensure good lighting, look at camera."
+            ],
+            "highlightBox": {
+              "icon": "\ud83c",
+              "text": "\udfa5 Virtual interviews now account for 86% of first-round interviews at major companies."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "86% in {{STATE_NAME}}",
+                "label": "First Interviews Are Virtual in {{STATE_NAME}}",
+                "color": "green"
+              },
+              {
+                "value": "2-4 in {{STATE_NAME}}",
+                "label": "Interview Rounds (Typical) in {{STATE_NAME}}",
+                "color": "teal"
+              }
+            ],
+            "infoCard": {
+              "title": "Virtual Interview Must-Dos:",
+              "color": "green",
+              "items": [
+                "Test technology 24 hours ahead",
+                "Choose quiet, well-lit location",
+                "Professional background visible",
+                "Look at camera, not screen"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Professional Appearance & Body Language",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "First Impressions Are Formed in Seconds",
+          "paragraphs": [
+            "Research shows that interviewers form initial impressions within <strong>7 seconds</strong>. Your appearance and body language communicate confidence, professionalism, and reliability before you say a word."
+          ],
+          "bulletPoints": [
+            "<strong>Greeting:</strong> Firm handshake, warm smile, confident posture",
+            "<strong>Posture:</strong> Sit straight but comfortable, slightly lean forward",
+            "<strong>Eye Contact:</strong> Maintain natural eye contact without staring",
+            "<strong>Hand Placement:</strong> Rest on table or lap, avoid crossed arms",
+            "<strong>Dress Code:</strong> One level above everyday attire for the position",
+            "<strong>Speaking Pace:</strong> Moderate pace with clear articulation"
+          ],
+          "keyPoint": {
+            "text": "⚠️ <strong>Avoid:</strong> Fidgeting, checking phone/watch, slouching, excessive gestures, crossing arms defensively"
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Managing Interview Anxiety",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Nervous? That's Normal!",
+            "paragraphs": [
+              "Interview anxiety is <strong>completely natural</strong>—it shows you care about the opportunity. The key is managing it effectively so it doesn't interfere with your performance.",
+              "Preparation is your best weapon against anxiety. When you know your material, you can focus on connecting with the interviewer."
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "🧘 Deep breathing before interviews can reduce anxiety by up to 40% and improve cognitive performance."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "93% in {{STATE_NAME}}",
+                "label": "Candidates Feel Nervous in {{STATE_NAME}}",
+                "color": "rose"
+              }
+            ],
+            "infoCard": {
+              "title": "Anxiety Management Tips:",
+              "color": "amber",
+              "items": [
+                "Arrive 10-15 minutes early",
+                "Practice deep breathing techniques",
+                "Use positive visualization",
+                "Prepare thoroughly in advance",
+                "Get good sleep the night before"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Why Interview Skills Matter",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Interviews Are Your Gateway to Career Success",
+          "paragraphs": [
+            "Interview skills are <strong>career-long assets</strong>. Whether you're applying for your first job, seeking a promotion, or pivoting to a new career, your ability to present yourself confidently and competently will determine your opportunities."
+          ],
+          "bulletPoints": [
+            "<strong>Career Entry:</strong> Strong interviews open doors to better starting positions",
+            "<strong>Salary Negotiation:</strong> Confident candidates earn 7-10% more in starting salary",
+            "<strong>Promotions:</strong> Internal candidates interview too—same skills apply",
+            "<strong>Career Pivots:</strong> Transferable skills require clear articulation",
+            "<strong>Networking:</strong> Every professional conversation is a mini-interview",
+            "<strong>Client Relationships:</strong> First impressions extend to business development"
+          ],
+          "keyPoint": {
+            "text": "💰 <strong>The Financial Impact:</strong> A strong first job can set your salary trajectory for years. Starting $5,000 higher can mean $500,000+ over a career."
+          }
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Questions to Ask the Interviewer",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Demonstrate Your Interest",
+            "paragraphs": [
+              "Preparing thoughtful questions shows you've done your research and are <strong>seriously evaluating</strong> the opportunity—not just hoping for any offer.",
+              "Great questions reveal your understanding of the role and help you determine if this is the right fit for your career goals."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "3-5 in {{STATE_NAME}}",
+                "label": "Questions to Prepare in {{STATE_NAME}}",
+                "color": "teal"
+              }
+            ],
+            "infoCard": {
+              "title": "Questions to AVOID:",
+              "color": "amber",
+              "items": [
+                "Salary/benefits (too early)",
+                "Info easily found on website",
+                "Personal questions to interviewer",
+                "Negative assumptions about company"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👩‍💼 in {{STATE_NAME}}",
+            "name": "Jamie's STAR Method Success in {{STATE_NAME}}",
+            "paragraphs": [
+              "Jamie interviewed for a marketing assistant position. When asked \"Tell me about a time you worked under a tight deadline,\" she used the <span class=\"highlight-text\">STAR method</span> to structure her response:",
+              "<strong>Before STAR:</strong> \"I'm good under pressure and have worked on lots of tight deadlines.\"",
+              "<strong>With STAR:</strong> \"During my internship, our team was asked to create a social media campaign in 5 days instead of 3 weeks. I created a day-by-day schedule, completed all 10 posts ahead of schedule, and the client approved without revisions.\""
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Generic Response in {{STATE_NAME}}",
+              "value": "Vague in {{STATE_NAME}}",
+              "detail": "No specific evidence in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "STAR Response in {{STATE_NAME}}",
+              "value": "Compelling in {{STATE_NAME}}",
+              "detail": "Concrete, measurable in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "Result in {{STATE_NAME}}",
+              "value": "Job Offer in {{STATE_NAME}}",
+              "detail": "Hired within 1 week in {{STATE_NAME}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👩‍💻 in {{STATE_NAME}}",
+            "name": "Elena's Preparation Pays Off in {{STATE_NAME}}",
+            "paragraphs": [
+              "Elena prepared extensively for her software developer interview at a fintech company:",
+              "When asked an unexpected technical question, <span class=\"highlight-text\">her research helped her connect it to a recent company project</span>."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Anxiety Level in {{STATE_NAME}}",
+              "value": "Low in {{STATE_NAME}}",
+              "detail": "Prepared = Confident in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "Interviewer Feedback in {{STATE_NAME}}",
+              "value": "\"Thorough\" in {{STATE_NAME}}",
+              "detail": "Stood out from others in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "Outcome in {{STATE_NAME}}",
+              "value": "Offer in 3 Days in {{STATE_NAME}}",
+              "detail": "Preparation cited as factor in {{STATE_NAME}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion in {{STATE_NAME}}",
+        "question": "What specific preparation strategies did Jamie and Elena use that helped them succeed?<br><br>How can you adapt these strategies for your own interviews? in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection in {{STATE_NAME}}",
+        "question": "Think of a challenging situation you've faced at school, work, or in an activity. How would you describe it using the STAR method?<br><br>What skills did that experience help you develop? in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What does STAR stand for, and why is this method effective for answering behavioral interview questions?"
+            },
+            {
+              "number": 2,
+              "question": "Name three things you should research about a company before an interview. Why does this preparation matter?"
+            },
+            {
+              "number": 3,
+              "question": "What are two body language mistakes to avoid during an interview? What should you do instead?"
+            },
+            {
+              "number": 4,
+              "question": "Why is it important to prepare questions to ask the interviewer? Give an example of a good question to ask."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Preparation Is Everything",
+              "description": "Research the company, practice responses, plan logistics—prepared candidates are 2-3x more likely to get offers"
+            },
+            {
+              "number": 2,
+              "title": "Master the STAR Method",
+              "description": "Structure your responses with Situation, Task, Action, Result for compelling, evidence-based answers"
+            },
+            {
+              "number": 3,
+              "title": "First Impressions Count",
+              "description": "Professional appearance, confident body language, and punctuality set the tone for success"
+            },
+            {
+              "number": 4,
+              "title": "Follow Up Matters",
+              "description": "Send a thank-you email within 24 hours, referencing specific conversation points"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Student Activity",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📋",
+            "title": "🎤 Mock Interview Practice",
+            "description": "In the activity packet, you'll participate in <strong>mock interviews</strong> with a partner. You'll practice both the interviewer and interviewee roles. Use the STAR method for behavioral questions and provide constructive feedback to your partner on their responses and body language."
+          },
+          "steps": [
+            "Pair up with a classmate",
+            "Review the common interview questions list",
+            "Take turns as interviewer/interviewee (10 min each)",
+            "Provide constructive feedback using the rubric",
+            "Complete self-assessment of your performance"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time in {{STATE_NAME}}",
+        "website": "www.pflacademy.co in {{STATE_NAME}}",
+        "copyright": "© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+      }
+    }
+  ]
+}

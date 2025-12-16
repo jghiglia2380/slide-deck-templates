@@ -1,0 +1,461 @@
+{
+  "metadata": {
+    "lChapter": "L-48",
+    "title": "Economic Systems",
+    "subtitle": "Understanding how capitalism, socialism, and mixed economies allocate resources and shape your financial opportunities",
+    "totalSlides": 20,
+    "hasStateVariables": false,
+    "stateVariablesUsed": []
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Economic Systems",
+        "titleSize": "large",
+        "subtitle": "Understanding how capitalism, socialism, and mixed economies allocate resources and shape your financial opportunities"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": ""
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Define",
+              "description": "Compare capitalism, socialism, and mixed economies and their core characteristics"
+            },
+            {
+              "number": 2,
+              "verb": "Explain",
+              "description": "Understand the difference between command and market economic systems"
+            },
+            {
+              "number": 3,
+              "verb": "Analyze",
+              "description": "Examine how property rights function and enable wealth building in different systems"
+            },
+            {
+              "number": 4,
+              "verb": "Evaluate",
+              "description": "Assess how economic systems affect your personal financial opportunities"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            },
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Key Terms (Continued)",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            },
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Three Economic Systems Compared",
+        "layout": "generic",
+        "layoutData": {
+          "paragraphs": [],
+          "lists": [
+            [
+              "<span class=\"bullet\">●</span> Private ownership of resources",
+              "<span class=\"bullet\">●</span> Prices set by markets",
+              "<span class=\"bullet\">●</span> Profit motive drives decisions",
+              "<span class=\"bullet\">●</span> Competition improves quality",
+              "<span class=\"bullet\">●</span> High economic freedom",
+              "<span class=\"bullet\">●</span> May create inequality",
+              "<span class=\"bullet\">●</span> Examples: Singapore, Hong Kong"
+            ],
+            [
+              "<span class=\"bullet\">●</span> Government owns resources",
+              "<span class=\"bullet\">●</span> Prices set by planners",
+              "<span class=\"bullet\">●</span> Collective goals prioritized",
+              "<span class=\"bullet\">●</span> Central planning allocates",
+              "<span class=\"bullet\">●</span> Low economic freedom",
+              "<span class=\"bullet\">●</span> Pursues equality",
+              "<span class=\"bullet\">●</span> Examples: Cuba, N. Korea"
+            ],
+            [
+              "<span class=\"bullet\">●</span> Mostly private ownership",
+              "<span class=\"bullet\">●</span> Markets + regulation",
+              "<span class=\"bullet\">●</span> Profit + social goals",
+              "<span class=\"bullet\">●</span> Govt provides public goods",
+              "<span class=\"bullet\">●</span> Moderate freedom",
+              "<span class=\"bullet\">●</span> Balances efficiency/equality",
+              "<span class=\"bullet\">●</span> Examples: USA, Canada, EU"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "The German Experiment: Real-World Proof",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          },
+          "rightColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Property Rights: Foundation of Wealth",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Why Property Rights Matter",
+            "paragraphs": [
+              "Without secure property rights, wealth-building is impossible:",
+              "<strong>Strong property rights enable:</strong> Investment, entrepreneurship, credit markets, home ownership, retirement savings"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "How Resources Get Allocated",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Market Allocation vs. Command Allocation",
+          "paragraphs": [
+            "<strong>The Fundamental Economic Problem:</strong> Unlimited human wants facing limited resources. Every society must decide: What to produce? How? Who gets it?",
+            "<strong>Market Allocation:</strong>",
+            "• Decentralized decisions by millions of people",
+            "• Prices signal what's scarce (high price) or abundant (low price)",
+            "• Competition rewards efficiency, punishes waste",
+            "• No central planner needed - \"invisible hand\" coordinates",
+            "<strong>Command Allocation:</strong>",
+            "• Central planners decide production and distribution",
+            "• Without price signals, planners lack critical information",
+            "• Political goals often override economic efficiency",
+            "• Results in shortages, surpluses, and poor quality",
+            "High smartphone demand = high prices = entrepreneurs invest = more phones = prices fall",
+            "Planners decide how many shoes to make - wrong sizes, colors people don't want, chronic shortages",
+            "Prices convey more information than any planner can process - they coordinate an economy automatically"
+          ],
+          "bulletPoints": []
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Economic Freedom = Prosperity",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The Data Is Clear",
+            "paragraphs": [
+              "Countries with more economic freedom consistently achieve:",
+              "<strong>The lesson:</strong> Economic system matters more than natural resources. Singapore (no resources) became rich; Venezuela (massive oil) became poor."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "rose"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Why Economic Systems Matter to YOU",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Your Financial Opportunities Depend on Your System",
+            "paragraphs": [
+              "In the U.S. mixed economy, your success depends on:"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Understanding the Trade-offs",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          },
+          "rightColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example: Maya's Career Choices",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "",
+            "name": "",
+            "paragraphs": []
+          },
+          "outcomes": []
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example: James's Business Journey",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "",
+            "name": "",
+            "paragraphs": []
+          },
+          "outcomes": []
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": ""
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": ""
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What's the key difference between how capitalism and socialism answer the question \"who decides what to produce\"?"
+            },
+            {
+              "number": 2,
+              "question": "Why are property rights essential for entrepreneurship and investment?"
+            },
+            {
+              "number": 3,
+              "question": "Why do countries with more economic freedom tend to have higher incomes?"
+            },
+            {
+              "number": 4,
+              "question": "What makes the U.S. a \"mixed economy\" rather than pure capitalism?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": []
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Skill Builder: Economic Systems Comparison",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📋",
+            "title": "",
+            "description": ""
+          },
+          "steps": [
+            "Compare market capitalism, command socialism, and mixed economy characteristics",
+            "Evaluate how a software developer's opportunities differ across systems",
+            "Analyze trade-offs: freedom vs. security, efficiency vs. equality, innovation vs. stability",
+            "Design your ideal mixed economy using sliders for ownership, taxes, and programs",
+            "Compare your design to the actual U.S. system - what would you change?"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Economic systems shape your financial future - learn the rules, play to win",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

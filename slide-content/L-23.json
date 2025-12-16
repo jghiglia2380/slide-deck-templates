@@ -1,0 +1,571 @@
+{
+  "metadata": {
+    "lChapter": "L-23",
+    "title": "Understanding Credit Scores",
+    "subtitle": "Building Your Financial Reputation in {{STATE_NAME}}",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Understanding Credit Scores",
+        "titleSize": "large",
+        "subtitle": "Building Your Financial Reputation in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question in {{STATE_NAME}}",
+        "question": "What <em>three-digit number</em> could save—or cost—you <em>thousands of dollars</em> over your lifetime? in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Understand",
+              "description": "Explain what credit scores are, how they are calculated, and why they matter for your financial future."
+            },
+            {
+              "number": 2,
+              "verb": "Analyze",
+              "description": "Break down the five components of a FICO score and understand the weight each factor carries in your overall score."
+            },
+            {
+              "number": 3,
+              "verb": "Identify",
+              "description": "Recognize specific actions that help improve your credit score and behaviors that can damage it significantly."
+            },
+            {
+              "number": 4,
+              "verb": "Apply",
+              "description": "Connect credit score concepts to real-world situations including housing, employment, insurance, and loan rates."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Credit Score in {{STATE_NAME}}",
+              "definition": "A numerical representation of your creditworthiness, typically ranging from 300 to 850, used by lenders to assess risk.",
+              "example": "300-579: Poor • 580-669: Fair • 670-739: Good • 740-799: Very Good • 800-850: Excellent"
+            },
+            {
+              "term": "FICO Score in {{STATE_NAME}}",
+              "definition": "The most widely used credit scoring model in the United States, created by the Fair Isaac Corporation and used by 90% of lenders.",
+              "example": "Lenders use FICO to determine loan approval, interest rates, and credit limits for mortgages, auto loans, and credit cards."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Credit Report in {{STATE_NAME}}",
+              "definition": "A detailed record of your credit history, including all borrowing habits, payment history, and current debt levels.",
+              "example": "Equifax, Experian, and TransUnion each maintain your credit report. Free annual access at AnnualCreditReport.com"
+            },
+            {
+              "term": "Credit Utilization in {{STATE_NAME}}",
+              "definition": "The percentage of your available credit that you're currently using. Lower is better—experts recommend staying under 30%.",
+              "example": "$3,000 credit limit with $900 balance = 30% utilization. Keep it below $900 for optimal score impact."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "The FICO Score Formula",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Five Factors, Different Weights",
+            "paragraphs": [
+              "Your FICO score isn't random—it's calculated from five specific categories of your credit behavior.",
+              "Understanding these weights helps you prioritize which behaviors matter most for building excellent credit."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "65% in {{STATE_NAME}}",
+                "label": "From Payment + Utilization in {{STATE_NAME}}",
+                "color": "teal"
+              },
+              {
+                "value": "35% in {{STATE_NAME}}",
+                "label": "From Other Three Factors in {{STATE_NAME}}",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Key Insight:",
+              "color": "blue",
+              "items": [
+                "Pay bills on time = 35% of your score",
+                "Keep balances low = 30% of your score",
+                "These two factors alone = 65%!"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Hard vs. Soft Credit Inquiries",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "",
+            "title": "⚠️ Hard Inquiries",
+            "items": [
+              "Applying for credit cards",
+              "Applying for auto loans",
+              "Mortgage applications",
+              "Can lower score 5-10 points",
+              "Stay on report for 2 years",
+              "Multiple inquiries add up quickly"
+            ]
+          },
+          "rightColumn": {
+            "icon": "",
+            "title": "✅ Soft Inquiries",
+            "items": [
+              "Checking your own credit",
+              "Pre-approval offers",
+              "Background checks by employers",
+              "No impact on your score",
+              "Only you can see them",
+              "Check as often as you want!"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Credit Scores Affect Everything",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Beyond Just Loan Approvals",
+            "paragraphs": [
+              "Your credit score influences far more than just whether you qualify for a credit card or loan. It affects:",
+              "<strong>Housing:</strong> Landlords check credit before approving rental applications. Poor credit may require larger deposits or co-signers.",
+              "<strong>Employment:</strong> Some employers review credit as part of background checks, especially for financial positions.",
+              "<strong>Insurance:</strong> Many insurers use credit-based scores to determine your premiums for auto and home insurance."
+            ],
+            "highlightBox": {
+              "icon": "\ud83d",
+              "text": "\udca1 Your credit score is your financial reputation—it follows you everywhere."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "90% in {{STATE_NAME}}",
+                "label": "Landlords Check Credit in {{STATE_NAME}}",
+                "color": "teal"
+              },
+              {
+                "value": "47% in {{STATE_NAME}}",
+                "label": "Employers Check Credit in {{STATE_NAME}}",
+                "color": "rose"
+              }
+            ],
+            "infoCard": {
+              "title": "Good Credit Benefits:",
+              "color": "green",
+              "items": [
+                "Lower interest rates on all loans",
+                "Higher credit limits",
+                "Better insurance premiums",
+                "No utility deposits required"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "The Real Cost of Credit Scores",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Score Differences = Dollar Differences",
+          "paragraphs": [
+            "The difference between a \"fair\" credit score and an \"excellent\" credit score can cost you <strong>tens of thousands of dollars</strong> over your lifetime. Here's how it plays out on a $300,000 mortgage:"
+          ],
+          "bulletPoints": [
+            "<strong>760+ Score:</strong> 6.5% rate = $1,896/month = $382,560 total interest",
+            "<strong>700-759 Score:</strong> 6.9% rate = $1,975/month = $411,000 total interest",
+            "<strong>660-699 Score:</strong> 7.3% rate = $2,056/month = $440,160 total interest",
+            "<strong>620-659 Score:</strong> 7.8% rate = $2,159/month = $477,240 total interest"
+          ],
+          "keyPoint": {
+            "text": "💰 <strong>A 100-point score difference could cost you $94,680 in extra interest on just one mortgage!</strong>"
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Building Excellent Credit",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Smart Habits Start Now",
+            "paragraphs": [
+              "Building excellent credit isn't complicated—it just requires <strong>consistent good habits</strong> over time.",
+              "The earlier you start, the longer your credit history and the better your score potential.",
+              "DO:",
+              "• Pay every bill on time, every time",
+              "• Keep credit utilization under 30%",
+              "• Keep old accounts open",
+              "• Check your credit report annually"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "7 in {{STATE_NAME}}",
+                "label": "Years for Negative Marks to Fall Off in {{STATE_NAME}}",
+                "color": "green"
+              },
+              {
+                "value": "30 in {{STATE_NAME}}",
+                "label": "Days Late = Major Score Drop in {{STATE_NAME}}",
+                "color": "teal"
+              }
+            ],
+            "infoCard": {
+              "title": "DON'T:",
+              "color": "amber",
+              "items": [
+                "Max out credit cards",
+                "Apply for multiple cards at once",
+                "Close your oldest accounts",
+                "Ignore bills (even small ones)"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Why This Matters for Your Future",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Your Credit Score = Your Financial Foundation",
+          "paragraphs": [
+            "Every major financial milestone in your life will be affected by your credit score. The habits you build now determine your options later."
+          ],
+          "bulletPoints": [
+            "<strong>First Apartment:</strong> Landlords require credit checks. Good credit = approved, poor credit = denied or high deposits",
+            "<strong>First Car Loan:</strong> Interest rates vary dramatically based on score. Could mean $50+/month difference",
+            "<strong>Student Loan Rates:</strong> Private student loans use credit scores to set interest rates",
+            "<strong>First Home:</strong> Mortgage approval and rates heavily depend on your credit history",
+            "<strong>Career Opportunities:</strong> Many employers check credit for positions involving money or trust",
+            "<strong>Insurance Costs:</strong> Auto and home insurance premiums often factor in credit scores"
+          ],
+          "keyPoint": {
+            "text": "🎯 <strong>Building credit is a marathon, not a sprint. Start good habits now and maintain them consistently.</strong>"
+          }
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Credit in Today's World",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The Digital Age of Credit",
+            "paragraphs": [
+              "Credit monitoring has never been easier—many banks and apps now offer <strong>free credit score tracking</strong>.",
+              "You can check your score weekly without any impact (soft inquiry). This helps you:"
+            ],
+            "highlightBox": {
+              "icon": "\ud83d",
+              "text": "\udcf1 Most major banks and credit card companies offer free score access to customers."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "1 in 5 in {{STATE_NAME}}",
+                "label": "Credit Reports Have Errors in {{STATE_NAME}}",
+                "color": "purple"
+              },
+              {
+                "value": "$0 in {{STATE_NAME}}",
+                "label": "Cost to Check Own Score in {{STATE_NAME}}",
+                "color": "teal"
+              }
+            ],
+            "infoCard": {
+              "title": "Free Monitoring Tools:",
+              "color": "green",
+              "items": [
+                "Credit Karma (free)",
+                "Most bank/credit card apps",
+                "AnnualCreditReport.com (free reports)",
+                "Experian/Equifax free options"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👨 in {{STATE_NAME}}",
+            "name": "Jason's Hard Inquiry Mistake in {{STATE_NAME}}",
+            "paragraphs": [
+              "Jason was shopping for his first credit card. He thought he'd compare offers by <span class=\"highlight-text\">applying for three different cards within one month</span>.",
+              "What he didn't realize: Each application created a <strong>hard inquiry</strong> on his credit report. His score dropped 25 points—from 680 to 655.",
+              "Now he's having trouble getting approved for an apartment lease because his score dropped below the landlord's minimum requirement of 660. His dream apartment went to someone else."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Before Applications in {{STATE_NAME}}",
+              "value": "680 in {{STATE_NAME}}",
+              "detail": "Good credit range in {{STATE_NAME}}"
+            },
+            {
+              "type": "before",
+              "label": "After 3 Applications in {{STATE_NAME}}",
+              "value": "655 in {{STATE_NAME}}",
+              "detail": "Dropped 25 points in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "Better Approach in {{STATE_NAME}}",
+              "value": "Research First in {{STATE_NAME}}",
+              "detail": "Compare offers before applying in {{STATE_NAME}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👩 in {{STATE_NAME}}",
+            "name": "Sophia's Credit History Setback in {{STATE_NAME}}",
+            "paragraphs": [
+              "Sophia wanted to simplify her finances, so she decided to <span class=\"highlight-text\">close her oldest credit card account</span>—one she'd had for 8 years but rarely used.",
+              "The unintended consequences:",
+              "Her score dropped <strong>40 points</strong>, affecting her ability to qualify for a low-interest auto loan."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Before Closing in {{STATE_NAME}}",
+              "value": "745 in {{STATE_NAME}}",
+              "detail": "Very good credit in {{STATE_NAME}}"
+            },
+            {
+              "type": "before",
+              "label": "After Closing in {{STATE_NAME}}",
+              "value": "705 in {{STATE_NAME}}",
+              "detail": "Lost 40 points in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "Lesson Learned in {{STATE_NAME}}",
+              "value": "Keep Old Cards in {{STATE_NAME}}",
+              "detail": "Even if you don't use them often in {{STATE_NAME}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion in {{STATE_NAME}}",
+        "question": "What specific credit score factors were most affected in Jason's and Sophia's stories?<br><br>What could each person have done differently to protect their scores? in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection in {{STATE_NAME}}",
+        "question": "Which of the five FICO factors do you think would be easiest for you to control and improve?<br><br>Which might be the most challenging, and why? in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What are the two highest-weighted factors in a FICO score? Together, what percentage do they represent?"
+            },
+            {
+              "number": 2,
+              "question": "What's the difference between a hard inquiry and a soft inquiry? Give an example of each."
+            },
+            {
+              "number": 3,
+              "question": "Name three ways your credit score can affect your life beyond just loan approvals."
+            },
+            {
+              "number": 4,
+              "question": "Why would closing your oldest credit card actually hurt your credit score?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Payment History Is King",
+              "description": "35% of your score comes from paying on time. One late payment can drop your score significantly."
+            },
+            {
+              "number": 2,
+              "title": "Keep Utilization Low",
+              "description": "Use less than 30% of your available credit. Lower utilization = higher score potential."
+            },
+            {
+              "number": 3,
+              "title": "Age Matters",
+              "description": "Keep old accounts open to maintain credit history length. Don't close cards unnecessarily."
+            },
+            {
+              "number": 4,
+              "title": "Credit Affects Everything",
+              "description": "Housing, employment, insurance, and interest rates all depend on your credit score."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Student Activity",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "\ud83d",
+            "title": "\udccb Credit Score Factor Analysis",
+            "description": "In the Skill Builder activity, you'll analyze the five FICO factors and reflect on which you could most easily control as you begin building your credit history. Consider your current situation and future financial goals as you complete this reflection."
+          },
+          "steps": [
+            "Review the FICO score breakdown chart",
+            "Reflect on each factor's impact potential",
+            "Identify your easiest factor to control",
+            "Identify your most challenging factor",
+            "Write a reflection paragraph with reasoning"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time in {{STATE_NAME}}",
+        "website": "www.pflacademy.co in {{STATE_NAME}}",
+        "copyright": "© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+      }
+    }
+  ]
+}
