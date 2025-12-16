@@ -1,0 +1,587 @@
+{
+  "metadata": {
+    "lChapter": "L-46",
+    "title": "Automobile Finance",
+    "subtitle": "Buying vs. Leasing: Making Smart Vehicle Decisions",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME",
+      "SALES_TAX",
+      "REGISTRATION_INITIAL",
+      "REGISTRATION_ANNUAL",
+      "GAS_PRICE_CURRENT",
+      "INSURANCE_AVG_TEEN",
+      "AVG_AUTO_LOAN_RATE_NEW",
+      "AVG_AUTO_LOAN_RATE_USED",
+      "STATE_SALES_TAX",
+      "STATE_AVG_AUTO_LOAN_RATE_NEW",
+      "STATE_GAS_PRICE_CURRENT",
+      "STATE_INSURANCE_AVG_TEEN",
+      "CALCULATED_TOTAL_FIRST_YEAR",
+      "STATE_REGISTRATION_ANNUAL",
+      "STATE_AVG_AUTO_LOAN_RATE_USED",
+      "STATE_REGISTRATION_INITIAL"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Automobile Finance",
+        "titleSize": "large",
+        "subtitle": "Buying vs. Leasing: Making Smart Vehicle Decisions"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": "In <em>{{STATE_NAME}}</em>, why do some people pay<br><em>$100,000 more</em> for vehicles over their lifetime—<br>even if they drive <em>similar cars</em>?"
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Analyze",
+              "description": "Examine the financial differences between buying and leasing a vehicle in {{STATE_NAME}}, including state-specific costs."
+            },
+            {
+              "number": 2,
+              "verb": "Calculate",
+              "description": "Compute the total cost of ownership for different financing scenarios including {{STATE_NAME}} taxes and fees."
+            },
+            {
+              "number": 3,
+              "verb": "Evaluate",
+              "description": "Assess how vehicle financing decisions impact overall financial health and long-term wealth building."
+            },
+            {
+              "number": 4,
+              "verb": "Decide",
+              "description": "Make informed decisions about vehicle acquisition aligned with personal financial goals."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Depreciation",
+              "definition": "The decrease in a vehicle's value over time due to age, mileage, and wear.",
+              "example": "New cars lose 20-30% in Year 1, about 60% by Year 5. A $40K car = $16K after 5 years."
+            },
+            {
+              "term": "Total Cost of Ownership",
+              "definition": "Complete cost: purchase, financing, insurance, fuel, maintenance, repairs, and depreciation.",
+              "example": "In {{STATE_NAME}}, monthly payment is only part—add {{STATE_SALES_TAX}}% sales tax, registration, insurance."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Auto Loan",
+              "definition": "A secured loan where the vehicle is collateral. You make payments over 36-72 months until you own it.",
+              "example": "Average new car loan rate in {{STATE_NAME}}: {{STATE_AVG_AUTO_LOAN_RATE_NEW}}%"
+            },
+            {
+              "term": "Lease",
+              "definition": "A contract to use a vehicle for 24-36 months by making payments, then return it or buy it.",
+              "example": "Lower payments but mileage limits, no ownership, perpetual payment cycle."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Vehicle Costs in {{STATE_NAME}}",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "\"I Can Afford $399/Month!\"",
+            "paragraphs": [
+              "A student in {{STATE_NAME}} making $2,500/month sees a car payment of $399 and thinks it's affordable. <strong>But that's not the whole picture...</strong>",
+              "When you add {{STATE_NAME}}-specific costs like insurance, fuel, registration, and maintenance, the true monthly cost is closer to <strong>$800+/month</strong>."
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "⚠️ Financial experts recommend total vehicle costs stay under 15-20% of take-home pay."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "{{STATE_SALES_TAX}}%",
+                "label": "{{STATE_NAME}} Sales Tax",
+                "color": "rose"
+              },
+              {
+                "value": "${{STATE_GAS_PRICE_CURRENT}}",
+                "label": "Current Gas Price/Gallon",
+                "color": "teal"
+              }
+            ],
+            "infoCard": {
+              "title": "{{STATE_NAME}} Monthly Costs:",
+              "color": "amber",
+              "items": [
+                "Payment: $399",
+                "Insurance (teen): +${{STATE_INSURANCE_AVG_TEEN}}",
+                "Fuel (12k mi/yr): +$150",
+                "Maintenance: +$50"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Buying vs. Leasing",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "\ud83d",
+            "title": "\udcb0 Buying",
+            "items": [
+              "Higher monthly payments",
+              "You OWN the vehicle (asset)",
+              "No mileage restrictions",
+              "Can customize/modify",
+              "Payment-free years after payoff",
+              "Build equity over time"
+            ]
+          },
+          "rightColumn": {
+            "icon": "\ud83d",
+            "title": "\udd04 Leasing",
+            "items": [
+              "Lower monthly payments",
+              "Never own—always return",
+              "10-15K mile/year limits",
+              "No modifications allowed",
+              "Perpetual payment cycle",
+              "No equity built"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "First Year Costs in {{STATE_NAME}}",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "$25,000 Vehicle - Year 1 Costs",
+            "paragraphs": [
+              "<strong>Purchase Price:</strong> $25,000",
+              "<strong>{{STATE_NAME}}-Specific Fees:</strong>"
+            ],
+            "highlightBox": {
+              "icon": "\ud83d",
+              "text": "\udca1 Always budget for state-specific fees beyond the sticker price!"
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "${{CALCULATED_TOTAL_FIRST_YEAR}}",
+                "label": "Est. First Year Total Cost",
+                "color": "rose"
+              },
+              {
+                "value": "${{STATE_REGISTRATION_ANNUAL}}",
+                "label": "Annual Registration Renewal",
+                "color": "teal"
+              }
+            ],
+            "infoCard": {
+              "title": "Ongoing Annual Costs:",
+              "color": "blue",
+              "items": [
+                "Registration: ${{STATE_REGISTRATION_ANNUAL}}/yr",
+                "Insurance: ${{STATE_INSURANCE_AVG_TEEN}}/mo",
+                "Fuel at ${{STATE_GAS_PRICE_CURRENT}}/gal",
+                "Maintenance: ~$600/yr"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Understanding Depreciation",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "New Cars Lose Value Fast",
+          "paragraphs": [
+            "Depreciation is the silent cost of vehicle ownership. A new car loses value the moment you drive it off the lot, and the steepest decline happens in the first 2-3 years."
+          ],
+          "bulletPoints": [
+            "<strong>Year 1:</strong> Loses 20-30% of value (drive off lot = instant loss)",
+            "<strong>Year 2:</strong> Loses another 15-18% ($40K car → ~$28K)",
+            "<strong>Year 3:</strong> Loses another 12-15% ($40K car → ~$22K)",
+            "<strong>Year 5:</strong> Worth only ~40% of original ($40K → ~$16K)",
+            "<strong>Years 6+:</strong> Depreciation slows significantly",
+            "<strong>Sweet Spot:</strong> 2-3 year old used car avoids steepest decline"
+          ],
+          "keyPoint": {
+            "text": "💡 <strong>Strategy:</strong> Buy a 2-3 year old certified pre-owned vehicle and let someone else absorb the steepest depreciation."
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Loan Terms in {{STATE_NAME}}",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Shorter Terms = Less Interest",
+            "paragraphs": [
+              "Longer loan terms reduce monthly payments but <strong>dramatically increase</strong> total interest paid.",
+              "<strong>$25,000 loan at {{STATE_AVG_AUTO_LOAN_RATE_NEW}}%:</strong>",
+              "36 months: Higher payment, <strong>~$2,600 interest</strong><br>60 months: Medium payment, <strong>~$4,400 interest</strong><br>72 months: Low payment, <strong>~$5,300 interest</strong>"
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "⚠️ With 72-month loans, you may owe more than the car is worth for 4+ years!"
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "{{STATE_AVG_AUTO_LOAN_RATE_NEW}}%",
+                "label": "{{STATE_NAME}} New Car Rate",
+                "color": "teal"
+              },
+              {
+                "value": "{{STATE_AVG_AUTO_LOAN_RATE_USED}}%",
+                "label": "{{STATE_NAME}} Used Car Rate",
+                "color": "rose"
+              }
+            ],
+            "infoCard": {
+              "title": "Being \"Underwater\":",
+              "color": "amber",
+              "items": [
+                "Owe more than car is worth",
+                "Can't sell without paying extra",
+                "Stuck if life circumstances change",
+                "Risk with long loan terms"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Why Vehicle Decisions Matter",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Second Largest Purchase of Your Life",
+          "paragraphs": [
+            "For most people in {{STATE_NAME}}, vehicles are the second-largest financial decision after housing. The financing method you choose can result in <strong>tens of thousands of dollars</strong> in difference over your lifetime."
+          ],
+          "bulletPoints": [
+            "<strong>Monthly Cash Flow:</strong> High payments limit saving for emergencies and retirement",
+            "<strong>Opportunity Cost:</strong> $100K+ could have been invested instead",
+            "<strong>Credit Impact:</strong> Auto loans affect your credit score and debt-to-income",
+            "<strong>Financial Flexibility:</strong> Owning outright = no payment if income changes",
+            "<strong>Life Goals:</strong> Vehicle overspending delays home purchases, retirement",
+            "<strong>Compound Effect:</strong> Every $100/mo saved now = $120K over 30 years"
+          ],
+          "keyPoint": {
+            "text": "🎯 <strong>The Goal:</strong> Transportation that meets your needs at the lowest total cost, freeing money for wealth-building."
+          }
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "The Opportunity Cost",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "What Else Could That Money Do?",
+            "paragraphs": [
+              "Money spent on a car <strong>depreciates immediately</strong> and generates no return. The opportunity cost is often the most overlooked factor.",
+              "What if instead of a $500/month car payment, you drove a reliable used car (paid off) and invested that $500 monthly?",
+              "At 7% average return for 30 years, you would have accumulated approximately <strong>$600,000</strong>."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$600K",
+                "label": "$500/mo invested 30 years",
+                "color": "purple"
+              },
+              {
+                "value": "$100K+",
+                "label": "Lifetime Vehicle Overspending",
+                "color": "rose"
+              }
+            ],
+            "infoCard": {
+              "title": "Smarter Approach:",
+              "color": "green",
+              "items": [
+                "Buy reliable used car",
+                "Keep it 8-10+ years",
+                "Invest the payment difference",
+                "Let compounding work for you"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example: Smart Buyer",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👩",
+            "name": "Mia's Buy-and-Keep Strategy in {{STATE_NAME}}",
+            "paragraphs": [
+              "Mia considered leasing a new SUV for $450/mo but instead purchased a <span class=\"highlight-text\">certified pre-owned sedan for $18,000</span> in {{STATE_NAME}}.",
+              "$3,000 down, $15,000 financed at {{STATE_AVG_AUTO_LOAN_RATE_USED}}% for 48 months = <strong>~$350/month</strong>",
+              "After 4 years she owned it outright. For the next 3 years, she drove <strong>payment-free</strong> while saving $350/month—that's $12,600 saved or invested!"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Total Paid",
+              "value": "~$20K",
+              "detail": "+ $3K down payment"
+            },
+            {
+              "type": "after",
+              "label": "Car Value (Year 7)",
+              "value": "$8,000",
+              "detail": "Still has an asset"
+            },
+            {
+              "type": "after",
+              "label": "Net Cost",
+              "value": "~$15K",
+              "detail": "+ $12K saved payment-free"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example: Perpetual Leaser",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👨",
+            "name": "James's Perpetual Lease Cycle in {{STATE_NAME}}",
+            "paragraphs": [
+              "James loved having the newest truck with latest features. He leased in {{STATE_NAME}} for <strong>$499/month + $2,000 down</strong> on a 36-month lease.",
+              "When it ended, he leased again: <strong>$525/month + $2,000 down</strong> for another 36 months.",
+              "Over 6 years: $36,864 in payments + $4,000 in down payments + $2,000 in overage fees = <span class=\"highlight-text\">$42,864 with NO asset</span>."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Total Paid",
+              "value": "$42,864",
+              "detail": "Lease payments + fees"
+            },
+            {
+              "type": "before",
+              "label": "Asset at End",
+              "value": "$0",
+              "detail": "Returned both cars"
+            },
+            {
+              "type": "before",
+              "label": "Pattern",
+              "value": "Perpetual",
+              "detail": "Never payment-free"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": "In {{STATE_NAME}}, with {{STATE_SALES_TAX}}% sales tax and ${{STATE_INSURANCE_AVG_TEEN}}/mo teen insurance, what financial trade-offs did Mia and James make?<br><br>When might James's approach make sense for someone?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "Given {{STATE_NAME}}'s auto loan rates ({{STATE_AVG_AUTO_LOAN_RATE_NEW}}% new, {{STATE_AVG_AUTO_LOAN_RATE_USED}}% used) and your anticipated career, which vehicle financing approach would best support your financial goals?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What is \"Total Cost of Ownership\" and why is it more important than just the monthly payment?"
+            },
+            {
+              "number": 2,
+              "question": "In {{STATE_NAME}}, with {{STATE_SALES_TAX}}% sales tax, how much tax would you pay on a $25,000 vehicle?"
+            },
+            {
+              "number": 3,
+              "question": "Why is buying a 2-3 year old used car often the best financial strategy?"
+            },
+            {
+              "number": 4,
+              "question": "If you invest $300/month instead of spending it on a car payment, how much would you have after 20 years at 7%?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Know Your {{STATE_NAME}} Costs",
+              "description": "{{STATE_SALES_TAX}}% sales tax + ${{STATE_REGISTRATION_INITIAL}} registration + ${{STATE_INSURANCE_AVG_TEEN}}/mo insurance adds up fast"
+            },
+            {
+              "number": 2,
+              "title": "Buying Builds Equity",
+              "description": "Ownership means payment-free years after payoff and an asset you can sell—leasing means perpetual payments"
+            },
+            {
+              "number": 3,
+              "title": "Depreciation Matters",
+              "description": "New cars lose 20-30% in year one—buying used avoids the steepest decline"
+            },
+            {
+              "number": 4,
+              "title": "Consider Opportunity Cost",
+              "description": "The money you save on vehicle costs can build significant wealth if invested over time"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Student Activity",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "\ud83d",
+            "title": "\ude97 {{STATE_NAME}} Auto Finance Calculator",
+            "description": "Using {{STATE_NAME}}-specific costs ({{STATE_SALES_TAX}}% tax, ${{STATE_REGISTRATION_INITIAL}} registration, {{STATE_AVG_AUTO_LOAN_RATE_NEW}}% loan rate), compare the complete financial picture of buying vs. leasing. You'll analyze three scenarios for a vehicle you're interested in and determine which approach best supports different financial goals."
+          },
+          "steps": [
+            "Research vehicle price and {{STATE_NAME}} fees",
+            "Calculate: Buy new (20% down, 60mo at {{STATE_AVG_AUTO_LOAN_RATE_NEW}}%)",
+            "Calculate: Buy CPO (48mo at {{STATE_AVG_AUTO_LOAN_RATE_USED}}%)",
+            "Calculate: Lease new (36mo with minimal down)",
+            "Compare 6-year total costs and recommend"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

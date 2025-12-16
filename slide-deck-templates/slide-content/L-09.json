@@ -1,0 +1,562 @@
+{
+  "metadata": {
+    "lChapter": "L-09",
+    "title": "Tax Deductions& Credits",
+    "subtitle": "Strategies to Reduce Your Tax Burden in {{STATE_NAME}}",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Tax Deductions& Credits",
+        "titleSize": "large",
+        "subtitle": "Strategies to Reduce Your Tax Burden in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": "What's the difference between<br><em>reducing your taxable income</em> and<br><em>reducing your actual tax bill</em>?"
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Distinguish",
+              "description": "Differentiate between tax deductions and tax credits based on how they reduce your overall tax liability."
+            },
+            {
+              "number": 2,
+              "verb": "Calculate",
+              "description": "Compute the actual tax savings from deductions and credits based on your tax bracket and situation."
+            },
+            {
+              "number": 3,
+              "verb": "Identify",
+              "description": "Recognize common deductions and credits you may qualify for as a student or young adult."
+            },
+            {
+              "number": 4,
+              "verb": "Apply",
+              "description": "Use tax planning strategies to minimize your tax burden while remaining fully compliant with tax laws."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Tax Deduction",
+              "definition": "An amount that reduces your taxable income before taxes are calculated, lowering the base on which your tax is computed.",
+              "example": "Mortgage interest, charitable donations, student loan interest, medical expenses"
+            },
+            {
+              "term": "Tax Credit",
+              "definition": "An amount that directly reduces your tax bill dollar-for-dollar after taxes are calculated.",
+              "example": "Child Tax Credit, Earned Income Tax Credit, American Opportunity Credit"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Standard Deduction",
+              "definition": "A fixed amount based on filing status that reduces taxable income—no itemizing needed. Used by ~90% of filers.",
+              "example": "Single: $13,850 • Married Filing Jointly: $27,700 • Head of Household: $20,800"
+            },
+            {
+              "term": "Refundable vs. Nonrefundable",
+              "definition": "Refundable credits can result in a refund if they exceed your tax bill. Nonrefundable credits can only reduce your tax to zero.",
+              "example": "EITC (refundable) → can get $ back • Child Care Credit (nonrefundable) → only reduces to $0"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "How Tax Deductions Work",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Deductions Reduce Taxable Income",
+            "paragraphs": [
+              "Tax deductions work by <strong>lowering the amount of income</strong> subject to taxation. This happens BEFORE your tax is calculated.",
+              "The actual tax savings depends on your <strong>marginal tax rate</strong> (tax bracket). Higher bracket = more valuable deductions."
+            ],
+            "highlightBox": {
+              "icon": "\ud83d",
+              "text": "\udca1 A $10,000 deduction in the 22% bracket saves $2,200. The same deduction in the 12% bracket saves only $1,200."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$13,850",
+                "label": "Standard Deduction (Single)",
+                "color": "teal"
+              },
+              {
+                "value": "90%",
+                "label": "Filers Use Standard Deduction",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Deduction Math Example:",
+              "color": "blue",
+              "items": [
+                "Gross income: $50,000",
+                "Deductions: −$13,850",
+                "Taxable income: $36,150",
+                "You only pay tax on $36,150!"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Tax Deductions vs. Tax Credits",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "\ud83d",
+            "title": "\udccb Deductions",
+            "items": [
+              "Reduce taxable INCOME",
+              "Applied BEFORE tax calculated",
+              "Value varies by tax bracket",
+              "Higher brackets benefit more",
+              "Must choose: standard or itemized",
+              "$1,000 = $220 savings (22% bracket)"
+            ]
+          },
+          "rightColumn": {
+            "icon": "\ud83d",
+            "title": "\udcb5 Credits",
+            "items": [
+              "Reduce TAX BILL directly",
+              "Applied AFTER tax calculated",
+              "Dollar-for-dollar savings",
+              "Equal benefit all brackets",
+              "May be refundable or not",
+              "$1,000 = $1,000 savings always"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "The Power of Tax Credits",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Credits: Dollar-for-Dollar Savings",
+            "paragraphs": [
+              "A tax credit directly reduces the amount of tax you owe. If you owe $5,000 in taxes and have a $1,000 credit, you now owe <strong>$4,000</strong>.",
+              "This makes credits particularly powerful—a $1,000 credit saves exactly $1,000, <strong>regardless of your tax bracket</strong>."
+            ],
+            "highlightBox": {
+              "icon": "\ud83d",
+              "text": "\udcb0 A relatively small tax credit can be MORE valuable than a larger tax deduction, especially for lower-income taxpayers."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$2,500",
+                "label": "American Opportunity Credit",
+                "color": "green"
+              },
+              {
+                "value": "$2,000",
+                "label": "Child Tax Credit (per child)",
+                "color": "teal"
+              }
+            ],
+            "infoCard": {
+              "title": "Refundable Credits Can = Money Back:",
+              "color": "green",
+              "items": [
+                "Tax liability: $2,000",
+                "Refundable credit: $3,500",
+                "Result: $1,500 REFUND",
+                "Money in YOUR pocket!"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Common Tax Deductions",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Standard vs. Itemized Deductions",
+          "paragraphs": [
+            "You must choose one: the <strong>standard deduction</strong> (a fixed amount) OR <strong>itemized deductions</strong> (sum of specific expenses). Choose whichever is larger."
+          ],
+          "bulletPoints": [
+            "<strong>Mortgage Interest:</strong> Interest on home loans up to $750,000",
+            "<strong>State &amp; Local Taxes (SALT):</strong> Up to $10,000 in state income, property, and sales taxes",
+            "<strong>Charitable Donations:</strong> Gifts to qualified organizations",
+            "<strong>Medical Expenses:</strong> Amounts exceeding 7.5% of your income",
+            "<strong>Student Loan Interest:</strong> Up to $2,500 (even with standard deduction!)",
+            "<strong>Educator Expenses:</strong> Teachers can deduct up to $300 for supplies"
+          ]
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Common Tax Credits",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Credits for Students & Young Adults",
+            "paragraphs": [
+              "Several tax credits are especially relevant when starting your financial journey:"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$7,430",
+                "label": "Max EITC (3+ children)",
+                "color": "teal"
+              },
+              {
+                "value": "40%",
+                "label": "AOC is Refundable (up to $1,000)",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Education Credits Save Big:",
+              "color": "amber",
+              "items": [
+                "4 years of college = $10,000 in AOC",
+                "Certification courses = LLC eligible",
+                "Can't claim both for same student",
+                "Income limits apply"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Why This Matters for Your Future",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Tax Knowledge = Financial Power",
+          "paragraphs": [
+            "Understanding deductions and credits can <strong>save you thousands of dollars</strong> throughout your life. This knowledge helps you make smarter decisions about:"
+          ],
+          "bulletPoints": [
+            "<strong>Education Decisions:</strong> Timing tuition payments to maximize education credits",
+            "<strong>Housing Choices:</strong> Understanding when mortgage interest deduction makes renting vs. buying decisions clearer",
+            "<strong>Retirement Saving:</strong> Contributing to tax-advantaged accounts for current deductions AND future savings",
+            "<strong>Charitable Giving:</strong> Strategic timing of donations to maximize deduction benefits",
+            "<strong>Career Planning:</strong> Self-employment deductions, work-related expenses",
+            "<strong>Healthcare:</strong> HSA contributions provide triple tax advantages"
+          ]
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Strategic Tax Planning",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Smart Strategies to Reduce Taxes",
+            "paragraphs": [
+              "<strong>Timing matters.</strong> Sometimes delaying income or accelerating deductions can result in significant tax savings.",
+              "<strong>\"Bunching\" deductions:</strong> If your itemized deductions are close to the standard deduction, consider making two years' worth of charitable donations in one year to exceed the threshold."
+            ],
+            "highlightBox": {
+              "icon": "\ud83c",
+              "text": "\udfaf Tax planning isn't about cheating—it's about using legal strategies to keep more of what you earn."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$4K+",
+                "label": "Potential Annual Savings",
+                "color": "purple"
+              },
+              {
+                "value": "3x",
+                "label": "HSA Tax Advantage",
+                "color": "green"
+              }
+            ],
+            "infoCard": {
+              "title": "Key Planning Strategies:",
+              "color": "blue",
+              "items": [
+                "Maximize retirement contributions",
+                "Time income and expenses wisely",
+                "Keep records for all deductions",
+                "Review eligibility for credits annually"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👩‍🎓",
+            "name": "Emily: Recent Graduate Power Planning",
+            "paragraphs": [
+              "Emily just graduated and started her first job earning <strong>$40,000</strong>. She paid $2,800 in student loan interest, contributed $3,000 to her IRA, and completed a certification that qualifies for the Lifetime Learning Credit.",
+              "<span class=\"highlight-text\">With tax planning knowledge:</span> Emily claims the student loan interest deduction ($2,500 max), IRA deduction ($3,000), standard deduction ($13,850), and the $1,500 Lifetime Learning Credit.",
+              "<strong>Without tax planning?</strong> She would have paid over $4,100 MORE in taxes!"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Without Planning",
+              "value": "$4,860",
+              "detail": "Tax bill if no strategies used"
+            },
+            {
+              "type": "after",
+              "label": "With Planning",
+              "value": "$744",
+              "detail": "Tax bill using all benefits"
+            },
+            {
+              "type": "after",
+              "label": "Total Saved",
+              "value": "$4,116",
+              "detail": "Money back in Emily's pocket!"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👨‍👩‍👧‍👦",
+            "name": "The Smith Family: Standard vs. Itemized Decision",
+            "paragraphs": [
+              "Matt and Sarah Smith are married with two children. Combined income: <strong>$105,000</strong>. Their potential itemized deductions:",
+              "<span class=\"highlight-text\">Standard deduction for MFJ: $27,700</span> — The Smiths should take the standard deduction and save $924 more in taxes!"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Itemized Deductions",
+              "value": "$23,500",
+              "detail": "Mortgage + SALT + Charity"
+            },
+            {
+              "type": "after",
+              "label": "Standard Deduction",
+              "value": "$27,700",
+              "detail": "Fixed amount for MFJ"
+            },
+            {
+              "type": "after",
+              "label": "Better Choice",
+              "value": "Standard",
+              "detail": "$4,200 more in deductions!"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": "A $1,000 tax deduction or a $300 tax credit—<br>which saves more money for someone in the 22% tax bracket?<br><br>How would your answer change if the person were in the 10% bracket?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "What tax deductions or credits might you qualify for<br>now or in the next few years?<br><br>How might this knowledge influence your decisions<br>about education, saving, or charitable giving?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What is the fundamental difference between how a tax deduction and a tax credit reduce your taxes?"
+            },
+            {
+              "number": 2,
+              "question": "If someone in the 22% bracket has a $5,000 deduction, how much does it reduce their actual tax bill?"
+            },
+            {
+              "number": 3,
+              "question": "Why are refundable credits more valuable than nonrefundable credits for people with low tax liability?"
+            },
+            {
+              "number": 4,
+              "question": "When should someone choose to itemize deductions instead of taking the standard deduction?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Deductions vs. Credits",
+              "description": "Deductions reduce taxable income; credits reduce your actual tax bill dollar-for-dollar"
+            },
+            {
+              "number": 2,
+              "title": "Credits Are Powerful",
+              "description": "A $1,000 credit saves $1,000 regardless of tax bracket—often more valuable than deductions"
+            },
+            {
+              "number": 3,
+              "title": "Standard vs. Itemized",
+              "description": "About 90% of filers benefit from the standard deduction—only itemize if your total exceeds it"
+            },
+            {
+              "number": 4,
+              "title": "Plan Ahead",
+              "description": "Strategic timing of income and deductions can save thousands—tax planning is year-round"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Student Activity",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "\ud83d",
+            "title": "\udccb Tax Deduction vs. Credit Comparison",
+            "description": "Complete a comparison chart and work through real scenarios to determine which tax benefit provides the greatest savings. This activity will help you understand when deductions outperform credits and vice versa—essential knowledge for tax planning!"
+          },
+          "steps": [
+            "Complete the comparison chart for deductions vs. credits",
+            "Calculate tax savings for two scenarios at different brackets",
+            "Determine which option is better in each scenario",
+            "Develop 3 principles for choosing between deductions and credits",
+            "Prepare to explain your reasoning in Day 2 Learning Lab"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

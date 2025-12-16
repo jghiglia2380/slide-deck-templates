@@ -1,0 +1,473 @@
+{
+  "metadata": {
+    "lChapter": "L-47",
+    "title": "Introduction to Investment Types",
+    "subtitle": "Understanding stocks, bonds, mutual funds, and ETFs to build long-term wealth through informed investment decisions in {{STATE_NAME}}",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Introduction to Investment Types",
+        "titleSize": "large",
+        "subtitle": "Understanding stocks, bonds, mutual funds, and ETFs to build long-term wealth through informed investment decisions in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": ""
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Analyze",
+              "description": "Understand the characteristics and functions of major investment types including stocks, bonds, mutual funds, and ETFs in {{STATE_NAME}}"
+            },
+            {
+              "number": 2,
+              "verb": "Compare",
+              "description": "Evaluate risk-return profiles of different investment vehicles and how they align with financial goals in {{STATE_NAME}}"
+            },
+            {
+              "number": 3,
+              "verb": "Calculate",
+              "description": "Determine potential returns and assess risks associated with different investment options in {{STATE_NAME}}"
+            },
+            {
+              "number": 4,
+              "verb": "Decide",
+              "description": "Make informed investment decisions based on personal financial situation and objectives in {{STATE_NAME}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            },
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Key Terms (Continued)",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            },
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Understanding Stocks",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Ownership in Companies",
+            "paragraphs": [
+              "When you buy stock, you become a part-owner of the business with two sources of potential returns: in {{STATE_NAME}}"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "rose"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Stocks vs. Bonds: Core Differences",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          },
+          "rightColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Understanding Bonds",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Lending Money for Interest",
+            "paragraphs": [
+              "When you buy a bond, you lend money to a government or corporation: in {{STATE_NAME}}"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Understanding Mutual Funds",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Pooled Investments for Instant Diversification",
+          "paragraphs": [
+            "Mutual funds pool money from thousands of investors to create diversified portfolios managed by professionals. This solves a major problem: how can regular people diversify without millions of dollars? in {{STATE_NAME}}",
+            "<strong>Types of Mutual Funds:</strong> in {{STATE_NAME}}",
+            "• <strong>Stock funds</strong> - invest in stocks of large, small, or international companies in {{STATE_NAME}}",
+            "• <strong>Bond funds</strong> - invest in government or corporate bonds in {{STATE_NAME}}",
+            "• <strong>Balanced funds</strong> - own both stocks and bonds in {{STATE_NAME}}",
+            "• <strong>Target-date funds</strong> - automatically adjust based on retirement date in {{STATE_NAME}}",
+            "<strong>Key consideration:</strong> Expense ratios (annual fees) compound over time - a 1% fee difference can cost you 25% of your wealth over 30 years! in {{STATE_NAME}}",
+            "10,000 investors × $5,000 each = $50 million pool to buy hundreds of different securities in {{STATE_NAME}}",
+            "$10,000 at 8% for 30 years: 0.05% fee = $99,580 vs 1% fee = $74,093 in {{STATE_NAME}}",
+            "$25,487 lost to fees over 30 years on just $10,000! in {{STATE_NAME}}"
+          ],
+          "bulletPoints": []
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Understanding ETFs",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The Best of Both Worlds",
+            "paragraphs": [
+              "ETFs combine features of mutual funds and stocks: in {{STATE_NAME}}",
+              "<strong>Popular example:</strong> VOO (Vanguard S&amp;P 500 ETF) - own 500 of America's largest companies for 0.03% annual fee in {{STATE_NAME}}"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "rose"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Why Investment Knowledge Matters",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Your Choices Shape Your Future",
+            "paragraphs": [
+              "The difference between earning 3% annually versus 10% is dramatic over time: in {{STATE_NAME}}"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "The Power of Starting Early",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Time Is Your Greatest Asset",
+            "paragraphs": [
+              "Compound returns make starting early incredibly valuable: in {{STATE_NAME}}",
+              "<strong>Key insight:</strong> It's not about timing the market - it's about time IN the market. in {{STATE_NAME}}"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "rose"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example: Priya's Index Fund Approach",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "",
+            "name": "",
+            "paragraphs": []
+          },
+          "outcomes": []
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example: Marcus's Stock-Picking Lessons",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "",
+            "name": "",
+            "paragraphs": []
+          },
+          "outcomes": []
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": ""
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": ""
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What's the key difference between stocks and bonds? (Hint: ownership vs. lending) in {{STATE_NAME}}"
+            },
+            {
+              "number": 2,
+              "question": "Why are ETFs often recommended for beginning investors over actively managed mutual funds? in {{STATE_NAME}}"
+            },
+            {
+              "number": 3,
+              "question": "If a fund charges 1% annual fees vs. 0.05%, how much extra would you pay per year on a $10,000 investment? in {{STATE_NAME}}"
+            },
+            {
+              "number": 4,
+              "question": "Why might someone shift from mostly stocks to more bonds as they approach retirement? in {{STATE_NAME}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": []
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Skill Builder: Investment Type Analyzer",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📋",
+            "title": "",
+            "description": ""
+          },
+          "steps": [
+            "Review four portfolio scenarios: Conservative (70% bonds), Moderate (60% stocks), Growth (90% stocks), and Custom in {{STATE_NAME}}",
+            "Input a monthly investment amount ($50-$500) and see growth projections over 10, 20, and 30 years in {{STATE_NAME}}",
+            "Compare historical risk levels and expected returns for each allocation in {{STATE_NAME}}",
+            "Build a custom portfolio selecting from individual stocks, index funds, bond funds, and balanced funds in {{STATE_NAME}}",
+            "Reflect on which portfolio matches your goals and risk tolerance in {{STATE_NAME}}"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Understanding investment types is the first step toward building lasting wealth in {{STATE_NAME}}",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+      }
+    }
+  ]
+}

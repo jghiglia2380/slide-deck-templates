@@ -1,0 +1,395 @@
+{
+  "metadata": {
+    "lChapter": "L-26",
+    "title": "Credit Card Useand Management",
+    "subtitle": "Mastering Plastic for Financial Success",
+    "totalSlides": 20,
+    "hasStateVariables": false,
+    "stateVariablesUsed": []
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Credit Card Useand Management",
+        "titleSize": "large",
+        "subtitle": "Mastering Plastic for Financial Success"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": ""
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Understand",
+              "description": "How credit cards work as short-term loans and the true cost of carrying a balance"
+            },
+            {
+              "number": 2,
+              "verb": "Learn",
+              "description": "Key credit card terminology including APR, minimum payment, and credit utilization"
+            },
+            {
+              "number": 3,
+              "verb": "Develop",
+              "description": "Strategies for responsible credit card management that build credit without debt"
+            },
+            {
+              "number": 4,
+              "verb": "Compare",
+              "description": "Different credit card offers to identify the best fit for your spending habits"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "How Credit Cards Work",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "It's a Short-Term Loan",
+            "paragraphs": [
+              "Unlike debit cards that use money you have, credit cards let you borrow money you'll pay back later."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "rose"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Smart Use vs. Costly Mistakes",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          },
+          "rightColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "The 30% Rule: Credit Utilization",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Keep Utilization Low",
+            "paragraphs": [
+              "Credit utilization is the second most important factor in your credit score after payment history.",
+              "Keep balance below $900 (30%)<br>Ideal: below $300 (10%)",
+              "Pay down your balance before the statement closes, not just before the due date"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "rose"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Choosing the Right Credit Card",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Match the Card to Your Habits",
+          "paragraphs": [
+            "Not all credit cards are created equal. The best card for you depends on how you spend money.",
+            "15% APR, $95 annual fee, 3% groceries<br><strong>Best if:</strong> You might carry a balance occasionally",
+            "18% APR, $0 annual fee, 2x travel points<br><strong>Best if:</strong> You travel and pay in full monthly",
+            "22% APR, $0 annual fee, 4% gas<br><strong>Best if:</strong> Long commute, always pay in full",
+            "<strong>Key Insight:</strong> If you carry a balance, APR matters most. If you pay in full monthly, rewards and benefits matter more."
+          ],
+          "bulletPoints": []
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Six Responsible Credit Card Strategies",
+        "layout": "generic",
+        "layoutData": {
+          "paragraphs": [
+            "Avoid interest charges entirely",
+            "Protect and build your credit score",
+            "Never miss a payment or pay late fees",
+            "Catch fraud and track spending",
+            "Maximize rewards you'll actually use",
+            "Higher rates, no grace period"
+          ],
+          "lists": []
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Why Credit Card Skills Matter",
+        "layout": "generic",
+        "layoutData": {
+          "paragraphs": [
+            "Responsible use creates the credit history you need for future loans, apartments, and even jobs",
+            "Credit cards offer stronger protections than debit cards - you're not liable for unauthorized charges",
+            "Smart credit card users earn cash back, travel points, and other perks on money they'd spend anyway",
+            "Understanding how interest works protects you from the minimum payment trap that costs thousands"
+          ],
+          "lists": []
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Credit Cards in Today's Economy",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The Modern Card Landscape",
+            "paragraphs": [
+              "Credit cards have evolved with new protections and features, but also new risks."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "rose"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Success Story: Sophia's Strategy",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "",
+            "name": "",
+            "paragraphs": []
+          },
+          "outcomes": []
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Warning Story: James's Challenges",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "",
+            "name": "",
+            "paragraphs": []
+          },
+          "outcomes": []
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": ""
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": ""
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": []
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": []
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Skill Builder: Credit Card Comparison",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📋",
+            "title": "",
+            "description": ""
+          },
+          "steps": []
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Credit cards are powerful tools - make them work for you, not against you",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

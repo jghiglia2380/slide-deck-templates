@@ -1,0 +1,548 @@
+{
+  "metadata": {
+    "lChapter": "L-19",
+    "title": "Planning forRetirement",
+    "subtitle": "Building Your Financial Future Starting Now in {{STATE_NAME}}",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Planning forRetirement",
+        "titleSize": "large",
+        "subtitle": "Building Your Financial Future Starting Now in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question in {{STATE_NAME}}",
+        "question": "Imagine yourself at <em>age 65</em>.<br><br>What kind of lifestyle do you envision?<br>What steps can you start taking <em>now</em>? in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Differentiate",
+              "description": "Understand the key differences between saving and investing strategies and when to use each."
+            },
+            {
+              "number": 2,
+              "verb": "Identify",
+              "description": "Recognize key financial concepts like liquidity, risk tolerance, and opportunity cost."
+            },
+            {
+              "number": 3,
+              "verb": "Explain",
+              "description": "Describe the relationship between risk and return, and how time horizons affect financial strategies."
+            },
+            {
+              "number": 4,
+              "verb": "Develop",
+              "description": "Create financial strategies for retirement based on different retirement account options."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Compounding in {{STATE_NAME}}",
+              "definition": "The process where returns on your money generate their own returns—earning interest on interest.",
+              "example": "$10,000 at 7% for 40 years = $150,000 (without adding any more money!)"
+            },
+            {
+              "term": "Opportunity Cost in {{STATE_NAME}}",
+              "definition": "What you give up when making one financial choice over another—the road not taken.",
+              "example": "Spending $200 on sneakers means losing $200 that could have grown in your 401(k)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "401(k) in {{STATE_NAME}}",
+              "definition": "Employer-sponsored retirement account with tax benefits. Many employers match your contributions.",
+              "example": "$23,000/year contribution limit ($30,500 if 50+)"
+            },
+            {
+              "term": "IRA in {{STATE_NAME}}",
+              "definition": "Individual Retirement Account you open yourself. Traditional = tax now, Roth = tax-free later.",
+              "example": "$7,000/year contribution limit ($8,000 if 50+)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Why Start Retirement Planning NOW?",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Time is Your Greatest Asset",
+            "paragraphs": [
+              "Starting early gives compound interest decades to work its magic. The difference between starting at 25 vs. 35 is <strong>enormous</strong>.",
+              "<strong>Start at 25:</strong> Invest $200/month at 7% return = $525,000 by age 65",
+              "<strong>Start at 35:</strong> Invest $200/month at 7% return = $244,000 by age 65",
+              "Same monthly investment, 10 years earlier = <strong>more than DOUBLE the result!</strong>"
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "⏰ Every year you wait to start investing for retirement costs you thousands in potential growth!"
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$525K in {{STATE_NAME}}",
+                "label": "Start at Age 25 in {{STATE_NAME}}",
+                "color": "green"
+              },
+              {
+                "value": "$244K in {{STATE_NAME}}",
+                "label": "Start at Age 35 in {{STATE_NAME}}",
+                "color": "rose"
+              },
+              {
+                "value": "2x in {{STATE_NAME}}",
+                "label": "The 10-Year Difference in {{STATE_NAME}}",
+                "color": "purple"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Saving vs. Investing for Retirement",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "\ud83c",
+            "title": "\udfe6 Saving",
+            "items": [
+              "Short-term needs (1-3 years)",
+              "Lower risk to principal",
+              "Lower returns (1-5%)",
+              "High liquidity (easy access)",
+              "Goal: Preserve capital",
+              "Examples: Savings accounts, CDs"
+            ]
+          },
+          "rightColumn": {
+            "icon": "\ud83d",
+            "title": "\udcc8 Investing",
+            "items": [
+              "Long-term goals (3+ years)",
+              "Higher risk (varies by type)",
+              "Potential for higher returns (7-10%)",
+              "Lower liquidity (tied up longer)",
+              "Goal: Grow capital",
+              "Examples: Stocks, bonds, mutual funds"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Retirement Account Options",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Your Retirement Toolkit",
+          "paragraphs": [
+            "You have several tax-advantaged options for retirement savings. Understanding each helps you maximize your strategy."
+          ],
+          "bulletPoints": [
+            "<strong>401(k):</strong> Employer-sponsored. Pre-tax contributions, employer match (FREE money!), $23,000 limit in 2024",
+            "<strong>Traditional IRA:</strong> Tax-deductible contributions NOW, pay taxes when you withdraw in retirement",
+            "<strong>Roth IRA:</strong> Pay taxes NOW, withdrawals in retirement are completely TAX-FREE (great for young people)",
+            "<strong>Social Security:</strong> Government program, funded by payroll taxes. Provides baseline income in retirement"
+          ],
+          "keyPoint": {
+            "text": "💡 Pro tip: If your employer offers a 401(k) match, ALWAYS contribute enough to get the full match—it's free money!"
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Traditional vs. Roth: When to Use Each",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Traditional (401k or IRA)",
+            "paragraphs": [
+              "<strong>How it works:</strong> Contribute pre-tax dollars now, pay taxes when you withdraw in retirement.",
+              "<strong>Best for:</strong> People who expect to be in a LOWER tax bracket in retirement than they are now.",
+              "<strong>Example:</strong> High earners in their peak earning years who will have lower income in retirement."
+            ],
+            "highlightBox": {
+              "icon": "\ud83d",
+              "text": "\udcca Reduces your taxable income TODAY = lower current tax bill"
+            }
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "The 50/30/20 Budget Rule",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "A Framework for Saving",
+            "paragraphs": [
+              "The 50/30/20 rule is a simple budgeting guideline that helps you allocate your after-tax income:",
+              "<strong>50% → Needs:</strong> Housing, utilities, food, transportation, insurance, minimum payments",
+              "<strong>30% → Wants:</strong> Entertainment, dining out, hobbies, subscriptions, upgrades",
+              "<strong>20% → Savings &amp; Investing:</strong> Emergency fund, retirement contributions, extra debt payments"
+            ],
+            "highlightBox": {
+              "icon": "\ud83c",
+              "text": "\udfaf If you can put 20% toward savings/investing, you're building a strong financial foundation!"
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "50% in {{STATE_NAME}}",
+                "label": "Needs (Essentials) in {{STATE_NAME}}",
+                "color": "teal"
+              },
+              {
+                "value": "30% in {{STATE_NAME}}",
+                "label": "Wants (Lifestyle) in {{STATE_NAME}}",
+                "color": "purple"
+              },
+              {
+                "value": "20% in {{STATE_NAME}}",
+                "label": "Savings & Investing in {{STATE_NAME}}",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "The Power of Employer Match",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Free Money You Can't Ignore",
+            "paragraphs": [
+              "Many employers offer to <strong>match</strong> your 401(k) contributions up to a certain percentage. This is essentially free money!",
+              "<strong>Example:</strong> Your employer matches 100% of contributions up to 4% of your salary.",
+              "If you earn $50,000 and contribute 4% ($2,000), your employer adds another $2,000 = <strong>$4,000 total!</strong>",
+              "That's an immediate 100% return on your investment—no other investment can guarantee that."
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "⚠️ Not contributing enough to get the full employer match is literally leaving free money on the table!"
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "100% in {{STATE_NAME}}",
+                "label": "Instant Return from Match in {{STATE_NAME}}",
+                "color": "green"
+              },
+              {
+                "value": "$2K+ in {{STATE_NAME}}",
+                "label": "Average Annual Match Value in {{STATE_NAME}}",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Common Match Formulas:",
+              "color": "blue",
+              "items": [
+                "100% of first 3-6% you contribute",
+                "50% of first 6% you contribute",
+                "Dollar-for-dollar up to $X"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Time Horizons and Risk",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Your Timeline Affects Your Strategy",
+          "paragraphs": [
+            "How much time you have until retirement determines how much risk you can reasonably take with your investments."
+          ],
+          "bulletPoints": [
+            "<strong>40+ Years (Age 20-25):</strong> Can be aggressive (80-90% stocks). Plenty of time to recover from market dips.",
+            "<strong>25-40 Years (Age 25-40):</strong> Growth-focused with some stability. Gradually increase bonds (70-80% stocks).",
+            "<strong>10-25 Years (Age 40-55):</strong> Balanced approach. Protect gains while still growing (60-70% stocks).",
+            "<strong>Under 10 Years (Age 55+):</strong> Conservative. Prioritize preserving what you've built (40-50% stocks)."
+          ],
+          "keyPoint": {
+            "text": "🔄 Target-date funds automatically shift from aggressive to conservative as you approach retirement!"
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👨‍💼 in {{STATE_NAME}}",
+            "name": "Micah's Smart Start at 22 in {{STATE_NAME}}",
+            "paragraphs": [
+              "Micah gets his first job at 22, earning $45,000/year. His employer offers a 401(k) with 4% match.",
+              "Micah contributes <span class=\"highlight-text\">6% of his salary ($2,700/year)</span> to his 401(k). His employer matches 4% ($1,800/year). Total: $4,500/year going into retirement.",
+              "<strong>Result:</strong> Even if Micah never gets a raise and contributes the same amount for 43 years until age 65, at 7% average returns his 401(k) would grow to over <strong>$1.1 million!</strong>"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Micah Contributes in {{STATE_NAME}}",
+              "value": "$116K in {{STATE_NAME}}",
+              "detail": "Over 43 years in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "Employer Adds in {{STATE_NAME}}",
+              "value": "$77K in {{STATE_NAME}}",
+              "detail": "Free match money! in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "Total at 65 in {{STATE_NAME}}",
+              "value": "$1.1M+ in {{STATE_NAME}}",
+              "detail": "Growth from compounding in {{STATE_NAME}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "😬 in {{STATE_NAME}}",
+            "name": "Jordan Waits Until 32 in {{STATE_NAME}}",
+            "paragraphs": [
+              "Jordan earns the same as Micah and has the same employer match. But Jordan waits until age 32 to start contributing.",
+              "Jordan contributes the same <span class=\"highlight-text\">$4,500/year ($2,700 + $1,800 match)</span> for 33 years until retirement.",
+              "<strong>Result:</strong> At 7% average returns, Jordan's 401(k) grows to about <strong>$525,000</strong>—less than HALF of what Micah has, even though Jordan contributed for only 10 fewer years.",
+              "<strong>The cost of waiting:</strong> Those 10 extra years of compounding are worth over $575,000!"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Jordan's Total in {{STATE_NAME}}",
+              "value": "$525K in {{STATE_NAME}}",
+              "detail": "Started at 32 in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "Micah's Total in {{STATE_NAME}}",
+              "value": "$1.1M in {{STATE_NAME}}",
+              "detail": "Started at 22 in {{STATE_NAME}}"
+            },
+            {
+              "type": "before",
+              "label": "Cost of Waiting in {{STATE_NAME}}",
+              "value": "$575K+ in {{STATE_NAME}}",
+              "detail": "10 years = massive difference in {{STATE_NAME}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion in {{STATE_NAME}}",
+        "question": "Would you rather have a Traditional IRA (pay less tax now) or a Roth IRA (pay no tax in retirement)?<br><br>Why might your answer be different at age 22 vs. age 55? in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection in {{STATE_NAME}}",
+        "question": "Imagine yourself at age 65. What kind of lifestyle do you envision?<br><br>What steps can you start taking NOW to ensure you have enough savings to achieve that lifestyle? in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "Why does starting to save for retirement at age 22 result in so much more money than starting at age 32?"
+            },
+            {
+              "number": 2,
+              "question": "What is the difference between a Traditional IRA and a Roth IRA? When might you choose one over the other?"
+            },
+            {
+              "number": 3,
+              "question": "Why should you always contribute enough to your 401(k) to get the full employer match?"
+            },
+            {
+              "number": 4,
+              "question": "Using the 50/30/20 rule, if you want to save 20% and contribute $35,500/year to retirement, what income would you need?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Start Early",
+              "description": "Time is your greatest asset. Starting 10 years earlier can double your retirement savings through compounding."
+            },
+            {
+              "number": 2,
+              "title": "Get the Match",
+              "description": "Always contribute enough to get your full employer 401(k) match—it's free money with 100% instant return."
+            },
+            {
+              "number": 3,
+              "title": "Choose Your Tax Timing",
+              "description": "Young people often benefit from Roth accounts—pay taxes now while in a low bracket, enjoy tax-free growth."
+            },
+            {
+              "number": 4,
+              "title": "Adjust Risk to Time",
+              "description": "With decades until retirement, you can afford more stock exposure. Become more conservative as you approach 65."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Student Activity",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "\ud83d",
+            "title": "\udccb Retirement Planning Worksheet",
+            "description": "Explore different retirement options and compare their benefits, risks, and tax implications. Then calculate: Using the 50/30/20 rule, if you want to max out 401(k) + Traditional IRA + Roth IRA contributions, what annual income would you need?"
+          },
+          "steps": [
+            "Review retirement options: 401(k), IRAs, Social Security",
+            "Compare benefits, risks, and tax implications",
+            "Calculate max contributions: $23K + $7K + $7K = $37K",
+            "Apply 50/30/20: $37K ÷ 0.20 = target income",
+            "Reflect: Is this realistic? What's your strategy?"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time in {{STATE_NAME}}",
+        "website": "www.pflacademy.co in {{STATE_NAME}}",
+        "copyright": "© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+      }
+    }
+  ]
+}

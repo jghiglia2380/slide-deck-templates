@@ -1,0 +1,445 @@
+{
+  "metadata": {
+    "lChapter": "L-XX",
+    "title": "Understanding and Using Banking Tools",
+    "subtitle": "Learn how to effectively use checks, debit cards, ATMs, and online banking to manage your money and avoid unnecessary fees.",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME",
+      "LOCAL_CREDIT_UNION_NAME",
+      "STATE_LOCAL_CREDIT_UNION_NAME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Understanding and Using Banking Tools",
+        "titleSize": "large",
+        "subtitle": "Learn how to effectively use checks, debit cards, ATMs, and online banking to manage your money and avoid unnecessary fees."
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": ""
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": []
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            },
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            },
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Essential Banking Tools",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Your Banking Toolkit",
+            "paragraphs": [
+              "Modern banking offers multiple tools to access and manage your money. Each tool has specific advantages depending on the situation:"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Comparing Payment Methods",
+        "layout": "generic",
+        "layoutData": {
+          "paragraphs": [
+            "<strong>Best for:</strong> Large payments, rent, situations requiring documentation<br><br><strong>Processing time:</strong> 1-5 business days to clear<br><br><strong>Security:</strong> Can be stopped if lost; creates paper trail",
+            "<strong>Best for:</strong> Everyday purchases, in-store and online shopping<br><br><strong>Processing time:</strong> Instant deduction from account<br><br><strong>Security:</strong> PIN protection; report lost cards immediately",
+            "<strong>Best for:</strong> Cash withdrawals, quick balance checks, deposits<br><br><strong>Processing time:</strong> Instant for withdrawals<br><br><strong>Security:</strong> Use in-network ATMs; protect your PIN",
+            "<strong>Best for:</strong> Bill payments, transfers, account monitoring<br><br><strong>Processing time:</strong> Same-day to 1-3 days for transfers<br><br><strong>Security:</strong> Use secure networks; enable 2-factor authentication"
+          ],
+          "lists": []
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Common Banking Fees",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Fees That Add Up",
+            "paragraphs": [
+              "Banking fees can eat away at your money if you're not careful. Understanding these fees is the first step to avoiding them:"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "rose"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Strategies to Avoid Fees",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Smart Banking Means Fewer Fees",
+          "paragraphs": [
+            "With a few simple habits, you can eliminate most banking fees and keep more of your hard-earned money:",
+            "Check your account regularly through online banking or the mobile app. Set up low balance alerts to warn you before you overspend.",
+            "Find your bank's ATM locator on their app. Plan ahead to avoid using out-of-network machines that charge extra fees.",
+            "Maintain minimum balances or set up direct deposit. Many banks waive monthly fees with qualifying activities. Consider credit unions like {{STATE_LOCAL_CREDIT_UNION_NAME}} in {{STATE_NAME}} which often offer lower fees."
+          ],
+          "bulletPoints": []
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Account Reconciliation",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Balancing Your Account",
+            "paragraphs": [
+              "Reconciliation means comparing your personal records with your bank statement to ensure everything matches."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Why Banking Skills Matter",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Your Financial Foundation",
+          "paragraphs": [
+            "Understanding banking tools is fundamental to financial success. These skills directly impact your ability to build wealth and avoid costly mistakes.",
+            "Avoiding fees and catching errors can save you hundreds of dollars every year that you can invest in your future.",
+            "Regular account monitoring creates discipline that extends to all areas of financial management including saving and investing.",
+            "Catching fraud early through regular reconciliation limits your liability and prevents financial disasters."
+          ],
+          "bulletPoints": []
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Banking in the Digital Age",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The Evolution of Banking",
+            "paragraphs": [
+              "Banking has transformed dramatically with digital technology, making account management easier than ever:"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "",
+            "name": "",
+            "paragraphs": []
+          },
+          "outcomes": [
+            {
+              "type": "neutral",
+              "label": "",
+              "value": "",
+              "detail": ""
+            },
+            {
+              "type": "neutral",
+              "label": "",
+              "value": "",
+              "detail": ""
+            },
+            {
+              "type": "neutral",
+              "label": "",
+              "value": "",
+              "detail": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "",
+            "name": "",
+            "paragraphs": []
+          },
+          "outcomes": [
+            {
+              "type": "neutral",
+              "label": "",
+              "value": "",
+              "detail": ""
+            },
+            {
+              "type": "neutral",
+              "label": "",
+              "value": "",
+              "detail": ""
+            },
+            {
+              "type": "neutral",
+              "label": "",
+              "value": "",
+              "detail": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": ""
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": ""
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": []
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": []
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Skill Builder: Check Register",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📋",
+            "title": "",
+            "description": ""
+          },
+          "steps": [
+            "Examine the provided bank statement showing deposits and withdrawals",
+            "Record each transaction with date, description, and amount",
+            "Update the running balance after each transaction",
+            "Check your final balance against the bank statement ending balance",
+            "Identify and investigate any differences you find"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Track your money, avoid fees, and build financial confidence",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

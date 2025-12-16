@@ -1,0 +1,564 @@
+{
+  "metadata": {
+    "lChapter": "L-38",
+    "title": "Managing HighLevels of Debt",
+    "subtitle": "Strategies for Recovery and Rebuilding Financial Health in {{STATE_NAME}}",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Managing HighLevels of Debt",
+        "titleSize": "large",
+        "subtitle": "Strategies for Recovery and Rebuilding Financial Health in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question in {{STATE_NAME}}",
+        "question": "When debt becomes <em>overwhelming</em>, what options exist to<br><em>regain control</em> of your financial future? in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Identify",
+              "description": "Recognize various strategies for managing high levels of debt, including credit counseling, consolidation, and settlement."
+            },
+            {
+              "number": 2,
+              "verb": "Understand",
+              "description": "Know the advantages and disadvantages of each debt management option and when each might be appropriate."
+            },
+            {
+              "number": 3,
+              "verb": "Recognize",
+              "description": "Understand the long-term effects of bankruptcy on personal finances, credit, and opportunities."
+            },
+            {
+              "number": 4,
+              "verb": "Develop",
+              "description": "Create strategies for rebuilding credit after financial setbacks and returning to financial health."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Debt Management Plan in {{STATE_NAME}}",
+              "definition": "A structured repayment plan arranged through a credit counseling agency to gradually pay off debt.",
+              "example": "Make one monthly payment to the agency, which distributes funds to creditors (typically 3-5 years)"
+            },
+            {
+              "term": "Debt Consolidation in {{STATE_NAME}}",
+              "definition": "Combining multiple debts into a single loan to simplify payments and potentially reduce interest rates.",
+              "example": "Personal loans, balance transfer cards, home equity loans, 401(k) loans"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Debt Settlement in {{STATE_NAME}}",
+              "definition": "Negotiating with creditors to pay less than the full amount owed, settling the debt for a lump sum.",
+              "example": "Forgiven debt over $600 is typically considered taxable income by the IRS"
+            },
+            {
+              "term": "Secured Credit Card in {{STATE_NAME}}",
+              "definition": "A credit card requiring a security deposit, often used to rebuild credit after financial setbacks.",
+              "example": "$500 deposit = $500 credit limit; responsible use builds positive credit history"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Debt Management Plans (DMPs)",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "How DMPs Work",
+            "paragraphs": [
+              "A Debt Management Plan is arranged through a <strong>credit counseling agency</strong> to help you gradually pay off unsecured debt.",
+              "The agency negotiates with creditors to potentially <strong>lower interest rates</strong> and <strong>waive fees</strong>.",
+              "You make <strong>one monthly payment</strong> to the agency, which distributes funds to your creditors."
+            ],
+            "highlightBox": {
+              "icon": "\ud83d",
+              "text": "\udca1 DMPs work best for unsecured debts like credit cards and medical bills—not mortgages, auto loans, or student loans."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "3-5 in {{STATE_NAME}}",
+                "label": "Years to Complete Plan in {{STATE_NAME}}",
+                "color": "teal"
+              },
+              {
+                "value": "8-10% in {{STATE_NAME}}",
+                "label": "Typical Rate Reduction in {{STATE_NAME}}",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Benefits of a DMP:",
+              "color": "green",
+              "items": [
+                "Single monthly payment",
+                "Reduced interest rates",
+                "Waived late fees",
+                "Professional guidance"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Debt Consolidation Methods",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Combining Multiple Debts Into One",
+          "paragraphs": [
+            "Debt consolidation simplifies your finances by replacing multiple payments with one loan at a potentially lower interest rate."
+          ],
+          "bulletPoints": [
+            "<strong>Personal Loans:</strong> Unsecured loans used to pay off multiple debts; requires good credit",
+            "<strong>Balance Transfer Cards:</strong> 0% intro APR cards; must pay off before regular rate kicks in",
+            "<strong>Home Equity Loans:</strong> Lower rates but your home becomes collateral (significant risk)",
+            "<strong>401(k) Loans:</strong> Borrow from retirement; impacts long-term financial security"
+          ],
+          "keyPoint": {
+            "text": "⚠️ Warning: Consolidation only works if you address the spending habits that created the debt—or you'll end up with both the consolidation loan AND new debt."
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Debt Settlement: Negotiating with Creditors",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "How Settlement Works",
+            "paragraphs": [
+              "Debt settlement involves negotiating with creditors to accept a <strong>lump-sum payment</strong> that's less than your full balance.",
+              "You typically stop making payments and save money for the settlement, which can take 2-4 years.",
+              "Once the creditor agrees and you pay, the debt is considered <strong>satisfied</strong>."
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "⚠️ Significant risks: Credit score damage, late fees, collection actions, and taxes on forgiven debt."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "40-60% in {{STATE_NAME}}",
+                "label": "Typical Settlement Amount in {{STATE_NAME}}",
+                "color": "rose"
+              },
+              {
+                "value": "-100+ in {{STATE_NAME}}",
+                "label": "Credit Score Impact (Points) in {{STATE_NAME}}",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Tax Implications:",
+              "color": "amber",
+              "items": [
+                "Forgiven debt = taxable income",
+                "$12,000 forgiven ≈ $3,000 tax bill",
+                "IRS Form 1099-C issued",
+                "Plan for this in your budget"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Bankruptcy: Understanding Your Options",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "\ud83d",
+            "title": "\udccb Chapter 7 (Liquidation)",
+            "items": [
+              "Discharges most unsecured debts",
+              "Completed in 3-6 months",
+              "Non-exempt assets sold to pay creditors",
+              "On credit report for 10 years",
+              "Can only file once every 8 years",
+              "Income must be below median"
+            ]
+          },
+          "rightColumn": {
+            "icon": "\ud83d",
+            "title": "\udcca Chapter 13 (Reorganization)",
+            "items": [
+              "Creates 3-5 year repayment plan",
+              "Keep your assets while paying",
+              "On credit report for 7 years",
+              "Can be filed more frequently",
+              "Higher income allowed",
+              "May pay back some or all debt"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Long-Term Effects of Bankruptcy",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Significant Consequences",
+            "paragraphs": [
+              "<strong>Credit Impact:</strong> Damages credit score for years (200+ point drop common)",
+              "<strong>Difficulty Obtaining Credit:</strong> New credit much harder to get; higher rates when approved",
+              "<strong>Employment Effects:</strong> Some employers check credit; may affect certain careers",
+              "<strong>Housing Challenges:</strong> Landlords often check credit; may require larger deposits",
+              "<strong>Insurance Rates:</strong> May result in higher premiums in some states"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "7-10 in {{STATE_NAME}}",
+                "label": "Years on Credit Report in {{STATE_NAME}}",
+                "color": "rose"
+              },
+              {
+                "value": "200+ in {{STATE_NAME}}",
+                "label": "Typical Credit Score Drop in {{STATE_NAME}}",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "What Bankruptcy Won't Discharge:",
+              "color": "blue",
+              "items": [
+                "Most student loans",
+                "Recent tax debt",
+                "Alimony/child support",
+                "Fines and penalties"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Alternatives to Explore First",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Before Considering Bankruptcy",
+          "paragraphs": [
+            "Bankruptcy should generally be a <strong>last resort</strong> after exploring other options. Consider these alternatives first:"
+          ],
+          "bulletPoints": [
+            "<strong>Credit Counseling:</strong> Work with a nonprofit agency to develop a debt management plan",
+            "<strong>Negotiate Directly:</strong> Many creditors offer hardship programs or payment plans",
+            "<strong>Debt Consolidation:</strong> Combine debts into one lower-interest loan if you qualify",
+            "<strong>Debt Settlement:</strong> Negotiate to pay less than owed (impacts credit but less than bankruptcy)",
+            "<strong>Increase Income:</strong> Take on extra work or sell assets to generate repayment funds",
+            "<strong>Family Assistance:</strong> Borrow from family (with a clear repayment agreement)"
+          ],
+          "keyPoint": {
+            "text": "💡 Seek professional guidance: A credit counselor can help you evaluate all options and choose the best path for your situation."
+          }
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Rebuilding Credit After Setbacks",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The Path Back to Financial Health",
+            "paragraphs": [
+              "After significant debt problems or bankruptcy, rebuilding credit is <strong>essential</strong> and <strong>possible</strong>—but requires patience and discipline.",
+              "Start with these foundational steps:"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "150+ in {{STATE_NAME}}",
+                "label": "Point Recovery Possible in 3 Years in {{STATE_NAME}}",
+                "color": "green"
+              }
+            ],
+            "infoCard": {
+              "title": "Credit-Building Tools:",
+              "color": "green",
+              "items": [
+                "Secured credit cards",
+                "Credit-builder loans",
+                "Become authorized user",
+                "Report rent payments"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "💳 in {{STATE_NAME}}",
+            "name": "Maria: Debt Settlement Success in {{STATE_NAME}}",
+            "paragraphs": [
+              "Maria accumulated <strong>$30,000 in credit card debt</strong> after losing her job and experiencing medical issues. After finding employment again, she worked with a debt settlement company.",
+              "After <span class=\"highlight-text\">18 months of saving</span>, she settled her debts for about <strong>60% of what she owed</strong>. While her credit score dropped significantly, she avoided bankruptcy and began rebuilding immediately.",
+              "<strong>Note:</strong> She paid taxes on $12,000 of forgiven debt (about $3,000 additional tax bill)."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Original Debt in {{STATE_NAME}}",
+              "value": "$30,000 in {{STATE_NAME}}",
+              "detail": "Credit card balances in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "Settlement Paid in {{STATE_NAME}}",
+              "value": "$18,000 in {{STATE_NAME}}",
+              "detail": "60% of original debt in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "Total Savings in {{STATE_NAME}}",
+              "value": "$9,000 in {{STATE_NAME}}",
+              "detail": "After tax implications in {{STATE_NAME}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "📈 in {{STATE_NAME}}",
+            "name": "James: Rebuilding After Bankruptcy in {{STATE_NAME}}",
+            "paragraphs": [
+              "After his business failed, James filed for <strong>Chapter 7 bankruptcy</strong> to discharge $45,000 in credit card debt, medical bills, and personal loans.",
+              "His structured credit rebuilding plan:"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Year 1 (Post-Bankruptcy) in {{STATE_NAME}}",
+              "value": "520 in {{STATE_NAME}}",
+              "detail": "Credit score after filing in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "Year 2 in {{STATE_NAME}}",
+              "value": "590 in {{STATE_NAME}}",
+              "detail": "+70 points in {{STATE_NAME}}"
+            },
+            {
+              "type": "after",
+              "label": "Year 3 in {{STATE_NAME}}",
+              "value": "670+ in {{STATE_NAME}}",
+              "detail": "Qualified for auto loan in {{STATE_NAME}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion in {{STATE_NAME}}",
+        "question": "A friend has $25,000 in high-interest credit card debt and is struggling to make minimum payments. They're considering bankruptcy for a \"fresh start.\"<br><br>What questions should they consider? What alternatives should they explore first? in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection in {{STATE_NAME}}",
+        "question": "Why is it important to explore all debt management options before choosing bankruptcy?<br><br>What factors might make bankruptcy the right choice despite its long-term consequences? in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What is the difference between a Debt Management Plan and debt consolidation?"
+            },
+            {
+              "number": 2,
+              "question": "Why might someone choose Chapter 13 bankruptcy over Chapter 7, even though Chapter 7 is faster?"
+            },
+            {
+              "number": 3,
+              "question": "What are the tax implications of debt settlement that people should plan for?"
+            },
+            {
+              "number": 4,
+              "question": "Name three strategies for rebuilding credit after bankruptcy or serious debt problems."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Multiple Options Exist",
+              "description": "DMPs, consolidation, settlement, and bankruptcy each have pros and cons depending on your situation"
+            },
+            {
+              "number": 2,
+              "title": "Bankruptcy = Last Resort",
+              "description": "Explore all alternatives before filing; the long-term consequences are significant (7-10 years)"
+            },
+            {
+              "number": 3,
+              "title": "Recovery Is Possible",
+              "description": "Even after bankruptcy, credit can be rebuilt with patience, discipline, and the right tools"
+            },
+            {
+              "number": 4,
+              "title": "Seek Professional Help",
+              "description": "Credit counselors and financial advisors can help you evaluate options and choose wisely"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Student Activity",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "\ud83d",
+            "title": "\udccb Debt Reduction Planner",
+            "description": "Create a personalized debt management plan for Emily's case study scenario. Analyze her debts, evaluate options, and develop a strategy for financial recovery. Emily has $35,500 in total debt with $800/month available after expenses. Her credit score is 580."
+          },
+          "steps": [
+            "Prioritize debts (which to address first and why)",
+            "Identify the best debt management strategy",
+            "Create a monthly payment allocation plan",
+            "Evaluate if bankruptcy is appropriate",
+            "Design a 12-month credit rebuilding plan"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time in {{STATE_NAME}}",
+        "website": "www.pflacademy.co in {{STATE_NAME}}",
+        "copyright": "© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+      }
+    }
+  ]
+}

@@ -1,0 +1,500 @@
+{
+  "metadata": {
+    "lChapter": "L-XX",
+    "title": "Managing Your Income Effectively",
+    "subtitle": "Master the 50/30/20 rule in {{STATE_NAME}}, build emergency funds, and make your money work for you",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Managing Your Income Effectively",
+        "titleSize": "large",
+        "subtitle": "Master the 50/30/20 rule in {{STATE_NAME}}, build emergency funds, and make your money work for you"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": ""
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Create",
+              "description": "Create and manage a personal budget using the 50/30/20 rule to allocate income effectively"
+            },
+            {
+              "number": 2,
+              "verb": "Differentiate",
+              "description": "Differentiate between financial needs and wants to make conscious spending decisions"
+            },
+            {
+              "number": 3,
+              "verb": "Understand",
+              "description": "Understand the importance of emergency funds and saving strategies for financial security"
+            },
+            {
+              "number": 4,
+              "verb": "Develop",
+              "description": "Develop a personalized income management plan aligned with your values and goals"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            },
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            },
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Why Budgeting Matters",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Take Control of Your Financial Life",
+            "paragraphs": [
+              "A budget isn't restrictive—it provides freedom by ensuring your money goes where YOU want it to go."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "The 50/30/20 Rule",
+        "layout": "generic",
+        "layoutData": {
+          "paragraphs": [],
+          "lists": [
+            [
+              "Housing (rent/mortgage)",
+              "Utilities",
+              "Groceries",
+              "Transportation",
+              "Healthcare",
+              "Minimum debt payments"
+            ],
+            [
+              "Entertainment",
+              "Dining out",
+              "Hobbies/recreation",
+              "Vacations",
+              "Extra clothing",
+              "Streaming services"
+            ],
+            [
+              "Emergency fund",
+              "Retirement savings",
+              "College savings",
+              "Investments",
+              "Extra debt payments",
+              "Financial goals"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Needs vs. Wants",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          },
+          "rightColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Your Financial Safety Net",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Why Emergency Funds Matter",
+            "paragraphs": [
+              "An emergency fund is your buffer against life's uncertainties, providing stability during challenging times.",
+              "Unexpected health costs not covered by insurance",
+              "Sudden breakdowns or transportation issues",
+              "Income reduction while finding new work"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "rose"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Effective Saving Strategies",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Pay Yourself First",
+            "paragraphs": [
+              "Treat savings as a non-negotiable expense—automate it so you never have to decide."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Why It Matters",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Beyond Just Money",
+            "paragraphs": [
+              "Effective income management impacts every area of your life—not just your bank account."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "rose"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Make Your Money Work",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Basic Investment Concepts",
+            "paragraphs": [
+              "Understanding how money can grow over time is essential for long-term wealth building.",
+              "Earn interest on your interest = exponential growth",
+              "Don't put all eggs in one basket—spread risk",
+              "Longer time = more growth opportunity"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "",
+            "name": "",
+            "paragraphs": []
+          },
+          "outcomes": []
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "",
+            "name": "",
+            "paragraphs": []
+          },
+          "outcomes": []
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": ""
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": ""
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "Explain the 50/30/20 rule and give an example of how to apply it to a $2,000 monthly income."
+            },
+            {
+              "number": 2,
+              "question": "What is the difference between a need and a want? Give an example of when an item could be either."
+            },
+            {
+              "number": 3,
+              "question": "Why is an emergency fund important, and how much should you aim to save?"
+            },
+            {
+              "number": 4,
+              "question": "What does \"pay yourself first\" mean, and why is automating savings effective?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "",
+              "description": "The 50/30/20 rule provides a simple framework: 50% needs, 30% wants, 20% savings and debt repayment"
+            },
+            {
+              "number": 2,
+              "title": "",
+              "description": "Distinguishing needs from wants helps you make conscious spending decisions aligned with your values"
+            },
+            {
+              "number": 3,
+              "title": "",
+              "description": "An emergency fund (3-6 months of expenses) is your financial safety net against life's uncertainties"
+            },
+            {
+              "number": 4,
+              "title": "",
+              "description": "Paying yourself first through automated savings turns good intentions into consistent results"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Skill Builder: Personal Budget Creation",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📋",
+            "title": "",
+            "description": ""
+          },
+          "steps": []
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Budget Smart. Save First. Build Wealth.",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

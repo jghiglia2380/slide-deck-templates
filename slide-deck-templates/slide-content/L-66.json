@@ -1,0 +1,562 @@
+{
+  "metadata": {
+    "lChapter": "L-66",
+    "title": "UnderstandingFinancial Markets",
+    "subtitle": "How Markets Work and How to Trade Effectively",
+    "totalSlides": 20,
+    "hasStateVariables": false,
+    "stateVariablesUsed": []
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "UnderstandingFinancial Markets",
+        "titleSize": "large",
+        "subtitle": "How Markets Work and How to Trade Effectively"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": "Two students buy the <em>same stock</em> at the <em>same moment</em>.<br>One pays $50.05, the other pays $50.00.<br>What's happening?"
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Analyze",
+              "description": "Understand how stock and bond markets operate and facilitate trillions in daily trading."
+            },
+            {
+              "number": 2,
+              "verb": "Evaluate",
+              "description": "Recognize the roles of exchanges, market makers, brokers, and regulators in market function."
+            },
+            {
+              "number": 3,
+              "verb": "Compare",
+              "description": "Distinguish between market orders and limit orders and when to use each type."
+            },
+            {
+              "number": 4,
+              "verb": "Calculate",
+              "description": "Determine trading costs including bid-ask spreads and understand their long-term impact."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Bid Price",
+              "definition": "The highest price a buyer is currently willing to pay for a security.",
+              "example": "This is the price you RECEIVE when selling your shares."
+            },
+            {
+              "term": "Ask Price",
+              "definition": "The lowest price a seller is currently willing to accept for a security.",
+              "example": "This is the price you PAY when buying shares."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Spread",
+              "definition": "The difference between bid and ask prices. A hidden transaction cost!",
+              "example": "Bid $49.95, Ask $50.05 = Spread of $0.10 per share."
+            },
+            {
+              "term": "Market Maker",
+              "definition": "A firm always ready to buy/sell securities, providing liquidity and profiting from spreads.",
+              "example": "They ensure you can always trade, but the spread is their fee."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "How Stock Markets Operate",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Matching Buyers with Sellers",
+            "paragraphs": [
+              "When you click \"buy\" on 10 shares of Apple, your brokerage routes your order to an exchange (NYSE, NASDAQ).",
+              "Electronic systems match your buy order with a seller in <strong>milliseconds</strong>.",
+              "Prices are determined by supply and demand—more buyers than sellers pushes price up, and vice versa."
+            ],
+            "highlightBox": {
+              "icon": "\ud83d",
+              "text": "\udca1 You're buying from another investor, not the company. This \"secondary market\" provides liquidity to convert investments to cash."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$400B+",
+                "label": "Daily Trading Volume (US)",
+                "color": "teal"
+              },
+              {
+                "value": "9:30-4:00",
+                "label": "Market Hours (Eastern)",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Major US Exchanges:",
+              "color": "blue",
+              "items": [
+                "NYSE (New York Stock Exchange)",
+                "NASDAQ",
+                "After-hours: More risk, less liquidity"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "The Bid-Ask Spread: A Hidden Cost",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The Cost of Every Trade",
+            "paragraphs": [
+              "<strong>Example Quote:</strong><br>Bid: $49.95 | Ask: $50.05 | Spread: $0.10",
+              "If you <strong>buy</strong> 100 shares: Pay $5,005 (ask price)<br> If you immediately <strong>sell</strong>: Receive $4,995 (bid price)<br> <strong>Loss: $10</strong> just from the spread!",
+              "Narrower spreads = more liquid stocks (like Apple: $0.01-$0.03)<br> Wider spreads = less liquid stocks (small caps: $0.10-$0.50+)"
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "⚠️ \"Commission-free\" doesn't mean free! Spreads are a real cost on every trade."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$0.10",
+                "label": "Typical Small-Cap Spread",
+                "color": "rose"
+              },
+              {
+                "value": "$0.01",
+                "label": "Typical Large-Cap Spread",
+                "color": "green"
+              }
+            ],
+            "infoCard": {
+              "title": "Cost Per 100 Shares:",
+              "color": "amber",
+              "items": [
+                "$0.01 spread = $1 cost",
+                "$0.10 spread = $10 cost",
+                "$0.50 spread = $50 cost"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Market Orders vs. Limit Orders",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "",
+            "title": "Market Order",
+            "items": [
+              "\"Buy/sell NOW at current price\"",
+              "Guarantees EXECUTION",
+              "Does NOT guarantee PRICE",
+              "Good for liquid stocks",
+              "Risky during volatility",
+              "Executes at ask (when buying)"
+            ]
+          },
+          "rightColumn": {
+            "icon": "",
+            "title": "Limit Order",
+            "items": [
+              "\"Buy/sell only at my price or better\"",
+              "Guarantees PRICE",
+              "Does NOT guarantee EXECUTION",
+              "Saves money on spreads",
+              "Protects during volatility",
+              "May sit unfilled if price never hit"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "When to Use Each Order Type",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Match Order Type to Situation",
+          "paragraphs": [
+            "Understanding when to use each order type can save you thousands over your investing lifetime."
+          ],
+          "bulletPoints": [
+            "<strong>Market Order OK:</strong> Highly liquid stocks (Apple, Microsoft) with penny spreads. Need immediate execution.",
+            "<strong>Limit Order Better:</strong> Less liquid stocks with wide spreads. You can wait for better price.",
+            "<strong>Limit Order Essential:</strong> Volatile conditions after news. Market open when prices swing wildly.",
+            "<strong>Pro Tip:</strong> Split the spread! If bid is $49.95 and ask is $50.05, place limit at $50.00—might save $0.05/share."
+          ],
+          "keyPoint": {
+            "text": "🎯 No rush? Use limit orders. You're not a day trader—patience saves money."
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Trading Costs Compound Over Time",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The True Cost of Frequent Trading",
+            "paragraphs": [
+              "<strong>Frequent Trader:</strong><br> 100 trades/year × $0.15 spread × 50 shares<br> = <strong>$750/year</strong> in spread costs",
+              "<strong>Buy-and-Hold Investor:</strong><br> 4 trades/year × $0.02 spread × 200 shares<br> = <strong>$16/year</strong> in spread costs",
+              "Over 30 years at 7% returns, that $734 annual difference compounds to <strong>$69,000</strong> in lost wealth!"
+            ],
+            "highlightBox": {
+              "icon": "\ud83d",
+              "text": "\udcb0 This is why Warren Buffett says his favorite holding period is \"forever.\""
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$750",
+                "label": "Active Trader Annual Cost",
+                "color": "rose"
+              },
+              {
+                "value": "$16",
+                "label": "Buy-and-Hold Annual Cost",
+                "color": "green"
+              },
+              {
+                "value": "$69K",
+                "label": "30-Year Difference @ 7%",
+                "color": "purple"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Reading a Stock Quote",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "What Every Number Means",
+          "paragraphs": [
+            "Stock quotes contain critical information for making informed trading decisions:"
+          ],
+          "bulletPoints": [
+            "<strong>Last Price:</strong> Price of most recent trade (what you see in headlines)",
+            "<strong>Bid/Ask:</strong> Current buy/sell prices. The prices YOU'LL actually pay or receive.",
+            "<strong>Volume:</strong> Shares traded today. High volume = more liquid, narrower spreads.",
+            "<strong>Day Range:</strong> Today's high and low prices. Shows current volatility.",
+            "<strong>52-Week Range:</strong> High/low over past year. Context for current price.",
+            "<strong>Market Cap:</strong> Total company value. Large-cap = typically more stable."
+          ],
+          "keyPoint": {
+            "text": "📊 High volume + narrow spread = easy to trade. Low volume + wide spread = use limit orders!"
+          }
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Market Hours and Timing",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "When Markets Are Open",
+            "paragraphs": [
+              "<strong>Regular Trading Hours:</strong><br> 9:30 AM - 4:00 PM Eastern Time<br> Monday through Friday (except holidays)",
+              "<strong>Pre-Market:</strong> 4:00 AM - 9:30 AM<br> <strong>After-Hours:</strong> 4:00 PM - 8:00 PM<br> (Extended hours have wider spreads, less liquidity, more risk!)",
+              "<strong>Orders placed when closed</strong> queue until next open—prices may be very different!"
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "⏰ Weekend panic? Your market order won't execute until Monday at potentially a VERY different price."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "T+2",
+                "label": "Settlement: 2 Business Days",
+                "color": "teal"
+              }
+            ],
+            "infoCard": {
+              "title": "Best Times to Trade:",
+              "color": "blue",
+              "items": [
+                "Mid-day (10:30 AM - 3:00 PM)",
+                "Lower volatility than open/close",
+                "Tighter spreads typically",
+                "Avoid trading on news spikes"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👩‍💻",
+            "name": "Sofia: The Power of Limit Orders",
+            "paragraphs": [
+              "Sofia wanted to buy 6 shares of an ETF trading around $125. She checked the quote: <span class=\"highlight-text\">Bid $124.96, Ask $125.04</span>.",
+              "Instead of using a market order at $125.04, she placed a <strong>limit order at $125.00</strong>—splitting the spread. After 17 minutes, her order executed when the price dipped.",
+              "Savings: $0.24 on this trade. Over 20 trades/year × $2 average savings × 40 years at 7% = <span class=\"highlight-text\">$8,500 extra wealth</span> just from using limit orders!"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Market Order Price",
+              "value": "$125.04",
+              "detail": "Full ask price"
+            },
+            {
+              "type": "after",
+              "label": "Limit Order Price",
+              "value": "$125.00",
+              "detail": "Saved $0.04/share"
+            },
+            {
+              "type": "after",
+              "label": "40-Year Impact",
+              "value": "+$8,500",
+              "detail": "Small savings compound!"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "⚠️",
+            "name": "Marcus: Market Hours Lesson",
+            "paragraphs": [
+              "Marcus read bad news about his stock Sunday evening. Panicking, he placed a <strong>market order to sell</strong> at the displayed price of $85.00.",
+              "Problem: Markets were <span class=\"highlight-text\">closed until Monday 9:30 AM</span>. His order sat in queue. Overnight, more bad news emerged.",
+              "Monday open: Stock gapped down to $78.50. His market order executed at that price—<strong>$325 less</strong> than he expected. A limit order at $84 would have protected him."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Expected Sale",
+              "value": "$85.00",
+              "detail": "Friday's closing price"
+            },
+            {
+              "type": "before",
+              "label": "Actual Sale",
+              "value": "$78.50",
+              "detail": "Monday's opening price"
+            },
+            {
+              "type": "before",
+              "label": "Loss on 50 Shares",
+              "value": "-$325",
+              "detail": "From not knowing market hours"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": "If \"commission-free\" trading isn't actually free,<br>how should investors think about the true cost of each trade?<br><br>When does frequent trading make sense vs. buy-and-hold?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "When you start investing, will you actively trade<br>trying to beat the market, or use a simple buy-and-hold approach?<br><br>What did you learn today that influences that decision?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "If bid is $25.00 and ask is $25.10, what price do you pay when buying? What do you receive when selling?"
+            },
+            {
+              "number": 2,
+              "question": "What's the difference between a market order and a limit order? When would you use each?"
+            },
+            {
+              "number": 3,
+              "question": "If you buy 100 shares at ask $50.05 and immediately sell at bid $49.95, how much do you lose?"
+            },
+            {
+              "number": 4,
+              "question": "Why should you avoid placing market orders when markets are closed?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Spreads Are Real Costs",
+              "description": "You pay the ask when buying, receive the bid when selling. This spread is a hidden cost on every single trade."
+            },
+            {
+              "number": 2,
+              "title": "Limit Orders Save Money",
+              "description": "Use limit orders for illiquid stocks, volatile conditions, or when you're not in a rush. Split the spread!"
+            },
+            {
+              "number": 3,
+              "title": "Know Market Hours",
+              "description": "US markets: 9:30 AM - 4:00 PM Eastern, weekdays. Orders placed when closed execute at next open—potentially at very different prices."
+            },
+            {
+              "number": 4,
+              "title": "Trading Costs Compound",
+              "description": "Frequent trading erodes returns through spreads. Buy-and-hold usually beats active trading for individual investors."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Student Activity",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "\ud83d",
+            "title": "\udcc8 Market Trading Simulator",
+            "description": "Practice placing trades, reading quotes, and understanding order types in a risk-free simulated environment. Experience firsthand how market orders vs. limit orders affect your execution prices and total costs."
+          },
+          "steps": [
+            "Read a stock quote: Identify bid, ask, spread",
+            "Execute a market order, note execution price",
+            "Execute a limit order splitting the spread",
+            "Compare costs across liquid vs. illiquid stocks",
+            "Calculate annual costs for different trading frequencies"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

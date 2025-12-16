@@ -1,0 +1,469 @@
+{
+  "metadata": {
+    "lChapter": "L-49",
+    "title": "Scarcity, Opportunity Cost, and Incentives",
+    "subtitle": "Understanding why you can't have everything—and how to make the best choices with limited resources",
+    "totalSlides": 20,
+    "hasStateVariables": false,
+    "stateVariablesUsed": []
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Scarcity, Opportunity Cost, and Incentives",
+        "titleSize": "large",
+        "subtitle": "Understanding why you can't have everything—and how to make the best choices with limited resources"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": ""
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Define",
+              "description": "Explain scarcity as the fundamental economic problem: unlimited wants vs. limited resources"
+            },
+            {
+              "number": 2,
+              "verb": "Calculate",
+              "description": "Determine opportunity costs including explicit and implicit costs for personal finance decisions"
+            },
+            {
+              "number": 3,
+              "verb": "Analyze",
+              "description": "Understand how incentives shape behavior and connect to economic systems"
+            },
+            {
+              "number": 4,
+              "verb": "Apply",
+              "description": "Use opportunity cost analysis to evaluate major life decisions: college, career, housing"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            },
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Key Terms (Continued)",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            },
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Scarcity: The Fundamental Economic Problem",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Why Economics Exists",
+            "paragraphs": [
+              "Everyone faces unlimited wants but limited resources:",
+              "<strong>Key insight:</strong> Even billionaires face scarcity—they can't buy more time or be in two places at once."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "rose"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Explicit vs. Implicit Costs",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          },
+          "rightColumn": {
+            "icon": "",
+            "title": "",
+            "items": []
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Calculating True Cost",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Total Economic Cost = Explicit + Implicit",
+          "paragraphs": [
+            "<strong>Example: Friday Night Decision</strong>",
+            "You have $30 and Friday evening free.",
+            "<strong>Option A: Go to Movies</strong>",
+            "• Explicit cost: $30 (ticket + snacks)",
+            "• Implicit cost: $60 foregone work shift",
+            "• Total economic cost: $90",
+            "<strong>Option B: Work Extra Shift</strong>",
+            "• Explicit cost: $0",
+            "• Implicit cost: Entertainment value of movie",
+            "• Earn $60, but give up fun",
+            "<strong>Option C: Study for Test</strong>",
+            "• Explicit cost: $0",
+            "• Implicit cost: Both money AND fun",
+            "• Gain: Better grade (future value)",
+            "Most people only see explicit costs. Opportunity cost thinkers see the full picture.",
+            "Not \"Can I afford this?\" but \"Is this the best use of my scarce resources?\""
+          ],
+          "bulletPoints": []
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Opportunity Cost in Action: College",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The Full Cost of College",
+            "paragraphs": [
+              "<strong>What most people calculate:</strong>",
+              "<strong>What they forget:</strong>"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "rose"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Incentives: Why People Do What They Do",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "People Respond to Rewards and Penalties",
+            "paragraphs": [
+              "<strong>Positive Incentives (encourage behavior):</strong>",
+              "<strong>Negative Incentives (discourage behavior):</strong>"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "rose"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Why Opportunity Cost Thinking Matters",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Transform Your Decision-Making",
+            "paragraphs": [
+              "Instead of asking \"Can I afford this?\" ask:",
+              "<strong>This framework reveals:</strong>"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "rose"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "The Hidden Cost: Your Time",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Your Time Has an Economic Value",
+          "paragraphs": [
+            "<strong>Example: Marcus's Revelation</strong>",
+            "Marcus earns $36/hour as a software developer. He spends 6 hours every Saturday on chores:",
+            "• Lawn care: 2 hours",
+            "• House cleaning: 2 hours",
+            "• Car maintenance: 2 hours",
+            "<strong>Cost to outsource: $70/week</strong>",
+            "<strong>His time's opportunity cost: $216/week</strong>",
+            "(6 hours × $36/hour)",
+            "By doing chores himself, Marcus \"saved\" $70 but gave up $216 in potential earnings or high-value activities.",
+            "<strong>Net loss: $146/week = $7,600/year</strong>",
+            "Looking at absolute costs ($70) instead of opportunity costs ($216)",
+            "Hire services ($70), use 6 hours for consulting ($450 at $75/hr), net gain: $380/week",
+            "Is what I'm doing worth more than what I could be doing instead?"
+          ],
+          "bulletPoints": []
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example: Sarah's College Decision",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "",
+            "name": "",
+            "paragraphs": []
+          },
+          "outcomes": []
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example: The Chen Family Housing Trade-off",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "",
+            "name": "",
+            "paragraphs": []
+          },
+          "outcomes": []
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": ""
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": ""
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "Why does scarcity affect everyone, even billionaires? What resource can nobody buy more of?"
+            },
+            {
+              "number": 2,
+              "question": "If you spend 3 hours saving $30 and your time is worth $20/hour, what was the actual cost of \"saving\" that money?"
+            },
+            {
+              "number": 3,
+              "question": "Why are implicit costs usually larger than explicit costs? Give an example from college decisions."
+            },
+            {
+              "number": 4,
+              "question": "How do 401(k) matching programs create incentives? What's the opportunity cost of NOT participating?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": []
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Skill Builder: Opportunity Cost Calculator",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📋",
+            "title": "",
+            "description": ""
+          },
+          "steps": [
+            "Calculate college opportunity cost: tuition + foregone wages + time value = true cost",
+            "Analyze your time allocation: List weekly activities and calculate opportunity cost of each",
+            "Compare major purchase options: New car vs. used car vs. invest the difference",
+            "Evaluate a career change: Investment required vs. lifetime earnings increase",
+            "Identify incentives in your life and predict behavioral responses"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "The question isn't \"Can I afford it?\" but \"Is this the best use of my scarce resources?\"",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

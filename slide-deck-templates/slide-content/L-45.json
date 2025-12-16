@@ -1,0 +1,536 @@
+{
+  "metadata": {
+    "lChapter": "L-45",
+    "title": "Entrepreneurship &Side Hustles",
+    "subtitle": "Building Your Own Path to Financial Success",
+    "totalSlides": 20,
+    "hasStateVariables": false,
+    "stateVariablesUsed": []
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Entrepreneurship &Side Hustles",
+        "titleSize": "large",
+        "subtitle": "Building Your Own Path to Financial Success"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": "What if you could turn <em>your skills and passions</em><br>into income—while keeping your day job<br>or building something <em>entirely your own</em>?"
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Identify",
+              "description": "Recognize entrepreneurial opportunities aligned with your personal skills, interests, and market needs."
+            },
+            {
+              "number": 2,
+              "verb": "Understand",
+              "description": "Comprehend the essential components of a business plan and minimum viable product (MVP) development."
+            },
+            {
+              "number": 3,
+              "verb": "Develop",
+              "description": "Create strategies for balancing side hustles with traditional employment and other responsibilities."
+            },
+            {
+              "number": 4,
+              "verb": "Explore",
+              "description": "Learn financial planning and resource allocation strategies for launching and growing new ventures."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Entrepreneurship",
+              "definition": "The activity of setting up and running a business, taking on financial risks in the hope of profit.",
+              "example": "Starting a web design agency, opening a bakery, launching an app company"
+            },
+            {
+              "term": "Side Hustle",
+              "definition": "A way to make money alongside your primary job, often leveraging personal skills or interests.",
+              "example": "Freelance writing on weekends, tutoring after work, selling crafts online"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "MVP",
+              "definition": "A version of a product with just enough features to be usable by early customers and provide feedback.",
+              "example": "Test your idea quickly and cheaply before investing significant time or money."
+            },
+            {
+              "term": "Bootstrapping",
+              "definition": "Building a company from the ground up using personal finances and revenue—no outside investors.",
+              "example": "You maintain full ownership and control of your business decisions and profits."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "What Is Entrepreneurship?",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Creating Value Through Innovation",
+            "paragraphs": [
+              "Entrepreneurs identify opportunities, secure resources, and take <strong>calculated risks</strong> to create value through new products, services, or ways of doing business.",
+              "Entrepreneurship offers an alternative or complement to traditional employment—allowing you to pursue passions and create additional income streams."
+            ],
+            "highlightBox": {
+              "icon": "\ud83d",
+              "text": "\udca1 In today's economy, entrepreneurial skills are valuable even if you never start a business—they create adaptability and resilience."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "44%",
+                "label": "of Americans Have Side Hustles",
+                "color": "teal"
+              },
+              {
+                "value": "$1.1T",
+                "label": "Annual Side Hustle Economy",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Entrepreneurship Benefits:",
+              "color": "blue",
+              "items": [
+                "Potential for unlimited income",
+                "Creative freedom and autonomy",
+                "Build equity in an asset",
+                "Flexible schedule"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "The Entrepreneurial Mindset",
+        "layout": "generic",
+        "layoutData": {
+          "paragraphs": [
+            "See problems as opportunities. Identify needs others miss.",
+            "Evaluate risks vs. rewards. Make informed decisions.",
+            "Bounce back from setbacks. Learn from failures.",
+            "Pivot when needed. Adjust based on feedback.",
+            "Find creative solutions with limited resources.",
+            "Move from idea to implementation quickly.",
+            "Constantly seek new knowledge and skills."
+          ],
+          "lists": []
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Types of Side Hustles",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "\ud83d",
+            "title": "\udee0️ Service-Based",
+            "items": [
+              "Freelance writing, design, coding",
+              "Tutoring or coaching",
+              "Photography or videography",
+              "Consulting in your expertise",
+              "Home repair or handyman"
+            ]
+          },
+          "rightColumn": {
+            "icon": "\ud83d",
+            "title": "\udce6 Product-Based",
+            "items": [
+              "Handcrafted goods (Etsy)",
+              "Digital products (courses, ebooks)",
+              "Reselling (retail arbitrage)",
+              "Print-on-demand merchandise",
+              "Mobile apps or software"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Identifying Opportunities",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Where Do Business Ideas Come From?",
+          "paragraphs": [
+            "Successful entrepreneurs find opportunities by looking at their own experiences, skills, and observations of problems around them."
+          ],
+          "bulletPoints": [
+            "<strong>Personal Experience:</strong> Problems you've encountered needing better solutions",
+            "<strong>Skills &amp; Expertise:</strong> Areas where you have specialized knowledge",
+            "<strong>Hobbies &amp; Interests:</strong> Activities you enjoy and understand well",
+            "<strong>Market Trends:</strong> Emerging needs or changes in consumer behavior",
+            "<strong>Technology Changes:</strong> New capabilities enabling different products",
+            "<strong>Underserved Markets:</strong> Groups whose needs aren't fully met"
+          ],
+          "keyPoint": {
+            "text": "💡 <strong>Key Question:</strong> What problem do I see every day that I'm uniquely positioned to solve?"
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Evaluating Your Ideas",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Not All Ideas Make Good Businesses",
+            "paragraphs": [
+              "Before investing time and money, evaluate your idea using these criteria:",
+              "<strong>Problem Validation:</strong> Is there a real problem? How painful is it?",
+              "<strong>Market Size:</strong> How many people have this problem?",
+              "<strong>Feasibility:</strong> Do you have the skills and resources needed?",
+              "<strong>Profitability:</strong> Can you deliver at a price that makes profit?"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "90%",
+                "label": "of Startups Fail",
+                "color": "rose"
+              },
+              {
+                "value": "#1",
+                "label": "Reason: No Market Need",
+                "color": "green"
+              }
+            ],
+            "infoCard": {
+              "title": "Also Consider:",
+              "color": "amber",
+              "items": [
+                "Competition: Who else solves this?",
+                "Passion: Will you stay motivated?",
+                "Scalability: Can it grow beyond you?"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Why Side Hustles Matter Financially",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Diversifying Your Income Creates Security",
+          "paragraphs": [
+            "Relying on a single income source is risky. Side hustles provide <strong>financial resilience</strong> and accelerate wealth building."
+          ],
+          "bulletPoints": [
+            "<strong>Extra Income:</strong> Average side hustler earns $810/month additional",
+            "<strong>Debt Payoff:</strong> Use extra income to eliminate debt faster",
+            "<strong>Emergency Fund:</strong> Build financial cushion more quickly",
+            "<strong>Investing:</strong> Additional capital for retirement savings",
+            "<strong>Skills Development:</strong> Marketable experience for career growth",
+            "<strong>Business Asset:</strong> Potential to sell or scale into full-time"
+          ],
+          "keyPoint": {
+            "text": "💰 <strong>$810/month invested at 8% for 30 years = $1.1 million</strong>—side hustles can fund your retirement."
+          }
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "From Idea to Implementation",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Take Action: Start Small and Learn",
+            "paragraphs": [
+              "<strong>1. Market Research:</strong> Interview potential customers about their needs before building anything.",
+              "<strong>2. Create MVP:</strong> Build the simplest version that delivers value and get feedback.",
+              "<strong>3. Basic Business Plan:</strong> Outline your value proposition, target market, and revenue model.",
+              "<strong>4. Start Small:</strong> Serve a few customers, document what works, then gradually expand."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "5-10",
+                "label": "Hours/Week to Start",
+                "color": "teal"
+              }
+            ],
+            "infoCard": {
+              "title": "MVP Mindset:",
+              "color": "green",
+              "items": [
+                "Focus only on core functionality",
+                "Eliminate nice-to-have features",
+                "Test assumptions quickly",
+                "Iterate based on feedback"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👨‍💻",
+            "name": "Jordan's Tutoring Side Hustle",
+            "paragraphs": [
+              "Jordan, a CS major, noticed classmates struggling with programming. Instead of just helping friends for free, he saw <span class=\"highlight-text\">a business opportunity</span>.",
+              "<strong>His approach:</strong>"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Time Investment",
+              "value": "10 hrs/wk",
+              "detail": "Fits around classes"
+            },
+            {
+              "type": "after",
+              "label": "Monthly Income",
+              "value": "$800-1K",
+              "detail": "8 regular clients"
+            },
+            {
+              "type": "after",
+              "label": "Bonus",
+              "value": "Skills Built",
+              "detail": "Teaching + business experience"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👩‍🎨",
+            "name": "Maya's Jewelry Business Journey",
+            "paragraphs": [
+              "Maya worked full-time as an admin assistant while making jewelry as a hobby. Friends encouraged her to sell, so she <span class=\"highlight-text\">started on Etsy with 10 designs</span>.",
+              "<strong>Strategic growth over 3 years:</strong>",
+              "After saving 6 months of expenses, she went full-time."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Year 1 Side Hustle",
+              "value": "$500/mo",
+              "detail": "Testing the market"
+            },
+            {
+              "type": "after",
+              "label": "Year 3 Full-Time",
+              "value": "$4,000/mo",
+              "detail": "Sustainable business"
+            },
+            {
+              "type": "after",
+              "label": "Instagram",
+              "value": "15K Followers",
+              "detail": "Built over time"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": "What made Jordan's and Maya's side hustles successful?<br><br>What strategies did they use to minimize risk while growing their businesses?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "What skills, interests, or problems in your life could become a side hustle opportunity?<br><br>What would be your first step to test this idea?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What's the difference between entrepreneurship and a side hustle? When might someone choose one over the other?"
+            },
+            {
+              "number": 2,
+              "question": "What is an MVP, and why is it important to create one before investing heavily in a business idea?"
+            },
+            {
+              "number": 3,
+              "question": "Name three characteristics of the entrepreneurial mindset. Which do you think is most important?"
+            },
+            {
+              "number": 4,
+              "question": "How can a side hustle improve your financial security beyond just the extra income it generates?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Start With Your Strengths",
+              "description": "The best side hustles leverage skills you already have—turning expertise into income"
+            },
+            {
+              "number": 2,
+              "title": "Test Before You Invest",
+              "description": "Create an MVP, validate demand with real customers, then scale gradually"
+            },
+            {
+              "number": 3,
+              "title": "Multiple Income Streams = Security",
+              "description": "Side hustles diversify your income and accelerate wealth building"
+            },
+            {
+              "number": 4,
+              "title": "Entrepreneurial Skills Transfer",
+              "description": "Even if you never start a business, these skills make you more valuable in any career"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Student Activity",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "\ud83d",
+            "title": "\udca1 Business Idea Brainstorm",
+            "description": "In the activity packet, you'll brainstorm potential side hustle ideas based on your <strong>skills, interests, and observations</strong> of problems around you. You'll evaluate your top ideas using the opportunity assessment criteria and create an initial action plan."
+          },
+          "steps": [
+            "List your skills, interests, and expertise",
+            "Identify 3 problems you could solve",
+            "Evaluate ideas using assessment criteria",
+            "Select your top idea to develop",
+            "Create a basic action plan with first steps"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

@@ -1,0 +1,583 @@
+{
+  "metadata": {
+    "lChapter": "L-50",
+    "title": "Supply and Demand",
+    "subtitle": "Understanding the Market Forces That Set Every Price",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME",
+      "MEDIAN_HOME_PRICE",
+      "MEDIAN_RENT",
+      "UNEMPLOYMENT_RATE",
+      "STATE_MEDIAN_RENT",
+      "STATE_MEDIAN_HOME_PRICE",
+      "STATE_HOUSING_INVENTORY",
+      "STATE_POPULATION",
+      "STATE_JOB_GROWTH",
+      "STATE_UNEMPLOYMENT_RATE",
+      "STATE_MEDIAN_INCOME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Supply and Demand",
+        "titleSize": "large",
+        "subtitle": "Understanding the Market Forces That Set Every Price"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": "Why does rent cost <em>${{STATE_MEDIAN_RENT}}/month</em> in {{STATE_NAME}}?<br>And why do some prices change <em>daily</em> while others stay stable?"
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Explain",
+              "description": "Describe the law of demand and law of supply and how they work together to determine market prices."
+            },
+            {
+              "number": 2,
+              "verb": "Analyze",
+              "description": "Examine how supply and demand curves interact to create market equilibrium prices in {{STATE_NAME}}."
+            },
+            {
+              "number": 3,
+              "verb": "Identify",
+              "description": "Recognize factors that cause supply and demand curves to shift in real markets like housing and labor."
+            },
+            {
+              "number": 4,
+              "verb": "Apply",
+              "description": "Use supply and demand analysis to make smarter personal finance decisions about timing purchases and careers."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Demand",
+              "definition": "The quantity of a good or service that consumers are willing and able to buy at various prices.",
+              "example": "At $1,500/month rent, 80,000 people want apartments in {{STATE_NAME}}. At $2,500, only 50,000 do."
+            },
+            {
+              "term": "Supply",
+              "definition": "The quantity of a good or service that producers are willing and able to offer at various prices.",
+              "example": "At $2,500/month rent, developers build 100,000 units. At $1,500, they only build 60,000."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Equilibrium",
+              "definition": "The price point where quantity demanded equals quantity supplied—the market \"clears\" with no shortages or surpluses.",
+              "example": "At ${{STATE_MEDIAN_RENT}}/month, the number of renters equals available apartments in {{STATE_NAME}}."
+            },
+            {
+              "term": "Market Shift",
+              "definition": "When the entire supply or demand curve moves due to factors other than price (income, preferences, costs).",
+              "example": "{{STATE_NAME}} population grows → demand curve shifts RIGHT → equilibrium price rises."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "The Law of Demand",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Price Goes Up → Quantity Demanded Goes Down",
+            "paragraphs": [
+              "<strong>Why does this happen?</strong> Three key reasons:",
+              "<strong>1. Substitution Effect:</strong> When prices rise, people switch to cheaper alternatives (beef → chicken, driving → public transit).",
+              "<strong>2. Income Effect:</strong> Higher prices reduce your purchasing power—you effectively have less money.",
+              "<strong>3. Diminishing Utility:</strong> The 5th pizza slice isn't as satisfying as the 1st—you'll only buy more at lower prices."
+            ],
+            "highlightBox": {
+              "icon": "\ud83d",
+              "text": "\udcc9 The demand curve always slopes DOWNWARD: Higher price = fewer buyers."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "${{STATE_MEDIAN_RENT}}",
+                "label": "{{STATE_NAME}} Median Rent",
+                "color": "teal"
+              },
+              {
+                "value": "↓",
+                "label": "Higher Price = Fewer Renters",
+                "color": "rose"
+              }
+            ],
+            "infoCard": {
+              "title": "Your Personal Demand Curve:",
+              "color": "blue",
+              "items": [
+                "$10/cup coffee → Once a month",
+                "$5/cup coffee → Few times a week",
+                "$2/cup coffee → Every day",
+                "You have a demand curve for everything!"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "The Law of Supply",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Price Goes Up → Quantity Supplied Goes Up",
+            "paragraphs": [
+              "<strong>Why does this happen?</strong> Producers respond to incentives:",
+              "<strong>1. Profit Motive:</strong> Higher prices = higher profits → businesses produce more to capture that profit.",
+              "<strong>2. New Entrants:</strong> High prices attract new producers to enter the market (more builders, more sellers).",
+              "<strong>3. Opportunity Cost:</strong> Higher prices justify using more expensive production methods that weren't profitable before."
+            ],
+            "highlightBox": {
+              "icon": "\ud83d",
+              "text": "\udcc8 The supply curve always slopes UPWARD: Higher price = more producers willing to sell."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "${{STATE_MEDIAN_HOME_PRICE}}",
+                "label": "{{STATE_NAME}} Median Home Price",
+                "color": "green"
+              },
+              {
+                "value": "↑",
+                "label": "Higher Price = More Builders",
+                "color": "teal"
+              }
+            ],
+            "infoCard": {
+              "title": "Supply in {{STATE_NAME}}:",
+              "color": "green",
+              "items": [
+                "High home prices → More construction",
+                "High wages → More workers enter field",
+                "High rents → More landlords rent units",
+                "Prices signal where resources should go"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Market Equilibrium: Where Supply Meets Demand",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The Price Where Markets Clear",
+            "paragraphs": [
+              "At <strong>equilibrium</strong>, quantity demanded = quantity supplied. No shortages, no surpluses.",
+              "<strong>Above equilibrium:</strong> Too many sellers, not enough buyers → prices fall (surplus)",
+              "<strong>Below equilibrium:</strong> Too many buyers, not enough sellers → prices rise (shortage)",
+              "Markets naturally move toward equilibrium through the price mechanism—no central planner needed!"
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "⚖️ Equilibrium is where the supply and demand curves INTERSECT."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "{{STATE_HOUSING_INVENTORY}}",
+                "label": "Months of Housing Inventory",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "{{STATE_NAME}} Housing Market:",
+              "color": "amber",
+              "items": [
+                "Low inventory = High demand vs. low supply",
+                "Prices rising toward new equilibrium",
+                "Buyers compete = bidding wars",
+                "6 months inventory = balanced market"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "What Makes Demand Shift?",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Factors That Move the Entire Demand Curve",
+          "paragraphs": [
+            "When something OTHER than price changes, the whole demand curve shifts left or right:"
+          ],
+          "bulletPoints": [
+            "<strong>Income Changes:</strong> Rising incomes → demand increases (curve shifts RIGHT)",
+            "<strong>Population Growth:</strong> More buyers in {{STATE_NAME}} → demand shifts RIGHT",
+            "<strong>Tastes &amp; Preferences:</strong> Trends, health concerns, or viral products shift demand",
+            "<strong>Price of Substitutes:</strong> Gas prices rise → demand for EVs increases",
+            "<strong>Price of Complements:</strong> Coffee prices fall → demand for creamer rises",
+            "<strong>Future Expectations:</strong> Expect prices to rise → buy now (demand shifts RIGHT)"
+          ],
+          "keyPoint": {
+            "text": "📊 {{STATE_NAME}} population: {{STATE_POPULATION}} with {{STATE_JOB_GROWTH}}% job growth → Demand for housing keeps shifting RIGHT."
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "What Makes Supply Shift?",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Factors That Move the Entire Supply Curve",
+          "paragraphs": [
+            "When production costs or conditions change, the whole supply curve shifts:"
+          ],
+          "bulletPoints": [
+            "<strong>Input Costs:</strong> Lumber prices rise → supply of new homes decreases (shifts LEFT)",
+            "<strong>Technology:</strong> Better tech → can produce more efficiently (shifts RIGHT)",
+            "<strong>Number of Sellers:</strong> New builders enter {{STATE_NAME}} market → supply increases",
+            "<strong>Government Policy:</strong> Taxes decrease supply; subsidies increase it",
+            "<strong>Natural Events:</strong> Drought, pandemic, disasters reduce supply (shifts LEFT)",
+            "<strong>Expectations:</strong> Expect higher prices → hold back supply now"
+          ],
+          "keyPoint": {
+            "text": "🏗️ In {{STATE_NAME}}: Rising construction costs + zoning limits → Supply can't keep up with demand → Prices rise."
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "{{STATE_NAME}} Housing Market Analysis",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "🏠",
+            "name": "Why Are {{STATE_NAME}} Home Prices So High?",
+            "paragraphs": [
+              "Let's analyze the {{STATE_NAME}} housing market using supply and demand:",
+              "<strong>DEMAND is HIGH because:</strong>",
+              "<strong>SUPPLY is LIMITED because:</strong>"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Current Median Price",
+              "value": "${{STATE_MEDIAN_HOME_PRICE}}",
+              "detail": "Demand > Supply = Rising prices"
+            },
+            {
+              "type": "after",
+              "label": "Median Rent",
+              "value": "${{STATE_MEDIAN_RENT}}/mo",
+              "detail": "Same forces affect rentals"
+            },
+            {
+              "type": "after",
+              "label": "Unemployment Rate",
+              "value": "{{STATE_UNEMPLOYMENT_RATE}}%",
+              "detail": "Strong jobs = strong demand"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": "Looking at {{STATE_NAME}}'s data—population {{STATE_POPULATION}}, job growth {{STATE_JOB_GROWTH}}%, and {{STATE_HOUSING_INVENTORY}} months housing inventory—what would need to change for home prices to decrease?"
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Using Supply & Demand for Smarter Decisions",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Time Your Purchases Strategically",
+            "paragraphs": [
+              "Buy when supply is HIGH and demand is LOW:",
+              "<strong>🚗 Cars:</strong> End of model year (dealers clearing inventory) or winter months (low demand)",
+              "<strong>✈️ Travel:</strong> Tuesday/Wednesday flights (low demand) instead of weekends",
+              "<strong>🏠 Housing:</strong> Winter months typically have fewer buyers competing",
+              "<strong>👕 Clothing:</strong> Off-season purchases (winter coats in spring)"
+            ],
+            "highlightBox": {
+              "icon": "\ud83d",
+              "text": "\udca1 In {{STATE_NAME}}, home prices are typically lowest in winter when fewer people are house-hunting."
+            }
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "Career Planning with Supply/Demand:",
+              "color": "blue",
+              "items": [
+                "High demand + low supply = rising wages",
+                "Healthcare in {{STATE_NAME}}: High demand",
+                "Tech: Digital transformation driving demand",
+                "Skilled trades: Limited supply as workers retire"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "The Labor Market: You Are the Supply",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Your Skills Are a Product in the Labor Market",
+            "paragraphs": [
+              "The labor market works just like any other market:",
+              "<strong>Employers = Demand</strong> for workers with specific skills",
+              "<strong>Workers = Supply</strong> of those skills",
+              "When demand for your skills exceeds supply, your wages rise!",
+              "With {{STATE_NAME}}'s unemployment rate at <strong>{{STATE_UNEMPLOYMENT_RATE}}%</strong>, the labor market is tight—employers are competing for workers."
+            ],
+            "highlightBox": {
+              "icon": "\ud83c",
+              "text": "\udfaf Choose careers where demand is rising and supply is limited for maximum earning potential."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "{{STATE_UNEMPLOYMENT_RATE}}%",
+                "label": "{{STATE_NAME}} Unemployment",
+                "color": "teal"
+              },
+              {
+                "value": "${{STATE_MEDIAN_INCOME}}",
+                "label": "Median Household Income",
+                "color": "green"
+              }
+            ],
+            "infoCard": {
+              "title": "High Demand Careers:",
+              "color": "amber",
+              "items": [
+                "Healthcare (aging population)",
+                "Technology (digital transformation)",
+                "Skilled trades (retiring workforce)",
+                "Renewable energy (policy shift)"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "What skills do you have (or could develop) where demand is high and supply is limited?<br><br>How can you use supply and demand thinking to maximize your earning potential?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Common Mistakes to Avoid",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "",
+            "title": "❌ Don't Do This",
+            "items": [
+              "Buy when demand peaks (holidays, summer)",
+              "Panic buy during shortages (prices highest)",
+              "Ignore market signals when choosing careers",
+              "Think prices are \"unfair\" rather than signals",
+              "Wait to buy if demand is clearly rising"
+            ]
+          },
+          "rightColumn": {
+            "icon": "✓",
+            "title": "✓ Do This Instead",
+            "items": [
+              "Buy during off-peak times (winter, weekdays)",
+              "Wait for supply to catch up after disruptions",
+              "Research supply/demand for career fields",
+              "Use prices as information to guide decisions",
+              "Act quickly in markets with rising demand"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Law of Demand",
+              "description": "Price ↑ → Quantity Demanded ↓. Higher prices mean fewer buyers (and vice versa)."
+            },
+            {
+              "number": 2,
+              "title": "Law of Supply",
+              "description": "Price ↑ → Quantity Supplied ↑. Higher prices attract more producers and sellers."
+            },
+            {
+              "number": 3,
+              "title": "Markets Self-Adjust",
+              "description": "Prices rise to eliminate shortages and fall to eliminate surpluses—reaching equilibrium."
+            },
+            {
+              "number": 4,
+              "title": "Prices Are Signals",
+              "description": "High prices signal scarcity and opportunity. Use this knowledge for timing purchases and careers."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "If {{STATE_NAME}}'s population grows by 500,000 people, what happens to the demand curve for housing? What happens to equilibrium prices?"
+            },
+            {
+              "number": 2,
+              "question": "Why do home prices continue rising when median price is already ${{STATE_MEDIAN_HOME_PRICE}}? Use supply and demand to explain."
+            },
+            {
+              "number": 3,
+              "question": "Gas prices are higher in summer than winter. Is this a demand shift or a supply shift? Explain."
+            },
+            {
+              "number": 4,
+              "question": "How can understanding supply and demand help you choose a career that pays well?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Day 2 Learning Lab Preview",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "\ud83d",
+            "title": "\udcca Market Analysis Workshop",
+            "description": "Tomorrow you'll apply supply and demand concepts to real {{STATE_NAME}} markets: Analyze actual market data, predict price movements, and develop strategies for timing major purchases and career decisions."
+          },
+          "steps": [
+            "Analyze {{STATE_NAME}} housing supply and demand data",
+            "Evaluate the labor market for career planning",
+            "Create a purchase timing strategy",
+            "Explore price elasticity concepts",
+            "Build your market analysis toolkit"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

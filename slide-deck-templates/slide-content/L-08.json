@@ -1,0 +1,502 @@
+{
+  "metadata": {
+    "lChapter": "L-XX",
+    "title": "Understanding Tax Filing Requirements",
+    "subtitle": "Know when to file, what forms to use, and how to navigate tax season with confidence in {{STATE_NAME}}",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Understanding Tax Filing Requirements",
+        "titleSize": "large",
+        "subtitle": "Know when to file, what forms to use, and how to navigate tax season with confidence in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": ""
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Determine",
+              "description": "Determine who needs to file a tax return based on income thresholds, age, and filing status"
+            },
+            {
+              "number": 2,
+              "verb": "Identify",
+              "description": "Identify common tax forms including W-2s, 1099s, and Form 1040"
+            },
+            {
+              "number": 3,
+              "verb": "Recognize",
+              "description": "Recognize important tax deadlines and the consequences of missing them"
+            },
+            {
+              "number": 4,
+              "verb": "Explain",
+              "description": "Explain when filing might benefit you even if it's not legally required"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            },
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            },
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Who Needs to File?",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "2024 Filing Thresholds (Gross Income)",
+            "paragraphs": [],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "rose"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Essential Tax Forms",
+        "layout": "generic",
+        "layoutData": {
+          "paragraphs": [],
+          "lists": [
+            [
+              "Total earnings for the year",
+              "Federal/state taxes withheld",
+              "Social Security &amp; Medicare taxes",
+              "Retirement contributions",
+              "Health insurance deductions"
+            ],
+            [
+              "1099-NEC: Freelance ($600+)",
+              "1099-INT: Bank interest",
+              "1099-DIV: Stock dividends",
+              "1099-G: Unemployment",
+              "No taxes auto-withheld!"
+            ],
+            [
+              "Report all income sources",
+              "Claim deductions/credits",
+              "Calculate tax owed",
+              "Request refund if applicable",
+              "Due April 15"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Filing Status Impact",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "5 Filing Statuses",
+            "paragraphs": [
+              "Your status affects tax rates, standard deduction, and credit eligibility!"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Critical Tax Deadlines",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Mark Your Calendar",
+            "paragraphs": [
+              "Employers must send W-2s and 1099s",
+              "Federal tax return and payment due",
+              "Extended filing deadline (if requested)",
+              "Taxes owed still due April 15!"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "rose"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Why File Even If Not Required?",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Don't Leave Money on the Table!",
+            "paragraphs": [],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Why It Matters",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Tax Filing = Financial Foundation",
+            "paragraphs": [
+              "Understanding tax filing is an essential life skill with far-reaching implications."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Self-Employment: Special Rules",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Freelance? Side Hustle? Gig Work?",
+            "paragraphs": [
+              "Self-employment has different tax requirements:"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "rose"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "",
+            "name": "",
+            "paragraphs": []
+          },
+          "outcomes": []
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "",
+            "name": "",
+            "paragraphs": []
+          },
+          "outcomes": []
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": ""
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": ""
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What's the difference between a W-2 and a 1099? Which one means taxes are already withheld?"
+            },
+            {
+              "number": 2,
+              "question": "Why might someone file a tax return even if their income is below the filing threshold?"
+            },
+            {
+              "number": 3,
+              "question": "What's the deadline for filing taxes, and what happens if you miss it?"
+            },
+            {
+              "number": 4,
+              "question": "At what amount of self-employment income are you required to file, regardless of total income?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "",
+              "description": "Filing requirements depend on income, age, and filing status—but self-employment income of $400+ always requires filing"
+            },
+            {
+              "number": 2,
+              "title": "",
+              "description": "Know your forms: W-2 (employment), 1099 (other income), 1040 (your tax return)—keep them organized!"
+            },
+            {
+              "number": 3,
+              "title": "",
+              "description": "April 15 is the deadline. Missing it means penalties. Extensions to file don't extend payment deadline."
+            },
+            {
+              "number": 4,
+              "title": "",
+              "description": "File even if not required to get refunds of withheld taxes, claim credits, and prevent identity theft"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Skill Builder: Tax Documentation Hunt",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📋",
+            "title": "",
+            "description": ""
+          },
+          "steps": []
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Know the Rules. File on Time. Get What's Yours.",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

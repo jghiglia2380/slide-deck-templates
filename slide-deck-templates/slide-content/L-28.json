@@ -1,0 +1,426 @@
+{
+  "metadata": {
+    "lChapter": "L-28",
+    "title": "Consumer FraudProtection",
+    "subtitle": "Recognize, Prevent, and Respond to Scams in {{STATE_NAME}}",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Consumer FraudProtection",
+        "titleSize": "large",
+        "subtitle": "Recognize, Prevent, and Respond to Scams in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": ""
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Identify",
+              "description": "Various types of consumer fraud including phishing, spoofing, and identity theft"
+            },
+            {
+              "number": 2,
+              "verb": "Recognize",
+              "description": "Warning signs and red flags that indicate potential fraud attempts"
+            },
+            {
+              "number": 3,
+              "verb": "Develop",
+              "description": "Strategies to protect yourself and your personal information from scammers"
+            },
+            {
+              "number": 4,
+              "verb": "Respond",
+              "description": "Learn what steps to take if you become a victim of fraud"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "",
+              "definition": "",
+              "example": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Common Types of Consumer Fraud",
+        "layout": "generic",
+        "layoutData": {
+          "paragraphs": [
+            "Fake emails/texts that trick you into giving up passwords or financial info",
+            "Disguising communications to appear from trusted companies or government",
+            "Fake online identities used to build trust before requesting money",
+            "Using stolen personal info to open accounts and make purchases",
+            "\"Investment\" scams paying old investors with new investor money",
+            "Companies charging fees for \"credit fixes\" they can't deliver"
+          ],
+          "lists": []
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Red Flags: Warning Signs of Fraud",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "How to Spot a Scam",
+            "paragraphs": [],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "rose"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Fraud Prevention Strategies",
+        "layout": "generic",
+        "layoutData": {
+          "paragraphs": [],
+          "lists": [
+            [
+              "Free annual credit report from each bureau",
+              "Right to place credit freezes",
+              "Report fraud to FTC at ReportFraud.ftc.gov"
+            ],
+            [
+              "Use strong, unique passwords",
+              "Enable two-factor authentication",
+              "Limit what you share on social media"
+            ],
+            [
+              "Contact companies directly via official channels",
+              "Don't click links in unsolicited messages",
+              "Research investments thoroughly"
+            ],
+            [
+              "Report scams to the FTC",
+              "Alert your bank immediately",
+              "File police report for identity theft"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "What to Do If You're a Victim",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Act Fast - Every Hour Matters",
+            "paragraphs": [
+              "Contact your bank to freeze accounts; change compromised passwords immediately",
+              "Save all communications, take screenshots, note dates and times of suspicious activity",
+              "File reports with FTC, local police, and credit bureaus; request fraud alerts"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Credit Freezes: Your Best Defense",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Lock Down Your Credit",
+            "paragraphs": [
+              "A credit freeze prevents new accounts from being opened in your name - even if a scammer has all your information."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "green"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "purple"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Why Fraud Awareness Matters",
+        "layout": "generic",
+        "layoutData": {
+          "paragraphs": [
+            "Victims lose an average of $500, but some lose their entire life savings to sophisticated scams",
+            "Identity theft can destroy your credit score and take years to fully recover",
+            "Fraud victims often experience shame, stress, anxiety, and broken trust",
+            "Scammers target all ages - young people aren't immune and often report higher losses"
+          ],
+          "lists": []
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Fraud in the Digital Age",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Evolving Threats",
+            "paragraphs": [
+              "Scammers are using increasingly sophisticated techniques to steal money and information."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "",
+                "label": "",
+                "color": "rose"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              },
+              {
+                "value": "",
+                "label": "",
+                "color": "teal"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Scenario: Email Phishing Attack",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "",
+            "name": "",
+            "paragraphs": []
+          },
+          "outcomes": []
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Scenario: Investment Catfishing",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "",
+            "name": "",
+            "paragraphs": []
+          },
+          "outcomes": []
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion in {{STATE_NAME}}",
+        "question": ""
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Personal Reflection in {{STATE_NAME}}",
+        "question": ""
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": []
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": []
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Skill Builder: Recognizing a Phishing Scam",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📋",
+            "title": "",
+            "description": ""
+          },
+          "steps": []
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Knowledge is your best defense against fraud - trust but verify in {{STATE_NAME}}",
+        "website": "www.pflacademy.co in {{STATE_NAME}}",
+        "copyright": "© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+      }
+    }
+  ]
+}

@@ -1,0 +1,554 @@
+{
+  "metadata": {
+    "lChapter": "L-30",
+    "title": "Renting vs. Owning",
+    "subtitle": "Making Informed Housing Decisions",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME",
+      "MEDIAN_HOME_PRICE",
+      "MEDIAN_RENT",
+      "STATE_MEDIAN_RENT",
+      "STATE_MEDIAN_HOME_PRICE",
+      "STATE_AVG_MORTGAGE_RATE",
+      "STATE_PROPERTY_TAX_AVG",
+      "CALCULATED_MONTHLY_MORTGAGE",
+      "CALCULATED_PROPERTY_TAX_MONTHLY"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Renting vs. Owning",
+        "titleSize": "large",
+        "subtitle": "Making Informed Housing Decisions"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": "In <em>{{STATE_NAME}}</em>, is it smarter to <em>rent and invest</em> the difference,<br>or <em>buy a home</em> and build equity?"
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Compare",
+              "description": "Analyze the financial implications of renting versus owning a home in {{STATE_NAME}}, including upfront costs, monthly expenses, and long-term wealth building."
+            },
+            {
+              "number": 2,
+              "verb": "Identify",
+              "description": "Recognize key factors that influence housing decisions including financial readiness, location, lifestyle preferences, and future goals."
+            },
+            {
+              "number": 3,
+              "verb": "Evaluate",
+              "description": "Assess how personal circumstances—career stability, family plans, and financial position—affect which housing choice is optimal."
+            },
+            {
+              "number": 4,
+              "verb": "Analyze",
+              "description": "Apply critical thinking to housing scenarios and calculate the long-term financial impact using {{STATE_NAME}} housing costs."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Lease",
+              "definition": "A legal agreement outlining terms under which one party agrees to rent property from another, typically for 6-12 months.",
+              "example": "A 12-month lease in {{STATE_NAME}} specifying ${{STATE_MEDIAN_RENT}}/month rent, pet policies, and maintenance responsibilities"
+            },
+            {
+              "term": "Equity",
+              "definition": "The difference between a property's current market value and the amount still owed on the mortgage—your ownership stake.",
+              "example": "Home worth ${{STATE_MEDIAN_HOME_PRICE}} with $350K mortgage = significant equity (your net worth in the property)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Mortgage",
+              "definition": "A loan used to purchase a home where the property itself serves as collateral, typically repaid over 15-30 years.",
+              "example": "A 30-year fixed mortgage at {{STATE_AVG_MORTGAGE_RATE}}% means consistent monthly payments for 360 months"
+            },
+            {
+              "term": "Property Tax",
+              "definition": "An annual tax paid by homeowners based on the assessed value of their property, used to fund local services.",
+              "example": "In {{STATE_NAME}}, property tax averages {{STATE_PROPERTY_TAX_AVG}}% of home value annually"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Renting in {{STATE_NAME}}",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Financial Aspects of Renting",
+            "paragraphs": [
+              "Renting involves paying a property owner for the right to live in their property for a specific period governed by a lease agreement.",
+              "<strong>Monthly costs include:</strong> Rent payment, renter's insurance ($15-30/mo), utilities, and sometimes parking.",
+              "<strong>Upfront costs:</strong> Security deposit (1-2 months' rent) and first month's rent—typically $3,000-$5,000 total in {{STATE_NAME}}."
+            ],
+            "highlightBox": {
+              "icon": "\ud83d",
+              "text": "\udca1 Renters are NOT responsible for major repairs, property taxes, or maintenance—the landlord covers these costs."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "${{STATE_MEDIAN_RENT}}",
+                "label": "{{STATE_NAME}} Median Rent",
+                "color": "teal"
+              },
+              {
+                "value": "$0",
+                "label": "Equity Built While Renting",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Renting Advantages:",
+              "color": "green",
+              "items": [
+                "Flexibility to relocate easily",
+                "No repair/maintenance costs",
+                "Lower upfront investment",
+                "Access to amenities (pool, gym)"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Renting vs. Owning: A Comparison",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "\ud83c",
+            "title": "\udfe2 Renting",
+            "items": [
+              "Lower upfront costs (deposit only)",
+              "Flexibility to move when lease ends",
+              "No equity building",
+              "Landlord handles repairs",
+              "Limited customization options",
+              "Subject to rent increases"
+            ]
+          },
+          "rightColumn": {
+            "icon": "\ud83c",
+            "title": "\udfe0 Owning",
+            "items": [
+              "Large down payment required (3-20%)",
+              "Stability and permanence",
+              "Building equity over time",
+              "Full maintenance responsibility",
+              "Freedom to renovate and customize",
+              "Fixed mortgage (if fixed-rate)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Homeownership in {{STATE_NAME}}",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Financial Aspects of Owning",
+            "paragraphs": [
+              "Owning means purchasing property with a mortgage loan, giving you full rights as long as you maintain payments.",
+              "<strong>Monthly costs include:</strong> Mortgage (principal + interest), property taxes, homeowner's insurance, HOA fees (if applicable), and maintenance.",
+              "<strong>Upfront costs:</strong> Down payment (3-20% of ${{STATE_MEDIAN_HOME_PRICE}}) plus closing costs (2-5%)."
+            ],
+            "highlightBox": {
+              "icon": "\ud83d",
+              "text": "\udcb0 Each mortgage payment builds equity—your ownership stake grows over time as you pay down the loan."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "${{STATE_MEDIAN_HOME_PRICE}}",
+                "label": "{{STATE_NAME}} Median Home Price",
+                "color": "teal"
+              },
+              {
+                "value": "${{CALCULATED_MONTHLY_MORTGAGE}}",
+                "label": "Est. Monthly Mortgage",
+                "color": "green"
+              }
+            ],
+            "infoCard": {
+              "title": "Ownership Benefits:",
+              "color": "blue",
+              "items": [
+                "Building wealth through equity",
+                "Tax deductions (mortgage interest)",
+                "Stable housing costs (fixed rate)",
+                "Potential rental income"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Factors in Your Decision",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "What Should Guide Your Housing Choice?",
+          "paragraphs": [
+            "The rent vs. buy decision is deeply personal and depends on multiple interconnected factors. There's no universally \"right\" answer—only what's right for your specific situation in {{STATE_NAME}}."
+          ],
+          "bulletPoints": [
+            "<strong>Financial Readiness:</strong> Savings for down payment, credit score, stable income, emergency fund",
+            "<strong>Time Horizon:</strong> How long you plan to stay (generally need 5+ years to make buying worthwhile)",
+            "<strong>Career Stability:</strong> Job security, potential relocations, remote work flexibility",
+            "<strong>Local Market:</strong> {{STATE_NAME}}'s price-to-rent ratio, appreciation trends, market conditions",
+            "<strong>Lifestyle Preferences:</strong> Desire to customize, willingness to handle maintenance",
+            "<strong>Family Plans:</strong> Growing family may need more space and stability"
+          ]
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "{{STATE_NAME}} Cost Comparison",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Renting Costs in {{STATE_NAME}}",
+            "paragraphs": [
+              "<strong>Monthly expenses:</strong>"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Why This Matters for Your Future",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Housing = Your Largest Expense",
+          "paragraphs": [
+            "Housing is typically the <strong>largest expense</strong> you'll face in your lifetime. Whether you rent or buy in {{STATE_NAME}}, this decision significantly impacts your financial situation, lifestyle, and long-term wealth building potential."
+          ],
+          "bulletPoints": [
+            "<strong>Monthly Budget:</strong> Housing should ideally be under 28-30% of gross income",
+            "<strong>Wealth Building:</strong> Homeowners have 40x higher net worth than renters (median)",
+            "<strong>Retirement Security:</strong> Owning a paid-off home reduces retirement expenses dramatically",
+            "<strong>Flexibility vs. Stability:</strong> Your life stage determines which matters more",
+            "<strong>Opportunity Cost:</strong> Money spent on housing can't be invested elsewhere",
+            "<strong>{{STATE_NAME}} Market:</strong> Local conditions affect which option makes more sense"
+          ]
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Housing in Today's {{STATE_NAME}} Market",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Current Housing Reality",
+            "paragraphs": [
+              "Today's housing market presents unique challenges for young adults. Rising prices, higher interest rates, and limited inventory have made homeownership increasingly difficult.",
+              "Many successful financial strategies now include renting while investing the difference—sometimes outperforming homeownership in high-cost markets.",
+              "<strong>The key is making an informed decision</strong> based on your specific circumstances in {{STATE_NAME}}, not following outdated rules or social pressure."
+            ],
+            "highlightBox": {
+              "icon": "\ud83d",
+              "text": "\udd04 Housing needs change over time. The right choice today might be different five years from now."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "{{STATE_AVG_MORTGAGE_RATE}}%",
+                "label": "{{STATE_NAME}} Avg. Mortgage Rate",
+                "color": "rose"
+              },
+              {
+                "value": "${{STATE_MEDIAN_HOME_PRICE}}",
+                "label": "{{STATE_NAME}} Median Home Price",
+                "color": "teal"
+              }
+            ],
+            "infoCard": {
+              "title": "Smart Strategies Today:",
+              "color": "green",
+              "items": [
+                "Consider house hacking (rent out rooms)",
+                "Explore first-time buyer programs",
+                "Compare price-to-rent ratios locally",
+                "Don't rush—patience pays off"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Real-World Example: Renting",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👩‍💻",
+            "name": "Amy's Smart Renting Decision in {{STATE_NAME}}",
+            "paragraphs": [
+              "Amy is a 25-year-old software developer who recently started her career in {{STATE_NAME}}. She chose to rent an apartment near downtown for <span class=\"highlight-text\">${{STATE_MEDIAN_RENT}}/month</span>, close to her workplace and entertainment options.",
+              "<strong>Her reasoning:</strong> As a young professional, Amy values <span class=\"highlight-text\">flexibility to accept job opportunities</span> in different locations. Instead of saving for a down payment, she invests the difference in her 401(k) and index funds.",
+              "<strong>Monthly breakdown:</strong> ${{STATE_MEDIAN_RENT}} rent + $20 renter's insurance + $150 utilities = approximately <span class=\"highlight-text\">${{STATE_MEDIAN_RENT}} + $170/month total</span>"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "Total Housing Cost",
+              "value": "${{STATE_MEDIAN_RENT}}+",
+              "detail": "All-in monthly expense"
+            },
+            {
+              "type": "after",
+              "label": "Benefits for Amy",
+              "value": "Flexibility",
+              "detail": "Can relocate for career growth"
+            },
+            {
+              "type": "before",
+              "label": "Trade-off",
+              "value": "No Equity",
+              "detail": "3-5% annual rent increases"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example: Buying",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👫",
+            "name": "John & Maria's Homeownership in {{STATE_NAME}}",
+            "paragraphs": [
+              "John and Maria, a married couple in their 30s with stable careers in {{STATE_NAME}}, purchased a home at the median price of <span class=\"highlight-text\">${{STATE_MEDIAN_HOME_PRICE}}</span> with a 10% down payment and closing costs.",
+              "<strong>Their reasoning:</strong> With established careers and plans to start a family, they wanted <span class=\"highlight-text\">stability and the ability to build equity</span>. A fixed-rate mortgage at {{STATE_AVG_MORTGAGE_RATE}}% gives them predictable payments.",
+              "<strong>Monthly breakdown:</strong> ${{CALCULATED_MONTHLY_MORTGAGE}} mortgage + ${{CALCULATED_PROPERTY_TAX_MONTHLY}} taxes + $150 insurance + $200 maintenance = <span class=\"highlight-text\">substantial monthly investment</span>"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Upfront Investment",
+              "value": "10-20%",
+              "detail": "Down payment + closing costs"
+            },
+            {
+              "type": "after",
+              "label": "Monthly Payment",
+              "value": "${{CALCULATED_MONTHLY_MORTGAGE}}+",
+              "detail": "Mortgage + taxes + insurance"
+            },
+            {
+              "type": "after",
+              "label": "Building Equity",
+              "value": "$500+/mo",
+              "detail": "Principal + appreciation"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": "Given {{STATE_NAME}}'s median home price of ${{STATE_MEDIAN_HOME_PRICE}} and median rent of ${{STATE_MEDIAN_RENT}}, which option makes more sense for someone in their 20s?<br><br>What factors would change your answer?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "What are your top priorities when thinking about where to live in {{STATE_NAME}}?<br><br>How might your housing preferences change over the next 5-10 years as your life circumstances evolve?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What is equity, and why is building equity considered an advantage of homeownership?"
+            },
+            {
+              "number": 2,
+              "question": "In {{STATE_NAME}}, with a {{STATE_PROPERTY_TAX_AVG}}% property tax rate, how much would property taxes add to monthly costs on a ${{STATE_MEDIAN_HOME_PRICE}} home?"
+            },
+            {
+              "number": 3,
+              "question": "Why might renting at ${{STATE_MEDIAN_RENT}}/month be the smarter financial choice for someone early in their career?"
+            },
+            {
+              "number": 4,
+              "question": "What hidden costs of homeownership are renters NOT responsible for paying?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "No Universal \"Right\" Answer",
+              "description": "The best housing choice depends on your personal financial situation, career, and life goals in {{STATE_NAME}}"
+            },
+            {
+              "number": 2,
+              "title": "Renting Has Advantages",
+              "description": "Flexibility, lower upfront costs, no maintenance—renting is NOT \"throwing money away\""
+            },
+            {
+              "number": 3,
+              "title": "Buying Builds Wealth",
+              "description": "Homeownership offers equity building, stability, and potential appreciation over time"
+            },
+            {
+              "number": 4,
+              "title": "Know Your Numbers",
+              "description": "Compare ${{STATE_MEDIAN_RENT}} rent vs. ${{CALCULATED_MONTHLY_MORTGAGE}}+ mortgage to make informed decisions"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Student Activity",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "\ud83d",
+            "title": "\udccb {{STATE_NAME}} Housing Analysis",
+            "description": "Using the {{STATE_NAME}} housing data we've discussed, analyze whether renting or buying makes more sense for different life scenarios. Consider factors like affordability, location, flexibility, equity building, and lifestyle preferences as you complete the comparison."
+          },
+          "steps": [
+            "Calculate 5-year cost of renting at ${{STATE_MEDIAN_RENT}}/mo",
+            "Calculate 5-year cost of owning at ${{CALCULATED_MONTHLY_MORTGAGE}}/mo",
+            "Estimate equity built after 5 years of ownership",
+            "List 3 scenarios where renting wins",
+            "List 3 scenarios where buying wins"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}
