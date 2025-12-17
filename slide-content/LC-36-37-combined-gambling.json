@@ -1,0 +1,652 @@
+{
+  "metadata": {
+    "lChapter": "LC-36-37",
+    "title": "Understanding Gambling",
+    "subtitle": "Risks, Costs, Benefits & Responsible Practices",
+    "totalSlides": 22,
+    "hasStateVariables": true,
+    "stateVariablesUsed": ["STATE_NAME"]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Understanding Gambling",
+        "titleSize": "large",
+        "subtitle": "Risks, Costs, Benefits & Responsible Practices in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": "Why does the saying <em>\"the house always wins\"</em> exist,<br>and how can you enjoy gambling as <em>entertainment</em><br>while protecting yourself from <em>financial harm</em>?"
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Calculate",
+              "description": "Understand probability, house edge, and expected value in gambling scenarios"
+            },
+            {
+              "number": 2,
+              "verb": "Recognize",
+              "description": "Identify gambling fallacies and understand why they lead to poor decisions"
+            },
+            {
+              "number": 3,
+              "verb": "Evaluate",
+              "description": "Understand individual and community costs and benefits of gambling"
+            },
+            {
+              "number": 4,
+              "verb": "Develop",
+              "description": "Create strategies for responsible gambling that minimize potential harms"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms: The Mathematics",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Probability",
+              "definition": "The likelihood of a specific event occurring, expressed as a number between 0 and 1 (or 0% to 100%)",
+              "example": "Rolling a 6 on a die = 1/6 = 16.7%"
+            },
+            {
+              "term": "House Edge",
+              "definition": "The mathematical advantage that ensures gambling operators profit over time, regardless of short-term outcomes",
+              "example": "American roulette has 5.26% house edge"
+            },
+            {
+              "term": "Expected Value",
+              "definition": "The average amount a player can expect to win or lose per bet over many repetitions",
+              "example": "Negative EV = lose money over time"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Key Terms: Behaviors & Impacts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Gambler's Fallacy",
+              "definition": "The mistaken belief that past events influence future outcomes in independent events",
+              "example": "Thinking red is \"due\" after 10 blacks"
+            },
+            {
+              "term": "Problem Gambling",
+              "definition": "Gambling behavior that disrupts personal, family, or vocational pursuits with increasing preoccupation",
+              "example": "Warning Signs: Chasing losses, lying, borrowing"
+            },
+            {
+              "term": "Responsible Gambling",
+              "definition": "Practices designed to prevent gambling-related harms: limits, disposable income only, accepting losses",
+              "example": "Key Practices: Budget limits, time limits, never chase"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Understanding Probability",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The Probability Formula",
+            "paragraphs": [
+              "<strong>Probability = Favorable Outcomes ÷ Total Possible Outcomes</strong>",
+              "<strong>Example Calculations:</strong>",
+              "🎲 <strong>Rolling a 6:</strong> 1 ÷ 6 = 0.167 ≈ 16.7%",
+              "🪙 <strong>Coin flip (heads):</strong> 1 ÷ 2 = 0.5 = 50%",
+              "🃏 <strong>Drawing an ace:</strong> 4 ÷ 52 = 0.077 ≈ 7.7%"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "1/6",
+                "label": "Die: Any Specific Number",
+                "color": "teal"
+              },
+              {
+                "value": "50/50",
+                "label": "Coin: Heads or Tails",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Key Insight:",
+              "color": "blue",
+              "items": [
+                "More outcomes = lower probability per outcome",
+                "Lottery: ~1 in 300,000,000",
+                "The smaller the probability, the less likely to win"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "rose",
+      "content": {
+        "headerTitle": "The House Edge: Why The House Always Wins",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Built-In Mathematical Advantage",
+            "paragraphs": [
+              "The house edge is the percentage of each bet the gambling operator expects to keep on average.",
+              "Even when players win short-term, the math ensures the house profits over time."
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "A 5% house edge means for every $100 wagered, the house keeps $5 on average."
+            }
+          },
+          "rightPanel": {
+            "customContent": {
+              "type": "house-edge-table",
+              "rows": [
+                { "game": "Blackjack (basic strategy)", "edge": "0.5% - 2%", "rating": "low" },
+                { "game": "Craps (pass line)", "edge": "1.4%", "rating": "medium" },
+                { "game": "European Roulette", "edge": "2.7%", "rating": "medium" },
+                { "game": "American Roulette", "edge": "5.26%", "rating": "medium" },
+                { "game": "Slot Machines", "edge": "2% - 15%", "rating": "bad" },
+                { "game": "Keno", "edge": "25% - 30%", "rating": "bad" },
+                { "game": "Lottery", "edge": "40% - 50%", "rating": "bad" }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Common Gambling Fallacies",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Mistaken Beliefs That Cost Money",
+          "customContent": {
+            "type": "info-grid",
+            "cards": [
+              {
+                "icon": "🎰",
+                "title": "The Gambler's Fallacy",
+                "color": "rose",
+                "items": ["Belief: \"Red is due after 10 blacks\"", "Reality: Each spin is independent", "The wheel has no memory"]
+              },
+              {
+                "icon": "🔥",
+                "title": "The Hot Hand Fallacy",
+                "color": "rose",
+                "items": ["Belief: \"I'm on a winning streak\"", "Reality: Past wins don't predict future", "Variance creates streaks, not skill"]
+              },
+              {
+                "icon": "💰",
+                "title": "The Monte Carlo Example",
+                "color": "amber",
+                "items": ["1913: Black came up 26 times in a row", "Gamblers lost millions betting on red", "Each spin was still 50/50"]
+              },
+              {
+                "icon": "✓",
+                "title": "The Truth",
+                "color": "blue",
+                "items": ["Independent events don't influence each other", "Dice don't know what they rolled before", "Your \"system\" won't beat mathematics"]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Gambling as Entertainment",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The Entertainment Mindset",
+            "paragraphs": [
+              "When approached responsibly, gambling is a form of <strong>entertainment</strong>—not a way to make money.",
+              "Like movies, concerts, or dining out, gambling has an associated cost that should come from your <strong>entertainment budget</strong>.",
+              "The \"cost\" of gambling = the money you're willing to lose for the experience. Any winnings are a bonus, not an expectation."
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "Movies guarantee 100% loss of ticket price. Gambling has variable outcomes—but still expected loss over time."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "100%",
+                "label": "Expected Loss at Movies",
+                "color": "rose"
+              },
+              {
+                "value": "~95%",
+                "label": "Expected Loss at Gambling*",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Budget Questions:",
+              "color": "green",
+              "items": [
+                "How much can I afford to lose?",
+                "Is this from discretionary funds?",
+                "Will I stop when limits are reached?"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Individual Costs and Benefits",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Potential Benefits",
+            "paragraphs": [
+              "<strong>Entertainment:</strong> Excitement, socialization, break from routine",
+              "<strong>Cognitive Stimulation:</strong> Strategy games involve skill",
+              "<strong>Social Interaction:</strong> Casinos, bingo halls provide community",
+              "<strong>Occasional Winnings:</strong> Though not expected, wins can be enjoyable"
+            ]
+          },
+          "rightPanel": {
+            "title": "Potential Costs",
+            "color": "rose",
+            "paragraphs": [
+              "<strong>Financial Loss:</strong> Primary risk—potentially more than budgeted",
+              "<strong>Opportunity Cost:</strong> Money could go to savings/investments",
+              "<strong>Time Consumption:</strong> Takes time from other activities",
+              "<strong>Risk of Escalation:</strong> Casual can become problematic",
+              "<strong>Emotional Impact:</strong> Losses cause stress and anxiety"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "The Gambling Behavior Spectrum",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Understanding the Progression",
+          "paragraphs": [
+            "Gambling behavior exists on a spectrum. Recognizing where you are helps identify warning signs before problems develop."
+          ],
+          "customContent": {
+            "type": "spectrum",
+            "stages": [
+              { "label": "NON-GAMBLING", "description": "No participation", "color": "green" },
+              { "label": "RECREATIONAL", "description": "Occasional, with limits", "color": "blue" },
+              { "label": "AT-RISK", "description": "Exceeding limits sometimes", "color": "amber" },
+              { "label": "PROBLEM", "description": "Regular difficulty controlling", "color": "orange" },
+              { "label": "PATHOLOGICAL", "description": "Severe addiction", "color": "rose" }
+            ]
+          },
+          "keyPoint": "⚠️ Small changes in behavior can gradually lead to significant problems. Awareness and early intervention are crucial."
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Recreational vs. Problem Gambling",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "✓",
+            "title": "Recreational Gambling",
+            "items": [
+              "One of many leisure activities",
+              "Planned and budgeted in advance",
+              "Time and money limits respected",
+              "Losses viewed as entertainment cost",
+              "Responsibilities take priority",
+              "Ends when limits are reached"
+            ]
+          },
+          "rightColumn": {
+            "icon": "⚠",
+            "title": "Problem Gambling",
+            "items": [
+              "Becomes primary activity",
+              "Spending exceeds planned limits",
+              "Chasing losses to recover money",
+              "Borrowing money to gamble",
+              "Lying about time/money spent",
+              "Neglecting responsibilities"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Community Costs and Benefits",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Economic Benefits",
+            "paragraphs": [
+              "<strong>Tax Revenue:</strong> Funds public services, education, infrastructure",
+              "<strong>Job Creation:</strong> Casinos employ thousands",
+              "<strong>Tourism:</strong> Gambling destinations attract visitors",
+              "<strong>Development:</strong> Construction revitalizes areas"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$44B+",
+                "label": "Annual US Gambling Tax Revenue",
+                "color": "teal"
+              },
+              {
+                "value": "$7B",
+                "label": "Estimated Annual Social Costs",
+                "color": "rose"
+              }
+            ],
+            "infoCard": {
+              "title": "Social Costs:",
+              "color": "rose",
+              "items": [
+                "Regressive taxation burden",
+                "Increased social service demand",
+                "Family and relationship impacts"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Real-World Example: Responsible Approach",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "✓",
+            "name": "David: Entertainment Mindset",
+            "color": "green",
+            "paragraphs": [
+              "David enjoys visiting a casino about <span class=\"highlight-text\">once every two months</span>. Before each visit, he sets aside <strong>$100 from his entertainment budget</strong>.",
+              "He views this money as the cost of entertainment. He sets a 3-hour timer. Whether winning or losing, he leaves when the timer goes off or when he loses his $100.",
+              "David considers his casino visits similar to a concert—entertainment with a known cost, and any winnings are a bonus."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "Budget",
+              "value": "$100",
+              "detail": "5% of entertainment budget"
+            },
+            {
+              "type": "after",
+              "label": "Time Limit",
+              "value": "3 Hours",
+              "detail": "Leaves when timer goes off"
+            },
+            {
+              "type": "neutral",
+              "label": "Result",
+              "value": "Enjoyment",
+              "detail": "No financial stress"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "content",
+      "headerColor": "rose",
+      "content": {
+        "headerTitle": "Real-World Example: Problem Gambling",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "⚠",
+            "name": "Mark: Progression to Problem",
+            "color": "amber",
+            "paragraphs": [
+              "Mark began with a <strong>$200 monthly budget</strong>. After a few big wins, he convinced himself he had a \"system.\"",
+              "When losses occurred, Mark began <span class=\"highlight-text\">drawing from savings</span> to \"win back\" what he'd lost. He started using credit cards when savings ran low.",
+              "He found himself <span class=\"highlight-text\">thinking about gambling at work</span>, canceling plans to gamble, and lying to family about his money."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Started With",
+              "value": "$200/mo",
+              "detail": "Reasonable budget"
+            },
+            {
+              "type": "before",
+              "label": "Escalated To",
+              "value": "$2,000+",
+              "detail": "Savings + credit cards"
+            },
+            {
+              "type": "before",
+              "label": "Impact",
+              "value": "Debt Crisis",
+              "detail": "Relationships damaged"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 16,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Responsible Gambling Practices",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "infoCard": {
+              "title": "✅ Set Limits",
+              "color": "green",
+              "items": [
+                "Decide budget in advance and stick to it",
+                "Set a time limit before you start",
+                "Only gamble with money you can afford to lose",
+                "Never use credit cards to gamble",
+                "Leave when you reach your limit"
+              ]
+            }
+          },
+          "rightPanel": {
+            "infoCard": {
+              "title": "✅ Maintain Perspective",
+              "color": "green",
+              "items": [
+                "Expect to lose (it's the cost of entertainment)",
+                "Never chase losses",
+                "Take regular breaks",
+                "Don't gamble when upset or stressed",
+                "Balance with other activities"
+              ]
+            }
+          },
+          "bottomKeyPoint": "💡 <strong>View Gambling as Entertainment, Not Income:</strong> Set a fixed amount you're willing to spend, enjoy the experience, and expect that money to be gone. This mindset prevents financial harm while allowing recreation."
+        }
+      }
+    },
+    {
+      "number": 17,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": "What specific behaviors and mindsets differentiated David's recreational approach from Mark's progression into problem gambling?<br><br>At what point could Mark have intervened to prevent his gambling from becoming problematic?"
+      }
+    },
+    {
+      "number": 18,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "How might understanding probability, house edge, and expected value change the way someone approaches gambling?<br><br>Why do you think gambling fallacies are so persuasive despite being mathematically incorrect?"
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "If a coin comes up heads 10 times in a row, what is the probability of heads on the next flip? Why?"
+            },
+            {
+              "number": 2,
+              "question": "Why does the house always win in the long run, even when individual players sometimes win big?"
+            },
+            {
+              "number": 3,
+              "question": "Why should gambling be viewed as \"entertainment with a cost\" rather than a way to make money?"
+            },
+            {
+              "number": 4,
+              "question": "What are three warning signs that recreational gambling may be becoming problem gambling?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "The Math Never Lies",
+              "description": "House edge ensures gambling operators profit over time. Expected value for players is almost always negative."
+            },
+            {
+              "number": 2,
+              "title": "Beware of Fallacies",
+              "description": "The gambler's fallacy and hot hand fallacy lead to poor decisions. Independent events don't influence each other."
+            },
+            {
+              "number": 3,
+              "title": "Entertainment, Not Income",
+              "description": "View gambling as entertainment expense with a fixed cost, not a way to make money. Set limits and stick to them."
+            },
+            {
+              "number": 4,
+              "title": "Recognize Warning Signs",
+              "description": "Chasing losses, exceeding limits, and lying about gambling indicate growing problems that need intervention."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 21,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Skill Builder: Responsible Gambling Plan",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📋",
+            "title": "Create Your Plan",
+            "description": "Develop a comprehensive responsible gambling plan that demonstrates understanding of probability, costs, and harm prevention. This activity applies both the mathematical understanding and the behavioral safeguards needed for responsible decision-making."
+          },
+          "steps": [
+            "Calculate expected value for 3 gambling activities",
+            "Set budget and time limits for gambling",
+            "Identify 5 strategies for keeping gambling enjoyable",
+            "List warning signs you'd watch for in yourself",
+            "Compare cost to other entertainment options"
+          ]
+        }
+      }
+    },
+    {
+      "number": 22,
+      "type": "closing",
+      "content": {
+        "tagline": "Understanding Gambling: Math, Costs & Responsible Choices",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved. | Combined Chapter LC-36"
+      }
+    }
+  ]
+}

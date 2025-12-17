@@ -1,0 +1,652 @@
+{
+  "metadata": {
+    "lChapter": "LC-39-40",
+    "title": "Charitable Giving",
+    "subtitle": "Planning, Evaluating & Maximizing Your Impact",
+    "totalSlides": 22,
+    "hasStateVariables": true,
+    "stateVariablesUsed": ["STATE_NAME"]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Charitable Giving",
+        "titleSize": "large",
+        "subtitle": "Planning, Evaluating & Maximizing Your Impact in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": "How can you align your <em>charitable giving</em> with your<br><em>financial goals</em> while ensuring your donations have<br>the <em>greatest positive impact</em>?"
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Understand",
+              "description": "Recognize the role of charitable giving in financial planning and its personal and societal benefits"
+            },
+            {
+              "number": 2,
+              "verb": "Evaluate",
+              "description": "Research and assess charitable organizations for transparency, efficiency, and impact"
+            },
+            {
+              "number": 3,
+              "verb": "Apply",
+              "description": "Use the PACED decision-making model to compare and select organizations to support"
+            },
+            {
+              "number": 4,
+              "verb": "Develop",
+              "description": "Create a strategic giving plan that aligns with your values and financial circumstances"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms: Charitable Giving",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Philanthropy",
+              "definition": "The active effort to promote the welfare of others through the donation of money, time, or resources",
+              "example": "Donating to education, healthcare, environmental causes"
+            },
+            {
+              "term": "501(c)(3)",
+              "definition": "Tax-exempt nonprofit organization recognized by the IRS; donations are typically tax-deductible",
+              "example": "Red Cross, Habitat for Humanity, local food banks"
+            },
+            {
+              "term": "Tax Deduction",
+              "definition": "Amount that reduces taxable income; charitable donations to qualified orgs can lower your tax bill",
+              "example": "$1,000 donation = $220 tax savings (22% bracket)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Key Terms: Evaluation",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Program Expense Ratio",
+              "definition": "Percentage of total expenses spent on programs vs. admin/fundraising—indicates operational efficiency",
+              "example": "Benchmark: 75%+ is generally considered good"
+            },
+            {
+              "term": "Charity Watchdogs",
+              "definition": "Independent organizations that research and rate charities based on financial health and transparency",
+              "example": "Charity Navigator, GuideStar, BBB Wise Giving"
+            },
+            {
+              "term": "Impact Measurement",
+              "definition": "How organizations demonstrate the real-world outcomes of their programs and initiatives",
+              "example": "Meals served, students tutored, trees planted"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Why People Give",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Personal Motivations",
+            "paragraphs": [
+              "<strong>Values & Beliefs:</strong> Supporting causes aligned with personal principles",
+              "<strong>Gratitude:</strong> Giving back for benefits received (scholarship recipients, medical survivors)",
+              "<strong>Connection:</strong> Feeling part of a community working toward shared goals",
+              "<strong>Legacy:</strong> Creating lasting impact beyond one's lifetime"
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "Research shows charitable giving activates the brain's reward centers—giving literally feels good!"
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$499B",
+                "label": "US Charitable Giving (2022)",
+                "color": "teal"
+              },
+              {
+                "value": "69%",
+                "label": "Americans Who Donate Annually",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Financial Benefits:",
+              "color": "green",
+              "items": [
+                "Tax deductions for itemizers",
+                "Estate tax reduction",
+                "Capital gains avoidance",
+                "Retirement account strategies"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Charitable Giving Strategies",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Ways to Give",
+          "bulletPoints": [
+            "<strong>Direct Cash Donations:</strong> Most common; provides immediate flexibility to charities",
+            "<strong>Appreciated Assets:</strong> Donate stocks/property; avoid capital gains tax while getting deduction",
+            "<strong>Donor-Advised Fund:</strong> \"Charitable savings account\"—immediate deduction, distribute over time",
+            "<strong>Planned Giving:</strong> Include charity in will or estate plan for legacy giving",
+            "<strong>Recurring Giving:</strong> Monthly donations provide predictable funding for nonprofits",
+            "<strong>Matching Gifts:</strong> Many employers match charitable donations, doubling impact"
+          ],
+          "keyPoint": "💡 The best strategy depends on your income, assets, and charitable goals. Consider consulting a financial advisor for significant giving."
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "rose",
+      "content": {
+        "headerTitle": "Why Research Charities?",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Not All Charities Are Equal",
+            "paragraphs": [
+              "Charitable giving is powerful, but not all organizations use donations with the same <strong>efficiency or effectiveness</strong>.",
+              "Some may allocate large portions of funds to <strong>administrative costs</strong> rather than direct programs.",
+              "Others might not be <strong>legitimate at all</strong>—charity scams cost Americans hundreds of millions of dollars each year."
+            ],
+            "highlightBox": {
+              "icon": "⚠️",
+              "text": "By developing research skills, you become a more informed and impactful donor.",
+              "color": "rose"
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "1.5M+",
+                "label": "Registered US Nonprofits",
+                "color": "teal"
+              },
+              {
+                "value": "$200M+",
+                "label": "Annual Charity Fraud Losses",
+                "color": "rose"
+              }
+            ],
+            "infoCard": {
+              "title": "What To Look For:",
+              "color": "amber",
+              "items": [
+                "How donations are actually used",
+                "Program outcomes and impact",
+                "Administrative/fundraising costs",
+                "Executive compensation"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "green",
+      "content": {
+        "headerTitle": "Charity Research Tools",
+        "layout": "tools-grid",
+        "layoutData": {
+          "tools": [
+            {
+              "name": "Charity Navigator",
+              "url": "charitynavigator.org",
+              "description": "Star ratings (0-4), financial health scores, accountability metrics for 200,000+ charities",
+              "rating": 4
+            },
+            {
+              "name": "GuideStar (Candid)",
+              "url": "guidestar.org",
+              "description": "Detailed nonprofit profiles, IRS Form 990 data, transparency seals (Bronze, Silver, Gold, Platinum)",
+              "rating": 4
+            },
+            {
+              "name": "BBB Wise Giving Alliance",
+              "url": "give.org",
+              "description": "Standards-based evaluation, 20 accountability standards, \"Meets Standards\" seal",
+              "rating": 4
+            },
+            {
+              "name": "GiveWell",
+              "url": "givewell.org",
+              "description": "In-depth research on cost-effectiveness, \"Top Charities\" for maximum impact per dollar",
+              "rating": 5
+            },
+            {
+              "name": "IRS Tax Exempt Search",
+              "url": "irs.gov/charities",
+              "description": "Verify 501(c)(3) status, check if donations are tax-deductible, official government database",
+              "rating": 3
+            },
+            {
+              "name": "Charity Website",
+              "url": "Direct review",
+              "description": "Annual reports, financial statements, program descriptions, leadership bios, impact stories",
+              "rating": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Metrics to Evaluate",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "infoCard": {
+              "title": "📊 Financial Health",
+              "color": "green",
+              "items": [
+                "<strong>Program Expense Ratio:</strong> % spent on programs (aim for 75%+)",
+                "<strong>Fundraising Efficiency:</strong> Cost to raise $1 (under $0.25 is good)",
+                "<strong>Working Capital:</strong> Months of reserves (3-12 ideal)",
+                "<strong>Revenue Trends:</strong> Stable or growing funding"
+              ]
+            }
+          },
+          "rightPanel": {
+            "infoCard": {
+              "title": "🔍 Transparency & Governance",
+              "color": "blue",
+              "items": [
+                "<strong>Board Independence:</strong> Diverse, independent board members",
+                "<strong>Executive Compensation:</strong> Reasonable for organization size",
+                "<strong>Financial Audits:</strong> Regular independent audits",
+                "<strong>Public Reporting:</strong> Annual reports, Form 990 available"
+              ]
+            }
+          },
+          "bottomKeyPoint": "💡 <strong>Context Matters:</strong> A 65% program ratio might be appropriate for a new or small charity building capacity. Look at trends over time, not just single-year snapshots."
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "rose",
+      "content": {
+        "headerTitle": "Warning Signs: Red Flags",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "✓",
+            "title": "Signs of a Good Charity",
+            "items": [
+              "Clear mission and measurable goals",
+              "Readily available financial information",
+              "Specific use of funds described",
+              "Verifiable 501(c)(3) status",
+              "Happy to answer questions",
+              "Professional, audited financials"
+            ]
+          },
+          "rightColumn": {
+            "icon": "⚠",
+            "title": "Warning Signs",
+            "items": [
+              "High-pressure donation tactics",
+              "Vague about fund usage",
+              "Won't provide financial statements",
+              "Sound-alike names (confusing with major charities)",
+              "Cash/wire transfer only",
+              "Excessive emotional appeals, no data"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "The PACED Decision Model",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "A Framework for Charitable Decisions",
+          "customContent": {
+            "type": "paced-model",
+            "steps": [
+              { "letter": "P", "title": "Problem", "description": "Define the issue you want to address", "color": "primary" },
+              { "letter": "A", "title": "Alternatives", "description": "List charities working on this issue", "color": "teal" },
+              { "letter": "C", "title": "Criteria", "description": "Set evaluation standards", "color": "blue" },
+              { "letter": "E", "title": "Evaluate", "description": "Rate each charity on criteria", "color": "green" },
+              { "letter": "D", "title": "Decide", "description": "Choose the best option", "color": "amber" }
+            ]
+          },
+          "keyPoint": "💡 Using a structured approach removes emotion from the decision and ensures you're giving to organizations that align with your values AND demonstrate effectiveness."
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example: Strategic Giving",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "✓",
+            "name": "Maya: Intentional Philanthropy",
+            "color": "green",
+            "paragraphs": [
+              "Maya earns $60,000/year and wants to give <span class=\"highlight-text\">5% ($3,000)</span> to causes she cares about. She's passionate about education equity.",
+              "She uses <strong>Charity Navigator</strong> and <strong>GiveWell</strong> to research organizations, creates a shortlist of 5, and uses the PACED model to evaluate them.",
+              "Maya splits her giving: <span class=\"highlight-text\">$200/month</span> to her top-rated organization, creating predictable funding they can plan around."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "Annual Giving",
+              "value": "$3,000",
+              "detail": "5% of income"
+            },
+            {
+              "type": "after",
+              "label": "Tax Deduction",
+              "value": "$660",
+              "detail": "22% tax bracket"
+            },
+            {
+              "type": "after",
+              "label": "Impact",
+              "value": "30 Students",
+              "detail": "Full year of tutoring"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Real-World Example: Uninformed Giving",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "?",
+            "name": "Jake: Reactive Donations",
+            "color": "amber",
+            "paragraphs": [
+              "Jake gives <span class=\"highlight-text\">impulsively</span> whenever he sees an emotional appeal. He responds to social media campaigns, phone calls, and sidewalk solicitors.",
+              "He donates similar amounts as Maya ($3,000/year) but to <strong>12 different organizations</strong> he hasn't researched.",
+              "Later he discovers one \"charity\" was actually a for-profit telemarketer keeping <span class=\"highlight-text\">85% of donations</span>. Others had significant overlap."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "neutral",
+              "label": "Intended",
+              "value": "$3,000",
+              "detail": "To worthy causes"
+            },
+            {
+              "type": "before",
+              "label": "Lost to Fraud",
+              "value": "$600",
+              "detail": "Scam charity"
+            },
+            {
+              "type": "neutral",
+              "label": "Actual Impact",
+              "value": "~$1,400",
+              "detail": "After overhead, fraud"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "content",
+      "headerColor": "green",
+      "content": {
+        "headerTitle": "Creating Your Giving Plan",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "infoCards": [
+              {
+                "title": "Step 1: Set Your Budget",
+                "color": "green",
+                "items": [
+                  "Determine what percentage of income to give",
+                  "Common targets: 1%, 3%, 5%, or 10%",
+                  "Factor in employer matching programs",
+                  "Consider monthly vs. annual giving"
+                ]
+              },
+              {
+                "title": "Step 3: Research & Select",
+                "color": "amber",
+                "items": [
+                  "Use watchdog sites to evaluate options",
+                  "Compare 3-5 charities in your cause area",
+                  "Apply the PACED model",
+                  "Focus on 2-3 organizations max"
+                ]
+              }
+            ]
+          },
+          "rightPanel": {
+            "infoCards": [
+              {
+                "title": "Step 2: Identify Your Causes",
+                "color": "blue",
+                "items": [
+                  "What issues matter most to you?",
+                  "Local vs. national vs. international impact?",
+                  "Prevention vs. treatment approaches?",
+                  "Direct service vs. advocacy vs. research?"
+                ]
+              },
+              {
+                "title": "Step 4: Track & Adjust",
+                "color": "green",
+                "items": [
+                  "Keep records for tax purposes",
+                  "Review impact reports annually",
+                  "Adjust giving as circumstances change",
+                  "Celebrate your impact!"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 16,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Beyond Financial Donations",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Other Ways to Make an Impact",
+          "bulletPoints": [
+            "<strong>Volunteer Time:</strong> Skills-based volunteering often has more impact than general help",
+            "<strong>In-Kind Donations:</strong> Goods, services, or professional expertise",
+            "<strong>Advocacy:</strong> Using your voice to raise awareness or influence policy",
+            "<strong>Peer Fundraising:</strong> Organizing drives or campaigns among friends/colleagues",
+            "<strong>Board Service:</strong> Joining a nonprofit board to provide governance and expertise",
+            "<strong>Social Media:</strong> Amplifying charity messages to your network"
+          ],
+          "keyPoint": "💡 For students and young adults with limited income, volunteer time and advocacy can be equally valuable as financial donations—especially when using specialized skills."
+        }
+      }
+    },
+    {
+      "number": 17,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": "How does intentional, researched giving (like Maya's approach) differ from reactive giving (like Jake's)?<br><br>What specific strategies could Jake adopt to increase the impact of his charitable donations?"
+      }
+    },
+    {
+      "number": 18,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "What causes are you most passionate about?<br><br>How might you incorporate charitable giving into your financial plan as your income grows—whether through money, time, or advocacy?"
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What is a 501(c)(3) organization, and why does this designation matter for donors?"
+            },
+            {
+              "number": 2,
+              "question": "Name three charity watchdog organizations and explain what information they provide."
+            },
+            {
+              "number": 3,
+              "question": "What are three red flags that might indicate a charity is ineffective or fraudulent?"
+            },
+            {
+              "number": 4,
+              "question": "How can the PACED decision model help you make more effective charitable giving choices?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Give Strategically",
+              "description": "Charitable giving should be part of your financial plan—set a budget, choose causes intentionally, and maximize impact."
+            },
+            {
+              "number": 2,
+              "title": "Research Before You Give",
+              "description": "Use charity watchdog sites to evaluate transparency, efficiency, and impact. Not all charities are equal."
+            },
+            {
+              "number": 3,
+              "title": "Watch for Red Flags",
+              "description": "High-pressure tactics, vague fund usage, and resistance to questions are warning signs of ineffective or fraudulent charities."
+            },
+            {
+              "number": 4,
+              "title": "Impact Beyond Money",
+              "description": "Volunteering, advocacy, and skills-based contributions can be as valuable as financial donations—especially for students."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 21,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Skill Builder: Charity Research Project",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📋",
+            "title": "Research & Compare",
+            "description": "Apply your knowledge by researching and evaluating real charitable organizations using the PACED decision model. This activity will help you develop the skills to make informed, impactful giving decisions throughout your life."
+          },
+          "steps": [
+            "Choose a cause area you care about",
+            "Identify 3 charities working on this issue",
+            "Research each using Charity Navigator/GuideStar",
+            "Create comparison chart with key metrics",
+            "Use PACED to select and justify your choice"
+          ]
+        }
+      }
+    },
+    {
+      "number": 22,
+      "type": "closing",
+      "content": {
+        "tagline": "Charitable Giving: Plan, Research & Maximize Your Impact",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved. | Combined Chapter LC-39"
+      }
+    }
+  ]
+}
