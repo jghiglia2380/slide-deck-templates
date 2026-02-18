@@ -1,8 +1,8 @@
 {
   "metadata": {
     "lChapter": "L-64",
-    "title": "",
-    "subtitle": "",
+    "title": "Risk and Return in Investing",
+    "subtitle": "Understanding, Measuring, and Managing Investment Risk",
     "totalSlides": 20,
     "hasStateVariables": false,
     "stateVariablesUsed": []
@@ -10,22 +10,26 @@
   "slides": [
     {
       "number": 1,
-      "type": "content",
-      "headerColor": "purple",
+      "type": "title",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Risk and Return in Investing",
+        "layout": "title-main",
+        "layoutData": {
+          "title": "Risk and Return in Investing",
+          "subtitle": "Understanding, Measuring, and Managing Investment Risk"
+        }
       }
     },
     {
       "number": 2,
-      "type": "content",
-      "headerColor": "purple",
+      "type": "hook",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "74% Gone in One Day",
+        "layout": "hook",
+        "layoutData": {
+          "scenario": "Marcus, 28, had carefully built $18,000 in a diversified index fund over three years. He then moved his entire portfolio into a single 'hot' biotech stock at $85/share. It climbed to $110—a 29% gain in two months. Then the company's drug failed clinical trials. The stock fell to $22 in a single day. Marcus's $18,000 became $5,976. He sold in panic. To recover his original amount, his remaining investment needs to grow 201%. Meanwhile, had he kept his index fund, the biotech's collapse would have affected only 0.1% of his portfolio.",
+          "question": "What is the difference between taking appropriate investment risk and gambling with money you can't afford to lose?"
+        }
       }
     },
     {
@@ -33,9 +37,37 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "What You'll Learn Today",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Analyze",
+              "description": "the fundamental relationship between investment risk and potential returns"
+            },
+            {
+              "number": 2,
+              "verb": "Evaluate",
+              "description": "different types of investment risk including systematic and unsystematic risk"
+            },
+            {
+              "number": 3,
+              "verb": "Calculate",
+              "description": "and interpret key risk metrics including standard deviation, beta, and Sharpe ratio"
+            },
+            {
+              "number": 4,
+              "verb": "Assess",
+              "description": "personal risk tolerance and match investments to individual risk profiles"
+            },
+            {
+              "number": 5,
+              "verb": "Create",
+              "description": "age-appropriate investment strategies that balance risk and return objectives"
+            }
+          ]
+        }
       }
     },
     {
@@ -43,19 +75,55 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Key Vocabulary: Risk Fundamentals",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Investment Risk",
+              "definition": "The possibility that an investment's actual return will differ from its expected return, including the potential for loss of some or all of the original investment.",
+              "example": "A stock expected to return 10% might actually return -30% in a bad year—that gap between expectation and reality is investment risk."
+            },
+            {
+              "term": "Risk-Return Tradeoff",
+              "definition": "The principle that potential return rises with an increase in risk; lower-risk investments offer more certain but lower returns, while higher-risk investments offer potentially higher returns with less certainty.",
+              "example": "A U.S. Treasury bond might return 3-4% with near-zero risk, while a diversified stock fund historically returns ~10% with significant year-to-year volatility."
+            },
+            {
+              "term": "Volatility",
+              "definition": "The degree of variation in an investment's price over time; high volatility means prices fluctuate dramatically, while low volatility indicates more stable, predictable prices.",
+              "example": "A stock that gained 45% one year and lost 38% the next is highly volatile; a bond fund that returns 3-5% consistently has low volatility."
+            }
+          ]
+        }
       }
     },
     {
       "number": 5,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "blue",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Key Vocabulary: Risk Types and Metrics",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Systematic Risk",
+              "definition": "Market-wide risk that affects all investments and cannot be eliminated through diversification; also called market risk or non-diversifiable risk.",
+              "example": "A recession, inflation spike, or interest rate change affects nearly all stocks and bonds—you can't diversify away from a market-wide downturn."
+            },
+            {
+              "term": "Unsystematic Risk",
+              "definition": "Investment-specific risk that can be reduced or eliminated through diversification; also called company-specific or diversifiable risk.",
+              "example": "Marcus's biotech stock crashing due to a failed drug trial is unsystematic risk—it only affected that company, not the whole market."
+            },
+            {
+              "term": "Beta",
+              "definition": "A measure of an investment's volatility relative to the overall market; beta of 1.0 moves with the market, above 1.0 means more volatile, below 1.0 means less volatile.",
+              "example": "A stock with beta 1.5 tends to rise 15% when the market rises 10%—and fall 15% when the market falls 10%."
+            }
+          ]
+        }
       }
     },
     {
@@ -63,9 +131,26 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "The Risk-Return Relationship",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Higher Returns Require Accepting Higher Risk",
+          "paragraphs": [
+            "The risk-return tradeoff is the foundation of modern investing. You cannot expect high returns without accepting higher risk—if a 'guaranteed' investment promised 20% annual returns, everyone would invest in it, driving the price up until returns fell to match its actual risk level.",
+            "Different asset classes have historically demonstrated clear risk-return patterns. The pattern is consistent: safety costs you return, and higher return requires accepting the possibility of significant loss."
+          ],
+          "bulletPoints": [
+            "Cash / savings accounts: 1-3% return, minimal risk — but inflation erodes purchasing power",
+            "Government bonds: 3-5% return, low default risk, but falls when interest rates rise",
+            "Corporate bonds: 4-7% depending on credit quality — default risk adds to return",
+            "Diversified stocks (S&P 500): ~10% average annually over a century, with severe year-to-year swings",
+            "Speculative stocks / crypto: Potential for 100%+ gains—and 75-95% losses",
+            "Past performance never guarantees future results—risk-return is about probabilities, not certainties"
+          ],
+          "keyPoint": {
+            "text": "The goal isn't to eliminate risk—that's neither possible nor desirable. It's to understand it, measure it, and take the right amount for your situation."
+          }
+        }
       }
     },
     {
@@ -73,9 +158,34 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "The Investment Risk-Return Spectrum",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "🛡️",
+            "title": "Lower Risk / Lower Return",
+            "items": [
+              "FDIC-insured savings: 2-4% APY, zero default risk",
+              "U.S. Treasury bonds: 3-5%, backed by federal government",
+              "Investment-grade corporate bonds: 4-7%, stable companies",
+              "Balanced fund (50/50 stocks/bonds): 6-7% avg, moderate volatility",
+              "Best for: short time horizons, capital preservation, retirement income",
+              "Downside: returns may not keep up with inflation over decades"
+            ]
+          },
+          "rightColumn": {
+            "icon": "📈",
+            "title": "Higher Risk / Higher Return",
+            "items": [
+              "Large-cap index fund: ~10% avg, -37% in worst year (2008)",
+              "Small-cap growth: ~12-13% avg, standard deviation ~28%",
+              "Emerging markets: higher growth potential, political and currency risk",
+              "Individual stocks: maximum upside—and potential total loss",
+              "Best for: long time horizons (20+ years), growth accumulation",
+              "Downside: may lose 30-50% in bad years; requires discipline to hold through crashes"
+            ]
+          }
+        }
       }
     },
     {
@@ -83,9 +193,47 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Systematic vs. Unsystematic Risk",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Two Fundamentally Different Risks",
+            "paragraphs": [
+              "Understanding which type of risk you're facing determines what to do about it. One type can be managed through portfolio construction; the other cannot."
+            ],
+            "bulletPoints": [
+              "Systematic risk: affects all markets — recession, inflation, rate changes, geopolitical crisis",
+              "You CANNOT diversify away systematic risk — it's the price of participating in markets",
+              "Unsystematic risk: specific to one company — CEO scandal, product failure, industry disruption",
+              "You CAN eliminate unsystematic risk through diversification across many companies",
+              "Holding 30-40 different stocks substantially reduces unsystematic risk",
+              "An index fund with 500+ companies has near-zero unsystematic risk"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "0.1%",
+                "label": "Impact on index fund if one company collapses (vs. 100% loss for undiversified investors)",
+                "color": "green"
+              },
+              {
+                "value": "-74%",
+                "label": "Marcus's loss from undiversified unsystematic risk in biotech stock",
+                "color": "red"
+              },
+              {
+                "value": "500+",
+                "label": "Companies in S&P 500 index fund — diversifies away nearly all unsystematic risk",
+                "color": "blue"
+              }
+            ],
+            "infoCard": {
+              "title": "Practical Implication",
+              "text": "Diversification eliminates unsystematic risk for free. You get the same expected returns of the market without any single company's failure devastating your portfolio. This is why index funds dominate professional recommendations."
+            }
+          }
+        }
       }
     },
     {
@@ -93,9 +241,25 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Measuring Risk: Standard Deviation and Beta",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Quantifying Risk Objectively",
+          "paragraphs": [
+            "Professional investors use quantitative tools to measure and compare risk objectively rather than relying on gut feelings. Standard deviation and beta are the two most fundamental risk metrics."
+          ],
+          "bulletPoints": [
+            "Standard deviation: measures how much returns typically vary from the average",
+            "Example: 10% average return, SD of 15% → two-thirds of years fall between -5% and +25%",
+            "Higher SD = more volatile and risky; lower SD = more predictable, less risky",
+            "Beta: measures sensitivity to overall market movements (market itself = 1.0)",
+            "Beta 1.5: moves 50% more than market (up 15% when market up 10%, down 15% when market down 10%)",
+            "Beta 0.7: less volatile than market (Treasury bonds often near beta 0)"
+          ],
+          "keyPoint": {
+            "text": "Standard deviation tells you how wild the ride will be. Beta tells you how closely tied the ride is to overall market movements. Both matter when choosing investments for your portfolio."
+          }
+        }
       }
     },
     {
@@ -103,9 +267,47 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "The Sharpe Ratio: Risk-Adjusted Return",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Comparing Investments on Equal Footing",
+            "paragraphs": [
+              "A 14% return sounds better than a 10% return—but only if the risk is comparable. The Sharpe ratio adjusts for risk, revealing which investment truly delivers better value per unit of uncertainty."
+            ],
+            "bulletPoints": [
+              "Formula: (Return − Risk-Free Rate) ÷ Standard Deviation",
+              "Risk-free rate: what you'd earn with zero risk (Treasury bill, ~2%)",
+              "Higher Sharpe ratio = more return per unit of risk taken",
+              "Fund A: 14% return, SD 28% → Sharpe = (14-2)/28 = 0.43",
+              "Fund B: 10% return, SD 15% → Sharpe = (10-2)/15 = 0.53",
+              "Fund B wins: better return per unit of risk despite lower headline return"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "0.53",
+                "label": "Jasmine's Fund B Sharpe ratio (vs. 0.43 for the higher-return Fund A)",
+                "color": "green"
+              },
+              {
+                "value": "4%",
+                "label": "Higher nominal return of Fund A—but worse risk-adjusted performance",
+                "color": "orange"
+              },
+              {
+                "value": "1.0+",
+                "label": "Sharpe ratio indicating excellent risk-adjusted performance",
+                "color": "blue"
+              }
+            ],
+            "infoCard": {
+              "title": "Why Sharpe Ratio Matters",
+              "text": "Jasmine chose Fund B's 10% return over Fund A's 14% because the Sharpe ratio revealed Fund B delivered more return per unit of risk. And Fund B's lower volatility made it easier to stay invested through bad years—which matters enormously in practice."
+            }
+          }
+        }
       }
     },
     {
@@ -113,9 +315,26 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "What Determines Your Risk Tolerance",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Three Factors Define Your Appropriate Risk Level",
+          "paragraphs": [
+            "Your appropriate level of investment risk depends on both objective factors (time horizon, finances) and subjective factors (temperament). Both matter equally—ignoring either leads to costly mistakes.",
+            "The critical insight: your risk tolerance should be determined by what you can actually handle, not what you theoretically should be able to handle. A conservative portfolio you maintain through crashes beats an aggressive one you panic-sell at the bottom."
+          ],
+          "bulletPoints": [
+            "Time horizon (MOST important): Retirement 40 years away? Accept high volatility. House down payment in 2 years? Accept almost none.",
+            "Stocks have NEVER had a negative return over any 20-year period since 1926—time heals volatility",
+            "Financial situation: Emergency fund, stable income, low debt → can accept more risk in investments",
+            "Emotional temperament: Can you stay calm watching a $50,000 portfolio drop to $35,000?",
+            "If market volatility causes panic-selling, you need a more conservative allocation—period",
+            "Honest self-assessment beats theoretical courage: 'What would I actually do if my portfolio fell 30%?'"
+          ],
+          "keyPoint": {
+            "text": "Emma chose the most aggressive fund because she has 40+ years. Her coworker at 58 chose the safest fund with 7 years to retirement. Same investment options—completely different correct answers based on time horizon."
+          }
+        }
       }
     },
     {
@@ -123,9 +342,47 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "The Cost of Under- and Over-Risk",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Two Costly Mistakes Young Investors Make",
+            "paragraphs": [
+              "Young adults typically make one of two mistakes: taking too much risk chasing exciting returns, or taking too little risk and leaving enormous wealth on the table."
+            ],
+            "bulletPoints": [
+              "TOO LITTLE risk: $500/month for 40 years at 2% (savings) = $366,000",
+              "APPROPRIATE risk: $500/month for 40 years at 8% (index fund) = $1,555,000",
+              "The difference: $1,189,000—four times more wealth—just from accepting market risk",
+              "TOO MUCH risk: 2021-2022 crypto crash—Bitcoin fell 77%, smaller coins -95%+",
+              "Dot-com bubble 2000: many tech stocks lost 80-90% permanently",
+              "Rule: only take risks you understand and that you can afford to lose"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$1.55M",
+                "label": "$500/month at 8% for 40 years (diversified stock portfolio)",
+                "color": "green"
+              },
+              {
+                "value": "$366K",
+                "label": "$500/month at 2% for 40 years (ultra-safe savings only)",
+                "color": "orange"
+              },
+              {
+                "value": "$1.19M",
+                "label": "Extra wealth from taking appropriate (not excessive) risk",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Key Insight",
+              "text": "Risk-avoidance isn't safe—it guarantees falling behind inflation and missing compound growth. The appropriate level of risk, consistently maintained, produces dramatically better outcomes than either extreme."
+            }
+          }
+        }
       }
     },
     {
@@ -133,9 +390,37 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Real Scenario: Emma's Age-Appropriate Strategy",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "🌱",
+            "name": "Emma, 24 — Choosing Maximum Risk for Maximum Time Horizon",
+            "paragraphs": [
+              "Emma's 401k offered three options: stable value (2.5%), balanced fund (6%), and aggressive growth stock fund (10% historically, years with 20%+ losses). Her 58-year-old coworker Sarah chose the stable value fund—retiring in 7 years, she can't risk a market crash. Emma chose the aggressive growth fund with 40+ years to retirement. She calculated: over 40 years, $300/month would grow to ~$227,000 at 2.5% vs. ~$1,902,000 at 10%—a $1.67 million difference from choosing the age-appropriate risk level."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "positive",
+              "label": "Long-Term Projection",
+              "value": "~$1.9M vs. $227K",
+              "detail": "The 7.5% return difference between aggressive and stable investment, compounded over 40 years, produces nearly 9x more wealth"
+            },
+            {
+              "type": "positive",
+              "label": "Her Commitment",
+              "value": "Never check during downturns",
+              "detail": "She committed to continuing contributions automatically regardless of market conditions, knowing buying during crashes actually benefits long-term results"
+            },
+            {
+              "type": "warning",
+              "label": "The Requirement",
+              "value": "40+ years of discipline",
+              "detail": "This strategy only works if she maintains it through multiple 20-30% market crashes—the reason emotional temperament matters as much as math"
+            }
+          ]
+        }
       }
     },
     {
@@ -143,29 +428,73 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Real Scenario: Jasmine's Risk-Adjusted Decision",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "⚖️",
+            "name": "Jasmine, 30 — Choosing the Better Risk-Adjusted Fund",
+            "paragraphs": [
+              "Jasmine compared two funds: Fund A (14% avg return, SD 28%) and Fund B (10% avg return, SD 15%). Fund A looks better at first—4% more return! But the Sharpe ratios told a different story: Fund A = 0.43, Fund B = 0.53. Fund B delivered better return per unit of risk. Fund A's year-by-year performance showed -38% in one year; Fund B's worst was -18%. Jasmine chose Fund B, recognizing that Fund A's extreme volatility might cause her to panic-sell and miss the very gains she was seeking."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "positive",
+              "label": "Projected Growth",
+              "value": "$304,000 vs. $380,000",
+              "detail": "Fund A's theoretical advantage requires surviving years like -38%—Jasmine judged the behavioral risk of panic-selling too high"
+            },
+            {
+              "type": "positive",
+              "label": "Sharpe Comparison",
+              "value": "0.53 beats 0.43",
+              "detail": "Better risk-adjusted return: Fund B delivers more return per unit of volatility endured"
+            },
+            {
+              "type": "warning",
+              "label": "The Key Insight",
+              "value": "Theoretical returns assume discipline",
+              "detail": "Fund A's 14% average means nothing if volatility causes panic-selling at the worst times. The fund you can actually hold through volatility produces better real-world results."
+            }
+          ]
+        }
       }
     },
     {
       "number": 15,
-      "type": "content",
-      "headerColor": "purple",
+      "type": "discussion",
+      "variant": "teal",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Discussion: Your Volatility Tolerance Test",
+        "layout": "discussion",
+        "layoutData": {
+          "prompt": "You've invested $10,000 in a diversified stock index fund. Six months later, a market correction drops it to $7,000—you've lost $3,000 (30%). This is consistent with historical market volatility for stock portfolios.",
+          "questions": [
+            "Be honest: what would you actually do—sell, hold, or invest more?",
+            "What does your honest answer reveal about your actual (not theoretical) risk tolerance?",
+            "If your answer is 'sell,' what investment allocation might be more appropriate for you?",
+            "How would knowing you have 40 years before needing this money change your reaction?"
+          ]
+        }
       }
     },
     {
       "number": 16,
-      "type": "content",
-      "headerColor": "purple",
+      "type": "discussion",
+      "variant": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Discussion: Applying Risk Principles",
+        "layout": "discussion",
+        "layoutData": {
+          "prompt": "Consider two real-world situations: (1) You're 22, just started your first job, and have $5,000 to invest for retirement. (2) Your parents, both 60, are asking you about their retirement savings that need to last 25+ more years.",
+          "questions": [
+            "What risk level would you recommend for each situation and why?",
+            "How does the meaning of 'I can't afford to lose this money' differ between a 22-year-old and a 60-year-old?",
+            "Why might a 65-year-old still need 50%+ stocks, even though they've 'retired'?",
+            "What's the most important lesson from Marcus's biotech stock experience—and how would you apply it?"
+          ]
+        }
       }
     },
     {
@@ -173,9 +502,36 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "Explain the risk-return tradeoff. Why can't an investment offer both high returns AND low risk?"
+            },
+            {
+              "number": 2,
+              "question": "What is the difference between systematic and unsystematic risk? Which type can diversification eliminate?"
+            },
+            {
+              "number": 3,
+              "question": "If a stock has a standard deviation of 25% and an average return of 12%, what does this tell you about likely outcomes in any given year?"
+            },
+            {
+              "number": 4,
+              "question": "A stock has a beta of 1.8. If the market falls 10%, how much would this stock likely fall?"
+            },
+            {
+              "number": 5,
+              "question": "Calculate the Sharpe ratio for an investment returning 11% with a standard deviation of 18% and a risk-free rate of 3%."
+            },
+            {
+              "number": 6,
+              "question": "Why is 'emotional temperament' a legitimate factor in investment risk decisions, not just a weakness to overcome?"
+            }
+          ]
+        }
       }
     },
     {
@@ -183,9 +539,42 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Risk and Return Are Inseparably Linked",
+              "description": "Higher potential returns always come with higher risk. 'High return, low risk' promises are red flags. The risk-return tradeoff is a law of markets, not a guideline."
+            },
+            {
+              "number": 2,
+              "title": "Diversification Eliminates the Risk You Don't Get Paid For",
+              "description": "Unsystematic (company-specific) risk can be eliminated through diversification at no cost to expected returns. Only systematic (market-wide) risk provides a return premium."
+            },
+            {
+              "number": 3,
+              "title": "Use Metrics to Compare Objectively",
+              "description": "Standard deviation measures volatility. Beta measures market sensitivity. Sharpe ratio reveals true risk-adjusted performance—allowing apples-to-apples comparisons between investments."
+            },
+            {
+              "number": 4,
+              "title": "Time Horizon Is the Most Important Risk Factor",
+              "description": "Stocks have never lost money over any 20-year period historically. A 25-year-old accepting market volatility for 40 years can generate 4-9x more wealth than choosing 'safe' options."
+            },
+            {
+              "number": 5,
+              "title": "Be Honest About Your Emotional Tolerance",
+              "description": "The investment you'll actually hold through a 30% crash beats the theoretically better investment you'll panic-sell at the bottom. Honest self-assessment leads to better real-world outcomes."
+            },
+            {
+              "number": 6,
+              "title": "Appropriate Risk Is Not Optional",
+              "description": "Too little risk guarantees inflation erosion and missed growth. Too much risk courts catastrophic loss. Finding your appropriate risk level—and maintaining it—is the foundational skill of investing."
+            }
+          ]
+        }
       }
     },
     {
@@ -193,19 +582,49 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Skill Builder: Risk-Return Investment Analyzer",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📉",
+            "title": "Risk-Return Investment Analyzer Tool",
+            "description": "Explore six investment options ranging from savings accounts to emerging markets. Calculate risk metrics, build portfolios for three investor profiles, and discover how time horizon affects appropriate risk levels."
+          },
+          "steps": [
+            {
+              "number": 1,
+              "title": "Explore Six Investment Options",
+              "description": "Analyze high-yield savings (2%), short-term bonds (3.5%), balanced fund (7%), large-cap index (10%), small-cap growth (13%), and emerging markets (15%) across return, volatility, beta, and Sharpe ratio."
+            },
+            {
+              "number": 2,
+              "title": "Build Portfolios for Three Profiles",
+              "description": "Design appropriate portfolios for: Conservative (age 60, retiring in 5 years), Moderate (age 40, 25 years to retirement), and Aggressive (age 25, 40 years to retirement)."
+            },
+            {
+              "number": 3,
+              "title": "Analyze Your Portfolio Metrics",
+              "description": "For each portfolio: calculate expected return, portfolio standard deviation, portfolio beta, Sharpe ratio, projected growth of $10,000 over the time horizon, and best/worst-case scenarios."
+            },
+            {
+              "number": 4,
+              "title": "Assess Your Personal Risk Tolerance",
+              "description": "Complete the risk tolerance questionnaire covering time horizon, financial stability, and emotional temperament. Compare your actual tolerance to your theoretical allocation choices."
+            }
+          ]
+        }
       }
     },
     {
       "number": 20,
-      "type": "content",
-      "headerColor": "purple",
+      "type": "closing",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Risk Is Not Your Enemy—Misunderstood Risk Is",
+        "layout": "closing",
+        "layoutData": {
+          "message": "Investment risk is the mechanism through which long-term wealth is built. Understanding risk—measuring it with standard deviation and beta, evaluating it with Sharpe ratio, and matching it to your time horizon and temperament—transforms risk from a threat into a tool. The investor who understands these principles takes the right amount of risk, maintains it through volatility, and builds dramatically more wealth than either the fearful investor who avoids all risk or the reckless investor who takes too much.",
+          "callToAction": "Before your next investment decision, ask three questions: What is this investment's volatility? How does this fit my time horizon? Can I honestly handle watching this drop 30% without selling? Your honest answers lead to better decisions than any prediction about where markets are heading."
+        }
       }
     }
   ]

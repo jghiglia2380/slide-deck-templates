@@ -1,11 +1,553 @@
 {
   "metadata": {
     "lChapter": "L-53",
-    "title": "",
-    "subtitle": "",
-    "totalSlides": 0,
-    "hasStateVariables": false,
-    "stateVariablesUsed": []
+    "title": "Fiscal and Monetary Policy",
+    "subtitle": "Understand how government spending and Federal Reserve decisions shape your economic life",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
   },
-  "slides": []
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Fiscal and Monetary Policy",
+        "titleSize": "large",
+        "subtitle": "Understand how government spending and Federal Reserve decisions directly shape your economic life in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": "When the Federal Reserve raises interest rates by 1%, <em>your future car loan costs $3,000 more</em>.<br><br>How do macroeconomic policy decisions — made in Washington and by a dozen people on a committee — ripple through to your wallet in {{STATE_NAME}}?"
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Distinguish",
+              "description": "Fiscal policy (government spending and taxes) from monetary policy (Federal Reserve and interest rates) and explain who controls each"
+            },
+            {
+              "number": 2,
+              "verb": "Analyze",
+              "description": "How expansionary and contractionary fiscal and monetary tools affect GDP, employment, and inflation"
+            },
+            {
+              "number": 3,
+              "verb": "Explain",
+              "description": "How the Federal Reserve uses the federal funds rate to manage inflation and support maximum employment"
+            },
+            {
+              "number": 4,
+              "verb": "Connect",
+              "description": "Macroeconomic policy decisions to personal financial outcomes including mortgage rates, job prospects, and prices in {{STATE_NAME}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Fiscal Policy",
+              "definition": "Government decisions about spending and taxation used to influence the economy — controlled by Congress and the President, funded through the federal budget",
+              "example": "During the COVID-19 recession, Congress passed stimulus checks (spending) and payroll tax deferrals (tax cuts) to boost economic activity"
+            },
+            {
+              "term": "Monetary Policy",
+              "definition": "Federal Reserve decisions about the money supply and interest rates used to control inflation and support employment — independent of elected government",
+              "example": "When inflation reached 9% in 2022, the Fed raised interest rates 11 times to slow borrowing and spending, reducing price pressures"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Federal Funds Rate",
+              "definition": "The interest rate at which banks lend money to each other overnight — set by the Federal Reserve and the benchmark for all other interest rates in the economy",
+              "example": "When the Fed raised the federal funds rate from 0% to 5.25% between 2022-2023, mortgage rates jumped from 3% to 7%, slowing home purchases nationwide"
+            },
+            {
+              "term": "Multiplier Effect",
+              "definition": "The phenomenon where an initial change in government spending or investment ripples through the economy, creating a larger total impact on GDP than the original amount",
+              "example": "A $1 billion government highway project pays construction workers, who spend at local businesses, who hire more staff — total economic impact may be $1.5-2 billion"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Fiscal vs. Monetary Policy",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "🏛️",
+            "title": "Fiscal Policy",
+            "items": [
+              "Controlled by — Congress and the President",
+              "Tools — Government spending and taxation",
+              "Goal — Stimulate growth or reduce deficits",
+              "Speed — Slow; requires legislation and political agreement",
+              "Examples: Stimulus checks, infrastructure bills, tax cuts, defense spending"
+            ]
+          },
+          "rightColumn": {
+            "icon": "🏦",
+            "title": "Monetary Policy",
+            "items": [
+              "Controlled by — Federal Reserve (independent central bank)",
+              "Tools — Federal funds rate and money supply",
+              "Goal — Control inflation and maximize employment",
+              "Speed — Fast; Fed can act at any scheduled meeting",
+              "Examples: Raising/lowering interest rates, quantitative easing"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Expansionary vs. Contractionary Policy",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Two Directions of Economic Policy",
+            "paragraphs": [
+              "Both fiscal and monetary policy can be used to stimulate a weak economy (expansionary) or cool down an overheating economy with too much inflation (contractionary)."
+            ],
+            "bulletPoints": [
+              "Expansionary Fiscal — Increase government spending or cut taxes to stimulate demand during recession",
+              "Contractionary Fiscal — Cut spending or raise taxes to reduce deficit and cool inflation",
+              "Expansionary Monetary — Lower interest rates or buy assets to encourage borrowing and spending",
+              "Contractionary Monetary — Raise interest rates to slow borrowing, reduce spending, and control inflation in {{STATE_NAME}} and nationwide"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "0%→5.25%",
+                "label": "Fed rate increase 2022-2023 — contractionary monetary policy to fight 9% inflation",
+                "color": "rose"
+              },
+              {
+                "value": "$5T+",
+                "label": "COVID stimulus spending — massive expansionary fiscal policy 2020-2021",
+                "color": "teal"
+              },
+              {
+                "value": "Dual",
+                "label": "Fed mandate — maximum employment AND stable prices (2% inflation target)",
+                "color": "purple"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "The Federal Reserve and You",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "How Fed Decisions Reach Your Wallet",
+          "paragraphs": [
+            "The Federal Reserve may seem distant, but its decisions directly affect the interest rates you pay on mortgages, car loans, credit cards, and student loans — and the job market you enter."
+          ],
+          "bulletPoints": [
+            "<strong>Mortgage Rates:</strong> A 1% Fed rate increase typically adds $150-$200/month to a $300,000 mortgage — deciding whether homeownership is affordable",
+            "<strong>Car Loans:</strong> Rising rates add thousands to total loan cost over a 5-year auto loan for {{STATE_NAME}} residents",
+            "<strong>Credit Cards:</strong> Most cards have variable rates tied to the Fed benchmark — your APR rises when the Fed raises rates",
+            "<strong>Savings Accounts:</strong> Fed rate hikes mean higher yields on savings — finally rewarding savers who kept money in the bank"
+          ],
+          "keyPoint": {
+            "text": "💡 In 2022-2023, the Fed raised rates by 5.25 percentage points. A $300K mortgage went from $1,265/month at 3% to $2,012/month at 7% — a $9,000 annual difference for homebuyers."
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "GDP — Measuring Economic Health",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Why GDP Matters for Your Future",
+            "paragraphs": [
+              "Gross Domestic Product (GDP) measures the total value of goods and services produced in the economy. GDP growth means more jobs and rising incomes — recession means layoffs and financial hardship."
+            ],
+            "bulletPoints": [
+              "GDP Growth — Economy expanding; businesses hire, wages rise, job market improves for new graduates",
+              "Recession — Two consecutive quarters of GDP decline; layoffs increase, job offers shrink, incomes stagnate",
+              "GDP per Capita — Total GDP divided by population; measures average living standard in {{STATE_NAME}} vs. other states",
+              "Fiscal Policy Target — Government spending and tax policy aim to stabilize GDP — prevent recessions and overheating"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "2–3%",
+                "label": "Healthy GDP growth rate — enough to create jobs without causing inflation",
+                "color": "teal"
+              },
+              {
+                "value": "-31.4%",
+                "label": "US GDP drop in Q2 2020 — worst single-quarter recession on record",
+                "color": "rose"
+              },
+              {
+                "value": "2%",
+                "label": "Federal Reserve target inflation rate — the 'sweet spot' for economic stability",
+                "color": "purple"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "The Policy Trade-off: Inflation vs. Unemployment",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The Fed's Impossible Balance",
+            "paragraphs": [
+              "The Federal Reserve faces a fundamental tension: policies that reduce unemployment often cause inflation, while policies that control inflation often increase unemployment. The Fed must balance both goals simultaneously."
+            ],
+            "bulletPoints": [
+              "Low Interest Rates — Boost borrowing, spending, and hiring; but if too low for too long, cause inflation",
+              "High Interest Rates — Slow borrowing and spending, reduce inflation; but also slow hiring and can cause recession",
+              "2022 Dilemma — Fed faced 9% inflation AND fear of causing recession with aggressive rate hikes",
+              "{{STATE_NAME}} Impact — Fed decisions affect your job market, mortgage availability, and small business conditions"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "9.1%",
+                "label": "US inflation peak in June 2022 — highest since 1981, forcing Fed action",
+                "color": "rose"
+              },
+              {
+                "value": "3.4%",
+                "label": "Unemployment rate in early 2023 despite aggressive rate hikes — soft landing achieved",
+                "color": "teal"
+              },
+              {
+                "value": "Lag",
+                "label": "Monetary policy takes 12-18 months to fully affect the economy — Fed must anticipate ahead",
+                "color": "purple"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Fiscal Policy Tools and Their Effects",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Government's Economic Toolkit",
+          "paragraphs": [
+            "Congress and the President have two main fiscal levers: government spending and taxation. Each affects the economy differently and comes with political trade-offs."
+          ],
+          "bulletPoints": [
+            "<strong>Increased Government Spending:</strong> Infrastructure, defense, or social programs inject money directly into the economy — creates jobs immediately, but increases the deficit",
+            "<strong>Tax Cuts:</strong> Leave more money with households and businesses to spend or invest — slower effect than direct spending, benefits concentrated in who receives cuts",
+            "<strong>Automatic Stabilizers:</strong> Programs like unemployment insurance and SNAP automatically increase spending during recessions without new legislation — cushion economic downturns in {{STATE_NAME}}",
+            "<strong>Budget Deficits:</strong> When spending exceeds tax revenue, government borrows — increasing national debt and potentially crowding out private investment"
+          ],
+          "keyPoint": {
+            "text": "💡 The 2020-2021 stimulus response totaled over $5 trillion — roughly $15,000 per American. This prevented a deep depression but contributed to 2022 inflation. Fiscal policy has real and lasting consequences."
+          }
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "{{STATE_NAME}}'s Economic Position",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "How National Policy Hits Home",
+            "paragraphs": [
+              "Federal fiscal and monetary policy affects every state differently based on its economic makeup. Understanding {{STATE_NAME}}'s economy helps you anticipate how national policy changes will affect your job prospects and finances."
+            ],
+            "bulletPoints": [
+              "Interest Rate Sensitivity — Industries like construction, real estate, and auto sales in {{STATE_NAME}} are directly hurt by rate hikes",
+              "Federal Spending Flows — Military bases, federal contracts, and infrastructure spending directly employ {{STATE_NAME}} workers and businesses",
+              "Unemployment Benefits — {{STATE_NAME}} administers federally-funded unemployment insurance, your safety net if you lose your job",
+              "State Budget — {{STATE_NAME}} has its own fiscal policy — state spending and taxes also shape your local economy and services"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "26 wks",
+                "label": "Maximum unemployment benefit duration available in {{STATE_NAME}} if you lose your job",
+                "color": "teal"
+              },
+              {
+                "value": "18 mo",
+                "label": "Typical delay before monetary policy fully affects employment and prices",
+                "color": "purple"
+              },
+              {
+                "value": "Both",
+                "label": "Federal AND state fiscal policy affect your life in {{STATE_NAME}} simultaneously",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "🏠",
+            "name": "Priya — Timing a Home Purchase Around Fed Policy",
+            "paragraphs": [
+              "Priya in {{STATE_NAME}} wanted to buy her first home. She was ready in early 2022 when 30-year mortgage rates were 3.2%. She delayed her purchase to save a larger down payment.",
+              "By late 2022, the Fed had raised rates aggressively and mortgage rates hit 7.1%. <span class=\"highlight-text\">Priya's monthly payment on a $300,000 home jumped from $1,295 to $2,013 — $718 more per month, $8,616 per year.</span> Monetary policy changed her homeownership calculation entirely."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Rate in 2022",
+              "value": "3.2%",
+              "detail": "Mortgage when she was ready"
+            },
+            {
+              "type": "after",
+              "label": "Rate Late 2022",
+              "value": "7.1%",
+              "detail": "After Fed rate hikes"
+            },
+            {
+              "type": "before",
+              "label": "Extra Annual Cost",
+              "value": "$8,616/yr",
+              "detail": "Due to Fed policy shift"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "💼",
+            "name": "Diego — Job Search During a Policy Shift",
+            "paragraphs": [
+              "Diego graduated college in {{STATE_NAME}} in May 2020 — directly into the COVID recession. Congress passed massive fiscal stimulus totaling $5 trillion over two years, which funded businesses and prevented mass bankruptcies.",
+              "<span class=\"highlight-text\">By the time Diego entered the job market in 2021, the stimulus-fueled recovery created near-record low unemployment</span> — Diego received three competitive offers. Expansionary fiscal policy directly shaped his career launch."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "Unemployment Rate",
+              "value": "3.5%",
+              "detail": "Recovery from 14.7% peak"
+            },
+            {
+              "type": "after",
+              "label": "Job Offers",
+              "value": "3 offers",
+              "detail": "Competitive market for graduates"
+            },
+            {
+              "type": "after",
+              "label": "Policy Impact",
+              "value": "$5T stimulus",
+              "detail": "Funded the recovery"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": "The Federal Reserve is intentionally designed to be independent from elected government — appointed officials, not politicians, set interest rates.<br><br>Why might this independence be important for economic stability? Are there any downsides to having major economic decisions made by unelected officials? How does this affect democratic accountability in {{STATE_NAME}} and across the US?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "Think about your own financial plans for the next 3-5 years — buying a car, renting or buying a home, starting a business, or changing jobs.<br><br>How might changes in interest rates or a recession affect those plans? What would you do differently if rates were to rise significantly or if the economy entered a recession? How does understanding fiscal and monetary policy change your financial planning in {{STATE_NAME}}?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What is the key difference between fiscal policy and monetary policy? Who controls each one?"
+            },
+            {
+              "number": 2,
+              "question": "If the economy enters a recession, what expansionary policies might the government and Federal Reserve use? What are the risks of each?"
+            },
+            {
+              "number": 3,
+              "question": "How does a Federal Reserve rate increase affect the interest rate on a new car loan or mortgage in {{STATE_NAME}}?"
+            },
+            {
+              "number": 4,
+              "question": "Why is the multiplier effect important for understanding the impact of government spending? Give a real-world example."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Two Policy Levers, Two Controllers",
+              "description": "Fiscal policy (Congress/President uses spending and taxes) and monetary policy (Federal Reserve uses interest rates) are the primary tools for managing the economy"
+            },
+            {
+              "number": 2,
+              "title": "Fed Rates Touch Your Wallet",
+              "description": "Federal Reserve rate decisions directly affect mortgage rates, car loans, credit card APRs, and savings yields for everyone in {{STATE_NAME}}"
+            },
+            {
+              "number": 3,
+              "title": "Expansionary vs. Contractionary",
+              "description": "Stimulative policies fight recessions but risk inflation; restrictive policies control inflation but risk higher unemployment — the Fed must balance both"
+            },
+            {
+              "number": 4,
+              "title": "Policy Has Personal Impact",
+              "description": "GDP growth, recession, inflation, and interest rates all affect your job prospects, purchasing power, and ability to borrow and build wealth in {{STATE_NAME}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Skill Builder: Policy Impact Simulator",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📈",
+            "title": "Fiscal and Monetary Policy Impact Simulator",
+            "description": "Simulate how fiscal and monetary policy decisions affect your personal finances and the {{STATE_NAME}} economy. Make policy choices and trace their effects through the economic chain to your daily financial life."
+          },
+          "steps": [
+            "Set the Scenario — Choose an economic condition: recession, high inflation, or balanced growth",
+            "Choose Fiscal Policy — Decide whether Congress should increase spending, cut taxes, reduce spending, or raise taxes — justify your choice",
+            "Choose Monetary Policy — Decide whether the Fed should raise rates, lower rates, or hold steady — explain the trade-offs",
+            "Trace the Impact — Follow your policy choices through GDP, employment, inflation, and interest rates to see their effect on {{STATE_NAME}}",
+            "Calculate Personal Effect — Determine how your chosen policies would affect your mortgage rate, job prospects, and cost of living"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Policy Decisions Shape Your Financial Future",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
 }

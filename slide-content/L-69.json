@@ -1,8 +1,8 @@
 {
   "metadata": {
     "lChapter": "L-69",
-    "title": "",
-    "subtitle": "",
+    "title": "Alternative Investments and Wealth Strategies",
+    "subtitle": "Real Estate, Commodities, Cryptocurrency, and Building Lasting Wealth",
     "totalSlides": 20,
     "hasStateVariables": false,
     "stateVariablesUsed": []
@@ -10,22 +10,26 @@
   "slides": [
     {
       "number": 1,
-      "type": "content",
-      "headerColor": "purple",
+      "type": "title",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Alternative Investments and Wealth Strategies",
+        "layout": "title-main",
+        "layoutData": {
+          "title": "Alternative Investments and Wealth Strategies",
+          "subtitle": "Real Estate, Commodities, Cryptocurrency, and Building Lasting Wealth"
+        }
       }
     },
     {
       "number": 2,
-      "type": "content",
-      "headerColor": "purple",
+      "type": "hook",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "The $123,000 Opportunity Cost",
+        "layout": "hook",
+        "layoutData": {
+          "scenario": "Alex, 22, invested his entire $8,000 savings in cryptocurrency after seeing social media influencers boasting about gains. The market crashed 70% in three months—$8,000 became $2,400. He sold in panic, locking in a $5,600 loss. The part that haunts him most: $8,000 invested at 22 in a diversified stock index fund, growing 7% annually until age 65, would have become approximately $123,000. By chasing speculation without a foundation, Alex lost both his savings and 43 years of compounding on that money.",
+          "question": "What financial foundation should someone establish BEFORE considering alternative or speculative investments?"
+        }
       }
     },
     {
@@ -33,9 +37,37 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "What You'll Learn Today",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Analyze",
+              "description": "the characteristics and benefits of alternative asset classes for portfolio diversification"
+            },
+            {
+              "number": 2,
+              "verb": "Evaluate",
+              "description": "the role of real estate investing in long-term wealth building strategies"
+            },
+            {
+              "number": 3,
+              "verb": "Compare",
+              "description": "liquidity, risk, and return profiles of commodities, precious metals, and cryptocurrency"
+            },
+            {
+              "number": 4,
+              "verb": "Assess",
+              "description": "how alternative investments provide correlation benefits and inflation protection"
+            },
+            {
+              "number": 5,
+              "verb": "Make",
+              "description": "informed decisions about incorporating alternative investments into personal financial plans"
+            }
+          ]
+        }
       }
     },
     {
@@ -43,19 +75,55 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Key Vocabulary: Alternatives Foundations",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Alternative Investments",
+              "definition": "Asset classes beyond traditional stocks and bonds, including real estate, commodities, precious metals, cryptocurrency, and private equity; typically less liquid and more complex.",
+              "example": "A rental property, a gold ETF, and a small Bitcoin position are all alternative investments—each with different risk profiles, liquidity, and wealth-building potential."
+            },
+            {
+              "term": "Correlation",
+              "definition": "The degree to which two investments move in the same direction; low correlation provides diversification benefits by reducing overall portfolio volatility.",
+              "example": "Gold sometimes rises when stocks fall (low/negative correlation), providing portfolio protection during market crashes—exactly why some investors hold small gold positions."
+            },
+            {
+              "term": "REIT (Real Estate Investment Trust)",
+              "definition": "A company that owns and operates income-producing real estate, required by law to distribute at least 90% of taxable income as dividends to shareholders.",
+              "example": "A REIT index fund might hold apartments, warehouses, hospitals, and data centers—providing real estate exposure without property management starting with as little as $100."
+            }
+          ]
+        }
       }
     },
     {
       "number": 5,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "blue",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Key Vocabulary: Asset Types",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Commodities",
+              "definition": "Physical goods traded on markets, including agricultural products (corn, wheat), energy (oil, natural gas), and metals (gold, silver, copper); usually accessed through ETFs rather than physical ownership.",
+              "example": "Rather than buying barrels of oil, an investor might buy an oil ETF—gaining exposure to oil price movements without storage challenges."
+            },
+            {
+              "term": "Cryptocurrency",
+              "definition": "Digital or virtual currency using cryptography for security, operating independently of central banks on decentralized blockchain networks; highly speculative and volatile.",
+              "example": "Bitcoin has crashed by 80%+ multiple times since its creation—someone who invested $8,000 in 2021 near the peak held $1,600 worth of Bitcoin one year later."
+            },
+            {
+              "term": "Inflation Hedge",
+              "definition": "An investment expected to maintain or increase in value during periods of rising prices, protecting purchasing power when the cost of living increases.",
+              "example": "Real estate rents and property values typically rise with inflation, making real estate a traditional inflation hedge compared to cash or fixed-rate bonds."
+            }
+          ]
+        }
       }
     },
     {
@@ -63,9 +131,26 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Alternative Investments: The Role They Play",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Different—Not Necessarily Better or Worse",
+          "paragraphs": [
+            "Alternative investments aren't upgrades to stocks and bonds—they're simply different. Their primary value lies in low correlation with traditional markets (providing diversification), potential inflation protection, and access to return sources unavailable through standard index funds.",
+            "For most young investors, traditional stocks and bonds should form the foundation of wealth-building, with alternatives playing a supplementary role—and only after establishing emergency savings and consistent retirement contributions."
+          ],
+          "bulletPoints": [
+            "Low correlation: alternatives often move differently from stocks, smoothing overall portfolio volatility",
+            "Inflation protection: real estate and commodities often rise with inflation, protecting purchasing power",
+            "Income potential: REITs pay 90%+ of income as dividends; rental properties generate monthly cash flow",
+            "Diversification limit: in severe crises, many 'uncorrelated' assets fall together anyway",
+            "Opportunity cost: every dollar in speculative alternatives is a dollar not compounding in proven investments",
+            "Appropriate allocation: most advisors recommend no more than 10-20% total in alternatives"
+          ],
+          "keyPoint": {
+            "text": "Foundation first: emergency fund + retirement contributions in traditional index funds should be fully established BEFORE allocating to alternatives. Jordan's success came from having the foundation secure; Alex's loss came from skipping it."
+          }
+        }
       }
     },
     {
@@ -73,9 +158,36 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Traditional vs. Alternative Investments",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "📊",
+            "title": "Traditional Investments",
+            "items": [
+              "Highly liquid: sell stocks or bonds in seconds",
+              "Well-regulated and transparent: robust disclosure requirements",
+              "Easily divisible: invest any amount via fractional shares",
+              "Low cost: index funds charge 0.03–0.10% annually",
+              "Historical data: 100+ years of performance across all markets",
+              "Best for: core wealth-building, retirement accounts",
+              "Limitation: limited inflation protection; all affected by market downturns"
+            ]
+          },
+          "rightColumn": {
+            "icon": "🏗️",
+            "title": "Alternative Investments",
+            "items": [
+              "Illiquid: real estate takes months to sell; private equity locks for years",
+              "Less regulated: more complexity, opacity, and potential for fraud",
+              "Often require large minimums: $25,000-$100,000 for private equity",
+              "Higher costs: management fees plus performance fees common",
+              "Less historical data: crypto only ~15 years; outcomes uncertain",
+              "Best for: diversification supplement after foundation is built",
+              "Advantage: potential low correlation and inflation protection"
+            ]
+          }
+        }
       }
     },
     {
@@ -83,9 +195,47 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Real Estate: Two Paths to Ownership",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Direct Property vs. REITs",
+            "paragraphs": [
+              "Real estate is one of the most established alternative investments. Both direct ownership and REITs provide exposure to real estate returns—with dramatically different requirements."
+            ],
+            "bulletPoints": [
+              "Direct rental property: requires $40,000-$75,000 down payment on typical property",
+              "Monthly cash flow after expenses often modest ($200-$600/month initially)",
+              "Appreciation potential: property values and rents typically rise with inflation",
+              "Illiquid: takes months to sell; concentrated in single property and location",
+              "House-hacking: live in one unit, rent others—reduces personal housing cost dramatically",
+              "REITs: any dollar amount, instant liquidity, professional management, no landlord duties"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$200",
+                "label": "Maria's monthly housing cost (vs. $1,000 rent) after house-hacking a duplex",
+                "color": "green"
+              },
+              {
+                "value": "$115K",
+                "label": "Maria's equity after 5 years from appreciation and mortgage paydown",
+                "color": "blue"
+              },
+              {
+                "value": "90%",
+                "label": "Minimum percentage of taxable income REITs must distribute as dividends",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Real Estate Inflation Protection",
+              "text": "Rents and property values typically rise with inflation over time. A $1,500/month rental today may command $2,000/month in 10 years, while the fixed mortgage payment stays the same—creating growing cash flow."
+            }
+          }
+        }
       }
     },
     {
@@ -93,9 +243,26 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Commodities and Precious Metals",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Physical Assets With Different Economic Drivers",
+          "paragraphs": [
+            "Commodities—oil, agricultural products, metals—are physical goods traded on markets. Precious metals like gold and silver are the most commonly held commodities, valued for their historical role as inflation hedges and safe-haven assets during economic turmoil.",
+            "Gold's appeal: a $10,000 investment in gold in 2000 was worth roughly $50,000 today, though with extreme volatility along the way. From 2011-2015, gold fell 45% from peak to trough. Gold generates no income—no dividends, no interest—so its only return is price appreciation (or depreciation)."
+          ],
+          "bulletPoints": [
+            "Gold rises during uncertainty: stock crashes, high inflation, currency weakness",
+            "Silver combines safe-haven characteristics with industrial demand (electronics, solar panels)",
+            "Commodity ETFs: most practical way to invest—no physical storage required",
+            "Physical precious metals: storage and insurance costs add to total expense",
+            "Commodity futures: complex, leveraged, not suitable for beginning investors",
+            "Appropriate allocation: 5-10% maximum; purpose is diversification and inflation hedge, not growth"
+          ],
+          "keyPoint": {
+            "text": "Jordan allocated 3% to a gold ETF as an inflation hedge—small enough that a 45% gold decline would barely affect the total portfolio, but meaningful enough to provide diversification benefit during stock market stress."
+          }
+        }
       }
     },
     {
@@ -103,9 +270,47 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Cryptocurrency: Speculative Digital Asset",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "What Makes Crypto Different",
+            "paragraphs": [
+              "Cryptocurrency operates on blockchain technology—decentralized ledgers without central bank control. Bitcoin is capped at 21 million coins; proponents argue scarcity creates value similar to gold."
+            ],
+            "bulletPoints": [
+              "Extreme volatility: daily swings of 10-20% are common",
+              "Bitcoin has crashed 80%+ multiple times in its history",
+              "No intrinsic value: no cash flows, no earnings, no dividends",
+              "Security risks: exchange hacks, lost passwords mean permanent loss",
+              "Regulatory uncertainty: governments still developing crypto policies",
+              "Early investors: $1,000 in Bitcoin in 2013 could be worth $100,000+, but timing is everything"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "1-5%",
+                "label": "Maximum cryptocurrency allocation recommended by most financial advisors",
+                "color": "orange"
+              },
+              {
+                "value": "70%",
+                "label": "Alex's cryptocurrency loss in three months (from $8,000 to $2,400)",
+                "color": "red"
+              },
+              {
+                "value": "$123K",
+                "label": "What Alex's $8,000 could have grown to at 7% for 43 years in an index fund",
+                "color": "blue"
+              }
+            ],
+            "infoCard": {
+              "title": "The Key Rule",
+              "text": "Only invest in cryptocurrency with money you can afford to lose completely. Never invest emergency savings or retirement funds. Jordan's $300 crypto allocation was money explicitly designated as 'I can lose this entirely and still be fine.'"
+            }
+          }
+        }
       }
     },
     {
@@ -113,9 +318,26 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Private Equity and Accredited Investors",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Access to Non-Public Investments",
+          "paragraphs": [
+            "Private equity refers to investments in companies not publicly traded on stock exchanges—venture capital funding startups, private equity funds buying established private companies, or private real estate deals. Historically accessible only to accredited investors ($200,000+ income or $1,000,000+ net worth).",
+            "Recent crowdfunding platforms have lowered minimums to $500-$1,000 for real estate or startup investments, but fundamental challenges remain: illiquidity (capital locked for years), opacity, high fees (typically 2% management + 20% of profits), and potential for total loss."
+          ],
+          "bulletPoints": [
+            "Accredited investor threshold: $200,000+ annual income OR $1M+ net worth (excluding primary home)",
+            "Minimum investments: $25,000-$100,000+ for traditional private equity funds",
+            "Capital lockup: often 5-10 years with no liquidity before fund winds down",
+            "High fees: 2% + 20% (called '2-and-20') significantly reduces net returns",
+            "Crowdfunding alternative: real estate platforms with $500-$1,000 minimums—still illiquid and high risk",
+            "For young investors: build liquid, tax-advantaged index fund wealth FIRST before private investments"
+          ],
+          "keyPoint": {
+            "text": "The primary advantage of private equity is access to return sources unavailable in public markets. But the disadvantages—illiquidity, opacity, high fees, and minimum wealth requirements—make it inappropriate for most investors who haven't established a strong traditional investment foundation."
+          }
+        }
       }
     },
     {
@@ -123,9 +345,47 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Foundation First: The Opportunity Cost",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "What Must Come Before Alternatives",
+            "paragraphs": [
+              "Every dollar allocated to speculative alternatives is a dollar not building proven long-term wealth. The opportunity cost is real—and compounds over decades."
+            ],
+            "bulletPoints": [
+              "Step 1: Build 3-6 months of emergency savings in a high-yield savings account",
+              "Step 2: Maximize employer 401k match (free money you're leaving on the table otherwise)",
+              "Step 3: Contribute to Roth IRA or traditional IRA for tax-advantaged growth",
+              "Step 4: Maintain 80-90% of investments in diversified index funds",
+              "Only then: consider 5-10% alternative allocation if aligned with goals",
+              "Never: invest emergency savings or retirement funds in speculative assets"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$8K",
+                "label": "Alex's savings invested in crypto (his entire emergency fund)",
+                "color": "red"
+              },
+              {
+                "value": "$123K",
+                "label": "Value at age 65 if that $8,000 had compounded at 7% for 43 years",
+                "color": "green"
+              },
+              {
+                "value": "10-20%",
+                "label": "Maximum alternative investment allocation most advisors recommend",
+                "color": "blue"
+              }
+            ],
+            "infoCard": {
+              "title": "FOMO vs. Foundation",
+              "text": "Social media shows crypto millionaires; it doesn't show the thousands who lost everything. Successful investing is typically boring, consistent strategy—not chasing the latest trend. Jordan's disciplined approach built $42,000 in 5 years; Alex's speculation left him starting over."
+            }
+          }
+        }
       }
     },
     {
@@ -133,9 +393,37 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Real Scenario: Maria's House-Hack",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "🏘️",
+            "name": "Maria, 28 — Building Wealth While Solving Her Housing Problem",
+            "paragraphs": [
+              "Maria had $45,000 saved. Instead of continuing to rent at $1,000/month, she bought a $220,000 duplex with $44,000 down. She lived in one unit and rented the other for $1,200/month—covering 86% of her $1,400 mortgage, tax, and insurance payment. Her personal housing cost fell to just $200/month. Over 5 years, she saved $48,000 (the difference between her old $1,000 rent and her $200 housing cost). The property appreciated to $260,000 and her mortgage fell to $145,000—giving her $115,000 in equity."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "positive",
+              "label": "Housing Cost Reduction",
+              "value": "$200/month (was $1,000)",
+              "detail": "Tenant covered 86% of her housing expenses while she built equity—real estate solved both her housing and wealth-building goals simultaneously"
+            },
+            {
+              "type": "positive",
+              "label": "Equity Built in 5 Years",
+              "value": "$115,000",
+              "detail": "Combination of appreciation ($40,000) and mortgage paydown ($75,000 in equity) created platform for larger investment"
+            },
+            {
+              "type": "warning",
+              "label": "Requirements",
+              "value": "Capital + management tolerance",
+              "detail": "Needed $44,000 down payment and willingness to be a landlord. Not appropriate for everyone—property management is real work"
+            }
+          ]
+        }
       }
     },
     {
@@ -143,29 +431,73 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Real Scenario: Jordan's Disciplined Approach",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "⚖️",
+            "name": "Jordan, 25 — Alternatives After the Foundation Was Secure",
+            "paragraphs": [
+              "Jordan had $10,000 emergency savings and was contributing 15% to retirement in low-cost index funds. Only then did Jordan add alternatives: 5% REIT index fund ($800), 3% gold ETF ($500), and 2% cryptocurrency ($300). Jordan established rules: never add to alternatives until they fall below target due to core portfolio growth; rebalance annually, redirecting alternative profits to core holdings; never chase trends. Over 5 years, the core portfolio grew from $15,000 to $42,000. Crypto swung wildly ($2,400 peak to $600 trough). But the foundation held."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "positive",
+              "label": "Core Portfolio Growth",
+              "value": "$15K → $42K",
+              "detail": "The 80%+ invested in traditional index funds drove the real wealth accumulation over 5 years"
+            },
+            {
+              "type": "warning",
+              "label": "Crypto Volatility",
+              "value": "$300 → $600 → $250",
+              "detail": "Cryptocurrency swung wildly—but Jordan's strict 2% cap meant this had minimal impact on total portfolio"
+            },
+            {
+              "type": "positive",
+              "label": "Key Success Factor",
+              "value": "Foundation was secure first",
+              "detail": "Jordan's rules prevented chasing trends. The core foundation grew consistently while alternatives provided diversification without dominating the strategy"
+            }
+          ]
+        }
       }
     },
     {
       "number": 15,
-      "type": "content",
-      "headerColor": "purple",
+      "type": "discussion",
+      "variant": "teal",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Discussion: FOMO vs. Foundation",
+        "layout": "discussion",
+        "layoutData": {
+          "prompt": "You have $5,000 in savings. Your friends are posting about cryptocurrency gains and trying to convince you to invest. Meanwhile, you have no employer 401k match claimed, no Roth IRA started, and only $1,500 in emergency savings.",
+          "questions": [
+            "In what order should these financial priorities be addressed, and why?",
+            "How would Alex's story have been different if he'd had a financial foundation before investing in crypto?",
+            "What psychological factors make people skip the foundation and jump to speculative investments?",
+            "At what point in Jordan's financial journey did alternatives become appropriate?"
+          ]
+        }
       }
     },
     {
       "number": 16,
-      "type": "content",
-      "headerColor": "purple",
+      "type": "discussion",
+      "variant": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Discussion: Your Alternative Investment Plan",
+        "layout": "discussion",
+        "layoutData": {
+          "prompt": "Imagine you have a solid financial foundation: 6-month emergency fund, maxing your Roth IRA in index funds, and 10% of your paycheck going to a 401k. You have an extra $2,000 to consider for alternative investments.",
+          "questions": [
+            "Which alternatives, if any, would you consider—and what percentage of total investments would each represent?",
+            "What rules would you establish to prevent emotional decisions (like Jordan's 'never add to alternatives until they fall below target')?",
+            "How would you respond emotionally if your alternative investment dropped 50%?",
+            "Is there any alternative investment from today's lesson that genuinely interests you beyond speculation? What would you need to know before investing?"
+          ]
+        }
       }
     },
     {
@@ -173,9 +505,36 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What is correlation in the context of investing, and why does low correlation between assets provide diversification benefits?"
+            },
+            {
+              "number": 2,
+              "question": "Explain house-hacking as a real estate investment strategy and what financial requirements it typically involves."
+            },
+            {
+              "number": 3,
+              "question": "Why is gold considered an inflation hedge, and what is a major downside of gold as an investment compared to stocks?"
+            },
+            {
+              "number": 4,
+              "question": "What financial foundation should be established BEFORE allocating any money to speculative alternative investments?"
+            },
+            {
+              "number": 5,
+              "question": "What is an accredited investor and what investment opportunities become available at that threshold?"
+            },
+            {
+              "number": 6,
+              "question": "Calculate the opportunity cost: $5,000 invested at age 22 in cryptocurrency that goes to $0 vs. the same amount in an index fund at 7% for 43 years."
+            }
+          ]
+        }
       }
     },
     {
@@ -183,9 +542,42 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Foundation Before Alternatives",
+              "description": "Emergency savings + retirement contributions in traditional index funds must be established before any alternative investment allocation. Alex's mistake was skipping this entirely."
+            },
+            {
+              "number": 2,
+              "title": "Alternatives Diversify—They Don't Replace",
+              "description": "Low correlation with stocks is the primary benefit of alternatives. They supplement a traditional portfolio; they should never be the foundation of one."
+            },
+            {
+              "number": 3,
+              "title": "Real Estate Offers Multiple Wealth Paths",
+              "description": "Direct ownership (especially house-hacking), REITs, and crowdfunding platforms each offer real estate exposure with different capital requirements, management demands, and risk profiles."
+            },
+            {
+              "number": 4,
+              "title": "Commodities Hedge Inflation—Not Growth",
+              "description": "Gold and commodities provide inflation protection and crisis diversification, but pay no income and underperform stocks over decades. Keep allocations small (5-10% max)."
+            },
+            {
+              "number": 5,
+              "title": "Cryptocurrency Is Speculation, Not Strategy",
+              "description": "Maximum 1-5% of portfolio, only with money you can afford to lose completely. Never invest emergency savings in crypto. The opportunity cost of losing it is enormous."
+            },
+            {
+              "number": 6,
+              "title": "Opportunity Cost Is Real and Compounds",
+              "description": "Every dollar in speculative alternatives that goes to zero represents decades of potential compound growth lost. Disciplined consistency in proven strategies outperforms speculation over most investing lifetimes."
+            }
+          ]
+        }
       }
     },
     {
@@ -193,19 +585,49 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Skill Builder: Alternative Investment Portfolio Analyzer",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "🔍",
+            "title": "Alternative Investment Portfolio Analyzer",
+            "description": "Start with a baseline traditional portfolio and test how adding different alternative allocations changes portfolio risk, return, and performance across different market conditions."
+          },
+          "steps": [
+            {
+              "number": 1,
+              "title": "Establish the Baseline",
+              "description": "Start with $10,000: 100% traditional index funds (stocks and bonds). Review baseline metrics: expected return, volatility, and correlation structure."
+            },
+            {
+              "number": 2,
+              "title": "Test Four Alternative Scenarios",
+              "description": "Add: A) 10% REITs, B) 5% gold/precious metals, C) 5% cryptocurrency, D) balanced 10% REITs + 5% commodities + 2% crypto. For each: how does correlation, return, and volatility change?"
+            },
+            {
+              "number": 3,
+              "title": "Stress Test Across Market Conditions",
+              "description": "Model each portfolio through bull market, bear market, and high inflation scenarios. Which alternatives provided diversification benefit? Which increased risk without compensation?"
+            },
+            {
+              "number": 4,
+              "title": "Design Your Personal Allocation",
+              "description": "For your current financial situation: What foundation do you need to build first? If you had a solid foundation, which alternatives would you choose, at what percentages, and why?"
+            }
+          ]
+        }
       }
     },
     {
       "number": 20,
-      "type": "content",
-      "headerColor": "purple",
+      "type": "closing",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "The Path to Lasting Wealth",
+        "layout": "closing",
+        "layoutData": {
+          "message": "The path to financial independence is typically paved with consistent saving and broad market index fund investing—not speculation in alternative assets. Alternative investments can play a valuable supplementary role, providing diversification, inflation protection, and income from sources that move differently from stock markets. But they are tools for enhancement, not shortcuts to wealth. The foundation always comes first: emergency savings, retirement contributions, and the discipline to maintain those through market volatility. Only then do alternatives serve their purpose.",
+          "callToAction": "Before your next 'alternative investment' decision, answer three questions: Do I have my foundation built? Can I afford to lose this entirely? Am I investing based on understanding and strategy, or FOMO? Your honest answers will guide every decision from here."
+        }
       }
     }
   ]

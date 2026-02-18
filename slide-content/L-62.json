@@ -1,8 +1,8 @@
 {
   "metadata": {
     "lChapter": "L-62",
-    "title": "",
-    "subtitle": "",
+    "title": "Investment Portfolio Strategies",
+    "subtitle": "Building, Diversifying, and Optimizing Your Long-Term Portfolio",
     "totalSlides": 20,
     "hasStateVariables": false,
     "stateVariablesUsed": []
@@ -10,22 +10,26 @@
   "slides": [
     {
       "number": 1,
-      "type": "content",
-      "headerColor": "purple",
+      "type": "title",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Investment Portfolio Strategies",
+        "layout": "title-main",
+        "layoutData": {
+          "title": "Investment Portfolio Strategies",
+          "subtitle": "Building, Diversifying, and Optimizing Your Long-Term Portfolio"
+        }
       }
     },
     {
       "number": 2,
-      "type": "content",
-      "headerColor": "purple",
+      "type": "hook",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "The $140,000 Tax Decision",
+        "layout": "hook",
+        "layoutData": {
+          "scenario": "David had $180,000 in a taxable brokerage account and $220,000 in his 401k. Both held 70% stocks and 30% bonds. After learning about asset location, he made a single change: moved bonds into the 401k and kept only stocks in the taxable account. Total portfolio allocation stayed identical. Result over 15 years: approximately $19,000 more in wealth—just from moving assets between accounts. No new money invested. No additional risk. Just strategic placement.",
+          "question": "How much of investing success do you think comes from what you invest in versus how you structure and manage your portfolio over time?"
+        }
       }
     },
     {
@@ -33,9 +37,37 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "What You'll Learn Today",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Design",
+              "description": "appropriate asset allocations based on age, goals, and risk tolerance"
+            },
+            {
+              "number": 2,
+              "verb": "Implement",
+              "description": "effective diversification strategies across and within asset classes"
+            },
+            {
+              "number": 3,
+              "verb": "Apply",
+              "description": "rebalancing techniques to maintain target allocations and manage risk"
+            },
+            {
+              "number": 4,
+              "verb": "Evaluate",
+              "description": "tax-efficient investment strategies and account type selection"
+            },
+            {
+              "number": 5,
+              "verb": "Create",
+              "description": "comprehensive investment portfolios optimized for long-term wealth building"
+            }
+          ]
+        }
       }
     },
     {
@@ -43,19 +75,55 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Key Vocabulary: Portfolio Foundations",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Asset Allocation",
+              "definition": "The strategic division of a portfolio among different asset classes (stocks, bonds, cash) based on goals, time horizon, and risk tolerance; the primary determinant of portfolio risk and return.",
+              "example": "A 28-year-old with 37 years until retirement might hold 85% stocks and 15% bonds, while a 62-year-old near retirement holds 50/50."
+            },
+            {
+              "term": "Diversification",
+              "definition": "Spreading investments across multiple securities, sectors, and asset classes to reduce the impact of any single investment's poor performance on the overall portfolio.",
+              "example": "Owning 500 stocks through an index fund rather than 5 individual stocks reduces the risk that one company's failure devastates your portfolio."
+            },
+            {
+              "term": "Rebalancing",
+              "definition": "The process of periodically buying and selling assets to return a portfolio to its target allocation when market movements cause drift.",
+              "example": "If stocks outperform and drift from a 80% target to 87%, you sell some stocks and buy bonds to restore 80/20."
+            }
+          ]
+        }
       }
     },
     {
       "number": 5,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "blue",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Key Vocabulary: Tax Strategy Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Tax-Loss Harvesting",
+              "definition": "Selling investments at a loss to offset capital gains taxes, then reinvesting in similar (but not identical) assets to maintain market exposure.",
+              "example": "If your S&P 500 ETF is down $5,000, sell it, realize the loss to offset other gains, then immediately buy a total market ETF to stay invested."
+            },
+            {
+              "term": "Asset Location",
+              "definition": "Strategic placement of different investment types in taxable vs. tax-advantaged accounts to minimize overall tax burden.",
+              "example": "Placing bonds (which generate taxable interest) in a 401k and stock index funds (which grow tax-efficiently) in a taxable account."
+            },
+            {
+              "term": "Target Date Fund",
+              "definition": "A mutual fund or ETF that automatically adjusts asset allocation to become more conservative as a target retirement date approaches.",
+              "example": "A 'Target 2055 Fund' holds mostly stocks today but gradually shifts toward bonds as 2055 approaches."
+            }
+          ]
+        }
       }
     },
     {
@@ -63,9 +131,25 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Asset Allocation: The Foundation",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Asset Allocation Drives 90%+ of Portfolio Performance",
+          "paragraphs": [
+            "Research consistently shows that asset allocation—not individual stock selection or market timing—explains over 90% of portfolio performance variation over time. The mix you choose between stocks, bonds, and other assets is the most important investment decision you'll make.",
+            "Time horizon is the most critical factor. Over any 20-year period since 1926, stocks have never lost money—meaning a 25-year-old investing for 40 years can afford to hold mostly stocks and weather short-term volatility for long-term growth."
+          ],
+          "bulletPoints": [
+            "Traditional rule: 100 minus your age = stock percentage (30-year-old holds 70% stocks)",
+            "Modern update: 110 or 120 minus age, given longer life expectancies and lower bond yields",
+            "Risk tolerance matters too: a 30% decline you'd sell through requires a more conservative allocation",
+            "Goal type matters: accumulation vs. income vs. short-term goals need different allocations",
+            "Other assets matter: stable pension or home equity may allow more portfolio risk"
+          ],
+          "keyPoint": {
+            "text": "The 'right' allocation is the one aligned with your time horizon and that you'll maintain through market volatility—not the theoretically optimal one you'd panic-sell during downturns."
+          }
+        }
       }
     },
     {
@@ -73,9 +157,34 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Allocation by Life Stage",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "📈",
+            "title": "Accumulation Phase (Age 25–50)",
+            "items": [
+              "Age 25: 90% stocks / 10% bonds — 40-year horizon, maximize growth",
+              "Age 35: 85% stocks / 15% bonds — still long horizon, modest protection",
+              "Age 45: 75% stocks / 25% bonds — growing wealth to protect, 20-year horizon",
+              "Dollar-cost average through all market conditions",
+              "Rebalance annually; resist urge to react to market news",
+              "Focus on maximizing contributions over optimizing allocation"
+            ]
+          },
+          "rightColumn": {
+            "icon": "🏦",
+            "title": "Preservation Phase (Age 50–70+)",
+            "items": [
+              "Age 55: 60% stocks / 40% bonds — protecting growing nest egg",
+              "Age 62: 50% stocks / 50% bonds — near-retirement stability priority",
+              "Age 65+: 50–60% stocks still needed for 20–30 year retirement",
+              "Avoid going too conservative—inflation erodes fixed income",
+              "Sequence-of-returns risk: big losses early in retirement are devastating",
+              "Gradually shift allocation; sudden moves often poorly timed"
+            ]
+          }
+        }
       }
     },
     {
@@ -83,9 +192,47 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Diversification: The Only Free Lunch",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "How to Diversify Effectively",
+            "paragraphs": [
+              "Diversification reduces risk without reducing expected return—economists call it the only 'free lunch' in investing. The key is holding investments that don't move in perfect lockstep."
+            ],
+            "bulletPoints": [
+              "Within stocks: diversify by size (large, mid, small-cap), sector, and geography",
+              "Across geographies: U.S. + developed international + emerging markets",
+              "Within bonds: mix government and corporate bonds, short and long maturities",
+              "Across asset classes: stocks + bonds + potentially real estate or commodities",
+              "Avoid: owning five S&P 500 funds—same 500 stocks, five expense ratios",
+              "Correlation matters: assets that fall together provide no diversification benefit"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "0.1",
+                "label": "Correlation between U.S. stocks and U.S. bonds (historically)",
+                "color": "green"
+              },
+              {
+                "value": "500",
+                "label": "Stocks in one index fund vs. owning 5 overlapping index funds",
+                "color": "blue"
+              },
+              {
+                "value": "0.7-0.8",
+                "label": "Correlation between U.S. and international stocks (some benefit)",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Diversification Limit",
+              "text": "During severe market crises (like 2008), correlations increase—many 'diverse' assets fall together. True diversification across uncorrelated assets is most valuable in normal markets."
+            }
+          }
+        }
       }
     },
     {
@@ -93,9 +240,26 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Rebalancing: Discipline That Pays",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Rebalancing Enforces Buy Low, Sell High",
+          "paragraphs": [
+            "Rebalancing prevents your carefully designed asset allocation from drifting as different assets perform differently. Without it, strong stock performance could shift an 80/20 portfolio to 90/10—far more aggressive than intended. The counterintuitive power of rebalancing: it forces you to sell winners and buy underperformers, which is exactly the discipline most investors lack.",
+            "Historical analysis shows rebalanced portfolios often slightly outperform non-rebalanced portfolios with identical starting allocations—typically 0.5–1% annually—while maintaining intended risk levels."
+          ],
+          "bulletPoints": [
+            "Annual rebalancing: simple, sufficient for most investors, avoids excessive trading costs",
+            "Threshold rebalancing: act only when any asset class drifts 5%+ from target",
+            "Contribution-based: direct new money to underweighted assets instead of selling",
+            "In tax-advantaged accounts: rebalance freely—no capital gains taxes triggered",
+            "In taxable accounts: consider tax costs; use contributions and new money first",
+            "The method matters less than consistency—pick one and stick to it"
+          ],
+          "keyPoint": {
+            "text": "Emma's annual rebalancing discipline, often feeling like 'selling winners too soon,' added an estimated $180,000 to her retirement wealth over 35 years—costing about 2 hours of effort per year."
+          }
+        }
       }
     },
     {
@@ -103,9 +267,47 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Tax-Efficient Investing",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Asset Location Strategy",
+            "paragraphs": [
+              "Taxes can consume 1–2% of returns annually. Strategic asset location—putting the right investments in the right account types—can add 0.25–0.75% annually without any additional risk or contribution."
+            ],
+            "bulletPoints": [
+              "Tax-advantaged accounts (IRA, 401k): hold tax-inefficient assets",
+              "Bonds, REITs, actively managed funds → put in IRA/401k",
+              "Stock index funds, growth stocks → taxable accounts are fine",
+              "Tax-loss harvesting: sell losers to offset gains; reinvest in similar asset",
+              "Low-turnover funds reduce annual taxable distributions",
+              "Buy-and-hold defers capital gains taxes for decades"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$140K",
+                "label": "Extra wealth from tax-efficient investing over 20 years (24% bracket, $300K portfolio)",
+                "color": "green"
+              },
+              {
+                "value": "1–2%",
+                "label": "Annual return consumed by taxes with poor tax efficiency",
+                "color": "red"
+              },
+              {
+                "value": "$3,000",
+                "label": "Ordinary income you can offset annually with tax-loss harvesting",
+                "color": "blue"
+              }
+            ],
+            "infoCard": {
+              "title": "Simple Asset Location Rule",
+              "text": "Whatever generates taxable income (bonds, high-dividend stocks, REITs, active funds) goes in tax-advantaged accounts. Whatever can grow quietly (index funds) goes in taxable accounts."
+            }
+          }
+        }
       }
     },
     {
@@ -113,9 +315,26 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Dollar-Cost Averaging and Portfolio Psychology",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Systematic Investing Beats Emotional Investing",
+          "paragraphs": [
+            "Dollar-cost averaging—investing fixed amounts at regular intervals regardless of market conditions—removes the temptation to time the market and reduces the impact of volatility. By investing $400 monthly whether markets are up or down, you automatically buy more shares when prices are low and fewer when prices are high.",
+            "The psychological benefit may exceed the mechanical benefit. Investors with written plans and systematic processes are far more likely to stay invested through market volatility. Panic-selling during market crashes is perhaps the single most wealth-destroying behavior in investing."
+          ],
+          "bulletPoints": [
+            "Dollar-cost averaging: invest the same amount each month regardless of market level",
+            "Automatic contributions to 401k enforce this discipline without willpower",
+            "Written investment policy statement: documents your plan before emotion strikes",
+            "Home country bias: most investors overweight domestic stocks, missing international gains",
+            "Market timing: studies show investors who try to time markets consistently underperform",
+            "Boring discipline: the most effective portfolio strategy looks the same in any market"
+          ],
+          "keyPoint": {
+            "text": "Sofia invested through multiple crashes and two bear markets by maintaining her written lifecycle plan. Her consistent approach, not exceptional investment picks, drove her from $8,000 to $670,000 over 40 years."
+          }
+        }
       }
     },
     {
@@ -123,9 +342,47 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Building Your Complete Portfolio",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "A Simple Three-Fund Portfolio",
+            "paragraphs": [
+              "A complete, diversified investment portfolio doesn't require complexity. Three low-cost index funds cover the global market with minimal overlap and maintenance."
+            ],
+            "bulletPoints": [
+              "U.S. Total Stock Market Fund (e.g., VTSAX): all U.S. companies, large to small",
+              "International Stock Fund (e.g., VXUS): developed and emerging markets outside U.S.",
+              "U.S. Bond Index Fund (e.g., BND): government and corporate bonds, all maturities",
+              "Example allocation at 30: 60% U.S. stocks / 25% international / 15% bonds",
+              "Rebalance annually; adjust allocation by 5% every 5–10 years",
+              "Total annual cost: ~0.04–0.10% vs. 1–2% for actively managed funds"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "3",
+                "label": "Funds needed for a complete global portfolio",
+                "color": "green"
+              },
+              {
+                "value": "0.04%",
+                "label": "Typical expense ratio for broad index funds",
+                "color": "blue"
+              },
+              {
+                "value": "1%",
+                "label": "Typical added return from good portfolio strategy vs. poor strategy",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Cost Matters Enormously",
+              "text": "The difference between a 1.5% expense ratio and a 0.05% expense ratio on a $200,000 portfolio over 30 years: approximately $200,000 in additional wealth—just from lower fees."
+            }
+          }
+        }
       }
     },
     {
@@ -133,9 +390,37 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Real Scenario: Emma's Rebalancing Discipline",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "⚖️",
+            "name": "Emma, 32 — IRA Rebalancing Through a Market Correction",
+            "paragraphs": [
+              "Emma held 85/15 stocks/bonds in her IRA ($45,000). After 3 years of strong stock performance, drift pushed her to 91/9 ($68,000 total). She rebalanced back to 85/15 by selling $4,000 of stocks and buying bonds. Six months later, a 20% market correction hit. Her rebalanced portfolio fell 16.5% vs. 18% if she hadn't rebalanced—a $1,000+ difference. More importantly, she used the downturn to rebalance again, buying stocks at depressed prices with new contributions."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "positive",
+              "label": "Long-Term Impact",
+              "value": "+$180,000 at retirement",
+              "detail": "Estimated additional wealth from 35 years of annual rebalancing discipline at 0.7% annual improvement"
+            },
+            {
+              "type": "positive",
+              "label": "Annual Time Cost",
+              "value": "~2 hours per year",
+              "detail": "One annual review and rebalancing transaction—among the highest-return activities per hour in personal finance"
+            },
+            {
+              "type": "warning",
+              "label": "The Emotional Challenge",
+              "value": "Selling winners feels wrong",
+              "detail": "Every rebalance requires selling outperformers and buying underperformers—the opposite of what feels natural, which is exactly why it works"
+            }
+          ]
+        }
       }
     },
     {
@@ -143,29 +428,73 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Real Scenario: David's Tax Location",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "💼",
+            "name": "David, 45 — Optimizing $400,000 Across Two Account Types",
+            "paragraphs": [
+              "David had $180,000 taxable and $220,000 in a 401k, both at 70/30 stocks/bonds. He reorganized without changing overall allocation: taxable account moved to 100% stock index funds; 401k shifted to 38% stocks / 62% bonds. Same total 70/30 allocation—just bonds now sheltered from annual taxation. Combined with disciplined tax-loss harvesting, this tax strategy added approximately $19,000 in wealth over 15 years, requiring no additional contributions or risk."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "positive",
+              "label": "Tax Savings",
+              "value": "$14,500 from asset location",
+              "detail": "Bond interest that would have been taxed at 24% annually was instead tax-deferred in his 401k"
+            },
+            {
+              "type": "positive",
+              "label": "Tax-Loss Harvesting",
+              "value": "$4,320 additional savings",
+              "detail": "Over 15 years, harvested $18,000 in losses during down markets to offset capital gains"
+            },
+            {
+              "type": "warning",
+              "label": "What He Didn't Change",
+              "value": "Total risk unchanged",
+              "detail": "Overall 70/30 allocation remained identical—this was purely a tax optimization, not an investment strategy change"
+            }
+          ]
+        }
       }
     },
     {
       "number": 15,
-      "type": "content",
-      "headerColor": "purple",
+      "type": "discussion",
+      "variant": "teal",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Discussion: Allocation Under Pressure",
+        "layout": "discussion",
+        "layoutData": {
+          "prompt": "Imagine you have an 80% stocks / 20% bonds portfolio that has dropped 30% over the past 6 months. Your portfolio is down $45,000 from its peak. Friends are talking about 'getting out until things stabilize.' Your plan says to rebalance and continue investing.",
+          "questions": [
+            "How would you feel emotionally, and what would you be tempted to do?",
+            "What would the math say about selling vs. staying invested?",
+            "How would having a written investment plan help in this situation?",
+            "What does Sofia's story suggest about investors who stay disciplined through multiple downturns?"
+          ]
+        }
       }
     },
     {
       "number": 16,
-      "type": "content",
-      "headerColor": "purple",
+      "type": "discussion",
+      "variant": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Discussion: Your Portfolio Strategy",
+        "layout": "discussion",
+        "layoutData": {
+          "prompt": "Think about your own current or future investment situation. Consider your time horizon (when will you need this money?), your risk tolerance (could you stomach a 30% decline?), and your tax situation.",
+          "questions": [
+            "What asset allocation seems most appropriate for your current life stage and goals?",
+            "If you have a 401k or IRA available, are you using it optimally for asset location?",
+            "What would it take for you to change your investment allocation—a market drop, a life change, a specific age?",
+            "What's one simple portfolio strategy change from today's lesson you could implement?"
+          ]
+        }
       }
     },
     {
@@ -173,9 +502,36 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What is asset allocation and why does it explain over 90% of portfolio performance variation?"
+            },
+            {
+              "number": 2,
+              "question": "Explain the '110 minus your age' rule and why it's considered an update over the traditional '100 minus age' formula."
+            },
+            {
+              "number": 3,
+              "question": "What does it mean for two investments to have low correlation, and why does this matter for diversification?"
+            },
+            {
+              "number": 4,
+              "question": "Why does rebalancing enforce 'buy low, sell high' even though it feels counterintuitive?"
+            },
+            {
+              "number": 5,
+              "question": "What is asset location and give one example of an investment that should go in a tax-advantaged account vs. a taxable account."
+            },
+            {
+              "number": 6,
+              "question": "What is tax-loss harvesting and what is the 'wash sale rule' you must avoid?"
+            }
+          ]
+        }
       }
     },
     {
@@ -183,9 +539,42 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Asset Allocation Is the Core Decision",
+              "description": "The percentage split between stocks, bonds, and other assets explains 90%+ of portfolio performance variation—far more important than which specific funds you pick."
+            },
+            {
+              "number": 2,
+              "title": "Time Horizon Drives Allocation",
+              "description": "Longer horizons justify more stocks (higher growth, can weather volatility). Shorter horizons require more stability. Adjust allocation gradually as circumstances change."
+            },
+            {
+              "number": 3,
+              "title": "Diversify Meaningfully, Not Just More",
+              "description": "Hold investments with different correlations across company sizes, sectors, and geographies. Five overlapping S&P 500 funds aren't more diversified than one."
+            },
+            {
+              "number": 4,
+              "title": "Rebalance Consistently",
+              "description": "Annual rebalancing maintains your intended risk level and systematically enforces buying low and selling high—the discipline most investors can't maintain emotionally."
+            },
+            {
+              "number": 5,
+              "title": "Tax Strategy Adds Wealth Without Risk",
+              "description": "Asset location (placing tax-inefficient investments in tax-advantaged accounts) and tax-loss harvesting can add hundreds of thousands in wealth over decades at no additional cost."
+            },
+            {
+              "number": 6,
+              "title": "Write Your Plan Before the Downturn",
+              "description": "A written investment policy statement—specifying allocation, rebalancing triggers, and when you'll adjust—helps you make rational decisions when markets create emotional pressure."
+            }
+          ]
+        }
       }
     },
     {
@@ -193,19 +582,49 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Skill Builder: Advanced Portfolio Builder",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📊",
+            "title": "Advanced Portfolio Builder Tool",
+            "description": "Design, test, and optimize investment portfolios across different life stages—then build a personal investment plan you could realistically implement."
+          },
+          "steps": [
+            {
+              "number": 1,
+              "title": "Build Three Lifecycle Portfolios",
+              "description": "Design portfolios for Age 25 (40-year horizon, $400/month), Age 45 (20-year horizon, $800/month), and Age 60 (5-year horizon, $1,200/month). Justify each allocation."
+            },
+            {
+              "number": 2,
+              "title": "Test Portfolio Resilience",
+              "description": "Run each portfolio through the 2008 Financial Crisis (-37%), 2020 COVID Crash (-34%), and 1970s Stagflation scenarios. Calculate max drawdown and recovery time."
+            },
+            {
+              "number": 3,
+              "title": "Simulate Rebalancing",
+              "description": "Start Portfolio A at target, simulate 5 years of uneven returns, show allocation drift without rebalancing, then execute annual rebalancing. Compare final outcomes."
+            },
+            {
+              "number": 4,
+              "title": "Create Your Personal Investment Plan",
+              "description": "Define your goal and time horizon, determine your allocation, select 3–5 low-cost funds, establish a rebalancing schedule, and plan your account structure for tax efficiency."
+            }
+          ]
+        }
       }
     },
     {
       "number": 20,
-      "type": "content",
-      "headerColor": "purple",
+      "type": "closing",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Portfolio Strategy: The Multiplier of Everything You Invest",
+        "layout": "closing",
+        "layoutData": {
+          "message": "The same monthly contributions, invested in two different portfolio strategies, can produce outcomes differing by hundreds of thousands of dollars over a lifetime. Asset allocation, diversification, rebalancing, and tax efficiency are the framework that determines whether your investment efforts reach their full potential. None of these strategies require exceptional insight or market prediction—they require systematic discipline applied consistently across decades.",
+          "callToAction": "Write your investment plan this week: define your target allocation, rebalancing schedule, and account structure. The investor who plans before the emotion of a market crash is the one who stays invested through it."
+        }
       }
     }
   ]

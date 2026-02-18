@@ -16,7 +16,7 @@
       "content": {
         "title": "Loan Applications & Creditworthiness",
         "titleSize": "large",
-        "subtitle": "Master the loan application process and understand how lenders evaluate your creditworthiness"
+        "subtitle": "Master the loan application process and understand how lenders evaluate your creditworthiness in {{STATE_NAME}}"
       }
     },
     {
@@ -24,7 +24,7 @@
       "type": "hook",
       "content": {
         "label": "Essential Question",
-        "question": "What if the difference between a <em>5% interest rate</em> and an <em>8% rate</em> on a loan cost you <em>$2,000 extra</em>?"
+        "question": "What if the difference between a <em>5% interest rate</em> and an <em>8% rate</em> on a $25,000 car loan cost you <em>$2,400 extra</em> over five years?<br><br>Your credit profile determines which rate you get — and understanding how lenders evaluate you is the first step to getting the best terms."
       }
     },
     {
@@ -33,8 +33,31 @@
       "headerColor": "purple",
       "content": {
         "headerTitle": "Learning Objectives",
-        "layout": "generic",
-        "layoutData": {}
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Analyze",
+              "description": "The Five C's of Credit that lenders use to evaluate loan applications and determine interest rates"
+            },
+            {
+              "number": 2,
+              "verb": "Evaluate",
+              "description": "How credit scores are calculated and what specific actions raise or lower your score most significantly"
+            },
+            {
+              "number": 3,
+              "verb": "Calculate",
+              "description": "How interest rate differences affect total loan cost across different loan types including auto, personal, and mortgage"
+            },
+            {
+              "number": 4,
+              "verb": "Develop",
+              "description": "Strategies to strengthen your loan application and qualify for better rates in {{STATE_NAME}}"
+            }
+          ]
+        }
       }
     },
     {
@@ -43,28 +66,69 @@
       "headerColor": "purple",
       "content": {
         "headerTitle": "Key Terms to Know",
-        "layout": "generic",
-        "layoutData": {}
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Credit Score",
+              "definition": "A three-digit number (300–850) calculated from your credit history that lenders use to assess risk — higher scores qualify for lower interest rates and better loan terms",
+              "example": "A 750 credit score may qualify you for a 5.5% auto loan rate while a 620 score for the same loan could mean 10.5% — a difference of thousands of dollars over the loan term"
+            },
+            {
+              "term": "Debt-to-Income Ratio (DTI)",
+              "definition": "Your total monthly debt payments divided by your gross monthly income — lenders use this to assess your capacity to take on additional debt; most lenders prefer DTI below 43%",
+              "example": "If you earn $4,000/month and pay $1,200 in debt payments, your DTI is 30% — generally acceptable; $1,800 in payments would be 45% DTI and may trigger loan denial"
+            }
+          ]
+        }
       }
     },
     {
       "number": 5,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "blue",
       "content": {
         "headerTitle": "More Key Terms",
-        "layout": "generic",
-        "layoutData": {}
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Collateral",
+              "definition": "An asset pledged as security for a loan — if you default, the lender can seize the collateral to recover their loss; secured loans typically offer lower rates than unsecured loans",
+              "example": "Your car is collateral on an auto loan — if you stop making payments, the lender repossesses the vehicle. A mortgage uses the home itself as collateral"
+            },
+            {
+              "term": "Annual Percentage Rate (APR)",
+              "definition": "The true yearly cost of borrowing money, expressed as a percentage — includes interest rate plus fees, making it a more complete measure of loan cost than the stated interest rate alone",
+              "example": "A personal loan advertised at 7% interest with $200 in origination fees may have a 7.8% APR — the APR reveals the true cost including all charges"
+            }
+          ]
+        }
       }
     },
     {
       "number": 6,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "teal",
       "content": {
         "headerTitle": "The Five C's of Credit",
-        "layout": "generic",
-        "layoutData": {}
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "How Lenders Evaluate Every Application",
+          "paragraphs": [
+            "Lenders assess every loan application using the Five C's framework — a systematic evaluation of your creditworthiness that determines both whether you're approved and what rate you receive."
+          ],
+          "bulletPoints": [
+            "<strong>Character:</strong> Your track record of repaying debts — reflected in your credit score, payment history, and length of credit history. The most important factor: do you pay what you owe?",
+            "<strong>Capacity:</strong> Your ability to repay — measured by your debt-to-income ratio (DTI). Lenders verify income, calculate existing obligations, and determine if you can afford additional payments",
+            "<strong>Capital:</strong> Assets and savings you own beyond income — down payment, emergency fund, investment accounts. More capital = lower risk; 20% down on a home eliminates PMI",
+            "<strong>Collateral:</strong> Assets securing the loan if you default — a car or home as collateral reduces lender risk and typically earns you a lower rate than unsecured personal loans",
+            "<strong>Conditions:</strong> The loan's purpose and current economic environment — lenders consider why you're borrowing, economic conditions in {{STATE_NAME}}, and interest rate environment"
+          ],
+          "keyPoint": {
+            "text": "💡 You can influence all Five C's before applying: build credit history (Character), pay down debts (Capacity), save more (Capital), offer collateral (Collateral), and apply during favorable conditions."
+          }
+        }
       }
     },
     {
@@ -73,28 +137,109 @@
       "headerColor": "purple",
       "content": {
         "headerTitle": "Current Loan Rates in {{STATE_NAME}}",
-        "layout": "generic",
-        "layoutData": {}
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "What Borrowers Pay in {{STATE_NAME}}",
+            "paragraphs": [
+              "Interest rates vary by loan type, credit score, and current economic conditions in {{STATE_NAME}}. Understanding typical rate ranges helps you evaluate offers and know when you're getting a good deal."
+            ],
+            "bulletPoints": [
+              "Auto Loans — Rates typically 5–15%+ depending on credit score; new cars average lower rates than used",
+              "Personal Loans — Rates range from 7% (excellent credit) to 35%+ (poor credit); shop multiple lenders",
+              "Mortgages — 30-year fixed rates fluctuate with Fed policy; credit score impacts rate by up to 1.5%",
+              "Student Loans — Federal loans have fixed rates set by Congress; private loans vary by credit score",
+              "Credit Cards — Average APR exceeds 20%; minimum payment traps keep borrowers in debt for years in {{STATE_NAME}}"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "1.5%",
+                "label": "Typical rate difference on a mortgage between excellent (760+) and fair (620) credit scores",
+                "color": "rose"
+              },
+              {
+                "value": "$2,400+",
+                "label": "Extra cost on a $25,000 auto loan at 8% vs 5% over 5 years — your credit score matters",
+                "color": "purple"
+              },
+              {
+                "value": "Shop",
+                "label": "Get at least 3 loan quotes in {{STATE_NAME}} — rates vary significantly between lenders",
+                "color": "teal"
+              }
+            ],
+            "infoCard": null
+          }
+        }
       }
     },
     {
       "number": 8,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "blue",
       "content": {
         "headerTitle": "How Interest Rates Affect Your Payments",
-        "layout": "generic",
-        "layoutData": {}
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Small Rate Differences, Big Dollar Impact",
+            "paragraphs": [
+              "Even a 1–2% difference in interest rate adds up to thousands of dollars over a loan's life. Building credit before applying can save you more than a year of careful saving."
+            ],
+            "bulletPoints": [
+              "Auto Loan Example — $25,000 over 5 years: at 5% = $472/mo ($28,307 total); at 8% = $507/mo ($30,412 total) — $2,105 difference from credit score alone",
+              "Mortgage Example — $300,000 over 30 years: at 6% = $1,799/mo; at 7.5% = $2,098/mo — $107,280 difference over loan life",
+              "Personal Loan — $10,000 over 3 years: at 8% = $313/mo; at 24% = $392/mo — $2,880 difference",
+              "Shopping Around — Getting one better quote in {{STATE_NAME}} often saves as much as cutting expenses for months"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$107K",
+                "label": "Extra interest paid on $300K mortgage at 7.5% vs 6% over 30 years — credit score impact",
+                "color": "rose"
+              },
+              {
+                "value": "3+",
+                "label": "Lenders to compare before accepting any loan offer in {{STATE_NAME}}",
+                "color": "teal"
+              },
+              {
+                "value": "45 days",
+                "label": "Window to rate-shop mortgages/autos with multiple hard inquiries counted as one credit pull",
+                "color": "purple"
+              }
+            ],
+            "infoCard": null
+          }
+        }
       }
     },
     {
       "number": 9,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "teal",
       "content": {
         "headerTitle": "Documentation You'll Need",
-        "layout": "generic",
-        "layoutData": {}
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Gather These Before You Apply",
+          "paragraphs": [
+            "Lenders require documentation to verify your income, employment, assets, and identity. Having these ready before applying speeds approval and prevents delays."
+          ],
+          "bulletPoints": [
+            "<strong>Income Verification:</strong> Last two pay stubs showing year-to-date earnings; W-2s from the past two years; if self-employed, two years of tax returns and profit/loss statements",
+            "<strong>Employment Verification:</strong> Employer contact information; length of employment; letter of offer if you recently started a new job in {{STATE_NAME}}",
+            "<strong>Asset Documentation:</strong> Last two months of bank statements; investment and retirement account statements; proof of down payment source (lenders verify funds aren't borrowed)",
+            "<strong>Identity and Residency:</strong> Government-issued photo ID; Social Security number; proof of {{STATE_NAME}} residency (utility bill, lease, or prior tax return)"
+          ],
+          "keyPoint": {
+            "text": "💡 Missing documentation is the #1 cause of loan application delays. Create a folder with all documents before submitting your first application — organized borrowers close faster and project the 'Character' lenders are looking for."
+          }
+        }
       }
     },
     {
@@ -103,18 +248,70 @@
       "headerColor": "purple",
       "content": {
         "headerTitle": "Loan Types & Approval Timelines",
-        "layout": "generic",
-        "layoutData": {}
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "🚗",
+            "title": "Shorter-Term Loans",
+            "items": [
+              "Auto Loans — Secured by vehicle; 3–7 year terms; approval often same day at dealership or credit union",
+              "Personal Loans — Unsecured; 2–7 years; online lenders can fund in 1–3 business days",
+              "Credit Builder Loans — Small secured loans designed to establish credit history; 6–24 months",
+              "Required: ID, income verification, credit check",
+              "Best strategy: Get pre-approved before shopping so you know your budget in {{STATE_NAME}}"
+            ]
+          },
+          "rightColumn": {
+            "icon": "🏠",
+            "title": "Longer-Term Loans",
+            "items": [
+              "Mortgages — Secured by home; 15–30 year terms; approval takes 30–60 days with extensive documentation",
+              "Student Loans — Federal: FAFSA-based, no credit check; Private: credit-based, co-signer often needed",
+              "Home Equity Loans — Secured by home equity; used for major expenses; lower rates than personal loans",
+              "Required: Full income/asset documentation, appraisal, title search",
+              "Best strategy: Improve credit score 6–12 months before applying for a mortgage in {{STATE_NAME}}"
+            ]
+          }
+        }
       }
     },
     {
       "number": 11,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "blue",
       "content": {
         "headerTitle": "Real-World Application",
-        "layout": "generic",
-        "layoutData": {}
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "🚗",
+            "name": "Darius — First Car Loan in {{STATE_NAME}}",
+            "paragraphs": [
+              "Darius, 22, needs a car for his new job in {{STATE_NAME}}. He has a 680 credit score, $2,000 saved for a down payment, and earns $38,000/year. He visits the dealership and is offered 9.9% APR. Not knowing better, he almost signs.",
+              "Instead, Darius checks with his credit union before signing. <span class=\"highlight-text\">His credit union offers 6.4% APR — and he negotiates the car price separately from financing.</span> On a $18,000 loan over 5 years, the lower rate saves him $1,540 and he keeps control of the deal."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Dealer Rate",
+              "value": "9.9% APR",
+              "detail": "First offer"
+            },
+            {
+              "type": "after",
+              "label": "Credit Union Rate",
+              "value": "6.4% APR",
+              "detail": "By shopping around"
+            },
+            {
+              "type": "after",
+              "label": "Savings",
+              "value": "$1,540",
+              "detail": "Over 5-year loan"
+            }
+          ]
+        }
       }
     },
     {
@@ -123,7 +320,7 @@
       "variant": "teal",
       "content": {
         "badge": "Discussion",
-        "question": ""
+        "question": "Think about a major purchase you might finance in the next few years — a car, home, or education. How does your current credit profile (payment history, existing debts, savings) prepare you or leave you vulnerable when it comes time to apply?<br><br>What is the single most impactful action you could take in the next 12 months to improve your loan application strength in {{STATE_NAME}}?"
       }
     },
     {
@@ -131,38 +328,103 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Credit Score Components — What Moves the Needle",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The Five Factors That Build Your Score",
+            "paragraphs": [
+              "FICO scores — used by 90% of top lenders — are calculated from five weighted factors. Knowing the weights tells you exactly where to focus your credit-building efforts."
+            ],
+            "bulletPoints": [
+              "Payment History (35%) — Single biggest factor; one 30-day late payment can drop your score 50–100 points; on-time payments are the foundation of good credit",
+              "Amounts Owed / Credit Utilization (30%) — Keep balances below 30% of credit limits; ideally below 10%; maxed cards are major score killers",
+              "Length of Credit History (15%) — Older accounts help; don't close old cards even if you don't use them",
+              "New Credit (10%) — Hard inquiries from applications temporarily lower score; avoid multiple applications at once",
+              "Credit Mix (10%) — Having both revolving (cards) and installment (loans) credit helps; don't open unnecessary accounts just for mix"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "35%",
+                "label": "Weight of payment history — the single most impactful factor in your credit score",
+                "color": "rose"
+              },
+              {
+                "value": "30%",
+                "label": "Weight of credit utilization — keep balances below 30% of limits for best scores",
+                "color": "purple"
+              },
+              {
+                "value": "760+",
+                "label": "Credit score threshold for best available rates on most loan products in {{STATE_NAME}}",
+                "color": "teal"
+              }
+            ],
+            "infoCard": null
+          }
+        }
       }
     },
     {
       "number": 14,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "teal",
       "content": {
         "headerTitle": "Strategies to Strengthen Your Application",
-        "layout": "generic",
-        "layoutData": {}
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Six Moves That Improve Your Loan Profile",
+          "paragraphs": [
+            "You can meaningfully improve your loan application strength in 6–12 months with deliberate action. These strategies address multiple Five C's simultaneously."
+          ],
+          "bulletPoints": [
+            "<strong>Pay On Time, Every Time:</strong> Set up autopay for minimums; payment history is 35% of your score — one missed payment can cost you dearly",
+            "<strong>Pay Down Balances:</strong> Reducing credit card balances to below 30% utilization can raise scores 20–40 points within 1–2 billing cycles",
+            "<strong>Become an Authorized User:</strong> Being added to a family member's old, well-managed account adds their positive history to your credit file",
+            "<strong>Save a Larger Down Payment:</strong> More capital reduces lender risk; 20% down on a home eliminates PMI and often earns a better rate in {{STATE_NAME}}",
+            "<strong>Dispute Errors:</strong> Check all three credit bureaus (Equifax, Experian, TransUnion) for errors; 1 in 5 reports contain mistakes that hurt scores",
+            "<strong>Reduce DTI Before Applying:</strong> Pay off or pay down existing debts to improve your capacity ratio before submitting new loan applications"
+          ],
+          "keyPoint": {
+            "text": "💡 Request your free credit reports at AnnualCreditReport.com — the only federally mandated free source. Review all three bureau reports for errors before any major loan application."
+          }
+        }
       }
     },
     {
       "number": 15,
       "type": "discussion",
-      "variant": "teal",
+      "variant": "purple",
       "content": {
-        "badge": "Discussion",
-        "question": ""
+        "badge": "Personal Reflection",
+        "question": "Imagine you need to borrow $15,000 for a car in {{STATE_NAME}} in exactly 12 months. You currently have a 640 credit score, a $5,000 credit card balance at 80% utilization, and no savings for a down payment.<br><br>Create a realistic 12-month action plan. What would you do first? What specific numbers are you trying to hit? How would improving your profile change the interest rate and total cost of the loan?"
       }
     },
     {
       "number": 16,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "blue",
       "content": {
         "headerTitle": "Common Mistakes to Avoid",
-        "layout": "generic",
-        "layoutData": {}
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Errors That Cost Borrowers in {{STATE_NAME}}",
+          "paragraphs": [
+            "Many borrowers make avoidable mistakes that result in higher rates, loan denial, or damaged credit. Knowing these pitfalls helps you sidestep them before they become costly."
+          ],
+          "bulletPoints": [
+            "<strong>Accepting the First Offer:</strong> Dealerships and banks profit from higher rates — always compare at least 3 lenders before accepting any loan in {{STATE_NAME}}; credit unions are often best",
+            "<strong>Applying for Multiple Loans Simultaneously:</strong> Multiple hard inquiries from different lender types hurt your score; rate-shop within a 45-day window for it to count as one inquiry",
+            "<strong>Closing Old Credit Accounts:</strong> Closing a card reduces available credit and potentially credit history length — both hurt your score even if the card is paid off",
+            "<strong>Borrowing Your Down Payment:</strong> Lenders verify down payment sources; borrowed down payments typically disqualify applications or require disclosure — save genuine capital",
+            "<strong>Ignoring Pre-Approval:</strong> Shopping for a car or home without pre-approval leaves you negotiating from weakness; pre-approval sets your budget and strengthens your position"
+          ],
+          "keyPoint": {
+            "text": "💡 Rate shopping is smart — not harmful. Multiple auto or mortgage inquiries within a 45-day window count as a single hard inquiry on your credit score. Shop aggressively for the best rate."
+          }
+        }
       }
     },
     {
@@ -171,35 +433,90 @@
       "headerColor": "purple",
       "content": {
         "headerTitle": "Key Takeaways",
-        "layout": "generic",
-        "layoutData": {}
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Five C's Determine Your Rate",
+              "description": "Character, Capacity, Capital, Collateral, and Conditions — lenders weigh all five; improving each before applying directly lowers your interest rate"
+            },
+            {
+              "number": 2,
+              "title": "Small Rate Differences = Big Dollars",
+              "description": "A 2% rate difference on a mortgage adds over $100,000 over 30 years — your credit score is worth building aggressively before any major loan in {{STATE_NAME}}"
+            },
+            {
+              "number": 3,
+              "title": "Shop Multiple Lenders",
+              "description": "Always get at least 3 quotes — credit unions, banks, and online lenders — before accepting any loan offer; competition saves real money"
+            },
+            {
+              "number": 4,
+              "title": "Build Credit Before You Need It",
+              "description": "Payment history (35%) and utilization (30%) are the biggest score factors — on-time payments and low balances today determine your borrowing power tomorrow"
+            }
+          ]
+        }
       }
     },
     {
       "number": 18,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "teal",
       "content": {
         "headerTitle": "Check for Understanding",
-        "layout": "generic",
-        "layoutData": {}
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "Name the Five C's of Credit and explain which one is most directly reflected in your credit score and why."
+            },
+            {
+              "number": 2,
+              "question": "Calculate the total interest paid on a $20,000 auto loan at 6% versus 10% over 5 years. What does this difference mean for a borrower in {{STATE_NAME}}?"
+            },
+            {
+              "number": 3,
+              "question": "What is credit utilization, and why does keeping it below 30% significantly improve your credit score? Give an example with specific numbers."
+            },
+            {
+              "number": 4,
+              "question": "Why should you get pre-approved for a loan before shopping for a car or home in {{STATE_NAME}}? What advantages does pre-approval give you?"
+            }
+          ]
+        }
       }
     },
     {
       "number": 19,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "blue",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Skill Builder: Loan Application Simulator",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📋",
+            "title": "Loan Application Analyzer",
+            "description": "Simulate the loan application process by evaluating borrower profiles, calculating rate impact, and developing credit improvement strategies. Apply the Five C's framework to real scenarios from {{STATE_NAME}}."
+          },
+          "steps": [
+            "Evaluate a Borrower Profile — Review a sample applicant's credit score, DTI, income, and assets; assess their Five C's and predict their likely loan rate",
+            "Calculate Rate Impact — Compare total loan cost at three different interest rates (6%, 9%, 12%) for a $20,000 loan over 5 years",
+            "Identify Weaknesses — Find the two biggest vulnerabilities in the borrower profile and determine which would have the highest impact to fix",
+            "Build an Action Plan — Create a 12-month credit improvement plan targeting specific score improvements; estimate the resulting rate improvement",
+            "Shop and Compare — Evaluate three sample loan offers (bank, credit union, online lender) and determine which is the best deal based on APR and total cost"
+          ]
+        }
       }
     },
     {
       "number": 20,
       "type": "closing",
       "content": {
-        "tagline": "\"Building financial futures, one lesson at a time\"",
+        "tagline": "Know Your Credit, Control Your Future",
         "website": "www.pflacademy.co",
         "copyright": "© 2025 PFL Academy. All rights reserved."
       }

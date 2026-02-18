@@ -1,12 +1,15 @@
 {
   "metadata": {
-    "lChapter": "L-XX",
+    "lChapter": "L-07",
     "title": "Understanding Tax Brackets and Tax Rates",
-    "subtitle": "Master marginal vs. effective rates, bust common myths, and make informed financial decisions in {{STATE_NAME}}",
+    "subtitle": "Master marginal vs. effective rates, bust common myths, and make informed financial decisions",
     "totalSlides": 20,
     "hasStateVariables": true,
     "stateVariablesUsed": [
-      "STATE_NAME"
+      "STATE_NAME",
+      "INCOME_TAX_RATE",
+      "CALCULATED_COMBINED_EFFECTIVE_RATE",
+      "STATE_TAX_AUTHORITY_URL"
     ]
   },
   "slides": [
@@ -24,13 +27,13 @@
       "type": "hook",
       "content": {
         "label": "Essential Question",
-        "question": ""
+        "question": "Could accepting a raise ever result in you<br><em>taking home LESS money</em>?<br><em>Spoiler: No!</em> But you need to understand how tax brackets really work."
       }
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "teal",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
@@ -63,21 +66,21 @@
     {
       "number": 4,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "purple",
       "content": {
         "headerTitle": "Key Terms",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Marginal Tax Rate",
+              "definition": "The rate at which your LAST dollar of income is taxed—the highest bracket rate that applies to any of your income.",
+              "example": "If you're in the '22% bracket,' only your income ABOVE $47,150 is taxed at 22%"
             },
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Effective Tax Rate",
+              "definition": "The AVERAGE rate at which all your income is taxed. Total tax ÷ Total income = your actual overall tax percentage.",
+              "example": "$6,307 tax on $50,000 income = 12.6% effective rate (not 22%!)"
             }
           ]
         }
@@ -93,14 +96,14 @@
         "layoutData": {
           "terms": [
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Tax Avoidance",
+              "definition": "LEGAL strategies to minimize your tax liability using deductions, retirement contributions, and tax credits allowed by law.",
+              "example": "401(k) contributions, itemizing deductions, timing income recognition"
             },
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Tax Evasion",
+              "definition": "ILLEGAL actions to avoid paying taxes owed—hiding income, falsifying records, or failing to file returns. A criminal offense.",
+              "example": "Consequences: Fines, penalties, and imprisonment"
             }
           ]
         }
@@ -117,28 +120,29 @@
           "leftPanel": {
             "title": "What Many People Believe (Wrong!)",
             "paragraphs": [
-              "\"If I earn more and move into a higher tax bracket, all my income will be taxed at the higher rate, so I might take home LESS money.\"",
-              "Only the income ABOVE each bracket threshold is taxed at that bracket's rate. Your previous income stays at lower rates.",
-              "Earning more ALWAYS means keeping more!"
+              "\"If I earn more and move into a higher tax bracket, <strong>all my income</strong> will be taxed at the higher rate, so I might take home LESS money.\""
             ],
-            "highlightBox": null
+            "highlightBox": {
+              "icon": "✅",
+              "text": "<strong>How It Actually Works:</strong> Only the income ABOVE each bracket threshold is taxed at that bracket's rate. Earning more ALWAYS means keeping more!"
+            }
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
+                "value": "Myth",
+                "label": "\"I'll lose money if I get a raise\"",
                 "color": "rose"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "green"
+                "value": "Truth",
+                "label": "Only new dollars are taxed at higher rates",
+                "color": "teal"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "teal"
+                "value": "Always",
+                "label": "More income = more take-home pay",
+                "color": "green"
               }
             ],
             "infoCard": null
@@ -152,38 +156,21 @@
       "headerColor": "teal",
       "content": {
         "headerTitle": "How Tax Brackets Work",
-        "layout": "balanced-layout",
+        "layout": "concept-full",
         "layoutData": {
-          "leftPanel": {
-            "title": "Income \"Fills Up\" Each Bracket",
-            "paragraphs": [
-              "Think of it like water filling containers:",
-              "Fills the lowest bracket first",
-              "$11,601 - $47,150 fills the second bracket",
-              "$47,151 - $100,525 fills the third bracket",
-              "Each bracket has its own rate"
-            ],
-            "highlightBox": null
-          },
-          "rightPanel": {
-            "stats": [
-              {
-                "value": "",
-                "label": "",
-                "color": "teal"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "purple"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "green"
-              }
-            ],
-            "infoCard": null
+          "title": "Income \"Fills Up\" Each Bracket",
+          "paragraphs": [
+            "Think of it like water filling containers—each bracket fills at its own rate before flowing into the next."
+          ],
+          "bulletPoints": [
+            "<strong>First $11,600 (10%):</strong> Fills the lowest bracket first",
+            "<strong>Next $35,550 (12%):</strong> $11,601–$47,150 fills the second bracket",
+            "<strong>Next $53,375 (22%):</strong> $47,151–$100,525 fills the third bracket",
+            "<strong>And so on...</strong> Each bracket has its own rate",
+            "In {{STATE_NAME}}, add state income tax rate of {{INCOME_TAX_RATE}}%"
+          ],
+          "keyPoint": {
+            "text": "💡 7 federal tax brackets (10% to 37%). Each layer is taxed at its own rate—never all at once."
           }
         }
       }
@@ -197,26 +184,34 @@
         "layout": "balanced-layout",
         "layoutData": {
           "leftPanel": {
-            "title": "",
-            "paragraphs": [],
-            "highlightBox": null
+            "title": "Step-by-Step Calculation",
+            "paragraphs": [
+              "First $11,600 × 10% = <strong>$1,160</strong>",
+              "Next $35,550 ($11,601–$47,150) × 12% = <strong>$4,266</strong>",
+              "Final $2,850 ($47,151–$50,000) × 22% = <strong>$627</strong>",
+              "<strong>Total Federal Income Tax: $6,053</strong>"
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "{{STATE_NAME}} total: Federal 12.1% + State {{INCOME_TAX_RATE}}% = ~{{CALCULATED_COMBINED_EFFECTIVE_RATE}}% combined effective rate"
+            }
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
-                "color": "purple"
+                "value": "22%",
+                "label": "Marginal Rate (highest bracket)",
+                "color": "rose"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "green"
-              },
-              {
-                "value": "",
-                "label": "",
+                "value": "12.1%",
+                "label": "Effective Rate (actual average)",
                 "color": "teal"
+              },
+              {
+                "value": "$43,947",
+                "label": "After federal tax (before FICA & state)",
+                "color": "green"
               }
             ],
             "infoCard": null
@@ -234,27 +229,35 @@
         "layoutData": {
           "leftPanel": {
             "title": "5 Filing Statuses",
-            "paragraphs": [
-              "Each status has different bracket thresholds—\"Married Filing Jointly\" typically has the most favorable brackets."
+            "paragraphs": [],
+            "bulletPoints": [
+              "<strong>Single:</strong> Unmarried individuals",
+              "<strong>Married Filing Jointly:</strong> Married couples, combined return",
+              "<strong>Married Filing Separately:</strong> Married, separate returns",
+              "<strong>Head of Household:</strong> Unmarried, supporting dependents",
+              "<strong>Qualifying Widow(er):</strong> Surviving spouse with dependents"
             ],
-            "highlightBox": null
+            "highlightBox": {
+              "icon": "💡",
+              "text": "Each status has different bracket thresholds—'Married Filing Jointly' typically has the most favorable brackets."
+            }
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
+                "value": "$47,150",
+                "label": "Single: 22% bracket starts",
+                "color": "rose"
+              },
+              {
+                "value": "$94,300",
+                "label": "Married Joint: 22% bracket starts",
                 "color": "teal"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "teal"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "purple"
+                "value": "2x",
+                "label": "Nearly double thresholds for joint filers",
+                "color": "green"
               }
             ],
             "infoCard": null
@@ -272,28 +275,28 @@
         "layoutData": {
           "leftPanel": {
             "title": "Two Rates, Two Purposes",
-            "paragraphs": [
-              "Evaluating overtime, bonuses, side income—new dollars taxed at this rate",
-              "Budgeting, overall tax burden, comparing to others",
-              "$1,000 deduction saves $220 (22% bracket) or $370 (37% bracket)"
+            "bulletPoints": [
+              "📊 <strong>Use MARGINAL Rate for:</strong> Evaluating overtime, bonuses, side income—new dollars taxed at this rate",
+              "💰 <strong>Use EFFECTIVE Rate for:</strong> Budgeting, overall tax burden, comparing to others",
+              "📈 <strong>Deduction Value:</strong> $1,000 deduction saves $220 (22% bracket) or $370 (37% bracket)"
             ],
-            "highlightBox": null
+            "paragraphs": []
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
+                "value": "$5,000",
+                "label": "Overtime offered",
                 "color": "teal"
               },
               {
-                "value": "",
-                "label": "",
+                "value": "22%",
+                "label": "Your marginal rate",
                 "color": "purple"
               },
               {
-                "value": "",
-                "label": "",
+                "value": "$3,900",
+                "label": "Net take-home from overtime",
                 "color": "green"
               }
             ],
@@ -312,24 +315,31 @@
         "layoutData": {
           "leftPanel": {
             "title": "Legal Ways to Reduce Taxes",
-            "paragraphs": [],
-            "highlightBox": null
+            "bulletPoints": [
+              "<strong>Retirement Contributions:</strong> 401(k) reduces taxable income",
+              "<strong>Income Timing:</strong> Shift bonuses/sales between tax years",
+              "<strong>Deduction Strategies:</strong> Itemize when it exceeds standard deduction",
+              "<strong>Tax Credits:</strong> Direct dollar-for-dollar tax reduction",
+              "<strong>HSA Contributions:</strong> Triple tax advantage for healthcare",
+              "<strong>Investment Choices:</strong> Long-term gains taxed at lower rates"
+            ],
+            "paragraphs": []
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
-                "color": "green"
-              },
-              {
-                "value": "",
-                "label": "",
+                "value": "$23,000",
+                "label": "2024 401(k) contribution limit",
                 "color": "teal"
               },
               {
-                "value": "",
-                "label": "",
+                "value": "$5,060",
+                "label": "Tax saved if in 22% bracket",
+                "color": "green"
+              },
+              {
+                "value": "Legal",
+                "label": "All these strategies are tax avoidance",
                 "color": "purple"
               }
             ],
@@ -347,14 +357,28 @@
         "layout": "comparison-grid",
         "layoutData": {
           "leftColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
+            "icon": "✅",
+            "title": "Tax Avoidance (Legal)",
+            "items": [
+              "Contributing to 401(k) or IRA",
+              "Taking legitimate deductions",
+              "Timing income recognition",
+              "Choosing tax-efficient investments",
+              "Using tax credits you qualify for",
+              "Charitable giving strategies"
+            ]
           },
           "rightColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
+            "icon": "❌",
+            "title": "Tax Evasion (Illegal)",
+            "items": [
+              "Hiding income from IRS",
+              "Falsifying deductions",
+              "Claiming fake dependents",
+              "Undeclared offshore accounts",
+              "Failing to file required returns",
+              "Inflating business expenses"
+            ]
           }
         }
       }
@@ -368,11 +392,33 @@
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "",
-            "name": "",
-            "paragraphs": []
+            "icon": "💼",
+            "name": "Jared: Single Filer, $50,000 — Understanding His Tax Situation",
+            "paragraphs": [
+              "Jared earns $50,000 as a marketing coordinator. He's offered $5,000 in overtime work. Some coworkers say \"it's not worth it—you'll just lose it to taxes.\" But Jared knows better!",
+              "His overtime is taxed at his marginal rate (22%), so he'd net about $3,900. That's <span class=\"highlight-text\">$3,900 more than he had before—not a loss!</span>"
+            ]
           },
-          "outcomes": []
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Base Income",
+              "value": "$50,000",
+              "detail": "12.6% effective rate"
+            },
+            {
+              "type": "neutral",
+              "label": "Marginal Rate",
+              "value": "22%",
+              "detail": "On overtime"
+            },
+            {
+              "type": "after",
+              "label": "OT Take-Home",
+              "value": "$3,900",
+              "detail": "$3,900 more in pocket"
+            }
+          ]
         }
       }
     },
@@ -385,11 +431,33 @@
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "",
-            "name": "",
-            "paragraphs": []
+            "icon": "👨‍👩‍👦",
+            "name": "Sara & Spouse: Married Filing Jointly, $110,000",
+            "paragraphs": [
+              "Sara and her spouse have a combined income of $110,000. Filing jointly gives them access to wider tax brackets—the 22% rate doesn't start until $94,300 (vs. $47,150 for single filers).",
+              "If Sara (earning $90K) filed separately while her spouse (earning $20K) filed separately, they'd pay MORE total tax. <span class=\"highlight-text\">Filing jointly saves them money!</span>"
+            ]
           },
-          "outcomes": []
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Combined Income",
+              "value": "$110,000",
+              "detail": "Filing jointly"
+            },
+            {
+              "type": "neutral",
+              "label": "Total Tax",
+              "value": "$14,815",
+              "detail": "13.5% effective rate"
+            },
+            {
+              "type": "after",
+              "label": "Take-Home",
+              "value": "$95,185",
+              "detail": "More than filing separately"
+            }
+          ]
         }
       }
     },
@@ -399,16 +467,16 @@
       "variant": "teal",
       "content": {
         "badge": "Discussion",
-        "question": ""
+        "question": "How does understanding the difference between marginal and effective rates change your perspective on earning more money?<br><br>Would you turn down a raise because of taxes? How might this affect career decisions?"
       }
     },
     {
       "number": 16,
       "type": "discussion",
-      "variant": "teal",
+      "variant": "purple",
       "content": {
         "badge": "Personal Reflection",
-        "question": ""
+        "question": "Is it ethical for individuals and corporations to use every legal strategy to minimize taxes, even if it reduces public funding?<br><br>Where is the line between avoidance and evasion? What's your responsibility as a taxpayer?"
       }
     },
     {
@@ -451,22 +519,22 @@
           "takeaways": [
             {
               "number": 1,
-              "title": "",
+              "title": "Two Different Rates",
               "description": "Marginal rate = tax on your last dollar; Effective rate = your average rate. They're always different!"
             },
             {
               "number": 2,
-              "title": "",
+              "title": "Earning More Always Wins",
               "description": "Earning more ALWAYS means keeping more. Only the income in each bracket is taxed at that rate."
             },
             {
               "number": 3,
-              "title": "",
+              "title": "Filing Status Matters",
               "description": "Filing status significantly affects your brackets. Married filing jointly has the widest thresholds."
             },
             {
               "number": 4,
-              "title": "",
+              "title": "Know the Difference",
               "description": "Tax avoidance is legal and smart. Tax evasion is criminal. Know the difference!"
             }
           ]
@@ -482,11 +550,17 @@
         "layout": "activity-layout",
         "layoutData": {
           "main": {
-            "icon": "📋",
-            "title": "",
-            "description": ""
+            "icon": "⚖️",
+            "title": "Analyze Real Cases",
+            "description": "Examine two famous cases—Al Capone (convicted of tax evasion) and Amazon's tax strategy (legal avoidance)—to understand the crucial difference between legal tax minimization and criminal tax evasion. Research {{STATE_NAME}} tax rules at {{STATE_TAX_AUTHORITY_URL}}"
           },
-          "steps": []
+          "steps": [
+            "Research each case: What actions were taken? What was the outcome?",
+            "Identify whether each represents tax avoidance or tax evasion",
+            "List the specific actions that make each legal or illegal",
+            "Analyze the ethical considerations and broader societal implications",
+            "Write your perspective: should laws change, and why?"
+          ]
         }
       }
     },

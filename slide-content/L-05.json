@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "lChapter": "L-XX",
+    "lChapter": "L-05",
     "title": "Managing Your Income Effectively",
-    "subtitle": "Master the 50/30/20 rule in {{STATE_NAME}}, build emergency funds, and make your money work for you",
+    "subtitle": "Master the 50/30/20 rule, build emergency funds, and make your money work for you",
     "totalSlides": 20,
     "hasStateVariables": true,
     "stateVariablesUsed": [
@@ -16,7 +16,7 @@
       "content": {
         "title": "Managing Your Income Effectively",
         "titleSize": "large",
-        "subtitle": "Master the 50/30/20 rule in {{STATE_NAME}}, build emergency funds, and make your money work for you"
+        "subtitle": "Master the 50/30/20 rule, build emergency funds, and make your money work for you in {{STATE_NAME}}"
       }
     },
     {
@@ -24,13 +24,13 @@
       "type": "hook",
       "content": {
         "label": "Essential Question",
-        "question": ""
+        "question": "Why do people with the <em>same income</em> have<br><em>vastly different financial outcomes</em>?"
       }
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "teal",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
@@ -63,21 +63,21 @@
     {
       "number": 4,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "purple",
       "content": {
         "headerTitle": "Key Terms",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Budget",
+              "definition": "A plan that tracks income and expenses to guide financial decisions. Budgets provide financial freedom by ensuring your money goes where you want it to go.",
+              "example": "Tracking monthly income of $3,000 across categories"
             },
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "50/30/20 Rule",
+              "definition": "A budgeting framework for allocating income: 50% to needs, 30% to wants, and 20% to savings and debt repayment.",
+              "example": "On $3,000/month: $1,500 needs, $900 wants, $600 savings"
             }
           ]
         }
@@ -93,14 +93,14 @@
         "layoutData": {
           "terms": [
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Emergency Fund",
+              "definition": "Money set aside specifically for unexpected expenses. Provides a buffer between you and life's uncertainties—job loss, car repairs, medical bills.",
+              "example": "Goal: 3-6 months of essential expenses; start with $500-1,000"
             },
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Compound Interest",
+              "definition": "Earning interest on both principal and accumulated interest. Creates exponential growth over long periods—your money makes money.",
+              "example": "$1,000 at 7% becomes $2,000 in ~10 years, $4,000 in ~20 years"
             }
           ]
         }
@@ -117,26 +117,32 @@
           "leftPanel": {
             "title": "Take Control of Your Financial Life",
             "paragraphs": [
-              "A budget isn't restrictive—it provides freedom by ensuring your money goes where YOU want it to go."
+              "A budget isn't restrictive—it provides freedom by ensuring your money goes where <strong>YOU</strong> want it to go."
             ],
-            "highlightBox": null
+            "bulletPoints": [
+              "Stop wondering where your money went",
+              "Avoid overspending and debt accumulation",
+              "Save systematically for important goals",
+              "Prepare for unexpected expenses",
+              "Make informed spending decisions"
+            ]
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
+                "value": "80%",
+                "label": "Of budgeters report less financial stress",
                 "color": "teal"
               },
               {
-                "value": "",
-                "label": "",
+                "value": "2x",
+                "label": "More likely to achieve financial goals",
                 "color": "purple"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "green"
+                "value": "56%",
+                "label": "Of Americans don't track spending",
+                "color": "rose"
               }
             ],
             "infoCard": null
@@ -150,35 +156,32 @@
       "headerColor": "teal",
       "content": {
         "headerTitle": "The 50/30/20 Rule",
-        "layout": "generic",
+        "layout": "comparison-grid",
         "layoutData": {
-          "paragraphs": [],
-          "lists": [
-            [
+          "leftColumn": {
+            "icon": "🏠",
+            "title": "50% Needs",
+            "items": [
               "Housing (rent/mortgage)",
               "Utilities",
               "Groceries",
               "Transportation",
               "Healthcare",
               "Minimum debt payments"
-            ],
-            [
-              "Entertainment",
-              "Dining out",
-              "Hobbies/recreation",
-              "Vacations",
-              "Extra clothing",
-              "Streaming services"
-            ],
-            [
-              "Emergency fund",
-              "Retirement savings",
-              "College savings",
-              "Investments",
-              "Extra debt payments",
-              "Financial goals"
             ]
-          ]
+          },
+          "rightColumn": {
+            "icon": "💰",
+            "title": "30% Wants / 20% Savings",
+            "items": [
+              "Entertainment & dining out",
+              "Hobbies & recreation",
+              "Streaming services",
+              "—",
+              "Emergency fund & retirement",
+              "Financial goals & debt payoff"
+            ]
+          }
         }
       }
     },
@@ -191,14 +194,28 @@
         "layout": "comparison-grid",
         "layoutData": {
           "leftColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
+            "icon": "✅",
+            "title": "Needs (Essential)",
+            "items": [
+              "Basic housing (not luxury location)",
+              "Nutritious food (not gourmet)",
+              "Basic utilities",
+              "Essential healthcare",
+              "Transportation to work/school",
+              "Minimum debt payments"
+            ]
           },
           "rightColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
+            "icon": "🛍️",
+            "title": "Wants (Non-essential)",
+            "items": [
+              "Entertainment & recreation",
+              "Dining out & takeout",
+              "Premium services",
+              "Designer/luxury versions",
+              "Latest technology",
+              "Vacations & streaming subscriptions"
+            ]
           }
         }
       }
@@ -214,28 +231,29 @@
           "leftPanel": {
             "title": "Why Emergency Funds Matter",
             "paragraphs": [
-              "An emergency fund is your buffer against life's uncertainties, providing stability during challenging times.",
-              "Unexpected health costs not covered by insurance",
-              "Sudden breakdowns or transportation issues",
-              "Income reduction while finding new work"
+              "An emergency fund is your buffer against life's uncertainties, providing stability during challenging times."
             ],
-            "highlightBox": null
+            "bulletPoints": [
+              "🏥 Medical emergencies not covered by insurance",
+              "🚗 Sudden car repairs or breakdowns",
+              "💼 Income reduction from job loss"
+            ]
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
+                "value": "3-6",
+                "label": "Months of expenses recommended",
                 "color": "teal"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "teal"
+                "value": "$500",
+                "label": "Starter goal for beginners",
+                "color": "green"
               },
               {
-                "value": "",
-                "label": "",
+                "value": "40%",
+                "label": "Of Americans can't cover a $400 emergency",
                 "color": "rose"
               }
             ],
@@ -257,24 +275,30 @@
             "paragraphs": [
               "Treat savings as a non-negotiable expense—automate it so you never have to decide."
             ],
-            "highlightBox": null
+            "bulletPoints": [
+              "Automate transfers when you receive income",
+              "Set specific goals with amounts and timelines",
+              "Track your progress to maintain motivation",
+              "Keep separate accounts for different goals",
+              "Start small and increase over time"
+            ]
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
+                "value": "Auto",
+                "label": "Automatic savings = consistent results",
+                "color": "teal"
+              },
+              {
+                "value": "$50",
+                "label": "Per week = $2,600/year",
                 "color": "green"
               },
               {
-                "value": "",
-                "label": "",
+                "value": "10%",
+                "label": "Minimum recommended savings rate",
                 "color": "purple"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "teal"
               }
             ],
             "infoCard": null
@@ -288,29 +312,21 @@
       "headerColor": "blue",
       "content": {
         "headerTitle": "Why It Matters",
-        "layout": "balanced-layout",
+        "layout": "concept-full",
         "layoutData": {
-          "leftPanel": {
-            "title": "Beyond Just Money",
-            "paragraphs": [
-              "Effective income management impacts every area of your life—not just your bank account."
-            ],
-            "highlightBox": null
-          },
-          "rightPanel": {
-            "stats": [
-              {
-                "value": "",
-                "label": "",
-                "color": "rose"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "teal"
-              }
-            ],
-            "infoCard": null
+          "title": "Beyond Just Money",
+          "paragraphs": [
+            "Effective income management impacts every area of your life—not just your bank account."
+          ],
+          "bulletPoints": [
+            "<strong>Financial Stability:</strong> Protection against uncertainties",
+            "<strong>Freedom & Choice:</strong> Options instead of constraints",
+            "<strong>Mental Health:</strong> Reduced financial stress",
+            "<strong>Relationship Health:</strong> Fewer money conflicts",
+            "<strong>Future Security:</strong> Compound growth over time"
+          ],
+          "keyPoint": {
+            "text": "💡 Money is the #1 source of stress in the US. The habits you build now compound forever."
           }
         }
       }
@@ -326,28 +342,29 @@
           "leftPanel": {
             "title": "Basic Investment Concepts",
             "paragraphs": [
-              "Understanding how money can grow over time is essential for long-term wealth building.",
-              "Earn interest on your interest = exponential growth",
-              "Don't put all eggs in one basket—spread risk",
-              "Longer time = more growth opportunity"
+              "Understanding how money can grow over time is essential for long-term wealth building."
             ],
-            "highlightBox": null
+            "bulletPoints": [
+              "📈 <strong>Compound Interest:</strong> Earn interest on your interest = exponential growth",
+              "🥚 <strong>Diversification:</strong> Don't put all eggs in one basket—spread risk",
+              "⏰ <strong>Time Horizon:</strong> Longer time = more growth opportunity"
+            ]
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
-                "color": "green"
-              },
-              {
-                "value": "",
-                "label": "",
+                "value": "Early",
+                "label": "Starting early is your biggest advantage",
                 "color": "teal"
               },
               {
-                "value": "",
-                "label": "",
+                "value": "7%",
+                "label": "Historical average market return",
+                "color": "green"
+              },
+              {
+                "value": "10 yrs",
+                "label": "To double money at 7% return",
                 "color": "purple"
               }
             ],
@@ -365,11 +382,33 @@
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "",
-            "name": "",
-            "paragraphs": []
+            "icon": "📊",
+            "name": "Casey's Proactive Approach — Following the 50/30/20 Rule",
+            "paragraphs": [
+              "Casey earns $3,000/month and creates a monthly budget: $1,500 (50%) for needs including rent, utilities, groceries, and transportation. $900 (30%) for wants like dining out, entertainment, and hobbies. $600 (20%) for savings—$300 to emergency fund, $200 to retirement, $100 extra to student loans.",
+              "Casey tracks all expenses weekly using a budgeting app, <span class=\"highlight-text\">automates savings transfers, and has built a 3-month emergency fund ($4,500)</span> over the past year."
+            ]
           },
-          "outcomes": []
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "Emergency Fund",
+              "value": "$4,500",
+              "detail": "3-month cushion"
+            },
+            {
+              "type": "after",
+              "label": "Monthly Savings",
+              "value": "$600",
+              "detail": "Automated transfers"
+            },
+            {
+              "type": "after",
+              "label": "Result",
+              "value": "On Track",
+              "detail": "Financial security"
+            }
+          ]
         }
       }
     },
@@ -382,11 +421,33 @@
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "",
-            "name": "",
-            "paragraphs": []
+            "icon": "📉",
+            "name": "Taylor's Reactive Approach — Same Income, Different Outcome",
+            "paragraphs": [
+              "Taylor also earns $3,000/month but takes no systematic approach—pays bills as they arrive and spends freely until running low. Frequently overspends on dining out and entertainment, using credit cards to cover shortfalls.",
+              "Taylor has accumulated $4,000 in credit card debt at 18% interest, <span class=\"highlight-text\">has no emergency savings</span>, and misses the employer's 401(k) match. When unexpected expenses arise, more credit card debt follows."
+            ]
           },
-          "outcomes": []
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Credit Card Debt",
+              "value": "$4,000",
+              "detail": "At 18% interest"
+            },
+            {
+              "type": "before",
+              "label": "Emergency Fund",
+              "value": "$0",
+              "detail": "No safety net"
+            },
+            {
+              "type": "before",
+              "label": "Result",
+              "value": "Financial Stress",
+              "detail": "Debt cycle"
+            }
+          ]
         }
       }
     },
@@ -396,16 +457,16 @@
       "variant": "teal",
       "content": {
         "badge": "Discussion",
-        "question": ""
+        "question": "Casey and Taylor earn the same amount. Why do they have such different financial outcomes?<br><br>What helped Casey succeed? What changes should Taylor make? How will these choices affect each in 5 years?"
       }
     },
     {
       "number": 16,
       "type": "discussion",
-      "variant": "teal",
+      "variant": "purple",
       "content": {
         "badge": "Personal Reflection",
-        "question": ""
+        "question": "What is one specific change you could implement immediately to improve your financial management?<br><br>Do you currently track your spending? What steps have you taken toward an emergency fund?"
       }
     },
     {
@@ -448,22 +509,22 @@
           "takeaways": [
             {
               "number": 1,
-              "title": "",
-              "description": "The 50/30/20 rule provides a simple framework: 50% needs, 30% wants, 20% savings and debt repayment"
+              "title": "The 50/30/20 Rule",
+              "description": "Provides a simple framework: 50% needs, 30% wants, 20% savings and debt repayment"
             },
             {
               "number": 2,
-              "title": "",
+              "title": "Needs vs. Wants",
               "description": "Distinguishing needs from wants helps you make conscious spending decisions aligned with your values"
             },
             {
               "number": 3,
-              "title": "",
+              "title": "Emergency Fund First",
               "description": "An emergency fund (3-6 months of expenses) is your financial safety net against life's uncertainties"
             },
             {
               "number": 4,
-              "title": "",
+              "title": "Automate Savings",
               "description": "Paying yourself first through automated savings turns good intentions into consistent results"
             }
           ]
@@ -479,11 +540,17 @@
         "layout": "activity-layout",
         "layoutData": {
           "main": {
-            "icon": "📋",
-            "title": "",
-            "description": ""
+            "icon": "📊",
+            "title": "Create Your 50/30/20 Budget",
+            "description": "Using the interactive spreadsheet template, create a personal budget that allocates income according to the 50/30/20 rule. Scenario: You work part-time and earn $1,200/month. Create a budget that balances your needs, wants, and savings."
           },
-          "steps": []
+          "steps": [
+            "Enter your monthly income ($1,200 or your actual income)",
+            "Calculate your 50/30/20 targets: $600 needs, $360 wants, $240 savings",
+            "Allocate specific expenses within each category",
+            "Review and adjust to ensure balance",
+            "Identify one area where you can reduce spending to increase savings"
+          ]
         }
       }
     },

@@ -1,8 +1,8 @@
 {
   "metadata": {
     "lChapter": "L-61",
-    "title": "",
-    "subtitle": "",
+    "title": "Contract Evaluation and Consumer Protection",
+    "subtitle": "Reading the Fine Print Before You Sign",
     "totalSlides": 20,
     "hasStateVariables": false,
     "stateVariablesUsed": []
@@ -10,22 +10,26 @@
   "slides": [
     {
       "number": 1,
-      "type": "content",
-      "headerColor": "purple",
+      "type": "title",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Contract Evaluation and Consumer Protection",
+        "layout": "title-main",
+        "layoutData": {
+          "title": "Contract Evaluation and Consumer Protection",
+          "subtitle": "Reading the Fine Print Before You Sign"
+        }
       }
     },
     {
       "number": 2,
-      "type": "content",
-      "headerColor": "purple",
+      "type": "hook",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "The Hidden Cost of Not Reading",
+        "layout": "hook",
+        "layoutData": {
+          "scenario": "Marcus signed up for a gym advertised as '$20/month, cancel anytime!' Four months later he moved across the country. His cancellation call revealed a $200 early termination fee buried in the contract. A year after paying that fee, he noticed $25 monthly charges—the gym had auto-renewed because he missed a 45-day written cancellation window. Total unexpected cost: $475. The words 'cancel anytime' were technically true—after the first year.",
+          "question": "What would you do if you discovered a company was charging you for a service you'd tried to cancel months ago?"
+        }
       }
     },
     {
@@ -33,9 +37,37 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "What You'll Learn Today",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Analyze",
+              "description": "contracts critically to identify favorable and unfavorable terms before signing"
+            },
+            {
+              "number": 2,
+              "verb": "Evaluate",
+              "description": "consumer rights and legal protections that apply regardless of contract language"
+            },
+            {
+              "number": 3,
+              "verb": "Identify",
+              "description": "red flags and unfair contract terms that should raise serious concerns"
+            },
+            {
+              "number": 4,
+              "verb": "Apply",
+              "description": "a systematic six-step contract evaluation approach to real-world financial agreements"
+            },
+            {
+              "number": 5,
+              "verb": "Make",
+              "description": "informed decisions about entering, negotiating, or declining contractual agreements"
+            }
+          ]
+        }
       }
     },
     {
@@ -43,19 +75,55 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Key Vocabulary: Contract Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Contract Evaluation",
+              "definition": "The systematic process of analyzing a contract's terms, conditions, obligations, and implications before signing to assess whether it serves your interests.",
+              "example": "Before signing an apartment lease, reviewing each clause to understand your obligations, the landlord's obligations, and what happens if either party fails to comply."
+            },
+            {
+              "term": "Unfair Contract Terms",
+              "definition": "Clauses that create significant imbalance between parties' rights and obligations, often favoring the company while limiting consumer rights or remedies.",
+              "example": "A clause allowing the company to change prices at any time while requiring you to pay an early termination fee to exit the contract."
+            },
+            {
+              "term": "Mandatory Arbitration Clause",
+              "definition": "A provision requiring disputes to be resolved through private arbitration rather than court, often limiting your ability to sue or join class action lawsuits.",
+              "example": "A credit card agreement stating: 'Any dispute must be resolved through binding arbitration. You waive the right to participate in class action lawsuits.'"
+            }
+          ]
+        }
       }
     },
     {
       "number": 5,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "blue",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Key Vocabulary: Protections and Clauses",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Automatic Renewal Clause",
+              "definition": "Terms that cause subscriptions or agreements to automatically renew—often at higher rates—unless you actively cancel, sometimes with difficult cancellation procedures.",
+              "example": "An annual software subscription renewing at full price unless you cancel 30 days prior, even though you signed up during a promotional sale."
+            },
+            {
+              "term": "Limitation of Liability",
+              "definition": "Clauses that cap how much the company must pay if they harm you, sometimes limiting compensation to absurdly low amounts like the contract price.",
+              "example": "A storage facility contract stating: 'Company's maximum liability for any loss is $100, regardless of actual value of stored items.'"
+            },
+            {
+              "term": "Consumer Protection Laws",
+              "definition": "Federal and state regulations that prohibit deceptive practices, mandate disclosures, provide cooling-off periods, and establish rights you have regardless of contract terms.",
+              "example": "The FTC's 3-day cooling-off rule for door-to-door sales allows you to cancel within 72 hours even after signing a contract."
+            }
+          ]
+        }
       }
     },
     {
@@ -63,9 +131,24 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Understanding Unfair Contract Terms",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Not All Terms Are Equal—or Enforceable",
+          "paragraphs": [
+            "Contracts govern nearly every significant financial transaction—apartment leases, car financing, phone plans, employment, service subscriptions. Yet most people sign without reading, often because contracts are written in complex legal language designed to protect the company, not the consumer.",
+            "Some terms are so one-sided that courts may refuse to enforce them as 'unconscionable.' But many unfair terms fall short of unconscionability while still harming consumers. Companies rely on the fact that most people won't read, won't challenge, and won't know their rights."
+          ],
+          "bulletPoints": [
+            "Excessively high early termination fees (e.g., $200 to cancel a $20/month gym membership)",
+            "One-way modification rights: company can change prices or terms, you cannot",
+            "Overly broad waivers: surrendering your right to hold the company accountable for negligence",
+            "Hidden fees: activation fees, processing fees, convenience fees for specific payment methods"
+          ],
+          "keyPoint": {
+            "text": "A single overlooked clause can cost thousands, trap you in unfavorable terms for years, or strip away legal rights you didn't know you were giving up."
+          }
+        }
       }
     },
     {
@@ -73,9 +156,34 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Fair Terms vs. Unfair Terms",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "✅",
+            "title": "Reasonable Contract Terms",
+            "items": [
+              "30-day written notice to terminate, with no fees after initial period",
+              "Mutual modification rights: both parties must agree to changes",
+              "Liability proportional to actual harm or contract value",
+              "Warranty covering defects in materials and workmanship",
+              "Transparent total cost disclosure including all fees",
+              "Arbitration available as one option, not the only option"
+            ]
+          },
+          "rightColumn": {
+            "icon": "🚩",
+            "title": "Red Flag Contract Terms",
+            "items": [
+              "60+ day written notice with steep early termination fees",
+              "Company can change terms at will; your only option is to pay to exit",
+              "Liability capped at contract price regardless of actual harm caused",
+              "'As-is' with no warranties and broad indemnification requirements",
+              "Hidden fees not disclosed in advertised price",
+              "Mandatory binding arbitration with class action waiver"
+            ]
+          }
+        }
       }
     },
     {
@@ -83,9 +191,46 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Your Rights Cannot Be Signed Away",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Federal Consumer Protections",
+            "paragraphs": [
+              "Certain rights exist regardless of what a contract says. Federal and state consumer protection laws establish baseline protections that companies cannot contract around."
+            ],
+            "bulletPoints": [
+              "FTC Act: prohibits deceptive and unfair business practices",
+              "Truth in Lending Act (TILA): requires clear disclosure of credit terms",
+              "Magnuson-Moss Warranty Act: mandates clear warranty terms and limits warranty disclaimers",
+              "FTC 3-day cooling-off rule: right to cancel door-to-door sales within 72 hours",
+              "State unconscionability laws: courts can void contracts that are shockingly one-sided"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "3",
+                "label": "Days to cancel door-to-door sales",
+                "color": "green"
+              },
+              {
+                "value": "TILA",
+                "label": "Requires APR disclosure before credit agreements",
+                "color": "blue"
+              },
+              {
+                "value": "FTC",
+                "label": "Can fine companies for deceptive contract practices",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Key Principle",
+              "text": "If a company advertises one thing but the contract says another, that's likely deceptive under the FTC Act—regardless of what you signed."
+            }
+          }
+        }
       }
     },
     {
@@ -93,9 +238,27 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Red Flag Phrases to Watch For",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "These Words Should Trigger Closer Scrutiny",
+          "paragraphs": [
+            "Certain phrases in contracts signal that you may be accepting significant risks, surrendering important rights, or agreeing to terms that heavily favor the company. Learning to recognize these red flags is the first step to protecting yourself."
+          ],
+          "bulletPoints": [
+            "\"As-is\" or \"with all faults\" — you accept the product/service with no recourse for defects",
+            "\"Non-refundable deposit\" — verify whether the amount is reasonable given actual costs",
+            "\"Binding arbitration on an individual basis\" — waives your right to class action lawsuits",
+            "\"Automatically renews unless canceled\" — requires active steps to avoid continued charges",
+            "\"Company may change terms at any time\" — your only exit may be paying termination fees",
+            "\"Customer agrees to indemnify\" — you may pay the company's legal costs if they're sued",
+            "\"No warranty expressed or implied\" — eliminates all seller responsibility for failures",
+            "\"Disputes resolved in [company's home state]\" — makes suing impractical"
+          ],
+          "keyPoint": {
+            "text": "The presence of one red flag doesn't automatically make a contract bad—it means that specific clause deserves careful analysis before you agree."
+          }
+        }
       }
     },
     {
@@ -103,9 +266,41 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Automatic Renewal and Arbitration",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Automatic Renewal Traps",
+            "paragraphs": [
+              "Perpetual autorenewal clauses are among the most common ways consumers are surprised by unexpected charges. Companies design these systems to maximize continued payments."
+            ],
+            "bulletPoints": [
+              "Annual contracts renewing unless you cancel 30–60 days in advance",
+              "Cancellation requiring phone calls during limited hours or written mail",
+              "Renewal notices sent to email you may not check",
+              "Price increases taking effect at renewal without prominent disclosure",
+              "Difficult cancellation processes designed to create friction"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$275",
+                "label": "What Marcus lost to auto-renewal charges he didn't notice",
+                "color": "red"
+              },
+              {
+                "value": "45",
+                "label": "Days written notice Marcus needed to cancel (buried in contract)",
+                "color": "orange"
+              }
+            ],
+            "infoCard": {
+              "title": "Arbitration Reality Check",
+              "text": "Mandatory arbitration with class action waivers prevents you from joining with others harmed by the same company. For small individual claims ($50–$200), it's economically impractical to hire an attorney—which is exactly why companies use these clauses."
+            }
+          }
+        }
       }
     },
     {
@@ -113,9 +308,22 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Six-Step Contract Analysis: Steps 1–3",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "A Systematic Approach Prevents Surprises",
+          "paragraphs": [
+            "Evaluating contracts systematically—rather than skimming or trusting sales assurances—protects you from unwelcome surprises. This structured six-step process ensures you examine all critical elements."
+          ],
+          "bulletPoints": [
+            "Step 1 — Identify All Parties and Obligations: Who is legally bound? What must each party do? Note every obligation you're taking on and confirm the other party's responsibilities are specific and measurable.",
+            "Step 2 — Understand Financial Terms Completely: What is the TOTAL cost—not just monthly payments, but all fees, interest, and penalties over the full term? Are prices guaranteed or can they increase? What are consequences of late payment?",
+            "Step 3 — Examine Termination and Modification Provisions: How do you exit? What notice is required and at what cost? Can the company change terms unilaterally? Does the contract auto-renew and under what conditions?"
+          ],
+          "keyPoint": {
+            "text": "Steps 1–3 focus on the core deal: what you're getting, what you're paying, and how you can exit. Complete these before moving to risk analysis."
+          }
+        }
       }
     },
     {
@@ -123,9 +331,22 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Six-Step Contract Analysis: Steps 4–6",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Risk, Liability, and Verification",
+          "paragraphs": [
+            "The second half of the systematic analysis focuses on what happens when things go wrong—who bears the risk, how disputes are resolved, and whether the written contract matches what you were promised."
+          ],
+          "bulletPoints": [
+            "Step 4 — Analyze Risk and Liability: Who is responsible if things go wrong? Does a liability cap leave you unprotected for serious harm? Are you required to waive jury trials or class action rights? Must you indemnify the company for their mistakes?",
+            "Step 5 — Check Dispute Resolution: Is arbitration required—under whose rules, in what location, and at what cost? Some contracts require consumers to pay thousands in arbitration fees, making any claim economically impossible.",
+            "Step 6 — Verify Consistency with Promises: Do written terms match what the salesperson or advertisement promised? Discrepancies usually mean the contract governs. Get verbal promises in writing as signed amendments before you sign."
+          ],
+          "keyPoint": {
+            "text": "Never let urgency or pressure override this process. If a deal isn't available after you've had time to review the contract, it was probably never a good deal to begin with."
+          }
+        }
       }
     },
     {
@@ -133,9 +354,37 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Real Scenario: Taylor's Lease",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "🏠",
+            "name": "Taylor, 24 — Apartment Lease Evaluation",
+            "paragraphs": [
+              "Taylor resisted landlord pressure to 'sign today' and took the lease home to review. She found: 90-day written notice required to vacate (not email); landlord entry 'at any time for any reason' (violating state 24-hour notice law); tenant liable for ALL repairs regardless of cause; tenant pays landlord's attorney fees in any dispute. She researched her state's tenant rights, drafted an amendment fixing all four issues, and presented it calmly but firmly."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "positive",
+              "label": "Result",
+              "value": "Landlord agreed to 3 of 4 changes",
+              "detail": "60-day notice, 24-hour entry requirement, and landlord responsibility for non-tenant damage were all accepted"
+            },
+            {
+              "type": "positive",
+              "label": "Protected From",
+              "value": "Thousands in potential charges",
+              "detail": "Unenforceable entry clause, unfair repair liability, and one-sided attorney fees were removed before signing"
+            },
+            {
+              "type": "warning",
+              "label": "Key Lesson",
+              "value": "Many terms are negotiable",
+              "detail": "Despite the landlord presenting it as a 'standard lease,' most concerning clauses were changed simply by asking"
+            }
+          ]
+        }
       }
     },
     {
@@ -143,29 +392,73 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Real Scenario: Jordan's Warranty Decision",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "💻",
+            "name": "Jordan — $1,200 Laptop Extended Warranty Analysis",
+            "paragraphs": [
+              "Jordan was offered a $350 extended warranty for 3 years beyond the manufacturer's 1-year coverage. She actually read the document: 'misuse' exclusions (undefined), no battery or cosmetic coverage, $75 deductible per claim, 30-day registration requirement. She calculated the true cost-benefit: $350 + $75 deductible meant needing multiple major repairs to break even. She declined, put $150 in a savings account as self-insurance, and after 3 years had needed zero repairs—saving $200 net."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "positive",
+              "label": "Money Saved",
+              "value": "$200 net savings",
+              "detail": "By declining the warranty and self-insuring with $150 in savings, Jordan came out ahead over three years"
+            },
+            {
+              "type": "positive",
+              "label": "Risk Managed",
+              "value": "Informed decision",
+              "detail": "Even if she'd had one major repair, she'd be only slightly worse off—she understood the math before deciding"
+            },
+            {
+              "type": "warning",
+              "label": "What She Caught",
+              "value": "Vague exclusions",
+              "detail": "The undefined 'misuse' term could allow warranty denial for almost any claim—a major red flag she'd have missed without reading"
+            }
+          ]
+        }
       }
     },
     {
       "number": 15,
-      "type": "content",
-      "headerColor": "purple",
+      "type": "discussion",
+      "variant": "teal",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Discussion: When to Walk Away",
+        "layout": "discussion",
+        "layoutData": {
+          "prompt": "Consider this scenario: You've found the perfect apartment but the lease includes a mandatory arbitration clause waiving class action rights, a 90-day cancellation notice requirement, and a clause allowing the landlord to enter with no notice. The landlord says 'this is our standard lease—we can't change it.' The apartment is significantly below market rate for the area.",
+          "questions": [
+            "Which of these three clauses is most concerning and why?",
+            "What would you research before deciding whether to sign?",
+            "At what point is a deal good enough that you'd accept unfavorable contract terms?",
+            "What alternatives might exist if you decide the terms are unacceptable?"
+          ]
+        }
       }
     },
     {
       "number": 16,
-      "type": "content",
-      "headerColor": "purple",
+      "type": "discussion",
+      "variant": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Discussion: Your Contract Experiences",
+        "layout": "discussion",
+        "layoutData": {
+          "prompt": "Think about a contract you've signed or will sign soon—a phone plan, streaming subscription, employment agreement, or rental. Using the six-step systematic approach, what would you examine most carefully?",
+          "questions": [
+            "Have you ever signed a contract and later discovered terms you weren't aware of?",
+            "What made you sign without fully reading—time pressure, complexity, trust in the brand?",
+            "What specific provision in a contract you've signed would you now question or negotiate?",
+            "How would you respond if a salesperson said 'you're the first person to ever ask about that clause'?"
+          ]
+        }
       }
     },
     {
@@ -173,9 +466,36 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What is a mandatory arbitration clause and what right does it typically require you to waive?"
+            },
+            {
+              "number": 2,
+              "question": "Name three federal consumer protection laws and describe the protection each provides."
+            },
+            {
+              "number": 3,
+              "question": "Why is an automatic renewal clause potentially harmful, and what should you look for when evaluating one?"
+            },
+            {
+              "number": 4,
+              "question": "What is the difference between a warranty disclaimer and a limitation of liability clause?"
+            },
+            {
+              "number": 5,
+              "question": "If a salesperson promises features not in the written contract, what should you do before signing?"
+            },
+            {
+              "number": 6,
+              "question": "What does 'unconscionable' mean in a contract context, and what factors do courts consider?"
+            }
+          ]
+        }
       }
     },
     {
@@ -183,9 +503,42 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Red Flags Demand Closer Reading",
+              "description": "Phrases like 'as-is,' 'binding arbitration,' 'automatically renews,' and 'no warranty' signal clauses that deserve detailed analysis before you agree."
+            },
+            {
+              "number": 2,
+              "title": "Consumer Laws Protect You Regardless of Contract",
+              "description": "Rights established by the FTC Act, TILA, and Magnuson-Moss Warranty Act apply even if you signed a contract claiming to waive them."
+            },
+            {
+              "number": 3,
+              "title": "Use the Six-Step System",
+              "description": "Systematically evaluate parties/obligations, financial terms, termination, risk allocation, dispute resolution, and consistency with promises—every time."
+            },
+            {
+              "number": 4,
+              "title": "Most Terms Are Negotiable",
+              "description": "Companies present contracts as 'standard' and non-negotiable. Many clauses can be modified or removed simply by asking—especially for significant agreements."
+            },
+            {
+              "number": 5,
+              "title": "Walking Away Is Always an Option",
+              "description": "If a company won't negotiate clearly unfair terms and you can't protect yourself legally, declining the agreement protects you from costly obligations."
+            },
+            {
+              "number": 6,
+              "title": "Pressure Tactics Are Warning Signs",
+              "description": "Urgency tactics ('sign today or lose it') are designed to prevent careful evaluation. Legitimate offers survive the time needed to read the contract."
+            }
+          ]
+        }
       }
     },
     {
@@ -193,19 +546,49 @@
       "type": "content",
       "headerColor": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Skill Builder: Contract Analyzer",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📋",
+            "title": "Contract Analyzer Tool",
+            "description": "Evaluate three real-world contracts—an apartment lease, a cell phone service agreement, and an online service Terms of Service—using the systematic six-step approach."
+          },
+          "steps": [
+            {
+              "number": 1,
+              "title": "Analyze Contract A: Apartment Lease",
+              "description": "Identify early termination fees, landlord entry rights, automatic renewal terms, repair responsibilities, and security deposit conditions. Flag at least 3 clauses you would negotiate."
+            },
+            {
+              "number": 2,
+              "title": "Analyze Contract B: Cell Phone Agreement",
+              "description": "Calculate the true total cost over the contract period including all fees and taxes. Identify data overage charges, early termination fees, company modification rights, and the arbitration clause."
+            },
+            {
+              "number": 3,
+              "title": "Analyze Contract C: Online Service Terms",
+              "description": "Identify data and privacy rights you're granting, warranty disclaimers, unilateral modification rights, automatic renewal and cancellation procedures, and your remedies if the service fails."
+            },
+            {
+              "number": 4,
+              "title": "Classify Each Clause",
+              "description": "For each highlighted clause: classify as Reasonable, Concerning, or Red Flag. Explain your reasoning, assess likely enforceability, and decide whether to negotiate, accept, or walk away."
+            }
+          ]
+        }
       }
     },
     {
       "number": 20,
-      "type": "content",
-      "headerColor": "purple",
+      "type": "closing",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Contract Evaluation: Your Financial Defense",
+        "layout": "closing",
+        "layoutData": {
+          "message": "Every contract you sign is a legally binding commitment—but the terms aren't set in stone until you sign. Reading carefully, spotting red flags, knowing your consumer rights, and being willing to negotiate or walk away are the tools that transform you from a passive signer into an informed party. Companies that offer transparent, fair contracts have competitive advantages when consumers become discriminating evaluators. Your willingness to analyze carefully creates market pressure for fairer agreements.",
+          "callToAction": "Before signing your next contract, apply all six steps—and remember: if a deal requires you to rush past the fine print, that's the fine print telling you something."
+        }
       }
     }
   ]

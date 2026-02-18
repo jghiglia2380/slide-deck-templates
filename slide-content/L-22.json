@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "lChapter": "L-XX",
+    "lChapter": "L-22",
     "title": "Choosing the Right Source of Credit",
-    "subtitle": "Comparing Credit Options for Informed Borrowing Decisions in {{STATE_NAME}}",
+    "subtitle": "Comparing credit options for informed borrowing decisions",
     "totalSlides": 20,
     "hasStateVariables": true,
     "stateVariablesUsed": [
@@ -16,7 +16,7 @@
       "content": {
         "title": "Choosing the Right Source of Credit",
         "titleSize": "large",
-        "subtitle": "Comparing Credit Options for Informed Borrowing Decisions in {{STATE_NAME}}"
+        "subtitle": "Comparing credit options for informed borrowing decisions in {{STATE_NAME}}"
       }
     },
     {
@@ -24,18 +24,39 @@
       "type": "hook",
       "content": {
         "label": "Essential Question",
-        "question": ""
+        "question": "How do you decide where to borrow money when <em>credit options range from 4% APR to 400% APR</em>?<br><br>Not all credit is created equal. The source you choose can mean the difference between an affordable loan and a debt trap."
       }
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "teal",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
         "layoutData": {
-          "objectives": []
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Differentiate",
+              "description": "Understand the key differences between credit sources such as banks, credit unions, online lenders, and payday lenders"
+            },
+            {
+              "number": 2,
+              "verb": "Compare",
+              "description": "Evaluate the terms, interest rates, and fees associated with different credit options to identify total borrowing costs"
+            },
+            {
+              "number": 3,
+              "verb": "Evaluate",
+              "description": "Assess your own creditworthiness and determine which credit source is most suitable for your specific needs"
+            },
+            {
+              "number": 4,
+              "verb": "Analyze",
+              "description": "Examine real-world scenarios to understand how borrowing decisions impact long-term financial health"
+            }
+          ]
         }
       }
     },
@@ -49,9 +70,14 @@
         "layoutData": {
           "terms": [
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Annual Percentage Rate (APR)",
+              "definition": "The yearly cost of borrowing money, expressed as a percentage, including interest and fees",
+              "example": "A credit card with 18% APR means you'd pay $180 annually on a $1,000 balance"
+            },
+            {
+              "term": "Collateral",
+              "definition": "An asset that a borrower pledges as security for a loan, which the lender can seize if payments aren't made",
+              "example": "Your home serves as collateral for a mortgage; your car for an auto loan"
             }
           ]
         }
@@ -62,14 +88,19 @@
       "type": "content",
       "headerColor": "blue",
       "content": {
-        "headerTitle": "Key Terms (continued)",
+        "headerTitle": "Key Terms",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Installment Credit",
+              "definition": "A loan repaid in fixed monthly amounts over a set period of time",
+              "example": "A 48-month car loan with $350 monthly payments is installment credit"
+            },
+            {
+              "term": "Creditworthiness",
+              "definition": "A measure of how likely a borrower is to repay debt, based on credit history and financial factors",
+              "example": "A credit score of 750 indicates high creditworthiness to lenders"
             }
           ]
         }
@@ -86,26 +117,31 @@
           "leftPanel": {
             "title": "Where Can You Borrow?",
             "paragraphs": [
-              "Credit is available from many different sources, each with their own advantages, interest rates, and qualification requirements. in {{STATE_NAME}}"
+              "Different lenders serve different needs and charge very different rates. Understanding your options helps you make smart borrowing decisions in {{STATE_NAME}}."
             ],
-            "highlightBox": null
+            "bulletPoints": [
+              "Commercial banks offer diverse products but require good credit",
+              "Credit unions are member-owned with typically lower rates",
+              "Online lenders provide convenience with quick approvals",
+              "Consumer finance companies serve those with limited credit"
+            ]
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
+                "value": "4-36%",
+                "label": "Typical bank/credit union APR range",
                 "color": "teal"
               },
               {
-                "value": "",
-                "label": "",
+                "value": "300-400%",
+                "label": "Typical payday loan APR equivalent",
                 "color": "rose"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "teal"
+                "value": "$100B+",
+                "label": "Annual consumer credit issued",
+                "color": "purple"
               }
             ],
             "infoCard": null
@@ -122,14 +158,28 @@
         "layout": "comparison-grid",
         "layoutData": {
           "leftColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
+            "icon": "🏦",
+            "title": "Traditional Lenders",
+            "items": [
+              "Lower interest rates (typically 4-18% APR)",
+              "Strict qualification requirements",
+              "Longer approval processes",
+              "Established consumer protections",
+              "Build credit history when payments reported",
+              "Banks, credit unions, established finance companies"
+            ]
           },
           "rightColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
+            "icon": "⚠️",
+            "title": "Alternative Lenders",
+            "items": [
+              "Much higher interest rates (often 100%+ APR)",
+              "Minimal qualification requirements",
+              "Very fast approval (minutes to hours)",
+              "Fewer consumer protections",
+              "Can create dangerous debt cycles",
+              "Payday lenders, title loans, rent-to-own"
+            ]
           }
         }
       }
@@ -143,28 +193,33 @@
         "layout": "balanced-layout",
         "layoutData": {
           "leftPanel": {
-            "title": "Choosing Between Institutions",
+            "title": "Key Differences That Affect Your Rate",
             "paragraphs": [
-              "Both offer similar products, but their structure and priorities differ significantly: in {{STATE_NAME}}"
+              "Banks are for-profit and shareholder-owned. Credit unions are non-profit, member-owned cooperatives — which means their profits go back to members as lower rates."
             ],
-            "highlightBox": null
+            "bulletPoints": [
+              "Credit unions often offer 0.5-2% lower rates than banks",
+              "Banks may have more branch locations and services",
+              "Credit unions require membership eligibility",
+              "Both are federally insured (FDIC / NCUA)"
+            ]
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
+                "value": "0.5-2%",
+                "label": "Average rate savings at credit unions",
+                "color": "teal"
+              },
+              {
+                "value": "130M+",
+                "label": "Americans belong to credit unions",
                 "color": "green"
               },
               {
-                "value": "",
-                "label": "",
+                "value": "$250K",
+                "label": "NCUA insurance per depositor",
                 "color": "purple"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "teal"
               }
             ],
             "infoCard": null
@@ -180,17 +235,16 @@
         "headerTitle": "Key Factors for Comparison",
         "layout": "concept-full",
         "layoutData": {
-          "title": "What to Evaluate When Choosing Credit",
-          "paragraphs": [
-            "Always compare multiple lenders using these critical factors before borrowing: in {{STATE_NAME}}",
-            "The true annual cost including interest and fees - the most important comparison factor in {{STATE_NAME}}",
-            "Length of repayment period affects monthly payment and total interest paid in {{STATE_NAME}}",
-            "Application, origination, late payment, and prepayment penalty fees in {{STATE_NAME}}",
-            "Minimum credit score and income documentation needed in {{STATE_NAME}}",
-            "Whether the loan requires security like a home or vehicle in {{STATE_NAME}}",
-            "Options for payment timing, amounts, and hardship programs in {{STATE_NAME}}"
-          ],
-          "bulletPoints": []
+          "title": "What to Evaluate Before Borrowing",
+          "paragraphs": [],
+          "bulletPoints": [
+            "<strong>APR:</strong> The true annual cost including interest and fees — the most important comparison factor",
+            "<strong>Loan Terms:</strong> Length of repayment period affects monthly payment and total interest paid",
+            "<strong>Fees:</strong> Application, origination, late payment, and prepayment penalty fees",
+            "<strong>Credit Requirements:</strong> Minimum credit score and income documentation needed",
+            "<strong>Collateral:</strong> Whether the loan requires security like a home or vehicle",
+            "<strong>Flexibility:</strong> Options for payment timing, amounts, and hardship programs"
+          ]
         }
       }
     },
@@ -200,10 +254,30 @@
       "headerColor": "teal",
       "content": {
         "headerTitle": "Credit Source Comparison",
-        "layout": "generic",
+        "layout": "comparison-grid",
         "layoutData": {
-          "paragraphs": [],
-          "lists": []
+          "leftColumn": {
+            "icon": "✅",
+            "title": "Lower-Cost Sources (6-36% APR)",
+            "items": [
+              "Credit Union: 6-18% APR (membership required)",
+              "Commercial Bank: 7-24% APR (good credit 670+)",
+              "Online Lender: 8-36% APR (quick approval, varies)",
+              "Consumer Finance: 15-36% APR (flexible qualification)",
+              "Build credit history with each on-time payment"
+            ]
+          },
+          "rightColumn": {
+            "icon": "⛔",
+            "title": "High-Cost Sources (100-400%+ APR)",
+            "items": [
+              "Payday Lender: 300-400% APR equivalent",
+              "Title Loan: 100-300% APR (car as collateral)",
+              "Rent-to-Own: Effective APR often 100%+",
+              "Only consider as absolute last resort",
+              "80% of payday loans are rolled over"
+            ]
+          }
         }
       }
     },
@@ -216,28 +290,33 @@
         "layout": "balanced-layout",
         "layoutData": {
           "leftPanel": {
-            "title": "The High Cost of Wrong Choices",
+            "title": "The True Cost of Borrowing",
             "paragraphs": [
-              "Choosing the wrong credit source can cost you thousands and trap you in debt cycles: in {{STATE_NAME}}"
+              "The same $1,500 loan from different sources has dramatically different total costs."
             ],
-            "highlightBox": null
+            "bulletPoints": [
+              "Credit union at 8% APR: total cost $1,562 over 12 months",
+              "Bank credit card at 18% APR: total cost $1,648 over 12 months",
+              "Payday lender: could cost $3,000+ due to fees and rollovers",
+              "12 million Americans use payday loans annually"
+            ]
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
+                "value": "$1,438",
+                "label": "Extra cost from wrong credit choice",
                 "color": "rose"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "teal"
+                "value": "80%",
+                "label": "Payday loans rolled over",
+                "color": "purple"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "purple"
+                "value": "$520",
+                "label": "Average annual payday fees per borrower",
+                "color": "rose"
               }
             ],
             "infoCard": null
@@ -251,17 +330,40 @@
       "headerColor": "purple",
       "content": {
         "headerTitle": "Credit in the Modern Economy",
-        "layout": "concept-full",
+        "layout": "balanced-layout",
         "layoutData": {
-          "title": "How Technology is Changing Borrowing",
-          "paragraphs": [
-            "The credit landscape has evolved significantly with new options and considerations: in {{STATE_NAME}}",
-            "Online-only lenders use AI for faster approvals and may offer competitive rates in {{STATE_NAME}}",
-            "Platforms like LendingClub connect borrowers directly with individual investors in {{STATE_NAME}}",
-            "Short-term installment plans at checkout - often 0% if paid on time in {{STATE_NAME}}",
-            "New tools help build credit history through rent, utilities, and subscriptions in {{STATE_NAME}}"
-          ],
-          "bulletPoints": []
+          "leftPanel": {
+            "title": "New Options to Know",
+            "paragraphs": [
+              "Financial technology has created new types of credit sources with different advantages and risks."
+            ],
+            "bulletPoints": [
+              "Fintech Lenders — Online-only lenders use AI for faster approvals and may offer competitive rates",
+              "Peer-to-Peer — Platforms connect borrowers directly with individual investors",
+              "Buy Now Pay Later — Short-term installment plans at checkout, often 0% if paid on time",
+              "Credit Building — New tools help build credit history through rent, utilities, and subscriptions"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "Fast",
+                "label": "Fintech approvals in minutes vs. days",
+                "color": "teal"
+              },
+              {
+                "value": "0%",
+                "label": "BNPL if paid on time (watch the fine print)",
+                "color": "green"
+              },
+              {
+                "value": "New",
+                "label": "Credit-building tools for thin credit files",
+                "color": "purple"
+              }
+            ],
+            "infoCard": null
+          }
         }
       }
     },
@@ -270,26 +372,35 @@
       "type": "content",
       "headerColor": "teal",
       "content": {
-        "headerTitle": "Real-World Scenario: Emergency Car Repair",
+        "headerTitle": "Real-World Example",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "",
-            "name": "",
-            "paragraphs": []
+            "icon": "🚗",
+            "name": "Maya's Emergency Car Repair",
+            "paragraphs": [
+              "Maya needs $1,500 for car repairs to get back to work. She has three options: credit union personal loan at 8% APR (12 months = $1,562 total), credit card at 18% APR ($1,648 total if paid in 12 months), or a payday loan at 400% APR equivalent ($2,250+ total).",
+              "<span class=\"highlight-text\">The credit union loan saves Maya $688 compared to the payday option</span> — worth the 2-3 day wait for approval."
+            ]
           },
           "outcomes": [
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "after",
+              "label": "Credit Union",
+              "value": "$1,562 total",
+              "detail": "Best choice (8% APR)"
             },
             {
               "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "label": "Credit Card",
+              "value": "$1,648 total",
+              "detail": "OK option (18% APR)"
+            },
+            {
+              "type": "before",
+              "label": "Payday Loan",
+              "value": "$2,250+ total",
+              "detail": "Avoid (400% APR)"
             }
           ]
         }
@@ -300,26 +411,35 @@
       "type": "content",
       "headerColor": "blue",
       "content": {
-        "headerTitle": "Real-World Scenario: Used Car Purchase",
+        "headerTitle": "Real-World Example",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "",
-            "name": "",
-            "paragraphs": []
+            "icon": "🚙",
+            "name": "Jordan's Used Car Purchase",
+            "paragraphs": [
+              "Jordan is buying a $12,000 used car with a credit score of 720. She compared: bank auto loan at 4.5% APR for 48 months ($13,128 total), dealer financing at 6.9% APR for 60 months ($14,364 total), and online lender at 5.2% APR for 48 months ($13,320 total).",
+              "<span class=\"highlight-text\">The bank auto loan saves Jordan $1,236 over dealer financing.</span> Longer loan terms lower payments but cost more in total interest."
+            ]
           },
           "outcomes": [
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "after",
+              "label": "Bank Auto Loan",
+              "value": "$13,128 total",
+              "detail": "Best rate (4.5% APR)"
             },
             {
               "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "label": "Online Lender",
+              "value": "$13,320 total",
+              "detail": "Good option (5.2% APR)"
+            },
+            {
+              "type": "before",
+              "label": "Dealer Financing",
+              "value": "$14,364 total",
+              "detail": "Most expensive (6.9% APR)"
             }
           ]
         }
@@ -331,16 +451,16 @@
       "variant": "teal",
       "content": {
         "badge": "Discussion",
-        "question": ""
+        "question": "Why do payday lenders continue to operate despite charging extremely high interest rates?<br><br>What circumstances might lead someone to use a payday lender even knowing the high costs? What alternatives could help people in financial emergencies avoid high-cost borrowing?"
       }
     },
     {
       "number": 16,
       "type": "discussion",
-      "variant": "teal",
+      "variant": "purple",
       "content": {
         "badge": "Personal Reflection",
-        "question": ""
+        "question": "What would you do if you needed $2,000 quickly for an unexpected expense?<br><br>What credit sources would be available to you based on your current financial situation? How would you compare the total cost of different options before making a decision?"
       }
     },
     {
@@ -354,19 +474,19 @@
           "questions": [
             {
               "number": 1,
-              "question": "What does APR include that a simple interest rate might not, and why is this important for comparing credit options? in {{STATE_NAME}}"
+              "question": "What does APR include that a simple interest rate might not, and why is this important for comparing credit options?"
             },
             {
               "number": 2,
-              "question": "Why might a credit union offer better rates than a commercial bank for the same type of loan? in {{STATE_NAME}}"
+              "question": "Why might a credit union offer better rates than a commercial bank for the same type of loan?"
             },
             {
               "number": 3,
-              "question": "If a payday loan charges $15 per $100 borrowed for two weeks, what is the approximate APR equivalent? in {{STATE_NAME}}"
+              "question": "If a payday loan charges $15 per $100 borrowed for two weeks, what is the approximate APR equivalent?"
             },
             {
               "number": 4,
-              "question": "Besides interest rate, what other factors should you consider when choosing between credit sources? in {{STATE_NAME}}"
+              "question": "Besides interest rate, what other factors should you consider when choosing between credit sources?"
             }
           ]
         }
@@ -383,23 +503,23 @@
           "takeaways": [
             {
               "number": 1,
-              "title": "",
-              "description": "Compare APR: Always look at the Annual Percentage Rate to understand the true cost of borrowing, including all fees in {{STATE_NAME}}"
+              "title": "Compare APR",
+              "description": "Always look at the Annual Percentage Rate to understand the true cost of borrowing, including all fees"
             },
             {
               "number": 2,
-              "title": "",
-              "description": "Shop Around: Get quotes from at least three different lenders before committing to any credit product in {{STATE_NAME}}"
+              "title": "Shop Around",
+              "description": "Get quotes from at least three different lenders before committing to any credit product"
             },
             {
               "number": 3,
-              "title": "",
-              "description": "Avoid Predatory Lenders: Payday loans and title loans should only be a last resort due to extremely high costs in {{STATE_NAME}}"
+              "title": "Avoid Predatory Lenders",
+              "description": "Payday loans and title loans should only be a last resort due to extremely high costs"
             },
             {
               "number": 4,
-              "title": "",
-              "description": "Calculate Total Cost: Look beyond monthly payments to understand the total amount you'll repay over the loan term in {{STATE_NAME}}"
+              "title": "Calculate Total Cost",
+              "description": "Look beyond monthly payments to understand the total amount you'll repay over the loan term"
             }
           ]
         }
@@ -415,15 +535,15 @@
         "layoutData": {
           "main": {
             "icon": "📋",
-            "title": "",
-            "description": ""
+            "title": "Comparing Credit Sources",
+            "description": "Analyze different borrowing scenarios and determine the most appropriate credit source based on APR, terms, and total cost. You will compare at least three credit options for each scenario."
           },
           "steps": [
-            "Review the chart of different credit sources and their characteristics in {{STATE_NAME}}",
-            "Analyze each borrowing scenario for amount needed and credit situation in {{STATE_NAME}}",
-            "Match each scenario to the most appropriate credit source in {{STATE_NAME}}",
-            "Calculate the total cost for at least one scenario option in {{STATE_NAME}}",
-            "Reflect on why payday lenders persist despite high costs in {{STATE_NAME}}"
+            "Review the chart of different credit sources and their characteristics",
+            "Analyze each borrowing scenario for amount needed and credit situation",
+            "Match each scenario to the most appropriate credit source",
+            "Calculate the total cost for at least one scenario option",
+            "Reflect on why payday lenders persist despite high costs"
           ]
         }
       }
@@ -432,9 +552,9 @@
       "number": 20,
       "type": "closing",
       "content": {
-        "tagline": "Building Financial Literacy for Life in {{STATE_NAME}}",
+        "tagline": "Smart Borrowing Starts Here",
         "website": "www.pflacademy.co",
-        "copyright": "© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+        "copyright": "© 2025 PFL Academy. All rights reserved."
       }
     }
   ]

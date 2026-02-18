@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "lChapter": "L-XX",
+    "lChapter": "L-08",
     "title": "Understanding Tax Filing Requirements",
-    "subtitle": "Know when to file, what forms to use, and how to navigate tax season with confidence in {{STATE_NAME}}",
+    "subtitle": "Know when to file, what forms to use, and how to navigate tax season with confidence",
     "totalSlides": 20,
     "hasStateVariables": true,
     "stateVariablesUsed": [
@@ -24,13 +24,13 @@
       "type": "hook",
       "content": {
         "label": "Essential Question",
-        "question": ""
+        "question": "How do you know if you need to file taxes—<br>and what could you be <em>leaving on the table</em> if you don't?"
       }
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "teal",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
@@ -63,21 +63,21 @@
     {
       "number": 4,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "purple",
       "content": {
         "headerTitle": "Key Terms",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "W-2 Form",
+              "definition": "Document from your employer reporting wages and taxes withheld. Provided by January 31 each year; shows your earnings and what was already paid to IRS.",
+              "example": "Key boxes: Box 1 (wages), Box 2 (federal tax withheld)"
             },
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "1099 Forms",
+              "definition": "Documents reporting income from sources other than employment—freelance work, investments, bank interest. No taxes are automatically withheld.",
+              "example": "1099-NEC (freelance), 1099-INT (interest), 1099-DIV (dividends)"
             }
           ]
         }
@@ -93,14 +93,14 @@
         "layoutData": {
           "terms": [
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Form 1040",
+              "definition": "The main federal income tax return form for individuals. Report all income, claim deductions and credits, calculate what you owe (or are owed).",
+              "example": "May include schedules: A (itemized), C (self-employment), D (capital gains)"
             },
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Filing Threshold",
+              "definition": "Minimum income level at which you're required to file a tax return. Based on age, filing status, and income type—adjusted annually for inflation.",
+              "example": "2024: Single under 65 = $14,600; Self-employed $400+ always must file"
             }
           ]
         }
@@ -116,20 +116,33 @@
         "layoutData": {
           "leftPanel": {
             "title": "2024 Filing Thresholds (Gross Income)",
-            "paragraphs": [],
-            "highlightBox": null
+            "paragraphs": [
+              "<strong>Single under 65:</strong> $14,600 | <strong>Single 65+:</strong> $16,550",
+              "<strong>Head of Household under 65:</strong> $21,900 | <strong>65+:</strong> $23,850",
+              "<strong>Married Filing Jointly under 65:</strong> $29,200",
+              "<strong>Married Filing Separately:</strong> $5 (any age)"
+            ],
+            "highlightBox": {
+              "icon": "⚠️",
+              "text": "Self-employment income of $400 or more always requires filing—regardless of other thresholds!"
+            }
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
+                "value": "$400",
+                "label": "Self-employment filing threshold",
                 "color": "rose"
               },
               {
-                "value": "",
-                "label": "",
+                "value": "Jan 31",
+                "label": "Deadline for employers to send W-2s",
                 "color": "teal"
+              },
+              {
+                "value": "Apr 15",
+                "label": "Federal tax return due date",
+                "color": "purple"
               }
             ],
             "infoCard": null
@@ -143,32 +156,30 @@
       "headerColor": "teal",
       "content": {
         "headerTitle": "Essential Tax Forms",
-        "layout": "generic",
+        "layout": "comparison-grid",
         "layoutData": {
-          "paragraphs": [],
-          "lists": [
-            [
+          "leftColumn": {
+            "icon": "📄",
+            "title": "W-2 (From Employer)",
+            "items": [
               "Total earnings for the year",
               "Federal/state taxes withheld",
-              "Social Security &amp; Medicare taxes",
+              "Social Security & Medicare taxes",
               "Retirement contributions",
               "Health insurance deductions"
-            ],
-            [
+            ]
+          },
+          "rightColumn": {
+            "icon": "📋",
+            "title": "1099s (Non-Employment)",
+            "items": [
               "1099-NEC: Freelance ($600+)",
               "1099-INT: Bank interest",
               "1099-DIV: Stock dividends",
-              "1099-G: Unemployment",
+              "1099-G: Unemployment benefits",
               "No taxes auto-withheld!"
-            ],
-            [
-              "Report all income sources",
-              "Claim deductions/credits",
-              "Calculate tax owed",
-              "Request refund if applicable",
-              "Due April 15"
             ]
-          ]
+          }
         }
       }
     },
@@ -182,26 +193,34 @@
         "layoutData": {
           "leftPanel": {
             "title": "5 Filing Statuses",
-            "paragraphs": [
-              "Your status affects tax rates, standard deduction, and credit eligibility!"
+            "bulletPoints": [
+              "<strong>Single:</strong> Unmarried, divorced, or legally separated",
+              "<strong>Married Filing Jointly:</strong> Combined income, one return",
+              "<strong>Married Filing Separately:</strong> Separate returns",
+              "<strong>Head of Household:</strong> Unmarried, support dependents",
+              "<strong>Qualifying Widow(er):</strong> Spouse died in past 2 years"
             ],
-            "highlightBox": null
+            "paragraphs": [],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "Your status affects tax rates, standard deduction, and credit eligibility!"
+            }
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
-                "color": "teal"
-              },
-              {
-                "value": "",
-                "label": "",
+                "value": "$14,600",
+                "label": "Single standard deduction (2024)",
                 "color": "purple"
               },
               {
-                "value": "",
-                "label": "",
+                "value": "$29,200",
+                "label": "Married Filing Jointly deduction",
+                "color": "teal"
+              },
+              {
+                "value": "$21,900",
+                "label": "Head of Household deduction",
                 "color": "green"
               }
             ],
@@ -220,30 +239,33 @@
         "layoutData": {
           "leftPanel": {
             "title": "Mark Your Calendar",
-            "paragraphs": [
-              "Employers must send W-2s and 1099s",
-              "Federal tax return and payment due",
-              "Extended filing deadline (if requested)",
-              "Taxes owed still due April 15!"
+            "bulletPoints": [
+              "📅 <strong>January 31:</strong> Employers must send W-2s and 1099s",
+              "📅 <strong>April 15:</strong> Federal tax return and payment due",
+              "📅 <strong>October 15:</strong> Extended filing deadline (if requested)"
             ],
-            "highlightBox": null
+            "paragraphs": [],
+            "highlightBox": {
+              "icon": "⚠️",
+              "text": "Extension ≠ Payment Extension! Taxes owed are still due April 15 even if you file an extension."
+            }
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
+                "value": "5%",
+                "label": "Monthly penalty for failure to file",
                 "color": "rose"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "teal"
+                "value": "25%",
+                "label": "Maximum failure-to-file penalty",
+                "color": "rose"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "teal"
+                "value": "3 yrs",
+                "label": "Deadline to claim unclaimed refunds",
+                "color": "amber"
               }
             ],
             "infoCard": null
@@ -261,25 +283,30 @@
         "layoutData": {
           "leftPanel": {
             "title": "Don't Leave Money on the Table!",
-            "paragraphs": [],
-            "highlightBox": null
+            "bulletPoints": [
+              "<strong>Get withheld taxes back:</strong> If employer withheld taxes but you owe nothing, only filing gets it back",
+              "<strong>Claim refundable credits:</strong> Earned Income Tax Credit can give a refund even if you owe $0",
+              "<strong>Prevent identity theft:</strong> File first so no one can fraudulently use your SSN",
+              "<strong>Build your record:</strong> Tax returns verify income for loans, FAFSA, apartments"
+            ],
+            "paragraphs": []
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
+                "value": "$$$",
+                "label": "Potential refund you might be missing",
                 "color": "green"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "purple"
+                "value": "Free",
+                "label": "Filing options for simple returns",
+                "color": "teal"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "teal"
+                "value": "10 min",
+                "label": "Simple returns often take to file",
+                "color": "purple"
               }
             ],
             "infoCard": null
@@ -293,29 +320,21 @@
       "headerColor": "blue",
       "content": {
         "headerTitle": "Why It Matters",
-        "layout": "balanced-layout",
+        "layout": "concept-full",
         "layoutData": {
-          "leftPanel": {
-            "title": "Tax Filing = Financial Foundation",
-            "paragraphs": [
-              "Understanding tax filing is an essential life skill with far-reaching implications."
-            ],
-            "highlightBox": null
-          },
-          "rightPanel": {
-            "stats": [
-              {
-                "value": "",
-                "label": "",
-                "color": "teal"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "purple"
-              }
-            ],
-            "infoCard": null
+          "title": "Tax Filing = Financial Foundation",
+          "paragraphs": [
+            "Understanding tax filing is an essential life skill with far-reaching implications."
+          ],
+          "bulletPoints": [
+            "<strong>Financial Planning:</strong> Budget for taxes, avoid surprises",
+            "<strong>Career Decisions:</strong> W-2 vs. 1099 has different tax impacts",
+            "<strong>Legal Compliance:</strong> Avoid penalties and potential criminal charges",
+            "<strong>Financial Aid:</strong> FAFSA requires tax return information",
+            "<strong>Major Purchases:</strong> Mortgages and loans require tax return history"
+          ],
+          "keyPoint": {
+            "text": "💡 Tax filing is typically the first major government financial interaction for most adults—your tax history follows you forever."
           }
         }
       }
@@ -330,27 +349,31 @@
         "layoutData": {
           "leftPanel": {
             "title": "Freelance? Side Hustle? Gig Work?",
-            "paragraphs": [
-              "Self-employment has different tax requirements:"
+            "bulletPoints": [
+              "<strong>$400+ = must file</strong> regardless of other income thresholds",
+              "<strong>Self-employment tax:</strong> ~15.3% for Social Security + Medicare",
+              "<strong>No withholding:</strong> You must save and pay taxes yourself",
+              "<strong>Quarterly payments:</strong> May need to pay estimated taxes 4x/year",
+              "<strong>Schedule C:</strong> Report income and deduct business expenses"
             ],
-            "highlightBox": null
+            "paragraphs": []
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
+                "value": "15.3%",
+                "label": "Self-employment tax rate (FICA)",
                 "color": "rose"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "teal"
+                "value": "25-30%",
+                "label": "Recommended to set aside from 1099 income",
+                "color": "amber"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "green"
+                "value": "Deduct",
+                "label": "Business expenses reduce taxable income",
+                "color": "teal"
               }
             ],
             "infoCard": null
@@ -367,11 +390,33 @@
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "",
-            "name": "",
-            "paragraphs": []
+            "icon": "☕",
+            "name": "Ava: Filing for a Refund — High School Student with Part-Time Job",
+            "paragraphs": [
+              "Ava earned $4,500 last year—well below the $14,600 filing threshold. Her employer withheld $380 in federal taxes from her paychecks throughout the year.",
+              "Even though she's NOT required to file, she SHOULD file. <span class=\"highlight-text\">At her income level, she owes $0 in taxes—filing gets all $380 back!</span> If she doesn't file within 3 years, that money becomes property of the U.S. Treasury."
+            ]
           },
-          "outcomes": []
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Income",
+              "value": "$4,500",
+              "detail": "Below $14,600 threshold"
+            },
+            {
+              "type": "neutral",
+              "label": "Tax Owed",
+              "value": "$0",
+              "detail": "Below taxable income"
+            },
+            {
+              "type": "after",
+              "label": "Potential Refund",
+              "value": "$380",
+              "detail": "All withheld taxes back"
+            }
+          ]
         }
       }
     },
@@ -384,11 +429,33 @@
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "",
-            "name": "",
-            "paragraphs": []
+            "icon": "🎨",
+            "name": "Ben: Multiple Income Sources — Full-Time + Freelance",
+            "paragraphs": [
+              "Ben earned $32,000 from his retail job (W-2) plus $5,000 from freelance graphic design (1099-NEC). He must file for two reasons: total income exceeds threshold AND self-employment income exceeds $400.",
+              "Ben needs Form 1040, Schedule C (business income/expenses), and Schedule SE (self-employment tax). He'll owe ~$765 in self-employment tax on his freelance income, but <span class=\"highlight-text\">can deduct business expenses like software and equipment.</span>"
+            ]
           },
-          "outcomes": []
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "W-2 Income",
+              "value": "$32,000",
+              "detail": "Retail job"
+            },
+            {
+              "type": "neutral",
+              "label": "1099 Income",
+              "value": "$5,000",
+              "detail": "Freelance design"
+            },
+            {
+              "type": "before",
+              "label": "SE Tax Owed",
+              "value": "~$765",
+              "detail": "Minus deductible expenses"
+            }
+          ]
         }
       }
     },
@@ -398,16 +465,16 @@
       "variant": "teal",
       "content": {
         "badge": "Discussion",
-        "question": ""
+        "question": "Do you think you'll need to file taxes this year or next? What steps can you take now to prepare?<br><br>What income sources do you have? Have you received a W-2 before?"
       }
     },
     {
       "number": 16,
       "type": "discussion",
-      "variant": "teal",
+      "variant": "purple",
       "content": {
         "badge": "Personal Reflection",
-        "question": ""
+        "question": "How does your tax filing situation change as you move through different life stages?<br><br>Student → First job → Marriage → Parenthood — How might your filing status change? What new forms might apply?"
       }
     },
     {
@@ -450,22 +517,22 @@
           "takeaways": [
             {
               "number": 1,
-              "title": "",
-              "description": "Filing requirements depend on income, age, and filing status—but self-employment income of $400+ always requires filing"
+              "title": "Know the Thresholds",
+              "description": "Filing requirements depend on income, age, and status—but self-employment income of $400+ always requires filing"
             },
             {
               "number": 2,
-              "title": "",
-              "description": "Know your forms: W-2 (employment), 1099 (other income), 1040 (your tax return)—keep them organized!"
+              "title": "Know Your Forms",
+              "description": "W-2 (employment), 1099 (other income), 1040 (your tax return)—keep them organized!"
             },
             {
               "number": 3,
-              "title": "",
-              "description": "April 15 is the deadline. Missing it means penalties. Extensions to file don't extend payment deadline."
+              "title": "April 15 Matters",
+              "description": "Missing the deadline means penalties. Extensions to file don't extend the payment deadline."
             },
             {
               "number": 4,
-              "title": "",
+              "title": "File to Claim Refunds",
               "description": "File even if not required to get refunds of withheld taxes, claim credits, and prevent identity theft"
             }
           ]
@@ -481,11 +548,17 @@
         "layout": "activity-layout",
         "layoutData": {
           "main": {
-            "icon": "📋",
-            "title": "",
-            "description": ""
+            "icon": "🔍",
+            "title": "Find and Analyze Tax Forms",
+            "description": "Search for sample W-2, 1099-NEC, and Form 1040 forms online. Take screenshots and identify key information fields on each form. Resources: IRS.gov has sample forms—search 'IRS W-2 sample' or 'IRS Form 1040.'"
           },
-          "steps": []
+          "steps": [
+            "Find an example of each form online (W-2, 1099-NEC, Form 1040)",
+            "Take a screenshot focusing on key fields",
+            "Write a one-sentence explanation of the form's purpose",
+            "Identify 3-5 key fields and what information they contain",
+            "Apply to a scenario: Which forms would Ava, Ben, or another student need?"
+          ]
         }
       }
     },

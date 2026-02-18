@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "lChapter": "L-XX",
+    "lChapter": "L-15",
     "title": "Compound Interest & The Rule of 72",
-    "subtitle": "Discover the \"eighth wonder of the world\" and learn how to calculate when your money will double using a simple formula. in {{STATE_NAME}}",
+    "subtitle": "Discover the 'eighth wonder of the world' and learn how to calculate when your money will double using a simple formula",
     "totalSlides": 20,
     "hasStateVariables": true,
     "stateVariablesUsed": [
@@ -16,7 +16,7 @@
       "content": {
         "title": "Compound Interest & The Rule of 72",
         "titleSize": "large",
-        "subtitle": "Discover the \"eighth wonder of the world\" and learn how to calculate when your money will double using a simple formula. in {{STATE_NAME}}"
+        "subtitle": "Discover the 'eighth wonder of the world' and learn how to calculate when your money will double using a simple formula in {{STATE_NAME}}"
       }
     },
     {
@@ -24,39 +24,60 @@
       "type": "hook",
       "content": {
         "label": "Essential Question",
-        "question": ""
+        "question": "How can <em>$1,000 turn into $4,322</em><br>without adding <em>another dollar</em>?<br><br>The secret is compound interest — earning interest on your interest. Understanding this powerful concept is the key to building wealth over time."
       }
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "teal",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
         "layoutData": {
-          "objectives": []
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Distinguish",
+              "description": "Between simple interest and compound interest and explain why the difference matters"
+            },
+            {
+              "number": 2,
+              "verb": "Apply",
+              "description": "The Rule of 72 to estimate how long it takes for money to double at different interest rates"
+            },
+            {
+              "number": 3,
+              "verb": "Calculate",
+              "description": "Future value of investments using compound interest to see the power of time"
+            },
+            {
+              "number": 4,
+              "verb": "Analyze",
+              "description": "Opportunity costs of spending vs. investing and understand the true cost of purchases"
+            }
+          ]
         }
       }
     },
     {
       "number": 4,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "purple",
       "content": {
         "headerTitle": "Key Terms",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Principal",
+              "definition": "The initial amount of money you deposit or invest — your starting point",
+              "example": "You deposit $1,000 into a savings account. That $1,000 is your principal."
             },
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Simple Interest",
+              "definition": "Interest calculated only on the original principal amount, never changing",
+              "example": "$1,000 at 5% simple interest = $50/year, every year (always calculated on $1,000)"
             }
           ]
         }
@@ -72,14 +93,14 @@
         "layoutData": {
           "terms": [
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Compound Interest",
+              "definition": "Interest earned on both the principal AND previously earned interest — 'interest on interest'",
+              "example": "$1,000 at 5%: Year 1 = $1,050, Year 2 = $1,102.50 (5% of $1,050, not $1,000)"
             },
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Rule of 72",
+              "definition": "A formula to estimate how many years it takes for money to double: 72 ÷ interest rate (%)",
+              "example": "At 6% interest: 72 ÷ 6 = 12 years to double your money"
             }
           ]
         }
@@ -96,26 +117,31 @@
           "leftPanel": {
             "title": "The $1,822 Difference",
             "paragraphs": [
-              "Let's see how $1,000 grows over 30 years at 5% interest using each method: in {{STATE_NAME}}"
+              "With simple interest, you earn the same amount each year on your original principal. With compound interest, you earn on your growing balance — and the difference is dramatic over time."
             ],
-            "highlightBox": null
+            "bulletPoints": [
+              "Simple Interest: $1,000 at 5% for 30 years = $2,500",
+              "Compound Interest: $1,000 at 5% for 30 years = $4,322",
+              "The difference: $1,822 extra from compounding!",
+              "Compound interest grows exponentially, not linearly"
+            ]
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
+                "value": "$2,500",
+                "label": "30-year value with simple interest (5%)",
+                "color": "purple"
+              },
+              {
+                "value": "$4,322",
+                "label": "30-year value with compound interest (5%)",
                 "color": "teal"
               },
               {
-                "value": "",
-                "label": "",
+                "value": "73%",
+                "label": "More growth with compounding vs. simple",
                 "color": "green"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "purple"
               }
             ],
             "infoCard": null
@@ -132,14 +158,28 @@
         "layout": "comparison-grid",
         "layoutData": {
           "leftColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
+            "icon": "📏",
+            "title": "Simple Interest (straight line)",
+            "items": [
+              "Year 1: $1,000 + $50 = $1,050",
+              "Year 10: $1,000 + $500 = $1,500",
+              "Year 20: $1,000 + $1,000 = $2,000",
+              "Year 30: $1,000 + $1,500 = $2,500",
+              "Same $50 earned each year",
+              "Linear, predictable growth"
+            ]
           },
           "rightColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
+            "icon": "📈",
+            "title": "Compound Interest (curves upward)",
+            "items": [
+              "Year 1: $1,000 × 1.05 = $1,050",
+              "Year 10: $1,000 × 1.05¹⁰ = $1,629",
+              "Year 20: $1,000 × 1.05²⁰ = $2,653",
+              "Year 30: $1,000 × 1.05³⁰ = $4,322",
+              "Interest earned on interest each year",
+              "Exponential, accelerating growth"
+            ]
           }
         }
       }
@@ -150,35 +190,18 @@
       "headerColor": "blue",
       "content": {
         "headerTitle": "The Rule of 72",
-        "layout": "balanced-layout",
+        "layout": "concept-full",
         "layoutData": {
-          "leftPanel": {
-            "title": "A Shortcut to Estimate Doubling Time",
-            "paragraphs": [
-              "This simple formula helps you quickly estimate how long it takes for any investment to double based on its interest rate. No calculator needed! in {{STATE_NAME}}"
-            ],
-            "highlightBox": null
-          },
-          "rightPanel": {
-            "stats": [
-              {
-                "value": "",
-                "label": "",
-                "color": "teal"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "purple"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "green"
-              }
-            ],
-            "infoCard": null
-          }
+          "title": "A Shortcut to Estimate Doubling Time",
+          "paragraphs": [
+            "The Formula: <strong>Years to Double = 72 ÷ Interest Rate (%)</strong>"
+          ],
+          "bulletPoints": [
+            "72 ÷ 3 = <strong>24 years</strong> to double at 3% (savings account)",
+            "72 ÷ 6 = <strong>12 years</strong> to double at 6% (balanced portfolio)",
+            "72 ÷ 9 = <strong>8 years</strong> to double at 9% (stock market)",
+            "72 ÷ 12 = <strong>6 years</strong> to double at 12% (aggressive growth)"
+          ]
         }
       }
     },
@@ -188,13 +211,32 @@
       "headerColor": "purple",
       "content": {
         "headerTitle": "Rule of 72 in Action",
-        "layout": "concept-full",
+        "layout": "comparison-grid",
         "layoutData": {
-          "title": "Quick Reference: Doubling Times at Different Rates",
-          "paragraphs": [
-            "The higher your interest rate, the faster your money doubles. Here's a quick reference chart: in {{STATE_NAME}}"
-          ],
-          "bulletPoints": []
+          "leftColumn": {
+            "icon": "📊",
+            "title": "Lower Rates",
+            "items": [
+              "2% → 36 years (savings account)",
+              "4% → 18 years (bonds, CDs)",
+              "6% → 12 years (balanced portfolio)",
+              "Safer investments, slower doubling",
+              "Lower risk, lower reward",
+              "Good for short-to-medium goals"
+            ]
+          },
+          "rightColumn": {
+            "icon": "🚀",
+            "title": "Higher Rates",
+            "items": [
+              "8% → 9 years (stock market average)",
+              "10% → 7.2 years (aggressive growth)",
+              "12% → 6 years (high-growth stocks)",
+              "Higher potential, more volatility",
+              "Long time horizon required",
+              "Best for retirement savings"
+            ]
+          }
         }
       }
     },
@@ -209,26 +251,31 @@
           "leftPanel": {
             "title": "Opportunity Cost Revealed",
             "paragraphs": [
-              "When you spend $100 today, you're not just giving up $100 — you're giving up everything that money could have become. in {{STATE_NAME}}"
+              "Every dollar has future potential through compounding. Small choices today create massive differences over decades."
             ],
-            "highlightBox": null
+            "bulletPoints": [
+              "$100 at 7% for 40 years = $1,497",
+              "Coffee habit: $5/day × 365 = $1,825/year",
+              "$1,825/year invested at 7% for 40 years = $365,000+",
+              "Small choices today = massive differences later"
+            ]
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
-                "color": "rose"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "green"
-              },
-              {
-                "value": "",
-                "label": "",
+                "value": "$100",
+                "label": "Amount spent today",
                 "color": "purple"
+              },
+              {
+                "value": "$1,497",
+                "label": "What that $100 could become in 40 years at 7%",
+                "color": "teal"
+              },
+              {
+                "value": "15×",
+                "label": "The true opportunity cost multiplier",
+                "color": "green"
               }
             ],
             "infoCard": null
@@ -245,13 +292,15 @@
         "layout": "concept-full",
         "layoutData": {
           "title": "Time Is Your Superpower",
-          "paragraphs": [
-            "As a young person, you have the most valuable asset for compound interest: time. Even small amounts invested early can grow to significant wealth. in {{STATE_NAME}}",
-            "Invest $200/month until 65 at 8% = <strong>$958,000</strong><br><br>Total invested: $108,000 in {{STATE_NAME}}",
-            "Invest $200/month until 65 at 8% = <strong>$414,000</strong><br><br>Total invested: $84,000 in {{STATE_NAME}}",
-            "10-year delay costs you <strong>$544,000</strong> — despite investing more money! in {{STATE_NAME}}"
+          "paragraphs": [],
+          "bulletPoints": [
+            "Start at 20: Invest $200/month until 65 at 8% = <strong>$958,000</strong> (Total invested: $108,000)",
+            "Start at 30: Invest $200/month until 65 at 8% = <strong>$414,000</strong> (Total invested: $84,000)",
+            "10-year delay costs <strong>$544,000</strong> — despite investing more money total!"
           ],
-          "bulletPoints": []
+          "keyPoint": {
+            "text": "💡 The best time to start was yesterday. The second best time is today."
+          }
         }
       }
     },
@@ -264,28 +313,33 @@
         "layout": "balanced-layout",
         "layoutData": {
           "leftPanel": {
-            "title": "Maximizing Your Returns",
+            "title": "Modern Tools for Growth",
             "paragraphs": [
-              "In today's financial environment, here's how to make compound interest work for you: in {{STATE_NAME}}"
+              "Today's technology makes it easier than ever to put compound interest to work for you."
             ],
-            "highlightBox": null
+            "bulletPoints": [
+              "High-Yield Savings — Online banks offer 4-5% APY",
+              "Index Funds — Historical 10% average returns",
+              "Retirement Accounts — Tax advantages boost compounding",
+              "Dividend Reinvestment — Compounds your stock gains"
+            ]
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
+                "value": "$23.6M",
+                "label": "Value of $10K invested in S&P 500 in 1970",
                 "color": "teal"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "purple"
+                "value": "10.7%",
+                "label": "Average annual S&P 500 return since 1957",
+                "color": "green"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "green"
+                "value": "Daily",
+                "label": "Best compounding frequency to maximize growth",
+                "color": "purple"
               }
             ],
             "infoCard": null
@@ -302,28 +356,31 @@
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "",
-            "name": "",
-            "paragraphs": []
+            "icon": "💻",
+            "name": "Amanda — Saving for a Laptop",
+            "paragraphs": [
+              "Amanda wants to save $1,200 for a new laptop. She has $600 now and puts it in a savings account earning 3% interest compounded annually. Using the Rule of 72: 72 ÷ 3 = 24 years to double her money.",
+              "<span class=\"highlight-text\">At 3%, it takes 24 years to double — too long!</span> Amanda's solutions: find a higher interest rate, add monthly contributions, or both."
+            ]
           },
           "outcomes": [
             {
               "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "label": "Rule of 72",
+              "value": "24 years",
+              "detail": "To double at 3%"
             },
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "before",
+              "label": "Problem",
+              "value": "Too slow",
+              "detail": "Goal needs 2x faster"
             },
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "after",
+              "label": "Solution",
+              "value": "Higher rate + save more",
+              "detail": "Reach goal much sooner"
             }
           ]
         }
@@ -338,28 +395,31 @@
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "",
-            "name": "",
-            "paragraphs": []
+            "icon": "🎓",
+            "name": "Micah — Teaching His Brother",
+            "paragraphs": [
+              "Micah explains the power of multiple doublings: if his brother invests just $100 with an 8% annual return (Rule of 72: doubles every 9 years).",
+              "<span class=\"highlight-text\">$100 becomes $800 in just 27 years</span> — three doublings with no additional contributions needed."
+            ]
           },
           "outcomes": [
             {
               "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "label": "After 9 Years",
+              "value": "$100 → $200",
+              "detail": "First doubling"
             },
             {
               "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "label": "After 18 Years",
+              "value": "$200 → $400",
+              "detail": "Second doubling"
             },
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "after",
+              "label": "After 27 Years",
+              "value": "$400 → $800",
+              "detail": "Third doubling"
             }
           ]
         }
@@ -371,16 +431,16 @@
       "variant": "teal",
       "content": {
         "badge": "Discussion",
-        "question": ""
+        "question": "If you had $500 to either spend today or invest for 40 years, what would you choose and why?<br><br>At 8%, that $500 becomes about $10,860 in 40 years. What would you have to buy today to make spending worthwhile? How do you balance enjoying money now vs. building future wealth?"
       }
     },
     {
       "number": 16,
       "type": "discussion",
-      "variant": "teal",
+      "variant": "purple",
       "content": {
         "badge": "Personal Reflection",
-        "question": ""
+        "question": "Why might someone choose an investment with a lower interest rate even though it takes longer to double?<br><br>Consider the relationship between risk and reward. What trade-offs exist between fast growth and safety? When might stability be more important than maximum growth potential?"
       }
     },
     {
@@ -391,7 +451,24 @@
         "headerTitle": "Check for Understanding",
         "layout": "check-grid",
         "layoutData": {
-          "questions": []
+          "questions": [
+            {
+              "number": 1,
+              "question": "What is the main difference between simple interest and compound interest?"
+            },
+            {
+              "number": 2,
+              "question": "Using the Rule of 72, how long would it take to double your money at 4% interest?"
+            },
+            {
+              "number": 3,
+              "question": "Why is starting to invest early more powerful than investing more money later?"
+            },
+            {
+              "number": 4,
+              "question": "If you spend $50 today instead of investing it, what is the true opportunity cost over 40 years at 7%?"
+            }
+          ]
         }
       }
     },
@@ -403,7 +480,28 @@
         "headerTitle": "Key Takeaways",
         "layout": "takeaway-grid",
         "layoutData": {
-          "takeaways": []
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Compound Beats Simple",
+              "description": "Compound interest earns returns on your returns, growing your money exponentially faster than simple interest"
+            },
+            {
+              "number": 2,
+              "title": "Use the Rule of 72",
+              "description": "Divide 72 by your interest rate to quickly estimate doubling time. At 6%, money doubles every 12 years"
+            },
+            {
+              "number": 3,
+              "title": "Time Is Everything",
+              "description": "Starting early matters more than starting big. A 10-year head start can mean twice the final amount"
+            },
+            {
+              "number": 4,
+              "title": "Think in Future Value",
+              "description": "Every dollar spent today could be worth 10-15× more in 40 years. Consider the true opportunity cost"
+            }
+          ]
         }
       }
     },
@@ -416,16 +514,16 @@
         "layout": "activity-layout",
         "layoutData": {
           "main": {
-            "icon": "📋",
-            "title": "",
-            "description": ""
+            "icon": "🧮",
+            "title": "Rule of 72 Calculator",
+            "description": "Practice applying the Rule of 72 and compound interest calculations to understand the real impact of interest rates and time on your savings. Materials: Calculator, spreadsheet template."
           },
           "steps": [
-            "Set initial investment ($500), monthly contribution ($50), rate (5%) in {{STATE_NAME}}",
-            "Determine total value after 10 years with compound interest in {{STATE_NAME}}",
-            "Calculate doubling time for rates 2%, 4%, 6%, 8%, 10%, 12% in {{STATE_NAME}}",
-            "Analyze how rate changes affect your wealth-building timeline in {{STATE_NAME}}",
-            "Apply learnings to a personal financial goal in {{STATE_NAME}}"
+            "Review the variables — Set initial investment ($500), monthly contribution ($50), rate (5%)",
+            "Calculate growth — Determine total value after 10 years with compound interest",
+            "Complete Rule of 72 table — Calculate doubling time for rates 2%, 4%, 6%, 8%, 10%, 12%",
+            "Compare results — Analyze how rate changes affect your wealth-building timeline",
+            "Reflect — Apply learnings to a personal financial goal"
           ]
         }
       }
@@ -434,9 +532,9 @@
       "number": 20,
       "type": "closing",
       "content": {
-        "tagline": "The best time to start investing was yesterday. The second best time is today. in {{STATE_NAME}}",
-        "website": "www.pflacademy.co in {{STATE_NAME}}",
-        "copyright": "© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+        "tagline": "Let Your Money Work for You",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
       }
     }
   ]

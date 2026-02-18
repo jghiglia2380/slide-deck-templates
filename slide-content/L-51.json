@@ -1,11 +1,554 @@
 {
   "metadata": {
     "lChapter": "L-51",
-    "title": "",
-    "subtitle": "",
-    "totalSlides": 0,
-    "hasStateVariables": false,
-    "stateVariablesUsed": []
+    "title": "Market Structures and Consumer Choice",
+    "subtitle": "Understand how market competition shapes prices, choices, and your power as a consumer",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
   },
-  "slides": []
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Market Structures and Consumer Choice",
+        "titleSize": "large",
+        "subtitle": "Understand how market competition shapes prices, choices, and your power as a consumer in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": "If one company controls your local internet service, <em>what happens</em> when they raise prices by 40%?<br><br>Your options depend entirely on the market structure — and understanding it gives you power as a consumer."
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Identify",
+              "description": "The four main market structures — perfect competition, monopolistic competition, oligopoly, and monopoly — and their defining characteristics"
+            },
+            {
+              "number": 2,
+              "verb": "Analyze",
+              "description": "How market structure affects prices, output levels, and consumer welfare in real-world industries"
+            },
+            {
+              "number": 3,
+              "verb": "Explain",
+              "description": "How competition drives innovation, efficiency, and lower prices while market power can harm consumers"
+            },
+            {
+              "number": 4,
+              "verb": "Apply",
+              "description": "Market structure concepts to industries you interact with daily in {{STATE_NAME}} as an informed consumer"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Perfect Competition",
+              "definition": "A market structure with many sellers offering identical products, where no single firm can influence price — each firm is a price taker",
+              "example": "Agricultural commodities like wheat or corn, where hundreds of farmers sell the same product at the market price"
+            },
+            {
+              "term": "Monopoly",
+              "definition": "A market structure where a single seller controls the entire supply of a product with no close substitutes, giving them significant pricing power",
+              "example": "A local utility company providing electricity — you can't simply switch to a competitor if you dislike their rates"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Oligopoly",
+              "definition": "A market dominated by a small number of large firms whose decisions significantly affect each other — leading to strategic behavior and limited competition",
+              "example": "The US airline industry, where a few major carriers control most routes and often match each other's pricing"
+            },
+            {
+              "term": "Monopolistic Competition",
+              "definition": "Many sellers offering differentiated products that are similar but not identical, allowing some pricing power through brand or product differences",
+              "example": "Restaurants, clothing brands, or hair salons — many options exist, but each offers a slightly different experience"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "The Four Market Structures",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "🌾",
+            "title": "More Competition",
+            "items": [
+              "Perfect Competition — Many sellers, identical goods, price takers (wheat, corn)",
+              "Monopolistic Competition — Many sellers, differentiated goods, some pricing power (restaurants, clothing)",
+              "Low barriers to entry — New firms can join easily",
+              "Prices stay close to cost of production",
+              "Consumers benefit most from variety and low prices"
+            ]
+          },
+          "rightColumn": {
+            "icon": "🏢",
+            "title": "Less Competition",
+            "items": [
+              "Oligopoly — Few large firms, strategic behavior, coordinated pricing (airlines, cell carriers)",
+              "Monopoly — One seller, no substitutes, full pricing power (some utilities)",
+              "High barriers to entry — Hard for new firms to compete",
+              "Prices above cost of production — firms earn higher profits",
+              "Consumers have fewer choices and pay more"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Market Power and Barriers to Entry",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "What Keeps Competitors Out?",
+            "paragraphs": [
+              "Barriers to entry are the obstacles that prevent new firms from competing in a market. Higher barriers mean less competition — and more power for existing firms."
+            ],
+            "bulletPoints": [
+              "Startup Costs — Building a factory or power grid requires billions in capital",
+              "Patents & Licenses — Legal protections that block competitors for years",
+              "Economies of Scale — Large firms produce cheaper per unit than small firms can",
+              "Brand Loyalty — Established brands like Apple or Nike are hard to displace",
+              "Network Effects — Products become more valuable as more people use them (social media)"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "20 yrs",
+                "label": "Maximum patent protection blocking competitors",
+                "color": "purple"
+              },
+              {
+                "value": "4",
+                "label": "US airlines control 80% of domestic air travel",
+                "color": "teal"
+              },
+              {
+                "value": "$0",
+                "label": "Cost to enter a perfectly competitive market",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "How Competition Benefits Consumers",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Competition Is Your Best Friend",
+          "paragraphs": [
+            "When markets are competitive, businesses must earn your business — they lower prices, improve quality, and innovate constantly. When competition disappears, consumers lose that protection."
+          ],
+          "bulletPoints": [
+            "<strong>Lower Prices:</strong> Rivals force each firm to price near the actual cost of production — excess profits attract competitors who undercut prices",
+            "<strong>Innovation:</strong> Companies invest in better products to win market share — competition produced the smartphone revolution",
+            "<strong>Quality Improvement:</strong> Poor quality loses customers to competitors immediately in competitive markets",
+            "<strong>Consumer Surplus:</strong> The gap between what you'd pay and what you actually pay grows larger with more competition"
+          ],
+          "keyPoint": {
+            "text": "💡 The smartphone market went from $600 iPhones (2007) to hundreds of quality competitors — competition drove better phones at lower prices."
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "The Cost of Monopoly Power",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "When One Firm Wins, Consumers Lose",
+            "paragraphs": [
+              "A monopoly or near-monopoly can charge higher prices, provide lower quality, and invest less in innovation — because customers have nowhere else to go."
+            ],
+            "bulletPoints": [
+              "Higher Prices — Without competition, monopolists charge what the market will bear",
+              "Deadweight Loss — Transactions that would benefit both buyer and seller don't happen because price is too high",
+              "Reduced Innovation — Less pressure to improve products or services",
+              "Regulatory Need — Governments regulate utilities and use antitrust laws to prevent harmful monopolies in {{STATE_NAME}} and nationwide"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "25–40%",
+                "label": "Typical price premium charged by monopolists over competitive price",
+                "color": "rose"
+              },
+              {
+                "value": "$5B+",
+                "label": "Fine paid by Google for antitrust violations in Europe",
+                "color": "purple"
+              },
+              {
+                "value": "1890",
+                "label": "Year US Sherman Antitrust Act passed to protect competition",
+                "color": "teal"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Oligopoly — When a Few Firms Dominate",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Strategic Behavior in Oligopolies",
+            "paragraphs": [
+              "In an oligopoly, a small number of firms control the market. Each firm's decisions directly affect the others — so they watch competitors closely and act strategically."
+            ],
+            "bulletPoints": [
+              "Price Leadership — One firm sets price, others follow to avoid price wars",
+              "Collusion Risk — Firms may illegally coordinate pricing (price-fixing), which is banned by antitrust law",
+              "Non-Price Competition — Firms compete through advertising, loyalty programs, and product features instead of price cuts",
+              "Examples in {{STATE_NAME}}: Wireless carriers (Verizon, AT&T, T-Mobile), streaming services, major airlines serving your region"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "3",
+                "label": "Cell carriers control 98% of US wireless subscribers",
+                "color": "purple"
+              },
+              {
+                "value": "$1B+",
+                "label": "Annual advertising spend by major wireless carriers competing for customers",
+                "color": "teal"
+              },
+              {
+                "value": "Prison",
+                "label": "Penalty for executives convicted of price-fixing collusion",
+                "color": "rose"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Monopolistic Competition — The Middle Ground",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Many Sellers, Differentiated Products",
+          "paragraphs": [
+            "Most consumer markets fall into monopolistic competition — many businesses offering similar but distinct products. Your choice of restaurant, gym, or clothing brand illustrates this structure every day."
+          ],
+          "bulletPoints": [
+            "<strong>Product Differentiation:</strong> Each seller offers a slightly different product — taste, location, atmosphere, brand identity create distinctions",
+            "<strong>Some Pricing Power:</strong> A popular restaurant can charge more than nearby competitors if customers value their unique experience",
+            "<strong>Easy Entry and Exit:</strong> New restaurants open and close constantly — poor performers exit when they lose customers",
+            "<strong>Advertising Matters:</strong> Firms spend heavily on marketing to differentiate and attract loyal customers"
+          ],
+          "keyPoint": {
+            "text": "💡 In {{STATE_NAME}}, your choice between coffee shops, gyms, hair salons, and clothing retailers is shaped by monopolistic competition — enough options to have choice, but each firm has some pricing power through differentiation."
+          }
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Market Structures in {{STATE_NAME}}",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Real Industries Around You",
+            "paragraphs": [
+              "Every market you participate in as a consumer fits one of the four market structures. Recognizing which structure applies changes how you evaluate your options."
+            ],
+            "bulletPoints": [
+              "Perfect Competition — Local farmers markets, agricultural goods, some commodity markets",
+              "Monopolistic Competition — Restaurants, gyms, clothing stores, hair salons, coffee shops in {{STATE_NAME}}",
+              "Oligopoly — Internet service providers in your area, wireless carriers, major grocery chains",
+              "Monopoly/Near-Monopoly — Local utility companies (electricity, water), some cable providers with exclusive territory agreements"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "1–2",
+                "label": "ISPs available in many rural {{STATE_NAME}} areas — limited competition",
+                "color": "rose"
+              },
+              {
+                "value": "Hundreds",
+                "label": "Restaurants competing for your dining dollar in urban {{STATE_NAME}}",
+                "color": "teal"
+              },
+              {
+                "value": "Regulated",
+                "label": "Utility monopolies in {{STATE_NAME}} face price regulation by state government",
+                "color": "purple"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "📱",
+            "name": "Sofia — Choosing a Cell Phone Plan",
+            "paragraphs": [
+              "Sofia needs a new wireless plan. She lives in a major city in {{STATE_NAME}} where three major carriers compete. She researches prices, data limits, and coverage maps for each option.",
+              "Because she understands oligopoly, Sofia knows the carriers watch each other's pricing — when one carrier runs a promotion, others often match it within days. <span class=\"highlight-text\">She times her purchase during a competitive promotion cycle and saves $30/month.</span>"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "Monthly Savings",
+              "value": "$30/mo",
+              "detail": "By timing purchase strategically"
+            },
+            {
+              "type": "after",
+              "label": "Annual Savings",
+              "value": "$360/yr",
+              "detail": "From understanding competition"
+            },
+            {
+              "type": "after",
+              "label": "Leverage Used",
+              "value": "Competitor offer",
+              "detail": "As negotiating tool"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "🏠",
+            "name": "Marcus — Stuck with One ISP",
+            "paragraphs": [
+              "Marcus moved to a rural area of {{STATE_NAME}} where only one internet service provider operates. When the ISP raised monthly rates by 35% and reduced speeds, Marcus had no alternatives.",
+              "<span class=\"highlight-text\">Without competition, Marcus had to pay the higher price or go without internet</span> — a real-world consequence of monopoly power and insufficient market competition."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Price Increase",
+              "value": "35%",
+              "detail": "No competition to prevent it"
+            },
+            {
+              "type": "before",
+              "label": "Alternatives",
+              "value": "0",
+              "detail": "Monopoly = no choice"
+            },
+            {
+              "type": "before",
+              "label": "Recourse",
+              "value": "File complaint",
+              "detail": "With state regulator"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": "Think about a market you participate in regularly — your cell phone carrier, streaming services, local grocery stores, or internet provider. What market structure does it fit?<br><br>Does competition benefit you in this market? Do you feel like you have real choices, or are your options limited? How does market structure affect your experience as a consumer?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "Should governments break up large companies or prevent mergers to protect competition? Or should markets be left alone to determine outcomes?<br><br>Think about industries like tech (Google, Amazon, Apple), airlines, or healthcare in {{STATE_NAME}}. What are the trade-offs between allowing large firms to benefit from scale versus protecting consumer choice and competitive prices?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What is the key difference between a monopoly and an oligopoly? Give a real-world example of each."
+            },
+            {
+              "number": 2,
+              "question": "Why do barriers to entry matter for market structure? Name two types of barriers and explain how each limits competition."
+            },
+            {
+              "number": 3,
+              "question": "How does monopolistic competition differ from perfect competition? Why might a firm in monopolistic competition be able to charge higher prices?"
+            },
+            {
+              "number": 4,
+              "question": "As a consumer in {{STATE_NAME}}, how can understanding market structure help you make better purchasing decisions?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Four Structures, Different Outcomes",
+              "description": "Perfect competition, monopolistic competition, oligopoly, and monopoly each produce different prices, quality, and consumer choices"
+            },
+            {
+              "number": 2,
+              "title": "Competition Protects Consumers",
+              "description": "More competition means lower prices, higher quality, and more innovation — monopolies can charge more and improve less"
+            },
+            {
+              "number": 3,
+              "title": "Barriers Determine Power",
+              "description": "High barriers to entry protect existing firms and reduce competition — patents, startup costs, and network effects create market power"
+            },
+            {
+              "number": 4,
+              "title": "Know Your Market",
+              "description": "Identifying the market structure you're buying in — oligopoly, monopoly, or competitive — helps you understand your leverage as a consumer in {{STATE_NAME}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Skill Builder: Market Structure Analyzer",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📊",
+            "title": "Market Structure Analyzer",
+            "description": "Analyze real markets to identify their structure and evaluate how that structure affects prices, competition, and your choices as a consumer. Use market data from industries you interact with in {{STATE_NAME}}."
+          },
+          "steps": [
+            "Select a Market — Choose an industry (wireless carriers, streaming services, local grocery stores, internet providers)",
+            "Identify the Structure — Count the number of sellers, assess product differentiation, and evaluate barriers to entry",
+            "Analyze the Outcomes — What prices do consumers pay? How much choice exists? What drives competition or limits it?",
+            "Compare Structures — Contrast your chosen market with a more competitive and less competitive alternative",
+            "Make a Consumer Decision — Based on your analysis, what strategy should a consumer use when buying in this market?"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Know the Market, Know Your Power",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
 }

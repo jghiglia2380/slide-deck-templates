@@ -1,11 +1,556 @@
 {
   "metadata": {
     "lChapter": "L-54",
-    "title": "",
-    "subtitle": "",
-    "totalSlides": 0,
-    "hasStateVariables": false,
-    "stateVariablesUsed": []
+    "title": "Inflation, Unemployment, and Personal Finance",
+    "subtitle": "Understand how rising prices and job loss affect your purchasing power and financial resilience",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
   },
-  "slides": []
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Inflation, Unemployment, and Personal Finance",
+        "titleSize": "large",
+        "subtitle": "Understand how rising prices and job loss affect your purchasing power and financial resilience in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": "If prices rise 6% but your salary only rises 3%, <em>did you actually get a raise?</em><br><br>Inflation silently erodes your purchasing power — and understanding it is essential for protecting your financial future in {{STATE_NAME}}."
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Distinguish",
+              "description": "The three types of unemployment — frictional, structural, and cyclical — and explain the economic causes and personal implications of each"
+            },
+            {
+              "number": 2,
+              "verb": "Calculate",
+              "description": "Real versus nominal values using the Consumer Price Index (CPI) to determine actual purchasing power changes over time"
+            },
+            {
+              "number": 3,
+              "verb": "Analyze",
+              "description": "How inflation erodes purchasing power, affects savings, and creates winners and losers in the economy"
+            },
+            {
+              "number": 4,
+              "verb": "Develop",
+              "description": "Strategies to protect personal finances from inflation and unemployment risk in {{STATE_NAME}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Inflation",
+              "definition": "A sustained increase in the general price level of goods and services over time, reducing the purchasing power of money — measured by the Consumer Price Index (CPI)",
+              "example": "A grocery cart that cost $100 in 2020 cost approximately $130 by 2023 — 30% inflation over three years reduced the real value of every dollar held in cash"
+            },
+            {
+              "term": "Consumer Price Index (CPI)",
+              "definition": "A measure of the average change in prices paid by consumers for a basket of goods and services — the primary tool for calculating inflation rates and adjusting wages for real purchasing power",
+              "example": "The BLS tracks prices for food, housing, transportation, healthcare, and clothing — if the CPI rises 4%, average prices increased 4% and your dollar buys 4% less"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Structural Unemployment",
+              "definition": "Unemployment caused by a mismatch between workers' skills and the skills demanded by employers — often resulting from technological change or industry shifts that make certain jobs obsolete",
+              "example": "A coal miner whose job is eliminated by automation, or a travel agent replaced by booking websites — their skills no longer match available jobs in the economy"
+            },
+            {
+              "term": "Purchasing Power",
+              "definition": "The real quantity of goods and services that a unit of money can buy — inflation reduces purchasing power over time while deflation increases it",
+              "example": "A $50,000 salary in 2020 had the same purchasing power as roughly $62,000 in 2024 after 24% cumulative inflation — a real wage cut if salary stayed at $50,000"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Three Types of Unemployment",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "🔄",
+            "title": "Temporary & Structural",
+            "items": [
+              "Frictional — Temporary unemployment between jobs; normal part of a healthy labor market",
+              "Example: Graduate searching for first job after college in {{STATE_NAME}}",
+              "Structural — Skills mismatch due to technology, industry shifts, or offshoring",
+              "Example: Factory worker displaced by automation needing retraining",
+              "Both are harder to solve with just monetary or fiscal policy"
+            ]
+          },
+          "rightColumn": {
+            "icon": "📉",
+            "title": "Cyclical (Economic)",
+            "items": [
+              "Cyclical — Caused by economic downturns; workers laid off due to falling demand",
+              "Example: Restaurant workers laid off during COVID-19 recession in {{STATE_NAME}}",
+              "Rises sharply during recessions; falls quickly during recoveries",
+              "Primary target of fiscal stimulus and Fed rate cuts",
+              "Measured by the unemployment rate — current {{STATE_NAME}} rate reflects this"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Inflation — Winners and Losers",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Who Inflation Helps and Hurts",
+            "paragraphs": [
+              "Inflation isn't equally bad for everyone — it creates winners and losers depending on your financial position. Understanding which side you're on helps you make better decisions."
+            ],
+            "bulletPoints": [
+              "HURT: Savers holding cash — buying power erodes as prices rise (a $10,000 savings at 0% during 6% inflation loses $600 in real value each year)",
+              "HURT: Fixed-income recipients — retirees on fixed pensions see their real income shrink each year",
+              "HELPED: Borrowers with fixed-rate loans — debt repaid in cheaper future dollars (mortgage payment stays at $1,200 while $1,200 buys less over time)",
+              "HELPED: Owners of real assets — real estate and commodity prices typically rise with inflation, preserving wealth"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$600",
+                "label": "Real value lost annually on $10,000 cash savings during 6% inflation with 0% savings rate",
+                "color": "rose"
+              },
+              {
+                "value": "30%",
+                "label": "Cumulative price increase 2020-2023 — meaning 2020 dollars bought 30% more",
+                "color": "purple"
+              },
+              {
+                "value": "TIPS",
+                "label": "Treasury Inflation-Protected Securities — bonds that adjust principal for inflation",
+                "color": "teal"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real vs. Nominal Values",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "The Difference Between Nominal and Real",
+          "paragraphs": [
+            "Nominal values are measured in current dollars — they don't account for inflation. Real values adjust for inflation to show actual purchasing power. This distinction is critical for understanding whether you're getting ahead or falling behind."
+          ],
+          "bulletPoints": [
+            "<strong>Nominal Wage:</strong> Your $45,000 salary in 2024 — the number on your paycheck before adjusting for price changes",
+            "<strong>Real Wage:</strong> Your $45,000 salary divided by the price index — reveals whether your actual purchasing power increased or decreased",
+            "<strong>Calculation:</strong> Real Value = Nominal Value ÷ (CPI / 100). If CPI rose from 100 to 108, real wages fell by 8% for those whose nominal wages didn't increase",
+            "<strong>Real Interest Rate:</strong> Nominal rate minus inflation. A 2% savings account during 4% inflation = -2% real return — you're losing purchasing power every year"
+          ],
+          "keyPoint": {
+            "text": "💡 From 2021-2023, nominal wages rose ~4% per year — but inflation averaged 6-7%. Real wages fell for most workers. Your paycheck went up but bought less. Always think in real terms, not nominal."
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "The Cost of Unemployment in {{STATE_NAME}}",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Financial and Emotional Impact of Job Loss",
+            "paragraphs": [
+              "Unemployment isn't just a statistic — it's a financial emergency. Understanding the true cost helps you prepare emergency savings and know your options in {{STATE_NAME}}."
+            ],
+            "bulletPoints": [
+              "Lost Income — Average unemployment lasts 4-6 months; UI benefits replace only 40-50% of wages",
+              "Benefit Gap — UI in {{STATE_NAME}} typically maxes at $300-$600/week — far below most workers' full salaries",
+              "Healthcare Risk — Job loss means losing employer health insurance; COBRA coverage is expensive",
+              "Skill Erosion — Extended unemployment makes returning to work harder as skills and networks atrophy",
+              "Emergency Fund Necessity — 3-6 months of expenses prevents financial catastrophe during job loss in {{STATE_NAME}}"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "40-50%",
+                "label": "Wage replacement rate from unemployment insurance — not enough to maintain most lifestyles",
+                "color": "rose"
+              },
+              {
+                "value": "4-6 mo",
+                "label": "Average duration of unemployment for a job seeker in the US",
+                "color": "purple"
+              },
+              {
+                "value": "3-6 mo",
+                "label": "Emergency fund target — months of expenses to survive job loss in {{STATE_NAME}}",
+                "color": "teal"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Causes of Inflation",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "What Drives Prices Up?",
+            "paragraphs": [
+              "Inflation has multiple causes — understanding them helps you anticipate which sectors will be hit hardest and how long price increases are likely to last."
+            ],
+            "bulletPoints": [
+              "Demand-Pull — Too much money chasing too few goods; economy overheating (stimulus check effect in 2021)",
+              "Cost-Push — Rising production costs passed to consumers (supply chain disruptions, energy price spikes)",
+              "Built-in Inflation — Wage-price spiral: workers demand higher wages → businesses raise prices → workers demand higher wages again",
+              "Monetary — Too much money printed relative to economic output (reduces value of each dollar)",
+              "Supply Shocks — Sudden disruptions like COVID or geopolitical events spike prices in key sectors affecting {{STATE_NAME}}"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "Demand",
+                "label": "Primary cause of 2021-2022 US inflation — $5T in stimulus met reduced supply",
+                "color": "rose"
+              },
+              {
+                "value": "Supply",
+                "label": "2022 energy and food inflation — Russia-Ukraine war disrupted global supply",
+                "color": "purple"
+              },
+              {
+                "value": "2%",
+                "label": "Fed's target inflation rate — moderate inflation considered healthy for economic growth",
+                "color": "teal"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Protecting Your Finances from Inflation",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Strategies That Beat Inflation",
+          "paragraphs": [
+            "You can't control inflation, but you can protect your financial position from it. Smart strategies ensure your wealth grows in real terms, not just nominally."
+          ],
+          "bulletPoints": [
+            "<strong>Invest in Stocks:</strong> Historically, stock market returns (~7% real) exceed inflation — S&P 500 index funds provide the best long-term inflation protection for most investors",
+            "<strong>Real Estate:</strong> Property values and rents typically rise with inflation — home ownership in {{STATE_NAME}} can preserve wealth during inflationary periods",
+            "<strong>I-Bonds and TIPS:</strong> Government bonds specifically designed to rise with CPI — guaranteed inflation protection for conservative savers",
+            "<strong>Negotiate Salary:</strong> Annual raises below the inflation rate are real pay cuts — know the CPI when negotiating compensation in {{STATE_NAME}}"
+          ],
+          "keyPoint": {
+            "text": "💡 $10,000 in a savings account earning 0.5% loses real value during any inflation above 0.5%. The same $10,000 invested in an S&P 500 index fund historically grows ~7% real per year — the difference between falling behind and building wealth."
+          }
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Unemployment Protection Strategies",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Building Your Financial Safety Net",
+            "paragraphs": [
+              "Unemployment can strike anyone regardless of performance — company layoffs, industry downturns, and automation affect workers across all education levels. Preparation is essential."
+            ],
+            "bulletPoints": [
+              "Emergency Fund — 3-6 months of essential expenses in a high-yield savings account; your first line of defense",
+              "Marketable Skills — Continuously update skills to avoid structural unemployment; take online courses, certifications in growing {{STATE_NAME}} industries",
+              "Professional Network — Maintain connections; most jobs in {{STATE_NAME}} are found through networking, not job boards",
+              "Multiple Income Streams — Side income reduces dependence on any single employer; freelancing, part-time work, or investment income",
+              "Unemployment Insurance — File immediately upon job loss in {{STATE_NAME}}; don't wait — benefits help while you job search"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "Week 1",
+                "label": "File for unemployment benefits in {{STATE_NAME}} immediately — don't delay",
+                "color": "teal"
+              },
+              {
+                "value": "70%",
+                "label": "Of jobs filled through networking — professional connections are your best job search tool",
+                "color": "purple"
+              },
+              {
+                "value": "$1,000+",
+                "label": "Monthly income gap between UI benefits and average salary — emergency fund covers this difference",
+                "color": "rose"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "💸",
+            "name": "Taylor — The Silent Wage Cut",
+            "paragraphs": [
+              "Taylor received a 3% raise at her job in {{STATE_NAME}} — her first raise in two years. She was excited until she looked at the numbers more carefully. Inflation that year was 6.5%.",
+              "Despite the nominal raise, <span class=\"highlight-text\">Taylor's real purchasing power fell 3.5% — she could afford 3.5% less with her higher paycheck than she could the year before.</span> She used this information to negotiate a larger raise the following year."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Nominal Raise",
+              "value": "+3%",
+              "detail": "Salary increase received"
+            },
+            {
+              "type": "before",
+              "label": "Inflation Rate",
+              "value": "6.5%",
+              "detail": "Price increases that year"
+            },
+            {
+              "type": "before",
+              "label": "Real Wage Change",
+              "value": "-3.5%",
+              "detail": "Actual purchasing power lost"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "🏗️",
+            "name": "Marcus — Structural Unemployment and Retraining",
+            "paragraphs": [
+              "Marcus worked in a printing plant in {{STATE_NAME}} for 12 years when the company automated his department. His job was eliminated — not due to poor performance, but because machines now do the work faster and cheaper.",
+              "Marcus faced structural unemployment. <span class=\"highlight-text\">He enrolled in a 9-month coding bootcamp funded by a {{STATE_NAME}} workforce development grant</span>, transitioned to web development, and now earns 40% more than his previous salary — turning displacement into advancement."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "Retraining Time",
+              "value": "9 months",
+              "detail": "Coding bootcamp"
+            },
+            {
+              "type": "after",
+              "label": "Income Change",
+              "value": "+40%",
+              "detail": "Higher than previous job"
+            },
+            {
+              "type": "after",
+              "label": "Funding Source",
+              "value": "State grant",
+              "detail": "{{STATE_NAME}} workforce program"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": "Think about industries that are growing and shrinking in {{STATE_NAME}} right now. Which jobs face structural unemployment risk due to automation, AI, or industry shifts?<br><br>How can young workers in {{STATE_NAME}} protect themselves from structural unemployment in their careers? What skills and strategies would make you most resilient to economic changes over the next 20-30 years?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "When you think about your financial future in {{STATE_NAME}}, how does inflation change your savings and investment plans?<br><br>If inflation averages 3% per year, what does that mean for money you have sitting in a savings account earning 1%? What would you need to earn on investments just to maintain your purchasing power? How does understanding real vs. nominal values change how you think about saving and investing?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What is the difference between frictional, structural, and cyclical unemployment? Give a real-world example of each type."
+            },
+            {
+              "number": 2,
+              "question": "If the CPI rises from 250 to 265 in one year, what is the inflation rate? How does this affect someone earning a 4% nominal wage increase?"
+            },
+            {
+              "number": 3,
+              "question": "Why does inflation hurt savers holding cash but help borrowers with fixed-rate loans? Give a specific example of each."
+            },
+            {
+              "number": 4,
+              "question": "What three strategies would you use to protect your personal finances from both inflation risk and unemployment risk in {{STATE_NAME}}?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Three Types, Three Causes",
+              "description": "Frictional unemployment is temporary and normal; structural requires retraining; cyclical responds to economic policy — each needs different solutions"
+            },
+            {
+              "number": 2,
+              "title": "Real vs. Nominal — Always Adjust",
+              "description": "A raise below the inflation rate is a real pay cut — always compare nominal values to CPI when evaluating wages, returns, and debt in {{STATE_NAME}}"
+            },
+            {
+              "number": 3,
+              "title": "Inflation Creates Winners and Losers",
+              "description": "Cash savers and fixed-income recipients lose; asset owners and fixed-rate borrowers win — your financial position determines your inflation exposure"
+            },
+            {
+              "number": 4,
+              "title": "Prepare for Both Risks",
+              "description": "Emergency fund for unemployment, inflation-beating investments for long-term wealth — these two strategies address the most common financial threats in {{STATE_NAME}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Skill Builder: Inflation and Unemployment Analyzer",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📊",
+            "title": "Inflation and Unemployment Personal Impact Analyzer",
+            "description": "Calculate how inflation and unemployment risk affect your personal financial plan. Use real CPI data and {{STATE_NAME}} unemployment figures to assess your financial resilience and develop protective strategies."
+          },
+          "steps": [
+            "Calculate Real Values — Given nominal wage and CPI data, calculate the real wage change over three years for a sample worker in {{STATE_NAME}}",
+            "Identify Unemployment Type — Review three job loss scenarios and classify each as frictional, structural, or cyclical",
+            "Assess Inflation Exposure — Evaluate a sample portfolio (cash, bonds, stocks, real estate) and determine which components gain or lose during 5% inflation",
+            "Build a Protection Plan — Design a personal strategy addressing both inflation risk and unemployment risk using emergency funds and investment choices",
+            "Stress Test — Calculate the financial impact of losing your job for 6 months while facing 4% annual inflation — how much savings would you need?"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Prepare for Risk, Protect Your Purchasing Power",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
 }

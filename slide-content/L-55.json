@@ -1,11 +1,554 @@
 {
   "metadata": {
     "lChapter": "L-55",
-    "title": "",
-    "subtitle": "",
-    "totalSlides": 0,
-    "hasStateVariables": false,
-    "stateVariablesUsed": []
+    "title": "International Trade and Economic Development",
+    "subtitle": "Understand why countries trade, how global markets affect your finances, and what exchange rates mean for you",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
   },
-  "slides": []
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "International Trade and Economic Development",
+        "titleSize": "large",
+        "subtitle": "Understand why countries trade, how global markets affect your finances, and what exchange rates mean for you in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": "Why does your iPhone cost $1,000 instead of <em>$3,500</em> — the estimated price if built entirely in the US?<br><br>International trade and comparative advantage create enormous value for consumers — and directly shape jobs, prices, and opportunities in {{STATE_NAME}}."
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Explain",
+              "description": "Comparative advantage and why countries benefit from specialization and trade even when one country is better at producing everything"
+            },
+            {
+              "number": 2,
+              "verb": "Analyze",
+              "description": "The effects of tariffs, quotas, and free trade agreements on consumer prices, producer profits, and employment in {{STATE_NAME}}"
+            },
+            {
+              "number": 3,
+              "verb": "Evaluate",
+              "description": "How exchange rates affect travel costs, imported goods prices, and export competitiveness for {{STATE_NAME}} businesses"
+            },
+            {
+              "number": 4,
+              "verb": "Assess",
+              "description": "The trade-offs between free trade and protectionism, and connect international trade to your career and financial decisions"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Comparative Advantage",
+              "definition": "The ability of a country to produce a good at a lower opportunity cost than another country — the foundation of why trade benefits all participants even when one country is better at producing everything",
+              "example": "Even if the US is better than Mexico at producing both cars and tomatoes, it's most efficient for the US to specialize in cars and import tomatoes — because cars represent a higher-value use of US labor and capital"
+            },
+            {
+              "term": "Tariff",
+              "definition": "A tax imposed by a government on imported goods, raising their price to protect domestic producers — but also raising costs for consumers who buy those goods",
+              "example": "A 25% tariff on imported steel means a $1,000 foreign steel purchase costs $1,250 — protecting US steel producers but raising costs for car and appliance manufacturers"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Exchange Rate",
+              "definition": "The price of one country's currency expressed in terms of another — fluctuates daily based on interest rates, inflation, economic growth, and market sentiment",
+              "example": "If $1 USD = 0.92 Euros, traveling to Europe costs you 8% more than if the rate were 1:1 — strong dollar makes imports cheap and foreign travel affordable"
+            },
+            {
+              "term": "Trade Deficit",
+              "definition": "When a country imports more goods and services than it exports — the US runs a persistent trade deficit, meaning it buys more from the world than it sells to it",
+              "example": "The US 2023 trade deficit exceeded $900 billion — Americans bought far more foreign goods (electronics, clothing, oil) than US exports sold to other countries"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Why Countries Trade — Comparative Advantage",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The Logic of Specialization",
+            "paragraphs": [
+              "Countries (and people) benefit from specializing in what they produce most efficiently — even if one country can produce everything better than another. Opportunity cost determines comparative advantage."
+            ],
+            "bulletPoints": [
+              "Specialization — Each country produces what it does best relative to alternatives, then trades for everything else",
+              "Lower Opportunity Cost — Country A should produce good X if its opportunity cost (what it gives up) is lower than Country B's",
+              "Both Sides Gain — Trade expands total output — more goods are produced overall when each country specializes",
+              "Real-World Example — {{STATE_NAME}} exports high-value goods (aerospace, agriculture, tech) and imports lower-value manufactured goods — specialization at work"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$2,500",
+                "label": "Estimated savings per US household annually from lower prices due to trade",
+                "color": "teal"
+              },
+              {
+                "value": "$1T+",
+                "label": "Annual US exports — goods and services sold to other countries creating US jobs",
+                "color": "purple"
+              },
+              {
+                "value": "Both",
+                "label": "Sides of a trade deal gain — comparative advantage ensures mutual benefit",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Tariffs and Quotas — Trade Policy Tools",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "💰",
+            "title": "Tariffs (Import Taxes)",
+            "items": [
+              "Raises the price of imported goods by the tax amount",
+              "Protects domestic producers from foreign competition",
+              "HURTS consumers — they pay higher prices",
+              "Generates government revenue from imports",
+              "Risk of retaliation — trading partners impose their own tariffs on US exports like {{STATE_NAME}}'s agricultural products"
+            ]
+          },
+          "rightColumn": {
+            "icon": "🚧",
+            "title": "Quotas (Import Limits)",
+            "items": [
+              "Sets a maximum quantity of imports allowed",
+              "Protects domestic producers by limiting foreign supply",
+              "HURTS consumers — scarcity raises prices",
+              "No government revenue (unlike tariff)",
+              "Often leads to trading partners seeking exemptions or retaliation through WTO dispute process"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Exchange Rates — How They Affect You",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "The Dollar's Strength Touches Your Wallet",
+          "paragraphs": [
+            "Exchange rates affect the price of everything you import — from your iPhone to the gas in your car. They also affect your travel budget and the competitiveness of {{STATE_NAME}}'s exporters."
+          ],
+          "bulletPoints": [
+            "<strong>Strong Dollar = Cheaper Imports:</strong> When $1 buys more foreign currency, imported goods cost less — good for consumers in {{STATE_NAME}} buying electronics, clothing, and cars",
+            "<strong>Strong Dollar = Expensive Exports:</strong> US goods cost more in foreign currency — hurts {{STATE_NAME}} farmers, tech companies, and manufacturers selling abroad",
+            "<strong>Weak Dollar = Cheaper Travel Abroad:</strong> Your dollar stretches further in countries with weaker currencies",
+            "<strong>Weak Dollar = More Expensive Imports:</strong> Foreign goods cost more in dollars — bad for consumers but helps domestic producers compete"
+          ],
+          "keyPoint": {
+            "text": "💡 Example: If $1 = 150 Yen and the dollar weakens to $1 = 120 Yen, a Japanese car priced at ¥3,000,000 rises from $20,000 to $25,000 for US buyers — a $5,000 price increase from currency movement alone."
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "The Benefits of Free Trade",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "How Trade Benefits Consumers and the Economy",
+            "paragraphs": [
+              "Free trade — the elimination of tariffs and trade barriers — lowers prices, increases variety, drives innovation, and raises living standards. It's the dominant view among economists."
+            ],
+            "bulletPoints": [
+              "Lower Prices — Competition from imports forces prices down; consumers save thousands annually",
+              "Greater Variety — Access to goods from around the world that couldn't be produced domestically at reasonable cost",
+              "Efficiency — Resources flow to highest-value uses; specialization increases total economic output",
+              "Innovation — Global competition pressures firms to innovate or lose market share",
+              "{{STATE_NAME}} Export Opportunity — Access to 8 billion global customers for products {{STATE_NAME}} excels at producing"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$10–15K",
+                "label": "Estimated annual savings for US household from cheaper goods due to global trade",
+                "color": "teal"
+              },
+              {
+                "value": "38M",
+                "label": "US jobs supported by trade — exports and imports create employment across the economy",
+                "color": "purple"
+              },
+              {
+                "value": "90%+",
+                "label": "Economists who support free trade as beneficial to overall economic welfare",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "The Costs of Free Trade",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Trade Creates Winners and Losers",
+            "paragraphs": [
+              "While free trade benefits the economy overall, its costs are concentrated — specific workers and communities can face devastating job losses while consumers broadly enjoy lower prices."
+            ],
+            "bulletPoints": [
+              "Job Displacement — Manufacturing workers in {{STATE_NAME}} face competition from lower-wage countries; 5M US manufacturing jobs lost since 1990s",
+              "Income Inequality — College-educated workers gain from trade; less-educated workers often hurt by import competition",
+              "National Security Risk — Depending on rivals for critical goods (semiconductors, pharmaceuticals) creates strategic vulnerability",
+              "Community Devastation — Factory towns can collapse when plants close; impact concentrated geographically unlike diffuse consumer benefits"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "5M",
+                "label": "US manufacturing jobs lost since 1990s — attributed to trade and automation combined",
+                "color": "rose"
+              },
+              {
+                "value": "Concentrated",
+                "label": "Trade costs — specific workers and towns devastated while benefits diffuse across all consumers",
+                "color": "purple"
+              },
+              {
+                "value": "TAA",
+                "label": "Trade Adjustment Assistance — federal program helping displaced workers in {{STATE_NAME}} retrain",
+                "color": "teal"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "{{STATE_NAME}} in the Global Economy",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Your State's Global Connections",
+          "paragraphs": [
+            "{{STATE_NAME}}'s economy is deeply integrated with global markets. What {{STATE_NAME}} exports, what it imports, and which industries face international competition directly affects your job prospects and local economy."
+          ],
+          "bulletPoints": [
+            "<strong>Export Opportunities:</strong> Industries where {{STATE_NAME}} excels globally — aerospace, agriculture, technology, and advanced manufacturing — create well-paying export jobs",
+            "<strong>Import Competition:</strong> Industries like textiles, basic manufacturing, and assembly work face intense competition from lower-cost countries, reducing those job opportunities in {{STATE_NAME}}",
+            "<strong>Supply Chains:</strong> Even 'American' products contain components from dozens of countries — your car, phone, and appliances are products of global trade networks",
+            "<strong>Career Implications:</strong> Understanding {{STATE_NAME}}'s global competitive position helps you choose careers in growing export sectors vs. declining import-competing ones"
+          ],
+          "keyPoint": {
+            "text": "💡 Every {{STATE_NAME}} resident benefits from trade through lower prices — your annual savings from cheaper goods estimated at thousands of dollars. But workers in import-competing industries may face job displacement. Trade creates complex trade-offs between consumer and worker interests."
+          }
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Free Trade Agreements — USMCA and Beyond",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "How Trade Deals Affect {{STATE_NAME}}",
+            "paragraphs": [
+              "Free trade agreements (FTAs) eliminate or reduce tariffs between countries, expanding market access for exporters and lowering costs for importers. The US participates in multiple FTAs affecting {{STATE_NAME}} businesses."
+            ],
+            "bulletPoints": [
+              "USMCA (formerly NAFTA) — Governs trade with Canada and Mexico; eliminates most tariffs; affects auto, agriculture, and manufacturing in {{STATE_NAME}}",
+              "Agricultural Access — {{STATE_NAME}} farmers benefit from FTAs opening foreign markets to US crops and products",
+              "Dispute Resolution — FTAs include mechanisms for resolving trade conflicts without escalating to tariff wars",
+              "Job Impact — FTAs create export jobs in competitive industries while eliminating jobs in import-competing sectors — net effect debated"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$1.8T",
+                "label": "Annual US trade with Canada and Mexico — USMCA's massive economic scope",
+                "color": "purple"
+              },
+              {
+                "value": "20",
+                "label": "Countries with US free trade agreements providing reduced tariff access for {{STATE_NAME}} exporters",
+                "color": "teal"
+              },
+              {
+                "value": "WTO",
+                "label": "World Trade Organization — sets global trade rules and resolves disputes affecting {{STATE_NAME}} industries",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "✈️",
+            "name": "Aisha — Exchange Rates and European Travel",
+            "paragraphs": [
+              "Aisha planned a 10-day trip to Europe from {{STATE_NAME}} and budgeted $3,000 for the trip based on an exchange rate of $1 = €0.95. When she booked her hotel two months later, the dollar had strengthened to $1 = €1.05.",
+              "<span class=\"highlight-text\">Aisha's same €2,850 budget now cost her only $2,714 — she saved $286 simply because the dollar strengthened.</span> Understanding exchange rates helps her time purchases and travel for maximum value."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "Original Budget",
+              "value": "$3,000",
+              "detail": "At $1 = €0.95"
+            },
+            {
+              "type": "after",
+              "label": "Actual Cost",
+              "value": "$2,714",
+              "detail": "At $1 = €1.05"
+            },
+            {
+              "type": "after",
+              "label": "Savings",
+              "value": "$286",
+              "detail": "From dollar strengthening"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "🌾",
+            "name": "The Johnson Farm — Trade Policy and Agriculture",
+            "paragraphs": [
+              "The Johnson family farms soybeans in {{STATE_NAME}} and relies heavily on exports to China — their largest customer. When the US imposed $250 billion in tariffs on Chinese goods in 2018, China retaliated with 25% tariffs on US soybeans.",
+              "<span class=\"highlight-text\">The Johnson farm's soybean revenue dropped 22% as Chinese buyers switched to Brazilian suppliers.</span> Federal trade assistance payments partially offset losses — illustrating how trade policy creates real winners and losers in agricultural communities."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Revenue Drop",
+              "value": "-22%",
+              "detail": "Due to China tariff retaliation"
+            },
+            {
+              "type": "before",
+              "label": "Market Lost",
+              "value": "China",
+              "detail": "Switched to Brazil"
+            },
+            {
+              "type": "after",
+              "label": "Government Aid",
+              "value": "Partial",
+              "detail": "Trade assistance payments"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": "Think about a product you use daily that's made in another country — your phone, clothing, or car. Should the US impose tariffs to protect domestic producers of that product?<br><br>Who would benefit from the tariff? Who would be harmed? How would it affect prices in {{STATE_NAME}}? Is the trade-off worth it? How do you weigh consumer savings against worker job protection?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "As you plan your career in {{STATE_NAME}}, how does globalization affect your choices?<br><br>Are there industries in {{STATE_NAME}} that face significant international competition? Which sectors are growing because of export opportunities? How can you position yourself to benefit from global trade rather than be threatened by it?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "Explain comparative advantage. Why do economists say trade benefits both countries even if one can produce everything more efficiently?"
+            },
+            {
+              "number": 2,
+              "question": "A 25% tariff is placed on imported shoes. Who benefits and who is harmed? How does this affect consumers in {{STATE_NAME}}?"
+            },
+            {
+              "number": 3,
+              "question": "If the US dollar weakens from $1 = ¥150 to $1 = ¥120, what happens to the price of Japanese cars for US consumers? What happens to US exports to Japan?"
+            },
+            {
+              "number": 4,
+              "question": "Why do economists generally support free trade even though it causes job displacement in some industries? What policies can address the costs of trade?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Comparative Advantage Drives Trade",
+              "description": "Countries specialize in what they produce most efficiently relative to alternatives — both sides gain even when one country is better at producing everything"
+            },
+            {
+              "number": 2,
+              "title": "Tariffs Protect Producers, Hurt Consumers",
+              "description": "Import taxes help domestic industries but raise prices for everyone — the trade-off between worker protection and consumer savings is real and contested"
+            },
+            {
+              "number": 3,
+              "title": "Exchange Rates Affect Everything",
+              "description": "Dollar strength determines import prices, travel costs, and competitiveness of {{STATE_NAME}} exports — fluctuations create both opportunities and risks"
+            },
+            {
+              "number": 4,
+              "title": "Trade Creates Winners and Losers",
+              "description": "Overall economic gains from trade are real — but concentrated job losses in specific {{STATE_NAME}} industries require deliberate policies to assist displaced workers"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Skill Builder: Trade Impact Analyzer",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "🌐",
+            "title": "Trade Impact Analyzer",
+            "description": "Analyze how international trade, tariffs, and exchange rate changes affect personal finances and {{STATE_NAME}}'s economy. Evaluate real trade policy scenarios and calculate their effects on consumers, producers, and workers."
+          },
+          "steps": [
+            "Identify {{STATE_NAME}}'s Trade Position — Research what {{STATE_NAME}} exports and imports; identify the top trading partners and key industries",
+            "Analyze a Tariff Scenario — A 20% tariff is imposed on imported goods in an industry relevant to {{STATE_NAME}}; calculate the effect on consumer prices and producer revenues",
+            "Calculate Exchange Rate Impact — If the dollar strengthens by 10%, determine the effect on import prices and {{STATE_NAME}} export competitiveness",
+            "Evaluate Trade Agreement Effects — Assess whether USMCA has helped or hurt specific industries in {{STATE_NAME}} — who gained, who lost?",
+            "Career Connection — Identify three {{STATE_NAME}} industries positioned to grow from global trade and three facing international competition challenges"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Navigate the Global Economy, Build Your Future",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
 }

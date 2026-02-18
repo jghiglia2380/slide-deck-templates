@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "lChapter": "L-XX",
+    "lChapter": "L-33",
     "title": "Understanding and Managing Risk",
-    "subtitle": "Identifying, assessing, and controlling threats to minimize negative outcomes in {{STATE_NAME}}",
+    "subtitle": "Identifying, assessing, and controlling threats to minimize negative outcomes",
     "totalSlides": 20,
     "hasStateVariables": true,
     "stateVariablesUsed": [
@@ -24,13 +24,13 @@
       "type": "hook",
       "content": {
         "label": "Essential Question",
-        "question": ""
+        "question": "How can <em>understanding risk</em> help you make better decisions<br>about protecting your <em>financial future</em>?<br><br>Every decision involves risk. Learning to identify, assess, and manage risk is one of the most valuable skills you can develop."
       }
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "teal",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
@@ -70,14 +70,24 @@
         "layoutData": {
           "terms": [
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Risk",
+              "definition": "The possibility of loss or gain in any situation where the outcome is uncertain",
+              "example": "Investing in stocks carries the risk of losing money but also the opportunity for gains"
             },
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Risk Management",
+              "definition": "The process of identifying, assessing, and controlling threats to minimize negative outcomes",
+              "example": "Installing smoke detectors and having fire insurance is risk management"
+            },
+            {
+              "term": "Risk Tolerance",
+              "definition": "A person's willingness and ability to withstand potential losses",
+              "example": "Someone with high risk tolerance might invest heavily in stocks; low tolerance prefers savings accounts"
+            },
+            {
+              "term": "Insurance",
+              "definition": "A contract that provides financial protection against specific losses in exchange for premium payments",
+              "example": "Health insurance pays medical bills after you pay the deductible"
             }
           ]
         }
@@ -93,14 +103,24 @@
         "layoutData": {
           "terms": [
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Premium",
+              "definition": "The periodic payment required to maintain insurance coverage",
+              "example": "Paying $150/month to your health insurance company to stay covered"
             },
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Deductible",
+              "definition": "The amount you must pay out-of-pocket before insurance coverage begins",
+              "example": "With a $500 deductible, you pay the first $500 of car repairs after an accident"
+            },
+            {
+              "term": "Risk Avoidance",
+              "definition": "Eliminating the possibility of loss by avoiding the activity entirely",
+              "example": "Not driving during a severe ice storm eliminates accident risk"
+            },
+            {
+              "term": "Risk Transfer",
+              "definition": "Shifting the financial responsibility for loss to another party, typically through insurance",
+              "example": "Buying auto insurance transfers financial liability from accidents"
             }
           ]
         }
@@ -117,30 +137,30 @@
           "leftPanel": {
             "title": "Risk Is Everywhere",
             "paragraphs": [
-              "Risk is the uncertainty about outcomes that could lead to loss or gain. It exists in nearly every aspect of our lives:"
+              "Risk appears in everyday situations: walking to school (injury risk), taking a test (failure risk), lending money to a friend (non-repayment risk), starting a business (financial loss risk), investing in stocks (market decline risk)."
             ],
-            "highlightBox": null
+            "bulletPoints": [
+              "Personal Risk — Threats to health, life, or income",
+              "Property Risk — Damage, destruction, or theft",
+              "Liability Risk — Legal responsibility for harm",
+              "Financial Risk — Potential monetary losses"
+            ]
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
+                "value": "4",
+                "label": "Main categories of risk",
                 "color": "teal"
               },
               {
-                "value": "",
-                "label": "",
+                "value": "Daily",
+                "label": "Risk appears in every decision",
                 "color": "purple"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "teal"
-              },
-              {
-                "value": "",
-                "label": "",
+                "value": "Manageable",
+                "label": "All risks can be addressed strategically",
                 "color": "green"
               }
             ],
@@ -158,14 +178,28 @@
         "layout": "comparison-grid",
         "layoutData": {
           "leftColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
+            "icon": "👤",
+            "title": "Personal Risk",
+            "items": [
+              "Threats to health, life, or ability to earn income",
+              "Illness or injury",
+              "Disability preventing work",
+              "Premature death",
+              "Unemployment",
+              "Identity theft"
+            ]
           },
           "rightColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
+            "icon": "🏠",
+            "title": "Property Risk",
+            "items": [
+              "Potential damage, destruction, or theft",
+              "Home damage from fire/flood",
+              "Auto accident damage",
+              "Theft of belongings",
+              "Technology failures",
+              "Repair/replacement costs"
+            ]
           }
         }
       }
@@ -179,14 +213,28 @@
         "layout": "comparison-grid",
         "layoutData": {
           "leftColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
+            "icon": "⚖️",
+            "title": "Liability Risk",
+            "items": [
+              "Being legally responsible for harm to others",
+              "Causing a car accident",
+              "Someone injured on your property",
+              "Damaging someone's property",
+              "Legal expenses and court judgments",
+              "Settlement costs"
+            ]
           },
           "rightColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
+            "icon": "💰",
+            "title": "Financial Risk",
+            "items": [
+              "Potential monetary losses from various sources",
+              "Investment losses",
+              "Inflation reducing purchasing power",
+              "Interest rate changes",
+              "Income instability",
+              "Forced lifestyle changes"
+            ]
           }
         }
       }
@@ -197,35 +245,15 @@
       "headerColor": "purple",
       "content": {
         "headerTitle": "Four Risk Management Strategies",
-        "layout": "generic",
+        "layout": "concept-full",
         "layoutData": {
-          "paragraphs": [
-            "Eliminate risk entirely by avoiding the activity",
-            "Take steps to minimize likelihood or impact",
-            "Acknowledge risk and prepare to handle losses",
-            "Shift responsibility to another party"
-          ],
-          "lists": [
-            [
-              "Not driving in ice storms",
-              "Avoiding risky investments",
-              "Not lending unaffordable money"
-            ],
-            [
-              "Wearing a helmet",
-              "Installing smoke detectors",
-              "Diversifying investments"
-            ],
-            [
-              "Skipping extended warranties",
-              "Self-insuring minor items",
-              "Accepting market fluctuations"
-            ],
-            [
-              "Buying health insurance",
-              "Getting auto insurance",
-              "Having life insurance"
-            ]
+          "title": "Choose the Right Tool for Each Risk",
+          "paragraphs": [],
+          "bulletPoints": [
+            "<strong>Avoidance:</strong> Eliminate risk entirely by not doing the activity — not driving in ice storms, avoiding risky investments",
+            "<strong>Reduction:</strong> Take steps to minimize likelihood or impact — wearing a helmet, installing smoke detectors, diversifying investments",
+            "<strong>Acceptance:</strong> Acknowledge risk and prepare to handle losses — skipping extended warranties, accepting market fluctuations",
+            "<strong>Transfer:</strong> Shift responsibility to another party — buying health insurance, getting auto insurance, life insurance"
           ]
         }
       }
@@ -236,16 +264,32 @@
       "headerColor": "teal",
       "content": {
         "headerTitle": "Choosing the Right Strategy",
-        "layout": "concept-full",
+        "layout": "comparison-grid",
         "layoutData": {
-          "title": "When to Use Each Strategy",
-          "paragraphs": [
-            "Best when potential loss is severe, benefits don't outweigh risks, or no effective mitigation exists. Limitation: may miss opportunities.",
-            "Best when risk can't be avoided but can be managed, and benefits outweigh the reduced risk. Limitation: doesn't eliminate risk completely.",
-            "Best when potential loss is small, or cost of avoiding exceeds potential loss. Limitation: requires reserves to cover losses.",
-            "Best for significant but unlikely losses when premium costs are reasonable. Limitation: ongoing premium costs and claim complexities."
-          ],
-          "bulletPoints": []
+          "leftColumn": {
+            "icon": "🛡️",
+            "title": "Use Avoidance or Reduction When",
+            "items": [
+              "Risk avoidance: potential loss is severe",
+              "Benefits don't outweigh the risks",
+              "No effective mitigation exists",
+              "Risk reduction: risk can be managed, not avoided",
+              "Benefits outweigh the reduced risk",
+              "Limitation: doesn't eliminate risk completely"
+            ]
+          },
+          "rightColumn": {
+            "icon": "📋",
+            "title": "Use Acceptance or Transfer When",
+            "items": [
+              "Risk acceptance: potential loss is small",
+              "Cost of avoiding exceeds potential loss",
+              "You have reserves to cover losses",
+              "Risk transfer: significant but unlikely losses",
+              "Premium costs are reasonable",
+              "Best for catastrophic, low-probability events"
+            ]
+          }
         }
       }
     },
@@ -255,35 +299,19 @@
       "headerColor": "blue",
       "content": {
         "headerTitle": "Why It Matters",
-        "layout": "balanced-layout",
+        "layout": "concept-full",
         "layoutData": {
-          "leftPanel": {
-            "title": "Understanding Risk Empowers You",
-            "paragraphs": [
-              "Understanding risk doesn't mean avoiding it—that would be impossible and would limit your opportunities.",
-              "Effective risk management helps you:"
-            ],
-            "highlightBox": null
-          },
-          "rightPanel": {
-            "stats": [
-              {
-                "value": "",
-                "label": "",
-                "color": "teal"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "purple"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "green"
-              }
-            ],
-            "infoCard": null
+          "title": "Effective Risk Management Helps You",
+          "paragraphs": [],
+          "bulletPoints": [
+            "<strong>Make informed decisions</strong> about which risks to take",
+            "<strong>Minimize potential negative consequences</strong> of unavoidable risks",
+            "<strong>Pursue opportunities for growth and reward</strong> without unnecessary exposure",
+            "<strong>Protect yourself and your family financially</strong> against catastrophic loss",
+            "<strong>Build long-term financial security</strong> through strategic planning"
+          ],
+          "keyPoint": {
+            "text": "💡 Understanding risk doesn't mean avoiding it — it means managing it wisely to achieve your goals."
           }
         }
       }
@@ -297,33 +325,33 @@
         "layout": "balanced-layout",
         "layoutData": {
           "leftPanel": {
-            "title": "Insurance Is the Most Common Risk Transfer",
+            "title": "Pooling Risk Across Many People",
             "paragraphs": [
-              "Insurance works by pooling risk across many individuals. Everyone pays a premium to protect against losses that will only affect a few."
+              "Insurance works by spreading risk: everyone pays a premium to protect against losses that will only affect a few. The math works because most people won't need large payouts."
             ],
-            "highlightBox": null
+            "bulletPoints": [
+              "Premiums: Periodic payments to maintain coverage",
+              "Deductibles: What you pay before coverage kicks in",
+              "Coverage Limits: Maximum payout for a claim",
+              "Exclusions: Situations not covered by the policy"
+            ]
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
+                "value": "Many",
+                "label": "Contribute premiums each month",
                 "color": "teal"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "purple"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "teal"
-              },
-              {
-                "value": "",
-                "label": "",
+                "value": "Few",
+                "label": "Actually file claims each year",
                 "color": "green"
+              },
+              {
+                "value": "1",
+                "label": "Claim can cost more than years of premiums",
+                "color": "purple"
               }
             ],
             "infoCard": null
@@ -336,32 +364,35 @@
       "type": "content",
       "headerColor": "teal",
       "content": {
-        "headerTitle": "Real-World Example: Riley's Auto Insurance",
+        "headerTitle": "Real-World Example",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "",
-            "name": "",
-            "paragraphs": []
+            "icon": "🚗",
+            "name": "Riley's Auto Insurance Decision",
+            "paragraphs": [
+              "Riley just bought her first car — a used vehicle worth $8,000. She chose comprehensive coverage beyond minimum liability, selected a $500 deductible to lower her premium, and installed an anti-theft device for a premium discount.",
+              "<span class=\"highlight-text\">If her car is damaged or stolen, Riley only pays the $500 deductible</span> rather than the full $8,000 replacement cost — a smart combination of risk transfer and reduction."
+            ]
           },
           "outcomes": [
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "after",
+              "label": "Risk Strategy",
+              "value": "Transfer + Reduce",
+              "detail": "Insurance + anti-theft"
             },
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "after",
+              "label": "Max Out-of-Pocket",
+              "value": "$500 deductible",
+              "detail": "Manageable amount"
             },
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "after",
+              "label": "Without Insurance",
+              "value": "$8,000 loss",
+              "detail": "Would be devastating"
             }
           ]
         }
@@ -372,32 +403,35 @@
       "type": "content",
       "headerColor": "blue",
       "content": {
-        "headerTitle": "Real-World Example: Marcus's Basketball Decision",
+        "headerTitle": "Real-World Example",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "",
-            "name": "",
-            "paragraphs": []
+            "icon": "🏀",
+            "name": "Marcus's Basketball Decision",
+            "paragraphs": [
+              "Marcus is deciding whether to join his school's basketball team. Rather than avoiding the sport entirely or ignoring the risks, he uses multiple strategies: physical exam to ensure readiness (reduction), sports accident insurance through school (transfer), proper warm-ups and training (reduction), and not playing when injured (selective avoidance).",
+              "<span class=\"highlight-text\">Multiple strategies reduce injury likelihood and financial impact</span> — informed management, not reckless acceptance."
+            ]
           },
           "outcomes": [
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "after",
+              "label": "Strategy Used",
+              "value": "Multiple approaches",
+              "detail": "Reduction + transfer"
             },
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "after",
+              "label": "Risk Level",
+              "value": "Significantly reduced",
+              "detail": "Not eliminated"
             },
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "after",
+              "label": "Outcome",
+              "value": "Informed decision",
+              "detail": "Enjoys sport safely"
             }
           ]
         }
@@ -408,17 +442,17 @@
       "type": "discussion",
       "variant": "teal",
       "content": {
-        "badge": "Discussion in {{STATE_NAME}}",
-        "question": ""
+        "badge": "Discussion",
+        "question": "How does your perception of risk affect your daily decision-making?<br><br>Think about a recent decision where you considered risk. What factors influenced your choice? Do you tend toward risk avoidance or are you comfortable with uncertainty? How might understanding risk strategies change your future decisions?"
       }
     },
     {
       "number": 16,
       "type": "discussion",
-      "variant": "teal",
+      "variant": "purple",
       "content": {
-        "badge": "Personal Reflection in {{STATE_NAME}}",
-        "question": ""
+        "badge": "Personal Reflection",
+        "question": "What significant financial decision might you face in the next few years?<br><br>Consider: buying a car, paying for education, starting a business, renting an apartment. What risks are associated with this decision? Which risk management strategies would be most appropriate?"
       }
     },
     {
@@ -462,22 +496,22 @@
             {
               "number": 1,
               "title": "Risk Is Neutral",
-              "description": "Risk represents uncertainty—it can lead to loss or gain. It's a natural part of life that accompanies opportunity."
+              "description": "Risk represents uncertainty — it can lead to loss or gain. It's a natural part of life that accompanies opportunity"
             },
             {
               "number": 2,
               "title": "Four Risk Categories",
-              "description": "Personal, property, liability, and financial risks each require different consideration and management approaches."
+              "description": "Personal, property, liability, and financial risks each require different consideration and management approaches"
             },
             {
               "number": 3,
               "title": "Strategic Management",
-              "description": "The four strategies—avoidance, reduction, acceptance, and transfer—each fit different situations based on risk type and impact."
+              "description": "The four strategies — avoidance, reduction, acceptance, and transfer — each fit different situations"
             },
             {
               "number": 4,
               "title": "Know Your Tolerance",
-              "description": "Understanding your personal risk tolerance helps you make decisions that align with your comfort level and circumstances."
+              "description": "Understanding your personal risk tolerance helps you make decisions that align with your comfort level"
             }
           ]
         }
@@ -492,11 +526,17 @@
         "layout": "activity-layout",
         "layoutData": {
           "main": {
-            "icon": "📋",
-            "title": "",
-            "description": ""
+            "icon": "🔍",
+            "title": "Risk Scenario Analysis",
+            "description": "Practice identifying risks and applying appropriate management strategies to realistic financial scenarios. Materials: Risk Scenario Analysis worksheet."
           },
-          "steps": []
+          "steps": [
+            "Select a risk type: Personal, property, liability, or financial",
+            "Create a scenario: Describe a realistic situation where that risk could occur",
+            "Choose a strategy: Select the best risk management approach for your scenario",
+            "Explain your reasoning: Why is this strategy most appropriate?",
+            "Consider alternatives: What other strategies could apply and why did you choose differently?"
+          ]
         }
       }
     },
@@ -504,9 +544,9 @@
       "number": 20,
       "type": "closing",
       "content": {
-        "tagline": "Make informed decisions to protect your financial future in {{STATE_NAME}}",
-        "website": "www.pflacademy.co in {{STATE_NAME}}",
-        "copyright": "© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+        "tagline": "Make Informed Decisions to Protect Your Financial Future",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
       }
     }
   ]

@@ -1,11 +1,555 @@
 {
   "metadata": {
     "lChapter": "L-56",
-    "title": "",
-    "subtitle": "",
-    "totalSlides": 0,
+    "title": "Financial Record Keeping and Account Reconciliation",
+    "subtitle": "Master the habits that keep your finances accurate, fraud-free, and under your control",
+    "totalSlides": 20,
     "hasStateVariables": false,
     "stateVariablesUsed": []
   },
-  "slides": []
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Financial Record Keeping and Account Reconciliation",
+        "titleSize": "large",
+        "subtitle": "Master the habits that keep your finances accurate, fraud-free, and completely under your control"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": "Would you notice a <em>$47 unauthorized charge</em> on your account this week?<br><br>Americans pay over <em>$15 billion</em> annually in overdraft fees — most avoidable with one simple habit: tracking every transaction and reconciling your accounts."
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Analyze",
+              "description": "The importance of accurate financial record keeping for preventing overdrafts, catching fraud, and supporting sound financial decisions"
+            },
+            {
+              "number": 2,
+              "verb": "Demonstrate",
+              "description": "How to balance a checkbook and reconcile bank statements by matching personal records against bank-reported transactions"
+            },
+            {
+              "number": 3,
+              "verb": "Evaluate",
+              "description": "Different financial tracking methods — paper registers, spreadsheets, and digital apps — and select the best system for your lifestyle"
+            },
+            {
+              "number": 4,
+              "verb": "Identify",
+              "description": "Common discrepancies in financial records, including outstanding transactions, bank errors, and unauthorized charges, and resolve each type"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Checkbook Register",
+              "definition": "A personal record where you manually track all deposits, withdrawals, checks, debit card purchases, and ATM transactions to maintain an accurate running balance — separate from your bank's reported balance",
+              "example": "After writing a $750 rent check, you immediately record it in your register: date, payee, amount, and new running balance — even before the check clears your bank"
+            },
+            {
+              "term": "Reconciliation",
+              "definition": "The process of comparing your personal financial records with your bank statement to identify and resolve any discrepancies — ensuring your records match reality",
+              "example": "Monthly, you compare each transaction in your register to your bank statement, marking cleared items and identifying outstanding checks, deposits, or unexplained differences"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Outstanding Transactions",
+              "definition": "Checks, deposits, or electronic payments that you've recorded in your personal register but haven't yet cleared or posted to your bank account — creating a difference between your balance and the bank's reported balance",
+              "example": "You wrote a $500 check to your landlord on Friday — it's in your register reducing your balance, but won't appear on your bank statement until they deposit it Monday or Tuesday"
+            },
+            {
+              "term": "NSF (Non-Sufficient Funds)",
+              "definition": "When a transaction is attempted but cannot be completed because the account doesn't have enough money to cover it — resulting in a returned payment and fees typically $25-$35 per incident",
+              "example": "Your $800 rent check bounces because you only have $650 in your account — the bank returns the check, charges you a $35 NSF fee, and your landlord may charge a $50 returned check fee"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Why Your Balance and the Bank's Don't Match",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "📒",
+            "title": "Your Register Shows",
+            "items": [
+              "Every transaction you've recorded — including pending and recent ones",
+              "Checks written but not yet deposited by recipients",
+              "Debit purchases that haven't fully processed yet",
+              "Deposits made that may not have cleared bank yet",
+              "Your TRUE available balance after accounting for all committed funds"
+            ]
+          },
+          "rightColumn": {
+            "icon": "🏦",
+            "title": "Your Bank Shows",
+            "items": [
+              "Only transactions that have fully cleared and posted",
+              "Does NOT show outstanding checks you've written",
+              "May not include very recent debit card transactions",
+              "May include pending holds reducing available balance",
+              "Your CLEARED balance — often higher or lower than your true balance"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "The Reconciliation Process",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Step-by-Step Account Balancing",
+            "paragraphs": [
+              "Reconciliation means making your records match the bank's — accounting for timing differences and catching any errors. Follow this process monthly (or more often if you have many transactions)."
+            ],
+            "bulletPoints": [
+              "Step 1 — Gather your bank statement and personal register for the same period",
+              "Step 2 — Check off each transaction that appears on both your register and the bank statement",
+              "Step 3 — Note any transactions in your register that haven't cleared yet (outstanding items)",
+              "Step 4 — Start with the bank's ending balance; add uncleaned deposits; subtract outstanding checks",
+              "Step 5 — Result should equal your register balance; if not, find and fix the discrepancy"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "1 in 5",
+                "label": "Americans find errors on bank statements annually — reconciliation catches these",
+                "color": "rose"
+              },
+              {
+                "value": "15 min",
+                "label": "Monthly time needed to fully reconcile a typical checking account",
+                "color": "teal"
+              },
+              {
+                "value": "60 days",
+                "label": "Typical window to dispute unauthorized charges before losing protection",
+                "color": "purple"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Finding and Fixing Discrepancies",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "When the Numbers Don't Add Up",
+          "paragraphs": [
+            "If your register balance doesn't match after reconciliation, you have a discrepancy. Don't ignore it — small errors compound and can mask fraud or costly mistakes."
+          ],
+          "bulletPoints": [
+            "<strong>Math Errors:</strong> Addition or subtraction mistakes in your register — re-check every calculation or use a calculator app",
+            "<strong>Missing Transactions:</strong> A purchase or deposit you forgot to record — check receipts and bank statement for anything unrecorded",
+            "<strong>Transposed Numbers:</strong> Writing $45.67 instead of $46.57 — look for differences equal to 9 times a digit (classic transposition clue)",
+            "<strong>Unauthorized Charges:</strong> A transaction on the bank statement that isn't yours — immediately report to bank; time-sensitive fraud protection applies"
+          ],
+          "keyPoint": {
+            "text": "💡 If you find an unauthorized charge, report it to your bank immediately. For debit cards, federal law limits your liability to $50 if reported within 2 days, $500 within 60 days. After 60 days, you could lose everything."
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Available vs. Cleared Balance — Critical Distinction",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The Balance Trap That Causes Overdrafts",
+            "paragraphs": [
+              "Relying solely on your bank's displayed balance — without accounting for outstanding transactions — is the single most common cause of surprise overdraft fees."
+            ],
+            "bulletPoints": [
+              "Cleared Balance — Transactions fully processed by the bank; shown in your online account",
+              "Available Balance — What the bank currently lets you spend (cleared balance minus holds)",
+              "True Available Balance — Available balance MINUS any outstanding checks, pending payments, or committed funds",
+              "The Danger Zone — Your bank shows $800 available; you've written $650 in checks not yet cleared; true balance is only $150",
+              "Solution — Your personal register, updated for every transaction, gives you the only accurate balance"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$15B",
+                "label": "Annual overdraft fees paid by Americans — most from trusting bank balance instead of personal records",
+                "color": "rose"
+              },
+              {
+                "value": "$35",
+                "label": "Average overdraft fee per transaction — small purchases can each trigger a separate fee",
+                "color": "purple"
+              },
+              {
+                "value": "Register",
+                "label": "Your personal transaction register = only truly accurate balance",
+                "color": "teal"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Transaction Categorization — Seeing Where Money Goes",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Turning Records Into Insights",
+            "paragraphs": [
+              "Categorizing transactions transforms raw records into financial insight. When you know where every dollar goes, budgeting becomes fact-based rather than guesswork."
+            ],
+            "bulletPoints": [
+              "Essential Categories — Housing, utilities, groceries, transportation, healthcare, minimum debt payments",
+              "Discretionary Categories — Dining out, entertainment, subscriptions, clothing, personal care",
+              "Savings & Investments — Emergency fund contributions, retirement account deposits, investment transfers",
+              "Monthly Review — Tallying each category reveals spending patterns; food delivery may be $300/month without realizing",
+              "Actionable Data — Category totals make it easy to spot where cuts would have the biggest impact"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$200+",
+                "label": "Monthly food delivery spending uncovered when consumers track and categorize — often a surprise",
+                "color": "rose"
+              },
+              {
+                "value": "7+",
+                "label": "Average number of recurring subscription payments — many forgotten or unused",
+                "color": "purple"
+              },
+              {
+                "value": "Insight",
+                "label": "Categorized records turn spending data into budget decisions and savings opportunities",
+                "color": "teal"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Tracking Methods — Choosing What Works for You",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Paper, Spreadsheet, or App — All Work If You Use Them",
+          "paragraphs": [
+            "The best financial tracking system is the one you'll actually use consistently. Each approach has trade-offs — choose based on your habits and discipline, not what sounds most sophisticated."
+          ],
+          "bulletPoints": [
+            "<strong>Paper Register:</strong> Physical checkbook register — simple, no technology required, private; best for disciplined writers who record every transaction immediately",
+            "<strong>Spreadsheet:</strong> Excel or Google Sheets — customizable categories, formulas auto-calculate running balance, easy to analyze by month; requires manual entry but flexible",
+            "<strong>Banking Apps:</strong> Built-in transaction history and categorization — convenient but only shows cleared transactions, not your true forward-looking balance",
+            "<strong>Dedicated Apps (Mint, YNAB):</strong> Auto-import transactions, categorize automatically, show full picture across accounts; privacy trade-off, slight lag in data"
+          ],
+          "keyPoint": {
+            "text": "💡 Any system requires you to record transactions when they happen — not days later. A delayed entry defeats the purpose because you won't know your true balance when making purchase decisions."
+          }
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Record Keeping Beyond Your Checking Account",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "What Records You Should Keep and For How Long",
+            "paragraphs": [
+              "Financial record keeping extends beyond your checkbook. Comprehensive records support tax filing, loan applications, dispute resolution, and long-term financial planning."
+            ],
+            "bulletPoints": [
+              "Tax Documents — Keep W-2s, 1099s, and tax returns for at least 7 years (IRS audit window)",
+              "Pay Stubs — Keep for one year or until you receive your W-2; verify accuracy against bank deposits",
+              "Bank Statements — Keep 1 year minimum; 7 years if used for tax deductions",
+              "Loan Documents — Keep for the life of the loan plus 7 years after payoff",
+              "Investment Records — Keep purchase records until sold plus 7 years; needed to calculate capital gains taxes"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "7 yrs",
+                "label": "IRS can audit tax returns up to 7 years old — keep tax documents that long",
+                "color": "purple"
+              },
+              {
+                "value": "Digital",
+                "label": "Scan and securely store documents — digital backup prevents loss from fire or flood",
+                "color": "teal"
+              },
+              {
+                "value": "Shred",
+                "label": "Destroy old financial documents containing personal info — prevents identity theft",
+                "color": "rose"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "⚠️",
+            "name": "Marcus — The Overdraft Cascade",
+            "paragraphs": [
+              "Marcus never tracked his own transactions and relied entirely on his mobile banking app balance. On Friday, his app showed $650 available, so he bought groceries ($87), gas ($45), and went out with friends ($62). What Marcus didn't know: his rent check ($1,100) and car insurance auto-payment ($180) were both pending.",
+              "On Monday, <span class=\"highlight-text\">Marcus woke up to six overdraft fees totaling $210.</span> The bank processed his rent and insurance first (largest transactions), leaving negative balance for his smaller purchases — each triggering a $35 fee. Had Marcus kept a register, he would have known his true balance was $150."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "App Balance",
+              "value": "$650",
+              "detail": "What Marcus trusted"
+            },
+            {
+              "type": "before",
+              "label": "True Balance",
+              "value": "$150",
+              "detail": "After outstanding payments"
+            },
+            {
+              "type": "before",
+              "label": "Fees Paid",
+              "value": "$210",
+              "detail": "6 overdraft fees × $35"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "🛡️",
+            "name": "Keisha — Catching Fraud Through Weekly Reconciliation",
+            "paragraphs": [
+              "Keisha reconciled her checking account every Sunday evening, recording every transaction in a spreadsheet and comparing to her bank's records. One Sunday, she spotted three small charges she didn't recognize: $2.99, $4.50, and $7.25 to unfamiliar merchants.",
+              "<span class=\"highlight-text\">Keisha reported these to her bank that evening. The fraud department confirmed her card data was stolen and reversed all charges immediately.</span> The investigator explained that thieves make small test charges before making large purchases — Keisha's habit saved her from hundreds or thousands more in fraud."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "Fraud Caught",
+              "value": "3 charges",
+              "detail": "$14.74 total — in week 1"
+            },
+            {
+              "type": "after",
+              "label": "Loss Prevented",
+              "value": "$0",
+              "detail": "All charges reversed"
+            },
+            {
+              "type": "after",
+              "label": "Time Invested",
+              "value": "15 min/week",
+              "detail": "Prevented major fraud"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": "Think about your current financial tracking habits. Do you know your exact account balance right now — accounting for all pending transactions, outstanding checks, and upcoming auto-payments?<br><br>Have you ever been surprised by an overdraft fee, an unrecognized charge, or uncertainty about whether you could afford a purchase? What single habit would have prevented that situation? What's stopping you from implementing that habit now?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "Consider the amount of time and money you spend on financial mistakes — overdraft fees, forgotten subscriptions, surprise charges, or missed billing errors.<br><br>What would it be worth to you to eliminate those costs? If spending 15 minutes per week on reconciliation saved you $500/year in fees and errors, is that a worthwhile investment? What's your plan for building a record-keeping system you'll actually use?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What is the difference between your bank's available balance and your true available balance? Why is this distinction critical for avoiding overdrafts?"
+            },
+            {
+              "number": 2,
+              "question": "Walk through the five steps of account reconciliation. What do you do if your register balance doesn't match the bank statement after reconciliation?"
+            },
+            {
+              "number": 3,
+              "question": "You find a $47 charge on your bank statement you don't recognize. What steps should you take, and why does timing matter?"
+            },
+            {
+              "number": 4,
+              "question": "What are two advantages and one disadvantage of using a mobile banking app as your primary financial tracking tool compared to a personal register?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Your Register Is Your True Balance",
+              "description": "Bank balance displays are snapshots — only your personal register, updated for every transaction, reflects your true available funds including outstanding items"
+            },
+            {
+              "number": 2,
+              "title": "Reconcile Regularly — Catch Problems Early",
+              "description": "Monthly (or weekly) reconciliation catches bank errors, fraud, and your own mistakes before they compound — the earlier you find problems, the easier they are to fix"
+            },
+            {
+              "number": 3,
+              "title": "Categorize to Understand",
+              "description": "Tracking spending by category transforms raw records into insight — you can't manage what you don't measure, and categories reveal where your money actually goes"
+            },
+            {
+              "number": 4,
+              "title": "The Best System Is the One You Use",
+              "description": "Paper register, spreadsheet, or app — all work if you record every transaction when it happens; consistency and immediacy matter more than sophistication"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Skill Builder: Checkbook Reconciliation Simulator",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📊",
+            "title": "Checkbook Reconciliation Simulator",
+            "description": "Practice maintaining accurate financial records and identifying discrepancies using a simulated bank statement and partially completed checkbook register. Develop the systematic approach essential for real-world financial control."
+          },
+          "steps": [
+            "Review the Statement — Examine a simulated bank statement showing one month of deposits, withdrawals, and fees",
+            "Complete the Register — Record missing transactions in the checkbook register and calculate the running balance after each entry",
+            "Mark Cleared Items — Compare each register entry to the bank statement and mark transactions that have cleared",
+            "Reconcile — Apply the reconciliation formula: bank ending balance + uncleared deposits - outstanding checks = register balance",
+            "Identify Discrepancies — Find and explain any differences: math errors, missing transactions, bank fees not recorded, or one potential unauthorized charge"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Know Every Dollar — Control Every Decision",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
 }

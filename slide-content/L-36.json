@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "lChapter": "L-XX",
+    "lChapter": "L-36",
     "title": "Understanding the Risks of Gambling",
-    "subtitle": "The mathematics behind probability, house edge, and expected value in {{STATE_NAME}}",
+    "subtitle": "The mathematics behind probability, house edge, and expected value",
     "totalSlides": 20,
     "hasStateVariables": true,
     "stateVariablesUsed": [
@@ -24,13 +24,13 @@
       "type": "hook",
       "content": {
         "label": "Essential Question",
-        "question": ""
+        "question": "Why does the saying <em>'the house always wins'</em> exist,<br>and what does <em>math tell us</em> about gambling outcomes?<br><br>Understanding the mathematics of gambling reveals why long-term winning is nearly impossible — and helps you make informed decisions."
       }
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "teal",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
@@ -63,21 +63,31 @@
     {
       "number": 4,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "purple",
       "content": {
         "headerTitle": "Key Terms",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Probability",
+              "definition": "The likelihood of a specific event occurring, expressed as a number between 0 and 1 (or 0% to 100%)",
+              "example": "Probability of rolling a 6 on a die = 1/6 = 0.167 = 16.7%"
             },
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Odds",
+              "definition": "The ratio between the probability of an event occurring versus not occurring",
+              "example": "Odds of rolling a 6 are 1:5 (one way to win, five ways to lose)"
+            },
+            {
+              "term": "House Edge",
+              "definition": "The mathematical advantage a gambling game has over players, ensuring profit for the organizer",
+              "example": "American roulette has a 5.26% house edge"
+            },
+            {
+              "term": "Expected Value",
+              "definition": "The average amount a player can expect to win or lose per bet over many repetitions",
+              "example": "A negative expected value means you'll lose money over time"
             }
           ]
         }
@@ -93,14 +103,24 @@
         "layoutData": {
           "terms": [
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Independent Events",
+              "definition": "Events where the outcome of one does not influence the outcome of another",
+              "example": "Each roulette spin or coin flip is independent — past results don't affect future ones"
             },
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Dependent Events",
+              "definition": "Events where the outcome of one event affects the probability of the next",
+              "example": "Drawing cards without replacement changes odds for subsequent draws"
+            },
+            {
+              "term": "Gambler's Fallacy",
+              "definition": "The mistaken belief that past events influence future outcomes in independent events",
+              "example": "Thinking red is 'due' after black appears 10 times in roulette"
+            },
+            {
+              "term": "Variance",
+              "definition": "A measure of how much outcomes can differ from the expected value",
+              "example": "High variance means short-term results may differ greatly from expectations"
             }
           ]
         }
@@ -109,35 +129,39 @@
     {
       "number": 6,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "teal",
       "content": {
         "headerTitle": "Understanding Probability",
         "layout": "balanced-layout",
         "layoutData": {
           "leftPanel": {
-            "title": "The Probability Formula",
+            "title": "The Math Behind the Games",
             "paragraphs": [
-              "<strong>Probability = Favorable Outcomes ÷ Total Possible Outcomes</strong>",
-              "<strong>Example Calculations:</strong>"
+              "Probability = Favorable Outcomes ÷ Total Possible Outcomes. Every gambling game is built on these calculations — and designed so the house always has an edge."
             ],
-            "highlightBox": null
+            "bulletPoints": [
+              "Coin flip (heads): 1/2 = 0.5 = 50%",
+              "Rolling a 6 on a die: 1/6 = 0.167 = 16.7%",
+              "Drawing an ace from a deck: 4/52 = 0.077 = 7.7%",
+              "Winning the lottery jackpot: ~1 in 300,000,000"
+            ]
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
+                "value": "50%",
+                "label": "Coin flip probability (heads)",
                 "color": "teal"
               },
               {
-                "value": "",
-                "label": "",
+                "value": "7.7%",
+                "label": "Chance of drawing an ace",
                 "color": "purple"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "teal"
+                "value": "1 in 300M",
+                "label": "Lottery jackpot odds",
+                "color": "rose"
               }
             ],
             "infoCard": null
@@ -148,20 +172,34 @@
     {
       "number": 7,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "blue",
       "content": {
         "headerTitle": "Independent vs. Dependent Events",
         "layout": "comparison-grid",
         "layoutData": {
           "leftColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
+            "icon": "🎰",
+            "title": "Independent Events (Past Doesn't Matter)",
+            "items": [
+              "Each coin flip is independent",
+              "Every roulette spin starts fresh",
+              "Slot machine pulls are unrelated",
+              "Dice rolls don't affect each other",
+              "Two heads in a row: 1/2 × 1/2 = 25%",
+              "Two sixes: 1/6 × 1/6 = 1/36 = 2.8%"
+            ]
           },
           "rightColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
+            "icon": "🃏",
+            "title": "Dependent Events (Past Changes Odds)",
+            "items": [
+              "Drawing cards without replacement",
+              "Lottery ball drawings (balls removed)",
+              "Probability shifts after each event",
+              "First ace: 4/52 = 7.7%",
+              "Second ace (without replacement): 3/51 = 5.9%",
+              "Two aces: 4/52 × 3/51 = 0.45%"
+            ]
           }
         }
       }
@@ -169,22 +207,25 @@
     {
       "number": 8,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "purple",
       "content": {
         "headerTitle": "The House Edge",
-        "layout": "balanced-layout",
+        "layout": "concept-full",
         "layoutData": {
-          "leftPanel": {
-            "title": "Why The House Always Wins",
-            "paragraphs": [
-              "The house edge is the mathematical advantage that ensures gambling operators make a profit over time, regardless of short-term outcomes.",
-              "The house edge represents the percentage of each bet the house expects to keep on average. Different games have different advantages:"
-            ],
-            "highlightBox": null
-          },
-          "rightPanel": {
-            "stats": [],
-            "infoCard": null
+          "title": "Why Casinos Always Profit",
+          "paragraphs": [
+            "Every game is mathematically designed so the house wins a percentage of every bet over time."
+          ],
+          "bulletPoints": [
+            "<strong>Blackjack</strong> (basic strategy): 0.5–2% house edge",
+            "<strong>Craps:</strong> 1.4–5% house edge",
+            "<strong>European Roulette:</strong> 2.7% house edge",
+            "<strong>American Roulette:</strong> 5.26% house edge",
+            "<strong>Slot Machines:</strong> 2–15% house edge",
+            "<strong>Lottery:</strong> 40–50% house edge (worst odds)"
+          ],
+          "keyPoint": {
+            "text": "💡 The house edge means for every $100 bet, the casino expects to keep $0.50 to $50 over time."
           }
         }
       }
@@ -192,58 +233,104 @@
     {
       "number": 9,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "teal",
       "content": {
         "headerTitle": "Expected Value: The Math of Gambling",
-        "layout": "concept-full",
+        "layout": "balanced-layout",
         "layoutData": {
-          "title": "What You Can Expect to Win or Lose",
-          "paragraphs": [
-            "<strong>EV = (Probability of Winning × Amount Won) - (Probability of Losing × Amount Lost)</strong>",
-            "Win probability: 18/38 (47.4%)<br> EV = (0.474 × $10) - (0.526 × $10) = -$0.52<br> <strong>Lose ~52 cents per $10 bet on average</strong>",
-            "Win probability: ~1 in 300,000,000<br> EV ≈ ($0.30) - ($2) = -$1.70<br> <strong>Lose ~$1.70 per ticket on average</strong>",
-            "A negative expected value means players lose money over time. The more you play, the more you lose."
-          ],
-          "bulletPoints": []
+          "leftPanel": {
+            "title": "EV = (Probability of Winning × Amount Won) − (Probability of Losing × Amount Lost)",
+            "paragraphs": [
+              "A negative expected value means players lose money over time. The more you play, the more you lose."
+            ],
+            "bulletPoints": [
+              "Roulette Bet on Red ($10): Win prob = 18/38 (47.4%), EV = (0.474 × $10) − (0.526 × $10) = −$0.52 per bet",
+              "Lottery Ticket ($2): Win prob ≈ 1 in 300M, EV ≈ −$1.70 per ticket",
+              "Higher volume of play = larger expected losses"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "−$0.52",
+                "label": "Expected loss per $10 roulette bet",
+                "color": "rose"
+              },
+              {
+                "value": "−$1.70",
+                "label": "Expected loss per $2 lottery ticket",
+                "color": "rose"
+              },
+              {
+                "value": "100%",
+                "label": "Of casino games have negative player EV",
+                "color": "purple"
+              }
+            ],
+            "infoCard": null
+          }
         }
       }
     },
     {
       "number": 10,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "blue",
       "content": {
         "headerTitle": "Common Gambling Fallacies",
         "layout": "concept-full",
         "layoutData": {
-          "title": "Mistaken Beliefs About Gambling",
-          "paragraphs": [
-            "The mistaken belief that if an event happens frequently, it will happen less frequently in the future. Reality: Each independent event has the same probability.",
-            "Believing that a person who has experienced success will continue to succeed. Reality: Past wins don't affect future outcomes in games of chance.",
-            "In 1913, gamblers lost millions betting against black when it came up 26 times in a row—thinking red was \"due.\" Reality: Each spin was still 50/50.",
-            "In truly independent events, each outcome is unaffected by previous results. The roulette wheel has no memory, the dice don't know what they rolled before."
+          "title": "Mistakes That Cost Money",
+          "paragraphs": [],
+          "bulletPoints": [
+            "<strong>The Gambler's Fallacy:</strong> 'I'm due for a win after all these losses.' Reality: Each independent event has the same probability.",
+            "<strong>The Hot Hand Fallacy:</strong> 'I'm on a winning streak, so I'll keep winning.' Reality: Past wins don't affect future outcomes in games of chance.",
+            "<strong>The Monte Carlo Fallacy:</strong> In 1913, gamblers lost millions betting against black after it appeared 26 times in a row. Reality: Each spin was still 50/50.",
+            "<strong>The Truth:</strong> In truly independent events, each outcome is unaffected by previous results. The roulette wheel has no memory."
           ],
-          "bulletPoints": []
+          "keyPoint": {
+            "text": "💡 Casinos are designed to exploit these fallacies. Recognizing them is your best defense."
+          }
         }
       }
     },
     {
       "number": 11,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "purple",
       "content": {
         "headerTitle": "Financial Risks of Gambling",
-        "layout": "comparison-grid",
+        "layout": "balanced-layout",
         "layoutData": {
-          "leftColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
+          "leftPanel": {
+            "title": "Short-Term and Long-Term Dangers",
+            "paragraphs": [
+              "The financial risks of gambling extend far beyond a single session's losses."
+            ],
+            "bulletPoints": [
+              "Short-Term Risks: Loss of money needed for essentials, emotional decisions to 'chase losses', using credit cards to gamble",
+              "Long-Term Risks: Accumulating losses due to negative EV, development of problematic gambling, opportunity cost vs. saving/investing"
+            ]
           },
-          "rightColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "12M",
+                "label": "Americans use payday loans after gambling losses annually",
+                "color": "rose"
+              },
+              {
+                "value": "$520",
+                "label": "Average payday borrower fees per year",
+                "color": "purple"
+              },
+              {
+                "value": "$260",
+                "label": "$5/week = $260/year lost to negative EV",
+                "color": "rose"
+              }
+            ],
+            "infoCard": null
           }
         }
       }
@@ -251,20 +338,42 @@
     {
       "number": 12,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "teal",
       "content": {
         "headerTitle": "Responsible Gambling Practices",
-        "layout": "comparison-grid",
+        "layout": "balanced-layout",
         "layoutData": {
-          "leftColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
+          "leftPanel": {
+            "title": "If You Gamble, Do It Wisely",
+            "paragraphs": [
+              "View gambling as entertainment with a fixed cost — not as a way to make money."
+            ],
+            "bulletPoints": [
+              "Set Limits: Decide budget in advance and stick to it. Only gamble with money you can afford to lose.",
+              "Set a time limit before you start. Never use credit cards to gamble.",
+              "Never chase losses. Take regular breaks. Don't gamble when upset.",
+              "This mindset allows for recreation while preventing financial harm."
+            ]
           },
-          "rightColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "Fixed",
+                "label": "Budget decided before you start",
+                "color": "teal"
+              },
+              {
+                "value": "Expect",
+                "label": "To lose — it's the cost of entertainment",
+                "color": "purple"
+              },
+              {
+                "value": "Never",
+                "label": "Chase losses or use credit to gamble",
+                "color": "rose"
+              }
+            ],
+            "infoCard": null
           }
         }
       }
@@ -274,32 +383,35 @@
       "type": "content",
       "headerColor": "teal",
       "content": {
-        "headerTitle": "Real-World Example: Emma's Casino Night",
+        "headerTitle": "Real-World Example",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "",
-            "name": "",
-            "paragraphs": []
+            "icon": "🎲",
+            "name": "Emma's Casino Night",
+            "paragraphs": [
+              "Emma attended a charity casino night with $50 she had budgeted for entertainment. She set a $50 budget and stuck to it, set a 2-hour time limit, expected to lose (treating it as entertainment cost), didn't increase bets after losses, and understood all games had a house edge.",
+              "<span class=\"highlight-text\">Emma lost $35 and considered it money well spent for an entertaining evening.</span> By setting limits and expecting to lose, she enjoyed the experience without financial harm."
+            ]
           },
           "outcomes": [
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "after",
+              "label": "Budget Set",
+              "value": "$50 limit",
+              "detail": "Stuck to it"
             },
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "after",
+              "label": "Result",
+              "value": "Lost $35",
+              "detail": "Expected outcome"
             },
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "after",
+              "label": "Outcome",
+              "value": "Enjoyable evening",
+              "detail": "No financial harm"
             }
           ]
         }
@@ -310,32 +422,35 @@
       "type": "content",
       "headerColor": "blue",
       "content": {
-        "headerTitle": "Real-World Example: The Lottery Pool",
+        "headerTitle": "Real-World Example",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "",
-            "name": "",
-            "paragraphs": []
+            "icon": "🎟️",
+            "name": "The Lottery Pool",
+            "paragraphs": [
+              "Coworkers formed a lottery pool contributing $5 weekly. After weeks without winning, some wanted to increase contributions, believing they were 'due for a win.' Carlos explained: each drawing is independent, previous draws don't affect future odds, jackpot odds are ~1 in 300,000,000, and increasing spending doesn't improve odds.",
+              "<span class=\"highlight-text\">'We're due for a win' is the gambler's fallacy.</span> $5/week = $260/year with negative EV vs. $260/year invested at 7% = $14,000+ in 20 years."
+            ]
           },
           "outcomes": [
             {
               "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "label": "Jackpot Odds",
+              "value": "1 in 300M",
+              "detail": "Each week, same odds"
             },
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "before",
+              "label": "Doubling Budget",
+              "value": "Still 1 in 300M",
+              "detail": "No improvement in odds"
             },
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "after",
+              "label": "Smart Move",
+              "value": "Invest $260/year",
+              "detail": "$14,000+ in 20 years"
             }
           ]
         }
@@ -346,17 +461,17 @@
       "type": "discussion",
       "variant": "teal",
       "content": {
-        "badge": "Discussion in {{STATE_NAME}}",
-        "question": ""
+        "badge": "Discussion",
+        "question": "How might understanding probability and expected value help you evaluate other uncertain decisions in life?<br><br>What parallels exist between gambling fallacies and poor decision-making in other areas? How does the concept of 'house edge' apply to other situations where someone profits from your participation?"
       }
     },
     {
       "number": 16,
       "type": "discussion",
-      "variant": "teal",
+      "variant": "purple",
       "content": {
-        "badge": "Personal Reflection in {{STATE_NAME}}",
-        "question": ""
+        "badge": "Personal Reflection",
+        "question": "How would understanding probability and house edge change the way you approach gambling activities?<br><br>If gambling has a negative expected value, why do people still participate? What are they paying for? How would you explain to someone why the 'I'm due for a win' belief is a fallacy?"
       }
     },
     {
@@ -400,22 +515,22 @@
             {
               "number": 1,
               "title": "Probability Is Mathematical",
-              "description": "Gambling outcomes follow mathematical rules. Understanding probability helps you evaluate true chances of winning."
+              "description": "Gambling outcomes follow mathematical rules. Understanding probability helps you evaluate true chances of winning"
             },
             {
               "number": 2,
               "title": "The House Always Wins",
-              "description": "The house edge ensures gambling operators profit over time. Expected value for players is almost always negative."
+              "description": "The house edge ensures gambling operators profit over time. Expected value for players is almost always negative"
             },
             {
               "number": 3,
               "title": "Beware of Fallacies",
-              "description": "The gambler's fallacy and hot hand fallacy lead to poor decisions. Independent events don't influence each other."
+              "description": "The gambler's fallacy and hot hand fallacy lead to poor decisions. Independent events don't influence each other"
             },
             {
               "number": 4,
               "title": "Entertainment, Not Income",
-              "description": "View gambling as an entertainment expense with a fixed cost, not as a way to make money. Set limits and stick to them."
+              "description": "View gambling as an entertainment expense with a fixed cost, not as a way to make money. Set limits and stick to them"
             }
           ]
         }
@@ -430,11 +545,17 @@
         "layout": "activity-layout",
         "layoutData": {
           "main": {
-            "icon": "📋",
-            "title": "",
-            "description": ""
+            "icon": "📊",
+            "title": "Gambling as Entertainment Analysis",
+            "description": "Analyze different types of gambling as entertainment options by comparing their costs, enjoyment, and risks to other forms of entertainment."
           },
-          "steps": []
+          "steps": [
+            "List 3-5 types of gambling (lottery, casino, sports betting, poker, etc.)",
+            "Estimate the cost per hour/session for each type",
+            "Rate enjoyment level (1-10) and list potential negative outcomes",
+            "Compare costs to other entertainment (movies ~$15, dinner ~$25)",
+            "Reflect: How does viewing gambling as an expense help with decisions?"
+          ]
         }
       }
     },
@@ -442,9 +563,9 @@
       "number": 20,
       "type": "closing",
       "content": {
-        "tagline": "Make informed decisions based on mathematical realities in {{STATE_NAME}}",
-        "website": "www.pflacademy.co in {{STATE_NAME}}",
-        "copyright": "© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+        "tagline": "Make Informed Decisions Based on Mathematical Realities",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
       }
     }
   ]

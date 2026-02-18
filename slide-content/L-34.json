@@ -1,11 +1,16 @@
 {
   "metadata": {
-    "lChapter": "L-XX",
+    "lChapter": "L-34",
     "title": "Insurance as a Risk Management Tool",
     "subtitle": "Understanding how insurance protects against financial loss",
     "totalSlides": 20,
-    "hasStateVariables": false,
-    "stateVariablesUsed": []
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME",
+      "INSURANCE_AVG_TEEN",
+      "HOMEOWNERS_AVG_MONTHLY",
+      "STATE_INSURANCE_COMPARISON_URL"
+    ]
   },
   "slides": [
     {
@@ -14,7 +19,7 @@
       "content": {
         "title": "Insurance as a Risk Management Tool",
         "titleSize": "large",
-        "subtitle": "Understanding how insurance protects against financial loss"
+        "subtitle": "Understanding how insurance protects against financial loss in {{STATE_NAME}}"
       }
     },
     {
@@ -22,13 +27,13 @@
       "type": "hook",
       "content": {
         "label": "Essential Question",
-        "question": ""
+        "question": "How does <em>insurance help transfer risk</em><br>and protect your <em>financial future</em> from unexpected events?<br><br>One accident, illness, or disaster can cost tens of thousands of dollars. Insurance converts that unpredictable catastrophe into a predictable monthly payment."
       }
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "teal",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
@@ -68,14 +73,24 @@
         "layoutData": {
           "terms": [
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Premium",
+              "definition": "The amount you pay to maintain insurance coverage, typically monthly, quarterly, or annually",
+              "example": "In {{STATE_NAME}}, teen drivers pay approximately ${{INSURANCE_AVG_TEEN}}/month for auto insurance"
             },
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Deductible",
+              "definition": "The amount you must pay out-of-pocket before your insurance coverage begins",
+              "example": "With a $500 deductible, you pay the first $500 of a claim"
+            },
+            {
+              "term": "Coverage Limit",
+              "definition": "The maximum amount an insurance policy will pay for a covered loss",
+              "example": "Auto liability of $100,000/$300,000 means max $100K per person, $300K per accident"
+            },
+            {
+              "term": "Exclusion",
+              "definition": "Specific conditions or circumstances not covered by an insurance policy",
+              "example": "Pre-existing conditions, intentional damage, or acts of war"
             }
           ]
         }
@@ -91,14 +106,24 @@
         "layoutData": {
           "terms": [
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Claim",
+              "definition": "A formal request to an insurance company for coverage or compensation for a covered loss",
+              "example": "Filing a claim after your car is damaged in a hailstorm"
             },
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Co-insurance",
+              "definition": "The percentage of costs you pay after meeting your deductible",
+              "example": "80/20 co-insurance means insurance pays 80%, you pay 20%"
+            },
+            {
+              "term": "Beneficiary",
+              "definition": "The person or entity designated to receive benefits from an insurance policy",
+              "example": "Naming your spouse as beneficiary on your life insurance policy"
+            },
+            {
+              "term": "Rider",
+              "definition": "An optional addition to an insurance policy that provides additional coverage",
+              "example": "Adding flood coverage rider to your homeowner's policy"
             }
           ]
         }
@@ -113,29 +138,33 @@
         "layout": "balanced-layout",
         "layoutData": {
           "leftPanel": {
-            "title": "Risk Transfer Through Pooling",
+            "title": "Risk Transfer Mechanism",
             "paragraphs": [
-              "Insurance is a risk transfer mechanism where you pay a small, predictable amount (premium) to protect against a larger, unpredictable loss.",
-              "<strong>The Insurance Process:</strong>"
+              "You pay a small, predictable amount (premium) to protect against a larger, unpredictable loss. Insurance companies pool risk across thousands of policyholders."
             ],
-            "highlightBox": null
+            "bulletPoints": [
+              "Premium Payment: Pay regular amounts for coverage",
+              "Risk Assessment: Company evaluates your risk level",
+              "Coverage Agreement: Policy outlines what's covered",
+              "Claims Process: File a claim when loss occurs"
+            ]
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
+                "value": "Many",
+                "label": "Policyholders share the risk pool",
                 "color": "teal"
               },
               {
-                "value": "",
-                "label": "",
+                "value": "Few",
+                "label": "Actually file large claims",
+                "color": "green"
+              },
+              {
+                "value": "Predictable",
+                "label": "Small premium vs. large unexpected loss",
                 "color": "purple"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "teal"
               }
             ],
             "infoCard": null
@@ -149,17 +178,21 @@
       "headerColor": "teal",
       "content": {
         "headerTitle": "The Premium-Deductible Relationship",
-        "layout": "comparison-grid",
+        "layout": "concept-full",
         "layoutData": {
-          "leftColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
-          },
-          "rightColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
+          "title": "Balancing Cost and Coverage",
+          "paragraphs": [
+            "Higher deductibles mean lower premiums — but you pay more out-of-pocket when you file a claim. The right balance depends on your savings and risk tolerance."
+          ],
+          "bulletPoints": [
+            "<strong>$250 deductible:</strong> Higher monthly premium — best if you have limited emergency savings",
+            "<strong>$500 deductible:</strong> Medium premium — common middle-ground choice",
+            "<strong>$1,000 deductible:</strong> Lower premium — good if you rarely file claims",
+            "<strong>$2,500 deductible:</strong> Lowest premium — requires substantial savings buffer",
+            "Always read exclusions carefully — what's NOT covered matters as much as what is"
+          ],
+          "keyPoint": {
+            "text": "💡 Only choose a high deductible if you have enough savings to cover it comfortably."
           }
         }
       }
@@ -170,48 +203,28 @@
       "headerColor": "blue",
       "content": {
         "headerTitle": "Types of Insurance",
-        "layout": "generic",
+        "layout": "comparison-grid",
         "layoutData": {
-          "paragraphs": [
-            "Covers medical expenses and healthcare costs",
-            "Protects against vehicle-related losses",
-            "Protects dwelling and possessions",
-            "Financial support for beneficiaries",
-            "Income replacement if unable to work",
-            "Protection against legal responsibility"
-          ],
-          "lists": [
-            [
-              "Doctor visits &amp; hospital stays",
-              "Prescriptions &amp; preventive care",
-              "Co-pays and co-insurance"
-            ],
-            [
-              "Liability (required by law)",
-              "Collision coverage",
-              "Comprehensive coverage"
-            ],
-            [
-              "Property damage coverage",
-              "Personal belongings",
-              "Liability protection"
-            ],
-            [
-              "Term life (set period)",
-              "Whole life (lifetime)",
-              "Universal life (flexible)"
-            ],
-            [
-              "Short-term (up to 6 months)",
-              "Long-term (extended)",
-              "Elimination period"
-            ],
-            [
-              "Personal liability",
-              "Professional liability",
-              "Umbrella policies"
+          "leftColumn": {
+            "icon": "🏥",
+            "title": "Personal Protection",
+            "items": [
+              "Health Insurance — Medical expenses, doctor visits, prescriptions, preventive care",
+              "Life Insurance — Financial support for dependents (term, whole, universal)",
+              "Disability Insurance — Income replacement if unable to work",
+              "Personal liability — Protection from lawsuits"
             ]
-          ]
+          },
+          "rightColumn": {
+            "icon": "🏠",
+            "title": "Property Protection",
+            "items": [
+              "Auto Insurance — Liability (required), collision, comprehensive",
+              "Homeowners Insurance — Property damage, personal belongings, liability",
+              "Renters Insurance — Personal belongings and liability for tenants",
+              "Umbrella — Extra liability coverage beyond other policies"
+            ]
+          }
         }
       }
     },
@@ -224,33 +237,34 @@
         "layout": "balanced-layout",
         "layoutData": {
           "leftPanel": {
-            "title": "Protecting Your Health & Finances",
+            "title": "Understanding Your Coverage",
             "paragraphs": [
-              "Health insurance is critical for reducing the financial burden of healthcare. Key features to understand:"
+              "Health insurance has multiple cost components that work together to determine what you actually pay for care."
             ],
-            "highlightBox": null
+            "bulletPoints": [
+              "Networks: In-network vs. out-of-network providers affects your costs significantly",
+              "Deductible: Amount you pay before coverage kicks in",
+              "Co-payment: Fixed amount per visit/service",
+              "Co-insurance: Your percentage after deductible",
+              "Out-of-pocket max: Annual cap on your costs"
+            ]
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
+                "value": "In-network",
+                "label": "Providers save you 30-60% vs. out-of-network",
                 "color": "teal"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "purple"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "teal"
-              },
-              {
-                "value": "",
-                "label": "",
+                "value": "HSA",
+                "label": "Triple tax advantage with high-deductible plans",
                 "color": "green"
+              },
+              {
+                "value": "100%",
+                "label": "Preventive care often covered at no cost",
+                "color": "purple"
               }
             ],
             "infoCard": null
@@ -263,37 +277,33 @@
       "type": "content",
       "headerColor": "teal",
       "content": {
-        "headerTitle": "Life Insurance: Protecting Your Family",
-        "layout": "generic",
+        "headerTitle": "Life Insurance: Term vs. Whole",
+        "layout": "comparison-grid",
         "layoutData": {
-          "paragraphs": [
-            "Coverage for a specific period (10, 20, 30 years)",
-            "Lifetime coverage with cash value",
-            "Flexible premiums and death benefits"
-          ],
-          "lists": [
-            [
-              "Lowest cost option",
-              "Pure death benefit protection",
+          "leftColumn": {
+            "icon": "⏱️",
+            "title": "Term Life",
+            "items": [
+              "Coverage for a specific period (10, 20, 30 years)",
+              "Lowest cost option — pure death benefit",
               "No cash value component",
               "Ideal for temporary needs",
-              "Good for young families"
-            ],
-            [
+              "Good for young families with mortgages",
+              "Most common recommendation for most people"
+            ]
+          },
+          "rightColumn": {
+            "icon": "💰",
+            "title": "Whole Life",
+            "items": [
+              "Lifetime coverage with cash value",
               "Coverage never expires",
               "Builds cash value over time",
               "Higher premiums than term",
-              "Can borrow against policy",
-              "Premiums stay level"
-            ],
-            [
-              "Adjustable coverage amounts",
-              "Flexible premium payments",
-              "Cash value component",
-              "More complex than term",
-              "Interest rate sensitive"
+              "Can borrow against policy value",
+              "More complex; premiums stay level"
             ]
-          ]
+          }
         }
       }
     },
@@ -305,14 +315,16 @@
         "headerTitle": "Why Insurance Matters",
         "layout": "concept-full",
         "layoutData": {
-          "title": "Insurance Is Most Appropriate For:",
+          "title": "When Insurance Is Most Appropriate",
           "paragraphs": [
-            "Catastrophic events that would be financially devastating—the exact risks insurance is designed to cover",
-            "Auto liability insurance is required in most states; lenders require homeowners insurance",
-            "Protecting assets that would be difficult or impossible to replace—home, health, income",
-            "The psychological benefit of knowing you're protected from financial catastrophe"
+            "Not every risk needs insurance. Use insurance when the potential financial loss would be devastating and unmanageable."
           ],
-          "bulletPoints": []
+          "bulletPoints": [
+            "<strong>High-Impact, Low-Probability Events:</strong> Catastrophic events that would be financially devastating",
+            "<strong>Legally Required Protection:</strong> Auto liability is required in most states; lenders require homeowners insurance",
+            "<strong>Essential Asset Protection:</strong> Protecting assets difficult or impossible to replace — home, health, income",
+            "<strong>Peace of Mind Value:</strong> The psychological benefit of knowing you're protected from financial catastrophe"
+          ]
         }
       }
     },
@@ -322,17 +334,38 @@
       "headerColor": "purple",
       "content": {
         "headerTitle": "Evaluating Your Insurance Needs",
-        "layout": "comparison-grid",
+        "layout": "balanced-layout",
         "layoutData": {
-          "leftColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
+          "leftPanel": {
+            "title": "Matching Coverage to Circumstances",
+            "paragraphs": [
+              "Your insurance needs depend on your life stage, assets, and financial situation in {{STATE_NAME}}."
+            ],
+            "bulletPoints": [
+              "Consider: age and life stage, dependents, assets owned, debt levels, health status",
+              "Best practices: Shop around, review policies regularly, bundle for discounts",
+              "When NOT to insure: small manageable losses, or when self-insurance is affordable"
+            ]
           },
-          "rightColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "3 quotes",
+                "label": "Always get multiple quotes before buying",
+                "color": "teal"
+              },
+              {
+                "value": "Annual",
+                "label": "Review your coverage needs each year",
+                "color": "green"
+              },
+              {
+                "value": "Bundle",
+                "label": "Save 10-25% by combining policies",
+                "color": "purple"
+              }
+            ],
+            "infoCard": null
           }
         }
       }
@@ -342,32 +375,35 @@
       "type": "content",
       "headerColor": "teal",
       "content": {
-        "headerTitle": "Real-World Example: Sarah's Surgery",
+        "headerTitle": "Real-World Example",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "",
-            "name": "",
-            "paragraphs": []
+            "icon": "🏥",
+            "name": "Sarah's Surgery",
+            "paragraphs": [
+              "Sarah, 28, has employer health insurance with a $2,000 deductible and 80/20 co-insurance. She needs an appendectomy costing $20,000. Sarah pays the first $2,000 (deductible). The remaining $18,000 is split 80/20: Sarah pays 20% ($3,600), insurance pays 80% ($14,400).",
+              "<span class=\"highlight-text\">Insurance saved Sarah $14,400 on this single procedure.</span>"
+            ]
           },
           "outcomes": [
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "before",
+              "label": "Without Insurance",
+              "value": "$20,000 total",
+              "detail": "Full bill"
             },
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "after",
+              "label": "Sarah's Cost",
+              "value": "$5,600",
+              "detail": "Deductible + co-insurance"
             },
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "after",
+              "label": "Insurance Paid",
+              "value": "$14,400",
+              "detail": "Massive protection"
             }
           ]
         }
@@ -378,19 +414,37 @@
       "type": "content",
       "headerColor": "blue",
       "content": {
-        "headerTitle": "Real-World Examples: Auto & Life Insurance",
-        "layout": "comparison-grid",
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
         "layoutData": {
-          "leftColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
+          "scenario": {
+            "icon": "🌧️",
+            "name": "Marcus's Hailstorm & James's Life Insurance",
+            "paragraphs": [
+              "Marcus has comprehensive auto coverage with $500 deductible. Hail damages his car: $3,200 in repairs. Marcus pays $500; insurance pays $2,700. Without insurance: $3,200 out-of-pocket. James has a 30-year term life policy ($500K death benefit). He has two children, a mortgage, and a spouse.",
+              "<span class=\"highlight-text\">Each insurance type serves a specific purpose. The right combination depends on your unique situation.</span>"
+            ]
           },
-          "rightColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
-          }
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "Marcus's Hailstorm",
+              "value": "Pays $500 only",
+              "detail": "Insurance covers $2,700"
+            },
+            {
+              "type": "after",
+              "label": "James's Life Policy",
+              "value": "$500K tax-free",
+              "detail": "Protects family"
+            },
+            {
+              "type": "after",
+              "label": "Key Insight",
+              "value": "Match coverage to needs",
+              "detail": "Different risks, different solutions"
+            }
+          ]
         }
       }
     },
@@ -400,16 +454,16 @@
       "variant": "teal",
       "content": {
         "badge": "Discussion",
-        "question": ""
+        "question": "What factors should you consider when deciding whether to purchase insurance for a specific risk?<br><br>How would you weigh the cost of premiums against the potential financial impact of a loss? When might 'self-insuring' (accepting the risk) be a better choice than buying insurance?"
       }
     },
     {
       "number": 16,
       "type": "discussion",
-      "variant": "teal",
+      "variant": "purple",
       "content": {
         "badge": "Personal Reflection",
-        "question": ""
+        "question": "Which types of insurance do you believe will be most important for your personal situation, and why?<br><br>Think about your family's current insurance. What types do they have? Are there gaps? As you become more independent, which insurance will you need first?"
       }
     },
     {
@@ -435,7 +489,7 @@
             },
             {
               "number": 4,
-              "question": "Why is insurance considered a \"risk transfer\" strategy? What risks are being transferred, and to whom?"
+              "question": "Why is insurance considered a 'risk transfer' strategy? What risks are being transferred, and to whom?"
             }
           ]
         }
@@ -453,22 +507,22 @@
             {
               "number": 1,
               "title": "Risk Transfer Mechanism",
-              "description": "Insurance transfers financial risk from you to the insurance company in exchange for predictable premium payments."
+              "description": "Insurance transfers financial risk from you to the insurance company in exchange for predictable premium payments"
             },
             {
               "number": 2,
               "title": "Know Your Terms",
-              "description": "Understanding premiums, deductibles, coverage limits, and exclusions helps you make informed insurance decisions."
+              "description": "Understanding premiums, deductibles, coverage limits, and exclusions helps you make informed insurance decisions"
             },
             {
               "number": 3,
               "title": "Match Coverage to Needs",
-              "description": "Different types of insurance protect against different risks. Evaluate your personal circumstances to determine appropriate coverage."
+              "description": "Different types of insurance protect against different risks. Evaluate your personal circumstances to determine appropriate coverage"
             },
             {
               "number": 4,
               "title": "Insurance Needs Change",
-              "description": "As you progress through life stages, your insurance needs will evolve. Regularly review and adjust your coverage."
+              "description": "As you progress through life stages, your insurance needs will evolve. Regularly review and adjust your coverage"
             }
           ]
         }
@@ -484,10 +538,16 @@
         "layoutData": {
           "main": {
             "icon": "📋",
-            "title": "",
-            "description": ""
+            "title": "Identifying Insurance Types",
+            "description": "Match each scenario to the most appropriate type of insurance and explain your reasoning. {{STATE_NAME}} insurance costs: Auto (~${{INSURANCE_AVG_TEEN}}/month for teen drivers), Homeowners (~${{HOMEOWNERS_AVG_MONTHLY}}/month). Compare rates at {{STATE_INSURANCE_COMPARISON_URL}}"
           },
-          "steps": []
+          "steps": [
+            "You just purchased your first home and want to protect it from damage or theft",
+            "You're 30 with a young family and want 20 years of protection while children grow up",
+            "You have an older car and need the minimum legally required coverage",
+            "You rent an apartment and want to protect your belongings",
+            "Explain your reasoning for each choice"
+          ]
         }
       }
     },
@@ -495,7 +555,7 @@
       "number": 20,
       "type": "closing",
       "content": {
-        "tagline": "Protect your financial future with informed insurance decisions",
+        "tagline": "Protect Your Financial Future with Informed Insurance Decisions",
         "website": "www.pflacademy.co",
         "copyright": "© 2025 PFL Academy. All rights reserved."
       }

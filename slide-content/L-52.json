@@ -1,11 +1,545 @@
 {
   "metadata": {
     "lChapter": "L-52",
-    "title": "",
-    "subtitle": "",
-    "totalSlides": 0,
-    "hasStateVariables": false,
-    "stateVariablesUsed": []
+    "title": "Government and the Economy — Personal Impact",
+    "subtitle": "Understand why markets sometimes fail and how government intervention shapes your financial life",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
   },
-  "slides": []
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Government and the Economy — Personal Impact",
+        "titleSize": "large",
+        "subtitle": "Understand why markets sometimes fail and how government intervention shapes your financial life in {{STATE_NAME}}"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Essential Question",
+        "question": "Why does the government pay for roads and public schools <em>but not your groceries</em>?<br><br>The answer reveals a fundamental economic logic — and directly affects how your tax dollars are spent in {{STATE_NAME}}."
+      }
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Explain",
+              "description": "Why free markets sometimes fail to allocate resources efficiently, creating a role for government intervention"
+            },
+            {
+              "number": 2,
+              "verb": "Analyze",
+              "description": "The characteristics of public goods, private goods, and common resources — and how governments provide each"
+            },
+            {
+              "number": 3,
+              "verb": "Evaluate",
+              "description": "How positive and negative externalities cause markets to over- or under-produce, and what policies correct them"
+            },
+            {
+              "number": 4,
+              "verb": "Assess",
+              "description": "The personal financial impact of key government programs, taxes, and regulations in {{STATE_NAME}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Public Good",
+              "definition": "A good that is non-excludable (no one can be prevented from using it) and non-rival (one person's use doesn't reduce availability for others), which the private market typically underprovides",
+              "example": "National defense — your neighbors' protection from attack doesn't reduce your own protection, and no private company can profit from providing it to paying customers only"
+            },
+            {
+              "term": "Externality",
+              "definition": "A cost or benefit that falls on a third party not involved in the transaction — markets ignore these spillovers, causing over- or under-production of certain goods",
+              "example": "A neighbor's loud music (negative externality on you) or a homeowner's beautiful garden that increases surrounding property values (positive externality for neighbors)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Key Terms",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Market Failure",
+              "definition": "A situation where the free market fails to allocate resources efficiently, resulting in outcomes that are worse for society than a well-designed government intervention could achieve",
+              "example": "Healthcare markets where information gaps, insurance complexity, and emergency needs prevent normal market pricing from working efficiently for everyone"
+            },
+            {
+              "term": "Free Rider Problem",
+              "definition": "When individuals benefit from a public good without paying for it — since exclusion is impossible — causing private markets to underprovide goods society needs",
+              "example": "Broadcast television — you can watch without paying, so stations can't charge viewers directly and must rely on advertising revenue instead"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Public vs. Private Goods",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "🏛️",
+            "title": "Public Goods",
+            "items": [
+              "Non-excludable — Cannot prevent anyone from using it",
+              "Non-rival — One person's use doesn't reduce others' access",
+              "Free rider problem — No profit motive for private providers",
+              "Government must fund through taxes",
+              "Examples: National defense, public roads, street lighting, public parks"
+            ]
+          },
+          "rightColumn": {
+            "icon": "🛒",
+            "title": "Private Goods",
+            "items": [
+              "Excludable — Can prevent non-payers from accessing it",
+              "Rival — One person's use reduces availability for others",
+              "Private market can provide profitably through prices",
+              "Government typically does not need to provide",
+              "Examples: Food, clothing, cars, haircuts, streaming subscriptions"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Externalities — Markets Miss the Full Picture",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Costs and Benefits Beyond the Transaction",
+            "paragraphs": [
+              "When a buyer and seller make a deal, third parties may be helped or harmed without compensation. These spillovers cause markets to produce too much or too little of certain goods."
+            ],
+            "bulletPoints": [
+              "Negative Externality — Factory pollutes a river, harming community health; market produces too much pollution",
+              "Positive Externality — Vaccination reduces disease risk for everyone; market produces too few vaccines without intervention",
+              "Policy for Negative Externality — Tax the activity (carbon tax) or regulate it (EPA pollution limits)",
+              "Policy for Positive Externality — Subsidize it (free vaccines) or require it (mandatory school attendance laws in {{STATE_NAME}})"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$8B+",
+                "label": "Annual cost of air pollution health effects in the US — a negative externality borne by non-participants",
+                "color": "rose"
+              },
+              {
+                "value": "95%",
+                "label": "Vaccination rate needed for herd immunity — why government subsidizes vaccines",
+                "color": "teal"
+              },
+              {
+                "value": "Taxes & Subsidies",
+                "label": "Primary tools governments use to correct externalities",
+                "color": "purple"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Why Government Intervenes in Markets",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Market Failures Require Policy Solutions",
+          "paragraphs": [
+            "Markets are powerful tools for allocating resources — but they don't always work perfectly. When markets fail, government intervention can improve outcomes for society."
+          ],
+          "bulletPoints": [
+            "<strong>Public Goods:</strong> Roads, defense, and public parks won't be provided privately — the free rider problem makes private provision economically impossible",
+            "<strong>Externalities:</strong> Pollution and healthcare create spillovers not captured in prices — taxes, subsidies, and regulations align private incentives with social benefits",
+            "<strong>Information Asymmetry:</strong> When sellers know more than buyers (used cars, healthcare), markets fail — disclosure regulations improve outcomes for consumers",
+            "<strong>Market Power:</strong> Monopolies charge too much and produce too little — antitrust enforcement and utility regulation protect consumers in {{STATE_NAME}}"
+          ],
+          "keyPoint": {
+            "text": "💡 The economic question isn't whether government should ever intervene — it's identifying when intervention improves outcomes and when it creates new problems. Evidence and analysis matter more than ideology."
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Government Programs That Affect Your Finances",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Programs Touching Your Life in {{STATE_NAME}}",
+            "paragraphs": [
+              "Government programs directly shape your financial situation through services you receive, taxes you pay, and protections you rely on every day."
+            ],
+            "bulletPoints": [
+              "Public Education — K-12 and state university funding dramatically reduces your cost of education",
+              "Social Security & Medicare — Programs you pay into now that provide retirement and healthcare security later",
+              "Unemployment Insurance — Income replacement if you lose your job in {{STATE_NAME}}; up to 26 weeks of partial income",
+              "FDIC Deposit Insurance — Protects your bank savings up to $250,000 if your bank fails",
+              "Consumer Protections — CFPB regulations prevent predatory lending and financial fraud targeting you"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$13,000",
+                "label": "Average annual government spending per K-12 student in the US",
+                "color": "teal"
+              },
+              {
+                "value": "7.65%",
+                "label": "Payroll tax from each paycheck toward Social Security and Medicare",
+                "color": "purple"
+              },
+              {
+                "value": "$250K",
+                "label": "FDIC deposit insurance limit per depositor protecting your savings",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Taxes — How Government Funds Programs",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "What You Pay and Why It Matters",
+            "paragraphs": [
+              "Taxes fund public goods and programs. Understanding how different taxes work helps you plan your finances and evaluate policy debates in {{STATE_NAME}}."
+            ],
+            "bulletPoints": [
+              "Federal Income Tax — Progressive rate structure from 10% to 37%; higher earners pay higher percentage",
+              "{{STATE_NAME}} State Income Tax — Rate varies by state; some states have zero income tax",
+              "FICA Payroll Tax — 7.65% from every paycheck for Social Security (6.2%) and Medicare (1.45%)",
+              "Sales Tax — Applied to purchases in {{STATE_NAME}}; regressive — takes larger share of income from lower earners",
+              "Property Tax — Based on property value; primary funding source for local public schools in {{STATE_NAME}}"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "Progressive",
+                "label": "Federal income tax — higher earners pay higher rates",
+                "color": "purple"
+              },
+              {
+                "value": "Regressive",
+                "label": "Sales tax — takes larger share from lower-income households",
+                "color": "rose"
+              },
+              {
+                "value": "~30%",
+                "label": "Typical total effective tax rate for middle-income earners",
+                "color": "teal"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Regulation — Rules That Protect You",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "How Regulations Protect Your Financial Life",
+          "paragraphs": [
+            "Government regulations set rules businesses must follow. While sometimes adding costs, regulations also protect consumers, workers, and the environment from harms that markets alone wouldn't prevent."
+          ],
+          "bulletPoints": [
+            "<strong>FDIC Insurance:</strong> Protects your bank deposits up to $250,000 — you don't lose savings if your bank fails",
+            "<strong>Truth in Lending Act:</strong> Lenders must disclose APR and total loan costs — prevents hidden fee surprises when you borrow money",
+            "<strong>FDA Oversight:</strong> Medications must be proven safe and effective before reaching you — protects from harmful or ineffective treatments",
+            "<strong>Labor Laws:</strong> Minimum wage, overtime rules, and OSHA workplace safety standards protect workers throughout {{STATE_NAME}}"
+          ],
+          "keyPoint": {
+            "text": "💡 Before FDIC insurance (created 1933), bank failures wiped out depositors' entire savings. Regulation eliminated that risk — one of the most impactful financial protections ever created for ordinary Americans."
+          }
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "The Debate: Government vs. Market",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "✅",
+            "title": "Arguments FOR Intervention",
+            "items": [
+              "Corrects market failures that hurt consumers and communities",
+              "Provides public goods markets won't supply",
+              "Protects vulnerable populations from exploitation",
+              "Reduces negative externalities (pollution, fraud)",
+              "Creates stability — FDIC, unemployment insurance reduce economic panic"
+            ]
+          },
+          "rightColumn": {
+            "icon": "⚠️",
+            "title": "Arguments AGAINST Intervention",
+            "items": [
+              "Regulations add compliance costs that raise prices",
+              "Government programs can be inefficient and wasteful",
+              "Taxes reduce incentives to work, invest, and innovate",
+              "Political decisions may not match economic needs",
+              "Unintended consequences can make problems worse"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "🏥",
+            "name": "Jordan — Health Insurance Subsidies",
+            "paragraphs": [
+              "Jordan, age 23, recently aged off their parents' insurance and needed their own coverage. Earning $32,000/year part-time without employer benefits, Jordan visits healthcare.gov and discovers ACA marketplace subsidies.",
+              "Because Jordan's income falls in the subsidy-eligible range, the government covers most of the premium. <span class=\"highlight-text\">Jordan pays $87/month instead of $450/month</span> — a $4,356 annual government subsidy addressing healthcare market failure."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "Monthly Premium",
+              "value": "$87/mo",
+              "detail": "After government subsidy"
+            },
+            {
+              "type": "after",
+              "label": "Annual Subsidy",
+              "value": "$4,356/yr",
+              "detail": "Addressing market failure"
+            },
+            {
+              "type": "after",
+              "label": "Coverage",
+              "value": "Full plan",
+              "detail": "Including preventive care"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "🏦",
+            "name": "The Martinez Family — FDIC Saves Their Savings",
+            "paragraphs": [
+              "During the 2008 financial crisis, several banks failed. The Martinez family had $180,000 in savings at one of the failed banks. Without FDIC insurance, they would have lost everything.",
+              "<span class=\"highlight-text\">FDIC deposit insurance — a government regulation — protected every dollar of their savings</span>, demonstrating how market regulation directly protects personal finances from banking system failures."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "Savings Protected",
+              "value": "$180,000",
+              "detail": "100% via FDIC guarantee"
+            },
+            {
+              "type": "after",
+              "label": "Without Regulation",
+              "value": "$0",
+              "detail": "Total loss possible"
+            },
+            {
+              "type": "after",
+              "label": "FDIC Limit",
+              "value": "$250,000",
+              "detail": "Per depositor per bank"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": "Think about a government program or regulation that directly affects your life in {{STATE_NAME}} — public schools, road maintenance, food safety standards, or labor laws.<br><br>Would the private market provide this on its own without government? Why or why not? Do you think the benefit outweighs the cost? How would your life differ without it?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "When you hear debates about government spending and taxes in {{STATE_NAME}}, how do you evaluate whether a particular program is worth its cost?<br><br>What evidence would you need to support or oppose a new government program? How do the economic concepts of market failure and externalities help you think more clearly about when government involvement actually makes sense?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Check for Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What two characteristics define a public good? Why won't private markets provide public goods efficiently on their own?"
+            },
+            {
+              "number": 2,
+              "question": "Give one example of a positive externality and one of a negative externality. What government policy could address each one?"
+            },
+            {
+              "number": 3,
+              "question": "How does FDIC insurance protect your personal finances? What market failure does it address?"
+            },
+            {
+              "number": 4,
+              "question": "Why are sales taxes considered regressive while income taxes are progressive? How does each affect lower-income households in {{STATE_NAME}} differently?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "teal",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Markets Are Powerful but Imperfect",
+              "description": "Free markets excel at allocating most goods — but fail with public goods, externalities, information gaps, and market power"
+            },
+            {
+              "number": 2,
+              "title": "Public Goods Require Government",
+              "description": "Defense, roads, and public safety can't be profitably provided by private markets — the free rider problem prevents efficient private provision"
+            },
+            {
+              "number": 3,
+              "title": "Externalities Distort Markets",
+              "description": "Pollution creates negative spillovers; education and vaccines create positive ones — taxes, subsidies, and regulations correct these distortions"
+            },
+            {
+              "number": 4,
+              "title": "Government Programs Protect Your Finances",
+              "description": "FDIC insurance, Social Security, unemployment coverage, and consumer protections in {{STATE_NAME}} directly safeguard your financial security"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Skill Builder: Government Impact Analyzer",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "🏛️",
+            "title": "Government Impact Analyzer",
+            "description": "Explore how government programs and market failures interact in your life and in {{STATE_NAME}}'s economy. Use economic reasoning to evaluate real programs and form evidence-based opinions about government's role."
+          },
+          "steps": [
+            "Identify Market Failures — List three markets in {{STATE_NAME}} showing public good, externality, or information asymmetry problems",
+            "Analyze Government Response — For each market failure, identify the specific policy or program that addresses it",
+            "Calculate Personal Impact — Estimate how government programs (education funding, deposit insurance, subsidies) benefit you financially per year",
+            "Evaluate Trade-offs — For one program, identify both the benefits it provides and the costs (taxes paid, efficiency losses, reduced market incentives)",
+            "Form a Policy Position — Based on your analysis, argue whether one government program in {{STATE_NAME}} should be expanded, reduced, or maintained at current levels"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Understand Government, Navigate Your Economy",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
 }

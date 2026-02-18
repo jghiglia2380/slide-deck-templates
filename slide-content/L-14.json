@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "lChapter": "L-XX",
+    "lChapter": "L-14",
     "title": "Saving and Investing",
-    "subtitle": "Understand the fundamental differences between saving and investing to build wealth and achieve both short-term and long-term financial goals. in {{STATE_NAME}}",
+    "subtitle": "Understand the fundamental differences between saving and investing to build wealth and achieve both short-term and long-term financial goals",
     "totalSlides": 20,
     "hasStateVariables": true,
     "stateVariablesUsed": [
@@ -16,7 +16,7 @@
       "content": {
         "title": "Saving and Investing",
         "titleSize": "large",
-        "subtitle": "Understand the fundamental differences between saving and investing to build wealth and achieve both short-term and long-term financial goals. in {{STATE_NAME}}"
+        "subtitle": "Understand the fundamental differences between saving and investing to build wealth and achieve both short-term and long-term financial goals in {{STATE_NAME}}"
       }
     },
     {
@@ -24,39 +24,60 @@
       "type": "hook",
       "content": {
         "label": "Essential Question",
-        "question": ""
+        "question": "Should you <em>save your money</em> or <em>invest it</em>?<br><br>The answer isn't always straightforward — it depends on your goals, timeline, and risk tolerance. Understanding when to save versus invest is one of the most important financial decisions you'll make."
       }
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "teal",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
         "layoutData": {
-          "objectives": []
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Differentiate",
+              "description": "Between saving and investing strategies and their appropriate uses for different goals"
+            },
+            {
+              "number": 2,
+              "verb": "Apply",
+              "description": "The SMART framework to set specific, measurable financial goals with clear timelines"
+            },
+            {
+              "number": 3,
+              "verb": "Understand",
+              "description": "How compounding works to grow your money over time and why starting early matters"
+            },
+            {
+              "number": 4,
+              "verb": "Evaluate",
+              "description": "Risk, reward, and opportunity costs when making financial decisions"
+            }
+          ]
         }
       }
     },
     {
       "number": 4,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "purple",
       "content": {
         "headerTitle": "Key Terms",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Saving",
+              "definition": "Setting aside money in safe, accessible accounts like savings accounts for short-term goals and emergencies",
+              "example": "Putting $200/month into a savings account for an emergency fund or vacation"
             },
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Investing",
+              "definition": "Placing money in assets like stocks, bonds, or real estate that are expected to grow in value over time",
+              "example": "Buying shares in a diversified index fund for retirement 30 years away"
             }
           ]
         }
@@ -72,14 +93,14 @@
         "layoutData": {
           "terms": [
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Compounding",
+              "definition": "The process of earning returns on both your initial investment and previously earned returns — 'interest on interest'",
+              "example": "$1,000 at 10% becomes $1,100 year 1, then $1,210 year 2 (earning interest on the $1,100)"
             },
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Risk Tolerance",
+              "definition": "Your comfort level with the possibility of losing money in exchange for potentially higher returns",
+              "example": "Someone with high risk tolerance might invest heavily in stocks; low risk tolerance prefers bonds"
             }
           ]
         }
@@ -96,25 +117,30 @@
           "leftPanel": {
             "title": "Two Paths to Financial Growth",
             "paragraphs": [
-              "Both saving and investing help you build wealth, but they serve different purposes and work differently: in {{STATE_NAME}}"
+              "Both saving and investing help you build wealth, but they serve different purposes and work differently. Your choice depends on when you need the money. Most people need both strategies working together."
             ],
-            "highlightBox": null
+            "bulletPoints": [
+              "Saving — Prioritizes safety and access to your money",
+              "Investing — Prioritizes growth potential over time",
+              "Emergency fund: 3-6 months of expenses in savings",
+              "Long-term goals 5+ years away: consider investing"
+            ]
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
-                "color": "teal"
-              },
-              {
-                "value": "",
-                "label": "",
+                "value": "0.5%",
+                "label": "Typical savings account interest rate (APY)",
                 "color": "purple"
               },
               {
-                "value": "",
-                "label": "",
+                "value": "10%",
+                "label": "Historical average annual stock market return",
+                "color": "teal"
+              },
+              {
+                "value": "3-6 mo",
+                "label": "Recommended emergency fund in savings",
                 "color": "green"
               }
             ],
@@ -132,14 +158,28 @@
         "layout": "comparison-grid",
         "layoutData": {
           "leftColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
+            "icon": "🏦",
+            "title": "Saving",
+            "items": [
+              "Purpose: Short-term goals, emergencies",
+              "Time Horizon: Under 5 years",
+              "Risk Level: Very low (FDIC insured)",
+              "Returns: Low but guaranteed",
+              "Liquidity: High — easy access anytime",
+              "Best For: Emergency funds, near-term purchases"
+            ]
           },
           "rightColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
+            "icon": "📈",
+            "title": "Investing",
+            "items": [
+              "Purpose: Long-term wealth building",
+              "Time Horizon: 5+ years",
+              "Risk Level: Varies from low to high",
+              "Returns: Higher potential, not guaranteed",
+              "Liquidity: Lower — may fluctuate in value",
+              "Best For: Retirement, college, major goals"
+            ]
           }
         }
       }
@@ -155,26 +195,31 @@
           "leftPanel": {
             "title": "Your Money Working for You",
             "paragraphs": [
-              "Compounding is often called the \"eighth wonder of the world\" because of its powerful effect over time: in {{STATE_NAME}}"
+              "Compounding is often called the 'eighth wonder of the world' because of its powerful effect over time. You earn returns on your original investment, then earn returns on those returns."
             ],
-            "highlightBox": null
+            "bulletPoints": [
+              "Starting early is more important than starting big",
+              "Time is your greatest advantage as a young investor",
+              "$5,000 at age 18 grows to ~$76,123 by age 65 (at 7%)",
+              "$5,000 at age 28 grows to only ~$38,697 — half the growth!"
+            ]
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
-                "color": "green"
-              },
-              {
-                "value": "",
-                "label": "",
+                "value": "$76,123",
+                "label": "Value of $5,000 invested at 18, by age 65 (7%)",
                 "color": "teal"
               },
               {
-                "value": "",
-                "label": "",
+                "value": "$38,697",
+                "label": "Value of same $5,000 invested at 28",
                 "color": "purple"
+              },
+              {
+                "value": "47 yrs",
+                "label": "Of compounding if you start at age 18",
+                "color": "green"
               }
             ],
             "infoCard": null
@@ -191,15 +236,14 @@
         "layout": "concept-full",
         "layoutData": {
           "title": "Setting Goals That Actually Work",
-          "paragraphs": [
-            "The SMART framework transforms vague wishes into achievable financial goals. Each element makes your goal more actionable: in {{STATE_NAME}}",
-            "\"Save $500 for a new laptop\" is better than \"save money.\" Know exactly what you want. in {{STATE_NAME}}",
-            "Track your progress with numbers: \"Put $50/month into savings\" lets you see results. in {{STATE_NAME}}",
-            "Set realistic targets based on your actual income and expenses. Challenge yourself, but be practical. in {{STATE_NAME}}",
-            "Your goal should connect to what matters to you personally and align with your values. in {{STATE_NAME}}",
-            "Set a deadline: \"Save $500 by December\" creates urgency and accountability. in {{STATE_NAME}}"
-          ],
-          "bulletPoints": []
+          "paragraphs": [],
+          "bulletPoints": [
+            "<strong>S — Specific:</strong> 'Save $500 for a new laptop' is better than 'save money.' Know exactly what you want.",
+            "<strong>M — Measurable:</strong> Track your progress with numbers: 'Put $50/month into savings' lets you see results.",
+            "<strong>A — Achievable:</strong> Set realistic targets based on your actual income and expenses. Challenge yourself, but be practical.",
+            "<strong>R — Relevant:</strong> Your goal should connect to what matters to you personally and align with your values.",
+            "<strong>T — Time-bound:</strong> Set a deadline: 'Save $500 by December' creates urgency and accountability."
+          ]
         }
       }
     },
@@ -214,26 +258,30 @@
           "leftPanel": {
             "title": "Every Choice Has Trade-offs",
             "paragraphs": [
-              "Understanding risk and opportunity cost helps you make better financial decisions: in {{STATE_NAME}}"
+              "Risk is the possibility of losing money. Reward means higher-risk investments typically offer higher potential returns. Opportunity cost is what you give up by choosing one option over another."
             ],
-            "highlightBox": null
+            "bulletPoints": [
+              "Keeping all money in savings = safe but loses to inflation over time",
+              "Diversification reduces risk without eliminating growth potential",
+              "Historically, no 20-year period has seen stocks lose money"
+            ]
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
+                "value": "3-4%",
+                "label": "Typical annual inflation rate that erodes savings purchasing power",
                 "color": "rose"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "teal"
+                "value": "-37%",
+                "label": "Worst year for stocks (2008) — but recovered within 5 years",
+                "color": "purple"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "green"
+                "value": "0",
+                "label": "Number of 20-year periods where stocks lost money historically",
+                "color": "teal"
               }
             ],
             "infoCard": null
@@ -251,12 +299,16 @@
         "layoutData": {
           "title": "Your Biggest Advantage: Time",
           "paragraphs": [
-            "As a young person, you have something money can't buy — time. Understanding saving and investing now can dramatically change your financial future. in {{STATE_NAME}}",
-            "An emergency fund (saving) protects you from unexpected expenses and gives you peace of mind and financial stability. in {{STATE_NAME}}",
-            "Starting to invest in your teens or twenties can turn small amounts into significant wealth through decades of compounding. in {{STATE_NAME}}",
-            "From buying a car to retiring comfortably, every goal requires choosing the right strategy for your timeline. in {{STATE_NAME}}"
+            "The financial habits you build today will shape your wealth for decades."
           ],
-          "bulletPoints": []
+          "bulletPoints": [
+            "<strong>Build Security:</strong> An emergency fund (saving) protects you from unexpected expenses and gives you peace of mind",
+            "<strong>Create Wealth:</strong> Starting to invest in your teens or twenties can turn small amounts into significant wealth through decades of compounding",
+            "<strong>Achieve Goals:</strong> From buying a car to retiring comfortably, every goal requires choosing the right strategy for your timeline"
+          ],
+          "keyPoint": {
+            "text": "💡 Time is your biggest asset. Starting at 22 vs. 35 can mean hundreds of thousands more at retirement."
+          }
         }
       }
     },
@@ -271,26 +323,31 @@
           "leftPanel": {
             "title": "Access Has Never Been Easier",
             "paragraphs": [
-              "Modern technology has democratized both saving and investing, removing traditional barriers: in {{STATE_NAME}}"
+              "Technology makes starting to save and invest easier than ever before — even with just $1."
             ],
-            "highlightBox": null
+            "bulletPoints": [
+              "High-Yield Savings — Online banks offer 4-5% APY vs 0.5% traditional",
+              "Micro-Investing Apps — Start investing with just $1",
+              "Fractional Shares — Own pieces of expensive stocks",
+              "Round-Up Features — Automatically save spare change"
+            ]
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
-                "color": "purple"
-              },
-              {
-                "value": "",
-                "label": "",
+                "value": "62%",
+                "label": "Of Gen Z uses investment apps",
                 "color": "teal"
               },
               {
-                "value": "",
-                "label": "",
+                "value": "$1",
+                "label": "Minimum to start investing on many platforms",
                 "color": "green"
+              },
+              {
+                "value": "$0",
+                "label": "Trading commissions at most major brokerages",
+                "color": "purple"
               }
             ],
             "infoCard": null
@@ -307,28 +364,31 @@
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "",
-            "name": "",
-            "paragraphs": []
+            "icon": "📈",
+            "name": "Emma — Age 22 — The Early Investor",
+            "paragraphs": [
+              "Emma starts investing $200/month at age 22 in a diversified index fund. She also maintains $5,000 in a high-yield savings account for emergencies. She understands that investing is for long-term goals while savings provides security.",
+              "<span class=\"highlight-text\">Emma's early start lets compounding do most of the heavy lifting</span> — her total contributions of $103,200 grow into nearly $700,000 by retirement."
+            ]
           },
           "outcomes": [
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "after",
+              "label": "At Age 45",
+              "value": "~$200,000",
+              "detail": "Growing steadily"
             },
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "after",
+              "label": "At Age 65",
+              "value": "~$700,000",
+              "detail": "Power of compounding"
             },
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "after",
+              "label": "Total Contributed",
+              "value": "$103,200",
+              "detail": "Money did the rest"
             }
           ]
         }
@@ -343,28 +403,31 @@
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "",
-            "name": "",
-            "paragraphs": []
+            "icon": "📉",
+            "name": "Marcus — Age 22 — The Delayed Starter",
+            "paragraphs": [
+              "Marcus waits until age 35 to start investing, putting the same $200/month into the same index fund. He kept all his money in a regular savings account earning 0.5% for 13 years, thinking he would 'invest later when he had more money.'",
+              "<span class=\"highlight-text\">The 13-year delay costs Marcus $435,000</span> — despite investing nearly the same total amount."
+            ]
           },
           "outcomes": [
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "before",
+              "label": "At Age 45",
+              "value": "~$35,000",
+              "detail": "Late start shows"
             },
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "before",
+              "label": "At Age 65",
+              "value": "~$265,000",
+              "detail": "Far less than Emma"
             },
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "before",
+              "label": "Cost of Waiting",
+              "value": "$435,000 less",
+              "detail": "Same contributions"
             }
           ]
         }
@@ -376,16 +439,16 @@
       "variant": "teal",
       "content": {
         "badge": "Discussion",
-        "question": ""
+        "question": "What financial goals do you have for the next year? The next five years?<br><br>Would saving or investing be more appropriate for each goal? What factors influenced your decision? How does the time horizon affect whether you should save or invest?"
       }
     },
     {
       "number": 16,
       "type": "discussion",
-      "variant": "teal",
+      "variant": "purple",
       "content": {
         "badge": "Personal Reflection",
-        "question": ""
+        "question": "What role does risk play in deciding whether to save or invest your money?<br><br>Consider your own personality — are you comfortable with uncertainty, or do you prefer guaranteed outcomes? How might your risk tolerance change as you get older?"
       }
     },
     {
@@ -396,7 +459,24 @@
         "headerTitle": "Check for Understanding",
         "layout": "check-grid",
         "layoutData": {
-          "questions": []
+          "questions": [
+            {
+              "number": 1,
+              "question": "What is the main difference between saving and investing, and how do their risk levels compare?"
+            },
+            {
+              "number": 2,
+              "question": "Explain how compounding works and why starting early makes such a big difference."
+            },
+            {
+              "number": 3,
+              "question": "Give an example of a goal where saving would be better than investing. Why?"
+            },
+            {
+              "number": 4,
+              "question": "What is opportunity cost? Give an example related to financial decisions."
+            }
+          ]
         }
       }
     },
@@ -408,7 +488,28 @@
         "headerTitle": "Key Takeaways",
         "layout": "takeaway-grid",
         "layoutData": {
-          "takeaways": []
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Save for Short-Term",
+              "description": "Use savings accounts for emergencies and goals under 5 years away — prioritize safety and access over growth"
+            },
+            {
+              "number": 2,
+              "title": "Invest for Long-Term",
+              "description": "Use investing for goals 5+ years away — time in the market helps weather volatility and maximize growth"
+            },
+            {
+              "number": 3,
+              "title": "Start Early",
+              "description": "Time is your biggest advantage. Starting at 22 vs. 35 can mean hundreds of thousands more at retirement"
+            },
+            {
+              "number": 4,
+              "title": "Set SMART Goals",
+              "description": "Make goals Specific, Measurable, Achievable, Relevant, and Time-bound to turn dreams into reality"
+            }
+          ]
         }
       }
     },
@@ -417,20 +518,20 @@
       "type": "content",
       "headerColor": "blue",
       "content": {
-        "headerTitle": "Skill Builder: Comparison Chart",
+        "headerTitle": "Skill Builder: Saving vs. Investing Comparison",
         "layout": "activity-layout",
         "layoutData": {
           "main": {
-            "icon": "📋",
-            "title": "",
-            "description": ""
+            "icon": "📊",
+            "title": "Saving vs. Investing Comparison",
+            "description": "Compare saving and investing strategies to determine which is best for different financial goals. Materials: Comparison chart template, calculator."
           },
           "steps": [
-            "Write definitions for saving and investing in your own words in {{STATE_NAME}}",
-            "Fill in: purpose, time horizon, risk level, typical returns, liquidity in {{STATE_NAME}}",
-            "Identify specific products for each category (savings accounts, stocks, etc.) in {{STATE_NAME}}",
-            "Determine which strategy fits various financial goals in {{STATE_NAME}}",
-            "Apply your learning to one personal financial goal in {{STATE_NAME}}"
+            "Define each strategy — Write definitions for saving and investing in your own words",
+            "Compare categories — Fill in: purpose, time horizon, risk level, typical returns, liquidity",
+            "List examples — Identify specific products for each category (savings accounts, stocks, etc.)",
+            "Match to goals — Determine which strategy fits various financial goals",
+            "Reflect — Apply your learning to one personal financial goal"
           ]
         }
       }
@@ -439,9 +540,9 @@
       "number": 20,
       "type": "closing",
       "content": {
-        "tagline": "Save for security. Invest for growth. Time is your greatest asset. in {{STATE_NAME}}",
-        "website": "www.pflacademy.co in {{STATE_NAME}}",
-        "copyright": "© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+        "tagline": "Start Building Your Future Today",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
       }
     }
   ]

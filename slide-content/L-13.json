@@ -1,13 +1,14 @@
 {
   "metadata": {
-    "lChapter": "L-XX",
+    "lChapter": "L-13",
     "title": "Understanding and Using Banking Tools",
-    "subtitle": "Learn how to effectively use checks, debit cards, ATMs, and online banking to manage your money and avoid unnecessary fees.",
+    "subtitle": "Learn how to effectively use checks, debit cards, ATMs, and online banking to manage your money and avoid unnecessary fees",
     "totalSlides": 20,
     "hasStateVariables": true,
     "stateVariablesUsed": [
       "STATE_NAME",
-      "LOCAL_CREDIT_UNION_NAME",
+      "AVG_OVERDRAFT_FEE",
+      "AVG_MONTHLY_FEE",
       "STATE_LOCAL_CREDIT_UNION_NAME"
     ]
   },
@@ -18,7 +19,7 @@
       "content": {
         "title": "Understanding and Using Banking Tools",
         "titleSize": "large",
-        "subtitle": "Learn how to effectively use checks, debit cards, ATMs, and online banking to manage your money and avoid unnecessary fees."
+        "subtitle": "Learn how to effectively use checks, debit cards, ATMs, and online banking to manage your money and avoid unnecessary fees in {{STATE_NAME}}"
       }
     },
     {
@@ -26,39 +27,60 @@
       "type": "hook",
       "content": {
         "label": "Essential Question",
-        "question": ""
+        "question": "How do you know what happens to your money <em>after you spend it</em>?<br><br>Most Americans check their bank accounts at least once a week, but many still face surprise fees and overdrafts because they're not tracking their transactions properly."
       }
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "teal",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
         "layoutData": {
-          "objectives": []
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Use",
+              "description": "Various banking tools including ATMs, debit cards, checks, and online banking services"
+            },
+            {
+              "number": 2,
+              "verb": "Track",
+              "description": "Financial transactions by maintaining accurate records of spending and deposits"
+            },
+            {
+              "number": 3,
+              "verb": "Reconcile",
+              "description": "Personal financial records with bank statements to catch errors and discrepancies"
+            },
+            {
+              "number": 4,
+              "verb": "Identify",
+              "description": "Common banking fees and strategies to avoid them and protect your money"
+            }
+          ]
         }
       }
     },
     {
       "number": 4,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "purple",
       "content": {
         "headerTitle": "Key Terms",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Checks",
+              "definition": "Written orders instructing your bank to pay a specific amount to a person or organization from your account",
+              "example": "Writing a $750 rent check to your landlord, who then deposits it into their account"
             },
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Debit Cards",
+              "definition": "Cards linked directly to your checking account that allow you to make purchases or withdraw cash instantly",
+              "example": "Using your debit card to pay $45 for groceries, which immediately deducts from your balance"
             }
           ]
         }
@@ -74,14 +96,14 @@
         "layoutData": {
           "terms": [
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "ATMs",
+              "definition": "Automated Teller Machines that let you withdraw cash, check balances, deposit money, and transfer funds",
+              "example": "Withdrawing $100 from an in-network ATM without paying extra fees"
             },
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Online Banking",
+              "definition": "Digital platforms that allow you to check balances, transfer funds, pay bills, and manage accounts 24/7",
+              "example": "Using your bank's app to schedule automatic bill payments and set up balance alerts"
             }
           ]
         }
@@ -98,25 +120,30 @@
           "leftPanel": {
             "title": "Your Banking Toolkit",
             "paragraphs": [
-              "Modern banking offers multiple tools to access and manage your money. Each tool has specific advantages depending on the situation:"
+              "Modern banking offers multiple tools to access and manage your money. Each tool has specific advantages depending on the situation."
             ],
-            "highlightBox": null
+            "bulletPoints": [
+              "Checks — Best for rent, large payments requiring paper trail",
+              "Debit Cards — Convenient for everyday purchases",
+              "ATMs — Quick cash access when needed",
+              "Online/Mobile Banking — 24/7 account monitoring and bill pay"
+            ]
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
+                "value": "78%",
+                "label": "Of Americans use mobile banking regularly",
                 "color": "teal"
               },
               {
-                "value": "",
-                "label": "",
+                "value": "42%",
+                "label": "Decline in check usage over the past decade",
                 "color": "purple"
               },
               {
-                "value": "",
-                "label": "",
+                "value": "24/7",
+                "label": "Access to accounts via digital banking",
                 "color": "green"
               }
             ],
@@ -131,15 +158,30 @@
       "headerColor": "teal",
       "content": {
         "headerTitle": "Comparing Payment Methods",
-        "layout": "generic",
+        "layout": "comparison-grid",
         "layoutData": {
-          "paragraphs": [
-            "<strong>Best for:</strong> Large payments, rent, situations requiring documentation<br><br><strong>Processing time:</strong> 1-5 business days to clear<br><br><strong>Security:</strong> Can be stopped if lost; creates paper trail",
-            "<strong>Best for:</strong> Everyday purchases, in-store and online shopping<br><br><strong>Processing time:</strong> Instant deduction from account<br><br><strong>Security:</strong> PIN protection; report lost cards immediately",
-            "<strong>Best for:</strong> Cash withdrawals, quick balance checks, deposits<br><br><strong>Processing time:</strong> Instant for withdrawals<br><br><strong>Security:</strong> Use in-network ATMs; protect your PIN",
-            "<strong>Best for:</strong> Bill payments, transfers, account monitoring<br><br><strong>Processing time:</strong> Same-day to 1-3 days for transfers<br><br><strong>Security:</strong> Use secure networks; enable 2-factor authentication"
-          ],
-          "lists": []
+          "leftColumn": {
+            "icon": "📝",
+            "title": "Checks & Debit Cards",
+            "items": [
+              "Best for large payments, rent, documentation",
+              "Processing: 1-5 business days to clear",
+              "Debit: Instant deduction from account",
+              "Checks: Can be stopped if lost; creates paper trail",
+              "Debit: PIN protection; report lost cards immediately"
+            ]
+          },
+          "rightColumn": {
+            "icon": "💻",
+            "title": "ATMs & Online Banking",
+            "items": [
+              "Best for cash withdrawals and quick balance checks",
+              "Instant for withdrawals",
+              "Best for bill payments, transfers, account monitoring",
+              "Use in-network ATMs; protect your PIN",
+              "Use secure networks; enable 2-factor authentication"
+            ]
+          }
         }
       }
     },
@@ -154,26 +196,31 @@
           "leftPanel": {
             "title": "Fees That Add Up",
             "paragraphs": [
-              "Banking fees can eat away at your money if you're not careful. Understanding these fees is the first step to avoiding them:"
+              "Banking fees can eat away at your money if you're not careful. Understanding these fees is the first step to avoiding them in {{STATE_NAME}}."
             ],
-            "highlightBox": null
+            "bulletPoints": [
+              "Overdraft Fee — Charged when you spend more than your balance ({{AVG_OVERDRAFT_FEE}} average in {{STATE_NAME}})",
+              "Monthly Maintenance — Regular account fee ({{AVG_MONTHLY_FEE}} average in {{STATE_NAME}})",
+              "ATM Fees — Out-of-network withdrawal charges ($3–5 per use)",
+              "Minimum Balance Fee — Penalty for falling below required amount"
+            ]
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
+                "value": "{{AVG_OVERDRAFT_FEE}}",
+                "label": "Average overdraft fee in {{STATE_NAME}}",
                 "color": "rose"
               },
               {
-                "value": "",
-                "label": "",
+                "value": "$250+",
+                "label": "Average annual fees paid by Americans",
                 "color": "purple"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "green"
+                "value": "100%",
+                "label": "Avoidable with proper account management",
+                "color": "teal"
               }
             ],
             "infoCard": null
@@ -187,16 +234,39 @@
       "headerColor": "purple",
       "content": {
         "headerTitle": "Strategies to Avoid Fees",
-        "layout": "concept-full",
+        "layout": "balanced-layout",
         "layoutData": {
-          "title": "Smart Banking Means Fewer Fees",
-          "paragraphs": [
-            "With a few simple habits, you can eliminate most banking fees and keep more of your hard-earned money:",
-            "Check your account regularly through online banking or the mobile app. Set up low balance alerts to warn you before you overspend.",
-            "Find your bank's ATM locator on their app. Plan ahead to avoid using out-of-network machines that charge extra fees.",
-            "Maintain minimum balances or set up direct deposit. Many banks waive monthly fees with qualifying activities. Consider credit unions like {{STATE_LOCAL_CREDIT_UNION_NAME}} in {{STATE_NAME}} which often offer lower fees."
-          ],
-          "bulletPoints": []
+          "leftPanel": {
+            "title": "Smart Banking Means Fewer Fees",
+            "paragraphs": [
+              "With a few simple habits, you can eliminate most banking fees and keep more of your hard-earned money."
+            ],
+            "bulletPoints": [
+              "Track Your Balance — Check your account regularly; set up low balance alerts to warn you before you overspend",
+              "Use In-Network ATMs — Find your bank's ATM locator on their app to avoid out-of-network fees",
+              "Meet Requirements — Maintain minimum balances or set up direct deposit; consider credit unions like {{STATE_LOCAL_CREDIT_UNION_NAME}} in {{STATE_NAME}}"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "Free",
+                "label": "In-network ATM withdrawals",
+                "color": "teal"
+              },
+              {
+                "value": "$0",
+                "label": "Monthly fees with qualifying activities",
+                "color": "green"
+              },
+              {
+                "value": "Alert",
+                "label": "Low balance notifications prevent overdrafts",
+                "color": "purple"
+              }
+            ],
+            "infoCard": null
+          }
         }
       }
     },
@@ -213,24 +283,30 @@
             "paragraphs": [
               "Reconciliation means comparing your personal records with your bank statement to ensure everything matches."
             ],
-            "highlightBox": null
+            "bulletPoints": [
+              "Identify any errors or unauthorized charges",
+              "Catch bank mistakes that could cost you money",
+              "Maintain accurate understanding of your balance",
+              "Prevent overdrafts before they happen",
+              "Track spending patterns over time"
+            ]
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
-                "color": "teal"
+                "value": "1 in 5",
+                "label": "Americans find errors on bank statements annually",
+                "color": "rose"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "teal"
+                "value": "60 Days",
+                "label": "Typical window to dispute unauthorized charges",
+                "color": "purple"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "green"
+                "value": "Weekly",
+                "label": "Recommended frequency for checking accounts",
+                "color": "teal"
               }
             ],
             "infoCard": null
@@ -248,12 +324,16 @@
         "layoutData": {
           "title": "Your Financial Foundation",
           "paragraphs": [
-            "Understanding banking tools is fundamental to financial success. These skills directly impact your ability to build wealth and avoid costly mistakes.",
-            "Avoiding fees and catching errors can save you hundreds of dollars every year that you can invest in your future.",
-            "Regular account monitoring creates discipline that extends to all areas of financial management including saving and investing.",
-            "Catching fraud early through regular reconciliation limits your liability and prevents financial disasters."
+            "Understanding banking tools is fundamental to financial success. These skills directly impact your ability to build wealth and avoid costly mistakes."
           ],
-          "bulletPoints": []
+          "bulletPoints": [
+            "<strong>Save Money:</strong> Avoiding fees and catching errors can save you hundreds of dollars every year",
+            "<strong>Build Good Habits:</strong> Regular account monitoring creates discipline that extends to all areas of financial management",
+            "<strong>Protect Yourself:</strong> Catching fraud early through regular reconciliation limits your liability"
+          ],
+          "keyPoint": {
+            "text": "💡 Small banking fees add up to hundreds of dollars annually. Tracking your account daily takes just 5 minutes."
+          }
         }
       }
     },
@@ -268,26 +348,31 @@
           "leftPanel": {
             "title": "The Evolution of Banking",
             "paragraphs": [
-              "Banking has transformed dramatically with digital technology, making account management easier than ever:"
+              "Banking has transformed dramatically with digital technology, making account management easier than ever."
             ],
-            "highlightBox": null
+            "bulletPoints": [
+              "📱 Mobile Deposits — Deposit checks by taking a photo",
+              "🔔 Real-Time Alerts — Instant notifications for transactions",
+              "💸 P2P Payments — Send money instantly to friends via apps",
+              "💼 Budgeting Tools — Built-in spending categorization"
+            ]
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
-                "color": "purple"
-              },
-              {
-                "value": "",
-                "label": "",
+                "value": "89%",
+                "label": "Of Gen Z prefer mobile banking apps",
                 "color": "teal"
               },
               {
-                "value": "",
-                "label": "",
+                "value": "2 min",
+                "label": "Average time to complete mobile deposit",
                 "color": "green"
+              },
+              {
+                "value": "$0",
+                "label": "Many online banks now charge zero fees",
+                "color": "purple"
               }
             ],
             "infoCard": null
@@ -304,28 +389,31 @@
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "",
-            "name": "",
-            "paragraphs": []
+            "icon": "✅",
+            "name": "Maria — The Organized Tracker",
+            "paragraphs": [
+              "Maria checks her bank account every morning using her mobile app. She set up alerts for any transaction over $20 and keeps a simple spreadsheet tracking her monthly spending. She uses in-network ATMs and maintains the minimum balance to avoid fees.",
+              "Maria's proactive approach ensures she <span class=\"highlight-text\">never pays overdraft fees and catches errors before they become costly.</span>"
+            ]
           },
           "outcomes": [
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "after",
+              "label": "Annual Fees",
+              "value": "$0",
+              "detail": "No overdrafts or surprises"
             },
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "after",
+              "label": "Errors Caught",
+              "value": "2 charges",
+              "detail": "Reversed by bank"
             },
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "after",
+              "label": "Time Invested",
+              "value": "5 min/day",
+              "detail": "Huge financial payoff"
             }
           ]
         }
@@ -340,28 +428,31 @@
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "",
-            "name": "",
-            "paragraphs": []
+            "icon": "📉",
+            "name": "James — Learning the Hard Way",
+            "paragraphs": [
+              "James never checks his account balance and frequently uses out-of-network ATMs for convenience. Last month he overdrew his account three times and didn't notice an unauthorized $50 charge until his statement arrived 30 days later.",
+              "<span class=\"highlight-text\">James paid 3× {{AVG_OVERDRAFT_FEE}} in overdraft fees plus $24 in ATM fees</span> — all avoidable with basic monitoring habits."
+            ]
           },
           "outcomes": [
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "before",
+              "label": "Overdraft Fees",
+              "value": "3× {{AVG_OVERDRAFT_FEE}}",
+              "detail": "Each month"
             },
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "before",
+              "label": "ATM Fees",
+              "value": "$24/month",
+              "detail": "Out-of-network"
             },
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "before",
+              "label": "Fraud Loss",
+              "value": "$50",
+              "detail": "Unrecovered"
             }
           ]
         }
@@ -373,16 +464,16 @@
       "variant": "teal",
       "content": {
         "badge": "Discussion",
-        "question": ""
+        "question": "What banking fees have you or your family experienced, and how could they have been avoided?<br><br>Consider: ATM fees, overdraft charges, minimum balance penalties, or monthly maintenance fees. What daily or weekly habits could prevent these fees?"
       }
     },
     {
       "number": 16,
       "type": "discussion",
-      "variant": "teal",
+      "variant": "purple",
       "content": {
         "badge": "Personal Reflection",
-        "question": ""
+        "question": "Why is it important to keep track of your daily spending and regularly check your account balance?<br><br>What could happen if you don't track your transactions for a month? How would knowing your exact balance change your spending decisions?"
       }
     },
     {
@@ -393,7 +484,24 @@
         "headerTitle": "Check for Understanding",
         "layout": "check-grid",
         "layoutData": {
-          "questions": []
+          "questions": [
+            {
+              "number": 1,
+              "question": "What is an overdraft fee, and what causes it to be charged to your account?"
+            },
+            {
+              "number": 2,
+              "question": "Why might someone choose to write a check instead of using a debit card for a large payment?"
+            },
+            {
+              "number": 3,
+              "question": "What is account reconciliation, and why should you do it regularly?"
+            },
+            {
+              "number": 4,
+              "question": "Name two strategies you can use to avoid ATM fees when you need cash."
+            }
+          ]
         }
       }
     },
@@ -405,7 +513,28 @@
         "headerTitle": "Key Takeaways",
         "layout": "takeaway-grid",
         "layoutData": {
-          "takeaways": []
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Know Your Tools",
+              "description": "Checks, debit cards, ATMs, and online banking each serve different purposes — choose the right tool for each situation"
+            },
+            {
+              "number": 2,
+              "title": "Fees Are Avoidable",
+              "description": "Overdraft, ATM, and maintenance fees cost Americans billions — but you can avoid them with proper account management"
+            },
+            {
+              "number": 3,
+              "title": "Monitor Regularly",
+              "description": "Use mobile banking to check your balance daily, set up alerts, and catch unauthorized transactions immediately"
+            },
+            {
+              "number": 4,
+              "title": "Reconcile Monthly",
+              "description": "Compare your records to bank statements to catch errors, track spending patterns, and maintain financial control"
+            }
+          ]
         }
       }
     },
@@ -418,16 +547,16 @@
         "layout": "activity-layout",
         "layoutData": {
           "main": {
-            "icon": "📋",
-            "title": "",
-            "description": ""
+            "icon": "📊",
+            "title": "Check Register",
+            "description": "Practice tracking financial transactions by updating a check register based on a sample bank statement. This foundational skill helps you maintain accurate records and avoid overdrafts. Scenario: Use the provided bank statement showing deposits and withdrawals."
           },
           "steps": [
-            "Examine the provided bank statement showing deposits and withdrawals",
-            "Record each transaction with date, description, and amount",
-            "Update the running balance after each transaction",
-            "Check your final balance against the bank statement ending balance",
-            "Identify and investigate any differences you find"
+            "Review the Statement — Examine the provided bank statement showing deposits and withdrawals",
+            "Update the Register — Record each transaction with date, description, and amount",
+            "Calculate Balances — Update the running balance after each transaction",
+            "Compare & Verify — Check your final balance against the bank statement ending balance",
+            "Resolve Discrepancies — Identify and investigate any differences you find"
           ]
         }
       }
@@ -436,7 +565,7 @@
       "number": 20,
       "type": "closing",
       "content": {
-        "tagline": "Track your money, avoid fees, and build financial confidence",
+        "tagline": "Master Your Banking Tools",
         "website": "www.pflacademy.co",
         "copyright": "© 2025 PFL Academy. All rights reserved."
       }
