@@ -2,7 +2,7 @@
   "metadata": {
     "lChapter": "L-48",
     "title": "Economic Systems",
-    "subtitle": "Understanding how capitalism, socialism, and mixed economies allocate resources and shape your financial opportunities",
+    "subtitle": "How Capitalism, Socialism, and Mixed Economies Shape Your Financial Opportunities",
     "totalSlides": 20,
     "hasStateVariables": false,
     "stateVariablesUsed": []
@@ -14,21 +14,23 @@
       "content": {
         "title": "Economic Systems",
         "titleSize": "large",
-        "subtitle": "Understanding how capitalism, socialism, and mixed economies allocate resources and shape your financial opportunities"
+        "subtitle": "How Capitalism, Socialism, and Mixed Economies Shape Your Financial Opportunities"
       }
     },
     {
       "number": 2,
       "type": "hook",
       "content": {
-        "label": "Essential Question",
-        "question": ""
-      }
+        "label": "The Challenge",
+        "question": "The Martinez family's story spans three generations and two economic systems. In 1960, Carlos fled Cuba after Castro's revolution nationalized his father's grocery business.<br><br>Arriving in Miami with <em>$300</em>, Carlos worked two jobs, saved aggressively, and within 5 years opened a bodega. Over 30 years, he built a business worth <em>$600,000</em>. His daughter Elena expanded to 3 locations with 35 employees.<br><br>Meanwhile, relatives who stayed in Cuba earn <em>$30-50/month</em> with no path to wealth accumulation.<br><br><strong>Same family, same work ethic\u2014vastly different results. How does your economic system determine your opportunities?</strong>"
+      },
+      "headerColor": "amber",
+      "notes": "**Discussion Prompts:**\n- Why did Carlos succeed in America but his relatives couldn't succeed in Cuba with the same work ethic?\n- What specific features of the U.S. system enabled Carlos to build a $600,000 business?\n- How do economic systems create vastly different opportunities?"
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
@@ -37,22 +39,22 @@
             {
               "number": 1,
               "verb": "Define",
-              "description": "Compare capitalism, socialism, and mixed economies and their core characteristics"
+              "description": "Define and compare capitalism, socialism, and mixed economies and their core characteristics."
             },
             {
               "number": 2,
               "verb": "Explain",
-              "description": "Understand the difference between command and market economic systems"
+              "description": "Explain the difference between command (centrally planned) and market economic systems."
             },
             {
               "number": 3,
               "verb": "Analyze",
-              "description": "Examine how property rights function and enable wealth building in different systems"
+              "description": "Analyze how property rights function and enable wealth building in different systems."
             },
             {
               "number": 4,
               "verb": "Evaluate",
-              "description": "Assess how economic systems affect your personal financial opportunities"
+              "description": "Evaluate how economic systems affect personal financial opportunities and career paths."
             }
           ]
         }
@@ -61,21 +63,21 @@
     {
       "number": 4,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Capitalism",
+              "definition": "Economic system where private individuals and businesses own resources; prices determined by supply and demand; profit motive drives activity.",
+              "example": "In a capitalist system, Carlos could start a bodega, keep his profits, and build wealth over decades."
             },
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Socialism",
+              "definition": "Economic system where government owns most resources and makes centralized production and distribution decisions; emphasis on equality over efficiency.",
+              "example": "In Cuba's socialist system, the state owns businesses and assigns jobs with fixed wages."
             }
           ]
         }
@@ -84,21 +86,21 @@
     {
       "number": 5,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms (Continued)",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Mixed Economy",
+              "definition": "System combining capitalism and socialism; most resources privately owned but government provides public goods, regulates markets, and redistributes some income.",
+              "example": "The US has private businesses alongside public schools, Social Security, and FDA regulation."
             },
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Property Rights",
+              "definition": "Legal ownership and control over resources; foundation of market economies enabling exchange, investment, and wealth accumulation.",
+              "example": "Property rights let you use your home as collateral for a business loan\u2014impossible without them."
             }
           ]
         }
@@ -107,97 +109,41 @@
     {
       "number": 6,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Three Economic Systems Compared",
-        "layout": "generic",
-        "layoutData": {
-          "paragraphs": [],
-          "lists": [
-            [
-              "<span class=\"bullet\">●</span> Private ownership of resources",
-              "<span class=\"bullet\">●</span> Prices set by markets",
-              "<span class=\"bullet\">●</span> Profit motive drives decisions",
-              "<span class=\"bullet\">●</span> Competition improves quality",
-              "<span class=\"bullet\">●</span> High economic freedom",
-              "<span class=\"bullet\">●</span> May create inequality",
-              "<span class=\"bullet\">●</span> Examples: Singapore, Hong Kong"
-            ],
-            [
-              "<span class=\"bullet\">●</span> Government owns resources",
-              "<span class=\"bullet\">●</span> Prices set by planners",
-              "<span class=\"bullet\">●</span> Collective goals prioritized",
-              "<span class=\"bullet\">●</span> Central planning allocates",
-              "<span class=\"bullet\">●</span> Low economic freedom",
-              "<span class=\"bullet\">●</span> Pursues equality",
-              "<span class=\"bullet\">●</span> Examples: Cuba, N. Korea"
-            ],
-            [
-              "<span class=\"bullet\">●</span> Mostly private ownership",
-              "<span class=\"bullet\">●</span> Markets + regulation",
-              "<span class=\"bullet\">●</span> Profit + social goals",
-              "<span class=\"bullet\">●</span> Govt provides public goods",
-              "<span class=\"bullet\">●</span> Moderate freedom",
-              "<span class=\"bullet\">●</span> Balances efficiency/equality",
-              "<span class=\"bullet\">●</span> Examples: USA, Canada, EU"
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "number": 7,
-      "type": "content",
-      "headerColor": "teal",
-      "content": {
-        "headerTitle": "The German Experiment: Real-World Proof",
-        "layout": "comparison-grid",
-        "layoutData": {
-          "leftColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
-          },
-          "rightColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
-          }
-        }
-      }
-    },
-    {
-      "number": 8,
-      "type": "content",
-      "headerColor": "blue",
-      "content": {
-        "headerTitle": "Property Rights: Foundation of Wealth",
         "layout": "balanced-layout",
         "layoutData": {
           "leftPanel": {
-            "title": "Why Property Rights Matter",
+            "title": "Who Decides What Gets Made?",
             "paragraphs": [
-              "Without secure property rights, wealth-building is impossible:",
-              "<strong>Strong property rights enable:</strong> Investment, entrepreneurship, credit markets, home ownership, retirement savings"
+              "Every society must answer fundamental economic questions:",
+              "\u2022 <strong>What</strong> should be produced?",
+              "\u2022 <strong>How</strong> should it be produced?",
+              "\u2022 <strong>Who</strong> gets what is produced?",
+              "Different economic systems answer these questions in dramatically different ways\u2014and those answers profoundly affect your career prospects, business opportunities, and wealth-building potential."
             ],
-            "highlightBox": null
+            "highlightBox": {
+              "icon": "\ud83d\udca1",
+              "text": "The U.S. operates as a mixed economy, blending market mechanisms with government intervention."
+            }
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
-                "color": "teal"
+                "value": "$70,000",
+                "label": "US GDP per capita (mixed)",
+                "color": "emerald"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "purple"
+                "value": "$65,000",
+                "label": "Singapore GDP (capitalist)",
+                "color": "emerald"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "green"
+                "value": "$9,500",
+                "label": "Cuba GDP (socialist)",
+                "color": "amber"
               }
             ],
             "infoCard": null
@@ -206,66 +152,141 @@
       }
     },
     {
+      "number": 7,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Capitalism vs. Socialism",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "\ud83c\udfea",
+            "title": "Capitalism (Market System)",
+            "items": [
+              "Private ownership of resources (85%+)",
+              "Prices set by supply and demand",
+              "Profit motive drives decisions",
+              "Competition improves quality",
+              "High economic freedom",
+              "May create inequality",
+              "Examples: Singapore, Hong Kong"
+            ]
+          },
+          "rightColumn": {
+            "icon": "\ud83c\udfdb\ufe0f",
+            "title": "Socialism (Command System)",
+            "items": [
+              "Government owns resources (90%+)",
+              "Prices set by central planners",
+              "Collective goals prioritized",
+              "Central planning allocates resources",
+              "Low economic freedom",
+              "Pursues equality of outcomes",
+              "Examples: Cuba, North Korea"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "The German Experiment: Real-World Proof",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "\ud83c\udde9\ud83c\uddea",
+            "title": "West Germany (Market)",
+            "items": [
+              "Same people, culture, history",
+              "Private business ownership",
+              "Market-determined prices",
+              "Economic freedom to choose careers",
+              "By 1990: 3x higher income",
+              "Modern infrastructure, consumer goods",
+              "Reunified Germany adopted this system"
+            ]
+          },
+          "rightColumn": {
+            "icon": "\ud83c\udde9\ud83c\uddea",
+            "title": "East Germany (Command)",
+            "items": [
+              "Same people, culture, history",
+              "State-owned enterprises",
+              "Government-set prices",
+              "Government-assigned jobs",
+              "By 1990: 1/3 the income",
+              "Chronic shortages, pollution",
+              "System collapsed in 1989"
+            ]
+          }
+        }
+      }
+    },
+    {
       "number": 9,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "How Resources Get Allocated",
         "layout": "concept-full",
         "layoutData": {
           "title": "Market Allocation vs. Command Allocation",
           "paragraphs": [
-            "<strong>The Fundamental Economic Problem:</strong> Unlimited human wants facing limited resources. Every society must decide: What to produce? How? Who gets it?",
-            "<strong>Market Allocation:</strong>",
-            "• Decentralized decisions by millions of people",
-            "• Prices signal what's scarce (high price) or abundant (low price)",
-            "• Competition rewards efficiency, punishes waste",
-            "• No central planner needed - \"invisible hand\" coordinates",
-            "<strong>Command Allocation:</strong>",
-            "• Central planners decide production and distribution",
-            "• Without price signals, planners lack critical information",
-            "• Political goals often override economic efficiency",
-            "• Results in shortages, surpluses, and poor quality",
-            "High smartphone demand = high prices = entrepreneurs invest = more phones = prices fall",
-            "Planners decide how many shoes to make - wrong sizes, colors people don't want, chronic shortages",
-            "Prices convey more information than any planner can process - they coordinate an economy automatically"
+            "The fundamental economic problem: <strong>unlimited human wants facing limited resources</strong>. Every society must decide what to produce, how, and who gets it."
           ],
-          "bulletPoints": []
+          "bulletPoints": [
+            "<strong>Market Allocation:</strong> Decentralized decisions by millions of people. Prices signal what's scarce (high price) or abundant (low price). No central planner needed\u2014the \"invisible hand\" coordinates.",
+            "<strong>Command Allocation:</strong> Central planners decide production and distribution. Without price signals, planners lack critical information. Often results in wrong sizes, colors, chronic shortages.",
+            "<strong>Example:</strong> High smartphone demand \u2192 high prices \u2192 entrepreneurs invest \u2192 more phones \u2192 prices fall. That's market allocation working automatically.",
+            "<strong>Contrast:</strong> Soviet planners decided to make millions of left shoes but forgot right shoes. Without prices to signal demand, they couldn't coordinate effectively."
+          ],
+          "keyPoint": {
+            "text": "\ud83d\udcca Prices convey more information than any planner can process\u2014they coordinate an economy automatically."
+          }
         }
       }
     },
     {
       "number": 10,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Economic Freedom = Prosperity",
+        "headerTitle": "Property Rights: Foundation of Wealth",
         "layout": "balanced-layout",
         "layoutData": {
           "leftPanel": {
-            "title": "The Data Is Clear",
+            "title": "Why Property Rights Matter",
             "paragraphs": [
-              "Countries with more economic freedom consistently achieve:",
-              "<strong>The lesson:</strong> Economic system matters more than natural resources. Singapore (no resources) became rich; Venezuela (massive oil) became poor."
+              "Without secure property rights, wealth-building is impossible.",
+              "<strong>Strong property rights enable:</strong>",
+              "\u2022 Investment (you keep what you build)",
+              "\u2022 Entrepreneurship (start businesses)",
+              "\u2022 Credit markets (use assets as collateral)",
+              "\u2022 Home ownership (mortgages work)",
+              "\u2022 Retirement savings (accounts are protected)",
+              "<strong>Without property rights:</strong> Why save if it can be seized? Why invest if you can't keep profits? Why lend if you can't foreclose?"
             ],
             "highlightBox": null
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
-                "color": "green"
+                "value": "$300",
+                "label": "Carlos started his business with this",
+                "color": "emerald"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "rose"
+                "value": "$600,000",
+                "label": "Business value after 30 years",
+                "color": "emerald"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "purple"
+                "value": "$0",
+                "label": "Cuban relatives could accumulate",
+                "color": "amber"
               }
             ],
             "infoCard": null
@@ -276,58 +297,72 @@
     {
       "number": 11,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Why Economic Systems Matter to YOU",
+        "headerTitle": "Economic Freedom = Prosperity",
         "layout": "balanced-layout",
         "layoutData": {
           "leftPanel": {
-            "title": "Your Financial Opportunities Depend on Your System",
+            "title": "The Data Is Clear",
             "paragraphs": [
-              "In the U.S. mixed economy, your success depends on:"
+              "Countries with more economic freedom consistently achieve:",
+              "\u2022 Higher incomes per person",
+              "\u2022 Longer life expectancy",
+              "\u2022 Better environmental quality",
+              "\u2022 Greater political freedom",
+              "\u2022 More rapid poverty reduction",
+              "<strong>The lesson:</strong> Economic system matters more than natural resources. Singapore (no resources) became rich; Venezuela (massive oil) became poor."
             ],
-            "highlightBox": null
+            "highlightBox": {
+              "icon": "\ud83c\udf0e",
+              "text": "South Korea vs. North Korea: Same people, same culture, same resources\u201419x income difference."
+            }
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
-                "color": "teal"
+                "value": "19x",
+                "label": "South vs. North Korea income gap",
+                "color": "indigo"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "purple"
+                "value": "88%",
+                "label": "Venezuela poverty vs Chile's 8%",
+                "color": "amber"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "green"
+                "value": "3x",
+                "label": "West vs. East Germany (1990)",
+                "color": "indigo"
               }
             ],
             "infoCard": null
           }
         }
-      }
+      },
+      "notes": "## Common Misconceptions\n\n| Misconception | Clarification |\n|---------------|---------------|\n| \"The USA is pure capitalism.\" | The USA is a mixed economy with significant government roles: public education, Social Security, Medicare, environmental regulations, antitrust laws, etc. About 25% of GDP involves government spending. |\n| \"Socialism means everyone is equal and prosperous.\" | While socialism aims for equality, historical command economies (USSR, Cuba, North Korea) produced widespread poverty and shortages. Equality often meant everyone equally poor (except political elites). |\n| \"Capitalism causes all poverty and inequality.\" | While market economies can produce inequality, they've also produced unprecedented poverty reduction globally. Most poverty occurs in countries with weak market institutions and property rights, not strong capitalist systems. |"
     },
     {
       "number": 12,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Understanding the Trade-offs",
-        "layout": "comparison-grid",
+        "headerTitle": "Your Opportunities in a Mixed Economy",
+        "layout": "concept-full",
         "layoutData": {
-          "leftColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
-          },
-          "rightColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
+          "title": "What the U.S. System Means for You",
+          "paragraphs": [
+            "In the U.S. mixed economy, your financial success depends on your decisions\u2014within the framework the system provides:"
+          ],
+          "bulletPoints": [
+            "<strong>Career Freedom:</strong> Choose your profession, negotiate your salary, change jobs freely. No government assignment.",
+            "<strong>Business Ownership:</strong> Start a company for $2,000-$10,000 in filing fees. Keep your profits after taxes.",
+            "<strong>Investment Options:</strong> Stocks, bonds, real estate, retirement accounts\u2014multiple paths to wealth building.",
+            "<strong>Credit Access:</strong> Property rights enable mortgages and business loans. Use assets as collateral to grow.",
+            "<strong>Safety Net:</strong> Unemployment insurance, Social Security, Medicare provide backstop\u2014but wealth building is your responsibility."
+          ],
+          "keyPoint": {
+            "text": "\ud83d\udcbc The system provides opportunity\u2014but YOU must take advantage of it through education, saving, and smart decisions."
           }
         }
       }
@@ -335,71 +370,115 @@
     {
       "number": 13,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Real-World Example: Maya's Career Choices",
+        "headerTitle": "Apply It",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "",
-            "name": "",
-            "paragraphs": []
+            "icon": "\ud83d\udc68\u200d\ud83d\udcbb",
+            "name": "Maya's Career Choices",
+            "paragraphs": [
+              "Maya graduates with a computer science degree. She has job offers from three companies, could freelance, or start her own tech company.",
+              "In a command economy, she would be assigned to work where the government needs programmers."
+            ]
           },
-          "outcomes": []
+          "outcomes": [
+            {
+              "type": "positive",
+              "label": "Mixed Economy Options",
+              "value": "5+ paths available",
+              "detail": "Employment, freelance, startup, grad school"
+            },
+            {
+              "type": "positive",
+              "label": "Earning Potential",
+              "value": "$70K-$500K+",
+              "detail": "Based on choices and performance"
+            },
+            {
+              "type": "negative",
+              "label": "Command Economy",
+              "value": "1 assigned job",
+              "detail": "Fixed salary, no alternatives"
+            }
+          ]
         }
       }
     },
     {
       "number": 14,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Real-World Example: James's Business Journey",
+        "headerTitle": "Apply It",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "",
-            "name": "",
-            "paragraphs": []
+            "icon": "\u2615",
+            "name": "James's Business Journey",
+            "paragraphs": [
+              "James wants to open a coffee shop. He has $25,000 saved and needs $75,000 more.",
+              "In the US, he can get an SBA loan using his property as collateral. In a weak property rights system, no lender would risk it."
+            ]
           },
-          "outcomes": []
+          "outcomes": [
+            {
+              "type": "positive",
+              "label": "US System",
+              "value": "Loan approved",
+              "detail": "Property rights enable collateral"
+            },
+            {
+              "type": "positive",
+              "label": "Business Growth",
+              "value": "Unlimited potential",
+              "detail": "Keep profits, expand, hire employees"
+            },
+            {
+              "type": "negative",
+              "label": "Weak Property Rights",
+              "value": "No loan possible",
+              "detail": "Lenders won't risk without foreclosure rights"
+            }
+          ]
         }
       }
     },
     {
       "number": 15,
       "type": "discussion",
-      "variant": "teal",
+      "variant": "amber",
       "content": {
         "badge": "Discussion",
-        "question": ""
+        "question": "The main trade-off between capitalism and socialism is often described as \"efficiency vs. equality\" or \"freedom vs. security.\"<br><br>Why might different people\u2014or the same person at different life stages\u2014prefer different balances?<br><br>What aspects of each system do you value most?"
       }
     },
     {
       "number": 16,
       "type": "discussion",
-      "variant": "teal",
+      "variant": "indigo",
       "content": {
-        "badge": "Personal Reflection",
-        "question": ""
+        "badge": "Reflection",
+        "question": "Consider the Martinez family story: Carlos built a $600,000 business in 30 years, while his Cuban relatives earn $30-50/month.<br><br>What specific features of the US economic system enabled Carlos's success?<br><br>What financial opportunities are available to you that wouldn't exist in a command economy?"
       }
     },
     {
       "number": 17,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "emerald",
       "content": {
-        "headerTitle": "Check for Understanding",
+        "headerTitle": "Check Your Understanding",
         "layout": "check-grid",
         "layoutData": {
           "questions": [
             {
               "number": 1,
-              "question": "What's the key difference between how capitalism and socialism answer the question \"who decides what to produce\"?"
+              "question": "What's the key difference between how capitalism and socialism answer \"who decides what to produce\"?"
             },
             {
               "number": 2,
-              "question": "Why are property rights essential for entrepreneurship and investment?"
+              "question": "Why are property rights essential for entrepreneurship and investment? Give two examples."
             },
             {
               "number": 3,
@@ -411,39 +490,61 @@
             }
           ]
         }
-      }
+      },
+      "notes": "## Answer Key\n\n**Question 1:** B (Through voluntary exchanges between buyers and sellers—prices coordinate decisions). In capitalism, millions of individual decisions by consumers and producers determine what gets made. In socialism, central planners make these decisions.\n\n**Question 2:** Property rights enable: (1) **Home equity building**—you can own, improve, and sell your home; mortgage possible because lender can foreclose if you default; (2) **Business ownership**—you keep profits, can sell business, use it as loan collateral; (3) **Investment**—buy stocks knowing companies can't arbitrarily seize your ownership shares. Without property rights, lenders can't foreclose on homes or seize business assets if borrowers default, so banks won't lend because they have no way to recover money. This eliminates mortgages and business loans for most people.\n\n**Question 3:** Countries with more economic freedom have higher incomes because: (1) Property rights encourage investment and entrepreneurship; (2) Market prices coordinate resources efficiently; (3) Competition drives innovation and quality; (4) Profit incentives motivate productivity; (5) Economic freedom typically correlates with political freedom and rule of law. The data is clear: South Korea vs. North Korea (19x income gap), West vs. East Germany (3x gap), Chile vs. Venezuela show that systems matter more than culture, geography, or natural resources.\n\n**Question 4:** B (Mixed economy—mostly private ownership but with government providing public goods, regulation, and social programs). The US has private businesses alongside public schools, Social Security, Medicare, FDA regulation, environmental laws, antitrust enforcement, etc. About 25% of GDP involves government spending.\n\n**Additional Context:**\n- **Trade-off:** Freedom vs. security. Capitalism offers more individual choice and wealth potential but less guaranteed security; socialism offers more security but restricts freedom and typically produces less prosperity. Different people prefer different balances based on their risk tolerance, confidence in abilities, and values.\n- Personal opportunities in the US system include: starting businesses, choosing careers, negotiating salaries, investing in stocks/real estate, building wealth through property ownership, accessing credit markets."
     },
     {
       "number": 18,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Key Takeaways",
         "layout": "takeaway-grid",
         "layoutData": {
-          "takeaways": []
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Systems Shape Opportunities",
+              "description": "Economic systems determine your career freedom, business opportunities, and wealth-building potential."
+            },
+            {
+              "number": 2,
+              "title": "Property Rights Enable Wealth",
+              "description": "Without secure property rights, mortgages, business loans, and wealth accumulation become impossible."
+            },
+            {
+              "number": 3,
+              "title": "Markets Coordinate Efficiently",
+              "description": "Prices convey information that central planners can't replicate\u2014coordinating millions of decisions automatically."
+            },
+            {
+              "number": 4,
+              "title": "Mixed Economy = Opportunity + Safety Net",
+              "description": "The US combines market freedom with government programs. Success depends on your decisions within this framework."
+            }
+          ]
         }
       }
     },
     {
       "number": 19,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Skill Builder: Economic Systems Comparison",
+        "headerTitle": "Tomorrow's Challenge",
         "layout": "activity-layout",
         "layoutData": {
           "main": {
-            "icon": "📋",
-            "title": "",
-            "description": ""
+            "icon": "\ud83d\udcca",
+            "title": "Economic Systems Comparison Lab",
+            "description": "You've learned how economic systems work\u2014now analyze real countries and design your ideal system."
           },
           "steps": [
             "Compare market capitalism, command socialism, and mixed economy characteristics",
-            "Evaluate how a software developer's opportunities differ across systems",
-            "Analyze trade-offs: freedom vs. security, efficiency vs. equality, innovation vs. stability",
+            "Analyze how a software developer's opportunities differ across systems",
+            "Evaluate trade-offs: freedom vs. security, efficiency vs. equality",
             "Design your ideal mixed economy using sliders for ownership, taxes, and programs",
-            "Compare your design to the actual U.S. system - what would you change?"
+            "Compare your design to the actual U.S. system\u2014what would you change?"
           ]
         }
       }
@@ -452,9 +553,9 @@
       "number": 20,
       "type": "closing",
       "content": {
-        "tagline": "Economic systems shape your financial future - learn the rules, play to win",
+        "tagline": "Building Financial Futures, One Lesson at a Time",
         "website": "www.pflacademy.co",
-        "copyright": "© 2025 PFL Academy. All rights reserved."
+        "copyright": "\u00a9 2025 PFL Academy. All rights reserved."
       }
     }
   ]

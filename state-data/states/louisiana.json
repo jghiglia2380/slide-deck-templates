@@ -52,6 +52,7 @@
       {"location": "Caddo Parish (Shreveport)", "millage": 11.2, "description": "Northwest Louisiana"}
     ],
     "assessment_percentage": 10,
+    "property_tax_avg": 0.60,
     "homestead_exemption": 75000,
     "property_assessment_frequency": "Quadrennial",
     "assessment_appeal_process": "File appeal with Parish Board of Review within 15 days of public notice.",

@@ -1,9 +1,9 @@
 {
   "metadata": {
     "lChapter": "L-42",
-    "title": "Resume Building &Personal Branding",
-    "subtitle": "Your First Introduction to Future Employers in {{STATE_NAME}}",
-    "totalSlides": 18,
+    "title": "Resume Building & Personal Branding",
+    "subtitle": "Your First Introduction to Future Employers",
+    "totalSlides": 20,
     "hasStateVariables": true,
     "stateVariablesUsed": [
       "STATE_NAME"
@@ -14,23 +14,25 @@
       "number": 1,
       "type": "title",
       "content": {
-        "title": "Resume Building &Personal Branding",
+        "title": "Resume Building & Personal Branding",
         "titleSize": "large",
-        "subtitle": "Your First Introduction to Future Employers in {{STATE_NAME}}"
+        "subtitle": "Your First Introduction to Future Employers"
       }
     },
     {
       "number": 2,
       "type": "hook",
       "content": {
-        "label": "Essential Question in {{STATE_NAME}}",
-        "question": "How can you make a <em>memorable first impression</em><br>when an employer spends only <em>6-7 seconds</em><br>reviewing your resume? in {{STATE_NAME}}"
-      }
+        "label": "The Challenge",
+        "question": "How can you make a <em>memorable first impression</em><br>when an employer spends only <em>6-7 seconds</em><br>reviewing your resume?"
+      },
+      "headerColor": "amber",
+      "speakerNotes": "Read Carlos's resume transformation story aloud or have students read silently. Discussion prompt: \"What do you think employers look for in the first 30 seconds of reviewing a resume?\" Preview how specific, quantified achievements make a dramatic difference."
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
@@ -63,19 +65,19 @@
     {
       "number": 4,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "Resume in {{STATE_NAME}}",
+              "term": "Resume",
               "definition": "A document summarizing your education, work experience, skills, and achievements for potential employers.",
               "example": "Your personal marketing document—designed to get you an interview"
             },
             {
-              "term": "Personal Brand in {{STATE_NAME}}",
+              "term": "Personal Brand",
               "definition": "The unique combination of skills, experiences, and personality that defines your professional reputation.",
               "example": "\"The data analyst who makes complex numbers tell simple stories\""
             }
@@ -86,19 +88,19 @@
     {
       "number": 5,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "Action Verbs in {{STATE_NAME}}",
+              "term": "Action Verbs",
               "definition": "Strong, descriptive verbs that demonstrate accomplishments and responsibilities on a resume.",
               "example": "Led, Managed, Developed, Increased, Created, Implemented, Analyzed"
             },
             {
-              "term": "Quantifiable Achievements in {{STATE_NAME}}",
+              "term": "Quantifiable Achievements",
               "definition": "Accomplishments expressed with specific numbers, percentages, or measurable results.",
               "example": "\"Increased social media engagement by 45% over six months\""
             }
@@ -109,7 +111,7 @@
     {
       "number": 6,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "The Purpose of a Resume",
         "layout": "balanced-layout",
@@ -123,26 +125,26 @@
               "<strong>Get you an interview</strong> where you can elaborate on your qualifications"
             ],
             "highlightBox": {
-              "icon": "\ud83d",
-              "text": "\udca1 A resume is your personal marketing document—its job is to sell you!"
+              "icon": "💡",
+              "text": "A resume is your personal marketing document—its job is to sell you!"
             }
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "6-7 in {{STATE_NAME}}",
-                "label": "Seconds average resume review in {{STATE_NAME}}",
+                "value": "6-7 Sec",
+                "label": "Average resume review time",
                 "color": "rose"
               },
               {
-                "value": "250 in {{STATE_NAME}}",
-                "label": "Average applications per job in {{STATE_NAME}}",
+                "value": "250+",
+                "label": "Average applications per job",
                 "color": "purple"
               },
               {
-                "value": "75% in {{STATE_NAME}}",
-                "label": "Resumes filtered by ATS in {{STATE_NAME}}",
-                "color": "green"
+                "value": "75%",
+                "label": "Resumes filtered by ATS systems",
+                "color": "amber"
               }
             ],
             "infoCard": null
@@ -153,119 +155,89 @@
     {
       "number": 7,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Essential Resume Components",
-        "layout": "generic",
+        "layout": "concept-full",
         "layoutData": {
-          "paragraphs": [],
-          "lists": [
-            [
-              "Full name (slightly larger)",
-              "Phone number",
-              "Professional email",
-              "Location (city, state)",
-              "LinkedIn profile (optional)"
-            ],
-            [
-              "2-4 sentence overview",
-              "Tailored to the position",
-              "Highlights key qualifications",
-              "Your unique value proposition"
-            ],
-            [
-              "Institution and location",
-              "Degree and major/minor",
-              "Graduation date",
-              "GPA (if 3.0+)",
-              "Relevant coursework"
-            ],
-            [
-              "Company, location, dates",
-              "Job title",
-              "3-5 bullet points",
-              "Action verbs first",
-              "Quantified results"
-            ],
-            [
-              "Technical skills",
-              "Software proficiency",
-              "Language abilities",
-              "Certifications"
-            ],
-            [
-              "Volunteer experience",
-              "Leadership positions",
-              "Projects",
-              "Awards/honors"
-            ]
-          ]
+          "title": "Six Critical Sections",
+          "paragraphs": [
+            "Every effective resume includes these key components:"
+          ],
+          "bulletPoints": [
+            "<strong>📋 Contact Information:</strong> Full name, phone, professional email, location, LinkedIn",
+            "<strong>📝 Professional Summary:</strong> 2-4 sentence overview tailored to the position",
+            "<strong>🎓 Education:</strong> Institution, degree, major, graduation date, GPA if 3.0+",
+            "<strong>💼 Work Experience:</strong> Company, location, dates, title, 3-5 quantified bullet points",
+            "<strong>⚙️ Skills:</strong> Technical skills, software proficiency, certifications",
+            "<strong>🏆 Additional:</strong> Volunteer work, leadership, projects, awards"
+          ],
+          "keyPoint": "💡 Order these sections strategically—put your strongest qualifications near the top where employers look first."
         }
       }
     },
     {
       "number": 8,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Power Up with Action Verbs",
-        "layout": "generic",
+        "layout": "comparison-grid",
         "layoutData": {
-          "paragraphs": [],
-          "lists": [
-            [
-              "Led",
-              "Managed",
-              "Coordinated",
-              "Supervised",
-              "Directed"
-            ],
-            [
-              "Presented",
-              "Negotiated",
-              "Persuaded",
-              "Authored",
-              "Collaborated"
-            ],
-            [
-              "Analyzed",
-              "Evaluated",
-              "Researched",
-              "Assessed",
-              "Identified"
-            ],
-            [
-              "Achieved",
-              "Improved",
-              "Increased",
-              "Reduced",
-              "Generated"
+          "leftColumn": {
+            "icon": "👥",
+            "title": "Leadership & Communication",
+            "items": [
+              "Led, Managed, Coordinated",
+              "Supervised, Directed",
+              "Presented, Negotiated",
+              "Persuaded, Authored",
+              "Collaborated, Facilitated"
             ]
-          ]
+          },
+          "rightColumn": {
+            "icon": "📊",
+            "title": "Analysis & Achievement",
+            "items": [
+              "Analyzed, Evaluated, Researched",
+              "Assessed, Identified",
+              "Achieved, Improved",
+              "Increased, Reduced",
+              "Generated, Streamlined"
+            ]
+          }
         }
       }
     },
     {
       "number": 9,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Quantify Your Achievements",
-        "layout": "balanced-layout",
+        "layout": "comparison-grid",
         "layoutData": {
-          "leftPanel": {
-            "title": "❌ Weak (Vague)",
-            "paragraphs": [
+          "leftColumn": {
+            "icon": "❌",
+            "title": "Weak (Vague)",
+            "items": [
               "\"Managed social media accounts\"",
               "\"Responsible for event budgets\"",
               "\"Helped train new employees\"",
-              "\"Improved customer satisfaction\""
-            ],
-            "highlightBox": null
+              "\"Improved customer satisfaction\"",
+              "\"Worked on team projects\""
+            ]
           },
-          "rightPanel": {
-            "stats": [],
-            "infoCard": null
+          "rightColumn": {
+            "icon": "✅",
+            "title": "Strong (Quantified)",
+            "items": [
+              "\"Increased Instagram followers by 45% (2,000→2,900) in 6 months\"",
+              "\"Managed $15,000 event budget, came in 8% under budget\"",
+              "\"Trained 12 new employees, reducing onboarding time by 20%\"",
+              "\"Boosted customer satisfaction scores from 3.2 to 4.1 out of 5\"",
+              "\"Led 5-person team to complete project 2 weeks ahead of deadline\""
+            ]
           }
         }
       }
@@ -273,39 +245,26 @@
     {
       "number": 10,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Resume Best Practices",
-        "layout": "generic",
+        "layout": "concept-full",
         "layoutData": {
+          "title": "Three Keys to Resume Success",
           "paragraphs": [],
-          "lists": [
-            [
-              "One page for entry-level",
-              "Use bullet points, not paragraphs",
-              "Include only relevant information",
-              "Quality over quantity"
-            ],
-            [
-              "Same font style and size",
-              "Consistent spacing/alignment",
-              "Use bold/italics sparingly",
-              "Easy to scan quickly"
-            ],
-            [
-              "Research the job description",
-              "Highlight relevant skills",
-              "Mirror key terms",
-              "Adjust professional summary"
-            ]
-          ]
+          "bulletPoints": [
+            "<strong>Keep It Concise:</strong> One page for entry-level positions, use bullet points (not paragraphs), include only relevant information—quality over quantity",
+            "<strong>Consistent Formatting:</strong> Same font style and size throughout, consistent spacing and alignment, use bold/italics sparingly, make it easy to scan quickly",
+            "<strong>Tailor for Each Job:</strong> Research the job description carefully, highlight relevant skills that match, mirror key terms from posting, adjust professional summary to align with role"
+          ],
+          "keyPoint": "💡 Applicant Tracking Systems (ATS) scan for keywords—use exact terms from job descriptions to get past automated filters."
         }
       }
     },
     {
       "number": 11,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Introduction to Personal Branding",
         "layout": "balanced-layout",
@@ -319,15 +278,15 @@
               "<strong>Attract Opportunities:</strong> Draw positions aligned with your goals"
             ],
             "highlightBox": {
-              "icon": "\ud83d",
-              "text": "\udca1 Your personal brand is how you present yourself professionally to the world—it's your reputation."
+              "icon": "💡",
+              "text": "Your personal brand is how you present yourself professionally to the world—it's your reputation."
             }
           },
           "rightPanel": {
             "stats": [],
             "infoCard": {
               "title": "Key Elements of Your Brand:",
-              "color": "green",
+              "color": "teal",
               "items": [
                 "Value Proposition: What unique combination do you offer?",
                 "Target Audience: Who needs to know about you?",
@@ -337,65 +296,73 @@
             }
           }
         }
-      }
+      },
+      "speakerNotes": "COMMON MISCONCEPTIONS:\n• \"\"I don't have enough experience for a resume.\"\" → Everyone has experiences to include—school projects, volunteer work, extracurriculars, and even household responsibilities demonstrate transferable skills.\n• \"\"Longer resumes look more impressive.\"\" → Entry-level resumes should typically be one page. Quality and relevance matter more than quantity. Hiring managers often spend only 6-7 seconds on an initial resume scan.\n• \"\"Personal branding is just for social media influencers.\"\" → Everyone has a personal brand—it's how you present yourself professionally. Even without a large following, your professional reputation matters for career opportunities."
     },
     {
       "number": 12,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Building Your Personal Brand",
         "layout": "concept-full",
         "layoutData": {
           "title": "Four Steps to Develop Your Brand",
-          "paragraphs": [],
-          "bulletPoints": [
-            "<strong>1. Self-Assessment</strong><br>What are your core strengths? What makes you different? What are your professional values?",
-            "<strong>2. Brand Statement</strong><br>Create a brief statement capturing your professional identity—like an elevator pitch",
-            "<strong>3. Visual Identity</strong><br>Professional photo, consistent colors/fonts, clean professional email address",
-            "<strong>4. Content Strategy</strong><br>Topics you'll discuss, expertise you'll demonstrate, tone and style"
+          "paragraphs": [
+            "Creating a strong personal brand takes thoughtful self-reflection and strategic planning:"
           ],
-          "keyPoint": {
-            "text": "📌 Example Brand Statement: \"I'm a business analytics student with strong data visualization skills and experience in retail market research. I combine technical expertise with creative problem-solving to help organizations translate data into actionable strategies.\""
-          }
+          "bulletPoints": [
+            "<strong>1. Self-Assessment:</strong> What are your core strengths? What makes you different? What are your professional values?",
+            "<strong>2. Brand Statement:</strong> Create a brief statement capturing your professional identity—like an elevator pitch",
+            "<strong>3. Visual Identity:</strong> Professional photo, consistent colors/fonts, clean professional email address",
+            "<strong>4. Content Strategy:</strong> Topics you'll discuss, expertise you'll demonstrate, tone and style"
+          ],
+          "keyPoint": "📌 Example Brand Statement: \"I'm a business analytics student with strong data visualization skills and experience in retail market research. I combine technical expertise with creative problem-solving to help organizations translate data into actionable strategies.\""
         }
       }
     },
     {
       "number": 13,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Real-World Example",
+        "headerTitle": "Apply It",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "💻 in {{STATE_NAME}}",
-            "name": "Carlos: Resume Transformation in {{STATE_NAME}}",
+            "icon": "💻",
+            "name": "Carlos: Resume Transformation",
             "paragraphs": [
               "Carlos was applying for programming internships but wasn't getting interview calls despite having relevant coursework and projects.",
-              "<strong>Before:</strong> Listed coursework without practical applications, used generic descriptions like \"Worked on database project,\" had a vague objective statement.",
-              "<strong>After:</strong> Added specific programming languages and tools, transformed descriptions: <span class=\"highlight-text\">\"Developed a database application that reduced data retrieval time by 40%\"</span>, created a targeted professional summary."
+              "",
+              "<strong>Before:</strong> Listed coursework without practical applications, used generic descriptions like \"Worked on database project,\" had a vague objective statement: \"Seeking an internship to gain experience.\"",
+              "",
+              "<strong>After Transformation:</strong>",
+              "• Added specific programming languages and tools to skills section",
+              "• Transformed descriptions: \"Developed a Python-based database application that reduced data retrieval time by 40% using optimized SQL queries\"",
+              "• Created a targeted professional summary: \"Computer Science student with expertise in Python, SQL, and database optimization. Proven ability to develop efficient applications that solve real-world problems.\"",
+              "",
+              "The result: Carlos's applications started generating interview requests."
             ]
           },
           "outcomes": [
             {
               "type": "before",
-              "label": "Before Changes in {{STATE_NAME}}",
-              "value": "0/12 in {{STATE_NAME}}",
-              "detail": "Interview requests in {{STATE_NAME}}"
+              "label": "Before Changes",
+              "value": "0/12",
+              "detail": "Interview requests from applications"
             },
             {
               "type": "after",
-              "label": "After Changes in {{STATE_NAME}}",
-              "value": "4/7 in {{STATE_NAME}}",
-              "detail": "Interview requests in {{STATE_NAME}}"
+              "label": "After Changes",
+              "value": "4/7",
+              "detail": "Interview requests from applications"
             },
             {
               "type": "after",
-              "label": "Key Change in {{STATE_NAME}}",
-              "value": "Quantified Results in {{STATE_NAME}}",
-              "detail": "+ Targeted Summary in {{STATE_NAME}}"
+              "label": "Key Changes",
+              "value": "Quantified Results",
+              "detail": "Targeted summary + specific skills"
             }
           ]
         }
@@ -404,39 +371,44 @@
     {
       "number": 14,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Real-World Example",
+        "headerTitle": "Apply It",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "🎨 in {{STATE_NAME}}",
-            "name": "Maya: Building a Personal Brand in {{STATE_NAME}}",
+            "icon": "🎨",
+            "name": "Maya: Building a Personal Brand",
             "paragraphs": [
-              "Maya wanted to establish herself in graphic design but was competing with many other design graduates.",
-              "<strong>Brand Positioning:</strong> Identified her niche as <span class=\"highlight-text\">\"sustainable design specialist who transforms complex information into clear visual narratives.\"</span>",
-              "<strong>Cohesive Identity:</strong> Developed a personal logo, used consistent green/blue color palette across resume, portfolio, and social media. Even used recycled materials for printed portfolio.",
-              "<strong>Content Strategy:</strong> Shared case studies emphasizing environmental impact, posted design tips on sustainable practices."
+              "Maya wanted to establish herself in graphic design but was competing with many other design graduates in her market.",
+              "",
+              "<strong>Brand Positioning:</strong> After self-assessment, she identified her niche as \"sustainable design specialist who transforms complex information into clear visual narratives.\"",
+              "",
+              "<strong>Cohesive Identity:</strong> Developed a personal logo, used consistent green/blue color palette across her resume, portfolio website, and social media profiles. She even used recycled materials for her printed portfolio.",
+              "",
+              "<strong>Content Strategy:</strong> Shared case studies emphasizing environmental impact of design choices, posted design tips on sustainable practices, wrote about eco-friendly design trends.",
+              "",
+              "Her clear brand identity made her memorable—the hiring manager later said Maya's \"clear brand made her memorable among dozens of qualified applicants.\""
             ]
           },
           "outcomes": [
             {
-              "type": "after",
-              "label": "Tagline Created in {{STATE_NAME}}",
-              "value": "\"Designing clarity with purpose\" in {{STATE_NAME}}",
-              "detail": ""
+              "type": "before",
+              "label": "Brand Tagline",
+              "value": "\"Designing clarity with purpose\"",
+              "detail": "Memorable positioning statement"
             },
             {
               "type": "after",
-              "label": "Result in {{STATE_NAME}}",
-              "value": "Job Secured in {{STATE_NAME}}",
-              "detail": "At eco-conscious company in {{STATE_NAME}}"
+              "label": "Result",
+              "value": "Job Secured",
+              "detail": "At eco-conscious design firm"
             },
             {
               "type": "after",
-              "label": "Hiring Manager Said in {{STATE_NAME}}",
-              "value": "\"Clear brand made her memorable among dozens\" in {{STATE_NAME}}",
-              "detail": ""
+              "label": "Hiring Manager Feedback",
+              "value": "\"Clear brand\"",
+              "detail": "Made her memorable among dozens"
             }
           ]
         }
@@ -445,16 +417,55 @@
     {
       "number": 15,
       "type": "discussion",
-      "variant": "teal",
+      "variant": "amber",
       "content": {
-        "badge": "Discussion in {{STATE_NAME}}",
-        "question": "What unique combination of skills, experiences, and personal qualities might set YOU apart in your field of interest?<br><br>How could you develop a personal brand that authentically represents who you are while appealing to employers? in {{STATE_NAME}}"
+        "badge": "Discussion",
+        "question": "What unique combination of skills, experiences, and personal qualities might set YOU apart in your field of interest?<br><br>How could you develop a personal brand that authentically represents who you are while appealing to employers?"
       }
     },
     {
       "number": 16,
+      "type": "discussion",
+      "variant": "indigo",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "Think about a job or internship you'd like to apply for.<br><br>What are three achievements or experiences you could quantify on your resume?<br>What action verbs would best describe what you did?"
+      }
+    },
+    {
+      "number": 17,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "emerald",
+      "content": {
+        "headerTitle": "Check Your Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What are the six essential components of an effective resume?"
+            },
+            {
+              "number": 2,
+              "question": "Explain why quantifying achievements is more effective than vague descriptions. Provide an example."
+            },
+            {
+              "number": 3,
+              "question": "What does it mean to \"tailor\" a resume for a specific job, and why is this important?"
+            },
+            {
+              "number": 4,
+              "question": "What are the four key elements of a personal brand, and how do they work together?"
+            }
+          ]
+        }
+      },
+      "speakerNotes": "ASSESSMENT ANSWER KEY:\n1. C (Increased quarterly sales by 23% through targeted email campaigns)\n2. B (To highlight the skills and experiences most relevant to each specific position)\n3. \"Managed a $5,000 budget\" is stronger because it: (1) Uses an action verb (Managed), (2) Includes a specific quantifiable amount ($5,000), (3) Demonstrates responsibility level, and (4) Is professional and concise rather than vague.\n4. Key elements include: (1) Unique value proposition/what makes you different, (2) Consistency across platforms, (3) Authenticity reflecting genuine strengths, (4) Clear target audience. Accept any two.\n5. Responses will vary. Look for: Strong action verb at the start, specific description of the task/responsibility, and ideally a quantifiable result or impact."
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Key Takeaways",
         "layout": "takeaway-grid",
@@ -485,16 +496,16 @@
       }
     },
     {
-      "number": 17,
+      "number": 19,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Student Activity",
+        "headerTitle": "Tomorrow's Challenge",
         "layout": "activity-layout",
         "layoutData": {
           "main": {
-            "icon": "\ud83d",
-            "title": "\udcc4 Resume Builder",
+            "icon": "📄",
+            "title": "Resume Builder",
             "description": "Use the Resume Builder skill builder to create your own professional resume that highlights your unique qualifications and experiences. The tool will guide you through each section with tips and action verb suggestions to help you craft powerful bullet points."
           },
           "steps": [
@@ -508,12 +519,12 @@
       }
     },
     {
-      "number": 18,
+      "number": 20,
       "type": "closing",
       "content": {
-        "tagline": "Building Financial Futures, One Lesson at a Time in {{STATE_NAME}}",
-        "website": "www.pflacademy.co in {{STATE_NAME}}",
-        "copyright": "© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+        "tagline": "\"Your resume opens doors—your skills keep them open\"",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
       }
     }
   ]

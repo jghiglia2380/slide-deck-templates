@@ -1,7 +1,7 @@
 {
   "metadata": {
     "lChapter": "L-67",
-    "title": "Investment Technology &Behavioral Investing",
+    "title": "Investment Technology & Behavioral Investing",
     "subtitle": "Choosing the Right Platform and Mastering Your Psychology",
     "totalSlides": 20,
     "hasStateVariables": false,
@@ -12,7 +12,7 @@
       "number": 1,
       "type": "title",
       "content": {
-        "title": "Investment Technology &Behavioral Investing",
+        "title": "Investment Technology & Behavioral Investing",
         "titleSize": "large",
         "subtitle": "Choosing the Right Platform and Mastering Your Psychology"
       }
@@ -21,14 +21,16 @@
       "number": 2,
       "type": "hook",
       "content": {
-        "label": "Essential Question",
+        "label": "The Challenge",
         "question": "You have $5,000 to invest. The market drops <em>15%</em> in two weeks.<br>Your portfolio is now worth <em>$4,250</em>.<br>What do you do?"
-      }
+      },
+      "headerColor": "amber",
+      "notes": "DISCUSSION PROMPTS:\nTHE CHALLENGE (5 min):\nâ€¢ Read Marcus's pandemic panic storyâ€”emphasize his pre-written rule saved him.\nâ€¢ Discussion: \"How did it feel to keep investing when everything was crashing?\"\nâ€¢ Key insight: The rule was written BEFORE the crisis, not during.\n"
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
@@ -61,7 +63,7 @@
     {
       "number": 4,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Key Terms: Technology",
         "layout": "vocab-container",
@@ -84,7 +86,7 @@
     {
       "number": 5,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Key Terms: Behavioral Biases",
         "layout": "vocab-container",
@@ -107,7 +109,7 @@
     {
       "number": 6,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Three Types of Investment Platforms",
         "layout": "comparison-grid",
@@ -128,7 +130,7 @@
     {
       "number": 7,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Platform Costs: What You Actually Pay",
         "layout": "balanced-layout",
@@ -171,7 +173,7 @@
     {
       "number": 8,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "The Four Wealth-Destroying Biases",
         "layout": "generic",
@@ -189,7 +191,7 @@
     {
       "number": 9,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Why Behavioral Biases Cost You Real Money",
         "layout": "balanced-layout",
@@ -204,8 +206,8 @@
               "This gap comes almost entirely from buying high (after markets rise) and selling low (after markets fall)â€”exactly what biases cause."
             ],
             "highlightBox": {
-              "icon": "\ud83d",
-              "text": "\udca1 Understanding YOUR biases can recover those lost percentage points. Psychology matters more than platform choice!"
+              "icon": "í ½",
+              "text": "í²¡ Understanding YOUR biases can recover those lost percentage points. Psychology matters more than platform choice!"
             }
           },
           "rightPanel": {
@@ -237,7 +239,7 @@
     {
       "number": 10,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Build Systems to Counter Your Biases",
         "layout": "concept-full",
@@ -263,7 +265,7 @@
     {
       "number": 11,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Real-World Example",
         "layout": "scenario-layout",
@@ -298,12 +300,13 @@
             }
           ]
         }
-      }
+      },
+      "notes": "COMMON MISCONCEPTIONS:\n\n1. \"Smart people don't have behavioral biases.\"\n   â†’ Biases are hardwired into human psychologyâ€”even Nobel Prize-winning economists exhibit them. Awareness helps but doesn't eliminate biases; systems and rules are required.\n\n2. \"I'll be able to stay calm during a crash.\"\n   â†’ Everyone thinks this until they experience 30%+ losses. Pre-written rules and automation are essential because you CAN'T trust your future panicked self.\n\n3. \"Robo-advisors are only for beginners.\"\n   â†’ Many sophisticated investors use robo-advisors specifically for behavioral guardrails. Automation prevents even experienced investors from making emotional mistakes.\n\n"
     },
     {
       "number": 12,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Real-World Example",
         "layout": "scenario-layout",
@@ -343,7 +346,7 @@
     {
       "number": 13,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Real-World Example",
         "layout": "scenario-layout",
@@ -401,9 +404,9 @@
     {
       "number": 16,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Check for Understanding",
+        "headerTitle": "Check Your Understanding",
         "layout": "check-grid",
         "layoutData": {
           "questions": [
@@ -430,7 +433,7 @@
     {
       "number": 17,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "emerald",
       "content": {
         "headerTitle": "Key Takeaways",
         "layout": "takeaway-grid",
@@ -458,19 +461,20 @@
             }
           ]
         }
-      }
+      },
+      "notes": "ANSWER KEY:\n\n1. B (Loss aversion)\n\n2. Recency bias causes buying after rallies (high) and selling after crashes (low). Loss aversion causes panic selling during downturns. Herd mentality amplifies both behaviors. Result: systematically buying high, selling low.\n\n4. Robo-advisors automate rebalancing and remove the \"sell\" button during panic. They make it harder to act on emotional impulses. Automation creates friction that prevents rash decisions.\n\n"
     },
     {
       "number": 18,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Student Activity",
         "layout": "activity-layout",
         "layoutData": {
           "main": {
-            "icon": "\ud83d",
-            "title": "\udcca Investment Platform Evaluator",
+            "icon": "í ½",
+            "title": "í³Š Investment Platform Evaluator",
             "description": "Compare investment platforms for different investor profiles. See how costs, features, and suitability change based on account size, experience level, and investing interest. Discover patterns: When do robo-advisor fees become worthwhile? How do subscription apps hurt small accounts?"
           },
           "steps": [
@@ -486,7 +490,7 @@
     {
       "number": 19,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Coming Tomorrow: Learning Lab",
         "layout": "concept-full",

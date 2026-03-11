@@ -2,7 +2,7 @@
   "metadata": {
     "lChapter": "L-23",
     "title": "Understanding Credit Scores",
-    "subtitle": "Building Your Financial Reputation in {{STATE_NAME}}",
+    "subtitle": "Building Your Financial Reputation",
     "totalSlides": 20,
     "hasStateVariables": true,
     "stateVariablesUsed": [
@@ -16,21 +16,23 @@
       "content": {
         "title": "Understanding Credit Scores",
         "titleSize": "large",
-        "subtitle": "Building Your Financial Reputation in {{STATE_NAME}}"
+        "subtitle": "Building Your Financial Reputation"
       }
     },
     {
       "number": 2,
       "type": "hook",
       "content": {
-        "label": "Essential Question in {{STATE_NAME}}",
-        "question": "What <em>three-digit number</em> could saveâ€”or costâ€”you <em>thousands of dollars</em> over your lifetime? in {{STATE_NAME}}"
-      }
+        "label": "The Challenge",
+        "question": "What <em>three-digit number</em> could saveâ€”or costâ€”you <em>thousands of dollars</em> over your lifetime?"
+      },
+      "headerColor": "amber",
+      "notes": "DISCUSSION PROMPTS:\nTHE CHALLENGE (5 min):\nâ€¢ Read Jason's scenario aloudâ€”emphasize the unintended consequences.\nâ€¢ Discussion: \"What do you know about credit scores? Has anyone checked theirs?\"\n"
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
@@ -63,19 +65,19 @@
     {
       "number": 4,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "Credit Score in {{STATE_NAME}}",
+              "term": "Credit Score",
               "definition": "A numerical representation of your creditworthiness, typically ranging from 300 to 850, used by lenders to assess risk.",
               "example": "300-579: Poor â€¢ 580-669: Fair â€¢ 670-739: Good â€¢ 740-799: Very Good â€¢ 800-850: Excellent"
             },
             {
-              "term": "FICO Score in {{STATE_NAME}}",
+              "term": "FICO Score",
               "definition": "The most widely used credit scoring model in the United States, created by the Fair Isaac Corporation and used by 90% of lenders.",
               "example": "Lenders use FICO to determine loan approval, interest rates, and credit limits for mortgages, auto loans, and credit cards."
             }
@@ -86,19 +88,19 @@
     {
       "number": 5,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "Credit Report in {{STATE_NAME}}",
+              "term": "Credit Report",
               "definition": "A detailed record of your credit history, including all borrowing habits, payment history, and current debt levels.",
               "example": "Equifax, Experian, and TransUnion each maintain your credit report. Free annual access at AnnualCreditReport.com"
             },
             {
-              "term": "Credit Utilization in {{STATE_NAME}}",
+              "term": "Credit Utilization",
               "definition": "The percentage of your available credit that you're currently using. Lower is betterâ€”experts recommend staying under 30%.",
               "example": "$3,000 credit limit with $900 balance = 30% utilization. Keep it below $900 for optimal score impact."
             }
@@ -109,7 +111,7 @@
     {
       "number": 6,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "The FICO Score Formula",
         "layout": "balanced-layout",
@@ -125,13 +127,13 @@
           "rightPanel": {
             "stats": [
               {
-                "value": "65% in {{STATE_NAME}}",
-                "label": "From Payment + Utilization in {{STATE_NAME}}",
+                "value": "65%",
+                "label": "From Payment + Utilization",
                 "color": "teal"
               },
               {
-                "value": "35% in {{STATE_NAME}}",
-                "label": "From Other Three Factors in {{STATE_NAME}}",
+                "value": "35%",
+                "label": "From Other Three Factors",
                 "color": "purple"
               }
             ],
@@ -151,7 +153,7 @@
     {
       "number": 7,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Hard vs. Soft Credit Inquiries",
         "layout": "comparison-grid",
@@ -186,7 +188,7 @@
     {
       "number": 8,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Credit Scores Affect Everything",
         "layout": "balanced-layout",
@@ -200,20 +202,20 @@
               "<strong>Insurance:</strong> Many insurers use credit-based scores to determine your premiums for auto and home insurance."
             ],
             "highlightBox": {
-              "icon": "\ud83d",
-              "text": "\udca1 Your credit score is your financial reputationâ€”it follows you everywhere."
+              "icon": "í ½",
+              "text": "í²¡ Your credit score is your financial reputationâ€”it follows you everywhere."
             }
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "90% in {{STATE_NAME}}",
-                "label": "Landlords Check Credit in {{STATE_NAME}}",
+                "value": "90%",
+                "label": "Landlords Check Credit",
                 "color": "teal"
               },
               {
-                "value": "47% in {{STATE_NAME}}",
-                "label": "Employers Check Credit in {{STATE_NAME}}",
+                "value": "47%",
+                "label": "Employers Check Credit",
                 "color": "rose"
               }
             ],
@@ -234,7 +236,7 @@
     {
       "number": 9,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "The Real Cost of Credit Scores",
         "layout": "concept-full",
@@ -258,7 +260,7 @@
     {
       "number": 10,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Building Excellent Credit",
         "layout": "balanced-layout",
@@ -279,13 +281,13 @@
           "rightPanel": {
             "stats": [
               {
-                "value": "7 in {{STATE_NAME}}",
-                "label": "Years for Negative Marks to Fall Off in {{STATE_NAME}}",
+                "value": "7",
+                "label": "Years for Negative Marks to Fall Off",
                 "color": "green"
               },
               {
-                "value": "30 in {{STATE_NAME}}",
-                "label": "Days Late = Major Score Drop in {{STATE_NAME}}",
+                "value": "30",
+                "label": "Days Late = Major Score Drop",
                 "color": "teal"
               }
             ],
@@ -306,7 +308,7 @@
     {
       "number": 11,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Why This Matters for Your Future",
         "layout": "concept-full",
@@ -327,12 +329,13 @@
             "text": "ðŸŽ¯ <strong>Building credit is a marathon, not a sprint. Start good habits now and maintain them consistently.</strong>"
           }
         }
-      }
+      },
+      "notes": "COMMON MISCONCEPTIONS:\n\n1. \"Checking my own credit hurts my score.\"\n   â†’ Checking your own credit is a soft inquiry with no impact. Only hard inquiries (applying for credit) affect your score.\n\n2. \"I should close unused credit cards.\"\n   â†’ Closing accounts can hurt your score by shortening credit history and increasing utilization ratio. Keep old accounts open but inactive.\n\n3. \"I need to carry a balance to build credit.\"\n   â†’ You build credit by using your card and paying it off completely. Carrying a balance just costs you interest without extra score benefit.\n\n"
     },
     {
       "number": 12,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Credit in Today's World",
         "layout": "balanced-layout",
@@ -344,20 +347,20 @@
               "You can check your score weekly without any impact (soft inquiry). This helps you:"
             ],
             "highlightBox": {
-              "icon": "\ud83d",
-              "text": "\udcf1 Most major banks and credit card companies offer free score access to customers."
+              "icon": "í ½",
+              "text": "í³± Most major banks and credit card companies offer free score access to customers."
             }
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "1 in 5 in {{STATE_NAME}}",
-                "label": "Credit Reports Have Errors in {{STATE_NAME}}",
+                "value": "1 in 5",
+                "label": "Credit Reports Have Errors",
                 "color": "purple"
               },
               {
-                "value": "$0 in {{STATE_NAME}}",
-                "label": "Cost to Check Own Score in {{STATE_NAME}}",
+                "value": "$0",
+                "label": "Cost to Check Own Score",
                 "color": "teal"
               }
             ],
@@ -378,14 +381,14 @@
     {
       "number": 13,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Real-World Example",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "ðŸ‘¨ in {{STATE_NAME}}",
-            "name": "Jason's Hard Inquiry Mistake in {{STATE_NAME}}",
+            "icon": "ðŸ‘¨",
+            "name": "Jason's Hard Inquiry Mistake",
             "paragraphs": [
               "Jason was shopping for his first credit card. He thought he'd compare offers by <span class=\"highlight-text\">applying for three different cards within one month</span>.",
               "What he didn't realize: Each application created a <strong>hard inquiry</strong> on his credit report. His score dropped 25 pointsâ€”from 680 to 655.",
@@ -395,21 +398,21 @@
           "outcomes": [
             {
               "type": "before",
-              "label": "Before Applications in {{STATE_NAME}}",
-              "value": "680 in {{STATE_NAME}}",
-              "detail": "Good credit range in {{STATE_NAME}}"
+              "label": "Before Applications",
+              "value": "680",
+              "detail": "Good credit range"
             },
             {
               "type": "before",
-              "label": "After 3 Applications in {{STATE_NAME}}",
-              "value": "655 in {{STATE_NAME}}",
-              "detail": "Dropped 25 points in {{STATE_NAME}}"
+              "label": "After 3 Applications",
+              "value": "655",
+              "detail": "Dropped 25 points"
             },
             {
               "type": "after",
-              "label": "Better Approach in {{STATE_NAME}}",
-              "value": "Research First in {{STATE_NAME}}",
-              "detail": "Compare offers before applying in {{STATE_NAME}}"
+              "label": "Better Approach",
+              "value": "Research First",
+              "detail": "Compare offers before applying"
             }
           ]
         }
@@ -418,14 +421,14 @@
     {
       "number": 14,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Real-World Example",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "ðŸ‘© in {{STATE_NAME}}",
-            "name": "Sophia's Credit History Setback in {{STATE_NAME}}",
+            "icon": "ðŸ‘©",
+            "name": "Sophia's Credit History Setback",
             "paragraphs": [
               "Sophia wanted to simplify her finances, so she decided to <span class=\"highlight-text\">close her oldest credit card account</span>â€”one she'd had for 8 years but rarely used.",
               "The unintended consequences:",
@@ -435,21 +438,21 @@
           "outcomes": [
             {
               "type": "before",
-              "label": "Before Closing in {{STATE_NAME}}",
-              "value": "745 in {{STATE_NAME}}",
-              "detail": "Very good credit in {{STATE_NAME}}"
+              "label": "Before Closing",
+              "value": "745",
+              "detail": "Very good credit"
             },
             {
               "type": "before",
-              "label": "After Closing in {{STATE_NAME}}",
-              "value": "705 in {{STATE_NAME}}",
-              "detail": "Lost 40 points in {{STATE_NAME}}"
+              "label": "After Closing",
+              "value": "705",
+              "detail": "Lost 40 points"
             },
             {
               "type": "after",
-              "label": "Lesson Learned in {{STATE_NAME}}",
-              "value": "Keep Old Cards in {{STATE_NAME}}",
-              "detail": "Even if you don't use them often in {{STATE_NAME}}"
+              "label": "Lesson Learned",
+              "value": "Keep Old Cards",
+              "detail": "Even if you don't use them often"
             }
           ]
         }
@@ -460,8 +463,8 @@
       "type": "discussion",
       "variant": "teal",
       "content": {
-        "badge": "Discussion in {{STATE_NAME}}",
-        "question": "What specific credit score factors were most affected in Jason's and Sophia's stories?<br><br>What could each person have done differently to protect their scores? in {{STATE_NAME}}"
+        "badge": "Discussion",
+        "question": "What specific credit score factors were most affected in Jason's and Sophia's stories?<br><br>What could each person have done differently to protect their scores?"
       }
     },
     {
@@ -469,16 +472,16 @@
       "type": "discussion",
       "variant": "purple",
       "content": {
-        "badge": "Personal Reflection in {{STATE_NAME}}",
-        "question": "Which of the five FICO factors do you think would be easiest for you to control and improve?<br><br>Which might be the most challenging, and why? in {{STATE_NAME}}"
+        "badge": "Personal Reflection",
+        "question": "Which of the five FICO factors do you think would be easiest for you to control and improve?<br><br>Which might be the most challenging, and why?"
       }
     },
     {
       "number": 17,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "emerald",
       "content": {
-        "headerTitle": "Check for Understanding",
+        "headerTitle": "Check Your Understanding",
         "layout": "check-grid",
         "layoutData": {
           "questions": [
@@ -500,12 +503,13 @@
             }
           ]
         }
-      }
+      },
+      "notes": "ANSWER KEY:\n\n1. B (Payment history at 35%)\n\n2. High utilization signals to lenders that you may be overextended financially. Below 30% shows responsible credit management and ability to pay.\n\n3. $2,000 Ã— 0.30 = $600 maximum balance\n\n4. Jason should have used pre-qualification tools (soft inquiries) to compare offers without affecting his score. Hard inquiries typically affect scores for 12 months and remain on reports for 2 years.\n\n5. Credit scores affect: rental applications, insurance premiums, utility deposits, cell phone contracts, and some employment decisions. Even without borrowing, credit impacts daily life.\n\n"
     },
     {
       "number": 18,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Key Takeaways",
         "layout": "takeaway-grid",
@@ -538,14 +542,14 @@
     {
       "number": 19,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Student Activity",
         "layout": "activity-layout",
         "layoutData": {
           "main": {
-            "icon": "\ud83d",
-            "title": "\udccb Credit Score Factor Analysis",
+            "icon": "í ½",
+            "title": "í³‹ Credit Score Factor Analysis",
             "description": "In the Skill Builder activity, you'll analyze the five FICO factors and reflect on which you could most easily control as you begin building your credit history. Consider your current situation and future financial goals as you complete this reflection."
           },
           "steps": [
@@ -562,9 +566,9 @@
       "number": 20,
       "type": "closing",
       "content": {
-        "tagline": "Building Financial Futures, One Lesson at a Time in {{STATE_NAME}}",
-        "website": "www.pflacademy.co in {{STATE_NAME}}",
-        "copyright": "Â© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "Â© 2025 PFL Academy. All rights reserved."
       }
     }
   ]

@@ -1,11 +1,596 @@
 {
   "metadata": {
     "lChapter": "L-53",
-    "title": "",
-    "subtitle": "",
-    "totalSlides": 0,
+    "title": "Fiscal and Monetary Policy",
+    "subtitle": "How Government Stabilizes the Economy",
+    "totalSlides": 20,
     "hasStateVariables": false,
     "stateVariablesUsed": []
   },
-  "slides": []
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Fiscal and Monetary Policy",
+        "titleSize": "large",
+        "subtitle": "How Government Stabilizes the Economy"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "The Challenge",
+        "question": "During the 2008 financial crisis, massive government intervention prevented economic collapse, while in 2022, aggressive policy responses to COVID contributed to inflation. Understanding these policies helps you navigate their impact on jobs, homes, and savings.<br><br><strong>What should be done in this situation?</strong>"
+      },
+      "headerColor": "amber",
+      "notes": "**Discussion Prompts:**\n- \"Has anyone in your family been affected by recession or high inflation?\"\n- Connect to students: \"These policies affect your ability to get jobs, buy homes, and save money.\"",
+      "speakerNotes": "Read the 2008/2022 crisis comparison—brings abstract policy into concrete recent history. Discussion: \"Has anyone in your family been affected by recession or high inflation?\" Connect to students: \"These policies affect your ability to get jobs, buy homes, and save money.\""
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Explain",
+              "description": "fiscal policy tools including government spending, taxation, and budget deficits"
+            },
+            {
+              "number": 2,
+              "verb": "Explain",
+              "description": "monetary policy tools including the Federal Reserve, interest rates, and money supply management"
+            },
+            {
+              "number": 3,
+              "verb": "Analyze",
+              "description": "how fiscal and monetary policies affect employment, inflation, and economic growth"
+            },
+            {
+              "number": 4,
+              "verb": "Evaluate",
+              "description": "appropriate policy responses to recessions and inflation"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Fiscal Policy",
+              "definition": "Government's use of spending and taxation to influence the economy",
+              "example": "COVID stimulus checks, infrastructure spending bills"
+            },
+            {
+              "term": "Monetary Policy",
+              "definition": "Federal Reserve managing interest rates and money supply to stabilize the economy",
+              "example": "Fed raising rates to fight inflation in 2022-2024"
+            },
+            {
+              "term": "Federal Funds Rate",
+              "definition": "Interest rate banks charge each other for overnight loans—influences ALL other interest rates",
+              "example": "Currently 5.25-5.50%, affects mortgage and credit card rates"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Budget Deficit",
+              "definition": "When government spends more than it collects in taxes in a given year",
+              "example": "Current federal deficit: ~$2 trillion per year"
+            },
+            {
+              "term": "Expansionary Policy",
+              "definition": "Policies that stimulate economic growth: more spending, lower taxes, lower interest rates",
+              "example": "Used during recessions to create jobs and boost GDP"
+            },
+            {
+              "term": "Contractionary Policy",
+              "definition": "Policies that cool down the economy: less spending, higher taxes, higher interest rates",
+              "example": "Used to fight inflation—Fed raising rates in 2022"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "The Business Cycle",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Economies naturally go through cycles of expansion and contraction",
+          "paragraphs": [
+            "<strong>1. Expansion:</strong> GDP growing, unemployment falling, consumer confidence high",
+            "<strong>2. Peak:</strong> Maximum output, inflation may start rising",
+            "<strong>3. Recession:</strong> GDP shrinking for 2+ quarters, unemployment rising",
+            "<strong>4. Trough:</strong> Lowest point with highest unemployment before recovery begins"
+          ],
+          "bulletPoints": [
+            "Cycles typically last 5-10 years from peak to peak",
+            "Government tries to smooth cycles—stimulate during downturns, cool during booms",
+            "No two cycles are identical in length or severity"
+          ],
+          "keyPoint": "Countercyclical Policy: Act OPPOSITE to the cycle—stimulate during recession, cool during boom to reduce volatility"
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "green",
+      "content": {
+        "headerTitle": "Fiscal Policy: The Tools",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Government Spending (~$6 trillion/year)",
+            "paragraphs": [
+              "<strong>Mandatory (65%):</strong> Social Security, Medicare—required by law",
+              "<strong>Discretionary (30%):</strong> Defense, education, infrastructure—decided annually",
+              "<strong>Interest (5%):</strong> Debt payments on national debt",
+              "",
+              "<strong>Effect:</strong> ↑ Spending → More jobs created → GDP increases"
+            ],
+            "highlightBox": {
+              "icon": "💰",
+              "text": "Government is the single largest spender in the economy"
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$4T",
+                "label": "Federal Tax Revenue Per Year",
+                "color": "teal"
+              },
+              {
+                "value": "$2T",
+                "label": "Annual Budget Deficit",
+                "color": "rose"
+              }
+            ],
+            "infoCard": {
+              "title": "Taxation Breakdown",
+              "color": "amber",
+              "items": [
+                "Income tax: 50% of revenue",
+                "Payroll tax: 36% (Social Security/Medicare)",
+                "Corporate tax: 7%",
+                "",
+                "<strong>Effect:</strong> ↓ Taxes → More disposable income → GDP increases"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "The Multiplier Effect",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Each $1 of government spending generates $1.50-2.00 of total economic activity",
+          "paragraphs": [
+            "<strong>Example: Government spends $100B on infrastructure</strong>",
+            "",
+            "Step 1: Construction workers earn income from road projects",
+            "Step 2: Workers spend paychecks at stores and restaurants",
+            "Step 3: Those businesses hire more workers with increased revenue",
+            "Step 4: New workers spend their income, continuing the cycle",
+            "",
+            "<strong>Total economic impact: $150-200B!</strong>"
+          ],
+          "bulletPoints": [
+            "Multiplier works in reverse too—spending cuts reduce GDP by more than the cut",
+            "Size of multiplier depends on how much people save vs. spend",
+            "Direct spending (roads, schools) has larger multiplier than tax cuts"
+          ],
+          "keyPoint": "Key Question: Why not unlimited spending? Answer: Inflation, growing deficits, and unsustainable debt burden!"
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "rose",
+      "content": {
+        "headerTitle": "Budget Deficit and National Debt",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Current Federal Budget Reality",
+            "paragraphs": [
+              "<strong>Revenue:</strong> $4 trillion",
+              "<strong>Spending:</strong> $6 trillion",
+              "<strong>Annual Deficit:</strong> $2 trillion",
+              "",
+              "<strong>National Debt:</strong> ~$33 trillion",
+              "• Per person: ~$100,000",
+              "• As % of GDP: ~120%",
+              "• Annual interest: ~$1 trillion"
+            ],
+            "highlightBox": {
+              "icon": "⚠️",
+              "text": "Deficit = annual shortfall; Debt = total accumulated deficits over time"
+            }
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "The Debate",
+              "color": "amber",
+              "items": [
+                "<strong>Arguments FOR Deficit:</strong>",
+                "• Necessary during recessions",
+                "• Prevents worse outcomes (depression)",
+                "• Can pay back during boom times",
+                "",
+                "<strong>Arguments AGAINST:</strong>",
+                "• Burdens future generations (you!)",
+                "• Interest crowds out other spending",
+                "• May cause inflation if excessive"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Expansionary vs. Contractionary Fiscal Policy",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "📈",
+            "title": "Expansionary (Used During Recession)",
+            "items": [
+              "<strong>Tools:</strong>",
+              "• Increase government spending",
+              "• Cut taxes (stimulus checks)",
+              "",
+              "<strong>Goal:</strong> Create more jobs, increase GDP",
+              "<strong>Result:</strong> Larger budget deficits",
+              "",
+              "<strong>Example:</strong> 2020 COVID response—$5 trillion in stimulus spending and tax cuts"
+            ]
+          },
+          "rightColumn": {
+            "icon": "📉",
+            "title": "Contractionary (Used During Inflation)",
+            "items": [
+              "<strong>Tools:</strong>",
+              "• Decrease government spending",
+              "• Raise taxes",
+              "",
+              "<strong>Goal:</strong> Reduce inflation, slow economy",
+              "<strong>Result:</strong> Smaller budget deficits",
+              "",
+              "<strong>Reality:</strong> Rarely used—politicians don't like cutting spending or raising taxes!"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "The Federal Reserve",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "What Is the Fed?",
+            "paragraphs": [
+              "<strong>Structure:</strong>",
+              "• Independent central bank (not part of government)",
+              "• Chair: Jerome Powell",
+              "• 12 regional banks + Board of Governors",
+              "",
+              "<strong>Key Feature: Independence</strong>",
+              "• Not controlled by Congress or President",
+              "• Can make unpopular decisions (like raising rates)",
+              "• Protects from political pressure for short-term gains"
+            ],
+            "highlightBox": {
+              "icon": "🏛️",
+              "text": "Fed independence is crucial for credible monetary policy"
+            }
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "Dual Mandate",
+              "color": "amber",
+              "items": [
+                "<strong>1. Maximum Employment</strong>",
+                "Keep unemployment as low as possible",
+                "",
+                "<strong>2. Price Stability</strong>",
+                "Maintain low, stable inflation (~2% target)",
+                "",
+                "<strong>The Challenge:</strong> These goals sometimes conflict! Lowering unemployment can increase inflation, and vice versa."
+              ]
+            }
+          }
+        }
+      },
+      "notes": "## Common Misconceptions\n\n| Misconception | Clarification |\n|--------------|---------------|\n| \"The Fed controls the economy.\" | Fed influences interest rates, which affect spending/borrowing. But Congress controls fiscal policy, and market forces are powerful. No single entity \"controls\" the economy. |\n| \"Low interest rates are always good.\" | Good for borrowers, bad for savers. Low rates can fuel asset bubbles and inflation. The \"right\" rate depends on economic conditions. |\n| \"Stimulus always works.\" | Depends on timing, amount, and economic conditions. Can help in recession but may cause inflation if economy already at capacity. Has time lags. |\n| \"National debt will cause collapse.\" | Debt is a concern but not immediate crisis. US can borrow at low rates. Issue is sustainable growth—if economy grows faster than debt, it's manageable. |",
+      "speakerNotes": "COMMON MISCONCEPTIONS:\n• \"\"The Fed controls the economy.\"\" → Fed influences interest rates, which affect spending/borrowing. But Congress controls fiscal policy, and market forces are powerful. No single entity \"controls\" the economy.\n• \"\"Low interest rates are always good.\"\" → Good for borrowers, bad for savers. Low rates can fuel asset bubbles and inflation. The \"right\" rate depends on economic conditions.\n• \"\"Stimulus always works.\"\" → Depends on timing, amount, and economic conditions. Can help in recession but may cause inflation if economy already at capacity. Has time lags.\n• \"\"National debt will cause collapse.\"\" → Debt is a concern but not immediate crisis. US can borrow at low rates. Issue is sustainable growth—if economy grows faster than debt, it's manageable."
+    },
+    {
+      "number": 12,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": "Should the Federal Reserve be more accountable to elected officials?<br><br>Consider: The Fed makes decisions affecting millions of jobs and everyone's purchasing power, yet is not controlled by Congress or the President. Is this independence essential for good policy, or does it give too much power to unelected officials?"
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "The Federal Funds Rate: Most Important Tool",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Federal Funds Rate = Interest rate banks charge each other for overnight loans",
+          "paragraphs": [
+            "<strong>How It Works:</strong>",
+            "",
+            "Fed sets target rate (currently 5.25-5.50%)",
+            "↓",
+            "This influences ALL other interest rates in the economy",
+            "↓",
+            "🏠 Mortgages | 🚗 Auto Loans | 💳 Credit Cards | 🎓 Student Loans | 🏦 Savings Rates",
+            "↓",
+            "Affects everyone's borrowing, saving, and spending decisions",
+            "↓",
+            "Ultimately affects GDP, employment, and inflation"
+          ],
+          "bulletPoints": [
+            "When Fed raises rates, borrowing becomes more expensive throughout economy",
+            "When Fed lowers rates, borrowing becomes cheaper to stimulate activity",
+            "Changes take 6-18 months to have full effect on economy"
+          ],
+          "keyPoint": "The federal funds rate is the most powerful economic policy tool in existence"
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "green",
+      "content": {
+        "headerTitle": "How Rate Changes Affect the Economy",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "⬇️",
+            "title": "Fed LOWERS Rates (Expansionary)",
+            "items": [
+              "<strong>Immediate Effects:</strong>",
+              "• Borrowing becomes cheaper → More borrowing",
+              "• Saving less attractive → Less saving",
+              "• More spending and investment",
+              "",
+              "<strong>Economic Result:</strong>",
+              "GDP ↑, Unemployment ↓, Inflation ↑",
+              "",
+              "<strong>Winners:</strong> Borrowers, job seekers, homebuyers",
+              "<strong>Losers:</strong> Savers (earn less interest)"
+            ]
+          },
+          "rightColumn": {
+            "icon": "⬆️",
+            "title": "Fed RAISES Rates (Contractionary)",
+            "items": [
+              "<strong>Immediate Effects:</strong>",
+              "• Borrowing becomes expensive → Less borrowing",
+              "• Saving more attractive → More saving",
+              "• Less spending and investment",
+              "",
+              "<strong>Economic Result:</strong>",
+              "GDP ↓, Unemployment ↑, Inflation ↓",
+              "",
+              "<strong>Winners:</strong> Savers, inflation fighters",
+              "<strong>Losers:</strong> Borrowers, homebuyers, job seekers"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "2008 Crisis: Did government do too much, too little, or just right?<br><br>Think about: Were bank bailouts fair to taxpayers? Did massive spending and rate cuts prevent a depression? Did we create 'moral hazard' by bailing out bad actors? What should government have done differently?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Policy Responses to Economic Conditions",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "📉",
+            "title": "Response to Recession",
+            "items": [
+              "<strong>Fiscal Policy:</strong>",
+              "• ↑ Government spending (infrastructure, aid)",
+              "• ↓ Taxes (stimulus checks, tax cuts)",
+              "• Accept larger budget deficits",
+              "",
+              "<strong>Monetary Policy:</strong>",
+              "• ↓ Federal funds rate (make borrowing cheaper)",
+              "• Quantitative easing if rates already at 0%",
+              "",
+              "<strong>Example:</strong> 2020 COVID—$5T fiscal stimulus + Fed cut rates to 0%"
+            ]
+          },
+          "rightColumn": {
+            "icon": "🔥",
+            "title": "Response to High Inflation",
+            "items": [
+              "<strong>Fiscal Policy:</strong>",
+              "• ↓ Government spending",
+              "• ↑ Taxes to reduce demand",
+              "• (Rarely used—very unpopular!)",
+              "",
+              "<strong>Monetary Policy:</strong>",
+              "• ↑ Federal funds rate (make borrowing expensive)",
+              "• Accept slower growth and higher unemployment",
+              "",
+              "<strong>Example:</strong> 2022-2024—Fed raised rates from 0% to 5.5% to fight inflation"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "emerald",
+      "content": {
+        "headerTitle": "Check Your Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What is the difference between fiscal policy and monetary policy? Who controls each?"
+            },
+            {
+              "number": 2,
+              "question": "Explain how the federal funds rate affects the entire economy. Give three specific examples of rates it influences."
+            },
+            {
+              "number": 3,
+              "question": "If the economy enters a recession, what specific actions should the Federal Reserve and Congress take? Why?"
+            },
+            {
+              "number": 4,
+              "question": "Why is contractionary fiscal policy (cutting spending, raising taxes) rarely used even during high inflation?"
+            }
+          ]
+        }
+      },
+      "notes": "## Answer Key\n\n**1.** C (Interest rates)\n\n**2.** Fed raises rates to fight inflation. High inflation erodes everyone's purchasing power—your $100 buys less each month. The temporary pain of higher borrowing costs prevents the permanent damage of runaway inflation.\n\n**3.** $500 billion × 1.5 multiplier = **$750 billion** total GDP impact.\n\n**4.** Expansionary policy increases aggregate demand. If supply can't keep up (supply chains, labor shortages), prices rise. Money chases same amount of goods = inflation. This is what happened 2021-2022.\n\n**5.** *Should mention: watching Fed announcements, interest rate forecasts, inflation trends. Consider waiting for lower rates, but weigh against home price increases. Understand that timing the market is difficult.*",
+      "speakerNotes": "ASSESSMENT ANSWER KEY:\n1. C (Interest rates)\n2. Fed raises rates to fight inflation. High inflation erodes everyone's purchasing power—your $100 buys less each month. The temporary pain of higher borrowing costs prevents the permanent damage of runaway inflation.\n3. $500 billion × 1.5 multiplier =$750 billiontotal GDP impact.\n4. Expansionary policy increases aggregate demand. If supply can't keep up (supply chains, labor shortages), prices rise. Money chases same amount of goods = inflation. This is what happened 2021-2022.\n5. Should mention: watching Fed announcements, interest rate forecasts, inflation trends. Consider waiting for lower rates, but weigh against home price increases. Understand that timing the market is difficult."
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Business cycles are natural",
+              "description": "Economies go through expansion, peak, recession, and trough—government tries to smooth these cycles"
+            },
+            {
+              "number": 2,
+              "title": "Fiscal policy uses spending and taxes",
+              "description": "Controlled by Congress and President—powerful but slow and politically difficult"
+            },
+            {
+              "number": 3,
+              "title": "Monetary policy uses interest rates",
+              "description": "Controlled by independent Federal Reserve—faster and less political than fiscal policy"
+            },
+            {
+              "number": 4,
+              "title": "Federal funds rate is the key tool",
+              "description": "Influences all other interest rates—affects borrowing, saving, spending, and investment decisions"
+            },
+            {
+              "number": 5,
+              "title": "Expansionary policies stimulate growth",
+              "description": "Used during recessions: increase spending, cut taxes, lower interest rates"
+            },
+            {
+              "number": 6,
+              "title": "Contractionary policies fight inflation",
+              "description": "Cool economy: decrease spending, raise taxes, raise interest rates—politically unpopular"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Skill Builder: Policy Impact Simulator",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "🎮",
+            "title": "Tomorrow's Learning Lab",
+            "description": "Apply your knowledge by simulating Fed Chair decisions and analyzing real policy impacts"
+          },
+          "steps": [
+            "Analyze Federal Reserve meeting minutes and rate decisions",
+            "Evaluate government budget priorities and trade-offs",
+            "Simulate policy responses to different economic scenarios",
+            "Assess how current fiscal and monetary policy affects YOUR personal finances",
+            "Play 'Fed Chair for a Day' and defend your policy decisions"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "\"Understanding the tools government uses to manage the economy\"",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
 }

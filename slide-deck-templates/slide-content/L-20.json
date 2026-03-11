@@ -2,7 +2,7 @@
   "metadata": {
     "lChapter": "L-20",
     "title": "Longevity & Retirement",
-    "subtitle": "Planning for a Longer Financial Future in {{STATE_NAME}}",
+    "subtitle": "Planning for a Longer Financial Future",
     "totalSlides": 20,
     "hasStateVariables": true,
     "stateVariablesUsed": [
@@ -16,21 +16,23 @@
       "content": {
         "title": "Longevity & Retirement",
         "titleSize": "large",
-        "subtitle": "Planning for a Longer Financial Future in {{STATE_NAME}}"
+        "subtitle": "Planning for a Longer Financial Future"
       }
     },
     {
       "number": 2,
       "type": "hook",
       "content": {
-        "label": "Essential Question in {{STATE_NAME}}",
-        "question": "How do you plan financially for a retirement that could last <em>20, 30, or even 40 years</em>? in {{STATE_NAME}}"
-      }
+        "label": "The Challenge",
+        "question": "How do you plan financially for a retirement that could last <em>20, 30, or even 40 years</em>?"
+      },
+      "headerColor": "amber",
+      "notes": "DISCUSSION PROMPTS:\nTHE CHALLENGE (5 min):\n‚Ä¢ Present Morgan vs. Jordan scenario. Ask: \"Who do you think has more at 65?\"\n‚Ä¢ Most students will guess Jordan (who invested 4√ó more). The actual answer surprises them.\n‚Ä¢ This counterintuitive result demonstrates why longevity planning starts NOW.\n"
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
@@ -63,19 +65,19 @@
     {
       "number": 4,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "Life Expectancy in {{STATE_NAME}}",
+              "term": "Life Expectancy",
               "definition": "How long individuals are expected to live, based on statistical averages, family history, and health factors.",
               "example": "A 65-year-old today can expect to live into their mid-80s on average, with many living to 90+"
             },
             {
-              "term": "Longevity Risk in {{STATE_NAME}}",
+              "term": "Longevity Risk",
               "definition": "The risk that individuals will live longer than expected and run out of money during retirement.",
               "example": "Plan for savings to last 25-30+ years while protecting against outliving your money"
             }
@@ -86,19 +88,19 @@
     {
       "number": 5,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "Time Horizon in {{STATE_NAME}}",
+              "term": "Time Horizon",
               "definition": "The number of years until retirement savings are needed; longer horizons allow for more aggressive investing.",
               "example": "A 22-year-old has a 43-year time horizon until age 65 - plenty of time to grow wealth"
             },
             {
-              "term": "Retirement Income Shortfall in {{STATE_NAME}}",
+              "term": "Retirement Income Shortfall",
               "definition": "When retirement savings are insufficient to maintain desired lifestyle; the gap between what you have and what you need.",
               "example": "Start early, save consistently, invest wisely, and adjust plans as circumstances change"
             }
@@ -109,7 +111,7 @@
     {
       "number": 6,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "The Impact of Living Longer",
         "layout": "balanced-layout",
@@ -121,20 +123,20 @@
               "This extended lifespan means retirement savings may need to last <strong>20, 30, or even 40 years</strong>‚Äîfar longer than previous generations planned for."
             ],
             "highlightBox": {
-              "icon": "\ud83d",
-              "text": "\udca1 The traditional 10-15 year retirement has evolved into potentially 20-30+ years, requiring substantially more savings."
+              "icon": "Ì†Ω",
+              "text": "Ì≤° The traditional 10-15 year retirement has evolved into potentially 20-30+ years, requiring substantially more savings."
             }
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "85+ in {{STATE_NAME}}",
-                "label": "Average Life Expectancy at 65 in {{STATE_NAME}}",
+                "value": "85+",
+                "label": "Average Life Expectancy at 65",
                 "color": "teal"
               },
               {
-                "value": "30 yrs in {{STATE_NAME}}",
-                "label": "Potential Retirement Length in {{STATE_NAME}}",
+                "value": "30 yrs",
+                "label": "Potential Retirement Length",
                 "color": "purple"
               }
             ],
@@ -155,7 +157,7 @@
     {
       "number": 7,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "The Power of Starting Early",
         "layout": "comparison-grid",
@@ -173,8 +175,8 @@
             ]
           },
           "rightColumn": {
-            "icon": "\ud83d",
-            "title": "\ude80 Morgan Starts Early",
+            "icon": "Ì†Ω",
+            "title": "Ì∫Ä Morgan Starts Early",
             "items": [
               "Starts at age 22",
               "Invests $2,000/year for 9 years only",
@@ -190,7 +192,7 @@
     {
       "number": 8,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Time Is Your Greatest Asset",
         "layout": "balanced-layout",
@@ -202,20 +204,20 @@
               "Morgan invested only $18,000 but ended up with nearly as much as Jordan who invested $70,000. Why? Because Morgan's money had <strong>more time to compound</strong>."
             ],
             "highlightBox": {
-              "icon": "\ud83c",
-              "text": "\udfaf Starting 9 years earlier with less money nearly matched investing 4x more but starting later. Time beats money!"
+              "icon": "Ì†º",
+              "text": "ÌæØ Starting 9 years earlier with less money nearly matched investing 4x more but starting later. Time beats money!"
             }
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "$18K in {{STATE_NAME}}",
-                "label": "Morgan Invested in {{STATE_NAME}}",
+                "value": "$18K",
+                "label": "Morgan Invested",
                 "color": "green"
               },
               {
-                "value": "$70K in {{STATE_NAME}}",
-                "label": "Jordan Invested in {{STATE_NAME}}",
+                "value": "$70K",
+                "label": "Jordan Invested",
                 "color": "rose"
               }
             ],
@@ -236,7 +238,7 @@
     {
       "number": 9,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Inflation: The Silent Retirement Threat",
         "layout": "concept-full",
@@ -260,7 +262,7 @@
     {
       "number": 10,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Addressing Retirement Income Shortfalls",
         "layout": "balanced-layout",
@@ -275,13 +277,13 @@
           "rightPanel": {
             "stats": [
               {
-                "value": "+2 yrs in {{STATE_NAME}}",
-                "label": "Delayed Retirement Benefits in {{STATE_NAME}}",
+                "value": "+2 yrs",
+                "label": "Delayed Retirement Benefits",
                 "color": "teal"
               },
               {
-                "value": "15%+ in {{STATE_NAME}}",
-                "label": "Target Savings Rate in {{STATE_NAME}}",
+                "value": "15%+",
+                "label": "Target Savings Rate",
                 "color": "purple"
               }
             ],
@@ -302,7 +304,7 @@
     {
       "number": 11,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Why This Matters Now",
         "layout": "concept-full",
@@ -320,12 +322,13 @@
             "<strong>Tax advantages:</strong> Roth IRAs provide tax-free growth over decades"
           ]
         }
-      }
+      },
+      "notes": "COMMON MISCONCEPTIONS:\n\n1. \"I'll only need my retirement savings for 10-15 years.\"\n   ‚Üí A 65-year-old today has a 25%+ chance of living past 90. Plan for 25-30 years of retirement, not 10-15. Underestimating longevity is one of the biggest retirement planning mistakes.\n\n2. \"I can catch up later when I earn more.\"\n   ‚Üí Math doesn't support this. As Morgan vs. Jordan shows, early dollars are worth FAR more than later dollars due to compounding time. You can't \"catch up\" on lost time‚Äîyou can only start now.\n\n3. \"Inflation doesn't matter much for retirement.\"\n   ‚Üí Over 25 years, 3% inflation doubles prices. What costs $50,000/year at retirement costs $100,000/year 25 years later. Inflation is the \"silent thief\" that erodes retirement security.\n\n"
     },
     {
       "number": 12,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Factors Affecting Life Expectancy",
         "layout": "balanced-layout",
@@ -337,8 +340,8 @@
               "Consider your personal circumstances across these dimensions when developing your retirement strategy."
             ],
             "highlightBox": {
-              "icon": "\ud83c",
-              "text": "\udfe5 These factors affect both how long you'll live AND your healthcare costs in retirement‚Äîplan accordingly."
+              "icon": "Ì†º",
+              "text": "Ìø• These factors affect both how long you'll live AND your healthcare costs in retirement‚Äîplan accordingly."
             }
           },
           "rightPanel": {
@@ -360,14 +363,14 @@
     {
       "number": 13,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Real-World Example",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "üëµ in {{STATE_NAME}}",
-            "name": "Keisha's Grandmother: Financial Security at 90 in {{STATE_NAME}}",
+            "icon": "üëµ",
+            "name": "Keisha's Grandmother: Financial Security at 90",
             "paragraphs": [
               "Keisha's grandmother lived to be <strong>90 years old</strong>‚Äîsignificantly longer than the average life expectancy for her generation. Through careful planning and smart investments, she maintained financial security until the end.",
               "Her winning strategy:"
@@ -376,21 +379,21 @@
           "outcomes": [
             {
               "type": "after",
-              "label": "Started Early in {{STATE_NAME}}",
-              "value": "Age 30 in {{STATE_NAME}}",
-              "detail": "Unusual for her generation in {{STATE_NAME}}"
+              "label": "Started Early",
+              "value": "Age 30",
+              "detail": "Unusual for her generation"
             },
             {
               "type": "after",
-              "label": "Stayed Consistent in {{STATE_NAME}}",
-              "value": "60 Years in {{STATE_NAME}}",
-              "detail": "Never stopped investing in {{STATE_NAME}}"
+              "label": "Stayed Consistent",
+              "value": "60 Years",
+              "detail": "Never stopped investing"
             },
             {
               "type": "after",
-              "label": "Result in {{STATE_NAME}}",
-              "value": "Secure in {{STATE_NAME}}",
-              "detail": "Financial security to age 90 in {{STATE_NAME}}"
+              "label": "Result",
+              "value": "Secure",
+              "detail": "Financial security to age 90"
             }
           ]
         }
@@ -399,14 +402,14 @@
     {
       "number": 14,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Real-World Example",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "üë®‚Äçüíº in {{STATE_NAME}}",
-            "name": "Micah's Long-Term Planning at Age 25 in {{STATE_NAME}}",
+            "icon": "üë®‚Äçüíº",
+            "name": "Micah's Long-Term Planning at Age 25",
             "paragraphs": [
               "Micah, at age 25, has already begun planning for retirement, recognizing that his generation may <span class=\"highlight-text\">live even longer than previous ones</span>. He anticipates retiring at 65 and potentially living until 90‚Äîmeaning retirement could last <strong>25 years or more</strong>.",
               "His comprehensive strategy:"
@@ -415,21 +418,21 @@
           "outcomes": [
             {
               "type": "after",
-              "label": "Time Horizon in {{STATE_NAME}}",
-              "value": "40 Years in {{STATE_NAME}}",
-              "detail": "Maximum compounding time in {{STATE_NAME}}"
+              "label": "Time Horizon",
+              "value": "40 Years",
+              "detail": "Maximum compounding time"
             },
             {
               "type": "after",
-              "label": "Expected Retirement in {{STATE_NAME}}",
-              "value": "25+ Years in {{STATE_NAME}}",
-              "detail": "Planning for longevity in {{STATE_NAME}}"
+              "label": "Expected Retirement",
+              "value": "25+ Years",
+              "detail": "Planning for longevity"
             },
             {
               "type": "after",
-              "label": "Approach in {{STATE_NAME}}",
-              "value": "Flexible in {{STATE_NAME}}",
-              "detail": "Plan will evolve with life in {{STATE_NAME}}"
+              "label": "Approach",
+              "value": "Flexible",
+              "detail": "Plan will evolve with life"
             }
           ]
         }
@@ -440,8 +443,8 @@
       "type": "discussion",
       "variant": "teal",
       "content": {
-        "badge": "Discussion in {{STATE_NAME}}",
-        "question": "What specific strategies did Keisha's grandmother and Micah use that you could apply to your own retirement planning?<br><br>How does starting in your 20s vs. your 40s change your options? in {{STATE_NAME}}"
+        "badge": "Discussion",
+        "question": "What specific strategies did Keisha's grandmother and Micah use that you could apply to your own retirement planning?<br><br>How does starting in your 20s vs. your 40s change your options?"
       }
     },
     {
@@ -449,16 +452,16 @@
       "type": "discussion",
       "variant": "purple",
       "content": {
-        "badge": "Personal Reflection in {{STATE_NAME}}",
-        "question": "Why is it important to start thinking about retirement planning even in high school?<br><br>How might your career choices and lifestyle habits today affect your financial security 50 years from now? in {{STATE_NAME}}"
+        "badge": "Personal Reflection",
+        "question": "Why is it important to start thinking about retirement planning even in high school?<br><br>How might your career choices and lifestyle habits today affect your financial security 50 years from now?"
       }
     },
     {
       "number": 17,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "emerald",
       "content": {
-        "headerTitle": "Check for Understanding",
+        "headerTitle": "Check Your Understanding",
         "layout": "check-grid",
         "layoutData": {
           "questions": [
@@ -480,12 +483,13 @@
             }
           ]
         }
-      }
+      },
+      "notes": "ANSWER KEY:\n\n1. B (The risk of outliving your savings)\n\n2. Why 22 beats 32: The money invested at 22 has 43 years to compound vs. 33 years for age-32 money. At 7% returns, $1 at age 22 becomes $18.34 at 65; $1 at age 32 becomes only $9.33. Starting 10 years earlier nearly doubles the growth per dollar.\n\n3. Strategies for living 30 years instead of 20: Part-time work in early retirement, delay Social Security claiming to increase benefits, maintain some growth investments throughout retirement, downsize housing, reduce discretionary spending, relocate to lower-cost area. Multiple strategies may be needed.\n\n4. Why start in teens/20s: Compounding requires TIME to work its magic. Starting at 20 gives 45+ years of growth. Starting at 45 gives only 20 years. The early years are worth far more per dollar than later years. Even $50/month at 20 beats $200/month at 40 over the long run.\n\n"
     },
     {
       "number": 18,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Key Takeaways",
         "layout": "takeaway-grid",
@@ -518,14 +522,14 @@
     {
       "number": 19,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Student Activity",
         "layout": "activity-layout",
         "layoutData": {
           "main": {
-            "icon": "\ud83d",
-            "title": "\udcca Life Expectancy & Retirement Analysis",
+            "icon": "Ì†Ω",
+            "title": "Ì≥ä Life Expectancy & Retirement Analysis",
             "description": "Analyze life expectancy data across different countries and factors, then consider how this analysis applies to your own retirement planning. Reflect on how <strong>healthcare spending, lifestyle choices, and environmental factors</strong> might influence both your longevity and retirement needs."
           },
           "steps": [
@@ -542,9 +546,9 @@
       "number": 20,
       "type": "closing",
       "content": {
-        "tagline": "Building Financial Futures, One Lesson at a Time in {{STATE_NAME}}",
-        "website": "www.pflacademy.co in {{STATE_NAME}}",
-        "copyright": "¬© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "¬© 2025 PFL Academy. All rights reserved."
       }
     }
   ]

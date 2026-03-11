@@ -1,9 +1,9 @@
 {
   "metadata": {
     "lChapter": "L-39",
-    "title": "Charitable Giving &Financial Planning",
-    "subtitle": "Making an Impact Through Purposeful Giving in {{STATE_NAME}}",
-    "totalSlides": 18,
+    "title": "Charitable Giving & Financial Planning",
+    "subtitle": "Making an Impact Through Purposeful Giving",
+    "totalSlides": 20,
     "hasStateVariables": true,
     "stateVariablesUsed": [
       "STATE_NAME"
@@ -14,23 +14,25 @@
       "number": 1,
       "type": "title",
       "content": {
-        "title": "Charitable Giving &Financial Planning",
+        "title": "Charitable Giving & Financial Planning",
         "titleSize": "large",
-        "subtitle": "Making an Impact Through Purposeful Giving in {{STATE_NAME}}"
+        "subtitle": "Making an Impact Through Purposeful Giving"
       }
     },
     {
       "number": 2,
       "type": "hook",
       "content": {
-        "label": "Essential Question in {{STATE_NAME}}",
-        "question": "How can you make a <em>meaningful difference</em> in your community—<br>whether through money, time, or skills—<br>at <em>any stage</em> of your financial journey? in {{STATE_NAME}}"
-      }
+        "label": "The Challenge",
+        "question": "How can you make a <em>meaningful difference</em> in your community—<br>whether through money, time, or skills—<br>at <em>any stage</em> of your financial journey?"
+      },
+      "headerColor": "amber",
+      "speakerNotes": "Read Sarah's scenario aloud. Emphasize the balance between generosity and financial stability. Ask: \"Can you give to causes you care about even if you don't have much money?\" Brainstorm different ways to contribute besides writing a check."
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
@@ -63,19 +65,19 @@
     {
       "number": 4,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "Monetary Donation in {{STATE_NAME}}",
+              "term": "Monetary Donation",
               "definition": "Direct financial contributions made to a charitable organization to support their mission.",
               "example": "One-time gifts, recurring donations, matching gifts through employers, crowdfunding contributions"
             },
             {
-              "term": "In-Kind Donation in {{STATE_NAME}}",
+              "term": "In-Kind Donation",
               "definition": "Contributions of goods or services rather than money, often equally valuable to organizations.",
               "example": "Clothing, food, professional services pro bono, technology equipment, blood donation"
             }
@@ -86,19 +88,19 @@
     {
       "number": 5,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "Volunteerism in {{STATE_NAME}}",
+              "term": "Volunteerism",
               "definition": "Donating time or skills to support causes without receiving financial compensation.",
               "example": "Direct impact, skill development, networking, mental health benefits, career exploration"
             },
             {
-              "term": "Planned Giving in {{STATE_NAME}}",
+              "term": "Planned Giving",
               "definition": "Charitable contributions arranged through long-term financial or estate planning.",
               "example": "Bequests in wills, charitable trusts, endowments, life insurance designations"
             }
@@ -109,7 +111,7 @@
     {
       "number": 6,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Why Do People Give?",
         "layout": "balanced-layout",
@@ -124,13 +126,13 @@
           "rightPanel": {
             "stats": [
               {
-                "value": "$500B+ in {{STATE_NAME}}",
-                "label": "Annual US Charitable Giving in {{STATE_NAME}}",
+                "value": "$500B+",
+                "label": "Annual US Charitable Giving",
                 "color": "green"
               },
               {
-                "value": "87% in {{STATE_NAME}}",
-                "label": "Americans Who Give to Charity in {{STATE_NAME}}",
+                "value": "87%",
+                "label": "Americans Who Give to Charity",
                 "color": "purple"
               }
             ],
@@ -151,7 +153,7 @@
     {
       "number": 7,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Four Forms of Charitable Giving",
         "layout": "concept-full",
@@ -175,7 +177,7 @@
     {
       "number": 8,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Creating a Giving Budget",
         "layout": "balanced-layout",
@@ -197,7 +199,7 @@
     {
       "number": 9,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Tax Benefits of Charitable Giving",
         "layout": "balanced-layout",
@@ -212,8 +214,8 @@
           "rightPanel": {
             "stats": [
               {
-                "value": "60% in {{STATE_NAME}}",
-                "label": "Max Deduction (% of AGI) in {{STATE_NAME}}",
+                "value": "60%",
+                "label": "Max Deduction (% of AGI)",
                 "color": "teal"
               }
             ],
@@ -234,7 +236,7 @@
     {
       "number": 10,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Benefits of Charitable Giving",
         "layout": "balanced-layout",
@@ -259,14 +261,80 @@
     {
       "number": 11,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Real-World Example",
+        "headerTitle": "Making Small Contributions Count",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Impact Doesn't Require Wealth",
+          "paragraphs": [
+            "Even small monetary or time contributions can have significant impact when done strategically:"
+          ],
+          "bulletPoints": [
+            "<strong>🤝 Collective giving:</strong> Join giving circles or crowdfunding campaigns with others",
+            "<strong>🎯 Targeted donations:</strong> Support specific projects with clear, measurable outcomes",
+            "<strong>🏠 Support local:</strong> Small donations often make bigger differences at local organizations",
+            "<strong>📅 Stay consistent:</strong> Regular small gifts build up significantly over time",
+            "<strong>✖️2 Find matching:</strong> Look for employer matching that doubles your donation",
+            "<strong>📣 Raise awareness:</strong> Share information about causes you care about"
+          ],
+          "keyPoint": {
+            "text": "💡 A $10/month donation = $120/year = $1,200 over a decade. Consistency matters more than amount."
+          }
+        }
+      },
+      "speakerNotes": "COMMON MISCONCEPTIONS:\n• \"\"You need to be wealthy to make a difference through charitable giving.\"\" → Small donations can have significant impact, especially to local organizations. Volunteering time and skills can be equally valuable. The key is consistent giving aligned with your means.\n• \"\"All charitable donations are tax-deductible.\"\" → Only donations to qualified 501(c)(3) organizations are deductible, and only if you itemize. Many people take the standard deduction and receive no tax benefit from donations.\n• \"\"The tax deduction makes charitable giving 'free.'\"\" → A deduction reduces taxable income, not your tax bill directly. If you're in the 22% bracket, a $100 donation saves you $22 in taxes—you still \"pay\" $78 net."
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Integrating Giving Into Financial Planning",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Balance Giving with Other Goals",
+            "paragraphs": [
+              "Charitable giving should be part of your comprehensive financial plan, not separate from it. Consider how giving fits alongside:",
+              "• Emergency fund building",
+              "• Debt management",
+              "• Retirement savings",
+              "• Major purchase goals"
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "Start small and increase giving as your financial situation improves. Even 1-2% of income makes a difference."
+            }
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "Smart Giving Strategy:",
+              "color": "green",
+              "items": [
+                "Secure your own finances first",
+                "Start with what you can afford",
+                "Choose causes you care about",
+                "Research organizations thoroughly",
+                "Increase giving as income grows"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Apply It",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "🤝 in {{STATE_NAME}}",
-            "name": "Maria: The Power of Volunteering in {{STATE_NAME}}",
+            "icon": "🤝",
+            "name": "Maria: The Power of Volunteering",
             "paragraphs": [
               "Maria, a college student with <strong>limited financial resources</strong>, volunteers 5 hours each week at a local food bank.",
               "Although she can't make substantial monetary donations, her <span class=\"highlight-text\">consistent time commitment</span> helps the organization serve hundreds of meals each month.",
@@ -276,37 +344,37 @@
           "outcomes": [
             {
               "type": "after",
-              "label": "Weekly Commitment in {{STATE_NAME}}",
-              "value": "5 Hours in {{STATE_NAME}}",
-              "detail": "Consistent volunteering in {{STATE_NAME}}"
+              "label": "Weekly Commitment",
+              "value": "5 Hours",
+              "detail": "Consistent volunteering"
             },
             {
               "type": "after",
-              "label": "Value to Organization in {{STATE_NAME}}",
-              "value": "$3,000 in {{STATE_NAME}}",
-              "detail": "Annual savings in staffing in {{STATE_NAME}}"
+              "label": "Value to Organization",
+              "value": "$3,000",
+              "detail": "Annual savings in staffing"
             },
             {
               "type": "after",
-              "label": "Personal Benefit in {{STATE_NAME}}",
-              "value": "Internship in {{STATE_NAME}}",
-              "detail": "Career advancement in {{STATE_NAME}}"
+              "label": "Personal Benefit",
+              "value": "Internship",
+              "detail": "Career advancement"
             }
           ]
         }
       }
     },
     {
-      "number": 12,
+      "number": 14,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Real-World Example",
+        "headerTitle": "Apply It",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "💻 in {{STATE_NAME}}",
-            "name": "James: Skills-Based Giving in {{STATE_NAME}}",
+            "icon": "💻",
+            "name": "James: Skills-Based Giving",
             "paragraphs": [
               "James, a high school student, doesn't have extra money to donate, but he's <strong>skilled at web design</strong>. He volunteered to rebuild the website for a local animal shelter.",
               "His contribution took approximately <span class=\"highlight-text\">40 hours over two months</span>, but the results were significant:"
@@ -315,41 +383,50 @@
           "outcomes": [
             {
               "type": "after",
-              "label": "Time Invested in {{STATE_NAME}}",
-              "value": "40 Hours in {{STATE_NAME}}",
-              "detail": "Over two months in {{STATE_NAME}}"
+              "label": "Time Invested",
+              "value": "40 Hours",
+              "detail": "Over two months"
             },
             {
               "type": "after",
-              "label": "Value to Shelter in {{STATE_NAME}}",
-              "value": "$3,500+ in {{STATE_NAME}}",
-              "detail": "Professional web design cost in {{STATE_NAME}}"
+              "label": "Value to Shelter",
+              "value": "$3,500+",
+              "detail": "Professional web design cost"
             },
             {
               "type": "after",
-              "label": "Impact in {{STATE_NAME}}",
-              "value": "+25% in {{STATE_NAME}}",
-              "detail": "Adoption rate increase in {{STATE_NAME}}"
+              "label": "Impact",
+              "value": "+25%",
+              "detail": "Adoption rate increase"
             }
           ]
         }
       }
     },
     {
-      "number": 13,
+      "number": 15,
       "type": "discussion",
-      "variant": "teal",
+      "variant": "amber",
       "content": {
-        "badge": "Discussion in {{STATE_NAME}}",
-        "question": "What causes or issues matter most to you personally?<br><br>How might charitable giving related to these causes fit into your future financial plans?<br>What forms of giving would be most meaningful to you? in {{STATE_NAME}}"
+        "badge": "Discussion",
+        "question": "What causes or issues matter most to you personally?<br><br>How might charitable giving related to these causes fit into your future financial plans?<br>What forms of giving would be most meaningful to you?"
       }
     },
     {
-      "number": 14,
-      "type": "content",
-      "headerColor": "purple",
+      "number": 16,
+      "type": "discussion",
+      "variant": "indigo",
       "content": {
-        "headerTitle": "Check for Understanding",
+        "badge": "Personal Reflection",
+        "question": "If you had unlimited resources,<br>what single cause would you support and why?<br><br>How can you start contributing to that cause today,<br>even with limited financial resources?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "emerald",
+      "content": {
+        "headerTitle": "Check Your Understanding",
         "layout": "check-grid",
         "layoutData": {
           "questions": [
@@ -371,12 +448,13 @@
             }
           ]
         }
-      }
+      },
+      "speakerNotes": "ASSESSMENT ANSWER KEY:\nQ4 Non-monetary contributions:Any THREE valid examples: tutoring students, serving at food bank, animal shelter volunteering, mentoring, blood donation, organizing community events, pro bono professional services, creating content for nonprofits.\nCYU 1:B (Setting up recurring monthly payments is a monetary donation, not in-kind)\nCYU 2:B (You must itemize deductions to claim charitable donations)\nCYU 3:Tax savings: $2,500 × 22% =$550. Note: This assumes Alex itemizes and the charitable deduction exceeds the standard deduction.\nCYU 4:Priorities before charitable giving: basic needs (housing, food, utilities), emergency savings fund, high-interest debt payments, retirement contributions."
     },
     {
-      "number": 15,
+      "number": 18,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Key Takeaways",
         "layout": "takeaway-grid",
@@ -407,60 +485,35 @@
       }
     },
     {
-      "number": 16,
+      "number": 19,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Student Activity",
+        "headerTitle": "Tomorrow's Challenge",
         "layout": "activity-layout",
         "layoutData": {
           "main": {
-            "icon": "\ud83d",
-            "title": "\udccb Personal Charitable Giving Plan",
-            "description": "Create a personal charitable giving plan that aligns with your values, interests, and resources—whether those are financial, time-based, or skill-based. This plan should be realistic for your current situation while reflecting causes you genuinely care about."
+            "icon": "📋",
+            "title": "Personal Charitable Giving Plan",
+            "description": "Today we built the foundation—but the real test is what happens when you have to make a decision with tradeoffs. Create a personal charitable giving plan that aligns with your values, interests, and resources—whether those are financial, time-based, or skill-based."
           },
           "steps": [
             "Choose a cause or organization you feel passionate about",
-            "Determine what type of contribution you can make",
+            "Determine what type of contribution you can realistically make",
             "Set specific and realistic goals for your contribution",
-            "Write a paragraph explaining your giving strategy"
+            "Write a paragraph explaining your giving strategy",
+            "Identify how this aligns with your overall financial plan"
           ]
         }
       }
     },
     {
-      "number": 17,
-      "type": "content",
-      "headerColor": "purple",
-      "content": {
-        "headerTitle": "Making Small Contributions Count",
-        "layout": "concept-full",
-        "layoutData": {
-          "title": "Impact Doesn't Require Wealth",
-          "paragraphs": [
-            "Even small monetary or time contributions can have significant impact when done strategically:"
-          ],
-          "bulletPoints": [
-            "<strong>🤝 Collective giving:</strong> Join giving circles or crowdfunding campaigns with others",
-            "<strong>🎯 Targeted donations:</strong> Support specific projects with clear, measurable outcomes",
-            "<strong>🏠 Support local:</strong> Small donations often make bigger differences at local organizations",
-            "<strong>📅 Stay consistent:</strong> Regular small gifts build up significantly over time",
-            "<strong>✖️2 Find matching:</strong> Look for employer matching that doubles your donation",
-            "<strong>📣 Raise awareness:</strong> Share information about causes you care about"
-          ],
-          "keyPoint": {
-            "text": "💡 A $10/month donation = $120/year = $1,200 over a decade. Consistency matters more than amount."
-          }
-        }
-      }
-    },
-    {
-      "number": 18,
+      "number": 20,
       "type": "closing",
       "content": {
-        "tagline": "Building Financial Futures, One Lesson at a Time in {{STATE_NAME}}",
-        "website": "www.pflacademy.co in {{STATE_NAME}}",
-        "copyright": "© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
       }
     }
   ]

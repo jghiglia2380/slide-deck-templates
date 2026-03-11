@@ -1,14 +1,13 @@
 {
   "metadata": {
-    "lChapter": "L-XX",
+    "lChapter": "L-13",
     "title": "Understanding and Using Banking Tools",
-    "subtitle": "Learn how to effectively use checks, debit cards, ATMs, and online banking to manage your money and avoid unnecessary fees.",
+    "subtitle": "Master Checks, Debit Cards, and Account Management to Avoid Costly Mistakes",
     "totalSlides": 20,
     "hasStateVariables": true,
     "stateVariablesUsed": [
       "STATE_NAME",
-      "LOCAL_CREDIT_UNION_NAME",
-      "STATE_LOCAL_CREDIT_UNION_NAME"
+      "STATE_AVG_OVERDRAFT_FEE"
     ]
   },
   "slides": [
@@ -18,47 +17,69 @@
       "content": {
         "title": "Understanding and Using Banking Tools",
         "titleSize": "large",
-        "subtitle": "Learn how to effectively use checks, debit cards, ATMs, and online banking to manage your money and avoid unnecessary fees."
+        "subtitle": "Master Checks, Debit Cards, and Account Management to Avoid Costly Mistakes"
       }
     },
     {
       "number": 2,
       "type": "hook",
       "content": {
-        "label": "Essential Question",
-        "question": ""
-      }
+        "label": "The Challenge",
+        "question": "Tyler checked his bank balance on Monday and saw <em>$450</em>. He wrote a check for $200 on Tuesday, used his debit card for $85 on Wednesday, and deposited $150 on Thursday.<br><br>When his rent payment of <em>$400</em> was auto-debited on Friday, he was shocked to see an <em>overdraft fee</em> on his account.<br><br>He thought he still had money available!<br><br>What mistake did Tyler make, and how could tracking his transactions have helped him avoid the overdraft fee?"
+      },
+      "headerColor": "amber"
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
         "layoutData": {
-          "objectives": []
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Use",
+              "description": "Use various banking tools such as ATMs, debit cards, checks, and online banking effectively."
+            },
+            {
+              "number": 2,
+              "verb": "Track",
+              "description": "Track and manage financial transactions accurately using a check register or digital tools."
+            },
+            {
+              "number": 3,
+              "verb": "Reconcile",
+              "description": "Reconcile personal financial records with bank statements to catch errors and fraud."
+            },
+            {
+              "number": 4,
+              "verb": "Avoid",
+              "description": "Avoid common banking fees through awareness and proactive account management."
+            }
+          ]
         }
       }
     },
     {
       "number": 4,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Check Register",
+              "definition": "A record used to track all transactions including checks, debit card purchases, deposits, and fees\u2014your personal ledger.",
+              "example": "Recording every transaction as it happens so you always know your true balance."
             },
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Overdraft Fee",
+              "definition": "A charge when you spend more money than is available in your account. Can be $25-$35 per occurrence.",
+              "example": "Tyler's account went negative, triggering an overdraft fee on top of his shortfall."
             }
           ]
         }
@@ -67,21 +88,21 @@
     {
       "number": 5,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Reconciliation",
+              "definition": "The process of comparing your personal records with your bank statement to identify errors, unauthorized charges, or discrepancies.",
+              "example": "Matching your check register to your monthly statement to ensure nothing is missing or incorrect."
             },
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Pending Transaction",
+              "definition": "A transaction that has been authorized but not yet fully processed\u2014may not show in your 'available' balance.",
+              "example": "Your debit card purchase was authorized yesterday but won't clear until tomorrow\u2014it's 'pending.'"
             }
           ]
         }
@@ -90,34 +111,39 @@
     {
       "number": 6,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Essential Banking Tools",
+        "headerTitle": "Why Your Online Balance Can Lie to You",
         "layout": "balanced-layout",
         "layoutData": {
           "leftPanel": {
-            "title": "Your Banking Toolkit",
+            "title": "The Pending Transaction Trap",
             "paragraphs": [
-              "Modern banking offers multiple tools to access and manage your money. Each tool has specific advantages depending on the situation:"
+              "Your bank shows two different numbers:",
+              "<strong>Current Balance:</strong> What the bank has on record",
+              "<strong>Available Balance:</strong> What you can actually spend",
+              "But NEITHER may reflect reality because:",
+              "\u2022 Checks you wrote haven't cleared yet",
+              "\u2022 Pending transactions are still processing",
+              "\u2022 Scheduled auto-payments haven't hit",
+              "\u2022 Recent deposits are 'on hold'"
             ],
-            "highlightBox": null
+            "highlightBox": {
+              "icon": "\u26a0\ufe0f",
+              "text": "This is exactly what happened to Tyler\u2014his balance looked fine, but pending transactions made it negative!"
+            }
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
-                "color": "teal"
+                "value": "33%",
+                "label": "Americans have overdrafted",
+                "color": "amber"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "purple"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "green"
+                "value": "$35",
+                "label": "Average overdraft fee",
+                "color": "amber"
               }
             ],
             "infoCard": null
@@ -128,55 +154,69 @@
     {
       "number": 7,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Comparing Payment Methods",
-        "layout": "generic",
+        "headerTitle": "Your Banking Tool Kit",
+        "layout": "comparison-grid",
         "layoutData": {
-          "paragraphs": [
-            "<strong>Best for:</strong> Large payments, rent, situations requiring documentation<br><br><strong>Processing time:</strong> 1-5 business days to clear<br><br><strong>Security:</strong> Can be stopped if lost; creates paper trail",
-            "<strong>Best for:</strong> Everyday purchases, in-store and online shopping<br><br><strong>Processing time:</strong> Instant deduction from account<br><br><strong>Security:</strong> PIN protection; report lost cards immediately",
-            "<strong>Best for:</strong> Cash withdrawals, quick balance checks, deposits<br><br><strong>Processing time:</strong> Instant for withdrawals<br><br><strong>Security:</strong> Use in-network ATMs; protect your PIN",
-            "<strong>Best for:</strong> Bill payments, transfers, account monitoring<br><br><strong>Processing time:</strong> Same-day to 1-3 days for transfers<br><br><strong>Security:</strong> Use secure networks; enable 2-factor authentication"
-          ],
-          "lists": []
+          "leftColumn": {
+            "icon": "\ud83d\udcb3",
+            "title": "DEBIT CARD",
+            "items": [
+              "Linked directly to checking account",
+              "Instant access to your money",
+              "Can use for purchases or ATM cash",
+              "No interest charges (it's YOUR money)",
+              "Risk: Overdraft if you overspend",
+              "Best for: Daily purchases, quick access"
+            ]
+          },
+          "rightColumn": {
+            "icon": "\ud83d\udcdd",
+            "title": "PERSONAL CHECK",
+            "items": [
+              "Written order to pay from your account",
+              "Takes 1-5 days to clear/process",
+              "Provides paper trail and proof",
+              "Good for large payments (rent)",
+              "Risk: Bounced check fees if no funds",
+              "Best for: Rent, bills requiring paper"
+            ]
+          }
         }
       }
     },
     {
       "number": 8,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Common Banking Fees",
-        "layout": "balanced-layout",
+        "headerTitle": "More Banking Tools",
+        "layout": "comparison-grid",
         "layoutData": {
-          "leftPanel": {
-            "title": "Fees That Add Up",
-            "paragraphs": [
-              "Banking fees can eat away at your money if you're not careful. Understanding these fees is the first step to avoiding them:"
-            ],
-            "highlightBox": null
+          "leftColumn": {
+            "icon": "\ud83c\udfe7",
+            "title": "ATM ACCESS",
+            "items": [
+              "Withdraw cash from your account",
+              "Deposit checks and cash (some ATMs)",
+              "Check balance and transfer funds",
+              "In-network: Usually free",
+              "Out-of-network: $3-$5 per use",
+              "Best for: Cash when you need it"
+            ]
           },
-          "rightPanel": {
-            "stats": [
-              {
-                "value": "",
-                "label": "",
-                "color": "rose"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "purple"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "green"
-              }
-            ],
-            "infoCard": null
+          "rightColumn": {
+            "icon": "\ud83d\udcf1",
+            "title": "ONLINE/MOBILE BANKING",
+            "items": [
+              "24/7 access to your account",
+              "Transfer money instantly",
+              "Set up auto-pay for bills",
+              "Deposit checks with your phone",
+              "Set alerts for low balance",
+              "Best for: Monitoring, transfers, alerts"
+            ]
           }
         }
       }
@@ -184,56 +224,66 @@
     {
       "number": 9,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Strategies to Avoid Fees",
-        "layout": "concept-full",
+        "headerTitle": "The Check Register: Your Financial GPS",
+        "layout": "balanced-layout",
         "layoutData": {
-          "title": "Smart Banking Means Fewer Fees",
-          "paragraphs": [
-            "With a few simple habits, you can eliminate most banking fees and keep more of your hard-earned money:",
-            "Check your account regularly through online banking or the mobile app. Set up low balance alerts to warn you before you overspend.",
-            "Find your bank's ATM locator on their app. Plan ahead to avoid using out-of-network machines that charge extra fees.",
-            "Maintain minimum balances or set up direct deposit. Many banks waive monthly fees with qualifying activities. Consider credit unions like {{STATE_LOCAL_CREDIT_UNION_NAME}} in {{STATE_NAME}} which often offer lower fees."
-          ],
-          "bulletPoints": []
+          "leftPanel": {
+            "title": "Track Every Transaction",
+            "paragraphs": [
+              "A check register records EVERYTHING that affects your balance:",
+              "\u2022 Checks written (before they clear)",
+              "\u2022 Debit card purchases",
+              "\u2022 ATM withdrawals",
+              "\u2022 Automatic payments",
+              "\u2022 Direct deposits",
+              "\u2022 Fees charged",
+              "By calculating your balance after each transaction, you always know your TRUE available money."
+            ],
+            "highlightBox": {
+              "icon": "\ud83d\udca1",
+              "text": "Digital or paper\u2014pick a system and use it consistently!"
+            }
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "Tyler's Problem:",
+              "color": "amber",
+              "items": [
+                "Looked at online balance: $450",
+                "Forgot about pending check: -$200",
+                "Forgot about debit purchase: -$85",
+                "ACTUAL available: $165",
+                "Rent auto-pay: $400 = OVERDRAFT"
+              ]
+            }
+          }
         }
       }
     },
     {
       "number": 10,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Account Reconciliation",
-        "layout": "balanced-layout",
+        "headerTitle": "Common Banking Fees\u2014And How to Avoid Them",
+        "layout": "concept-full",
         "layoutData": {
-          "leftPanel": {
-            "title": "Balancing Your Account",
-            "paragraphs": [
-              "Reconciliation means comparing your personal records with your bank statement to ensure everything matches."
-            ],
-            "highlightBox": null
-          },
-          "rightPanel": {
-            "stats": [
-              {
-                "value": "",
-                "label": "",
-                "color": "teal"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "teal"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "green"
-              }
-            ],
-            "infoCard": null
+          "title": "Fees Can Cost You Hundreds Per Year",
+          "paragraphs": [
+            "Know these fees and how to avoid them:"
+          ],
+          "bulletPoints": [
+            "<strong>Overdraft Fee ($25-$35):</strong> Track your balance, set up low-balance alerts, link to savings for backup",
+            "<strong>Out-of-Network ATM ($3-$5):</strong> Use your bank's ATMs, get cash back at stores, plan ahead",
+            "<strong>Monthly Maintenance ($5-$15):</strong> Meet minimum balance, set up direct deposit, choose fee-free accounts",
+            "<strong>Minimum Balance Fee ($10-$15):</strong> Keep required minimum, switch to no-minimum account",
+            "<strong>Paper Statement Fee ($2-$5):</strong> Switch to electronic statements"
+          ],
+          "keyPoint": {
+            "text": "\ud83d\udcb0 These fees add up! Someone paying all of these monthly could lose $600+ per year!"
           }
         }
       }
@@ -241,56 +291,70 @@
     {
       "number": 11,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Why Banking Skills Matter",
-        "layout": "concept-full",
-        "layoutData": {
-          "title": "Your Financial Foundation",
-          "paragraphs": [
-            "Understanding banking tools is fundamental to financial success. These skills directly impact your ability to build wealth and avoid costly mistakes.",
-            "Avoiding fees and catching errors can save you hundreds of dollars every year that you can invest in your future.",
-            "Regular account monitoring creates discipline that extends to all areas of financial management including saving and investing.",
-            "Catching fraud early through regular reconciliation limits your liability and prevents financial disasters."
-          ],
-          "bulletPoints": []
-        }
-      }
-    },
-    {
-      "number": 12,
-      "type": "content",
-      "headerColor": "purple",
-      "content": {
-        "headerTitle": "Banking in the Digital Age",
+        "headerTitle": "Account Reconciliation: Catch Errors and Fraud",
         "layout": "balanced-layout",
         "layoutData": {
           "leftPanel": {
-            "title": "The Evolution of Banking",
+            "title": "Monthly Account Check-Up",
             "paragraphs": [
-              "Banking has transformed dramatically with digital technology, making account management easier than ever:"
+              "Reconciliation means comparing your records to your bank statement. Here's how:",
+              "<strong>1. Get your statement</strong> (monthly from bank)",
+              "<strong>2. Compare transactions</strong> to your register",
+              "<strong>3. Mark items that match</strong> \u2713",
+              "<strong>4. Investigate discrepancies:</strong>",
+              "\u2022 Charges you don't recognize?",
+              "\u2022 Amounts that don't match?",
+              "\u2022 Missing deposits?",
+              "<strong>5. Contact bank immediately</strong> about errors"
             ],
             "highlightBox": null
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
-                "color": "purple"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "teal"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "green"
+                "value": "60 days",
+                "label": "Time limit to dispute errors",
+                "color": "amber"
               }
             ],
-            "infoCard": null
+            "infoCard": {
+              "title": "Reconciliation Catches:",
+              "color": "emerald",
+              "items": [
+                "Fraudulent charges",
+                "Duplicate charges",
+                "Subscriptions you forgot about",
+                "Bank errors",
+                "Identity theft early"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Choosing the Right Tool for the Job",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Match the Tool to the Situation",
+          "paragraphs": [
+            "Different situations call for different banking tools:"
+          ],
+          "bulletPoints": [
+            "<strong>Paying rent to landlord who wants paper trail:</strong> Check (provides proof of payment)",
+            "<strong>Quick lunch purchase:</strong> Debit card (fast, convenient, automatic record)",
+            "<strong>Splitting bills with roommate:</strong> Online transfer/Venmo (instant, easy to track)",
+            "<strong>Large purchase with buyer protection:</strong> Credit card (if you pay it off\u2014more protection than debit)",
+            "<strong>Tipping service workers:</strong> Cash (immediate, no processing fees for them)"
+          ],
+          "keyPoint": {
+            "text": "\ud83c\udfaf There's no single 'best' tool\u2014choose based on the situation, convenience, and protection needed."
           }
         }
       }
@@ -298,34 +362,38 @@
     {
       "number": 13,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Real-World Example",
+        "headerTitle": "Apply It",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "",
-            "name": "",
-            "paragraphs": []
+            "icon": "\ud83d\udc64",
+            "name": "Tyler's Week\u2014What Went Wrong",
+            "paragraphs": [
+              "Let's trace Tyler's transactions and see where he made his mistake:",
+              "Monday: Balance = $450 | Tuesday: Check -$200 = $250 | Wednesday: Debit -$85 = $165 | Thursday: Deposit +$150 = $315",
+              "Friday: Rent auto-pay = -$400... but he only has $315!"
+            ]
           },
           "outcomes": [
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "before",
+              "label": "What Tyler Thought",
+              "value": "$450",
+              "detail": "Online balance on Monday"
             },
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "negative",
+              "label": "Actual Balance Friday",
+              "value": "$315",
+              "detail": "After tracking all transactions"
             },
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "negative",
+              "label": "Shortfall + Fee",
+              "value": "-$85 + fee",
+              "detail": "Overdraft triggered"
             }
           ]
         }
@@ -334,34 +402,37 @@
     {
       "number": 14,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Real-World Example",
+        "headerTitle": "Apply It",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "",
-            "name": "",
-            "paragraphs": []
+            "icon": "\ud83d\udc64",
+            "name": "What Tyler Should Have Done",
+            "paragraphs": [
+              "If Tyler had tracked his transactions in a register, he would have known by Thursday that he only had $315\u2014not enough for the $400 rent.",
+              "He could have: transferred money from savings, delayed a purchase, or contacted his landlord before the auto-pay hit."
+            ]
           },
           "outcomes": [
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "positive",
+              "label": "With Tracking",
+              "value": "See $315 balance",
+              "detail": "Know rent will overdraft"
             },
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "positive",
+              "label": "Options",
+              "value": "Transfer $85+",
+              "detail": "From savings before Friday"
             },
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "positive",
+              "label": "Result",
+              "value": "$0 fees",
+              "detail": "Problem prevented"
             }
           ]
         }
@@ -370,64 +441,102 @@
     {
       "number": 15,
       "type": "discussion",
-      "variant": "teal",
+      "variant": "amber",
       "content": {
         "badge": "Discussion",
-        "question": ""
+        "question": "For each scenario, which banking tool would be BEST and why?<br><br>1. Maya needs to pay her landlord $950. Landlord wants paper record.<br><br>2. Jordan is buying $12.50 lunch at a restaurant.<br><br>3. Alex owes roommate $75 for utilities. Both have same bank."
       }
     },
     {
       "number": 16,
       "type": "discussion",
-      "variant": "teal",
+      "variant": "indigo",
       "content": {
-        "badge": "Personal Reflection",
-        "question": ""
+        "badge": "Reflection",
+        "question": "What system would you use to track your own transactions?<br><br>\u2022 Paper check register?<br>\u2022 Spreadsheet?<br>\u2022 Banking app with alerts?<br>\u2022 Budgeting app (Mint, YNAB)?<br><br>Why would this system work for YOUR lifestyle?"
       }
     },
     {
       "number": 17,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "emerald",
       "content": {
-        "headerTitle": "Check for Understanding",
+        "headerTitle": "Check Your Understanding",
         "layout": "check-grid",
         "layoutData": {
-          "questions": []
+          "questions": [
+            {
+              "number": 1,
+              "question": "What is the primary purpose of reconciling your accounts monthly?"
+            },
+            {
+              "number": 2,
+              "question": "Why might your online banking balance differ from your actual available balance?"
+            },
+            {
+              "number": 3,
+              "question": "Your account has $525. You write a check for $200, use debit for $150, deposit $100. What's your balance?"
+            },
+            {
+              "number": 4,
+              "question": "If someone paid overdraft ($35), ATM ($4), and maintenance ($12) fees monthly, how much would they lose per year?"
+            }
+          ]
         }
       }
     },
     {
       "number": 18,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Key Takeaways",
         "layout": "takeaway-grid",
         "layoutData": {
-          "takeaways": []
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Don't Trust Online Balance Alone",
+              "description": "Pending transactions, uncashed checks, and scheduled payments can make your real balance lower than it appears."
+            },
+            {
+              "number": 2,
+              "title": "Track Every Transaction",
+              "description": "A check register (paper or digital) shows your TRUE available balance and prevents overdrafts."
+            },
+            {
+              "number": 3,
+              "title": "Reconcile Monthly",
+              "description": "Compare your records to bank statements to catch errors, fraud, and forgotten subscriptions."
+            },
+            {
+              "number": 4,
+              "title": "Fees Are Avoidable",
+              "description": "Know your bank's fee structure and take steps to avoid overdrafts, ATM fees, and maintenance charges."
+            }
+          ]
         }
       }
     },
     {
       "number": 19,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Skill Builder: Check Register",
+        "headerTitle": "Tomorrow's Challenge",
         "layout": "activity-layout",
         "layoutData": {
           "main": {
-            "icon": "📋",
-            "title": "",
-            "description": ""
+            "icon": "\ud83d\udcd2",
+            "title": "Check Register Challenge",
+            "description": "Tyler learned the hard way\u2014will you? Tomorrow you'll manage a simulated checking account, track transactions, and see if you can avoid the overdraft trap that caught Tyler."
           },
           "steps": [
-            "Examine the provided bank statement showing deposits and withdrawals",
-            "Record each transaction with date, description, and amount",
-            "Update the running balance after each transaction",
-            "Check your final balance against the bank statement ending balance",
-            "Identify and investigate any differences you find"
+            "Complete a check register with multiple transaction types",
+            "Calculate running balances after each transaction",
+            "Identify when accounts would overdraft",
+            "Choose the right banking tool for different scenarios",
+            "Calculate annual cost of common banking fees"
           ]
         }
       }
@@ -436,9 +545,9 @@
       "number": 20,
       "type": "closing",
       "content": {
-        "tagline": "Track your money, avoid fees, and build financial confidence",
+        "tagline": "Building Financial Futures, One Lesson at a Time",
         "website": "www.pflacademy.co",
-        "copyright": "© 2025 PFL Academy. All rights reserved."
+        "copyright": "\u00a9 2025 PFL Academy. All rights reserved."
       }
     }
   ]

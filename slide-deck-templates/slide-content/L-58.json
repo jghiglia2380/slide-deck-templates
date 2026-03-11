@@ -1,7 +1,7 @@
 {
   "metadata": {
     "lChapter": "L-58",
-    "title": "Supply, Demand &Market Structures",
+    "title": "Supply, Demand & Market Structures",
     "subtitle": "Understanding the Forces That Shape Prices and Consumer Choices",
     "totalSlides": 20,
     "hasStateVariables": true,
@@ -21,7 +21,7 @@
       "number": 1,
       "type": "title",
       "content": {
-        "title": "Supply, Demand &Market Structures",
+        "title": "Supply, Demand & Market Structures",
         "titleSize": "large",
         "subtitle": "Understanding the Forces That Shape Prices and Consumer Choices"
       }
@@ -30,14 +30,16 @@
       "number": 2,
       "type": "hook",
       "content": {
-        "label": "Essential Question",
-        "question": "Why does a cup of coffee cost $3 at one shop<br>but $6 at another—and how can understanding<br><em>market forces</em> save you <em>thousands</em> of dollars?"
-      }
+        "label": "The Challenge",
+        "question": "Coffee prices vary dramatically across different shops—from $3 to $6 for the same drink—and this variation stems from supply and demand dynamics combined with market structure. Understanding these economic forces empowers you to make smarter purchasing decisions that can save thousands of dollars over time. <br><br> How can understanding market forces transform you from a price-taker into a strategic consumer?"
+      },
+      "headerColor": "amber",
+      "notes": "<strong>Discussion Prompts:</strong><br>• Ask students: \"Why does coffee cost $3 here but $6 downtown?\" Start with price variation they experience.<br>• Introduce the two key frameworks: supply/demand dynamics AND market structure.<br>• Key insight: Understanding these forces = making smarter purchasing decisions."
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
@@ -70,21 +72,21 @@
     {
       "number": 4,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
               "term": "Demand",
               "definition": "The quantity of a good or service that consumers are willing and able to purchase at various price points.",
-              "example": "When gas prices rise, people drive less—quantity demanded decreases (Law of Demand)"
+              "example": "When gas prices rise, people drive less\u2014quantity demanded decreases (Law of Demand)"
             },
             {
               "term": "Supply",
               "definition": "The quantity of a good or service that producers are willing and able to offer for sale at various prices.",
-              "example": "When home prices rise, builders construct more houses—quantity supplied increases"
+              "example": "When home prices rise, builders construct more houses\u2014quantity supplied increases"
             }
           ]
         }
@@ -93,21 +95,21 @@
     {
       "number": 5,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
               "term": "Equilibrium Price",
               "definition": "The price at which quantity demanded equals quantity supplied, resulting in a stable market.",
-              "example": "If homes are priced too high, they sit unsold; too low, bidding wars erupt—equilibrium balances both"
+              "example": "If homes are priced too high, they sit unsold; too low, bidding wars erupt\u2014equilibrium balances both"
             },
             {
               "term": "Consumer Surplus",
               "definition": "The difference between what consumers are willing to pay and what they actually pay.",
-              "example": "You'd pay $500 for a phone but find it on sale for $350—your consumer surplus is $150"
+              "example": "You'd pay $500 for a phone but find it on sale for $350\u2014your consumer surplus is $150"
             }
           ]
         }
@@ -116,7 +118,7 @@
     {
       "number": 6,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Supply & Demand in {{STATE_NAME}}'s Housing Market",
         "layout": "balanced-layout",
@@ -129,7 +131,7 @@
               "Factors affecting {{STATE_NAME}}'s housing demand include job growth, population changes, and median income levels."
             ],
             "highlightBox": {
-              "icon": "💡",
+              "icon": "\ud83d\udca1",
               "text": "Understanding these forces helps you time home purchases and rental negotiations for maximum savings."
             }
           },
@@ -163,7 +165,7 @@
     {
       "number": 7,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Supply & Demand in {{STATE_NAME}}'s Labor Market",
         "layout": "balanced-layout",
@@ -176,8 +178,8 @@
               "Your earning potential is directly tied to understanding which skills are in high demand and short supply."
             ],
             "highlightBox": {
-              "icon": "💡",
-              "text": "Careers in high-demand, low-supply fields command premium wages—research before choosing your path!"
+              "icon": "\ud83d\udca1",
+              "text": "Careers in high-demand, low-supply fields command premium wages\u2014research before choosing your path!"
             }
           },
           "rightPanel": {
@@ -210,7 +212,7 @@
     {
       "number": 8,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Market Equilibrium: Finding Balance",
         "layout": "concept-full",
@@ -220,10 +222,10 @@
             "When markets are out of equilibrium, <strong>powerful forces push them back toward balance</strong>. This self-correcting mechanism explains many price changes you observe."
           ],
           "bulletPoints": [
-            "<strong>Price Too High:</strong> Surplus forms → Sellers reduce prices → Equilibrium restored",
-            "<strong>Price Too Low:</strong> Shortage forms → Buyers bid up prices → Equilibrium restored",
-            "<strong>After Hurricane:</strong> Gas shortage → Prices spike → Consumers reduce use → Balance returns",
-            "<strong>Seasonal Patterns:</strong> Winter demand for homes drops → Better negotiating power for buyers"
+            "<strong>Price Too High:</strong> Surplus forms \u2192 Sellers reduce prices \u2192 Equilibrium restored",
+            "<strong>Price Too Low:</strong> Shortage forms \u2192 Buyers bid up prices \u2192 Equilibrium restored",
+            "<strong>After Hurricane:</strong> Gas shortage \u2192 Prices spike \u2192 Consumers reduce use \u2192 Balance returns",
+            "<strong>Seasonal Patterns:</strong> Winter demand for homes drops \u2192 Better negotiating power for buyers"
           ],
           "keyPoint": {
             "text": "Understanding these patterns helps you predict whether price changes are temporary spikes or permanent shifts."
@@ -234,7 +236,7 @@
     {
       "number": 9,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Market Structures: Competition Levels",
         "layout": "comparison-grid",
@@ -267,7 +269,7 @@
     {
       "number": 10,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Oligopoly: The In-Between",
         "layout": "balanced-layout",
@@ -277,10 +279,10 @@
             "paragraphs": [
               "An <strong>oligopoly</strong> features a few large firms dominating the market. Each firm's decisions significantly affect competitors.",
               "Common examples: Airlines, cell phone carriers, automobile manufacturers, and soft drink companies.",
-              "These firms often engage in <strong>price leadership</strong>—when one raises prices, others follow. They compete on features and branding rather than price wars."
+              "These firms often engage in <strong>price leadership</strong>\u2014when one raises prices, others follow. They compete on features and branding rather than price wars."
             ],
             "highlightBox": {
-              "icon": "💡",
+              "icon": "\ud83d\udca1",
               "text": "Ever notice how wireless carriers often have suspiciously similar pricing? That's oligopolistic behavior!"
             }
           },
@@ -314,7 +316,7 @@
     {
       "number": 11,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Why Understanding Markets Matters",
         "layout": "concept-full",
@@ -326,28 +328,29 @@
           "bulletPoints": [
             "<strong>Time Major Purchases:</strong> Buy TVs after Super Bowl, winter clothes in March, homes in winter",
             "<strong>Assess Fair Prices:</strong> In competitive markets, shop around; in monopolies, negotiate terms",
-            "<strong>Predict Price Changes:</strong> Gasoline demand is inelastic—small supply disruptions = big price spikes",
-            "<strong>Find Deals:</strong> Restaurants have elastic demand—they offer promotions during slow periods",
+            "<strong>Predict Price Changes:</strong> Gasoline demand is inelastic\u2014small supply disruptions = big price spikes",
+            "<strong>Find Deals:</strong> Restaurants have elastic demand\u2014they offer promotions during slow periods",
             "<strong>Plan Your Budget:</strong> Know when prices will likely rise or fall based on seasonal patterns",
             "<strong>Be an Informed Citizen:</strong> Evaluate policy proposals based on economic reasoning"
           ]
         }
-      }
+      },
+      "notes": "<strong>Common Misconceptions:</strong><br><table style='width:100%; border-collapse: collapse; margin-top: 8px;'><tr><th style='background: #fee2e2; color: #991b1b; padding: 6px; border: 1px solid #fca5a5; text-align: left;'>Misconception</th><th style='background: #dcfce7; color: #166534; padding: 6px; border: 1px solid #86efac; text-align: left;'>Clarification</th></tr><tr><td style='padding: 6px; border: 1px solid #e2e8f0;'>\"More competition always means lower prices.\"</td><td style='padding: 6px; border: 1px solid #e2e8f0;'>Generally true, but more competition can also mean more product differentiation, advertising costs, and innovation that can keep prices from falling to cost. Perfect competition with identical products produces lowest prices.</td></tr><tr><td style='padding: 6px; border: 1px solid #e2e8f0;'>\"Monopolies are always illegal.\"</td><td style='padding: 6px; border: 1px solid #e2e8f0;'>Natural monopolies (utilities) are often legal and even regulated. Being a monopoly isn't illegal—using monopoly power to harm competition is. Many monopolies exist through innovation or patents.</td></tr><tr><td style='padding: 6px; border: 1px solid #e2e8f0;'>\"Price increases are always bad for consumers.\"</td><td style='padding: 6px; border: 1px solid #e2e8f0;'>Price increases signal scarcity and encourage conservation of scarce resources. They also incentivize new supply. After a hurricane, higher gas prices encourage people to buy less and motivate suppliers to increase shipments.</td></tr><tr><td style='padding: 6px; border: 1px solid #e2e8f0;'>\"If I wait, prices always come down.\"</td><td style='padding: 6px; border: 1px solid #e2e8f0;'>Not always! If supply is decreasing or demand is growing, prices may continue rising. Understanding current trends matters—waiting only helps if supply is increasing or demand is falling.</td></tr></table>"
     },
     {
       "number": 12,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Real-World Example: Smart Car Buying",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "🚗",
+            "icon": "\ud83d\ude97",
             "name": "Marcus Navigates the Used Car Market",
             "paragraphs": [
               "Marcus needed a reliable used car with a budget of $12,000. He researched the market and observed that <span class=\"highlight-text\">sedan demand had decreased</span> as consumers shifted to SUVs, while sedan supply remained high.",
-              "He targeted a Toyota Camry, monitored prices for three weeks, and noticed dealerships had higher inventory near <strong>month-end</strong>. Marcus visited on the last day of the month and negotiated $11,900—<span class=\"highlight-text\">$1,600 below market average</span>."
+              "He targeted a Toyota Camry, monitored prices for three weeks, and noticed dealerships had higher inventory near <strong>month-end</strong>. Marcus visited on the last day of the month and negotiated $11,900\u2014<span class=\"highlight-text\">$1,600 below market average</span>."
             ]
           },
           "outcomes": [
@@ -376,17 +379,17 @@
     {
       "number": 13,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Real-World Example: Timing Rental Markets",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "🏠",
-            "name": "Alicia Times Her Apartment Search in {{STATE_NAME}}",
+            "icon": "\ud83c\udfe0",
+            "name": "Alicia Times Her Apartment Search",
             "paragraphs": [
               "Alicia planned to move to a city in <span class=\"highlight-text\">{{STATE_NAME}}</span> for a job starting in August. She discovered the city had a large university, creating <strong>highly seasonal demand patterns</strong>.",
-              "Student demand peaked in August for fall semester, driving rents 15-20% above winter rates. Instead of competing with thousands of students, Alicia negotiated a September start date and searched in late September—finding rent <span class=\"highlight-text\">$200/month lower</span>."
+              "Student demand peaked in August for fall semester, driving rents 15-20% above winter rates. Instead of competing with thousands of students, Alicia negotiated a September start date and searched in late September\u2014finding rent <span class=\"highlight-text\">$200/month lower</span>."
             ]
           },
           "outcomes": [
@@ -424,7 +427,7 @@
     {
       "number": 15,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Practical Strategies for {{STATE_NAME}} Consumers",
         "layout": "balanced-layout",
@@ -436,7 +439,7 @@
               "Recognizing which markets are competitive vs. monopolistic tells you where aggressive shopping pays off and where negotiation tactics work better."
             ],
             "highlightBox": {
-              "icon": "💡",
+              "icon": "\ud83d\udca1",
               "text": "With a {{STATE_UNEMPLOYMENT_RATE}}% unemployment rate, understanding labor market supply/demand helps you negotiate better starting salaries!"
             }
           },
@@ -468,7 +471,7 @@
     {
       "number": 17,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "emerald",
       "content": {
         "headerTitle": "Common Mistakes to Avoid",
         "layout": "check-grid",
@@ -492,12 +495,13 @@
             }
           ]
         }
-      }
+      },
+      "notes": "<strong>Assessment Answer Key (Check Your Understanding):</strong><br><br><strong>Q1:</strong> When frost damages orange crops in Florida, what typically happens to orange juice prices?<br><em>Answer:</em> B (Prices increase because supply decreases). Orange crop damage reduces supply, shifting supply curve left, raising equilibrium price.<br><br><strong>Q2:</strong> Which market structure typically offers consumers the BEST prices?<br><em>Answer:</em> C (Perfect competition). Many sellers competing drives prices toward cost, maximizing consumer surplus.<br><br><strong>Q3:</strong> Why do products with inelastic demand (like gasoline or insulin) have more volatile prices?<br><em>Answer:</em> B (Small supply disruptions cause large price swings). Inelastic demand means quantity doesn't fall much when prices rise, so prices must rise MORE to restore equilibrium.<br><br><strong>Q4:</strong> In an oligopoly (like wireless carriers), why do companies often avoid lowering prices below competitors?<br><em>Answer:</em> B (Each firm watches competitors and avoids price wars). Oligopolists are interdependent—cutting prices triggers retaliation, hurting all firms.<br><br><strong>Q5:</strong> If you need to find an apartment in a college town, which months would likely offer the BEST and WORST rental deals?<br><em>Answer:</em> WORST: July-August (peak student demand, limited supply available). BEST: October-November or January (after semester rush). Reasoning: Student demand creates seasonal peak in summer; searching off-peak means more options and lower prices."
     },
     {
       "number": 18,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Key Takeaways",
         "layout": "takeaway-grid",
@@ -530,13 +534,13 @@
     {
       "number": 19,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Skill Builder Activity",
         "layout": "activity-layout",
         "layoutData": {
           "main": {
-            "icon": "📋",
+            "icon": "\ud83d\udccb",
             "title": "Market Dynamics Simulator",
             "description": "Use the interactive simulator to explore how supply and demand changes affect prices and how different market structures impact consumer outcomes. Apply what you've learned about <span class=\"highlight-text\">{{STATE_NAME}}</span>'s housing market (median price: ${{STATE_MEDIAN_HOME_PRICE}}) and labor market (unemployment: {{STATE_UNEMPLOYMENT_RATE}}%)."
           },
@@ -556,7 +560,7 @@
       "content": {
         "tagline": "Building Financial Futures, One Lesson at a Time",
         "website": "www.pflacademy.co",
-        "copyright": "© 2025 PFL Academy. All rights reserved."
+        "copyright": "\u00a9 2025 PFL Academy. All rights reserved."
       }
     }
   ]

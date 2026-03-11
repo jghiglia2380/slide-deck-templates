@@ -1,12 +1,17 @@
 {
   "metadata": {
     "lChapter": "L-06",
-    "title": "Understanding Federaland State Taxes",
-    "subtitle": "How Tax Systems Impact Your Financial Life in {{STATE_NAME}}",
+    "title": "Understanding Federal and State Taxes",
+    "subtitle": "How Tax Systems Impact Your Financial Life",
     "totalSlides": 20,
     "hasStateVariables": true,
     "stateVariablesUsed": [
-      "STATE_NAME"
+      "STATE_NAME",
+      "STATE_CODE",
+      "STATE_INCOME_TAX_RATE",
+      "STATE_SALES_TAX",
+      "STATE_PROPERTY_TAX_AVG",
+      "STATE_GAS_TAX"
     ]
   },
   "slides": [
@@ -14,23 +19,25 @@
       "number": 1,
       "type": "title",
       "content": {
-        "title": "Understanding Federaland State Taxes",
+        "title": "Understanding Federal and State Taxes",
         "titleSize": "large",
-        "subtitle": "How Tax Systems Impact Your Financial Life in {{STATE_NAME}}"
+        "subtitle": "How Tax Systems Impact Your Financial Life"
       }
     },
     {
       "number": 2,
       "type": "hook",
       "content": {
-        "label": "Essential Question",
-        "question": "If you earn $70,000, would you keep more money living in <em>Texas</em> or <em>California</em>?<br><br>The answer might surprise you..."
-      }
+        "label": "The Challenge",
+        "question": "Mia in California and Liam in Texas both earn $70,000 annually. After federal and state taxes, Mia takes home $51,100 while Liam takes home $54,900 with no state income tax—but Texas has significantly higher property taxes than California.<br><br>How does {{STATE_NAME}}'s tax structure compare to states you might consider living in?"
+      },
+      "headerColor": "amber",
+      "speakerNotes": "Read the comparison scenario featuring {{STATE_NAME}}'s {{STATE_INCOME_TAX_RATE}}% income tax rate vs. the national average. Ask the discussion question: 'How does {{STATE_NAME}}'s tax structure compare to states you might consider living in?' Allow 2-3 students to share where they've lived or might consider moving. This introduces the core concept that tax structures vary widely by state and significantly impact take-home income."
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
@@ -63,9 +70,9 @@
     {
       "number": 4,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
@@ -77,30 +84,31 @@
             {
               "term": "Tax Bracket",
               "definition": "An income range that is subject to a specific tax rate in a progressive tax system.",
-              "example": "Only income WITHIN each bracket is taxed at that rate—not your entire income!"
+              "example": "Only income WITHIN each bracket is taxed at that rate\u2014not your entire income!"
             }
           ]
         }
-      }
+      },
+      "speakerNotes": "Review the 5 key terms on this and the next slide. Draw a progressive tax bracket visual on the board showing how income is divided into brackets like a staircase. List the 7 states with no income tax (Alaska, Florida, Nevada, South Dakota, Tennessee, Texas, Wyoming) and discuss how they fund services differently than {{STATE_NAME}}—often through higher property taxes, sales taxes, or resource-based revenue. Clarify FICA clearly: 6.2% Social Security + 1.45% Medicare = 7.65% total that comes out of every paycheck."
     },
     {
       "number": 5,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
               "term": "FICA / Payroll Tax",
-              "definition": "Employment taxes funding Social Security (6.2%) and Medicare (1.45%) — totaling 7.65%.",
+              "definition": "Employment taxes funding Social Security (6.2%) and Medicare (1.45%) \u2014 totaling 7.65%.",
               "example": "Your employer matches your contribution, so 15.3% total goes to these programs."
             },
             {
               "term": "Withholding",
               "definition": "The portion of your paycheck your employer keeps to pay taxes on your behalf throughout the year.",
-              "example": "Prevents a large tax bill in April—taxes are paid as you earn income."
+              "example": "Prevents a large tax bill in April\u2014taxes are paid as you earn income."
             }
           ]
         }
@@ -109,7 +117,7 @@
     {
       "number": 6,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "What Your Taxes Fund",
         "layout": "concept-full",
@@ -128,16 +136,14 @@
             "<strong>Environment:</strong> Parks, wildlife protection, EPA programs",
             "<strong>Research:</strong> NASA, NIH, scientific advancement"
           ],
-          "keyPoint": {
-            "text": "💡 Understanding where tax money goes helps you participate in policy discussions about how it should be spent."
-          }
+          "keyPoint": "\ud83d\udca1 Understanding where tax money goes helps you participate in policy discussions about how it should be spent."
         }
       }
     },
     {
       "number": 7,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "How Progressive Tax Brackets Work",
         "layout": "balanced-layout",
@@ -147,22 +153,21 @@
             "paragraphs": [
               "Many people think: \"If I'm in the 22% bracket, I pay 22% on ALL my income.\"",
               "<strong>This is wrong!</strong> You only pay each rate on income within that specific bracket.",
+              "",
               "<strong>Example: $50,000 income</strong>",
-              "• First $11,000 → 10% = $1,100",
-              "• Next $33,725 → 12% = $4,047",
-              "• Last $5,275 → 22% = $1,161"
-            ],
-            "highlightBox": {
-              "icon": "\ud83d",
-              "text": "\udcca Total tax: $6,308 = <strong>12.6% effective rate</strong> (not 22%!)"
-            }
+              "\u2022 First $11,000 \u2192 10% = $1,100",
+              "\u2022 Next $33,725 \u2192 12% = $4,047",
+              "\u2022 Last $5,275 \u2192 22% = $1,161",
+              "",
+              "\ud83d\udcca Total tax: $6,308 = <strong>12.6% effective rate</strong> (not 22%!)"
+            ]
           },
           "rightPanel": {
             "stats": [
               {
                 "value": "22%",
                 "label": "Marginal Rate (Top Bracket)",
-                "color": "teal"
+                "color": "indigo"
               },
               {
                 "value": "12.6%",
@@ -172,7 +177,7 @@
             ],
             "infoCard": {
               "title": "2024 Federal Tax Brackets:",
-              "color": "blue",
+              "color": "indigo",
               "items": [
                 "10%: Up to $11,600",
                 "12%: $11,601 - $47,150",
@@ -187,26 +192,32 @@
     {
       "number": 8,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "{{STATE_NAME}} Tax Profile",
-        "layout": "generic",
+        "headerTitle": "Federal and State Tax Comparison",
+        "layout": "comparison-grid",
         "layoutData": {
-          "paragraphs": [],
-          "lists": []
+          "leftPanel": {
+            "title": "Federal Average",
+            "content": "The average American pays ~14% in federal income taxes."
+          },
+          "rightPanel": {
+            "title": "In {{STATE_NAME}}",
+            "content": "Your state income tax structure impacts your take-home pay differently here."
+          }
         }
       }
     },
     {
       "number": 9,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Why State Taxes Vary So Much",
         "layout": "comparison-grid",
         "layoutData": {
           "leftColumn": {
-            "icon": "",
+            "icon": "\ud83c\udf34",
             "title": "No Income Tax States",
             "items": [
               "Alaska, Florida, Nevada",
@@ -218,7 +229,7 @@
             ]
           },
           "rightColumn": {
-            "icon": "",
+            "icon": "\ud83c\udfdb\ufe0f",
             "title": "High Income Tax States",
             "items": [
               "California (up to 13.3%)",
@@ -235,24 +246,26 @@
     {
       "number": 10,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Case Study: Same Salary, Different States",
+        "headerTitle": "Apply It",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "👥",
+            "icon": "\ud83d\udc65",
             "name": "Mia (California) vs. Liam (Texas)",
             "paragraphs": [
               "Both earn <span class=\"highlight-text\">$70,000 annually</span>. Let's compare their situations:",
+              "",
               "<strong>Mia in California:</strong>",
-              "• Federal tax: ~$9,800 | State tax: ~$3,800",
-              "• Take-home: ~$51,100",
-              "• Property tax rate: 0.77%",
+              "\u2022 Federal tax: ~$9,800 | State tax: ~$3,800",
+              "\u2022 Take-home: ~$51,100",
+              "\u2022 Property tax rate: 0.77%",
+              "",
               "<strong>Liam in Texas:</strong>",
-              "• Federal tax: ~$9,800 | State tax: $0",
-              "• Take-home: ~$54,900",
-              "• Property tax rate: 1.83%"
+              "\u2022 Federal tax: ~$9,800 | State tax: $0",
+              "\u2022 Take-home: ~$54,900",
+              "\u2022 Property tax rate: 1.83%"
             ]
           },
           "outcomes": [
@@ -281,7 +294,7 @@
     {
       "number": 11,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Payroll Taxes: FICA Explained",
         "layout": "balanced-layout",
@@ -290,25 +303,25 @@
             "title": "What FICA Funds",
             "paragraphs": [
               "<strong>Social Security (6.2%):</strong> Retirement benefits, disability income, survivor benefits for families.",
+              "",
               "<strong>Medicare (1.45%):</strong> Healthcare coverage for those 65+ and certain disabled individuals.",
-              "Your employer matches your contribution, meaning 15.3% total goes to these programs for every dollar you earn."
-            ],
-            "highlightBox": {
-              "icon": "\ud83d",
-              "text": "\udd04 Unlike income tax, FICA is a flat rate on all wages (SS has a cap at ~$168,600 in 2024)."
-            }
+              "",
+              "Your employer matches your contribution, meaning 15.3% total goes to these programs for every dollar you earn.",
+              "",
+              "\ud83d\udd04 Unlike income tax, FICA is a flat rate on all wages (SS has a cap at ~$168,600 in 2024)."
+            ]
           },
           "rightPanel": {
             "stats": [
               {
                 "value": "6.2%",
                 "label": "Social Security (You Pay)",
-                "color": "teal"
+                "color": "indigo"
               },
               {
                 "value": "1.45%",
                 "label": "Medicare (You Pay)",
-                "color": "purple"
+                "color": "indigo"
               },
               {
                 "value": "7.65%",
@@ -319,12 +332,13 @@
             "infoCard": null
           }
         }
-      }
+      },
+      "speakerNotes": "COMMON MISCONCEPTIONS TO ADDRESS:\n\n1. 'Moving to a higher tax bracket means ALL my income is taxed at that rate' → CLARIFY: Only the income WITHIN each bracket is taxed at that rate. If you earn $50,000, only $5,275 is taxed at 22%—not all $50,000. This is the most important misconception to correct!\n\n2. 'States with no income tax are always cheaper than {{STATE_NAME}}' → CLARIFY: No-income-tax states often have higher property taxes, sales taxes, or fees. Total tax burden depends on individual circumstances. Compare {{STATE_NAME}}'s {{STATE_PROPERTY_TAX_AVG}}% property tax to Texas's ~1.8%.\n\n3. 'FICA taxes are optional' → CLARIFY: FICA (Social Security + Medicare) is mandatory for all wage earners. It funds programs you'll likely use in retirement. This is not optional and cannot be opted out of.\n\nAddress these proactively during discussion, especially #1 which causes significant confusion about how tax brackets work."
     },
     {
       "number": 12,
       "type": "discussion",
-      "variant": "teal",
+      "variant": "amber",
       "content": {
         "badge": "Discussion",
         "question": "How might understanding different state tax systems influence your decisions about where to live and work after graduation?<br><br>What factors beyond taxes would you consider?"
@@ -333,7 +347,7 @@
     {
       "number": 13,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Reading Your Pay Stub",
         "layout": "balanced-layout",
@@ -342,17 +356,16 @@
             "title": "Alex's Monthly Pay Stub ($48K/year)",
             "paragraphs": [
               "<strong>Gross Pay:</strong> $4,000",
-              "− Federal Withholding: $430",
-              "− State Withholding: $180",
-              "− Social Security: $248",
-              "− Medicare: $58",
-              "− Health Insurance: $320",
-              "− 401(k): $200"
-            ],
-            "highlightBox": {
-              "icon": "💡",
-              "text": "<strong>Net Pay: $2,564</strong> (64% of gross)"
-            }
+              "",
+              "\u2212 Federal Withholding: $430",
+              "\u2212 State Withholding: $180",
+              "\u2212 Social Security: $248",
+              "\u2212 Medicare: $58",
+              "\u2212 Health Insurance: $320",
+              "\u2212 401(k): $200",
+              "",
+              "\ud83d\udca1 <strong>Net Pay: $2,564</strong> (64% of gross)"
+            ]
           },
           "rightPanel": {
             "stats": [
@@ -383,7 +396,7 @@
     {
       "number": 14,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Why This Matters for Your Future",
         "layout": "concept-full",
@@ -400,16 +413,14 @@
             "<strong>Side Income:</strong> Self-employment means paying both halves of FICA (15.3%)",
             "<strong>Investments:</strong> Different investment income has different tax treatment"
           ],
-          "keyPoint": {
-            "text": "🎯 The financial decisions you make now—informed by tax knowledge—compound over your career."
-          }
+          "keyPoint": "\ud83c\udfaf The financial decisions you make now\u2014informed by tax knowledge\u2014compound over your career."
         }
       }
     },
     {
       "number": 15,
       "type": "discussion",
-      "variant": "purple",
+      "variant": "indigo",
       "content": {
         "badge": "Reflection",
         "question": "What's the trade-off between states with high taxes and more government services vs. states with low taxes and fewer services?<br><br>Which would you prefer and why?"
@@ -418,25 +429,13 @@
     {
       "number": 16,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Progressive vs. Regressive Taxes",
         "layout": "comparison-grid",
         "layoutData": {
           "leftColumn": {
-            "icon": "",
-            "title": "Regressive Taxes",
-            "items": [
-              "Everyone pays same rate",
-              "Sales tax, gas tax, fees",
-              "Lower earners pay higher % of income",
-              "Simple to administer",
-              "Can burden low-income families",
-              "Unavoidable on essentials"
-            ]
-          },
-          "rightColumn": {
-            "icon": "",
+            "icon": "\ud83d\udcc8",
             "title": "Progressive Taxes",
             "items": [
               "Higher earners pay higher %",
@@ -446,6 +445,18 @@
               "Reduces income inequality",
               "More complex to calculate"
             ]
+          },
+          "rightColumn": {
+            "icon": "\ud83d\udcca",
+            "title": "Regressive Taxes",
+            "items": [
+              "Everyone pays same rate",
+              "Sales tax, gas tax, fees",
+              "Lower earners pay higher % of income",
+              "Simple to administer",
+              "Can burden low-income families",
+              "Unavoidable on essentials"
+            ]
           }
         }
       }
@@ -453,9 +464,9 @@
     {
       "number": 17,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "emerald",
       "content": {
-        "headerTitle": "Check for Understanding",
+        "headerTitle": "Check Your Understanding",
         "layout": "check-grid",
         "layoutData": {
           "questions": [
@@ -477,12 +488,13 @@
             }
           ]
         }
-      }
+      },
+      "speakerNotes": "ANSWER KEY:\n\nQ1: No, being in the 22% tax bracket does NOT mean all income is taxed at 22%. Only the income WITHIN each bracket is taxed at that rate. For example, if you earn $50,000: the first $11,000 is taxed at 10% ($1,100), the next $33,725 is taxed at 12% ($4,047), and only the last $5,275 is taxed at 22% ($1,161). Total tax is $6,308, which is an effective rate of 12.6%—not 22%.\n\nQ2: FICA taxes fund Social Security (6.2%) and Medicare (1.45%), totaling 7.65% of your paycheck. Social Security provides retirement benefits, disability income, and survivor benefits. Medicare provides healthcare coverage for those 65+ and certain disabled individuals. Your employer matches this 7.65%, so 15.3% total goes to these programs.\n\nQ3: Someone in Texas might still pay similar total taxes to someone in California because while Texas has no state income tax (0%), it has significantly higher property taxes (~1.8% vs. California's 0.77%) and potentially higher sales taxes. The total tax burden depends on individual circumstances—homeowners, especially those with expensive properties, may pay more in Texas despite no income tax.\n\nQ4: Sales tax is considered regressive because lower-income people spend a higher percentage of their income on taxable goods, so sales tax takes a larger share of their total income compared to wealthy people who save/invest more. Even though everyone pays the same rate (e.g., {{STATE_SALES_TAX}}%), it represents a bigger burden for those with less income."
     },
     {
       "number": 18,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Key Takeaways",
         "layout": "takeaway-grid",
@@ -496,7 +508,7 @@
             {
               "number": 2,
               "title": "States Vary Widely",
-              "description": "From 0% to 13%+ income tax—but no-tax states often have higher property/sales taxes"
+              "description": "From 0% to 13%+ income tax\u2014but no-tax states often have higher property/sales taxes"
             },
             {
               "number": 3,
@@ -515,15 +527,15 @@
     {
       "number": 19,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Skill Builder: Tax System Analysis",
+        "headerTitle": "Tomorrow's Challenge",
         "layout": "activity-layout",
         "layoutData": {
           "main": {
-            "icon": "\ud83d",
-            "title": "\udcca Analyze Tax Fairness Scenarios",
-            "description": "You'll evaluate three different taxpayers and determine which tax system (progressive or regressive) would be more appropriate for each situation. <strong>Scenarios include:</strong> • John: Entry-level worker ($25K) • Samantha: Mid-career professional ($80K) • Andrew: Business owner ($500K) Consider: ability to pay, impact on financial situation, and benefits received from public services."
+            "icon": "\ud83d\udcca",
+            "title": "Analyze Tax Fairness Scenarios",
+            "description": "You'll evaluate three different taxpayers and determine which tax system (progressive or regressive) would be more appropriate for each situation. <strong>Scenarios include:</strong> \u2022 John: Entry-level worker ($25K) \u2022 Samantha: Mid-career professional ($80K) \u2022 Andrew: Business owner ($500K) Consider: ability to pay, impact on financial situation, and benefits received from public services."
           },
           "steps": [
             "Read each taxpayer scenario carefully",
@@ -541,7 +553,7 @@
       "content": {
         "tagline": "Building Financial Futures, One Lesson at a Time",
         "website": "www.pflacademy.co",
-        "copyright": "© 2025 PFL Academy. All rights reserved."
+        "copyright": "\u00a9 2025 PFL Academy. All rights reserved."
       }
     }
   ]

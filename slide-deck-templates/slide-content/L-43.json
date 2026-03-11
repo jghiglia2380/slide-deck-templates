@@ -1,9 +1,9 @@
 {
   "metadata": {
     "lChapter": "L-43",
-    "title": "Job ApplicationProcess",
-    "subtitle": "From Finding Opportunities to Landing Interviews in {{STATE_NAME}}",
-    "totalSlides": 18,
+    "title": "Job Application Process",
+    "subtitle": "From Finding Opportunities to Landing Interviews",
+    "totalSlides": 20,
     "hasStateVariables": true,
     "stateVariablesUsed": [
       "STATE_NAME"
@@ -14,23 +14,25 @@
       "number": 1,
       "type": "title",
       "content": {
-        "title": "Job ApplicationProcess",
+        "title": "Job Application Process",
         "titleSize": "large",
-        "subtitle": "From Finding Opportunities to Landing Interviews in {{STATE_NAME}}"
+        "subtitle": "From Finding Opportunities to Landing Interviews"
       }
     },
     {
       "number": 2,
       "type": "hook",
       "content": {
-        "label": "Essential Question in {{STATE_NAME}}",
-        "question": "If <em>70-80% of jobs</em> are never publicly advertised,<br>how can you access the <em>hidden job market</em><br>and stand out in a competitive application process? in {{STATE_NAME}}"
-      }
+        "label": "The Challenge",
+        "question": "Alex applied to dozens of jobs randomly without success, but after implementing a strategic multi-channel approach—combining job boards, networking, and internal referrals—he landed a job offer within 2 weeks despite 200+ applicants. <br><br> If <em>70-80% of jobs</em> are never publicly advertised, how can you access the <em>hidden job market</em> and stand out in a competitive application process?"
+      },
+      "headerColor": "amber",
+      "notes": "Discussion prompts:\n• \"Have you or someone you know ever applied to many jobs without hearing back? What do you think went wrong?\"\n• Preview how strategic application approaches dramatically improve success rates."
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
@@ -63,19 +65,19 @@
     {
       "number": 4,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "Applicant Tracking System (ATS) in {{STATE_NAME}}",
+              "term": "Applicant Tracking System (ATS)",
               "definition": "Software used by employers to collect, sort, scan, and filter job applications based on keywords and qualifications.",
               "example": "Up to 75% of resumes are filtered out by ATS before a human ever sees them"
             },
             {
-              "term": "Keywords in {{STATE_NAME}}",
+              "term": "Keywords",
               "definition": "Specific terms in job descriptions that highlight required skills, qualifications, and experience that ATS scans for.",
               "example": "\"Project management,\" \"JavaScript,\" \"Customer service,\" \"Leadership,\" \"Budget analysis\""
             }
@@ -86,19 +88,19 @@
     {
       "number": 5,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "Cover Letter in {{STATE_NAME}}",
+              "term": "Cover Letter",
               "definition": "A document submitted alongside a resume that introduces the applicant and highlights relevant qualifications.",
               "example": "Explains WHY you want this job and HOW your experience makes you the ideal candidate"
             },
             {
-              "term": "Networking in {{STATE_NAME}}",
+              "term": "Networking",
               "definition": "Building professional relationships to exchange information, advice, support, and job referrals.",
               "example": "~70% of people land jobs through networking connections rather than applications alone"
             }
@@ -109,62 +111,53 @@
     {
       "number": 6,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "The Job Application Process",
-        "layout": "generic",
+        "layout": "concept-full",
         "layoutData": {
+          "title": "Seven Stages to Landing a Job",
           "paragraphs": [
-            "Identify opportunities through multiple channels",
-            "Analyze requirements and company culture",
-            "Tailor resume and cover letter",
-            "Apply through appropriate channels",
-            "Send professional thank-you and inquiry",
-            "Prepare and present yourself",
-            "Evaluate offers and negotiate"
+            "Successful job hunting requires a strategic, multi-step approach:"
           ],
-          "lists": []
+          "bulletPoints": [
+            "<strong>1. Search:</strong> Identify opportunities through multiple channels (job boards, networking, company sites)",
+            "<strong>2. Research:</strong> Analyze job requirements and company culture thoroughly",
+            "<strong>3. Customize:</strong> Tailor your resume and cover letter for each specific position",
+            "<strong>4. Apply:</strong> Submit through appropriate channels with all required materials",
+            "<strong>5. Follow Up:</strong> Send professional thank-you and status inquiry emails",
+            "<strong>6. Interview:</strong> Prepare thoroughly and present yourself professionally",
+            "<strong>7. Negotiate:</strong> Evaluate offers and negotiate terms when appropriate"
+          ],
+          "keyPoint": "\ud83d\udca1 Quality beats quantity\u201410 tailored applications are more effective than 50 generic ones."
         }
       }
     },
     {
       "number": 7,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Strategic Job Search Methods",
-        "layout": "generic",
+        "layout": "concept-full",
         "layoutData": {
-          "paragraphs": [],
-          "lists": [
-            [
-              "<strong>General:</strong> Indeed, LinkedIn, Monster, ZipRecruiter",
-              "<strong>Industry-Specific:</strong> Dice (tech), Health eCareers",
-              "<strong>Company Career Pages:</strong> Direct applications",
-              "Set up job alerts with keywords"
-            ],
-            [
-              "Professional associations",
-              "Alumni networks",
-              "Informational interviews",
-              "Job fairs and career events",
-              "LinkedIn connections"
-            ],
-            [
-              "Recruitment agencies",
-              "Internships/volunteering",
-              "Social media following",
-              "Cold outreach to companies",
-              "Professional forums/blogs"
-            ]
-          ]
+          "title": "Three-Pronged Search Strategy",
+          "paragraphs": [
+            "Maximize your chances by using multiple job search channels simultaneously:"
+          ],
+          "bulletPoints": [
+            "<strong>\ud83d\udcf1 Online Job Boards:</strong> Indeed, LinkedIn, Monster, ZipRecruiter (general); Dice (tech), Health eCareers (industry-specific); Company career pages for direct applications; Set up job alerts with relevant keywords",
+            "<strong>\ud83e\udd1d Networking & Connections:</strong> Professional associations in your field; Alumni networks from your school; Informational interviews with professionals; Job fairs and career events; LinkedIn connections and engagement",
+            "<strong>\ud83d\udd0d Proactive Outreach:</strong> Recruitment agencies and headhunters; Internships and volunteering opportunities; Following companies on social media; Cold outreach to companies of interest; Professional forums and industry blogs"
+          ],
+          "keyPoint": "\ud83d\udca1 The most effective job search combines all three approaches\u2014don't rely on just one method."
         }
       }
     },
     {
       "number": 8,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "The Hidden Job Market",
         "layout": "balanced-layout",
@@ -173,31 +166,31 @@
             "title": "Why Networking Matters Most",
             "paragraphs": [
               "Approximately <strong>70-80% of jobs are never publicly advertised</strong>. These positions are filled through:",
-              "• Internal promotions and referrals",
-              "• Professional network connections",
-              "• Direct outreach from candidates",
-              "• Recruiter relationships"
+              "\u2022 Internal promotions and referrals",
+              "\u2022 Professional network connections",
+              "\u2022 Direct outreach from candidates",
+              "\u2022 Recruiter relationships"
             ],
             "highlightBox": {
-              "icon": "\ud83d",
-              "text": "\udca1 Networking isn't just helpful—it's essential for accessing the majority of opportunities!"
+              "icon": "\ud83d\udca1",
+              "text": "Networking isn't just helpful\u2014it's essential for accessing the majority of opportunities!"
             }
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "70-80% in {{STATE_NAME}}",
-                "label": "Jobs never publicly posted in {{STATE_NAME}}",
+                "value": "70-80%",
+                "label": "Jobs never publicly posted",
                 "color": "rose"
               },
               {
-                "value": "70% in {{STATE_NAME}}",
-                "label": "Jobs landed through networking in {{STATE_NAME}}",
+                "value": "70%",
+                "label": "Jobs landed through networking",
                 "color": "green"
               },
               {
-                "value": "40% in {{STATE_NAME}}",
-                "label": "Higher chance with referral in {{STATE_NAME}}",
+                "value": "40%",
+                "label": "Higher chance with referral",
                 "color": "purple"
               }
             ],
@@ -209,33 +202,33 @@
     {
       "number": 9,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Decoding Job Descriptions",
         "layout": "concept-full",
         "layoutData": {
           "title": "Key Components to Analyze",
-          "paragraphs": [],
-          "bulletPoints": [
-            "<strong>Job Title</strong> – Official name of the position",
-            "<strong>Company Overview</strong> – Brief description of organization",
-            "<strong>Job Summary</strong> – Overview of the role's purpose",
-            "<strong>Responsibilities</strong> – Day-to-day tasks and expectations",
-            "<strong>Required Qualifications</strong> – Must-have education, experience, skills",
-            "<strong>Preferred Qualifications</strong> – Nice-to-have but not mandatory",
-            "<strong>Compensation &amp; Benefits</strong> – Salary range (not always included)",
-            "<strong>Application Instructions</strong> – How to apply and what to submit"
+          "paragraphs": [
+            "Job descriptions contain critical information\u2014learn to read between the lines:"
           ],
-          "keyPoint": {
-            "text": "📌 Rule of Thumb: Apply if you meet ~70-80% of the requirements, especially the essential ones. Don't self-select out!"
-          }
+          "bulletPoints": [
+            "<strong>Job Title:</strong> Official name of the position (may differ from internal roles)",
+            "<strong>Company Overview:</strong> Brief description of the organization's mission and culture",
+            "<strong>Job Summary:</strong> Overview of the role's purpose and how it fits in the organization",
+            "<strong>Responsibilities:</strong> Day-to-day tasks and expectations\u2014prioritized by importance",
+            "<strong>Required Qualifications:</strong> Must-have education, experience, skills (essential criteria)",
+            "<strong>Preferred Qualifications:</strong> Nice-to-have but not mandatory (wish list)",
+            "<strong>Compensation & Benefits:</strong> Salary range (not always included), benefits package",
+            "<strong>Application Instructions:</strong> How to apply and what materials to submit"
+          ],
+          "keyPoint": "\ud83d\udccc Rule of Thumb: Apply if you meet ~70-80% of the requirements, especially the essential ones. Don't self-select out!"
         }
       }
     },
     {
       "number": 10,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Customizing Your Application",
         "layout": "balanced-layout",
@@ -244,15 +237,28 @@
             "title": "Resume Customization",
             "paragraphs": [
               "<strong>1. Prioritize Experience:</strong> Rearrange sections to highlight most relevant experience first",
-              "<strong>2. Integrate Keywords:</strong> Incorporate exact terms from the job description",
+              "<strong>2. Integrate Keywords:</strong> Incorporate exact terms from the job description naturally",
               "<strong>3. Align Achievements:</strong> Emphasize accomplishments that demonstrate required skills",
               "<strong>4. Tailor Summary:</strong> Customize your professional summary for each position"
             ],
-            "highlightBox": null
+            "highlightBox": {
+              "icon": "\ud83d\udca1",
+              "text": "Every application should feel custom-made for that specific role and company."
+            }
           },
           "rightPanel": {
             "stats": [],
-            "infoCard": null
+            "infoCard": {
+              "title": "Cover Letter Tips:",
+              "color": "teal",
+              "items": [
+                "Address the specific hiring manager if possible",
+                "Explain WHY this role at THIS company",
+                "Show you researched the organization",
+                "Connect your experience to their needs",
+                "Keep it to 3-4 concise paragraphs"
+              ]
+            }
           }
         }
       }
@@ -260,45 +266,30 @@
     {
       "number": 11,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Navigating Applicant Tracking Systems",
-        "layout": "generic",
+        "layout": "concept-full",
         "layoutData": {
-          "paragraphs": [],
-          "lists": [
-            [
-              "Simple, clean layouts",
-              "Standard section headings",
-              "Common fonts (Arial, Calibri)",
-              "Avoid tables and text boxes"
-            ],
-            [
-              "Include exact keywords from job description",
-              "Use both spelled-out and acronyms",
-              "Place keywords in context",
-              "Don't stuff or overuse terms"
-            ],
-            [
-              "Use .docx or .pdf (check instructions)",
-              "Professional file name",
-              "\"JohnSmith_Resume.pdf\"",
-              "Avoid special characters"
-            ],
-            [
-              "Complete ALL required fields",
-              "Answer all questions",
-              "Submit all documents",
-              "Double-check before submitting"
-            ]
-          ]
+          "title": "Four ATS Success Strategies",
+          "paragraphs": [
+            "Beat the robots: Optimize your application for ATS software that screens resumes before humans see them:"
+          ],
+          "bulletPoints": [
+            "<strong>1. Format for Success:</strong> Simple, clean layouts; Standard section headings (Education, Experience, Skills); Common fonts (Arial, Calibri, Times New Roman); Avoid tables, text boxes, headers/footers",
+            "<strong>2. Strategic Keyword Usage:</strong> Include exact keywords from job description; Use both spelled-out and acronym versions (ATS and Applicant Tracking System); Place keywords in context naturally; Don't keyword stuff or overuse terms",
+            "<strong>3. File Format Matters:</strong> Use .docx or .pdf format (check specific instructions); Professional file name: \"FirstName_LastName_Resume.pdf\"; Avoid special characters in file name",
+            "<strong>4. Complete Application Thoroughly:</strong> Fill out ALL required fields completely; Answer all questions even if info is on resume; Submit all requested documents; Double-check everything before submitting"
+          ],
+          "keyPoint": "\ud83d\udca1 75% of resumes are rejected by ATS before a human sees them\u2014format and keywords matter!"
         }
-      }
+      },
+      "notes": "Common Misconceptions:\n\n| Misconception | Clarification |\n|--------------|---------------|\n| \"Applying to more jobs always increases my chances.\" | Quality beats quantity. 10 tailored applications typically outperform 50 generic ones. Strategic, customized applications have significantly higher response rates. |\n| \"Creative resume designs help me stand out.\" | Creative designs may hurt you with ATS systems. Clean, simple formatting with standard headings is most effective for passing automated screening. |\n| \"Networking is only for people who are outgoing.\" | Networking can take many forms—informational interviews, online communities, professional associations. Introverts often excel at building deeper one-on-one professional relationships. |"
     },
     {
       "number": 12,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Professional Follow-Up",
         "layout": "balanced-layout",
@@ -307,16 +298,30 @@
             "title": "Why Follow Up?",
             "paragraphs": [
               "Professional follow-up demonstrates your continued interest and proactive attitude.",
-              "<strong>Timing:</strong> Wait 1-2 weeks after the application deadline",
-              "<strong>Method:</strong> Email is typically most appropriate",
-              "<strong>Tone:</strong> Polite, brief, and professional",
-              "<strong>Content:</strong> Reference specific position, express interest, offer additional info"
+              "",
+              "<strong>Timing:</strong> Wait 1-2 weeks after the application deadline or submission date",
+              "<strong>Method:</strong> Email is typically most appropriate for initial follow-up",
+              "<strong>Tone:</strong> Polite, brief, and professional\u2014never pushy or demanding",
+              "<strong>Content:</strong> Reference the specific position, express continued interest, offer to provide additional information"
             ],
-            "highlightBox": null
+            "highlightBox": {
+              "icon": "\ud83d\udca1",
+              "text": "A thoughtful follow-up can move your application from the \"maybe\" pile to the \"interview\" pile."
+            }
           },
           "rightPanel": {
             "stats": [],
-            "infoCard": null
+            "infoCard": {
+              "title": "Sample Follow-Up Email:",
+              "color": "blue",
+              "items": [
+                "Subject: Following Up - [Position] Application",
+                "Dear [Hiring Manager],",
+                "I wanted to follow up on my application for [Position].",
+                "I remain very interested in joining [Company].",
+                "Please let me know if you need any additional information."
+              ]
+            }
           }
         }
       }
@@ -324,39 +329,51 @@
     {
       "number": 13,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Real-World Example",
+        "headerTitle": "Apply It",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "💻 in {{STATE_NAME}}",
-            "name": "Alex: Strategic Job Search Approach in {{STATE_NAME}}",
+            "icon": "\ud83d\udcbb",
+            "name": "Alex: Strategic Job Search Approach",
             "paragraphs": [
-              "Alex, a recent computer science graduate, wanted a junior software developer position. Instead of randomly applying, he implemented a <span class=\"highlight-text\">strategic approach</span>:",
-              "<strong>Research:</strong> Identified companies known for mentoring junior developers.",
-              "<strong>Multi-Channel Search:</strong> Created alerts on 3 job boards, followed 15 target companies on LinkedIn, joined 2 local tech meetups.",
-              "<strong>Customization:</strong> For TechStart Inc., analyzed the job description, tailored resume to highlight relevant projects, and connected with an employee at a meetup."
+              "Alex, a recent computer science graduate, wanted a junior software developer position. Instead of randomly applying to dozens of jobs, he implemented a <strong>strategic multi-channel approach</strong>:",
+              "",
+              "<strong>Research Phase:</strong> Identified 20 companies known for mentoring junior developers and strong engineering cultures",
+              "",
+              "<strong>Multi-Channel Search:</strong>",
+              "\u2022 Created customized job alerts on 3 major job boards",
+              "\u2022 Followed all 20 target companies on LinkedIn",
+              "\u2022 Joined 2 local tech meetup groups and attended monthly events",
+              "\u2022 Connected with 15 software engineers on LinkedIn for informational interviews",
+              "",
+              "<strong>Application Strategy for TechStart Inc.:</strong>",
+              "\u2022 Carefully analyzed the job description and identified 8 key required skills",
+              "\u2022 Tailored his resume to highlight 3 relevant class projects demonstrating those skills",
+              "\u2022 Connected with a TechStart employee at a meetup who offered to refer him internally",
+              "",
+              "Result: Despite 200+ applicants, Alex's strategic approach and internal referral led to a job offer within 2 weeks."
             ]
           },
           "outcomes": [
             {
-              "type": "after",
-              "label": "Strategy Used in {{STATE_NAME}}",
-              "value": "Multi-Channel in {{STATE_NAME}}",
-              "detail": "Job boards + networking + direct in {{STATE_NAME}}"
+              "type": "before",
+              "label": "Strategy Used",
+              "value": "Multi-Channel",
+              "detail": "Job boards + networking + referrals"
             },
             {
               "type": "after",
-              "label": "Applicants in {{STATE_NAME}}",
-              "value": "200+ in {{STATE_NAME}}",
-              "detail": "For the same position in {{STATE_NAME}}"
+              "label": "Competition",
+              "value": "200+ Applicants",
+              "detail": "For the same position"
             },
             {
               "type": "after",
-              "label": "Result in {{STATE_NAME}}",
-              "value": "Job Offer! in {{STATE_NAME}}",
-              "detail": "Within 2 weeks in {{STATE_NAME}}"
+              "label": "Result",
+              "value": "Job Offer",
+              "detail": "Within 2 weeks of application"
             }
           ]
         }
@@ -365,39 +382,54 @@
     {
       "number": 14,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Real-World Example",
+        "headerTitle": "Apply It",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "📊 in {{STATE_NAME}}",
-            "name": "Maya: ATS Optimization Success in {{STATE_NAME}}",
+            "icon": "\ud83d\udcca",
+            "name": "Maya: ATS Optimization Success",
             "paragraphs": [
-              "Maya was applying for a digital marketing coordinator position with a major retail company. Knowing they used an ATS, she employed these strategies:",
-              "<strong>Formatting:</strong> Used clean template without graphics, standard sections, named file \"Maya_Johnson_Marketing_Coordinator_Resume.docx\"",
-              "<strong>Keywords:</strong> Incorporated exact terms: <span class=\"highlight-text\">\"social media management,\" \"campaign analytics,\" \"content creation,\" \"SEO\"</span>",
-              "<strong>Quantified Results:</strong> \"Increased Instagram engagement by 32%\", \"Managed $5,000 monthly ad budget with 45% CTR increase\""
+              "Maya was applying for a digital marketing coordinator position with a major retail company that she knew used an ATS to screen applications. She employed these optimization strategies:",
+              "",
+              "<strong>Formatting Optimization:</strong>",
+              "\u2022 Used a clean, ATS-friendly template without graphics or complex formatting",
+              "\u2022 Organized with standard section headings: Contact Information, Professional Summary, Experience, Education, Skills",
+              "\u2022 Named her file professionally: \"Maya_Johnson_Marketing_Coordinator_Resume.docx\"",
+              "",
+              "<strong>Keyword Integration:</strong>",
+              "\u2022 Identified and incorporated exact terms from the job description: \"social media management,\" \"campaign analytics,\" \"content creation,\" \"SEO optimization,\" \"email marketing\"",
+              "\u2022 Used both acronyms and spelled-out versions: \"SEO (Search Engine Optimization)\"",
+              "",
+              "<strong>Quantified Results:</strong>",
+              "\u2022 \"Increased Instagram engagement by 32% over 6 months\"",
+              "\u2022 \"Managed $5,000 monthly advertising budget with 45% increase in CTR\"",
+              "\u2022 \"Created 50+ blog posts resulting in 60% increase in organic traffic\"",
+              "",
+              "<strong>Follow-Up:</strong> Two weeks after applying, Maya sent a polite follow-up email expressing continued interest.",
+              "",
+              "Result: Her ATS-optimized resume passed the initial screening, and her professional follow-up led to an interview where the hiring manager praised her thorough approach."
             ]
           },
           "outcomes": [
             {
-              "type": "after",
-              "label": "ATS Strategy in {{STATE_NAME}}",
-              "value": "Keywords + Clean Format in {{STATE_NAME}}",
-              "detail": "Passed initial screening in {{STATE_NAME}}"
+              "type": "before",
+              "label": "ATS Strategy",
+              "value": "Keywords + Clean Format",
+              "detail": "Passed initial screening"
             },
             {
               "type": "after",
-              "label": "Follow-Up in {{STATE_NAME}}",
-              "value": "Week 2 in {{STATE_NAME}}",
-              "detail": "Professional email sent in {{STATE_NAME}}"
+              "label": "Follow-Up",
+              "value": "Week 2",
+              "detail": "Professional email sent"
             },
             {
               "type": "after",
-              "label": "Outcome in {{STATE_NAME}}",
-              "value": "Interview Secured in {{STATE_NAME}}",
-              "detail": "Manager praised her approach in {{STATE_NAME}}"
+              "label": "Outcome",
+              "value": "Interview Secured",
+              "detail": "Manager praised her approach"
             }
           ]
         }
@@ -406,16 +438,55 @@
     {
       "number": 15,
       "type": "discussion",
-      "variant": "teal",
+      "variant": "amber",
       "content": {
-        "badge": "Discussion in {{STATE_NAME}}",
-        "question": "What specific obstacles might YOU face in the job application process?<br><br>How could you proactively address challenges like experience gaps, competitive industries, or limited networking connections? in {{STATE_NAME}}"
+        "badge": "Discussion",
+        "question": "What specific obstacles might YOU face in the job application process?<br><br>How could you proactively address challenges like experience gaps, competitive industries, or limited networking connections?"
       }
     },
     {
       "number": 16,
+      "type": "discussion",
+      "variant": "indigo",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "Think about a job or internship you'd like to apply for in the next year.<br><br>Which job search channels would be most effective for that field?<br>Who in your network (or who could you add to your network) might help you access opportunities?"
+      }
+    },
+    {
+      "number": 17,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "emerald",
+      "content": {
+        "headerTitle": "Check Your Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "Why is networking considered essential for job searching? What percentage of jobs are never publicly advertised?"
+            },
+            {
+              "number": 2,
+              "question": "What does it mean to \"decode\" a job description? What's the difference between required and preferred qualifications?"
+            },
+            {
+              "number": 3,
+              "question": "List four strategies for optimizing your resume to pass an Applicant Tracking System (ATS)."
+            },
+            {
+              "number": 4,
+              "question": "When and how should you follow up after submitting a job application? What should you include in a follow-up email?"
+            }
+          ]
+        }
+      },
+      "notes": "Answer Key:\n\n1. Networking is essential because 70-80% of jobs are never publicly advertised (hidden job market). About 70% of people land jobs through networking connections rather than applications alone.\n\n2. \"Decoding\" a job description means analyzing key components to understand true requirements. Required qualifications are must-have attributes; lacking these may disqualify you. Preferred qualifications are nice-to-have that give competitive advantage. Apply if you meet ~70-80% of requirements, especially the essential ones.\n\n3. Four ATS optimization strategies:\n   • Use simple, clean formatting with standard section headings\n   • Include exact keywords from job description naturally\n   • Use .docx or .pdf format with professional file naming\n   • Complete all required fields thoroughly\n\n4. Follow-up timing: Wait 1-2 weeks after application deadline. Tone: Professional, polite, and brief. Should express continued interest, reference the specific position, and offer to provide additional information."
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Key Takeaways",
         "layout": "takeaway-grid",
@@ -424,7 +495,7 @@
             {
               "number": 1,
               "title": "Multi-Channel Search",
-              "description": "Use job boards, networking, company sites, and recruiters—most jobs are never posted publicly"
+              "description": "Use job boards, networking, company sites, and recruiters\u2014most jobs are never posted publicly"
             },
             {
               "number": 2,
@@ -446,16 +517,16 @@
       }
     },
     {
-      "number": 17,
+      "number": 19,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Student Activity",
+        "headerTitle": "Tomorrow's Challenge",
         "layout": "activity-layout",
         "layoutData": {
           "main": {
-            "icon": "\ud83d",
-            "title": "\udccb Application Simulator",
+            "icon": "\ud83d\udccb",
+            "title": "Application Simulator",
             "description": "Use the Application Simulator skill builder to practice navigating a realistic online application interface. Experience how an ATS processes applications and receive feedback on your effectiveness in tailoring materials and using keywords."
           },
           "steps": [
@@ -469,12 +540,12 @@
       }
     },
     {
-      "number": 18,
+      "number": 20,
       "type": "closing",
       "content": {
-        "tagline": "Building Financial Futures, One Lesson at a Time in {{STATE_NAME}}",
-        "website": "www.pflacademy.co in {{STATE_NAME}}",
-        "copyright": "© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+        "tagline": "\"Strategy beats volume\u2014quality applications win interviews\"",
+        "website": "www.pflacademy.co",
+        "copyright": "\u00a9 2025 PFL Academy. All rights reserved."
       }
     }
   ]

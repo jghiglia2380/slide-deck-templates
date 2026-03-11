@@ -1,11 +1,570 @@
 {
   "metadata": {
     "lChapter": "L-51",
-    "title": "",
-    "subtitle": "",
-    "totalSlides": 0,
-    "hasStateVariables": false,
-    "stateVariablesUsed": []
+    "title": "Market Structures and Consumer Choice",
+    "subtitle": "Understanding How Competition Affects Markets",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
   },
-  "slides": []
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Market Structures and Consumer Choice",
+        "titleSize": "large",
+        "subtitle": "Understanding How Competition Affects Markets"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "The Challenge",
+        "question": "Eliana, a consumer in {{STATE_NAME}}, notices that gasoline prices at nearby stations are nearly identical, but coffee shops charge wildly different prices. Her electric company raised rates, and she has no choice but to pay.<br><br><strong>What market structures explain these differences in {{STATE_NAME}}?</strong>"
+      },
+      "headerColor": "amber",
+      "notes": "**Discussion Prompts:**\n- \"Why do you think the electric company can charge so much when coffee shops compete for your business?\"\n- Connect to prior knowledge: Remind students of supply/demand from L-50.",
+      "speakerNotes": "Read Eliana's scenario aloud or have students read silently. Discussion prompt: \"Why do you think the electric company can charge so much when coffee shops compete for your business?\" Connect to prior knowledge: Remind students of supply/demand from L-50."
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Identify",
+              "description": "the four main market structures: perfect competition, monopolistic competition, oligopoly, and monopoly"
+            },
+            {
+              "number": 2,
+              "verb": "Analyze",
+              "description": "how market structure affects pricing, quality, and consumer surplus"
+            },
+            {
+              "number": 3,
+              "verb": "Explain",
+              "description": "the characteristics that determine market power"
+            },
+            {
+              "number": 4,
+              "verb": "Recognize",
+              "description": "market structures in everyday purchases and local industries"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Market Structure",
+              "definition": "The number of sellers and degree of competition in a market",
+              "example": "Perfect competition (many sellers) vs. monopoly (one seller)"
+            },
+            {
+              "term": "Consumer Surplus",
+              "definition": "The difference between what you're willing to pay and what you actually pay",
+              "example": "Willing to pay $10, but only pay $6 = $4 consumer surplus"
+            },
+            {
+              "term": "Barriers to Entry",
+              "definition": "Obstacles that prevent new firms from entering a market",
+              "example": "High capital costs, government licenses, economies of scale"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Price Taker",
+              "definition": "A seller who must accept the market price and has no control over pricing",
+              "example": "A farmer selling wheat at market price"
+            },
+            {
+              "term": "Price Maker",
+              "definition": "A seller who has power to set prices above competitive levels",
+              "example": "A utility company with monopoly power"
+            },
+            {
+              "term": "Differentiation",
+              "definition": "Making a product different from competitors through brand, quality, or features",
+              "example": "Starbucks charges more due to brand experience"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Perfect Competition",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Characteristics: Many sellers, identical products, no barriers",
+            "paragraphs": [
+              "<strong>Key Features:</strong>",
+              "• Many buyers and sellers",
+              "• Identical (homogeneous) products",
+              "• Perfect information available",
+              "• Free entry and exit",
+              "• Sellers are \"price takers\"",
+              "",
+              "<strong>Examples:</strong> Wheat, corn, stocks, farmer's markets, generic medications"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "Lowest",
+                "label": "Prices for Consumers",
+                "color": "green"
+              },
+              {
+                "value": "Maximum",
+                "label": "Consumer Surplus",
+                "color": "teal"
+              }
+            ],
+            "infoCard": {
+              "title": "Consumer Strategy",
+              "color": "amber",
+              "items": [
+                "Shop by price alone",
+                "No quality difference between sellers",
+                "Compare prices easily",
+                "Minimal service expected"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Monopolistic Competition",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Characteristics: Many sellers, differentiated products, low barriers",
+            "paragraphs": [
+              "<strong>Key Features:</strong>",
+              "• Many sellers with competition",
+              "• Product differentiation (brand, quality, location)",
+              "• Some price control",
+              "• Low entry barriers",
+              "• Non-price competition",
+              "",
+              "<strong>Examples:</strong> Restaurants, coffee shops, clothing stores, hair salons, gyms"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$5.00",
+                "label": "Starbucks (brand premium)",
+                "color": "purple"
+              },
+              {
+                "value": "$0.50",
+                "label": "Home-brewed (same caffeine!)",
+                "color": "green"
+              }
+            ],
+            "infoCard": {
+              "title": "Consumer Strategy",
+              "color": "amber",
+              "items": [
+                "Shop around - prices vary",
+                "Consider if brand premium is worth it",
+                "Ignore marketing hype",
+                "Decide what YOU value"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Oligopoly",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Characteristics: Few sellers (3-10), high barriers, significant price control",
+            "paragraphs": [
+              "<strong>Key Characteristic: Interdependence</strong>",
+              "• Each firm's decisions affect competitors",
+              "• Strategic behavior (watch each other)",
+              "• Massive capital/technology required",
+              "• Price leadership is common",
+              "",
+              "<strong>Examples:</strong> Cell carriers (AT&T, Verizon, T-Mobile), airlines, auto manufacturers, streaming services"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "3-10",
+                "label": "Number of Major Sellers",
+                "color": "amber"
+              },
+              {
+                "value": "Moderate",
+                "label": "Consumer Surplus",
+                "color": "rose"
+              }
+            ],
+            "infoCard": {
+              "title": "Consumer Strategy",
+              "color": "amber",
+              "items": [
+                "Compare all major players",
+                "Negotiate when possible",
+                "Threaten to switch carriers",
+                "Time purchases for promotions"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Monopoly",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "One seller, no substitutes, complete price control",
+          "paragraphs": [
+            "<strong>Types of Monopolies:</strong>",
+            "",
+            "<strong>Natural Monopoly:</strong> One firm can serve entire market more efficiently (electricity, water, gas)",
+            "",
+            "<strong>Legal Monopoly:</strong> Government grants exclusive right (patents for 20 years, copyrights)",
+            "",
+            "<strong>Market Power Monopoly:</strong> Firm dominates through business practices (tech giants - debated)"
+          ],
+          "bulletPoints": [
+            "Highest prices for consumers",
+            "No choice (take it or leave it)",
+            "Minimal innovation",
+            "Poor customer service"
+          ],
+          "keyPoint": "Consumer Strategy: Check for regulated rate structures, use time-of-use pricing, seek long-term substitutes, advocate for regulation"
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Consumer Surplus by Market Structure",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "😄",
+            "title": "Perfect Competition",
+            "items": [
+              "MAXIMUM consumer surplus",
+              "Prices as low as possible",
+              "You get the most value"
+            ]
+          },
+          "rightColumn": {
+            "icon": "😟",
+            "title": "Monopoly",
+            "items": [
+              "MINIMUM consumer surplus",
+              "Seller captures most value",
+              "You pay much more"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Recognizing Market Structures",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Classify these common purchases",
+          "paragraphs": [],
+          "bulletPoints": [
+            "<strong>Gasoline:</strong> Many stations, identical product = Perfect Competition",
+            "<strong>Smartphones:</strong> ~3 major players, differentiated = Oligopoly",
+            "<strong>Water Service:</strong> 1 provider, no substitutes = Monopoly",
+            "<strong>Restaurants:</strong> Many options, differentiated = Monopolistic Competition",
+            "<strong>Airlines:</strong> ~4 major carriers, similar service = Oligopoly"
+          ],
+          "keyPoint": "Understanding market structure helps you identify where you have the least power as a consumer"
+        }
+      },
+      "notes": "## Common Misconceptions\n\n| Misconception | Clarification |\n|--------------|---------------|\n| \"Monopolies are always illegal.\" | Natural monopolies (utilities) and legal monopolies (patents) are legal. Only anticompetitive behavior to gain or maintain monopoly power is illegal. |\n| \"More sellers always means lower prices.\" | Generally true, but monopolistic competition shows that differentiation allows price premiums even with many sellers. A branded product can cost 3x a generic. |\n| \"I can't do anything about monopoly prices.\" | While you can't change the price, you can reduce consumption, use off-peak pricing, seek substitutes (streaming vs. cable), or advocate for regulation. |\n| \"Oligopolies compete fiercely on price.\" | Oligopolies often engage in tacit price coordination. When all 3 carriers charge similar rates, it benefits all firms to keep prices high. |",
+      "speakerNotes": "COMMON MISCONCEPTIONS:\n• \"\"Monopolies are always illegal.\"\" → Natural monopolies (utilities) and legal monopolies (patents) are legal. Only anticompetitive behavior to gain or maintain monopoly power is illegal.\n• \"\"More sellers always means lower prices.\"\" → Generally true, but monopolistic competition shows that differentiation allows price premiums even with many sellers. A branded product can cost 3x a generic.\n• \"\"I can't do anything about monopoly prices.\"\" → While you can't change the price, you can reduce consumption, use off-peak pricing, seek substitutes (streaming vs. cable), or advocate for regulation.\n• \"\"Oligopolies compete fiercely on price.\"\" → Oligopolies often engage in tacit price coordination. When all 3 carriers charge similar rates, it benefits all firms to keep prices high."
+    },
+    {
+      "number": 12,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": "Which market structures affect YOUR budget most?<br><br>Where do you have the least power as a consumer? Think about your regular purchases and which ones give you the fewest choices."
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Real-World Example: Coffee Market",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "☕",
+            "name": "Sarah's Coffee Choices",
+            "paragraphs": [
+              "Sarah wants coffee before work. She has several options near her office:",
+              "",
+              "<strong>Starbucks:</strong> $5.00 for grande latte (brand experience, consistency)",
+              "<strong>Local Cafe:</strong> $4.00 for latte (quality beans, community)",
+              "<strong>Dunkin':</strong> $3.00 for latte (speed, value)",
+              "<strong>Home-brewed:</strong> $0.50 per cup (same caffeine, no convenience)",
+              "",
+              "This is <strong>monopolistic competition</strong>—many sellers, differentiated products, and she has choices!"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Brand Premium",
+              "value": "$4.50",
+              "detail": "Extra cost for Starbucks vs. home brew"
+            },
+            {
+              "type": "after",
+              "label": "Annual Savings",
+              "value": "$1,170",
+              "detail": "If she skips Starbucks for home brew (260 days)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Real-World Example: Airlines",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "✈️",
+            "name": "Oligopoly in Action: Airline Baggage Fees",
+            "paragraphs": [
+              "<strong>The Story:</strong>",
+              "In 2008, American Airlines added a $25 fee for the first checked bag. Within weeks, United, Delta, and other major carriers matched the fee.",
+              "",
+              "<strong>Why?</strong> In an oligopoly, firms watch each other closely. No one wants to start a price war, but they'll all match fee increases.",
+              "",
+              "<strong>Result:</strong> All major airlines now charge $30-35 for first checked bag. Consumers have little choice—all carriers have similar fees."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Before 2008",
+              "value": "$0",
+              "detail": "First bag was free"
+            },
+            {
+              "type": "after",
+              "label": "Today",
+              "value": "$30-35",
+              "detail": "Per bag on all major carriers"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "Are monopolies always bad for consumers?<br><br>Think about natural monopolies like utilities and legal monopolies like patents. When might having just one seller actually benefit society?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Consumer Strategies by Market Structure",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "✓",
+            "title": "High Competition (Perfect, Monopolistic)",
+            "items": [
+              "Shop by price - use comparison tools",
+              "Ignore marketing hype and brand names",
+              "Consider if premium features are worth it",
+              "You have power to walk away"
+            ]
+          },
+          "rightColumn": {
+            "icon": "⚠️",
+            "title": "Low Competition (Oligopoly, Monopoly)",
+            "items": [
+              "Compare ALL available options carefully",
+              "Negotiate when possible",
+              "Look for long-term substitutes",
+              "Advocate for regulation if needed"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "emerald",
+      "content": {
+        "headerTitle": "Check Your Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What are the four main market structures and how do they differ in number of sellers?"
+            },
+            {
+              "number": 2,
+              "question": "Why do firms in an oligopoly often avoid competing on price?"
+            },
+            {
+              "number": 3,
+              "question": "Explain why consumer surplus is highest in perfect competition and lowest in monopoly."
+            },
+            {
+              "number": 4,
+              "question": "Give three examples of barriers to entry that prevent new firms from entering a market."
+            }
+          ]
+        }
+      },
+      "notes": "## Answer Key\n\n**1.** B (Monopolistic competition)\n\n**2.** In perfect competition, many sellers compete on price alone, driving prices to the lowest sustainable level—consumers pay minimum and keep maximum surplus. In monopoly, the single seller has complete pricing power and can charge much higher prices, transferring surplus from consumers to the monopolist.\n\n**3.** ($55 − $30) = $25 savings/month. $25 × 12 = **$300 saved per year.**\n\n**4.** OLIGOPOLY (few sellers, similar prices, high barriers). Strategy: Negotiate by threatening to switch, ask for retention discounts, compare all carriers thoroughly, time switch for promotional periods, consider MVNOs (smaller carriers using major networks) for better rates.\n\n**5.** *Reflection should include: specific purchase identified, correct market structure classification, and concrete strategy for improvement (negotiation, shopping around, timing, etc.)*",
+      "speakerNotes": "ASSESSMENT ANSWER KEY:\n1. B (Monopolistic competition)\n2. In perfect competition, many sellers compete on price alone, driving prices to the lowest sustainable level—consumers pay minimum and keep maximum surplus. In monopoly, the single seller has complete pricing power and can charge much higher prices, transferring surplus from consumers to the monopolist.\n3. ($55 − $30) = $25 savings/month. $25 × 12 =$300 saved per year.\n4. OLIGOPOLY (few sellers, similar prices, high barriers). Strategy: Negotiate by threatening to switch, ask for retention discounts, compare all carriers thoroughly, time switch for promotional periods, consider MVNOs (smaller carriers using major networks) for better rates.\n5. Reflection should include: specific purchase identified, correct market structure classification, and concrete strategy for improvement (negotiation, shopping around, timing, etc.)."
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Four market structures",
+              "description": "Perfect competition, monopolistic competition, oligopoly, and monopoly differ by number of sellers and barriers to entry"
+            },
+            {
+              "number": 2,
+              "title": "Market power increases as competition decreases",
+              "description": "From perfect competition (no power) to monopoly (complete power), sellers gain pricing control"
+            },
+            {
+              "number": 3,
+              "title": "Barriers to entry determine competition",
+              "description": "High capital costs, government licenses, and economies of scale prevent new firms from entering"
+            },
+            {
+              "number": 4,
+              "title": "Consumer strategies differ by structure",
+              "description": "Shop by price in competitive markets, negotiate in oligopolies, seek substitutes for monopolies"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Skill Builder: Market Structure Analysis",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "🔍",
+            "title": "Analyze Your Local Markets",
+            "description": "Tomorrow you'll identify market structures for YOUR regular purchases and develop consumer strategies for each one"
+          },
+          "steps": [
+            "Identify market structures for your regular purchases",
+            "Develop consumer strategies for each structure",
+            "Analyze local industries by market structure",
+            "Evaluate when government intervention makes sense",
+            "Use market structure knowledge to negotiate better deals"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "\"Understanding market structure helps you become a smarter consumer and save money\"",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
 }

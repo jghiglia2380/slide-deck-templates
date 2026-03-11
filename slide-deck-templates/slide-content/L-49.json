@@ -2,7 +2,7 @@
   "metadata": {
     "lChapter": "L-49",
     "title": "Scarcity, Opportunity Cost, and Incentives",
-    "subtitle": "Understanding why you can't have everything—and how to make the best choices with limited resources",
+    "subtitle": "Understanding Why You Can't Have Everything\u2014and How to Make the Best Choices",
     "totalSlides": 20,
     "hasStateVariables": false,
     "stateVariablesUsed": []
@@ -14,21 +14,23 @@
       "content": {
         "title": "Scarcity, Opportunity Cost, and Incentives",
         "titleSize": "large",
-        "subtitle": "Understanding why you can't have everything—and how to make the best choices with limited resources"
+        "subtitle": "Understanding Why You Can't Have Everything\u2014and How to Make the Best Choices"
       }
     },
     {
       "number": 2,
       "type": "hook",
       "content": {
-        "label": "Essential Question",
-        "question": ""
-      }
+        "label": "The Challenge",
+        "question": "Sarah, 18, was deciding between Elite Private College (<em>$55,000/year</em>) and State University (<em>$15,000/year</em>).<br><br>Simple analysis: Elite costs $160,000 more over four years.<br><br>But Sarah calculated the FULL opportunity cost: Elite's total including foregone wages was <em>$372,000</em> vs State's <em>$252,000</em>\u2014a $120,000 difference.<br><br>She chose State and invested the difference. By age 65, that investment grew to <em>$1,800,000</em>.<br><br><strong>What are you REALLY giving up when you make financial decisions?</strong>"
+      },
+      "headerColor": "amber",
+      "notes": "**Discussion Prompts:**\n- What's the difference between the 'sticker price' of college and the REAL cost?\n- Why did Sarah's opportunity cost calculation reveal such a larger number?\n- How does opportunity cost thinking transform decisions?"
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
@@ -37,22 +39,22 @@
             {
               "number": 1,
               "verb": "Define",
-              "description": "Explain scarcity as the fundamental economic problem: unlimited wants vs. limited resources"
+              "description": "Define scarcity as the fundamental economic problem: unlimited wants exceed limited resources."
             },
             {
               "number": 2,
               "verb": "Calculate",
-              "description": "Determine opportunity costs including explicit and implicit costs for personal finance decisions"
+              "description": "Calculate opportunity costs including both explicit and implicit costs for personal finance decisions."
             },
             {
               "number": 3,
               "verb": "Analyze",
-              "description": "Understand how incentives shape behavior and connect to economic systems"
+              "description": "Analyze how incentives shape behavior and predict responses to rewards and penalties."
             },
             {
               "number": 4,
               "verb": "Apply",
-              "description": "Use opportunity cost analysis to evaluate major life decisions: college, career, housing"
+              "description": "Apply opportunity cost analysis to major life decisions: college, career, housing, and investments."
             }
           ]
         }
@@ -61,21 +63,21 @@
     {
       "number": 4,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Scarcity",
+              "definition": "The fundamental economic problem: unlimited human wants exceed limited resources, forcing choices and trade-offs.",
+              "example": "You have $20 and want both lunch ($12) and a movie ($15). Scarcity forces you to choose."
             },
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Opportunity Cost",
+              "definition": "The value of the next-best alternative forgone when making a choice\u2014the TRUE cost of any decision.",
+              "example": "If you spend Saturday working, the opportunity cost is the concert you couldn't attend."
             }
           ]
         }
@@ -84,21 +86,21 @@
     {
       "number": 5,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms (Continued)",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Explicit Costs",
+              "definition": "Direct monetary payments required for a choice\u2014the obvious, out-of-pocket expenses.",
+              "example": "Tuition, textbooks, car payments, rent\u2014anything you pay cash for."
             },
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Implicit Costs",
+              "definition": "Indirect costs including time, foregone alternatives, and non-monetary sacrifices.",
+              "example": "The wages you DON'T earn while in college\u2014often larger than tuition itself."
             }
           ]
         }
@@ -107,7 +109,7 @@
     {
       "number": 6,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Scarcity: The Fundamental Economic Problem",
         "layout": "balanced-layout",
@@ -116,26 +118,33 @@
             "title": "Why Economics Exists",
             "paragraphs": [
               "Everyone faces unlimited wants but limited resources:",
-              "<strong>Key insight:</strong> Even billionaires face scarcity—they can't buy more time or be in two places at once."
+              "\u2022 <strong>Time:</strong> Only 24 hours/day. Can't be everywhere at once.",
+              "\u2022 <strong>Money:</strong> Finite income, unlimited desires.",
+              "\u2022 <strong>Energy:</strong> Limited attention and effort.",
+              "Even billionaires face scarcity\u2014they can't buy more time or be in two places at once.",
+              "Scarcity forces EVERY decision to involve trade-offs. That's why economics exists."
             ],
-            "highlightBox": null
+            "highlightBox": {
+              "icon": "\u23f0",
+              "text": "Time is the ultimate scarce resource\u2014everyone gets exactly 24 hours per day, regardless of wealth."
+            }
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
-                "color": "teal"
+                "value": "24 hrs",
+                "label": "Time available to everyone daily",
+                "color": "indigo"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "rose"
+                "value": "\u221e",
+                "label": "Human wants (unlimited)",
+                "color": "amber"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "green"
+                "value": "Trade-offs",
+                "label": "Result of scarcity",
+                "color": "emerald"
               }
             ],
             "infoCard": null
@@ -146,20 +155,34 @@
     {
       "number": 7,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Explicit vs. Implicit Costs",
         "layout": "comparison-grid",
         "layoutData": {
           "leftColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
+            "icon": "\ud83d\udcb5",
+            "title": "Explicit Costs (Obvious)",
+            "items": [
+              "Direct payments you make",
+              "Show up on receipts and bills",
+              "Easy to track and measure",
+              "Examples: Tuition, rent, gas",
+              "What most people calculate",
+              "Usually the SMALLER portion"
+            ]
           },
           "rightColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
+            "icon": "\ud83d\udd0d",
+            "title": "Implicit Costs (Hidden)",
+            "items": [
+              "Value of what you give up",
+              "Don't appear on any bill",
+              "Often overlooked",
+              "Examples: Foregone wages, time, options",
+              "What opportunity cost reveals",
+              "Usually the LARGER portion"
+            ]
           }
         }
       }
@@ -167,66 +190,66 @@
     {
       "number": 8,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Calculating True Cost",
+        "headerTitle": "Calculating True Cost: College Example",
         "layout": "concept-full",
         "layoutData": {
           "title": "Total Economic Cost = Explicit + Implicit",
           "paragraphs": [
-            "<strong>Example: Friday Night Decision</strong>",
-            "You have $30 and Friday evening free.",
-            "<strong>Option A: Go to Movies</strong>",
-            "• Explicit cost: $30 (ticket + snacks)",
-            "• Implicit cost: $60 foregone work shift",
-            "• Total economic cost: $90",
-            "<strong>Option B: Work Extra Shift</strong>",
-            "• Explicit cost: $0",
-            "• Implicit cost: Entertainment value of movie",
-            "• Earn $60, but give up fun",
-            "<strong>Option C: Study for Test</strong>",
-            "• Explicit cost: $0",
-            "• Implicit cost: Both money AND fun",
-            "• Gain: Better grade (future value)",
-            "Most people only see explicit costs. Opportunity cost thinkers see the full picture.",
-            "Not \"Can I afford this?\" but \"Is this the best use of my scarce resources?\""
+            "<strong>4-Year University Opportunity Cost Calculation:</strong>"
           ],
-          "bulletPoints": []
+          "bulletPoints": [
+            "<strong>Explicit costs:</strong> Tuition ($80,000) + Living expenses ($48,000) = $128,000",
+            "<strong>Implicit costs:</strong> Foregone full-time wages (4 years \u00d7 $30,000) = $120,000",
+            "<strong>Offset:</strong> Part-time earnings during school = -$48,000",
+            "<strong>TOTAL OPPORTUNITY COST:</strong> $128,000 + $120,000 - $48,000 = <strong>$200,000</strong>",
+            "<strong>Key insight:</strong> The implicit costs (foregone wages) nearly equal the explicit costs (tuition)!"
+          ],
+          "keyPoint": {
+            "text": "\ud83d\udcca Most people only calculate tuition. Opportunity cost thinking reveals the TRUE cost is $200,000\u2014not $80,000."
+          }
         }
       }
     },
     {
       "number": 9,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Opportunity Cost in Action: College",
+        "headerTitle": "The Hidden Cost: Your Time Has Value",
         "layout": "balanced-layout",
         "layoutData": {
           "leftPanel": {
-            "title": "The Full Cost of College",
+            "title": "Marcus's Saturday \"Savings\"",
             "paragraphs": [
-              "<strong>What most people calculate:</strong>",
-              "<strong>What they forget:</strong>"
+              "Marcus earns $36/hour but spends 6 hours on Saturday doing home maintenance to \"save money.\"",
+              "<strong>Cost to hire services:</strong> $70/week",
+              "<strong>His time's opportunity cost:</strong> 6 hours \u00d7 $36 = $216",
+              "By doing it himself, Marcus \"saved\" $70 but gave up $216 in potential earnings.",
+              "<strong>Net loss: $146/week = $7,600/year</strong>"
             ],
-            "highlightBox": null
+            "highlightBox": {
+              "icon": "\u26a0\ufe0f",
+              "text": "The mistake: Looking at absolute cost ($70) instead of opportunity cost ($216)."
+            }
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
-                "color": "purple"
+                "value": "$70",
+                "label": "Cost to hire services",
+                "color": "emerald"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "teal"
+                "value": "$216",
+                "label": "Value of Marcus's 6 hours",
+                "color": "amber"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "rose"
+                "value": "$146",
+                "label": "Weekly loss doing it himself",
+                "color": "amber"
               }
             ],
             "infoCard": null
@@ -237,38 +260,34 @@
     {
       "number": 10,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Incentives: Why People Do What They Do",
-        "layout": "balanced-layout",
+        "layout": "comparison-grid",
         "layoutData": {
-          "leftPanel": {
-            "title": "People Respond to Rewards and Penalties",
-            "paragraphs": [
-              "<strong>Positive Incentives (encourage behavior):</strong>",
-              "<strong>Negative Incentives (discourage behavior):</strong>"
-            ],
-            "highlightBox": null
+          "leftColumn": {
+            "icon": "\u2705",
+            "title": "Positive Incentives (Encourage)",
+            "items": [
+              "Employer 401(k) match \u2192 Save more",
+              "Tax deductions \u2192 Charitable giving",
+              "Rewards points \u2192 Use specific card",
+              "Bonuses \u2192 Hit sales targets",
+              "Good grades \u2192 Study harder",
+              "Discounts \u2192 Shop at certain stores"
+            ]
           },
-          "rightPanel": {
-            "stats": [
-              {
-                "value": "",
-                "label": "",
-                "color": "green"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "rose"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "purple"
-              }
-            ],
-            "infoCard": null
+          "rightColumn": {
+            "icon": "\u274c",
+            "title": "Negative Incentives (Discourage)",
+            "items": [
+              "Speeding tickets \u2192 Drive slower",
+              "Late fees \u2192 Pay bills on time",
+              "High interest rates \u2192 Avoid debt",
+              "Penalties \u2192 Don't withdraw early",
+              "Fines \u2192 Follow regulations",
+              "Poor credit \u2192 Make payments"
+            ]
           }
         }
       }
@@ -276,128 +295,166 @@
     {
       "number": 11,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Why Opportunity Cost Thinking Matters",
-        "layout": "balanced-layout",
+        "headerTitle": "Opportunity Cost Thinking Transforms Decisions",
+        "layout": "concept-full",
         "layoutData": {
-          "leftPanel": {
-            "title": "Transform Your Decision-Making",
-            "paragraphs": [
-              "Instead of asking \"Can I afford this?\" ask:",
-              "<strong>This framework reveals:</strong>"
-            ],
-            "highlightBox": null
-          },
-          "rightPanel": {
-            "stats": [
-              {
-                "value": "",
-                "label": "",
-                "color": "teal"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "rose"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "green"
-              }
-            ],
-            "infoCard": null
+          "title": "The Right Question to Ask",
+          "paragraphs": [
+            "Instead of asking \"<em>Can I afford this?</em>\" ask: \"<strong>Is this the best use of my scarce resources?</strong>\""
+          ],
+          "bulletPoints": [
+            "<strong>Before:</strong> \"The car costs $25,000. I can afford the payments.\"",
+            "<strong>After:</strong> \"What else could I do with $25,000? Invest it? Start a business? How much would it be worth in 30 years?\"",
+            "<strong>Before:</strong> \"This job pays $50,000. That's good money.\"",
+            "<strong>After:</strong> \"What am I giving up to take this job? Better opportunities? Time with family? Career growth?\"",
+            "<strong>Before:</strong> \"I'll save money by doing it myself.\"",
+            "<strong>After:</strong> \"Is my time worth more than the cost to hire someone? What's my opportunity cost?\""
+          ],
+          "keyPoint": {
+            "text": "\ud83d\udca1 Every \"yes\" to one thing is a \"no\" to something else. Opportunity cost reveals what you're really giving up."
           }
         }
-      }
+      },
+      "notes": "## Common Misconceptions\n\n| Misconception | Clarification |\n|---------------|---------------|\n| \"Opportunity cost is just the price of something.\" | Price is only the explicit cost. Opportunity cost includes implicit costs like time, foregone alternatives, and what else you could do with the money. Often implicit costs exceed explicit costs. |\n| \"Doing something myself always saves money.\" | Only if your time has no value. If you earn $50/hour and spend 3 hours to save $30, you've lost $120 in opportunity cost. \"Saving money\" actually cost you $90. |\n| \"I should consider what I already spent when making decisions.\" | Sunk costs are irrelevant to future decisions because they can't be recovered. Only compare future benefits to future costs. Past spending shouldn't trap you in bad choices. |"
     },
     {
       "number": 12,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "The Hidden Cost: Your Time",
-        "layout": "concept-full",
+        "headerTitle": "Sunk Costs: What You Should Ignore",
+        "layout": "balanced-layout",
         "layoutData": {
-          "title": "Your Time Has an Economic Value",
-          "paragraphs": [
-            "<strong>Example: Marcus's Revelation</strong>",
-            "Marcus earns $36/hour as a software developer. He spends 6 hours every Saturday on chores:",
-            "• Lawn care: 2 hours",
-            "• House cleaning: 2 hours",
-            "• Car maintenance: 2 hours",
-            "<strong>Cost to outsource: $70/week</strong>",
-            "<strong>His time's opportunity cost: $216/week</strong>",
-            "(6 hours × $36/hour)",
-            "By doing chores himself, Marcus \"saved\" $70 but gave up $216 in potential earnings or high-value activities.",
-            "<strong>Net loss: $146/week = $7,600/year</strong>",
-            "Looking at absolute costs ($70) instead of opportunity costs ($216)",
-            "Hire services ($70), use 6 hours for consulting ($450 at $75/hr), net gain: $380/week",
-            "Is what I'm doing worth more than what I could be doing instead?"
-          ],
-          "bulletPoints": []
+          "leftPanel": {
+            "title": "Money Already Spent Is Gone",
+            "paragraphs": [
+              "<strong>Sunk cost fallacy:</strong> Continuing to invest in something because you've already put money into it\u2014even when it no longer makes sense.",
+              "<strong>Example:</strong> \"I've already spent $2,000 fixing this car, so I should spend another $3,000 to finish.\"",
+              "<strong>Reality:</strong> The $2,000 is gone either way. The only question is: Is the car worth $3,000 MORE repair, or should you buy something else?",
+              "Past spending should NOT influence future decisions. Only compare future costs vs. future benefits."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "Sunk Cost Examples",
+              "color": "amber",
+              "items": [
+                "Finishing a bad movie you paid $15 for",
+                "Eating more because you paid for a buffet",
+                "Staying in a bad major because of credits taken",
+                "Keeping losing investments to \"get even\""
+              ]
+            }
+          }
         }
       }
     },
     {
       "number": 13,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Real-World Example: Sarah's College Decision",
+        "headerTitle": "Apply It",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "",
-            "name": "",
-            "paragraphs": []
+            "icon": "\ud83c\udf93",
+            "name": "Sarah's College Decision",
+            "paragraphs": [
+              "Sarah chose State University ($15,000/year) over Elite Private College ($55,000/year).",
+              "She invested the $120,000 difference at 7% average return for 47 years (until age 65)."
+            ]
           },
-          "outcomes": []
+          "outcomes": [
+            {
+              "type": "positive",
+              "label": "Investment Growth",
+              "value": "$1,800,000+",
+              "detail": "$120,000 at 7% for 47 years"
+            },
+            {
+              "type": "before",
+              "label": "Elite Salary Premium",
+              "value": "$5,000/year",
+              "detail": "Only $235,000 total over career"
+            },
+            {
+              "type": "positive",
+              "label": "Net Advantage",
+              "value": "$1.5M+ better off",
+              "detail": "State + investing beat Elite prestige"
+            }
+          ]
         }
       }
     },
     {
       "number": 14,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Real-World Example: The Chen Family Housing Trade-off",
+        "headerTitle": "Apply It",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "",
-            "name": "",
-            "paragraphs": []
+            "icon": "\ud83c\udfe0",
+            "name": "The Chen Family Housing Trade-off",
+            "paragraphs": [
+              "The Chens can afford a $500,000 house with a $2,800/month mortgage.",
+              "Alternatively, they could buy a $350,000 house ($2,000/month) and invest the $800/month difference."
+            ]
           },
-          "outcomes": []
+          "outcomes": [
+            {
+              "type": "positive",
+              "label": "Monthly Savings",
+              "value": "$800/month",
+              "detail": "Smaller house payment"
+            },
+            {
+              "type": "positive",
+              "label": "30-Year Investment",
+              "value": "$900,000+",
+              "detail": "$800/month at 7% for 30 years"
+            },
+            {
+              "type": "before",
+              "label": "Trade-off",
+              "value": "Less house NOW",
+              "detail": "But nearly $1M more at retirement"
+            }
+          ]
         }
       }
     },
     {
       "number": 15,
       "type": "discussion",
-      "variant": "teal",
+      "variant": "amber",
       "content": {
         "badge": "Discussion",
-        "question": ""
+        "question": "Your friend says: \"I can't leave this job even though I hate it\u2014I've already spent 3 years here!\"<br><br>Is this a valid reason to stay?<br><br>How would you explain the sunk cost fallacy to them? What questions SHOULD they be asking?"
       }
     },
     {
       "number": 16,
       "type": "discussion",
-      "variant": "teal",
+      "variant": "indigo",
       "content": {
-        "badge": "Personal Reflection",
-        "question": ""
+        "badge": "Reflection",
+        "question": "Think about a major financial decision you're facing\u2014college, car, job, housing.<br><br>What is the <em>explicit cost</em>?<br>What is the <em>implicit/opportunity cost</em>?<br><br>Does calculating the full opportunity cost change your decision?"
       }
     },
     {
       "number": 17,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "emerald",
       "content": {
-        "headerTitle": "Check for Understanding",
+        "headerTitle": "Check Your Understanding",
         "layout": "check-grid",
         "layoutData": {
           "questions": [
@@ -407,11 +464,11 @@
             },
             {
               "number": 2,
-              "question": "If you spend 3 hours saving $30 and your time is worth $20/hour, what was the actual cost of \"saving\" that money?"
+              "question": "If you spend 3 hours \"saving\" $30 and your time is worth $20/hour, what was the actual cost of \"saving\" that money?"
             },
             {
               "number": 3,
-              "question": "Why are implicit costs usually larger than explicit costs? Give an example from college decisions."
+              "question": "Why are implicit costs usually larger than explicit costs for major decisions like college?"
             },
             {
               "number": 4,
@@ -419,32 +476,54 @@
             }
           ]
         }
-      }
+      },
+      "notes": "## Answer Key\n\n**Question 1:** B (Unlimited wants exceed limited resources, forcing trade-offs). Scarcity affects everyone because time is the ultimate scarce resource—everyone gets exactly 24 hours per day, regardless of wealth. Even billionaires can't buy more time or be in two places at once. This forces everyone to make trade-offs about how to use their limited time, energy, and attention.\n\n**Question 2:** You spent 3 hours worth $20/hour = $60 in opportunity cost. But you only saved $30. So the actual cost of \"saving\" that money was $30 net loss ($60 in time value - $30 saved = -$30). The mistake: looking at absolute savings ($30) instead of opportunity cost ($60).\n\n**Question 3:** For college, **explicit costs** = tuition, books, fees (easily measured); **implicit costs** = foregone wages, experience, time, investment returns on money spent (harder to measure but often larger). Example: Explicit = $80K tuition; Implicit = $120K foregone wages over 4 years. The implicit costs nearly equal or exceed tuition because those years could have been spent earning income.\n\n**Question 4:** B (Next-best alternative forgone when making a choice). **Incentive:** Employer match provides free money (100% return on contribution). **Response:** Contribute at least enough to capture full match. **Opportunity cost of NOT participating:** Leaving free money on the table—if employer matches 6% and you don't contribute, you're giving up 6% of your salary for free.\n\n**Additional Context:**\n- **Sunk costs:** Can't be recovered, so they're irrelevant to future decisions. What matters is comparing future benefits to future costs. Letting sunk costs influence decisions leads to irrational choices (like staying in bad investment \"to recover losses\").\n- **Personal application:** Identify both explicit costs (dollar amounts) AND implicit costs (time, foregone alternatives, opportunity costs of money), and reflect on whether total opportunity cost changes the decision."
     },
     {
       "number": 18,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Key Takeaways",
         "layout": "takeaway-grid",
         "layoutData": {
-          "takeaways": []
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Scarcity Forces Choices",
+              "description": "Unlimited wants vs. limited resources means every decision involves trade-offs\u2014even for the wealthy."
+            },
+            {
+              "number": 2,
+              "title": "Opportunity Cost Reveals Truth",
+              "description": "The TRUE cost is what you give up. Include implicit costs (time, foregone alternatives) not just explicit costs."
+            },
+            {
+              "number": 3,
+              "title": "Ignore Sunk Costs",
+              "description": "Money already spent is gone. Only compare future costs to future benefits when making decisions."
+            },
+            {
+              "number": 4,
+              "title": "Incentives Shape Behavior",
+              "description": "People respond to rewards and penalties. Understanding incentives helps predict behavior\u2014including your own."
+            }
+          ]
         }
       }
     },
     {
       "number": 19,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Skill Builder: Opportunity Cost Calculator",
+        "headerTitle": "Tomorrow's Challenge",
         "layout": "activity-layout",
         "layoutData": {
           "main": {
-            "icon": "📋",
-            "title": "",
-            "description": ""
+            "icon": "\ud83d\udcca",
+            "title": "Opportunity Cost Calculator",
+            "description": "You've learned to calculate opportunity cost\u2014now apply it to your own life decisions."
           },
           "steps": [
             "Calculate college opportunity cost: tuition + foregone wages + time value = true cost",
@@ -460,9 +539,9 @@
       "number": 20,
       "type": "closing",
       "content": {
-        "tagline": "The question isn't \"Can I afford it?\" but \"Is this the best use of my scarce resources?\"",
+        "tagline": "Building Financial Futures, One Lesson at a Time",
         "website": "www.pflacademy.co",
-        "copyright": "© 2025 PFL Academy. All rights reserved."
+        "copyright": "\u00a9 2025 PFL Academy. All rights reserved."
       }
     }
   ]

@@ -26,14 +26,16 @@
       "number": 2,
       "type": "hook",
       "content": {
-        "label": "Essential Question",
-        "question": "Why is there such a big difference between<br><em>what you earn</em> and <em>what you take home</em>?"
-      }
+        "label": "The Challenge",
+        "question": "Maria earns $48,000 per year ($4,000 monthly) at her first professional job. When she received her first paycheck, she was surprised to see only $2,972 deposited into her account after federal taxes, state taxes, FICA, and benefits deductions.<br><br>Why is there such a big difference between <em>what you earn</em> and <em>what you take home</em>?"
+      },
+      "headerColor": "amber",
+      "speakerNotes": "Read Maria's paycheck scenario aloud. Ask the discussion question: 'Have you or anyone you know been surprised by how much smaller their paycheck was than expected?' Allow 2-3 students to share experiences. This introduces the fundamental concept of gross vs. net income that students need to understand for realistic budgeting."
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
@@ -66,39 +68,40 @@
     {
       "number": 4,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
               "term": "Gross Income",
-              "definition": "The total amount of money earned before any deductions are taken out—your \"on paper\" salary.",
+              "definition": "The total amount of money earned before any deductions are taken out\u2014your \"on paper\" salary.",
               "example": "You earn $4,000/month salary. This is your gross income before taxes and deductions."
             },
             {
               "term": "Net Income",
-              "definition": "The amount you actually receive after all deductions—your \"take-home pay\" that hits your bank account.",
+              "definition": "The amount you actually receive after all deductions\u2014your \"take-home pay\" that hits your bank account.",
               "example": "After taxes and deductions, you receive $3,100/month. This is your net income."
             }
           ]
         }
-      }
+      },
+      "speakerNotes": "Review all 5 key terms (this slide shows 2; next slide shows 3 more). Emphasize the gross vs. net distinction—this is THE foundational concept students must understand. Create two columns on the board: Mandatory deductions (legally required) vs. Voluntary deductions (employee choice). Quick check: Have students sort common deductions into the correct categories (e.g., federal income tax = mandatory, 401(k) = voluntary, FICA = mandatory, health insurance = voluntary)."
     },
     {
       "number": 5,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
               "term": "FICA Taxes",
               "definition": "Federal Insurance Contributions Act taxes that fund Social Security (6.2%) and Medicare (1.45%).",
-              "example": "7.65% of your gross income goes to FICA—you'll benefit from these programs in retirement."
+              "example": "7.65% of your gross income goes to FICA\u2014you'll benefit from these programs in retirement."
             },
             {
               "term": "W-4 Form",
@@ -112,7 +115,7 @@
     {
       "number": 6,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "From Gross to Net: Your Paycheck Journey",
         "layout": "balanced-layout",
@@ -121,11 +124,11 @@
             "title": "The 20-30% Gap",
             "paragraphs": [
               "The difference between what you earn and what you receive is often <strong>20-30% of your gross income</strong> or more.",
-              "These deductions aren't just \"lost money\"—they fund government programs, personal benefits, and your future security.",
+              "These deductions aren't just \"lost money\"\u2014they fund government programs, personal benefits, and your future security.",
               "Understanding this gap is essential for creating realistic budgets based on what you'll actually receive."
             ],
             "highlightBox": {
-              "icon": "💡",
+              "icon": "\ud83d\udca1",
               "text": "In {{STATE_NAME}}, state income tax is <strong>{{INCOME_TAX_RATE}}%</strong>, which affects your take-home pay."
             }
           },
@@ -134,12 +137,12 @@
               {
                 "value": "{{INCOME_TAX_RATE}}%",
                 "label": "{{STATE_NAME}} Income Tax Rate",
-                "color": "teal"
+                "color": "indigo"
               },
               {
                 "value": "7.65%",
                 "label": "FICA (Social Security + Medicare)",
-                "color": "purple"
+                "color": "indigo"
               },
               {
                 "value": "20-30%",
@@ -154,13 +157,13 @@
     {
       "number": 7,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Types of Paycheck Deductions",
         "layout": "comparison-grid",
         "layoutData": {
           "leftColumn": {
-            "icon": "📋",
+            "icon": "\ud83d\udccb",
             "title": "Mandatory Deductions",
             "items": [
               "Federal Income Tax (10-37%)",
@@ -172,7 +175,7 @@
             ]
           },
           "rightColumn": {
-            "icon": "✓",
+            "icon": "\u2713",
             "title": "Voluntary Deductions",
             "items": [
               "401(k) Retirement Contributions",
@@ -189,9 +192,9 @@
     {
       "number": 8,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Sample Paycheck in {{STATE_NAME}}",
+        "headerTitle": "Sample Paycheck",
         "layout": "paycheck-breakdown",
         "layoutData": {
           "scenario": {
@@ -242,7 +245,7 @@
             ],
             "infoCard": {
               "title": "Key Insight:",
-              "color": "blue",
+              "color": "indigo",
               "items": [
                 "State tax varies by where you live",
                 "401(k) reduces taxable income",
@@ -257,7 +260,7 @@
     {
       "number": 9,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "The W-4 Form: Taking Control",
         "layout": "balanced-layout",
@@ -267,10 +270,10 @@
             "paragraphs": [
               "When you start a new job, the W-4 form determines how much federal tax your employer withholds from each paycheck.",
               "<strong>Too little withholding:</strong> You might owe taxes and penalties when you file your return.",
-              "<strong>Too much withholding:</strong> Smaller paychecks all year, but a larger refund—essentially an interest-free loan to the government."
+              "<strong>Too much withholding:</strong> Smaller paychecks all year, but a larger refund\u2014essentially an interest-free loan to the government."
             ],
             "highlightBox": {
-              "icon": "🔄",
+              "icon": "\ud83d\udd04",
               "text": "Update your W-4 when: Getting married/divorced, having children, starting a second job, or experiencing major income changes."
             }
           },
@@ -279,12 +282,12 @@
               {
                 "value": "$3,000",
                 "label": "Average Tax Refund",
-                "color": "teal"
+                "color": "indigo"
               },
               {
                 "value": "$250/mo",
                 "label": "That's Extra Per Paycheck!",
-                "color": "purple"
+                "color": "indigo"
               }
             ],
             "infoCard": {
@@ -304,18 +307,18 @@
     {
       "number": 10,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "The Power of Early Contributions",
+        "headerTitle": "Apply It",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "👥",
+            "icon": "\ud83d\udc65",
             "name": "Alex vs. Jamie: Same Salary, Different Choices",
             "paragraphs": [
               "Both start jobs at age 22 with <span class=\"highlight-text\">$40,000 annual salaries</span>. Alex immediately contributes 6% to a 401(k) with a 3% employer match, reducing take-home pay slightly.",
               "Jamie takes the full paycheck now, planning to \"start saving later.\" At age 30, Jamie finally starts contributing the same amount.",
-              "<strong>The 8-year head start makes an enormous difference:</strong> By retirement at 67, Alex has <span class=\"highlight-text\">$1.2 million</span> while Jamie has only <span class=\"highlight-text\">$640,000</span>—a difference of over <strong>half a million dollars</strong>."
+              "<strong>The 8-year head start makes an enormous difference:</strong> By retirement at 67, Alex has <span class=\"highlight-text\">$1.2 million</span> while Jamie has only <span class=\"highlight-text\">$640,000</span>\u2014a difference of over <strong>half a million dollars</strong>."
             ]
           },
           "outcomes": [
@@ -344,7 +347,7 @@
     {
       "number": 11,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Voluntary Deductions = Hidden Value",
         "layout": "concept-full",
@@ -354,7 +357,7 @@
             "Voluntary deductions reduce your paycheck but provide significant value. Understanding these helps you make smart choices about your total compensation package."
           ],
           "bulletPoints": [
-            "<strong>401(k) Match:</strong> Employer matching is \"free money\"—a 100% return on your contribution!",
+            "<strong>401(k) Match:</strong> Employer matching is \"free money\"\u2014a 100% return on your contribution!",
             "<strong>Health Insurance:</strong> Employer-subsidized plans cost less than individual coverage.",
             "<strong>Pre-Tax Savings:</strong> HSA/FSA contributions reduce taxable income while covering expenses.",
             "<strong>Tax Reduction:</strong> 401(k) contributions lower your taxable income today.",
@@ -362,15 +365,16 @@
             "<strong>Disability Insurance:</strong> Protects your income if you can't work."
           ],
           "keyPoint": {
-            "text": "💰 A job with $50K salary + $10K in benefits is worth more than $55K with no benefits!"
+            "text": "\ud83d\udcb0 A job with $50K salary + $10K in benefits is worth more than $55K with no benefits!"
           }
         }
-      }
+      },
+      "speakerNotes": "COMMON MISCONCEPTIONS TO ADDRESS:\n\n1. 'My employer is taking my money' → CLARIFY: Mandatory deductions are required by law and fund programs you'll use (Social Security in retirement, Medicare for healthcare after 65). Voluntary deductions are YOUR choice and often provide valuable benefits like employer 401(k) matching.\n\n2. 'I should skip 401(k) to get more money now' → CLARIFY: Skipping retirement contributions means losing employer matching (literally free money—a 100% return!) and tax-deferred compound growth. The Alex/Jamie example in the lesson shows this costs hundreds of thousands of dollars over time.\n\n3. 'Getting a big tax refund is great' → CLARIFY: A large refund means you over-withheld throughout the year—you gave the government an interest-free loan of YOUR money. Better W-4 adjustments mean more money in each paycheck that you can use or invest throughout the year.\n\nProactively address these during the lesson, especially #2 which directly contradicts students' short-term thinking."
     },
     {
       "number": 12,
       "type": "discussion",
-      "variant": "teal",
+      "variant": "amber",
       "content": {
         "badge": "Discussion",
         "question": "If you saw a job posting for $50,000/year, how much would you expect to actually take home each month in {{STATE_NAME}}?<br><br>What factors would affect this amount?"
@@ -379,7 +383,7 @@
     {
       "number": 13,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Why Understanding Income Matters",
         "layout": "balanced-layout",
@@ -393,7 +397,7 @@
               "<strong>Career Decisions:</strong> Compare job offers based on total compensation, not just salary."
             ],
             "highlightBox": {
-              "icon": "📊",
+              "icon": "\ud83d\udcca",
               "text": "The financial habits you establish now will impact your well-being for decades."
             }
           },
@@ -402,7 +406,7 @@
               {
                 "value": "40+",
                 "label": "Years of Working Life",
-                "color": "teal"
+                "color": "indigo"
               },
               {
                 "value": "$2M+",
@@ -427,7 +431,7 @@
     {
       "number": 14,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "How {{STATE_NAME}} Affects Your Pay",
         "layout": "balanced-layout",
@@ -440,7 +444,7 @@
               "This is an important factor when comparing job offers in different locations or considering relocation."
             ],
             "highlightBox": {
-              "icon": "🗺️",
+              "icon": "\ud83d\uddfa\ufe0f",
               "text": "A $60K salary in {{STATE_NAME}} gives you different take-home pay than the same salary in another state!"
             }
           },
@@ -449,12 +453,12 @@
               {
                 "value": "{{INCOME_TAX_RATE}}%",
                 "label": "{{STATE_NAME}} State Tax",
-                "color": "teal"
+                "color": "indigo"
               },
               {
                 "value": "{{LOCAL_INCOME_TAX}}%",
                 "label": "Local Income Tax",
-                "color": "purple"
+                "color": "indigo"
               },
               {
                 "value": "{{SDI_RATE}}%",
@@ -469,7 +473,7 @@
     {
       "number": 15,
       "type": "discussion",
-      "variant": "purple",
+      "variant": "indigo",
       "content": {
         "badge": "Reflection",
         "question": "Would you rather have a larger paycheck now or maximize your retirement contributions early?<br><br>What factors influence your decision?"
@@ -478,7 +482,7 @@
     {
       "number": 16,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Common Paycheck Mistakes to Avoid",
         "layout": "concept-full",
@@ -492,7 +496,7 @@
             "<strong>Ignoring 401(k) Match:</strong> Not contributing enough to get full employer match = leaving free money.",
             "<strong>Wrong W-4 Settings:</strong> Leads to owing taxes or giving the government an interest-free loan.",
             "<strong>Skipping Benefits Enrollment:</strong> Missing open enrollment means waiting a full year for coverage.",
-            "<strong>Not Reviewing Pay Stubs:</strong> Errors happen—check your deductions are correct each pay period.",
+            "<strong>Not Reviewing Pay Stubs:</strong> Errors happen\u2014check your deductions are correct each pay period.",
             "<strong>Delaying Retirement Savings:</strong> Every year you wait costs tens of thousands in future wealth."
           ]
         }
@@ -501,9 +505,9 @@
     {
       "number": 17,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "emerald",
       "content": {
-        "headerTitle": "Check for Understanding",
+        "headerTitle": "Check Your Understanding",
         "layout": "check-grid",
         "layoutData": {
           "questions": [
@@ -525,12 +529,13 @@
             }
           ]
         }
-      }
+      },
+      "speakerNotes": "ANSWER KEY:\n\nQ1: Gross income is the total amount earned before deductions; net income is what you actually take home after all deductions. This matters for budgeting because if you plan spending based on gross income, you'll overspend—you don't have access to that money. Always budget using net income.\n\nQ2: Mandatory deductions: (1) Federal income tax, (2) Social Security (FICA), (3) Medicare, (4) State income tax (in most states). Voluntary deductions: (1) 401(k) retirement contributions, (2) Health insurance premiums, (3) Life insurance, (4) HSA/FSA contributions. Accept any correct examples.\n\nQ3: Too little withheld = You'll owe money when filing taxes (plus potential penalties if significantly under-withheld). Too much withheld = Large refund, which means you gave the government an interest-free loan of your money all year instead of having it available in each paycheck.\n\nQ4: Early retirement contributions benefit from compound growth—your money earns returns, then those returns earn returns, creating exponential growth over time. Time is the most powerful factor: The Alex/Jamie example shows starting 8 years earlier nearly doubled retirement savings despite contributing the same amounts. Starting at age 22 vs. 30 can mean hundreds of thousands of dollars difference by retirement."
     },
     {
       "number": 18,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Key Takeaways",
         "layout": "takeaway-grid",
@@ -538,8 +543,8 @@
           "takeaways": [
             {
               "number": 1,
-              "title": "Gross ≠ Net",
-              "description": "Your take-home pay is 20-30% less than your salary—always budget based on net income"
+              "title": "Gross \u2260 Net",
+              "description": "Your take-home pay is 20-30% less than your salary\u2014always budget based on net income"
             },
             {
               "number": 2,
@@ -563,15 +568,15 @@
     {
       "number": 19,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Skill Builder: W-4 Simulation",
+        "headerTitle": "Tomorrow's Challenge",
         "layout": "activity-layout",
         "layoutData": {
           "main": {
-            "icon": "📋",
+            "icon": "\ud83d\udccb",
             "title": "Complete the W-4 Form Activity",
-            "description": "<strong>Scenario:</strong> Jordan Rivers is a high school student starting a part-time job at a coffee shop—15 hours/week at $15/hour. Jordan is single, has no dependents, and this is Jordan's only job. Help Jordan complete the W-4 form correctly! Consider: How will Jordan's choices affect each paycheck and tax situation at the end of the year?"
+            "description": "<strong>Scenario:</strong> Jordan Rivers is a high school student starting a part-time job at a coffee shop\u201415 hours/week at $15/hour. Jordan is single, has no dependents, and this is Jordan's only job. Help Jordan complete the W-4 form correctly! Consider: How will Jordan's choices affect each paycheck and tax situation at the end of the year?"
           },
           "steps": [
             "Review the W-4 form provided",
@@ -589,7 +594,7 @@
       "content": {
         "tagline": "Building Financial Futures, One Lesson at a Time",
         "website": "www.pflacademy.co",
-        "copyright": "© 2025 PFL Academy. All rights reserved."
+        "copyright": "\u00a9 2025 PFL Academy. All rights reserved."
       }
     }
   ]

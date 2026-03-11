@@ -26,14 +26,16 @@
       "number": 2,
       "type": "hook",
       "content": {
-        "label": "Essential Question",
-        "question": "How can you finance your education <em>strategically</em><br>to maximize opportunity while <em>minimizing debt</em>?"
-      }
+        "label": "The Challenge",
+        "question": "Jordan, a high school senior with strong academics and leadership, researched 50 scholarships and dedicated 5 hours weekly to applications starting junior year. By graduation, Jordan had secured $25,500 in free money—scholarships and grants that never need repayment.<br><br>How can you finance your education <em>strategically</em> to maximize opportunity while <em>minimizing debt</em>?"
+      },
+      "headerColor": "amber",
+      "speakerNotes": "Read Jordan's scholarship strategy scenario aloud. Ask the discussion question: 'What funding sources have you or your family researched for college?' Allow 2-3 students to share what they know. This establishes baseline knowledge and introduces the concept of strategic, proactive planning for education funding."
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
@@ -66,9 +68,9 @@
     {
       "number": 4,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
@@ -84,21 +86,22 @@
             }
           ]
         }
-      }
+      },
+      "speakerNotes": "Review all 5 key terms (this slide shows 2; next slide shows 3 more). Emphasize the fundamental distinction: 'free money' (scholarships and grants) versus debt (loans). Read the Background paragraph together and discuss the $1.75 trillion student debt statistic—this is a real crisis affecting millions of Americans. Quick check: Ask students to rank funding sources from most to least desirable (answer: scholarships/grants → work-study → federal subsidized loans → federal unsubsidized loans → private loans). This reinforces the priority pyramid of funding strategies."
     },
     {
       "number": 5,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
               "term": "FAFSA",
-              "definition": "Free Application for Federal Student Aid—the form that determines eligibility for federal grants, loans, and work-study programs.",
-              "example": "Opens October 1st each year • Used by colleges and states to award their own aid • Required annually"
+              "definition": "Free Application for Federal Student Aid\u2014the form that determines eligibility for federal grants, loans, and work-study programs.",
+              "example": "Opens October 1st each year \u2022 Used by colleges and states to award their own aid \u2022 Required annually"
             },
             {
               "term": "Work-Study",
@@ -112,7 +115,7 @@
     {
       "number": 6,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "The Student Loan Reality",
         "layout": "balanced-layout",
@@ -125,8 +128,8 @@
               "The decisions you make <strong>now</strong> about financing will have long-term implications for your financial well-being."
             ],
             "highlightBox": {
-              "icon": "\ud83d",
-              "text": "\udca1 Education is an investment—but smart investors minimize unnecessary costs while maximizing returns."
+              "icon": "\ud83d\udca1",
+              "text": "Education is an investment\u2014but smart investors minimize unnecessary costs while maximizing returns."
             }
           },
           "rightPanel": {
@@ -139,12 +142,12 @@
               {
                 "value": "43M+",
                 "label": "Americans with Student Debt",
-                "color": "purple"
+                "color": "indigo"
               }
             ],
             "infoCard": {
               "title": "Debt Can Delay:",
-              "color": "blue",
+              "color": "indigo",
               "items": [
                 "Buying a home",
                 "Starting a family",
@@ -159,14 +162,14 @@
     {
       "number": 7,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Scholarships & Grants vs. Loans",
         "layout": "comparison-grid",
         "layoutData": {
           "leftColumn": {
-            "icon": "\ud83c",
-            "title": "\udf81 Free Money",
+            "icon": "\ud83c\udf81",
+            "title": "Free Money",
             "items": [
               "No repayment required",
               "Reduces total education cost",
@@ -177,8 +180,8 @@
             ]
           },
           "rightColumn": {
-            "icon": "\ud83d",
-            "title": "\udcb3 Borrowed Money",
+            "icon": "\ud83d\udcb3",
+            "title": "Borrowed Money",
             "items": [
               "Must be repaid with interest",
               "Increases total education cost",
@@ -194,7 +197,7 @@
     {
       "number": 8,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "The Funding Priority Order",
         "layout": "balanced-layout",
@@ -206,8 +209,8 @@
               "Always exhaust \"free money\" options before considering loans. When loans are necessary, federal options typically offer better terms than private loans."
             ],
             "highlightBox": {
-              "icon": "\ud83c",
-              "text": "\udfaf Rule of thumb: Every dollar in scholarships is a dollar you don't have to borrow—or repay with interest!"
+              "icon": "\ud83c\udfaf",
+              "text": "Rule of thumb: Every dollar in scholarships is a dollar you don't have to borrow\u2014or repay with interest!"
             }
           },
           "rightPanel": {
@@ -218,7 +221,7 @@
                 "rank": 1,
                 "rankClass": "first",
                 "title": "Scholarships & Grants",
-                "description": "Free money—maximize first"
+                "description": "Free money\u2014maximize first"
               },
               {
                 "rank": 2,
@@ -246,7 +249,7 @@
     {
       "number": 9,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Federal vs. Private Loans",
         "layout": "concept-full",
@@ -269,7 +272,7 @@
     {
       "number": 10,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "FAFSA: Your Gateway to Aid",
         "layout": "balanced-layout",
@@ -279,11 +282,11 @@
             "paragraphs": [
               "The Free Application for Federal Student Aid (FAFSA) is the <strong>primary gateway</strong> to nearly all federal financial aid.",
               "Completing the FAFSA determines eligibility for federal grants, loans, and work-study. Many states and colleges also use it to award their own aid.",
-              "Even if you think your family makes \"too much,\" <strong>always complete the FAFSA</strong>—you may qualify for aid you didn't expect."
+              "Even if you think your family makes \"too much,\" <strong>always complete the FAFSA</strong>\u2014you may qualify for aid you didn't expect."
             ],
             "highlightBox": {
-              "icon": "\ud83d",
-              "text": "\udcc5 Opens October 1st each year. Submit early—some aid is first-come, first-served!"
+              "icon": "\ud83d\udcc5",
+              "text": "Opens October 1st each year. Submit early\u2014some aid is first-come, first-served!"
             }
           },
           "rightPanel": {
@@ -291,7 +294,7 @@
               {
                 "value": "Oct 1",
                 "label": "FAFSA Opens Each Year",
-                "color": "teal"
+                "color": "indigo"
               },
               {
                 "value": "$7,395",
@@ -316,7 +319,7 @@
     {
       "number": 11,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Why This Matters for Your Future",
         "layout": "concept-full",
@@ -329,17 +332,18 @@
             "<strong>Starting Salaries:</strong> College graduates earn ~$1M more over their lifetime on average",
             "<strong>Monthly Payments:</strong> Average student loan payment is $200-$400/month for 10-25 years",
             "<strong>Career Flexibility:</strong> High debt may force you to take jobs for salary, not passion",
-            "<strong>Strategic Choices:</strong> Community college → transfer can save $(({{STATE_TUITION_PUBLIC}} - {{STATE_TUITION_COMMUNITY}}) * 2)+ with same degree in {{STATE_NAME}}",
+            "<strong>Strategic Choices:</strong> Community college \u2192 transfer can save $(({{STATE_TUITION_PUBLIC}} - {{STATE_TUITION_COMMUNITY}}) * 2)+ with same degree",
             "<strong>Loan Forgiveness:</strong> Public service careers may qualify for forgiveness programs",
             "<strong>Compound Effect:</strong> Money not spent on loans can be invested for your future"
           ]
         }
-      }
+      },
+      "speakerNotes": "COMMON MISCONCEPTIONS TO ADDRESS:\n\n1. 'I won't qualify for financial aid because my family makes too much' → CLARIFY: Everyone should complete the FAFSA. Unsubsidized federal loans are available regardless of income, and many merit-based scholarships don't consider family finances at all.\n\n2. 'Scholarships are only for straight-A students or athletes' → CLARIFY: Thousands of scholarships exist for community service, specific majors, hobbies, heritage, career interests, and more. Small scholarships ($500-$2,000) add up significantly—$1,000 here and $500 there can cover textbooks, fees, or living expenses.\n\n3. 'All student loans are the same' → CLARIFY: Federal and private loans differ dramatically in interest rates, repayment flexibility, and forgiveness options. Federal loans should ALWAYS be explored first because they offer income-driven repayment, deferment options, and potential loan forgiveness for public service careers.\n\nAddress these misconceptions proactively if students express them during discussion. They are pervasive and can prevent students from accessing aid they actually qualify for."
     },
     {
       "number": 12,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Scholarship Landscape Today",
         "layout": "balanced-layout",
@@ -348,12 +352,12 @@
             "title": "Scholarships Aren't Just for \"Perfect\" Students",
             "paragraphs": [
               "One of the biggest misconceptions is that scholarships are only for students with perfect grades or exceptional athletic ability.",
-              "In reality, scholarships exist for <strong>nearly every interest, background, and talent</strong>—from community service to unusual hobbies to specific career paths.",
+              "In reality, scholarships exist for <strong>nearly every interest, background, and talent</strong>\u2014from community service to unusual hobbies to specific career paths.",
               "The key is <strong>starting early and applying strategically</strong>. Treat scholarship applications like a part-time job."
             ],
             "highlightBox": {
-              "icon": "\ud83d",
-              "text": "\udcb0 5 hours/week on applications × $22,000 in awards = an excellent hourly rate!"
+              "icon": "\ud83d\udcb0",
+              "text": "5 hours/week on applications \u00d7 $22,000 in awards = an excellent hourly rate!"
             }
           },
           "rightPanel": {
@@ -361,17 +365,17 @@
               {
                 "value": "$46B+",
                 "label": "Scholarship Money Available",
-                "color": "purple"
+                "color": "indigo"
               },
               {
                 "value": "1.7M",
                 "label": "Private Scholarships Exist",
-                "color": "teal"
+                "color": "indigo"
               }
             ],
             "infoCard": {
               "title": "Scholarships Exist For:",
-              "color": "blue",
+              "color": "indigo",
               "items": [
                 "Academic achievement",
                 "Community involvement",
@@ -386,13 +390,13 @@
     {
       "number": 13,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Real-World Example",
+        "headerTitle": "Apply It",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "🎓",
+            "icon": "\ud83c\udf93",
             "name": "Jordan's Scholarship-Focused Approach",
             "paragraphs": [
               "Jordan, a high school senior with strong academics and leadership experience, created a systematic approach starting junior year. Jordan researched <span class=\"highlight-text\">50 potential scholarships</span> and dedicated 5 hours weekly to applications.",
@@ -425,17 +429,17 @@
     {
       "number": 14,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Real-World Example",
+        "headerTitle": "Apply It",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "📚",
+            "icon": "\ud83d\udcda",
             "name": "Casey's Balanced Funding Strategy",
             "paragraphs": [
               "Casey came from a middle-income family that couldn't save much for college. Instead of taking on maximum loans, Casey created a <span class=\"highlight-text\">strategic multi-year plan</span> for nursing school:",
-              "<strong>Year 1:</strong> Community college while living at home—Pell Grant ($2,500), merit scholarship ($1,500), part-time pharmacy job ($8,000). <em>Zero loans, money saved.</em>",
+              "<strong>Year 1:</strong> Community college while living at home\u2014Pell Grant ($2,500), merit scholarship ($1,500), part-time pharmacy job ($8,000). <em>Zero loans, money saved.</em>",
               "<strong>Years 2-4:</strong> Transferred to university nursing program with transfer scholarship ($3,000), nursing scholarship ($2,000), hospital work-study, and limited federal loans ($5,500/year)."
             ]
           },
@@ -465,7 +469,7 @@
     {
       "number": 15,
       "type": "discussion",
-      "variant": "teal",
+      "variant": "amber",
       "content": {
         "badge": "Discussion",
         "question": "What strategies did Jordan and Casey use to minimize their education debt?<br><br>Which approaches might work best for your personal situation and goals?"
@@ -474,18 +478,18 @@
     {
       "number": 16,
       "type": "discussion",
-      "variant": "purple",
+      "variant": "indigo",
       "content": {
         "badge": "Personal Reflection",
-        "question": "What steps can you take NOW—even before senior year—to maximize scholarships and minimize the amount you'll need to borrow for education?"
+        "question": "What steps can you take NOW\u2014even before senior year\u2014to maximize scholarships and minimize the amount you'll need to borrow for education?"
       }
     },
     {
       "number": 17,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "emerald",
       "content": {
-        "headerTitle": "Check for Understanding",
+        "headerTitle": "Check Your Understanding",
         "layout": "check-grid",
         "layoutData": {
           "questions": [
@@ -507,12 +511,13 @@
             }
           ]
         }
-      }
+      },
+      "speakerNotes": "ANSWER KEY:\n\nQ1: Scholarships are merit-based (academic, athletic, leadership achievements) and do not need to be repaid; grants are need-based (family financial situation) and also don't require repayment. You should apply for BOTH simultaneously—scholarships based on your achievements and grants based on demonstrated financial need via FAFSA. A high-achieving student from a wealthy family would qualify for scholarships but not need-based grants.\n\nQ2: Federal student loans should be considered first because they offer: (1) Lower interest rates than private loans, (2) Government pays interest while in school (subsidized loans), (3) Income-driven repayment options that adjust based on your earnings, (4) Loan forgiveness programs available for public service careers, (5) Deferment and forbearance options during financial hardship. Private loans rarely offer these protections and typically have higher interest rates.\n\nQ3: FAFSA is the Free Application for Federal Student Aid—it's the gateway to ALL federal aid including grants, work-study, and federal loans. Complete it early (opens October 1 annually) because: (1) Some aid is first-come, first-served, (2) Unsubsidized federal loans are available regardless of income, (3) Many scholarships require FAFSA completion, (4) You may qualify for more than you think—income thresholds vary by family size and circumstances.\n\nQ4: Starting at community college for 2 years, then transferring to a 4-year university saves approximately $((STATE_TUITION_PUBLIC - STATE_TUITION_COMMUNITY) × 2) while earning the exact same bachelor's degree. This strategy minimizes debt by completing general education requirements at lower cost. The diploma shows only the university you graduated from, not where you started."
     },
     {
       "number": 18,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Key Takeaways",
         "layout": "takeaway-grid",
@@ -521,12 +526,12 @@
             {
               "number": 1,
               "title": "Free Money First",
-              "description": "Always maximize scholarships and grants before considering any loans—every dollar matters"
+              "description": "Always maximize scholarships and grants before considering any loans\u2014every dollar matters"
             },
             {
               "number": 2,
               "title": "FAFSA Is Essential",
-              "description": "Complete the FAFSA early every year—it's your gateway to federal and often state/school aid"
+              "description": "Complete the FAFSA early every year\u2014it's your gateway to federal and often state/school aid"
             },
             {
               "number": 3,
@@ -545,15 +550,15 @@
     {
       "number": 19,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Student Activity",
+        "headerTitle": "Tomorrow's Challenge",
         "layout": "activity-layout",
         "layoutData": {
           "main": {
-            "icon": "\ud83d",
-            "title": "\udccb Mock FAFSA Worksheet Exercise",
-            "description": "In this activity, you'll practice completing a FAFSA worksheet using a sample student scenario. This hands-on experience will prepare you for the real application process. You'll use the <strong>Alex Johnson scenario</strong>—not your personal information—to understand what information is needed and how financial need is determined."
+            "icon": "\ud83d\udccb",
+            "title": "Mock FAFSA Worksheet Exercise",
+            "description": "In this activity, you'll practice completing a FAFSA worksheet using a sample student scenario. This hands-on experience will prepare you for the real application process. You'll use the <strong>Alex Johnson scenario</strong>\u2014not your personal information\u2014to understand what information is needed and how financial need is determined."
           },
           "steps": [
             "Review the Alex Johnson scenario information",
@@ -571,7 +576,7 @@
       "content": {
         "tagline": "Building Financial Futures, One Lesson at a Time",
         "website": "www.pflacademy.co",
-        "copyright": "© 2025 PFL Academy. All rights reserved."
+        "copyright": "\u00a9 2025 PFL Academy. All rights reserved."
       }
     }
   ]

@@ -1,9 +1,9 @@
 {
   "metadata": {
     "lChapter": "L-41",
-    "title": "Career Explorationand Goal Setting",
-    "subtitle": "Building Your Path to Professional Success in {{STATE_NAME}}",
-    "totalSlides": 18,
+    "title": "Career Exploration and Goal Setting",
+    "subtitle": "Building Your Path to Professional Success",
+    "totalSlides": 20,
     "hasStateVariables": true,
     "stateVariablesUsed": [
       "STATE_NAME"
@@ -14,23 +14,25 @@
       "number": 1,
       "type": "title",
       "content": {
-        "title": "Career Explorationand Goal Setting",
+        "title": "Career Exploration and Goal Setting",
         "titleSize": "large",
-        "subtitle": "Building Your Path to Professional Success in {{STATE_NAME}}"
+        "subtitle": "Building Your Path to Professional Success"
       }
     },
     {
       "number": 2,
       "type": "hook",
       "content": {
-        "label": "Essential Question in {{STATE_NAME}}",
-        "question": "What's the difference between working a <em>job</em> and building a <em>career</em>?<br><br>How can you take control of your <em>professional future</em>? in {{STATE_NAME}}"
-      }
+        "label": "The Challenge",
+        "question": "What's the difference between working a  job  and building a  career ?.<br><br><strong>How can you take control of your professional future?</strong>"
+      },
+      "headerColor": "amber",
+      "speakerNotes": "Read Miguel's career exploration scenario aloud or have students read silently. Discussion prompt: \"Has anyone changed their mind about what career they want? What made you reconsider?\" Preview how systematic exploration helps discover unexpected career paths."
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
@@ -63,19 +65,19 @@
     {
       "number": 4,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "Career in {{STATE_NAME}}",
+              "term": "Career",
               "definition": "A long-term professional journey encompassing multiple jobs, involving growth, development, and advancement over time.",
               "example": "Starting as a staff accountant, then senior accountant, manager, and eventually CFO over 20 years"
             },
             {
-              "term": "Job in {{STATE_NAME}}",
+              "term": "Job",
               "definition": "A specific position or role with defined responsibilities, typically performed in exchange for payment.",
               "example": "Working as a cashier at a retail store or an administrative assistant at a company"
             }
@@ -86,19 +88,19 @@
     {
       "number": 5,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "Self-Assessment in {{STATE_NAME}}",
+              "term": "Self-Assessment",
               "definition": "The process of evaluating your own interests, skills, values, and personality traits to guide career decisions.",
               "example": "Taking personality tests, listing skills, reflecting on what motivates you"
             },
             {
-              "term": "SMART Goals in {{STATE_NAME}}",
+              "term": "SMART Goals",
               "definition": "Specific, Measurable, Achievable, Relevant, and Time-bound objectives for effective planning.",
               "example": "\"Complete my CPA certification exam within 18 months of graduation\""
             }
@@ -109,14 +111,14 @@
     {
       "number": 6,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Jobs vs. Careers",
         "layout": "comparison-grid",
         "layoutData": {
           "leftColumn": {
-            "icon": "\ud83d",
-            "title": "\udcbc Job",
+            "icon": "💼",
+            "title": "Job",
             "items": [
               "Specific position or role",
               "Focused on immediate income",
@@ -126,8 +128,8 @@
             ]
           },
           "rightColumn": {
-            "icon": "\ud83d",
-            "title": "\ude80 Career",
+            "icon": "🚀",
+            "title": "Career",
             "items": [
               "Long-term professional journey",
               "Encompasses multiple positions",
@@ -142,7 +144,7 @@
     {
       "number": 7,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Self-Assessment: Know Yourself First",
         "layout": "balanced-layout",
@@ -155,15 +157,15 @@
               "<strong>3. Values:</strong> What matters most to you in work? What kind of environment do you thrive in?"
             ],
             "highlightBox": {
-              "icon": "\ud83d",
-              "text": "\udca1 Self-awareness is the foundation of smart career planning. Know yourself before exploring careers."
+              "icon": "💡",
+              "text": "Self-awareness is the foundation of smart career planning. Know yourself before exploring careers."
             }
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "2X in {{STATE_NAME}}",
-                "label": "More satisfied in careers aligned with interests in {{STATE_NAME}}",
+                "value": "2X",
+                "label": "More satisfied in careers aligned with interests",
                 "color": "purple"
               }
             ],
@@ -184,14 +186,14 @@
     {
       "number": 8,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Two Types of Skills",
         "layout": "comparison-grid",
         "layoutData": {
           "leftColumn": {
-            "icon": "\ud83d",
-            "title": "\udd27 Hard Skills",
+            "icon": "🔧",
+            "title": "Hard Skills",
             "items": [
               "Technical, teachable abilities",
               "Specific to certain jobs",
@@ -202,8 +204,8 @@
             ]
           },
           "rightColumn": {
-            "icon": "",
-            "title": "🤝 Soft Skills",
+            "icon": "🤝",
+            "title": "Soft Skills",
             "items": [
               "Personal attributes and interpersonal",
               "Transferable across all jobs",
@@ -219,7 +221,7 @@
     {
       "number": 9,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Career Exploration Resources",
         "layout": "balanced-layout",
@@ -231,11 +233,23 @@
               "<strong>Bureau of Labor Statistics</strong>: Occupational Outlook Handbook with detailed career information and employment projections.",
               "<strong>CareerOneStop</strong>: Career assessments, training opportunities, and job search resources."
             ],
-            "highlightBox": null
+            "highlightBox": {
+              "icon": "💡",
+              "text": "Use multiple resources to get a complete picture of potential career paths and their requirements."
+            }
           },
           "rightPanel": {
             "stats": [],
-            "infoCard": null
+            "infoCard": {
+              "title": "Beyond Online Research:",
+              "color": "teal",
+              "items": [
+                "Informational interviews with professionals",
+                "Job shadowing opportunities",
+                "Career fairs and industry events",
+                "Professional association meetings"
+              ]
+            }
           }
         }
       }
@@ -243,104 +257,127 @@
     {
       "number": 10,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "SMART Career Goals",
-        "layout": "generic",
+        "layout": "concept-full",
         "layoutData": {
+          "title": "Setting Goals That Actually Work",
           "paragraphs": [
-            "What exactly do you want to accomplish? Who is involved? Why is this important?",
-            "How will you track progress? What metrics will show you've achieved it?",
-            "Is this realistic given your resources, time, and current situation?",
-            "Does this align with your broader career aspirations and personal values?",
-            "What is your target date for completion? When will you reach milestones?"
+            "SMART goals turn vague aspirations into actionable plans:"
           ],
-          "lists": []
+          "bulletPoints": [
+            "<strong>S</strong>pecific: What exactly do you want to accomplish? Who is involved? Why is this important?",
+            "<strong>M</strong>easurable: How will you track progress? What metrics will show you've achieved it?",
+            "<strong>A</strong>chievable: Is this realistic given your resources, time, and current situation?",
+            "<strong>R</strong>elevant: Does this align with your broader career aspirations and personal values?",
+            "<strong>T</strong>ime-bound: What is your target date for completion? When will you reach milestones?"
+          ],
+          "keyPoint": "💡 SMART goals transform \"I want to work in healthcare\" into \"I will complete my nursing prerequisites with a 3.5 GPA by May 2026.\""
         }
       }
     },
     {
       "number": 11,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "SMART Goal in Action",
-        "layout": "balanced-layout",
+        "layout": "comparison-grid",
         "layoutData": {
-          "leftPanel": {
-            "title": "❌ Vague Goal",
-            "paragraphs": [
+          "leftColumn": {
+            "icon": "❌",
+            "title": "Vague Goal",
+            "items": [
               "\"I want to work in healthcare.\"",
-              "This goal lacks specificity, measurability, and a timeline. It doesn't provide direction for action."
-            ],
-            "highlightBox": null
+              "Not specific about the role",
+              "No way to measure progress",
+              "No timeline for achievement",
+              "Doesn't provide direction for action"
+            ]
           },
-          "rightPanel": {
-            "stats": [],
-            "infoCard": null
+          "rightColumn": {
+            "icon": "✅",
+            "title": "SMART Goal",
+            "items": [
+              "\"I will become a registered nurse in pediatric care.\"",
+              "Complete nursing prerequisites by May 2026",
+              "Earn RN license by December 2028",
+              "Secure pediatric nursing position by June 2029",
+              "Clear, actionable steps with deadlines"
+            ]
           }
         }
-      }
+      },
+      "speakerNotes": "COMMON MISCONCEPTIONS:\n• \"\"A career requires a college degree.\"\" → Careers exist in all fields—trades, arts, services. A career is defined by long-term growth and development, not the type of credential required.\n• \"\"I should know my career by now.\"\" → Career exploration is an ongoing process. Many successful professionals changed career directions multiple times. The goal is to develop a plan, not have all the answers.\n• \"\"Soft skills don't matter as much as hard skills.\"\" → Employers consistently rank soft skills (communication, teamwork, adaptability) as equally or more important than technical skills for career success."
     },
     {
       "number": 12,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Career Development Plan Components",
         "layout": "concept-full",
         "layoutData": {
           "title": "Building Your Roadmap to Success",
-          "paragraphs": [],
-          "bulletPoints": [
-            "<strong>Career Objective</strong><br>Your ultimate career direction and aspiration",
-            "<strong>Education &amp; Training</strong><br>Degrees, certifications, and courses needed",
-            "<strong>Experience Building</strong><br>Internships, jobs, and volunteer work",
-            "<strong>Skill Development</strong><br>Technical and soft skills to acquire",
-            "<strong>Networking</strong><br>Professional organizations and mentors",
-            "<strong>Timeline &amp; Milestones</strong><br>Short, mid, and long-term goals"
+          "paragraphs": [
+            "A comprehensive career development plan includes:"
           ],
-          "keyPoint": {
-            "text": "📋 A career development plan is your personalized roadmap—it turns dreams into actionable steps."
-          }
+          "bulletPoints": [
+            "<strong>Career Objective:</strong> Your ultimate career direction and aspiration",
+            "<strong>Education & Training:</strong> Degrees, certifications, and courses needed",
+            "<strong>Experience Building:</strong> Internships, jobs, and volunteer work",
+            "<strong>Skill Development:</strong> Technical and soft skills to acquire",
+            "<strong>Networking:</strong> Professional organizations and mentors",
+            "<strong>Timeline & Milestones:</strong> Short, mid, and long-term goals"
+          ],
+          "keyPoint": "📋 A career development plan is your personalized roadmap—it turns dreams into actionable steps."
         }
       }
     },
     {
       "number": 13,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Real-World Example",
+        "headerTitle": "Apply It",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "👩‍⚕️ in {{STATE_NAME}}",
-            "name": "Sarah: From Job to Career in {{STATE_NAME}}",
+            "icon": "👩‍⚕️",
+            "name": "Sarah: From Job to Career",
             "paragraphs": [
-              "Sarah started as a <span class=\"highlight-text\">receptionist at a medical clinic</span> right after high school—viewing it as just a job to pay bills.",
-              "After observing nurses and medical assistants, she became interested in <span class=\"highlight-text\">healthcare as a career</span>. She created a development plan with short, mid, and long-term goals.",
-              "Her transformation: complete nursing prerequisites, earn RN license, then specialize in pediatric oncology and eventually become a <strong>pediatric nurse practitioner</strong>."
+              "Sarah started as a <strong>receptionist at a medical clinic</strong> right after high school—viewing it as just a job to pay bills.",
+              "",
+              "After observing nurses and medical assistants, she became interested in healthcare as a career. She created a development plan with short, mid, and long-term goals:",
+              "",
+              "<strong>Short-term (1-2 years):</strong> Complete nursing prerequisites while continuing receptionist work, save for tuition, gain patient care experience as a medical assistant",
+              "",
+              "<strong>Mid-term (3-5 years):</strong> Earn Associate's RN degree and license, secure position in pediatric nursing",
+              "",
+              "<strong>Long-term (5+ years):</strong> Specialize in pediatric oncology, pursue Nurse Practitioner degree, work at children's hospital",
+              "",
+              "Her transformation: A receptionist job became the foundation for a nursing career aligned with her passion for helping children."
             ]
           },
           "outcomes": [
             {
-              "type": "after",
-              "label": "Short-Term (1-2 yrs) in {{STATE_NAME}}",
-              "value": "Prerequisites + Savings in {{STATE_NAME}}",
-              "detail": "Gain patient experience in {{STATE_NAME}}"
+              "type": "before",
+              "label": "Starting Point",
+              "value": "Receptionist",
+              "detail": "Job for immediate income"
             },
             {
               "type": "after",
-              "label": "Mid-Term (3-5 yrs) in {{STATE_NAME}}",
-              "value": "RN Degree + License in {{STATE_NAME}}",
-              "detail": "Pediatric nursing position in {{STATE_NAME}}"
+              "label": "Mid-Term Achievement",
+              "value": "RN License",
+              "detail": "Pediatric nursing position"
             },
             {
               "type": "after",
-              "label": "Long-Term (5+ yrs) in {{STATE_NAME}}",
-              "value": "Nurse Practitioner in {{STATE_NAME}}",
-              "detail": "Children's hospital in {{STATE_NAME}}"
+              "label": "Long-Term Goal",
+              "value": "Nurse Practitioner",
+              "detail": "Children's hospital specialist"
             }
           ]
         }
@@ -349,39 +386,44 @@
     {
       "number": 14,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Real-World Example",
+        "headerTitle": "Apply It",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "💻 in {{STATE_NAME}}",
-            "name": "Miguel: Career Exploration Process in {{STATE_NAME}}",
+            "icon": "💻",
+            "name": "Miguel: Career Exploration Process",
             "paragraphs": [
-              "Miguel, a high school junior interested in technology, wasn't sure which specific career to pursue.",
-              "<strong>Self-assessment:</strong> Identified strengths in problem-solving, communication, and creativity; interests in coding, design, and helping others use technology.",
-              "<strong>Research:</strong> Used the Occupational Outlook Handbook to compare Software Developer, UX/UI Designer, IT Support Specialist, and Computer Science Teacher.",
-              "<strong>Informational Interviews:</strong> Conversations revealed that <span class=\"highlight-text\">UX/UI design</span> best combined his technical and creative interests."
+              "Miguel, a high school junior interested in technology, wasn't sure which specific career to pursue. He used a systematic exploration process:",
+              "",
+              "<strong>Self-assessment:</strong> Identified strengths in problem-solving, communication, and creativity; interests in coding, design, and helping others use technology effectively.",
+              "",
+              "<strong>Research:</strong> Used the Occupational Outlook Handbook to compare Software Developer, UX/UI Designer, IT Support Specialist, and Computer Science Teacher. Analyzed salary ranges, education requirements, and job outlooks.",
+              "",
+              "<strong>Informational Interviews:</strong> Conversations with professionals in each field revealed that <strong>UX/UI design</strong> best combined his technical skills with creative interests.",
+              "",
+              "<strong>SMART Goals Set:</strong> \"Complete online UX design course within 6 months\" and \"Build portfolio with 3 design projects by year end.\""
             ]
           },
           "outcomes": [
             {
-              "type": "after",
-              "label": "SMART Goals Set in {{STATE_NAME}}",
-              "value": "UX Course in 6 months in {{STATE_NAME}}",
-              "detail": "Portfolio with 3 projects by year end in {{STATE_NAME}}"
+              "type": "before",
+              "label": "Starting Point",
+              "value": "Interested in Tech",
+              "detail": "Unsure of specific path"
             },
             {
               "type": "after",
-              "label": "Career Path Found in {{STATE_NAME}}",
-              "value": "UX/UI Designer in {{STATE_NAME}}",
-              "detail": "Combines tech + creativity in {{STATE_NAME}}"
+              "label": "Career Path Found",
+              "value": "UX/UI Designer",
+              "detail": "Combines tech + creativity"
             },
             {
               "type": "after",
-              "label": "Next Step in {{STATE_NAME}}",
-              "value": "Summer Internship in {{STATE_NAME}}",
-              "detail": "Design-focused programs in {{STATE_NAME}}"
+              "label": "Next Step",
+              "value": "Summer Internship",
+              "detail": "Design-focused programs"
             }
           ]
         }
@@ -390,16 +432,55 @@
     {
       "number": 15,
       "type": "discussion",
-      "variant": "teal",
+      "variant": "amber",
       "content": {
-        "badge": "Discussion in {{STATE_NAME}}",
-        "question": "Why is it important to have both short-term and long-term goals in your career development plan?<br><br>How can short-term goals help you stay motivated toward long-term aspirations? in {{STATE_NAME}}"
+        "badge": "Discussion",
+        "question": "Why is it important to have both short-term and long-term goals in your career development plan?<br><br>How can short-term goals help you stay motivated toward long-term aspirations?"
       }
     },
     {
       "number": 16,
+      "type": "discussion",
+      "variant": "indigo",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "Think about a career that interests you.<br><br>What do you already know about it?<br>What questions do you still need to answer through research?<br>Who could you talk to for an informational interview?"
+      }
+    },
+    {
+      "number": 17,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "emerald",
+      "content": {
+        "headerTitle": "Check Your Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "Explain the difference between a job and a career. Why does this distinction matter?"
+            },
+            {
+              "number": 2,
+              "question": "What are the three key areas to explore in a self-assessment, and why is each important?"
+            },
+            {
+              "number": 3,
+              "question": "What does SMART stand for in goal setting? Give an example of transforming a vague goal into a SMART goal."
+            },
+            {
+              "number": 4,
+              "question": "List three resources you can use for career exploration and what type of information each provides."
+            }
+          ]
+        }
+      },
+      "speakerNotes": "ASSESSMENT ANSWER KEY:\n1. B (Involves long-term growth and multiple positions over time)\n2. C (Computer programming - it's a technical, teachable ability specific to certain jobs)\n3. Self-assessment helps identify your interests, skills, and values before exploring careers. This ensures you research paths that align with who you are, increasing the likelihood of long-term satisfaction and success.\n4. \"A\" stands for Achievable. It's important because goals must be realistic given your current situation and resources; otherwise, you may become discouraged or set yourself up for failure.\n5. Responses will vary. Look for specific, actionable steps such as: conducting an informational interview, using O*NET to research the career, job shadowing, joining a related club, or taking a relevant course."
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Key Takeaways",
         "layout": "takeaway-grid",
@@ -430,16 +511,16 @@
       }
     },
     {
-      "number": 17,
+      "number": 19,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Student Activity",
+        "headerTitle": "Tomorrow's Challenge",
         "layout": "activity-layout",
         "layoutData": {
           "main": {
-            "icon": "📋",
-            "title": "🧭 Career Path Planner",
+            "icon": "🧭",
+            "title": "Career Path Planner",
             "description": "Use the Career Path Planner skill builder to create your own comprehensive career development plan. This interactive tool will guide you through self-assessment, career research, and goal-setting to build a personalized roadmap for your professional future."
           },
           "steps": [
@@ -453,12 +534,12 @@
       }
     },
     {
-      "number": 18,
+      "number": 20,
       "type": "closing",
       "content": {
-        "tagline": "Building Financial Futures, One Lesson at a Time in {{STATE_NAME}}",
-        "website": "www.pflacademy.co in {{STATE_NAME}}",
-        "copyright": "© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+        "tagline": "\"Your career is a marathon, not a sprint—plan accordingly\"",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
       }
     }
   ]

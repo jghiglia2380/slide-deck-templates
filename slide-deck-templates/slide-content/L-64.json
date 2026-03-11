@@ -1,8 +1,8 @@
 {
   "metadata": {
     "lChapter": "L-64",
-    "title": "",
-    "subtitle": "",
+    "title": "Risk and Return in Investing",
+    "subtitle": "Understanding the Fundamental Tradeoff That Drives All Investment Decisions",
     "totalSlides": 20,
     "hasStateVariables": false,
     "stateVariablesUsed": []
@@ -10,202 +10,567 @@
   "slides": [
     {
       "number": 1,
-      "type": "content",
-      "headerColor": "purple",
+      "type": "title",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "title": "Risk and Return in Investing",
+        "titleSize": "large",
+        "subtitle": "Understanding the Fundamental Tradeoff That Drives All Investment Decisions"
       }
     },
     {
       "number": 2,
-      "type": "content",
-      "headerColor": "purple",
+      "type": "hook",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
-      }
+        "label": "The $420,000 Question",
+        "question": "<strong>You're 22 Years Old</strong> - Investing for retirement at age 65 <strong>Investment A:</strong> Steady 3% annual returns, virtually no risk, your money will absolutely be there. $10,000 over 40 years = <strong>$32,620</strong> <br><br> The difference: <strong>$419,973</strong>"
+      },
+      "headerColor": "amber",
+      "notes": "DISCUSSION PROMPTS:\nTHE CHALLENGE (5 min):\n• Read Marcus's biotech story. Emphasize: 74% loss from concentration, not market decline.\n• Discussion: \"What's the difference between investing and gambling?\"\n• Key insight: Single-stock risk can wipe out years of savings in one day.\n"
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "What You'll Learn Today",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Analyze",
+              "description": "the risk-return relationship—why higher returns require higher risk"
+            },
+            {
+              "number": 2,
+              "verb": "Evaluate",
+              "description": "different types of risk—systematic vs. unsystematic, and what you can control"
+            },
+            {
+              "number": 3,
+              "verb": "Calculate",
+              "description": "and interpret risk metrics—standard deviation, beta, and Sharpe ratio"
+            },
+            {
+              "number": 4,
+              "verb": "Assess",
+              "description": "personal risk tolerance—matching investments to your situation"
+            },
+            {
+              "number": 5,
+              "verb": "Create",
+              "description": "age-appropriate strategies—balancing risk and return for your goals"
+            }
+          ]
+        }
       }
     },
     {
       "number": 4,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Essential Vocabulary (Part 1)",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Investment Risk",
+              "definition": "The possibility that actual returns differ from expected returns—including potential loss of some or all of your investment",
+              "example": "Stocks losing 30% in one year despite long-term average of 10%"
+            },
+            {
+              "term": "Return",
+              "definition": "Gain or loss on an investment expressed as percentage—includes price appreciation plus income (dividends/interest)",
+              "example": "Stock rises from $100 to $110 plus $5 dividend = 15% return"
+            },
+            {
+              "term": "Risk-Return Tradeoff",
+              "definition": "The principle that higher potential returns require accepting higher risk. You can't have both high returns AND high safety.",
+              "example": "10% stock returns vs. 2% savings account returns"
+            },
+            {
+              "term": "Volatility",
+              "definition": "How much an investment's price fluctuates over time. High volatility = dramatic swings. Low volatility = stable, predictable.",
+              "example": "Stock moving between -20% and +30% each year vs. bond steady at 4%"
+            },
+            {
+              "term": "Systematic Risk",
+              "definition": "Market-wide risk affecting all investments—recession, inflation, interest rates. Cannot be eliminated through diversification.",
+              "example": "2008 financial crisis affecting entire market"
+            },
+            {
+              "term": "Unsystematic Risk",
+              "definition": "Company-specific risk—management, product recalls, lawsuits. CAN be eliminated through diversification.",
+              "example": "One company's CEO resigning—barely affects diversified portfolio"
+            }
+          ]
+        }
       }
     },
     {
       "number": 5,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Essential Vocabulary (Part 2)",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Standard Deviation",
+              "definition": "Statistical measure showing how much returns typically vary from the average. Higher = more volatile = riskier.",
+              "example": "Fund with 20% standard deviation swings more than one with 5%"
+            },
+            {
+              "term": "Beta",
+              "definition": "Measures volatility relative to the market. Market = 1.0. Above 1.0 = more volatile. Below 1.0 = less volatile.",
+              "example": "Stock with beta of 1.3 moves 30% more than market"
+            },
+            {
+              "term": "Sharpe Ratio",
+              "definition": "Risk-adjusted return measure. Shows excess return per unit of risk. Higher = better compensation for risk taken.",
+              "example": "Fund with Sharpe 0.8 is better than one with 0.5"
+            },
+            {
+              "term": "Risk Tolerance",
+              "definition": "Your ability and willingness to endure volatility. Influenced by time horizon, financial situation, and emotional temperament.",
+              "example": "Can you hold steady through 30% market drop?"
+            }
+          ]
+        }
       }
     },
     {
       "number": 6,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "The Risk-Return Tradeoff",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Higher potential returns require accepting higher risk. This is economic law.",
+          "bulletPoints": [
+            "<strong>Cash/Savings:</strong> 1-3% return, virtually no risk",
+            "<strong>Government Bonds:</strong> 3-5% return, low risk",
+            "<strong>Corporate Bonds:</strong> 4-7% return, moderate risk",
+            "<strong>Stocks:</strong> 8-12% return, higher risk",
+            "<strong>Speculative:</strong> ???% return, extreme risk"
+          ],
+          "keyPoint": "🚨 Red Flag Alert: 'Guaranteed high returns with no risk' = FRAUD. The risk-return tradeoff is economic law that cannot be broken."
+        }
       }
     },
     {
       "number": 7,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Two Types of Risk",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "🌐",
+            "title": "Systematic Risk (Market Risk)",
+            "items": [
+              "<strong>Affects the entire market</strong>",
+              "",
+              "❌ Cannot be eliminated through diversification",
+              "",
+              "<strong>Examples:</strong>",
+              "• Economic recession",
+              "• Inflation surge",
+              "• Interest rate changes",
+              "• Pandemic",
+              "• Political instability",
+              "",
+              "<em>'The price of admission to investing'</em>"
+            ]
+          },
+          "rightColumn": {
+            "icon": "🏢",
+            "title": "Unsystematic Risk (Company Risk)",
+            "items": [
+              "<strong>Affects individual companies</strong>",
+              "",
+              "✅ CAN be eliminated through diversification",
+              "",
+              "<strong>Examples:</strong>",
+              "• CEO resigns unexpectedly",
+              "• Product recall",
+              "• Lawsuit against company",
+              "• New competitor emerges",
+              "• Factory burns down",
+              "",
+              "<em>'Risk you can control'</em>",
+              "",
+              "<strong>Key:</strong> Owning 30-40 different stocks eliminates most unsystematic risk—one company's problems barely affect you."
+            ]
+          }
+        }
       }
     },
     {
       "number": 8,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "green",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Measuring Risk: Standard Deviation",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "📊",
+            "title": "Stock A",
+            "items": [
+              "Average return: <strong>10%</strong>",
+              "Standard deviation: <strong>5%</strong>",
+              "",
+              "Most years: returns between <strong>5% and 15%</strong>",
+              "",
+              "Relatively predictable, lower risk"
+            ]
+          },
+          "rightColumn": {
+            "icon": "📊",
+            "title": "Stock B",
+            "items": [
+              "Average return: <strong>10%</strong>",
+              "Standard deviation: <strong>20%</strong>",
+              "",
+              "Most years: returns between <strong>-10% and +30%</strong>",
+              "",
+              "Wild swings, higher risk",
+              "",
+              "<strong>Key Point:</strong> Same average return, different risk! Both average 10%, but Stock B is far more volatile. Higher standard deviation = more unpredictable = riskier."
+            ]
+          }
+        }
       }
     },
     {
       "number": 9,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Beta and Sharpe Ratio",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "β",
+            "title": "Beta: Relative Volatility",
+            "items": [
+              "Measures movement relative to the market",
+              "",
+              "<strong>Beta = 1.0:</strong> Moves with market",
+              "<strong>Beta > 1.0:</strong> More volatile (1.5 = 50% more)",
+              "<strong>Beta < 1.0:</strong> Less volatile (0.7 = 30% less)",
+              "<strong>Beta ≈ 0:</strong> No correlation (bonds)",
+              "",
+              "<strong>Example:</strong> Market rises 10%, stock with beta 1.3 rises ~13%. But if market falls 10%, it falls ~13%."
+            ]
+          },
+          "rightColumn": {
+            "icon": "📐",
+            "title": "Sharpe Ratio: Risk-Adjusted Return",
+            "items": [
+              "<strong>Formula:</strong> (Return - Risk-Free Rate) / Standard Deviation",
+              "",
+              "<strong>Example:</strong>",
+              "12% return, 2% risk-free, 20% std dev",
+              "(12% - 2%) / 20% = <strong>0.50</strong>",
+              "",
+              "Higher Sharpe = more return per unit of risk = better deal",
+              "",
+              "<strong>Why Sharpe Matters:</strong> Sometimes a 10% return fund with low volatility has a BETTER Sharpe ratio than a 15% return fund with extreme volatility. It's getting more return per unit of risk."
+            ]
+          }
+        }
       }
     },
     {
       "number": 10,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Your Personal Risk Tolerance",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Three Factors That Determine Your Risk Tolerance",
+          "bulletPoints": [
+            "<strong>⏰ Time Horizon (Most important factor!):</strong> 40 years to retirement? → Take more risk. 2 years to goal? → Minimize risk. Stocks never negative over 20 years historically.",
+            "<strong>💰 Financial Situation:</strong> ✓ Stable income, emergency fund, low debt → More risk OK. ✗ Paycheck-to-paycheck → Minimize risk.",
+            "<strong>🧠 Emotional Temperament (Be honest with yourself!):</strong> Can you watch 20% drop without panic-selling? Do you check balances daily and stress? Have you made emotional decisions before?"
+          ],
+          "keyPoint": "Critical Insight: A conservative portfolio you maintain is better than an aggressive portfolio you abandon at the worst moment. Match investments to your ACTUAL risk tolerance, not theoretical."
+        }
       }
     },
     {
       "number": 11,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
-      }
+        "headerTitle": "Age-Appropriate Investment Strategies",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Age-Based Asset Allocation",
+            "paragraphs": [
+              "<strong>Age 25:</strong> 85% Stocks / 15% Bonds - Aggressive (40+ year horizon)",
+              "",
+              "<strong>Age 40:</strong> 70% Stocks / 30% Bonds - Moderate (25 year horizon)",
+              "",
+              "<strong>Age 55:</strong> 55% Stocks / 45% Bonds - Conservative (10 year horizon)",
+              "",
+              "<strong>Age 65:</strong> 40% Stocks / 60% Bonds - Preservation (In retirement)"
+            ]
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "Why younger = more aggressive?",
+              "color": "teal",
+              "items": [
+                "Stocks are volatile short-term but have never had negative returns over any 20-year period historically.",
+                "",
+                "Time allows volatility to smooth out.",
+                "",
+                "<strong>Match risk level to time horizon</strong>"
+              ]
+            }
+          }
+        }
+      },
+      "notes": "COMMON MISCONCEPTIONS:\n\n1. \"Higher risk always means higher returns.\"\n   → Higher risk means higher POTENTIAL returns, not guaranteed. You can take high risk and still lose money. The relationship is about probability, not certainty.\n\n2. \"I can eliminate all risk through diversification.\"\n   → Diversification only eliminates unsystematic (company-specific) risk. Systematic (market) risk affects all investments and cannot be diversified away.\n\n3. \"Young people should take maximum risk.\"\n   → Time horizon allows more risk, but only up to what you can psychologically handle. If volatility causes you to panic-sell, you shouldn't take that risk.\n\n"
     },
     {
       "number": 12,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "green",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Emma's Age-Appropriate Strategy",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👩‍💼",
+            "name": "Emma's Investment Choice",
+            "paragraphs": [
+              "<strong>Her Situation:</strong>",
+              "Emma, 24, just started first job earning $52,000. Has $3,000 emergency fund. Contributing $300/month to 401(k).",
+              "",
+              "<strong>Her Options:</strong>",
+              "• Stable Value: 2.5% (safe but low)",
+              "• Balanced Fund: 6% (moderate)",
+              "• Aggressive Growth: 10% (volatile)",
+              "",
+              "<strong>The Math Over 40 Years:</strong>",
+              "Stable @ 2.5%: $227,000",
+              "Aggressive @ 10%: $1,902,000"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "Her Choice: Aggressive",
+              "value": "$1.9M",
+              "detail": "40-year horizon justifies accepting volatility. Committed to never checking during downturns and continuing contributions regardless of market. Lesson: Time horizon should drive your risk level"
+            }
+          ]
+        }
       }
     },
     {
       "number": 13,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Marcus's Painful Volatility Lesson",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👤",
+            "name": "Marcus's High-Risk Gamble",
+            "paragraphs": [
+              "<strong>The Setup:</strong>",
+              "Marcus, 28, had $18,000 in diversified index fund. Heard about 'hot' biotech stock. Moved ENTIRE portfolio into single stock at $85/share.",
+              "",
+              "<strong>The Initial Success:</strong>",
+              "Two months later: stock climbed to $110. <strong>29% gain! $23,118!</strong> Marcus was thrilled, planning how to spend his 'guaranteed' profits...",
+              "",
+              "<strong>The Crash:</strong>",
+              "Company announced: primary drug candidate failed clinical trials. <strong>Stock crashed to $22 in one day.</strong>",
+              "",
+              "Portfolio value: <strong>$5,976</strong>",
+              "Loss: <strong>74%</strong>"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "The Lesson",
+              "value": "-74%",
+              "detail": "In diversified index fund: one company failing = barely noticeable. In single stock: catastrophic. Marcus learned why diversification matters. Lesson: APPROPRIATE risk is different from gambling"
+            }
+          ]
+        }
       }
     },
     {
       "number": 14,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Jasmine's Risk-Adjusted Decision",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👤",
+            "name": "Jasmine Compares Two Funds",
+            "paragraphs": [
+              "<strong>Two Fund Options:</strong>",
+              "",
+              "| | Fund A | Fund B |",
+              "|---|---|---|",
+              "| Return | 14% | 10% |",
+              "| Std Dev | 28% | 15% |",
+              "| Sharpe | 0.43 | <strong>0.53</strong> |",
+              "",
+              "<strong>Fund A Reality:</strong> Best year: +45%, Worst year: -38%. Wild swings cause panic-selling.",
+              "",
+              "<strong>Fund B Reality:</strong> Best year: +25%, Worst year: -18%. Consistent performance, easier to hold."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "Her Choice: Fund B",
+              "value": "0.53",
+              "detail": "Better Sharpe ratio = more return per unit of risk. Matches her moderate risk tolerance. She'll actually stay invested through volatility. The theoretically 'best' investment is worthless if volatility causes you to panic-sell. Lesson: Know your actual risk tolerance, not theoretical"
+            }
+          ]
+        }
       }
     },
     {
       "number": 15,
-      "type": "content",
-      "headerColor": "purple",
+      "type": "discussion",
+      "variant": "teal",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "badge": "Discussion",
+        "question": "<strong>Scenario A - Tyler (23):</strong> Just got first job. Has $5,000 to invest, won't need it for 35+ years. Comfortable with volatility. <em>What allocation would you recommend?</em><br><br><strong>Scenario B - The Smiths (58):</strong> Both 58, have $400,000 saved. Planning to retire at 63. Nervous about market drops. <em>How should they balance growth vs. safety?</em><br><br><strong>Scenario C - Maria (30):</strong> Has $20,000 she needs for house down payment in 2 years. Wants to 'grow' the money before buying. <em>What's the risk in her plan?</em><br><br><strong>Remember:</strong> 'The best investment strategy is one you'll actually stick with through all market conditions.'"
       }
     },
     {
       "number": 16,
-      "type": "content",
-      "headerColor": "purple",
+      "type": "discussion",
+      "variant": "purple",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "badge": "Personal Reflection",
+        "question": "<strong>The Honest Risk Tolerance Test</strong><br><br>Imagine this scenario: You invest $1,000 today. Six months later, due to market decline, it's worth <strong>$700</strong>. Headlines scream: 'Market Crash! Sell Now!' Friends are selling. You check your balance every day, feeling sick...<br><br><strong>Honestly, what would you do?</strong><br><br>A) Panic and sell to stop the losses<br>B) Feel anxious but hold steady<br>C) Stay calm—volatility is normal<br>D) Invest MORE—assets are 'on sale'<br><br><strong>Critical Insight:</strong> If your answer is A, you need a more conservative portfolio. Panic-selling at the bottom is the most wealth-destroying behavior in investing. Your honest answer reveals your true risk tolerance."
       }
     },
     {
       "number": 17,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "emerald",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
-      }
+        "headerTitle": "Check Your Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "Which type of risk can be eliminated through diversification? (Answer: C - Unsystematic risk)"
+            },
+            {
+              "number": 2,
+              "question": "A stock with beta of 1.3 means: (Answer: B - It moves 30% more than the market)"
+            },
+            {
+              "number": 3,
+              "question": "Which investor should take MORE investment risk? (Answer: B - Someone investing for 40 years)"
+            },
+            {
+              "number": 4,
+              "question": "What does a higher Sharpe ratio indicate? (Answer: C - Better risk-adjusted returns)"
+            }
+          ]
+        }
+      },
+      "notes": "ANSWER KEY:\n\n1. B (Systematic risk)\n\n2. Marcus exposed himself to massive unsystematic risk (company-specific). A drug trial failure is unsystematic—it only affects that company. With a diversified portfolio, one company's failure barely registers. Marcus could have eliminated this risk through diversification but chose concentration instead.\n\n4. Jasmine chose Fund B because: (1) Better Sharpe means more return per unit of risk. (2) Fund A's volatility might cause panic-selling during downturns. (3) A conservative fund you stick with beats an aggressive fund you abandon. (4) Extreme volatility makes staying invested psychologically harder.\n\n"
     },
     {
       "number": 18,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Risk and return are linked",
+              "description": "higher potential returns require accepting higher risk. No exceptions."
+            },
+            {
+              "number": 2,
+              "title": "Two types of risk",
+              "description": "systematic (market-wide, can't avoid) and unsystematic (company-specific, diversify away)"
+            },
+            {
+              "number": 3,
+              "title": "Measure risk objectively",
+              "description": "standard deviation shows volatility, beta shows market sensitivity, Sharpe shows risk-adjusted returns"
+            },
+            {
+              "number": 4,
+              "title": "Time horizon is critical",
+              "description": "longer horizons allow more risk. Stocks have never lost over any 20-year period."
+            },
+            {
+              "number": 5,
+              "title": "Know your true risk tolerance",
+              "description": "what you can actually handle emotionally, not theoretically"
+            },
+            {
+              "number": 6,
+              "title": "Age-appropriate strategy wins",
+              "description": "aggressive at 25, conservative at 65. Adjust gradually."
+            }
+          ]
+        }
       }
     },
     {
       "number": 19,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "headerTitle": "Skill Builder: Risk-Return Analyzer",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📊",
+            "title": "Build Age-Appropriate Portfolios",
+            "description": "Analyze six investment options and create three portfolios for different life stages"
+          },
+          "steps": [
+            "<strong>Six Investment Options:</strong> A: High-yield savings (2%, SD 0.5%), B: Short-term bonds (3.5%, SD 3%), C: Balanced fund (7%, SD 10%), D: Large-cap index (10%, SD 18%), E: Small-cap growth (13%, SD 28%), F: Emerging markets (15%, SD 35%)",
+            "<strong>Build Three Portfolios:</strong> Profile 1: Age 60 (retiring in 5 years), Profile 2: Age 40 (25 years to retirement), Profile 3: Age 25 (40 years to retirement)",
+            "<strong>Analyze Each Portfolio:</strong> Expected return (weighted average), Portfolio standard deviation, Portfolio beta, Sharpe ratio, Projected growth of $10,000, Best/worst case scenarios",
+            "<strong>Key Learning:</strong> See how adding low-risk investments reduces volatility BUT also reduces returns. Find your balance!"
+          ]
+        }
       }
     },
     {
       "number": 20,
-      "type": "content",
-      "headerColor": "purple",
+      "type": "closing",
       "content": {
-        "headerTitle": "",
-        "layout": "generic",
-        "layoutData": {}
+        "tagline": "\"The goal isn't to eliminate risk—it's to understand it, measure it, and manage it appropriately for YOUR situation.\"",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
       }
     }
   ]

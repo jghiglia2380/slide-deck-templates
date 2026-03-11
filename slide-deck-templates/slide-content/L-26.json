@@ -1,8 +1,8 @@
 {
   "metadata": {
     "lChapter": "L-26",
-    "title": "Credit Card Useand Management",
-    "subtitle": "Mastering Plastic for Financial Success",
+    "title": "Credit Card Use and Management",
+    "subtitle": "Master the Tool That Can Build Wealth or Create Debt",
     "totalSlides": 20,
     "hasStateVariables": false,
     "stateVariablesUsed": []
@@ -12,23 +12,25 @@
       "number": 1,
       "type": "title",
       "content": {
-        "title": "Credit Card Useand Management",
+        "title": "Credit Card Use and Management",
         "titleSize": "large",
-        "subtitle": "Mastering Plastic for Financial Success"
+        "subtitle": "Master the Tool That Can Build Wealth or Create Debt"
       }
     },
     {
       "number": 2,
       "type": "hook",
       "content": {
-        "label": "Essential Question",
-        "question": ""
-      }
+        "label": "The Challenge",
+        "question": "James received a credit card with a <em>$5,000 limit</em> and quickly maxed it out on electronics, clothes, and dinners. Unable to pay the full balance, he started making only <em>minimum payments</em>.   What mistakes did James make, and how could he have avoided this debt trap?    What mistakes did James make, and how could he have avoided this debt trap? <br><br>   What mistakes did James make, and how could he have avoided this debt trap?"
+      },
+      "headerColor": "amber",
+      "notes": "DISCUSSION PROMPTS:\nTHE CHALLENGE (5 min):\n• Read James's story—emphasize $1,500 interest on forgotten purchases.\n• Ask: \"How many of you have seen credit card offers? What do they promise?\"\n"
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
@@ -37,22 +39,22 @@
             {
               "number": 1,
               "verb": "Understand",
-              "description": "How credit cards work as short-term loans and the true cost of carrying a balance"
+              "description": "Understand how credit card interest, grace periods, and minimum payments work."
             },
             {
               "number": 2,
-              "verb": "Learn",
-              "description": "Key credit card terminology including APR, minimum payment, and credit utilization"
+              "verb": "Calculate",
+              "description": "Calculate the true cost of carrying a credit card balance over time."
             },
             {
               "number": 3,
               "verb": "Develop",
-              "description": "Strategies for responsible credit card management that build credit without debt"
+              "description": "Develop responsible credit card usage strategies that build credit without creating debt."
             },
             {
               "number": 4,
-              "verb": "Compare",
-              "description": "Different credit card offers to identify the best fit for your spending habits"
+              "verb": "Evaluate",
+              "description": "Evaluate credit card offers and choose cards that match your financial goals."
             }
           ]
         }
@@ -61,16 +63,21 @@
     {
       "number": 4,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "APR (Annual Percentage Rate)",
+              "definition": "The yearly interest rate charged on unpaid credit card balances. Average is 20-25% for new cardholders.",
+              "example": "A 24% APR means you pay about 2% per month on any balance you carry."
+            },
+            {
+              "term": "Grace Period",
+              "definition": "Time (usually 21-25 days) after your statement closes to pay your balance in full before interest is charged.",
+              "example": "If you pay in full by the due date, you pay $0 interest—it's like a free short-term loan!"
             }
           ]
         }
@@ -79,16 +86,21 @@
     {
       "number": 5,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Minimum Payment",
+              "definition": "The smallest payment required to keep your account in good standing—usually 1-3% of balance or $25-35, whichever is greater.",
+              "example": "On a $2,000 balance, minimum might be $40—but most goes to interest, barely touching the principal."
+            },
+            {
+              "term": "Credit Utilization",
+              "definition": "The percentage of your available credit you're using. Below 30% is recommended; below 10% is ideal for credit scores.",
+              "example": "$500 balance on a $2,000 limit = 25% utilization (good). $1,800 balance = 90% (bad for score)."
             }
           ]
         }
@@ -97,37 +109,34 @@
     {
       "number": 6,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "How Credit Cards Work",
-        "layout": "balanced-layout",
+        "headerTitle": "The Two Ways to Use Credit Cards",
+        "layout": "comparison-grid",
         "layoutData": {
-          "leftPanel": {
-            "title": "It's a Short-Term Loan",
-            "paragraphs": [
-              "Unlike debit cards that use money you have, credit cards let you borrow money you'll pay back later."
-            ],
-            "highlightBox": null
+          "leftColumn": {
+            "icon": "✓",
+            "title": "PAY IN FULL (Smart)",
+            "items": [
+              "Pay full balance monthly",
+              "Pay $0 in interest",
+              "Grace period applies",
+              "Earn rewards/cashback for FREE",
+              "Build credit history",
+              "It's like a free short-term loan"
+            ]
           },
-          "rightPanel": {
-            "stats": [
-              {
-                "value": "",
-                "label": "",
-                "color": "teal"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "teal"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "rose"
-              }
-            ],
-            "infoCard": null
+          "rightColumn": {
+            "icon": "✗",
+            "title": "CARRY A BALANCE (Costly)",
+            "items": [
+              "Pay less than full balance",
+              "Pay 20-25% APR interest",
+              "Grace period disappears",
+              "Rewards cost more than they're worth",
+              "Minimum payments = debt trap",
+              "Interest compounds against you"
+            ]
           }
         }
       }
@@ -135,20 +144,46 @@
     {
       "number": 7,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Smart Use vs. Costly Mistakes",
-        "layout": "comparison-grid",
+        "headerTitle": "The Minimum Payment Trap",
+        "layout": "balanced-layout",
         "layoutData": {
-          "leftColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
+          "leftPanel": {
+            "title": "Why Minimums Keep You in Debt",
+            "paragraphs": [
+              "Minimum payments are designed to keep you paying forever:",
+              "<strong>$2,000 balance at 18% APR:</strong>",
+              "• Minimum payment: $40/month",
+              "• Time to pay off: 9+ years",
+              "• Total interest paid: $2,200+",
+              "You pay MORE in interest than the original balance!",
+              "Most of each minimum payment goes to interest—only a few dollars reduce the principal."
+            ],
+            "highlightBox": {
+              "icon": "⚠️",
+              "text": "At minimum payments, a $2,000 purchase costs you $4,200+ total. That's 2x the price!"
+            }
           },
-          "rightColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "9+ years",
+                "label": "To pay off $2,000 at minimum",
+                "color": "amber"
+              },
+              {
+                "value": "$2,200+",
+                "label": "Interest on $2,000 balance",
+                "color": "amber"
+              },
+              {
+                "value": "110%",
+                "label": "Interest as % of original balance",
+                "color": "amber"
+              }
+            ],
+            "infoCard": null
           }
         }
       }
@@ -156,39 +191,49 @@
     {
       "number": 8,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "The 30% Rule: Credit Utilization",
+        "headerTitle": "The Power of Paying More",
         "layout": "balanced-layout",
         "layoutData": {
           "leftPanel": {
-            "title": "Keep Utilization Low",
+            "title": "$2,000 Balance at 18% APR",
             "paragraphs": [
-              "Credit utilization is the second most important factor in your credit score after payment history.",
-              "Keep balance below $900 (30%)<br>Ideal: below $300 (10%)",
-              "Pay down your balance before the statement closes, not just before the due date"
+              "Compare different payment strategies:",
+              "<strong>Minimum ($40):</strong>",
+              "9+ years | $2,200 interest",
+              "<strong>Double ($80):</strong>",
+              "32 months | $523 interest",
+              "<strong>Fixed $150:</strong>",
+              "15 months | $236 interest",
+              "<strong>Fixed $200:</strong>",
+              "11 months | $168 interest"
             ],
             "highlightBox": null
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
-                "color": "green"
+                "value": "$1,964",
+                "label": "Saved paying $150 vs. minimum",
+                "color": "emerald"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "teal"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "rose"
+                "value": "8 years",
+                "label": "Faster payoff with $150/month",
+                "color": "emerald"
               }
             ],
-            "infoCard": null
+            "infoCard": {
+              "title": "Simple Rule:",
+              "color": "emerald",
+              "items": [
+                "Pay at least 2x the minimum",
+                "Better: Pay a fixed amount you can afford",
+                "Best: Pay in full every month",
+                "Never charge more than you can pay off"
+              ]
+            }
           }
         }
       }
@@ -196,92 +241,43 @@
     {
       "number": 9,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Choosing the Right Credit Card",
-        "layout": "concept-full",
-        "layoutData": {
-          "title": "Match the Card to Your Habits",
-          "paragraphs": [
-            "Not all credit cards are created equal. The best card for you depends on how you spend money.",
-            "15% APR, $95 annual fee, 3% groceries<br><strong>Best if:</strong> You might carry a balance occasionally",
-            "18% APR, $0 annual fee, 2x travel points<br><strong>Best if:</strong> You travel and pay in full monthly",
-            "22% APR, $0 annual fee, 4% gas<br><strong>Best if:</strong> Long commute, always pay in full",
-            "<strong>Key Insight:</strong> If you carry a balance, APR matters most. If you pay in full monthly, rewards and benefits matter more."
-          ],
-          "bulletPoints": []
-        }
-      }
-    },
-    {
-      "number": 10,
-      "type": "content",
-      "headerColor": "teal",
-      "content": {
-        "headerTitle": "Six Responsible Credit Card Strategies",
-        "layout": "generic",
-        "layoutData": {
-          "paragraphs": [
-            "Avoid interest charges entirely",
-            "Protect and build your credit score",
-            "Never miss a payment or pay late fees",
-            "Catch fraud and track spending",
-            "Maximize rewards you'll actually use",
-            "Higher rates, no grace period"
-          ],
-          "lists": []
-        }
-      }
-    },
-    {
-      "number": 11,
-      "type": "content",
-      "headerColor": "blue",
-      "content": {
-        "headerTitle": "Why Credit Card Skills Matter",
-        "layout": "generic",
-        "layoutData": {
-          "paragraphs": [
-            "Responsible use creates the credit history you need for future loans, apartments, and even jobs",
-            "Credit cards offer stronger protections than debit cards - you're not liable for unauthorized charges",
-            "Smart credit card users earn cash back, travel points, and other perks on money they'd spend anyway",
-            "Understanding how interest works protects you from the minimum payment trap that costs thousands"
-          ],
-          "lists": []
-        }
-      }
-    },
-    {
-      "number": 12,
-      "type": "content",
-      "headerColor": "purple",
-      "content": {
-        "headerTitle": "Credit Cards in Today's Economy",
+        "headerTitle": "Credit Utilization: The 30% Rule",
         "layout": "balanced-layout",
         "layoutData": {
           "leftPanel": {
-            "title": "The Modern Card Landscape",
+            "title": "Keep Your Balance Low",
             "paragraphs": [
-              "Credit cards have evolved with new protections and features, but also new risks."
+              "Credit utilization = Balance ÷ Credit Limit",
+              "<strong>Example:</strong> $1,000 limit",
+              "• $300 balance = 30% (acceptable)",
+              "• $100 balance = 10% (great for score)",
+              "• $900 balance = 90% (hurts score badly)",
+              "High utilization signals risk to lenders—even if you pay in full each month.",
+              "Your utilization is reported when your statement closes, not when you pay."
             ],
-            "highlightBox": null
+            "highlightBox": {
+              "icon": "💡",
+              "text": "Pro tip: Pay down your balance BEFORE the statement closes to report lower utilization."
+            }
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
-                "color": "teal"
+                "value": "<30%",
+                "label": "Recommended utilization",
+                "color": "emerald"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "teal"
+                "value": "<10%",
+                "label": "Ideal for best credit scores",
+                "color": "emerald"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "rose"
+                "value": ">50%",
+                "label": "Significantly hurts your score",
+                "color": "amber"
               }
             ],
             "infoCard": null
@@ -290,95 +286,273 @@
       }
     },
     {
+      "number": 10,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Credit Card Features to Know",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Beyond Interest Rates",
+          "paragraphs": [
+            "Credit cards have many features—some helpful, some costly:"
+          ],
+          "bulletPoints": [
+            "<strong>Rewards/Cashback:</strong> Free money IF you pay in full. Worthless if you carry a balance (interest > rewards).",
+            "<strong>Annual Fee:</strong> Some cards charge $0, premium cards $95-$695. Only worth it if benefits exceed the fee.",
+            "<strong>Cash Advance:</strong> Borrowing cash from your card. AVOID—higher APR (25%+), no grace period, fees.",
+            "<strong>Balance Transfer:</strong> Moving debt to a lower-rate card. Watch for transfer fees (3-5%) and promotional period end.",
+            "<strong>Foreign Transaction Fee:</strong> 1-3% on purchases abroad. Get a no-fee card if you travel.",
+            "<strong>Purchase Protection:</strong> Extended warranties, fraud protection—a real benefit of credit cards over debit."
+          ],
+          "keyPoint": {
+            "text": "🎯 Focus on cards with no annual fee and good basic cashback until you have a clear strategy for premium cards."
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Responsible Credit Card Rules",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "How to Use Credit Cards Without Getting Burned",
+          "paragraphs": [
+            "Follow these rules and credit cards become powerful tools, not traps:"
+          ],
+          "bulletPoints": [
+            "<strong>Never charge more than you can pay off this month:</strong> Treat it like a debit card with benefits.",
+            "<strong>Pay in full, every month:</strong> Set up autopay for the full balance—never pay interest.",
+            "<strong>Keep utilization under 30%:</strong> Better yet, under 10% for the best credit score impact.",
+            "<strong>Don't use cash advances:</strong> Expensive, immediate interest, no grace period.",
+            "<strong>Check statements monthly:</strong> Catch fraud and review your spending patterns.",
+            "<strong>Have a plan before buying:</strong> If you can't pay it off, you can't afford it (with rare exceptions)."
+          ],
+          "keyPoint": {
+            "text": "✨ Used right, credit cards = free 21-day loans + rewards + fraud protection + credit building. Used wrong = expensive debt trap."
+          }
+        }
+      },
+      "notes": "COMMON MISCONCEPTIONS:\n\n1. \"The minimum payment is what I should pay.\"\n   → The minimum keeps you in good standing but maximizes interest costs. Always pay more—ideally the full balance.\n\n2. \"I need to carry a balance to build credit.\"\n   → False. You build credit by using the card and paying it off. Carrying a balance just costs you money.\n\n3. \"Credit cards are always bad.\"\n   → Credit cards are tools. Paid in full monthly, they provide free short-term loans, rewards, fraud protection, and credit building.\n\n"
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Building Credit with Credit Cards",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Credit Cards Build Credit History",
+            "paragraphs": [
+              "Credit cards are one of the best tools for building credit because they report monthly:",
+              "<strong>Payment history (35%):</strong> Pay on time every month—even minimum counts as on-time",
+              "<strong>Credit utilization (30%):</strong> Keep balances low relative to limits",
+              "<strong>Length of credit history (15%):</strong> Keep old cards open, even unused",
+              "<strong>Credit mix (10%):</strong> Having a credit card diversifies your credit profile"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "Starter Strategy:",
+              "color": "emerald",
+              "items": [
+                "Get a secured card or student card",
+                "Use for 1-2 small recurring charges",
+                "Set up autopay for full balance",
+                "Keep it open as you get better cards",
+                "Graduate to rewards cards later"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
       "number": 13,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Success Story: Sophia's Strategy",
+        "headerTitle": "Apply It",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "",
-            "name": "",
-            "paragraphs": []
+            "icon": "👩",
+            "name": "Sarah's Smart Strategy",
+            "paragraphs": [
+              "Sarah uses her credit card for all regular purchases—groceries, gas, subscriptions—but never charges more than $500/month on her $3,000 limit.",
+              "She pays her full balance every month before the due date and earns 2% cashback on everything."
+            ]
           },
-          "outcomes": []
+          "outcomes": [
+            {
+              "type": "positive",
+              "label": "Interest Paid",
+              "value": "$0",
+              "detail": "Pays in full—grace period applies"
+            },
+            {
+              "type": "positive",
+              "label": "Utilization",
+              "value": "17%",
+              "detail": "$500 / $3,000 = excellent"
+            },
+            {
+              "type": "positive",
+              "label": "Annual Cashback",
+              "value": "$120",
+              "detail": "2% × $6,000/year = free money"
+            }
+          ]
         }
       }
     },
     {
       "number": 14,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Warning Story: James's Challenges",
+        "headerTitle": "Apply It",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "",
-            "name": "",
-            "paragraphs": []
+            "icon": "👤",
+            "name": "James's Mistakes",
+            "paragraphs": [
+              "James maxed out his $5,000 limit on things he wanted but didn't need. Unable to pay the full balance, he started making only minimum payments.",
+              "Two years later: Still owes $4,200, paid $1,500+ in interest, credit score dropped due to 100% utilization."
+            ]
           },
-          "outcomes": []
+          "outcomes": [
+            {
+              "type": "negative",
+              "label": "Interest Paid",
+              "value": "$1,500+",
+              "detail": "And still not paid off"
+            },
+            {
+              "type": "negative",
+              "label": "Utilization",
+              "value": "100%",
+              "detail": "Maxed out—hurts credit badly"
+            },
+            {
+              "type": "negative",
+              "label": "Effective Price",
+              "value": "~2x",
+              "detail": "Paying double for purchases"
+            }
+          ]
         }
       }
     },
     {
       "number": 15,
       "type": "discussion",
-      "variant": "teal",
+      "variant": "amber",
       "content": {
         "badge": "Discussion",
-        "question": ""
+        "question": "Compare Sarah and James:<br><br>1. What specific behaviors made Sarah successful and James unsuccessful?<br><br>2. If James wanted to get out of debt, what should he do right now?<br><br>3. How much would James save if he paid $150/month instead of the minimum?"
       }
     },
     {
       "number": 16,
       "type": "discussion",
-      "variant": "teal",
+      "variant": "indigo",
       "content": {
-        "badge": "Personal Reflection",
-        "question": ""
+        "badge": "Reflection",
+        "question": "Some people say 'cash is king' and credit cards are dangerous. Others say credit cards are powerful financial tools.<br><br>What's your view?<br><br>How would you use credit cards responsibly?"
       }
     },
     {
       "number": 17,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "emerald",
       "content": {
-        "headerTitle": "Check for Understanding",
+        "headerTitle": "Check Your Understanding",
         "layout": "check-grid",
         "layoutData": {
-          "questions": []
+          "questions": [
+            {
+              "number": 1,
+              "question": "What happens if you pay your credit card balance in full during the grace period?"
+            },
+            {
+              "number": 2,
+              "question": "Why is a cash advance worse than a regular credit card purchase?"
+            },
+            {
+              "number": 3,
+              "question": "Sophia's credit limit is $2,500. What's the maximum balance she should carry to stay at 30% utilization?"
+            },
+            {
+              "number": 4,
+              "question": "List two specific mistakes James made and what he should have done differently."
+            }
+          ]
         }
-      }
+      },
+      "notes": "ANSWER KEY:\n\n1. B (You pay no interest on purchases)\n\n2. Cash advances have higher APR (often 25%+), no grace period (interest starts immediately), and often have fees (3-5% of amount). Never a good choice.\n\n3. $2,500 × 0.30 = $750 maximum\n\n4. (1) He spent more than he could afford to pay off—maxed out his card. (2) He only made minimum payments. He should have only charged what he could pay in full and stopped using the card while paying down the balance.\n\n5. Balanced responses recognize credit cards as tools. Used wisely (pay in full, low utilization), they build credit and offer rewards. Used poorly (carrying balances, overspending), they create costly debt.\n\n"
     },
     {
       "number": 18,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Key Takeaways",
         "layout": "takeaway-grid",
         "layoutData": {
-          "takeaways": []
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Pay in Full = Pay No Interest",
+              "description": "The grace period means you get a free short-term loan—but only if you pay the full balance by the due date."
+            },
+            {
+              "number": 2,
+              "title": "Minimum Payments = Debt Trap",
+              "description": "Paying minimum on $2,000 takes 9+ years and costs $2,200+ in interest. Always pay more than minimum."
+            },
+            {
+              "number": 3,
+              "title": "Keep Utilization Under 30%",
+              "description": "High utilization hurts your credit score even if you pay in full. Keep balances low relative to limits."
+            },
+            {
+              "number": 4,
+              "title": "Credit Cards Are Tools",
+              "description": "Used wisely: free loans, rewards, fraud protection, credit building. Used poorly: expensive debt trap."
+            }
+          ]
         }
       }
     },
     {
       "number": 19,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Skill Builder: Credit Card Comparison",
+        "headerTitle": "Tomorrow's Challenge",
         "layout": "activity-layout",
         "layoutData": {
           "main": {
-            "icon": "📋",
-            "title": "",
-            "description": ""
+            "icon": "💳",
+            "title": "Credit Card Strategy Challenge",
+            "description": "James learned the hard way—but can you avoid his mistakes? Tomorrow you'll analyze real credit card scenarios, calculate true costs, and develop your personal credit card strategy."
           },
-          "steps": []
+          "steps": [
+            "Analyze credit card scenarios and predict outcomes",
+            "Calculate minimum payment costs vs. accelerated payment savings",
+            "Determine optimal utilization for different credit limits",
+            "Evaluate credit card offers based on your needs",
+            "Create personal rules for responsible credit card use"
+          ]
         }
       }
     },
@@ -386,7 +560,7 @@
       "number": 20,
       "type": "closing",
       "content": {
-        "tagline": "Credit cards are powerful tools - make them work for you, not against you",
+        "tagline": "Building Financial Futures, One Lesson at a Time",
         "website": "www.pflacademy.co",
         "copyright": "© 2025 PFL Academy. All rights reserved."
       }

@@ -1,7 +1,7 @@
 {
   "metadata": {
     "lChapter": "L-59",
-    "title": "Understanding LocalTax Structures",
+    "title": "Understanding Local Tax Structures",
     "subtitle": "Property Taxes, Local Sales Taxes, and Your Community",
     "totalSlides": 20,
     "hasStateVariables": true,
@@ -28,7 +28,7 @@
       "number": 1,
       "type": "title",
       "content": {
-        "title": "Understanding LocalTax Structures",
+        "title": "Understanding Local Tax Structures",
         "titleSize": "large",
         "subtitle": "Property Taxes, Local Sales Taxes, and Your Community"
       }
@@ -37,14 +37,16 @@
       "number": 2,
       "type": "hook",
       "content": {
-        "label": "Essential Question",
+        "label": "The Challenge",
         "question": "Two identical apartments. Same rent. One costs you<br><em>$1,200 more per year</em> to live in.<br><br>How is this possible?"
-      }
+      },
+      "headerColor": "amber",
+      "notes": "<strong>Discussion Prompts:</strong><br>â€¢ Ask: \"Does anyone know what their parents pay in property taxes?\" (Most won't know.)<br>â€¢ Reveal: Property taxes can add $300-$1,000+ monthly to housing costs.<br>â€¢ Connection: Even renters pay indirectlyâ€”landlords factor taxes into rent."
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
@@ -77,9 +79,9 @@
     {
       "number": 4,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
@@ -100,9 +102,9 @@
     {
       "number": 5,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
@@ -123,7 +125,7 @@
     {
       "number": 6,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "What Local Taxes Fund",
         "layout": "balanced-layout",
@@ -165,7 +167,7 @@
     {
       "number": 7,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "High-Tax vs. Low-Tax Communities",
         "layout": "comparison-grid",
@@ -200,7 +202,7 @@
     {
       "number": 8,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "How Property Tax Is Calculated",
         "layout": "balanced-layout",
@@ -227,7 +229,7 @@
               },
               {
                 "value": "{{STATE_ASSESSMENT_PERCENTAGE}}%",
-                "label": "Assessment Ratio in {{STATE_NAME}}",
+                "label": "Assessment Ratio",
                 "color": "purple"
               },
               {
@@ -244,7 +246,7 @@
     {
       "number": 9,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Types of Local Taxes",
         "layout": "concept-full",
@@ -270,7 +272,7 @@
     {
       "number": 10,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Local Taxes and Housing Costs",
         "layout": "balanced-layout",
@@ -316,7 +318,7 @@
     {
       "number": 11,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Why Local Taxes Matter for Your Future",
         "layout": "concept-full",
@@ -337,12 +339,13 @@
             "text": "The key is doing the math BEFORE you make the decisionâ€”not discovering high taxes after you've committed."
           }
         }
-      }
+      },
+      "notes": "<strong>Common Misconceptions:</strong><br><table style='width:100%; border-collapse: collapse; margin-top: 8px;'><tr><th style='background: #fee2e2; color: #991b1b; padding: 6px; border: 1px solid #fca5a5; text-align: left;'>Misconception</th><th style='background: #dcfce7; color: #166534; padding: 6px; border: 1px solid #86efac; text-align: left;'>Clarification</th></tr><tr><td style='padding: 6px; border: 1px solid #e2e8f0;'>\"Renters don't pay property taxes.\"</td><td style='padding: 6px; border: 1px solid #e2e8f0;'>Renters pay indirectly through rent. Landlords factor property taxes into rental prices. High-tax areas = higher rents.</td></tr><tr><td style='padding: 6px; border: 1px solid #e2e8f0;'>\"Assessed value = market value.\"</td><td style='padding: 6px; border: 1px solid #e2e8f0;'>Many jurisdictions assess at less than 100% of market value. In {{STATE_NAME}}, the assessment ratio is {{STATE_ASSESSMENT_PERCENTAGE}}%. Always check the assessment ratio for your state.</td></tr><tr><td style='padding: 6px; border: 1px solid #e2e8f0;'>\"Higher taxes always mean better services.\"</td><td style='padding: 6px; border: 1px solid #e2e8f0;'>Not necessarily. Some communities are more efficient. Others carry legacy debt or pension obligations. Research service quality independently.</td></tr><tr><td style='padding: 6px; border: 1px solid #e2e8f0;'>\"I can't appeal my property assessment.\"</td><td style='padding: 6px; border: 1px solid #e2e8f0;'>You absolutely can. If comparable homes sold for less than your assessed value, you have grounds to appeal. This can save hundreds annually.</td></tr></table>"
     },
     {
       "number": 12,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Tax Rates Vary Dramatically",
         "layout": "balanced-layout",
@@ -391,7 +394,7 @@
     {
       "number": 13,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Real-World Example",
         "layout": "scenario-layout",
@@ -432,7 +435,7 @@
     {
       "number": 14,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Real-World Example",
         "layout": "scenario-layout",
@@ -492,9 +495,9 @@
     {
       "number": 17,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "emerald",
       "content": {
-        "headerTitle": "Check for Understanding",
+        "headerTitle": "Check Your Understanding",
         "layout": "check-grid",
         "layoutData": {
           "questions": [
@@ -516,12 +519,13 @@
             }
           ]
         }
-      }
+      },
+      "notes": "<strong>Assessment Answer Key (Check Your Understanding):</strong><br><br><strong>Q1.</strong> <em>Answer:</em> A ($5,760). Calculation: $240,000 Ã— 80% = $192,000 assessed value. $192,000 Ã— 30 mills = $192,000 Ã— 0.030 = $5,760.<br><br><strong>Q2.</strong> <em>Answer:</em> B (You pay $45 for every $1,000 of assessed value). This is the definition of millage.<br><br><strong>Q3.</strong> <em>Answer:</em> C (Social Security benefits). Social Security is funded by federal payroll taxes, not local property taxes.<br><br><strong>Q4.</strong> <em>Answer:</em> B (Reducing the assessed value subject to taxation). Homestead exemptions subtract from assessed value before applying millage rate.<br><br><strong>Q5.</strong> <em>Answer:</em> Renters DO pay property taxes indirectly. Landlords include property taxes in their costs and factor this into rent calculations. High property tax areas typically have higher rents. While renters don't receive a tax bill, they're still payingâ€”the costs are just embedded in their rent."
     },
     {
       "number": 18,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Key Takeaways",
         "layout": "takeaway-grid",
@@ -554,14 +558,14 @@
     {
       "number": 19,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Student Activity",
         "layout": "activity-layout",
         "layoutData": {
           "main": {
-            "icon": "\ud83d",
-            "title": "\udcca Local Tax Impact Calculator",
+            "icon": "í ½",
+            "title": "í³Š Local Tax Impact Calculator",
             "description": "Use the Local Tax Impact Calculator to compare the total local tax burden across different jurisdictions in your state. You'll input property values, spending habits, and income to see how location choice affects your finances."
           },
           "steps": [

@@ -25,14 +25,16 @@
       "number": 2,
       "type": "hook",
       "content": {
-        "label": "Essential Question",
+        "label": "The Challenge",
         "question": "What does it <em>really take</em> to buy a homeâ€”<br>and is it the right financial move <em>for you</em>?"
-      }
+      },
+      "headerColor": "amber",
+      "speakerNotes": "Read Maria's scenario aloud or have students read silently. Discussion: \"What would you need to know before helping Maria decide?\" Connect to previous lesson: How is buying different from the rental costs we studied?"
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
@@ -65,9 +67,9 @@
     {
       "number": 4,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
@@ -88,9 +90,9 @@
     {
       "number": 5,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
@@ -111,7 +113,7 @@
     {
       "number": 6,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "The Home Buying Process",
         "layout": "concept-full",
@@ -134,7 +136,7 @@
     {
       "number": 7,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Types of Mortgages",
         "layout": "balanced-layout",
@@ -147,8 +149,8 @@
               "<strong>FHA Loans:</strong> Government-backed, as low as 3.5% down, 580+ credit, ideal for first-time buyers."
             ],
             "highlightBox": {
-              "icon": "\ud83c",
-              "text": "\udfe0 Special programs exist for veterans (VA loans) and rural buyers (USDA loans)â€”both offer 0% down options."
+              "icon": "í ¼",
+              "text": "í¿  Special programs exist for veterans (VA loans) and rural buyers (USDA loans)â€”both offer 0% down options."
             }
           },
           "rightPanel": {
@@ -181,7 +183,7 @@
     {
       "number": 8,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Fixed-Rate vs. Adjustable-Rate",
         "layout": "balanced-layout",
@@ -218,7 +220,7 @@
     {
       "number": 9,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "True Costs: Upfront Expenses",
         "layout": "balanced-layout",
@@ -260,7 +262,7 @@
     {
       "number": 10,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "True Costs: Ongoing Expenses",
         "layout": "concept-full",
@@ -286,7 +288,7 @@
     {
       "number": 11,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Benefits & Challenges",
         "layout": "comparison-grid",
@@ -316,12 +318,13 @@
             ]
           }
         }
-      }
+      },
+      "speakerNotes": "COMMON MISCONCEPTIONS:\nâ€¢ \"\"The mortgage payment is my total housing cost.\"\" â†’ The mortgage (P&I) is just the start. Add property taxes, insurance, PMI (if applicable), HOA fees, and maintenance (1% of home value annually).\nâ€¢ \"\"Renting is throwing money away.\"\" â†’ Renting provides housing value and flexibility. In the early years of a mortgage, most of your payment goes to interest, not equity. Short-term homeowners often lose money.\nâ€¢ \"\"I need 20% down to buy a home.\"\" â†’ Many loans require much less: FHA (3.5%), Conventional (3-5%), VA and USDA (0%). However, less than 20% means paying PMI."
     },
     {
       "number": 12,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Are You Ready to Buy?",
         "layout": "balanced-layout",
@@ -335,8 +338,8 @@
               "<strong>Market:</strong> Interest rates, local housing prices, rent-vs-buy math in your area."
             ],
             "highlightBox": {
-              "icon": "\ud83d",
-              "text": "\udcca Use the 28/36 rule: Housing costs under 28% of income, total debt under 36%."
+              "icon": "í ½",
+              "text": "í³Š Use the 28/36 rule: Housing costs under 28% of income, total debt under 36%."
             }
           },
           "rightPanel": {
@@ -369,7 +372,7 @@
     {
       "number": 13,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Real-World Example",
         "layout": "scenario-layout",
@@ -409,7 +412,7 @@
     {
       "number": 14,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Common Misconceptions",
         "layout": "concept-full",
@@ -450,9 +453,9 @@
     {
       "number": 17,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "emerald",
       "content": {
-        "headerTitle": "Check for Understanding",
+        "headerTitle": "Check Your Understanding",
         "layout": "check-grid",
         "layoutData": {
           "questions": [
@@ -474,12 +477,13 @@
             }
           ]
         }
-      }
+      },
+      "speakerNotes": "ASSESSMENT ANSWER KEY:\n1. C (Conventional Loan) â€” typically requires 3-20% down, higher than FHA (3.5%) or VA/USDA (0%)\n2. PMI (Private Mortgage Insurance) protects the lender if you default. Avoid it by: (1) putting 20% down, (2) choosing VA loan if eligible, (3) paying down mortgage until you reach 20% equity.\n3. Down payment: $200,000 Ã— 5% = $10,000. Closing: $200,000 Ã— 4% = $8,000. Total:$18,000 cash needed\n4. Maria needs: ${{STATE_MEDIAN_HOME_PRICE}} Ã— 3.5% = $(({{STATE_MEDIAN_HOME_PRICE}} * 0.035)) (down) + ${{STATE_MEDIAN_HOME_PRICE}} Ã— 3% = $(({{STATE_MEDIAN_HOME_PRICE}} * 0.03)) (closing) = $(({{STATE_MEDIAN_HOME_PRICE}} * 0.065)) total. She has $8,000. She needs${{(({{STATE_MEDIAN_HOME_PRICE}} * 0.065)) - 8000}} more.\n5. Accept thoughtful responses mentioning: stable income, emergency fund (3-6 months), adequate down payment savings, good credit score, low debt-to-income ratio, job stability, plan to stay 3-5+ years."
     },
     {
       "number": 18,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Key Takeaways",
         "layout": "takeaway-grid",
@@ -512,14 +516,14 @@
     {
       "number": 19,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Student Activity",
         "layout": "activity-layout",
         "layoutData": {
           "main": {
-            "icon": "\ud83d",
-            "title": "\udccb Homeownership Readiness Evaluation",
+            "icon": "í ½",
+            "title": "í³‹ Homeownership Readiness Evaluation",
             "description": "In this activity, you'll assess your potential readiness for homeownership across different time frames: now, in 5 years, and in 10 years. Rate yourself on key factors like savings, credit, income stability, and lifestyle readiness to identify areas for growth."
           },
           "steps": [

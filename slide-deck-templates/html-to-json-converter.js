@@ -685,7 +685,7 @@ function processAllFiles(options = {}) {
     
     // Get list of HTML files
     const htmlFiles = fs.readdirSync(CONFIG.sourceDir)
-        .filter(f => f.endsWith('.html') && f.startsWith('L-'))
+        .filter(f => f.endsWith('.html') && f.startsWith('L-') || f.startsWith('LC-'))
         .sort();
     
     console.log(`\n📂 Found ${htmlFiles.length} HTML files in ${CONFIG.sourceDir}`);

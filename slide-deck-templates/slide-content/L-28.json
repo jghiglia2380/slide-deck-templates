@@ -1,8 +1,8 @@
 {
   "metadata": {
     "lChapter": "L-28",
-    "title": "Consumer FraudProtection",
-    "subtitle": "Recognize, Prevent, and Respond to Scams in {{STATE_NAME}}",
+    "title": "Consumer Fraud Protection",
+    "subtitle": "Recognize, Prevent, and Respond to Scams",
     "totalSlides": 20,
     "hasStateVariables": true,
     "stateVariablesUsed": [
@@ -14,23 +14,25 @@
       "number": 1,
       "type": "title",
       "content": {
-        "title": "Consumer FraudProtection",
+        "title": "Consumer Fraud Protection",
         "titleSize": "large",
-        "subtitle": "Recognize, Prevent, and Respond to Scams in {{STATE_NAME}}"
+        "subtitle": "Recognize, Prevent, and Respond to Scams"
       }
     },
     {
       "number": 2,
       "type": "hook",
       "content": {
-        "label": "Essential Question",
-        "question": ""
-      }
+        "label": "The Challenge",
+        "question": "Alex received an urgent email from <em>\"BankofAmerica1@secure-verify.net\"</em> claiming suspicious activity on his account. The email looked professional—complete with the bank's logo and colors—and demanded he click a link to verify his SSN and password within <em>24 hours</em> or his account would be frozen.   <strong>How can Alex tell if this email is legitimate, and what should he do?</strong>    <strong>How can Alex tell if this email is legitimate, and what should he do?</strong> <br><br>   <strong>How can Alex tell if this email is legitimate, and what should he do?</strong>"
+      },
+      "headerColor": "amber",
+      "notes": "DISCUSSION PROMPTS:\nTHE CHALLENGE (5 min):\n• Read Alex's phishing email scenario aloud.\n• Ask: \"What seems suspicious about this email?\" List responses on board.\n"
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
@@ -39,22 +41,22 @@
             {
               "number": 1,
               "verb": "Identify",
-              "description": "Various types of consumer fraud including phishing, spoofing, and identity theft"
+              "description": "Identify common types of consumer fraud including phishing, spoofing, identity theft, and Ponzi schemes."
             },
             {
               "number": 2,
               "verb": "Recognize",
-              "description": "Warning signs and red flags that indicate potential fraud attempts"
+              "description": "Recognize warning signs and red flags that indicate potential fraud attempts."
             },
             {
               "number": 3,
-              "verb": "Develop",
-              "description": "Strategies to protect yourself and your personal information from scammers"
+              "verb": "Apply",
+              "description": "Apply prevention strategies to protect personal and financial information from scammers."
             },
             {
               "number": 4,
               "verb": "Respond",
-              "description": "Learn what steps to take if you become a victim of fraud"
+              "description": "Respond appropriately if you become a victim of fraud, knowing where to report and how to recover."
             }
           ]
         }
@@ -63,16 +65,21 @@
     {
       "number": 4,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Phishing",
+              "definition": "Fraudulent emails or messages designed to trick you into revealing sensitive information like passwords, SSN, or bank details.",
+              "example": "An email pretending to be from your bank asking you to 'verify your account' through a fake link."
+            },
+            {
+              "term": "Spoofing",
+              "definition": "Impersonating legitimate companies or people through fake emails, websites, or caller IDs to gain your trust.",
+              "example": "A caller ID showing 'IRS' when it's actually a scammer trying to steal your information."
             }
           ]
         }
@@ -81,16 +88,21 @@
     {
       "number": 5,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Identity Theft",
+              "definition": "Using stolen personal information to open accounts, make purchases, or commit other fraud in someone else's name.",
+              "example": "A thief uses your SSN and birthdate to open credit cards, leaving you with the debt and damaged credit."
+            },
+            {
+              "term": "Social Engineering",
+              "definition": "Manipulating people into revealing confidential information through psychological tactics like urgency, fear, or trust-building.",
+              "example": "A scammer builds an online friendship for weeks before asking you to invest in a 'guaranteed' opportunity."
             }
           ]
         }
@@ -99,55 +111,68 @@
     {
       "number": 6,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Common Types of Consumer Fraud",
-        "layout": "generic",
+        "headerTitle": "The Fraud Landscape Today",
+        "layout": "balanced-layout",
         "layoutData": {
-          "paragraphs": [
-            "Fake emails/texts that trick you into giving up passwords or financial info",
-            "Disguising communications to appear from trusted companies or government",
-            "Fake online identities used to build trust before requesting money",
-            "Using stolen personal info to open accounts and make purchases",
-            "\"Investment\" scams paying old investors with new investor money",
-            "Companies charging fees for \"credit fixes\" they can't deliver"
-          ],
-          "lists": []
+          "leftPanel": {
+            "title": "Scammers Are Getting Smarter",
+            "paragraphs": [
+              "Today's scammers create professional-looking emails, websites, and calls that seem completely legitimate.",
+              "They exploit <strong>urgency</strong> ('Act now!'), <strong>fear</strong> ('Your account will be closed!'), and <strong>greed</strong> ('You've won!').",
+              "The best defense is <strong>verification</strong>: contact companies directly through official channels, never through links in unsolicited messages."
+            ],
+            "highlightBox": {
+              "icon": "🛡️",
+              "text": "Legitimate organizations NEVER ask for passwords or SSN via email or text."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$10.3B",
+                "label": "Lost to fraud in 2023 (FTC)",
+                "color": "amber"
+              },
+              {
+                "value": "2.6M+",
+                "label": "Fraud reports filed annually",
+                "color": "amber"
+              },
+              {
+                "value": "18-29",
+                "label": "Age group reporting highest losses",
+                "color": "indigo"
+              }
+            ],
+            "infoCard": null
+          }
         }
       }
     },
     {
       "number": 7,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Red Flags: Warning Signs of Fraud",
-        "layout": "balanced-layout",
+        "headerTitle": "Types of Consumer Fraud",
+        "layout": "concept-full",
         "layoutData": {
-          "leftPanel": {
-            "title": "How to Spot a Scam",
-            "paragraphs": [],
-            "highlightBox": null
-          },
-          "rightPanel": {
-            "stats": [
-              {
-                "value": "",
-                "label": "",
-                "color": "rose"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "teal"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "teal"
-              }
-            ],
-            "infoCard": null
+          "title": "Know What You're Protecting Against",
+          "paragraphs": [
+            "Fraud comes in many forms, but they all rely on the same goal: getting you to reveal information or money."
+          ],
+          "bulletPoints": [
+            "<strong>Phishing:</strong> Fake emails/texts that trick you into giving up passwords or financial info",
+            "<strong>Spoofing:</strong> Disguising communications to appear from trusted companies or government",
+            "<strong>Catfishing:</strong> Fake online identities used to build trust before requesting money",
+            "<strong>Ponzi Schemes:</strong> 'Investment' scams paying old investors with new investor money",
+            "<strong>Credit Repair Scams:</strong> Companies charging fees for 'credit fixes' they can't deliver",
+            "<strong>Tech Support Scams:</strong> Fake warnings claiming your computer is infected"
+          ],
+          "keyPoint": {
+            "text": "💡 All scams share one thing: they want you to act FAST before you can think clearly or verify."
           }
         }
       }
@@ -155,73 +180,60 @@
     {
       "number": 8,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Fraud Prevention Strategies",
-        "layout": "generic",
+        "headerTitle": "Red Flags: Spotting a Scam",
+        "layout": "comparison-grid",
         "layoutData": {
-          "paragraphs": [],
-          "lists": [
-            [
-              "Free annual credit report from each bureau",
-              "Right to place credit freezes",
-              "Report fraud to FTC at ReportFraud.ftc.gov"
-            ],
-            [
-              "Use strong, unique passwords",
-              "Enable two-factor authentication",
-              "Limit what you share on social media"
-            ],
-            [
-              "Contact companies directly via official channels",
-              "Don't click links in unsolicited messages",
-              "Research investments thoroughly"
-            ],
-            [
-              "Report scams to the FTC",
-              "Alert your bank immediately",
-              "File police report for identity theft"
+          "leftColumn": {
+            "icon": "🚩",
+            "title": "Warning Signs",
+            "items": [
+              "Unofficial email domains (@secure-verify.net)",
+              "Urgent language ('Act NOW or else!')",
+              "Requests for SSN, passwords, or PINs",
+              "Spelling/grammar errors",
+              "'Guaranteed' returns or prizes",
+              "Pressure to wire money or use gift cards"
             ]
-          ]
+          },
+          "rightColumn": {
+            "icon": "✓",
+            "title": "Legitimate Communications",
+            "items": [
+              "Official company domains (@bankofamerica.com)",
+              "Professional, non-urgent tone",
+              "Never ask for passwords via email",
+              "Proper formatting and grammar",
+              "Realistic offers with terms disclosed",
+              "Standard payment methods accepted"
+            ]
+          }
         }
       }
     },
     {
       "number": 9,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "What to Do If You're a Victim",
-        "layout": "balanced-layout",
+        "headerTitle": "Protection Strategies",
+        "layout": "concept-full",
         "layoutData": {
-          "leftPanel": {
-            "title": "Act Fast - Every Hour Matters",
-            "paragraphs": [
-              "Contact your bank to freeze accounts; change compromised passwords immediately",
-              "Save all communications, take screenshots, note dates and times of suspicious activity",
-              "File reports with FTC, local police, and credit bureaus; request fraud alerts"
-            ],
-            "highlightBox": null
-          },
-          "rightPanel": {
-            "stats": [
-              {
-                "value": "",
-                "label": "",
-                "color": "green"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "teal"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "teal"
-              }
-            ],
-            "infoCard": null
+          "title": "Build Your Defense System",
+          "paragraphs": [
+            "Protecting yourself requires both good habits and quick action when something seems wrong."
+          ],
+          "bulletPoints": [
+            "<strong>Verify independently:</strong> Contact companies directly via official channels—never click links in messages",
+            "<strong>Use strong passwords:</strong> Unique passwords for each account, with two-factor authentication enabled",
+            "<strong>Monitor your accounts:</strong> Check bank statements regularly, set up transaction alerts",
+            "<strong>Limit social sharing:</strong> Don't post birthdates, addresses, or vacation plans publicly",
+            "<strong>Check credit reports:</strong> Free annual reports from each bureau at AnnualCreditReport.com",
+            "<strong>Use credit freezes:</strong> Prevents anyone from opening accounts in your name"
+          ],
+          "keyPoint": {
+            "text": "🔐 A credit freeze is FREE and stops 90% of identity theft—unfreeze when YOU need credit."
           }
         }
       }
@@ -229,37 +241,35 @@
     {
       "number": 10,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Credit Freezes: Your Best Defense",
+        "headerTitle": "If You Become a Victim",
         "layout": "balanced-layout",
         "layoutData": {
           "leftPanel": {
-            "title": "Lock Down Your Credit",
+            "title": "Act Fast—Every Hour Matters",
             "paragraphs": [
-              "A credit freeze prevents new accounts from being opened in your name - even if a scammer has all your information."
+              "<strong>Step 1:</strong> Contact your bank immediately to freeze accounts and dispute charges.",
+              "<strong>Step 2:</strong> Change all compromised passwords—use a password manager.",
+              "<strong>Step 3:</strong> Document everything: save emails, take screenshots, note dates.",
+              "<strong>Step 4:</strong> Report to the FTC at ReportFraud.ftc.gov.",
+              "<strong>Step 5:</strong> Place fraud alerts with all three credit bureaus.",
+              "<strong>Step 6:</strong> File a police report for identity theft cases."
             ],
             "highlightBox": null
           },
           "rightPanel": {
-            "stats": [
-              {
-                "value": "",
-                "label": "",
-                "color": "green"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "teal"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "purple"
-              }
-            ],
-            "infoCard": null
+            "stats": [],
+            "infoCard": {
+              "title": "Where to Report Fraud",
+              "color": "emerald",
+              "items": [
+                "FTC: ReportFraud.ftc.gov",
+                "FBI Internet Crime: ic3.gov",
+                "Credit Bureaus: Equifax, Experian, TransUnion",
+                "State Attorney General's office"
+              ]
+            }
           }
         }
       }
@@ -267,55 +277,67 @@
     {
       "number": 11,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Why Fraud Awareness Matters",
-        "layout": "generic",
-        "layoutData": {
-          "paragraphs": [
-            "Victims lose an average of $500, but some lose their entire life savings to sophisticated scams",
-            "Identity theft can destroy your credit score and take years to fully recover",
-            "Fraud victims often experience shame, stress, anxiety, and broken trust",
-            "Scammers target all ages - young people aren't immune and often report higher losses"
-          ],
-          "lists": []
-        }
-      }
-    },
-    {
-      "number": 12,
-      "type": "content",
-      "headerColor": "purple",
-      "content": {
-        "headerTitle": "Fraud in the Digital Age",
+        "headerTitle": "Why Young People Are Targeted",
         "layout": "balanced-layout",
         "layoutData": {
           "leftPanel": {
-            "title": "Evolving Threats",
+            "title": "You're Not Immune",
             "paragraphs": [
-              "Scammers are using increasingly sophisticated techniques to steal money and information."
+              "Contrary to popular belief, young people aged 18-29 report <strong>higher fraud losses</strong> than any other age group.",
+              "Why? Digital natives are more trusting of online communications and may not verify as carefully.",
+              "Social media provides scammers with personal details they use to craft convincing attacks."
             ],
-            "highlightBox": null
+            "highlightBox": {
+              "icon": "⚠️",
+              "text": "Young adults lose more money per incident because they're more likely to use payment apps and cryptocurrency."
+            }
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
-                "color": "rose"
+                "value": "$500",
+                "label": "Median loss for fraud victims",
+                "color": "amber"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "teal"
+                "value": "44%",
+                "label": "Increase in fraud targeting young adults",
+                "color": "amber"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "teal"
+                "value": "6+ months",
+                "label": "Average time to recover from ID theft",
+                "color": "indigo"
               }
             ],
             "infoCard": null
+          }
+        }
+      },
+      "notes": "COMMON MISCONCEPTIONS:\n\n1. \"Only gullible people fall for scams.\"\n   → Scammers are sophisticated professionals. Anyone can be targeted, especially under stress or urgency. Awareness, not intelligence, is the key protection.\n\n2. \"If an email has a company logo, it's real.\"\n   → Logos are easily copied. Always verify the sender's email domain and never trust visual appearance alone.\n\n3. \"I'll know a scam when I see one.\"\n   → Modern scams are highly convincing. The best protection is systematic verification—always contact companies directly through official channels.\n\n"
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "The IRS and Banks: What They Will Never Do",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Know the Rules Legitimate Organizations Follow",
+          "paragraphs": [
+            "Understanding how real institutions communicate helps you spot fakes instantly."
+          ],
+          "bulletPoints": [
+            "<strong>The IRS will NEVER:</strong> Text you, email you about refunds, demand immediate payment via gift cards, or threaten arrest",
+            "<strong>Your bank will NEVER:</strong> Ask for your password via email, demand you verify your SSN through a link, or threaten account closure via text",
+            "<strong>Legitimate investments will NEVER:</strong> Guarantee returns, pressure you to act immediately, or ask for wire transfers",
+            "<strong>Government agencies will NEVER:</strong> Accept payment in cryptocurrency or gift cards"
+          ],
+          "keyPoint": {
+            "text": "📞 When in doubt, hang up and call the official number on your card or statement—never the number they give you."
           }
         }
       }
@@ -323,93 +345,182 @@
     {
       "number": 13,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Scenario: Email Phishing Attack",
+        "headerTitle": "Apply It",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "",
-            "name": "",
-            "paragraphs": []
+            "icon": "📧",
+            "name": "Alex's Phishing Email",
+            "paragraphs": [
+              "Alex received an email from 'BankofAmerica1@secure-verify.net' with an urgent subject line: 'URGENT: Verify Your Account.'",
+              "The email included the bank's logo and asked him to click a link to confirm his SSN and password within 24 hours or his account would be frozen."
+            ]
           },
-          "outcomes": []
+          "outcomes": [
+            {
+              "type": "negative",
+              "label": "Red Flag #1",
+              "value": "Fake Domain",
+              "detail": "@secure-verify.net, not @bankofamerica.com"
+            },
+            {
+              "type": "negative",
+              "label": "Red Flag #2",
+              "value": "Urgency Tactic",
+              "detail": "'24 hours or else' creates panic"
+            },
+            {
+              "type": "negative",
+              "label": "Red Flag #3",
+              "value": "SSN Request",
+              "detail": "Banks never ask for this via email"
+            }
+          ]
         }
       }
     },
     {
       "number": 14,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Scenario: Investment Catfishing",
+        "headerTitle": "Apply It",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "",
-            "name": "",
-            "paragraphs": []
+            "icon": "💬",
+            "name": "Miguel's Investment 'Opportunity'",
+            "paragraphs": [
+              "Miguel met someone online claiming to be a financial advisor. After weeks of friendly chatting, they offered him a 'guaranteed 50% return' on an investment.",
+              "The 'advisor' asked Miguel to wire $5,000 to get started, promising his money would double within 6 months."
+            ]
           },
-          "outcomes": []
+          "outcomes": [
+            {
+              "type": "negative",
+              "label": "Red Flag #1",
+              "value": "Guaranteed Returns",
+              "detail": "No legitimate investment guarantees profits"
+            },
+            {
+              "type": "negative",
+              "label": "Red Flag #2",
+              "value": "Wire Transfer",
+              "detail": "Untraceable payment method"
+            },
+            {
+              "type": "negative",
+              "label": "Red Flag #3",
+              "value": "Social Engineering",
+              "detail": "Trust built over weeks before the ask"
+            }
+          ]
         }
       }
     },
     {
       "number": 15,
       "type": "discussion",
-      "variant": "teal",
+      "variant": "amber",
       "content": {
-        "badge": "Discussion in {{STATE_NAME}}",
-        "question": ""
+        "badge": "Discussion",
+        "question": "Jessica received this text: <em>'IRS Notice: You are eligible for a $1,247 tax refund. Claim now at www.irs-refund-claim.com. Enter your SSN and bank routing number.'</em><br><br>What are ALL the red flags in this message?<br><br>Why might someone fall for this even though the signs are obvious when pointed out?"
       }
     },
     {
       "number": 16,
       "type": "discussion",
-      "variant": "teal",
+      "variant": "indigo",
       "content": {
-        "badge": "Personal Reflection in {{STATE_NAME}}",
-        "question": ""
+        "badge": "Reflection",
+        "question": "Think about an older relative or friend who might be vulnerable to scams.<br><br>How would you explain phishing to them in a supportive, non-condescending way?<br><br>What ONE specific habit would you encourage them to develop?"
       }
     },
     {
       "number": 17,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "emerald",
       "content": {
-        "headerTitle": "Check for Understanding",
+        "headerTitle": "Check Your Understanding",
         "layout": "check-grid",
         "layoutData": {
-          "questions": []
+          "questions": [
+            {
+              "number": 1,
+              "question": "What are THREE red flags that indicate an email might be a phishing attempt?"
+            },
+            {
+              "number": 2,
+              "question": "Explain why the IRS would NEVER contact you by text message asking for your Social Security number."
+            },
+            {
+              "number": 3,
+              "question": "What should Alex (from The Challenge) do instead of clicking the link in the email?"
+            },
+            {
+              "number": 4,
+              "question": "Why are 'guaranteed returns' on investments ALWAYS a warning sign of potential fraud?"
+            }
+          ]
         }
-      }
+      },
+      "notes": "ANSWER KEY:\n\n1. C (Request to verify password and SSN)\n\n2. The IRS initiates contact by mail, never by phone, text, or email. They never ask for sensitive information electronically and don't threaten arrest or demand immediate payment.\n\n3. Go directly to bankofamerica.com (type it, don't click), log in normally, or call the number on his card. Check for any actual alerts through official channels.\n\n4. All legitimate investments carry risk. \"Guaranteed\" high returns are mathematically impossible and legally prohibited for advisors to promise. This language is always a scam indicator.\n\n5. Responses should be supportive, not condescending. Explain that scams are sophisticated and victims aren't \"stupid.\" Focus on specific tips: verify before clicking, when in doubt call the company directly, it's okay to hang up and call back.\n\n"
     },
     {
       "number": 18,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Key Takeaways",
         "layout": "takeaway-grid",
         "layoutData": {
-          "takeaways": []
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Know the Fraud Types",
+              "description": "Phishing, spoofing, identity theft, and Ponzi schemes all aim to steal your money or information—recognize each."
+            },
+            {
+              "number": 2,
+              "title": "Spot the Red Flags",
+              "description": "Unofficial domains, urgency tactics, SSN requests, and 'guaranteed' returns are universal warning signs."
+            },
+            {
+              "number": 3,
+              "title": "Verify Before You Act",
+              "description": "Contact companies directly through official channels—never click links in unsolicited messages."
+            },
+            {
+              "number": 4,
+              "title": "Know How to Respond",
+              "description": "If victimized, freeze accounts immediately, report to FTC, place fraud alerts, and document everything."
+            }
+          ]
         }
       }
     },
     {
       "number": 19,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Skill Builder: Recognizing a Phishing Scam",
+        "headerTitle": "Tomorrow's Challenge",
         "layout": "activity-layout",
         "layoutData": {
           "main": {
-            "icon": "📋",
-            "title": "",
-            "description": ""
+            "icon": "🔍",
+            "title": "Fraud Investigation Lab",
+            "description": "You've learned to spot red flags—but can you investigate like a fraud analyst? Tomorrow you'll examine real-world scam examples, trace the manipulation tactics, and build your personal protection system."
           },
-          "steps": []
+          "steps": [
+            "Analyze authentic phishing emails and identify ALL warning signs",
+            "Research the latest scam techniques targeting your age group",
+            "Create a personal fraud prevention checklist",
+            "Draft a 'scam alert' script to help protect family members",
+            "Build your verification workflow for suspicious communications"
+          ]
         }
       }
     },
@@ -417,9 +528,9 @@
       "number": 20,
       "type": "closing",
       "content": {
-        "tagline": "Knowledge is your best defense against fraud - trust but verify in {{STATE_NAME}}",
-        "website": "www.pflacademy.co in {{STATE_NAME}}",
-        "copyright": "© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
       }
     }
   ]

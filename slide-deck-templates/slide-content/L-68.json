@@ -1,7 +1,7 @@
 {
   "metadata": {
     "lChapter": "L-68",
-    "title": "Tax-Efficient InvestingStrategies",
+    "title": "Tax-Efficient Investing Strategies",
     "subtitle": "Maximize After-Tax Returns and Build Long-Term Wealth",
     "totalSlides": 20,
     "hasStateVariables": true,
@@ -19,7 +19,7 @@
       "number": 1,
       "type": "title",
       "content": {
-        "title": "Tax-Efficient InvestingStrategies",
+        "title": "Tax-Efficient Investing Strategies",
         "titleSize": "large",
         "subtitle": "Maximize After-Tax Returns and Build Long-Term Wealth"
       }
@@ -28,14 +28,16 @@
       "number": 2,
       "type": "hook",
       "content": {
-        "label": "Essential Question",
-        "question": "What if you could add <em>$200,000+</em> to your lifetime wealth<br>without picking better stocks—just by being <em>smarter about taxes</em>?<br><br>In {{STATE_NAME}}, your state tax rate of <em>{{STATE_INCOME_TAX_RATE}}%</em> impacts every investment decision."
-      }
+        "label": "The Challenge",
+        "question": "What if you could add <em>$200,000+</em> to your lifetime wealth<br>without picking better stocks—just by being <em>smarter about taxes</em>? In {{STATE_NAME}}, your state tax rate of <em>{{STATE_INCOME_TAX_RATE}}%</em> impacts every investment decision. <br><br> In {{STATE_NAME}}, your state tax rate of <em>{{STATE_INCOME_TAX_RATE}}%</em> impacts every investment decision."
+      },
+      "headerColor": "amber",
+      "notes": "DISCUSSION PROMPTS:\nTHE CHALLENGE (5 min):\n• Present Jamal vs. Tyler comparison—same investments, $264,000 difference.\n• Discussion: \"How can two identical investments end up so different at retirement?\"\n• Key insight: Tax efficiency is entirely within your control—no extra risk required.\n"
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
@@ -68,9 +70,9 @@
     {
       "number": 4,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
@@ -91,9 +93,9 @@
     {
       "number": 5,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
@@ -114,7 +116,7 @@
     {
       "number": 6,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "The Three Pillars of Tax-Efficient Investing",
         "layout": "generic",
@@ -149,7 +151,7 @@
     {
       "number": 7,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "{{STATE_NAME}}'s Tax Impact on Your Investments",
         "layout": "balanced-layout",
@@ -196,7 +198,7 @@
     {
       "number": 8,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Short-Term vs. Long-Term Capital Gains",
         "layout": "comparison-grid",
@@ -229,7 +231,7 @@
     {
       "number": 9,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Asset Location: Where to Hold What",
         "layout": "balanced-layout",
@@ -251,7 +253,7 @@
     {
       "number": 10,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Roth vs. Traditional: The Strategic Decision",
         "layout": "comparison-grid",
@@ -284,7 +286,7 @@
     {
       "number": 11,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "The Compound Impact of Tax Efficiency",
         "layout": "concept-full",
@@ -303,12 +305,13 @@
             "text": "Tax efficiency is the only \"free money\" in investing—it costs nothing to implement but can dramatically increase your wealth."
           }
         }
-      }
+      },
+      "notes": "COMMON MISCONCEPTIONS:\n\n1. \"Traditional is always better because you get a tax deduction.\"\n   → Deduction now at 12% but tax at 22% later means you lose. Roth is better when your future tax rate exceeds your current rate. The math depends on bracket comparison.\n\n2. \"Tax-loss harvesting means giving up on losing investments.\"\n   → You immediately reinvest in similar assets, maintaining your portfolio strategy. You keep market exposure while capturing the tax benefit.\n\n3. \"Taxes don't matter much compared to investment returns.\"\n   → A 1-2% annual tax drag compounds to $200,000-$500,000 over a lifetime. Tax efficiency is one of the highest-impact, lowest-risk strategies available.\n\n"
     },
     {
       "number": 12,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Real-World Example: Jamal's Tax-Efficient Strategy",
         "layout": "scenario-layout",
@@ -348,14 +351,14 @@
     {
       "number": 13,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Real-World Example: Maya's Tax-Loss Harvesting",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
             "icon": "📊",
-            "name": "Maya: Mid-Career Professional in {{STATE_NAME}}",
+            "name": "Maya: Mid-Career Professional",
             "paragraphs": [
               "Maya, 34, earning $90,000 in <span class=\"highlight-text\">{{STATE_NAME}}</span>, reviewed her taxable account in December. She had a <span class=\"highlight-text\">$6,000 capital gain</span> from selling stocks and noticed two positions with losses:",
               "<strong>Action:</strong> She sold a tech stock ($2,000 loss) and an international fund ($1,500 loss) to realize <span class=\"highlight-text\">$3,500 in losses</span>. Immediately purchased similar (not identical) funds to maintain allocation.",
@@ -397,7 +400,7 @@
     {
       "number": 15,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Zero-Tax States vs. {{STATE_NAME}}: Investment Impact",
         "layout": "generic",
@@ -435,7 +438,7 @@
     {
       "number": 17,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "emerald",
       "content": {
         "headerTitle": "Tax Mistakes That Destroy Wealth",
         "layout": "check-grid",
@@ -459,12 +462,13 @@
             }
           ]
         }
-      }
+      },
+      "notes": "ANSWER KEY:\n\n1. B (Roth IRA)\n\n2. Bond interest is taxed as ordinary income annually (up to 37%), making bonds tax-inefficient. Stock index funds generate mostly qualified dividends (0-20% rate) and unrealized appreciation you control when to realize. Bonds belong in tax-advantaged accounts; stocks can go in taxable.\n\n4. Tax-loss harvesting lets you reduce taxes while maintaining market exposure. Immediately after harvesting, you buy a similar (not identical) investment to stay invested. You get the tax deduction without abandoning your strategy.\n\n"
     },
     {
       "number": 18,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Key Takeaways",
         "layout": "takeaway-grid",
@@ -497,7 +501,7 @@
     {
       "number": 19,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Skill Builder Activity",
         "layout": "activity-layout",

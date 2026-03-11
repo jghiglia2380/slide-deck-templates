@@ -2,7 +2,7 @@
   "metadata": {
     "lChapter": "L-17",
     "title": "Time is Money",
-    "subtitle": "Developing a Savings and Investment Strategy in {{STATE_NAME}}",
+    "subtitle": "Developing a Savings and Investment Strategy",
     "totalSlides": 20,
     "hasStateVariables": true,
     "stateVariablesUsed": [
@@ -16,21 +16,23 @@
       "content": {
         "title": "Time is Money",
         "titleSize": "large",
-        "subtitle": "Developing a Savings and Investment Strategy in {{STATE_NAME}}"
+        "subtitle": "Developing a Savings and Investment Strategy"
       }
     },
     {
       "number": 2,
       "type": "hook",
       "content": {
-        "label": "Essential Question in {{STATE_NAME}}",
-        "question": "If I gave you <em>$1,000 today</em>, what would you do with it?<br><br>What if I gave you <em>$10,000</em> but you couldn't touch it for 20 years? in {{STATE_NAME}}"
-      }
+        "label": "The Challenge",
+        "question": "If I gave you <em>$1,000 today</em>, what would you do with it? What if I gave you <em>$10,000</em> but you couldn't touch it for 20 years? <br><br> What if I gave you <em>$10,000</em> but you couldn't touch it for 20 years?"
+      },
+      "headerColor": "amber",
+      "notes": "DISCUSSION PROMPTS:\nTHE CHALLENGE (5 min):\n‚Ä¢ Read Alex's dual-goal scenario. Poll: \"Should Alex use the same strategy for both goals?\"\n‚Ä¢ Emphasize that time horizon is the key differentiator‚Äîsame person, different strategies.\n‚Ä¢ Preview that today combines all previous concepts into actionable strategies.\n"
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
@@ -63,19 +65,19 @@
     {
       "number": 4,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "Time Horizon in {{STATE_NAME}}",
+              "term": "Time Horizon",
               "definition": "The length of time before you need to access your invested money‚Äîdetermines how much risk you can take.",
               "example": "Short (1-3 yrs), Medium (3-10 yrs), Long (10+ yrs)"
             },
             {
-              "term": "Risk Tolerance in {{STATE_NAME}}",
+              "term": "Risk Tolerance",
               "definition": "Your personal comfort level with financial uncertainty and potential losses in exchange for higher returns.",
               "example": "Conservative, Moderate, Aggressive‚Äîbased on age, goals, and personality"
             }
@@ -86,19 +88,19 @@
     {
       "number": 5,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "Inflation in {{STATE_NAME}}",
+              "term": "Inflation",
               "definition": "The gradual increase in prices over time that reduces your money's purchasing power‚Äîthe \"silent tax.\"",
               "example": "At 3% inflation, $100 today buys only $74 worth of goods in 10 years"
             },
             {
-              "term": "Asset Classes in {{STATE_NAME}}",
+              "term": "Asset Classes",
               "definition": "Categories of investments with similar characteristics: Fixed Income (bonds, CDs) vs. Equities (stocks, funds).",
               "example": "Fixed income = stable, lower returns. Equities = volatile, higher potential returns"
             }
@@ -109,7 +111,7 @@
     {
       "number": 6,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Understanding Time Horizon",
         "layout": "balanced-layout",
@@ -130,18 +132,18 @@
           "rightPanel": {
             "stats": [
               {
-                "value": "1-3 yrs in {{STATE_NAME}}",
-                "label": "Safety First in {{STATE_NAME}}",
+                "value": "1-3 yrs",
+                "label": "Safety First",
                 "color": "teal"
               },
               {
-                "value": "3-10 yrs in {{STATE_NAME}}",
-                "label": "Balanced Approach in {{STATE_NAME}}",
+                "value": "3-10 yrs",
+                "label": "Balanced Approach",
                 "color": "purple"
               },
               {
-                "value": "10+ yrs in {{STATE_NAME}}",
-                "label": "Growth Focus in {{STATE_NAME}}",
+                "value": "10+ yrs",
+                "label": "Growth Focus",
                 "color": "green"
               }
             ],
@@ -153,14 +155,14 @@
     {
       "number": 7,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Asset Classes: Fixed Income vs. Equities",
         "layout": "comparison-grid",
         "layoutData": {
           "leftColumn": {
-            "icon": "\ud83c",
-            "title": "\udfe6 Fixed Income",
+            "icon": "Ì†º",
+            "title": "Ìø¶ Fixed Income",
             "items": [
               "Bonds, CDs, savings accounts",
               "Lower risk to principal",
@@ -171,8 +173,8 @@
             ]
           },
           "rightColumn": {
-            "icon": "\ud83d",
-            "title": "\udcc8 Equities",
+            "icon": "Ì†Ω",
+            "title": "Ì≥à Equities",
             "items": [
               "Stocks, mutual funds, ETFs",
               "Higher risk (value fluctuates)",
@@ -188,7 +190,7 @@
     {
       "number": 8,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "The Hidden Threat: Inflation",
         "layout": "balanced-layout",
@@ -207,13 +209,13 @@
           "rightPanel": {
             "stats": [
               {
-                "value": "3% in {{STATE_NAME}}",
-                "label": "Average Annual Inflation in {{STATE_NAME}}",
+                "value": "3%",
+                "label": "Average Annual Inflation",
                 "color": "rose"
               },
               {
-                "value": "-26% in {{STATE_NAME}}",
-                "label": "Buying Power Lost in 10 Years in {{STATE_NAME}}",
+                "value": "-26%",
+                "label": "Buying Power Lost in 10 Years",
                 "color": "purple"
               }
             ],
@@ -233,7 +235,7 @@
     {
       "number": 9,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Know Your Risk Tolerance",
         "layout": "concept-full",
@@ -257,7 +259,7 @@
     {
       "number": 10,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Diversification: Don't Put All Eggs in One Basket",
         "layout": "balanced-layout",
@@ -277,8 +279,8 @@
           "rightPanel": {
             "stats": [
               {
-                "value": "‚Üì Risk in {{STATE_NAME}}",
-                "label": "With Diversification in {{STATE_NAME}}",
+                "value": "‚Üì Risk",
+                "label": "With Diversification",
                 "color": "green"
               }
             ],
@@ -299,7 +301,7 @@
     {
       "number": 11,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Matching Strategies to Goals",
         "layout": "concept-full",
@@ -318,12 +320,13 @@
             "text": "üìÖ The closer you are to needing the money, the more you should prioritize safety over growth!"
           }
         }
-      }
+      },
+      "notes": "COMMON MISCONCEPTIONS:\n\n1. \"I should wait until I have more money to invest.\"\n   ‚Üí Time in the market matters more than amount. Starting with $50/month at age 22 beats $500/month at age 35. Compound growth rewards early starters dramatically.\n\n2. \"My savings account is safe, so it's fine for retirement.\"\n   ‚Üí Safe from market drops, but not safe from inflation. Over 40 years, a savings account could lose 60%+ of purchasing power. Long-term goals need growth investments.\n\n3. \"I should use the same strategy for all my goals.\"\n   ‚Üí Different goals have different time horizons. A car fund and retirement fund for the same person require completely different strategies. Match strategy to timeline.\n\n"
     },
     {
       "number": 12,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Building Your Strategy Today",
         "layout": "balanced-layout",
@@ -336,25 +339,25 @@
               "Many people use <strong>target-date funds</strong> that automatically shift from aggressive to conservative as retirement approaches."
             ],
             "highlightBox": {
-              "icon": "\ud83d",
-              "text": "\ude80 The most important step? Start investing NOW. Even small amounts compound dramatically over time!"
+              "icon": "Ì†Ω",
+              "text": "Ì∫Ä The most important step? Start investing NOW. Even small amounts compound dramatically over time!"
             }
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "Age 25 in {{STATE_NAME}}",
-                "label": "Start: 90% stocks, 10% bonds in {{STATE_NAME}}",
+                "value": "Age 25",
+                "label": "Start: 90% stocks, 10% bonds",
                 "color": "purple"
               },
               {
-                "value": "Age 45 in {{STATE_NAME}}",
-                "label": "Shift: 70% stocks, 30% bonds in {{STATE_NAME}}",
+                "value": "Age 45",
+                "label": "Shift: 70% stocks, 30% bonds",
                 "color": "teal"
               },
               {
-                "value": "Age 65 in {{STATE_NAME}}",
-                "label": "Retire: 50% stocks, 50% bonds in {{STATE_NAME}}",
+                "value": "Age 65",
+                "label": "Retire: 50% stocks, 50% bonds",
                 "color": "green"
               }
             ],
@@ -366,14 +369,14 @@
     {
       "number": 13,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Real-World Example",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "üöó in {{STATE_NAME}}",
-            "name": "Alex's Short-Term Car Savings Strategy in {{STATE_NAME}}",
+            "icon": "üöó",
+            "name": "Alex's Short-Term Car Savings Strategy",
             "paragraphs": [
               "<strong>Goal:</strong> Save $15,000 for a car in 3 years",
               "<strong>Time Horizon:</strong> Short-term (3 years)",
@@ -385,21 +388,21 @@
           "outcomes": [
             {
               "type": "before",
-              "label": "Time Horizon in {{STATE_NAME}}",
-              "value": "3 Years in {{STATE_NAME}}",
-              "detail": "Short-term = Low risk in {{STATE_NAME}}"
+              "label": "Time Horizon",
+              "value": "3 Years",
+              "detail": "Short-term = Low risk"
             },
             {
               "type": "after",
-              "label": "Strategy in {{STATE_NAME}}",
-              "value": "Safety First in {{STATE_NAME}}",
-              "detail": "Savings + CDs in {{STATE_NAME}}"
+              "label": "Strategy",
+              "value": "Safety First",
+              "detail": "Savings + CDs"
             },
             {
               "type": "after",
-              "label": "Expected Return in {{STATE_NAME}}",
-              "value": "~4-5% in {{STATE_NAME}}",
-              "detail": "Low but guaranteed in {{STATE_NAME}}"
+              "label": "Expected Return",
+              "value": "~4-5%",
+              "detail": "Low but guaranteed"
             }
           ]
         }
@@ -408,14 +411,14 @@
     {
       "number": 14,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Real-World Example",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "üèñÔ∏è in {{STATE_NAME}}",
-            "name": "Taylor's Long-Term Retirement Strategy in {{STATE_NAME}}",
+            "icon": "üèñÔ∏è",
+            "name": "Taylor's Long-Term Retirement Strategy",
             "paragraphs": [
               "<strong>Goal:</strong> Build retirement savings over 40 years",
               "<strong>Time Horizon:</strong> Long-term (40 years)",
@@ -427,21 +430,21 @@
           "outcomes": [
             {
               "type": "before",
-              "label": "Time Horizon in {{STATE_NAME}}",
-              "value": "40 Years in {{STATE_NAME}}",
-              "detail": "Long-term = More risk OK in {{STATE_NAME}}"
+              "label": "Time Horizon",
+              "value": "40 Years",
+              "detail": "Long-term = More risk OK"
             },
             {
               "type": "after",
-              "label": "Strategy in {{STATE_NAME}}",
-              "value": "Growth Focus in {{STATE_NAME}}",
-              "detail": "70/30 stocks to bonds in {{STATE_NAME}}"
+              "label": "Strategy",
+              "value": "Growth Focus",
+              "detail": "70/30 stocks to bonds"
             },
             {
               "type": "after",
-              "label": "Expected Return in {{STATE_NAME}}",
-              "value": "~7-8% in {{STATE_NAME}}",
-              "detail": "Higher growth potential in {{STATE_NAME}}"
+              "label": "Expected Return",
+              "value": "~7-8%",
+              "detail": "Higher growth potential"
             }
           ]
         }
@@ -452,8 +455,8 @@
       "type": "discussion",
       "variant": "teal",
       "content": {
-        "badge": "Discussion in {{STATE_NAME}}",
-        "question": "Why does Alex use mostly savings accounts while Taylor uses mostly stocks?<br><br>How would Taylor's strategy change if retirement was only 5 years away? in {{STATE_NAME}}"
+        "badge": "Discussion",
+        "question": "Why does Alex use mostly savings accounts while Taylor uses mostly stocks?<br><br>How would Taylor's strategy change if retirement was only 5 years away?"
       }
     },
     {
@@ -461,16 +464,16 @@
       "type": "discussion",
       "variant": "purple",
       "content": {
-        "badge": "Personal Reflection in {{STATE_NAME}}",
-        "question": "Think about your own financial goals‚Äîboth short-term and long-term.<br><br>How would your saving and investing strategies differ for each? in {{STATE_NAME}}"
+        "badge": "Personal Reflection",
+        "question": "Think about your own financial goals‚Äîboth short-term and long-term.<br><br>How would your saving and investing strategies differ for each?"
       }
     },
     {
       "number": 17,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "emerald",
       "content": {
-        "headerTitle": "Check for Understanding",
+        "headerTitle": "Check Your Understanding",
         "layout": "check-grid",
         "layoutData": {
           "questions": [
@@ -492,12 +495,13 @@
             }
           ]
         }
-      }
+      },
+      "notes": "ANSWER KEY:\n\n1. B (How long until you need the money‚Äîtime horizon is the primary factor)\n\n2. Inflation risk: Over 30-40 years, inflation could cut purchasing power by 60-75%. A savings account earning 1-2% won't keep pace with 3% inflation, meaning you'll have less real value despite a larger nominal balance.\n\n3. Maya will likely have more despite lower contributions. Starting 10 years earlier gives her money more time to compound. At 7% returns: Maya's $200/month for 43 years ‚âà $580,000. Jordan's $400/month for 33 years ‚âà $540,000. Time beats amount.\n\n4. Diversification means spreading investments across different asset types (stocks, bonds, different sectors). Important because it reduces risk‚Äîwhen one investment drops, others may hold steady or rise. \"Don't put all your eggs in one basket.\"\n\n"
     },
     {
       "number": 18,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Key Takeaways",
         "layout": "takeaway-grid",
@@ -530,14 +534,14 @@
     {
       "number": 19,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Student Activity",
         "layout": "activity-layout",
         "layoutData": {
           "main": {
-            "icon": "\ud83d",
-            "title": "\udccb Financial Planning Role-Play",
+            "icon": "Ì†Ω",
+            "title": "Ì≥ã Financial Planning Role-Play",
             "description": "Choose a character (or create your own) and build a financial strategy that matches their goals, time horizon, and risk tolerance. Consider how your choices would change if the character's situation changed‚Äîwhat if their goal shifted from short-term to long-term?"
           },
           "steps": [
@@ -554,9 +558,9 @@
       "number": 20,
       "type": "closing",
       "content": {
-        "tagline": "Building Financial Futures, One Lesson at a Time in {{STATE_NAME}}",
-        "website": "www.pflacademy.co in {{STATE_NAME}}",
-        "copyright": "¬© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "¬© 2025 PFL Academy. All rights reserved."
       }
     }
   ]

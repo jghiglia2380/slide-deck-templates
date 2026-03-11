@@ -1,7 +1,7 @@
 {
   "metadata": {
     "lChapter": "L-66",
-    "title": "UnderstandingFinancial Markets",
+    "title": "Understanding Financial Markets",
     "subtitle": "How Markets Work and How to Trade Effectively",
     "totalSlides": 20,
     "hasStateVariables": false,
@@ -12,7 +12,7 @@
       "number": 1,
       "type": "title",
       "content": {
-        "title": "UnderstandingFinancial Markets",
+        "title": "Understanding Financial Markets",
         "titleSize": "large",
         "subtitle": "How Markets Work and How to Trade Effectively"
       }
@@ -21,14 +21,16 @@
       "number": 2,
       "type": "hook",
       "content": {
-        "label": "Essential Question",
+        "label": "The Challenge",
         "question": "Two students buy the <em>same stock</em> at the <em>same moment</em>.<br>One pays $50.05, the other pays $50.00.<br>What's happening?"
-      }
+      },
+      "headerColor": "amber",
+      "notes": "DISCUSSION PROMPTS:\nTHE CHALLENGE (5 min):\nâ€¢ Contrast Sofia's smart limit order vs. Marcus's costly market order mistake.\nâ€¢ Discussion: \"What did Marcus do wrong? How could he have protected himself?\"\nâ€¢ Preview: Small execution costs compound to significant wealth differences.\n"
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
@@ -61,9 +63,9 @@
     {
       "number": 4,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
@@ -84,9 +86,9 @@
     {
       "number": 5,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
@@ -107,7 +109,7 @@
     {
       "number": 6,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "How Stock Markets Operate",
         "layout": "balanced-layout",
@@ -120,8 +122,8 @@
               "Prices are determined by supply and demandâ€”more buyers than sellers pushes price up, and vice versa."
             ],
             "highlightBox": {
-              "icon": "\ud83d",
-              "text": "\udca1 You're buying from another investor, not the company. This \"secondary market\" provides liquidity to convert investments to cash."
+              "icon": "í ½",
+              "text": "í²¡ You're buying from another investor, not the company. This \"secondary market\" provides liquidity to convert investments to cash."
             }
           },
           "rightPanel": {
@@ -153,7 +155,7 @@
     {
       "number": 7,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "The Bid-Ask Spread: A Hidden Cost",
         "layout": "balanced-layout",
@@ -199,7 +201,7 @@
     {
       "number": 8,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Market Orders vs. Limit Orders",
         "layout": "comparison-grid",
@@ -234,7 +236,7 @@
     {
       "number": 9,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "When to Use Each Order Type",
         "layout": "concept-full",
@@ -258,7 +260,7 @@
     {
       "number": 10,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Trading Costs Compound Over Time",
         "layout": "balanced-layout",
@@ -271,8 +273,8 @@
               "Over 30 years at 7% returns, that $734 annual difference compounds to <strong>$69,000</strong> in lost wealth!"
             ],
             "highlightBox": {
-              "icon": "\ud83d",
-              "text": "\udcb0 This is why Warren Buffett says his favorite holding period is \"forever.\""
+              "icon": "í ½",
+              "text": "í²° This is why Warren Buffett says his favorite holding period is \"forever.\""
             }
           },
           "rightPanel": {
@@ -301,7 +303,7 @@
     {
       "number": 11,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Reading a Stock Quote",
         "layout": "concept-full",
@@ -322,12 +324,13 @@
             "text": "ðŸ“Š High volume + narrow spread = easy to trade. Low volume + wide spread = use limit orders!"
           }
         }
-      }
+      },
+      "notes": "COMMON MISCONCEPTIONS:\n\n1. \"Commission-free means no trading costs.\"\n   â†’ Bid-ask spreads, payment for order flow, and market impact are hidden costs that exist even with $0 commissions.\n\n2. \"Market orders always execute at the price I see.\"\n   â†’ Prices can change between when you submit and when the order executes, especially during volatility or when markets are closed.\n\n3. \"Professional traders use market orders for speed.\"\n   â†’ Professionals almost exclusively use limit orders to control execution price. Speed matters less than avoiding slippage.\n\n"
     },
     {
       "number": 12,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Market Hours and Timing",
         "layout": "balanced-layout",
@@ -369,7 +372,7 @@
     {
       "number": 13,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Real-World Example",
         "layout": "scenario-layout",
@@ -409,7 +412,7 @@
     {
       "number": 14,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Real-World Example",
         "layout": "scenario-layout",
@@ -467,9 +470,9 @@
     {
       "number": 17,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "emerald",
       "content": {
-        "headerTitle": "Check for Understanding",
+        "headerTitle": "Check Your Understanding",
         "layout": "check-grid",
         "layoutData": {
           "questions": [
@@ -491,12 +494,13 @@
             }
           ]
         }
-      }
+      },
+      "notes": "ANSWER KEY:\n\n1. B (Execution only, not price)\n\n2. Markets were closed Sunday. His market order queued for Monday open. Overnight bad news caused price to gap down. A limit order would have prevented execution at the unfavorable price.\n\n4. \"Commission-free\" doesn't mean free. Wide bid-ask spreads on small-cap stocks, payment for order flow, and frequent trading still created substantial hidden costs. Commission was zero but spread costs were high.\n\n"
     },
     {
       "number": 18,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Key Takeaways",
         "layout": "takeaway-grid",
@@ -529,14 +533,14 @@
     {
       "number": 19,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Student Activity",
         "layout": "activity-layout",
         "layoutData": {
           "main": {
-            "icon": "\ud83d",
-            "title": "\udcc8 Market Trading Simulator",
+            "icon": "í ½",
+            "title": "í³ˆ Market Trading Simulator",
             "description": "Practice placing trades, reading quotes, and understanding order types in a risk-free simulated environment. Experience firsthand how market orders vs. limit orders affect your execution prices and total costs."
           },
           "steps": [

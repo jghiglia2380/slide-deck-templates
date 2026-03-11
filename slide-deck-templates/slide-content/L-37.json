@@ -2,7 +2,7 @@
   "metadata": {
     "lChapter": "L-37",
     "title": "The Costs and Benefitsof Gambling",
-    "subtitle": "Understanding Risks, Rewards, and Responsible Choices in {{STATE_NAME}}",
+    "subtitle": "Understanding Risks, Rewards, and Responsible Choices",
     "totalSlides": 20,
     "hasStateVariables": true,
     "stateVariablesUsed": [
@@ -16,21 +16,23 @@
       "content": {
         "title": "The Costs and Benefitsof Gambling",
         "titleSize": "large",
-        "subtitle": "Understanding Risks, Rewards, and Responsible Choices in {{STATE_NAME}}"
+        "subtitle": "Understanding Risks, Rewards, and Responsible Choices"
       }
     },
     {
       "number": 2,
       "type": "hook",
       "content": {
-        "label": "Essential Question in {{STATE_NAME}}",
-        "question": "How can you enjoy gambling as <em>entertainment</em><br>while protecting yourself from its <em>financial and personal risks</em>? in {{STATE_NAME}}"
-      }
+        "label": "The Challenge",
+        "question": "How can you enjoy gambling as <em>entertainment</em><br>while protecting yourself from its <em>financial and personal risks</em>?"
+      },
+      "headerColor": "amber",
+      "speakerNotes": "Read the casino development scenario aloud. Ask: \"What questions would you want answered before supporting or opposing this?\" Note that this is a real decision many communities faceâ€”there's no simple answer."
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
@@ -63,19 +65,19 @@
     {
       "number": 4,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "Gambling as Entertainment in {{STATE_NAME}}",
+              "term": "Gambling as Entertainment",
               "definition": "Viewing gambling as a leisure activity with an expected cost, like movies or concerts, not a way to make money.",
               "example": "Setting aside $50 from your entertainment budget for a casino visit, expecting to lose it for the experience"
             },
             {
-              "term": "Problem Gambling in {{STATE_NAME}}",
+              "term": "Problem Gambling",
               "definition": "Gambling behavior that disrupts personal, family, or vocational pursuits with increasing preoccupation and frequency.",
               "example": "Chasing losses, lying about gambling, borrowing money to gamble, neglecting responsibilities"
             }
@@ -86,19 +88,19 @@
     {
       "number": 5,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "Regressive Taxation in {{STATE_NAME}}",
+              "term": "Regressive Taxation",
               "definition": "A tax that takes a larger percentage of income from low-income earners than high-income earners.",
               "example": "Gambling revenue often comes disproportionately from lower-income households, functioning like a regressive tax"
             },
             {
-              "term": "Responsible Gambling in {{STATE_NAME}}",
+              "term": "Responsible Gambling",
               "definition": "Practices designed to prevent gambling-related harms: setting limits, using only disposable income, accepting losses.",
               "example": "Budget limits, time limits, never chasing losses, not borrowing to gamble, knowing when to stop"
             }
@@ -109,7 +111,7 @@
     {
       "number": 6,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Gambling as Entertainment",
         "layout": "balanced-layout",
@@ -122,20 +124,20 @@
               "The key difference: other entertainment guarantees 100% loss of money spent, while gambling offers variable outcomesâ€”but still with an <strong>expected loss over time</strong>."
             ],
             "highlightBox": {
-              "icon": "\ud83d",
-              "text": "\udca1 The \"cost\" of gambling = the money you're willing to lose for the experience. Any winnings are a bonus, not an expectation."
+              "icon": "í ½",
+              "text": "í²¡ The \"cost\" of gambling = the money you're willing to lose for the experience. Any winnings are a bonus, not an expectation."
             }
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "100% in {{STATE_NAME}}",
-                "label": "Expected Loss at Movies in {{STATE_NAME}}",
+                "value": "100%",
+                "label": "Expected Loss at Movies",
                 "color": "rose"
               },
               {
-                "value": "~95% in {{STATE_NAME}}",
-                "label": "Expected Loss at Gambling* in {{STATE_NAME}}",
+                "value": "~95%",
+                "label": "Expected Loss at Gambling*",
                 "color": "purple"
               }
             ],
@@ -156,14 +158,14 @@
     {
       "number": 7,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Comparing Entertainment Costs",
         "layout": "comparison-grid",
         "layoutData": {
           "leftColumn": {
-            "icon": "\ud83c",
-            "title": "\udfac Traditional Entertainment",
+            "icon": "í ¼",
+            "title": "í¾¬ Traditional Entertainment",
             "items": [
               "Movie: $12-15 for 2 hours",
               "Concert: $50-300 for 2-3 hours",
@@ -174,8 +176,8 @@
             ]
           },
           "rightColumn": {
-            "icon": "\ud83c",
-            "title": "\udfb0 Gambling as Entertainment",
+            "icon": "í ¼",
+            "title": "í¾° Gambling as Entertainment",
             "items": [
               "Variable cost based on budget",
               "Variable time of entertainment",
@@ -191,7 +193,7 @@
     {
       "number": 8,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Individual Costs and Benefits",
         "layout": "balanced-layout",
@@ -216,7 +218,7 @@
     {
       "number": 9,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "The Gambling Behavior Spectrum",
         "layout": "concept-full",
@@ -235,7 +237,7 @@
     {
       "number": 10,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Recreational vs. Problem Gambling",
         "layout": "comparison-grid",
@@ -270,7 +272,7 @@
     {
       "number": 11,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Community Costs and Benefits",
         "layout": "balanced-layout",
@@ -288,13 +290,13 @@
           "rightPanel": {
             "stats": [
               {
-                "value": "$44B+ in {{STATE_NAME}}",
-                "label": "Annual US Gambling Tax Revenue in {{STATE_NAME}}",
+                "value": "$44B+",
+                "label": "Annual US Gambling Tax Revenue",
                 "color": "teal"
               },
               {
-                "value": "$7B in {{STATE_NAME}}",
-                "label": "Estimated Annual Social Costs in {{STATE_NAME}}",
+                "value": "$7B",
+                "label": "Estimated Annual Social Costs",
                 "color": "rose"
               }
             ],
@@ -310,12 +312,13 @@
             }
           }
         }
-      }
+      },
+      "speakerNotes": "COMMON MISCONCEPTIONS:\nâ€¢ \"\"Gambling is always bad and should be prohibited.\"\" â†’ Gambling can be safe entertainment when approached responsibly with clear limits. The key is viewing it as recreation with a cost, not as income or investment.\nâ€¢ \"\"Casino tax revenue is 'free money' for communities.\"\" â†’ Gambling revenue comes with associated costs: problem gambling treatment, social services, law enforcement. Net benefit depends on the specific situation.\nâ€¢ \"\"Problem gambling only affects weak-willed people.\"\" â†’ Problem gambling is influenced by many factors: genetics, mental health, life circumstances, and game design. Anyone can be vulnerable, especially during stressful periods."
     },
     {
       "number": 12,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Online Gambling & Sports Betting",
         "layout": "balanced-layout",
@@ -331,13 +334,13 @@
           "rightPanel": {
             "stats": [
               {
-                "value": "38 in {{STATE_NAME}}",
-                "label": "States with Legal Sports Betting in {{STATE_NAME}}",
+                "value": "38",
+                "label": "States with Legal Sports Betting",
                 "color": "purple"
               },
               {
-                "value": "$10B+ in {{STATE_NAME}}",
-                "label": "US Online Gambling Revenue in {{STATE_NAME}}",
+                "value": "$10B+",
+                "label": "US Online Gambling Revenue",
                 "color": "teal"
               }
             ],
@@ -358,14 +361,14 @@
     {
       "number": 13,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Real-World Example",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "âœ“ in {{STATE_NAME}}",
-            "name": "David: Responsible Gambling Approach in {{STATE_NAME}}",
+            "icon": "âœ“",
+            "name": "David: Responsible Gambling Approach",
             "paragraphs": [
               "David enjoys visiting a casino about <span class=\"highlight-text\">once every two months</span>. Before each visit, he sets aside <strong>$100 from his entertainment budget</strong>â€”about 5% of his discretionary income after all bills and savings are paid.",
               "He views this money as <span class=\"highlight-text\">the cost of entertainment</span>. He sets a 3-hour timer on his phone. Whether winning or losing, he leaves when the timer goes off or when he loses his $100â€”whichever comes first.",
@@ -375,21 +378,21 @@
           "outcomes": [
             {
               "type": "after",
-              "label": "Budget in {{STATE_NAME}}",
-              "value": "$100 in {{STATE_NAME}}",
-              "detail": "5% of entertainment budget in {{STATE_NAME}}"
+              "label": "Budget",
+              "value": "$100",
+              "detail": "5% of entertainment budget"
             },
             {
               "type": "after",
-              "label": "Time Limit in {{STATE_NAME}}",
-              "value": "3 Hours in {{STATE_NAME}}",
-              "detail": "Leaves when timer goes off in {{STATE_NAME}}"
+              "label": "Time Limit",
+              "value": "3 Hours",
+              "detail": "Leaves when timer goes off"
             },
             {
               "type": "after",
-              "label": "Result in {{STATE_NAME}}",
-              "value": "Enjoyment in {{STATE_NAME}}",
-              "detail": "No financial stress in {{STATE_NAME}}"
+              "label": "Result",
+              "value": "Enjoyment",
+              "detail": "No financial stress"
             }
           ]
         }
@@ -398,14 +401,14 @@
     {
       "number": 14,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Real-World Example",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "âš  in {{STATE_NAME}}",
-            "name": "Mark: Progression to Problem Gambling in {{STATE_NAME}}",
+            "icon": "âš ",
+            "name": "Mark: Progression to Problem Gambling",
             "paragraphs": [
               "Mark began gambling occasionally with a <strong>$200 monthly budget</strong>. After a few big wins, he started going more frequently, convinced he had developed a \"system.\"",
               "When significant losses occurred, Mark began <span class=\"highlight-text\">drawing from his savings</span> to \"win back\" what he'd lost. He started using credit cards when savings ran low.",
@@ -415,21 +418,21 @@
           "outcomes": [
             {
               "type": "before",
-              "label": "Started With in {{STATE_NAME}}",
-              "value": "$200/mo in {{STATE_NAME}}",
-              "detail": "Reasonable entertainment budget in {{STATE_NAME}}"
+              "label": "Started With",
+              "value": "$200/mo",
+              "detail": "Reasonable entertainment budget"
             },
             {
               "type": "before",
-              "label": "Escalated To in {{STATE_NAME}}",
-              "value": "$2,000+ in {{STATE_NAME}}",
-              "detail": "Savings + credit cards in {{STATE_NAME}}"
+              "label": "Escalated To",
+              "value": "$2,000+",
+              "detail": "Savings + credit cards"
             },
             {
               "type": "before",
-              "label": "Impact in {{STATE_NAME}}",
-              "value": "Debt Crisis in {{STATE_NAME}}",
-              "detail": "Relationships damaged in {{STATE_NAME}}"
+              "label": "Impact",
+              "value": "Debt Crisis",
+              "detail": "Relationships damaged"
             }
           ]
         }
@@ -440,8 +443,8 @@
       "type": "discussion",
       "variant": "teal",
       "content": {
-        "badge": "Discussion in {{STATE_NAME}}",
-        "question": "What specific behaviors and mindsets differentiated David's recreational approach from Mark's progression into problem gambling?<br><br>At what point could Mark have intervened to prevent his gambling from becoming problematic? in {{STATE_NAME}}"
+        "badge": "Discussion",
+        "question": "What specific behaviors and mindsets differentiated David's recreational approach from Mark's progression into problem gambling?<br><br>At what point could Mark have intervened to prevent his gambling from becoming problematic?"
       }
     },
     {
@@ -449,16 +452,16 @@
       "type": "discussion",
       "variant": "purple",
       "content": {
-        "badge": "Personal Reflection in {{STATE_NAME}}",
-        "question": "What role should government play in regulating gambling? Should communities limit it to protect people, or allow more opportunities for economic benefits and personal freedom?<br><br>What factors should be considered in these decisions? in {{STATE_NAME}}"
+        "badge": "Personal Reflection",
+        "question": "What role should government play in regulating gambling? Should communities limit it to protect people, or allow more opportunities for economic benefits and personal freedom?<br><br>What factors should be considered in these decisions?"
       }
     },
     {
       "number": 17,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "emerald",
       "content": {
-        "headerTitle": "Check for Understanding",
+        "headerTitle": "Check Your Understanding",
         "layout": "check-grid",
         "layoutData": {
           "questions": [
@@ -480,12 +483,13 @@
             }
           ]
         }
-      }
+      },
+      "speakerNotes": "ASSESSMENT ANSWER KEY:\nQ3 Regressive taxation:Gambling revenue is \"regressive\" because lower-income households spend a higher percentage of their income on gambling than higher-income households. For example, a family earning $30,000 might spend $950/year (3.2%) while a family earning $100,000 spends $250/year (0.25%).\nCYU 1:B (Gambling is a leisure activity with an expected cost, like movies)\nCYU 2:A (Setting a budget and sticking to it is a SIGN of healthy gambling, not a warning sign)\nCYU 3:$10M - ($2M + $1.5M + $0.5M) = $10M - $4M =$6 million net benefit\nCYU 4:Any THREE: Set a budget and stick to it, set time limits, use only discretionary funds, never chase losses, take regular breaks, don't gamble when upset, don't borrow money to gamble."
     },
     {
       "number": 18,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Key Takeaways",
         "layout": "takeaway-grid",
@@ -518,14 +522,14 @@
     {
       "number": 19,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Student Activity",
         "layout": "activity-layout",
         "layoutData": {
           "main": {
-            "icon": "\ud83d",
-            "title": "\udccb Responsible Gambling Plan",
+            "icon": "í ½",
+            "title": "í³‹ Responsible Gambling Plan",
             "description": "Create a comprehensive plan for responsible gambling that demonstrates understanding of how gambling can remain enjoyable while minimizing potential harms. This activity will help you apply responsible gambling concepts to real-world decision-making."
           },
           "steps": [
@@ -542,9 +546,9 @@
       "number": 20,
       "type": "closing",
       "content": {
-        "tagline": "Building Financial Futures, One Lesson at a Time in {{STATE_NAME}}",
-        "website": "www.pflacademy.co in {{STATE_NAME}}",
-        "copyright": "Â© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "Â© 2025 PFL Academy. All rights reserved."
       }
     }
   ]

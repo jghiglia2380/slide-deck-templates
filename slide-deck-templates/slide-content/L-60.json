@@ -1,7 +1,7 @@
 {
   "metadata": {
     "lChapter": "L-60",
-    "title": "UnderstandingFinancial Contracts",
+    "title": "Understanding Financial Contracts",
     "subtitle": "Read Before You Sign—Your Money Depends On It",
     "totalSlides": 20,
     "hasStateVariables": false,
@@ -12,7 +12,7 @@
       "number": 1,
       "type": "title",
       "content": {
-        "title": "UnderstandingFinancial Contracts",
+        "title": "Understanding Financial Contracts",
         "titleSize": "large",
         "subtitle": "Read Before You Sign—Your Money Depends On It"
       }
@@ -21,14 +21,16 @@
       "number": 2,
       "type": "hook",
       "content": {
-        "label": "Essential Question",
-        "question": "Only <em>7% of people</em> read terms and conditions<br>before clicking \"I agree.\"<br><br>What could you be agreeing to without knowing?"
-      }
+        "label": "The Challenge",
+        "question": "Only <em>7% of people</em> read terms and conditions<br>before clicking \"I agree.\" What could you be agreeing to without knowing? <br><br> What could you be agreeing to without knowing?"
+      },
+      "headerColor": "amber",
+      "notes": "DISCUSSION PROMPTS:\nTHE CHALLENGE (5 min):\n• Ask: \"Who has ever clicked 'I agree' without reading the terms?\" (Most hands go up.)\n• Share the $3,800 lease penalty and $1,150 phone cancellation stories.\n• Key message: \"I didn't read it\" is not a legal defense. Courts enforce what you sign.\n"
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
@@ -61,9 +63,9 @@
     {
       "number": 4,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
@@ -84,9 +86,9 @@
     {
       "number": 5,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
@@ -107,7 +109,7 @@
     {
       "number": 6,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "5 Elements of a Valid Contract",
         "layout": "balanced-layout",
@@ -150,7 +152,7 @@
     {
       "number": 7,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Types of Financial Contracts",
         "layout": "concept-full",
@@ -176,7 +178,7 @@
     {
       "number": 8,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "How to Read Contract Language",
         "layout": "balanced-layout",
@@ -220,7 +222,7 @@
     {
       "number": 9,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Why Fine Print Matters",
         "layout": "concept-full",
@@ -246,7 +248,7 @@
     {
       "number": 10,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "The Cost of Contract Illiteracy",
         "layout": "balanced-layout",
@@ -289,7 +291,7 @@
     {
       "number": 11,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Why Contract Literacy Matters",
         "layout": "concept-full",
@@ -310,12 +312,13 @@
             "text": "Taking 30 minutes to read a contract can save you thousands of dollars and years of frustration."
           }
         }
-      }
+      },
+      "notes": "COMMON MISCONCEPTIONS:\n\n1. \"I didn't read it, so I'm not bound by it.\"\n   → Wrong. Your signature indicates acceptance. Courts assume you read what you signed. Ignorance of terms is not a defense.\n\n2. \"Contracts must be in writing to be enforceable.\"\n   → Many contracts are enforceable verbally. However, certain contracts (real estate, agreements over $500, agreements lasting more than one year) require writing under the Statute of Frauds.\n\n3. \"Standard contract terms aren't negotiable.\"\n   → Many terms ARE negotiable, especially in employment, leases, and major purchases. The worst they can say is no. Always ask about unfavorable terms.\n\n4. \"If a contract is unfair, courts will void it.\"\n   → Courts rarely void contracts for being \"unfair\" to one party. They'll void for fraud, duress, or illegality—but a bad deal you agreed to is usually enforceable.\n\n"
     },
     {
       "number": 12,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Contracts CAN Be Negotiated",
         "layout": "balanced-layout",
@@ -358,9 +361,9 @@
     {
       "number": 13,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Real-World Example",
+        "headerTitle": "Apply It",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
@@ -398,9 +401,9 @@
     {
       "number": 14,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Real-World Example",
+        "headerTitle": "Apply It",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
@@ -438,7 +441,7 @@
     {
       "number": 15,
       "type": "discussion",
-      "variant": "teal",
+      "variant": "amber",
       "content": {
         "badge": "Discussion",
         "question": "What contracts have you already signed—or will you sign soon?<br><br>What terms might you have accepted without fully understanding?"
@@ -447,7 +450,7 @@
     {
       "number": 16,
       "type": "discussion",
-      "variant": "purple",
+      "variant": "indigo",
       "content": {
         "badge": "Personal Reflection",
         "question": "What three questions should you ALWAYS ask yourself<br>before signing any financial contract?"
@@ -456,9 +459,9 @@
     {
       "number": 17,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "emerald",
       "content": {
-        "headerTitle": "Check for Understanding",
+        "headerTitle": "Check Your Understanding",
         "layout": "check-grid",
         "layoutData": {
           "questions": [
@@ -480,12 +483,13 @@
             }
           ]
         }
-      }
+      },
+      "notes": "ANSWER KEY:\n\n1. B (Notarization). Most contracts don't require notarization—only specific types like real estate deeds do.\n\n2. B (Requires disputes to be settled privately, not in court). Arbitration removes your access to the court system.\n\n3. B (One party can change terms without the other's consent). Typically the company can change prices, features, or terms at will.\n\n4. B (Voidable by the minor). Minors can typically void contracts they sign; they lack full capacity.\n\n5. Never sign under pressure. Ask for time (24-48 hours minimum) to read the entire lease. If the landlord won't wait, that's a red flag. Any legitimate offer will allow reasonable review time. Read every page, calculate total costs, and identify termination conditions before signing.\n\n"
     },
     {
       "number": 18,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Key Takeaways",
         "layout": "takeaway-grid",
@@ -518,15 +522,15 @@
     {
       "number": 19,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Student Activity",
+        "headerTitle": "Tomorrow's Challenge",
         "layout": "activity-layout",
         "layoutData": {
           "main": {
-            "icon": "\ud83d",
-            "title": "\udccb Contract Analysis Tool",
-            "description": "Practice identifying essential contract elements, key terms, and red flags in four real-world financial contracts. You'll analyze an apartment lease, phone contract, gym membership, and personal loan agreement."
+            "icon": "���",
+            "title": "��� Contract Analysis Tool",
+            "description": "Today we built the foundation — but the real test is what happens when you have to make a decision with tradeoffs. Practice identifying essential contract elements, key terms, and red flags in four real-world financial contracts. You'll analyze an apartment lease, phone contract, gym membership, and personal loan agreement."
           },
           "steps": [
             "Identify the 5 essential contract elements",

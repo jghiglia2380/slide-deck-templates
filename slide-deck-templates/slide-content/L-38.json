@@ -2,7 +2,7 @@
   "metadata": {
     "lChapter": "L-38",
     "title": "Managing HighLevels of Debt",
-    "subtitle": "Strategies for Recovery and Rebuilding Financial Health in {{STATE_NAME}}",
+    "subtitle": "Strategies for Recovery and Rebuilding Financial Health",
     "totalSlides": 20,
     "hasStateVariables": true,
     "stateVariablesUsed": [
@@ -16,21 +16,23 @@
       "content": {
         "title": "Managing HighLevels of Debt",
         "titleSize": "large",
-        "subtitle": "Strategies for Recovery and Rebuilding Financial Health in {{STATE_NAME}}"
+        "subtitle": "Strategies for Recovery and Rebuilding Financial Health"
       }
     },
     {
       "number": 2,
       "type": "hook",
       "content": {
-        "label": "Essential Question in {{STATE_NAME}}",
-        "question": "When debt becomes <em>overwhelming</em>, what options exist to<br><em>regain control</em> of your financial future? in {{STATE_NAME}}"
-      }
+        "label": "The Challenge",
+        "question": "When debt becomes <em>overwhelming</em>, what options exist to<br><em>regain control</em> of your financial future?"
+      },
+      "headerColor": "amber",
+      "speakerNotes": "Read Emily's debt scenario aloud. Note the variety of debt types. Ask: \"What makes some debts more dangerous than others?\" Brainstorm what factors would influence the best strategy choice."
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
@@ -63,19 +65,19 @@
     {
       "number": 4,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "Debt Management Plan in {{STATE_NAME}}",
+              "term": "Debt Management Plan",
               "definition": "A structured repayment plan arranged through a credit counseling agency to gradually pay off debt.",
               "example": "Make one monthly payment to the agency, which distributes funds to creditors (typically 3-5 years)"
             },
             {
-              "term": "Debt Consolidation in {{STATE_NAME}}",
+              "term": "Debt Consolidation",
               "definition": "Combining multiple debts into a single loan to simplify payments and potentially reduce interest rates.",
               "example": "Personal loans, balance transfer cards, home equity loans, 401(k) loans"
             }
@@ -86,19 +88,19 @@
     {
       "number": 5,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "Debt Settlement in {{STATE_NAME}}",
+              "term": "Debt Settlement",
               "definition": "Negotiating with creditors to pay less than the full amount owed, settling the debt for a lump sum.",
               "example": "Forgiven debt over $600 is typically considered taxable income by the IRS"
             },
             {
-              "term": "Secured Credit Card in {{STATE_NAME}}",
+              "term": "Secured Credit Card",
               "definition": "A credit card requiring a security deposit, often used to rebuild credit after financial setbacks.",
               "example": "$500 deposit = $500 credit limit; responsible use builds positive credit history"
             }
@@ -109,7 +111,7 @@
     {
       "number": 6,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Debt Management Plans (DMPs)",
         "layout": "balanced-layout",
@@ -122,20 +124,20 @@
               "You make <strong>one monthly payment</strong> to the agency, which distributes funds to your creditors."
             ],
             "highlightBox": {
-              "icon": "\ud83d",
-              "text": "\udca1 DMPs work best for unsecured debts like credit cards and medical billsâ€”not mortgages, auto loans, or student loans."
+              "icon": "í ½",
+              "text": "í²¡ DMPs work best for unsecured debts like credit cards and medical billsâ€”not mortgages, auto loans, or student loans."
             }
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "3-5 in {{STATE_NAME}}",
-                "label": "Years to Complete Plan in {{STATE_NAME}}",
+                "value": "3-5",
+                "label": "Years to Complete Plan",
                 "color": "teal"
               },
               {
-                "value": "8-10% in {{STATE_NAME}}",
-                "label": "Typical Rate Reduction in {{STATE_NAME}}",
+                "value": "8-10%",
+                "label": "Typical Rate Reduction",
                 "color": "purple"
               }
             ],
@@ -156,7 +158,7 @@
     {
       "number": 7,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Debt Consolidation Methods",
         "layout": "concept-full",
@@ -180,7 +182,7 @@
     {
       "number": 8,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Debt Settlement: Negotiating with Creditors",
         "layout": "balanced-layout",
@@ -200,13 +202,13 @@
           "rightPanel": {
             "stats": [
               {
-                "value": "40-60% in {{STATE_NAME}}",
-                "label": "Typical Settlement Amount in {{STATE_NAME}}",
+                "value": "40-60%",
+                "label": "Typical Settlement Amount",
                 "color": "rose"
               },
               {
-                "value": "-100+ in {{STATE_NAME}}",
-                "label": "Credit Score Impact (Points) in {{STATE_NAME}}",
+                "value": "-100+",
+                "label": "Credit Score Impact (Points)",
                 "color": "purple"
               }
             ],
@@ -227,14 +229,14 @@
     {
       "number": 9,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Bankruptcy: Understanding Your Options",
         "layout": "comparison-grid",
         "layoutData": {
           "leftColumn": {
-            "icon": "\ud83d",
-            "title": "\udccb Chapter 7 (Liquidation)",
+            "icon": "í ½",
+            "title": "í³‹ Chapter 7 (Liquidation)",
             "items": [
               "Discharges most unsecured debts",
               "Completed in 3-6 months",
@@ -245,8 +247,8 @@
             ]
           },
           "rightColumn": {
-            "icon": "\ud83d",
-            "title": "\udcca Chapter 13 (Reorganization)",
+            "icon": "í ½",
+            "title": "í³Š Chapter 13 (Reorganization)",
             "items": [
               "Creates 3-5 year repayment plan",
               "Keep your assets while paying",
@@ -262,7 +264,7 @@
     {
       "number": 10,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Long-Term Effects of Bankruptcy",
         "layout": "balanced-layout",
@@ -281,13 +283,13 @@
           "rightPanel": {
             "stats": [
               {
-                "value": "7-10 in {{STATE_NAME}}",
-                "label": "Years on Credit Report in {{STATE_NAME}}",
+                "value": "7-10",
+                "label": "Years on Credit Report",
                 "color": "rose"
               },
               {
-                "value": "200+ in {{STATE_NAME}}",
-                "label": "Typical Credit Score Drop in {{STATE_NAME}}",
+                "value": "200+",
+                "label": "Typical Credit Score Drop",
                 "color": "purple"
               }
             ],
@@ -308,7 +310,7 @@
     {
       "number": 11,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Alternatives to Explore First",
         "layout": "concept-full",
@@ -329,12 +331,13 @@
             "text": "ðŸ’¡ Seek professional guidance: A credit counselor can help you evaluate all options and choose the best path for your situation."
           }
         }
-      }
+      },
+      "speakerNotes": "COMMON MISCONCEPTIONS:\nâ€¢ \"\"Bankruptcy erases all debt and lets you start completely fresh.\"\" â†’ Bankruptcy doesn't discharge student loans, child support, alimony, most taxes, or recent purchases. It also stays on your credit report for 7-10 years.\nâ€¢ \"\"Debt settlement companies always get you the best deal.\"\" â†’ Many are for-profit and charge high fees. Nonprofit credit counseling agencies often get similar or better results without fees. Some settlement companies are outright scams.\nâ€¢ \"\"After bankruptcy, you can never get credit again.\"\" â†’ While bankruptcy severely impacts credit, rebuilding is possible. Many people receive credit card offers within a year, though with high rates. Full recovery typically takes 3-7 years of responsible credit use."
     },
     {
       "number": 12,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Rebuilding Credit After Setbacks",
         "layout": "balanced-layout",
@@ -350,8 +353,8 @@
           "rightPanel": {
             "stats": [
               {
-                "value": "150+ in {{STATE_NAME}}",
-                "label": "Point Recovery Possible in 3 Years in {{STATE_NAME}}",
+                "value": "150+",
+                "label": "Point Recovery Possible in 3 Years",
                 "color": "green"
               }
             ],
@@ -372,14 +375,14 @@
     {
       "number": 13,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Real-World Example",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "ðŸ’³ in {{STATE_NAME}}",
-            "name": "Maria: Debt Settlement Success in {{STATE_NAME}}",
+            "icon": "ðŸ’³",
+            "name": "Maria: Debt Settlement Success",
             "paragraphs": [
               "Maria accumulated <strong>$30,000 in credit card debt</strong> after losing her job and experiencing medical issues. After finding employment again, she worked with a debt settlement company.",
               "After <span class=\"highlight-text\">18 months of saving</span>, she settled her debts for about <strong>60% of what she owed</strong>. While her credit score dropped significantly, she avoided bankruptcy and began rebuilding immediately.",
@@ -389,21 +392,21 @@
           "outcomes": [
             {
               "type": "before",
-              "label": "Original Debt in {{STATE_NAME}}",
-              "value": "$30,000 in {{STATE_NAME}}",
-              "detail": "Credit card balances in {{STATE_NAME}}"
+              "label": "Original Debt",
+              "value": "$30,000",
+              "detail": "Credit card balances"
             },
             {
               "type": "after",
-              "label": "Settlement Paid in {{STATE_NAME}}",
-              "value": "$18,000 in {{STATE_NAME}}",
-              "detail": "60% of original debt in {{STATE_NAME}}"
+              "label": "Settlement Paid",
+              "value": "$18,000",
+              "detail": "60% of original debt"
             },
             {
               "type": "after",
-              "label": "Total Savings in {{STATE_NAME}}",
-              "value": "$9,000 in {{STATE_NAME}}",
-              "detail": "After tax implications in {{STATE_NAME}}"
+              "label": "Total Savings",
+              "value": "$9,000",
+              "detail": "After tax implications"
             }
           ]
         }
@@ -412,14 +415,14 @@
     {
       "number": 14,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Real-World Example",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "ðŸ“ˆ in {{STATE_NAME}}",
-            "name": "James: Rebuilding After Bankruptcy in {{STATE_NAME}}",
+            "icon": "ðŸ“ˆ",
+            "name": "James: Rebuilding After Bankruptcy",
             "paragraphs": [
               "After his business failed, James filed for <strong>Chapter 7 bankruptcy</strong> to discharge $45,000 in credit card debt, medical bills, and personal loans.",
               "His structured credit rebuilding plan:"
@@ -428,21 +431,21 @@
           "outcomes": [
             {
               "type": "before",
-              "label": "Year 1 (Post-Bankruptcy) in {{STATE_NAME}}",
-              "value": "520 in {{STATE_NAME}}",
-              "detail": "Credit score after filing in {{STATE_NAME}}"
+              "label": "Year 1 (Post-Bankruptcy)",
+              "value": "520",
+              "detail": "Credit score after filing"
             },
             {
               "type": "after",
-              "label": "Year 2 in {{STATE_NAME}}",
-              "value": "590 in {{STATE_NAME}}",
-              "detail": "+70 points in {{STATE_NAME}}"
+              "label": "Year 2",
+              "value": "590",
+              "detail": "+70 points"
             },
             {
               "type": "after",
-              "label": "Year 3 in {{STATE_NAME}}",
-              "value": "670+ in {{STATE_NAME}}",
-              "detail": "Qualified for auto loan in {{STATE_NAME}}"
+              "label": "Year 3",
+              "value": "670+",
+              "detail": "Qualified for auto loan"
             }
           ]
         }
@@ -453,8 +456,8 @@
       "type": "discussion",
       "variant": "teal",
       "content": {
-        "badge": "Discussion in {{STATE_NAME}}",
-        "question": "A friend has $25,000 in high-interest credit card debt and is struggling to make minimum payments. They're considering bankruptcy for a \"fresh start.\"<br><br>What questions should they consider? What alternatives should they explore first? in {{STATE_NAME}}"
+        "badge": "Discussion",
+        "question": "A friend has $25,000 in high-interest credit card debt and is struggling to make minimum payments. They're considering bankruptcy for a \"fresh start.\"<br><br>What questions should they consider? What alternatives should they explore first?"
       }
     },
     {
@@ -462,16 +465,16 @@
       "type": "discussion",
       "variant": "purple",
       "content": {
-        "badge": "Personal Reflection in {{STATE_NAME}}",
-        "question": "Why is it important to explore all debt management options before choosing bankruptcy?<br><br>What factors might make bankruptcy the right choice despite its long-term consequences? in {{STATE_NAME}}"
+        "badge": "Personal Reflection",
+        "question": "Why is it important to explore all debt management options before choosing bankruptcy?<br><br>What factors might make bankruptcy the right choice despite its long-term consequences?"
       }
     },
     {
       "number": 17,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "emerald",
       "content": {
-        "headerTitle": "Check for Understanding",
+        "headerTitle": "Check Your Understanding",
         "layout": "check-grid",
         "layoutData": {
           "questions": [
@@ -493,12 +496,13 @@
             }
           ]
         }
-      }
+      },
+      "speakerNotes": "ASSESSMENT ANSWER KEY:\nQ3 Credit rebuilding strategies:Any FOUR of: Get secured credit card, become authorized user on family member's account, apply for credit-builder loan, monitor credit report for errors, create budget to avoid future debt, build emergency fund, pay all bills on time, keep credit utilization low.\nCYU 1:B (Chapter 7 liquidates assets to discharge debt; Chapter 13 creates a repayment plan while keeping assets)\nCYU 2:Forgiven debt over $600 is considered taxable income by the IRS. If you settle $30,000 for $18,000, the $12,000 forgiven is added to your taxable income for that year.\nCYU 3:Forgiven amount: $30,000 - $18,000 = $12,000. Tax at 22%: $12,000 x 0.22 =$2,640\nCYU 4:A secured credit card requires a cash deposit (e.g., $500) that becomes your credit limit. It helps rebuild credit because the card issuer reports your payment history to credit bureaus, demonstrating responsible use."
     },
     {
       "number": 18,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Key Takeaways",
         "layout": "takeaway-grid",
@@ -531,14 +535,14 @@
     {
       "number": 19,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Student Activity",
         "layout": "activity-layout",
         "layoutData": {
           "main": {
-            "icon": "\ud83d",
-            "title": "\udccb Debt Reduction Planner",
+            "icon": "í ½",
+            "title": "í³‹ Debt Reduction Planner",
             "description": "Create a personalized debt management plan for Emily's case study scenario. Analyze her debts, evaluate options, and develop a strategy for financial recovery. Emily has $35,500 in total debt with $800/month available after expenses. Her credit score is 580."
           },
           "steps": [
@@ -555,9 +559,9 @@
       "number": 20,
       "type": "closing",
       "content": {
-        "tagline": "Building Financial Futures, One Lesson at a Time in {{STATE_NAME}}",
-        "website": "www.pflacademy.co in {{STATE_NAME}}",
-        "copyright": "Â© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "Â© 2025 PFL Academy. All rights reserved."
       }
     }
   ]

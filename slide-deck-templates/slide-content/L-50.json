@@ -33,14 +33,16 @@
       "number": 2,
       "type": "hook",
       "content": {
-        "label": "Essential Question",
-        "question": "Why does rent cost <em>${{STATE_MEDIAN_RENT}}/month</em> in {{STATE_NAME}}?<br>And why do some prices change <em>daily</em> while others stay stable?"
-      }
+        "label": "The Challenge",
+        "question": "In {{STATE_NAME}}, median rent is ${{STATE_MEDIAN_RENT}}/month‚Äîsignificantly different from the national average of $1,400. These price differences aren't random; they reflect fundamental supply and demand forces at work in every market. <br><br> Why does rent cost <em>${{STATE_MEDIAN_RENT}}/month</em> in {{STATE_NAME}}?<br>And why do some prices change <em>daily</em> while others stay stable?"
+      },
+      "headerColor": "amber",
+      "notes": "Discussion prompts:\n‚Ä¢ \"Can you think of other examples where prices change predictably?\"\n‚Ä¢ Preview that supply and demand explains virtually ALL price changes."
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
@@ -73,9 +75,9 @@
     {
       "number": 4,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
@@ -96,9 +98,9 @@
     {
       "number": 5,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
@@ -119,7 +121,7 @@
     {
       "number": 6,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "The Law of Demand",
         "layout": "balanced-layout",
@@ -133,8 +135,8 @@
               "<strong>3. Diminishing Utility:</strong> The 5th pizza slice isn't as satisfying as the 1st‚Äîyou'll only buy more at lower prices."
             ],
             "highlightBox": {
-              "icon": "\ud83d",
-              "text": "\udcc9 The demand curve always slopes DOWNWARD: Higher price = fewer buyers."
+              "icon": "Ì†Ω",
+              "text": "Ì≥â The demand curve always slopes DOWNWARD: Higher price = fewer buyers."
             }
           },
           "rightPanel": {
@@ -167,7 +169,7 @@
     {
       "number": 7,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "The Law of Supply",
         "layout": "balanced-layout",
@@ -181,8 +183,8 @@
               "<strong>3. Opportunity Cost:</strong> Higher prices justify using more expensive production methods that weren't profitable before."
             ],
             "highlightBox": {
-              "icon": "\ud83d",
-              "text": "\udcc8 The supply curve always slopes UPWARD: Higher price = more producers willing to sell."
+              "icon": "Ì†Ω",
+              "text": "Ì≥à The supply curve always slopes UPWARD: Higher price = more producers willing to sell."
             }
           },
           "rightPanel": {
@@ -215,7 +217,7 @@
     {
       "number": 8,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Market Equilibrium: Where Supply Meets Demand",
         "layout": "balanced-layout",
@@ -258,7 +260,7 @@
     {
       "number": 9,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "What Makes Demand Shift?",
         "layout": "concept-full",
@@ -284,7 +286,7 @@
     {
       "number": 10,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "What Makes Supply Shift?",
         "layout": "concept-full",
@@ -310,42 +312,22 @@
     {
       "number": 11,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "{{STATE_NAME}} Housing Market Analysis",
-        "layout": "scenario-layout",
+        "headerTitle": "Price Ceilings & Rent Control",
+        "layout": "comparison-grid",
         "layoutData": {
-          "scenario": {
-            "icon": "üè†",
-            "name": "Why Are {{STATE_NAME}} Home Prices So High?",
-            "paragraphs": [
-              "Let's analyze the {{STATE_NAME}} housing market using supply and demand:",
-              "<strong>DEMAND is HIGH because:</strong>",
-              "<strong>SUPPLY is LIMITED because:</strong>"
-            ]
+          "leftPanel": {
+            "title": "Economic Concept",
+            "content": "Price Ceilings set a maximum price landlords can charge."
           },
-          "outcomes": [
-            {
-              "type": "before",
-              "label": "Current Median Price",
-              "value": "${{STATE_MEDIAN_HOME_PRICE}}",
-              "detail": "Demand > Supply = Rising prices"
-            },
-            {
-              "type": "after",
-              "label": "Median Rent",
-              "value": "${{STATE_MEDIAN_RENT}}/mo",
-              "detail": "Same forces affect rentals"
-            },
-            {
-              "type": "after",
-              "label": "Unemployment Rate",
-              "value": "{{STATE_UNEMPLOYMENT_RATE}}%",
-              "detail": "Strong jobs = strong demand"
-            }
-          ]
+          "rightPanel": {
+            "title": "Real World Context",
+            "content": "In {{STATE_NAME}}, the median rent is currently ${{STATE_MEDIAN_RENT}}/mo."
+          }
         }
-      }
+      },
+      "notes": "Common Misconceptions:\n\n| Misconception | Clarification |\n|--------------|---------------|\n| \"High prices in {{STATE_NAME}} are just because of greed.\" | Prices reflect supply and demand balance. {{STATE_NAME}}'s home price of ${{STATE_MEDIAN_HOME_PRICE}} reflects its specific combination of demand factors (population growth: {{STATE_POPULATION_GROWTH}}, job growth: {{STATE_JOB_GROWTH}}) and supply factors (construction trends, land availability). |\n| \"Supply and demand only applies to goods, not services or labor.\" | Supply and demand applies to EVERYTHING with a price‚Äîincluding wages ({{STATE_NAME}}'s {{STATE_UNEMPLOYMENT_RATE}}% unemployment reflects labor market balance), rent ({{STATE_NAME}}'s ${{STATE_MEDIAN_RENT}}/mo), interest rates, and stock prices. |\n| \"If prices are high, they'll stay high forever.\" | High prices attract new supply (builders construct more housing, workers enter high-paying fields). Over time, increased supply puts downward pressure on prices. Markets self-correct‚Äîit's a question of how quickly. |\n| \"The government controls all prices.\" | While regulations affect some prices (minimum wage, rent control), most prices are determined by millions of individual supply and demand decisions. Government can shift supply or demand curves but rarely overrides market forces long-term. |"
     },
     {
       "number": 12,
@@ -359,9 +341,9 @@
     {
       "number": 13,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Using Supply & Demand for Smarter Decisions",
+        "headerTitle": "Apply It",
         "layout": "balanced-layout",
         "layoutData": {
           "leftPanel": {
@@ -374,8 +356,8 @@
               "<strong>üëï Clothing:</strong> Off-season purchases (winter coats in spring)"
             ],
             "highlightBox": {
-              "icon": "\ud83d",
-              "text": "\udca1 In {{STATE_NAME}}, home prices are typically lowest in winter when fewer people are house-hunting."
+              "icon": "Ì†Ω",
+              "text": "Ì≤° In {{STATE_NAME}}, home prices are typically lowest in winter when fewer people are house-hunting."
             }
           },
           "rightPanel": {
@@ -397,9 +379,9 @@
     {
       "number": 14,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "The Labor Market: You Are the Supply",
+        "headerTitle": "Apply It",
         "layout": "balanced-layout",
         "layoutData": {
           "leftPanel": {
@@ -412,8 +394,8 @@
               "With {{STATE_NAME}}'s unemployment rate at <strong>{{STATE_UNEMPLOYMENT_RATE}}%</strong>, the labor market is tight‚Äîemployers are competing for workers."
             ],
             "highlightBox": {
-              "icon": "\ud83c",
-              "text": "\udfaf Choose careers where demand is rising and supply is limited for maximum earning potential."
+              "icon": "Ì†º",
+              "text": "ÌæØ Choose careers where demand is rising and supply is limited for maximum earning potential."
             }
           },
           "rightPanel": {
@@ -446,7 +428,7 @@
     {
       "number": 15,
       "type": "discussion",
-      "variant": "purple",
+      "variant": "amber",
       "content": {
         "badge": "Personal Reflection",
         "question": "What skills do you have (or could develop) where demand is high and supply is limited?<br><br>How can you use supply and demand thinking to maximize your earning potential?"
@@ -455,7 +437,7 @@
     {
       "number": 16,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Common Mistakes to Avoid",
         "layout": "comparison-grid",
@@ -488,9 +470,9 @@
     {
       "number": 17,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "emerald",
       "content": {
-        "headerTitle": "Key Takeaways",
+        "headerTitle": "Check Your Understanding",
         "layout": "takeaway-grid",
         "layoutData": {
           "takeaways": [
@@ -521,9 +503,9 @@
     {
       "number": 18,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Check for Understanding",
+        "headerTitle": "Key Takeaways",
         "layout": "check-grid",
         "layoutData": {
           "questions": [
@@ -545,19 +527,20 @@
             }
           ]
         }
-      }
+      },
+      "notes": "Answer Key:\n\n1. Population growth of 500,000 people shifts the demand curve for housing to the RIGHT (more buyers at every price point). With supply remaining constant, the equilibrium price rises. More people competing for the same housing stock = higher prices.\n\n2. Home prices continue rising because demand factors (population growth: {{STATE_POPULATION_GROWTH}}, job growth: {{STATE_JOB_GROWTH}}, strong economy) continue to shift demand RIGHT faster than supply can increase. Even at ${{STATE_MEDIAN_HOME_PRICE}}, quantity demanded exceeds quantity supplied at current prices, pushing prices higher toward a new equilibrium.\n\n3. Higher summer gas prices are primarily a DEMAND shift. During summer vacation season, demand for gas shifts RIGHT (more travel, road trips, vacations). Supply remains relatively constant. Increased demand + stable supply = higher equilibrium prices. In winter, demand shifts back LEFT and prices fall.\n\n4. Understanding supply and demand helps career planning by identifying fields where demand for workers exceeds supply‚Äîthese careers offer higher wages and better job security. Look for careers with: (1) High demand due to trends (aging population ‚Üí healthcare, digital transformation ‚Üí tech), (2) Limited supply (skilled trades with retiring workers), (3) Strong {{STATE_NAME}}-specific demand ({{STATE_UNEMPLOYMENT_RATE}}% unemployment indicates tight labor market). Choose careers where you can develop skills that are in high demand but limited supply."
     },
     {
       "number": 19,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Day 2 Learning Lab Preview",
+        "headerTitle": "Tomorrow's Challenge",
         "layout": "activity-layout",
         "layoutData": {
           "main": {
-            "icon": "\ud83d",
-            "title": "\udcca Market Analysis Workshop",
+            "icon": "Ì†Ω",
+            "title": "Ì≥ä Market Analysis Workshop",
             "description": "Tomorrow you'll apply supply and demand concepts to real {{STATE_NAME}} markets: Analyze actual market data, predict price movements, and develop strategies for timing major purchases and career decisions."
           },
           "steps": [

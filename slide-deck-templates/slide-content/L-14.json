@@ -1,13 +1,11 @@
 {
   "metadata": {
-    "lChapter": "L-XX",
+    "lChapter": "L-14",
     "title": "Saving and Investing",
-    "subtitle": "Understand the fundamental differences between saving and investing to build wealth and achieve both short-term and long-term financial goals. in {{STATE_NAME}}",
+    "subtitle": "Know When to Save, When to Invest, and How to Match Strategy to Goals",
     "totalSlides": 20,
-    "hasStateVariables": true,
-    "stateVariablesUsed": [
-      "STATE_NAME"
-    ]
+    "hasStateVariables": false,
+    "stateVariablesUsed": []
   },
   "slides": [
     {
@@ -16,47 +14,69 @@
       "content": {
         "title": "Saving and Investing",
         "titleSize": "large",
-        "subtitle": "Understand the fundamental differences between saving and investing to build wealth and achieve both short-term and long-term financial goals. in {{STATE_NAME}}"
+        "subtitle": "Know When to Save, When to Invest, and How to Match Strategy to Goals"
       }
     },
     {
       "number": 2,
       "type": "hook",
       "content": {
-        "label": "Essential Question",
-        "question": ""
-      }
+        "label": "The Challenge",
+        "question": "Elena received <em>$2,000</em> as a graduation gift. She's trying to decide what to do with it:<br><br>\u2022 Keep it in checking: <em>0% growth</em><br>\u2022 Put it in savings: <em>0.5% interest</em><br>\u2022 Invest in mutual fund: <em>~7% historical return</em> (but could lose value)<br><br>She needs a car in <em>5 years</em> and also wants to start thinking about <em>retirement</em>.<br><br>How should Elena approach this decision, and why might different strategies be appropriate for different goals?"
+      },
+      "headerColor": "amber"
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
         "layoutData": {
-          "objectives": []
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Differentiate",
+              "description": "Differentiate between saving and investing strategies based on goals and timeline."
+            },
+            {
+              "number": 2,
+              "verb": "Apply",
+              "description": "Apply the SMART framework to set effective, achievable financial goals."
+            },
+            {
+              "number": 3,
+              "verb": "Evaluate",
+              "description": "Evaluate risk and reward trade-offs when making financial decisions."
+            },
+            {
+              "number": 4,
+              "verb": "Calculate",
+              "description": "Calculate how money grows over time with different approaches and understand opportunity cost."
+            }
+          ]
         }
       }
     },
     {
       "number": 4,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Saving",
+              "definition": "Setting aside money in safe, accessible accounts for short-term goals and emergencies. Lower returns, but money is protected.",
+              "example": "Emergency fund in a savings account earning 1%\u2014safe, accessible, but won't grow much."
             },
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Investing",
+              "definition": "Placing money in assets expected to grow over time (stocks, bonds, mutual funds). Higher potential returns, but value can go up OR down.",
+              "example": "Buying index funds for retirement 40 years away\u2014accepts short-term swings for long-term growth."
             }
           ]
         }
@@ -65,21 +85,21 @@
     {
       "number": 5,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Risk Tolerance",
+              "definition": "Your comfort level with the possibility of losing money in exchange for potentially higher returns. Varies by person and goal.",
+              "example": "High risk tolerance: comfortable seeing investments drop 20% temporarily. Low: can't sleep if value drops 5%."
             },
             {
-              "term": "",
-              "definition": "",
-              "example": ""
+              "term": "Opportunity Cost",
+              "definition": "What you give up when choosing one option over another. Every financial choice has a trade-off.",
+              "example": "Keeping $1,000 in checking for 30 years 'costs' you $6,612 you could have earned investing."
             }
           ]
         }
@@ -88,37 +108,34 @@
     {
       "number": 6,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Saving vs. Investing",
-        "layout": "balanced-layout",
+        "headerTitle": "Saving vs. Investing: Key Differences",
+        "layout": "comparison-grid",
         "layoutData": {
-          "leftPanel": {
-            "title": "Two Paths to Financial Growth",
-            "paragraphs": [
-              "Both saving and investing help you build wealth, but they serve different purposes and work differently: in {{STATE_NAME}}"
-            ],
-            "highlightBox": null
+          "leftColumn": {
+            "icon": "\ud83c\udfe6",
+            "title": "SAVING",
+            "items": [
+              "Low risk\u2014money is protected",
+              "Low returns (0.5-5% typically)",
+              "High liquidity\u2014access anytime",
+              "Best for short-term goals (1-3 years)",
+              "Emergency fund, big purchase soon",
+              "FDIC insured up to $250K"
+            ]
           },
-          "rightPanel": {
-            "stats": [
-              {
-                "value": "",
-                "label": "",
-                "color": "teal"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "purple"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "green"
-              }
-            ],
-            "infoCard": null
+          "rightColumn": {
+            "icon": "\ud83d\udcc8",
+            "title": "INVESTING",
+            "items": [
+              "Higher risk\u2014value can drop",
+              "Higher potential returns (7-10% historically)",
+              "Less liquid\u2014may need to sell assets",
+              "Best for long-term goals (5+ years)",
+              "Retirement, education, wealth building",
+              "Not insured\u2014can lose principal"
+            ]
           }
         }
       }
@@ -126,20 +143,45 @@
     {
       "number": 7,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Comparing Saving & Investing",
-        "layout": "comparison-grid",
+        "headerTitle": "The Time Horizon Rule",
+        "layout": "balanced-layout",
         "layoutData": {
-          "leftColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
+          "leftPanel": {
+            "title": "When Do You Need the Money?",
+            "paragraphs": [
+              "Your <strong>time horizon</strong> is the most important factor in choosing between saving and investing:",
+              "<strong>Less than 1 year:</strong> SAVE (checking or savings)",
+              "<strong>1-3 years:</strong> SAVE (high-yield savings, CDs)",
+              "<strong>3-5 years:</strong> SAVE/INVEST MIX (conservative)",
+              "<strong>5-10 years:</strong> INVEST (moderate risk)",
+              "<strong>10+ years:</strong> INVEST (higher growth focus)"
+            ],
+            "highlightBox": {
+              "icon": "\ud83d\udca1",
+              "text": "WHY? Investments need time to recover from drops. A 30% market crash matters less if you're not selling for 20 years."
+            }
           },
-          "rightColumn": {
-            "icon": "",
-            "title": "",
-            "items": []
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "7%",
+                "label": "Average annual stock market return",
+                "color": "emerald"
+              },
+              {
+                "value": "~50%",
+                "label": "Markets drop this much sometimes",
+                "color": "amber"
+              },
+              {
+                "value": "100%",
+                "label": "Recovery rate (eventually)",
+                "color": "indigo"
+              }
+            ],
+            "infoCard": null
           }
         }
       }
@@ -147,37 +189,49 @@
     {
       "number": 8,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "The Power of Compounding",
+        "headerTitle": "The Power of Time: $1,000 Over 30 Years",
         "layout": "balanced-layout",
         "layoutData": {
           "leftPanel": {
-            "title": "Your Money Working for You",
+            "title": "Same Starting Amount, Different Outcomes",
             "paragraphs": [
-              "Compounding is often called the \"eighth wonder of the world\" because of its powerful effect over time: in {{STATE_NAME}}"
+              "What happens to $1,000 depending on where you put it:",
+              "<strong>Checking (0%):</strong>",
+              "\u2022 After 10 years: $1,000",
+              "\u2022 After 30 years: $1,000",
+              "<strong>Savings (1%):</strong>",
+              "\u2022 After 10 years: $1,105",
+              "\u2022 After 30 years: $1,348",
+              "<strong>Investing (7%):</strong>",
+              "\u2022 After 10 years: $1,967",
+              "\u2022 After 30 years: $7,612"
             ],
             "highlightBox": null
           },
           "rightPanel": {
             "stats": [
               {
-                "value": "",
-                "label": "",
-                "color": "green"
+                "value": "$6,612",
+                "label": "Lost by not investing over 30 years",
+                "color": "amber"
               },
               {
-                "value": "",
-                "label": "",
-                "color": "teal"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "purple"
+                "value": "7.6x",
+                "label": "Your money multiplies with investing",
+                "color": "emerald"
               }
             ],
-            "infoCard": null
+            "infoCard": {
+              "title": "The Opportunity Cost",
+              "color": "indigo",
+              "items": [
+                "Every year in checking = growth missed",
+                "Inflation (3%) actually shrinks cash value",
+                "$1,000 today = ~$400 purchasing power in 30 years"
+              ]
+            }
           }
         }
       }
@@ -185,58 +239,50 @@
     {
       "number": 9,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "SMART Financial Goals",
+        "headerTitle": "Understanding Risk and Return",
         "layout": "concept-full",
         "layoutData": {
-          "title": "Setting Goals That Actually Work",
+          "title": "Higher Potential Returns = Higher Risk",
           "paragraphs": [
-            "The SMART framework transforms vague wishes into achievable financial goals. Each element makes your goal more actionable: in {{STATE_NAME}}",
-            "\"Save $500 for a new laptop\" is better than \"save money.\" Know exactly what you want. in {{STATE_NAME}}",
-            "Track your progress with numbers: \"Put $50/month into savings\" lets you see results. in {{STATE_NAME}}",
-            "Set realistic targets based on your actual income and expenses. Challenge yourself, but be practical. in {{STATE_NAME}}",
-            "Your goal should connect to what matters to you personally and align with your values. in {{STATE_NAME}}",
-            "Set a deadline: \"Save $500 by December\" creates urgency and accountability. in {{STATE_NAME}}"
+            "There's no free lunch in investing\u2014more potential reward means more potential risk:"
           ],
-          "bulletPoints": []
+          "bulletPoints": [
+            "<strong>Savings account:</strong> Near-zero risk, near-zero return (0.5-5%)",
+            "<strong>Government bonds:</strong> Very low risk, low return (2-4%)",
+            "<strong>Corporate bonds:</strong> Low-medium risk, medium return (4-6%)",
+            "<strong>Diversified stock funds:</strong> Medium risk, higher return (7-10% average)",
+            "<strong>Individual stocks:</strong> High risk, variable return (could be -50% to +100%)",
+            "<strong>Cryptocurrency:</strong> Very high risk, very variable (-80% to +500%)"
+          ],
+          "keyPoint": {
+            "text": "\ud83d\udcca Your risk tolerance should match your timeline AND your personality. Can you sleep if your account drops 30%?"
+          }
         }
       }
     },
     {
       "number": 10,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Risk and Opportunity Cost",
-        "layout": "balanced-layout",
+        "headerTitle": "SMART Financial Goals",
+        "layout": "concept-full",
         "layoutData": {
-          "leftPanel": {
-            "title": "Every Choice Has Trade-offs",
-            "paragraphs": [
-              "Understanding risk and opportunity cost helps you make better financial decisions: in {{STATE_NAME}}"
-            ],
-            "highlightBox": null
-          },
-          "rightPanel": {
-            "stats": [
-              {
-                "value": "",
-                "label": "",
-                "color": "rose"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "teal"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "green"
-              }
-            ],
-            "infoCard": null
+          "title": "Turn Vague Wishes Into Achievable Plans",
+          "paragraphs": [
+            "The SMART framework helps you set goals you can actually reach:"
+          ],
+          "bulletPoints": [
+            "<strong>S - Specific:</strong> Exactly WHAT do you want? ('Save for a car' \u2192 'Save $8,000 for a used Honda')",
+            "<strong>M - Measurable:</strong> HOW MUCH and how will you track? ('Save $333/month, track in spreadsheet')",
+            "<strong>A - Achievable:</strong> Is this realistic given your income? (Can you actually save $333/month?)",
+            "<strong>R - Relevant:</strong> WHY does this matter to you? ('Need reliable transportation for new job')",
+            "<strong>T - Time-bound:</strong> WHEN is the deadline? ('By December 2026\u201424 months from now')"
+          ],
+          "keyPoint": {
+            "text": "\u274c 'I want to save more' \u2192 \u2705 'I will save $200/month for my emergency fund until I reach $3,000 by June 2026'"
           }
         }
       }
@@ -244,56 +290,65 @@
     {
       "number": 11,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Why This Matters for You",
-        "layout": "concept-full",
+        "headerTitle": "Matching Strategy to Goal",
+        "layout": "balanced-layout",
         "layoutData": {
-          "title": "Your Biggest Advantage: Time",
-          "paragraphs": [
-            "As a young person, you have something money can't buy — time. Understanding saving and investing now can dramatically change your financial future. in {{STATE_NAME}}",
-            "An emergency fund (saving) protects you from unexpected expenses and gives you peace of mind and financial stability. in {{STATE_NAME}}",
-            "Starting to invest in your teens or twenties can turn small amounts into significant wealth through decades of compounding. in {{STATE_NAME}}",
-            "From buying a car to retiring comfortably, every goal requires choosing the right strategy for your timeline. in {{STATE_NAME}}"
-          ],
-          "bulletPoints": []
+          "leftPanel": {
+            "title": "The Right Tool for Each Job",
+            "paragraphs": [
+              "<strong>Emergency Fund (always):</strong>",
+              "\u2192 SAVE in high-yield savings (need access)",
+              "<strong>Vacation next year:</strong>",
+              "\u2192 SAVE (too short for investing risk)",
+              "<strong>House down payment (3-5 years):</strong>",
+              "\u2192 SAVE mostly, maybe small investment portion",
+              "<strong>Child's college (15+ years):</strong>",
+              "\u2192 INVEST (529 plan, target-date funds)",
+              "<strong>Retirement (20-40 years):</strong>",
+              "\u2192 INVEST (401k, IRA, diversified portfolio)"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "Most People Need BOTH",
+              "color": "emerald",
+              "items": [
+                "Emergency fund: SAVE (3-6 months expenses)",
+                "Short-term goals: SAVE",
+                "Long-term goals: INVEST",
+                "Don't put all eggs in one basket!"
+              ]
+            }
+          }
         }
       }
     },
     {
       "number": 12,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Saving & Investing Today",
-        "layout": "balanced-layout",
+        "headerTitle": "Common Savings and Investment Vehicles",
+        "layout": "concept-full",
         "layoutData": {
-          "leftPanel": {
-            "title": "Access Has Never Been Easier",
-            "paragraphs": [
-              "Modern technology has democratized both saving and investing, removing traditional barriers: in {{STATE_NAME}}"
-            ],
-            "highlightBox": null
-          },
-          "rightPanel": {
-            "stats": [
-              {
-                "value": "",
-                "label": "",
-                "color": "purple"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "teal"
-              },
-              {
-                "value": "",
-                "label": "",
-                "color": "green"
-              }
-            ],
-            "infoCard": null
+          "title": "Where to Put Your Money",
+          "paragraphs": [
+            "Different accounts serve different purposes:"
+          ],
+          "bulletPoints": [
+            "<strong>High-Yield Savings Account:</strong> Emergency fund, short-term goals (1-5% APY, FDIC insured)",
+            "<strong>Certificate of Deposit (CD):</strong> Money you won't need for set period (higher rate, locked in)",
+            "<strong>401(k):</strong> Employer retirement plan (tax advantages, often employer match\u2014FREE MONEY)",
+            "<strong>Roth IRA:</strong> Personal retirement (contribute after-tax, withdraw tax-free)",
+            "<strong>Brokerage Account:</strong> Flexible investing (no tax advantages, but no restrictions)",
+            "<strong>529 Plan:</strong> Education savings (tax-free growth for school expenses)"
+          ],
+          "keyPoint": {
+            "text": "\ud83c\udfaf Start with emergency fund (save), then max employer 401k match (free money!), then build from there."
           }
         }
       }
@@ -301,34 +356,37 @@
     {
       "number": 13,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Real-World Example",
+        "headerTitle": "Apply It",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "",
-            "name": "",
-            "paragraphs": []
+            "icon": "\ud83d\udc64",
+            "name": "Elena's Decision: The Car Fund",
+            "paragraphs": [
+              "Elena needs a car in 5 years. She's considering where to put $1,000 of her graduation money for this goal.",
+              "5 years is a medium timeframe\u2014short enough that a market crash could hurt, but long enough that some growth would help."
+            ]
           },
           "outcomes": [
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "before",
+              "label": "If Saved (1%)",
+              "value": "$1,051",
+              "detail": "After 5 years\u2014safe but slow"
             },
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "positive",
+              "label": "If Invested (7%)",
+              "value": "$1,403",
+              "detail": "Average outcome\u2014$352 more"
             },
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "negative",
+              "label": "Risk",
+              "value": "Could drop 20%+",
+              "detail": "If market crashes near purchase date"
             }
           ]
         }
@@ -337,34 +395,37 @@
     {
       "number": 14,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Real-World Example",
+        "headerTitle": "Apply It",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "",
-            "name": "",
-            "paragraphs": []
+            "icon": "\ud83d\udc64",
+            "name": "Elena's Decision: The Retirement Fund",
+            "paragraphs": [
+              "Elena is 18. Her retirement is 47 years away. She's considering where to put the other $1,000.",
+              "With 47 years, she has time to ride out any market crashes. This is classic long-term investing territory."
+            ]
           },
           "outcomes": [
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "before",
+              "label": "If Saved (1%)",
+              "value": "$1,596",
+              "detail": "After 47 years\u2014barely kept up with inflation"
             },
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "positive",
+              "label": "If Invested (7%)",
+              "value": "$23,860",
+              "detail": "After 47 years\u2014nearly 24x her money!"
             },
             {
-              "type": "neutral",
-              "label": "",
-              "value": "",
-              "detail": ""
+              "type": "positive",
+              "label": "Opportunity Cost",
+              "value": "$22,264",
+              "detail": "Lost by not investing"
             }
           ]
         }
@@ -373,64 +434,102 @@
     {
       "number": 15,
       "type": "discussion",
-      "variant": "teal",
+      "variant": "amber",
       "content": {
         "badge": "Discussion",
-        "question": ""
+        "question": "For each goal, would you SAVE or INVEST? Why?<br><br>1. Emergency fund of $6,000<br><br>2. Retirement in 40 years<br><br>3. Vacation trip in 8 months<br><br>What factors influenced each decision?"
       }
     },
     {
       "number": 16,
       "type": "discussion",
-      "variant": "teal",
+      "variant": "indigo",
       "content": {
-        "badge": "Personal Reflection",
-        "question": ""
+        "badge": "Reflection",
+        "question": "Think about a financial goal YOU have.<br><br>Create a SMART version of that goal:<br>\u2022 Specific: What exactly?<br>\u2022 Measurable: How much?<br>\u2022 Achievable: Can you do it?<br>\u2022 Relevant: Why does it matter?<br>\u2022 Time-bound: By when?<br><br>Should you save or invest for this goal?"
       }
     },
     {
       "number": 17,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "emerald",
       "content": {
-        "headerTitle": "Check for Understanding",
+        "headerTitle": "Check Your Understanding",
         "layout": "check-grid",
         "layoutData": {
-          "questions": []
+          "questions": [
+            {
+              "number": 1,
+              "question": "What is the MOST important factor when deciding between saving and investing?"
+            },
+            {
+              "number": 2,
+              "question": "Why should someone with 40 years until retirement prioritize investing over saving?"
+            },
+            {
+              "number": 3,
+              "question": "If Elena invests $2,000 at 7% for 10 years, approximately how much will she have?"
+            },
+            {
+              "number": 4,
+              "question": "Elena wants a car in 5 years. Why might she SAVE rather than invest, even though investing offers higher returns?"
+            }
+          ]
         }
       }
     },
     {
       "number": 18,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Key Takeaways",
         "layout": "takeaway-grid",
         "layoutData": {
-          "takeaways": []
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Time Horizon Drives the Decision",
+              "description": "Short-term goals (under 3 years) \u2192 save. Long-term goals (5+ years) \u2192 invest. Match strategy to timeline."
+            },
+            {
+              "number": 2,
+              "title": "Higher Returns = Higher Risk",
+              "description": "There's no free lunch. Investing offers more growth potential but your money can lose value temporarily."
+            },
+            {
+              "number": 3,
+              "title": "Opportunity Cost Is Real",
+              "description": "Money sitting in checking loses to inflation. Over 30 years, investing $1,000 vs. saving could mean $6,000+ difference."
+            },
+            {
+              "number": 4,
+              "title": "Use SMART Goals",
+              "description": "Specific, Measurable, Achievable, Relevant, Time-bound goals lead to better outcomes than vague wishes."
+            }
+          ]
         }
       }
     },
     {
       "number": 19,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
-        "headerTitle": "Skill Builder: Comparison Chart",
+        "headerTitle": "Tomorrow's Challenge",
         "layout": "activity-layout",
         "layoutData": {
           "main": {
-            "icon": "📋",
-            "title": "",
-            "description": ""
+            "icon": "\ud83c\udfaf",
+            "title": "Goal-Based Strategy Builder",
+            "description": "Elena has $2,000 and multiple goals. Tomorrow you'll help her\u2014and yourself\u2014create a complete financial strategy that matches the right approach to each goal's timeline and risk profile."
           },
           "steps": [
-            "Write definitions for saving and investing in your own words in {{STATE_NAME}}",
-            "Fill in: purpose, time horizon, risk level, typical returns, liquidity in {{STATE_NAME}}",
-            "Identify specific products for each category (savings accounts, stocks, etc.) in {{STATE_NAME}}",
-            "Determine which strategy fits various financial goals in {{STATE_NAME}}",
-            "Apply your learning to one personal financial goal in {{STATE_NAME}}"
+            "Analyze multiple financial goals with different timelines",
+            "Decide whether to save or invest for each goal",
+            "Calculate growth projections with different strategies",
+            "Create your own SMART financial goal",
+            "Build a simple allocation plan for your money"
           ]
         }
       }
@@ -439,9 +538,9 @@
       "number": 20,
       "type": "closing",
       "content": {
-        "tagline": "Save for security. Invest for growth. Time is your greatest asset. in {{STATE_NAME}}",
-        "website": "www.pflacademy.co in {{STATE_NAME}}",
-        "copyright": "© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "\u00a9 2025 PFL Academy. All rights reserved."
       }
     }
   ]

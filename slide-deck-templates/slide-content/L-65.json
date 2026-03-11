@@ -1,7 +1,7 @@
 {
   "metadata": {
     "lChapter": "L-65",
-    "title": "Investment PortfolioDiversification",
+    "title": "Investment Portfolio Diversification",
     "subtitle": "Don't Put All Your Eggs in One Basket",
     "totalSlides": 20,
     "hasStateVariables": false,
@@ -12,7 +12,7 @@
       "number": 1,
       "type": "title",
       "content": {
-        "title": "Investment PortfolioDiversification",
+        "title": "Investment Portfolio Diversification",
         "titleSize": "large",
         "subtitle": "Don't Put All Your Eggs in One Basket"
       }
@@ -21,14 +21,16 @@
       "number": 2,
       "type": "hook",
       "content": {
-        "label": "Essential Question",
+        "label": "The Challenge",
         "question": "How can combining investments that behave <em>differently</em><br>reduce your risk without sacrificing <em>returns</em>?"
-      }
+      },
+      "headerColor": "amber",
+      "notes": "DISCUSSION PROMPTS:\nTHE CHALLENGE (5 min):\n‚Ä¢ Read Destiny vs. Jordan story. Emphasize: Destiny had higher PEAK but lower ENDPOINT.\n‚Ä¢ Discussion: \"Why did Destiny end up with less money even though she gained more initially?\"\n‚Ä¢ Key insight: Diversification's true value is preventing catastrophic losses that force panic.\n"
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
@@ -61,9 +63,9 @@
     {
       "number": 4,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
@@ -84,9 +86,9 @@
     {
       "number": 5,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
@@ -107,7 +109,7 @@
     {
       "number": 6,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "The Mathematics of Diversification",
         "layout": "balanced-layout",
@@ -120,8 +122,8 @@
               "‚Ä¢ $5,000 √ó -40% = -$2,000<br>‚Ä¢ $5,000 √ó +10% = +$500<br>‚Ä¢ <strong>Net loss: Only 15%</strong> instead of 40%!"
             ],
             "highlightBox": {
-              "icon": "\ud83d",
-              "text": "\udca1 By combining uncorrelated assets, you keep most upside potential while dramatically cutting downside risk."
+              "icon": "Ì†Ω",
+              "text": "Ì≤° By combining uncorrelated assets, you keep most upside potential while dramatically cutting downside risk."
             }
           },
           "rightPanel": {
@@ -153,7 +155,7 @@
     {
       "number": 7,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Concentrated vs. Diversified Portfolios",
         "layout": "comparison-grid",
@@ -171,8 +173,8 @@
             ]
           },
           "rightColumn": {
-            "icon": "\ud83d",
-            "title": "\udee1Ô∏è Diversified",
+            "icon": "Ì†Ω",
+            "title": "Ìª°Ô∏è Diversified",
             "items": [
               "Eggs across many baskets",
               "Steady growth, manageable dips",
@@ -188,7 +190,7 @@
     {
       "number": 8,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Asset Classes & Correlation",
         "layout": "balanced-layout",
@@ -202,8 +204,8 @@
               "<strong>Gold/Commodities:</strong> Very low correlation with stocks. Crisis hedge."
             ],
             "highlightBox": {
-              "icon": "\ud83c",
-              "text": "\udfaf Combining assets with LOW correlation to each other = maximum diversification benefit."
+              "icon": "Ì†º",
+              "text": "ÌæØ Combining assets with LOW correlation to each other = maximum diversification benefit."
             }
           },
           "rightPanel": {
@@ -235,7 +237,7 @@
     {
       "number": 9,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Age-Based Asset Allocation",
         "layout": "concept-full",
@@ -259,7 +261,7 @@
     {
       "number": 10,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "The Power of Rebalancing",
         "layout": "balanced-layout",
@@ -305,7 +307,7 @@
     {
       "number": 11,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Why Diversification Matters",
         "layout": "concept-full",
@@ -324,12 +326,13 @@
             "text": "üí∞ Diversification makes crashes survivable, which is how you actually achieve long-term market returns."
           }
         }
-      }
+      },
+      "notes": "COMMON MISCONCEPTIONS:\n\n1. \"Diversification means owning lots of different stocks.\"\n   ‚Üí True diversification requires DIFFERENT asset classes with low correlation. 50 tech stocks still crash together. Need stocks + bonds + international + real estate for real protection.\n\n2. \"Diversification reduces returns.\"\n   ‚Üí Diversification reduces VOLATILITY, not necessarily returns. More importantly, it enables you to actually ACHIEVE returns by preventing panic-selling.\n\n3. \"Young people don't need bonds.\"\n   ‚Üí Small bond allocation (10-15%) provides \"dry powder\" to rebalance into stocks during crashes, potentially improving returns while slightly reducing volatility.\n\n"
     },
     {
       "number": 12,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Target-Date Funds: Autopilot Investing",
         "layout": "balanced-layout",
@@ -344,8 +347,8 @@
               "‚Ä¢ <strong>One decision:</strong> Pick the year closest to your retirement"
             ],
             "highlightBox": {
-              "icon": "\ud83c",
-              "text": "\udfaf Perfect for investors who want professional-level diversification without managing it themselves."
+              "icon": "Ì†º",
+              "text": "ÌæØ Perfect for investors who want professional-level diversification without managing it themselves."
             }
           },
           "rightPanel": {
@@ -377,7 +380,7 @@
     {
       "number": 13,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Real-World Example",
         "layout": "scenario-layout",
@@ -417,7 +420,7 @@
     {
       "number": 14,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Real-World Example",
         "layout": "scenario-layout",
@@ -475,9 +478,9 @@
     {
       "number": 17,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "emerald",
       "content": {
-        "headerTitle": "Check for Understanding",
+        "headerTitle": "Check Your Understanding",
         "layout": "check-grid",
         "layoutData": {
           "questions": [
@@ -499,12 +502,13 @@
             }
           ]
         }
-      }
+      },
+      "notes": "ANSWER KEY:\n\n1. B (Unsystematic risk)\n\n2. Destiny's assets were highly correlated‚Äîwhen tech crashed, everything crashed together. No protection. Jordan had stocks AND bonds‚Äîwhen stocks fell, bonds buffered the loss, preventing panic.\n\n4. Rebalancing forces selling assets that have risen (high prices) and buying those that have fallen (low prices). It feels wrong because we want to \"let winners run\" and avoid \"throwing money at losers.\" But mechanically, it enforces discipline.\n\n"
     },
     {
       "number": 18,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Key Takeaways",
         "layout": "takeaway-grid",
@@ -537,14 +541,14 @@
     {
       "number": 19,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Student Activity",
         "layout": "activity-layout",
         "layoutData": {
           "main": {
-            "icon": "\ud83d",
-            "title": "\udcca Portfolio Diversification Builder",
+            "icon": "Ì†Ω",
+            "title": "Ì≥ä Portfolio Diversification Builder",
             "description": "Using the interactive tool, you'll construct portfolios for investors at different life stages and see how diversification affects risk and returns through simulated market cycles. Compare a diversified approach vs. a concentrated approach and observe the difference in maximum losses and final wealth."
           },
           "steps": [

@@ -2,7 +2,7 @@
   "metadata": {
     "lChapter": "L-12",
     "title": "Choosing Financial Providers",
-    "subtitle": "Evaluating Costs, Benefits, and Services in {{STATE_NAME}}",
+    "subtitle": "Evaluating Costs, Benefits, and Services",
     "totalSlides": 20,
     "hasStateVariables": true,
     "stateVariablesUsed": [
@@ -16,21 +16,22 @@
       "content": {
         "title": "Choosing Financial Providers",
         "titleSize": "large",
-        "subtitle": "Evaluating Costs, Benefits, and Services in {{STATE_NAME}}"
+        "subtitle": "Evaluating Costs, Benefits, and Services"
       }
     },
     {
       "number": 2,
       "type": "hook",
       "content": {
-        "label": "Essential Question in {{STATE_NAME}}",
-        "question": "How do you <em>compare and choose</em> between<br>the many financial institutions available—<br>and what factors matter most for <em>your situation</em>? in {{STATE_NAME}}"
-      }
+        "label": "The Challenge",
+        "question": "How do you <em>compare and choose</em> between<br>the many financial institutions available\u2014<br>and what factors matter most for <em>your situation</em>?"
+      },
+      "headerColor": "amber"
     },
     {
       "number": 3,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Learning Objectives",
         "layout": "objectives-expanded",
@@ -63,19 +64,19 @@
     {
       "number": 4,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "APY in {{STATE_NAME}}",
-              "definition": "Annual Percentage Yield—the effective annual rate of return on savings accounts, including compound interest.",
+              "term": "APY",
+              "definition": "Annual Percentage Yield\u2014the effective annual rate of return on savings accounts, including compound interest.",
               "example": "A 4.5% APY means $1,000 grows to $1,045 after one year"
             },
             {
-              "term": "AccountFees in {{STATE_NAME}}",
+              "term": "AccountFees",
               "definition": "Regular charges for maintaining an account, including monthly fees, overdraft fees, ATM fees, and minimum balance fees.",
               "example": "Monthly maintenance ($5-15), overdraft ($35), out-of-network ATM ($3)"
             }
@@ -86,19 +87,19 @@
     {
       "number": 5,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
-        "headerTitle": "Key Terms",
+        "headerTitle": "Core Concepts",
         "layout": "vocab-container",
         "layoutData": {
           "terms": [
             {
-              "term": "Online Bank in {{STATE_NAME}}",
+              "term": "Online Bank",
               "definition": "A digital-only bank with no physical branches, relying on technology for all transactions and support.",
               "example": "Higher interest rates, lower fees, 24/7 access, convenient mobile apps"
             },
             {
-              "term": "Robo-Advisor in {{STATE_NAME}}",
+              "term": "Robo-Advisor",
               "definition": "A digital platform that provides automated, algorithm-driven investment management services with minimal human intervention.",
               "example": "Low fees (0.25-0.5%) vs. traditional advisors (1%+)"
             }
@@ -109,7 +110,7 @@
     {
       "number": 6,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Types of Financial Service Providers",
         "layout": "balanced-layout",
@@ -127,13 +128,13 @@
           "rightPanel": {
             "stats": [
               {
-                "value": "4.5% in {{STATE_NAME}}",
-                "label": "Top Online Bank APY in {{STATE_NAME}}",
+                "value": "4.5%",
+                "label": "Top Online Bank APY",
                 "color": "teal"
               },
               {
-                "value": "0.01% in {{STATE_NAME}}",
-                "label": "Typical Traditional Bank APY in {{STATE_NAME}}",
+                "value": "0.01%",
+                "label": "Typical Traditional Bank APY",
                 "color": "purple"
               }
             ],
@@ -154,7 +155,7 @@
     {
       "number": 7,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Key Consideration: Fees & Costs",
         "layout": "balanced-layout",
@@ -175,13 +176,13 @@
           "rightPanel": {
             "stats": [
               {
-                "value": "$35 in {{STATE_NAME}}",
-                "label": "Average Overdraft Fee in {{STATE_NAME}}",
+                "value": "$35",
+                "label": "Average Overdraft Fee",
                 "color": "rose"
               },
               {
-                "value": "$180+ in {{STATE_NAME}}",
-                "label": "Annual Bank Fees (avg) in {{STATE_NAME}}",
+                "value": "$180+",
+                "label": "Annual Bank Fees (avg)",
                 "color": "teal"
               }
             ],
@@ -202,7 +203,7 @@
     {
       "number": 8,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Key Consideration: Interest Rates",
         "layout": "comparison-grid",
@@ -235,7 +236,7 @@
     {
       "number": 9,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Key Consideration: Access & Services",
         "layout": "concept-full",
@@ -258,7 +259,7 @@
     {
       "number": 10,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Key Consideration: Security",
         "layout": "balanced-layout",
@@ -277,13 +278,13 @@
           "rightPanel": {
             "stats": [
               {
-                "value": "$250K in {{STATE_NAME}}",
-                "label": "FDIC/NCUA Insurance Limit in {{STATE_NAME}}",
+                "value": "$250K",
+                "label": "FDIC/NCUA Insurance Limit",
                 "color": "green"
               },
               {
-                "value": "$500K in {{STATE_NAME}}",
-                "label": "SIPC Protection Limit in {{STATE_NAME}}",
+                "value": "$500K",
+                "label": "SIPC Protection Limit",
                 "color": "purple"
               }
             ],
@@ -304,7 +305,7 @@
     {
       "number": 11,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Why Your Choice Matters",
         "layout": "concept-full",
@@ -327,7 +328,7 @@
     {
       "number": 12,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Matching Provider to Your Needs",
         "layout": "balanced-layout",
@@ -345,13 +346,13 @@
           "rightPanel": {
             "stats": [
               {
-                "value": "0.25% in {{STATE_NAME}}",
-                "label": "Robo-Advisor Fee in {{STATE_NAME}}",
+                "value": "0.25%",
+                "label": "Robo-Advisor Fee",
                 "color": "teal"
               },
               {
-                "value": "1.2% in {{STATE_NAME}}",
-                "label": "Traditional Advisor Fee in {{STATE_NAME}}",
+                "value": "1.2%",
+                "label": "Traditional Advisor Fee",
                 "color": "rose"
               }
             ],
@@ -372,39 +373,39 @@
     {
       "number": 13,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Real-World Example",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "👩‍🎓 in {{STATE_NAME}}",
-            "name": "Sophia: First Bank Account Decision in {{STATE_NAME}}",
+            "icon": "\ud83d\udc69\u200d\ud83c\udf93",
+            "name": "Sophia: First Bank Account Decision",
             "paragraphs": [
               "Sophia is starting college and needs her first bank account. She's comparing two options:",
               "<span class=\"highlight-text\">Option A (Online Bank):</span> No monthly fees, no minimum balance, 1.5% APY on savings, excellent mobile app.",
               "<span class=\"highlight-text\">Option B (Local Credit Union):</span> Personalized service, local branches, 0.8% APY on savings, $5 monthly fee waived with $300 minimum.",
-              "Which should she choose? It depends on her priorities—higher interest and no fees vs. in-person service."
+              "Which should she choose? It depends on her priorities\u2014higher interest and no fees vs. in-person service."
             ]
           },
           "outcomes": [
             {
               "type": "after",
-              "label": "Online Bank APY in {{STATE_NAME}}",
-              "value": "1.5% in {{STATE_NAME}}",
-              "detail": "$150/year on $10K savings in {{STATE_NAME}}"
+              "label": "Online Bank APY",
+              "value": "1.5%",
+              "detail": "$150/year on $10K savings"
             },
             {
               "type": "before",
-              "label": "Credit Union APY in {{STATE_NAME}}",
-              "value": "0.8% in {{STATE_NAME}}",
-              "detail": "$80/year on $10K savings in {{STATE_NAME}}"
+              "label": "Credit Union APY",
+              "value": "0.8%",
+              "detail": "$80/year on $10K savings"
             },
             {
               "type": "after",
-              "label": "Annual Difference in {{STATE_NAME}}",
-              "value": "$70 in {{STATE_NAME}}",
-              "detail": "Online bank wins on rates in {{STATE_NAME}}"
+              "label": "Annual Difference",
+              "value": "$70",
+              "detail": "Online bank wins on rates"
             }
           ]
         }
@@ -413,14 +414,14 @@
     {
       "number": 14,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Real-World Example",
         "layout": "scenario-layout",
         "layoutData": {
           "scenario": {
-            "icon": "🚗 in {{STATE_NAME}}",
-            "name": "Ethan: Comparing Auto Loan Rates in {{STATE_NAME}}",
+            "icon": "\ud83d\ude97",
+            "name": "Ethan: Comparing Auto Loan Rates",
             "paragraphs": [
               "Ethan needs a <span class=\"highlight-text\">$15,000 auto loan for 5 years</span> and is comparing rates from three lenders:",
               "The credit union offers the best rate. How much would Ethan save by choosing the credit union over his current bank?"
@@ -429,21 +430,21 @@
           "outcomes": [
             {
               "type": "before",
-              "label": "Bank (4.5% APR) in {{STATE_NAME}}",
-              "value": "$1,786 in {{STATE_NAME}}",
-              "detail": "Total interest paid in {{STATE_NAME}}"
+              "label": "Bank (4.5% APR)",
+              "value": "$1,786",
+              "detail": "Total interest paid"
             },
             {
               "type": "after",
-              "label": "Credit Union (3.2%) in {{STATE_NAME}}",
-              "value": "$1,256 in {{STATE_NAME}}",
-              "detail": "Total interest paid in {{STATE_NAME}}"
+              "label": "Credit Union (3.2%)",
+              "value": "$1,256",
+              "detail": "Total interest paid"
             },
             {
               "type": "after",
-              "label": "Savings in {{STATE_NAME}}",
-              "value": "$530 in {{STATE_NAME}}",
-              "detail": "By shopping around! in {{STATE_NAME}}"
+              "label": "Savings",
+              "value": "$530",
+              "detail": "By shopping around!"
             }
           ]
         }
@@ -454,8 +455,8 @@
       "type": "discussion",
       "variant": "teal",
       "content": {
-        "badge": "Discussion in {{STATE_NAME}}",
-        "question": "Based on the examples of Sophia and Ethan, what factors do you think are most important when choosing a financial provider?<br><br>How might your priorities differ from theirs? in {{STATE_NAME}}"
+        "badge": "Discussion",
+        "question": "Based on the examples of Sophia and Ethan, what factors do you think are most important when choosing a financial provider?<br><br>How might your priorities differ from theirs?"
       }
     },
     {
@@ -463,16 +464,16 @@
       "type": "discussion",
       "variant": "purple",
       "content": {
-        "badge": "Personal Reflection in {{STATE_NAME}}",
-        "question": "What financial goals do you have that might influence your choice of financial service provider?<br><br>Which features—fees, rates, convenience, or services—matter most to you right now? in {{STATE_NAME}}"
+        "badge": "Personal Reflection",
+        "question": "What financial goals do you have that might influence your choice of financial service provider?<br><br>Which features\u2014fees, rates, convenience, or services\u2014matter most to you right now?"
       }
     },
     {
       "number": 17,
       "type": "content",
-      "headerColor": "purple",
+      "headerColor": "emerald",
       "content": {
-        "headerTitle": "Check for Understanding",
+        "headerTitle": "Check Your Understanding",
         "layout": "check-grid",
         "layoutData": {
           "questions": [
@@ -499,7 +500,7 @@
     {
       "number": 18,
       "type": "content",
-      "headerColor": "teal",
+      "headerColor": "indigo",
       "content": {
         "headerTitle": "Key Takeaways",
         "layout": "takeaway-grid",
@@ -518,7 +519,7 @@
             {
               "number": 3,
               "title": "Match Provider to Needs",
-              "description": "College students, savers, investors, and business owners have different needs—choose accordingly."
+              "description": "College students, savers, investors, and business owners have different needs\u2014choose accordingly."
             },
             {
               "number": 4,
@@ -532,7 +533,7 @@
     {
       "number": 19,
       "type": "content",
-      "headerColor": "blue",
+      "headerColor": "amber",
       "content": {
         "headerTitle": "Student Activity",
         "layout": "activity-layout",
@@ -556,9 +557,9 @@
       "number": 20,
       "type": "closing",
       "content": {
-        "tagline": "Building Financial Futures, One Lesson at a Time in {{STATE_NAME}}",
-        "website": "www.pflacademy.co in {{STATE_NAME}}",
-        "copyright": "© 2025 PFL Academy. All rights reserved. in {{STATE_NAME}}"
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "\u00a9 2025 PFL Academy. All rights reserved."
       }
     }
   ]

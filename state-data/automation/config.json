@@ -6,15 +6,20 @@
     "NM", "NY", "NC", "ND", "OH", "OK"
   ],
   "total_states": 36,
+  "variable_categories_file": "../VARIABLE_CATEGORIES.json",
   "update_schedules": {
     "monthly": {
       "enabled": true,
+      "description": "Gas prices, loan rates, unemployment",
+      "variable_count": 5,
       "day_of_month": 1,
       "time": "02:00",
       "timezone": "America/New_York"
     },
     "quarterly": {
       "enabled": true,
+      "description": "Housing costs, insurance, bank fees",
+      "variable_count": 11,
       "months": [1, 4, 7, 10],
       "day_of_month": 1,
       "time": "03:00",
@@ -22,10 +27,19 @@
     },
     "annual": {
       "enabled": true,
+      "description": "Taxes, tuition, DMV fees, URLs, agency names, local examples (includes former 'as-needed')",
+      "variable_count": 70,
       "month": 9,
       "day_of_month": 1,
       "time": "04:00",
       "timezone": "America/New_York"
+    }
+  },
+  "deprecated_schedules": {
+    "as_needed": {
+      "status": "MERGED INTO ANNUAL",
+      "date_deprecated": "2025-11-29",
+      "reason": "URLs and agency names rarely change; annual refresh sufficient"
     }
   },
   "data_versioning": {
