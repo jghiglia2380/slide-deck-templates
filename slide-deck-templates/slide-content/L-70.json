@@ -1,0 +1,554 @@
+{
+  "metadata": {
+    "lChapter": "L-70",
+    "title": "Factors of Production",
+    "subtitle": "The Building Blocks of Every Economy",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME",
+      "STATE_MIN_WAGE",
+      "STATE_COMMERCIAL_RENT",
+      "STATE_AVG_BUSINESS_LOAN_RATE"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Factors of Production",
+        "titleSize": "large",
+        "subtitle": "The Building Blocks of Every Economy"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "The Challenge",
+        "question": "Your $800 smartphone required resources from <em>over 30 countries</em>,<br>the labor of <em>thousands of workers</em>, and billions in factory equipment.<br><br>What ingredients make ANY product or service possible?"
+      },
+      "headerColor": "amber",
+      "notes": "<strong>Discussion Prompts:</strong><br>• Ask: \"What materials are in your phone?\" (Glass, metal, plastic, rare earth minerals)<br>• Ask: \"Who worked to create it?\" (Miners, factory workers, engineers, designers, truck drivers, retail workers)<br>• Reveal: Economists organize all these inputs into FOUR categories called the Factors of Production<br>• Connection: Understanding factors explains where YOUR income comes from (you provide factors to the economy)"
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Define",
+              "description": "Identify the four factors of production: land, labor, capital, and entrepreneurship."
+            },
+            {
+              "number": 2,
+              "verb": "Explain",
+              "description": "Understand how factor payments (rent, wages, interest, profit) compensate resource owners."
+            },
+            {
+              "number": 3,
+              "verb": "Analyze",
+              "description": "Examine how businesses in {{STATE_NAME}} combine factors to create economic value."
+            },
+            {
+              "number": 4,
+              "verb": "Apply",
+              "description": "Connect factors of production to your personal earning potential and financial decisions."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Land (Natural Resources)",
+              "definition": "All natural resources including physical space, minerals, water, forests, and the location where economic activity occurs.",
+              "example": "Office space for businesses, farmland, oil/minerals, ocean fishing rights, even the location of a food truck"
+            },
+            {
+              "term": "Labor (Human Effort)",
+              "definition": "All human work—physical and mental effort—used to produce goods and services.",
+              "example": "Factory workers, software engineers, teachers, nurses, cashiers, managers"
+            }
+          ]
+        }
+      },
+      "notes": "Emphasize that LAND includes both tangible (farmland, minerals) and intangible (location, airspace, fishing rights) natural resources. LABOR includes all human effort, both physical and mental. Key distinction: Labor is about human work, NOT about owning or risking capital."
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Capital (Tools & Equipment)",
+              "definition": "Manufactured goods used to produce other goods and services—NOT money! Physical productive assets.",
+              "example": "Computers, factory machinery, ovens in a bakery, delivery trucks, medical equipment"
+            },
+            {
+              "term": "Entrepreneurship (Innovation & Risk)",
+              "definition": "The vision, innovation, and risk-taking that combines all other factors to create value and new businesses.",
+              "example": "Steve Jobs creating Apple, local restaurant owner opening a business, taking financial risk to start a venture"
+            }
+          ]
+        }
+      },
+      "notes": "CRITICAL CLARIFICATION: Capital in economics means physical productive assets (machines, tools, buildings), NOT money. Money is used to BUY capital, but isn't capital itself. ENTREPRENEURSHIP is more than just having an idea—it's about taking financial risk and coordinating all factors. This is what distinguishes an entrepreneur from an employee."
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "emerald",
+      "content": {
+        "headerTitle": "Factor Payments: How Resources Get Paid",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The Payment System",
+            "paragraphs": [
+              "Every factor of production earns a specific type of payment. This is how <strong>all income in the economy</strong> is distributed.",
+              "Your financial future depends on understanding this—because YOUR income comes from providing one or more of these factors to the marketplace."
+            ],
+            "highlightBox": {
+              "icon": "💰",
+              "text": "All income traces back to providing one of the four factors to the economy."
+            }
+          },
+          "rightPanel": {
+            "infoCard": {
+              "title": "Factor → Payment",
+              "color": "emerald",
+              "items": [
+                "<strong>LAND</strong> → Rent (payment to landowners for use of space/resources)",
+                "<strong>LABOR</strong> → Wages/Salaries (payment to workers for their time and effort)",
+                "<strong>CAPITAL</strong> → Interest (payment to capital providers/lenders)",
+                "<strong>ENTREPRENEURSHIP</strong> → Profit (reward for risk-taking and innovation)"
+              ]
+            }
+          }
+        }
+      },
+      "notes": "This is THE KEY CONCEPT: Factor payments explain ALL income distribution in an economy. Emphasize: Students will initially earn wages (labor), can later earn interest (capital from savings/investments), and might eventually earn profit (entrepreneurship). Understanding this framework is essential for financial planning."
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Factor #1: Land (Natural Resources)",
+        "layout": "concept-full",
+        "layoutData": {
+          "icon": "🌍",
+          "paragraphs": [
+            "<strong>Land</strong> includes all natural resources: physical space, minerals, water, forests, oil, and even intangible resources like fishing rights or airspace.",
+            "The payment for using land is called <strong>RENT</strong>—paid by businesses to landowners or property owners for the right to use the space or resource.",
+            "In {{STATE_NAME}}, commercial rent varies widely by location. Downtown retail space might cost $3,000-$10,000+ per month, while industrial space in rural areas could cost under $1,000/month.",
+            "Why location matters: A coffee shop's success often depends more on LOCATION (land factor) than on the quality of its coffee. Prime locations command higher rent because they generate more revenue."
+          ],
+          "callout": {
+            "label": "Key Insight",
+            "text": "Land is 'fixed'—we can't create more downtown Manhattan or beachfront property. This scarcity drives up rent in desirable locations."
+          }
+        }
+      },
+      "notes": "Common student misconception: 'Land only means farms and empty space.' Clarify that LAND includes urban locations, commercial real estate, natural resources (oil, minerals), and even intangible rights (airspace, fishing rights, mineral rights). The key is: it's naturally occurring or physical space. Rent varies dramatically by location—use {{STATE_NAME}} examples to illustrate."
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Factor #2: Labor (Human Effort)",
+        "layout": "concept-full",
+        "layoutData": {
+          "icon": "👷",
+          "paragraphs": [
+            "<strong>Labor</strong> is all human work—both physical and mental effort—used to produce goods and services. This includes factory workers, software developers, teachers, managers, and entrepreneurs who work in their own businesses.",
+            "The payment for labor is <strong>WAGES or SALARIES</strong>. In {{STATE_NAME}}, the minimum wage is ${{STATE_MIN_WAGE}} per hour, but skilled labor can command much higher wages.",
+            "Your income depends on two things: (1) The <strong>quantity</strong> of labor you provide (hours worked), and (2) The <strong>quality</strong> of your labor (skills, education, experience).",
+            "<strong>Human capital</strong>—your education, skills, and training—determines your wage. A worker with a bachelor's degree earns ~67% more over a lifetime than a high school graduate."
+          ],
+          "callout": {
+            "label": "Your Financial Future",
+            "text": "Most people start by selling labor (working a job). Investing in education and skills = investing in your human capital = higher wages."
+          }
+        }
+      },
+      "notes": "Labor is the factor MOST students will provide initially. Emphasize: Your earning potential from labor depends on developing valuable skills (human capital). Use {{STATE_MIN_WAGE}} as the baseline, but show how specialized skills command higher wages (e.g., nurses earn ~$30-40/hr, software engineers earn $50-80/hr). Key message: Invest in your human capital NOW through education and training."
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "Factor #3: Capital (Tools & Equipment)",
+        "layout": "concept-full",
+        "layoutData": {
+          "icon": "🏭",
+          "paragraphs": [
+            "<strong>Capital</strong> (in economics) means manufactured goods used to produce other goods—machinery, computers, tools, buildings, vehicles. It does NOT mean money!",
+            "The payment for providing capital is <strong>INTEREST</strong>—paid to those who lend money to buy capital equipment, or to investors who finance capital purchases.",
+            "Businesses need capital to increase productivity. A bakery needs ovens, a construction company needs equipment, a tech startup needs computers. These capital investments often require loans.",
+            "In {{STATE_NAME}}, average business loan rates are around {{STATE_AVG_BUSINESS_LOAN_RATE}}% APR. A $100,000 equipment loan at 7% costs $700/month in interest—that's the capital payment."
+          ],
+          "callout": {
+            "label": "Common Confusion",
+            "text": "Money is NOT capital in economics! Capital = physical productive assets (machines, tools). Money is used to BUY capital."
+          }
+        }
+      },
+      "notes": "THIS IS WHERE STUDENTS GET CONFUSED. Repeat: Capital ≠ Money. Capital = physical productive goods (machines, equipment, tools, buildings). Money is FINANCIAL capital, but in economics, 'capital' specifically means physical productive assets. Interest is the payment to those who FINANCE capital (lenders, investors), not to the capital itself. Use tangible examples: A delivery truck is capital. A factory robot is capital. Cash in a bank account is NOT capital (it's a financial asset)."
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "emerald",
+      "content": {
+        "headerTitle": "Factor #4: Entrepreneurship (Innovation & Risk)",
+        "layout": "concept-full",
+        "layoutData": {
+          "icon": "💡",
+          "paragraphs": [
+            "<strong>Entrepreneurship</strong> is the vision, innovation, and risk-taking that combines all other factors to create value. Entrepreneurs coordinate land, labor, and capital to produce goods and services.",
+            "The payment for entrepreneurship is <strong>PROFIT</strong>—what's left after paying all other factor costs (rent, wages, interest). Importantly, profit is NOT guaranteed. Entrepreneurs can lose money.",
+            "Why does entrepreneurship deserve profit? Because entrepreneurs: (1) Take financial RISK (might lose their investment), (2) Coordinate all other factors efficiently, (3) Innovate to create new value.",
+            "Profit = Revenue - (Rent + Wages + Interest + Other Costs). If a business earns $50,000/month but costs $48,000 to operate, the entrepreneur's profit is $2,000/month."
+          ],
+          "callout": {
+            "label": "The Risk-Reward Connection",
+            "text": "Entrepreneurs earn profit when they succeed, but lose money when they fail. This risk-taking is what justifies profit as a factor payment."
+          }
+        }
+      },
+      "notes": "Entrepreneurship is the most misunderstood factor. Key points: (1) Profit is NOT guaranteed—it's the RESIDUAL after all other payments. (2) Entrepreneurs earn profit for bearing RISK, not just for 'having an idea.' (3) Entrepreneurship is about COORDINATION and INNOVATION, not just working hard. Example: A restaurant owner who works 80 hrs/week earns wages for their labor AND profit (or loss) for their entrepreneurial risk."
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "All Factors Working Together",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Example: Coffee Shop in {{STATE_NAME}}",
+            "content": "<strong>LAND:</strong> Downtown retail space ($3,000/month rent)<br><br><strong>LABOR:</strong> 5 baristas ($12,000/month wages)<br><br><strong>CAPITAL:</strong> Espresso machines, ovens, furniture ($50,000 investment → $400/month interest)<br><br><strong>ENTREPRENEURSHIP:</strong> Owner's vision + risk ($6,600/month profit if successful)"
+          },
+          "rightPanel": {
+            "title": "The Math",
+            "content": "<strong>Monthly Revenue:</strong> $30,000<br><strong>Factor Costs:</strong><br>• Rent (Land): $3,000<br>• Wages (Labor): $12,000<br>• Interest (Capital): $400<br>• Other Costs: $8,000<br><strong>Total Costs: $23,400</strong><br><br><strong>Profit (Entrepreneurship): $6,600</strong><br>(Revenue - Total Costs)"
+          }
+        }
+      },
+      "notes": "This slide shows how ALL FOUR factors work together in a real business. Walk through the math: Revenue ($30,000) minus all factor payments and costs ($23,400) = Profit ($6,600). Emphasize: The entrepreneur only earns profit if revenue exceeds costs. If the coffee shop only earns $20,000/month, the entrepreneur LOSES $3,400/month. Profit is the reward for risk."
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Factor Intensity: Different Industries, Different Mixes",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Industries Vary in Factor Use",
+            "paragraphs": [
+              "Different industries rely on different factors more heavily. This is called <strong>factor intensity</strong>.",
+              "Understanding factor intensity helps you see why some businesses have high overhead (capital-intensive) while others have low fixed costs (labor-intensive)."
+            ],
+            "highlightBox": {
+              "icon": "📊",
+              "text": "Factor intensity affects profitability, risk, and scalability of businesses."
+            }
+          },
+          "rightPanel": {
+            "infoCard": {
+              "title": "Factor Intensity Examples",
+              "color": "amber",
+              "items": [
+                "<strong>Tech Startup:</strong> LABOR-intensive (high wages for skilled workers)",
+                "<strong>Family Farm:</strong> LAND + CAPITAL-intensive (expensive land and equipment)",
+                "<strong>Retail Store:</strong> LAND + LABOR-intensive (prime location + employees)",
+                "<strong>Manufacturing:</strong> CAPITAL-intensive (expensive machinery and facilities)"
+              ]
+            }
+          }
+        }
+      },
+      "notes": "Factor intensity explains why different industries have different cost structures and profit margins. Tech startups can scale with low capital (just need laptops and servers), but farms need huge capital investments (tractors, land). Ask students: 'Why can a software company operate from a garage but a farm can't?' (Factor intensity—software is labor-intensive, farming is land/capital-intensive.)"
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "blue",
+      "content": {
+        "headerTitle": "Your Income = Your Factor Contribution",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "How YOU Earn Money",
+            "paragraphs": [
+              "Your income comes from providing factors of production to the economy. Understanding this is the key to financial planning.",
+              "<strong>Now:</strong> You likely provide LABOR (part-time job, future career).",
+              "<strong>Later:</strong> You'll provide CAPITAL (savings → investments → interest/dividends).",
+              "<strong>Maybe someday:</strong> You'll provide ENTREPRENEURSHIP (start a business → earn profit)."
+            ]
+          },
+          "rightPanel": {
+            "infoCard": {
+              "title": "Build Your Factor Portfolio",
+              "color": "blue",
+              "items": [
+                "<strong>Develop human capital:</strong> Education, skills, training → Higher wages",
+                "<strong>Save and invest:</strong> Build capital → Earn interest and dividends",
+                "<strong>Take smart risks:</strong> Entrepreneurship → Potential for profit",
+                "<strong>Strategic goal:</strong> Provide multiple factors = diversified income"
+              ]
+            }
+          }
+        }
+      },
+      "notes": "This connects factors to students' PERSONAL financial futures. Most students start by providing LABOR (working a job). Over time, they can build CAPITAL (savings/investments) to earn interest. Eventually, some will provide ENTREPRENEURSHIP (start businesses) to earn profit. Key message: Your income depends on WHICH factors you provide and HOW VALUABLE they are. Invest in human capital (education) to earn higher wages."
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "emerald",
+      "content": {
+        "headerTitle": "Real-World Application: Tech Startup vs. Family Farm",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "💻",
+            "title": "Tech Startup",
+            "items": [
+              "Land: Low importance (small office or remote)",
+              "Labor: HIGH importance (skilled engineers at $25,000/month)",
+              "Capital: Moderate (computers, servers at $20,000)",
+              "Entrepreneurship: HIGH (innovation and vision critical)",
+              "Factor Intensity: LABOR + ENTREPRENEURSHIP",
+              "Scalability: HIGH (software scales easily)"
+            ]
+          },
+          "rightColumn": {
+            "icon": "🌾",
+            "title": "Family Farm",
+            "items": [
+              "Land: HIGH importance (200 acres at $3,500/month)",
+              "Labor: Moderate (3 workers at $8,000/month)",
+              "Capital: HIGH (tractors, equipment at $150,000)",
+              "Entrepreneurship: HIGH risk (crop failure, market prices)",
+              "Factor Intensity: LAND + CAPITAL",
+              "Scalability: LOW (limited by land and capital)"
+            ]
+          }
+        }
+      },
+      "notes": "This comparison shows why different businesses have different economics. Tech scales easily (add more servers, hire more developers) while farms are constrained by land and capital. Ask: 'Why are tech billionaires more common than farm billionaires?' (Scalability—software can serve millions with low marginal cost; farms are limited by physical land/capital.) This illustrates how factor intensity affects business potential."
+    },
+    {
+      "number": 15,
+      "type": "content",
+      "headerColor": "purple",
+      "content": {
+        "headerTitle": "{{STATE_NAME}} Business Landscape",
+        "layout": "concept-full",
+        "layoutData": {
+          "icon": "🏢",
+          "paragraphs": [
+            "{{STATE_NAME}}'s economy is shaped by its unique combination of factors: natural resources, workforce characteristics, capital infrastructure, and entrepreneurial culture.",
+            "Understanding local factor availability helps explain which industries thrive in {{STATE_NAME}} and where economic opportunities exist.",
+            "<strong>Local Context Matters:</strong> A business that succeeds in {{STATE_NAME}} might fail elsewhere due to different factor costs, availability, or market conditions.",
+            "When choosing where to live or start a business, analyze the local factor market: What's the cost of commercial rent? What's the labor market like? What natural resources or advantages does the area have?"
+          ],
+          "callout": {
+            "label": "Apply to Your Life",
+            "text": "Factor costs in {{STATE_NAME}} (rent, wages, capital costs) directly affect your cost of living and earning potential."
+          }
+        }
+      },
+      "notes": "Localize this discussion to {{STATE_NAME}}'s specific economic context. Examples: California = tech labor and entrepreneurship; Texas = land (oil) and capital (energy infrastructure); Iowa = land (agriculture) and capital (food processing); Florida = land (tourism) and labor (service industry). Ask students: 'What factors give {{STATE_NAME}} an economic advantage?' and 'What industries thrive here because of our factor mix?'"
+    },
+    {
+      "number": 16,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Skill Builder: Factor Analysis Tool",
+        "layout": "skill-builder-intro",
+        "layoutData": {
+          "title": "Analyze Real Businesses Using the Four Factors",
+          "description": "You'll use the Factor Analysis Tool to dissect how businesses combine land, labor, capital, and entrepreneurship—then calculate their profitability.",
+          "objectives": [
+            "Identify all four factors in a real business context",
+            "Calculate factor payments (rent, wages, interest) and total costs",
+            "Determine the entrepreneur's profit (or loss)",
+            "Analyze factor intensity and business efficiency"
+          ],
+          "skills": [
+            "Factor identification and classification",
+            "Financial calculation and analysis",
+            "Understanding profit as residual income",
+            "Evaluating business models and factor efficiency"
+          ],
+          "time": "15 minutes",
+          "format": "Interactive digital tool with preset business scenarios (coffee shop, tech startup, farm, construction company)"
+        }
+      },
+      "notes": "The Factor Analysis Tool lets students input real business data and calculate profitability. Students choose a business type, input factor costs (rent, wages, interest, other costs) and revenue, then calculate profit. The tool visualizes factor breakdown with a pie chart and assesses profitability. Use this to reinforce: (1) All four factors are needed, (2) Profit = Revenue - Costs, (3) Factor intensity varies by industry. This is hands-on application of concepts."
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "red",
+      "content": {
+        "headerTitle": "Common Misconceptions",
+        "layout": "misconceptions-table",
+        "layoutData": {
+          "misconceptions": [
+            {
+              "misconception": "\"Money is a factor of production.\"",
+              "clarification": "Money is NOT a factor of production. Money is used to BUY factors (you pay wages with money, buy equipment with money), but money itself doesn't produce goods or services. Capital means physical productive assets (machines, tools), not cash."
+            },
+            {
+              "misconception": "\"Entrepreneurs just need a good idea to succeed.\"",
+              "clarification": "Ideas are worthless without EXECUTION. Entrepreneurship requires: (1) Coordinating all four factors efficiently, (2) Taking financial RISK (your own money or borrowed money), (3) Innovating and adapting to market feedback. Most startups with 'good ideas' fail due to poor execution or insufficient risk management."
+            },
+            {
+              "misconception": "\"Profit is guaranteed if you work hard.\"",
+              "clarification": "Profit is NOT guaranteed—it's what's LEFT after paying all other factors. A business can work extremely hard but still lose money if revenue doesn't cover costs. Profit is the REWARD for bearing risk and creating value—but risk means you might also lose money."
+            },
+            {
+              "misconception": "\"Workers and entrepreneurs do the same thing.\"",
+              "clarification": "Workers provide LABOR (human effort) and earn WAGES. Entrepreneurs coordinate factors, bear RISK, and earn PROFIT (or loss). An entrepreneur can also work in their own business (earning both wages for labor AND profit for risk), but the roles are distinct. The key difference: workers earn wages regardless of profit; entrepreneurs only earn profit if the business succeeds."
+            }
+          ]
+        }
+      },
+      "notes": "Address these misconceptions directly. The biggest confusion: Money ≠ Capital. Use this check: 'Does it physically help produce goods/services? If yes, it's capital. If it's just a medium of exchange, it's money (financial capital), not economic capital.' Second biggest: Entrepreneurship ≠ Just working hard. Emphasize RISK and COORDINATION as the defining features of entrepreneurship."
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Factor Markets: Where Factors Are Bought and Sold",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Factors Have Markets Too",
+            "paragraphs": [
+              "Just like there are markets for products (smartphones, coffee), there are markets for FACTORS OF PRODUCTION.",
+              "Businesses DEMAND factors (they need land, labor, capital). Resource owners SUPPLY factors (workers supply labor, landlords supply land). Prices (rent, wages, interest) are determined by supply and demand.",
+              "Your wage is determined by the LABOR MARKET. If your skills are scarce and valuable, you can command higher wages."
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "Improving your skills = Increasing the value of your labor = Higher wages in the labor market."
+            }
+          },
+          "rightPanel": {
+            "infoCard": {
+              "title": "Factor Markets in Action",
+              "color": "amber",
+              "items": [
+                "<strong>Labor Market:</strong> Workers supply labor, businesses demand workers, wages adjust based on supply/demand",
+                "<strong>Land Market:</strong> Landowners supply space, businesses demand locations, rent reflects scarcity",
+                "<strong>Capital Market:</strong> Savers supply funds, businesses demand capital financing, interest rates balance supply/demand",
+                "<strong>Entrepreneurship:</strong> No formal market—entrepreneurs self-select based on risk tolerance and opportunity recognition"
+              ]
+            }
+          }
+        }
+      },
+      "notes": "This introduces the concept of FACTOR MARKETS, which students will explore in later chapters on supply and demand. Key insight: Your wage isn't arbitrary—it's determined by supply (how many people have your skills) and demand (how much businesses need those skills). Scarce skills (e.g., software engineering, nursing) command higher wages. This explains wage inequality and motivates skill development."
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Assessment: Factors of Production Mastery",
+        "layout": "assessment",
+        "layoutData": {
+          "instructions": "Answer the following questions to demonstrate your understanding of factors of production.",
+          "questions": [
+            {
+              "number": 1,
+              "question": "Name the four factors of production and their corresponding payments.",
+              "type": "short-answer",
+              "points": 4
+            },
+            {
+              "number": 2,
+              "question": "A local bakery pays $2,500/month rent, $15,000/month in wages, $500/month in equipment loan interest, and earns $25,000/month in revenue. Other costs are $4,000/month. Calculate the entrepreneur's monthly profit.",
+              "type": "calculation",
+              "points": 3
+            },
+            {
+              "number": 3,
+              "question": "Explain why profit is NOT guaranteed for entrepreneurs, but wages ARE guaranteed for workers.",
+              "type": "short-answer",
+              "points": 3
+            },
+            {
+              "number": 4,
+              "question": "True or False: Money is a factor of production in economics. Explain your answer.",
+              "type": "true-false-explain",
+              "points": 2
+            },
+            {
+              "number": 5,
+              "question": "Choose a {{STATE_NAME}} business you know. Identify one example of each of the four factors that business uses.",
+              "type": "application",
+              "points": 4
+            }
+          ]
+        }
+      },
+      "notes": "<strong>Answer Key:</strong><br><br><strong>Question 1:</strong> (1) Land → Rent, (2) Labor → Wages/Salaries, (3) Capital → Interest, (4) Entrepreneurship → Profit. (4 points, 1 per factor-payment pair)<br><br><strong>Question 2:</strong> Revenue ($25,000) - Rent ($2,500) - Wages ($15,000) - Interest ($500) - Other Costs ($4,000) = Profit of $3,000/month. (3 points: 1 for correct formula, 1 for correct calculation, 1 for correct answer)<br><br><strong>Question 3:</strong> Profit is what's LEFT after paying all costs—if revenue doesn't cover costs, there's no profit (entrepreneur might lose money). Workers are paid wages BEFORE profit is calculated, so they get paid even if the business doesn't make profit. (3 points: mention profit is residual, wages are fixed payment, risk difference)<br><br><strong>Question 4:</strong> FALSE. Money is NOT a factor of production in economics. Money is used to BUY factors, but doesn't physically produce goods/services. Capital in economics means physical productive assets (machines, tools), not cash. (2 points: 1 for False, 1 for explanation)<br><br><strong>Question 5:</strong> Answers will vary. Example for a {{STATE_NAME}} restaurant: Land = building location, Labor = chefs and servers, Capital = ovens and kitchen equipment, Entrepreneurship = owner's vision and risk of opening the restaurant. (4 points: 1 per factor correctly identified)"
+    },
+    {
+      "number": 20,
+      "type": "content",
+      "headerColor": "emerald",
+      "content": {
+        "headerTitle": "Takeaways: Build Your Factor Portfolio",
+        "layout": "concept-full",
+        "layoutData": {
+          "icon": "🎯",
+          "paragraphs": [
+            "<strong>1. Your income comes from providing factors to the economy.</strong> Right now, you primarily provide LABOR. Over time, you can provide CAPITAL (through savings and investments) and possibly ENTREPRENEURSHIP (by starting a business).",
+            "<strong>2. Invest in your human capital.</strong> Education, skills, and training increase the value of your labor—which means higher wages. A bachelor's degree increases lifetime earnings by ~67% compared to high school alone.",
+            "<strong>3. Understand risk and reward.</strong> Entrepreneurs earn profit for bearing risk. Workers earn wages for their effort. Both are essential—choose the path that aligns with your risk tolerance and goals.",
+            "<strong>4. All businesses need all four factors.</strong> You can't succeed with just one or two. Efficient businesses combine factors strategically, minimize waste, and maximize productivity.",
+            "<strong>5. Factor costs in {{STATE_NAME}} affect your financial life.</strong> Commercial rent, wages, capital costs, and entrepreneurial opportunities vary by location. Choose where to live and work based on factor market conditions."
+          ],
+          "callout": {
+            "label": "Your Financial Action Plan",
+            "text": "Develop valuable labor skills, save to build capital, and consider entrepreneurship if you're willing to take smart risks."
+          }
+        }
+      },
+      "notes": "End with actionable takeaways. Students should leave understanding: (1) Their income comes from factors they provide, (2) They can increase income by improving the factors they control (human capital, savings, entrepreneurial skills), (3) Factor markets determine their earning potential. Preview Day 2: 'Tomorrow, you'll use the Factor Analysis Tool to dissect real {{STATE_NAME}} businesses, calculate profitability, and even design your own business using all four factors.'"
+    }
+  ]
+}
