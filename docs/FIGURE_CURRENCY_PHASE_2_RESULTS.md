@@ -121,10 +121,11 @@ Applied to all 36 files:
     `calculated_values.property_tax_300k` is unreliable — OK's stale copy had 363, off by ~7×). Per
     guardrail, not invented. **STOP-FLAG:** supply 34 authoritative effective property-tax rates (list below).
 
-**34 states needing an authoritative `property_tax_effective_rate`:** alabama, california, colorado,
+**States needing an authoritative `property_tax_effective_rate`** — originally 34; North Carolina resolved
+in Run 2b (0.66), leaving **33 open:** alabama, california, colorado,
 connecticut, delaware, florida, georgia, illinois, indiana, iowa, kansas, louisiana, maine, maryland,
 michigan, minnesota, mississippi, missouri, nebraska, new-hampshire, new-jersey, new-york,
-north-carolina, ohio, oregon, pennsylvania, rhode-island, south-carolina, tennessee, texas, utah,
+ohio, oregon, pennsylvania, rhode-island, south-carolina, tennessee, texas, utah,
 virginia, west-virginia, wisconsin.
 
 ### 6 dangling tokens — backing CONFIRMED
@@ -156,7 +157,7 @@ None missing. (The resolver-map wiring of these tokens is a Phase-3 code edit, o
 
 1. **2026 SALT cap** — **blocks live PR merge** (in compute path). → RESOLVED Run 2b.
 2. **2026 SS wage base** (→ derives SS employee max + p286 figure). → RESOLVED Run 2b.
-3. **34 states' `property_tax_effective_rate`** (list above). → STILL OPEN (Denis's Tax Foundation batch).
+3. **33 states' `property_tax_effective_rate`** (list above; NC resolved Run 2b). → STILL OPEN (Denis's Tax Foundation batch).
 4. **Confirm Kentucky 3.5% / 0.74** (unverified working-tree provenance). → CONFIRMED Run 2b.
 5. **Confirm North Carolina 2026 income rate** (4.75% looks stale). → RESOLVED Run 2b (3.99%).
 6. HSA 2026 limits; additional-Medicare rate + threshold. → RESOLVED Run 2b.
@@ -181,7 +182,7 @@ All values below were supplied as authoritative in the Run-2b request; none inve
 - **Kentucky:** 3.5 / 0.74 **confirmed** (HB 1 + Tax Foundation), values unchanged; source note added.
 
 ### Still open (do NOT invent)
-- The **34 null `property_tax_effective_rate`** fields — batch-pulled from the Tax Foundation owner-occupied effective-property-tax table (Denis's task).
+- The **33 null `property_tax_effective_rate`** fields (34 originally, minus NC resolved here) — batch-pulled from the Tax Foundation owner-occupied effective-property-tax table (Denis's task).
 
 ### Undergrad loan rate — verification (asked)
 `student_loan_rates.undergrad_direct_2026_27 = 6.52` **is the current 2026-27 rate**, for undergrad Direct
