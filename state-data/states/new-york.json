@@ -2,6 +2,7 @@
   "state_name": "New York",
   "state_code": "NY",
   "last_updated": "2025-11-21",
+  "data_as_of": "2025-11",
   "data_sources": {
     "dmv_url": "https://dmv.ny.gov",
     "tax_authority_url": "https://www.tax.ny.gov",
@@ -44,6 +45,8 @@
     "property_tax_county_rate": 0.50,
     "property_tax_school_rate": 1.20,
     "property_tax_special_rate": 0.30,
+    "property_tax_effective_rate": null,
+    "property_tax_effective_rate_todo": "TODO: no authoritative 2026 in-repo source; STOP-flagged for Seb/Denis. Do not invent.",
     "property_tax_city_range": "1.50 - 3.00%",
     "property_tax_examples": [
       {"location": "New York City", "millage": 10.69, "description": "Complex multi-class system"},

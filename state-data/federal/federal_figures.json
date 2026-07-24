@@ -1,0 +1,124 @@
+{
+  "_description": "Canonical single-source federal (national) tax & finance figures for PFL Academy. Every surface (live app, free PDFs, print pipeline) should READ from this file rather than holding its own hardcoded copy. Created Phase 2 of the figure-currency wiring work.",
+  "tax_year": 2026,
+  "data_as_of": "2026-07",
+  "_authoritative_sources": {
+    "irs_rev_proc_2025_32": "IRS Revenue Procedure 2025-32 (Section 3.01 Tax Rate Tables; 3.14 Standard Deduction; 3(3) Additional Standard Deduction) via gate/fixtures/tax_brackets_2026.json",
+    "tax_currency_handoff": "pfl-print-pipeline/docs/TAX_CURRENCY_2026_HANDOFF.md (2026-07-24)",
+    "calculated_variables_spec": "pfl-print-pipeline/resolver/resolve.mjs + CALCULATED_VARIABLES_FOR_SEBASTIAN.md (FICA composite rate)",
+    "federal_student_aid": "Federal Student Aid, undergrad Direct loans first disbursed 2026-07-01 through 2027-06-30"
+  },
+  "_todo_stop_flagged": [
+    {
+      "field": "salt_deduction_cap.cap_2026",
+      "reason": "2026 SALT cap value is NOT in tax_brackets_2026.json or TAX_CURRENCY_2026_HANDOFF.md. Do not guess. Awaiting Seb/Denis to supply the authoritative 2026 figure.",
+      "blocks_live_pr_merge": true,
+      "note": "SALT cap IS read in the live compute path: Sync-90/src/lib/taxCalculations.ts calculateItemizedDeductions() uses Math.min(stateTaxes, saltCap) with saltCap hardcoded 10000 (present in all 6 taxCalculations.ts copies). The hardcoded 10000 is the pre-2026 TCJA value; a 2026 change (if any) would silently produce wrong itemized-vs-standard decisions. This missing figure BLOCKS the live PR merge."
+    },
+    {
+      "field": "payroll_taxes.social_security_wage_base",
+      "reason": "2026 SS wage base is NOT published in any in-repo source. TAX_CURRENCY_2026_HANDOFF.md explicitly states 'there is no committed fixture for the 2026 SS wage base' and instructs a human to set it. Do not invent. Awaiting Seb/Denis.",
+      "blocks_live_pr_merge": false,
+      "note": "Needed to derive social_security_employee_max = wage_base * 0.062 and to recompute the p286 SS max in LChapters.ts (currently year-relabelled 2026 but still the 2024 dollar figure)."
+    },
+    {
+      "field": "payroll_taxes.social_security_employee_max",
+      "reason": "Derived value = social_security_wage_base * 0.062. Blocked on social_security_wage_base above.",
+      "blocks_live_pr_merge": false
+    },
+    {
+      "field": "hsa_contribution_limits.self_only / .family / .catchup_55",
+      "reason": "2026 HSA contribution limits are NOT in tax_brackets_2026.json or the handoff. Do not guess. Awaiting Seb/Denis.",
+      "blocks_live_pr_merge": false
+    },
+    {
+      "field": "payroll_taxes.additional_medicare_rate / .additional_medicare_threshold",
+      "reason": "Additional-Medicare rate and its wage thresholds are not present in any named authoritative in-repo source (fixture or handoff). Per guardrail, not carrying a memorized statutory value. Awaiting Seb/Denis to confirm/supply.",
+      "blocks_live_pr_merge": false
+    }
+  ],
+  "standard_deduction": {
+    "single": 16100,
+    "mfj": 32200,
+    "hoh": 24150,
+    "mfs": 16100,
+    "_source": "irs_rev_proc_2025_32 §3.14"
+  },
+  "additional_standard_deduction": {
+    "married_aged_or_blind": 1650,
+    "unmarried_aged_or_blind": 2050,
+    "_source": "irs_rev_proc_2025_32 §3(3)"
+  },
+  "income_tax_brackets": {
+    "_note": "Ceilings are the top of each rate band (taxable income). 37% applies above the 35% ceiling.",
+    "_source": "irs_rev_proc_2025_32 §3.01 (confirmed against handoff; 12% single ceiling = 50400 and 22% = 105700 per IRS, not the 49840/106250 some secondary sources published)",
+    "single": [
+      { "rate": 10, "up_to": 12400 },
+      { "rate": 12, "up_to": 50400 },
+      { "rate": 22, "up_to": 105700 },
+      { "rate": 24, "up_to": 201775 },
+      { "rate": 32, "up_to": 256225 },
+      { "rate": 35, "up_to": 640600 },
+      { "rate": 37, "up_to": null }
+    ],
+    "mfj": [
+      { "rate": 10, "up_to": 24800 },
+      { "rate": 12, "up_to": 100800 },
+      { "rate": 22, "up_to": 211400 },
+      { "rate": 24, "up_to": 403550 },
+      { "rate": 32, "up_to": 512450 },
+      { "rate": 35, "up_to": 768700 },
+      { "rate": 37, "up_to": null }
+    ],
+    "hoh": [
+      { "rate": 10, "up_to": 17700 },
+      { "rate": 12, "up_to": 67450 },
+      { "rate": 22, "up_to": 105700 },
+      { "rate": 24, "up_to": 201750 },
+      { "rate": 32, "up_to": 256200 },
+      { "rate": 35, "up_to": 640600 },
+      { "rate": 37, "up_to": null }
+    ]
+  },
+  "filing_thresholds": {
+    "_source": "tax_currency_handoff (2026 reference values table)",
+    "single_under_65": 16100,
+    "single_65_plus": 18150,
+    "hoh_under_65": 24150,
+    "hoh_65_plus": 26200,
+    "mfj_under_65": 32200,
+    "mfj_one_65_plus": 33850,
+    "mfj_both_65_plus": 35500,
+    "mfs": 5
+  },
+  "payroll_taxes": {
+    "fica_total_rate": 7.65,
+    "social_security_rate": 6.2,
+    "medicare_rate": 1.45,
+    "social_security_wage_base": null,
+    "social_security_employee_max": null,
+    "additional_medicare_rate": null,
+    "additional_medicare_threshold": null,
+    "_source": "fica_total_rate 7.65 from calculated_variables_spec (resolver/resolve.mjs:30, CALCULATED_VARIABLES_FOR_SEBASTIAN.md §Formulas); social_security_rate 6.2 from tax_currency_handoff; medicare_rate 1.45 = fica_total - social_security (7.65 - 6.2). Remaining nulls are TODO — see _todo_stop_flagged."
+  },
+  "retirement_contribution_limits": {
+    "_source": "irs_rev_proc_2025_32 (§415/§219 2026 limits) via tax_brackets_2026.json retirement_2026",
+    "traditional_401k_elective_deferral": 24500,
+    "traditional_401k_catchup_50_plus": 8000,
+    "traditional_401k_catchup_60_to_63": 11250,
+    "ira": 7500,
+    "ira_catchup_50_plus": 1100,
+    "hsa_self_only": null,
+    "hsa_family": null,
+    "hsa_catchup_55_plus": null
+  },
+  "student_loan_rates": {
+    "_source": "federal_student_aid + tax_brackets_2026.json student_loan_undergrad_direct_rate_2026_27",
+    "undergrad_direct_2026_27": 6.52
+  },
+  "salt_deduction_cap": {
+    "cap_2026": null,
+    "_source": "TODO — not in any authoritative in-repo source. See _todo_stop_flagged. Read in live compute path (blocks live PR merge).",
+    "_current_hardcoded_value_in_live": 10000
+  }
+}

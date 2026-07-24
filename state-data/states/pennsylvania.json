@@ -2,6 +2,7 @@
   "state_name": "Pennsylvania",
   "state_code": "PA",
   "last_updated": "2025-11-21",
+  "data_as_of": "2025-11",
   "data_sources": {
     "dmv_url": "https://www.dmv.pa.gov",
     "tax_authority_url": "https://www.revenue.pa.gov",
@@ -43,6 +44,8 @@
     "property_tax_county_rate": 0.50,
     "property_tax_school_rate": 1.00,
     "property_tax_special_rate": 0.20,
+    "property_tax_effective_rate": null,
+    "property_tax_effective_rate_todo": "TODO: no authoritative 2026 in-repo source; STOP-flagged for Seb/Denis. Do not invent.",
     "property_tax_city_range": "1.0 - 3.0%",
     "property_tax_examples": [
       {"location": "Philadelphia", "millage": 14.37, "description": "Largest city"},

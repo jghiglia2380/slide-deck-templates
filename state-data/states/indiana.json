@@ -2,6 +2,7 @@
   "state_name": "Indiana",
   "state_code": "IN",
   "last_updated": "2025-11-21",
+  "data_as_of": "2025-11",
   "data_sources": {
     "dmv_url": "https://www.in.gov/bmv",
     "tax_authority_url": "https://www.in.gov/dor",
@@ -43,6 +44,8 @@
     "property_tax_county_rate": 0.40,
     "property_tax_school_rate": 0.45,
     "property_tax_special_rate": 0.10,
+    "property_tax_effective_rate": null,
+    "property_tax_effective_rate_todo": "TODO: no authoritative 2026 in-repo source; STOP-flagged for Seb/Denis. Do not invent.",
     "property_tax_city_range": "0.80 - 1.20%",
     "property_tax_examples": [
       {"location": "Marion County (Indianapolis)", "millage": 8.5, "description": "Capital city"},

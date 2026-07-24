@@ -1,5 +1,6 @@
 {
   "state_name": "Oklahoma",
+  "data_as_of": "2026-07",
   "state_code": "OK",
   "last_updated": "2025-11-21",
   "data_sources": {
@@ -8,7 +9,8 @@
     "labor_department_url": "https://oklahoma.gov/oesc",
     "education_department_url": "https://www.okhighered.org",
     "consumer_protection_url": "https://www.oag.ok.gov/consumer-protection",
-    "property_tax_assessor_url": "https://oklahoma.gov/tax/ad-valorem"
+    "property_tax_assessor_url": "https://oklahoma.gov/tax/ad-valorem",
+    "economic_development_url": "https://www.okcommerce.gov"
   },
   "automotive": {
     "registration_initial": 96,
@@ -24,32 +26,64 @@
     "dmv_url": "https://oklahoma.gov/service-oklahoma"
   },
   "taxes": {
-    "income_tax_rate": 4.75,
+    "income_tax_rate": 4.5,
     "sales_tax": 4.5,
     "local_sales_tax_min": 0,
-    "local_sales_tax_max": 7.0,
+    "local_sales_tax_max": 7,
     "combined_sales_tax_min": 4.5,
     "combined_sales_tax_max": 11.5,
     "local_sales_tax_examples": [
-      {"city": "Oklahoma City", "local_rate": 4.125, "combined_rate": 8.625},
-      {"city": "Tulsa", "local_rate": 4.517, "combined_rate": 9.017},
-      {"city": "Norman", "local_rate": 4.375, "combined_rate": 8.875},
-      {"city": "Lawton", "local_rate": 3.75, "combined_rate": 8.25}
+      {
+        "city": "Oklahoma City",
+        "local_rate": 4.125,
+        "combined_rate": 8.625
+      },
+      {
+        "city": "Tulsa",
+        "local_rate": 4.517,
+        "combined_rate": 9.017
+      },
+      {
+        "city": "Norman",
+        "local_rate": 4.375,
+        "combined_rate": 8.875
+      },
+      {
+        "city": "Lawton",
+        "local_rate": 3.75,
+        "combined_rate": 8.25
+      }
     ],
     "allows_local_income_tax": false,
     "local_income_tax_range": "N/A",
     "local_income_tax_rate_low": 0,
     "local_income_tax_rate_high": 0,
     "local_income_tax_example": "N/A",
-    "property_tax_county_rate": 0.30,
-    "property_tax_school_rate": 0.50,
-    "property_tax_special_rate": 0.10,
+    "property_tax_county_rate": 0.3,
+    "property_tax_school_rate": 0.5,
+    "property_tax_special_rate": 0.1,
     "property_tax_city_range": "0.80 - 1.20%",
     "property_tax_examples": [
-      {"location": "Oklahoma City", "millage": 10.85, "description": "State capital"},
-      {"location": "Tulsa", "millage": 11.25, "description": "Second largest city"},
-      {"location": "Norman", "millage": 10.45, "description": "University town"},
-      {"location": "Edmond", "millage": 9.85, "description": "OKC suburb"}
+      {
+        "location": "Oklahoma City",
+        "millage": 10.85,
+        "description": "State capital"
+      },
+      {
+        "location": "Tulsa",
+        "millage": 11.25,
+        "description": "Second largest city"
+      },
+      {
+        "location": "Norman",
+        "millage": 10.45,
+        "description": "University town"
+      },
+      {
+        "location": "Edmond",
+        "millage": 9.85,
+        "description": "OKC suburb"
+      }
     ],
     "assessment_percentage": 11,
     "homestead_exemption": 1000,
@@ -63,26 +97,41 @@
     "county_tax_assessor_url": "https://assessor.oklahomacounty.org",
     "property_tax_lookup_url": "https://oklahoma.gov/tax/ad-valorem",
     "tax_incentives": "Oklahoma 529 College Savings Plan (state tax deduction), Homestead Exemption, Senior Freeze",
-    "tax_structure": "Flat 4.75% income tax, very high combined sales taxes (among highest in nation due to local additions), very low property taxes (11% assessment ratio)."
+    "tax_structure": "Flat 4.5% income tax, very high combined sales taxes (among highest in nation due to local additions), very low property taxes (11% assessment ratio).",
+    "capital_gains_tax": 4.5,
+    "estate_tax": "None",
+    "property_tax_effective_rate": 0.87
   },
   "housing": {
     "median_home_price": 195000,
     "median_rent": 1045,
     "housing_market_trends": "Very affordable market. OKC and Tulsa growing. Norman stable with university. Rural areas extremely affordable.",
     "first_time_homebuyer_program": "OHFA - Homebuyer Down Payment Assistance Program",
-    "avg_mortgage_rate_30yr": 7.12
+    "avg_mortgage_rate_30yr": 7.12,
+    "days_on_market": 38,
+    "construction_trend": "Growing",
+    "realtor_website": "zillow.com"
   },
   "insurance": {
     "homeowners_avg_monthly": 225,
-    "data_source": "Oklahoma Insurance Department average rates for $195K home coverage (high due to tornado/hail risk)"
+    "data_source": "Oklahoma Insurance Department average rates for $195K home coverage (high due to tornado/hail risk)",
+    "uninsured_rate": 11.4,
+    "medicaid_expansion_status": "Adopted (July 2021)"
   },
   "employment": {
     "min_wage": 7.25,
     "unemployment_rate": 3.4,
+    "median_income": 59000,
+    "population_growth": "0.4%/year",
+    "job_growth": "1.8%/year",
     "major_industries": "Energy (Oil & Gas), Aerospace, Agriculture, Healthcare, Manufacturing, Technology"
   },
   "education": {
-    "tuition_public": 9230
+    "tuition_public": 9230,
+    "tuition_community": 4541,
+    "grant_program": "Oklahoma Tuition Aid Grant (OTAG)",
+    "plan_529_name": "Oklahoma 529",
+    "plan_529_url": "https://www.oklahoma529.com"
   },
   "banking": {
     "avg_monthly_fee": 10,
@@ -92,15 +141,18 @@
   },
   "consumer_protection": {
     "consumer_protection_agency": "Oklahoma Attorney General - Consumer Protection Unit",
-    "consumer_protection_url": "https://www.oag.ok.gov/consumer-protection"
+    "consumer_protection_url": "https://www.oag.ok.gov/consumer-protection",
+    "age_of_majority": 18,
+    "security_deposit_limit": "No statutory limit",
+    "landlord_tenant_law_url": "https://www.hud.gov/states/oklahoma/renting"
   },
   "calculated_values": {
-    "state_tax_on_3500_monthly": 166,
-    "calculated_state_tax_70k": 3325,
-    "total_effective_rate": 18.6,
-    "take_home_pay_70k": 51560,
-    "property_tax_300k": 363,
-    "state_withholding_48k_monthly": 190
+    "state_tax_on_3500_monthly": 158,
+    "calculated_state_tax_70k": 3150,
+    "total_effective_rate": 18.5,
+    "take_home_pay_70k": 51695,
+    "property_tax_300k": 2610,
+    "state_withholding_48k_monthly": 180
   },
   "local_examples": {
     "major_retailers": "Crest, Walmart, Target, Sprouts, Costco",
@@ -122,7 +174,7 @@
     "suburb_1_millage": 9.85,
     "suburb_2_millage": 10.15,
     "rural_area": "Western Oklahoma",
-    "rural_area_millage": 8.0,
+    "rural_area_millage": 8,
     "high_tax_city": "Tulsa",
     "medium_tax_city": "Oklahoma City",
     "low_tax_city": "Western OK",
@@ -130,10 +182,10 @@
     "low_tax_medium_city": "Edmond",
     "high_tax_millage": 11.25,
     "medium_tax_millage": 10.85,
-    "low_tax_millage": 8.0,
+    "low_tax_millage": 8,
     "high_combined_sales_tax": 11.5,
     "low_combined_sales_tax": 4.5,
-    "high_local_sales_tax": 7.0,
+    "high_local_sales_tax": 7,
     "low_local_sales_tax": 0,
     "local_sales_tax_1": 4.125,
     "total_millage_example": 10.85,

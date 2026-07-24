@@ -1,7 +1,8 @@
 {
   "state_name": "Kentucky",
   "state_code": "KY",
-  "last_updated": "2025-11-21",
+  "last_updated": "2026-07-20",
+  "data_as_of": "2026-07",
   "data_sources": {
     "dmv_url": "https://drive.ky.gov",
     "tax_authority_url": "https://revenue.ky.gov",
@@ -24,7 +25,7 @@
     "dmv_url": "https://drive.ky.gov"
   },
   "taxes": {
-    "income_tax_rate": 4.0,
+    "income_tax_rate": 3.5,
     "sales_tax": 6.0,
     "local_sales_tax_min": 0,
     "local_sales_tax_max": 0,
@@ -43,6 +44,7 @@
     "property_tax_county_rate": 0.30,
     "property_tax_school_rate": 0.50,
     "property_tax_special_rate": 0.10,
+    "property_tax_effective_rate": 0.74,
     "property_tax_city_range": "0.20 - 0.80%",
     "property_tax_examples": [
       {"location": "Jefferson County (Louisville)", "millage": 9.8, "description": "Largest city"},
@@ -62,7 +64,7 @@
     "county_tax_assessor_url": "https://jeffersonpva.ky.gov",
     "property_tax_lookup_url": "https://revenue.ky.gov/Property/Pages/default.aspx",
     "tax_incentives": "Kentucky Education Savings Plan Trust 529 (state tax deduction), Homestead Exemption",
-    "tax_structure": "Flat 4.0% income tax, cities/counties impose local occupational taxes (0.5-2.5%). Low property taxes. Uniform 6% sales tax."
+    "tax_structure": "Flat 3.5% income tax, cities/counties impose local occupational taxes (0.5-2.5%). Low property taxes. Uniform 6% sales tax."
   },
   "housing": {
     "median_home_price": 205000,
@@ -94,12 +96,12 @@
     "consumer_protection_url": "https://www.ag.ky.gov/civil/consumerprotection"
   },
   "calculated_values": {
-    "state_tax_on_3500_monthly": 140,
-    "calculated_state_tax_70k": 2800,
-    "total_effective_rate": 18.0,
-    "take_home_pay_70k": 52045,
-    "property_tax_300k": 2940,
-    "state_withholding_48k_monthly": 160
+    "state_tax_on_3500_monthly": 123,
+    "calculated_state_tax_70k": 2450,
+    "total_effective_rate": 17.5,
+    "take_home_pay_70k": 52395,
+    "property_tax_300k": 2220,
+    "state_withholding_48k_monthly": 140
   },
   "local_examples": {
     "major_retailers": "Kroger, Walmart, Meijer, Target",

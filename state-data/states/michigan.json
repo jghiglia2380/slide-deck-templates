@@ -2,6 +2,7 @@
   "state_name": "Michigan",
   "state_code": "MI",
   "last_updated": "2025-11-21",
+  "data_as_of": "2025-11",
   "data_sources": {
     "dmv_url": "https://www.michigan.gov/sos",
     "tax_authority_url": "https://www.michigan.gov/treasury",
@@ -43,6 +44,8 @@
     "property_tax_county_rate": 0.50,
     "property_tax_school_rate": 0.80,
     "property_tax_special_rate": 0.20,
+    "property_tax_effective_rate": null,
+    "property_tax_effective_rate_todo": "TODO: no authoritative 2026 in-repo source; STOP-flagged for Seb/Denis. Do not invent.",
     "property_tax_city_range": "1.0 - 3.5%",
     "property_tax_examples": [
       {"location": "Detroit", "millage": 67.89, "description": "Very high taxes"},

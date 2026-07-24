@@ -2,6 +2,7 @@
   "state_name": "Colorado",
   "state_code": "CO",
   "last_updated": "2025-11-21",
+  "data_as_of": "2025-11",
   "data_sources": {
     "dmv_url": "https://dmv.colorado.gov",
     "tax_authority_url": "https://tax.colorado.gov",
@@ -60,6 +61,8 @@
     "property_tax_county_rate": 0.35,
     "property_tax_school_rate": 0.20,
     "property_tax_special_rate": 0.05,
+    "property_tax_effective_rate": null,
+    "property_tax_effective_rate_todo": "TODO: no authoritative 2026 in-repo source; STOP-flagged for Seb/Denis. Do not invent.",
     "property_tax_city_range": "0.10 - 0.40%",
     "property_tax_examples": [
       {
