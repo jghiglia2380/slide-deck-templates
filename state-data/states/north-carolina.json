@@ -1,8 +1,8 @@
 {
   "state_name": "North Carolina",
   "state_code": "NC",
-  "last_updated": "2025-11-21",
-  "data_as_of": "2025-11",
+  "last_updated": "2026-07-24",
+  "data_as_of": "2026-07",
   "data_sources": {
     "dmv_url": "https://www.ncdot.gov/dmv",
     "tax_authority_url": "https://www.ncdor.gov",
@@ -25,7 +25,7 @@
     "dmv_url": "https://www.ncdot.gov/dmv"
   },
   "taxes": {
-    "income_tax_rate": 4.75,
+    "income_tax_rate": 3.99,
     "sales_tax": 4.75,
     "local_sales_tax_min": 2.0,
     "local_sales_tax_max": 2.75,
@@ -45,8 +45,8 @@
     "property_tax_county_rate": 0.50,
     "property_tax_school_rate": 0.20,
     "property_tax_special_rate": 0.10,
-    "property_tax_effective_rate": null,
-    "property_tax_effective_rate_todo": "TODO: no authoritative 2026 in-repo source; STOP-flagged for Seb/Denis. Do not invent.",
+    "property_tax_effective_rate": 0.66,
+    "property_tax_effective_rate_source": "Tax Foundation owner-occupied effective property-tax rate (2026); supplied Run 2b",
     "property_tax_city_range": "0.60 - 1.20%",
     "property_tax_examples": [
       {"location": "Charlotte (Mecklenburg)", "millage": 10.84, "description": "Largest city"},
@@ -66,7 +66,7 @@
     "county_tax_assessor_url": "https://www.mecknc.gov/AssessorsOffice",
     "property_tax_lookup_url": "https://www.ncdor.gov/taxes-forms/property-tax",
     "tax_incentives": "NC 529 Plan (state tax deduction), Homestead Exemption for elderly/disabled",
-    "tax_structure": "Flat 4.75% income tax (reduced from 5.25%). Moderate sales tax with local additions. Below-average property taxes. Pro-business tax climate with recent reforms."
+    "tax_structure": "Flat 3.99% income tax (2026 final phasedown step, reduced from 5.25%). Moderate sales tax with local additions. Below-average property taxes. Pro-business tax climate with recent reforms."
   },
   "housing": {
     "median_home_price": 335000,

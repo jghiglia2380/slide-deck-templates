@@ -154,9 +154,56 @@ None missing. (The resolver-map wiring of these tokens is a Phase-3 code edit, o
 
 ## STOP-flags for Seb/Denis to supply (blocking merge decisions)
 
-1. **2026 SALT cap** — **blocks live PR merge** (in compute path).
-2. **2026 SS wage base** (→ derives SS employee max + p286 figure).
-3. **34 states' `property_tax_effective_rate`** (list above).
-4. **Confirm Kentucky 3.5% / 0.74** (unverified working-tree provenance).
-5. **Confirm North Carolina 2026 income rate** (4.75% looks stale).
-6. HSA 2026 limits; additional-Medicare rate + threshold.
+1. **2026 SALT cap** — **blocks live PR merge** (in compute path). → RESOLVED Run 2b.
+2. **2026 SS wage base** (→ derives SS employee max + p286 figure). → RESOLVED Run 2b.
+3. **34 states' `property_tax_effective_rate`** (list above). → STILL OPEN (Denis's Tax Foundation batch).
+4. **Confirm Kentucky 3.5% / 0.74** (unverified working-tree provenance). → CONFIRMED Run 2b.
+5. **Confirm North Carolina 2026 income rate** (4.75% looks stale). → RESOLVED Run 2b (3.99%).
+6. HSA 2026 limits; additional-Medicare rate + threshold. → RESOLVED Run 2b.
+
+---
+
+## Run 2b addendum (2026-07-24) — supplied figures + SALT live fix
+
+All values below were supplied as authoritative in the Run-2b request; none invented. `data_as_of` 2026-07.
+
+### Federal (`federal_figures.json`) — TODOs filled, `_todo_stop_flagged` now empty
+| Field | Value | Source |
+|---|---|---|
+| `salt_deduction_cap` | single/MFJ **40400**, MFS **20200** | OBBBA 2026 |
+| `payroll_taxes.social_security_wage_base` | **184500** | SSA 2026 |
+| `payroll_taxes.social_security_employee_max` | **11439** | = 6.2% × 184500 |
+| `payroll_taxes.additional_medicare_rate` / `_threshold` | **0.009** / {single 200000, mfj 250000, mfs 125000} | statutory (IRC §3101(b)(2)) |
+| `retirement_contribution_limits.hsa_self_only` / `hsa_family` / `hsa_catchup_55_plus` | **4400 / 8750 / 1000** | IRS Rev. Proc. 2025-19 |
+
+### State
+- **North Carolina:** `income_tax_rate` 4.75 → **3.99** (2026 final phasedown step), `property_tax_effective_rate` **0.66** (Tax Foundation), `data_as_of` 2026-07. Zero `4.75` in the income field/`tax_structure` (remaining `4.75` is the legitimate `sales_tax`).
+- **Kentucky:** 3.5 / 0.74 **confirmed** (HB 1 + Tax Foundation), values unchanged; source note added.
+
+### Still open (do NOT invent)
+- The **34 null `property_tax_effective_rate`** fields — batch-pulled from the Tax Foundation owner-occupied effective-property-tax table (Denis's task).
+
+### Undergrad loan rate — verification (asked)
+`student_loan_rates.undergrad_direct_2026_27 = 6.52` **is the current 2026-27 rate**, for undergrad Direct
+loans **first disbursed 2026-07-01 through 2027-06-30** (effective July 1 2026) — Federal Student Aid, per
+`TAX_CURRENCY_2026_HANDOFF.md` lines 15-16 and fixture key `student_loan_undergrad_direct_rate_2026_27`.
+**Not** a prior-year value.
+
+### Live SALT blocker — CLEARED (on the live-calc PRs, not the dataset branch)
+`saltCap` 10000 → **40400** in `src/lib/taxCalculations.ts`, committed + pushed to branch
+`fix/tax-constants-2026` in **both** live-calc repos:
+- `pfl-academy-90-dashboards` **PR #1** (commit `5a18143`)
+- `pfl-academy-sync-90` **PR #2** (commit `2a88e92`)
+
+Zero `saltCap = 10000` remains on either shipping branch. The other 4 of the "6 copies" are **stale
+duplicate clones** of these same two repos' `master` (`Sync-90/`, `Sync-90/resources/pfl-academy-90-dashboards/`,
+`Sync-90 copy/`, `Sync-90-dojo/`) — intentionally NOT edited (would push financial change straight to
+`master`, violating the guardrail); they inherit the fix when the PRs merge and are removed by the Phase-3
+`taxCalculations.ts` de-dup.
+
+### Re-gate — Run 2b
+| Gate | Status |
+|---|---|
+| Live SALT blocker cleared; zero hardcoded `10000` saltCap on shipping branches | ✅ both PRs |
+| `federal_figures.json` re-validates; every key present or TODO'd; zero invented | ✅ `_todo_stop_flagged` empty |
+| NC shows 3.99; zero 4.75 in income field | ✅ |

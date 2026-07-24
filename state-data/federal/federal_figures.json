@@ -1,41 +1,22 @@
 {
-  "_description": "Canonical single-source federal (national) tax & finance figures for PFL Academy. Every surface (live app, free PDFs, print pipeline) should READ from this file rather than holding its own hardcoded copy. Created Phase 2 of the figure-currency wiring work.",
+  "_description": "Canonical single-source federal (national) tax & finance figures for PFL Academy. Every surface (live app, free PDFs, print pipeline) should READ from this file rather than holding its own hardcoded copy. Created Phase 2 of the figure-currency wiring work; STOP-flagged figures supplied Run 2b (2026-07-24).",
   "tax_year": 2026,
   "data_as_of": "2026-07",
   "_authoritative_sources": {
     "irs_rev_proc_2025_32": "IRS Revenue Procedure 2025-32 (Section 3.01 Tax Rate Tables; 3.14 Standard Deduction; 3(3) Additional Standard Deduction) via gate/fixtures/tax_brackets_2026.json",
+    "irs_rev_proc_2025_19": "IRS Revenue Procedure 2025-19 (2026 HSA / HDHP inflation-adjusted limits)",
+    "obbba_2026": "One Big Beautiful Bill Act — 2026 SALT deduction cap",
+    "ssa_2026": "Social Security Administration — 2026 OASDI contribution & benefit (wage) base",
     "tax_currency_handoff": "pfl-print-pipeline/docs/TAX_CURRENCY_2026_HANDOFF.md (2026-07-24)",
     "calculated_variables_spec": "pfl-print-pipeline/resolver/resolve.mjs + CALCULATED_VARIABLES_FOR_SEBASTIAN.md (FICA composite rate)",
-    "federal_student_aid": "Federal Student Aid, undergrad Direct loans first disbursed 2026-07-01 through 2027-06-30"
+    "federal_student_aid": "Federal Student Aid — undergrad Direct loans first disbursed 2026-07-01 through 2027-06-30 (the 2026-27 rate)"
   },
-  "_todo_stop_flagged": [
-    {
-      "field": "salt_deduction_cap.cap_2026",
-      "reason": "2026 SALT cap value is NOT in tax_brackets_2026.json or TAX_CURRENCY_2026_HANDOFF.md. Do not guess. Awaiting Seb/Denis to supply the authoritative 2026 figure.",
-      "blocks_live_pr_merge": true,
-      "note": "SALT cap IS read in the live compute path: Sync-90/src/lib/taxCalculations.ts calculateItemizedDeductions() uses Math.min(stateTaxes, saltCap) with saltCap hardcoded 10000 (present in all 6 taxCalculations.ts copies). The hardcoded 10000 is the pre-2026 TCJA value; a 2026 change (if any) would silently produce wrong itemized-vs-standard decisions. This missing figure BLOCKS the live PR merge."
-    },
-    {
-      "field": "payroll_taxes.social_security_wage_base",
-      "reason": "2026 SS wage base is NOT published in any in-repo source. TAX_CURRENCY_2026_HANDOFF.md explicitly states 'there is no committed fixture for the 2026 SS wage base' and instructs a human to set it. Do not invent. Awaiting Seb/Denis.",
-      "blocks_live_pr_merge": false,
-      "note": "Needed to derive social_security_employee_max = wage_base * 0.062 and to recompute the p286 SS max in LChapters.ts (currently year-relabelled 2026 but still the 2024 dollar figure)."
-    },
-    {
-      "field": "payroll_taxes.social_security_employee_max",
-      "reason": "Derived value = social_security_wage_base * 0.062. Blocked on social_security_wage_base above.",
-      "blocks_live_pr_merge": false
-    },
-    {
-      "field": "hsa_contribution_limits.self_only / .family / .catchup_55",
-      "reason": "2026 HSA contribution limits are NOT in tax_brackets_2026.json or the handoff. Do not guess. Awaiting Seb/Denis.",
-      "blocks_live_pr_merge": false
-    },
-    {
-      "field": "payroll_taxes.additional_medicare_rate / .additional_medicare_threshold",
-      "reason": "Additional-Medicare rate and its wage thresholds are not present in any named authoritative in-repo source (fixture or handoff). Per guardrail, not carrying a memorized statutory value. Awaiting Seb/Denis to confirm/supply.",
-      "blocks_live_pr_merge": false
-    }
+  "_todo_stop_flagged": [],
+  "_resolved_run_2b": [
+    "salt_deduction_cap (OBBBA 2026)",
+    "payroll_taxes.social_security_wage_base + social_security_employee_max (SSA 2026)",
+    "payroll_taxes.additional_medicare_rate + additional_medicare_threshold",
+    "retirement_contribution_limits.hsa_self_only / hsa_family / hsa_catchup_55_plus (IRS Rev. Proc. 2025-19)"
   ],
   "standard_deduction": {
     "single": 16100,
@@ -95,30 +76,35 @@
     "fica_total_rate": 7.65,
     "social_security_rate": 6.2,
     "medicare_rate": 1.45,
-    "social_security_wage_base": null,
-    "social_security_employee_max": null,
-    "additional_medicare_rate": null,
-    "additional_medicare_threshold": null,
-    "_source": "fica_total_rate 7.65 from calculated_variables_spec (resolver/resolve.mjs:30, CALCULATED_VARIABLES_FOR_SEBASTIAN.md §Formulas); social_security_rate 6.2 from tax_currency_handoff; medicare_rate 1.45 = fica_total - social_security (7.65 - 6.2). Remaining nulls are TODO — see _todo_stop_flagged."
+    "social_security_wage_base": 184500,
+    "social_security_employee_max": 11439,
+    "additional_medicare_rate": 0.009,
+    "additional_medicare_threshold": {
+      "single": 200000,
+      "mfj": 250000,
+      "mfs": 125000
+    },
+    "_source": "fica_total_rate 7.65 from calculated_variables_spec (resolver/resolve.mjs:30, CALCULATED_VARIABLES_FOR_SEBASTIAN.md §Formulas); social_security_rate 6.2 from tax_currency_handoff; medicare_rate 1.45 = fica_total - social_security. social_security_wage_base 184500 from ssa_2026; social_security_employee_max 11439 = 6.2% × 184500. additional_medicare_rate 0.009 (0.9%) and thresholds are the statutory Additional Medicare Tax figures (IRC §3101(b)(2), not inflation-indexed)."
   },
   "retirement_contribution_limits": {
-    "_source": "irs_rev_proc_2025_32 (§415/§219 2026 limits) via tax_brackets_2026.json retirement_2026",
+    "_source": "401k/IRA from irs_rev_proc_2025_32 (§415/§219 2026 limits) via tax_brackets_2026.json retirement_2026; HSA from irs_rev_proc_2025_19.",
     "traditional_401k_elective_deferral": 24500,
     "traditional_401k_catchup_50_plus": 8000,
     "traditional_401k_catchup_60_to_63": 11250,
     "ira": 7500,
     "ira_catchup_50_plus": 1100,
-    "hsa_self_only": null,
-    "hsa_family": null,
-    "hsa_catchup_55_plus": null
+    "hsa_self_only": 4400,
+    "hsa_family": 8750,
+    "hsa_catchup_55_plus": 1000
   },
   "student_loan_rates": {
-    "_source": "federal_student_aid + tax_brackets_2026.json student_loan_undergrad_direct_rate_2026_27",
+    "_source": "federal_student_aid + tax_brackets_2026.json student_loan_undergrad_direct_rate_2026_27. This is the 2026-27 rate for undergrad Direct loans first disbursed 2026-07-01 through 2027-06-30 (effective July 1 2026) — verified against TAX_CURRENCY_2026_HANDOFF.md; not a prior-year value.",
     "undergrad_direct_2026_27": 6.52
   },
   "salt_deduction_cap": {
-    "cap_2026": null,
-    "_source": "TODO — not in any authoritative in-repo source. See _todo_stop_flagged. Read in live compute path (blocks live PR merge).",
-    "_current_hardcoded_value_in_live": 10000
+    "single": 40400,
+    "mfj": 40400,
+    "mfs": 20200,
+    "_source": "obbba_2026 (2026 SALT cap). Replaces the pre-2026 $10,000 TCJA cap. Live compute path (taxCalculations.ts calculateItemizedDeductions) must be updated 10000 -> 40400 (single/MFJ) — see live-calc SALT fix."
   }
 }

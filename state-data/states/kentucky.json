@@ -45,6 +45,7 @@
     "property_tax_school_rate": 0.50,
     "property_tax_special_rate": 0.10,
     "property_tax_effective_rate": 0.74,
+    "property_tax_effective_rate_source": "Tax Foundation owner-occupied effective property-tax rate; income rate 3.5% confirmed per KY HB 1 (2026). Confirmed Run 2b, values unchanged.",
     "property_tax_city_range": "0.20 - 0.80%",
     "property_tax_examples": [
       {"location": "Jefferson County (Louisville)", "millage": 9.8, "description": "Largest city"},
