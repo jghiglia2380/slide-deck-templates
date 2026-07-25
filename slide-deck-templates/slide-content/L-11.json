@@ -1,0 +1,542 @@
+{
+  "metadata": {
+    "lChapter": "L-11",
+    "title": "Financial Services Overview",
+    "subtitle": "Understanding Your Options for Managing Money",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Financial Services Overview",
+        "titleSize": "large",
+        "subtitle": "Understanding Your Options for Managing Money"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "The Challenge",
+        "question": "Maria just got her first job and needs somewhere to deposit her paychecks. She's comparing a national bank ($12/month fee, 0.01% savings interest), a local credit union ($0 fee, 0.5% savings interest, but membership required), and an online bank ($0 fee, 1.5% savings interest, but no physical branches).<br><br>Where should you <em>keep your money</em>, and how do you choose between the <em>many financial institutions</em> available to you?"
+      },
+      "headerColor": "amber",
+      "speakerNotes": "Read Maria's scenario aloud or have students read silently. Ask the discussion question: 'Have you or your family ever compared banks or credit unions? What did you consider?' Allow 2-3 students to share experiences. This introduces the core concept that different financial service providers offer different value propositions—there's no one-size-fits-all answer."
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Identify",
+              "description": "Recognize the different types of financial service providers and understand their primary functions and services."
+            },
+            {
+              "number": 2,
+              "verb": "Compare",
+              "description": "Contrast banks versus credit unions, understanding key differences in structure, fees, rates, and benefits."
+            },
+            {
+              "number": 3,
+              "verb": "Evaluate",
+              "description": "Determine which financial service providers best suit different financial needs and situations."
+            },
+            {
+              "number": 4,
+              "verb": "Analyze",
+              "description": "Apply knowledge to real-world scenarios to determine the most appropriate financial service providers."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Bank",
+              "definition": "A for-profit financial institution that accepts deposits, offers checking and savings accounts, and provides loans.",
+              "example": "Chase, Bank of America, Wells Fargo, local community banks"
+            },
+            {
+              "term": "Credit Union",
+              "definition": "A not-for-profit cooperative financial institution owned by its members, offering similar services to banks.",
+              "example": "Navy Federal, State Employees CU, school or employer-based credit unions"
+            }
+          ]
+        }
+      },
+      "speakerNotes": "Review the 5 key terms on this and the next slide. EMPHASIZE the for-profit vs. not-for-profit distinction between banks and credit unions—this explains why credit unions typically offer better rates and lower fees (they return profits to members rather than shareholders). Read the Background paragraph together if using supplemental materials. Quick check: Ask students to name one financial service provider they or their family uses. This activates prior knowledge and makes the content personally relevant."
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "InsuranceCompany",
+              "definition": "A company that provides policies to protect against financial loss from unforeseen events.",
+              "example": "Health, auto, home/renters, life, disability insurance"
+            },
+            {
+              "term": "InvestmentFirm",
+              "definition": "A company that manages investment portfolios to help clients grow wealth through securities.",
+              "example": "IRAs, brokerage accounts, mutual funds, financial planning"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Types of Financial Service Providers",
+        "layout": "generic",
+        "layoutData": {
+          "paragraphs": [
+            "Checking, savings, loans, credit cards. FDIC insured up to $250,000. Nationwide networks.",
+            "Similar services to banks with lower fees, better rates. NCUA insured up to $250,000.",
+            "Protection against financial loss from unforeseen events. Health, auto, home, life coverage.",
+            "Specialize in home loans and real estate financing. May offer specialized loan products.",
+            "Manage investments to help grow wealth. Offer IRAs, brokerage accounts, financial planning.",
+            "Facilitate buying and selling of stocks and securities. Full-service or discount options."
+          ],
+          "lists": []
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Banks vs. Credit Unions",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "\ud83c",
+            "title": "\udfe6 Banks",
+            "items": [
+              "For-profit corporations",
+              "Focus on shareholder profits",
+              "Often higher fees",
+              "Higher loan interest rates",
+              "Lower savings rates",
+              "Large ATM networks"
+            ]
+          },
+          "rightColumn": {
+            "icon": "",
+            "title": "\ud83e\udd1d Credit Unions",
+            "items": [
+              "Member-owned cooperatives",
+              "Focus on serving members",
+              "Typically lower fees",
+              "Lower loan interest rates",
+              "Higher savings rates",
+              "Membership requirements"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Your Money Is Protected",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Federal Deposit Insurance",
+            "paragraphs": [
+              "Both banks and credit unions offer deposit insurance that protects your money if the institution fails.",
+              "<strong>FDIC</strong> (Federal Deposit Insurance Corporation) insures bank deposits.",
+              "<strong>NCUA</strong> (National Credit Union Administration) insures credit union deposits.",
+              "Both provide the same protection level\u2014choose based on other factors like fees and service."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$250K",
+                "label": "FDIC Insurance (Banks)",
+                "color": "teal"
+              },
+              {
+                "value": "$250K",
+                "label": "NCUA Insurance (Credit Unions)",
+                "color": "green"
+              }
+            ],
+            "infoCard": {
+              "title": "Per Depositor Coverage:",
+              "color": "blue",
+              "items": [
+                "Individual accounts: $250,000",
+                "Joint accounts: $250,000 per owner",
+                "Retirement accounts: $250,000",
+                "Can have more across accounts"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Choosing the Right Provider",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Match Providers to Your Financial Needs",
+          "paragraphs": [
+            "Different financial needs require different service providers. Understanding what each offers helps you make the best choice for your situation."
+          ],
+          "bulletPoints": [
+            "<strong>Daily banking (checking/savings):</strong> Banks or credit unions based on fees and convenience",
+            "<strong>Buying a home:</strong> Mortgage companies, banks, or credit unions for competitive loan rates",
+            "<strong>Investing for retirement:</strong> Investment firms with low-fee index funds or retirement accounts",
+            "<strong>Protecting your assets:</strong> Insurance companies for auto, health, home coverage",
+            "<strong>Trading stocks:</strong> Brokerage firms\u2014full-service for advice, discount for DIY",
+            "<strong>Starting a business:</strong> Banks with business services and lending programs"
+          ]
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Key Factors When Choosing",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "What to Evaluate",
+            "paragraphs": [
+              "When selecting a financial service provider, consider these key factors:",
+              "<strong>Fees:</strong> Monthly maintenance, ATM fees, overdraft charges, transaction fees.",
+              "<strong>Interest Rates:</strong> Savings APY, loan rates, credit card rates.",
+              "<strong>Convenience:</strong> Branch locations, ATM network, mobile app quality.",
+              "<strong>Services:</strong> Does the provider offer what you need now and in the future?"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$200+",
+                "label": "Avg Annual Bank Fees",
+                "color": "rose"
+              },
+              {
+                "value": "10x",
+                "label": "Rate Difference Online vs Traditional",
+                "color": "green"
+              }
+            ],
+            "infoCard": {
+              "title": "Questions to Ask:",
+              "color": "green",
+              "items": [
+                "What are the monthly fees?",
+                "What's the minimum balance?",
+                "What APY on savings?",
+                "Is mobile banking available?"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Why Your Choice Matters",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Financial Impact Over Time",
+          "paragraphs": [
+            "Choosing the right financial service provider can save you thousands of dollars over your lifetime and help you reach your financial goals faster."
+          ],
+          "bulletPoints": [
+            "<strong>Lower fees</strong> = More money stays in your pocket each month",
+            "<strong>Better interest rates</strong> = Your savings grow faster, loans cost less",
+            "<strong>Right services</strong> = You can manage money more efficiently",
+            "<strong>Convenient access</strong> = You stay on top of your finances easily",
+            "<strong>Good customer service</strong> = Problems get resolved quickly",
+            "<strong>Security features</strong> = Your money and identity stay protected"
+          ]
+        }
+      },
+      "speakerNotes": "COMMON MISCONCEPTIONS TO ADDRESS:\n\n1. 'Credit unions are less safe than banks' → CLARIFY: Both have federal deposit insurance up to $250,000. FDIC (Federal Deposit Insurance Corporation) covers banks; NCUA (National Credit Union Administration) covers credit unions. Same level of protection, different agencies.\n\n2. 'Online banks aren't real banks' → CLARIFY: Online banks are FDIC-insured and offer the same protections as traditional banks. They often have BETTER rates (savings and CDs) and LOWER fees due to no physical branches reducing overhead costs. They're legitimate financial institutions.\n\n3. 'You should use one provider for all financial needs' → CLARIFY: It's often SMART to use multiple providers to maximize benefits—online bank for high-yield savings, local credit union for checking/loans, investment firm for retirement accounts, insurance company for protection. No single provider excels at everything.\n\nAddress these proactively to combat outdated assumptions about financial services."
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Modern Banking Options",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Traditional vs. Online Banking",
+            "paragraphs": [
+              "Today's financial landscape includes both traditional brick-and-mortar institutions and online-only options.",
+              "<strong>Traditional Banks/Credit Unions:</strong> In-person service, local branches, face-to-face help.",
+              "<strong>Online Banks:</strong> Higher interest rates, lower fees, 24/7 access, but no physical branches.",
+              "Many people use a combination\u2014an online bank for savings and a local institution for daily banking."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "4.5%",
+                "label": "Top Online Savings APY",
+                "color": "teal"
+              },
+              {
+                "value": "0.01%",
+                "label": "Typical Traditional Bank APY",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Online Banking Advantages:",
+              "color": "amber",
+              "items": [
+                "Higher savings interest rates",
+                "Lower or no monthly fees",
+                "24/7 access from anywhere",
+                "Quick account setup"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "\ud83d\udc69\u200d\ud83c\udf93",
+            "name": "Maria: Recent College Graduate",
+            "paragraphs": [
+              "Maria just graduated from college and started her first job. She needs a <span class=\"highlight-text\">checking account with no monthly fees</span> and no minimum balance requirements since she's still building her savings.",
+              "After researching options, she chose a <span class=\"highlight-text\">credit union</span> because it offered:"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "Monthly Savings",
+              "value": "$15+",
+              "detail": "No monthly fees"
+            },
+            {
+              "type": "after",
+              "label": "Savings APY",
+              "value": "50x Higher",
+              "detail": "vs. traditional bank"
+            },
+            {
+              "type": "after",
+              "label": "Best Fit For",
+              "value": "Young Adults",
+              "detail": "Low fees, good rates"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "\ud83d\udc68\u200d\ud83d\udcbc",
+            "name": "James: Small Business Owner",
+            "paragraphs": [
+              "James recently started a small business and needs <span class=\"highlight-text\">comprehensive banking services</span> including a business checking account, credit card processing, and access to business loans.",
+              "He chose a <span class=\"highlight-text\">large national bank</span> because it offered:"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "Key Need",
+              "value": "Business Tools",
+              "detail": "Integrated services"
+            },
+            {
+              "type": "after",
+              "label": "ATM Network",
+              "value": "16,000+",
+              "detail": "Locations nationwide"
+            },
+            {
+              "type": "after",
+              "label": "Best Fit For",
+              "value": "Business Owners",
+              "detail": "Comprehensive services"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": "What factors would be most important to you when choosing a financial service provider?<br><br>Would you prefer a bank or credit union, and why?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "What financial services might you need in the next few years?<br><br>How might your needs change as you move through different life stages?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "emerald",
+      "content": {
+        "headerTitle": "Check Your Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What is the main structural difference between a bank and a credit union?"
+            },
+            {
+              "number": 2,
+              "question": "Name two financial service providers and explain what services they offer."
+            },
+            {
+              "number": 3,
+              "question": "How much deposit insurance protection do FDIC and NCUA provide?"
+            },
+            {
+              "number": 4,
+              "question": "If someone wants to buy a home, which financial service providers might they work with?"
+            }
+          ]
+        }
+      },
+      "speakerNotes": "ANSWER KEY:\n\nQ1: What is the main structural difference between a bank and a credit union?\n• Answer: B (Banks are for-profit; credit unions are member-owned cooperatives). Banks are owned by shareholders and aim to maximize profits for investors. Credit unions are owned by their members (account holders) and are not-for-profit, returning surplus back to members through better rates, lower fees, and improved services. This fundamental difference drives their different fee structures and rate offerings.\n\nQ2: Name two financial service providers and explain what services they offer.\n• Answer: Accept any two with accurate descriptions. Examples: (1) Banks: Checking/savings accounts, loans, credit cards, ATM access, online banking. (2) Credit Unions: Similar to banks but member-owned with typically better rates. (3) Investment Firms: Stock/bond trading, retirement accounts (401k, IRA), financial planning. (4) Insurance Companies: Life, auto, home, health insurance policies. (5) Mortgage Companies: Specialize in home loans with competitive rates.\n\nQ3: How much deposit insurance protection do FDIC and NCUA provide?\n• Answer: Both provide $250,000 of deposit insurance per depositor, per institution. FDIC (Federal Deposit Insurance Corporation) covers banks. NCUA (National Credit Union Administration) covers credit unions. This means your deposits up to $250,000 are protected even if the institution fails.\n\nQ4: If someone wants to buy a home, which financial service providers might they work with?\n• Answer: (1) Mortgage Company or Credit Union for the home loan—they often offer better rates than traditional banks. (2) Insurance Company for homeowner's insurance (required by lenders). (3) Bank/Credit Union for the checking account to manage mortgage payments. (4) Possibly a Financial Advisor to ensure the purchase fits overall financial plan."
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Multiple Provider Types",
+              "description": "Banks, credit unions, insurance companies, investment firms, and brokerages each serve different needs."
+            },
+            {
+              "number": 2,
+              "title": "Banks vs. Credit Unions",
+              "description": "Banks are for-profit; credit unions are member-owned cooperatives with often better rates and lower fees."
+            },
+            {
+              "number": 3,
+              "title": "Your Money Is Protected",
+              "description": "Both FDIC (banks) and NCUA (credit unions) insure deposits up to $250,000 per depositor."
+            },
+            {
+              "number": 4,
+              "title": "Match Needs to Providers",
+              "description": "Choose based on your specific needs\u2014fees, rates, services, convenience, and future financial goals."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Student Activity",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "\ud83d",
+            "title": "\udccb Financial Service Provider Analysis",
+            "description": "Complete the comprehension questions and analyze real-world scenarios to determine which financial service provider would be best for each situation. This will prepare you for tomorrow's Learning Lab where you'll research actual providers."
+          },
+          "steps": [
+            "List 3 types of financial institutions and their services",
+            "Identify 4 ways to pay for goods besides cash/checks",
+            "Explain benefits of online banking",
+            "Analyze 4 scenarios: Which provider is best?",
+            "Justify your recommendations with reasons"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "\u00a9 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

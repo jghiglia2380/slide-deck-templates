@@ -1,0 +1,21 @@
+{
+  "standard": 15,
+  "chapter": 1,
+  "title": "Career Exploration and Goal Setting",
+  "description": "This chapter focuses on career exploration processes and establishing professional development goals.",
+  "learning_objectives": [
+    "Understand the difference between a job and a career",
+    "Identify personal interests, skills, and values for career exploration",
+    "Research career paths using appropriate resources",
+    "Develop SMART career goals for short-term and long-term planning",
+    "Create a personalized career development plan"
+  ],
+  "content_density": "standard",
+  "template_format": "standard",
+  "day1_day2_connection": "complementary",
+  "skill_builder": {
+    "id": "career-path-planner",
+    "title": "Career Path Planner",
+    "description": "Interactive tool for developing a comprehensive career path plan with short-term, mid-term, and long-term goals."
+  }
+}

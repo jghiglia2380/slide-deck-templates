@@ -1,0 +1,532 @@
+{
+  "metadata": {
+    "lChapter": "L-54",
+    "title": "Inflation and Unemployment",
+    "subtitle": "Understanding Economic Indicators That Affect Your Life",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME",
+      "STATE_MIN_WAGE",
+      "STATE_UNEMPLOYMENT_RATE"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Inflation and Unemployment",
+        "titleSize": "large",
+        "subtitle": "Understanding Economic Indicators That Affect Your Life"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Your Parents' Dollar vs. Your Dollar",
+        "question": "A student compares prices from 1970 to 2024 and discovers minimum wage increased from $1.60 to $7.25, but prices rose even faster. Understanding these economic forces affects salary, home-buying ability, and job prospects.<br><br><strong>What should be done in this situation?</strong>"
+      },
+      "headerColor": "amber",
+      "notes": "**Discussion Prompts:**\n- \"Has your family mentioned how prices have changed since they were your age?\"\n- Connect to students: \"These forces affect your salary, ability to buy a home, and job prospects.\"",
+      "speakerNotes": "Present 1970 vs. 2024 price comparison—make it personal and tangible. Discussion: \"Has your family mentioned how prices have changed since they were your age?\" Connect to students: \"These forces affect your salary, ability to buy a home, and job prospects.\""
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Define",
+              "description": "inflation and unemployment and explain how they're measured (CPI, unemployment rate)"
+            },
+            {
+              "number": 2,
+              "verb": "Analyze",
+              "description": "the three causes of inflation and three types of unemployment"
+            },
+            {
+              "number": 3,
+              "verb": "Explain",
+              "description": "the Phillips Curve trade-off and why stagflation is dangerous"
+            },
+            {
+              "number": 4,
+              "verb": "Evaluate",
+              "description": "how inflation and unemployment directly affect your budget, job prospects, and life decisions"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Inflation",
+              "definition": "Sustained increase in the general price level of goods and services—your dollar buys LESS over time",
+              "example": "If inflation is 3%, a $100 item costs $103 next year"
+            },
+            {
+              "term": "Consumer Price Index (CPI)",
+              "definition": "Measures average change in prices paid by urban consumers for a market basket of goods and services",
+              "example": "CPI tracks 80,000+ items monthly: food, housing, gas, healthcare, etc."
+            },
+            {
+              "term": "Purchasing Power",
+              "definition": "The amount of goods and services your money can buy—decreases with inflation",
+              "example": "With 5% inflation, $10,000 loses $500 of purchasing power in one year"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Unemployment Rate",
+              "definition": "Percentage of labor force actively seeking work but unable to find jobs",
+              "example": "{{STATE_NAME}} unemployment rate: {{STATE_UNEMPLOYMENT_RATE}}"
+            },
+            {
+              "term": "Labor Force",
+              "definition": "All people age 16+ who are employed OR actively seeking employment",
+              "example": "Excludes students, retirees, stay-at-home parents not seeking work"
+            },
+            {
+              "term": "Phillips Curve",
+              "definition": "Historical relationship showing inflation and unemployment move in opposite directions—when one rises, the other tends to fall",
+              "example": "Lower unemployment → Higher wages → Higher inflation"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Three Causes of Inflation",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "📈",
+            "title": "Demand-Pull Inflation",
+            "items": [
+              "Too much money chasing too few goods",
+              "Demand exceeds supply",
+              "Common during economic booms",
+              "<strong>Example:</strong> 2021-2022 stimulus checks + supply chain issues → 9% inflation"
+            ]
+          },
+          "rightColumn": {
+            "icon": "⛽",
+            "title": "Cost-Push Inflation",
+            "items": [
+              "Production costs increase (wages, materials, energy)",
+              "Businesses pass costs to consumers",
+              "Supply decreases while demand stays constant",
+              "<strong>Example:</strong> Oil crisis of 1973 → Gas prices tripled → Everything got more expensive"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Monetary Inflation",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "The Federal Reserve and Money Supply",
+          "paragraphs": [
+            "When the Federal Reserve prints too much money or keeps interest rates too low for too long, the money supply grows faster than the economy.",
+            "More dollars in circulation means each dollar is worth less—prices rise to reflect this.",
+            "<strong>Historical Example:</strong> Weimar Germany (1920s) printed massive amounts of money to pay WWI debts. Result: Prices doubled every few days. People needed wheelbarrows of cash to buy bread!"
+          ],
+          "bulletPoints": [
+            "Normal money supply growth: 2-3% annually",
+            "2020-2021: Money supply grew 25% (pandemic stimulus)",
+            "Result: Inflation peaked at 9.1% in June 2022"
+          ],
+          "keyPoint": "Money supply growth must match economic growth—too much money = inflation"
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Three Types of Unemployment",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "🔄",
+            "title": "Frictional Unemployment",
+            "items": [
+              "Temporary—people between jobs",
+              "Voluntary job searching",
+              "Usually short-term (1-3 months)",
+              "Actually healthy for the economy!",
+              "<strong>Example:</strong> Recent college grad searching for first job"
+            ]
+          },
+          "rightColumn": {
+            "icon": "🏭",
+            "title": "Structural Unemployment",
+            "items": [
+              "Skills don't match available jobs",
+              "Technology/automation replaces workers",
+              "Industry decline (coal, manufacturing)",
+              "Long-term problem requiring retraining",
+              "<strong>Example:</strong> Factory worker replaced by robots"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "rose",
+      "content": {
+        "headerTitle": "Cyclical Unemployment",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Unemployment from Economic Downturns",
+          "paragraphs": [
+            "<strong>Cyclical unemployment</strong> rises during recessions when overall demand for goods and services falls. Businesses lay off workers because consumers aren't buying.",
+            "This is the WORST type of unemployment because it affects millions simultaneously and can last years.",
+            "<strong>2008 Financial Crisis Example:</strong> Unemployment rose from 5% (2007) to 10% (2009). 8.7 million jobs lost. Many workers unemployed for over a year."
+          ],
+          "bulletPoints": [
+            "Government response: Stimulus spending, unemployment benefits, job programs",
+            "Federal Reserve response: Lower interest rates to stimulate borrowing",
+            "Recovery can take years—unemployment didn't return to pre-crisis levels until 2015"
+          ],
+          "keyPoint": "Cyclical unemployment requires aggressive government and Fed action to reduce economic damage"
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Natural Rate of Unemployment",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "What Is the Natural Rate?",
+            "paragraphs": [
+              "The natural rate is the lowest unemployment rate consistent with stable inflation—typically 4-5%.",
+              "It includes frictional + structural unemployment but NOT cyclical.",
+              "Even in a healthy economy, some unemployment is normal and expected.",
+              "<strong>Why It Matters:</strong> If unemployment falls BELOW the natural rate, inflation tends to accelerate."
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "Zero unemployment is impossible AND undesirable—it would signal extreme labor shortages and wage-driven inflation"
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "4-5%",
+                "label": "Natural Rate of Unemployment",
+                "color": "teal"
+              },
+              {
+                "value": "3.7%",
+                "label": "Current U.S. Unemployment (Near historic lows)",
+                "color": "green"
+              }
+            ],
+            "infoCard": {
+              "title": "{{STATE_NAME}} Context",
+              "color": "amber",
+              "items": [
+                "State unemployment: {{STATE_UNEMPLOYMENT_RATE}}",
+                "State minimum wage: {{STATE_MIN_WAGE}}/hour",
+                "Compare to national average to understand your local job market"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "The Phillips Curve Trade-Off",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Inflation vs. Unemployment: The Historical Relationship",
+          "paragraphs": [
+            "The Phillips Curve shows a historical inverse relationship: when unemployment falls, inflation tends to rise—and vice versa.",
+            "<strong>The Logic:</strong> Lower unemployment → Labor shortages → Businesses raise wages to attract workers → Higher costs passed to consumers → Inflation rises",
+            "<strong>Policy Implication:</strong> Government faces a trade-off. Policies that reduce unemployment (stimulus, low interest rates) may increase inflation. Policies that fight inflation (raising interest rates) may increase unemployment."
+          ],
+          "bulletPoints": [
+            "1960s: Phillips Curve worked well—clear trade-off observed",
+            "1970s: Stagflation broke the curve—high inflation AND high unemployment",
+            "Today: Relationship is weaker but still influences Fed policy"
+          ],
+          "keyPoint": "The Federal Reserve constantly balances inflation control vs. job creation—it's their dual mandate"
+        }
+      },
+      "notes": "## Common Misconceptions\n\n| Misconception | Clarification |\n|--------------|---------------|\n| \"Inflation is always bad.\" | Moderate inflation (2%) is healthy—encourages spending and investment. Deflation (falling prices) often signals recession and can be worse. The Fed targets 2%, not 0%. |\n| \"A bigger number paycheck means I'm richer.\" | Only REAL wages (adjusted for inflation) measure purchasing power. 5% raise with 7% inflation = 2% pay cut in real terms. |\n| \"Unemployment is unemployment—all the same.\" | Types require different solutions. Frictional is healthy (job transitions). Structural needs retraining. Cyclical needs stimulus. Wrong treatment makes things worse. |\n| \"The government can eliminate both inflation and unemployment.\" | Phillips Curve shows they move inversely. Fighting inflation (raise rates) causes higher unemployment. Fighting unemployment (lower rates) causes higher inflation. Must balance. |",
+      "speakerNotes": "COMMON MISCONCEPTIONS:\n• \"\"Inflation is always bad.\"\" → Moderate inflation (2%) is healthy—encourages spending and investment. Deflation (falling prices) often signals recession and can be worse. The Fed targets 2%, not 0%.\n• \"\"A bigger number paycheck means I'm richer.\"\" → Only REAL wages (adjusted for inflation) measure purchasing power. 5% raise with 7% inflation = 2% pay cut in real terms.\n• \"\"Unemployment is unemployment—all the same.\"\" → Types require different solutions. Frictional is healthy (job transitions). Structural needs retraining. Cyclical needs stimulus. Wrong treatment makes things worse.\n• \"\"The government can eliminate both inflation and unemployment.\"\" → Phillips Curve shows they move inversely. Fighting inflation (raise rates) causes higher unemployment. Fighting unemployment (lower rates) causes higher inflation. Must balance."
+    },
+    {
+      "number": 12,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": "The Federal Reserve has to choose: Fight 6% inflation by raising interest rates (might cause recession and job losses) OR keep rates low to protect jobs (inflation stays high, eroding purchasing power).<br><br>If you were Fed Chair, which would you prioritize and why? Who gets hurt either way?"
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Real-World Example: Stagflation",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "📉",
+            "name": "The 1970s: When Everything Went Wrong",
+            "paragraphs": [
+              "<strong>The Setup:</strong> In 1973, OPEC (Organization of Petroleum Exporting Countries) placed an oil embargo on the U.S., causing oil prices to quadruple. This created massive cost-push inflation.",
+              "",
+              "<strong>The Problem:</strong> Normally, high inflation coincides with low unemployment (Phillips Curve). But in the 1970s, the U.S. experienced BOTH high inflation (12%+) AND high unemployment (9%+). This combination is called <strong>stagflation</strong>.",
+              "",
+              "<strong>Why It's Terrible:</strong> Government couldn't win. Stimulus to reduce unemployment would worsen inflation. Raising interest rates to fight inflation would increase unemployment. The economy was trapped."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "1970s Stagflation",
+              "value": "12% inflation + 9% unemployment",
+              "detail": "Lasted for most of the decade"
+            },
+            {
+              "type": "after",
+              "label": "Fed Response (1979-1982)",
+              "value": "20%+ interest rates",
+              "detail": "Caused severe recession but broke inflation"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "rose",
+      "content": {
+        "headerTitle": "Real-World Example: How This Affects YOU",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "💰",
+            "name": "Sarah's Budget: 2019 vs. 2024",
+            "paragraphs": [
+              "Sarah is 25 years old, working as a teacher with the same salary in 2019 and 2024 (no raise). Let's see how inflation affected her budget:",
+              "",
+              "<strong>2019 Monthly Budget:</strong> Rent: $900, Groceries: $300, Gas: $120, Car insurance: $150, Utilities: $100. <strong>Total: $1,570</strong>",
+              "",
+              "<strong>2024 Monthly Budget:</strong> Rent: $1,200 (+33%), Groceries: $420 (+40%), Gas: $180 (+50%), Car insurance: $180 (+20%), Utilities: $130 (+30%). <strong>Total: $2,110</strong>",
+              "",
+              "<strong>Impact:</strong> Sarah needs an extra $540/month ($6,480/year) just to maintain the same lifestyle. Her purchasing power declined 34% in 5 years!"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "2019 Discretionary Income",
+              "value": "$430/month",
+              "detail": "After expenses from $2,000 paycheck"
+            },
+            {
+              "type": "after",
+              "label": "2024 Discretionary Income",
+              "value": "-$110/month",
+              "detail": "Going into debt without a raise"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "Your generation faces higher costs for housing, education, and healthcare than previous generations—yet entry-level wages haven't kept pace with inflation.<br><br>How does understanding inflation and unemployment change the way you think about career planning, salary negotiation, and financial decisions? What strategies can you use to protect yourself?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Protecting Yourself from Inflation",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "✗",
+            "title": "What Doesn't Work",
+            "items": [
+              "Keeping cash under your mattress (loses 3%+ value per year)",
+              "Accepting jobs without negotiating COLA (cost-of-living adjustments)",
+              "Fixed-rate savings accounts with returns below inflation",
+              "Ignoring price increases and maintaining spending habits"
+            ]
+          },
+          "rightColumn": {
+            "icon": "✓",
+            "title": "What Works",
+            "items": [
+              "Invest in assets that grow faster than inflation (stocks, real estate)",
+              "Negotiate annual raises matching inflation (minimum 3-4%)",
+              "Choose careers with wage growth potential",
+              "Monitor CPI and adjust budget accordingly",
+              "Build income streams that scale with inflation"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "emerald",
+      "content": {
+        "headerTitle": "Check Your Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "Explain the difference between demand-pull, cost-push, and monetary inflation. Give an example of each."
+            },
+            {
+              "number": 2,
+              "question": "Why is frictional unemployment considered healthy while cyclical unemployment is dangerous?"
+            },
+            {
+              "number": 3,
+              "question": "What is the Phillips Curve trade-off? Why did stagflation in the 1970s challenge this relationship?"
+            },
+            {
+              "number": 4,
+              "question": "How does inflation affect your purchasing power? Use the 1970 vs. 2024 comparison to explain."
+            }
+          ]
+        }
+      },
+      "notes": "## Answer Key\n\n**1.** B (Cost-push inflation)\n\n**2.** Natural rate (~4-5%) includes frictional (people between jobs) and structural (skills mismatch). {{STATE_NAME}}'s current rate is {{STATE_UNEMPLOYMENT_RATE}}. Can't be zero because: 1) There will always be people transitioning jobs, 2) Technology constantly changes skill requirements, 3) Below natural rate causes labor shortages → wage inflation.\n\n**3.** Fed raises interest rates (contractionary monetary policy), reduces money supply. Higher rates discourage borrowing/spending → demand falls → inflation falls. Trade-off: Higher unemployment as economy slows. Phillips Curve: fighting inflation causes unemployment.\n\n**4.** Nominal: $40,000 × 1.344 = $53,760. Inflation: 1.280. Real: $53,760 ÷ 1.280 = **$42,000**. (Gaining purchasing power because raises > inflation)\n\n**5.** *Should mention: 1) Lower expectations temporarily (take job below skill level to stay employed), 2) Network aggressively (70% of jobs through connections, more important when hiring slow), 3) Upskill during downtime (emerge more valuable when economy recovers). Quality of reasoning matters.*",
+      "speakerNotes": "ASSESSMENT ANSWER KEY:\n1. B (Cost-push inflation)\n2. Natural rate (~4-5%) includes frictional (people between jobs) and structural (skills mismatch). {{STATE_NAME}}'s current rate is {{STATE_UNEMPLOYMENT_RATE}}. Can't be zero because: 1) There will always be people transitioning jobs, 2) Technology constantly changes skill requirements, 3) Below natural rate causes labor shortages → wage inflation.\n3. Fed raises interest rates (contractionary monetary policy), reduces money supply. Higher rates discourage borrowing/spending → demand falls → inflation falls. Trade-off: Higher unemployment as economy slows. Phillips Curve: fighting inflation causes unemployment.\n4. Nominal: $40,000 × 1.344 = $53,760. Inflation: 1.280. Real: $53,760 ÷ 1.280 =$42,000. (Gaining purchasing power because raises > inflation)\n5. Should mention: 1) Lower expectations temporarily (take job below skill level to stay employed), 2) Network aggressively (70% of jobs through connections, more important when hiring slow), 3) Upskill during downtime (emerge more valuable when economy recovers). Quality of reasoning matters."
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Inflation reduces purchasing power",
+              "description": "Your dollar buys less over time—3% inflation means $100 loses $3 of purchasing power annually"
+            },
+            {
+              "number": 2,
+              "title": "Three causes of inflation",
+              "description": "Demand-pull (too much demand), cost-push (rising production costs), monetary (too much money printed)"
+            },
+            {
+              "number": 3,
+              "title": "Three types of unemployment",
+              "description": "Frictional (temporary job searching), structural (skills mismatch), cyclical (recession-driven)"
+            },
+            {
+              "number": 4,
+              "title": "Phillips Curve trade-off",
+              "description": "Historically, inflation and unemployment move in opposite directions—policy must balance both"
+            },
+            {
+              "number": 5,
+              "title": "Protect yourself strategically",
+              "description": "Negotiate raises matching inflation, invest in assets that outpace inflation, choose careers with wage growth"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Skill Builder: Inflation Impact Calculator",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "💵",
+            "title": "Tomorrow's Learning Lab",
+            "description": "Use the Inflation Impact Calculator to see how inflation affects YOUR budget and plan protection strategies"
+          },
+          "steps": [
+            "Input your current monthly expenses",
+            "Apply inflation rates to see 5-year and 10-year projections",
+            "Calculate the salary increases needed to maintain purchasing power",
+            "Compare investment returns vs. inflation",
+            "Create a personal inflation protection plan"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "\"Understanding inflation and unemployment helps you protect your purchasing power and make smarter career decisions\"",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

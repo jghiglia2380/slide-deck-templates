@@ -1,0 +1,529 @@
+{
+  "metadata": {
+    "lChapter": "L-29",
+    "title": "Identity Theft Prevention and Recovery",
+    "subtitle": "Protect Your Information and Recover If Compromised",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Identity Theft Prevention and Recovery",
+        "titleSize": "large",
+        "subtitle": "Protect Your Information and Recover If Compromised"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "The Challenge",
+        "question": "Maria discovered $3,000 in fraudulent electronics purchases on her credit card statement, shipped to an unknown address. She was unsure how her information was stolen or what steps to take.<br><br><strong>What should Maria do immediately, and how could she have prevented this from happening?</strong>"
+      },
+      "headerColor": "amber",
+      "speakerNotes": "Read Maria's credit card fraud scenario aloud. Ask: 'How would you feel discovering $3,000 in charges you didn't make?' Discuss: How might her information have been stolen?"
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Identify",
+              "description": "Identify different tactics used by identity thieves and how they operate across digital and physical methods."
+            },
+            {
+              "number": 2,
+              "verb": "Evaluate",
+              "description": "Evaluate strategies for protecting your personal information from both high-tech and low-tech theft."
+            },
+            {
+              "number": 3,
+              "verb": "Explain",
+              "description": "Explain the step-by-step process for responding to identity theft, from discovery through recovery."
+            },
+            {
+              "number": 4,
+              "verb": "Differentiate",
+              "description": "Differentiate between credit freezes and fraud alerts, knowing when to use each protection tool."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Identity Theft",
+              "definition": "Fraudulent acquisition and use of a person's private identifying information, usually for financial gain.",
+              "example": "Someone uses your SSN and birthdate to open credit cards, take out loans, or file tax returns in your name."
+            },
+            {
+              "term": "Credit Freeze",
+              "definition": "A security measure that restricts access to your credit report, making it harder for thieves to open accounts in your name.",
+              "example": "With a freeze, even if a thief has all your info, they can't open new credit because lenders can't access your report."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Fraud Alert",
+              "definition": "A notice placed on your credit report that alerts creditors you may be a victim of fraud and they should verify identity before extending credit.",
+              "example": "A fraud alert means lenders must take extra steps to confirm it's really you before approving new accounts."
+            },
+            {
+              "term": "Skimming",
+              "definition": "Illegal copying of information from the magnetic strip of a credit or ATM card using a hidden device.",
+              "example": "A thief installs a device on a gas pump card reader that captures card numbers from every customer."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "The Scale of the Problem",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Identity Theft Is an Epidemic",
+            "paragraphs": [
+              "Identity theft affects millions of Americans annually, with losses reaching billions of dollars.",
+              "Beyond immediate financial impacts, victims face damaged credit scores and months of recovery work.",
+              "The FTC estimates victims spend <strong>200+ hours over 6 months</strong> resolving identity theft—that's like a part-time job."
+            ],
+            "highlightBox": {
+              "icon": "⚠️",
+              "text": "The average victim doesn't discover the theft for 3+ months—by then, significant damage has occurred."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "1.4M+",
+                "label": "Identity theft reports to FTC annually",
+                "color": "amber"
+              },
+              {
+                "value": "$10.3B",
+                "label": "Total fraud losses in 2023",
+                "color": "amber"
+              },
+              {
+                "value": "200+ hrs",
+                "label": "Average recovery time",
+                "color": "indigo"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "How Thieves Steal Your Identity",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "💻",
+            "title": "Digital Methods",
+            "items": [
+              "Phishing emails/texts with fake links",
+              "Data breaches exposing millions of records",
+              "Malware that captures keystrokes",
+              "Fake websites collecting credentials",
+              "Social media over-sharing exploitation",
+              "Public Wi-Fi interception"
+            ]
+          },
+          "rightColumn": {
+            "icon": "📬",
+            "title": "Physical Methods",
+            "items": [
+              "Mail theft (new cards, statements)",
+              "Dumpster diving through trash",
+              "Card skimmers at ATMs/gas pumps",
+              "Wallet or purse theft",
+              "'Shoulder surfing' while you type",
+              "Stolen documents from unlocked cars"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Warning Signs of Identity Theft",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Know the Red Flags—Early Detection Is Critical",
+          "paragraphs": [
+            "The sooner you catch identity theft, the less damage it causes. Watch for these warning signs:"
+          ],
+          "bulletPoints": [
+            "<strong>Unexpected credit denial:</strong> You're denied for credit you should qualify for—someone may have damaged your score",
+            "<strong>Missing mail:</strong> Bills or statements stop arriving—a thief may have redirected your mail",
+            "<strong>Unknown accounts:</strong> Your credit report shows accounts you never opened",
+            "<strong>Collection calls:</strong> Collectors contact you about debts you don't recognize",
+            "<strong>IRS notices:</strong> The IRS says someone already filed using your SSN",
+            "<strong>Medical bills:</strong> You receive bills for medical services you never received"
+          ],
+          "keyPoint": {
+            "text": "📋 Check your credit reports regularly—you're entitled to one FREE report from each bureau annually at AnnualCreditReport.com"
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Prevention: Protecting Your Information",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Build Your Defense System",
+          "paragraphs": [
+            "Protection requires addressing both digital and physical vulnerabilities."
+          ],
+          "bulletPoints": [
+            "<strong>Secure your mail:</strong> Use a locking mailbox, opt for electronic statements, collect mail promptly",
+            "<strong>Shred everything:</strong> Destroy documents with personal info before discarding—cross-cut shredders are best",
+            "<strong>Protect cards physically:</strong> Check ATMs/gas pumps for skimmers, cover your PIN, use contactless when possible",
+            "<strong>Monitor regularly:</strong> Check bank statements weekly, review credit reports at least twice yearly",
+            "<strong>Use credit freezes:</strong> Freeze your credit with all three bureaus—it's FREE and stops most account fraud",
+            "<strong>Strong passwords:</strong> Unique passwords for each account, with two-factor authentication enabled"
+          ],
+          "keyPoint": {
+            "text": "🔐 A credit freeze is the SINGLE MOST EFFECTIVE protection—it stops 90% of new account identity theft."
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Credit Freeze vs. Fraud Alert",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "❄️",
+            "title": "Credit Freeze",
+            "items": [
+              "BLOCKS all access to credit report",
+              "New accounts cannot be opened",
+              "FREE with all three bureaus",
+              "Lasts until YOU lift it",
+              "Must unfreeze when you want credit",
+              "Best for ongoing protection"
+            ]
+          },
+          "rightColumn": {
+            "icon": "⚠️",
+            "title": "Fraud Alert",
+            "items": [
+              "WARNS lenders to verify identity",
+              "Doesn't block—just adds friction",
+              "FREE with all three bureaus",
+              "Lasts 1 year (or 7 if ID theft victim)",
+              "One bureau notifies the others",
+              "Best immediately after suspected theft"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "If You Become a Victim: Recovery Steps",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Act Immediately—Time Is Critical",
+          "paragraphs": [
+            "Follow these steps in order for the most effective recovery:"
+          ],
+          "bulletPoints": [
+            "<strong>Step 1:</strong> Call affected companies immediately to close or freeze compromised accounts",
+            "<strong>Step 2:</strong> Place a fraud alert with one credit bureau (they'll notify the others)",
+            "<strong>Step 3:</strong> File a report with the FTC at IdentityTheft.gov—get your recovery plan",
+            "<strong>Step 4:</strong> Change all passwords and PINs for affected and related accounts",
+            "<strong>Step 5:</strong> File a police report if needed (especially for tax fraud or criminal activity)",
+            "<strong>Step 6:</strong> Continue monitoring—thieves often try again once they have your info"
+          ],
+          "keyPoint": {
+            "text": "📝 IdentityTheft.gov creates a personalized recovery plan with pre-filled letters and step-by-step guidance."
+          }
+        }
+      },
+      "speakerNotes": "COMMON MISCONCEPTIONS:\n• \"Identity theft only happens online.\" → Physical methods like mail theft, dumpster diving, and skimming are still common. Protection requires securing both digital and physical information.\n• \"I'm too young to be a target.\" → Young people are actually attractive targets because they may not monitor their credit. Some discover theft only when applying for college loans or first jobs.\n• \"A fraud alert and credit freeze are the same.\" → A fraud alert warns creditors to verify identity but doesn't prevent new accounts. A freeze actually blocks access to your credit report."
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Types of Identity Theft Beyond Credit Cards",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Identity Theft Takes Many Forms",
+            "paragraphs": [
+              "<strong>Tax Identity Theft:</strong> Someone files a tax return using your SSN to claim your refund before you can file.",
+              "<strong>Medical Identity Theft:</strong> Someone uses your insurance to get healthcare, leaving you with bills and corrupted medical records.",
+              "<strong>Child Identity Theft:</strong> Children's SSNs are stolen because they have clean credit histories.",
+              "<strong>Synthetic Identity Theft:</strong> Thieves combine real and fake info to create new identities."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "Why Check All Three Bureaus?",
+              "color": "indigo",
+              "items": [
+                "Not all lenders report to all bureaus",
+                "Fraud may appear on only one",
+                "Errors differ between reports",
+                "Complete picture requires all three"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Apply It",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "⛽",
+            "name": "The Gas Station Skimmer",
+            "paragraphs": [
+              "After using his debit card at a gas pump, Jordan noticed fraudulent charges on his account days later.",
+              "The gas station later announced that thieves had installed hidden skimming devices on their card readers, capturing hundreds of customers' card information."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "negative",
+              "label": "Theft Method",
+              "value": "Skimming",
+              "detail": "Hidden device copied card data"
+            },
+            {
+              "type": "negative",
+              "label": "Prevention",
+              "value": "Use Credit Inside",
+              "detail": "Pay inside or use contactless"
+            },
+            {
+              "type": "positive",
+              "label": "Recovery",
+              "value": "Report Within 24 Hours",
+              "detail": "Limits liability to $0-50"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Apply It",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "🗑️",
+            "name": "David's Discarded Documents",
+            "paragraphs": [
+              "David threw away his old bank statements and pre-approved credit card offers without shredding them.",
+              "A month later, someone opened a credit card in his name using information from those documents retrieved from his trash."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "negative",
+              "label": "Theft Method",
+              "value": "Dumpster Diving",
+              "detail": "Low-tech but highly effective"
+            },
+            {
+              "type": "negative",
+              "label": "Prevention",
+              "value": "Cross-Cut Shredder",
+              "detail": "Destroys documents completely"
+            },
+            {
+              "type": "positive",
+              "label": "Alternative",
+              "value": "Go Paperless",
+              "detail": "Electronic statements only"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "amber",
+      "content": {
+        "badge": "Discussion",
+        "question": "Maria (from The Challenge) discovered $3,000 in fraudulent charges on her credit card.<br><br>What are the FIRST THREE actions she should take, in order?<br><br>How would her response differ if she had discovered this on a debit card instead of a credit card?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "indigo",
+      "content": {
+        "badge": "Reflection",
+        "question": "Which identity theft protection measure do you think is most commonly overlooked by people your age?<br><br>Why might people neglect this precaution, and what could be the long-term consequences?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "emerald",
+      "content": {
+        "headerTitle": "Check Your Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What is the key difference between a credit freeze and a fraud alert? When would you use each?"
+            },
+            {
+              "number": 2,
+              "question": "Why would an identity thief file a tax return in someone else's name?"
+            },
+            {
+              "number": 3,
+              "question": "List the first THREE steps you should take if you discover you're an identity theft victim."
+            },
+            {
+              "number": 4,
+              "question": "Why is it important to check your credit report from ALL THREE bureaus, not just one?"
+            }
+          ]
+        }
+      },
+      "speakerNotes": "ASSESSMENT ANSWER KEY:\n1. A credit freeze blocks new credit inquiries; a fraud alert warns creditors to verify identity. Use a freeze for ongoing protection; use a fraud alert immediately after suspected theft.\n2. To claim the victim's tax refund. The thief files early with false income information and steals the refund before the real taxpayer files.\n3. (1) Call credit card company to report fraud and cancel card, (2) Review other accounts for suspicious activity, (3) Place a fraud alert with a credit bureau.\n4. Not all creditors report to all three bureaus, so fraudulent activity might appear on only one report. Checking all three ensures complete visibility of your credit profile."
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Know the Tactics",
+              "description": "Thieves use both digital (phishing, data breaches) and physical (skimming, mail theft) methods—protect against both."
+            },
+            {
+              "number": 2,
+              "title": "Prevention Is Key",
+              "description": "Credit freezes, shredding documents, and monitoring accounts are your first line of defense."
+            },
+            {
+              "number": 3,
+              "title": "Recognize Warning Signs",
+              "description": "Unexpected denials, missing mail, and unknown accounts are red flags—catch theft early to limit damage."
+            },
+            {
+              "number": 4,
+              "title": "Know the Recovery Steps",
+              "description": "Act immediately: freeze accounts, place fraud alerts, report to FTC, change passwords, file police report if needed."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Tomorrow's Challenge",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "🛡️",
+            "title": "Identity Protection Audit",
+            "description": "You've learned how identity theft happens—but how protected are YOU right now? Tomorrow you'll conduct a personal security audit and build your protection system."
+          },
+          "steps": [
+            "Audit your current protection measures (mail, passwords, card habits)",
+            "Identify your top three vulnerability points",
+            "Research how to place a credit freeze with all three bureaus",
+            "Create your personal identity theft response plan",
+            "Build a secure password system with a password manager"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "standard_number": "15",
+    "standard_title": "Career Readiness",
+    "chapter_number": "15.4",
+    "chapter_title": "Interview Skills and Workplace Readiness",
+    "template_format": "case-study",
+    "content_density": "standard",
+    "day1_day2_connection": "complementary",
+    "skill_builder": {
+      "id": "interview_simulator",
+      "name": "Interview Simulator",
+      "description": "Interactive interview practice tool with feedback and common questions"
+    },
+    "generation_date": "2025-03-19",
+    "status": "Complete"
+  },
+  "content": {
+    "learning_objectives": [
+      "Develop effective strategies for preparing for job interviews",
+      "Practice responding to common interview questions with the STAR method",
+      "Understand professional workplace expectations and etiquette",
+      "Learn techniques for managing interview anxiety and stress",
+      "Develop strategies for post-interview follow-up and evaluation"
+    ],
+    "key_concepts": [
+      "Interview Preparation",
+      "STAR Method",
+      "Professional Etiquette",
+      "Workplace Expectations",
+      "Follow-up Communication",
+      "Behavioral Interviews"
+    ],
+    "day1_title": "Interview Preparation and Techniques",
+    "day2_title": "Workplace Expectations and Professionalism",
+    "skill_builder_name": "Interview Simulator"
+  }
+}

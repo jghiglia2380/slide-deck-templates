@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "standard_number": "15",
+    "standard_title": "Career Readiness",
+    "chapter_number": "15.5",
+    "chapter_title": "Entrepreneurship and Side Hustles",
+    "template_format": "project-based",
+    "content_density": "standard",
+    "day1_day2_connection": "extension",
+    "skill_builder": {
+      "id": "business_plan_builder",
+      "name": "Business Plan Builder",
+      "description": "Interactive business plan development tool with financial projections"
+    },
+    "generation_date": "2025-03-19",
+    "status": "Complete"
+  },
+  "content": {
+    "learning_objectives": [
+      "Identify entrepreneurial opportunities aligned with personal skills and interests",
+      "Understand the essential components of a business plan",
+      "Develop strategies for balancing side hustles with traditional employment",
+      "Learn about customer discovery and minimum viable product development",
+      "Explore financial planning and resource allocation for new ventures"
+    ],
+    "key_concepts": [
+      "Entrepreneurial Mindset",
+      "Business Plan Development",
+      "Side Hustle Management",
+      "Minimum Viable Product",
+      "Customer Discovery",
+      "Resource Allocation"
+    ],
+    "day1_title": "Entrepreneurial Mindset and Opportunity Identification",
+    "day2_title": "Business Plan Development Workshop",
+    "skill_builder_name": "Business Plan Builder"
+  }
+}

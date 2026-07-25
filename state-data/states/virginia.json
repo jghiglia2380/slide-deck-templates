@@ -1,0 +1,201 @@
+{
+  "state_name": "Virginia",
+  "state_code": "VA",
+  "last_updated": "2025-11-14",
+  "data_as_of": "2025-11",
+  "data_sources": {
+    "dmv_url": "https://www.dmv.virginia.gov",
+    "tax_authority_url": "https://www.tax.virginia.gov",
+    "labor_department_url": "https://www.vec.virginia.gov",
+    "education_department_url": "https://www.schev.edu",
+    "consumer_protection_url": "https://www.oag.state.va.us/consumer-protection",
+    "property_tax_assessor_url": "https://www.tax.virginia.gov/local-taxes"
+  },
+  "automotive": {
+    "registration_initial": 40.75,
+    "registration_annual": 40.75,
+    "avg_auto_loan_rate_new": 6.65,
+    "avg_auto_loan_rate_used": 7.35,
+    "insurance_avg_teen": 210,
+    "insurance_comparison_url": "https://www.scc.virginia.gov/pages/Insurance",
+    "lease_acquisition_fee": 650,
+    "inspection_required": true,
+    "inspection_cost": 20,
+    "gas_price_current": 3.18,
+    "dmv_url": "https://www.dmv.virginia.gov"
+  },
+  "taxes": {
+    "income_tax_rate": 5.75,
+    "sales_tax": 4.3,
+    "local_sales_tax_min": 0.7,
+    "local_sales_tax_max": 1.7,
+    "combined_sales_tax_min": 5.0,
+    "combined_sales_tax_max": 6.0,
+    "local_sales_tax_examples": [
+      {
+        "city": "Virginia Beach",
+        "local_rate": 0.7,
+        "combined_rate": 5.3
+      },
+      {
+        "city": "Richmond",
+        "local_rate": 1.0,
+        "combined_rate": 5.3
+      },
+      {
+        "city": "Arlington",
+        "local_rate": 0.7,
+        "combined_rate": 6.0
+      },
+      {
+        "city": "Norfolk",
+        "local_rate": 1.0,
+        "combined_rate": 5.3
+      },
+      {
+        "city": "Fairfax",
+        "local_rate": 0.7,
+        "combined_rate": 6.0
+      }
+    ],
+    "allows_local_income_tax": false,
+    "local_income_tax_range": "N/A - Virginia has no local income tax",
+    "local_income_tax_rate_low": 0,
+    "local_income_tax_rate_high": 0,
+    "local_income_tax_example": "N/A",
+    "property_tax_county_rate": 0.95,
+    "property_tax_school_rate": 0,
+    "property_tax_special_rate": 0.05,
+    "property_tax_effective_rate": null,
+    "property_tax_effective_rate_todo": "TODO: no authoritative 2026 in-repo source; STOP-flagged for Seb/Denis. Do not invent.",
+    "property_tax_city_range": "0.70 - 1.25%",
+    "property_tax_examples": [
+      {
+        "location": "Fairfax County",
+        "millage": 10.8,
+        "description": "High-cost suburban DC, excellent schools"
+      },
+      {
+        "location": "Arlington County",
+        "millage": 9.9,
+        "description": "Urban DC suburb, high property values"
+      },
+      {
+        "location": "Richmond",
+        "millage": 12.0,
+        "description": "State capital, urban rates"
+      },
+      {
+        "location": "Virginia Beach",
+        "millage": 10.0,
+        "description": "Coastal city, moderate rates"
+      },
+      {
+        "location": "Loudoun County",
+        "millage": 8.2,
+        "description": "Affluent DC suburb, lower rates"
+      },
+      {
+        "location": "Roanoke",
+        "millage": 12.5,
+        "description": "Mid-sized city, higher rates"
+      },
+      {
+        "location": "Rural Southwest Virginia",
+        "millage": 7.5,
+        "description": "Lower rates in rural areas"
+      }
+    ],
+    "assessment_percentage": 100,
+    "homestead_exemption": 0,
+    "property_assessment_frequency": "Annual",
+    "assessment_appeal_process": "File with local board of equalization by May 1 or within 3 years of assessment. If denied, appeal to circuit court within 30 days.",
+    "assessment_appeal_deadline": "May 1",
+    "assessment_appeal_form_url": "https://www.tax.virginia.gov/local-property-tax-appeals",
+    "has_tax_cap": false,
+    "county_name": "Fairfax County",
+    "county_assessor_contact": "Fairfax County Department of Tax Administration - (703) 222-8234",
+    "county_tax_assessor_url": "https://www.fairfaxcounty.gov/taxes/",
+    "property_tax_lookup_url": "https://www.tax.virginia.gov/local-taxes",
+    "tax_incentives": "Virginia529 and CollegeAmerica (state-sponsored 529 plans with state tax deductions up to $4,000 per account per year), Land Preservation Tax Credit",
+    "tax_structure": "Moderate state income tax (2% to 5.75%); low sales tax; property taxes vary widely by locality"
+  },
+  "housing": {
+    "median_home_price": 388000,
+    "median_rent": 1695,
+    "housing_market_trends": "Rising steadily - Northern Virginia (DC suburbs) very expensive, rest of state more affordable. Coastal areas (Virginia Beach) moderate.",
+    "first_time_homebuyer_program": "Virginia Housing - offers down payment assistance and competitive mortgage rates for first-time buyers",
+    "avg_mortgage_rate_30yr": 7.08
+  },
+  "insurance": {
+    "homeowners_avg_monthly": 140,
+    "data_source": "Virginia Bureau of Insurance average rates for $300K home coverage"
+  },
+  "employment": {
+    "min_wage": 12.00,
+    "unemployment_rate": 3.2,
+    "major_industries": "Technology, Federal Government, Defense, Healthcare, Agriculture, Tourism"
+  },
+  "education": {
+    "tuition_public": 13842
+  },
+  "banking": {
+    "avg_monthly_fee": 11,
+    "avg_overdraft_fee": 32,
+    "credit_union_association_url": "https://www.vacunet.org",
+    "minor_banking_rules": "Minors can open savings accounts with parent/guardian co-signer. Checking accounts typically require age 13+ with custodian."
+  },
+  "consumer_protection": {
+    "consumer_protection_agency": "Virginia Attorney General - Consumer Protection Section",
+    "consumer_protection_url": "https://www.oag.state.va.us/consumer-protection"
+  },
+  "calculated_values": {
+    "state_tax_on_3500_monthly": 201,
+    "calculated_state_tax_70k": 4025,
+    "total_effective_rate": 19.8,
+    "take_home_pay_70k": 50820,
+    "property_tax_300k": 2550,
+    "state_withholding_48k_monthly": 230
+  },
+  "local_examples": {
+    "major_retailers": "Target, Walmart, Kroger, Wegmans, Costco",
+    "telecom_providers": "Verizon, AT&T, T-Mobile, Xfinity, Cox",
+    "utility_providers": "Dominion Energy, Appalachian Power, Washington Gas",
+    "healthcare_market": "Multiple insurers; strong provider networks in Northern Virginia and Richmond; rural areas have fewer options",
+    "local_credit_union_name": "Virginia Credit Union",
+    "local_nonprofit_name": "Foodbank of Southeastern Virginia",
+    "major_city": "Virginia Beach",
+    "major_city_1": "Virginia Beach",
+    "major_city_2": "Norfolk",
+    "major_city_3": "Richmond",
+    "major_city_1_millage": 10.0,
+    "major_city_2_millage": 11.2,
+    "major_city_3_millage": 12.0,
+    "suburb_city": "Fairfax",
+    "suburb_1": "Fairfax",
+    "suburb_2": "Arlington",
+    "suburb_1_millage": 10.8,
+    "suburb_2_millage": 9.9,
+    "rural_area": "Southwest Virginia",
+    "rural_area_millage": 7.5,
+    "high_tax_city": "Richmond",
+    "medium_tax_city": "Virginia Beach",
+    "low_tax_city": "Abingdon",
+    "high_tax_major_city": "Richmond",
+    "low_tax_medium_city": "Lynchburg",
+    "high_tax_millage": 12.5,
+    "medium_tax_millage": 10.0,
+    "low_tax_millage": 7.5,
+    "high_combined_sales_tax": 6.0,
+    "low_combined_sales_tax": 5.3,
+    "high_local_sales_tax": 1.0,
+    "low_local_sales_tax": 0.7,
+    "local_sales_tax_1": 1.0,
+    "total_millage_example": 10.8,
+    "high_local_income_tax_rate": 0,
+    "low_local_income_tax_rate": 0,
+    "local_income_tax_rate": 0,
+    "local_income_tax_rate_1": 0
+  },
+  "notes": "Virginia has moderate taxes and cost of living, though Northern Virginia (DC suburbs) is very expensive. State is home to many federal government employees and defense contractors, particularly in Northern Virginia and Hampton Roads. Strong education system with several top public universities (UVA, William & Mary, Virginia Tech). Minimum wage $12/hour as of 2023, higher than federal but lower than many progressive states. Property taxes vary dramatically - high in Northern Virginia, moderate in urban areas, low in rural regions. State economy diverse: tech (Northern VA), military (Hampton Roads), agriculture (Shenandoah Valley), tourism (coastal areas)."
+}

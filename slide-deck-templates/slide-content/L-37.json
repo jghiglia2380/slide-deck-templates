@@ -1,0 +1,555 @@
+{
+  "metadata": {
+    "lChapter": "L-37",
+    "title": "The Costs and Benefitsof Gambling",
+    "subtitle": "Understanding Risks, Rewards, and Responsible Choices",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "The Costs and Benefitsof Gambling",
+        "titleSize": "large",
+        "subtitle": "Understanding Risks, Rewards, and Responsible Choices"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "The Challenge",
+        "question": "How can you enjoy gambling as <em>entertainment</em><br>while protecting yourself from its <em>financial and personal risks</em>?"
+      },
+      "headerColor": "amber",
+      "speakerNotes": "Read the casino development scenario aloud. Ask: \"What questions would you want answered before supporting or opposing this?\" Note that this is a real decision many communities face‚Äîthere's no simple answer."
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Understand",
+              "description": "Recognize the financial and social implications of gambling at both individual and community levels."
+            },
+            {
+              "number": 2,
+              "verb": "Recognize",
+              "description": "View gambling as entertainment with an expected cost rather than as a source of financial gain."
+            },
+            {
+              "number": 3,
+              "verb": "Identify",
+              "description": "Understand the concepts of problem and pathological gambling and their effects on personal and community well-being."
+            },
+            {
+              "number": 4,
+              "verb": "Develop",
+              "description": "Create strategies for responsible gambling practices that minimize potential harms while allowing enjoyment."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Gambling as Entertainment",
+              "definition": "Viewing gambling as a leisure activity with an expected cost, like movies or concerts, not a way to make money.",
+              "example": "Setting aside $50 from your entertainment budget for a casino visit, expecting to lose it for the experience"
+            },
+            {
+              "term": "Problem Gambling",
+              "definition": "Gambling behavior that disrupts personal, family, or vocational pursuits with increasing preoccupation and frequency.",
+              "example": "Chasing losses, lying about gambling, borrowing money to gamble, neglecting responsibilities"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Regressive Taxation",
+              "definition": "A tax that takes a larger percentage of income from low-income earners than high-income earners.",
+              "example": "Gambling revenue often comes disproportionately from lower-income households, functioning like a regressive tax"
+            },
+            {
+              "term": "Responsible Gambling",
+              "definition": "Practices designed to prevent gambling-related harms: setting limits, using only disposable income, accepting losses.",
+              "example": "Budget limits, time limits, never chasing losses, not borrowing to gamble, knowing when to stop"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Gambling as Entertainment",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The Entertainment Mindset",
+            "paragraphs": [
+              "When approached responsibly, gambling is a form of <strong>entertainment</strong>‚Äînot a way to make money.",
+              "Like movies, concerts, or dining out, gambling has an associated cost that should come from your <strong>entertainment budget</strong>.",
+              "The key difference: other entertainment guarantees 100% loss of money spent, while gambling offers variable outcomes‚Äîbut still with an <strong>expected loss over time</strong>."
+            ],
+            "highlightBox": {
+              "icon": "Ì†Ω",
+              "text": "Ì≤° The \"cost\" of gambling = the money you're willing to lose for the experience. Any winnings are a bonus, not an expectation."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "100%",
+                "label": "Expected Loss at Movies",
+                "color": "rose"
+              },
+              {
+                "value": "~95%",
+                "label": "Expected Loss at Gambling*",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Gambling Budget Questions:",
+              "color": "blue",
+              "items": [
+                "How much can I afford to lose?",
+                "Is this from discretionary funds?",
+                "How much time will I spend?",
+                "Will I stop when limits are reached?"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Comparing Entertainment Costs",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "Ì†º",
+            "title": "Ìæ¨ Traditional Entertainment",
+            "items": [
+              "Movie: $12-15 for 2 hours",
+              "Concert: $50-300 for 2-3 hours",
+              "Dinner out: $25-50 per person",
+              "Theme park: $100+ for full day",
+              "100% of money spent = gone",
+              "No financial expectation"
+            ]
+          },
+          "rightColumn": {
+            "icon": "Ì†º",
+            "title": "Ìæ∞ Gambling as Entertainment",
+            "items": [
+              "Variable cost based on budget",
+              "Variable time of entertainment",
+              "Possibility of winning (short-term)",
+              "Expected loss over time",
+              "House always has mathematical edge",
+              "Can be social/exciting activity"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Individual Costs and Benefits",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Potential Benefits",
+            "paragraphs": [
+              "<strong>Entertainment &amp; Recreation:</strong> Excitement, socialization, break from routine",
+              "<strong>Cognitive Stimulation:</strong> Strategy games like poker involve skill development",
+              "<strong>Social Interaction:</strong> Casinos, bingo halls provide community connections",
+              "<strong>Occasional Winnings:</strong> Though not expected, wins can be enjoyable"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "The Gambling Behavior Spectrum",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Understanding the Progression",
+          "paragraphs": [
+            "Gambling behavior exists on a spectrum. Recognizing where you are helps identify warning signs before problems develop."
+          ],
+          "bulletPoints": [],
+          "keyPoint": {
+            "text": "‚ö†Ô∏è Small changes in behavior can gradually lead to significant problems. Awareness and early intervention are crucial."
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Recreational vs. Problem Gambling",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "‚úì",
+            "title": "‚úì Recreational Gambling",
+            "items": [
+              "One of many leisure activities",
+              "Planned and budgeted in advance",
+              "Time and money limits respected",
+              "Losses viewed as entertainment cost",
+              "Responsibilities take priority",
+              "Ends when limits are reached"
+            ]
+          },
+          "rightColumn": {
+            "icon": "",
+            "title": "‚ö† Problem Gambling",
+            "items": [
+              "Becomes primary activity",
+              "Spending exceeds planned limits",
+              "Chasing losses to recover money",
+              "Borrowing money to gamble",
+              "Lying about time/money spent",
+              "Neglecting responsibilities"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Community Costs and Benefits",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Economic Benefits",
+            "paragraphs": [
+              "<strong>Tax Revenue:</strong> Funds public services, education, infrastructure",
+              "<strong>Job Creation:</strong> Casinos and related businesses employ thousands",
+              "<strong>Tourism:</strong> Gambling destinations attract visitors who spend broadly",
+              "<strong>Economic Development:</strong> Construction and ongoing operations revitalize areas"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$44B+",
+                "label": "Annual US Gambling Tax Revenue",
+                "color": "teal"
+              },
+              {
+                "value": "$7B",
+                "label": "Estimated Annual Social Costs",
+                "color": "rose"
+              }
+            ],
+            "infoCard": {
+              "title": "Social Costs to Consider:",
+              "color": "amber",
+              "items": [
+                "Regressive taxation burden",
+                "Increased social service demand",
+                "Criminal justice costs",
+                "Family and relationship impacts"
+              ]
+            }
+          }
+        }
+      },
+      "speakerNotes": "COMMON MISCONCEPTIONS:\n‚Ä¢ \"\"Gambling is always bad and should be prohibited.\"\" ‚Üí Gambling can be safe entertainment when approached responsibly with clear limits. The key is viewing it as recreation with a cost, not as income or investment.\n‚Ä¢ \"\"Casino tax revenue is 'free money' for communities.\"\" ‚Üí Gambling revenue comes with associated costs: problem gambling treatment, social services, law enforcement. Net benefit depends on the specific situation.\n‚Ä¢ \"\"Problem gambling only affects weak-willed people.\"\" ‚Üí Problem gambling is influenced by many factors: genetics, mental health, life circumstances, and game design. Anyone can be vulnerable, especially during stressful periods."
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Online Gambling & Sports Betting",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The Evolving Landscape",
+            "paragraphs": [
+              "Online gambling and sports betting have become increasingly accessible, creating new opportunities and risks.",
+              "<strong>Key Differences from Traditional Gambling:</strong>"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "38",
+                "label": "States with Legal Sports Betting",
+                "color": "purple"
+              },
+              {
+                "value": "$10B+",
+                "label": "US Online Gambling Revenue",
+                "color": "teal"
+              }
+            ],
+            "infoCard": {
+              "title": "Additional Safeguards Needed:",
+              "color": "green",
+              "items": [
+                "Use platform deposit limits",
+                "Monitor screen time carefully",
+                "Keep gambling apps off main devices",
+                "Avoid multiple accounts"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "‚úì",
+            "name": "David: Responsible Gambling Approach",
+            "paragraphs": [
+              "David enjoys visiting a casino about <span class=\"highlight-text\">once every two months</span>. Before each visit, he sets aside <strong>$100 from his entertainment budget</strong>‚Äîabout 5% of his discretionary income after all bills and savings are paid.",
+              "He views this money as <span class=\"highlight-text\">the cost of entertainment</span>. He sets a 3-hour timer on his phone. Whether winning or losing, he leaves when the timer goes off or when he loses his $100‚Äîwhichever comes first.",
+              "David considers his casino visits similar to a concert or special dinner‚Äîentertainment with a known cost, and any winnings are a bonus."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "Budget",
+              "value": "$100",
+              "detail": "5% of entertainment budget"
+            },
+            {
+              "type": "after",
+              "label": "Time Limit",
+              "value": "3 Hours",
+              "detail": "Leaves when timer goes off"
+            },
+            {
+              "type": "after",
+              "label": "Result",
+              "value": "Enjoyment",
+              "detail": "No financial stress"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "‚ö†",
+            "name": "Mark: Progression to Problem Gambling",
+            "paragraphs": [
+              "Mark began gambling occasionally with a <strong>$200 monthly budget</strong>. After a few big wins, he started going more frequently, convinced he had developed a \"system.\"",
+              "When significant losses occurred, Mark began <span class=\"highlight-text\">drawing from his savings</span> to \"win back\" what he'd lost. He started using credit cards when savings ran low.",
+              "He found himself <span class=\"highlight-text\">thinking about gambling at work</span>, canceling social plans to gamble, and lying to friends and family about where his money was going."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Started With",
+              "value": "$200/mo",
+              "detail": "Reasonable entertainment budget"
+            },
+            {
+              "type": "before",
+              "label": "Escalated To",
+              "value": "$2,000+",
+              "detail": "Savings + credit cards"
+            },
+            {
+              "type": "before",
+              "label": "Impact",
+              "value": "Debt Crisis",
+              "detail": "Relationships damaged"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": "What specific behaviors and mindsets differentiated David's recreational approach from Mark's progression into problem gambling?<br><br>At what point could Mark have intervened to prevent his gambling from becoming problematic?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "What role should government play in regulating gambling? Should communities limit it to protect people, or allow more opportunities for economic benefits and personal freedom?<br><br>What factors should be considered in these decisions?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "emerald",
+      "content": {
+        "headerTitle": "Check Your Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "Why should gambling be viewed as \"entertainment with a cost\" rather than a way to make money?"
+            },
+            {
+              "number": 2,
+              "question": "What are three warning signs that recreational gambling may be becoming problem gambling?"
+            },
+            {
+              "number": 3,
+              "question": "How do communities both benefit from and pay costs related to gambling? Give one example of each."
+            },
+            {
+              "number": 4,
+              "question": "What additional risks does online/mobile gambling present compared to visiting a physical casino?"
+            }
+          ]
+        }
+      },
+      "speakerNotes": "ASSESSMENT ANSWER KEY:\nQ3 Regressive taxation:Gambling revenue is \"regressive\" because lower-income households spend a higher percentage of their income on gambling than higher-income households. For example, a family earning $30,000 might spend $950/year (3.2%) while a family earning $100,000 spends $250/year (0.25%).\nCYU 1:B (Gambling is a leisure activity with an expected cost, like movies)\nCYU 2:A (Setting a budget and sticking to it is a SIGN of healthy gambling, not a warning sign)\nCYU 3:$10M - ($2M + $1.5M + $0.5M) = $10M - $4M =$6 million net benefit\nCYU 4:Any THREE: Set a budget and stick to it, set time limits, use only discretionary funds, never chase losses, take regular breaks, don't gamble when upset, don't borrow money to gamble."
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Entertainment Mindset",
+              "description": "Gambling is entertainment with a cost‚Äîexpect to lose money, and any winnings are a bonus"
+            },
+            {
+              "number": 2,
+              "title": "Set Clear Limits",
+              "description": "Budget, time limits, and boundaries are essential for responsible gambling practices"
+            },
+            {
+              "number": 3,
+              "title": "Recognize Warning Signs",
+              "description": "Chasing losses, exceeding limits, and lying about gambling indicate growing problems"
+            },
+            {
+              "number": 4,
+              "title": "Community Tradeoffs",
+              "description": "Gambling brings tax revenue and jobs but also social costs that communities must balance"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Student Activity",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "Ì†Ω",
+            "title": "Ì≥ã Responsible Gambling Plan",
+            "description": "Create a comprehensive plan for responsible gambling that demonstrates understanding of how gambling can remain enjoyable while minimizing potential harms. This activity will help you apply responsible gambling concepts to real-world decision-making."
+          },
+          "steps": [
+            "Set budget and time limits for gambling",
+            "Identify financial boundaries (what's off-limits)",
+            "List 5 strategies for keeping gambling enjoyable",
+            "Create a problem gambling awareness poster",
+            "Reflect on the entertainment perspective"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "¬© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

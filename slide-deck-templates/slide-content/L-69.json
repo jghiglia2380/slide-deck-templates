@@ -1,0 +1,640 @@
+{
+  "metadata": {
+    "lChapter": "L-69",
+    "title": "Alternative Investments and Wealth Strategies",
+    "subtitle": "Exploring Real Estate, Commodities, Cryptocurrency & Beyond Traditional Stocks and Bonds",
+    "totalSlides": 20,
+    "hasStateVariables": false,
+    "stateVariablesUsed": []
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Alternative Investments & Wealth Strategies",
+        "titleSize": "large",
+        "subtitle": "Exploring Real Estate, Commodities, Cryptocurrency & Beyond Traditional Stocks and Bonds"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "The Cryptocurrency Roller Coaster",
+        "question": "<strong>Sarah (22)</strong> saved $10,000 for a house down payment. In 2017, she heard Bitcoin would reach $100,000... <strong>December 2017 Peak:</strong> $35,000<br><strong>December 2018 Crash:</strong> $8,000<br><strong>Net Loss After Panic Sell:</strong> -$2,000 <br><br> <strong>Today's Question:</strong> When are alternative investments smart—and when are they speculative mistakes?"
+      },
+      "headerColor": "amber",
+      "notes": "DISCUSSION PROMPTS:\nTHE CHALLENGE (5 min):\n• Read Alex's crypto story—emphasize both the direct loss AND the opportunity cost.\n• Discussion: \"What mistakes did Alex make? What should have come first?\"\n• Key insight: FOMO-driven investing can destroy decades of wealth-building potential.\n"
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Analyze",
+              "description": "characteristics and benefits of alternative asset classes for portfolio diversification"
+            },
+            {
+              "number": 2,
+              "verb": "Evaluate",
+              "description": "direct property ownership vs. REITs for wealth building"
+            },
+            {
+              "number": 3,
+              "verb": "Compare",
+              "description": "liquidity, risk, and return profiles of commodities, metals, and crypto"
+            },
+            {
+              "number": 4,
+              "verb": "Understand",
+              "description": "how low correlation provides diversification and inflation protection"
+            },
+            {
+              "number": 5,
+              "verb": "Determine",
+              "description": "appropriate alternative allocations after establishing a solid financial foundation"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "What Are Alternative Investments?",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Asset classes beyond traditional stocks and bonds that offer different risk/return profiles",
+          "bulletPoints": [
+            "<strong>🏠 Real Estate:</strong> Property ownership & REITs",
+            "<strong>🥇 Precious Metals:</strong> Gold, silver, platinum",
+            "<strong>🛢️ Commodities:</strong> Oil, natural gas, agriculture",
+            "<strong>₿ Cryptocurrency:</strong> Bitcoin, Ethereum, digital assets"
+          ],
+          "keyPoint": "Alternatives aren't better or worse—they're <em>different</em>. They often move independently from traditional markets, providing diversification benefits."
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Key Vocabulary: Correlation & Liquidity",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "📊",
+            "title": "Correlation",
+            "items": [
+              "How closely two investments move together (-1.0 to +1.0)",
+              "<strong>+1.0:</strong> Move in perfect sync",
+              "<strong>0:</strong> No relationship",
+              "<strong>-1.0:</strong> Move in opposite directions",
+              "",
+              "<strong>Example:</strong> During 2020 crash, stocks fell 30% while gold rose 25%"
+            ]
+          },
+          "rightColumn": {
+            "icon": "💧",
+            "title": "Liquidity",
+            "items": [
+              "How quickly you can sell without losing value",
+              "",
+              "<strong>Stocks:</strong> Instant (seconds)",
+              "<strong>REITs:</strong> Instant (like stocks)",
+              "<strong>Gold:</strong> Days",
+              "<strong>Real Estate:</strong> Months",
+              "<strong>Private Equity:</strong> Years"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "green",
+      "content": {
+        "headerTitle": "Key Vocabulary: REIT & Inflation Hedge",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "🏢",
+            "title": "REIT (Real Estate Investment Trust)",
+            "items": [
+              "A company that owns and operates income-producing real estate",
+              "",
+              "• Allows real estate investing without buying property",
+              "• Must distribute 90% of income as dividends",
+              "• Buy/sell like regular stocks",
+              "• Start with as little as $100"
+            ]
+          },
+          "rightColumn": {
+            "icon": "🛡️",
+            "title": "Inflation Hedge",
+            "items": [
+              "Investment expected to maintain/increase value when prices rise",
+              "",
+              "<strong>Good Hedges:</strong>",
+              "✅ Real estate (rents rise)",
+              "✅ Gold (limited supply)",
+              "✅ Commodities (actual goods)",
+              "",
+              "<strong>Poor Hedge:</strong>",
+              "❌ Bonds (fixed payments worth less)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Real Estate: Two Paths",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Comparison Table",
+            "paragraphs": [
+              "<strong>Initial Capital</strong>",
+              "• Direct Property: $40K-$80K down payment",
+              "• REIT Investment: $100-$1,000 (any amount)",
+              "",
+              "<strong>Management</strong>",
+              "• Direct Property: Active (repairs, tenants)",
+              "• REIT Investment: Passive (professional)",
+              "",
+              "<strong>Liquidity</strong>",
+              "• Direct Property: Very low (months to sell)",
+              "• REIT Investment: High (sell instantly)"
+            ]
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "Additional Factors",
+              "color": "teal",
+              "items": [
+                "<strong>Diversification</strong>",
+                "• Direct Property: Single property risk",
+                "• REIT Investment: Hundreds of properties",
+                "",
+                "<strong>Income</strong>",
+                "• Direct Property: Rent (if occupied)",
+                "• REIT Investment: Dividends (quarterly)",
+                "",
+                "<strong>Control</strong>",
+                "• Direct Property: Full control",
+                "• REIT Investment: None (trust management)"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Direct Property: Running the Numbers",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "🏠",
+            "name": "Example: $250K Duplex",
+            "paragraphs": [
+              "<strong>Down payment:</strong> $50,000 (20%)",
+              "<strong>Mortgage:</strong> $1,663/month (7%)",
+              "<strong>Rent received:</strong> $2,000/month",
+              "<strong>Expenses:</strong> Tax, insurance, maintenance = $717",
+              "<strong>Monthly cash flow:</strong> -$380",
+              "",
+              "<strong>10-Year Outcome:</strong>",
+              "• Property value: $336,000",
+              "• Mortgage balance: $180,000",
+              "• Equity built: $156,000",
+              "• Total invested: $95,600",
+              "• <strong>Annual return:</strong> ~6.3%"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Consider This",
+              "value": "⚠️",
+              "detail": "Requires fixing toilets at 2am, finding tenants, and handling vacancies. Can you sell in 24 hours if you need cash? No."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "REIT Alternative: Same $50K",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "REIT Investment",
+            "paragraphs": [
+              "<strong>Initial investment:</strong> $50,000",
+              "<strong>Dividend yield:</strong> 4.5% annually",
+              "<strong>Price appreciation:</strong> 5% annually",
+              "<strong>Management effort:</strong> Zero",
+              "",
+              "<strong>10-year value:</strong> ~$96,000",
+              "<strong>Annual return:</strong> ~9.2%"
+            ]
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "REIT Advantages",
+              "color": "green",
+              "items": [
+                "✅ No down payment requirements",
+                "✅ Instant liquidity",
+                "✅ No property management",
+                "✅ Diversified across 100s of properties",
+                "",
+                "<strong>Key Insight:</strong> REITs provide real estate exposure WITHOUT capital or effort requirements"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "🥇 Gold: The Classic Safe Haven",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Gold Price History",
+            "paragraphs": [
+              "<strong>2000:</strong> $300/oz",
+              "<strong>2011:</strong> $1,900/oz (Crisis peak)",
+              "<strong>2015:</strong> $1,050/oz (-45%!)",
+              "<strong>2024:</strong> $2,000/oz",
+              "",
+              "$10K in gold (2000) → ~$50K (2024)"
+            ]
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "Gold Characteristics",
+              "color": "gold",
+              "items": [
+                "<strong>✅ Gold Works Best For:</strong>",
+                "• Crisis protection (market crashes)",
+                "• Inflation hedge",
+                "• Currency devaluation insurance",
+                "",
+                "<strong>⚠️ Gold Limitations:</strong>",
+                "• Generates NO income (no dividends)",
+                "• Can lose 45% in 4 years",
+                "• Storage costs for physical",
+                "",
+                "<strong>Recommendation:</strong> 5% maximum allocation"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "rose",
+      "content": {
+        "headerTitle": "₿ Cryptocurrency: High Risk, High Volatility",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Bitcoin's Wild Ride",
+            "paragraphs": [
+              "<strong>2017:</strong> $1K → $19K <span style=\"color: green;\">(+1,800%)</span>",
+              "<strong>2018:</strong> $19K → $3.2K <span style=\"color: red;\">(-83%)</span>",
+              "<strong>2021:</strong> $10K → $69K <span style=\"color: green;\">(+590%)</span>",
+              "<strong>2022:</strong> $47K → $16K <span style=\"color: red;\">(-66%)</span>",
+              "<strong>2024:</strong> $16K → $63K <span style=\"color: green;\">(+280%)</span>"
+            ]
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "Critical Risks",
+              "color": "rose",
+              "items": [
+                "⚠️ Extreme volatility (10-20% daily swings)",
+                "⚠️ Regulatory uncertainty worldwide",
+                "⚠️ Exchange hacks (billions stolen)",
+                "⚠️ Permanent loss if you lose passwords",
+                "⚠️ Less regulated = manipulation risk",
+                "",
+                "<strong>Recommendation:</strong> 1-5% maximum—only money you can afford to lose COMPLETELY"
+              ]
+            }
+          }
+        }
+      },
+      "notes": "COMMON MISCONCEPTIONS:\n\n1. \"Cryptocurrency is the future of money, so it's a safe investment.\"\n   → Technology potential doesn't equal investment safety. Crypto has crashed 70%+ multiple times. Even if blockchain succeeds, specific cryptocurrencies may not. Investment thesis and speculation are different things.\n\n2. \"I can't afford real estate, so it's not for me.\"\n   → REITs allow real estate investment starting at $100-$500 through regular brokerage accounts. You don't need to buy property directly to gain real estate exposure.\n\n3. \"If my friends are making money in crypto/NFTs, I should too.\"\n   → Survivorship bias—you see winners, not losers. FOMO (fear of missing out) drives poor decisions. By the time trends reach social media, often the best opportunities have passed.\n\n"
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "🏗️ Foundation First Principle",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Build your financial foundation BEFORE exploring alternatives",
+          "paragraphs": [
+            "<strong>The Wealth Pyramid (Bottom to Top):</strong>",
+            "",
+            "<strong>Level 1 (Base):</strong> Emergency Fund (3-6 months expenses)",
+            "<strong>Level 2:</strong> Retirement Contributions (401k/Roth IRA)",
+            "<strong>Level 3:</strong> Taxable Investment Account (Index Funds)",
+            "<strong>Level 4 (Top):</strong> Alternative Investments (10-20% max after foundation)"
+          ],
+          "keyPoint": "\"Stocks and bonds are vegetables and protein. Alternatives are dessert. You need the foundation first.\""
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "rose",
+      "content": {
+        "headerTitle": "🚩 Red Flags to Watch For",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "🚨",
+            "title": "\"Guaranteed Returns\"",
+            "items": [
+              "No legitimate investment guarantees returns. This phrase almost always signals a SCAM.",
+              "",
+              "<strong>Reality:</strong> All investments carry risk. Higher promised returns = higher risk."
+            ]
+          },
+          "centerColumn": {
+            "icon": "⚡",
+            "title": "\"Everyone's Getting Rich\"",
+            "items": [
+              "When everyone is talking about an investment, you're probably late to the party.",
+              "",
+              "<strong>Reality:</strong> By the time it's mainstream news, smart money has often already exited."
+            ]
+          },
+          "rightColumn": {
+            "icon": "😰",
+            "title": "\"You'll Regret Missing Out\"",
+            "items": [
+              "FOMO (fear of missing out) is a terrible basis for investment decisions.",
+              "",
+              "<strong>Reality:</strong> Good investments don't require urgency tactics."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "green",
+      "content": {
+        "headerTitle": "Case Study: Maria's Strategic Real Estate",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👩",
+            "name": "Maria (28) - Success Story",
+            "paragraphs": [
+              "<strong>Maria (28)</strong> saved $45,000 and bought a $220K duplex. She lived in one unit and rented the other for $1,200/month.",
+              "",
+              "🏠 Tenant covered 86% of housing cost",
+              "💰 Saved $800/month vs. renting",
+              "📈 Property appreciated to $260K",
+              "🔑 Built $115K equity in 5 years"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "What Made It Work",
+              "value": "✅",
+              "detail": "Had significant capital saved first • Used house-hacking strategy • Patient—5 year timeline • Willing to manage property"
+            },
+            {
+              "type": "after",
+              "label": "Trade-offs",
+              "value": "⚠️",
+              "detail": "Can't sell quickly if she needs cash. Had to handle repairs and tenants. Required $45K to start."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Case Study: Jordan's Balanced Approach",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👤",
+            "name": "Jordan's Strategy (Age 25)",
+            "paragraphs": [
+              "<strong>Foundation First:</strong>",
+              "• $10K emergency fund ✓",
+              "• 15% to 401(k) & Roth IRA ✓",
+              "• Core: Low-cost index funds ✓",
+              "",
+              "<strong>Alternative Allocation:</strong>",
+              "• 5% REIT index fund ($800)",
+              "• 3% Gold ETF ($500)",
+              "• 2% Crypto ($300) - \"could lose it all\"",
+              "",
+              "<strong>Jordan's Rules:</strong>",
+              "• Never add more until alternatives fall below target %",
+              "• Rebalance annually—take profits from winners",
+              "• Never touch core portfolio to chase trends"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "5-Year Result",
+              "value": "$42K",
+              "detail": "Portfolio grew from $15K → $42K. Crypto swung wildly ($300 → $2,400 → $600), but core portfolio provided stability."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 16,
+      "type": "content",
+      "headerColor": "rose",
+      "content": {
+        "headerTitle": "Case Study: Alex's Crypto Lesson",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "😰",
+            "name": "Alex - What Went Wrong (Age 22)",
+            "paragraphs": [
+              "❌ Invested <strong>entire savings</strong> ($8,000)",
+              "❌ Didn't understand the asset",
+              "❌ Bought at market peak (FOMO)",
+              "❌ No emergency fund",
+              "❌ Panic sold at bottom",
+              "",
+              "<strong>The True Cost:</strong>",
+              "• Principal lost: $5,600",
+              "• Opportunity cost: That $8K at age 22 in S&P 500 would become <strong>$123,000</strong> at age 65 (7% annual return)"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Lesson Learned",
+              "value": "⚠️",
+              "detail": "Don't invest in what you don't understand. Never invest money you can't afford to lose. Foundation first. Speculation ≠ Investing."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 17,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": "<strong>1. Foundation Check:</strong> Do you have an emergency fund and retirement savings before considering alternatives? If not, what steps should come first?<br><br><strong>2. Emotional Test:</strong> How would you feel if an alternative investment lost 50% of its value in a month? Could you avoid panic selling?<br><br><strong>3. Risk Tolerance:</strong> Which alternative investments might align with your goals and interests—and what percentage would be appropriate for your situation?<br><br><strong>4. Social Pressure:</strong> How would you respond if friends pressured you to invest in a trending asset that you haven't researched?"
+      },
+      "headerColor": "emerald",
+      "notes": "ANSWER KEY:\n\n1. C (Diversification through low correlation)\n\n2. Alternatives are higher risk, less liquid, more complex, and harder to value. Traditional index funds are proven wealth-builders with lower costs and better regulatory protection. Young investors should build a foundation of emergency savings and retirement contributions in traditional investments before adding alternatives.\n\n4. Prerequisites before alternatives: (1) 3-6 month emergency fund, (2) Consistent retirement contributions (15%+) to traditional investments, (3) Understanding of the specific alternative asset. Some also include: paid off high-interest debt, adequate insurance coverage.\n\n"
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Check Your Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "If Stock A and Gold have a correlation of -0.3, what happens to gold when Stock A falls significantly?",
+              "answer": "Gold tends to rise (negative correlation means they move in opposite directions)"
+            },
+            {
+              "number": 2,
+              "question": "You need $15,000 urgently. Which is easier to convert to cash—REIT shares or a rental property?",
+              "answer": "REIT shares (high liquidity—can sell in seconds vs. months for property)"
+            },
+            {
+              "number": 3,
+              "question": "True or False: Someone with no emergency fund should invest 20% of their savings in cryptocurrency.",
+              "answer": "FALSE—Foundation (emergency fund, retirement) must come first"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Alternatives Supplement, Don't Replace",
+              "description": "Keep alternatives at 10-20% maximum after establishing your foundation of index funds and emergency savings"
+            },
+            {
+              "number": 2,
+              "title": "REITs Make Real Estate Accessible",
+              "description": "Get real estate exposure without needing $50K down payment or property management responsibilities"
+            },
+            {
+              "number": 3,
+              "title": "Gold = Insurance, Not Growth",
+              "description": "Precious metals are inflation hedges for protection, not primary wealth-building tools. 5% maximum."
+            },
+            {
+              "number": 4,
+              "title": "Crypto = Speculation",
+              "description": "Only invest what you can afford to lose completely (1-5% max). Understand the technology and risks first."
+            },
+            {
+              "number": 5,
+              "title": "Foundation First Always",
+              "description": "Emergency fund and retirement accounts are non-negotiable prerequisites before exploring alternatives"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Skill Builder: Alternative Investment Analyzer",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "🚀",
+            "title": "Portfolio Analyzer Activity",
+            "description": "Use the Portfolio Analyzer to experiment with different alternative allocations"
+          },
+          "steps": [
+            "<strong>Scenario A:</strong> Add 10% REITs",
+            "<strong>Scenario B:</strong> Add 5% gold",
+            "<strong>Scenario C:</strong> Add 5% crypto",
+            "<strong>Scenario D:</strong> Balanced mix (10% REIT, 5% commodities, 2% crypto)",
+            "",
+            "Analyze each scenario:",
+            "• How does correlation change?",
+            "• What happens to risk vs. return?",
+            "• Performance in bull vs. bear markets?",
+            "• Which matches YOUR risk tolerance?",
+            "",
+            "\"Don't confuse excitement with effectiveness. The path to financial independence is paved with consistent saving and broad market index fund investing.\""
+          ]
+        }
+      }
+    }
+  ]
+}

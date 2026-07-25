@@ -1,0 +1,531 @@
+{
+  "metadata": {
+    "lChapter": "L-34",
+    "title": "Insurance as a Risk Management Tool",
+    "subtitle": "Understanding How Insurance Protects Your Financial Future",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME",
+      "STATE_HOMEOWNERS_AVG_MONTHLY",
+      "STATE_INSURANCE_AVG_TEEN"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Insurance as a Risk Management Tool",
+        "titleSize": "large",
+        "subtitle": "Understanding How Insurance Protects Your Financial Future"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "The Challenge",
+        "question": "Sarah, a 28-year-old graphic designer, needs an appendectomy costing  $20,000 ..<br><br><strong>How do insurance components like deductibles and co-insurance work together to determine your actual out-of-pocket costs?</strong>"
+      },
+      "headerColor": "amber",
+      "speakerNotes": "Read Sarah's appendectomy scenario aloud. Ask: \"Before we calculate, guess how much Sarah will pay out of $20,000.\" Record guesses to compare after the lesson."
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Understand",
+              "description": "Understand key insurance concepts: premiums, deductibles, co-insurance, coverage limits, and exclusions."
+            },
+            {
+              "number": 2,
+              "verb": "Identify",
+              "description": "Identify different types of insurance (health, auto, home, life) and their specific purposes."
+            },
+            {
+              "number": 3,
+              "verb": "Calculate",
+              "description": "Calculate actual out-of-pocket costs when insurance claims are filed."
+            },
+            {
+              "number": 4,
+              "verb": "Apply",
+              "description": "Apply insurance knowledge to make informed decisions about coverage needs for different life situations."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Premium",
+              "definition": "The amount paid regularly (monthly, quarterly, annually) to maintain insurance coverage, regardless of whether claims are filed.",
+              "example": "Sarah pays $300/month for health insurance, totaling $3,600/year whether she uses it or not."
+            },
+            {
+              "term": "Deductible",
+              "definition": "The amount you must pay out-of-pocket before your insurance coverage begins to pay.",
+              "example": "With a $2,000 deductible, Sarah pays the first $2,000 of her appendectomy costs herself."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Co-Insurance",
+              "definition": "A percentage of costs you share with the insurance company after meeting your deductible. An 80/20 plan means insurance pays 80%, you pay 20%.",
+              "example": "After Sarah's $2,000 deductible, she pays 20% of the remaining $18,000 = $3,600."
+            },
+            {
+              "term": "Coverage Limit",
+              "definition": "The maximum amount an insurance policy will pay for a covered loss. Costs above this limit are your responsibility.",
+              "example": "Auto liability of $100,000/$300,000 means $100K max per person, $300K max per accident."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "How Insurance Works",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Risk Transfer in Action",
+            "paragraphs": [
+              "Insurance transfers financial risk from individuals to insurance companies.",
+              "You pay regular premiums in exchange for protection against potentially devastating losses.",
+              "The insurance company pools money from many policyholders to pay claims for the few who suffer losses."
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "Insurance works best for high-impact, low-probability events—rare but costly occurrences."
+            }
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "Cost Sharing Layers",
+              "color": "indigo",
+              "items": [
+                "1. Premium: Your regular payment",
+                "2. Deductible: Your first payment at claim",
+                "3. Co-insurance: Your share after deductible",
+                "4. Out-of-pocket max: Your annual limit"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Types of Insurance",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Different Policies for Different Risks",
+          "paragraphs": [
+            "Each type of insurance serves a specific purpose in your overall financial protection:"
+          ],
+          "bulletPoints": [
+            "<strong>Health Insurance:</strong> Covers medical expenses—doctor visits, hospital stays, prescriptions, surgeries",
+            "<strong>Auto Insurance:</strong> Liability (injuries/damage you cause), collision (damage to your car), comprehensive (theft, weather)",
+            "<strong>Homeowner's/Renter's:</strong> Property damage + personal liability + theft protection",
+            "<strong>Life Insurance:</strong> Provides financial support to dependents after your death",
+            "<strong>Disability Insurance:</strong> Replaces income if you're unable to work due to illness or injury"
+          ],
+          "keyPoint": {
+            "text": "⚠️ Common exclusion: Most homeowner's policies do NOT cover flood damage—separate flood insurance is required."
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Health Insurance: Understanding the Math",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "How Sarah's $20,000 Surgery Gets Paid",
+          "paragraphs": [
+            "Let's calculate Sarah's actual out-of-pocket cost for her appendectomy:"
+          ],
+          "bulletPoints": [
+            "<strong>Step 1:</strong> Total bill = $20,000",
+            "<strong>Step 2:</strong> Sarah pays deductible first = $2,000",
+            "<strong>Step 3:</strong> Remaining amount = $20,000 - $2,000 = $18,000",
+            "<strong>Step 4:</strong> Co-insurance (Sarah's 20%) = $18,000 × 0.20 = $3,600",
+            "<strong>Step 5:</strong> Sarah's total out-of-pocket = $2,000 + $3,600 = <strong>$5,600</strong>",
+            "<strong>Step 6:</strong> Insurance pays = $20,000 - $5,600 = <strong>$14,400</strong>"
+          ],
+          "keyPoint": {
+            "text": "📊 Without insurance, Sarah would pay $20,000. With insurance, she pays $5,600—a savings of $14,400."
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Auto Insurance Coverage Explained",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "🚗",
+            "title": "Coverage for Others",
+            "items": [
+              "Liability: Bodily injury you cause",
+              "Liability: Property damage you cause",
+              "Required by law in most states",
+              "Limits shown as 100/300/50",
+              "$100K per person/$300K per accident/$50K property",
+              "Protects YOUR assets from lawsuits"
+            ]
+          },
+          "rightColumn": {
+            "icon": "🔧",
+            "title": "Coverage for Your Car",
+            "items": [
+              "Collision: Damage from accidents",
+              "Comprehensive: Theft, weather, vandalism",
+              "Optional—often required if financing",
+              "Has its own deductible (often $500)",
+              "Value based on car's actual cash value",
+              "May not be worth it on older cars"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Life Insurance: Term vs. Whole Life",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "📅",
+            "title": "Term Life Insurance",
+            "items": [
+              "Coverage for a specific period (10, 20, 30 years)",
+              "Much lower premiums",
+              "No cash value—pure protection",
+              "Best for temporary needs (mortgage, kids)",
+              "Expires if you outlive the term",
+              "Most cost-effective protection"
+            ]
+          },
+          "rightColumn": {
+            "icon": "♾️",
+            "title": "Whole Life Insurance",
+            "items": [
+              "Coverage for your entire lifetime",
+              "Much higher premiums (5-10x more)",
+              "Builds cash value over time",
+              "Can borrow against cash value",
+              "Never expires as long as premiums paid",
+              "Investment + insurance combined"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Understanding Coverage Limits",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Limits Protect the Insurance Company—Not Just You",
+            "paragraphs": [
+              "Coverage limits cap what the insurance company will pay. Costs above the limit are YOUR responsibility.",
+              "<strong>Example:</strong> Marcus has auto liability limits of $100,000/$300,000.",
+              "He causes an accident injuring two people:",
+              "• Person A has $120,000 in medical bills",
+              "• Person B has $80,000 in medical bills",
+              "Insurance pays: Person A gets $100,000 (the per-person limit), Person B gets $80,000.",
+              "Marcus owes Person A the remaining $20,000 out of pocket."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$100K",
+                "label": "Per-person limit reached",
+                "color": "amber"
+              },
+              {
+                "value": "$20K",
+                "label": "Marcus owes out-of-pocket",
+                "color": "amber"
+              },
+              {
+                "value": "$180K",
+                "label": "Total injuries (under $300K)",
+                "color": "emerald"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      },
+      "speakerNotes": "COMMON MISCONCEPTIONS:\n• \"\"After I pay the deductible, insurance covers everything.\"\" → After the deductible, you still pay co-insurance (your percentage) until you reach the out-of-pocket maximum.\n• \"\"Homeowner's insurance covers flood damage.\"\" → Standard homeowner's policies exclude floods. You need a separate flood insurance policy, often through FEMA's National Flood Insurance Program.\n• \"\"Young people don't need life insurance.\"\" → Life insurance is actually cheapest when you're young and healthy. If you have dependents or co-signed debt, you may need coverage."
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Common Insurance Exclusions",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "What Insurance Typically Doesn't Cover",
+          "paragraphs": [
+            "Every insurance policy has exclusions—situations or damages NOT covered. Know them BEFORE you need to file a claim:"
+          ],
+          "bulletPoints": [
+            "<strong>Homeowner's:</strong> Flood damage, earthquake damage, normal wear and tear, intentional damage",
+            "<strong>Health:</strong> Cosmetic procedures, experimental treatments, pre-existing conditions (varies by plan)",
+            "<strong>Auto:</strong> Intentional damage, racing, using car for ride-share without proper coverage",
+            "<strong>Life:</strong> Suicide within first 2 years, death during illegal activities, fraud on application"
+          ],
+          "keyPoint": {
+            "text": "📋 In {{STATE_NAME}}, flood insurance is purchased separately through the National Flood Insurance Program (NFIP)."
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Apply It",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "🔥",
+            "name": "Aisha's Apartment Fire",
+            "paragraphs": [
+              "A fire damages Aisha's apartment, destroying $15,000 worth of personal belongings.",
+              "Her renter's insurance has a $500 deductible and a $20,000 coverage limit."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Total Loss",
+              "value": "$15,000",
+              "detail": "Value of destroyed belongings"
+            },
+            {
+              "type": "after",
+              "label": "Aisha Pays",
+              "value": "$500",
+              "detail": "Her deductible amount"
+            },
+            {
+              "type": "positive",
+              "label": "Insurance Pays",
+              "value": "$14,500",
+              "detail": "$15,000 - $500 deductible"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Apply It",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👨‍👩‍👧",
+            "name": "New Parent's Life Insurance Decision",
+            "paragraphs": [
+              "Marcus, age 30, has a newborn child. His spouse is a stay-at-home parent.",
+              "He's choosing between term life ($30/month for $500,000 coverage for 20 years) or whole life ($250/month for $500,000 permanent coverage)."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Term Life Cost",
+              "value": "$7,200 total",
+              "detail": "$30/month × 20 years"
+            },
+            {
+              "type": "after",
+              "label": "Whole Life Cost",
+              "value": "$60,000 total",
+              "detail": "$250/month × 20 years"
+            },
+            {
+              "type": "positive",
+              "label": "Best Choice",
+              "value": "Term Life",
+              "detail": "Covers child until adult"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "amber",
+      "content": {
+        "badge": "Discussion",
+        "question": "Jordan, age 22, is choosing between employer health insurance ($200/month premium, $1,500 deductible) or staying on parents' plan (free) for 4 more years.<br><br>What factors should Jordan consider?<br><br>What situations might make the employer plan worth the cost?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "indigo",
+      "content": {
+        "badge": "Reflection",
+        "question": "Think about your family's current insurance coverage.<br><br>Which type of insurance do you think is most important for your family's situation, and why?<br><br>Is there any coverage gap that concerns you?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "emerald",
+      "content": {
+        "headerTitle": "Check Your Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "Which common type of damage is typically NOT covered by homeowner's insurance?"
+            },
+            {
+              "number": 2,
+              "question": "Explain the difference between term life and whole life insurance. When might each be appropriate?"
+            },
+            {
+              "number": 3,
+              "question": "Auto liability limits are $100,000/$300,000. You cause an accident injuring two people: $120,000 and $80,000. What does insurance pay each?"
+            },
+            {
+              "number": 4,
+              "question": "A health plan has a $1,500 deductible and 80/20 co-insurance. For a $10,000 bill, calculate total patient out-of-pocket cost."
+            }
+          ]
+        }
+      },
+      "speakerNotes": "ASSESSMENT ANSWER KEY:\nQ5 (Jordan):Consider: coverage quality, network of doctors, future health needs, cost if staying free, independence/portability, tax benefits of own plan. There's no single right answer.\nCYU 1:C (Flood damage) — Floods require separate flood insurance policy.\nCYU 2:Term life: Temporary coverage for a set period (10-30 years), lower premiums, no cash value. Good for young families needing coverage while children grow up. Whole life: Permanent coverage for entire life, higher premiums, builds cash value. Good for estate planning or lifelong dependents.\nCYU 3:Person A: $100,000 (capped at per-person limit). Person B: $80,000 (full amount, under limit). Total: $180,000, which is under the $300,000 per-accident limit. Marcus pays $20,000 out of pocket for Person A's remaining bills.\nCYU 4:$15,000 - $500 deductible =$14,500(well under the $20,000 coverage limit)."
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Four Cost Components",
+              "description": "Premium (regular payment), deductible (first pay), co-insurance (shared %), coverage limit (max payout)."
+            },
+            {
+              "number": 2,
+              "title": "Match Insurance to Need",
+              "description": "Health, auto, home, life, and disability insurance each serve specific financial protection purposes."
+            },
+            {
+              "number": 3,
+              "title": "Know Your Exclusions",
+              "description": "Every policy has things it doesn't cover—read the fine print before you need to file a claim."
+            },
+            {
+              "number": 4,
+              "title": "Calculate True Costs",
+              "description": "Out-of-pocket = deductible + co-insurance (up to out-of-pocket max). Do the math before choosing a plan."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Tomorrow's Challenge",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📊",
+            "title": "Insurance Policy Comparison Lab",
+            "description": "You've learned how insurance works—but can you compare real policies? Tomorrow you'll analyze actual insurance quotes and calculate total costs for different life scenarios."
+          },
+          "steps": [
+            "Compare three health insurance plans for a hypothetical scenario",
+            "Calculate total annual costs (premiums + likely out-of-pocket)",
+            "Analyze auto insurance quotes for different coverage levels",
+            "Determine appropriate life insurance amounts based on family needs",
+            "Create a personalized insurance recommendations report"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

@@ -1,0 +1,531 @@
+{
+  "metadata": {
+    "lChapter": "L-62",
+    "title": "Investment Portfolio Strategies",
+    "subtitle": "Building and Managing Portfolios for Long-Term Wealth",
+    "totalSlides": 20,
+    "hasStateVariables": false,
+    "stateVariablesUsed": []
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Investment Portfolio Strategies",
+        "titleSize": "large",
+        "subtitle": "Building and Managing Portfolios for Long-Term Wealth"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "The Power of Strategy",
+        "question": "<strong>Investor A:</strong> Perfectly picks individual stocks, 50/50 stock/bond allocation<br><strong>Investor B:</strong> Uses simple index funds, 80/20 stock/bond allocation Over 30 years, <em>Investor B's simple allocation decision matters far more than Investor A's stock-picking genius.</em> <br><br> Over 30 years, <em>Investor B's simple allocation decision matters far more than Investor A's stock-picking genius.</em>"
+      },
+      "headerColor": "amber",
+      "notes": "DISCUSSION PROMPTS:\nTHE CHALLENGE (5 min):\n• Read Emma's rebalancing story aloud. Emphasize the $180,000 lifetime impact.\n• Discussion: \"Why did Emma sell stocks that were doing well?\"\n• Preview: Rebalancing seems counterintuitive but enforces buy-low-sell-high discipline.\n"
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Design",
+              "description": "appropriate asset allocations based on time horizon, risk tolerance, and financial goals"
+            },
+            {
+              "number": 2,
+              "verb": "Evaluate",
+              "description": "different portfolio strategies including passive indexing and active management"
+            },
+            {
+              "number": 3,
+              "verb": "Implement",
+              "description": "rebalancing and tax-loss harvesting strategies"
+            },
+            {
+              "number": 4,
+              "verb": "Analyze",
+              "description": "the relationship between diversification, correlation, and portfolio risk"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Essential Vocabulary (Part 1)",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Asset Allocation",
+              "definition": "The percentage distribution of your portfolio across different asset classes (stocks, bonds, cash)",
+              "example": "60% stocks, 30% bonds, 10% cash"
+            },
+            {
+              "term": "Rebalancing",
+              "definition": "Periodically buying and selling to return portfolio to target allocation—typically done annually or when allocations drift significantly",
+              "example": "Selling stocks that grew to 75% to bring back to target 60%"
+            },
+            {
+              "term": "Target Date Fund",
+              "definition": "Fund that automatically adjusts allocation to become more conservative as retirement approaches—'set it and forget it'",
+              "example": "Target Date 2050 Fund for someone retiring in 2050"
+            },
+            {
+              "term": "Tax-Loss Harvesting",
+              "definition": "Selling investments at a loss to offset capital gains taxes, then reinvesting in similar assets to maintain market exposure",
+              "example": "Sell losing stock, use loss to offset gains, buy similar stock"
+            },
+            {
+              "term": "Asset Location",
+              "definition": "Strategic placement of investments in taxable vs. tax-advantaged accounts to minimize overall tax burden",
+              "example": "Put bonds in IRA, stocks in taxable account"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Essential Vocabulary (Part 2)",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Correlation",
+              "definition": "How two investments move in relation to each other. Negative correlation (opposite movement) provides diversification benefits",
+              "example": "Stocks and bonds often have negative correlation"
+            },
+            {
+              "term": "Dollar-Cost Averaging",
+              "definition": "Investing fixed amounts at regular intervals regardless of market conditions—reduces impact of timing and volatility",
+              "example": "Invest $500 every month automatically"
+            },
+            {
+              "term": "Efficient Frontier",
+              "definition": "Optimal portfolios offering highest expected return for each level of risk. Portfolios below the line are suboptimal",
+              "example": "Graph showing best risk/return combinations"
+            },
+            {
+              "term": "Home Country Bias",
+              "definition": "Tendency to overweight domestic investments—potentially missing international diversification benefits (U.S. = 60% of global market)",
+              "example": "Portfolio with 90% U.S. stocks despite global opportunities"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Asset Allocation: The Foundation",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "📈",
+            "title": "Stocks",
+            "items": [
+              "Higher long-term returns but significant volatility",
+              "Can gain 30% or lose 40% in a single year",
+              "<strong>Best for:</strong> Growth over 10+ years"
+            ]
+          },
+          "centerColumn": {
+            "icon": "📋",
+            "title": "Bonds",
+            "items": [
+              "Lower returns but greater stability",
+              "Often gain when stocks fall",
+              "Provide income",
+              "<strong>Best for:</strong> Stability, income"
+            ]
+          },
+          "rightColumn": {
+            "icon": "💵",
+            "title": "Cash",
+            "items": [
+              "Liquidity and safety",
+              "Loses purchasing power to inflation over time",
+              "<strong>Best for:</strong> Emergency funds"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "green",
+      "content": {
+        "headerTitle": "Time Horizon Determines Allocation",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Age 25: 85-90% Stocks / 10-15% Bonds",
+              "description": "40-year horizon. Can weather volatility for higher growth"
+            },
+            {
+              "number": 2,
+              "title": "Age 40: 70-75% Stocks / 25-30% Bonds",
+              "description": "25-year horizon. Still growth-focused but adding stability"
+            },
+            {
+              "number": 3,
+              "title": "Age 55: 55-60% Stocks / 40-45% Bonds",
+              "description": "10-year horizon. Protecting accumulated wealth"
+            },
+            {
+              "number": 4,
+              "title": "Age 70: 40-45% Stocks / 55-60% Bonds",
+              "description": "Retirement. Preserving capital while maintaining growth"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Diversification Strategies",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Building a Diversified Portfolio",
+          "bulletPoints": [
+            "<strong>Domestic Stocks:</strong> Large-cap, mid-cap, small-cap for different growth characteristics",
+            "<strong>International Stocks:</strong> Developed and emerging markets reduce home country bias",
+            "<strong>Bonds:</strong> Government, corporate, municipal for income and stability",
+            "<strong>Real Assets:</strong> REITs, commodities provide inflation hedge",
+            "<strong>Alternative Investments:</strong> May include hedge strategies for sophisticated investors"
+          ],
+          "keyPoint": "True diversification means not all investments move together—reducing overall portfolio risk while maintaining return potential."
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Passive vs. Active Management",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "📊",
+            "title": "Passive (Index Funds)",
+            "items": [
+              "Track market indexes (S&P 500, Total Market)",
+              "Low costs (0.03-0.20% expense ratios)",
+              "Tax-efficient (less trading)",
+              "Guaranteed market returns",
+              "Consistently outperforms 80-90% of active managers over 10+ years"
+            ]
+          },
+          "rightColumn": {
+            "icon": "🎯",
+            "title": "Active Management",
+            "items": [
+              "Professional managers try to beat the market",
+              "Higher costs (0.50-2.00%+ expense ratios)",
+              "More tax implications (frequent trading)",
+              "Potential for outperformance (but 10-20% actually do)",
+              "Most underperform index funds long-term after fees"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Rebalancing Strategy",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Why and When to Rebalance",
+          "paragraphs": [
+            "Over time, winners grow and losers shrink, shifting your allocation away from targets.",
+            "Example: 60/40 stocks/bonds → After great stock year becomes 70/30 → Higher risk than intended!",
+            "Rebalancing forces you to 'sell high' (trim winners) and 'buy low' (add to losers)."
+          ],
+          "bulletPoints": [
+            "<strong>Calendar Method:</strong> Rebalance once or twice per year regardless of drift",
+            "<strong>Threshold Method:</strong> Rebalance when allocation drifts 5%+ from target",
+            "<strong>Tax Considerations:</strong> Use new contributions to rebalance without selling in taxable accounts"
+          ]
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": "You're 22 years old and just started your first job with a 401(k). Your employer offers both index funds (0.05% fees) and actively managed funds (1.2% fees) that claim to beat the market. Which should you choose and why? How might your answer change at age 60?"
+      },
+      "notes": "COMMON MISCONCEPTIONS:\n\n1. \"Rebalancing means selling winners—that's bad.\"\n   → Rebalancing is selling high and buying low systematically. It enforces discipline that improves risk-adjusted returns and prevents unintended risk from allocation drift.\n\n2. \"I should time the market to maximize returns.\"\n   → Research shows timing attempts hurt returns. Missing just the 10 best days over 20 years can cut returns in half. Consistent investing beats timing.\n\n3. \"Tax efficiency doesn't matter much.\"\n   → 1% annual tax drag over 30 years reduces wealth by 26%. Strategic asset location and minimizing turnover can add hundreds of thousands over a lifetime.\n\n"
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Tax-Loss Harvesting",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "💡",
+            "name": "Smart Tax Strategy",
+            "paragraphs": [
+              "You bought Stock A for $10,000. It's now worth $8,000 (down $2,000).",
+              "You also have Stock B that gained $2,000 this year.",
+              "",
+              "<strong>Without Tax-Loss Harvesting:</strong> Pay capital gains tax on $2,000 gain.",
+              "",
+              "<strong>With Tax-Loss Harvesting:</strong> Sell Stock A to realize $2,000 loss. Use loss to offset $2,000 gain from Stock B. Buy similar stock to maintain market exposure. Result: $0 taxable gains this year!"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Tax Savings",
+              "value": "$300-$500",
+              "detail": "Depending on your tax bracket, avoiding tax on $2,000 gain saves $300-$500"
+            },
+            {
+              "type": "after",
+              "label": "Important Rules",
+              "value": "Watch Out",
+              "detail": "Wash-sale rule: Can't buy identical security within 30 days. Must wait 31 days or buy similar (not identical) investment"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "rose",
+      "content": {
+        "headerTitle": "Common Portfolio Mistakes",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "✗",
+            "title": "What NOT to Do",
+            "items": [
+              "Chase last year's winners",
+              "Panic sell during market drops",
+              "Ignore expense ratios",
+              "Over-concentrate in employer stock",
+              "Try to time the market"
+            ]
+          },
+          "rightColumn": {
+            "icon": "✓",
+            "title": "What TO Do",
+            "items": [
+              "Stick to your allocation plan",
+              "Rebalance systematically",
+              "Minimize costs and taxes",
+              "Diversify broadly",
+              "Stay invested through volatility"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Asset Location Strategy",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Tax-Advantaged Accounts (IRA, 401k)",
+            "paragraphs": [
+              "Put tax-inefficient investments here:",
+              "• Bonds (generate ordinary income)",
+              "• REITs (high dividend distributions)",
+              "• Actively managed funds (frequent trading)"
+            ]
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "Taxable Accounts",
+              "color": "teal",
+              "items": [
+                "Put tax-efficient investments here:",
+                "• Index funds (low turnover)",
+                "• Growth stocks (no dividends until sold)",
+                "• Municipal bonds (tax-free interest)",
+                "",
+                "<strong>Strategy:</strong> Maximize after-tax returns by placing right investments in right accounts"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Reflection",
+        "question": "Many investors feel uncomfortable rebalancing—it means selling winners and buying losers, which feels wrong emotionally. How can understanding the mathematics of rebalancing help you overcome this psychological barrier? What discipline would you need to develop?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "content",
+      "headerColor": "green",
+      "content": {
+        "headerTitle": "Three-Fund Portfolio",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Simple Yet Powerful Strategy",
+          "paragraphs": [
+            "A three-fund portfolio provides global diversification with minimal complexity:",
+            "",
+            "<strong>Fund 1:</strong> U.S. Total Stock Market Index (60%)",
+            "<strong>Fund 2:</strong> International Total Stock Market Index (20%)",
+            "<strong>Fund 3:</strong> Total Bond Market Index (20%)",
+            "",
+            "This simple allocation captures:",
+            "• Entire U.S. stock market (Large, mid, small cap)",
+            "• Entire developed + emerging international market",
+            "• Entire U.S. bond market"
+          ],
+          "keyPoint": "With just three low-cost index funds, you can build a globally diversified portfolio that most professional managers fail to beat."
+        }
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "emerald",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Asset allocation matters most",
+              "description": "Explains 90%+ of portfolio performance—more important than security selection"
+            },
+            {
+              "number": 2,
+              "title": "Match allocation to time horizon",
+              "description": "Longer horizons allow higher stock allocation; shorter horizons need more bonds"
+            },
+            {
+              "number": 3,
+              "title": "Passive beats active long-term",
+              "description": "80-90% of active managers underperform index funds after fees"
+            },
+            {
+              "number": 4,
+              "title": "Rebalance systematically",
+              "description": "Maintain target allocation by selling winners and buying losers"
+            },
+            {
+              "number": 5,
+              "title": "Minimize costs and taxes",
+              "description": "Use low-cost index funds and strategic asset location"
+            }
+          ]
+        }
+      },
+      "notes": "ANSWER KEY:\n\n1. C (Asset allocation)\n\n2. A 25-year-old has 40+ years to recover from crashes. Over any 20-year period historically, stocks have positive returns. A 60-year-old retiring soon can't wait years to recover—a 40% drop could derail retirement plans.\n\n4. Gradual shift reduces risk progressively as time horizon shortens. Staying 90% stocks at 60 risks devastating losses near retirement. Sudden switches miss growth opportunities and may crystallize gains at wrong time.\n\n5. Accept responses that show understanding of personal time horizon, realistic risk assessment, and logical allocation reasoning.\n\n"
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Check Your Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "Why does a 25-year-old typically have a higher stock allocation than a 60-year-old?"
+            },
+            {
+              "number": 2,
+              "question": "Explain how rebalancing forces you to 'buy low and sell high.'"
+            },
+            {
+              "number": 3,
+              "question": "What is the main advantage of passive index funds over actively managed funds?"
+            },
+            {
+              "number": 4,
+              "question": "How does tax-loss harvesting reduce your tax bill without changing your market exposure?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Portfolio Builder Tool",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📊",
+            "title": "Tomorrow's Learning Lab",
+            "description": "Use the Portfolio Builder to design your own investment strategy"
+          },
+          "steps": [
+            "Input your age, risk tolerance, and goals",
+            "Receive recommended asset allocation",
+            "Compare passive vs. active strategies",
+            "See tax impact of different account locations",
+            "Create your personal investment plan"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "\"Time in the market beats timing the market.\"",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

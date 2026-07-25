@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "standard_number": "15",
+    "standard_title": "Career Readiness",
+    "chapter_number": "15.2",
+    "chapter_title": "Resume Building and Personal Branding",
+    "template_format": "project-based",
+    "content_density": "standard",
+    "day1_day2_connection": "extension",
+    "skill_builder": {
+      "id": "resume_builder",
+      "name": "Resume Builder",
+      "description": "Interactive resume creation tool with feedback and templates"
+    },
+    "generation_date": "2025-03-19",
+    "status": "Complete"
+  },
+  "content": {
+    "learning_objectives": [
+      "Identify the essential components of an effective resume",
+      "Recognize the importance of personal branding in career development",
+      "Develop strategies for highlighting skills and experiences in a resume format",
+      "Understand how to tailor resumes for different career opportunities",
+      "Create a framework for a personal brand that aligns with career goals"
+    ],
+    "key_concepts": [
+      "Resume Components",
+      "Personal Branding",
+      "Skills Presentation",
+      "Professional Portfolio",
+      "Digital Presence",
+      "Career Alignment"
+    ],
+    "day1_title": "Resume Fundamentals and Personal Brand Development",
+    "day2_title": "Digital Presence and Portfolio Workshop",
+    "skill_builder_name": "Interactive Resume Builder"
+  }
+}

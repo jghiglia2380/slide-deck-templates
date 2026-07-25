@@ -1,0 +1,548 @@
+{
+  "metadata": {
+    "lChapter": "L-52",
+    "title": "Government and the Economy",
+    "subtitle": "Understanding Government's Role in Markets",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME",
+      "STATE_MIN_WAGE"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Government and the Economy",
+        "titleSize": "large",
+        "subtitle": "Understanding Government's Role in Markets"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "The Challenge",
+        "question": "Malik's neighborhood benefits from environmental protection and public services funded by taxes, but new business regulations are making it harder for his parents to operate their small shop. He wonders when government helps the economy and when it gets in the way.<br><br><strong>What should be done in this situation?</strong>"
+      },
+      "headerColor": "amber",
+      "notes": "**Discussion Prompts:**\n- \"Can you think of a time government helped or hurt your finances?\"\n- Preview: Today we'll develop a framework to evaluate when intervention makes sense.",
+      "speakerNotes": "Read Malik's scenario aloud—connects to environmental protection, public services, and excessive regulation. Discussion: \"Can you think of a time government helped or hurt your finances?\" Preview: Today we'll develop a framework to evaluate when intervention makes sense."
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Identify",
+              "description": "market failures that justify government intervention: monopoly power, externalities, public goods, and information asymmetry"
+            },
+            {
+              "number": 2,
+              "verb": "Explain",
+              "description": "the economic roles of government including property rights enforcement, public goods provision, and market regulation"
+            },
+            {
+              "number": 3,
+              "verb": "Analyze",
+              "description": "how taxes, subsidies, and price controls affect market outcomes and consumer/producer welfare"
+            },
+            {
+              "number": 4,
+              "verb": "Evaluate",
+              "description": "trade-offs between government intervention and market freedom using cost-benefit analysis"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Market Failure",
+              "definition": "When free markets don't allocate resources efficiently, leading to suboptimal outcomes",
+              "example": "Pollution from factories (costs not reflected in price)"
+            },
+            {
+              "term": "Externality",
+              "definition": "Cost or benefit affecting third parties who aren't involved in the transaction",
+              "example": "Secondhand smoke harms non-smokers (negative externality)"
+            },
+            {
+              "term": "Public Good",
+              "definition": "Good that is non-excludable (can't prevent use) and non-rivalrous (one person's use doesn't reduce availability)",
+              "example": "National defense protects everyone, can't charge individuals"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Monopoly Power",
+              "definition": "When one or few sellers control a market, restricting output and raising prices above competitive levels",
+              "example": "Your electric company—only one provider in your area"
+            },
+            {
+              "term": "Information Asymmetry",
+              "definition": "When one party in a transaction knows more than the other, leading to market inefficiency",
+              "example": "Used car seller knows problems, buyer doesn't (lemons problem)"
+            },
+            {
+              "term": "Subsidy",
+              "definition": "Government payment to reduce costs or encourage production of specific goods",
+              "example": "Farm subsidies for corn, soybean production"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Five Market Failures",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "When Free Markets Fail: Five Key Problems",
+          "paragraphs": [
+            "Market failure occurs when free markets don't allocate resources efficiently. Government intervention may be justified when these failures occur:"
+          ],
+          "bulletPoints": [
+            "<strong>1. Monopoly Power:</strong> One seller restricts output, raises prices (utilities, Big Tech)",
+            "<strong>2. Negative Externalities:</strong> Third parties harmed, costs ignored (pollution, traffic)",
+            "<strong>3. Positive Externalities:</strong> Third parties benefit, under-produced (education, vaccines)",
+            "<strong>4. Public Goods:</strong> Free-rider problem, underprovided (national defense, parks)",
+            "<strong>5. Information Asymmetry:</strong> One party knows more than other (used cars, insurance)"
+          ],
+          "keyPoint": "Not all market failures justify intervention—must weigh costs vs. benefits of government action"
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "rose",
+      "content": {
+        "headerTitle": "Market Failure #1: Monopoly Power",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The Problem",
+            "paragraphs": [
+              "<strong>What happens:</strong>",
+              "• Single seller (or few) restricts output",
+              "• Raises prices above competitive level",
+              "• Reduces consumer surplus",
+              "• Creates deadweight loss (inefficiency)",
+              "",
+              "<strong>Example:</strong> Your electric company—only one provider, you pay their rate with no alternatives!"
+            ],
+            "highlightBox": {
+              "icon": "⚠️",
+              "text": "Without competition, monopolies have no incentive to lower prices or improve quality"
+            }
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "Government Solutions",
+              "color": "amber",
+              "items": [
+                "✂️ <strong>Antitrust Enforcement:</strong> Break up monopolies (Standard Oil 1911, AT&T 1982)",
+                "📋 <strong>Regulate Natural Monopolies:</strong> Set maximum prices for utilities where competition is impossible",
+                "",
+                "<strong>Trade-off:</strong> Protection vs. enforcement costs"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Market Failure #2: Externalities",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "🌫️",
+            "title": "Negative Externalities",
+            "items": [
+              "<strong>Third parties are HARMED</strong>",
+              "• Pollution harms downstream residents",
+              "• Your driving slows everyone else",
+              "• Secondhand smoke harms non-smokers",
+              "",
+              "<strong>Problem:</strong> Market ignores these costs → Overproduction",
+              "",
+              "<strong>Solution:</strong> TAX the activity (carbon tax, cigarette tax, gas tax)"
+            ]
+          },
+          "rightColumn": {
+            "icon": "💉",
+            "title": "Positive Externalities",
+            "items": [
+              "<strong>Third parties BENEFIT</strong>",
+              "• Vaccination protects everyone (herd immunity)",
+              "• Education benefits society beyond the individual",
+              "• R&D benefits extend beyond the inventor",
+              "",
+              "<strong>Problem:</strong> Individual doesn't capture all benefits → Underproduction",
+              "",
+              "<strong>Solution:</strong> SUBSIDIZE the activity (free K-12, vaccine programs)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Market Failure #3: Public Goods",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Two Key Characteristics",
+            "paragraphs": [
+              "<strong>1. Non-excludable:</strong> Can't prevent people from using it",
+              "<strong>2. Non-rivalrous:</strong> One person's use doesn't reduce availability for others",
+              "",
+              "<strong>Examples:</strong>",
+              "🛡️ National defense protects everyone",
+              "💡 Street lights illuminate for all",
+              "🌲 Public parks are open to everyone",
+              "📚 Basic research benefits all"
+            ],
+            "highlightBox": {
+              "icon": "🚫",
+              "text": "The Free-Rider Problem: People benefit without paying, so private companies won't provide"
+            }
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "Government Solution",
+              "color": "green",
+              "items": [
+                "🏛️ Government provides directly",
+                "Funds with taxes from everyone",
+                "Everyone pays, everyone benefits",
+                "",
+                "Without government provision, these goods would be severely underprovided or not provided at all"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Market Failure #4: Information Asymmetry",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "When one party knows more than the other in a transaction",
+          "paragraphs": [
+            "<strong>🚗 Used Cars (The Lemons Problem):</strong>",
+            "Seller knows problems, buyers assume all are 'lemons,' good cars exit market",
+            "",
+            "<strong>💓 Health Insurance (Adverse Selection):</strong>",
+            "You know your health, sick people buy while healthy skip, leading to market collapse",
+            "",
+            "<strong>📈 Financial Products:</strong>",
+            "Sellers know risks, buyers often don't—2008 financial crisis example"
+          ],
+          "bulletPoints": [
+            "<strong>Disclosure Requirements:</strong> Nutrition labels, ingredient lists",
+            "<strong>Quality Standards:</strong> FDA drug approval, safety inspections",
+            "<strong>Licensing:</strong> Doctors, lawyers, contractors must meet standards",
+            "<strong>Consumer Protection Laws:</strong> Lemon laws, return policies"
+          ],
+          "keyPoint": "Information asymmetry can cause markets to collapse entirely—government can restore function through disclosure and standards"
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "green",
+      "content": {
+        "headerTitle": "Government's Six Economic Roles",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Beyond market failure correction, government provides essential economic functions",
+          "paragraphs": [],
+          "bulletPoints": [
+            "⚖️ <strong>1. Enforce Property Rights:</strong> Courts, police, legal system that enables market transactions",
+            "🛡️ <strong>2. Provide Public Goods:</strong> Defense, parks, street lights that markets won't provide",
+            "🌫️ <strong>3. Correct Externalities:</strong> Tax pollution, subsidize education to align private/social costs",
+            "📋 <strong>4. Regulate Markets:</strong> Antitrust, safety standards, disclosure requirements",
+            "📊 <strong>5. Stabilize Economy:</strong> Fiscal and monetary policy to reduce business cycles (L-53)",
+            "💵 <strong>6. Redistribute Income:</strong> Progressive taxes and safety nets to reduce inequality"
+          ],
+          "keyPoint": "Even supporters of free markets recognize these roles as necessary for markets to function properly"
+        }
+      },
+      "notes": "## Common Misconceptions\n\n| Misconception | Clarification |\n|--------------|---------------|\n| \"Markets always work perfectly without government.\" | Market failures (externalities, public goods, monopolies, info asymmetry) are real and can justify intervention. The question is whether intervention makes things better or worse. |\n| \"Government intervention always helps.\" | Intervention has costs (taxes, reduced freedom, unintended consequences) and may make things worse. Price controls often create shortages or surpluses. |\n| \"Taxes just take money away.\" | Taxes fund services (roads, schools, defense, safety). The question is whether you're getting good value for your taxes, not whether taxes exist. |\n| \"Regulations only hurt businesses.\" | Regulations protect consumers (safety, information, quality) but do impose costs. Good policy weighs both sides. |",
+      "speakerNotes": "COMMON MISCONCEPTIONS:\n• \"\"Markets always work perfectly without government.\"\" → Market failures (externalities, public goods, monopolies, info asymmetry) are real and can justify intervention. The question is whether intervention makes things better or worse.\n• \"\"Government intervention always helps.\"\" → Intervention has costs (taxes, reduced freedom, unintended consequences) and may make things worse. Price controls often create shortages or surpluses.\n• \"\"Taxes just take money away.\"\" → Taxes fund services (roads, schools, defense, safety). The question is whether you're getting good value for your taxes, not whether taxes exist.\n• \"\"Regulations only hurt businesses.\"\" → Regulations protect consumers (safety, information, quality) but do impose costs. Good policy weighs both sides."
+    },
+    {
+      "number": 12,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": "Big Tech Regulation: Should government break up Google, Facebook, and Amazon?<br><br>Consider: Is there evidence of monopoly power? Are consumers being harmed? What are the costs and benefits of breaking them up? Are there better alternatives to antitrust action?"
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Real-World Example: How Taxes Affect Markets",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "⛽",
+            "name": "The Gasoline Tax Story",
+            "paragraphs": [
+              "When government taxes gasoline:",
+              "",
+              "<strong>Supply curve shifts LEFT (up)</strong>—sellers receive less, buyers pay more",
+              "",
+              "<strong>Both consumers and producers share the tax burden</strong>",
+              "",
+              "<strong>Total quantity of gas sold decreases</strong>",
+              "",
+              "<strong>Federal gas tax: $0.184/gallon + State taxes vary</strong>",
+              "Total: ~$0.30-0.60/gallon added to the price you pay"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Purpose",
+              "value": "Dual Goal",
+              "detail": "1) Raise revenue for roads, 2) Discourage driving (negative externality)"
+            },
+            {
+              "type": "after",
+              "label": "Trade-off",
+              "value": "Debate",
+              "detail": "Is the tax high enough to change behavior but not so high it unfairly burdens rural drivers?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "green",
+      "content": {
+        "headerTitle": "Real-World Example: How Subsidies Affect Markets",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "🚜",
+            "name": "Agricultural Subsidies in Action",
+            "paragraphs": [
+              "When government subsidizes corn production:",
+              "",
+              "<strong>Supply curve shifts RIGHT (down)</strong>—lower costs for producers",
+              "",
+              "<strong>Consumers pay lower prices</strong>",
+              "",
+              "<strong>Quantity produced increases</strong>",
+              "",
+              "U.S. government pays billions in farm subsidies for corn, soybeans, and wheat",
+              "",
+              "<strong>Benefits:</strong> Food security, lower food prices, rural support",
+              "<strong>Costs:</strong> Taxpayer money, overproduction, environmental concerns"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Unintended Effect",
+              "value": "Cheap Corn",
+              "detail": "Led to high-fructose corn syrup in everything, contributing to obesity epidemic"
+            },
+            {
+              "type": "after",
+              "label": "Trade-off",
+              "value": "Debate",
+              "detail": "Do subsidies achieve food security goals or just benefit large agribusiness?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "Minimum Wage Debate: Should the federal minimum wage be raised to $15/hour?<br><br>Think about: Who benefits from higher minimum wage? Who might be harmed? What trade-offs exist? Is there a 'right' level, or does it depend on local cost of living?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "content",
+      "headerColor": "emerald",
+      "content": {
+        "headerTitle": "Minimum Wage: Federal vs. State",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Federal Minimum",
+            "content": "$7.25 / hour"
+          },
+          "rightPanel": {
+            "title": "In {{STATE_NAME}}",
+            "content": "Minimum Wage: ${{STATE_MIN_WAGE}} / hour"
+          }
+        }
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "emerald",
+      "content": {
+        "headerTitle": "Check Your Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What are the five types of market failure that can justify government intervention?"
+            },
+            {
+              "number": 2,
+              "question": "Explain the difference between negative and positive externalities. Give an example of each and describe the appropriate government response."
+            },
+            {
+              "number": 3,
+              "question": "What is the free-rider problem and why does it lead to underprovision of public goods?"
+            },
+            {
+              "number": 4,
+              "question": "Compare the effects of taxes and subsidies on supply curves, prices, and quantities in a market."
+            }
+          ]
+        }
+      },
+      "notes": "## Answer Key\n\n**1.** B (Externality)\n\n**2.** National defense is a public good—non-excludable (protects everyone regardless of payment) and non-rivalrous (protecting one person doesn't reduce protection for others). Private markets underprovide due to free-rider problem.\n\n**3.** Original: 1,000 tons × $50 = $50,000. But emissions reduce 40%, so 600 tons remain. Tax revenue: 600 × $50 = **$30,000**. Remaining emissions: **600 tons**.\n\n**4.** At below-market prices, quantity demanded exceeds quantity supplied. Landlords don't build new units (low profit), some exit market, but more renters want cheap apartments. Result: more people want apartments than are available = shortage.\n\n**5.** *Reflection should include specific policy examples and clear reasoning. Evaluate quality of argument, not political position.*",
+      "speakerNotes": "ASSESSMENT ANSWER KEY:\n1. B (Externality)\n2. National defense is a public good—non-excludable (protects everyone regardless of payment) and non-rivalrous (protecting one person doesn't reduce protection for others). Private markets underprovide due to free-rider problem.\n3. Original: 1,000 tons × $50 = $50,000. But emissions reduce 40%, so 600 tons remain. Tax revenue: 600 × $50 =$30,000. Remaining emissions:600 tons.\n4. At below-market prices, quantity demanded exceeds quantity supplied. Landlords don't build new units (low profit), some exit market, but more renters want cheap apartments. Result: more people want apartments than are available = shortage.\n5. Reflection should include specific policy examples and clear reasoning. Evaluate quality of argument, not political position."
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Five market failures justify intervention",
+              "description": "Monopoly power, negative/positive externalities, public goods, and information asymmetry create inefficient outcomes"
+            },
+            {
+              "number": 2,
+              "title": "Government has six economic roles",
+              "description": "Property rights, public goods provision, externality correction, market regulation, economic stabilization, income redistribution"
+            },
+            {
+              "number": 3,
+              "title": "Taxes shift supply LEFT",
+              "description": "Leading to higher prices and lower quantities—used to discourage negative externalities or raise revenue"
+            },
+            {
+              "number": 4,
+              "title": "Subsidies shift supply RIGHT",
+              "description": "Leading to lower prices and higher quantities—used to encourage positive externalities"
+            },
+            {
+              "number": 5,
+              "title": "Price controls create problems",
+              "description": "Ceilings cause shortages and black markets; floors cause surpluses and unemployment"
+            },
+            {
+              "number": 6,
+              "title": "Every policy has trade-offs",
+              "description": "Benefits vs. costs, winners vs. losers—smart citizens evaluate whether intervention improves outcomes"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Skill Builder: Government Services Analyzer",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "🔍",
+            "title": "Tomorrow's Learning Lab",
+            "description": "Apply your knowledge by analyzing real government policies and their economic impact"
+          },
+          "steps": [
+            "Analyze state policies and their impact on YOUR finances",
+            "Evaluate specific regulations: minimum wage, environmental rules, licensing requirements",
+            "Conduct cost-benefit analysis of proposed policies",
+            "Develop informed opinions on government's proper economic role",
+            "Use the Government Services Analyzer tool to assess local policies"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "\"Understanding when markets need government—and when they don't\"",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "metadata": {
+    "description": "Variable update frequency categorization for state data automation",
+    "last_updated": "2025-11-29",
+    "total_variables": 86
+  },
+  "update_frequencies": {
+    "monthly": {
+      "description": "Volatile data that changes frequently",
+      "schedule": "1st of each month @ 2AM ET",
+      "count": 5,
+      "variables": [
+        "gas_price_current",
+        "avg_auto_loan_rate_new",
+        "avg_auto_loan_rate_used",
+        "avg_mortgage_rate_30yr",
+        "unemployment_rate"
+      ]
+    },
+    "quarterly": {
+      "description": "Moderately changing data",
+      "schedule": "Jan 1, Apr 1, Jul 1, Oct 1 @ 3AM ET",
+      "count": 11,
+      "variables": [
+        "median_home_price",
+        "median_rent",
+        "insurance_avg_teen",
+        "insurance_avg_adult",
+        "insurance_avg_young_adult",
+        "homeowners_avg_monthly",
+        "avg_monthly_fee",
+        "avg_overdraft_fee",
+        "housing_inventory",
+        "days_on_market",
+        "employment_rate"
+      ]
+    },
+    "annual": {
+      "description": "Stable data including former 'as-needed' items - updated before school year",
+      "schedule": "September 1 @ 4AM ET",
+      "count": 70,
+      "variables": {
+        "taxes": [
+          "income_tax_rate",
+          "sales_tax",
+          "local_sales_tax_min",
+          "local_sales_tax_max",
+          "combined_sales_tax_min",
+          "combined_sales_tax_max",
+          "local_sales_tax_examples",
+          "allows_local_income_tax",
+          "local_income_tax_range",
+          "local_income_tax_rate_low",
+          "local_income_tax_rate_high",
+          "property_tax_county_rate",
+          "property_tax_school_rate",
+          "property_tax_special_rate",
+          "property_tax_city_range",
+          "property_tax_examples",
+          "assessment_percentage",
+          "homestead_exemption",
+          "property_assessment_frequency",
+          "assessment_appeal_process",
+          "assessment_appeal_deadline",
+          "has_tax_cap",
+          "tax_incentives",
+          "tax_structure",
+          "gas_tax",
+          "estate_tax",
+          "vehicle_tax",
+          "capital_gains_tax",
+          "sdi_rate"
+        ],
+        "automotive": [
+          "registration_initial",
+          "registration_annual",
+          "lease_acquisition_fee",
+          "inspection_required",
+          "inspection_cost"
+        ],
+        "employment": [
+          "min_wage",
+          "major_industries"
+        ],
+        "education": [
+          "tuition_public"
+        ],
+        "banking": [
+          "minor_banking_rules"
+        ],
+        "housing": [
+          "housing_market_trends",
+          "first_time_homebuyer_program"
+        ],
+        "urls_and_contacts": [
+          "dmv_url",
+          "tax_authority_url",
+          "labor_department_url",
+          "education_department_url",
+          "consumer_protection_url",
+          "property_tax_assessor_url",
+          "insurance_comparison_url",
+          "credit_union_association_url",
+          "assessment_appeal_form_url",
+          "county_tax_assessor_url",
+          "property_tax_lookup_url",
+          "labor_website",
+          "realtor_website",
+          "econ_dev_website"
+        ],
+        "agency_names": [
+          "consumer_protection_agency",
+          "county_name",
+          "county_assessor_contact"
+        ],
+        "local_examples": [
+          "major_retailers",
+          "telecom_providers",
+          "utility_providers",
+          "healthcare_market",
+          "local_credit_union_name",
+          "local_nonprofit_name",
+          "major_city",
+          "major_city_1",
+          "major_city_2",
+          "major_city_3",
+          "suburb_city",
+          "suburb_1",
+          "suburb_2",
+          "rural_area",
+          "high_tax_city",
+          "medium_tax_city",
+          "low_tax_city"
+        ],
+        "static_identifiers": [
+          "state_name",
+          "state_code"
+        ]
+      }
+    }
+  },
+  "calculated_values": {
+    "description": "Computed at build time from other variables, not fetched",
+    "variables": [
+      "state_tax_on_3500_monthly",
+      "calculated_state_tax_70k",
+      "total_effective_rate",
+      "take_home_pay_70k",
+      "property_tax_300k",
+      "state_withholding_48k_monthly",
+      "calculated_insurance_teen_annual",
+      "calculated_insurance_adult_annual",
+      "calculated_insurance_young_adult_annual",
+      "calculated_interest_difference"
+    ]
+  },
+  "notes": {
+    "as_needed_deprecated": "Former 'as-needed' category merged into 'annual' as of 2025-11-29. URLs, agency names, and local examples rarely change and annual refresh is sufficient.",
+    "september_timing": "Annual update timed for September 1 to ensure fresh data before school year starts.",
+    "validation": "All updates go through validation before deployment. Large changes (>10%) trigger manual review."
+  }
+}

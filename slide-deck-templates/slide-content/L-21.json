@@ -1,0 +1,556 @@
+{
+  "metadata": {
+    "lChapter": "L-21",
+    "title": "Cost of Borrowing",
+    "subtitle": "Understanding Interest, Fees, and Loan Types",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Cost of Borrowing",
+        "titleSize": "large",
+        "subtitle": "Understanding Interest, Fees, and Loan Types"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "The Challenge",
+        "question": "How can borrowing the <em>same $10,000</em> cost you $2,400... or <em>$15,000</em> in interest?"
+      },
+      "headerColor": "amber",
+      "notes": "DISCUSSION PROMPTS:\nTHE CHALLENGE (5 min):\n‚Ä¢ Read Julia's student loan scenario aloud or have students read silently.\n‚Ä¢ Discussion prompt: \"Has anyone in your family ever had to choose between loan options? What did they consider?\"\n"
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Differentiate",
+              "description": "Distinguish between secured and unsecured credit and explain how collateral affects interest rates."
+            },
+            {
+              "number": 2,
+              "verb": "Calculate",
+              "description": "Determine the total cost of borrowing using interest rates, loan terms, and repayment strategies."
+            },
+            {
+              "number": 3,
+              "verb": "Compare",
+              "description": "Analyze installment vs. non-installment credit options and their impact on budgeting and total cost."
+            },
+            {
+              "number": 4,
+              "verb": "Evaluate",
+              "description": "Assess when borrowing money is appropriate versus when it should be avoided based on purpose and terms."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Principal",
+              "definition": "The original amount of money borrowed, before any interest or fees are added.",
+              "example": "You borrow $20,000 for a car‚Äî$20,000 is your principal amount"
+            },
+            {
+              "term": "APR",
+              "definition": "Annual Percentage Rate‚Äîthe yearly cost of borrowing, including interest AND fees.",
+              "example": "APR lets you compare true costs; a 6% rate with fees may have a 7% APR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Secured Credit",
+              "definition": "Credit backed by collateral that the lender can claim if you don't repay.",
+              "example": "Auto loans, mortgages‚Äîthe car or house is the collateral"
+            },
+            {
+              "term": "Unsecured Credit",
+              "definition": "Credit not backed by collateral; lender relies on your promise to repay.",
+              "example": "Credit cards, personal loans, student loans‚Äîhigher interest rates"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Secured vs. Unsecured Credit",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Collateral Affects Everything",
+            "paragraphs": [
+              "<strong>Secured credit</strong> requires you to pledge an asset. If you fail to pay, the lender can take the asset‚Äîthis reduces their risk.",
+              "<strong>Unsecured credit</strong> has no collateral backing it. The lender has only your promise to repay, increasing their risk."
+            ],
+            "highlightBox": {
+              "icon": "Ì†Ω",
+              "text": "Ì≤° Lower lender risk = lower interest rates for YOU. Secured loans almost always have lower rates than unsecured loans."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "3-7%",
+                "label": "Typical Auto Loan (Secured)",
+                "color": "teal"
+              },
+              {
+                "value": "15-25%",
+                "label": "Typical Credit Card (Unsecured)",
+                "color": "rose"
+              }
+            ],
+            "infoCard": {
+              "title": "Secured Loan Examples:",
+              "color": "blue",
+              "items": [
+                "Mortgage (house is collateral)",
+                "Auto loan (car is collateral)",
+                "Secured credit card (cash deposit)"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Installment vs. Non-Installment Credit",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "Ì†Ω",
+            "title": "Ì≥Ö Installment Credit",
+            "items": [
+              "Fixed payment amount each month",
+              "Set number of payments (e.g., 60 months)",
+              "You know exactly when it's paid off",
+              "Easier to budget and plan",
+              "Examples: auto loans, mortgages"
+            ]
+          },
+          "rightColumn": {
+            "icon": "Ì†Ω",
+            "title": "Ì¥Ñ Non-Installment Credit",
+            "items": [
+              "Variable payments (often just minimum)",
+              "Revolving: pay down, borrow again",
+              "No set payoff date",
+              "Can lead to perpetual debt",
+              "Examples: credit cards, lines of credit"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "The True Cost of Borrowing",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Same $10,000 ‚Äî Wildly Different Costs",
+            "paragraphs": [
+              "The interest rate and repayment strategy dramatically affect how much you actually pay:",
+              "<strong>Student Loan @ 4.5%, 10 years:</strong>",
+              "Total Interest: $2,437 | Total Paid: $12,437",
+              "<strong>Credit Card @ 18%, min payments:</strong>",
+              "Total Interest: $15,432 | Total Paid: $25,432"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$2.4K",
+                "label": "Student Loan Interest",
+                "color": "green"
+              },
+              {
+                "value": "$15.4K",
+                "label": "Credit Card Interest",
+                "color": "rose"
+              }
+            ],
+            "infoCard": {
+              "title": "The Credit Card Trap:",
+              "color": "amber",
+              "items": [
+                "Same $10,000 borrowed",
+                "28 years to pay off with minimums!",
+                "Pay 6x more in interest",
+                "Higher rate + slow repayment = disaster"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "When Borrowing Makes Sense",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Strategic Borrowing Can Build Wealth",
+          "paragraphs": [
+            "Not all debt is bad. Borrowing can be a <strong>strategic financial decision</strong> when it ultimately improves your financial position:"
+          ],
+          "bulletPoints": [
+            "<strong>Education:</strong> Student loans may increase earning potential by $500K+ over your lifetime",
+            "<strong>Housing:</strong> Mortgages build equity; you own an asset instead of paying rent forever",
+            "<strong>Transportation:</strong> Auto loans provide reliable transportation for work",
+            "<strong>Business:</strong> Business loans fund ventures that generate income",
+            "<strong>Emergencies:</strong> Some urgent situations (medical, essential repairs) require immediate funds",
+            "<strong>Appreciating assets:</strong> Borrowing for things that gain value over time"
+          ],
+          "keyPoint": {
+            "text": "üéØ Ask yourself: \"Will this loan help me earn more, save more, or build wealth over time?\""
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "When to Avoid Borrowing",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Red Flags for Borrowing",
+            "paragraphs": [
+              "Borrowing should generally be <strong>avoided</strong> in these situations:"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "-50%",
+                "label": "Car Value After 3 Years",
+                "color": "rose"
+              },
+              {
+                "value": "$0",
+                "label": "Value of Consumed Goods",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "The Rule of Thumb:",
+              "color": "amber",
+              "items": [
+                "Don't borrow for depreciating assets",
+                "Don't borrow for things you consume",
+                "If it won't exist in 5 years, don't finance it",
+                "Use cash for \"wants\""
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Why Understanding Borrowing Matters",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Your Borrowing Decisions Shape Your Future",
+          "paragraphs": [
+            "The decisions you make about borrowing will affect your financial life for <strong>years or even decades</strong>. Understanding the true cost gives you power:"
+          ],
+          "bulletPoints": [
+            "<strong>Avoid costly mistakes:</strong> A bad car loan can cost you thousands more than necessary",
+            "<strong>Negotiate better terms:</strong> Knowledge helps you get lower rates and better deals",
+            "<strong>Build credit wisely:</strong> Strategic borrowing and repayment builds your credit score",
+            "<strong>Achieve goals faster:</strong> Smart borrowing for education or housing accelerates wealth-building",
+            "<strong>Avoid debt traps:</strong> Recognize predatory lending and high-cost options like payday loans",
+            "<strong>Maintain financial freedom:</strong> Keep debt manageable so you have options in life"
+          ]
+        }
+      },
+      "notes": "COMMON MISCONCEPTIONS:\n\n1. \"A lower monthly payment is always better.\"\n   ‚Üí Lower payments often mean longer terms and MORE total interest paid. Always compare total cost.\n\n2. \"Interest rate and APR are the same thing.\"\n   ‚Üí APR includes fees and other costs, making it higher than the base interest rate. APR is the true cost.\n\n3. \"All debt is bad debt.\"\n   ‚Üí Strategic borrowing for appreciating assets (education, home) or emergencies can be financially sound when managed responsibly.\n\n"
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Key Factors That Affect Loan Costs",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "What Determines Your True Cost?",
+            "paragraphs": [
+              "Several factors combine to determine how much you'll actually pay when you borrow money:",
+              "<strong>Interest Rate:</strong> The percentage the lender charges for borrowing money.",
+              "<strong>Loan Term:</strong> Longer terms = lower payments but MORE total interest.",
+              "<strong>Payment Strategy:</strong> Paying more than minimum saves thousands."
+            ],
+            "highlightBox": {
+              "icon": "Ì†Ω",
+              "text": "Ì≤∞ On a $20,000 loan, choosing 3 years vs. 6 years could save you $2,000+ in interest."
+            }
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "Your Credit Score Matters:",
+              "color": "blue",
+              "items": [
+                "Excellent (750+): Best rates available",
+                "Good (700-749): Favorable rates",
+                "Fair (650-699): Higher rates",
+                "Poor (below 650): Highest rates or denial"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "üë©‚Äçüéì",
+            "name": "Julia's Student Loan Decision",
+            "paragraphs": [
+              "Julia is choosing between two options for a <strong>$20,000 student loan</strong> to be repaid over 10 years:",
+              "Julia calculated the total cost and considered additional benefits. The federal loan also offers <span class=\"highlight-text\">income-driven repayment options and potential loan forgiveness</span>."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "Federal Loan Total",
+              "value": "$24,874",
+              "detail": "$4,874 in interest"
+            },
+            {
+              "type": "before",
+              "label": "Private Loan Total",
+              "value": "$27,619",
+              "detail": "$7,619 in interest"
+            },
+            {
+              "type": "after",
+              "label": "Julia's Savings",
+              "value": "$2,745",
+              "detail": "By choosing federal loan"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "üöó",
+            "name": "Ravi's Car Purchase Decision",
+            "paragraphs": [
+              "Ravi needs a reliable car for work. He has <strong>$15,000 saved</strong> and is deciding between two options:",
+              "Ravi chose the <span class=\"highlight-text\">used car paid in cash</span> because it preserved his cash flow flexibility and avoided years of payments and interest costs."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "Cash Purchase",
+              "value": "$15,000",
+              "detail": "$0 interest, no payments"
+            },
+            {
+              "type": "before",
+              "label": "Financed Purchase",
+              "value": "$28,978",
+              "detail": "$3,978 in interest over 5 years"
+            },
+            {
+              "type": "after",
+              "label": "Ravi's Savings",
+              "value": "$13,978",
+              "detail": "By paying cash + lower insurance"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": "What factors did Julia and Ravi consider beyond just the interest rate when making their borrowing decisions?<br><br>When might Ravi's financing option have been the better choice?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "Think about a situation where borrowing money might be a good idea and one where it would be a bad idea.<br><br>What factors make the difference between smart and harmful borrowing?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "emerald",
+      "content": {
+        "headerTitle": "Check Your Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "Why do secured loans typically have lower interest rates than unsecured loans?"
+            },
+            {
+              "number": 2,
+              "question": "What's the difference between installment credit and non-installment (revolving) credit?"
+            },
+            {
+              "number": 3,
+              "question": "Give two examples of when borrowing money makes financial sense and two when it doesn't."
+            },
+            {
+              "number": 4,
+              "question": "Why is making only minimum payments on credit card debt financially dangerous?"
+            }
+          ]
+        }
+      },
+      "notes": "ANSWER KEY:\n\n1. C (Annual Percentage Rate)\n\n2. Secured loans carry less risk for lenders because they can repossess the collateral (car, house) if the borrower defaults. Lower risk = lower rates.\n\n3. $157 √ó 36 months = $5,652 total. Interest = $5,652 ‚àí $5,000 = $652\n\n4. At 4.5%, Julia pays approximately $2,480 in interest. At 6.8%, she would pay approximately $3,800. Savings: approximately $1,320.\n\n5. Reflection should include specific questions like: What is the APR? What is the total cost? Are there prepayment penalties? What happens if I miss a payment?\n\n"
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Collateral Matters",
+              "description": "Secured loans have lower rates because lenders have less risk‚Äîthey can take your asset if you don't pay"
+            },
+            {
+              "number": 2,
+              "title": "Interest Rates Add Up",
+              "description": "The same $10,000 can cost $2,400 or $15,400 in interest depending on rate and repayment strategy"
+            },
+            {
+              "number": 3,
+              "title": "Borrow Strategically",
+              "description": "Borrow for education, housing, and wealth-building‚Äîavoid borrowing for wants and consumables"
+            },
+            {
+              "number": 4,
+              "title": "Compare All Costs",
+              "description": "Look at APR (not just interest rate), loan terms, fees, and total cost before choosing a loan"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Student Activity",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "Ì†Ω",
+            "title": "Ì≥ä Loan Comparison Chart Analysis",
+            "description": "Review the Loan Comparison Chart showing different loan types, their typical interest rates, terms, fees, and ideal uses. Analyze which loan types would be <strong>most challenging to manage</strong> and which would be <strong>most appropriate</strong> for different borrowing needs."
+          },
+          "steps": [
+            "Study each loan type in the chart",
+            "Compare interest rates and terms",
+            "Identify which loan is most risky",
+            "Choose a loan type for a scenario you might face",
+            "Write reflection on your decision factors"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "¬© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "standard_number": "15",
+    "standard_title": "Career Readiness",
+    "chapter_number": "15.3",
+    "chapter_title": "Job Application Process",
+    "template_format": "case-study",
+    "content_density": "standard",
+    "day1_day2_connection": "extension",
+    "skill_builder": {
+      "id": "application_simulator",
+      "name": "Application Simulator",
+      "description": "Interactive job application system simulator with ATS optimization"
+    },
+    "generation_date": "2025-03-19",
+    "status": "Complete"
+  },
+  "content": {
+    "learning_objectives": [
+      "Identify effective strategies for finding job opportunities across different industries",
+      "Understand how to read and interpret job descriptions and requirements",
+      "Develop techniques for customizing application materials for specific positions",
+      "Learn best practices for completing online applications and navigating applicant tracking systems",
+      "Recognize the importance of networking in the job search process"
+    ],
+    "key_concepts": [
+      "Job Search Strategy",
+      "Applicant Tracking Systems",
+      "Cover Letter Customization",
+      "Job Requirements Analysis",
+      "Follow-up Communication",
+      "Application Optimization"
+    ],
+    "day1_title": "Job Search and Application Strategies",
+    "day2_title": "Application Materials Workshop",
+    "skill_builder_name": "Application Simulator"
+  }
+}

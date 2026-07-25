@@ -1,0 +1,201 @@
+{
+  "state_name": "Florida",
+  "state_code": "FL",
+  "last_updated": "2025-11-14",
+  "data_as_of": "2025-11",
+  "data_sources": {
+    "dmv_url": "https://www.flhsmv.gov",
+    "tax_authority_url": "https://floridarevenue.com",
+    "labor_department_url": "https://www.floridajobs.org",
+    "education_department_url": "https://www.fldoe.org",
+    "consumer_protection_url": "https://www.myfloridalegal.com/consumer-protection",
+    "property_tax_assessor_url": "https://floridarevenue.com/property/Pages/default.aspx"
+  },
+  "automotive": {
+    "registration_initial": 225,
+    "registration_annual": 44.50,
+    "avg_auto_loan_rate_new": 6.58,
+    "avg_auto_loan_rate_used": 7.28,
+    "insurance_avg_teen": 385,
+    "insurance_comparison_url": "https://www.myfloridacfo.com/Division/Consumers/",
+    "lease_acquisition_fee": 725,
+    "inspection_required": false,
+    "inspection_cost": 0,
+    "gas_price_current": 3.28,
+    "dmv_url": "https://www.flhsmv.gov"
+  },
+  "taxes": {
+    "income_tax_rate": 0,
+    "sales_tax": 6.0,
+    "local_sales_tax_min": 0,
+    "local_sales_tax_max": 2.0,
+    "combined_sales_tax_min": 6.0,
+    "combined_sales_tax_max": 8.0,
+    "local_sales_tax_examples": [
+      {
+        "city": "Miami",
+        "local_rate": 1.0,
+        "combined_rate": 7.0
+      },
+      {
+        "city": "Orlando",
+        "local_rate": 0.5,
+        "combined_rate": 6.5
+      },
+      {
+        "city": "Tampa",
+        "local_rate": 1.5,
+        "combined_rate": 7.5
+      },
+      {
+        "city": "Jacksonville",
+        "local_rate": 1.5,
+        "combined_rate": 7.5
+      },
+      {
+        "city": "Tallahassee",
+        "local_rate": 1.5,
+        "combined_rate": 7.5
+      }
+    ],
+    "allows_local_income_tax": false,
+    "local_income_tax_range": "N/A - Florida has no income tax",
+    "local_income_tax_rate_low": 0,
+    "local_income_tax_rate_high": 0,
+    "local_income_tax_example": "N/A",
+    "property_tax_county_rate": 0.85,
+    "property_tax_school_rate": 0.65,
+    "property_tax_special_rate": 0.15,
+    "property_tax_effective_rate": null,
+    "property_tax_effective_rate_todo": "TODO: no authoritative 2026 in-repo source; STOP-flagged for Seb/Denis. Do not invent.",
+    "property_tax_city_range": "0.80 - 1.10%",
+    "property_tax_examples": [
+      {
+        "location": "Miami-Dade County",
+        "millage": 20.5,
+        "description": "High urban property taxes"
+      },
+      {
+        "location": "Broward County (Fort Lauderdale)",
+        "millage": 19.8,
+        "description": "Coastal, high taxes"
+      },
+      {
+        "location": "Orange County (Orlando)",
+        "millage": 19.2,
+        "description": "Tourism hub, moderate-high"
+      },
+      {
+        "location": "Hillsborough County (Tampa)",
+        "millage": 18.7,
+        "description": "Major metro, moderate"
+      },
+      {
+        "location": "Duval County (Jacksonville)",
+        "millage": 17.5,
+        "description": "Large city, moderate rates"
+      },
+      {
+        "location": "Palm Beach County",
+        "millage": 18.9,
+        "description": "Affluent coastal area"
+      },
+      {
+        "location": "Rural North Florida",
+        "millage": 15.2,
+        "description": "Lower rates, fewer services"
+      }
+    ],
+    "assessment_percentage": 100,
+    "homestead_exemption": 50000,
+    "property_assessment_frequency": "Annual",
+    "assessment_appeal_process": "File petition with value adjustment board (VAB) by September 18 (deadline may vary by county). Can file for informal hearing or formal hearing.",
+    "assessment_appeal_deadline": "Within 25 days of TRIM notice (typically mid-September)",
+    "assessment_appeal_form_url": "https://floridarevenue.com/property/Pages/Taxpayers_VAB.aspx",
+    "has_tax_cap": true,
+    "county_name": "Miami-Dade County",
+    "county_assessor_contact": "Miami-Dade Property Appraiser - (305) 375-3402",
+    "county_tax_assessor_url": "https://www.miamidade.gov/pa/",
+    "property_tax_lookup_url": "https://floridarevenue.com/property/Pages/default.aspx",
+    "tax_incentives": "Florida 529 Savings Plan (no state tax deduction since no income tax, but federal benefits), Homestead Exemption up to $50K, Save Our Homes cap (3% annual increase limit)",
+    "tax_structure": "No state income tax; moderate sales tax; property taxes vary by county. Save Our Homes amendment caps assessment increases at 3% annually for homesteaded properties."
+  },
+  "housing": {
+    "median_home_price": 405000,
+    "median_rent": 1980,
+    "housing_market_trends": "Rising rapidly - strong population growth from retirees and remote workers. Coastal areas very expensive, inland more affordable. Insurance costs rising due to hurricane risk.",
+    "first_time_homebuyer_program": "Florida Housing Finance Corporation - offers down payment assistance and competitive rates through Florida Homebuyer Opportunity Program",
+    "avg_mortgage_rate_30yr": 7.15
+  },
+  "insurance": {
+    "homeowners_avg_monthly": 280,
+    "data_source": "Florida Office of Insurance Regulation average rates for $300K home coverage (higher due to hurricane risk)"
+  },
+  "employment": {
+    "min_wage": 12.00,
+    "unemployment_rate": 3.0,
+    "major_industries": "Tourism, Aerospace, Agriculture, Healthcare, Real Estate, International Trade"
+  },
+  "education": {
+    "tuition_public": 6368
+  },
+  "banking": {
+    "avg_monthly_fee": 12,
+    "avg_overdraft_fee": 33,
+    "credit_union_association_url": "https://www.fcu.org",
+    "minor_banking_rules": "Minors can open accounts with parent/guardian co-signer. Florida Uniform Transfers to Minors Act (UTMA) accounts available."
+  },
+  "consumer_protection": {
+    "consumer_protection_agency": "Florida Attorney General - Consumer Protection Division",
+    "consumer_protection_url": "https://www.myfloridalegal.com/consumer-protection"
+  },
+  "calculated_values": {
+    "state_tax_on_3500_monthly": 0,
+    "calculated_state_tax_70k": 0,
+    "total_effective_rate": 14.0,
+    "take_home_pay_70k": 54845,
+    "property_tax_300k": 3000,
+    "state_withholding_48k_monthly": 0
+  },
+  "local_examples": {
+    "major_retailers": "Publix, Target, Walmart, Winn-Dixie, Costco",
+    "telecom_providers": "AT&T, Verizon, T-Mobile, Xfinity, Spectrum",
+    "utility_providers": "Florida Power & Light (FPL), Duke Energy, Tampa Electric, TECO",
+    "healthcare_market": "Large marketplace with many insurers; major hospital systems in urban areas; growing telemedicine adoption",
+    "local_credit_union_name": "Suncoast Credit Union",
+    "local_nonprofit_name": "Feeding South Florida",
+    "major_city": "Miami",
+    "major_city_1": "Miami",
+    "major_city_2": "Orlando",
+    "major_city_3": "Tampa",
+    "major_city_1_millage": 20.5,
+    "major_city_2_millage": 19.2,
+    "major_city_3_millage": 18.7,
+    "suburb_city": "Coral Springs",
+    "suburb_1": "Coral Springs",
+    "suburb_2": "Clearwater",
+    "suburb_1_millage": 19.5,
+    "suburb_2_millage": 18.2,
+    "rural_area": "North Central Florida",
+    "rural_area_millage": 15.2,
+    "high_tax_city": "Miami",
+    "medium_tax_city": "Jacksonville",
+    "low_tax_city": "Gainesville",
+    "high_tax_major_city": "Miami",
+    "low_tax_medium_city": "Gainesville",
+    "high_tax_millage": 20.5,
+    "medium_tax_millage": 17.5,
+    "low_tax_millage": 15.2,
+    "high_combined_sales_tax": 7.5,
+    "low_combined_sales_tax": 6.0,
+    "high_local_sales_tax": 1.5,
+    "low_local_sales_tax": 0,
+    "local_sales_tax_1": 1.0,
+    "total_millage_example": 20.5,
+    "high_local_income_tax_rate": 0,
+    "low_local_income_tax_rate": 0,
+    "local_income_tax_rate": 0,
+    "local_income_tax_rate_1": 0
+  },
+  "notes": "Florida has no state income tax, making it attractive for retirees and high earners. However, property taxes and insurance costs (especially homeowners insurance due to hurricane risk) can be high. Save Our Homes amendment caps annual assessment increases at 3% for primary residences, creating significant tax disparities between long-time residents and new buyers. State experiencing rapid population growth, particularly from New York, California, and Illinois residents seeking lower taxes. Tourism is massive industry (Disney World, beaches, cruise ports). Minimum wage gradually increasing to $15/hour by 2026. Public university system relatively affordable compared to other states. Hurricane insurance costs have risen dramatically, with some insurers leaving the market."
+}

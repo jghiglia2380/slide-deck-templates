@@ -1,0 +1,546 @@
+{
+  "metadata": {
+    "lChapter": "L-07",
+    "title": "Understanding Tax Brackets and Tax Rates",
+    "subtitle": "Master Marginal vs. Effective Rates and Make Smarter Financial Decisions",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME",
+      "STATE_INCOME_TAX_RATE"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Understanding Tax Brackets and Tax Rates",
+        "titleSize": "large",
+        "subtitle": "Master Marginal vs. Effective Rates and Make Smarter Financial Decisions"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "The Challenge",
+        "question": "Jared earns <em>$50,000/year</em> as a single filer. His coworker told him he's 'in the 22% tax bracket,' so Jared assumes he pays <em>$11,000</em> in federal income tax.<br><br>His actual federal tax bill? Only <em>$6,307</em>\u2014a difference of $4,693!<br><br>This misconception causes many people to turn down raises or overtime, fearing they'll 'lose money' by moving to a higher bracket.<br><br>How do progressive tax brackets actually work, and why is understanding the difference between marginal and effective tax rates essential for financial decisions?"
+      },
+      "headerColor": "amber",
+      "speakerNotes": "Read Jared's tax misconception scenario aloud. Ask the discussion question: 'Has anyone heard that you can lose money by getting a raise? Why is this a myth?' Allow 2-3 students to share what they've heard about tax brackets. This is one of the most common financial misconceptions—correcting it is the core objective of this lesson."
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Differentiate",
+              "description": "Differentiate between marginal and effective tax rates and understand what each means for your finances."
+            },
+            {
+              "number": 2,
+              "verb": "Calculate",
+              "description": "Calculate taxes owed using progressive tax brackets for different income levels."
+            },
+            {
+              "number": 3,
+              "verb": "Analyze",
+              "description": "Analyze how filing status affects tax calculations and take-home pay."
+            },
+            {
+              "number": 4,
+              "verb": "Distinguish",
+              "description": "Distinguish between legal tax avoidance strategies and illegal tax evasion."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Tax Bracket",
+              "definition": "Income ranges that are taxed at different rates in a progressive system. Only income WITHIN each range is taxed at that rate.",
+              "example": "The 22% bracket covers $44,726-$95,375\u2014only income in this range is taxed at 22%."
+            },
+            {
+              "term": "Marginal Tax Rate",
+              "definition": "The rate at which your LAST dollar of income is taxed\u2014your highest bracket.",
+              "example": "Earning $50,000 puts you in the 22% bracket, so your marginal rate is 22%."
+            }
+          ]
+        }
+      },
+      "speakerNotes": "Draw a 'staircase' visual of progressive brackets on the board to illustrate how income fills up each bracket step-by-step. EMPHASIZE repeatedly: ONLY income in each bracket is taxed at that rate—not your entire income. Define marginal rate (the highest bracket you reach) vs. effective rate (the average rate across all your income). Show 2023 tax brackets for single filers and married filing jointly on the board or handout. This visual representation is critical for student understanding."
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Effective Tax Rate",
+              "definition": "The AVERAGE rate at which all your income is taxed: Total Tax \u00f7 Total Income \u00d7 100.",
+              "example": "Paying $6,307 on $50,000 = 12.6% effective rate (much lower than the 22% marginal rate)."
+            },
+            {
+              "term": "Progressive Tax System",
+              "definition": "A system where tax rates increase as income increases, with each bracket taxed at its own rate\u2014not your entire income.",
+              "example": "The U.S. federal income tax has 7 brackets ranging from 10% to 37%."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "The Tax Bracket Myth\u2014BUSTED",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "What Many People Believe (WRONG!)",
+            "paragraphs": [
+              "\u274c 'If I earn more and move into a higher tax bracket, ALL my income will be taxed at the higher rate.'",
+              "\u274c 'I might take home LESS money if I get a raise.'",
+              "\u274c 'I should turn down overtime to avoid the higher bracket.'"
+            ],
+            "highlightBox": {
+              "icon": "\u2713",
+              "text": "TRUTH: Only income ABOVE each bracket threshold is taxed at that rate. Earning more ALWAYS means keeping more!"
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "60%",
+                "label": "Americans don't understand tax brackets",
+                "color": "amber"
+              },
+              {
+                "value": "$0",
+                "label": "Money lost from moving to higher bracket",
+                "color": "emerald"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "How Progressive Tax Brackets Work",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Income 'Fills Up' Each Bracket Like Water in Containers",
+          "paragraphs": [
+            "Think of your income flowing through buckets\u2014each bucket has its own tax rate:"
+          ],
+          "bulletPoints": [
+            "<strong>First $11,600:</strong> Fills the 10% bucket \u2192 taxed at 10%",
+            "<strong>$11,601 - $47,150:</strong> Fills the 12% bucket \u2192 taxed at 12%",
+            "<strong>$47,151 - $100,525:</strong> Fills the 22% bucket \u2192 taxed at 22%",
+            "<strong>$100,526 - $191,950:</strong> Fills the 24% bucket \u2192 taxed at 24%",
+            "<strong>And so on...</strong> up to 37% for income over $609,350"
+          ],
+          "keyPoint": {
+            "text": "\ud83d\udcca Each 'bucket' has its own rate. Moving to a higher bracket only affects the dollars ABOVE the threshold!"
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Tax Calculation Example: $50,000 Income",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Step-by-Step Calculation (Single Filer)",
+            "paragraphs": [
+              "<strong>First $11,600 \u00d7 10%</strong> = $1,160",
+              "<strong>Next $35,550 \u00d7 12%</strong> = $4,266",
+              "($11,601 to $47,150)",
+              "<strong>Remaining $2,850 \u00d7 22%</strong> = $627",
+              "($47,151 to $50,000)",
+              "<strong>TOTAL TAX: $6,053</strong>"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "22%",
+                "label": "Marginal Rate (highest bracket)",
+                "color": "indigo"
+              },
+              {
+                "value": "12.1%",
+                "label": "Effective Rate (actual average)",
+                "color": "emerald"
+              },
+              {
+                "value": "$43,947",
+                "label": "Take-Home After Federal Tax",
+                "color": "indigo"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Marginal vs. Effective: Why Both Matter",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "\ud83d\udcc8",
+            "title": "MARGINAL RATE (22%)",
+            "items": [
+              "Rate on your LAST dollar",
+              "Use for: overtime decisions",
+              "Use for: evaluating bonuses",
+              "Use for: side income calculations",
+              "Use for: tax planning strategies",
+              "$1,000 deduction saves $220"
+            ]
+          },
+          "rightColumn": {
+            "icon": "\ud83d\udcca",
+            "title": "EFFECTIVE RATE (12.1%)",
+            "items": [
+              "AVERAGE rate on ALL income",
+              "Use for: overall tax burden",
+              "Use for: budgeting take-home pay",
+              "Use for: comparing tax situations",
+              "Use for: understanding true cost",
+              "Represents actual % paid"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Filing Status Changes Everything",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "5 Filing Statuses",
+            "paragraphs": [
+              "Your filing status determines your bracket thresholds:",
+              "<strong>Single:</strong> Standard brackets",
+              "<strong>Married Filing Jointly:</strong> Wider brackets (best for most couples)",
+              "<strong>Married Filing Separately:</strong> Narrower brackets",
+              "<strong>Head of Household:</strong> Between single and married (for single parents)",
+              "<strong>Qualifying Widow(er):</strong> Same as married filing jointly (for 2 years after spouse's death)"
+            ],
+            "highlightBox": {
+              "icon": "\ud83d\udca1",
+              "text": "The 22% bracket starts at $47,150 for single filers but $94,300 for married filing jointly\u2014double!"
+            }
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "Marriage Bonus vs. Penalty",
+              "color": "amber",
+              "items": [
+                "Bonus: One high + one low earner",
+                "Penalty: Two similar high earners",
+                "Filing status can save thousands"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Tax Avoidance vs. Tax Evasion",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "\u2713",
+            "title": "TAX AVOIDANCE (Legal)",
+            "items": [
+              "Contributing to 401(k) or IRA",
+              "Claiming legitimate deductions",
+              "Using tax credits you qualify for",
+              "Timing income strategically",
+              "Home office deduction (if qualified)",
+              "Smart\u2014reduces taxable income legally"
+            ]
+          },
+          "rightColumn": {
+            "icon": "\u2717",
+            "title": "TAX EVASION (Illegal)",
+            "items": [
+              "Not reporting cash income",
+              "Claiming false deductions",
+              "Hiding money offshore illegally",
+              "Falsifying business expenses",
+              "Underreporting tips",
+              "Criminal\u2014fines and prison"
+            ]
+          }
+        }
+      },
+      "speakerNotes": "COMMON MISCONCEPTIONS TO ADDRESS:\n\n1. 'Moving to a higher bracket means ALL my income is taxed at that rate' → CLARIFY: Only income WITHIN each bracket is taxed at that rate. If you earn $50,000, only $5,275 is taxed at 22%—not all $50,000. This is THE most critical misconception to correct in this entire lesson.\n\n2. 'I could make less money after a raise if it pushes me into a higher bracket' → CLARIFY: Mathematically impossible. Even if a $1,000 raise is taxed at 22%, you still keep $780 more. You ALWAYS come out ahead with more income. The fear of \"losing money\" from a raise has caused countless people to turn down career opportunities.\n\n3. 'My marginal rate is what I pay on all my income' → CLARIFY: Your effective rate (total tax ÷ total income) is your actual tax burden. Someone \"in the 22% bracket\" likely pays 12-15% overall on all their income. Use marginal rate for planning new income; use effective rate for budgeting.\n\nAddress these proactively and repeatedly—these misconceptions are deeply embedded in popular culture."
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Smart Tax Planning Strategies",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Legal Ways to Reduce Your Tax Bill",
+          "paragraphs": [
+            "Understanding your marginal rate helps you make smart tax decisions:"
+          ],
+          "bulletPoints": [
+            "<strong>401(k) contributions:</strong> $10,000 contribution in 22% bracket saves $2,200 in taxes",
+            "<strong>Traditional IRA:</strong> Up to $7,000/year reduces taxable income",
+            "<strong>HSA contributions:</strong> Triple tax advantage for healthcare costs",
+            "<strong>Timing income:</strong> Defer bonus to next year if you expect lower income",
+            "<strong>Bunching deductions:</strong> Combine charitable donations in one year to exceed standard deduction"
+          ],
+          "keyPoint": {
+            "text": "\ud83d\udcb0 A $1,000 deduction saves $220 if you're in the 22% bracket, but $370 if you're in the 37% bracket. Know your rate!"
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Apply It",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "\ud83d\udc64",
+            "name": "Jared's Raise Decision",
+            "paragraphs": [
+              "Jared earns $50,000 and is offered a $10,000 raise. His coworker warns him: 'Don't take it! You'll move into the 22% bracket and lose money!'",
+              "Jared now understands tax brackets. He knows only the $10,000 raise will be taxed at 22%\u2014his existing $50,000 income stays at its lower effective rate."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Tax on $10,000 Raise",
+              "value": "$2,200",
+              "detail": "22% \u00d7 $10,000"
+            },
+            {
+              "type": "after",
+              "label": "Additional Take-Home",
+              "value": "$7,800",
+              "detail": "$10,000 - $2,200 tax"
+            },
+            {
+              "type": "positive",
+              "label": "Decision",
+              "value": "TAKE THE RAISE",
+              "detail": "He keeps 78% of every new dollar"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Apply It",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "\ud83d\udc65",
+            "name": "Sara's Filing Status Decision",
+            "paragraphs": [
+              "Sara and her spouse earn $110,000 combined. They're deciding whether to file jointly or separately.",
+              "Filing jointly: The 22% bracket doesn't start until $94,300, so more income is taxed at lower rates.",
+              "Filing separately: Each would hit the 22% bracket at just $47,150."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "positive",
+              "label": "Filing Jointly Tax",
+              "value": "~$13,200",
+              "detail": "More income in lower brackets"
+            },
+            {
+              "type": "negative",
+              "label": "Filing Separately Tax",
+              "value": "~$15,400",
+              "detail": "Hit 22% bracket earlier"
+            },
+            {
+              "type": "positive",
+              "label": "Savings",
+              "value": "$2,200/year",
+              "detail": "By filing jointly"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "amber",
+      "content": {
+        "badge": "Discussion",
+        "question": "A friend says: 'I turned down overtime because it would push me into a higher tax bracket and I'd take home less.'<br><br>How would you explain why this reasoning is flawed?<br><br>What's the REAL question they should be asking about overtime pay?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "indigo",
+      "content": {
+        "badge": "Reflection",
+        "question": "How might understanding the difference between marginal and effective tax rates change how you evaluate:<br><br>\u2022 Job offers with different salaries?<br>\u2022 Overtime opportunities?<br>\u2022 Side income or freelance work?<br>\u2022 Retirement account contributions?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "emerald",
+      "content": {
+        "headerTitle": "Check Your Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "If someone earns $60,000 and is in the 22% bracket, how much of their income is actually taxed at 22%?"
+            },
+            {
+              "number": 2,
+              "question": "Why is it a myth that earning more money could result in taking home less?"
+            },
+            {
+              "number": 3,
+              "question": "Give two examples of legal tax avoidance and two examples of illegal tax evasion."
+            },
+            {
+              "number": 4,
+              "question": "Calculate: Taylor earns $75,000. What is their approximate effective tax rate?"
+            }
+          ]
+        }
+      },
+      "speakerNotes": "ANSWER KEY:\n\nQ1: If someone earns $60,000 in the 22% bracket, only $12,850 of their income is taxed at 22%. Calculation: The 22% bracket starts at $47,150 for single filers, so $60,000 - $47,150 = $12,850. The first $11,000 is taxed at 10%, the next $35,550 at 12%, and only the last $12,850 at 22%.\n\nQ2: It's a myth that earning more money could result in taking home less because only the income IN the new bracket is taxed at the higher rate. All previous income stays at the lower rates. Even if your last dollar is taxed at 37%, you still keep 63 cents of it. A raise always increases take-home pay—you just keep a smaller percentage of each additional dollar at higher brackets, but you ALWAYS keep more total money.\n\nQ3: Legal tax avoidance examples: (1) Contributing to a 401(k) or traditional IRA to reduce taxable income, (2) Claiming legitimate home office deduction if you qualify. Illegal tax evasion examples: (1) Not reporting cash tips or side income, (2) Claiming false business expenses or deductions you don't qualify for. The key difference: avoidance uses legal strategies within tax law; evasion involves dishonesty or fraud.\n\nQ4: Taylor's tax on $75,000 (single filer):\n• $11,000 × 10% = $1,100\n• $33,725 × 12% = $4,047\n• $30,275 × 22% = $6,660.50\n• TOTAL TAX: $11,807.50\n• Effective Rate: $11,807.50 ÷ $75,000 = 15.7%\n\nNote that Taylor's marginal rate is 22% but effective rate is only 15.7%—a 6.3 percentage point difference! This illustrates why understanding both rates is essential."
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Two Different Rates",
+              "description": "Marginal rate = tax on your last dollar. Effective rate = your average rate. They're always different!"
+            },
+            {
+              "number": 2,
+              "title": "Earning More = Keeping More",
+              "description": "Only income in each bracket is taxed at that rate. Moving up brackets never results in less take-home pay."
+            },
+            {
+              "number": 3,
+              "title": "Filing Status Matters",
+              "description": "Your filing status affects bracket thresholds. Married filing jointly has the widest brackets\u2014potentially saving thousands."
+            },
+            {
+              "number": 4,
+              "title": "Avoidance vs. Evasion",
+              "description": "Tax avoidance is legal and smart. Tax evasion is criminal. Know the difference and plan legally!"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Tomorrow's Challenge",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "\ud83e\uddee",
+            "title": "Tax Bracket Calculator Challenge",
+            "description": "You've learned how brackets work in theory\u2014but can you calculate taxes accurately and make smart decisions? Tomorrow you'll work through real scenarios comparing different incomes, filing statuses, and tax planning strategies."
+          },
+          "steps": [
+            "Calculate federal tax for multiple income scenarios using bracket tables",
+            "Compare marginal vs. effective rates for different situations",
+            "Analyze how filing status changes tax outcomes for couples",
+            "Classify tax strategies as avoidance (legal) or evasion (illegal)",
+            "Evaluate financial decisions using your marginal tax rate"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "\u00a9 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

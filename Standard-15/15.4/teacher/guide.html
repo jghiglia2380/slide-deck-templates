@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PFL Academy - Teacher Guide: Chapter 2.4: Understanding Tax Deductions and Credits</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f8f9fa;
+        }
+        .header {
+            background-color: #4f46e5;
+            color: white;
+            padding: 1rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 40;
+        }
+        .sidebar {
+            background-color: #f3f4f6;
+            padding: 1.5rem;
+            height: calc(100vh - 64px);
+            position: fixed;
+            top: 64px;
+            left: 0;
+            width: 250px;
+            overflow-y: auto;
+        }
+        .content {
+            margin-left: 250px;
+            margin-top: 64px;
+            padding: 2rem;
+        }
+        .tabs {
+            display: flex;
+            border-bottom: 1px solid #e5e7eb;
+            margin-bottom: 1rem;
+        }
+        .tab {
+            padding: 0.75rem 1.5rem;
+            cursor: pointer;
+        }
+        .tab.active {
+            color: #4f46e5;
+            border-bottom: 2px solid #4f46e5;
+            font-weight: 600;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .instructor-panel {
+            position: fixed;
+            top: 0;
+            right: -400px;
+            width: 400px;
+            height: 100vh;
+            background-color: white;
+            z-index: 50;
+            box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+            transition: right 0.3s ease;
+            padding: 1rem;
+            overflow-y: auto;
+        }
+        .instructor-panel.open {
+            right: 0;
+        }
+        .lesson-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        .lesson-table th,
+        .lesson-table td {
+            border: 1px solid #e5e7eb;
+            padding: 0.75rem;
+            text-align: left;
+        }
+        .lesson-table th {
+            background-color: #f9fafb;
+        }
+        .note-box {
+            background-color: #f0fdf4;
+            border-left: 4px solid #10b981;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0.25rem;
+        }
+        .warning-box {
+            background-color: #fff7ed;
+            border-left: 4px solid #f59e0b;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0.25rem;
+        }
+        .resource-link {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            margin-bottom: 0.5rem;
+            background-color: white;
+            transition: all 0.2s ease;
+        }
+        .resource-link:hover {
+            border-color: #4f46e5;
+            background-color: #f3f4f6;
+        }
+        .support-question {
+            padding: 0.75rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .support-question:hover {
+            border-color: #4f46e5;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">PFL Academy | Teacher Guide</h1>
+            <nav class="hidden md:block">
+                <a href="#" class="text-white px-3">Standards</a>
+                <a href="#" class="text-white px-3">Resources</a>
+                <a href="#" class="text-white px-3">Help</a>
+            </nav>
+            <div>
+                <button id="supportBtn" class="bg-white bg-opacity-20 text-white px-3 py-2 rounded">
+                    <span class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                        </svg>
+                        Instructor Support
+                    </span>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <div class="sidebar">
+        <h2 class="text-lg font-bold mb-4">Standard 2: Taxes</h2>
+        <p class="text-sm text-gray-600 mb-4">Understanding tax systems, obligations, and planning strategies.</p>
+        
+        <h3 class="font-medium mb-2">Teacher Guides</h3>
+        <ul class="space-y-2 mb-6">
+            <li>
+                <a href="#" class="flex items-center text-gray-700 hover:text-indigo-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                    2.1 Federal and State Taxes
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex items-center text-gray-700 hover:text-indigo-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                    2.2 Tax Brackets and Rates
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex items-center text-gray-700 hover:text-indigo-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                    2.3 Tax Filing Requirements
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex items-center text-indigo-600 font-semibold">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-indigo-600" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd" />
+                    </svg>
+                    2.4 Tax Deductions and Credits
+                </a>
+            </li>
+        </ul>
+        
+        <h3 class="font-medium mb-2">Resources</h3>
+        <ul class="space-y-2">
+            <li>
+                <a href="chapter-2-4-day1.html" target="_blank" class="flex items-center text-gray-700 hover:text-indigo-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" />
+                    </svg>
+                    View Student Content (Day 1)
+                </a>
+            </li>
+            <li>
+                <a href="chapter-2-4-day2.html" target="_blank" class="flex items-center text-gray-700 hover:text-indigo-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" />
+                    </svg>
+                    View Student Content (Day 2)
+                </a>
+            </li>
+            <li>
+                <a href="#" id="downloadMaterials" class="flex items-center text-gray-700 hover:text-indigo-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                    Download Materials
+                </a>
+            </li>
+            <li>
+                <a href="#" id="additionalResources" class="flex items-center text-gray-700 hover:text-indigo-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z" />
+                    </svg>
+                    Additional Resources
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="content">
+        <div class="tabs">
+            <div class="tab active" data-tab="content-guide">Content Guide (Day 1)</div>
+            <div class="tab" data-tab="learning-lab">Learning Lab (Day 2)</div>
+        </div>
+        
+        <div id="content-guide" class="tab-content active">
+            <h1 class="text-3xl font-bold mb-6">Chapter 2.4: Understanding Tax Deductions and Credits</h1>
+            
+            <div class="bg-gray-100 p-4 rounded-lg mb-6 grid grid-cols-2 gap-4">
+                <div>
+                    <p><strong>Standard:</strong> Standard 2: Taxes</p>
+                    <p><strong>Chapter:</strong> 2.4: Understanding Tax Deductions and Credits</p>
+                    <p><strong>Duration:</strong> 55 minutes</p>
+                </div>
+                <div>
+                    <p><strong>Focus:</strong> Tax benefits that can reduce tax liability</p>
+                    <p><strong>Next Lesson:</strong> Chapter 2.5 (if applicable)</p>
+                </div>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-3">Lesson Overview</h2>
+            <p class="mb-4">In this lesson, students will learn about tax deductions and tax credits, two key tools that can help taxpayers reduce their tax liability. Students will explore the differences between these tax benefits, understand common deductions and credits, and learn how to strategically apply them to minimize tax bills.</p>
+            
+            <h2 class="text-2xl font-bold mb-3">Learning Objectives</h2>
+            <ul class="list-disc ml-6 mb-6">
+                <li>Understand how tax deductions and credits impact tax liability</li>
+                <li>Differentiate between tax deductions and tax credits</li>
+                <li>Identify common tax deductions and credits available to taxpayers</li>
+                <li>Calculate tax savings from different deductions and credits</li>
+                <li>Learn strategic approaches to minimize tax liability</li>
+            </ul>
+            
+            <h2 class="text-2xl font-bold mb-3">Materials Needed</h2>
+            <ul class="list-disc ml-6 mb-6">
+                <li>Student computers with internet access</li>
+                <li>Tax Deduction vs. Tax Credit Comparison Chart worksheets (digital or printed)</li>
+                <li>Calculators (or calculator apps)</li>
+                <li>Whiteboard/projector for demonstrations</li>
+                <li>Supplemental handouts on current tax deduction and credit amounts</li>
+            </ul>
+            
+            <h2 class="text-2xl font-bold mb-3">Pre-Class Setup</h2>
+            <ul class="list-disc ml-6 mb-6">
+                <li>Review the current year's standard deduction amounts and tax brackets</li>
+                <li>Prepare digital or printed copies of the Tax Deduction vs. Tax Credit Comparison Chart</li>
+                <li>Set up demonstration examples for calculating tax savings from deductions and credits</li>
+                <li>Prepare real-world scenarios that demonstrate strategic tax planning</li>
+                <li>Test the digital calculator tools students will use for the activity</li>
+            </ul>
+            
+            <h2 class="text-2xl font-bold mb-3">Lesson Timeline</h2>
+            <table class="lesson-table">
+                <thead>
+                    <tr>
+                        <th width="15%">Time</th>
+                        <th width="25%">Activity</th>
+                        <th width="60%">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>5 minutes</td>
+                        <td>Introduction</td>
+                        <td>Introduce the concept of tax deductions and credits as tools that can significantly reduce tax liability. Explain that while both help save money, they work differently.</td>
+                    </tr>
+                    <tr>
+                        <td>10 minutes</td>
+                        <td>Tax Deductions Explained</td>
+                        <td>Explain how deductions work, including the difference between standard and itemized deductions. Use examples to demonstrate how deductions reduce taxable income.</td>
+                    </tr>
+                    <tr>
+                        <td>10 minutes</td>
+                        <td>Tax Credits Explained</td>
+                        <td>Explain how credits work, including the difference between refundable and nonrefundable credits. Emphasize how credits directly reduce tax owed.</td>
+                    </tr>
+                    <tr>
+                        <td>10 minutes</td>
+                        <td>Common Deductions and Credits</td>
+                        <td>Review popular deductions and credits that students might encounter, including education-related benefits, retirement savings incentives, and work-related deductions.</td>
+                    </tr>
+                    <tr>
+                        <td>10 minutes</td>
+                        <td>Tax Calculation Example</td>
+                        <td>Walk through the Jordan example, showing step-by-step how to calculate tax liability with deductions and credits applied.</td>
+                    </tr>
+                    <tr>
+                        <td>5 minutes</td>
+                        <td>Strategic Tax Planning</td>
+                        <td>Discuss how understanding deductions and credits allows for strategic financial decisions to minimize tax liability over time.</td>
+                    </tr>
+                    <tr>
+                        <td>5 minutes</td>
+                        <td>Skill Builder Introduction</td>
+                        <td>Introduce the Tax Deduction vs. Tax Credit Comparison Chart activity and explain expectations for completion.</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h2 class="text-2xl font-bold mb-3">Detailed Instruction Notes</h2>
+            
+            <h3 class="text-xl font-semibold mb-2">Introduction (5 minutes)</h3>
+            <ul class="list-disc ml-6 mb-4">
+                <li>Begin by asking students if they've ever heard of tax deductions or tax credits.</li>
+                <li>Explain that both are tools to reduce taxes but work in fundamentally different ways.</li>
+                <li>Emphasize the importance of understanding these tools for effective financial planning.</li>
+            </ul>
+            
+            <h3 class="text-xl font-semibold mb-2">Tax Deductions Explained (10 minutes)</h3>
+            <ul class="list-disc ml-6 mb-4">
+                <li>Define tax deductions: "Deductions subtract from your income before taxes are calculated."</li>
+                <li>Use a simple example: "If you earn $50,000 and have $10,000 in deductions, you'll only be taxed on $40,000."</li>
+                <li>Explain standard deduction vs. itemized deductions:</li>
+                <ul class="list-disc ml-6 mb-2">
+                    <li>Standard deduction: A fixed amount available to all taxpayers ($13,850 for single filers in 2023)</li>
+                    <li>Itemized deductions: List of specific expenses that can be deducted if their total exceeds the standard deduction</li>
+                </ul>
+                <li>Draw or project a simple diagram showing how deductions reduce taxable income.</li>
+            </ul>
+            <div class="note-box">
+                <p class="font-semibold">Teaching Tip:</p>
+                <p>Use a simple multiplication example to show how deductions work: "If you're in the 22% tax bracket, a $1,000 deduction saves you $220 in taxes (1,000 × 0.22 = 220)."</p>
+            </div>
+            
+            <h3 class="text-xl font-semibold mb-2">Tax Credits Explained (10 minutes)</h3>
+            <ul class="list-disc ml-6 mb-4">
+                <li>Define tax credits: "Credits subtract directly from your tax bill after taxes are calculated."</li>
+                <li>Example: "A $1,000 tax credit reduces your tax bill by exactly $1,000."</li>
+                <li>Explain the two types of credits:</li>
+                <ul class="list-disc ml-6 mb-2">
+                    <li>Nonrefundable credits: Can reduce tax bill to zero but not below</li>
+                    <li>Refundable credits: Can reduce tax bill below zero, resulting in a refund</li>
+                </ul>
+                <li>Draw or project another diagram showing how credits work compared to deductions.</li>
+            </ul>
+            <div class="note-box">
+                <p class="font-semibold">Teaching Tip:</p>
+                <p>Emphasize that a $1,000 credit is usually more valuable than a $1,000 deduction. The credit saves $1,000 regardless of tax bracket, while the deduction's value depends on the tax bracket.</p>
+            </div>
+            
+            <h3 class="text-xl font-semibold mb-2">Common Deductions and Credits (10 minutes)</h3>
+            <ul class="list-disc ml-6 mb-4">
+                <li>Review popular deductions:</li>
+                <ul class="list-disc ml-6 mb-2">
+                    <li>Student loan interest deduction</li>
+                    <li>Educator expenses</li>
+                    <li>HSA contributions</li>
+                    <li>Self-employment expenses</li>
+                    <li>IRA contributions</li>
+                </ul>
+                <li>Review popular credits:</li>
+                <ul class="list-disc ml-6 mb-2">
+                    <li>Earned Income Tax Credit (EITC)</li>
+                    <li>Child Tax Credit</li>
+                    <li>American Opportunity Credit</li>
+                    <li>Lifetime Learning Credit</li>
+                    <li>Retirement Savings Contributions Credit</li>
+                </ul>
+                <li>Explain which ones might be most relevant to high school students or recent graduates.</li>
+            </ul>
+            
+            <h3 class="text-xl font-semibold mb-2">Tax Calculation Example (10 minutes)</h3>
+            <ul class="list-disc ml-6 mb-4">
+                <li>Walk through the Jordan example step by step:</li>
+                <ol class="list-decimal ml-6 mb-2">
+                    <li>Compare standard deduction ($13,850) vs. itemized deductions ($5,000)</li>
+                    <li>Calculate taxable income: $45,000 - $13,850 = $31,150</li>
+                    <li>Calculate initial tax owed based on 2023 tax brackets</li>
+                    <li>Apply $1,000 education credit to get final tax bill</li>
+                </ol>
+                <li>Demonstrate the calculation on the board or using a shared spreadsheet.</li>
+                <li>Ask students to identify which step involves deductions and which involves credits.</li>
+            </ul>
+            
+            <h3 class="text-xl font-semibold mb-2">Strategic Tax Planning (5 minutes)</h3>
+            <ul class="list-disc ml-6 mb-4">
+                <li>Explain strategic approaches to using deductions and credits:</li>
+                <ul class="list-disc ml-6 mb-2">
+                    <li>Timing large medical expenses in a single year</li>
+                    <li>Bunching charitable donations in alternate years</li>
+                    <li>Contributing to retirement accounts</li>
+                    <li>Planning education expenses to maximize credits</li>
+                </ul>
+                <li>Discuss how these strategies might apply to students' future financial situations.</li>
+            </ul>
+            <div class="warning-box">
+                <p class="font-semibold">Important Note:</p>
+                <p>Remind students that tax laws change regularly. While the principles remain the same, specific amounts, eligibility requirements, and available deductions/credits may change from year to year.</p>
+            </div>
+            
+            <h3 class="text-xl font-semibold mb-2">Skill Builder Introduction (5 minutes)</h3>
+            <ul class="list-disc ml-6 mb-4">
+                <li>Introduce the Tax Deduction vs. Tax Credit Comparison Chart activity.</li>
+                <li>Explain each section of the chart:</li>
+                <ul class="list-disc ml-6 mb-2">
+                    <li>Definitions and key features</li>
+                    <li>Common examples</li>
+                    <li>Impact on tax bill</li>
+                </ul>
+                <li>Walk through the two scenarios briefly to ensure understanding.</li>
+                <li>Clarify expectations and that students should complete the activity for tomorrow's Learning Lab.</li>
+            </ul>
+            
+            <h2 class="text-2xl font-bold mb-3">Reflection Questions</h2>
+            <p class="mb-2">Use these questions to stimulate class discussion or as exit ticket prompts:</p>
+            <ol class="list-decimal ml-6 mb-6">
+                <li>What's the difference between how tax deductions and tax credits affect your tax bill?</li>
+                <li>Under what circumstances would you choose to itemize deductions rather than take the standard deduction?</li>
+                <li>Why are refundable tax credits particularly valuable for low-income taxpayers?</li>
+                <li>How might understanding tax benefits influence your future financial decisions?</li>
+            </ol>
+            
+            <h2 class="text-2xl font-bold mb-3">Differentiation Strategies</h2>
+            
+            <h3 class="text-xl font-semibold mb-2">For Students Who Need Additional Support</h3>
+            <ul class="list-disc ml-6 mb-4">
+                <li>Provide a simplified visual diagram showing the difference between deductions and credits.</li>
+                <li>Offer a pre-filled comparison chart with some sections completed.</li>
+                <li>Focus on the most basic examples and work through calculations step by step.</li>
+                <li>Provide a glossary of tax terms used in the lesson.</li>
+            </ul>
+            
+            <h3 class="text-xl font-semibold mb-2">For Advanced Students</h3>
+            <ul class="list-disc ml-6 mb-4">
+                <li>Challenge them to research additional deductions and credits not covered in class.</li>
+                <li>Ask them to analyze the interplay between multiple deductions and credits in complex scenarios.</li>
+                <li>Have them explore how tax benefits have changed over time and why.</li>
+                <li>Assign research on how different countries handle tax deductions and credits.</li>
+            </ul>
+            
+            <h2 class="text-2xl font-bold mb-3">Assessment Opportunities</h2>
+            <table class="lesson-table">
+                <thead>
+                    <tr>
+                        <th width="30%">Assessment Type</th>
+                        <th width="70%">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Formative</td>
+                        <td>
+                            <ul class="list-disc ml-6">
+                                <li>Verbal responses during class discussion</li>
+                                <li>Questions asked during the explanation of deductions and credits</li>
+                                <li>Observations during calculation example walkthrough</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Summative</td>
+                        <td>
+                            <ul class="list-disc ml-6">
+                                <li>Completion of the Tax Deduction vs. Tax Credit Comparison Chart</li>
+                                <li>Accuracy of calculations in the comparison chart scenarios</li>
+                                <li>Quality of justifications for which option provides greater benefits</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Extension</td>
+                        <td>
+                            <ul class="list-disc ml-6">
+                                <li>Creation of a personal tax strategy plan based on projected future income and expenses</li>
+                                <li>Research project on recent changes to tax deductions and credits</li>
+                                <li>Analysis of how different life circumstances affect available tax benefits</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h2 class="text-2xl font-bold mb-3">Additional Resources</h2>
+            <div class="grid grid-cols-2 gap-4 mb-6">
+                <a href="#" class="resource-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-indigo-600" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z" clip-rule="evenodd" />
+                    </svg>
+                    <div>
+                        <div class="font-medium">Tax Benefits Visual Guide</div>
+                        <div class="text-sm text-gray-600">PDF with graphics explaining deductions and credits</div>
+                    </div>
+                </a>
+                <a href="#" class="resource-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-indigo-600" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z" />
+                    </svg>
+                    <div>
+                        <div class="font-medium">IRS Video Series on Tax Credits</div>
+                        <div class="text-sm text-gray-600">Official educational videos from the IRS</div>
+                    </div>
+                </a>
+                <a href="#" class="resource-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-indigo-600" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd" />
+                    </svg>
+                    <div>
+                        <div class="font-medium">Tax Calculation Worksheet</div>
+                        <div class="text-sm text-gray-600">Step-by-step worksheet for tax calculations</div>
+                    </div>
+                </a>
+                <a href="#" class="resource-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-indigo-600" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+                    </svg>
+                    <div>
+                        <div class="font-medium">Current Tax Benefit Amounts Guide</div>
+                        <div class="text-sm text-gray-600">Up-to-date figures for common deductions and credits</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div id="learning-lab" class="tab-content">
+            <h1 class="text-3xl font-bold mb-6">Chapter 2.4: Tax Benefits Learning Lab</h1>
+            
+            <div class="bg-gray-100 p-4 rounded-lg mb-6 grid grid-cols-2 gap-4">
+                <div>
+                    <p><strong>Standard:</strong> Standard 2: Taxes</p>
+                    <p><strong>Chapter:</strong> 2.4: Understanding Tax Deductions and Credits</p>
+                    <p><strong>Duration:</strong> 55 minutes</p>
+                </div>
+                <div>
+                    <p><strong>Focus:</strong> Applying tax benefit knowledge through interactive simulations</p>
+                    <p><strong>Format:</strong> Computer-based interactive learning lab</p>
+                </div>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-3">Learning Lab Overview</h2>
+            <p class="mb-4">In this learning lab, students will apply their understanding of tax deductions and credits through interactive simulations and exercises. They will work with a tax strategy simulator to compare different scenarios, analyze the impact of various tax benefits, and develop a personal tax strategy plan. The lab concludes with a reflection and self-assessment to consolidate learning.</p>
+            
+            <h2 class="text-2xl font-bold mb-3">Learning Lab Objectives</h2>
+            <ul class="list-disc ml-6 mb-6">
+                <li>Apply knowledge of tax deductions and credits to real-world scenarios</li>
+                <li>Calculate tax savings from different deduction and credit strategies</li>
+                <li>Compare the financial impact of various tax benefit options</li>
+                <li>Develop a personal tax strategy plan based on potential tax benefits</li>
+                <li>Evaluate which tax benefits might be most relevant to their future financial situations</li>
+            </ul>
+            
+            <h2 class="text-2xl font-bold mb-3">Materials Needed</h2>
+            <ul class="list-disc ml-6 mb-6">
+                <li>Computers with internet access for each student</li>
+                <li>Completed Tax Deduction vs. Tax Credit Comparison Charts from Day 1</li>
+                <li>Digital calculators or calculator apps</li>
+                <li>Headphones for listening to the recap podcast (optional)</li>
+                <li>Digital portfolio templates for the personal tax strategy plan</li>
+            </ul>
+            
+            <h2 class="text-2xl font-bold mb-3">Pre-Class Setup</h2>
+            <ul class="list-disc ml-6 mb-6">
+                <li>Ensure all students have access to computers</li>
+                <li>Test the tax strategy simulator functionality</li>
+                <li>Prepare examples to demonstrate each interactive exercise</li>
+                <li>Set up shared digital folder for students to save their tax strategy plans</li>
+                <li>Create answer key for the self-assessment quiz</li>
+            </ul>
+            
+            <h2 class="text-2xl font-bold mb-3">Learning Lab Timeline</h2>
+            <table class="lesson-table">
+                <thead>
+                    <tr>
+                        <th width="15%">Time</th>
+                        <th width="25%">Activity</th>
+                        <th width="60%">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>5 minutes</td>
+                        <td>Review & Podcast</td>
+                        <td>Students listen to a recap podcast that reviews key concepts from Day 1. This serves as a refresher before diving into the interactive exercises.</td>
+                    </tr>
+                    <tr>
+                        <td>10 minutes</td>
+                        <td>Exercise 1: Compare Standard vs. Itemized Deductions</td>
+                        <td>Students use the simulator to experiment with different income and expense scenarios to determine when itemizing makes sense.</td>
+                    </tr>
+                    <tr>
+                        <td>10 minutes</td>
+                        <td>Exercise 2: Maximize Tax Credits</td>
+                        <td>Students explore various tax credit combinations to see how different credits affect overall tax liability.</td>
+                    </tr>
+                    <tr>
+                        <td>10 minutes</td>
+                        <td>Exercise 3: Strategic Tax Planning Challenge</td>
+                        <td>Students work through the Martinez family scenario, making decisions about timing expenses and utilizing credits/deductions.</td>
+                    </tr>
+                    <tr>
+                        <td>10 minutes</td>
+                        <td>Portfolio Project: Personal Tax Strategy Plan</td>
+                        <td>Students create a personal plan outlining tax benefits they might qualify for and strategic decisions they could make.</td>
+                    </tr>
+                    <tr>
+                        <td>10 minutes</td>
+                        <td>Reflection and Self-Assessment</td>
+                        <td>Students complete reflection questions and a self-assessment quiz to evaluate their understanding.</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h2 class="text-2xl font-bold mb-3">Detailed Facilitation Notes</h2>
+            
+            <h3 class="text-xl font-semibold mb-2">Review & Podcast (5 minutes)</h3>
+            <ul class="list-disc ml-6 mb-4">
+                <li>Have students listen to the recap podcast with headphones.</li>
+                <li>While they listen, ensure all computers are functioning properly.</li>
+                <li>After the podcast, briefly address any questions about Day 1 concepts.</li>
+            </ul>
+            <div class="note-box">
+                <p class="font-semibold">Facilitation Tip:</p>
+                <p>If the podcast isn't available or there are technical issues, have a brief verbal review prepared as a backup.</p>
+            </div>
+            
+            <h3 class="text-xl font-semibold mb-2">Exercise 1: Compare Standard vs. Itemized Deductions (10 minutes)</h3>
+            <ul class="list-disc ml-6 mb-4">
+                <li>Demonstrate how to use the deduction simulator on the projector:</li>
+                <ul class="list-disc ml-6 mb-2">
+                    <li>Show how to adjust income using the slider</li>
+                    <li>Demonstrate how to select filing status</li>
+                    <li>Show how to enter potential itemized deductions</li>
+                </ul>
+                <li>Guide students through at least one complete scenario:</li>
+                <ul class="list-disc ml-6 mb-2">
+                    <li>Single filer with $50,000 income and $10,000 in potential itemized deductions</li>
+                    <li>Discuss why the standard deduction ($13,850) would be better in this case</li>
+                </ul>
+                <li>Challenge students to find the "tipping point" where itemizing becomes better than the standard deduction.</li>
+                <li>Remind students to save their results to their portfolio.</li>
+            </ul>
+            
+            <h3 class="text-xl font-semibold mb-2">Exercise 2: Maximize Tax Credits (10 minutes)</h3>
+            <ul class="list-disc ml-6 mb-4">
+                <li>Explain the credit simulator functionality:</li>
+                <ul class="list-disc ml-6 mb-2">
+                    <li>Show how to select different available credits</li>
+                    <li>Demonstrate how the chart visualizes the impact on tax liability</li>
+                </ul>
+                <li>Guide students through a sample scenario:</li>
+                <ul class="list-disc ml-6 mb-2">
+                    <li>Single parent with one child in college</li>
+                    <li>Compare Child Tax Credit vs. American Opportunity Credit</li>
+                    <li>Discuss how credits can be combined when eligible</li>
+                </ul>
+                <li>Have students explore different credit combinations to find the maximum benefit.</li>
+                <li>Remind students to save their results to their portfolio.</li>
+            </ul>
+            <div class="warning-box">
+                <p class="font-semibold">Important Note:</p>
+                <p>Emphasize that in real life, there are eligibility requirements for each credit that may limit which combinations are possible.</p>
+            </div>
+            
+            <h3 class="text-xl font-semibold mb-2">Exercise 3: Strategic Tax Planning Challenge (10 minutes)</h3>
+            <ul class="list-disc ml-6 mb-4">
+                <li>Introduce the Martinez family scenario:</li>
+                <ul class="list-disc ml-6 mb-2">
+                    <li>Explain that this exercise looks at a two-year horizon</li>
+                    <li>Discuss the concept of timing expenses strategically across tax years</li>
+                </ul>
+                <li>Have students make decisions about:</li>
+                <ul class="list-disc ml-6 mb-2">
+                    <li>Retirement contributions</li>
+                    <li>Home purchase timing</li>
+                    <li>Education expense timing</li>
+                    <li>Charitable giving strategy</li>
+                </ul>
+                <li>Discuss how bunching deductions in alternating years can maximize tax benefits.</li>
+                <li>Have students explain their strategy and reasoning for their choices.</li>
+            </ul>
+            
+            <h3 class="text-xl font-semibold mb-2">Portfolio Project: Personal Tax Strategy Plan (10 minutes)</h3>
+            <ul class="list-disc ml-6 mb-4">
+                <li>Guide students through creating their personal tax strategy plan:</li>
+                <ul class="list-disc ml-6 mb-2">
+                    <li>Identify potential deductions based on current or future situation</li>
+                    <li>Identify potential credits they might qualify for</li>
+                    <li>Outline strategic decisions they could make</li>
+                    <li>Explain how this knowledge will influence financial planning</li>
+                </ul>
+                <li>Encourage students to reference their work from previous exercises.</li>
+                <li>Remind them to think both short-term (as students) and long-term (future careers).</li>
+            </ul>
+            <div class="note-box">
+                <p class="font-semibold">Facilitation Tip:</p>
+                <p>For students who aren't sure about their future plans, suggest focusing on education-related tax benefits and retirement savings options, which are relevant for most people.</p>
+            </div>
+            
+            <h3 class="text-xl font-semibold mb-2">Reflection and Self-Assessment (10 minutes)</h3>
+            <ul class="list-disc ml-6 mb-4">
+                <li>Have students answer the reflection questions:</li>
+                <ul class="list-disc ml-6 mb-2">
+                    <li>How has your understanding changed?</li>
+                    <li>Which tax benefit will be most valuable to you personally?</li>
+                    <li>What was most surprising?</li>
+                </ul>
+                <li>Guide students through the self-assessment quiz:</li>
+                <ul class="list-disc ml-6 mb-2">
+                    <li>Multiple-choice questions on key concepts</li>
+                    <li>Calculation problems to test application</li>
+                </ul>
+                <li>Review quiz answers as a class if time permits.</li>
+            </ul>
+            
+            <h2 class="text-2xl font-bold mb-3">Differentiation Strategies</h2>
+            
+            <h3 class="text-xl font-semibold mb-2">For Students Who Need Additional Support</h3>
+            <ul class="list-disc ml-6 mb-4">
+                <li>Partner students who need support with more advanced peers.</li>
+                <li>Provide step-by-step written instructions for using the simulators.</li>
+                <li>Offer a simplified version of the personal tax strategy plan template.</li>
+                <li>Allow extra time or reduce the number of scenarios they need to complete.</li>
+            </ul>
+            
+            <h3 class="text-xl font-semibold mb-2">For Advanced Students</h3>
+            <ul class="list-disc ml-6 mb-4">
+                <li>Challenge them to create more complex scenarios with multiple tax benefits.</li>
+                <li>Have them research and incorporate additional tax benefits not covered in the simulators.</li>
+                <li>Ask them to analyze how changes in tax laws might affect their strategies.</li>
+                <li>Encourage them to create a multi-year tax strategy plan that incorporates life changes.</li>
+            </ul>
+            
+            <h2 class="text-2xl font-bold mb-3">Assessment Strategies</h2>
+            <table class="lesson-table">
+                <thead>
+                    <tr>
+                        <th width="30%">Assessment Type</th>
+                        <th width="70%">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Formative</td>
+                        <td>
+                            <ul class="list-disc ml-6">
+                                <li>Observation of student interactions with simulators</li>
+                                <li>Questions and discussions during exercises</li>
+                                <li>Saved simulator results showing decision-making process</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Summative</td>
+                        <td>
+                            <ul class="list-disc ml-6">
+                                <li>Personal tax strategy plan completeness and thoughtfulness</li>
+                                <li>Self-assessment quiz scores</li>
+                                <li>Quality of strategic decisions in the Martinez family challenge</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Portfolio</td>
+                        <td>
+                            <ul class="list-disc ml-6">
+                                <li>Collection of simulator results from all three exercises</li>
+                                <li>Personal tax strategy plan</li>
+                                <li>Reflection responses showing depth of understanding</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h2 class="text-2xl font-bold mb-3">Additional Resources and References</h2>
+            <div class="grid grid-cols-2 gap-4 mb-6">
+                <a href="#" class="resource-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-indigo-600" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm2 10a1 1 0 01-1-1V8a1 1 0 011-1h4a1 1 0 110 2H9v1a1 1 0 01-1 1z" clip-rule="evenodd" />
+                    </svg>
+                    <div>
+                        <div class="font-medium">Advanced Tax Planning Scenarios</div>
+                        <div class="text-sm text-gray-600">Additional complex scenarios for extension activities</div>
+                    </div>
+                </a>
+                <a href="#" class="resource-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-indigo-600" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clip-rule="evenodd" />
+                    </svg>
+                    <div>
+                        <div class="font-medium">Tax Strategy Template Examples</div>
+                        <div class="text-sm text-gray-600">Sample completed tax strategy plans</div>
+                    </div>
+                </a>
+                <a href="#" class="resource-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-indigo-600" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z" />
+                    </svg>
+                    <div>
+                        <div class="font-medium">Interactive Tax Charts</div>
+                        <div class="text-sm text-gray-600">Visual representations of tax benefits impact</div>
+                    </div>
+                </a>
+                <a href="#" class="resource-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-indigo-600" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M5.5 16a3.5 3.5 0 01-.369-6.98 4 4 0 117.753-1.977A4.5 4.5 0 1113.5 16h-8z" />
+                    </svg>
+                    <div>
+                        <div class="font-medium">Online Tax Calculator Tools</div>
+                        <div class="text-sm text-gray-600">Real-world tax calculators for additional practice</div>
+                    </div>
+                </a>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-3">Technical Notes</h2>
+            <div class="bg-gray-100 p-4 rounded-lg mb-6">
+                <p class="font-medium mb-2">Simulator Functionality</p>
+                <ul class="list-disc ml-6 mb-4">
+                    <li>The simulator uses Chart.js for visualizations. If charts don't display, check that JavaScript is enabled.</li>
+                    <li>Students' work is saved locally in browser storage. They should complete activities in one session.</li>
+                    <li>The simulator uses approximate tax calculations based on 2023 rates. For precise calculations, refer to IRS resources.</li>
+                </ul>
+                <p class="font-medium mb-2">Troubleshooting</p>
+                <ul class="list-disc ml-6">
+                    <li>If calculators aren't functioning, try refreshing the page or using a different browser.</li>
+                    <li>For persistent issues, the exercise can be completed using the provided worksheets instead of the digital simulators.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="instructorPanel" class="instructor-panel">
+        <div class="flex justify-between items-center mb-4 pb-4 border-b">
+            <h2 class="text-xl font-bold">Instructor Support</h2>
+            <button id="closeSupport" class="text-gray-600 hover:text-gray-900">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        
+        <div class="bg-gray-100 p-4 rounded-lg mb-4">
+            <p class="font-medium">Currently viewing:</p>
+            <p><span class="text-indigo-600 font-semibold">Chapter 2.4:</span> Understanding Tax Deductions and Credits</p>
+            <p><span class="text-indigo-600 font-semibold">Section:</span> <span id="currentSection">Content Guide (Day 1)</span></p>
+        </div>
+        
+        <h3 class="font-semibold mb-3">Suggested Questions</h3>
+        
+        <div id="contentGuideQuestions">
+            <div class="support-question">
+                What are effective strategies for teaching students about tax deductions and credits?
+            </div>
+            <div class="support-question">
+                How can I explain the difference between tax deductions and credits in simple terms?
+            </div>
+            <div class="support-question">
+                What real-world examples best illustrate the value of tax planning?
+            </div>
+            <div class="support-question">
+                How do I help students understand which tax benefits might apply to them?
+            </div>
+        </div>
+        
+        <div id="learningLabQuestions" class="hidden">
+            <div class="support-question">
+                How can I help students troubleshoot issues with the tax strategy simulator?
+            </div>
+            <div class="support-question">
+                What modifications can I make for students without computer access?
+            </div>
+            <div class="support-question">
+                How can I extend the learning for students who finish early?
+            </div>
+            <div class="support-question">
+                What are some common misconceptions students might have about tax planning?
+            </div>
+        </div>
+        
+        <h3 class="font-semibold mt-6 mb-3">Support Categories</h3>
+        
+        <div class="grid grid-cols-2 gap-3 mb-4">
+            <div class="bg-blue-50 p-3 rounded-lg border border-blue-200">
+                <h4 class="font-medium text-blue-700 mb-1">Teaching Strategies</h4>
+                <p class="text-sm text-blue-600">Methods for teaching complex concepts</p>
+            </div>
+            <div class="bg-green-50 p-3 rounded-lg border border-green-200">
+                <h4 class="font-medium text-green-700 mb-1">Student Explanations</h4>
+                <p class="text-sm text-green-600">Alternative ways to explain to students</p>
+            </div>
+            <div class="bg-purple-50 p-3 rounded-lg border border-purple-200">
+                <h4 class="font-medium text-purple-700 mb-1">Extension Ideas</h4>
+                <p class="text-sm text-purple-600">Challenges for advanced learners</p>
+            </div>
+            <div class="bg-yellow-50 p-3 rounded-lg border border-yellow-200">
+                <h4 class="font-medium text-yellow-700 mb-1">Examples & Analogies</h4>
+                <p class="text-sm text-yellow-600">Real-world connections</p>
+            </div>
+        </div>
+        
+        <div class="bg-red-50 p-3 rounded-lg border border-red-200 mb-6">
+            <h4 class="font-medium text-red-700 mb-1">Troubleshooting</h4>
+            <p class="text-sm text-red-600">Help with activities and interactive elements</p>
+        </div>
+        
+        <h3 class="font-semibold mb-3">Ask Your Own Question</h3>
+        
+        <div class="mb-4">
+            <textarea class="w-full p-3 border border-gray-300 rounded-lg" rows="3" placeholder="Type your teaching question here..."></textarea>
+            <button class="bg-indigo-600 text-white px-4 py-2 rounded mt-2">Get Help</button>
+        </div>
+    </div>
+    
+    <script>
+        // Tab switching functionality
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                // Remove active class from all tabs
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                
+                // Add active class to clicked tab
+                this.classList.add('active');
+                
+                // Hide all tab content
+                document.querySelectorAll('.tab-content').forEach(content => {
+                    content.classList.remove('active');
+                });
+                
+                // Show corresponding tab content
+                const tabId = this.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+                
+                // Update instructor support panel
+                document.getElementById('currentSection').textContent = 
+                    this.textContent === 'Content Guide (Day 1)' ? 'Content Guide (Day 1)' : 'Learning Lab (Day 2)';
+                
+                // Show appropriate questions
+                if (this.textContent === 'Content Guide (Day 1)') {
+                    document.getElementById('contentGuideQuestions').classList.remove('hidden');
+                    document.getElementById('learningLabQuestions').classList.add('hidden');
+                } else {
+                    document.getElementById('contentGuideQuestions').classList.add('hidden');
+                    document.getElementById('learningLabQuestions').classList.remove('hidden');
+                }
+            });
+        });
+        
+        // Instructor support panel functionality
+        document.getElementById('supportBtn').addEventListener('click', function() {
+            document.getElementById('instructorPanel').classList.add('open');
+        });
+        
+        document.getElementById('closeSupport').addEventListener('click', function() {
+            document.getElementById('instructorPanel').classList.remove('open');
+        });
+        
+        // Resource downloads
+        document.getElementById('downloadMaterials').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('Download started: Chapter 2.4 Materials Package');
+        });
+        
+        document.getElementById('additionalResources').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('Opening Additional Resources page for Chapter 2.4');
+        });
+        
+        // Support question handling
+        document.querySelectorAll('.support-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const questionText = this.textContent.trim();
+                document.querySelector('.instructor-panel textarea').value = questionText;
+            });
+        });
+    </script>
+</body>
+</html>

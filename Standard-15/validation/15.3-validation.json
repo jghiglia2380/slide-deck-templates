@@ -1,0 +1,26 @@
+{
+  "json_schema": {
+    "valid": false,
+    "message": "Invalid JSON: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+  },
+  "teacher_day2": {
+    "valid": true,
+    "message": "Validation successful"
+  },
+  "teacher_day1": {
+    "valid": true,
+    "message": "Validation successful"
+  },
+  "skill_builder": {
+    "valid": true,
+    "message": "Validation successful"
+  },
+  "student_day2": {
+    "valid": false,
+    "message": "Missing learning objectives section"
+  },
+  "student_day1": {
+    "valid": false,
+    "message": "Missing learning objectives section"
+  }
+}

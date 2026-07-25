@@ -1,0 +1,566 @@
+{
+  "metadata": {
+    "lChapter": "L-08",
+    "title": "Understanding Tax Filing Requirements",
+    "subtitle": "Know When to File, What Forms You Need, and How to Avoid Costly Mistakes",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME",
+      "STATE_INCOME_TAX_RATE"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Understanding Tax Filing Requirements",
+        "titleSize": "large",
+        "subtitle": "Know When to File, What Forms You Need, and How to Avoid Costly Mistakes"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "The Challenge",
+        "question": "Ava earned <em>$4,500</em> at her part-time job last year. Since she's below the <em>$13,850</em> filing threshold, she assumed she didn't need to file taxes.<br><br>But her employer withheld <em>$450</em> in federal income tax. By not filing, Ava is leaving <em>$450 on the table</em>\u2014money that's rightfully hers!<br><br>Meanwhile, Ben earns $32,000 at his retail job plus $5,000 from freelance work, but didn't realize his freelance income triggers additional filing requirements.<br><br>How do you determine if you need to file taxes, and when might filing benefit you even if it's not required?"
+      },
+      "headerColor": "amber",
+      "speakerNotes": "Read Ava and Ben's scenarios aloud. Ask the discussion question: 'Has anyone had taxes withheld from a paycheck? Did you file to get it back?' Allow 2-3 students to share experiences with withholding or tax filing. This introduces the critical distinction between 'required to file' vs. 'should file to get refund'—many young workers leave money on the table by not filing when they have withholding."
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Determine",
+              "description": "Determine who needs to file a tax return based on income, age, and filing status."
+            },
+            {
+              "number": 2,
+              "verb": "Identify",
+              "description": "Identify common tax forms including W-2s, 1099s, and Form 1040."
+            },
+            {
+              "number": 3,
+              "verb": "Recognize",
+              "description": "Recognize important tax deadlines and consequences of missing them."
+            },
+            {
+              "number": 4,
+              "verb": "Evaluate",
+              "description": "Evaluate when filing is beneficial even if not legally required."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "W-2 Form",
+              "definition": "Document from your employer reporting your annual wages and taxes withheld from your paychecks.",
+              "example": "Your employer sends this by January 31. It shows your total earnings and what was withheld for federal, state, and Social Security taxes."
+            },
+            {
+              "term": "1099 Form",
+              "definition": "Reports income from non-employment sources: freelance work (1099-NEC), interest (1099-INT), dividends (1099-DIV).",
+              "example": "If you did $600+ in freelance graphic design, you'll receive a 1099-NEC from that client."
+            }
+          ]
+        }
+      },
+      "speakerNotes": "Display 2023 filing thresholds on the board: Single $13,850, Married Filing Jointly $27,700, etc. EMPHASIZE the $400 self-employment trigger—even if total income is below the threshold, any self-employment income over $400 requires filing. Show sample W-2 and 1099 forms (physical or projected). Identify key fields on each: Box 1 (wages), Box 2 (federal withholding) on W-2; Box 1 (non-employee compensation) on 1099-NEC. Explain the critical difference between 'required to file' (legally obligated) vs. 'should file to get refund' (financially smart). Cover the April 15 deadline and extension process—stress that an extension is to FILE, not to PAY."
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Form 1040",
+              "definition": "The primary form individuals use to file their annual federal income tax return\u2014where everything comes together.",
+              "example": "You report your W-2 and 1099 income on Form 1040, calculate what you owe, and determine your refund or balance due."
+            },
+            {
+              "term": "Filing Threshold",
+              "definition": "The minimum income level at which you're legally required to file a tax return. Varies by age and filing status.",
+              "example": "2024: Single under 65 = $14,600. Below this, filing is optional\u2014but often still beneficial!"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "2024 Filing Thresholds: Are You Required to File?",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Standard Income Thresholds",
+            "paragraphs": [
+              "<strong>Single (under 65):</strong> $14,600",
+              "<strong>Single (65+):</strong> $16,550",
+              "<strong>Head of Household:</strong> $21,900",
+              "<strong>Married Filing Jointly:</strong> $29,200",
+              "(both under 65)",
+              "Earn LESS than these amounts? Filing is optional\u2014but keep reading!"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "You MUST File If:",
+              "color": "amber",
+              "items": [
+                "Self-employment income > $400",
+                "You owe special taxes (AMT, etc.)",
+                "You received advance premium tax credits",
+                "You had Health Savings Account distributions"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "When Filing Is Optional But SMART",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "File to Get Money Back!",
+            "paragraphs": [
+              "Even if you're below the threshold, you should file if:",
+              "<strong>Taxes were withheld:</strong> Like Ava\u2014her employer withheld $450. She won't get it back unless she files!",
+              "<strong>You qualify for refundable credits:</strong>",
+              "\u2022 Earned Income Tax Credit (EITC)",
+              "\u2022 American Opportunity Credit (students)",
+              "\u2022 Child Tax Credit",
+              "These credits can give you money even if you owe $0 in taxes."
+            ],
+            "highlightBox": {
+              "icon": "\ud83d\udcb0",
+              "text": "The average EITC refund is over $2,500. Don't leave free money on the table!"
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$450",
+                "label": "Ava's potential refund",
+                "color": "emerald"
+              },
+              {
+                "value": "20%",
+                "label": "Eligible workers don't claim EITC",
+                "color": "amber"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Know Your Tax Forms",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "\ud83d\udcc4",
+            "title": "INCOME FORMS (What You Receive)",
+            "items": [
+              "W-2: Employment wages + withholding",
+              "1099-NEC: Freelance/gig income ($600+)",
+              "1099-INT: Bank interest earned",
+              "1099-DIV: Stock dividends",
+              "1099-G: Unemployment benefits",
+              "1098-T: Tuition payments (students)"
+            ]
+          },
+          "rightColumn": {
+            "icon": "\ud83d\udccb",
+            "title": "FILING FORMS (What You Submit)",
+            "items": [
+              "Form 1040: Main individual tax return",
+              "Schedule 1: Additional income/adjustments",
+              "Schedule C: Self-employment income",
+              "Schedule SE: Self-employment tax",
+              "Form 8862: EITC after disallowance",
+              "Form 4868: Extension request"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "The Self-Employment Trigger",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The $400 Rule",
+            "paragraphs": [
+              "If you earn <strong>$400 or more</strong> from self-employment, you MUST file\u2014regardless of your total income.",
+              "<strong>Self-employment includes:</strong>",
+              "\u2022 Freelance work (graphic design, writing)",
+              "\u2022 Gig economy (Uber, DoorDash, TaskRabbit)",
+              "\u2022 Selling products online",
+              "\u2022 Tutoring, babysitting (if regular)",
+              "\u2022 Any 1099-NEC income"
+            ],
+            "highlightBox": {
+              "icon": "\u26a0\ufe0f",
+              "text": "Ben's $5,000 freelance income means he MUST file\u2014even if his total was below the threshold!"
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "15.3%",
+                "label": "Self-employment tax rate",
+                "color": "amber"
+              },
+              {
+                "value": "$400",
+                "label": "Minimum to trigger filing",
+                "color": "indigo"
+              }
+            ],
+            "infoCard": {
+              "title": "Extra Forms for Self-Employment:",
+              "color": "indigo",
+              "items": [
+                "Schedule C: Report income/expenses",
+                "Schedule SE: Calculate SE tax",
+                "Quarterly estimated payments may be required"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Critical Tax Deadlines",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Mark These Dates on Your Calendar",
+          "paragraphs": [
+            "Missing deadlines can cost you money in penalties and interest:"
+          ],
+          "bulletPoints": [
+            "<strong>January 31:</strong> Employers must send W-2s; clients send 1099s",
+            "<strong>April 15:</strong> Tax filing deadline (or next business day if weekend/holiday)",
+            "<strong>April 15:</strong> Last day to contribute to prior-year IRA",
+            "<strong>October 15:</strong> Extended filing deadline (if you requested extension)",
+            "<strong>Quarterly:</strong> Estimated tax payments due (April 15, June 15, Sept 15, Jan 15)"
+          ],
+          "keyPoint": {
+            "text": "\ud83d\udcc5 An extension gives you more TIME to file, but NOT more time to pay. Estimate and pay by April 15 to avoid penalties!"
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Penalties for Late Filing and Payment",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "What Happens If You're Late",
+            "paragraphs": [
+              "<strong>Failure-to-FILE penalty:</strong>",
+              "5% of unpaid taxes per month, up to 25%",
+              "<strong>Failure-to-PAY penalty:</strong>",
+              "0.5% of unpaid taxes per month, up to 25%",
+              "<strong>Interest:</strong>",
+              "Compounds daily on unpaid balance",
+              "The failure-to-file penalty is 10x worse than failure-to-pay!"
+            ],
+            "highlightBox": {
+              "icon": "\ud83d\udca1",
+              "text": "If you can't pay, FILE ANYWAY. You can set up a payment plan, but the file penalty is brutal."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "5%",
+                "label": "Monthly penalty for not filing",
+                "color": "amber"
+              },
+              {
+                "value": "0.5%",
+                "label": "Monthly penalty for not paying",
+                "color": "indigo"
+              },
+              {
+                "value": "25%",
+                "label": "Maximum penalty cap",
+                "color": "amber"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      },
+      "speakerNotes": "COMMON MISCONCEPTIONS TO ADDRESS:\n\n1. 'I made under the threshold, so I don't need to do anything' → CLARIFY: If taxes were withheld from your paychecks, you're leaving money on the table! File to claim your refund. This is especially common for part-time workers and students. Also, any self-employment income over $400 requires filing regardless of your total income level.\n\n2. 'An extension means I don't owe anything until October' → CLARIFY: An extension is ONLY to FILE, not to PAY. Taxes owed are still due April 15. Interest and failure-to-pay penalties (0.5% per month) accrue on unpaid amounts starting April 16. Use Form 4868 to get automatic extension to October 15 for filing.\n\n3. 'I only need to report income if I receive a form for it' → CLARIFY: ALL income is taxable and must be reported, whether or not you receive a W-2 or 1099. This includes cash payments, tips (even if under $20/month from one employer), small gig earnings, and side hustle income. The IRS can audit and penalize unreported income.\n\nAddress these proactively, especially #1 which causes young workers to lose hundreds of dollars annually."
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Filing Options: Choose What Works for You",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "How to Actually File Your Taxes",
+          "paragraphs": [
+            "You have several options depending on your situation and comfort level:"
+          ],
+          "bulletPoints": [
+            "<strong>IRS Free File:</strong> Free software for income under $79,000\u2014uses major tax software brands",
+            "<strong>IRS Direct File:</strong> New option for simple returns\u2014file directly with IRS (limited states)",
+            "<strong>Tax Software:</strong> TurboTax, H&R Block, TaxAct\u2014$0-$100+ depending on complexity",
+            "<strong>VITA Sites:</strong> Free in-person help for income under $64,000 (Volunteer Income Tax Assistance)",
+            "<strong>Tax Professionals:</strong> CPAs, Enrolled Agents\u2014best for complex situations"
+          ],
+          "keyPoint": {
+            "text": "\ud83c\udf93 Students and low-income filers: VITA and Free File are excellent FREE options. Don't pay for simple returns!"
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Apply It",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "\ud83d\udc64",
+            "name": "Ava's Filing Decision",
+            "paragraphs": [
+              "Ava (17) earned $4,500 at her part-time barista job. Her employer withheld $450 in federal taxes. She's under the $14,600 filing threshold, so she's not REQUIRED to file.",
+              "But if she doesn't file, she loses that $450 forever. It takes 20 minutes to file a simple return and get her money back."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "positive",
+              "label": "Income",
+              "value": "$4,500",
+              "detail": "Below filing threshold"
+            },
+            {
+              "type": "positive",
+              "label": "Taxes Withheld",
+              "value": "$450",
+              "detail": "Can be refunded"
+            },
+            {
+              "type": "positive",
+              "label": "Decision",
+              "value": "FILE!",
+              "detail": "Get her $450 back"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Apply It",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "\ud83d\udc64",
+            "name": "Ben's Complex Situation",
+            "paragraphs": [
+              "Ben (24) has two income sources: $32,000 from his retail job (W-2) and $5,000 from freelance graphic design (1099-NEC).",
+              "Even though his W-2 job handles withholding, his $5,000 freelance income exceeds the $400 self-employment threshold\u2014he MUST file and will owe self-employment tax."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "W-2 Income",
+              "value": "$32,000",
+              "detail": "Taxes withheld by employer"
+            },
+            {
+              "type": "negative",
+              "label": "1099 Income",
+              "value": "$5,000",
+              "detail": "Self-employment tax owed"
+            },
+            {
+              "type": "negative",
+              "label": "SE Tax Due",
+              "value": "~$765",
+              "detail": "15.3% of $5,000"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "amber",
+      "content": {
+        "badge": "Discussion",
+        "question": "Chris owes $2,000 in taxes but files 3 months late without requesting an extension.<br><br>Calculate Chris's penalties:<br>\u2022 Failure-to-file: 5% \u00d7 3 months \u00d7 $2,000 = ?<br>\u2022 Failure-to-pay: 0.5% \u00d7 3 months \u00d7 $2,000 = ?<br><br>What should Chris have done differently?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "indigo",
+      "content": {
+        "badge": "Reflection",
+        "question": "Based on your current situation\u2014part-time job, no income yet, gig work, or other sources:<br><br>What tax forms do you expect to receive?<br><br>Do you think you'll be required to file, or would filing be beneficial even if optional?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "emerald",
+      "content": {
+        "headerTitle": "Check Your Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "Which form reports your wages and taxes withheld from your employer?"
+            },
+            {
+              "number": 2,
+              "question": "Why should someone file a tax return even if their income is below the filing threshold?"
+            },
+            {
+              "number": 3,
+              "question": "A single person earned $12,000 in wages and $600 from freelance work. Are they required to file? Why?"
+            },
+            {
+              "number": 4,
+              "question": "What is the standard tax filing deadline, and what should you do if you can't file by that date?"
+            }
+          ]
+        }
+      },
+      "speakerNotes": "ANSWER KEY:\n\nQ1: Which form reports your wages and taxes withheld from your employer?\n• Answer: B (W-2). Your employer must send you a W-2 by January 31 showing your total wages (Box 1), federal income tax withheld (Box 2), Social Security wages (Box 3), and Medicare wages (Box 5). This is the most common tax form for employees.\n\nQ2: Why should someone file a tax return even if their income is below the filing threshold?\n• Answer: To recover taxes withheld from paychecks (refund), claim refundable tax credits like EITC (Earned Income Tax Credit), prevent identity theft by filing first, and establish a filing history for future loan applications or financial aid. Many young workers leave hundreds of dollars unclaimed each year by not filing.\n\nQ3: A single person earned $12,000 in wages and $600 from freelance work. Are they required to file? Why?\n• Answer: YES, required to file. Even though wage income ($12,000) is below the threshold ($13,850), the self-employment income ($600) exceeds the $400 trigger for self-employment tax. Must file Schedule C (business income) and Schedule SE (self-employment tax) in addition to Form 1040.\n\nQ4: What is the standard tax filing deadline, and what should you do if you can't file by that date?\n• Answer: April 15 (adjusted if it falls on a weekend or holiday—in those cases, the deadline is the next business day). If you can't file by the deadline, request an automatic extension using Form 4868, which gives you until October 15 to FILE. CRITICAL NOTE: An extension is to FILE, not to PAY. Taxes owed are still due April 15, and interest plus 0.5% monthly penalties accrue on unpaid amounts."
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Know Your Threshold",
+              "description": "Filing requirements depend on income, age, and status\u2014but self-employment over $400 always requires filing."
+            },
+            {
+              "number": 2,
+              "title": "File for Refunds",
+              "description": "Even if not required, file to recover withheld taxes and claim refundable credits like EITC."
+            },
+            {
+              "number": 3,
+              "title": "Know Your Forms",
+              "description": "W-2 = employment, 1099 = other income, Form 1040 = your tax return. Collect them all before filing."
+            },
+            {
+              "number": 4,
+              "title": "Meet Deadlines",
+              "description": "April 15 is key. File even if you can't pay\u2014the failure-to-file penalty is 10x worse than failure-to-pay."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Tomorrow's Challenge",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "\ud83d\udccb",
+            "title": "Tax Filing Decision Maker",
+            "description": "You understand the rules\u2014but can you apply them to real situations? Tomorrow you'll work through multiple scenarios to determine who must file, who should file, and calculate penalties for those who don't."
+          },
+          "steps": [
+            "Analyze 5 different taxpayer situations and determine filing requirements",
+            "Match income sources to the correct tax forms (W-2, 1099-NEC, 1099-INT)",
+            "Calculate penalties for late filing and late payment scenarios",
+            "Identify situations where optional filing is financially smart",
+            "Choose the best filing method for different taxpayer profiles"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "\u00a9 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

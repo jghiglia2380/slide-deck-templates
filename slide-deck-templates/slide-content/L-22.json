@@ -1,0 +1,544 @@
+{
+  "metadata": {
+    "lChapter": "L-22",
+    "title": "Choosing the Right Source of Credit",
+    "subtitle": "Compare Lenders, Avoid Predatory Traps, and Save Hundreds on Borrowing Costs",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME",
+      "STATE_PAYDAY_LOAN_RATE"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Choosing the Right Source of Credit",
+        "titleSize": "large",
+        "subtitle": "Compare Lenders, Avoid Predatory Traps, and Save Hundreds on Borrowing Costs"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "The Challenge",
+        "question": "Marcus needs <em>$1,500</em> for an emergency car repair to keep his job. With a credit score of 650, he's comparing three options: • Credit union personal loan: <em>8% APR</em><br>• Credit card: <em>18% APR</em><br>• Payday loan advertising 'quick cash': <em>400% APR</em> (fine print)   How can Marcus determine which credit source will cost him the least and keep him out of a debt trap?    How can Marcus determine which credit source will cost him the least and keep him out of a debt trap? <br><br>   How can Marcus determine which credit source will cost him the least and keep him out of a debt trap?"
+      },
+      "headerColor": "amber",
+      "notes": "DISCUSSION PROMPTS:\nTHE CHALLENGE (5 min):\n• Read Marcus's emergency car repair scenario aloud.\n• Discussion: \"Why might someone choose a payday loan even knowing it costs more?\"\n• Introduce the concept of predatory lending as exploiting urgent needs.\n"
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Compare",
+              "description": "Compare different credit sources including banks, credit unions, and alternative lenders."
+            },
+            {
+              "number": 2,
+              "verb": "Evaluate",
+              "description": "Evaluate credit options based on APR, fees, terms, and total cost of borrowing."
+            },
+            {
+              "number": 3,
+              "verb": "Identify",
+              "description": "Identify warning signs of predatory lending practices and debt traps."
+            },
+            {
+              "number": 4,
+              "verb": "Calculate",
+              "description": "Calculate the true cost of borrowing from different sources to make informed decisions."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Credit Union",
+              "definition": "A member-owned, not-for-profit financial cooperative that often offers lower rates than banks because profits go back to members.",
+              "example": "A credit union might offer 8% APR on a personal loan vs. 12% at a traditional bank."
+            },
+            {
+              "term": "Payday Lender",
+              "definition": "A lender offering small, short-term loans with extremely high interest rates—often 300-500% APR when annualized.",
+              "example": "Borrowing $500 for 2 weeks might cost $75 in fees—that's 391% APR!"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Predatory Lending",
+              "definition": "Unfair lending practices that take advantage of borrowers through deceptive terms, excessive fees, or targeting vulnerable people.",
+              "example": "Hidden fees, balloon payments, steering to higher rates than you qualify for, pressure to borrow more."
+            },
+            {
+              "term": "Creditworthiness",
+              "definition": "A measure of how likely a borrower is to repay debt, based on credit history, score, income, and existing debt.",
+              "example": "Higher creditworthiness = lower interest rates and more lending options available to you."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Not All Credit Sources Are Equal",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The Credit Source Hierarchy",
+            "paragraphs": [
+              "From lowest to highest cost (generally):",
+              "<strong>1. Credit Unions:</strong> Member-owned, lowest rates",
+              "<strong>2. Banks:</strong> Traditional, competitive rates",
+              "<strong>3. Online Lenders:</strong> Convenient, rates vary widely",
+              "<strong>4. Credit Cards:</strong> Easy access, 15-25% APR",
+              "<strong>5. Consumer Finance:</strong> 20-35% APR, fewer requirements",
+              "<strong>6. Payday/Title Lenders:</strong> 300-500%+ APR—AVOID!"
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "The easier it is to get approved, the more expensive the credit usually is."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "8%",
+                "label": "Typical credit union personal loan",
+                "color": "emerald"
+              },
+              {
+                "value": "18%",
+                "label": "Average credit card APR",
+                "color": "amber"
+              },
+              {
+                "value": "400%",
+                "label": "Typical payday loan APR",
+                "color": "amber"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Credit Unions vs. Banks",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "🤝",
+            "title": "CREDIT UNIONS",
+            "items": [
+              "Member-owned (you're an owner!)",
+              "Not-for-profit structure",
+              "Profits returned as lower rates",
+              "Often more flexible approval",
+              "Personal service focus",
+              "Typically lower fees"
+            ]
+          },
+          "rightColumn": {
+            "icon": "🏦",
+            "title": "BANKS",
+            "items": [
+              "Shareholder-owned (profit motive)",
+              "For-profit structure",
+              "Profits go to shareholders",
+              "Stricter approval criteria",
+              "More branches/ATMs typically",
+              "More product variety"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "The Payday Loan Trap",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "How the Trap Works",
+            "paragraphs": [
+              "Payday loans seem simple: borrow $500, pay back $575 in 2 weeks. That's only $75!",
+              "<strong>The problem:</strong> Most people can't pay it back in 2 weeks AND cover their other bills.",
+              "<strong>So they 'roll over':</strong> Pay $75 fee, extend another 2 weeks. Repeat.",
+              "After 4 rollovers (8 weeks): Paid $300 in fees, still owe $500!",
+              "<strong>The average payday borrower</strong> is in debt for 5 months of the year."
+            ],
+            "highlightBox": {
+              "icon": "⚠️",
+              "text": "That $75 'fee' on $500 for 2 weeks = 391% APR. It's not a small fee—it's predatory interest."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "80%",
+                "label": "Payday loans rolled over or reborrowed",
+                "color": "amber"
+              },
+              {
+                "value": "$520",
+                "label": "Average fees paid per borrower/year",
+                "color": "amber"
+              },
+              {
+                "value": "5 months",
+                "label": "Average time in payday debt",
+                "color": "amber"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Comparing Marcus's Options: $1,500 Loan",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Same Amount, VERY Different Costs",
+          "paragraphs": [
+            "Let's calculate what Marcus actually pays for his $1,500 car repair:"
+          ],
+          "bulletPoints": [
+            "<strong>Credit Union (8% APR, 12 months):</strong> Monthly payment $130, Total interest $60 → <strong>Total: $1,560</strong>",
+            "<strong>Credit Card (18% APR, 12 months):</strong> Monthly payment $138, Total interest $156 → <strong>Total: $1,656</strong>",
+            "<strong>Payday Loan (400% APR, 2 weeks):</strong> Single term $1,730... but if rolled over 4 times → <strong>Total: $2,420</strong>"
+          ],
+          "keyPoint": {
+            "text": "💰 The payday loan costs Marcus $860 MORE than the credit union—enough to cover another repair!"
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Warning Signs of Predatory Lending",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Red Flags to Watch For",
+          "paragraphs": [
+            "Protect yourself by recognizing these warning signs:"
+          ],
+          "bulletPoints": [
+            "<strong>No credit check required:</strong> Legitimate lenders assess your ability to repay",
+            "<strong>Pressure to decide NOW:</strong> Good lenders give you time to review terms",
+            "<strong>Focus on payment, not total cost:</strong> 'Only $50/week!' hides the true expense",
+            "<strong>Excessive fees buried in fine print:</strong> Origination fees, processing fees, early payoff penalties",
+            "<strong>Asset-based lending:</strong> Car title loans can leave you without transportation",
+            "<strong>Encouraging you to borrow more:</strong> 'You qualify for $5,000!' when you asked for $500"
+          ],
+          "keyPoint": {
+            "text": "🚨 If it seems too easy or too good to be true, it probably is. Always read the fine print!"
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Alternatives to High-Cost Credit",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Better Options Exist",
+            "paragraphs": [
+              "Before turning to payday lenders, consider:",
+              "<strong>Negotiate with the creditor:</strong> Many will set up payment plans or delay due dates",
+              "<strong>Credit union payday alternative loans:</strong> PALs offer $200-$1,000 at reasonable rates",
+              "<strong>Payment plan with provider:</strong> Medical offices often offer 0% payment plans",
+              "<strong>Borrow from retirement (last resort):</strong> 401k loans are to yourself",
+              "<strong>Side gig income:</strong> Even a few hours can cover immediate needs"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "Ask These Questions First:",
+              "color": "emerald",
+              "items": [
+                "Can I delay this expense?",
+                "Can I negotiate a payment plan?",
+                "Have I checked credit union rates?",
+                "What's the TOTAL cost, not just monthly?",
+                "Can I build emergency fund after this?"
+              ]
+            }
+          }
+        }
+      },
+      "notes": "COMMON MISCONCEPTIONS:\n\n1. \"Payday loans are only for irresponsible people.\"\n   → Many borrowers are working people facing emergencies without access to traditional credit. The problem is the product design, not the borrower.\n\n2. \"Credit unions are only for certain jobs or groups.\"\n   → Many credit unions now have open membership or easy-to-meet criteria. Check local options—most people can join at least one.\n\n3. \"Banks always have the best rates.\"\n   → Credit unions often beat bank rates because they're not-for-profit. Online lenders can also be competitive for borrowers with good credit.\n\n"
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Shopping for the Best Rate",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "How to Compare Credit Options",
+          "paragraphs": [
+            "When you need to borrow, follow these steps:"
+          ],
+          "bulletPoints": [
+            "<strong>Check your credit score first:</strong> Know what you qualify for before shopping",
+            "<strong>Get quotes from multiple sources:</strong> Credit union, bank, online lender (rate shopping within 14-45 days counts as one inquiry)",
+            "<strong>Compare APR, not just interest rate:</strong> APR includes fees in the true cost",
+            "<strong>Calculate total cost:</strong> Multiply monthly payment × months, add all fees",
+            "<strong>Read the fine print:</strong> Prepayment penalties? Variable rates? Late fees?",
+            "<strong>Consider the term:</strong> Longer terms = lower payments but MORE total interest"
+          ],
+          "keyPoint": {
+            "text": "📊 A 10% APR loan for 5 years costs MORE in total interest than 12% APR for 3 years. Do the math!"
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Apply It",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👤",
+            "name": "Marcus's Smart Choice",
+            "paragraphs": [
+              "Marcus has a 650 credit score—not great, but fair. He needs $1,500 for his car repair urgently to keep his job.",
+              "The payday lender offers same-day approval. The credit union needs 3 days but offers 8% APR. Marcus talks to his employer and gets a 3-day extension on his deadline."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "negative",
+              "label": "Payday Loan Cost",
+              "value": "$2,420",
+              "detail": "If rolled over 4 times"
+            },
+            {
+              "type": "positive",
+              "label": "Credit Union Cost",
+              "value": "$1,560",
+              "detail": "12-month loan at 8%"
+            },
+            {
+              "type": "positive",
+              "label": "Marcus Saves",
+              "value": "$860",
+              "detail": "By waiting 3 days"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Apply It",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👩",
+            "name": "Jasmine's Home Purchase",
+            "paragraphs": [
+              "Jasmine has excellent credit (780) and is buying her first home. She gets quotes from her bank (6.5% APR), credit union (6.25% APR), and an online lender (6.75% APR).",
+              "On a $300,000 30-year mortgage, the difference between 6.25% and 6.75% is significant over time."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "positive",
+              "label": "Credit Union (6.25%)",
+              "value": "$1,847/mo",
+              "detail": "Total interest: $365,000"
+            },
+            {
+              "type": "before",
+              "label": "Bank (6.5%)",
+              "value": "$1,896/mo",
+              "detail": "Total interest: $383,000"
+            },
+            {
+              "type": "positive",
+              "label": "Jasmine Saves",
+              "value": "$18,000",
+              "detail": "Over 30 years with credit union"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "amber",
+      "content": {
+        "badge": "Discussion",
+        "question": "For each scenario, which credit source would you recommend and why?<br><br>1. Derek has fair credit (620) and a $2,000 medical bill. Payday lender offers same-day; credit union needs 3 days.<br><br>2. Aisha wants $15,000 to start a food truck business but banks rejected her.<br><br>3. You need $500 for textbooks and have no credit history."
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "indigo",
+      "content": {
+        "badge": "Reflection",
+        "question": "Imagine a friend is about to take out a payday loan because they need money fast.<br><br>What would you say to them?<br><br>What alternatives would you suggest they explore first?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "emerald",
+      "content": {
+        "headerTitle": "Check Your Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "Which type of lender typically offers the lowest interest rates to qualified borrowers, and why?"
+            },
+            {
+              "number": 2,
+              "question": "Explain why credit unions often offer better rates than commercial banks."
+            },
+            {
+              "number": 3,
+              "question": "A payday loan for $500 charges $75 in fees for 2 weeks. If rolled over 4 times, what's the total cost?"
+            },
+            {
+              "number": 4,
+              "question": "List three warning signs that a lender might be predatory."
+            }
+          ]
+        }
+      },
+      "notes": "ANSWER KEY:\n\n1. C (Credit unions)\n\n2. Credit unions are not-for-profit and member-owned. Profits go back to members as lower rates and fewer fees rather than to shareholders.\n\n3. $161 × 36 = $5,796 + $100 fee = $5,896 total cost\n\n4. Credit union total: $1,560. Payday 4× rollover: $2,420. Savings: $860\n\n5. Response should include specific alternatives (credit union, payment plan, community resources) and explain WHY payday loans are dangerous (debt cycle, extreme costs).\n\n"
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Credit Unions Often Win",
+              "description": "Member-owned, not-for-profit structure means lower rates. Check credit union options before banks."
+            },
+            {
+              "number": 2,
+              "title": "Avoid Payday Lenders",
+              "description": "300-500% APR creates debt traps. The convenience isn't worth the cost—explore alternatives first."
+            },
+            {
+              "number": 3,
+              "title": "Compare Total Cost",
+              "description": "Don't just look at monthly payments. Calculate total repayment including all fees and interest."
+            },
+            {
+              "number": 4,
+              "title": "Recognize Predatory Signs",
+              "description": "No credit check, pressure tactics, hidden fees, and 'too easy' approval are red flags."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Tomorrow's Challenge",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "🔍",
+            "title": "Credit Source Comparison Challenge",
+            "description": "Marcus made a smart choice—but can you help others do the same? Tomorrow you'll analyze real borrowing scenarios, calculate true costs, and develop strategies to avoid predatory lending traps."
+          },
+          "steps": [
+            "Match borrowing scenarios to the most appropriate credit source",
+            "Calculate and compare total costs from different lenders",
+            "Identify predatory lending warning signs in loan offers",
+            "Analyze payday loan rollover costs vs. alternatives",
+            "Create a personal credit source ranking with explanations"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

@@ -1,0 +1,520 @@
+{
+  "metadata": {
+    "lChapter": "L-39",
+    "title": "Charitable Giving & Financial Planning",
+    "subtitle": "Making an Impact Through Purposeful Giving",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Charitable Giving & Financial Planning",
+        "titleSize": "large",
+        "subtitle": "Making an Impact Through Purposeful Giving"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "The Challenge",
+        "question": "How can you make a <em>meaningful difference</em> in your community—<br>whether through money, time, or skills—<br>at <em>any stage</em> of your financial journey?"
+      },
+      "headerColor": "amber",
+      "speakerNotes": "Read Sarah's scenario aloud. Emphasize the balance between generosity and financial stability. Ask: \"Can you give to causes you care about even if you don't have much money?\" Brainstorm different ways to contribute besides writing a check."
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Understand",
+              "description": "Recognize various forms of charitable giving including monetary donations, volunteering, in-kind gifts, and planned giving."
+            },
+            {
+              "number": 2,
+              "verb": "Integrate",
+              "description": "Learn how charitable giving can be incorporated into comprehensive financial planning at any income level."
+            },
+            {
+              "number": 3,
+              "verb": "Explore",
+              "description": "Discover the personal and societal benefits that come from giving back to your community."
+            },
+            {
+              "number": 4,
+              "verb": "Reflect",
+              "description": "Consider non-monetary ways to contribute to your community regardless of your financial situation."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Monetary Donation",
+              "definition": "Direct financial contributions made to a charitable organization to support their mission.",
+              "example": "One-time gifts, recurring donations, matching gifts through employers, crowdfunding contributions"
+            },
+            {
+              "term": "In-Kind Donation",
+              "definition": "Contributions of goods or services rather than money, often equally valuable to organizations.",
+              "example": "Clothing, food, professional services pro bono, technology equipment, blood donation"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Volunteerism",
+              "definition": "Donating time or skills to support causes without receiving financial compensation.",
+              "example": "Direct impact, skill development, networking, mental health benefits, career exploration"
+            },
+            {
+              "term": "Planned Giving",
+              "definition": "Charitable contributions arranged through long-term financial or estate planning.",
+              "example": "Bequests in wills, charitable trusts, endowments, life insurance designations"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Why Do People Give?",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Motivations for Giving",
+            "paragraphs": [
+              "People choose to give to charitable causes for many personal and social reasons:"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$500B+",
+                "label": "Annual US Charitable Giving",
+                "color": "green"
+              },
+              {
+                "value": "87%",
+                "label": "Americans Who Give to Charity",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Research Shows:",
+              "color": "blue",
+              "items": [
+                "Giving activates pleasure centers in the brain",
+                "Givers report higher life satisfaction",
+                "Volunteering linked to better health",
+                "Generosity strengthens communities"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Four Forms of Charitable Giving",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Everyone Can Give—Regardless of Financial Resources",
+          "paragraphs": [
+            "Charitable giving comes in many forms, each valuable and impactful in its own way."
+          ],
+          "bulletPoints": [
+            "<strong>💵 Monetary Donations:</strong> Direct financial contributions (one-time, recurring, matching)",
+            "<strong>🤝 Volunteering:</strong> Donating time and skills to organizations and causes",
+            "<strong>📦 In-Kind Donations:</strong> Contributing goods, services, or professional expertise",
+            "<strong>📋 Planned Giving:</strong> Long-term arrangements through estate planning"
+          ],
+          "keyPoint": {
+            "text": "💡 You don't need significant financial resources to make a difference. Time, skills, and goods can be equally valuable contributions to organizations in need."
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Creating a Giving Budget",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Steps to Plan Your Giving",
+            "paragraphs": [
+              "Just as you budget for other expenses, it's helpful to plan for charitable giving:"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Tax Benefits of Charitable Giving",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Tax Deductions for Donations",
+            "paragraphs": [
+              "Many charitable donations are <strong>tax-deductible</strong>, reducing your taxable income. Key points:"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "60%",
+                "label": "Max Deduction (% of AGI)",
+                "color": "teal"
+              }
+            ],
+            "infoCard": {
+              "title": "Important Notes:",
+              "color": "amber",
+              "items": [
+                "Tax benefits should enhance giving, not drive it",
+                "Many people use standard deduction",
+                "Donating appreciated stock can avoid capital gains",
+                "Limits vary by donation type"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Benefits of Charitable Giving",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Personal Benefits",
+            "paragraphs": [
+              "<strong>Increased happiness:</strong> Research shows giving activates pleasure centers in the brain—the \"helper's high\"",
+              "<strong>Reduced stress:</strong> Helping others provides perspective and purpose",
+              "<strong>Development of empathy:</strong> Engaging with different communities broadens understanding",
+              "<strong>Community connections:</strong> Volunteering and giving create meaningful social bonds"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Making Small Contributions Count",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Impact Doesn't Require Wealth",
+          "paragraphs": [
+            "Even small monetary or time contributions can have significant impact when done strategically:"
+          ],
+          "bulletPoints": [
+            "<strong>🤝 Collective giving:</strong> Join giving circles or crowdfunding campaigns with others",
+            "<strong>🎯 Targeted donations:</strong> Support specific projects with clear, measurable outcomes",
+            "<strong>🏠 Support local:</strong> Small donations often make bigger differences at local organizations",
+            "<strong>📅 Stay consistent:</strong> Regular small gifts build up significantly over time",
+            "<strong>✖️2 Find matching:</strong> Look for employer matching that doubles your donation",
+            "<strong>📣 Raise awareness:</strong> Share information about causes you care about"
+          ],
+          "keyPoint": {
+            "text": "💡 A $10/month donation = $120/year = $1,200 over a decade. Consistency matters more than amount."
+          }
+        }
+      },
+      "speakerNotes": "COMMON MISCONCEPTIONS:\n• \"\"You need to be wealthy to make a difference through charitable giving.\"\" → Small donations can have significant impact, especially to local organizations. Volunteering time and skills can be equally valuable. The key is consistent giving aligned with your means.\n• \"\"All charitable donations are tax-deductible.\"\" → Only donations to qualified 501(c)(3) organizations are deductible, and only if you itemize. Many people take the standard deduction and receive no tax benefit from donations.\n• \"\"The tax deduction makes charitable giving 'free.'\"\" → A deduction reduces taxable income, not your tax bill directly. If you're in the 22% bracket, a $100 donation saves you $22 in taxes—you still \"pay\" $78 net."
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Integrating Giving Into Financial Planning",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Balance Giving with Other Goals",
+            "paragraphs": [
+              "Charitable giving should be part of your comprehensive financial plan, not separate from it. Consider how giving fits alongside:",
+              "• Emergency fund building",
+              "• Debt management",
+              "• Retirement savings",
+              "• Major purchase goals"
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "Start small and increase giving as your financial situation improves. Even 1-2% of income makes a difference."
+            }
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "Smart Giving Strategy:",
+              "color": "green",
+              "items": [
+                "Secure your own finances first",
+                "Start with what you can afford",
+                "Choose causes you care about",
+                "Research organizations thoroughly",
+                "Increase giving as income grows"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Apply It",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "🤝",
+            "name": "Maria: The Power of Volunteering",
+            "paragraphs": [
+              "Maria, a college student with <strong>limited financial resources</strong>, volunteers 5 hours each week at a local food bank.",
+              "Although she can't make substantial monetary donations, her <span class=\"highlight-text\">consistent time commitment</span> helps the organization serve hundreds of meals each month.",
+              "Within six months, she was given more responsibility and now <strong>coordinates other volunteers</strong> during her shifts. She also gained experience that helped her secure an internship in nonprofit management."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "Weekly Commitment",
+              "value": "5 Hours",
+              "detail": "Consistent volunteering"
+            },
+            {
+              "type": "after",
+              "label": "Value to Organization",
+              "value": "$3,000",
+              "detail": "Annual savings in staffing"
+            },
+            {
+              "type": "after",
+              "label": "Personal Benefit",
+              "value": "Internship",
+              "detail": "Career advancement"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Apply It",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "💻",
+            "name": "James: Skills-Based Giving",
+            "paragraphs": [
+              "James, a high school student, doesn't have extra money to donate, but he's <strong>skilled at web design</strong>. He volunteered to rebuild the website for a local animal shelter.",
+              "His contribution took approximately <span class=\"highlight-text\">40 hours over two months</span>, but the results were significant:"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "Time Invested",
+              "value": "40 Hours",
+              "detail": "Over two months"
+            },
+            {
+              "type": "after",
+              "label": "Value to Shelter",
+              "value": "$3,500+",
+              "detail": "Professional web design cost"
+            },
+            {
+              "type": "after",
+              "label": "Impact",
+              "value": "+25%",
+              "detail": "Adoption rate increase"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "amber",
+      "content": {
+        "badge": "Discussion",
+        "question": "What causes or issues matter most to you personally?<br><br>How might charitable giving related to these causes fit into your future financial plans?<br>What forms of giving would be most meaningful to you?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "indigo",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "If you had unlimited resources,<br>what single cause would you support and why?<br><br>How can you start contributing to that cause today,<br>even with limited financial resources?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "emerald",
+      "content": {
+        "headerTitle": "Check Your Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What are the four main forms of charitable giving discussed in this lesson?"
+            },
+            {
+              "number": 2,
+              "question": "Why is it important to balance charitable giving with other financial priorities?"
+            },
+            {
+              "number": 3,
+              "question": "How can someone with limited financial resources still make a meaningful contribution to causes they care about?"
+            },
+            {
+              "number": 4,
+              "question": "What personal benefits do people often experience from charitable giving?"
+            }
+          ]
+        }
+      },
+      "speakerNotes": "ASSESSMENT ANSWER KEY:\nQ4 Non-monetary contributions:Any THREE valid examples: tutoring students, serving at food bank, animal shelter volunteering, mentoring, blood donation, organizing community events, pro bono professional services, creating content for nonprofits.\nCYU 1:B (Setting up recurring monthly payments is a monetary donation, not in-kind)\nCYU 2:B (You must itemize deductions to claim charitable donations)\nCYU 3:Tax savings: $2,500 × 22% =$550. Note: This assumes Alex itemizes and the charitable deduction exceeds the standard deduction.\nCYU 4:Priorities before charitable giving: basic needs (housing, food, utilities), emergency savings fund, high-interest debt payments, retirement contributions."
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Everyone Can Give",
+              "description": "Charitable giving comes in many forms—money, time, skills, and goods all create meaningful impact"
+            },
+            {
+              "number": 2,
+              "title": "Plan Your Giving",
+              "description": "Integrate charitable giving into your budget and balance it with other financial priorities"
+            },
+            {
+              "number": 3,
+              "title": "Benefits Flow Both Ways",
+              "description": "Givers experience happiness, connection, and purpose while recipients get needed support"
+            },
+            {
+              "number": 4,
+              "title": "Start Small, Stay Consistent",
+              "description": "Even small contributions add up over time—you can increase giving as your situation improves"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Tomorrow's Challenge",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📋",
+            "title": "Personal Charitable Giving Plan",
+            "description": "Today we built the foundation—but the real test is what happens when you have to make a decision with tradeoffs. Create a personal charitable giving plan that aligns with your values, interests, and resources—whether those are financial, time-based, or skill-based."
+          },
+          "steps": [
+            "Choose a cause or organization you feel passionate about",
+            "Determine what type of contribution you can realistically make",
+            "Set specific and realistic goals for your contribution",
+            "Write a paragraph explaining your giving strategy",
+            "Identify how this aligns with your overall financial plan"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

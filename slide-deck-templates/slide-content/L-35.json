@@ -1,0 +1,534 @@
+{
+  "metadata": {
+    "lChapter": "L-35",
+    "title": "Managing Insurance Costs",
+    "subtitle": "Balance Coverage and Cost to Protect Your Budget",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Managing Insurance Costs",
+        "titleSize": "large",
+        "subtitle": "Balance Coverage and Cost to Protect Your Budget"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "The Challenge",
+        "question": "Sophia, a 25-year-old, is choosing between two health plans at her new job:.<br><br><strong>Which plan will cost her less over a year—and how do you decide?</strong>"
+      },
+      "headerColor": "amber",
+      "speakerNotes": "Read Sophia's health plan comparison scenario. Ask: \"Without calculating, which plan do you think is better for someone healthy? Why?\" Note that the \"obvious\" answer (lower premium) may not always be correct."
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Understand",
+              "description": "Understand the relationship between premiums, deductibles, and out-of-pocket costs."
+            },
+            {
+              "number": 2,
+              "verb": "Identify",
+              "description": "Identify strategies for selecting insurance that balances coverage with cost-effectiveness."
+            },
+            {
+              "number": 3,
+              "verb": "Apply",
+              "description": "Apply cost analysis to compare insurance options under different usage scenarios."
+            },
+            {
+              "number": 4,
+              "verb": "Calculate",
+              "description": "Calculate total insurance costs including premiums, deductibles, co-insurance, and savings strategies."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Out-of-Pocket Maximum",
+              "definition": "The most you'll pay for covered services in a year. After reaching this limit, insurance covers 100% of remaining costs.",
+              "example": "With a $5,000 out-of-pocket max, you'll never pay more than $5,000 for covered care in a year."
+            },
+            {
+              "term": "HSA (Health Savings Account)",
+              "definition": "A tax-advantaged savings account paired with high-deductible health plans, used for medical expenses.",
+              "example": "You contribute $200/month pre-tax to your HSA, reducing your taxable income while saving for medical costs."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "In-Network Provider",
+              "definition": "Doctors, hospitals, and facilities that have contracted rates with your insurance company, resulting in lower costs for you.",
+              "example": "An in-network lab charges $100 for blood work; the same test costs $300 out-of-network."
+            },
+            {
+              "term": "Bundling",
+              "definition": "Combining multiple insurance policies (auto + home, for example) with one company to receive discounts.",
+              "example": "Bundling auto and renter's insurance saves 15%—that's $225/year on $1,500 in premiums."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "The Premium-Deductible Trade-Off",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The Fundamental Insurance Choice",
+            "paragraphs": [
+              "Insurance costs involve a key trade-off:",
+              "<strong>Higher premiums</strong> = Lower out-of-pocket costs when you file claims",
+              "<strong>Lower premiums</strong> = Higher costs if you need care",
+              "The best plan depends on your personal situation—not just the lowest monthly payment."
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "The lowest premium isn't always the cheapest option. Calculate your total potential costs."
+            }
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "Consider These Factors",
+              "color": "indigo",
+              "items": [
+                "How often do you typically need care?",
+                "Do you have savings for a high deductible?",
+                "Any chronic conditions requiring regular treatment?",
+                "Can you handle a worst-case scenario?"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Comparing Sophia's Health Plans",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "📋",
+            "title": "Plan A: Low Deductible",
+            "items": [
+              "Premium: $250/month ($3,000/year)",
+              "Deductible: $500",
+              "Co-insurance: 20% after deductible",
+              "Out-of-pocket max: $3,000",
+              "Best if: Frequent medical care expected",
+              "Risk: Pay more if healthy"
+            ]
+          },
+          "rightColumn": {
+            "icon": "📋",
+            "title": "Plan B: High Deductible",
+            "items": [
+              "Premium: $150/month ($1,800/year)",
+              "Deductible: $2,000",
+              "Co-insurance: 20% after deductible",
+              "Out-of-pocket max: $5,000",
+              "Best if: Generally healthy, have savings",
+              "Benefit: HSA-eligible"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Calculating Sophia's Total Costs",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Scenario 1: Healthy Year (Routine Preventive Care Only)",
+          "paragraphs": [
+            "If Sophia stays healthy and only has routine check-ups (covered 100%):"
+          ],
+          "bulletPoints": [
+            "<strong>Plan A:</strong> $250 × 12 months = $3,000 total",
+            "<strong>Plan B:</strong> $150 × 12 months = $1,800 total",
+            "<strong>Savings with Plan B:</strong> $3,000 - $1,800 = <strong>$1,200/year</strong>"
+          ],
+          "keyPoint": {
+            "text": "💰 If healthy, Plan B saves Sophia $1,200/year. But what if she needs significant medical care?"
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Calculating Sophia's Total Costs",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Scenario 2: $8,000 in Medical Expenses",
+          "paragraphs": [
+            "If Sophia has $8,000 in medical expenses:"
+          ],
+          "bulletPoints": [
+            "<strong>Plan A:</strong> $3,000 premium + $500 deductible + 20% of $7,500 ($1,500) = $5,000 total",
+            "<strong>Plan B:</strong> $1,800 premium + $2,000 deductible + 20% of $6,000 ($1,200) = $5,000 total",
+            "<strong>Result:</strong> Both plans cost the same at $8,000 in medical expenses!"
+          ],
+          "keyPoint": {
+            "text": "📊 The break-even point is around $8,000. Below that, Plan B wins. Above that, Plan A may be better."
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "The HSA Triple Tax Advantage",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Three Ways HSAs Save You Money",
+            "paragraphs": [
+              "<strong>1. Tax-Free Contributions:</strong> Money goes in before taxes, reducing your taxable income.",
+              "<strong>2. Tax-Free Growth:</strong> Any interest or investment gains are not taxed.",
+              "<strong>3. Tax-Free Withdrawals:</strong> No taxes when used for qualified medical expenses.",
+              "Funds roll over year to year—no 'use it or lose it' like FSAs. At 65, you can use it for any expense (taxed like income)."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$4,150",
+                "label": "2024 HSA contribution limit (individual)",
+                "color": "emerald"
+              },
+              {
+                "value": "$8,300",
+                "label": "2024 HSA contribution limit (family)",
+                "color": "emerald"
+              },
+              {
+                "value": "25%+",
+                "label": "Potential tax savings",
+                "color": "indigo"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "In-Network vs. Out-of-Network",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Staying In-Network Saves Serious Money",
+            "paragraphs": [
+              "In-network providers have negotiated rates with your insurance company—often 50-70% less than out-of-network rates.",
+              "<strong>Example:</strong> Elena needs a $5,000 procedure.",
+              "• In-network (20% co-insurance): $1,000",
+              "• Out-of-network (50% co-insurance): $2,500",
+              "• <strong>Savings:</strong> $1,500 for the same procedure!"
+            ],
+            "highlightBox": {
+              "icon": "⚠️",
+              "text": "Always verify a provider is in-network BEFORE scheduling. Networks change, and mistakes are costly."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "20%",
+                "label": "Typical in-network co-insurance",
+                "color": "emerald"
+              },
+              {
+                "value": "50%",
+                "label": "Typical out-of-network co-insurance",
+                "color": "amber"
+              },
+              {
+                "value": "$1,500",
+                "label": "Elena's savings staying in-network",
+                "color": "emerald"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      },
+      "speakerNotes": "COMMON MISCONCEPTIONS:\n• \"\"The lowest premium is always the best choice.\"\" → Total cost = Premiums + Out-of-pocket. A low premium with high deductible can cost more if you need care. Always calculate scenarios.\n• \"\"HSAs are only useful if you're sick.\"\" → HSA funds roll over forever and can be invested. They're excellent retirement savings vehicles since funds can be withdrawn for any purpose after age 65.\n• \"\"Red cars cost more to insure.\"\" → This is a persistent myth. Insurers don't ask about car color. They care about make, model, age, and safety ratings."
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Strategies to Reduce Insurance Costs",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Save Money Without Sacrificing Protection",
+          "paragraphs": [
+            "Smart strategies can significantly reduce your insurance costs:"
+          ],
+          "bulletPoints": [
+            "<strong>Choose the right deductible:</strong> Higher deductible = lower premium. Good if you have emergency savings.",
+            "<strong>Bundle policies:</strong> Combine auto + home/renter's with one company for 10-25% discounts.",
+            "<strong>Maintain good records:</strong> Safe driving, good credit, and claims-free history lower premiums.",
+            "<strong>Use HSAs:</strong> High-deductible health plans + HSA can save 25%+ in taxes.",
+            "<strong>Shop annually:</strong> Compare quotes every year—loyalty doesn't guarantee best rates.",
+            "<strong>Ask for discounts:</strong> Security systems, good student, professional memberships, paperless billing."
+          ],
+          "keyPoint": {
+            "text": "🎯 Marcus bundles auto ($1,200) + renter's ($300) = $1,500. With 15% discount: saves $225/year."
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Apply It",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "🚗",
+            "name": "Carlos's Auto Insurance Deductible Choice",
+            "paragraphs": [
+              "Carlos is choosing a deductible for his auto insurance collision coverage. He has three options:",
+              "Option A: $250 deductible, $1,200/year premium\nOption B: $500 deductible, $1,050/year premium\nOption C: $1,000 deductible, $900/year premium"
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "5 Years No Accidents",
+              "value": "Option C wins",
+              "detail": "$900 × 5 = $4,500 total"
+            },
+            {
+              "type": "after",
+              "label": "1 Accident in Year 3",
+              "value": "Option B wins",
+              "detail": "$1,050 × 5 + $500 = $5,750"
+            },
+            {
+              "type": "positive",
+              "label": "Best Strategy",
+              "value": "Depends on Savings",
+              "detail": "Can you cover a $1,000 deductible?"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Apply It",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "🏥",
+            "name": "Sophia's Health Plan Decision",
+            "paragraphs": [
+              "Sophia is 25, healthy, and starting her career. She expects only routine preventive care this year.",
+              "She has $3,000 in savings and could contribute to an HSA if she chooses Plan B."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "positive",
+              "label": "Recommendation",
+              "value": "Plan B + HSA",
+              "detail": "Saves $1,200/year if healthy"
+            },
+            {
+              "type": "positive",
+              "label": "HSA Benefit",
+              "value": "25% Tax Savings",
+              "detail": "Contributions reduce taxable income"
+            },
+            {
+              "type": "before",
+              "label": "But If...",
+              "value": "Chronic Condition",
+              "detail": "Plan A may cost less with regular care"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "amber",
+      "content": {
+        "badge": "Discussion",
+        "question": "Carlos needs to choose an auto insurance deductible. With NO accidents over 5 years, Option C ($1,000 deductible, $900/year) costs least.<br><br>But what if he has one accident in year 3?<br><br>How should Carlos weigh the certainty of lower premiums against the possibility of paying a higher deductible?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "indigo",
+      "content": {
+        "badge": "Reflection",
+        "question": "Based on Sophia's situation (25, healthy, just starting career), which health plan would you recommend and why?<br><br>How would your recommendation change if she had a chronic condition requiring regular medication and specialist visits?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "emerald",
+      "content": {
+        "headerTitle": "Check Your Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "Which factor does NOT typically affect auto insurance premiums: driving record, credit score, car color, or age?"
+            },
+            {
+              "number": 2,
+              "question": "Explain the 'triple tax advantage' of a Health Savings Account (HSA)."
+            },
+            {
+              "number": 3,
+              "question": "Elena's plan has 20% in-network and 50% out-of-network co-insurance. For a $5,000 procedure, how much does she save by using in-network?"
+            },
+            {
+              "number": 4,
+              "question": "Marcus bundles auto ($1,200) and renter's ($300) insurance for a 15% discount. What's his annual savings?"
+            }
+          ]
+        }
+      },
+      "speakerNotes": "ASSESSMENT ANSWER KEY:\nQ5 Strategies:Increase deductible, use HSA, bundle policies, stay in-network, maintain good credit, ask about discounts, shop around annually, use preventive care.\nCYU 1:C (Car color) — This is a common myth. Color does not affect premiums.\nCYU 2:HSA Triple Tax Advantage: (1) Contributions are tax-deductible, (2) Investment growth is tax-free, (3) Withdrawals for qualified medical expenses are tax-free.\nCYU 3:In-network: $5,000 × 20% = $1,000. Out-of-network: $5,000 × 50% = $2,500. Savings:$1,500\nCYU 4:Combined before discount: $1,200 + $300 = $1,500. Discount: $1,500 × 15% =$225 savings"
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Premium-Deductible Trade-Off",
+              "description": "Higher premiums mean lower costs when you claim; lower premiums mean higher out-of-pocket if you need care."
+            },
+            {
+              "number": 2,
+              "title": "Calculate Total Costs",
+              "description": "Compare plans under different scenarios—healthy year, moderate use, and worst-case—not just monthly premiums."
+            },
+            {
+              "number": 3,
+              "title": "Use Tax-Advantaged Accounts",
+              "description": "HSAs offer triple tax benefits and can make high-deductible plans the most cost-effective choice."
+            },
+            {
+              "number": 4,
+              "title": "Smart Savings Strategies",
+              "description": "Bundle policies, stay in-network, maintain good records, and shop annually to reduce costs."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Tomorrow's Challenge",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📊",
+            "title": "Insurance Cost Optimization Lab",
+            "description": "You've learned to compare insurance costs—but can you optimize for your specific situation? Tomorrow you'll build a personalized insurance strategy."
+          },
+          "steps": [
+            "Compare three health plan options under multiple usage scenarios",
+            "Calculate HSA tax savings based on income and contribution level",
+            "Analyze auto insurance quotes with different deductible options",
+            "Identify bundling opportunities and calculate potential savings",
+            "Create a personalized insurance cost optimization plan"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

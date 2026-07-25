@@ -1,0 +1,14 @@
+{
+  "name": "slide-deck-templates",
+  "version": "1.0.0",
+  "description": "PFL Academy Slide Deck Template System",
+  "type": "module",
+  "scripts": {
+    "generate": "node generate-slide-decks.js",
+    "convert": "node html-to-json-converter.js",
+    "convert-test": "node html-to-json-converter.js --test"
+  },
+  "dependencies": {
+    "jsdom": "^24.0.0"
+  }
+}

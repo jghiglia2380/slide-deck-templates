@@ -1,0 +1,558 @@
+{
+  "metadata": {
+    "lChapter": "L-05",
+    "title": "Managing Your Income Effectively",
+    "subtitle": "Master the 50/30/20 Rule and Make Your Money Work for You",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME",
+      "STATE_MEDIAN_INCOME",
+      "STATE_MEDIAN_RENT"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Managing Your Income Effectively",
+        "titleSize": "large",
+        "subtitle": "Master the 50/30/20 Rule and Make Your Money Work for You"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "The Challenge",
+        "question": "Casey and Taylor both earn <em>$3,000/month</em>.<br><br>Casey follows the 50/30/20 rule, automates savings, and has built a <em>3-month emergency fund ($4,500)</em>.<br><br>Taylor has no budget, spends freely, accumulated <em>$4,000 in credit card debt</em>, and has no savings.<br><br><strong>Same income\u2014very different outcomes.</strong><br><br>Why does income management\u2014not just income level\u2014often determine financial outcomes?"
+      },
+      "headerColor": "amber",
+      "speakerNotes": "Read Casey and Taylor's contrasting scenarios aloud, emphasizing they have the SAME income. Discussion prompt: 'Do you know anyone who seems to always struggle with money despite earning decent income? Or someone who manages well on a smaller budget?' This highlights that financial success comes more from management than income level."
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Create",
+              "description": "Create and manage a personal budget using the 50/30/20 rule to allocate income effectively."
+            },
+            {
+              "number": 2,
+              "verb": "Differentiate",
+              "description": "Differentiate between financial needs and wants to make conscious spending decisions."
+            },
+            {
+              "number": 3,
+              "verb": "Understand",
+              "description": "Understand the importance of emergency funds and saving strategies for financial security."
+            },
+            {
+              "number": 4,
+              "verb": "Develop",
+              "description": "Develop a personalized income management plan aligned with your values and goals."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Budget",
+              "definition": "A plan that tracks income and expenses to guide financial decisions and ensure money goes where you intend.",
+              "example": "Tracking that $3,000/month income covers rent, food, transportation, and savings goals."
+            },
+            {
+              "term": "50/30/20 Rule",
+              "definition": "A budgeting framework: 50% for needs, 30% for wants, 20% for savings and debt repayment.",
+              "example": "On $2,400/month: $1,200 needs, $720 wants, $480 savings."
+            }
+          ]
+        }
+      },
+      "speakerNotes": "Write 50/30/20 on the board and unpack each category with student examples. Create a needs vs. wants T-chart with student input (e.g., Is Netflix a need or want? Basic phone service vs. premium unlimited plan?). Discuss 'pay yourself first' concept and why automatic savings works better than saving 'what's left.' Emphasize that the percentages are guidelines that can be adjusted based on individual circumstances."
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Needs vs. Wants",
+              "definition": "Needs are essential expenses required for basic living (housing, utilities, groceries). Wants are non-essential expenses that enhance life but aren't required.",
+              "example": "A cell phone is a need; the latest iPhone upgrade is a want. Basic groceries are needs; specialty gourmet items are wants."
+            },
+            {
+              "term": "Emergency Fund",
+              "definition": "Money set aside specifically for unexpected expenses\u2014your financial safety net against life's uncertainties.",
+              "example": "Goal: 3-6 months of essential expenses. Even $500-$1,000 provides significant protection."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Why Budgeting Matters",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Take Control of Your Financial Life",
+            "paragraphs": [
+              "Many people live paycheck to paycheck not because they don't earn enough, but because they lack income management strategies.",
+              "A budget isn't restrictive\u2014it provides <strong>freedom</strong> by ensuring your money goes where YOU want it to go.",
+              "Without a plan, money disappears into small, untracked expenses that add up to thousands over a year."
+            ],
+            "highlightBox": {
+              "icon": "\ud83d\udca1",
+              "text": "People who use a budget are 50% more likely to achieve their financial goals."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "78%",
+                "label": "Americans live paycheck to paycheck",
+                "color": "amber"
+              },
+              {
+                "value": "56%",
+                "label": "Can't cover a $1,000 emergency",
+                "color": "amber"
+              },
+              {
+                "value": "$5,000+",
+                "label": "Average annual 'untracked' spending",
+                "color": "indigo"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Housing Costs: National vs. Local",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftPanel": {
+            "title": "National Average",
+            "content": "Avg 1-Bedroom Rent: $1,200/mo"
+          },
+          "rightPanel": {
+            "title": "In {{STATE_NAME}}",
+            "content": "Median Rent: ${{STATE_MEDIAN_RENT}}/mo"
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Needs vs. Wants: The Gray Areas",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "\u2713",
+            "title": "Clearly NEEDS",
+            "items": [
+              "Rent or mortgage payment",
+              "Basic utilities (electricity, water)",
+              "Groceries for home cooking",
+              "Health insurance premiums",
+              "Basic transportation to work",
+              "Minimum debt payments"
+            ]
+          },
+          "rightColumn": {
+            "icon": "\u25cb",
+            "title": "Clearly WANTS",
+            "items": [
+              "Streaming subscriptions ($45/month)",
+              "Dining out with friends",
+              "Latest smartphone upgrade",
+              "Designer clothing",
+              "Vacation travel",
+              "Premium gym membership"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "The Borderline Expenses",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Context Determines Category",
+            "paragraphs": [
+              "Some expenses aren't clearly needs or wants\u2014context matters:",
+              "<strong>Cell phone:</strong> Basic plan = need; unlimited premium plan = want",
+              "<strong>Car:</strong> Reliable transportation = need; luxury vehicle = want",
+              "<strong>Groceries:</strong> Basic food = need; organic gourmet items = want",
+              "<strong>Internet:</strong> Required for work = need; fastest gaming speed = want"
+            ],
+            "highlightBox": {
+              "icon": "\ud83d\udca1",
+              "text": "Ask yourself: 'Could I survive without this, or is there a cheaper alternative?' If yes, it's likely a want."
+            }
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "The 'Need Creep' Trap",
+              "color": "amber",
+              "items": [
+                "We often convince ourselves wants are needs",
+                "'I need coffee every morning' = want",
+                "'I need the latest phone' = want",
+                "Be honest with yourself about what's essential"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Your Financial Safety Net",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Why Emergency Funds Matter",
+            "paragraphs": [
+              "An emergency fund is your buffer against life's uncertainties. Without one, unexpected expenses become debt.",
+              "<strong>What emergencies look like:</strong>",
+              "\u2022 Medical bills not covered by insurance",
+              "\u2022 Car breakdown or major repair",
+              "\u2022 Job loss or reduced hours",
+              "\u2022 Home repairs (broken appliance, leak)",
+              "\u2022 Family emergency requiring travel"
+            ],
+            "highlightBox": {
+              "icon": "\ud83c\udfaf",
+              "text": "Start with $1,000, then build to 3-6 months of essential expenses."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "3-6 months",
+                "label": "Target emergency fund size",
+                "color": "emerald"
+              },
+              {
+                "value": "$1,000",
+                "label": "Good starter goal",
+                "color": "indigo"
+              },
+              {
+                "value": "40%",
+                "label": "Americans can't cover $400 emergency",
+                "color": "amber"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Pay Yourself First",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The Most Effective Savings Strategy",
+            "paragraphs": [
+              "Most people plan to save 'what's left over' at the end of the month. The problem? There's never anything left.",
+              "<strong>'Pay yourself first'</strong> means automatically setting aside savings BEFORE spending on anything else.",
+              "When savings is automatic, you adjust your spending to what remains\u2014and you won't miss what you never saw."
+            ],
+            "highlightBox": {
+              "icon": "\u2699\ufe0f",
+              "text": "Set up automatic transfers to savings on payday. Treat it like a bill that must be paid."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "65%",
+                "label": "Higher savings rate with automation",
+                "color": "emerald"
+              }
+            ],
+            "infoCard": {
+              "title": "Automation Tools:",
+              "color": "indigo",
+              "items": [
+                "Direct deposit split (paycheck \u2192 savings)",
+                "Automatic bank transfers",
+                "Round-up savings apps",
+                "Employer 401(k) contributions"
+              ]
+            }
+          }
+        }
+      },
+      "speakerNotes": "COMMON MISCONCEPTIONS TO ADDRESS:\n\n1. 'I don't make enough money to budget' → CLARIFY: Budgeting is MORE important with limited income. It ensures essential needs are covered first and prevents overdrafts or debt. The 50/30/20 percentages work at any income level—they're percentages, not fixed amounts.\n\n2. 'I'll save what's left at the end of the month' → CLARIFY: This rarely works—there's usually nothing 'left.' Pay yourself first by automating savings when income arrives. Treat savings like a bill that MUST be paid. Casey demonstrates this principle perfectly.\n\n3. 'A budget means I can't have any fun' → CLARIFY: The 50/30/20 rule allocates 30% specifically for wants and fun! Budgeting isn't about restriction—it's about intentional spending aligned with your priorities so you CAN enjoy guilt-free spending within limits.\n\nAddress these proactively, especially #2 which is the most common mistake people make."
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Making Your Budget Work",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Practical Steps for Success",
+          "paragraphs": [
+            "A budget only works if you actually follow it. Here's how to make it stick:"
+          ],
+          "bulletPoints": [
+            "<strong>Track everything:</strong> Use an app or spreadsheet\u2014you can't manage what you don't measure",
+            "<strong>Review weekly:</strong> 10 minutes per week keeps you on track and catches problems early",
+            "<strong>Build in flexibility:</strong> Perfect budgets fail; include a small 'miscellaneous' category",
+            "<strong>Adjust as needed:</strong> Life changes\u2014your budget should too (new job, move, family changes)",
+            "<strong>Celebrate wins:</strong> Hit your savings goal? Acknowledge it\u2014small wins build momentum"
+          ],
+          "keyPoint": {
+            "text": "\ud83d\udcf1 Popular budgeting tools: Mint, YNAB, EveryDollar, or a simple spreadsheet\u2014pick one and stick with it."
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Apply It",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "\ud83d\udc64",
+            "name": "Casey's Structured Approach",
+            "paragraphs": [
+              "Casey earns $3,000/month and immediately implemented the 50/30/20 rule: $1,500 for needs, $900 for wants, and $600 for savings.",
+              "Casey set up automatic transfers on payday, tracks expenses weekly with an app, and built a 3-month emergency fund ($4,500) in less than a year.",
+              "When Casey's car needed a $800 repair, the emergency fund covered it without stress or debt."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "positive",
+              "label": "Monthly Savings",
+              "value": "$600",
+              "detail": "20% automatically transferred"
+            },
+            {
+              "type": "positive",
+              "label": "Emergency Fund",
+              "value": "$4,500",
+              "detail": "3 months of expenses saved"
+            },
+            {
+              "type": "positive",
+              "label": "Credit Card Debt",
+              "value": "$0",
+              "detail": "Paid in full monthly"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Apply It",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "\ud83d\udc64",
+            "name": "Taylor's Unstructured Approach",
+            "paragraphs": [
+              "Taylor also earns $3,000/month but has no budget. Money comes in and gets spent\u2014Taylor isn't sure where it all goes.",
+              "Taylor says 'I'll save what's left over,' but there's never anything left. Small daily purchases ($5 coffee, $15 lunch) add up to $600/month.",
+              "When Taylor's car needed a $800 repair, it went on a credit card at 22% APR, joining $4,000 of existing debt."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "negative",
+              "label": "Monthly Savings",
+              "value": "$0",
+              "detail": "Nothing left to save"
+            },
+            {
+              "type": "negative",
+              "label": "Emergency Fund",
+              "value": "$0",
+              "detail": "No safety net"
+            },
+            {
+              "type": "negative",
+              "label": "Credit Card Debt",
+              "value": "$4,000+",
+              "detail": "Growing at 22% APR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "amber",
+      "content": {
+        "badge": "Discussion",
+        "question": "Casey and Taylor earn the same $3,000/month, but have completely different financial situations.<br><br>What specific behaviors and decisions explain these different outcomes?<br><br>Is it realistic to follow the 50/30/20 rule in {{STATE_NAME}} where rent averages ${{STATE_MEDIAN_RENT}}/month?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "indigo",
+      "content": {
+        "badge": "Reflection",
+        "question": "Think about your own spending habits:<br><br>What is ONE 'want' expense you could reduce to increase your savings?<br><br>How much could you realistically save per month if you made this change?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "emerald",
+      "content": {
+        "headerTitle": "Check Your Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "Explain the 50/30/20 rule and calculate the target amounts for someone earning $2,400/month."
+            },
+            {
+              "number": 2,
+              "question": "Why is the line between 'needs' and 'wants' not always clear? Give an example of an expense that could be either."
+            },
+            {
+              "number": 3,
+              "question": "Jamie earns $3,200/month and wants to build a $4,800 emergency fund. Saving 20% monthly, how long will it take?"
+            },
+            {
+              "number": 4,
+              "question": "What does 'pay yourself first' mean, and why is automating savings more effective than saving 'what's left over'?"
+            }
+          ]
+        }
+      },
+      "speakerNotes": "ANSWER KEY:\n\nQ1: The 50/30/20 rule allocates: 50% to needs (essentials), 30% to wants (discretionary), 20% to savings/debt. For $2,400/month: Needs = $1,200, Wants = $720, Savings = $480.\n\nQ2: Context matters for needs vs. wants. A cell phone is a need for communication/safety, but the latest premium model is a want. Basic groceries are needs, but specialty/gourmet items are wants. The base item may be necessary, but upgrades and premium versions are discretionary.\n\nQ3: Jamie's monthly savings: $3,200 × 0.20 = $640. Time to $4,800: $4,800 ÷ $640 = 7.5 months (or 8 months rounded up).\n\nQ4: 'Pay yourself first' means automatically setting aside savings BEFORE spending on anything else. Automating is more effective because: (1) There's usually nothing 'left over' if you wait until month-end, (2) Automation removes the need for willpower/discipline each time, (3) You adjust spending to what remains and won't miss what you never saw. Casey demonstrates this—Taylor tried to save 'what's left' and saved nothing."
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "The 50/30/20 Framework",
+              "description": "Allocate 50% to needs, 30% to wants, and 20% to savings/debt\u2014a simple rule that works at any income level."
+            },
+            {
+              "number": 2,
+              "title": "Needs vs. Wants Awareness",
+              "description": "Distinguishing needs from wants helps you make conscious spending decisions aligned with your values."
+            },
+            {
+              "number": 3,
+              "title": "Emergency Fund Protection",
+              "description": "Build 3-6 months of expenses as your safety net\u2014start with $1,000 and grow from there."
+            },
+            {
+              "number": 4,
+              "title": "Pay Yourself First",
+              "description": "Automate savings on payday\u2014you won't miss what you never saw, and consistency builds wealth."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Tomorrow's Challenge",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "\ud83d\udcca",
+            "title": "Personal Budget Builder",
+            "description": "You've learned the 50/30/20 framework\u2014but can you apply it to real life? Tomorrow you'll create your own personalized budget, classify your actual expenses, and identify specific changes to reach your savings goals."
+          },
+          "steps": [
+            "Calculate your 50/30/20 targets based on real or projected income",
+            "Classify your current expenses as needs vs. wants",
+            "Identify 'borderline' expenses and make conscious decisions",
+            "Find at least one expense to reduce and calculate monthly savings",
+            "Create an automation plan to 'pay yourself first'"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "\u00a9 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

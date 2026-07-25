@@ -1,0 +1,93 @@
+{
+  "totalStates": 4,
+  "validStates": 4,
+  "invalidStates": 0,
+  "warnings": 20,
+  "errors": 0,
+  "stateResults": {
+    "california": {
+      "file": "california.json",
+      "valid": true,
+      "errors": [],
+      "warnings": [
+        "taxes.local_sales_tax_min unusual value: 0.15 (typical range: 0-10)",
+        "taxes.property_tax_school_rate unusual value: 0.25 (typical range: 0-5)",
+        "taxes.assessment_percentage unusual value: 100 (typical range: 0-100)",
+        "taxes.homestead_exemption unusual value: 7000 (typical range: 0-500000)"
+      ],
+      "checks": {
+        "structure": true,
+        "required_fields": true,
+        "data_types": true,
+        "value_ranges": true,
+        "placeholders": true,
+        "data_freshness": true,
+        "urls": false
+      }
+    },
+    "florida": {
+      "file": "florida.json",
+      "valid": true,
+      "errors": [],
+      "warnings": [
+        "automotive.registration_annual unusual value: 44.5 (typical range: 0-500)",
+        "taxes.local_sales_tax_min unusual value: 0 (typical range: 0-10)",
+        "taxes.assessment_percentage unusual value: 100 (typical range: 0-100)",
+        "housing.median_home_price unusual value: 405000 (typical range: 50000-5000000)"
+      ],
+      "checks": {
+        "structure": true,
+        "required_fields": true,
+        "data_types": true,
+        "value_ranges": true,
+        "placeholders": true,
+        "data_freshness": true,
+        "urls": false
+      }
+    },
+    "texas": {
+      "file": "texas.json",
+      "valid": true,
+      "errors": [],
+      "warnings": [
+        "automotive.registration_initial unusual value: 50.75 (typical range: 0-1000)",
+        "taxes.local_sales_tax_min unusual value: 0 (typical range: 0-10)",
+        "taxes.property_tax_county_rate unusual value: 0.45 (typical range: 0-5)",
+        "taxes.assessment_percentage unusual value: 100 (typical range: 0-100)",
+        "housing.median_home_price unusual value: 303000 (typical range: 50000-5000000)"
+      ],
+      "checks": {
+        "structure": true,
+        "required_fields": true,
+        "data_types": true,
+        "value_ranges": true,
+        "placeholders": true,
+        "data_freshness": true,
+        "urls": false
+      }
+    },
+    "virginia": {
+      "file": "virginia.json",
+      "valid": true,
+      "errors": [],
+      "warnings": [
+        "automotive.registration_initial unusual value: 40.75 (typical range: 0-1000)",
+        "automotive.registration_annual unusual value: 40.75 (typical range: 0-500)",
+        "taxes.local_sales_tax_min unusual value: 0.7 (typical range: 0-10)",
+        "taxes.property_tax_school_rate unusual value: 0 (typical range: 0-5)",
+        "taxes.assessment_percentage unusual value: 100 (typical range: 0-100)",
+        "taxes.homestead_exemption unusual value: 0 (typical range: 0-500000)",
+        "housing.median_home_price unusual value: 388000 (typical range: 50000-5000000)"
+      ],
+      "checks": {
+        "structure": true,
+        "required_fields": true,
+        "data_types": true,
+        "value_ranges": true,
+        "placeholders": true,
+        "data_freshness": true,
+        "urls": false
+      }
+    }
+  }
+}

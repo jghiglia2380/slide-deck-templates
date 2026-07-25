@@ -1,0 +1,578 @@
+{
+  "metadata": {
+    "lChapter": "L-40",
+    "title": "Checking Out Charitable Groups",
+    "subtitle": "Evaluating Nonprofits to Maximize Your Impact",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Checking Out Charitable Groups",
+        "titleSize": "large",
+        "subtitle": "Evaluating Nonprofits to Maximize Your Impact"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "The Challenge",
+        "question": "How can you ensure your charitable donations<br>have the <em>greatest positive impact</em> and don't end up<br>supporting <em>ineffective or fraudulent</em> organizations?"
+      },
+      "headerColor": "amber",
+      "speakerNotes": "Read Maria's scenario. Discuss the two legitimate charities AND the suspicious phone call. Ask: \"How would you know if a charity is trustworthy?\" Note that even well-intentioned donors can be deceived without proper research."
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Understand",
+              "description": "Recognize the importance of researching charitable organizations before donating money, time, or resources."
+            },
+            {
+              "number": 2,
+              "verb": "Evaluate",
+              "description": "Assess the transparency and financial health of nonprofit organizations using available tools and resources."
+            },
+            {
+              "number": 3,
+              "verb": "Apply",
+              "description": "Use the PACED decision-making model to compare and select charitable organizations to support."
+            },
+            {
+              "number": 4,
+              "verb": "Identify",
+              "description": "Recognize red flags and warning signs of ineffective or potentially fraudulent charitable organizations."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Nonprofit Organization",
+              "definition": "A tax-exempt organization that uses surplus revenue to achieve its mission rather than distributing profits to owners or shareholders.",
+              "example": "Charities, foundations, educational institutions, religious organizations"
+            },
+            {
+              "term": "Tax-Exempt Status",
+              "definition": "IRS designation (typically 501(c)(3)) that allows organizations to receive tax-deductible donations and avoid paying federal income tax.",
+              "example": "Donations to 501(c)(3) organizations can be deducted from your taxable income"
+            },
+            {
+              "term": "Form 990",
+              "definition": "Annual information return that nonprofits must file with the IRS, publicly available and showing financial details and programs.",
+              "example": "Shows revenue, expenses, executive compensation, and program descriptions"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Program Expense Ratio",
+              "definition": "The percentage of total expenses that go directly to programs and services rather than administrative costs or fundraising.",
+              "example": "If a charity spends $80 on programs for every $100 in expenses, the program expense ratio is 80%"
+            },
+            {
+              "term": "Fundraising Efficiency",
+              "definition": "The cost required to raise each dollar of donations, measuring how effectively an organization acquires funding.",
+              "example": "If it costs $0.20 to raise $1.00, the fundraising efficiency is strong"
+            },
+            {
+              "term": "Transparency",
+              "definition": "The degree to which a nonprofit openly shares financial information, program outcomes, and governance details with the public.",
+              "example": "Publishing annual reports, Form 990s, and impact measurements on their website"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Why Research Charities?",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Not All Charities Are Equal",
+            "paragraphs": [
+              "Charitable giving is powerful, but not all organizations use donations with the same <strong>efficiency or effectiveness</strong>.",
+              "Some may allocate large portions of funds to <strong>administrative costs</strong> rather than direct programs.",
+              "Others might not be <strong>legitimate at all</strong>—charity scams cost Americans hundreds of millions of dollars each year."
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "By developing research skills, you become a more informed and impactful donor."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "1.5M+",
+                "label": "Registered US Nonprofits",
+                "color": "teal"
+              },
+              {
+                "value": "$200M+",
+                "label": "Annual Charity Fraud Losses",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "What Transparency Reveals:",
+              "color": "green",
+              "items": [
+                "How donations are actually used",
+                "Program outcomes and impact",
+                "Administrative/fundraising costs",
+                "Executive compensation"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Charity Evaluation Tools",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Independent Resources for Research",
+          "paragraphs": [
+            "Several organizations provide free tools to help you research and compare charitable groups:"
+          ],
+          "bulletPoints": [
+            "<strong>🌟 Charity Navigator:</strong> Star ratings, financial health metrics, 9,000+ charities evaluated",
+            "<strong>📋 GuideStar:</strong> Access to Form 990 tax returns, transparency ratings, 1.8M+ organizations",
+            "<strong>✓ BBB Wise Giving Alliance:</strong> Evaluates against 20 accountability standards",
+            "<strong>📊 CharityWatch:</strong> Grades on financial efficiency, highlights concerns like excessive reserves"
+          ],
+          "keyPoint": "💡 Use multiple sources—each tool evaluates charities using different criteria, giving you a more complete picture."
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Evaluating Financial Health",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Key Metrics to Review",
+            "paragraphs": [
+              "<strong>Program Expense Ratio:</strong> What % of funds goes directly to programs vs. overhead? (70%+ is generally good)",
+              "<strong>Fundraising Efficiency:</strong> How much does it cost to raise $1? (Under $0.25 is efficient)",
+              "<strong>Working Capital:</strong> Does the organization have enough resources to sustain operations?",
+              "<strong>Executive Compensation:</strong> Are leadership salaries reasonable for the organization's size?"
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "Remember: Some overhead is necessary for effective operations. The key is finding the right balance."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "70%+",
+                "label": "Good Program Expense Ratio",
+                "color": "green"
+              },
+              {
+                "value": "<$0.25",
+                "label": "Efficient Fundraising Cost per $1",
+                "color": "teal"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "The PACED Decision-Making Model",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "A Structured Approach for Comparing Charities",
+          "paragraphs": [
+            "When choosing between multiple charitable organizations, use the PACED model to make an informed decision:"
+          ],
+          "bulletPoints": [
+            "<strong>P</strong>roblem: Define what cause you want to support",
+            "<strong>A</strong>lternatives: Identify 2-3 organizations working on that cause",
+            "<strong>C</strong>riteria: Determine what matters most to you (efficiency, transparency, local vs. global, etc.)",
+            "<strong>E</strong>valuate: Research each organization using charity evaluation tools",
+            "<strong>D</strong>ecide: Choose the organization that best meets your criteria"
+          ],
+          "keyPoint": "💡 Your criteria might include: program effectiveness, financial health, local vs. global impact, transparency, alignment with values."
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Red Flags and Warning Signs",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Watch Out For These Red Flags",
+            "paragraphs": [
+              "🚩 <strong>Pressure for immediate donations:</strong> Legitimate charities give you time to research",
+              "🚩 <strong>Vague or emotional appeals:</strong> Look for specific program details and outcomes",
+              "🚩 <strong>Refusal to provide documentation:</strong> Legitimate charities share financial statements",
+              "🚩 <strong>Name confusion:</strong> Scammers use names similar to well-known charities",
+              "🚩 <strong>Cash-only donations:</strong> Legitimate charities accept checks and credit cards with receipts"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "#1",
+                "label": "Scam Tactic: Pressure for Immediate Donations",
+                "color": "rose"
+              }
+            ],
+            "infoCard": {
+              "title": "✓ Legitimate Charities Will:",
+              "color": "green",
+              "items": [
+                "Give you time to research",
+                "Provide detailed program info",
+                "Share financial statements",
+                "Have verifiable tax-exempt status"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Verifying Tax-Exempt Status",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "How to Confirm Legitimacy",
+            "paragraphs": [
+              "Before donating, always verify that an organization is a legitimate 501(c)(3) nonprofit:",
+              "",
+              "<strong>1. IRS Tax Exempt Organization Search:</strong> Use the IRS online database to confirm tax-exempt status",
+              "<strong>2. Request EIN (Employer Identification Number):</strong> Legitimate nonprofits will provide this",
+              "<strong>3. Check State Registration:</strong> Most states require charities to register before soliciting donations",
+              "<strong>4. Review Form 990:</strong> Available on GuideStar and the organization's website"
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "If an organization refuses to provide their EIN or tax documentation, that's a major red flag."
+            }
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "Where to Verify:",
+              "color": "blue",
+              "items": [
+                "IRS.gov Tax Exempt Search",
+                "GuideStar.org",
+                "State Attorney General's Office",
+                "BBB.org/charity"
+              ]
+            }
+          }
+        }
+      },
+      "speakerNotes": "COMMON MISCONCEPTIONS:\n• \"\"The lowest overhead percentage is always the best charity.\"\" → Extremely low overhead can indicate underinvestment in staff, research, or impact measurement. What matters is results, not just efficiency ratios.\n• \"\"If they called me, they must be legitimate.\"\" → Phone solicitation is a common scam tactic. Legitimate charities rarely pressure for immediate donations. Always research independently before giving.\n• \"\"I can trust charities with names I recognize.\"\" → Scammers deliberately use names similar to well-known organizations (e.g., \"American Cancer Fund\" vs. \"American Cancer Society\"). Always verify the exact organization."
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Impact Measurement",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Does the Charity Measure Its Impact?",
+            "paragraphs": [
+              "Beyond financial metrics, effective charities track and report their <strong>actual impact</strong>:",
+              "",
+              "• How many people were served?",
+              "• What specific outcomes were achieved?",
+              "• How do results compare to goals?",
+              "• What evidence supports their effectiveness?"
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "The best charities publish annual impact reports with specific metrics and stories demonstrating real results."
+            }
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "Strong Impact Indicators:",
+              "color": "teal",
+              "items": [
+                "Specific measurable outcomes",
+                "Third-party evaluations",
+                "Published impact reports",
+                "Transparent about challenges",
+                "Clear theory of change"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Apply It",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "🌱",
+            "name": "Maria's PACED Analysis",
+            "paragraphs": [
+              "Maria has $500 to donate for environmental conservation. She wants to make sure her money has real impact, so she researched two organizations using evaluation tools:",
+              "",
+              "<strong>EcoAction:</strong> 82% to programs, local focus in her state, 15 years operating, strong financial health with steady growth, limited published outcome data",
+              "",
+              "<strong>Green Planet Alliance:</strong> 75% to programs, global policy focus on climate legislation, 8 years operating, detailed impact reports with specific metrics, experiencing rapid growth",
+              "",
+              "Using the PACED model, Maria decided EcoAction better aligned with her values—she prefers supporting local environmental efforts with lower overhead and a proven track record, even though they have less detailed reporting."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Research Time",
+              "value": "3 Hours",
+              "detail": "Thorough evaluation using multiple tools"
+            },
+            {
+              "type": "after",
+              "label": "Confidence Level",
+              "value": "High",
+              "detail": "Informed decision based on her criteria"
+            },
+            {
+              "type": "after",
+              "label": "Selected Organization",
+              "value": "EcoAction",
+              "detail": "82% program ratio, local focus, established"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Apply It",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "🚨",
+            "name": "John Identifies a Scam",
+            "paragraphs": [
+              "John received a phone call from \"Children's Cancer Relief Fund\" pressuring him for an immediate credit card donation. The caller mentioned a \"matching gift deadline\" expiring in 30 minutes and used high-pressure emotional appeals.",
+              "",
+              "<strong>Instead of donating immediately, John:</strong>",
+              "",
+              "1. Asked for the organization's website and EIN (they became evasive)",
+              "2. Searched the organization name on Charity Navigator (not found)",
+              "3. Checked the IRS Tax Exempt Organization Search (not registered)",
+              "4. Reported the call to the Federal Trade Commission",
+              "",
+              "John's research skills protected him from a $250 scam. He later donated that amount to a verified children's cancer charity with a 4-star Charity Navigator rating."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Pressure Tactic",
+              "value": "30-Min Deadline",
+              "detail": "Fake urgency to prevent research"
+            },
+            {
+              "type": "after",
+              "label": "Money Saved",
+              "value": "$250",
+              "detail": "Protected from fraudulent donation"
+            },
+            {
+              "type": "after",
+              "label": "Real Impact",
+              "value": "$250",
+              "detail": "Donated to verified 4-star charity instead"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "amber",
+      "content": {
+        "badge": "Discussion",
+        "question": "Imagine you received a $1,000 inheritance that must be donated to charity.<br><br>What specific criteria would you use to evaluate organizations?<br>How would you balance admin costs vs. program effectiveness vs. alignment with your values?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "indigo",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "Have you or your family ever researched a charity before donating?<br><br>What tools or methods did you use?<br>After learning about charity evaluation, what would you do differently next time?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "emerald",
+      "content": {
+        "headerTitle": "Check Your Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What are three free tools you can use to research charitable organizations before donating?"
+            },
+            {
+              "number": 2,
+              "question": "Explain what the Program Expense Ratio measures and why it matters to donors."
+            },
+            {
+              "number": 3,
+              "question": "List three red flags that might indicate a charity is ineffective or fraudulent."
+            },
+            {
+              "number": 4,
+              "question": "How does the PACED model help you make better charitable giving decisions?"
+            }
+          ]
+        }
+      },
+      "speakerNotes": "ASSESSMENT ANSWER KEY:\nQ2 Red Flags:Any FOUR of: pressure for immediate donations, refuses to provide detailed information, names similar to well-known organizations, no tax ID or proof of 501(c)(3) status, no financial transparency, vague mission, unusually high administrative costs, no physical address, new/hastily created website.\nCYU 1:B (The percentage of funds going directly to programs vs. overhead)\nCYU 2:C (Being new is not a red flag; many legitimate charities are young. The other options ARE legitimate concerns.)\nCYU 3:Form 990 contains: revenue sources, expenses/program costs, assets and liabilities, executive compensation, mission and program activities.\nCYU 4:A lower program expense ratio might be justified by: better impact measurement, research-based approaches, advocacy that creates systemic change, professional staff for complex issues, or transparency about how overhead improves outcomes."
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Research Before Giving",
+              "description": "Not all charities are equally effective—researching ensures your donations have real impact"
+            },
+            {
+              "number": 2,
+              "title": "Use Evaluation Tools",
+              "description": "Charity Navigator, GuideStar, and BBB Wise Giving provide free research resources"
+            },
+            {
+              "number": 3,
+              "title": "Watch for Red Flags",
+              "description": "Pressure tactics, lack of transparency, and vague missions are warning signs"
+            },
+            {
+              "number": 4,
+              "title": "Apply PACED Model",
+              "description": "Use a structured decision process to compare organizations against YOUR criteria"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Tomorrow's Challenge",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "🔍",
+            "title": "Charity Research Activity",
+            "description": "Practice researching a real charitable organization to ensure your future donations have maximum positive impact. Choose a charity you're familiar with or interested in supporting, then use evaluation tools to gather information."
+          },
+          "steps": [
+            "Choose an organization to research",
+            "Look up their Charity Navigator rating",
+            "Find their Form 990 on GuideStar",
+            "Calculate program expense ratio",
+            "Decide: Would you support this charity?"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "\"Informed giving multiplies your impact\"",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

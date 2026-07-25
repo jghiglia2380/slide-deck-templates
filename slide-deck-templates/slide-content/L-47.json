@@ -1,0 +1,551 @@
+{
+  "metadata": {
+    "lChapter": "L-47",
+    "title": "Introduction to Investment Types",
+    "subtitle": "Understanding Stocks, Bonds, Mutual Funds, and ETFs to Build Long-Term Wealth",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Introduction to Investment Types",
+        "titleSize": "large",
+        "subtitle": "Understanding Stocks, Bonds, Mutual Funds, and ETFs to Build Long-Term Wealth"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "The Challenge",
+        "question": "Priya, 24, landed her first full-time job earning <em>$45,000 annually</em>. Feeling overwhelmed by investment choices, she researched simple strategies.<br><br>She decided to invest 15% of her income (<em>$563/month</em>) split between two low-cost index ETFs: 80% stocks, 20% bonds\u2014both with expense ratios under 0.05%.<br><br>By age 30, her disciplined approach built a portfolio worth <em>over $52,000</em> despite market volatility\u2014all from a simple two-fund strategy.<br><br><strong>How can understanding different investment types help you build wealth aligned with your financial goals and risk tolerance?</strong>"
+      },
+      "headerColor": "amber",
+      "notes": "**Discussion Prompts:**\n- Why do you think Priya chose a simple two-fund approach rather than trying to pick individual stocks?\n- What advantages do low-cost index ETFs provide for beginning investors?\n- How does understanding investment types remove the intimidation from investing?"
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Analyze",
+              "description": "Analyze the characteristics and functions of major investment types including stocks, bonds, mutual funds, and ETFs."
+            },
+            {
+              "number": 2,
+              "verb": "Compare",
+              "description": "Compare the risk-return profiles of different investment vehicles and how they align with financial goals."
+            },
+            {
+              "number": 3,
+              "verb": "Evaluate",
+              "description": "Evaluate how different investment types fit various time horizons\u2014from short-term goals to retirement."
+            },
+            {
+              "number": 4,
+              "verb": "Calculate",
+              "description": "Calculate potential returns and assess the impact of fees on long-term wealth accumulation."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Stock (Equity)",
+              "definition": "Ownership shares in a company that entitle you to a portion of the company's assets and earnings.",
+              "example": "Owning 100 shares of Apple means you own a tiny piece of the company and may receive dividends."
+            },
+            {
+              "term": "Bond (Fixed Income)",
+              "definition": "A loan you make to a government or corporation that pays regular interest and returns your principal at maturity.",
+              "example": "A $1,000 10-year Treasury bond paying 4% gives you $40/year in interest, then returns your $1,000."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Mutual Fund",
+              "definition": "An investment vehicle that pools money from many investors to purchase a diversified portfolio of stocks, bonds, or other securities.",
+              "example": "A growth mutual fund might hold 100+ stocks, giving you instant diversification with one purchase."
+            },
+            {
+              "term": "ETF (Exchange-Traded Fund)",
+              "definition": "Similar to a mutual fund but trades on exchanges like stocks; typically has lower fees and often tracks a market index.",
+              "example": "A total stock market ETF with 0.03% fees gives you exposure to thousands of companies for pennies."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Why Investing Matters",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The Power of Market Returns",
+            "paragraphs": [
+              "Historically, the S&P 500 has averaged approximately <strong>10% annual returns</strong>\u2014but with substantial year-to-year volatility.",
+              "This means money invested in the stock market has historically doubled roughly every 7-8 years.",
+              "The key is time in the market, not timing the market. Consistent investing over decades builds serious wealth."
+            ],
+            "highlightBox": {
+              "icon": "\ud83d\udca1",
+              "text": "$500/month invested at 8% for 30 years becomes over $700,000\u2014from only $180,000 in contributions."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "10%",
+                "label": "Historical S&P 500 average return",
+                "color": "emerald"
+              },
+              {
+                "value": "7-8 yrs",
+                "label": "Time to double your money",
+                "color": "indigo"
+              },
+              {
+                "value": "4x",
+                "label": "Growth from compound interest over 30 years",
+                "color": "amber"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Stocks vs. Bonds",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "\ud83d\udcc8",
+            "title": "Stocks (Ownership)",
+            "items": [
+              "You become a part-owner of the company",
+              "Higher potential returns (~10% historical)",
+              "Higher volatility\u2014can lose 30%+ in bad years",
+              "No guaranteed returns or income",
+              "Best for long-term goals (10+ years)",
+              "Growth comes from price appreciation + dividends"
+            ]
+          },
+          "rightColumn": {
+            "icon": "\ud83d\udcdc",
+            "title": "Bonds (Lending)",
+            "items": [
+              "You lend money to a borrower",
+              "Lower potential returns (~3-5% historical)",
+              "Lower volatility\u2014more stable value",
+              "Predictable interest payments",
+              "Best for stability or near-term goals",
+              "Returns come from regular interest payments"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Mutual Funds vs. ETFs",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "\ud83d\udce6",
+            "title": "Mutual Funds",
+            "items": [
+              "Trades once daily at closing price",
+              "Often have minimums ($1,000+)",
+              "Average expense ratio: 0.5-1.5%",
+              "May have sales loads (commissions)",
+              "Many are actively managed",
+              "Automatic dividend reinvestment easy"
+            ]
+          },
+          "rightColumn": {
+            "icon": "\u26a1",
+            "title": "ETFs",
+            "items": [
+              "Trades throughout the day like stocks",
+              "Buy as little as one share",
+              "Average expense ratio: 0.03-0.25%",
+              "No sales loads",
+              "Most track indexes (passive)",
+              "More tax-efficient structure"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "The Power of Diversification",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "\"Don't Put All Your Eggs in One Basket\"",
+          "paragraphs": [
+            "Diversification spreads investments across different asset types, industries, and securities to reduce risk."
+          ],
+          "bulletPoints": [
+            "<strong>Why it works:</strong> When one investment falls, others may rise or stay stable, smoothing overall returns.",
+            "<strong>Single stock risk:</strong> One company can go bankrupt (Enron, Lehman Brothers). An index fund holds thousands.",
+            "<strong>Asset class diversification:</strong> Stocks and bonds often move in opposite directions\u2014when stocks crash, bonds often rise.",
+            "<strong>Geographic diversification:</strong> US, international, and emerging markets don't always move together.",
+            "<strong>The \"free lunch\":</strong> Diversification can reduce risk without reducing expected returns\u2014rare in investing."
+          ],
+          "keyPoint": {
+            "text": "\ud83c\udfaf A total stock market index fund gives you instant diversification across thousands of companies for less than 0.10% in fees."
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "The Devastating Impact of Fees",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Small Percentages, Massive Impact",
+            "paragraphs": [
+              "Fees compound against you just like returns compound for you.",
+              "<strong>Example: $500/month for 30 years at 8%:</strong>",
+              "\u2022 0.03% fee (index ETF): <strong>$733,904</strong>",
+              "\u2022 0.75% fee (avg mutual fund): <strong>$654,165</strong>",
+              "\u2022 1.25% fee (high-cost fund): <strong>$600,430</strong>",
+              "That 1.22% fee difference costs you <strong>$133,474</strong>\u2014over 22 years of contributions!"
+            ],
+            "highlightBox": {
+              "icon": "\u26a0\ufe0f",
+              "text": "Always check expense ratios before investing. A 1% fee difference can cost you hundreds of thousands."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$133,474",
+                "label": "Cost of 1.22% higher fees over 30 years",
+                "color": "amber"
+              },
+              {
+                "value": "0.03%",
+                "label": "Typical index ETF fee",
+                "color": "emerald"
+              },
+              {
+                "value": "1.25%+",
+                "label": "High-cost active fund fees",
+                "color": "amber"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Matching Investments to Time Horizons",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Your Time Horizon Determines Your Risk Capacity",
+          "paragraphs": [
+            "The amount of time before you need your money determines how much volatility you can tolerate:"
+          ],
+          "bulletPoints": [
+            "<strong>40+ years (retirement in your 20s):</strong> 90% stocks / 10% bonds\u2014aggressive growth. You have decades to recover from downturns.",
+            "<strong>20-30 years (mid-career retirement):</strong> 80% stocks / 20% bonds\u2014growth-focused. Still plenty of time for compounding.",
+            "<strong>10-20 years (approaching retirement):</strong> 60% stocks / 40% bonds\u2014balanced. Begin protecting accumulated wealth.",
+            "<strong>5-10 years (near-term goal):</strong> 40% stocks / 60% bonds\u2014conservative. Reduce volatility as goal approaches.",
+            "<strong>Under 5 years (short-term goal):</strong> 20% stocks / 80% bonds or cash\u2014preservation. Can't afford a market crash."
+          ],
+          "keyPoint": {
+            "text": "\ud83d\udcc5 The younger you are, the more stocks you can hold. As you age, gradually shift toward bonds."
+          }
+        }
+      },
+      "notes": "## Common Misconceptions\n\n| Misconception | Clarification |\n|---------------|---------------|\n| \"Investing is only for wealthy people.\" | Many ETFs can be purchased for under $100 per share, and some brokerages offer fractional shares. Starting with $50-100/month is perfectly reasonable and compounds significantly over time. |\n| \"You need to pick individual stocks to make money.\" | Research consistently shows that most professional investors can't beat simple index funds over time. Low-cost index funds outperform most active stock pickers after fees. |\n| \"Bonds are always safe.\" | Bonds carry interest rate risk (prices fall when rates rise) and credit risk (issuer might default). They're typically less volatile than stocks but not risk-free. |"
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Simple Investment Strategies That Work",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Evidence-Based Approaches",
+            "paragraphs": [
+              "<strong>The Three-Fund Portfolio:</strong>",
+              "1. Total US Stock Market Index",
+              "2. Total International Stock Index",
+              "3. Total US Bond Market Index",
+              "This simple approach gives you global diversification with minimal effort and fees under 0.10%.",
+              "<strong>Target-Date Funds:</strong>",
+              "Pick your retirement year, invest, done. The fund automatically shifts from stocks to bonds as you age."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "Priya's Simple Strategy",
+              "color": "indigo",
+              "items": [
+                "80% Total Stock Market ETF",
+                "20% Total Bond Market ETF",
+                "Automated $563/month contributions",
+                "Total expense ratio: 0.04%",
+                "Result: $52,000+ by age 30"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Apply It",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "\ud83d\udc68\u200d\ud83c\udf93",
+            "name": "Alex's Retirement Start",
+            "paragraphs": [
+              "Alex, 22, just started his first job. He's enrolled in his company's 401(k) with a 4% employer match.",
+              "He's choosing between a target-date 2065 fund (0.15% fee) or selecting individual funds himself."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "positive",
+              "label": "Best Move",
+              "value": "Contribute 4%+ minimum",
+              "detail": "Get the full employer match (free money!)"
+            },
+            {
+              "type": "positive",
+              "label": "Simple Option",
+              "value": "Target-Date 2065",
+              "detail": "Auto-rebalances, one decision"
+            },
+            {
+              "type": "positive",
+              "label": "Time Advantage",
+              "value": "43 years to compound",
+              "detail": "Can handle 90% stock allocation"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Apply It",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "\ud83c\udfe0",
+            "name": "Jordan's House Fund",
+            "paragraphs": [
+              "Jordan, 28, is saving for a house down payment. She wants to buy in 3 years and has $15,000 saved.",
+              "She's wondering whether to invest it in stocks for potential growth or keep it somewhere safer."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "negative",
+              "label": "Stock Risk",
+              "value": "Could lose 30%+",
+              "detail": "A crash could delay purchase by years"
+            },
+            {
+              "type": "positive",
+              "label": "Better Choice",
+              "value": "High-Yield Savings or CDs",
+              "detail": "4-5% return with no loss risk"
+            },
+            {
+              "type": "before",
+              "label": "Key Principle",
+              "value": "Short Timeline = Low Risk",
+              "detail": "3 years is too short for stock volatility"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "amber",
+      "content": {
+        "badge": "Discussion",
+        "question": "Why do financial advisors typically recommend younger investors hold more stocks and older investors hold more bonds?<br><br>How does your <em>time horizon</em> affect your ability to recover from market downturns?<br><br>At what point would you start shifting from stocks to bonds?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "indigo",
+      "content": {
+        "badge": "Reflection",
+        "question": "Diversification is often called \"the only free lunch in investing.\"<br><br>How does spreading investments across different asset types, industries, and geographies reduce risk without reducing expected returns?<br><br>Why is a single stock riskier than an index fund holding thousands of stocks?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "emerald",
+      "content": {
+        "headerTitle": "Check Your Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "Which investment type typically offers the highest long-term returns but with greater volatility: stocks, bonds, or CDs?"
+            },
+            {
+              "number": 2,
+              "question": "What is the primary advantage of ETFs over traditional mutual funds?"
+            },
+            {
+              "number": 3,
+              "question": "A 1% fee difference over 30 years on $500/month investments costs approximately how much?"
+            },
+            {
+              "number": 4,
+              "question": "Why should someone saving for a goal 3 years away avoid investing heavily in stocks?"
+            }
+          ]
+        }
+      },
+      "notes": "## Answer Key\n\n**Question 1:** B (Stocks—historically ~10% average returns but with significant year-to-year swings)\n\n**Question 2:** B (Lower fees and intraday trading flexibility; ETFs often charge 0.03-0.25% vs. 0.5-1.5% for mutual funds)\n\n**Question 3:** Approximately $133,000. Using the fee comparison: Low-cost ETF (0.03%) final value: $733,904; High-cost fund (1.25%) final value: $600,430. Difference: $133,474 — equivalent to about 22 years of contributions lost to fees!\n\n**Question 4:** With only 3 years, there isn't enough time to recover from a market downturn. Stocks can lose 30%+ in a bad year. A crash right before needing the money could delay the goal by years. Short timelines require stable investments like bonds, CDs, or high-yield savings.\n\n**Additional Context:**\n- Diversification reduces risk because different assets don't move together. When stocks fall, bonds often rise. When one industry struggles, others may thrive. This smooths out returns without reducing expected growth—you get risk reduction \"for free.\"\n- Young investors have time to recover from market downturns, so they can accept volatility for higher returns. Older investors need to protect accumulated wealth and have less time to recover, so they shift toward stable bonds.\n- Personal investment plans should include: realistic assessment of time horizon, consideration of risk tolerance, recognition of need for diversification, and specific steps like opening an account or starting with a target-date fund."
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Stocks for Growth, Bonds for Stability",
+              "description": "Stocks offer higher returns with more volatility; bonds provide stability and income. Mix based on your timeline."
+            },
+            {
+              "number": 2,
+              "title": "ETFs Beat High-Fee Funds",
+              "description": "Low-cost index ETFs outperform most actively managed funds over time\u2014largely because of lower fees."
+            },
+            {
+              "number": 3,
+              "title": "Diversify to Reduce Risk",
+              "description": "Spreading investments across asset types, industries, and geographies reduces risk without reducing expected returns."
+            },
+            {
+              "number": 4,
+              "title": "Match Time Horizon to Risk",
+              "description": "Longer time horizons allow more stock exposure; shorter timelines require more conservative investments."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Tomorrow's Challenge",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "\ud83d\udcca",
+            "title": "Build Your First Portfolio",
+            "description": "You've learned about investment types\u2014now design a portfolio that matches YOUR goals and timeline."
+          },
+          "steps": [
+            "Define your investment goal and time horizon",
+            "Determine your appropriate stock/bond allocation",
+            "Research 2-3 low-cost index ETFs that fit your allocation",
+            "Compare expense ratios and calculate 30-year fee impact",
+            "Create your investment plan with specific fund selections"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "\u00a9 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

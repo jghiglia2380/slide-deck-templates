@@ -1,0 +1,567 @@
+{
+  "metadata": {
+    "lChapter": "L-17",
+    "title": "Time is Money",
+    "subtitle": "Developing a Savings and Investment Strategy",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Time is Money",
+        "titleSize": "large",
+        "subtitle": "Developing a Savings and Investment Strategy"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "The Challenge",
+        "question": "If I gave you <em>$1,000 today</em>, what would you do with it? What if I gave you <em>$10,000</em> but you couldn't touch it for 20 years? <br><br> What if I gave you <em>$10,000</em> but you couldn't touch it for 20 years?"
+      },
+      "headerColor": "amber",
+      "notes": "DISCUSSION PROMPTS:\nTHE CHALLENGE (5 min):\n‚Ä¢ Read Alex's dual-goal scenario. Poll: \"Should Alex use the same strategy for both goals?\"\n‚Ä¢ Emphasize that time horizon is the key differentiator‚Äîsame person, different strategies.\n‚Ä¢ Preview that today combines all previous concepts into actionable strategies.\n"
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Understand",
+              "description": "Recognize how time horizon affects investment strategy and why different goals require different approaches."
+            },
+            {
+              "number": 2,
+              "verb": "Identify",
+              "description": "Determine your personal risk tolerance and how it should guide your investment choices."
+            },
+            {
+              "number": 3,
+              "verb": "Analyze",
+              "description": "Evaluate how inflation erodes purchasing power and why investments need to outpace it."
+            },
+            {
+              "number": 4,
+              "verb": "Apply",
+              "description": "Match appropriate savings and investment strategies to specific financial goals based on timeline."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Time Horizon",
+              "definition": "The length of time before you need to access your invested money‚Äîdetermines how much risk you can take.",
+              "example": "Short (1-3 yrs), Medium (3-10 yrs), Long (10+ yrs)"
+            },
+            {
+              "term": "Risk Tolerance",
+              "definition": "Your personal comfort level with financial uncertainty and potential losses in exchange for higher returns.",
+              "example": "Conservative, Moderate, Aggressive‚Äîbased on age, goals, and personality"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Inflation",
+              "definition": "The gradual increase in prices over time that reduces your money's purchasing power‚Äîthe \"silent tax.\"",
+              "example": "At 3% inflation, $100 today buys only $74 worth of goods in 10 years"
+            },
+            {
+              "term": "Asset Classes",
+              "definition": "Categories of investments with similar characteristics: Fixed Income (bonds, CDs) vs. Equities (stocks, funds).",
+              "example": "Fixed income = stable, lower returns. Equities = volatile, higher potential returns"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Understanding Time Horizon",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Your Blueprint for Financial Strategy",
+            "paragraphs": [
+              "How you save and invest depends on <strong>when you need the money</strong>. This is the most important factor in choosing a strategy.",
+              "<strong>Short-term (1-3 years):</strong> Favor safety and liquidity‚Äîyou can't afford to lose value right before you need it.",
+              "<strong>Medium-term (3-10 years):</strong> Balance growth and protection‚Äîsome risk is acceptable.",
+              "<strong>Long-term (10+ years):</strong> Focus on growth potential‚Äîtime to recover from market dips."
+            ],
+            "highlightBox": {
+              "icon": "üí°",
+              "text": "‚è±Ô∏è The longer your time horizon, the more risk you can afford to take!"
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "1-3 yrs",
+                "label": "Safety First",
+                "color": "teal"
+              },
+              {
+                "value": "3-10 yrs",
+                "label": "Balanced Approach",
+                "color": "purple"
+              },
+              {
+                "value": "10+ yrs",
+                "label": "Growth Focus",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Asset Classes: Fixed Income vs. Equities",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "Ì†º",
+            "title": "Ìø¶ Fixed Income",
+            "items": [
+              "Bonds, CDs, savings accounts",
+              "Lower risk to principal",
+              "Predictable income stream",
+              "Lower potential returns (3-6%)",
+              "Better for shorter time horizons",
+              "Stable value, less volatility"
+            ]
+          },
+          "rightColumn": {
+            "icon": "Ì†Ω",
+            "title": "Ì≥à Equities",
+            "items": [
+              "Stocks, mutual funds, ETFs",
+              "Higher risk (value fluctuates)",
+              "Variable returns based on market",
+              "Higher potential returns (7-10%+)",
+              "Better for longer time horizons",
+              "More volatile, but growth potential"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "The Hidden Threat: Inflation",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Your Money's Purchasing Power Shrinks",
+            "paragraphs": [
+              "Inflation is like a <strong>silent tax</strong> on your savings. Even when your account balance stays the same, your money buys less each year.",
+              "At 3% annual inflation:"
+            ],
+            "highlightBox": {
+              "icon": "üí°",
+              "text": "‚ö†Ô∏è Long-term investments MUST outpace inflation or you're actually losing money in real terms!"
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "3%",
+                "label": "Average Annual Inflation",
+                "color": "rose"
+              },
+              {
+                "value": "-26%",
+                "label": "Buying Power Lost in 10 Years",
+                "color": "purple"
+              }
+            ],
+            "infoCard": {
+              "title": "Why This Matters:",
+              "color": "blue",
+              "items": [
+                "Savings accounts earning 1% lose to inflation",
+                "You need returns > 3% just to break even",
+                "Long-term goals need growth investments"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Know Your Risk Tolerance",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Your Comfort Level with Uncertainty",
+          "paragraphs": [
+            "Risk tolerance is personal‚Äîit depends on your age, financial situation, goals, and personality. Understanding yourself helps you choose investments you can stick with."
+          ],
+          "bulletPoints": [
+            "<strong>Conservative:</strong> Prioritizes protection of principal. Accepts lower returns to avoid losses. Better for those near retirement or needing money soon.",
+            "<strong>Moderate:</strong> Balanced approach. Accepts some market volatility for better long-term returns. Most common for mid-career investors.",
+            "<strong>Aggressive:</strong> Focuses on maximum growth. Can tolerate significant short-term losses. Best for young investors with long time horizons.",
+            "<strong>Key insight:</strong> Your risk tolerance should match your time horizon‚Äîlonger horizon = can handle more risk"
+          ],
+          "keyPoint": {
+            "text": "üéØ The best investment strategy is one you'll actually stick with through market ups and downs!"
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Diversification: Don't Put All Eggs in One Basket",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Reducing Risk Through Variety",
+            "paragraphs": [
+              "<strong>Diversification</strong> means spreading your investments across different asset types, industries, and regions.",
+              "When one investment goes down, others may go up‚Äîsmoothing out your overall returns and reducing the impact of any single loss.",
+              "It's one of the few \"free lunches\" in investing: you can reduce risk without necessarily sacrificing returns."
+            ],
+            "highlightBox": {
+              "icon": "üí°",
+              "text": "ü•ö If you put all your money in one company's stock and it fails, you lose everything. Diversify to protect yourself!"
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "‚Üì Risk",
+                "label": "With Diversification",
+                "color": "green"
+              }
+            ],
+            "infoCard": {
+              "title": "Ways to Diversify:",
+              "color": "green",
+              "items": [
+                "Mix stocks AND bonds",
+                "Own different sectors (tech, healthcare, etc.)",
+                "Include international investments",
+                "Use index funds or ETFs for instant diversity"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Matching Strategies to Goals",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "The Right Tool for the Right Job",
+          "paragraphs": [
+            "Different goals require different strategies. Match your investment vehicles to your timeline and risk tolerance."
+          ],
+          "bulletPoints": [
+            "<strong>Short-Term (1-3 years):</strong> Emergency fund, vacation, car ‚Üí High-yield savings, money market, short-term CDs. Very low risk.",
+            "<strong>Medium-Term (3-10 years):</strong> House down payment, grad school ‚Üí Mix of CDs, bonds, conservative funds. Low to moderate risk.",
+            "<strong>Long-Term (10+ years):</strong> Retirement, child's college ‚Üí Diverse portfolio of stocks, bonds, index funds. Moderate to aggressive risk.",
+            "<strong>Very Long-Term (20+ years):</strong> Financial independence ‚Üí Stock-heavy portfolio, ride out all volatility. Focus on growth."
+          ],
+          "keyPoint": {
+            "text": "üìÖ The closer you are to needing the money, the more you should prioritize safety over growth!"
+          }
+        }
+      },
+      "notes": "COMMON MISCONCEPTIONS:\n\n1. \"I should wait until I have more money to invest.\"\n   ‚Üí Time in the market matters more than amount. Starting with $50/month at age 22 beats $500/month at age 35. Compound growth rewards early starters dramatically.\n\n2. \"My savings account is safe, so it's fine for retirement.\"\n   ‚Üí Safe from market drops, but not safe from inflation. Over 40 years, a savings account could lose 60%+ of purchasing power. Long-term goals need growth investments.\n\n3. \"I should use the same strategy for all my goals.\"\n   ‚Üí Different goals have different time horizons. A car fund and retirement fund for the same person require completely different strategies. Match strategy to timeline.\n\n"
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Building Your Strategy Today",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Start Now, Adjust as You Go",
+            "paragraphs": [
+              "Your financial strategy isn't set in stone‚Äîit should <strong>evolve as your life changes</strong>. What works at 20 won't work at 50.",
+              "The key is to start with a plan that matches your current situation, then adjust as your time horizon shortens or your goals change.",
+              "Many people use <strong>target-date funds</strong> that automatically shift from aggressive to conservative as retirement approaches."
+            ],
+            "highlightBox": {
+              "icon": "Ì†Ω",
+              "text": "Ì∫Ä The most important step? Start investing NOW. Even small amounts compound dramatically over time!"
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "Age 25",
+                "label": "Start: 90% stocks, 10% bonds",
+                "color": "purple"
+              },
+              {
+                "value": "Age 45",
+                "label": "Shift: 70% stocks, 30% bonds",
+                "color": "teal"
+              },
+              {
+                "value": "Age 65",
+                "label": "Retire: 50% stocks, 50% bonds",
+                "color": "green"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "üöó",
+            "name": "Alex's Short-Term Car Savings Strategy",
+            "paragraphs": [
+              "<strong>Goal:</strong> Save $15,000 for a car in 3 years",
+              "<strong>Time Horizon:</strong> Short-term (3 years)",
+              "<strong>Risk Tolerance:</strong> Conservative‚Äîcan't risk losing money before purchase",
+              "<strong>Strategy:</strong> <span class=\"highlight-text\">60% high-yield savings account, 40% short-term CDs</span>",
+              "<strong>Rationale:</strong> Alex needs certainty about the amount available in 3 years. Market downturns could derail the goal‚Äîsafety comes first for short-term needs."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Time Horizon",
+              "value": "3 Years",
+              "detail": "Short-term = Low risk"
+            },
+            {
+              "type": "after",
+              "label": "Strategy",
+              "value": "Safety First",
+              "detail": "Savings + CDs"
+            },
+            {
+              "type": "after",
+              "label": "Expected Return",
+              "value": "~4-5%",
+              "detail": "Low but guaranteed"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Real-World Example",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "üèñÔ∏è",
+            "name": "Taylor's Long-Term Retirement Strategy",
+            "paragraphs": [
+              "<strong>Goal:</strong> Build retirement savings over 40 years",
+              "<strong>Time Horizon:</strong> Long-term (40 years)",
+              "<strong>Risk Tolerance:</strong> Moderately aggressive‚Äîyoung, can handle volatility",
+              "<strong>Strategy:</strong> <span class=\"highlight-text\">Diversified portfolio: 70% index funds (stocks), 30% bonds</span>",
+              "<strong>Rationale:</strong> With 40 years to invest, Taylor can ride out market downturns. Needs growth to outpace inflation. Will gradually shift to more bonds as retirement approaches."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Time Horizon",
+              "value": "40 Years",
+              "detail": "Long-term = More risk OK"
+            },
+            {
+              "type": "after",
+              "label": "Strategy",
+              "value": "Growth Focus",
+              "detail": "70/30 stocks to bonds"
+            },
+            {
+              "type": "after",
+              "label": "Expected Return",
+              "value": "~7-8%",
+              "detail": "Higher growth potential"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": "Why does Alex use mostly savings accounts while Taylor uses mostly stocks?<br><br>How would Taylor's strategy change if retirement was only 5 years away?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "Think about your own financial goals‚Äîboth short-term and long-term.<br><br>How would your saving and investing strategies differ for each?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "emerald",
+      "content": {
+        "headerTitle": "Check Your Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "Why should someone saving for a car in 2 years use different investments than someone saving for retirement in 40 years?"
+            },
+            {
+              "number": 2,
+              "question": "What is inflation, and why does it mean keeping all your money in a basic savings account might actually cause you to lose purchasing power?"
+            },
+            {
+              "number": 3,
+              "question": "What does it mean to diversify your investments, and how does this help reduce risk?"
+            },
+            {
+              "number": 4,
+              "question": "How might someone's investment strategy change as they get older and closer to retirement?"
+            }
+          ]
+        }
+      },
+      "notes": "ANSWER KEY:\n\n1. B (How long until you need the money‚Äîtime horizon is the primary factor)\n\n2. Inflation risk: Over 30-40 years, inflation could cut purchasing power by 60-75%. A savings account earning 1-2% won't keep pace with 3% inflation, meaning you'll have less real value despite a larger nominal balance.\n\n3. Maya will likely have more despite lower contributions. Starting 10 years earlier gives her money more time to compound. At 7% returns: Maya's $200/month for 43 years ‚âà $580,000. Jordan's $400/month for 33 years ‚âà $540,000. Time beats amount.\n\n4. Diversification means spreading investments across different asset types (stocks, bonds, different sectors). Important because it reduces risk‚Äîwhen one investment drops, others may hold steady or rise. \"Don't put all your eggs in one basket.\"\n\n"
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Time Horizon is Everything",
+              "description": "How long until you need the money determines how much risk you can take with your investments"
+            },
+            {
+              "number": 2,
+              "title": "Inflation Erodes Savings",
+              "description": "Long-term investments must outpace inflation (~3%) or your money loses purchasing power over time"
+            },
+            {
+              "number": 3,
+              "title": "Diversification Reduces Risk",
+              "description": "Spreading investments across different types of assets protects you if any single investment fails"
+            },
+            {
+              "number": 4,
+              "title": "Match Strategy to Goals",
+              "description": "Short-term goals need safety; long-term goals need growth‚Äîuse the right tool for each job"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Student Activity",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "Ì†Ω",
+            "title": "Ì≥ã Financial Planning Role-Play",
+            "description": "Choose a character (or create your own) and build a financial strategy that matches their goals, time horizon, and risk tolerance. Consider how your choices would change if the character's situation changed‚Äîwhat if their goal shifted from short-term to long-term?"
+          },
+          "steps": [
+            "Choose: Alex (car, 3 years) or Taylor (retirement, 40 years)",
+            "Select one savings product for your character",
+            "Select one investment product based on risk tolerance",
+            "Write 1-2 sentences justifying each choice",
+            "Reflect: How would strategy change if goals changed?"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "¬© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

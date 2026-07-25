@@ -1,0 +1,539 @@
+{
+  "metadata": {
+    "lChapter": "L-27",
+    "title": "Online Shopping",
+    "subtitle": "Shop Smart, Stay Safe, and Protect Your Money in the Digital Marketplace",
+    "totalSlides": 20,
+    "hasStateVariables": false,
+    "stateVariablesUsed": []
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Online Shopping",
+        "titleSize": "large",
+        "subtitle": "Shop Smart, Stay Safe, and Protect Your Money in the Digital Marketplace"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "The Challenge",
+        "question": "Mike found a popular gaming console on an unfamiliar website for <em>40% below retail price</em>. Excited by the deal, he purchased it without researching the site. After payment, he received only an automated email. The console <em>never arrived</em>.   What warning signs did Mike miss, and how could he have protected himself from this scam?    What warning signs did Mike miss, and how could he have protected himself from this scam? <br><br>   What warning signs did Mike miss, and how could he have protected himself from this scam?"
+      },
+      "headerColor": "amber",
+      "notes": "DISCUSSION PROMPTS:\nTHE CHALLENGE (5 min):\n• Read Mike's scam story—emphasize the emotional pull of \"great deals.\"\n• Ask: \"Have you or anyone you know ever encountered a suspicious website?\"\n"
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Identify",
+              "description": "Identify the benefits and risks of online shopping compared to in-store purchases."
+            },
+            {
+              "number": 2,
+              "verb": "Evaluate",
+              "description": "Evaluate website security features to determine if a retailer is trustworthy."
+            },
+            {
+              "number": 3,
+              "verb": "Apply",
+              "description": "Apply strategies to protect personal and financial information when shopping online."
+            },
+            {
+              "number": 4,
+              "verb": "Recognize",
+              "description": "Recognize red flags and common online shopping scams before falling victim."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "HTTPS",
+              "definition": "Secure website protocol that encrypts data between your browser and the website. Look for 'https://' and a padlock icon.",
+              "example": "Amazon.com uses https://www.amazon.com—notice the padlock and 'https' indicating encryption."
+            },
+            {
+              "term": "Phishing",
+              "definition": "Fraudulent attempts to steal personal information by impersonating legitimate businesses through fake emails, texts, or websites.",
+              "example": "An email claiming to be from your bank asking you to 'verify' your account by clicking a suspicious link."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Digital Wallet",
+              "definition": "An electronic service (Apple Pay, Google Pay, PayPal) that adds a security layer between your payment info and merchants.",
+              "example": "Using PayPal means the seller never sees your actual credit card number—PayPal acts as a middleman."
+            },
+            {
+              "term": "Two-Factor Authentication (2FA)",
+              "definition": "Extra security requiring two forms of verification—something you know (password) plus something you have (phone code).",
+              "example": "After entering your password, you also enter a code texted to your phone—even if someone has your password, they can't access your account."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Online Shopping: Benefits and Risks",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "✓",
+            "title": "BENEFITS",
+            "items": [
+              "24/7 convenience—shop anytime",
+              "Compare prices easily across sellers",
+              "Read customer reviews before buying",
+              "No travel time or parking hassles",
+              "Often lower prices than physical stores",
+              "Access to products not available locally"
+            ]
+          },
+          "rightColumn": {
+            "icon": "⚠️",
+            "title": "RISKS",
+            "items": [
+              "Can't physically inspect before buying",
+              "Scam websites steal money/information",
+              "Identity theft from data breaches",
+              "Shipping delays or lost packages",
+              "Returns may be difficult or costly",
+              "Impulse buying is easier"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Red Flags: Signs of a Scam Website",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Warning Signs Mike Missed",
+          "paragraphs": [
+            "Learn to spot these danger signals before you buy:"
+          ],
+          "bulletPoints": [
+            "<strong>No HTTPS/padlock:</strong> URL shows 'http://' without padlock—data isn't encrypted",
+            "<strong>Prices too good to be true:</strong> 40-60% below retail? Legitimate retailers can't sustain those discounts",
+            "<strong>No contact information:</strong> Missing physical address, phone number, or working email",
+            "<strong>Limited payment options:</strong> Only accepts wire transfers, gift cards, or cryptocurrency—no credit cards",
+            "<strong>Poor website quality:</strong> Broken links, spelling errors, blurry images, copied content",
+            "<strong>Recently created domain:</strong> Website registered days or weeks ago (check whois lookup)",
+            "<strong>No return policy:</strong> Or vague policy with no actual process"
+          ],
+          "keyPoint": {
+            "text": "🚨 Mike's site had MULTIPLE red flags: unfamiliar retailer, 40% discount, no verification. One red flag = caution. Multiple = avoid!"
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Signs of a Trustworthy Website",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "What to Look For Before Buying",
+          "paragraphs": [
+            "Legitimate retailers typically have:"
+          ],
+          "bulletPoints": [
+            "<strong>HTTPS and padlock:</strong> Encrypted connection protects your data",
+            "<strong>Verifiable contact info:</strong> Physical address, phone number, customer service email",
+            "<strong>Multiple payment options:</strong> Major credit cards, PayPal, Apple Pay—not just wire transfers",
+            "<strong>Clear return policy:</strong> Specific timeframes, process, and conditions",
+            "<strong>Customer reviews:</strong> On the site AND on external review sites (Trustpilot, BBB)",
+            "<strong>Professional appearance:</strong> No obvious errors, working links, clear product descriptions",
+            "<strong>Established presence:</strong> Company has been around, can be researched"
+          ],
+          "keyPoint": {
+            "text": "✓ When in doubt, Google '[company name] reviews' or '[company name] scam' before purchasing."
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Credit Cards vs. Debit Cards Online",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "💳",
+            "title": "CREDIT CARDS (Safer)",
+            "items": [
+              "Strong fraud protection by law",
+              "Not connected to your bank account",
+              "Fraudulent charges easier to dispute",
+              "Liability limited to $50 maximum",
+              "Money isn't immediately gone",
+              "Chargeback rights protect you"
+            ]
+          },
+          "rightColumn": {
+            "icon": "💰",
+            "title": "DEBIT CARDS (Riskier)",
+            "items": [
+              "Connected directly to your bank",
+              "Money leaves your account immediately",
+              "Harder to recover stolen funds",
+              "Could drain your account",
+              "Bills may bounce while disputed",
+              "Less protection by law"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Safe Online Shopping Practices",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Your Security Checklist",
+          "paragraphs": [
+            "Follow these practices to protect yourself:"
+          ],
+          "bulletPoints": [
+            "<strong>Verify the website:</strong> HTTPS, contact info, reviews, realistic prices",
+            "<strong>Use credit cards:</strong> Better fraud protection than debit cards",
+            "<strong>Consider digital wallets:</strong> PayPal, Apple Pay add a security layer",
+            "<strong>Use unique passwords:</strong> Different password for each shopping site",
+            "<strong>Enable two-factor authentication:</strong> Extra verification for your accounts",
+            "<strong>Check statements regularly:</strong> Catch unauthorized charges quickly",
+            "<strong>Save confirmations:</strong> Keep email receipts and order confirmations",
+            "<strong>Use a separate email:</strong> Dedicated email for shopping reduces spam and phishing risk"
+          ],
+          "keyPoint": {
+            "text": "🔒 If you wouldn't hand a stranger your credit card in person, don't do it online with an unverified site."
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Common Online Shopping Scams",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Scams to Watch For",
+            "paragraphs": [
+              "<strong>Fake websites:</strong> Mimic real retailers (Amazzon.com, Walfart.com)",
+              "<strong>Social media ads:</strong> 'Going out of business' sales that never deliver",
+              "<strong>Phishing emails:</strong> Fake 'shipping problems' or 'account issues'",
+              "<strong>Too-good deals:</strong> Popular items at 50-70% off retail",
+              "<strong>Fake reviews:</strong> All 5-star reviews with similar language",
+              "<strong>Bait and switch:</strong> Advertise one product, send inferior substitute"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$10B+",
+                "label": "Lost to online scams annually (US)",
+                "color": "amber"
+              },
+              {
+                "value": "70%",
+                "label": "Scams start on social media",
+                "color": "amber"
+              }
+            ],
+            "infoCard": {
+              "title": "If You're Scammed:",
+              "color": "emerald",
+              "items": [
+                "Contact your credit card company immediately",
+                "File dispute before 60 days",
+                "Report to FTC at reportfraud.ftc.gov",
+                "Change passwords if account compromised"
+              ]
+            }
+          }
+        }
+      },
+      "notes": "COMMON MISCONCEPTIONS:\n\n1. \"Big discounts mean great deals.\"\n   → Prices 40-60% below retail are often scams. If it seems too good to be true, it probably is.\n\n2. \"Any website with a professional look is safe.\"\n   → Scammers create professional-looking sites. Always verify HTTPS, contact info, and payment options regardless of appearance.\n\n3. \"Debit cards are just as safe as credit cards online.\"\n   → Credit cards offer better fraud protection. With debit, money leaves your account immediately and is harder to recover.\n\n"
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Online vs. In-Store: When to Choose Each",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Shop ONLINE When:",
+            "paragraphs": [
+              "• You know exactly what you want",
+              "• You want to compare prices easily",
+              "• Item isn't available locally",
+              "• Reviews help inform your decision",
+              "• You want delivery convenience",
+              "• You're buying from established retailers"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "Shop IN-STORE When:",
+              "color": "indigo",
+              "items": [
+                "You need to see/try before buying",
+                "Size, fit, or color matters",
+                "You need the item immediately",
+                "Big purchase you want to inspect",
+                "You prefer the return process",
+                "Local business you want to support"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Apply It",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "🌐",
+            "name": "Website Evaluation: BargainTech-Deals.net",
+            "paragraphs": [
+              "URL shows 'http://' (no padlock). Prices are 60% below retail. No physical address or phone number listed.",
+              "Only accepts wire transfers or gift cards. Website was registered 2 weeks ago. No customer reviews found."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "negative",
+              "label": "Red Flag 1",
+              "value": "No HTTPS",
+              "detail": "Data not encrypted"
+            },
+            {
+              "type": "negative",
+              "label": "Red Flag 2",
+              "value": "Unrealistic prices",
+              "detail": "60% below retail"
+            },
+            {
+              "type": "negative",
+              "label": "Red Flag 3",
+              "value": "Wire/gift cards only",
+              "detail": "No fraud protection"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Apply It",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "🌐",
+            "name": "Website Evaluation: LocalBoutique.com",
+            "paragraphs": [
+              "URL shows 'https://' with padlock. Small business you've never heard of. Has physical address you can verify on Google Maps.",
+              "Accepts major credit cards and PayPal. Limited reviews (12 on site, 8 on Google). Clear return policy—30 days."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "positive",
+              "label": "Security",
+              "value": "HTTPS ✓",
+              "detail": "Encrypted connection"
+            },
+            {
+              "type": "positive",
+              "label": "Payment",
+              "value": "Credit/PayPal ✓",
+              "detail": "Fraud protection available"
+            },
+            {
+              "type": "before",
+              "label": "Verdict",
+              "value": "Proceed with caution",
+              "detail": "Start with small purchase"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "amber",
+      "content": {
+        "badge": "Discussion",
+        "question": "What THREE things should Mike have done differently before purchasing from that unfamiliar website?<br><br>How would each action have protected him from losing $300?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "indigo",
+      "content": {
+        "badge": "Reflection",
+        "question": "Describe your personal approach to online shopping:<br><br>• What steps do you take (or will you start taking) to protect yourself?<br>• What would make you decide NOT to complete a purchase?<br>• Have you or someone you know ever been scammed online?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "emerald",
+      "content": {
+        "headerTitle": "Check Your Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "Which of these is a sign that a website may NOT be secure: HTTPS, padlock icon, only accepts gift cards, or customer reviews?"
+            },
+            {
+              "number": 2,
+              "question": "Why is it generally safer to pay with a credit card rather than a debit card when shopping online?"
+            },
+            {
+              "number": 3,
+              "question": "List three red flags that Mike missed on the scam website."
+            },
+            {
+              "number": 4,
+              "question": "Why is using a separate email for online shopping a smart security practice?"
+            }
+          ]
+        }
+      },
+      "notes": "ANSWER KEY:\n\n1. C (Only accepts wire transfers or gift cards)\n\n2. Credit cards have federal fraud protection limiting liability to $50. With debit cards, money is taken directly from your account and recovering it takes longer. Credit cards also offer chargeback rights.\n\n3. Separate email keeps spam/phishing away from main account. Saved confirmations provide proof of purchase for disputes and tracking.\n\n4. (1) Check for HTTPS and padlock, (2) Research the website/read reviews, (3) Be suspicious of 40% below retail pricing, (4) Verify contact information exists, (5) Use credit card instead of other methods.\n\n5. Responses should include specific security practices and clear dealbreakers (no HTTPS, only gift card payments, unrealistic prices, no contact info).\n\n"
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Verify Before You Buy",
+              "description": "Check for HTTPS, contact info, reviews, and realistic prices. Multiple red flags = avoid the site."
+            },
+            {
+              "number": 2,
+              "title": "Use Credit Cards Online",
+              "description": "Credit cards offer better fraud protection than debit cards. Your money isn't immediately at risk."
+            },
+            {
+              "number": 3,
+              "title": "Too Good = Too Risky",
+              "description": "Prices 40-60% below retail are usually scams. Legitimate retailers can't sustain those discounts."
+            },
+            {
+              "number": 4,
+              "title": "When in Doubt, Research",
+              "description": "Google '[company] reviews' or '[company] scam' before buying from unfamiliar sites."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Tomorrow's Challenge",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "🔍",
+            "title": "Website Security Audit Challenge",
+            "description": "Mike learned the hard way—but can you spot the scams before getting burned? Tomorrow you'll evaluate real and fake websites, identify red flags, and create your personal online shopping security checklist."
+          },
+          "steps": [
+            "Evaluate website security features and identify trustworthy vs. risky sites",
+            "Spot red flags in shopping scenarios (pricing, payment methods, contact info)",
+            "Compare online vs. in-store advantages for different purchase types",
+            "Analyze what Mike should have done differently",
+            "Create your personal online shopping security checklist"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

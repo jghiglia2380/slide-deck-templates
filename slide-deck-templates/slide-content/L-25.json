@@ -1,0 +1,560 @@
+{
+  "metadata": {
+    "lChapter": "L-25",
+    "title": "Understanding Student Loans",
+    "subtitle": "Compare Federal vs. Private Loans and Make Smart Borrowing Decisions",
+    "totalSlides": 20,
+    "hasStateVariables": true,
+    "stateVariablesUsed": [
+      "STATE_NAME",
+      "STATE_TUITION_PUBLIC"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Understanding Student Loans",
+        "titleSize": "large",
+        "subtitle": "Compare Federal vs. Private Loans and Make Smart Borrowing Decisions"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "The Challenge",
+        "question": "Alex borrowed <em>$20,000 in federal student loans</em> at 5% fixed interest with income-driven repayment options. Jordan borrowed <em>$15,000 federal + $10,000 private</em> at 10% variable interest, requiring a parent co-signer.   What key differences in their loan choices will impact Alex and Jordan for years to come?    What key differences in their loan choices will impact Alex and Jordan for years to come? <br><br>   What key differences in their loan choices will impact Alex and Jordan for years to come?"
+      },
+      "headerColor": "amber",
+      "notes": "DISCUSSION PROMPTS:\nTHE CHALLENGE (5 min):\n• Read Alex and Jordan's contrasting scenarios.\n• Ask: \"What do you already know about student loans? Federal vs. private?\"\n"
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Compare",
+              "description": "Compare federal and private student loans in terms of rates, flexibility, and borrower protections."
+            },
+            {
+              "number": 2,
+              "verb": "Calculate",
+              "description": "Calculate the long-term cost of different student loan scenarios and repayment plans."
+            },
+            {
+              "number": 3,
+              "verb": "Understand",
+              "description": "Understand repayment options including income-driven plans and loan forgiveness programs."
+            },
+            {
+              "number": 4,
+              "verb": "Develop",
+              "description": "Develop strategies for borrowing responsibly and minimizing education debt."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Federal Student Loans",
+              "definition": "Loans from the U.S. Department of Education with fixed rates set by Congress, flexible repayment options, and borrower protections.",
+              "example": "Direct Subsidized, Direct Unsubsidized, and PLUS loans—rates and terms are the same for all borrowers."
+            },
+            {
+              "term": "Private Student Loans",
+              "definition": "Loans from banks, credit unions, or online lenders. Rates vary based on credit score and typically offer less flexibility.",
+              "example": "A student with excellent credit might get 6% while fair credit gets 12%—rates are lender and borrower specific."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Income-Driven Repayment (IDR)",
+              "definition": "Federal loan plans that cap monthly payments at a percentage of your discretionary income, with forgiveness after 20-25 years.",
+              "example": "SAVE, IBR, PAYE, ICR—payments adjust based on income and family size."
+            },
+            {
+              "term": "Loan Default",
+              "definition": "Failure to repay student loans as agreed—typically after 270 days of missed payments for federal loans.",
+              "example": "Default damages credit for years, can result in wage garnishment, tax refund seizure, and even loss of professional licenses."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Federal vs. Private: Key Differences",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "🏛️",
+            "title": "FEDERAL LOANS",
+            "items": [
+              "Fixed interest rate (set by Congress)",
+              "No credit check for most loans",
+              "No co-signer needed (except PLUS)",
+              "Income-driven repayment available",
+              "Loan forgiveness programs",
+              "Deferment/forbearance options",
+              "6-month grace period after graduation"
+            ]
+          },
+          "rightColumn": {
+            "icon": "🏦",
+            "title": "PRIVATE LOANS",
+            "items": [
+              "Variable OR fixed (credit-based)",
+              "Credit check required",
+              "Often requires co-signer",
+              "Limited repayment flexibility",
+              "No loan forgiveness",
+              "Fewer deferment options",
+              "Grace period varies by lender"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Types of Federal Student Loans",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Know Your Options",
+          "paragraphs": [
+            "Federal loans come in different types with different terms:"
+          ],
+          "bulletPoints": [
+            "<strong>Direct Subsidized:</strong> For undergrads with financial need. Government pays interest while you're in school!",
+            "<strong>Direct Unsubsidized:</strong> Available to all students. Interest accrues while in school.",
+            "<strong>Direct PLUS Loans:</strong> For graduate students or parents. Higher rates, requires credit check.",
+            "<strong>Direct Consolidation:</strong> Combine multiple federal loans into one payment."
+          ],
+          "keyPoint": {
+            "text": "💡 Always max out subsidized loans first—free interest while in school is huge!"
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "The Cost Difference: $30,000 Borrowed",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Same Amount, Different Costs",
+            "paragraphs": [
+              "Compare total repayment on $30,000 over 10 years:",
+              "<strong>Federal (5% fixed):</strong>",
+              "Monthly: $318 | Total Interest: $8,184",
+              "Total Repaid: $38,184",
+              "<strong>Private (7%, good credit):</strong>",
+              "Monthly: $348 | Total Interest: $11,760",
+              "Total Repaid: $41,760",
+              "<strong>Private (10%, fair credit):</strong>",
+              "Monthly: $396 | Total Interest: $17,520",
+              "Total Repaid: $47,520"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "$9,336",
+                "label": "Extra cost: fair credit vs. federal",
+                "color": "amber"
+              },
+              {
+                "value": "50%",
+                "label": "More interest with private (fair credit)",
+                "color": "amber"
+              }
+            ],
+            "infoCard": {
+              "title": "Variable Rate Risk",
+              "color": "amber",
+              "items": [
+                "Private rates can increase over time",
+                "10% can become 12%, 15%, or higher",
+                "Federal rates are fixed—predictable"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Income-Driven Repayment Plans",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Payments Based on What You Earn",
+            "paragraphs": [
+              "Federal loans offer several IDR plans:",
+              "<strong>SAVE Plan:</strong> 10% of discretionary income (undergrad) with forgiveness after 20 years",
+              "<strong>IBR:</strong> 10-15% of income, forgiveness after 20-25 years",
+              "<strong>PAYE:</strong> 10% of income, forgiveness after 20 years",
+              "<strong>ICR:</strong> 20% of income or fixed 12-year payment",
+              "If your income drops (job loss, lower salary), payments drop too!"
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "IDR plans provide a safety net. If you earn $35,000, your payment might be $150/month instead of $300."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "20-25 yrs",
+                "label": "Time to forgiveness on IDR",
+                "color": "indigo"
+              },
+              {
+                "value": "$0",
+                "label": "Possible payment if income is low enough",
+                "color": "emerald"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Loan Forgiveness Programs",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Ways to Have Loans Forgiven (Federal Only)",
+          "paragraphs": [
+            "Several programs can eliminate remaining federal loan balances:"
+          ],
+          "bulletPoints": [
+            "<strong>Public Service Loan Forgiveness (PSLF):</strong> Work for government or nonprofit for 10 years, make 120 payments, remaining balance forgiven tax-free",
+            "<strong>IDR Forgiveness:</strong> After 20-25 years of payments on income-driven plans, remaining balance forgiven",
+            "<strong>Teacher Loan Forgiveness:</strong> Up to $17,500 forgiven after 5 years teaching in low-income schools",
+            "<strong>Closed School Discharge:</strong> If your school closes while enrolled, loans may be discharged",
+            "<strong>Total and Permanent Disability:</strong> Discharge if you become disabled"
+          ],
+          "keyPoint": {
+            "text": "⚠️ PSLF requires specific loan types (Direct Loans) and qualifying employers. Verify eligibility BEFORE counting on forgiveness!"
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "The Consequences of Default",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "What Happens If You Don't Pay",
+            "paragraphs": [
+              "Student loan default (270+ days missed) has severe consequences:",
+              "<strong>Credit damage:</strong> Score drops significantly, default stays 7 years",
+              "<strong>Wage garnishment:</strong> Up to 15% of disposable income taken automatically",
+              "<strong>Tax refund seizure:</strong> Federal refunds applied to debt",
+              "<strong>Social Security garnishment:</strong> Can take up to 15% of benefits",
+              "<strong>Professional license issues:</strong> Some states can revoke or deny licenses"
+            ],
+            "highlightBox": {
+              "icon": "⚠️",
+              "text": "Unlike most debt, student loans are extremely difficult to discharge in bankruptcy."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "15%",
+                "label": "Wage garnishment rate",
+                "color": "amber"
+              },
+              {
+                "value": "7 years",
+                "label": "Default stays on credit report",
+                "color": "amber"
+              }
+            ],
+            "infoCard": {
+              "title": "Avoid Default:",
+              "color": "emerald",
+              "items": [
+                "Contact servicer before missing payments",
+                "Apply for income-driven repayment",
+                "Request deferment or forbearance",
+                "Explore rehabilitation options if in default"
+              ]
+            }
+          }
+        }
+      },
+      "notes": "COMMON MISCONCEPTIONS:\n\n1. \"Private loans are always cheaper because banks compete.\"\n   → Federal loans have government-subsidized rates. Private loans vary by credit and can be much more expensive, especially for borrowers with fair credit.\n\n2. \"Student loans disappear in bankruptcy.\"\n   → Student loans are extremely difficult to discharge in bankruptcy. Unlike other debts, they typically follow you until repaid.\n\n3. \"I should borrow the maximum to have spending money.\"\n   → Only borrow what you need for educational expenses. Every dollar borrowed costs more to repay with interest.\n\n"
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Smart Borrowing Strategies",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Minimize What You Need to Borrow",
+          "paragraphs": [
+            "The best student loan is the one you don't need:"
+          ],
+          "bulletPoints": [
+            "<strong>Apply for grants and scholarships first:</strong> Free money that doesn't need repayment",
+            "<strong>Consider in-state public universities:</strong> Often 50-70% less than out-of-state or private schools",
+            "<strong>Work part-time:</strong> Even $200/month = $9,600 over 4 years you don't borrow",
+            "<strong>Start at community college:</strong> Complete basics at lower cost, transfer later",
+            "<strong>Only borrow what you need:</strong> Loan refund checks aren't free money",
+            "<strong>Exhaust federal loans before private:</strong> Better rates, better protections"
+          ],
+          "keyPoint": {
+            "text": "🎯 Rule of thumb: Don't borrow more than your expected first-year salary after graduation."
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Apply It",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👤",
+            "name": "Alex's Federal-Only Strategy",
+            "paragraphs": [
+              "Alex borrowed $20,000 total in federal loans at 5% fixed. After graduating with a teaching degree, Alex earns $38,000/year.",
+              "Alex enrolled in PSLF (public school) and an income-driven plan. Monthly payment: $180 (vs. $212 on standard plan).",
+              "After 10 years of public service, remaining balance will be forgiven tax-free."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "positive",
+              "label": "Interest Rate",
+              "value": "5% Fixed",
+              "detail": "Never changes"
+            },
+            {
+              "type": "positive",
+              "label": "Monthly Payment",
+              "value": "$180",
+              "detail": "Income-driven plan"
+            },
+            {
+              "type": "positive",
+              "label": "PSLF Eligible",
+              "value": "Yes",
+              "detail": "Forgiveness after 10 years"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Apply It",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👤",
+            "name": "Jordan's Mixed Strategy",
+            "paragraphs": [
+              "Jordan borrowed $15,000 federal + $10,000 private at 10% variable. The private loan required Jordan's parent as co-signer.",
+              "After graduating, Jordan earns $40,000. The private loan rate increased to 12%. Jordan must make two separate payments.",
+              "No income-driven option for private loans. If Jordan loses their job, the private payment stays the same."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "negative",
+              "label": "Private Rate",
+              "value": "12% (was 10%)",
+              "detail": "Variable—increased"
+            },
+            {
+              "type": "negative",
+              "label": "Monthly Payment",
+              "value": "$159 + $152",
+              "detail": "Two separate payments"
+            },
+            {
+              "type": "negative",
+              "label": "Parent at Risk",
+              "value": "Co-signer liable",
+              "detail": "If Jordan defaults"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "amber",
+      "content": {
+        "badge": "Discussion",
+        "question": "Compare Alex and Jordan's situations:<br><br>1. Who has more financial flexibility if they lose their job? Why?<br><br>2. Why is the co-signer requirement on Jordan's private loan a potential problem?<br><br>3. How much more will Jordan pay over 10 years due to the higher private loan rate?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "indigo",
+      "content": {
+        "badge": "Reflection",
+        "question": "If you plan to attend college, what is your strategy for financing your education?<br><br>What steps can you take NOW to minimize how much you'll need to borrow?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "emerald",
+      "content": {
+        "headerTitle": "Check Your Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "Which type of student loan offers income-driven repayment plans and potential loan forgiveness?"
+            },
+            {
+              "number": 2,
+              "question": "Why should you exhaust federal loan options before considering private loans?"
+            },
+            {
+              "number": 3,
+              "question": "A student borrows $20,000 at 5% for 10 years ($212/month). What's the total repaid and total interest?"
+            },
+            {
+              "number": 4,
+              "question": "List two consequences of defaulting on student loans."
+            }
+          ]
+        }
+      },
+      "notes": "ANSWER KEY:\n\n1. B (Federal student loans)\n\n2. Any two: damaged credit (7+ years), wage garnishment (up to 15%), tax refund seizure, ineligibility for future federal aid, professional license restrictions.\n\n3. $212 × 120 months = $25,440 total. Interest = $25,440 − $20,000 = $5,440\n\n4. Income-driven repayment caps payments at a percentage of discretionary income. With $35,000 salary, Alex's payment would be affordable and any remaining balance forgiven after 20-25 years.\n\n5. Responses should include specific strategies: scholarships, part-time work, community college, choosing affordable schools, and understanding loan terms before borrowing.\n\n"
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Federal First, Always",
+              "description": "Federal loans offer fixed rates, income-driven plans, and forgiveness options. Exhaust these before considering private."
+            },
+            {
+              "number": 2,
+              "title": "Know Your Repayment Options",
+              "description": "Income-driven repayment can lower payments when income is low. PSLF can forgive loans after 10 years of public service."
+            },
+            {
+              "number": 3,
+              "title": "Private Loans Have Fewer Protections",
+              "description": "Variable rates can increase, no income-driven plans, no forgiveness, and often require co-signers."
+            },
+            {
+              "number": 4,
+              "title": "Borrow Only What You Need",
+              "description": "Don't borrow more than expected first-year salary. Grants, scholarships, and work-study reduce borrowing."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Tomorrow's Challenge",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "🎓",
+            "title": "Student Loan Strategy Builder",
+            "description": "Alex and Jordan made different choices—but what would YOU do? Tomorrow you'll analyze loan scenarios, compare costs, and create a personal education financing strategy."
+          },
+          "steps": [
+            "Compare federal vs. private loan features for real scenarios",
+            "Calculate total costs under different interest rates and terms",
+            "Determine eligibility for income-driven repayment and forgiveness programs",
+            "Analyze the impact of variable vs. fixed interest rates",
+            "Create a personal strategy to minimize education debt"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

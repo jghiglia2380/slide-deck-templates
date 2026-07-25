@@ -1,0 +1,567 @@
+{
+  "metadata": {
+    "lChapter": "L-24",
+    "title": "Consumer Credit Legislation",
+    "subtitle": "Know Your Rights When Borrowing, Disputing Errors, and Dealing with Collectors",
+    "totalSlides": 20,
+    "hasStateVariables": false,
+    "stateVariablesUsed": []
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Consumer Credit Legislation",
+        "titleSize": "large",
+        "subtitle": "Know Your Rights When Borrowing, Disputing Errors, and Dealing with Collectors"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "The Challenge",
+        "question": "Marcus discovered an <em>incorrect debt of $3,500</em> on his credit report—a medical bill from a hospital he never visited. A debt collector has been calling him at <em>11 PM</em> demanding payment.   What laws protect Marcus in this situation, and what steps can he take to resolve these issues?    What laws protect Marcus in this situation, and what steps can he take to resolve these issues? <br><br>   What laws protect Marcus in this situation, and what steps can he take to resolve these issues?"
+      },
+      "headerColor": "amber",
+      "notes": "DISCUSSION PROMPTS:\nTHE CHALLENGE (5 min):\n• Read Marcus's scenario—he faces three distinct violations.\n• Ask: \"What do you think Marcus can do about each problem?\"\n"
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Identify",
+              "description": "Identify the major consumer credit protection laws and the specific rights they provide."
+            },
+            {
+              "number": 2,
+              "verb": "Apply",
+              "description": "Apply appropriate laws to real-world consumer credit scenarios."
+            },
+            {
+              "number": 3,
+              "verb": "Understand",
+              "description": "Understand how to exercise your rights when dealing with creditors, credit bureaus, and debt collectors."
+            },
+            {
+              "number": 4,
+              "verb": "Take Action",
+              "description": "Take action to dispute errors, stop harassment, and file complaints when your rights are violated."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Truth in Lending Act (TILA)",
+              "definition": "Requires lenders to clearly disclose APR, total costs, and all loan terms BEFORE you sign. No hidden fees allowed.",
+              "example": "A car dealer must show you the APR, monthly payment, and total cost before you sign the loan."
+            },
+            {
+              "term": "Fair Credit Reporting Act (FCRA)",
+              "definition": "Gives you the right to free annual credit reports, to dispute errors, and requires bureaus to investigate within 30 days.",
+              "example": "You can get free reports at AnnualCreditReport.com and dispute any inaccurate information."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Fair Debt Collection Practices Act (FDCPA)",
+              "definition": "Prohibits debt collector harassment: no calls before 8 AM or after 9 PM, no threats, no contacting your employer about debt.",
+              "example": "A collector calling at 11 PM or threatening to tell your boss is breaking federal law."
+            },
+            {
+              "term": "Equal Credit Opportunity Act (ECOA)",
+              "definition": "Prohibits credit discrimination based on race, color, religion, national origin, sex, marital status, age, or public assistance.",
+              "example": "Denying credit because someone is a 'single woman' or 'too old' violates ECOA."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Why These Laws Exist",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Historical Abuses That Led to Laws",
+            "paragraphs": [
+              "Before these protections:",
+              "<strong>Lenders hid true costs:</strong> Borrowers didn't know real APR until too late",
+              "<strong>Credit bureaus reported errors:</strong> No way to dispute inaccurate information",
+              "<strong>Discrimination was common:</strong> Women needed husband's signature, minorities denied credit",
+              "<strong>Collectors used harassment:</strong> Calls at all hours, threats, public shaming",
+              "These laws level the playing field between consumers and financial institutions."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "Your Rights Give You Power",
+              "color": "emerald",
+              "items": [
+                "Know the true cost before borrowing",
+                "See and correct your credit reports",
+                "Equal treatment regardless of identity",
+                "Protection from debt collector abuse",
+                "File complaints when violated"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Truth in Lending Act (TILA)",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Disclosure Requirements",
+            "paragraphs": [
+              "Before you sign ANY loan, lenders MUST tell you:",
+              "<strong>Annual Percentage Rate (APR):</strong> True cost including fees",
+              "<strong>Finance charge:</strong> Total dollar amount of interest",
+              "<strong>Amount financed:</strong> What you're actually borrowing",
+              "<strong>Total of payments:</strong> Everything you'll pay over the loan life",
+              "<strong>Payment schedule:</strong> How much and when",
+              "This must be in writing, clear language, before signing."
+            ],
+            "highlightBox": {
+              "icon": "📋",
+              "text": "If a fee wasn't disclosed before signing, you may have grounds to challenge it under TILA."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "3 days",
+                "label": "Right to cancel certain loans (home equity)",
+                "color": "indigo"
+              }
+            ],
+            "infoCard": {
+              "title": "TILA Covers:",
+              "color": "indigo",
+              "items": [
+                "Mortgages and home equity loans",
+                "Auto loans",
+                "Credit cards",
+                "Personal loans",
+                "Student loans (private)"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Fair Credit Reporting Act (FCRA)",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Your Credit Report Rights",
+            "paragraphs": [
+              "The FCRA gives you powerful rights over your credit information:",
+              "<strong>Free annual reports:</strong> From each bureau (Equifax, Experian, TransUnion) at AnnualCreditReport.com",
+              "<strong>Dispute inaccurate information:</strong> Bureaus must investigate within 30 days",
+              "<strong>Know who's checking:</strong> See 'inquiries' on your report",
+              "<strong>Limited reporting time:</strong> Most negative items must be removed after 7 years (bankruptcies: 10 years)",
+              "<strong>Adverse action notice:</strong> If denied credit, you must be told why"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "30 days",
+                "label": "Bureau must investigate disputes",
+                "color": "indigo"
+              },
+              {
+                "value": "7 years",
+                "label": "Most negative items stay on report",
+                "color": "amber"
+              },
+              {
+                "value": "FREE",
+                "label": "Annual report from each bureau",
+                "color": "emerald"
+              }
+            ],
+            "infoCard": null
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Fair Debt Collection Practices Act (FDCPA)",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "What Debt Collectors CANNOT Do",
+          "paragraphs": [
+            "The FDCPA protects you from harassment and abuse by third-party debt collectors:"
+          ],
+          "bulletPoints": [
+            "<strong>No calls before 8 AM or after 9 PM</strong> in your time zone",
+            "<strong>No harassment:</strong> Repeated calls, threats of violence, obscene language",
+            "<strong>No false statements:</strong> Can't lie about amount owed or threaten arrest for debt",
+            "<strong>No public disclosure:</strong> Can't tell your employer, neighbors, or post on social media",
+            "<strong>No unfair practices:</strong> Can't add unauthorized fees or threaten to take property they can't take",
+            "<strong>Must honor written cease contact requests:</strong> If you send a letter saying stop, they must stop (except to confirm)"
+          ],
+          "keyPoint": {
+            "text": "⚠️ Note: FDCPA applies to third-party collectors, not the original creditor. Different rules may apply."
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Equal Credit Opportunity Act (ECOA)",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "🚫",
+            "title": "CANNOT Consider",
+            "items": [
+              "Race, color, or national origin",
+              "Religion",
+              "Sex or gender identity",
+              "Marital status",
+              "Age (if you're old enough to contract)",
+              "Public assistance income",
+              "Exercise of consumer rights"
+            ]
+          },
+          "rightColumn": {
+            "icon": "✓",
+            "title": "CAN Consider",
+            "items": [
+              "Credit history and score",
+              "Income and employment",
+              "Existing debt obligations",
+              "Assets and collateral",
+              "Loan purpose",
+              "Payment history",
+              "Ability to repay"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Credit CARD Act of 2009",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Specific Credit Card Protections",
+            "paragraphs": [
+              "The CARD Act added important protections for credit card users:",
+              "<strong>45-day notice:</strong> Before raising interest rates",
+              "<strong>No rate increases in first year:</strong> Except for variable rates or promotional periods ending",
+              "<strong>Payments applied fairly:</strong> To highest-rate balance first",
+              "<strong>Clear due dates:</strong> Same date each month, reasonable time to pay",
+              "<strong>No fees for paying by phone:</strong> If that's only expedited option",
+              "<strong>Under-21 protections:</strong> Need cosigner or proof of income"
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "45 days",
+                "label": "Notice required before rate increase",
+                "color": "indigo"
+              },
+              {
+                "value": "21",
+                "label": "Minimum age without cosigner/income proof",
+                "color": "indigo"
+              }
+            ],
+            "infoCard": {
+              "title": "Also Banned:",
+              "color": "amber",
+              "items": [
+                "Double-cycle billing",
+                "Universal default",
+                "Excessive over-limit fees",
+                "Retroactive rate increases on existing balances"
+              ]
+            }
+          }
+        }
+      },
+      "notes": "COMMON MISCONCEPTIONS:\n\n1. \"Debt collectors can call anytime they want.\"\n   → FDCPA limits calls to 8 AM-9 PM local time. You can also request in writing that they stop calling entirely.\n\n2. \"I can't do anything about errors on my credit report.\"\n   → FCRA gives you the right to dispute errors. Bureaus must investigate within 30 days and correct verified errors.\n\n3. \"Lenders can deny credit for any reason.\"\n   → ECOA prohibits discrimination based on protected characteristics. Lenders must provide specific, legitimate reasons for denial.\n\n"
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "How to Exercise Your Rights",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Taking Action When Rights Are Violated",
+          "paragraphs": [
+            "Knowing your rights is only useful if you act on them:"
+          ],
+          "bulletPoints": [
+            "<strong>Dispute credit report errors:</strong> File online, by mail, or phone with each bureau showing the error. Include documentation.",
+            "<strong>Stop debt collector harassment:</strong> Send a written cease contact letter by certified mail. Keep a copy.",
+            "<strong>Request adverse action explanation:</strong> If denied credit, you have 60 days to request specific reasons.",
+            "<strong>File complaints:</strong> Consumer Financial Protection Bureau (CFPB), Federal Trade Commission (FTC), state attorney general",
+            "<strong>Document everything:</strong> Keep records of calls, letters, and violations—dates, times, what was said"
+          ],
+          "keyPoint": {
+            "text": "📝 Written documentation is your best protection. Keep copies of everything!"
+          }
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Apply It",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👤",
+            "name": "Marcus's Three Problems",
+            "paragraphs": [
+              "Problem 1: A $3,500 debt on his credit report from a hospital he never visited.",
+              "Problem 2: Debt collector calling at 11 PM demanding payment.",
+              "Problem 3: Apartment application denied without explanation."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "positive",
+              "label": "Problem 1 Solution",
+              "value": "FCRA",
+              "detail": "Dispute error with credit bureaus"
+            },
+            {
+              "type": "positive",
+              "label": "Problem 2 Solution",
+              "value": "FDCPA",
+              "detail": "11 PM calls are illegal—file complaint"
+            },
+            {
+              "type": "positive",
+              "label": "Problem 3 Solution",
+              "value": "FCRA/ECOA",
+              "detail": "Request adverse action notice"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Apply It",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👩",
+            "name": "Sophia's Credit Denial",
+            "paragraphs": [
+              "Sophia has excellent credit (780 score) and applied for a credit card. She was denied.",
+              "When she asked why, the representative said: 'We don't give cards to single women.'",
+              "The representative refused to provide any other explanation."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "negative",
+              "label": "Violation 1",
+              "value": "ECOA",
+              "detail": "Discrimination based on sex/marital status"
+            },
+            {
+              "type": "negative",
+              "label": "Violation 2",
+              "value": "FCRA",
+              "detail": "Failed to provide adverse action notice"
+            },
+            {
+              "type": "positive",
+              "label": "Sophia's Action",
+              "value": "File CFPB complaint",
+              "detail": "Document what was said, when, by whom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "amber",
+      "content": {
+        "badge": "Discussion",
+        "question": "Match each scenario to the law that provides protection:<br><br>1. Javier signed a car loan but discovered a $500 fee that was never disclosed.<br><br>2. Lena gets 5 calls a day from collectors, including at 10:30 PM, threatening to tell her employer.<br><br>3. Derek was denied a loan and told 'we don't lend to people on food stamps.'"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "indigo",
+      "content": {
+        "badge": "Reflection",
+        "question": "Why do you think consumer credit protection laws are necessary?<br><br>What might happen without them?<br><br>How do these laws change your approach to borrowing and dealing with creditors?"
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "emerald",
+      "content": {
+        "headerTitle": "Check Your Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "Which law requires lenders to disclose the APR before you sign a loan?"
+            },
+            {
+              "number": 2,
+              "question": "Under FDCPA, what hours can debt collectors NOT call you?"
+            },
+            {
+              "number": 3,
+              "question": "You find an error on your credit report. What are the steps to dispute it under FCRA?"
+            },
+            {
+              "number": 4,
+              "question": "A lender denies your application because you're 'too old.' Which law does this violate?"
+            }
+          ]
+        }
+      },
+      "notes": "ANSWER KEY:\n\n1. B (Truth in Lending Act)\n\n2. Before FDCPA, collectors used harassment, threats, late-night calls, and deception. The law established hours (8 AM-9 PM), banned threats, and gave consumers right to demand written verification.\n\n3. 30 days to investigate and respond.\n\n4. Incorrect debt: FCRA (dispute rights). Late-night calls: FDCPA (prohibits calls after 9 PM). Denial without explanation: ECOA (must provide reasons).\n\n5. Responses should mention: preventing abuse, ensuring transparency, protecting vulnerable consumers, creating fair marketplace. Without laws, lenders could hide costs, discriminate freely, and collectors could use any tactics.\n\n"
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "TILA = Disclosure",
+              "description": "Lenders must tell you APR, total cost, and all terms before you sign. No hidden fees."
+            },
+            {
+              "number": 2,
+              "title": "FCRA = Credit Reports",
+              "description": "Free annual reports, right to dispute errors, 30-day investigation requirement."
+            },
+            {
+              "number": 3,
+              "title": "FDCPA = Collector Limits",
+              "description": "No calls before 8 AM or after 9 PM, no harassment, no threats, must stop if you request in writing."
+            },
+            {
+              "number": 4,
+              "title": "ECOA = No Discrimination",
+              "description": "Credit decisions must be based on creditworthiness, not race, gender, age, or marital status."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Tomorrow's Challenge",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "⚖️",
+            "title": "Consumer Rights Case Analysis",
+            "description": "Marcus learned his rights—but can you help others identify violations and take action? Tomorrow you'll analyze real scenarios, match them to the correct laws, and determine the proper steps to resolve each situation."
+          },
+          "steps": [
+            "Analyze scenarios and identify which consumer protection law applies",
+            "Match specific rights to the laws that provide them",
+            "Outline the steps to dispute a credit report error",
+            "Identify debt collector violations and appropriate responses",
+            "Determine where to file complaints for different violations"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "Building Financial Futures, One Lesson at a Time",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

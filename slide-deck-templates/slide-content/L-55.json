@@ -1,0 +1,616 @@
+{
+  "metadata": {
+    "lChapter": "L-55",
+    "title": "International Trade",
+    "subtitle": "Understanding Global Markets and Your Everyday Life",
+    "totalSlides": 20,
+    "hasStateVariables": false,
+    "stateVariablesUsed": []
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "International Trade",
+        "titleSize": "large",
+        "subtitle": "Understanding Global Markets and Your Everyday Life"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "Look at What You're Wearing Right Now",
+        "question": "Students check their clothing tags and discover most items were made in China, Vietnam, or Bangladesh. The iPhone supply chain involves 43 countries, demonstrating how globalization has become inescapable in everyday life.<br><br><strong>What should be done in this situation?</strong>"
+      },
+      "headerColor": "amber",
+      "notes": "**Discussion Prompts:**\n- Have students check clothing tags—most will say China, Vietnam, Bangladesh. Make trade tangible.\n- Mention iPhone supply chain (43 countries)—globalization is inescapable.\n- \"Should we make everything in America? Why or why not?\"",
+      "speakerNotes": "Have students check clothing tags—most will say China, Vietnam, Bangladesh. Make trade tangible. Mention iPhone supply chain (43 countries)—globalization is inescapable. Discussion: \"Should we make everything in America? Why or why not?\""
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Learning Objectives",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Explain",
+              "description": "comparative advantage and why countries trade"
+            },
+            {
+              "number": 2,
+              "verb": "Analyze",
+              "description": "benefits and costs of international trade for consumers, businesses, and workers"
+            },
+            {
+              "number": 3,
+              "verb": "Understand",
+              "description": "how tariffs, quotas, and trade policies affect prices and jobs"
+            },
+            {
+              "number": 4,
+              "verb": "Explain",
+              "description": "how exchange rates affect travel costs and import/export prices"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Comparative Advantage",
+              "definition": "Countries benefit by specializing in what they do relatively best—even if one country is better at everything",
+              "example": "USA focuses on high-tech and finance, China on manufacturing—both benefit from trade"
+            },
+            {
+              "term": "Tariff",
+              "definition": "Tax on imported goods that raises prices and protects domestic producers",
+              "example": "25% tariff on imported cars makes foreign cars $7,500 more expensive"
+            },
+            {
+              "term": "Quota",
+              "definition": "Limit on the quantity of imports allowed into a country",
+              "example": "Restricting the number of foreign cars that can enter the country annually"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Core Concepts",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Exchange Rate",
+              "definition": "Price of one currency in terms of another—determines how much foreign currency you get for your dollar",
+              "example": "$1 USD = 150 Japanese Yen, 0.92 Euro, or 7.3 Chinese Yuan"
+            },
+            {
+              "term": "Trade Deficit",
+              "definition": "When a country imports more than it exports—buying more from other countries than selling to them",
+              "example": "US imports more goods from China than it exports to China"
+            },
+            {
+              "term": "Protectionism",
+              "definition": "Government policies to protect domestic industries from foreign competition through tariffs, quotas, and regulations",
+              "example": "Using tariffs and quotas to shield local manufacturers from cheaper imports"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Why Countries Trade: Comparative Advantage",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Simple Example: Roommates",
+            "paragraphs": [
+              "You can clean apartment in 1 hour, roommate takes 3 hours.",
+              "You can cook dinner in 2 hours, roommate takes 4 hours.",
+              "You're better at BOTH! Should you do everything?",
+              "<strong>NO!</strong>",
+              "",
+              "<strong>Optimal Arrangement:</strong> You cook (lower opportunity cost), Roommate cleans (lower relative cost).",
+              "",
+              "<strong>Result:</strong> Both tasks done in less total time!"
+            ],
+            "highlightBox": {
+              "icon": "💡",
+              "text": "Specializing in your comparative advantage creates gains for both parties—even if one is absolutely better at everything!"
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "USA",
+                "label": "High-tech, finance, agriculture",
+                "color": "blue"
+              },
+              {
+                "value": "China",
+                "label": "Manufacturing, assembly",
+                "color": "teal"
+              }
+            ],
+            "infoCard": {
+              "title": "Same applies to countries!",
+              "color": "amber",
+              "items": [
+                "USA specializes in sectors requiring advanced technology and capital",
+                "China specializes in labor-intensive manufacturing",
+                "Both benefit from specialization + trade!",
+                "Consumers in both countries get more goods at lower prices"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "green",
+      "content": {
+        "headerTitle": "Benefits of International Trade",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "👤",
+            "title": "For Consumers (YOU)",
+            "items": [
+              "<strong>Lower Prices:</strong> iPhone $800 vs. $2,000+ if made entirely in USA",
+              "<strong>More Variety:</strong> Bananas year-round, electronics from Asia, European cars",
+              "<strong>Higher Quality:</strong> Global competition forces improvement",
+              "<strong>Greater Choice:</strong> Access to products not made domestically",
+              "<strong>Estimated savings: $10,000-15,000 per year per household!</strong>"
+            ]
+          },
+          "rightColumn": {
+            "icon": "🏢",
+            "title": "For Businesses & Economy",
+            "items": [
+              "<strong>Larger Markets:</strong> Sell to billions of customers globally",
+              "<strong>Cheaper Inputs:</strong> Import materials at lower cost",
+              "<strong>Innovation:</strong> Competition drives technological advancement",
+              "<strong>GDP Growth:</strong> Trade increases economic output",
+              "<strong>Export Jobs:</strong> Often higher-paying than domestic-only jobs",
+              "<strong>Tech Transfer:</strong> Learn from other countries' innovations"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "rose",
+      "content": {
+        "headerTitle": "Costs of International Trade",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Job Displacement",
+            "paragraphs": [
+              "<strong>The Hard Truth:</strong> Trade creates winners AND losers",
+              "",
+              "1990: 17.7 million US manufacturing jobs",
+              "2024: 12.8 million manufacturing jobs",
+              "<strong>Lost: ~5 million jobs</strong>",
+              "",
+              "<strong>Who's hurt:</strong> Factory workers, manufacturing communities, older workers hard to retrain",
+              "",
+              "These job losses are concentrated in specific industries and regions, causing severe economic disruption for affected communities."
+            ],
+            "highlightBox": null
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "Income Gap",
+                "label": "College-educated benefit (export sector jobs), Less-educated hurt (manufacturing jobs lost)",
+                "color": "rose"
+              }
+            ],
+            "infoCard": {
+              "title": "National Security Concerns",
+              "color": "amber",
+              "items": [
+                "Dependence on other countries for critical goods:",
+                "• Semiconductors (Taiwan) - 90% of advanced chips",
+                "• Rare earth minerals (China) - essential for tech",
+                "• Pharmaceuticals (India, China) - 80% of ingredients",
+                "",
+                "<em>COVID-19 lesson: Supply chain disruption = shortages</em>"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Trade Policy: Tariffs",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "How Tariffs Work",
+            "paragraphs": [
+              "<strong>Tariff</strong> = Tax on imported goods",
+              "",
+              "<strong>Example: 25% Tariff on Cars</strong>",
+              "Foreign car import cost: $30,000",
+              "+ 25% tariff: $7,500",
+              "<strong>Final price: $37,500</strong>",
+              "",
+              "This makes foreign cars more expensive, protecting domestic car manufacturers from competition."
+            ],
+            "highlightBox": {
+              "icon": "📋",
+              "text": "Recent Example: Trump Tariffs (2018-19) imposed 25% tariffs on $250B of Chinese goods to protect US manufacturing. China retaliated with tariffs on US agriculture, hurting farmers."
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "✓",
+                "label": "Protects domestic jobs - Foreign goods more expensive → domestic more competitive",
+                "color": "green"
+              },
+              {
+                "value": "✓",
+                "label": "Government revenue - Tariff payments can fund programs",
+                "color": "green"
+              },
+              {
+                "value": "✗",
+                "label": "Hurts consumers - Higher prices, less choice, reduced purchasing power",
+                "color": "rose"
+              },
+              {
+                "value": "✗",
+                "label": "Retaliation risk - Trade wars hurt everyone, reducing exports",
+                "color": "rose"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Exchange Rates",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Understanding Exchange Rates",
+            "paragraphs": [
+              "<strong>Exchange Rate</strong> = Price of one currency in terms of another",
+              "",
+              "<strong>Current Examples:</strong>",
+              "$1 USD = 150 Japanese Yen",
+              "$1 USD = 0.92 Euro",
+              "$1 USD = 7.3 Chinese Yuan"
+            ],
+            "highlightBox": {
+              "icon": "✈️",
+              "text": "Travel Example: Hotel costs €100/night. At $1 = €0.92: €100/0.92 = $108.70. At $1 = €1.00: €100/1.00 = $100.00. Strong dollar = Cheaper travel abroad!"
+            }
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "Strong $",
+                "label": "Cheaper to travel abroad - Your dollars buy more foreign currency",
+                "color": "green"
+              },
+              {
+                "value": "Strong $",
+                "label": "Cheaper imports - Foreign goods cost less in dollars",
+                "color": "green"
+              },
+              {
+                "value": "Strong $",
+                "label": "Hurts US exporters - US goods become expensive abroad",
+                "color": "rose"
+              }
+            ],
+            "infoCard": {
+              "title": "Weak Dollar = Opposite Effects!",
+              "color": "amber",
+              "items": [
+                "Expensive to travel abroad",
+                "Expensive imports",
+                "But helps US exporters (competitive abroad)"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "What Determines Exchange Rates?",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Three Key Factors Drive Exchange Rate Changes",
+          "paragraphs": [],
+          "bulletPoints": [
+            "<strong>Interest Rates:</strong> Higher US interest rates → Foreign investors buy dollars to earn higher returns → Dollar strengthens (Fed policy from L-53 directly affects exchange rates!)",
+            "<strong>Economic Growth:</strong> Strong US economic growth → Investors want dollars to invest in growing economy → Dollar strengthens",
+            "<strong>Inflation:</strong> Higher US inflation → Dollar loses purchasing power → Dollar weakens (L-54 connection: Inflation erodes currency value)"
+          ],
+          "keyPoint": "Exchange rates connect to everything you've learned: Fed policy (L-53), inflation (L-54), and economic growth all influence the value of the dollar"
+        }
+      },
+      "notes": "## Common Misconceptions\n\n| Misconception | Clarification |\n|--------------|---------------|\n| \"We should make everything here to create jobs.\" | We COULD make everything here, but at MUCH higher cost. $2,500 iPhones and $50 t-shirts would hurt all consumers. Specialization through trade creates MORE total wealth. |\n| \"Trade deficits mean we're losing.\" | Trade deficit just means we import more than export. We get real goods (cars, electronics); they get dollars. Not inherently bad—reflects consumer preferences. |\n| \"A strong dollar is always good.\" | Good for consumers (cheaper imports, cheaper travel abroad). BAD for exporters and US workers in export industries (our goods more expensive for foreigners). |\n| \"Tariffs only hurt foreign countries.\" | Tariffs are taxes paid by IMPORTERS (often US businesses), then passed to consumers as higher prices. Foreign countries don't pay the tariff—you do. |",
+      "speakerNotes": "COMMON MISCONCEPTIONS:\n• \"\"We should make everything here to create jobs.\"\" → We COULD make everything here, but at MUCH higher cost. $2,500 iPhones and $50 t-shirts would hurt all consumers. Specialization through trade creates MORE total wealth.\n• \"\"Trade deficits mean we're losing.\"\" → Trade deficit just means we import more than export. We get real goods (cars, electronics); they get dollars. Not inherently bad—reflects consumer preferences.\n• \"\"A strong dollar is always good.\"\" → Good for consumers (cheaper imports, cheaper travel abroad). BAD for exporters and US workers in export industries (our goods more expensive for foreigners).\n• \"\"Tariffs are paid by foreign countries.\"\" → Tariffs are paid by US IMPORTERS and passed to US CONSUMERS through higher prices. Foreign producers may lose sales, but Americans pay the tax."
+    },
+    {
+      "number": 12,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": "The Federal Reserve just raised interest rates to fight inflation. This strengthens the dollar.<br><br><strong>Winners:</strong> Consumers buying imports, travelers going abroad<br><strong>Losers:</strong> US exporters, American farmers selling overseas<br><br>Should the Fed consider exchange rate effects when setting interest rates? Who should government prioritize?"
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Real-World Example: Free Trade vs. Protectionism",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "🌍",
+            "title": "Free Trade Position",
+            "items": [
+              "<strong>Arguments FOR free trade:</strong>",
+              "1. Lower prices for consumers (everyone benefits)",
+              "2. More variety and quality through competition",
+              "3. Economic efficiency (produce what you're best at)",
+              "4. Global economic growth creates more prosperity",
+              "5. Peace through interdependence (trading partners don't fight)",
+              "",
+              "<strong>Supporters:</strong> 90%+ of economists, consumers, export businesses",
+              "",
+              "<em>\"Free trade is a win-win. Both countries benefit from specialization.\"</em>"
+            ]
+          },
+          "rightColumn": {
+            "icon": "🛡️",
+            "title": "Protectionist Position",
+            "items": [
+              "<strong>Arguments FOR trade restrictions:</strong>",
+              "1. Protect American jobs (especially manufacturing)",
+              "2. National security (don't depend on rivals)",
+              "3. Develop new industries (infant industry argument)",
+              "4. Respond to unfair trade practices",
+              "5. Maintain environmental and labor standards",
+              "",
+              "<strong>Supporters:</strong> Manufacturing workers, affected industries, unions",
+              "",
+              "<em>\"We need to protect American jobs and workers.\"</em>"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Real-World Example: The iPhone Dilemma",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "📱",
+            "name": "Should Apple Make iPhones in the USA?",
+            "paragraphs": [
+              "<strong>Current Situation:</strong> iPhones are designed in California but assembled in China using parts from 43 countries. This keeps costs low and allows Apple to sell iPhones for ~$800.",
+              "",
+              "<strong>Protectionist Proposal:</strong> Require Apple to manufacture iPhones entirely in the USA to create American jobs.",
+              "",
+              "<strong>Analysis:</strong> Manufacturing in the USA would require paying workers $25-40/hour instead of $3-6/hour, plus building new facilities. Economists estimate this would increase iPhone cost to $2,000-3,000.",
+              "",
+              "<strong>The Trade-off:</strong> Create ~100,000 US manufacturing jobs BUT consumers pay $1,200-2,200 more per phone. With 50 million iPhones sold annually in US, that's $60-110 billion in extra consumer costs."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Current: Made in China",
+              "value": "$800 iPhone",
+              "detail": "Affordable for most Americans, but manufacturing jobs overseas"
+            },
+            {
+              "type": "after",
+              "label": "Made in USA",
+              "value": "$2,000+ iPhone",
+              "detail": "US jobs created, but phone becomes luxury item, fewer people can afford"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "Will YOUR future career be affected by globalization?<br><br><strong>Threatened by outsourcing:</strong> Manufacturing, customer service, some tech jobs<br><strong>Opportunities in export sectors:</strong> Engineering, finance, agriculture, entertainment<br><br>How can you prepare for a global economy? What skills are harder to outsource?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "The Economic Consensus",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "✓",
+            "title": "What Most Economists Agree On",
+            "items": [
+              "Total benefits of trade > total costs",
+              "All consumers benefit from lower prices",
+              "Competition drives innovation and efficiency",
+              "Can compensate losers with retraining and assistance",
+              "Trade restrictions hurt consumers more than they help workers",
+              "Protectionism typically backfires (retaliation, inefficiency)"
+            ]
+          },
+          "rightColumn": {
+            "icon": "⚠️",
+            "title": "But They Acknowledge",
+            "items": [
+              "Job losses are REAL and PAINFUL for affected workers",
+              "Benefits are diffuse (small savings per person)",
+              "Costs are concentrated (entire livelihoods lost)",
+              "Need better policies to help displaced workers",
+              "Retraining programs often inadequate",
+              "Winners rarely compensate losers in practice"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "emerald",
+      "content": {
+        "headerTitle": "Check Your Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "Explain comparative advantage using the roommates example. Why should you specialize even if you're better at both tasks?"
+            },
+            {
+              "number": 2,
+              "question": "How do tariffs protect domestic jobs but hurt consumers? Use the car tariff example to explain."
+            },
+            {
+              "number": 3,
+              "question": "Explain how a strong dollar helps consumers but hurts exporters. Why can't both win?"
+            },
+            {
+              "number": 4,
+              "question": "Why do 90% of economists support free trade, yet many workers support protectionism? Who's right?"
+            }
+          ]
+        }
+      },
+      "notes": "## Answer Key\n\n**1.** B (Bangladesh has comparative advantage—lower opportunity cost in clothing)\n\n**2.** BENEFITS: Domestic steel producers and workers (protected from competition). HURTS: Consumers and businesses that use steel (cars, construction, appliances)—they pay higher prices. Also hurts foreign steel producers.\n\n**3.** Dollar STRENGTHENED (buys more euros). American tourists in Europe benefit—their dollars go further. Hotels, meals, souvenirs all cost fewer dollars.\n\n**4.** Total benefits (lower prices for ALL consumers) exceed total costs (job losses in specific industries). Benefits are diffuse ($100s/year per person), costs are concentrated (entire livelihoods). Solution: free trade + compensation programs for displaced workers.\n\n**5.** *Should identify specific threat (e.g., \"coding jobs could be outsourced\") and opportunity (e.g., \"work for multinational company\"). Strong answers connect to L-54 structural unemployment and propose skill development strategy.*",
+      "speakerNotes": "ASSESSMENT ANSWER KEY:\n1. B (Bangladesh has comparative advantage—lower opportunity cost in clothing)\n2. BENEFITS: Domestic steel producers and workers (protected from competition). HURTS: Consumers and businesses that use steel (cars, construction, appliances)—they pay higher prices. Also hurts foreign steel producers.\n3. Dollar STRENGTHENED (buys more euros). American tourists in Europe benefit—their dollars go further. Hotels, meals, souvenirs all cost fewer dollars.\n4. Total benefits (lower prices for ALL consumers) exceed total costs (job losses in specific industries). Benefits are diffuse ($100s/year per person), costs are concentrated (entire livelihoods). Solution: free trade + compensation programs for displaced workers.\n5. Should identify specific threat (e.g., \"coding jobs could be outsourced\") and opportunity (e.g., \"work for multinational company\"). Strong answers connect to L-54 structural unemployment and propose skill development strategy."
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "Comparative advantage drives trade",
+              "description": "Countries benefit by specializing in what they do relatively best, even if one is better at everything"
+            },
+            {
+              "number": 2,
+              "title": "Trade creates winners and losers",
+              "description": "Consumers benefit from lower prices; some workers lose jobs to foreign competition"
+            },
+            {
+              "number": 3,
+              "title": "Tariffs protect jobs but raise prices",
+              "description": "Trade restrictions help specific industries but hurt all consumers through higher prices"
+            },
+            {
+              "number": 4,
+              "title": "Exchange rates affect purchasing power",
+              "description": "Strong dollar makes travel and imports cheaper but hurts US exporters"
+            },
+            {
+              "number": 5,
+              "title": "No easy answers in trade policy",
+              "description": "Free trade vs. protectionism involves real trade-offs between efficiency and equity"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Skill Builder: Currency Exchange Simulator",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "💱",
+            "title": "Tomorrow's Learning Lab",
+            "description": "Use the Currency Exchange Simulator and Trade Impact Analyzer to see how global trade affects YOUR life and career"
+          },
+          "steps": [
+            "Analyze your state's role in the global economy (exports, imports, trade-dependent jobs)",
+            "Trace supply chains for products you buy daily",
+            "Use Currency Exchange Simulator to plan international travel",
+            "Simulate tariff effects on consumer prices and jobs",
+            "Develop your personal career strategy for the global economy"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "\"In a globalized economy, understanding trade helps you make smarter consumer and career decisions\"",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

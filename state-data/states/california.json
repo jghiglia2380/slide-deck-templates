@@ -1,0 +1,201 @@
+{
+  "state_name": "California",
+  "state_code": "CA",
+  "last_updated": "2025-11-14",
+  "data_as_of": "2025-11",
+  "data_sources": {
+    "dmv_url": "https://www.dmv.ca.gov",
+    "tax_authority_url": "https://www.cdtfa.ca.gov",
+    "labor_department_url": "https://www.edd.ca.gov",
+    "education_department_url": "https://www.csac.ca.gov",
+    "consumer_protection_url": "https://oag.ca.gov/consumers",
+    "property_tax_assessor_url": "https://www.boe.ca.gov/proptaxes/"
+  },
+  "automotive": {
+    "registration_initial": 285,
+    "registration_annual": 60,
+    "avg_auto_loan_rate_new": 6.85,
+    "avg_auto_loan_rate_used": 7.62,
+    "insurance_avg_teen": 328,
+    "insurance_comparison_url": "https://www.insurance.ca.gov",
+    "lease_acquisition_fee": 795,
+    "inspection_required": false,
+    "inspection_cost": 0,
+    "gas_price_current": 4.68,
+    "dmv_url": "https://www.dmv.ca.gov"
+  },
+  "taxes": {
+    "income_tax_rate": 9.3,
+    "sales_tax": 7.25,
+    "local_sales_tax_min": 0.15,
+    "local_sales_tax_max": 3.0,
+    "combined_sales_tax_min": 7.25,
+    "combined_sales_tax_max": 10.25,
+    "local_sales_tax_examples": [
+      {
+        "city": "Los Angeles",
+        "local_rate": 2.25,
+        "combined_rate": 9.5
+      },
+      {
+        "city": "San Francisco",
+        "local_rate": 1.5,
+        "combined_rate": 8.625
+      },
+      {
+        "city": "San Diego",
+        "local_rate": 1.0,
+        "combined_rate": 7.75
+      },
+      {
+        "city": "Sacramento",
+        "local_rate": 0.75,
+        "combined_rate": 8.75
+      },
+      {
+        "city": "San Jose",
+        "local_rate": 2.375,
+        "combined_rate": 9.375
+      }
+    ],
+    "allows_local_income_tax": false,
+    "local_income_tax_range": "N/A - California has no local income tax",
+    "local_income_tax_rate_low": 0,
+    "local_income_tax_rate_high": 0,
+    "local_income_tax_example": "N/A",
+    "property_tax_county_rate": 0.68,
+    "property_tax_school_rate": 0.25,
+    "property_tax_special_rate": 0.08,
+    "property_tax_effective_rate": null,
+    "property_tax_effective_rate_todo": "TODO: no authoritative 2026 in-repo source; STOP-flagged for Seb/Denis. Do not invent.",
+    "property_tax_city_range": "1.0 - 1.3%",
+    "property_tax_examples": [
+      {
+        "location": "San Francisco County",
+        "millage": 11.9,
+        "description": "High-cost urban area, Prop 13 limits"
+      },
+      {
+        "location": "Los Angeles County",
+        "millage": 11.2,
+        "description": "Large urban county, varied districts"
+      },
+      {
+        "location": "San Diego County",
+        "millage": 10.8,
+        "description": "Coastal, relatively lower rates"
+      },
+      {
+        "location": "Sacramento County",
+        "millage": 10.5,
+        "description": "State capital, moderate rates"
+      },
+      {
+        "location": "Orange County",
+        "millage": 10.2,
+        "description": "Affluent suburban area"
+      },
+      {
+        "location": "San Jose (Santa Clara County)",
+        "millage": 11.5,
+        "description": "Silicon Valley, high property values"
+      },
+      {
+        "location": "Rural Northern California",
+        "millage": 9.8,
+        "description": "Lower rates in less populated areas"
+      }
+    ],
+    "assessment_percentage": 100,
+    "homestead_exemption": 7000,
+    "property_assessment_frequency": "Annual for value changes, reassessed on sale (Prop 13)",
+    "assessment_appeal_process": "File with county assessment appeals board between July 2 and November 30 (or within 60 days of supplemental assessment notice). Hearing scheduled within 2 years.",
+    "assessment_appeal_deadline": "July 2 - November 30",
+    "assessment_appeal_form_url": "https://www.boe.ca.gov/proptaxes/appeals.htm",
+    "has_tax_cap": true,
+    "county_name": "Los Angeles County",
+    "county_assessor_contact": "LA County Assessor - (213) 974-3211",
+    "county_tax_assessor_url": "https://assessor.lacounty.gov",
+    "property_tax_lookup_url": "https://www.boe.ca.gov/proptaxes/",
+    "tax_incentives": "CalSavers (state IRA program), ScholarShare 529 (state-sponsored 529 plan with state tax benefits), Mortgage Credit Certificate program",
+    "tax_structure": "Progressive state income tax (1% to 13.3%, highest in nation); sales tax high; property tax limited by Prop 13 to 1% + approved bonds"
+  },
+  "housing": {
+    "median_home_price": 783000,
+    "median_rent": 2800,
+    "housing_market_trends": "Very high and rising - severe housing shortage, particularly in coastal metros. Inland areas more affordable but still expensive nationally.",
+    "first_time_homebuyer_program": "CalHFA - California Housing Finance Agency offers MyHome Assistance Program with down payment assistance up to 3.5%",
+    "avg_mortgage_rate_30yr": 7.18
+  },
+  "insurance": {
+    "homeowners_avg_monthly": 150,
+    "data_source": "California Department of Insurance average rates for $300K home coverage"
+  },
+  "employment": {
+    "min_wage": 16.00,
+    "unemployment_rate": 5.3,
+    "major_industries": "Technology, Entertainment, Agriculture, Tourism, Manufacturing, Healthcare"
+  },
+  "education": {
+    "tuition_public": 14436
+  },
+  "banking": {
+    "avg_monthly_fee": 15,
+    "avg_overdraft_fee": 35,
+    "credit_union_association_url": "https://www.ccul.org",
+    "minor_banking_rules": "Minors can open custodial accounts with parent/guardian. At age 18, account automatically converts to individual account."
+  },
+  "consumer_protection": {
+    "consumer_protection_agency": "California Attorney General - Consumer Protection Section",
+    "consumer_protection_url": "https://oag.ca.gov/consumers"
+  },
+  "calculated_values": {
+    "state_tax_on_3500_monthly": 326,
+    "calculated_state_tax_70k": 6510,
+    "total_effective_rate": 23.3,
+    "take_home_pay_70k": 48335,
+    "property_tax_300k": 3030,
+    "state_withholding_48k_monthly": 372
+  },
+  "local_examples": {
+    "major_retailers": "Target, Walmart, Costco, Trader Joe's, Safeway",
+    "telecom_providers": "AT&T, Verizon, T-Mobile, Xfinity, Spectrum",
+    "utility_providers": "PG&E, Southern California Edison, SDG&E, SoCalGas",
+    "healthcare_market": "Covered California marketplace; extensive provider networks; high costs but comprehensive coverage options",
+    "local_credit_union_name": "Golden 1 Credit Union",
+    "local_nonprofit_name": "Second Harvest Food Bank",
+    "major_city": "Los Angeles",
+    "major_city_1": "Los Angeles",
+    "major_city_2": "San Francisco",
+    "major_city_3": "San Diego",
+    "major_city_1_millage": 11.2,
+    "major_city_2_millage": 11.9,
+    "major_city_3_millage": 10.8,
+    "suburb_city": "Irvine",
+    "suburb_1": "Irvine",
+    "suburb_2": "Fremont",
+    "suburb_1_millage": 10.2,
+    "suburb_2_millage": 11.3,
+    "rural_area": "Central Valley",
+    "rural_area_millage": 9.8,
+    "high_tax_city": "San Francisco",
+    "medium_tax_city": "Sacramento",
+    "low_tax_city": "Fresno",
+    "high_tax_major_city": "San Francisco",
+    "low_tax_medium_city": "Fresno",
+    "high_tax_millage": 11.9,
+    "medium_tax_millage": 10.5,
+    "low_tax_millage": 9.8,
+    "high_combined_sales_tax": 9.5,
+    "low_combined_sales_tax": 7.25,
+    "high_local_sales_tax": 2.25,
+    "low_local_sales_tax": 0,
+    "local_sales_tax_1": 2.25,
+    "total_millage_example": 11.2,
+    "high_local_income_tax_rate": 0,
+    "low_local_income_tax_rate": 0,
+    "local_income_tax_rate": 0,
+    "local_income_tax_rate_1": 0
+  },
+  "notes": "California has highest state income tax in nation (up to 13.3%) and high cost of living, particularly in coastal areas. Housing crisis is severe with median home prices exceeding $780,000. Proposition 13 (1978) caps property tax increases at 2% annually unless property sold. State minimum wage is $16/hour (2024), highest in nation. Major tech industry presence in Silicon Valley drives high salaries but also high housing costs. Strong consumer protection laws (CCPA privacy law, auto-renewal disclosure requirements). State experiencing population decline for first time, with residents moving to lower-cost states like Texas, Arizona, Nevada."
+}

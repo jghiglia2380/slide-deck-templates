@@ -1,0 +1,621 @@
+{
+  "metadata": {
+    "lChapter": "L-63",
+    "title": "Advanced Investment Concepts",
+    "subtitle": "Exploring Alternatives, Understanding Complexity, and Knowing When Simple Wins",
+    "totalSlides": 20,
+    "hasStateVariables": false,
+    "stateVariablesUsed": []
+  },
+  "slides": [
+    {
+      "number": 1,
+      "type": "title",
+      "content": {
+        "title": "Advanced Investment Concepts",
+        "titleSize": "large",
+        "subtitle": "Exploring Alternatives, Understanding Complexity, and Knowing When Simple Wins"
+      }
+    },
+    {
+      "number": 2,
+      "type": "hook",
+      "content": {
+        "label": "The Complexity Question",
+        "question": "<strong>Warren Buffett, worth $100+ billion, recommends most people invest in a simple S&P 500 index fund.</strong> Not because he doesn't know about alternatives. He knows them all. <br><br> <strong>Today's Focus:</strong> Learn about alternatives and advanced concepts—not because you NEED them, but so you can evaluate them intelligently."
+      },
+      "headerColor": "amber",
+      "notes": "DISCUSSION PROMPTS:\nTHE CHALLENGE (5 min):\n• Read Jade's cryptocurrency story. Emphasize the emotional trap of FOMO (fear of missing out).\n• Discussion: \"Why did Jade invest MORE at the peak instead of taking profits?\"\n• Key lesson: Spectacular gains can reverse just as spectacularly.\n"
+    },
+    {
+      "number": 3,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "What You'll Learn Today",
+        "layout": "objectives-expanded",
+        "layoutData": {
+          "objectives": [
+            {
+              "number": 1,
+              "verb": "Analyze",
+              "description": "alternative investments including real estate, REITs, and commodities"
+            },
+            {
+              "number": 2,
+              "verb": "Evaluate",
+              "description": "emerging assets like cryptocurrency and their (limited) portfolio role"
+            },
+            {
+              "number": 3,
+              "verb": "Understand",
+              "description": "advanced concepts including derivatives, hedging, and leverage"
+            },
+            {
+              "number": 4,
+              "verb": "Apply",
+              "description": "appropriate wealth-building strategies for different financial goals"
+            },
+            {
+              "number": 5,
+              "verb": "Make",
+              "description": "informed decisions about if and when alternatives fit YOUR plan"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Essential Vocabulary (Part 1)",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Alternative Investment",
+              "definition": "Assets beyond traditional stocks and bonds: real estate, commodities, private equity, hedge funds, collectibles. Typically less liquid and more complex.",
+              "example": "REITs, gold, cryptocurrency, private equity funds"
+            },
+            {
+              "term": "REIT",
+              "definition": "Real Estate Investment Trust—company owning income-producing real estate. Trade like stocks, must distribute 90% of income as dividends.",
+              "example": "Publicly traded company owning apartment buildings, offices, or warehouses"
+            },
+            {
+              "term": "Commodities",
+              "definition": "Physical goods: precious metals (gold, silver), energy (oil), agricultural products (corn, wheat). Physical assets, not financial.",
+              "example": "Gold bullion, oil futures, agricultural commodity funds"
+            },
+            {
+              "term": "Cryptocurrency",
+              "definition": "Digital currency using blockchain technology. Highly volatile, speculative. Bitcoin and Ethereum are largest by market cap.",
+              "example": "Bitcoin, Ethereum, other digital currencies"
+            },
+            {
+              "term": "Derivatives",
+              "definition": "Contracts deriving value from underlying assets. Options (right to buy/sell) and futures (obligation to buy/sell). Complex, risky.",
+              "example": "Stock options, commodity futures contracts"
+            },
+            {
+              "term": "Leverage",
+              "definition": "Using borrowed money to amplify returns. Magnifies both gains AND losses. High risk.",
+              "example": "Borrowing to buy real estate or trading on margin"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Essential Vocabulary (Part 2)",
+        "layout": "vocab-container",
+        "layoutData": {
+          "terms": [
+            {
+              "term": "Illiquidity Premium",
+              "definition": "Extra return demanded for holding assets that can't be quickly sold. Private equity, real estate, art require higher returns to compensate.",
+              "example": "Private equity funds earning 12%+ vs. 8% for liquid stocks"
+            },
+            {
+              "term": "Hedge",
+              "definition": "Investment position taken to reduce risk. Like insurance—costs money but protects against adverse scenarios.",
+              "example": "Buying put options to protect against portfolio decline"
+            },
+            {
+              "term": "Accredited Investor",
+              "definition": "Individual meeting $200k+ income or $1M+ net worth thresholds. Gains access to hedge funds, private placements, venture capital.",
+              "example": "Qualified to invest in restricted private offerings"
+            },
+            {
+              "term": "Concentration Risk",
+              "definition": "Risk from having too much in single investment or sector. Diversification reduces it. Real estate investors often have high concentration.",
+              "example": "Having 50% of portfolio in one rental property"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Real Estate: Direct vs. REITs",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "🏠",
+            "title": "Direct Property Ownership",
+            "items": [
+              "<strong>Pros:</strong>",
+              "• Leverage (20% down controls 100%)",
+              "• Tax benefits (depreciation, 1031 exchange)",
+              "• Control over property decisions",
+              "• Potential for high returns",
+              "",
+              "<strong>Cons:</strong>",
+              "• Requires significant capital",
+              "• Time-intensive management",
+              "• Illiquid (can't sell quickly)",
+              "• Concentrated risk in one property"
+            ]
+          },
+          "rightColumn": {
+            "icon": "🏢",
+            "title": "REITs (Real Estate Investment Trusts)",
+            "items": [
+              "<strong>Pros:</strong>",
+              "• Liquid (trade like stocks)",
+              "• Diversified across many properties",
+              "• Professional management",
+              "• Low minimums (buy one share)",
+              "• High dividends (90% payout required)",
+              "",
+              "<strong>Cons:</strong>",
+              "• No leverage benefits",
+              "• Interest rate sensitive",
+              "• Dividends taxed as ordinary income",
+              "",
+              "<strong>For most investors:</strong> REITs provide real estate exposure without landlord responsibilities. 10% REIT allocation adds diversification simply."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "content",
+      "headerColor": "green",
+      "content": {
+        "headerTitle": "Commodities & Precious Metals",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Gold as Investment",
+            "paragraphs": [
+              "<strong>What it is:</strong> Physical asset, store of value, inflation hedge. Often rises during economic uncertainty.",
+              "",
+              "<strong>Historical Price Volatility:</strong>",
+              "2000: $250",
+              "2011: $1,900 (massive rise)",
+              "2015: $1,050 (45% decline from peak!)",
+              "2024: $2,000+",
+              "",
+              "Note: 45% decline from 2011-2015. Volatility can be extreme."
+            ]
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "Commodities Role",
+              "color": "amber",
+              "items": [
+                "<strong>Pros:</strong> Inflation hedge, diversification, crisis protection",
+                "",
+                "<strong>Cons:</strong> No dividends, storage costs, extreme volatility, long flat periods",
+                "",
+                "<strong>Appropriate Allocation:</strong>",
+                "5-10% gold as 'insurance' = reasonable",
+                "50% gold hoping to get rich = speculation"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "⚠️ Cryptocurrency: Extreme Caution",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "Bitcoin Price History",
+            "paragraphs": [
+              "2010: $0.08",
+              "Nov 2021: $69,000 (incredible rise)",
+              "Nov 2022: $15,000 (-78% crash)",
+              "2024: $45,000+ (recovery)",
+              "",
+              "<strong>The Problem:</strong>",
+              "• No intrinsic value (no earnings, dividends)",
+              "• Regulatory uncertainty",
+              "• Security/hacking risks",
+              "• Thousands of cryptos have gone to $0"
+            ]
+          },
+          "rightPanel": {
+            "stats": [
+              {
+                "value": "⚠️",
+                "label": "Reality Check",
+                "color": "rose"
+              }
+            ],
+            "infoCard": {
+              "title": "If You Must Invest",
+              "color": "rose",
+              "items": [
+                "<strong>'My friend made $50k on crypto!'</strong>",
+                "",
+                "Survivorship bias. For every winner, many lost everything. Has your friend sold and locked in gains, or still holding hoping for more?",
+                "",
+                "<strong>If investing:</strong>",
+                "• <strong>Max 1-5% of portfolio</strong>",
+                "• Money you can lose completely",
+                "• Treat as speculation, not investment",
+                "• Understand blockchain deeply first",
+                "• Never invest due to FOMO"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "content",
+      "headerColor": "rose",
+      "content": {
+        "headerTitle": "Derivatives: Options & Futures",
+        "layout": "comparison-grid",
+        "layoutData": {
+          "leftColumn": {
+            "icon": "📜",
+            "title": "Options & Futures Basics",
+            "items": [
+              "<strong>Call option:</strong> Right to BUY at set price",
+              "<strong>Put option:</strong> Right to SELL at set price",
+              "",
+              "<strong>Legitimate use:</strong> Buying put options as insurance against portfolio crash (costs money, protects downside)",
+              "",
+              "<strong>Dangerous use:</strong> Speculating on price movements. Options expire worthless if wrong. Zero-sum game.",
+              "",
+              "<strong>Futures:</strong> Obligation to buy/sell at future date for set price. Farmers lock in crop prices. Airlines hedge fuel costs. Professional tools."
+            ]
+          },
+          "rightColumn": {
+            "icon": "🎯",
+            "title": "Critical Warnings",
+            "items": [
+              "<strong>Reality Check:</strong>",
+              "75%+ of retail options traders lose money",
+              "",
+              "Options sellers (often professionals) collect premiums from small retail losses hoping for big wins.",
+              "",
+              "<strong>Bottom Line:</strong>",
+              "Derivatives serve legitimate hedging purposes for professionals.",
+              "",
+              "<strong>For students/beginners:</strong> Understand they exist. Don't use them. If curious later: study months, paper-trade a year, then risk only what you can lose."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Why Simple Beats Complex",
+        "layout": "balanced-layout",
+        "layoutData": {
+          "leftPanel": {
+            "title": "The Data",
+            "paragraphs": [
+              "<strong>90%</strong> - Active managers underperform index funds over 15+ years",
+              "",
+              "<strong>2%</strong> - Hedge fund fees (plus 20% of profits) vs. 0.03% index fund",
+              "",
+              "<strong>75%</strong> - Retail options traders who lose money"
+            ]
+          },
+          "rightPanel": {
+            "stats": [],
+            "infoCard": {
+              "title": "Why It Matters",
+              "color": "teal",
+              "items": [
+                "<strong>Complexity Creates Problems:</strong>",
+                "More opportunities for fees, mistakes, poor timing, and emotional decisions that erode returns.",
+                "",
+                "<strong>Simplicity Creates Discipline:</strong>",
+                "Low-cost index funds, systematic rebalancing, and staying invested through volatility = proven success.",
+                "",
+                "<strong>Before Alternatives, Master Fundamentals</strong>"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "When Alternatives Might Fit",
+        "layout": "concept-full",
+        "layoutData": {
+          "title": "Strategic Alternative Allocations",
+          "bulletPoints": [
+            "<strong>REITs (10-20%):</strong> After establishing core stock/bond portfolio. For real estate diversification without landlord hassles. REIT index funds preferred.",
+            "<strong>Gold (5-10%):</strong> As portfolio 'insurance' against catastrophic scenarios. Small allocation. Not for speculation or wealth building.",
+            "<strong>Crypto (1-5% max):</strong> Only if: you deeply understand blockchain, can afford total loss, won't panic-sell. Money you can completely lose."
+          ],
+          "keyPoint": "<strong>Decision Framework Questions:</strong> Why does this fit my portfolio better than traditional investments? • What unique risks does it carry? • What fees will I pay? • How liquid is it? • Do I truly understand this, or am I attracted by novelty/FOMO?"
+        }
+      },
+      "notes": "COMMON MISCONCEPTIONS:\n\n1. \"Cryptocurrency is the future—I need to invest now.\"\n   → May or may not be true, but FOMO is not an investment strategy. If crypto succeeds, 1-5% allocation captures gains. If it fails, small allocation prevents disaster.\n\n2. \"REITs and rental property are the same thing.\"\n   → REITs provide real estate exposure without property management, illiquidity, or concentration risk. Very different risk/return profiles.\n\n3. \"Alternative investments always reduce risk.\"\n   → Some alternatives (REITs in 2008) fell MORE than stocks. Diversification only works if assets move differently. Test correlation before assuming benefit.\n\n"
+    },
+    {
+      "number": 12,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Cameron's REIT Strategy",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👤",
+            "name": "Cameron's REIT Strategy",
+            "paragraphs": [
+              "<strong>Starting Point:</strong>",
+              "Cameron, 38: $240,000 in stock/bond index funds. Wanted real estate exposure but not landlord responsibilities.",
+              "",
+              "<strong>His Approach:</strong>",
+              "• Allocated 10% ($24,000) to diversified REIT index fund",
+              "• Holdings: residential, commercial, industrial, healthcare",
+              "• Reinvested 6-8% annual dividends",
+              "• Rebalanced annually",
+              "",
+              "<strong>2020 Pandemic Test:</strong>",
+              "Stocks fell 30%. REIT index held better—residential strong (people need housing), office/retail struggled. Diversified REIT = 95% of value.",
+              "",
+              "Cameron rebalanced into REITs at low prices. Two years later: full recovery + growth captured."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "By Age 48",
+              "value": "$510,000",
+              "detail": "REIT allocation provided diversification, income stream, and rebalancing opportunities—without landlord work. Lesson: Modest REIT allocation = real estate exposure done simply"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "content",
+      "headerColor": "amber",
+      "content": {
+        "headerTitle": "Jade's Cryptocurrency Lesson",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👤",
+            "name": "Jade's Cryptocurrency Journey",
+            "paragraphs": [
+              "<strong>The Excitement:</strong>",
+              "Jade, 26: Heard friends discussing Bitcoin gains. Invested $5,000 (10% of portfolio) at $20,000/coin.",
+              "",
+              "Six months later: Bitcoin hit $60,000. Her $5,000 became <strong>$15,000</strong>. Felt vindicated.",
+              "",
+              "<strong>The Mistake:</strong>",
+              "Instead of rebalancing to lock in gains, she invested <strong>another $5,000</strong> at the peak. Total invested: $10,000.",
+              "",
+              "<strong>The Crash:</strong>",
+              "Over next year: Bitcoin crashed to $15,000.",
+              "Her holdings that peaked at $15,000? <strong>Down to $5,000.</strong>",
+              "Meanwhile: 'Boring' stock index funds steadily grew 10%."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "before",
+              "label": "Total Damage",
+              "value": "-50%",
+              "detail": "$10,000 invested → $5,000 remaining = $5,000 loss (50%). Now keeps only 2% in crypto—money she can lose completely. Lesson: FOMO leads to buying peaks. Volatility works both directions."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "content",
+      "headerColor": "green",
+      "content": {
+        "headerTitle": "Marcus's Real Estate Evolution",
+        "layout": "scenario-layout",
+        "layoutData": {
+          "scenario": {
+            "icon": "👤",
+            "name": "Marcus: Rental vs. REIT Analysis",
+            "paragraphs": [
+              "<strong>The Decision:</strong>",
+              "Marcus, 42: $500,000 total portfolio. Wanted real estate exposure. Analyzed two options:",
+              "",
+              "<strong>Comparison Table:</strong>",
+              "Factor | Rental Property | REIT Index",
+              "Capital needed: $80,000 down | Any amount",
+              "Management: Active (or 10% fee) | None",
+              "Diversification: 1 property | Hundreds",
+              "Liquidity: Months to sell | Instant",
+              "",
+              "<strong>His Choice:</strong>",
+              "Invested $50,000 (10%) in diversified REIT index. Kept emergency fund intact. No landlord responsibilities.",
+              "",
+              "<strong>2020 Pandemic:</strong>",
+              "Retail REITs crashed 40%. Industrial REITs (warehouses) gained 15%. His diversified index held 95%.",
+              "Rebalanced into REITs at low prices. Two years later: captured recovery."
+            ]
+          },
+          "outcomes": [
+            {
+              "type": "after",
+              "label": "By Age 50",
+              "value": "$780,000",
+              "detail": "REITs provided real estate exposure, diversification, income—without ever fixing a leaky faucet. Lesson: Traditional investment vehicles can provide alternative asset exposure"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "discussion",
+      "variant": "teal",
+      "content": {
+        "badge": "Discussion",
+        "question": "<strong>Scenario A - Real Estate:</strong> 'My uncle got rich from rental properties. I should buy real estate too.' <em>Questions to consider?</em><br><br><strong>Scenario B - Cryptocurrency:</strong> 'Everyone on TikTok says crypto will replace dollars. I need to invest now or miss out.' <em>Red flags here?</em><br><br><strong>Scenario C - Gold:</strong> 'Gold has been valuable for 5,000 years. I should put 50% of my portfolio in gold.' <em>What's wrong with this logic?</em><br><br><strong>Critical Question:</strong> Before considering alternatives, ask: Do I fully understand this? Is my traditional portfolio optimized? Am I investing or speculating?"
+      }
+    },
+    {
+      "number": 16,
+      "type": "discussion",
+      "variant": "purple",
+      "content": {
+        "badge": "Personal Reflection",
+        "question": "<strong>Portfolio Exercise:</strong> If you had $100,000 to invest for 30 years, what percentage (if any) would you put in alternatives?<br><br>• U.S. Stocks: ____%<br>• International Stocks: ____%<br>• Bonds: ____%<br>• REITs: ____%<br>• Gold/Commodities: ____%<br>• Cryptocurrency: ____%<br><br><strong>Reflection Questions:</strong><br>• Why did you choose these allocations?<br>• What diversification benefit do you expect?<br>• Could you handle total loss of your alternative allocation?<br>• Are you investing based on fundamentals or excitement/fear?<br><br><strong>Valid Answer:</strong> '0% alternatives—I'll stick with stocks and bonds.' That's a perfectly sound strategy that's built more wealth than most alternative-heavy portfolios."
+      }
+    },
+    {
+      "number": 17,
+      "type": "content",
+      "headerColor": "emerald",
+      "content": {
+        "headerTitle": "Check Your Understanding",
+        "layout": "check-grid",
+        "layoutData": {
+          "questions": [
+            {
+              "number": 1,
+              "question": "What percentage of portfolio do financial advisors typically recommend for cryptocurrency? (Answer: C - 1-5% maximum)"
+            },
+            {
+              "number": 2,
+              "question": "What advantage do REITs have over direct property ownership for most investors? (Answer: B - Liquidity and diversification)"
+            },
+            {
+              "number": 3,
+              "question": "What percentage of retail options traders typically lose money? (Answer: C - 75%+)"
+            },
+            {
+              "number": 4,
+              "question": "What's a reasonable gold allocation for portfolio 'insurance'? (Answer: B - 5-10%)"
+            }
+          ]
+        }
+      },
+      "notes": "ANSWER KEY:\n\n5. Questions to ask: (1) Can I afford to lose 100% of this? (2) Do I understand how cryptocurrency actually works? (3) Am I investing based on fundamentals or FOMO? (4) Have I maximized traditional investments first?\n\nCYU 1: B (REIT)\n\nCYU 2: Gold tends to hold value during uncertainty when investors flee to \"safe havens.\" Limitations: produces no income, can have long flat/declining periods, historically underperforms stocks long-term.\n\nCYU 4: REIT advantages: (1) Liquidity—can sell shares instantly vs. months for property. (2) Diversification—one fund owns hundreds of properties vs. concentration in single property. (3) No management burden. (4) Lower minimums.\n\n"
+    },
+    {
+      "number": 18,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Key Takeaways",
+        "layout": "takeaway-grid",
+        "layoutData": {
+          "takeaways": [
+            {
+              "number": 1,
+              "title": "REITs offer real estate exposure",
+              "description": "without landlord hassles. 10-20% allocation is reasonable for diversification"
+            },
+            {
+              "number": 2,
+              "title": "Commodities (gold) serve as insurance",
+              "description": "5-10% maximum. Not for wealth building or speculation"
+            },
+            {
+              "number": 3,
+              "title": "Cryptocurrency is high speculation",
+              "description": "1-5% max if you must, with money you can lose completely"
+            },
+            {
+              "number": 4,
+              "title": "Derivatives are professional tools",
+              "description": "75%+ of retail options traders lose money. Avoid until expert-level"
+            },
+            {
+              "number": 5,
+              "title": "Simple beats complex",
+              "description": "90% of active managers underperform index funds. Complexity creates fee/mistake opportunities"
+            },
+            {
+              "number": 6,
+              "title": "Master fundamentals first",
+              "description": "before alternatives, optimize traditional stocks/bonds, costs, and discipline"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "content",
+      "headerColor": "indigo",
+      "content": {
+        "headerTitle": "Skill Builder: Alternative Investment Analyzer",
+        "layout": "activity-layout",
+        "layoutData": {
+          "main": {
+            "icon": "📊",
+            "title": "Explore & Compare Alternatives",
+            "description": "Analyze four alternative categories and build your decision framework"
+          },
+          "steps": [
+            "<strong>REITs:</strong> Analyze risk, return, correlation with stocks/bonds",
+            "<strong>Commodities:</strong> Compare gold, oil, diversified commodity funds",
+            "<strong>Cryptocurrency:</strong> Examine Bitcoin and Ethereum fundamentals",
+            "<strong>Advanced Strategies:</strong> Learn private equity basics",
+            "<strong>Historical Crisis Test:</strong> How did alternatives perform in 2008 and 2020?",
+            "<strong>Crypto Scenarios:</strong> Model 1%, 5%, and 15% crypto allocations through optimistic, base, and pessimistic outcomes",
+            "<strong>Your Decision Framework:</strong> For any future alternative investment, check: ✓ I can explain how it works ✓ I can afford total loss ✓ I understand all fees ✓ I'm not investing due to FOMO"
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "closing",
+      "content": {
+        "tagline": "\"Your financial success depends primarily on savings rate, asset allocation, cost management, and discipline—not access to exotic investments.\"",
+        "website": "www.pflacademy.co",
+        "copyright": "© 2025 PFL Academy. All rights reserved."
+      }
+    }
+  ]
+}

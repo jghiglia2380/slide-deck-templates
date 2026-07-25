@@ -1,0 +1,83 @@
+{
+  "enabled_states": [
+    "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA",
+    "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD",
+    "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ",
+    "NM", "NY", "NC", "ND", "OH", "OK"
+  ],
+  "total_states": 36,
+  "variable_categories_file": "../VARIABLE_CATEGORIES.json",
+  "update_schedules": {
+    "monthly": {
+      "enabled": true,
+      "description": "Gas prices, loan rates, unemployment",
+      "variable_count": 5,
+      "day_of_month": 1,
+      "time": "02:00",
+      "timezone": "America/New_York"
+    },
+    "quarterly": {
+      "enabled": true,
+      "description": "Housing costs, insurance, bank fees",
+      "variable_count": 11,
+      "months": [1, 4, 7, 10],
+      "day_of_month": 1,
+      "time": "03:00",
+      "timezone": "America/New_York"
+    },
+    "annual": {
+      "enabled": true,
+      "description": "Taxes, tuition, DMV fees, URLs, agency names, local examples (includes former 'as-needed')",
+      "variable_count": 70,
+      "month": 9,
+      "day_of_month": 1,
+      "time": "04:00",
+      "timezone": "America/New_York"
+    }
+  },
+  "deprecated_schedules": {
+    "as_needed": {
+      "status": "MERGED INTO ANNUAL",
+      "date_deprecated": "2025-11-29",
+      "reason": "URLs and agency names rarely change; annual refresh sufficient"
+    }
+  },
+  "data_versioning": {
+    "enabled": true,
+    "format": "YYYY-QN",
+    "current_version": "2025-Q4",
+    "changelog_path": "../changelog/",
+    "archive_old_versions": true,
+    "retention_period_years": 5
+  },
+  "notifications": {
+    "enabled": true,
+    "notify_teachers": true,
+    "notify_admins": true,
+    "notification_methods": ["email", "in_app"],
+    "include_changelog": true,
+    "include_learning_moments": true
+  },
+  "anthropic_api": {
+    "enabled": true,
+    "model": "claude-3-5-sonnet-20241022",
+    "max_tokens": 4000,
+    "temperature": 0.1,
+    "use_for": ["web_search", "data_extraction", "validation"]
+  },
+  "validation": {
+    "run_before_update": true,
+    "run_after_update": true,
+    "auto_rollback_on_failure": true,
+    "require_manual_approval": false,
+    "alert_on_large_changes": true,
+    "large_change_threshold_percent": 10
+  },
+  "logging": {
+    "enabled": true,
+    "level": "INFO",
+    "log_file": "../logs/updates.log",
+    "rotate_logs": true,
+    "max_log_size_mb": 100
+  }
+}

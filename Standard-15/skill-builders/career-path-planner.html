@@ -1,0 +1,147 @@
+<\!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Path Planner Skill Builder</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-purple-50">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-purple-800 mb-6">Career Path Planner</h1>
+        
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-xl font-semibold text-purple-700 mb-4">Build Your Career Development Plan</h2>
+            <p class="text-gray-700 mb-4">
+                This interactive tool will help you create a comprehensive career development plan with short-term, mid-term, and long-term goals across multiple categories.
+            </p>
+            
+            <div class="border-t border-b border-gray-200 py-4 my-4">
+                <h3 class="font-medium text-gray-800 mb-2">Instructions:</h3>
+                <ol class="list-decimal ml-6 text-gray-700 space-y-1">
+                    <li>Select your target career path from the dropdown or enter a custom one</li>
+                    <li>For each time frame, set goals in all five categories</li>
+                    <li>Be specific and ensure goals follow SMART criteria</li>
+                    <li>Click "Save Plan" when complete to generate your career development plan</li>
+                </ol>
+            </div>
+            
+            <div class="mb-6">
+                <label class="block text-gray-700 font-medium mb-2">Target Career Path:</label>
+                <select class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    <option value="">-- Select a career path --</option>
+                    <option value="business">Business & Management</option>
+                    <option value="tech">Technology & IT</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="education">Education</option>
+                    <option value="trades">Skilled Trades</option>
+                    <option value="creative">Creative Arts</option>
+                    <option value="custom">Custom (specify below)</option>
+                </select>
+                <div class="mt-2">
+                    <input type="text" placeholder="Custom career path..." class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                </div>
+            </div>
+            
+            <div class="mb-6">
+                <h3 class="font-medium text-gray-800 mb-3">Short-Term Goals (1-2 years)</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-gray-700 mb-1">Education:</label>
+                        <input type="text" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-1">Work Experience:</label>
+                        <input type="text" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-1">Networking:</label>
+                        <input type="text" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-1">Skill Development:</label>
+                        <input type="text" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    </div>
+                    <div class="md:col-span-2">
+                        <label class="block text-gray-700 mb-1">Other Goals:</label>
+                        <input type="text" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-6">
+                <h3 class="font-medium text-gray-800 mb-3">Mid-Term Goals (3-5 years)</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-gray-700 mb-1">Education:</label>
+                        <input type="text" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-1">Work Experience:</label>
+                        <input type="text" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-1">Networking:</label>
+                        <input type="text" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-1">Skill Development:</label>
+                        <input type="text" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    </div>
+                    <div class="md:col-span-2">
+                        <label class="block text-gray-700 mb-1">Other Goals:</label>
+                        <input type="text" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-6">
+                <h3 class="font-medium text-gray-800 mb-3">Long-Term Goals (5+ years)</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-gray-700 mb-1">Education:</label>
+                        <input type="text" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-1">Work Experience:</label>
+                        <input type="text" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-1">Networking:</label>
+                        <input type="text" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-1">Skill Development:</label>
+                        <input type="text" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    </div>
+                    <div class="md:col-span-2">
+                        <label class="block text-gray-700 mb-1">Other Goals:</label>
+                        <input type="text" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex justify-center">
+                <button class="bg-purple-600 text-white px-6 py-3 rounded-md font-medium hover:bg-purple-700 transition-colors">
+                    Save Career Development Plan
+                </button>
+            </div>
+        </div>
+        
+        <div id="plan-output" class="bg-white rounded-lg shadow-md p-6 hidden">
+            <h2 class="text-xl font-semibold text-purple-700 mb-4">Your Career Development Plan</h2>
+            <div class="border-t border-b border-gray-200 py-4 my-4">
+                <p class="text-gray-700">Your completed career development plan will appear here after saving.</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // This would be replaced with actual implementation
+        document.querySelector('button').addEventListener('click', function() {
+            alert('In the full implementation, this would save your career development plan to the database and generate a formatted plan below.');
+            document.getElementById('plan-output').classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>
