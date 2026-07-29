@@ -11,7 +11,19 @@
     "calculated_variables_spec": "pfl-print-pipeline/resolver/resolve.mjs + CALCULATED_VARIABLES_FOR_SEBASTIAN.md (FICA composite rate)",
     "federal_student_aid": "Federal Student Aid — undergrad Direct loans first disbursed 2026-07-01 through 2027-06-30 (the 2026-27 rate)"
   },
-  "_todo_stop_flagged": [],
+  "_todo_stop_flagged": [
+    "eitc.max_credit_3_plus_children (8231) — carried from PFL-Chassis src/config/taxConstants.ts EITC_MAX at commit 3de03dc (tag deploy-2026-07-28). It is the ONLY figure in this file with a single source: it does NOT appear in TAX_CURRENCY_2026_HANDOFF.md or gate/fixtures/tax_brackets_2026.json, so it could not be cross-confirmed. Confirm against IRS Rev. Proc. 2025-32 §2.06 (EITC table) before relying on it, and add the remaining EITC parameters (0/1/2-child maxima, earned-income amounts, phaseout thresholds, investment-income limit), which no PFL source currently holds."
+  ],
+  "_reconciliation_2026_07_29": {
+    "_note": "Phase 1 cross-check of PFL-Chassis src/config/taxConstants.ts (commit 3de03dc / tag deploy-2026-07-28) against TAX_CURRENCY_2026_HANDOFF.md and this file, value by value.",
+    "value_mismatches_found": "NONE. Every figure present in both taxConstants.ts and this file / the handoff agrees exactly: single + MFJ brackets (all 7 bands each), standard deduction (single/MFJ/HoH), 401k 24500 / catch-up-50 8000 / IRA 7500 / IRA catch-up 1100, SS rate 6.2% / wage base 184500 / employee max 11439, Medicare 1.45%, additional Medicare 0.9% rate, combined FICA 7.65%, SALT cap 40400.",
+    "coverage_gaps_in_taxConstants_ts": [
+      "additional_medicare_threshold is a SCALAR 200000 in taxConstants.ts (FICA.additionalMedicareThreshold) and calculateMedicareTax() applies it regardless of filing status — it therefore over-taxes MFJ (statutory threshold 250000) and under-taxes MFS (125000). This is a live-code defect, not a stale figure; the value 200000 itself is correct for single filers.",
+      "SALT_CAP is a scalar 40400 in taxConstants.ts with no MFS half-cap (20200).",
+      "taxConstants.ts holds no HoH brackets, no MFS column, no filing thresholds, no additional standard deduction (65+/blind), no HSA limits, no 401(k) ages-60-63 catch-up (11250), and no student loan rate — all of which exist here."
+    ],
+    "note_on_ss_wage_base": "TAX_CURRENCY_2026_HANDOFF.md (2026-07-24) states there was no committed fixture for the 2026 SS wage base and flags it for Denis. That was resolved in Run 2b: 184500 (ssa_2026) is now recorded here and independently matches taxConstants.ts. The handoff's open item is closed; the handoff text itself is simply older than the resolution."
+  },
   "_resolved_run_2b": [
     "salt_deduction_cap (OBBBA 2026)",
     "payroll_taxes.social_security_wage_base + social_security_employee_max (SSA 2026)",
@@ -100,6 +112,10 @@
   "student_loan_rates": {
     "_source": "federal_student_aid + tax_brackets_2026.json student_loan_undergrad_direct_rate_2026_27. This is the 2026-27 rate for undergrad Direct loans first disbursed 2026-07-01 through 2027-06-30 (effective July 1 2026) — verified against TAX_CURRENCY_2026_HANDOFF.md; not a prior-year value.",
     "undergrad_direct_2026_27": 6.52
+  },
+  "eitc": {
+    "_source": "SINGLE-SOURCE / UNCONFIRMED — see _todo_stop_flagged. Carried from PFL-Chassis src/config/taxConstants.ts `EITC_MAX` (commit 3de03dc, tag deploy-2026-07-28), which is consumed by Station2MaximizeTaxCredits.tsx. Not present in TAX_CURRENCY_2026_HANDOFF.md or tax_brackets_2026.json; not independently verified against IRS Rev. Proc. 2025-32.",
+    "max_credit_3_plus_children": 8231
   },
   "salt_deduction_cap": {
     "single": 40400,
