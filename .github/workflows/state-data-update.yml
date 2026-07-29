@@ -74,6 +74,29 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python state_data_updater.py --run-now "${{ steps.which.outputs.type }}"
 
+      - name: Count fields needing human verification
+        id: flags
+        run: |
+          set -euo pipefail
+          FILE=$(ls -t state-data/changelog/*_"${{ steps.which.outputs.type }}".json 2>/dev/null | head -1 || true)
+          if [ -z "$FILE" ]; then
+            echo "count=0" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          COUNT=$(python -c "import json,sys; print(json.load(open(sys.argv[1])).get('needs_verification_count',0))" "$FILE")
+          echo "count=$COUNT" >> "$GITHUB_OUTPUT"
+          python - "$FILE" > /tmp/flagged.md <<'PY'
+          import json, sys
+          d = json.load(open(sys.argv[1]))
+          rows = d.get('needs_verification', [])
+          if rows:
+              print("| State | Variable | Previous value |")
+              print("|---|---|---|")
+              for r in rows[:100]:
+                  print(f"| {r.get('state','?')} | `{r.get('variable','?')}` | {r.get('old_value','—')} |")
+              if len(rows) > 100:
+                  print(f"\n_… and {len(rows) - 100} more._")
+          PY
+
       - name: Open PR if anything changed
         env:
           GH_TOKEN: ${{ github.token }}
@@ -101,7 +124,21 @@ jobs:
           git commit -m "State data: ${TYPE} update $(date -u +%Y-%m-%d)"
           git push origin "$BRANCH"
 
+          FLAGS="${{ steps.flags.outputs.count }}"
           {
+            if [ "$FLAGS" -gt 0 ]; then
+              echo "# ⛔ DO NOT MERGE AS-IS — ${FLAGS} field(s) need a human value"
+              echo
+              echo "The updater could **not source** these values, so it wrote the literal"
+              echo "string \`NEEDS_HUMAN_VERIFICATION\` into each field instead of a number."
+              echo "That is deliberate: an unsourced figure that looks real is worse than a"
+              echo "visibly missing one. **Replace every one with a verified value before merging.**"
+              echo
+              cat /tmp/flagged.md 2>/dev/null || true
+              echo
+              echo "---"
+              echo
+            fi
             echo "Automated **${TYPE}** run of \`state-data/automation/state_data_updater.py\`."
             echo
             echo "### Changed files"
@@ -113,13 +150,18 @@ jobs:
             echo "Every value here was produced by the updater, **not** by a human."
             echo "Check each changed number against its authoritative source before approving."
             echo
-            echo "> ⚠️ Known limitation: the updater's fetch step declares no web-search tool,"
-            echo "> so values come from the model rather than a live lookup. Treat every number"
-            echo "> in this PR as unverified until checked. See the automation README."
+            echo "> ⚠️ The updater has no web-search tool wired, so it cannot look values up."
+            echo "> Rather than emit a model-recalled number with no source, it flags the field."
+            echo "> Until a real fetch path is built, expect every field to come back flagged."
           } > /tmp/pr-body.md
+
+          TITLE="State data: ${TYPE} update $(date -u +%Y-%m-%d)"
+          if [ "$FLAGS" -gt 0 ]; then
+            TITLE="[NEEDS VERIFICATION] ${TITLE} (${FLAGS} unsourced)"
+          fi
 
           gh pr create \
             --base "${{ github.ref_name }}" \
             --head "$BRANCH" \
-            --title "State data: ${TYPE} update $(date -u +%Y-%m-%d)" \
+            --title "$TITLE" \
             --body-file /tmp/pr-body.md

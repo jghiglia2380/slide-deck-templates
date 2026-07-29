@@ -23,14 +23,34 @@ import time
 # Add parent directory to path
 sys.path.append(str(Path(__file__).parent.parent))
 
+# Written into a field when the updater CANNOT actually source a value.
+# Never replace this with a number that the model merely recalled — an
+# unsourced figure that looks real is worse than a visibly missing one.
+NEEDS_VERIFICATION = "NEEDS_HUMAN_VERIFICATION"
+
+
 class StateDataUpdater:
-    def __init__(self, config_path='config.json'):
+    def __init__(self, config_path='config.json', test_mode=False):
         """Initialize the updater with configuration"""
         self.base_dir = Path(__file__).parent.parent
         self.config = self.load_config(config_path)
         self.client = self.init_anthropic_client()
         self.current_version = self.generate_version_tag()
         self.changes_log = []
+        self.test_mode = test_mode
+        self._state_files = None          # lazy state_code -> Path index
+        self.flagged = []                 # fields written as NEEDS_VERIFICATION
+
+        # Can we actually fetch? Only if a web-search tool is configured AND
+        # passed to the API. Absent that, the model has no browsing ability and
+        # anything it returns is recall, not a lookup. Default: NO.
+        self.web_search_tool = self.config.get('anthropic_api', {}).get('web_search_tool')
+        if not self.web_search_tool:
+            print("⚠️  No web-search tool configured (anthropic_api.web_search_tool).")
+            print(f"    Values cannot be sourced; fields will be written as {NEEDS_VERIFICATION}.")
+
+        if self.test_mode:
+            print("🧪 TEST MODE — no files will be written.\n")
 
     def load_config(self, config_path):
         """Load configuration file"""
@@ -54,10 +74,40 @@ class StateDataUpdater:
         """Get list of enabled states"""
         return self.config['enabled_states']
 
+    def build_state_index(self):
+        """Map 2-letter state code -> states/<full_state_name>.json.
+
+        The files are named for the state ('alabama.json'), not the code
+        ('al.json'), so the code cannot be turned into a filename directly.
+        The mapping is read from each file's own state_code field rather than
+        hardcoded, so adding a state needs no change here.
+        """
+        if self._state_files is not None:
+            return self._state_files
+
+        index = {}
+        states_dir = self.base_dir / 'states'
+        for path in sorted(states_dir.glob('*.json')):
+            try:
+                with open(path, 'r') as f:
+                    code = json.load(f).get('state_code')
+            except (json.JSONDecodeError, OSError) as e:
+                print(f"Warning: could not read {path.name}: {e}")
+                continue
+            if code:
+                index[code.upper()] = path
+
+        self._state_files = index
+        return index
+
+    def state_file_path(self, state_code):
+        """Resolve a state code to its JSON file, or None."""
+        return self.build_state_index().get(state_code.upper())
+
     def load_state_data(self, state_code):
         """Load existing state JSON file"""
-        file_path = self.base_dir / 'states' / f'{state_code.lower()}.json'
-        if not file_path.exists():
+        file_path = self.state_file_path(state_code)
+        if file_path is None or not file_path.exists():
             print(f"Warning: State file not found for {state_code}")
             return None
 
@@ -66,7 +116,14 @@ class StateDataUpdater:
 
     def save_state_data(self, state_code, data):
         """Save updated state JSON file"""
-        file_path = self.base_dir / 'states' / f'{state_code.lower()}.json'
+        file_path = self.state_file_path(state_code)
+        if file_path is None:
+            print(f"Warning: cannot save {state_code} — no state file mapped")
+            return
+
+        if self.test_mode:
+            print(f"  🧪 test mode — not writing {file_path.name}")
+            return
 
         # Backup existing file
         if file_path.exists():
@@ -101,6 +158,14 @@ class StateDataUpdater:
         }
 
         query = query_map.get(variable_name, f"{state_name} {variable_name.replace('_', ' ')} {datetime.now().year}")
+
+        # No web-search tool wired => the model cannot look anything up. Asking
+        # it anyway would return a recalled number with no source, which is
+        # exactly the failure this guard exists to prevent. Flag the field for a
+        # human instead of writing a figure that looks authoritative.
+        if not self.web_search_tool:
+            self.flagged.append({'state': state_name, 'variable': variable_name, 'query': query})
+            return NEEDS_VERIFICATION
 
         try:
             # Use Claude with web search
@@ -165,13 +230,18 @@ Return format: Just the number or "NOT_FOUND"
 
                 if new_value is not None and new_value != old_value:
                     state_data[section][var] = new_value
+                    flagged = new_value == NEEDS_VERIFICATION
                     changes.append({
                         'variable': var,
                         'old_value': old_value,
                         'new_value': new_value,
-                        'change_percent': ((new_value - old_value) / old_value * 100) if old_value else 0
+                        'change_percent': self.percent_change(old_value, new_value),
+                        'needs_verification': flagged
                     })
-                    print(f"  Updated {var}: {old_value} → {new_value}")
+                    if flagged:
+                        print(f"  ⚠️  {var}: could not source a value — flagged {NEEDS_VERIFICATION} (was {old_value})")
+                    else:
+                        print(f"  Updated {var}: {old_value} → {new_value}")
 
         return changes
 
@@ -196,13 +266,18 @@ Return format: Just the number or "NOT_FOUND"
 
                 if new_value is not None and new_value != old_value:
                     state_data[section][var] = new_value
+                    flagged = new_value == NEEDS_VERIFICATION
                     changes.append({
                         'variable': var,
                         'old_value': old_value,
                         'new_value': new_value,
-                        'change_percent': ((new_value - old_value) / old_value * 100) if old_value else 0
+                        'change_percent': self.percent_change(old_value, new_value),
+                        'needs_verification': flagged
                     })
-                    print(f"  Updated {var}: {old_value} → {new_value}")
+                    if flagged:
+                        print(f"  ⚠️  {var}: could not source a value — flagged {NEEDS_VERIFICATION} (was {old_value})")
+                    else:
+                        print(f"  Updated {var}: {old_value} → {new_value}")
 
         return changes
 
@@ -227,15 +302,35 @@ Return format: Just the number or "NOT_FOUND"
 
                 if new_value is not None and new_value != old_value:
                     state_data[section][var] = new_value
+                    flagged = new_value == NEEDS_VERIFICATION
                     changes.append({
                         'variable': var,
                         'old_value': old_value,
                         'new_value': new_value,
-                        'change_percent': ((new_value - old_value) / old_value * 100) if old_value else 0
+                        'change_percent': self.percent_change(old_value, new_value),
+                        'needs_verification': flagged
                     })
-                    print(f"  Updated {var}: {old_value} → {new_value}")
+                    if flagged:
+                        print(f"  ⚠️  {var}: could not source a value — flagged {NEEDS_VERIFICATION} (was {old_value})")
+                    else:
+                        print(f"  Updated {var}: {old_value} → {new_value}")
 
         return changes
+
+    @staticmethod
+    def percent_change(old_value, new_value):
+        """Percent change, or 0 when either side isn't numeric.
+
+        new_value is NEEDS_HUMAN_VERIFICATION (a string) whenever the value
+        could not be sourced, so this must never assume arithmetic is possible.
+        """
+        if isinstance(old_value, bool) or isinstance(new_value, bool):
+            return 0
+        if not isinstance(old_value, (int, float)) or not isinstance(new_value, (int, float)):
+            return 0
+        if not old_value:
+            return 0
+        return (new_value - old_value) / old_value * 100
 
     def get_variable_section(self, variable_name):
         """Determine which section a variable belongs to"""
@@ -299,7 +394,8 @@ Return format: Just the number or "NOT_FOUND"
                     state_data['last_updated'] = datetime.now().strftime('%Y-%m-%d')
                     self.save_state_data(state_code, state_data)
                     total_changes.extend([{**c, 'state': state_code} for c in changes])
-                    print(f"  ✓ Saved {len(changes)} changes for {state_code}")
+                    verb = "Would save" if self.test_mode else "Saved"
+                    print(f"  ✓ {verb} {len(changes)} changes for {state_code}")
                 else:
                     print(f"  ✗ Changes rejected for {state_code}")
             else:
@@ -397,6 +493,13 @@ Return format: Just the number or "NOT_FOUND"
 
     def log_changes(self, changes, update_type):
         """Log all changes to changelog file"""
+        needs_verification = [c for c in changes if c.get('needs_verification')]
+
+        if self.test_mode:
+            print(f"\n🧪 test mode — not writing changelog "
+                  f"({len(changes)} change(s), {len(needs_verification)} needing verification)")
+            return
+
         changelog_dir = self.base_dir / 'changelog'
         changelog_dir.mkdir(exist_ok=True)
 
@@ -408,7 +511,10 @@ Return format: Just the number or "NOT_FOUND"
             'timestamp': datetime.now().isoformat(),
             'changes': changes,
             'total_changes': len(changes),
-            'states_affected': list(set([c['state'] for c in changes]))
+            'states_affected': list(set([c['state'] for c in changes])),
+            'needs_verification_count': len(needs_verification),
+            'needs_verification': needs_verification,
+            'web_search_tool': self.web_search_tool or None
         }
 
         with open(changelog_file, 'w') as f:
@@ -422,6 +528,10 @@ Return format: Just the number or "NOT_FOUND"
             return
 
         if not changes:
+            return
+
+        if self.test_mode:
+            print("🧪 test mode — not writing notifications")
             return
 
         notifications_dir = self.base_dir / 'notifications'
@@ -551,7 +661,7 @@ def main():
 
     args = parser.parse_args()
 
-    updater = StateDataUpdater()
+    updater = StateDataUpdater(test_mode=args.test)
 
     if args.run_now:
         if args.run_now == 'monthly':
@@ -562,6 +672,17 @@ def main():
             updater.run_annual_update()
     else:
         updater.run()
+
+    if updater.flagged:
+        print(f"\n{'='*60}")
+        print(f"⚠️  {len(updater.flagged)} field(s) written as {NEEDS_VERIFICATION}")
+        print("These could NOT be sourced. A human must supply and verify each")
+        print("value before this data is merged or served.")
+        print(f"{'='*60}")
+        for f in updater.flagged[:20]:
+            print(f"  {f['state']:<18} {f['variable']:<28} query: {f['query']}")
+        if len(updater.flagged) > 20:
+            print(f"  … and {len(updater.flagged) - 20} more")
 
 
 if __name__ == '__main__':
