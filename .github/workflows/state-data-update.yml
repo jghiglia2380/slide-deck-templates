@@ -1,0 +1,125 @@
+name: State data update
+
+# Runs state_data_updater.py on the cadence already declared in
+# state-data/automation/config.json and opens a PULL REQUEST with whatever
+# changed. It never commits to main — the updater was built PR-for-review and
+# that gate is preserved here deliberately.
+#
+# Cadence (config.json -> update_schedules), all declared America/New_York:
+#   monthly    day 1, 02:00 ET  — gas prices, loan rates, unemployment
+#   quarterly  Jan/Apr/Jul/Oct 1, 03:00 ET — housing, insurance, bank fees
+#   annual     Sep 1, 04:00 ET  — taxes, tuition, DMV fees, URLs, agency names
+#
+# GitHub cron has no timezone support, so the UTC times below are pinned to
+# EST (UTC-5). During EDT they fire one hour earlier in local terms. That drift
+# is harmless for a monthly/quarterly/annual job; do not "fix" it by guessing a
+# second cron, or the job runs twice half the year.
+
+on:
+  schedule:
+    - cron: "0 7 1 * *"          # 02:00 EST, 1st of every month      -> monthly
+    - cron: "0 8 1 1,4,7,10 *"   # 03:00 EST, 1st of Jan/Apr/Jul/Oct  -> quarterly
+    - cron: "0 9 1 9 *"          # 04:00 EST, Sep 1                   -> annual
+  workflow_dispatch:
+    inputs:
+      update_type:
+        description: "Which update bucket to run"
+        required: true
+        type: choice
+        options: [monthly, quarterly, annual]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: state-data-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        working-directory: state-data/automation
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Resolve update type
+        id: which
+        run: |
+          case "${{ github.event.schedule }}" in
+            "0 7 1 * *")        TYPE=monthly ;;
+            "0 8 1 1,4,7,10 *") TYPE=quarterly ;;
+            "0 9 1 9 *")        TYPE=annual ;;
+            *)                  TYPE="${{ inputs.update_type }}" ;;
+          esac
+          if [ -z "$TYPE" ]; then
+            echo "::error::Could not resolve an update type."
+            exit 1
+          fi
+          echo "type=$TYPE" >> "$GITHUB_OUTPUT"
+          echo "Running the $TYPE update."
+
+      - name: Run updater
+        working-directory: state-data/automation
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python state_data_updater.py --run-now "${{ steps.which.outputs.type }}"
+
+      - name: Open PR if anything changed
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TYPE: ${{ steps.which.outputs.type }}
+        run: |
+          set -euo pipefail
+
+          # Review-relevant output only. backups/ is a full copy of every state
+          # file the updater touched and would bury the actual diff; logs/ is
+          # runtime noise. Both stay out of the PR.
+          git add -- state-data/states state-data/changelog state-data/notifications 2>/dev/null || true
+
+          if git diff --cached --quiet; then
+            echo "No data changed — nothing to open a PR for."
+            exit 0
+          fi
+
+          echo "Changed files:"
+          git diff --cached --name-only
+
+          BRANCH="state-data/${TYPE}-$(date -u +%Y%m%d-%H%M%S)"
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git commit -m "State data: ${TYPE} update $(date -u +%Y-%m-%d)"
+          git push origin "$BRANCH"
+
+          {
+            echo "Automated **${TYPE}** run of \`state-data/automation/state_data_updater.py\`."
+            echo
+            echo "### Changed files"
+            echo '```'
+            git diff --name-only origin/${{ github.ref_name }}...HEAD
+            echo '```'
+            echo
+            echo "### Review before merging"
+            echo "Every value here was produced by the updater, **not** by a human."
+            echo "Check each changed number against its authoritative source before approving."
+            echo
+            echo "> ⚠️ Known limitation: the updater's fetch step declares no web-search tool,"
+            echo "> so values come from the model rather than a live lookup. Treat every number"
+            echo "> in this PR as unverified until checked. See the automation README."
+          } > /tmp/pr-body.md
+
+          gh pr create \
+            --base "${{ github.ref_name }}" \
+            --head "$BRANCH" \
+            --title "State data: ${TYPE} update $(date -u +%Y-%m-%d)" \
+            --body-file /tmp/pr-body.md
