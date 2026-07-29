@@ -1,9 +1,10 @@
 {
+  "_enabled_states_note": "Must match the state files in ../states/ exactly — the updater skips any code with no file, and any file whose code is absent here is never updated. Reconciled 2026-07-29: dropped AK, AR, AZ, HI, ID, MA, MT, ND, NM, NV (enabled but no file) and added OR, PA, RI, SC, TN, TX, UT, VA, WI, WV (file present but never enabled).",
   "enabled_states": [
-    "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA",
-    "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD",
-    "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ",
-    "NM", "NY", "NC", "ND", "OH", "OK"
+    "AL", "CA", "CO", "CT", "DE", "FL", "GA", "IA", "IL", "IN",
+    "KS", "KY", "LA", "MD", "ME", "MI", "MN", "MO", "MS", "NC",
+    "NE", "NH", "NJ", "NY", "OH", "OK", "OR", "PA", "RI", "SC",
+    "TN", "TX", "UT", "VA", "WI", "WV"
   ],
   "total_states": 36,
   "variable_categories_file": "../VARIABLE_CATEGORIES.json",
